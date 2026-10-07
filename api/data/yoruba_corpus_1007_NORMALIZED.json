@@ -5,7 +5,14 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "agbada"
+      "agbada",
+      "robes",
+      "flowing garment",
+      "traditional attire",
+      "fashion",
+      "clothing",
+      "men wear",
+      "royalty dress"
     ],
     "description": "A grand, wide-sleeved flowing robe worn across Yoruba Culture. Accompanied by inner garments and trousers, it denotes Stature, Elegance, and High Social Standing.",
     "historical_timeline": "Originated in the pre‑16th‑century Oyo Empire as ceremonial attire for oba (kings) and high‑ranking chiefs. By the 19th‑century Lagos coastal kingdom it had spread to merchant aristocracy and was adopted for royal coronations, wedding rites, and the annual Ọ̀dún of Ọ̀ṣun. During the trans‑Atlantic slave era the silhouette travelled with Yoruba captives, later re‑emerging in the New World as the buba‑wrapper in Brazil’s Candomblé and the guayabera‑style in Caribbean syncretic rites.",
@@ -25,7 +32,14 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "ileke"
+      "ileke",
+      "beads",
+      "coral beads",
+      "royal jewelry",
+      "adornment",
+      "necklace",
+      "bracelet",
+      "fashion"
     ],
     "description": "Sacred and ornamental Beads woven into Neck, Wrist, Ankle, and Waist adornments. That serves as a vital mark of Nobility, Spiritual Alignment, and Cultural Identity.",
     "historical_timeline": "Originates in the pre‑16th century Oyo Empire, flourishing during the 17th‑18th centuries as a courtly marker of Ọba and high‑ranking Ìyá‑àgbà. The trans‑Atlantic slave trade carried the practice to the New World, where it re‑emerged in the 19th century as Kele in Cuba, Nagô in Brazil, and Ankle‑beads among the Gullah Geechee. Contemporary revival began in the 1990s diaspora and is now celebrated in global Yoruba festivals.",
@@ -105,7 +119,14 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "kabiyesi"
+      "kabiyesi",
+      "king",
+      "his royal majesty",
+      "monarch",
+      "palace",
+      "monarchy",
+      "sovereignty",
+      "ruler"
     ],
     "description": "The supreme honorific title used to address a Yoruba Monarch, translating to 'The One whose authority cannot be questioned'.",
     "historical_timeline": "The honorific first appears in oral records of the Oyo Empire during the 15th‑century reign of Alaafin Ajíbóyé, where court poets used Kábíyèsí to distinguish the supreme sovereign from subordinate chiefs. By the 18th‑century Ijebu and Egba kingdoms, the title had become codified in royal edicts (ìwé àṣẹ) and was later recorded by European missionaries in the 1820s as “Kabiyesi”. Its usage persisted through the colonial period, surviving the 1914 amalgamation of Nigeria and continuing in contemporary Yoruba monarchies as the highest form of address, parallel to the pan‑Yoruba title “Oba Alágbára”.",
@@ -347,7 +368,14 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "ade aare"
+      "ade aare",
+      "crown",
+      "paramount crown",
+      "sacred crown",
+      "ooni crown",
+      "ife crown",
+      "regalia",
+      "monarchy"
     ],
     "description": "This is the most Sacred and Powerful Beaded Crown in Yorubaland. Worn exclusively by the Ọọni of Ifẹ, once a year during the annual Olojo Festival in Ile-Ife, embodying Ancestral Protection and Spiritual Legitimacy.",
     "historical_timeline": "The Adé Ààrẹ is believed to have originated in the 12th‑13th century CE during the formative Ifẹ period, when the first Oonis began to consolidate political power through material symbols. Its design was codified in the 15th‑16th centuries under the reign of Ooni Ọba Ọ̀yọ́ọ̀fọ̀, when glass‑bead trade routes from the Portuguese introduced new bead types. The crown survived the Oyo Empire’s hegemony, the 19th‑century Yoruba wars, and was re‑affirmed during the colonial era as a symbol of resistance, culminating in its ceremonial display at the modern Olojo Festival each December.",
@@ -729,7 +757,15 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "sango"
+      "sango",
+      "thunder",
+      "lightning",
+      "fire",
+      "justice",
+      "king",
+      "energy",
+      "power",
+      "royalty"
     ],
     "description": "The Òrìṣà of Thunder, Lightning, and Justice, historically the fourth Aláàfin of Oyo, represented visually by the double-headed axe (Oṣé Ṣàngó).",
     "historical_timeline": "Pre‑16th century Oyo Empire, with oral traditions placing Ṣàngó’s earthly reign as the fourth Aláàfin (king) of Oyo around the 14th‑15th centuries CE; later syncretised during the 18th‑19th centuries Atlantic slave trade and incorporated into New World Orisha systems.",
@@ -749,7 +785,15 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "osun"
+      "osun",
+      "fertility",
+      "beauty",
+      "sweet water",
+      "river",
+      "gold",
+      "wealth",
+      "motherhood",
+      "goddess"
     ],
     "description": "The revered female Òrìṣà of sweet waters, fertility, beauty, wealth, and diplomacy, associated with brass ornaments and yellow attire.",
     "historical_timeline": "Pre‑16th Century Oyo Empire (c. 1300‑1800 CE) – earliest oral corpora cite Ọ̀ṣun as a river deity of the Osun River basin; 19th Century Lagos and Ilé‑Ifẹ̀ syncretic festivals; Transatlantic Era (16th‑19th centuries) – Ọ̀ṣun’s worship carried aboard enslaved peoples to the Caribbean and Brazil, evolving into Orishas of the Sweet Waters in Santería, Candomblé, and Kélé.",
@@ -769,7 +813,15 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "ogun"
+      "ogun",
+      "war",
+      "warfare",
+      "warrior",
+      "iron",
+      "metallurgy",
+      "weapons",
+      "blacksmith",
+      "military"
     ],
     "description": "The Òrìṣà of Iron, Metallurgy, Mining, and Technological Innovation, honored by smiths, drivers, warriors, and hunters.",
     "historical_timeline": "Pre‑16th Century Oyo Empire: earliest oral accounts place Ògún as a principal deity of the Oyo military‑industrial complex, where iron smelting powered the empire’s cavalry and war‑chariots. 19th Century Lagos & the Atlantic Slave Trade: Ògún’s cult spread with itinerant blacksmiths and hunters who carried his rites to coastal ports, influencing the emergence of Ogun worship among enslaved peoples in the New World. Contemporary era (21st Century): revitalized urban festivals in Ibadan, Lagos, and the global Yoruba diaspora celebrate Ògún as a symbol of technological innovation and cultural resilience.",
@@ -811,7 +863,13 @@
     "category": "General Heritage",
     "aliases": [
       "esu",
-      "Exu Elegbara"
+      "Exu Elegbara",
+      "crossroads",
+      "messenger",
+      "trickster",
+      "communication",
+      "linguistics",
+      "gatekeeper"
     ],
     "description": "The Orisha of Choice, Linguistics, Crossroads, and Divine Communication, facilitating interactions between humans and spiritual realms.",
     "historical_timeline": "Pre‑16th century Oyo Empire, with earliest references in Ifá verses recorded on palm‑leaf divination tablets; reinforced during the 18th‑century Dahomey expansion and later codified in the 19th‑century Lagos syncretic practices that merged with Islam and Christianity.",
@@ -18534,7 +18592,12 @@
     "culture": "Yorùbá",
     "category": "General Heritage",
     "aliases": [
-      "iroke ifa"
+      "iroke ifa",
+      "divination tapper",
+      "ivory tapper",
+      "sacred tapper",
+      "ifa wand",
+      "diviner tool"
     ],
     "description": "A tapper carved from Ivory, Brass, or Wood used by the Babalawo to rhythmically strike the edge of the Opón Ifá to invoke Ancestral spirits.",
     "historical_timeline": "Originating in antiquity during the Classical Ilé-Ifẹ̀ Era (circa 11th–14th Century CE), the Ìrókẹ́ Ifá emerged in tandem with standardized Ifá epistemological systems across Yorùbáland. During the height of the Ọ̀yọ́ Empire and the flourishing of the Kingdom of Ọ̀wọ̀ (16th–18th Century CE), dedicated artisan guilds—specifically the Gbẹ́nàgbẹ́nà (Woodcarvers) and the Ọnà specialists in ivory and lost-wax brass casting—codified royal and ecclesiastical aesthetics, producing exquisitely stylized tappers for high-ranking diviners. Following the disruptions of the 19th Century CE Yorùbá Civil Wars and the Transatlantic Slave Trade, the physical and conceptual technology of the Ìrókẹ́ crossed the Atlantic Ocean into the Caribbean and the Americas. Within Lucumí and Candomblé lineages, the instrument survived with unbroken liturgical continuity into the contemporary era, retaining its role as the quintessential heraldic implement of Ifá divination.",
@@ -21179,5 +21242,413 @@
     "diaspora_connections": "The governance ethos personified by the Baṣọ̀run survived the Middle Passage, taking deep root in the organizational councils of the Afro-Atlantic Diaspora. In Cuba's Lucumí traditions and Brazil's Candomblé Ketu nations, the concept of a sovereign collegiate council checking the absolute authority of a spiritual monarch lives on in the institutional roles of the Obá Ará, the Ogboni remnants, and the Axogun/Babaloshas councils within sacred Terreiros and Cabildos de Nación. These councils preserved the Yorùbá tenet that divine kingship must always remain accountable to the community of Elders, the Sacred Earth (Ilẹ̀), and the Ancestral Consensus, insulating Afro-Descendant enclaves against absolute authoritarianism across the Americas.",
     "geographical_origin": "Old Ọ̀yọ́ Empire",
     "media_production_notes": "For historical dramas, documentaries, and archival visualizations: Costuming must strictly differentiate the Baṣọ̀run from the Aláàfin; the Baṣọ̀run wears a high coronet or velvet embroidered Cap (Fìlà Kẹbẹ / Fìlà Abetí-Ajá) rather than the Ade Ilẹ̀kẹ̀ (Beaded Crown with Fringe), which belongs exclusively to the King. The soundscape must feature the polyrhythmic cadence of the Talking Drum (Dùndún) reciting Imperial Oríkì in pristine Ọ̀yọ́ dialect. Scenes set in the Baṣọ̀run's courtyard require aged laterite architecture, deep impluviums, brass ritual vessels, and an atmosphere of solemn deliberation that emphasizes statesman-like gravity rather than common militarism."
+  },
+  {
+    "id": "Fìlà",
+    "title": "Fìlà",
+    "culture": "Yorùbá",
+    "category": "Attire & Visual Identity",
+    "aliases": [
+      "fila",
+      "fila yoruba",
+      "yoruba cap",
+      "traditional cap",
+      "cap",
+      "hat",
+      "fashion",
+      "headwear",
+      "traditional attire"
+    ],
+    "description": "The canonical Yorùbá cap worn by men across royal courts and daily life, folded to signify political allegiance, marital status, and aesthetic elegance.",
+    "historical_timeline": "Flourished across ancient Ọ̀yọ́, Ìfẹ̀, and Ìjẹ̀bú kingdoms; essential complement to the Agbádá ensemble.",
+    "etymology_and_philosophy": "From the Yorùbá root fìlà (head covering); its tilt (left, right, or forward) communicates social status and moral poise (Ìwà).",
+    "material_and_craftsmanship": "Hand-loomed aso-òkè (sányán, ẹtù, àlàárì), damask, velvet, or brocade, hand-stitched with geometric embroidery.",
+    "social_and_ritual_context": "Mandatory headwear in civic gatherings, chieftaincy ceremonies, ancestral festivals, and weddings.",
+    "proverbs_and_oral_traditions": [
+      "Fìlà kì í ṣe orí, a kàn fi ń bò ó ni – A cap is not the head itself; it is worn to adorn and protect it."
+    ],
+    "diaspora_connections": "Preserved in Afro-Cuban Santería and Brazilian Candomblé ceremonies as gorro de santo.",
+    "geographical_origin": "Yorùbáland (Southwestern Nigeria & Benin Republic)",
+    "media_production_notes": "Essential costume element for male Yoruba characters in historical epics and modern cinema."
+  },
+  {
+    "id": "Odù Ifá",
+    "title": "Odù Ifá",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "aliases": [
+      "odu ifa",
+      "odu",
+      "ifa",
+      "ifa chapters",
+      "divination corpus",
+      "sacred verses",
+      "sacred literature",
+      "divination",
+      "spiritual wisdom",
+      "cosmology",
+      "philosophy"
+    ],
+    "description": "The sacred 256-chapter oral literary and cosmological corpus of Ifá divination, embodying the ancestral wisdom, philosophy, and history of the Yorùbá people.",
+    "historical_timeline": "Inscribed by UNESCO as a Masterpiece of the Oral and Intangible Heritage of Humanity; rooted in primordial Ilé-Ifẹ̀ antiquity.",
+    "etymology_and_philosophy": "Odù (womb/vessel/source of cosmic decrees) of Ifá (Ọ̀rúnmìlà’s divination wisdom); encodes moral balance and destiny (Orí).",
+    "material_and_craftsmanship": "Preserved through oral verse (Ẹsẹ̀ Ifá), divining trays (Ọpọ́n Ifá), sacred palm nuts (Ikin Ifá), and the divining chain (Ọ̀pẹ̀lẹ̀).",
+    "social_and_ritual_context": "Consulted by Babaláwo and Ìyánífá during life transitions, naming ceremonies (Ìkọmọ), coronations, and communal decisions.",
+    "proverbs_and_oral_traditions": [
+      "Bí a bá ń bọ̀wọ̀ fún Ifá, a gbọ́dọ̀ bọ̀wọ̀ fún Òtítọ́ – If we revere Ifá, we must revere Truth."
+    ],
+    "diaspora_connections": "Central pillar of Lucumí/Santería in Cuba, Puerto Rico, the United States, and Candomblé in Brazil.",
+    "geographical_origin": "Ilé-Ifẹ̀, sacred spiritual cradle of the Yorùbá",
+    "media_production_notes": "Requires reverent portrayal; avoid conflating Ifá with sorcery or occultism in film/screenplays."
+  },
+  {
+    "id": "Òrìṣà",
+    "title": "Òrìṣà",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "aliases": [
+      "orisa",
+      "orisha",
+      "deity",
+      "deities",
+      "pantheon",
+      "divinity",
+      "gods",
+      "goddesses",
+      "religion",
+      "mythology",
+      "cosmology",
+      "ancestors",
+      "spirit"
+    ],
+    "description": "The primordial deities and deified ancestors in Yorùbá religion who act as emissaries of the supreme creator Olódùmarè.",
+    "historical_timeline": "Pre-colonial cosmological pantheon numbering 401+ divinities, tracing ancestry to the founding generation of Ilé-Ifẹ̀.",
+    "etymology_and_philosophy": "From Orí-ṣà (the chosen or primordial head/consciousness); signifies manifestation of divine energy (Àṣẹ) in human affairs.",
+    "material_and_craftsmanship": "Materialized in sacred shrines through consecrated iron (Ògún), thunderstones (Ṣàngó), brass/river stones (Ọ̀ṣun), and white cloth (Ọbàtálá).",
+    "social_and_ritual_context": "Worshipped through annual festivals (Ọdún Òrìṣà), lineage devotion, dance, sacred chants, and sacrificial offerings (Ẹbọ).",
+    "proverbs_and_oral_traditions": [
+      "Òrìṣà bí o ò le gbè mí, fi mí sílẹ̀ bó o ti bá mi – Deity, if you cannot elevate me, leave me as you met me."
+    ],
+    "diaspora_connections": "Global veneration in Candomblé (Brazil), Santería/Lucumí (Cuba), Shango Baptist (Trinidad), and Vodou (Haiti).",
+    "geographical_origin": "Ilé-Ifẹ̀ and Greater Yorùbáland",
+    "media_production_notes": "Represent each Orisha with their canonical color palette, sacred implements, and dignified choreography."
+  },
+  {
+    "id": "Aṣọ",
+    "title": "Aṣọ",
+    "culture": "Yorùbá",
+    "category": "Attire & Visual Identity",
+    "aliases": [
+      "aso",
+      "textile",
+      "cloth",
+      "fabric",
+      "clothing",
+      "fashion",
+      "attire",
+      "garment",
+      "dress",
+      "weaving",
+      "wear"
+    ],
+    "description": "The comprehensive taxonomy of Yorùbá textiles and woven cloths, embodying prestige, lineage solidarity, and visual poetry.",
+    "historical_timeline": "Centuries of indigenous strip-weaving tradition on horizontal and vertical looms across Ìsẹ́yìn, Ọ̀yọ́, and Òkè-Ògùn.",
+    "etymology_and_philosophy": "Aṣọ (cloth/covering); fundamental marker of civil humanity: a proverb states nakedness is uncivilized without aṣọ.",
+    "material_and_craftsmanship": "Spun cotton, wild silk (sányán), indigo vats, raffia, and imported rayon threads woven into narrow strips and sewn together.",
+    "social_and_ritual_context": "Central to Aṣọ-Ẹbí (family solidarity dress) at weddings, funerals, and coronations.",
+    "proverbs_and_oral_traditions": [
+      "Aṣọ là ń rí, kò sẹ́ni tó mọ èrò inú – We see the clothes, but no one knows the inner thoughts."
+    ],
+    "diaspora_connections": "Informed West African textiles and Afro-Brazilian ceremonial attire (Pano da Costa).",
+    "geographical_origin": "Yorùbáland (Ìsẹ́yìn, Òkè-Ògùn, Ìjẹ̀bú, Ọ̀yọ́)",
+    "media_production_notes": "Specify authentic weaves (Sányán, Ẹtù, Àlàárì) rather than modern printed synthetics in period productions."
+  },
+  {
+    "id": "Ewé",
+    "title": "Ewé",
+    "culture": "Yorùbá",
+    "category": "Sacred Botany & Herbal Medicine",
+    "aliases": [
+      "ewe",
+      "leaves",
+      "botany",
+      "herbs",
+      "medicinal plants",
+      "flora",
+      "herbal medicine",
+      "nature",
+      "healing",
+      "sacred leaves"
+    ],
+    "description": "Sacred leaves and botanical flora utilized in traditional Yorùbá herbal pharmacology, spiritual consecrations, and ritual washes (Àgbo).",
+    "historical_timeline": "Millennia of indigenous botanical empiricism governed by the herbal divinity Ọ̀sanyìn and Ifá priests.",
+    "etymology_and_philosophy": "Ewé (leaf); linked to the principle Ko si ewe, ko si orisa (Without leaves, there can be no deity/consecration).",
+    "material_and_craftsmanship": "Harvested fresh from sacred groves or cultivated gardens with reverence and vocal incantations (Ọfọ̀).",
+    "social_and_ritual_context": "Used in birth ceremonies, royal coronations (Ewé Akọko), medicinal infusions, and shrine cleansing.",
+    "proverbs_and_oral_traditions": [
+      "Kò sí ewé, kò sí Òrìṣà – Without sacred leaves, there is no sacred consecration."
+    ],
+    "diaspora_connections": "Preserved in Brazilian Candomblé through the sacred classification of folhas sagradas (sacred leaves).",
+    "geographical_origin": "Yorùbá rainforests, savannas, and sacred groves",
+    "media_production_notes": "Accurately depict herbal preparation with mortar, water infusions, and proper botanical terminology."
+  },
+  {
+    "id": "Ọdún",
+    "title": "Ọdún",
+    "culture": "Yorùbá",
+    "category": "Sacred Calendar & Community Festivals",
+    "aliases": [
+      "odun",
+      "festival",
+      "festivals",
+      "celebration",
+      "calendar",
+      "ceremony",
+      "annual rites",
+      "holidays"
+    ],
+    "description": "The cyclical calendar of sacred communal festivals and seasonal pageants celebrating monarchs, ancestors, deities, and harvest seasons.",
+    "historical_timeline": "Ancient solar-lunar calendar structuring municipal life, farm cycles, and spiritual renewal throughout Yorùbá history.",
+    "etymology_and_philosophy": "Ọdún (year/festival); marks the renewal of cosmic balance, communal reconciliation, and ancestor veneration.",
+    "material_and_craftsmanship": "Features grand masquerades, ceremonial drumming ensembles (Dùndún, Bàtá), and mass feasts.",
+    "social_and_ritual_context": "Brings together towns, lineages, and the diaspora in annual pilgrimage (e.g. Ọṣun Òṣogbo, Ọlọ́jọ́, Òjùdè Ọba).",
+    "proverbs_and_oral_traditions": [
+      "Ọdún tí a bá fojú rí, kì í pani run – The festival we live to witness will not destroy us."
+    ],
+    "diaspora_connections": "Celebrated globally in annual Yemọja and Ọṣun festivals from Salvador da Bahia to Brooklyn.",
+    "geographical_origin": "Yorùbá city-states across southwestern Nigeria and diaspora cities",
+    "media_production_notes": "Showcase genuine processional order, monarchical protocol, and authentic percussion."
+  },
+  {
+    "id": "Orin",
+    "title": "Orin",
+    "culture": "Yorùbá",
+    "category": "Music, Chants & Auditory Heritage",
+    "aliases": [
+      "orin",
+      "music",
+      "song",
+      "songs",
+      "chants",
+      "hymns",
+      "singing",
+      "melody",
+      "vocal performance",
+      "rhythm"
+    ],
+    "description": "The rich auditory canon of Yorùbá song, praise poetry, call-and-response vocal forms, and sacred liturgical hymns.",
+    "historical_timeline": "Ancient lineage oral art form, foundational to both pre-colonial royal praise systems and modern African music.",
+    "etymology_and_philosophy": "From o-rin (melodic vocalization); vehicle for transmitting ancestral philosophy, moral parables, and collective history.",
+    "material_and_craftsmanship": "Accompanied by percussive talking drums (Gángan, Dùndún), sekere rattles, and agogô iron gongs.",
+    "social_and_ritual_context": "Integral to courtly praise, harvest, naming ceremonies, funerals, and warrior send-offs.",
+    "proverbs_and_oral_traditions": [
+      "Orin tí a kọ́kọ́ kọ, a kì í parẹ́ – The first song sung cannot be erased from memory."
+    ],
+    "diaspora_connections": "Foundational roots of Afro-Cuban batá drumming songs and Brazilian afoxé/samba rhythms.",
+    "geographical_origin": "Yorùbáland",
+    "media_production_notes": "Preserve authentic solfège tone patterns (Do-Re-Mi) matching the linguistic tonal contours."
+  },
+  {
+    "id": "Ilé",
+    "title": "Ilé",
+    "culture": "Yorùbá",
+    "category": "Architecture & Spatial Heritage",
+    "aliases": [
+      "ile",
+      "house",
+      "home",
+      "compound",
+      "architecture",
+      "building",
+      "lineage house",
+      "palace architecture"
+    ],
+    "description": "The architectural compound and domestic sanctuary of the extended lineage (Àgbálé), designed with central courtyards for communal living.",
+    "historical_timeline": "Traditional courtyard architecture documented from medieval Ilé-Ifẹ̀, Old Ọ̀yọ́, and Ìjẹ̀bú palatial structures.",
+    "etymology_and_philosophy": "Ilé (house/origin/source); represents lineage roots, ancestral grounding, and the domestic sphere of moral upbringing.",
+    "material_and_craftsmanship": "Constructed of rammed earth (laterite), thatched or corrugated roofing, sculpted veranda posts (Òpó), and carved doors.",
+    "social_and_ritual_context": "Houses ancestral shrines, burials of patriarchs/matriarchs, and multi-generational clan deliberations.",
+    "proverbs_and_oral_traditions": [
+      "Ilé la ti ń kọ́ ẹ̀ṣọ́ ròde – Good character and grace begin in the home before showing in public."
+    ],
+    "diaspora_connections": "Influenced colonial courtyard architecture across Bahia, Havana, and the Caribbean.",
+    "geographical_origin": "Yorùbá town centers and royal capitals",
+    "media_production_notes": "Feature wide veranda posts, carved lintels, and shaded impluvium courtyards."
+  },
+  {
+    "id": "Àlọ́",
+    "title": "Àlọ́",
+    "culture": "Yorùbá",
+    "category": "Folktales, Riddles & Moral Oral Tradition",
+    "aliases": [
+      "alo",
+      "folktale",
+      "folktales",
+      "fables",
+      "riddles",
+      "stories",
+      "storytelling",
+      "literature",
+      "tales",
+      "ijapa"
+    ],
+    "description": "The classical tradition of evening storytelling, moral allegories, and riddles (Àlọ́ Àpamọ̀ and Àlọ́ Àpagbè) featuring trickster characters like Ìjàpá the Tortoise.",
+    "historical_timeline": "Centuries-old oral pedagogical tool used around evening fires for didactic child-rearing and ethical instruction.",
+    "etymology_and_philosophy": "Àlọ́ (riddle/story); teaching mechanisms for imparting communal ethics, consequence of greed, and clever wisdom.",
+    "material_and_craftsmanship": "Performed orally with responsive audience choruses (Àlọ́ o! Àlọ̀!), handclapping, and improvisational songs.",
+    "social_and_ritual_context": "Evening family gatherings after domestic labor, intergenerational bonding between grandparents and children.",
+    "proverbs_and_oral_traditions": [
+      "Àlọ́ kì í jẹ́ kí ọmọdé sùn lásán – Storytelling keeps children awake to ethical truths."
+    ],
+    "diaspora_connections": "Directly influenced African-American Brer Rabbit stories and Caribbean Anansi/Tortoise folklore.",
+    "geographical_origin": "Yorùbá rural and urban homesteads",
+    "media_production_notes": "Depict dynamic call-and-response interaction between the narrator and lively listeners."
+  },
+  {
+    "id": "Ìtàn",
+    "title": "Ìtàn",
+    "culture": "Yorùbá",
+    "category": "Historiography & Mythological Epics",
+    "aliases": [
+      "itan",
+      "history",
+      "mythology",
+      "historical narrative",
+      "chronicles",
+      "epic",
+      "legend",
+      "origins",
+      "myth"
+    ],
+    "description": "The formal oral historical narratives and genealogical chronicles preserved by palace historians (Arokin) and lineage elders.",
+    "historical_timeline": "Transmitted over centuries across kingdoms, establishing foundational dynasties, migrations, and treaties.",
+    "etymology_and_philosophy": "From tàn (to spread/unfold/illuminate); signifying that history illuminates the present path of human society.",
+    "material_and_craftsmanship": "Recited by professional court chroniclers with the accompaniment of Kákàkí trumpets and Gángan drums.",
+    "social_and_ritual_context": "Recounted during chieftaincy dispute arbitrations, royal installations, and boundary demarcations.",
+    "proverbs_and_oral_traditions": [
+      "Ìtàn tí a ò bá mọ̀, a kì í dẹ́lẹ́yà rẹ̀ – A history we do not know is one we cannot properly evaluate."
+    ],
+    "diaspora_connections": "Essential source for Afro-descendant genealogical and historical reclamation movements.",
+    "geographical_origin": "Palaces of Ọ̀yọ́, Ìfẹ̀, Òndó, Èkìtì, Ìjẹ̀bú, and Ẹ̀gbá",
+    "media_production_notes": "Ensure chronological fidelity to canonical dynasties (Odùduwà, Ọ̀ránmíyàn, Aláàfin Sàngó)."
+  },
+  {
+    "id": "Ìrun",
+    "title": "Ìrun",
+    "culture": "Yorùbá",
+    "category": "Hairdressing & Cranial Aesthetics",
+    "aliases": [
+      "irun",
+      "hair",
+      "hairstyle",
+      "hairdressing",
+      "braids",
+      "weaving",
+      "beauty",
+      "aesthetics",
+      "grooming",
+      "cranial art"
+    ],
+    "description": "Traditional cranial hair sculpture and threading (Ìrun Kíkọ́, Ìrun Dídì, Ṣùkú, Kòlésẹ̀), honoring the sacred inner head (Orí).",
+    "historical_timeline": "Practiced for centuries with distinct royal and ceremonial styles preserved in terracotta sculptures of ancient Ife.",
+    "etymology_and_philosophy": "Ìrun (hair); styled to honor Orí (the site of personal destiny and spiritual essence).",
+    "material_and_craftsmanship": "Crafted with black cotton thread, natural pomades, wooden combs, and cowrie shells for bridal or royal adornment.",
+    "social_and_ritual_context": "Differentiates maidens, brides, priestesses (e.g., Ṣàngó priests with Ṣùkú), and royal consorts (Olorì).",
+    "proverbs_and_oral_traditions": [
+      "Orí rere ní ń mọ ìnkan rere – A well-honored head attracts righteous fortune."
+    ],
+    "diaspora_connections": "Foundational root of contemporary Black protective styling, cornrows, and threading across the African diaspora.",
+    "geographical_origin": "Yorùbáland",
+    "media_production_notes": "Recreate authentic historic patterns (Ṣùkú, Ìbàbà, Kòlésẹ̀) instead of generic modern wigs."
+  },
+  {
+    "id": "Obì",
+    "title": "Obì",
+    "culture": "Yorùbá",
+    "category": "Sacred Food, Flora & Divination",
+    "aliases": [
+      "obi",
+      "kola nut",
+      "kolanut",
+      "sacred nut",
+      "food",
+      "hospitality",
+      "divination nut",
+      "covenant",
+      "ceremony"
+    ],
+    "description": "The sacred kola nut (Obì Àbátá with 4–6 lobes) used in hospitality, marriage rites, covenants, and elemental oracle consultation.",
+    "historical_timeline": "Centuries-old sacramental item cultivated in Yorùbá orchards and traded along ancient trans-regional routes.",
+    "etymology_and_philosophy": "Obì (kola); derived from the maxim Obì ní ń bi ikú dànù (The kola nut turns away death and negativity).",
+    "material_and_craftsmanship": "Split along natural cotyledon lobes into female and male valves to reveal spiritual answers.",
+    "social_and_ritual_context": "Mandatory in welcoming esteemed guests, pouring libation, sealing marital vows, and shrine invocations.",
+    "proverbs_and_oral_traditions": [
+      "Obì tí a bá fi ojú rere fúnni, kì í fa ikú – Kola given with a sincere heart does not bring harm."
+    ],
+    "diaspora_connections": "Preserved as noz de cola in Afro-Cuban and Afro-Brazilian religious ceremonies.",
+    "geographical_origin": "Yorùbá agrarian towns (Ọ̀yọ́, Ògùn, Òṣun, Èkìtì)",
+    "media_production_notes": "Differentiate accurately between Obì Àbátá (sacred 4-lobed) and Obì Gbàngjà (commercial 2-lobed)."
+  },
+  {
+    "id": "Ilà Kíkọ",
+    "title": "Ilà Kíkọ",
+    "culture": "Yorùbá",
+    "category": "Body Adornment & Lineage Identification",
+    "aliases": [
+      "ila",
+      "ila kiko",
+      "facial marks",
+      "tribal marks",
+      "scarification",
+      "lineage marks",
+      "gombo",
+      "abaja",
+      "pele",
+      "tody"
+    ],
+    "description": "The historic practice of geometric facial scarification marking clan lineage, royal allegiance, beauty, and ancestral belonging.",
+    "historical_timeline": "Flourished during the classical imperial eras of Old Ọ̀yọ́, Ẹ̀gbá, Ìjẹ̀bú, and Òwú as markers of national identity.",
+    "etymology_and_philosophy": "Ilà (line/boundary/mark) Kíkọ (writing/inscribing); literally writing lineage identity onto the body.",
+    "material_and_craftsmanship": "Inscribed by hereditary master surgeons (Olóòlà) using specialized copper/steel lancets and soothing charcoal herbs.",
+    "social_and_ritual_context": "Identifies royal clans (e.g., Gọ̀mbọ́ for Ọ̀yọ́ royalty, Àbàjà for noble clans, Pélé for beauty and municipal identity).",
+    "proverbs_and_oral_traditions": [
+      "Ilà kíkọ kì í ṣe oríkì, àmọ́ ó ń fi ìran hàn – Facial marks are not praise poetry, but they manifest one’s noble lineage."
+    ],
+    "diaspora_connections": "Documented in historical paintings and runaway slave advertisements across Brazil, Cuba, and North America.",
+    "geographical_origin": "Old Ọ̀yọ́, Ìjẹ̀bú, Ẹ̀gbá, Èkìtì, and Òwú kingdoms",
+    "media_production_notes": "Apply exact geometric patterns corresponding to the character’s kingdom and lineage."
+  },
+  {
+    "id": "Oúnjẹ",
+    "title": "Oúnjẹ",
+    "culture": "Yorùbá",
+    "category": "Culinary & Social Heritage",
+    "aliases": [
+      "ounje",
+      "food",
+      "cuisine",
+      "gastronomy",
+      "dining",
+      "culinary",
+      "delicacy",
+      "diet",
+      "amala",
+      "iyan",
+      "gbegiri",
+      "ewedu",
+      "akara",
+      "olele"
+    ],
+    "description": "The rich culinary heritage of the Yorùbá people, featuring yam and cassava staples (Iyán, Àmàlà, Ẹ̀bà), sacred stews (Gbẹ̀gìrì, Ẹ̀fọ́ Rírò), and ritual communion foods.",
+    "historical_timeline": "Centuries of indigenous agrarian domestication of yams, cowpeas, and fermented locust beans (Iru) celebrated at annual New Yam festivals (Ọdún Iṣu).",
+    "etymology_and_philosophy": "Oúnjẹ (food/nourishment); rooted in hospitality: a Yorùbá proverb states that food eaten alone causes isolation, but food shared brings communal blessing.",
+    "material_and_craftsmanship": "Prepared using clay pots (Ìkòkò), wooden mortars (Odó) and pestles (Ọmọ-odó), calabash bowls, and wood-ash hearths.",
+    "social_and_ritual_context": "Central to naming ceremonies, weddings, royal banquets, and ancestral communion offerings (Saraa).",
+    "proverbs_and_oral_traditions": [
+      "Oúnjẹ tí a jẹ nìkan kì í lérí – Food consumed in selfish isolation does not bring honorable pride."
+    ],
+    "diaspora_connections": "Direct foundation of Afro-Brazilian cuisine (Acarajé, Caruru) and Cuban/Caribbean cuisine (Quimbombó, Tamales/Moi-moi).",
+    "geographical_origin": "Yorùbáland (Oyo, Ekiti, Osun, Ondo, Ogun, Lagos, Kwara)",
+    "media_production_notes": "Showcase traditional clay pot boiling, pestle pounding of Iyán, and wooden platter presentation."
   }
 ]

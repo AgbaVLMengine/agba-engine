@@ -161,21 +161,40 @@ class ÀgbàConfig:
         return cls.ROOT_DIR / "agba_enterprise_api" / "pending_candidates.json"
 
     # 3. Security & Telemetry Configurations
-    API_KEY_NAME: str = "X-ÀGBÀ-API-KEY"
+    API_KEY_NAMES: List[str] = ["X-AGBA-API-KEY", "X-ÀGBÀ-API-KEY", "x-agba-api-key"]
+    API_KEY_NAME: str = "X-AGBA-API-KEY"
     
     # Authorized client registry with tiered access
     VALID_API_KEYS: Dict[str, Dict[str, Any]] = {
+        "agba_studio_dev_key_2026": {
+            "tier": "Studio",
+            "owner": "Aruna Olanrewaju Kabiru",
+            "rate_limit_rpm": 300,
+            "permissions": ["text", "vision", "audio", "export_dossier"]
+        },
         "àgbà_studio_dev_key_2026": {
             "tier": "Studio",
             "owner": "Aruna Olanrewaju Kabiru",
             "rate_limit_rpm": 300,
             "permissions": ["text", "vision", "audio", "export_dossier"]
         },
+        "agba_enterprise_demo_key": {
+            "tier": "Institutional",
+            "owner": "Aruna Olanrewaju Kabiru",
+            "rate_limit_rpm": 120,
+            "permissions": ["text", "vision", "audio"]
+        },
         "àgbà_enterprise_demo_key": {
             "tier": "Institutional",
             "owner": "Aruna Olanrewaju Kabiru",
             "rate_limit_rpm": 120,
             "permissions": ["text", "vision", "audio"]
+        },
+        "agba_academic_research_key": {
+            "tier": "Academic",
+            "owner": "Aruna Olanrewaju Kabiru",
+            "rate_limit_rpm": 60,
+            "permissions": ["text", "vision"]
         },
         "àgbà_academic_research_key": {
             "tier": "Academic",

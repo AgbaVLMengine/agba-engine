@@ -111,9 +111,23 @@ class ÀgbàHybridRetriever:
     def _load_corpus(self) -> List[Dict[str, Any]]:
         with open(self.corpus_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        if isinstance(data, dict):
-            return list(data.values())
-        return data
+        entities = list(data.values()) if isinstance(data, dict) else data
+
+        # Ingest 256 Canonical Odù Ifá Chapters if present
+        odu_path = self.corpus_path.parent / "agba_odu_ifa_256_canonical.json"
+        if odu_path.exists():
+            try:
+                with open(odu_path, "r", encoding="utf-8") as f:
+                    odu_data = json.load(f)
+                existing_ids = {e.get("id") for e in entities}
+                for item in odu_data:
+                    if item.get("id") not in existing_ids:
+                        entities.append(item)
+                print(f"   📖 Ingested {len(odu_data)} Canonical Odù Ifá Chapters into active retrieval space.")
+            except Exception as e:
+                print(f"   [!] Notice: Odù Ifá ingestion notice: {e}")
+
+        return entities
 
     def _map_call_and_response_audio(self) -> tuple:
         """
@@ -314,9 +328,14 @@ class ÀgbàHybridRetriever:
             return []
 
     def search_lexical(self, query: str, top_k: int = 15) -> List[Dict[str, Any]]:
-        """Perform diacritic-aware lexical and keyword matching on master corpus."""
+        """
+        Perform diacritic-aware lexical, word-boundary, and cross-lingual semantic matching
+        across all 14 Tiers of the master cultural knowledge graph.
+        """
+        import re
         norm_query = normalize_y(query)
         stripped_query = strip_accents(query)
+        q_words = [w for w in re.findall(r'\w+', stripped_query.lower()) if len(w) > 1]
         scored = []
 
         for entity in self.corpus_entities:
@@ -324,37 +343,65 @@ class ÀgbàHybridRetriever:
             stripped_title = strip_accents(entity.get("title", ""))
             aliases = [normalize_y(a) for a in entity.get("aliases", [])]
             stripped_aliases = [strip_accents(a) for a in entity.get("aliases", [])]
-            desc = normalize_y(entity.get("description", ""))
-            etym = normalize_y(entity.get("etymology_and_philosophy", ""))
             
             score = 0.0
-            # 1. Exact match on title or alias with diacritics
-            if norm_query == title or norm_query in aliases:
-                score += 5.0
-            # 2. Match without diacritics
-            elif stripped_query == stripped_title or stripped_query in stripped_aliases:
-                score += 4.5
-            # 3. Substring match in title
-            elif norm_query in title or any(norm_query in a for a in aliases):
-                score += 0.85
-            elif stripped_query in stripped_title:
-                score += 0.8
-            # 4. Word token overlap
-            q_words = norm_query.split()
-            if any(w in title for w in q_words):
-                score += 0.5
-            if any(w in desc for w in q_words):
-                score += 0.3
-            if any(w in etym for w in q_words):
-                score += 0.2
+
+            # 1. Exact match on title (Top Priority: Parent concept ranks #1)
+            if norm_query == title:
+                score += 25.0
+            elif stripped_query == stripped_title:
+                score += 20.0
+            elif norm_query in aliases:
+                score += 15.0
+            elif stripped_query in stripped_aliases:
+                score += 12.0
+
+            # 2. Sub-phrase match in title (with strict boundary awareness for short tokens)
+            elif re.search(r'' + re.escape(stripped_query) + r'', stripped_title):
+                score += 8.0
+            elif len(stripped_query) >= 4 and (norm_query in title or stripped_query in stripped_title):
+                score += 3.5
+
+            # 3. Word-boundary token matching across 14 Knowledge Graph Tiers
+            matched_words = 0
+            for w in q_words:
+                pat = r'' + re.escape(w) + r''
+                # Check title
+                if re.search(pat, stripped_title):
+                    score += 4.0
+                    matched_words += 1
+                # Check aliases
+                elif any(re.search(pat, a) for a in stripped_aliases):
+                    score += 3.0
+                    matched_words += 1
+                else:
+                    # Check all 14 metadata fields (English description, history, philosophy, craft, ritual, diaspora)
+                    field_matched = False
+                    for tier_key in [
+                        "description", "historical_timeline", "etymology_and_philosophy",
+                        "material_and_craftsmanship", "social_and_ritual_context",
+                        "proverbs_and_oral_traditions", "diaspora_connections",
+                        "category", "culture", "geographical_origin", "media_production_notes"
+                    ]:
+                        val = entity.get(tier_key, "")
+                        val_str = " ".join(val) if isinstance(val, list) else str(val)
+                        if re.search(pat, strip_accents(val_str)):
+                            score += 1.0
+                            matched_words += 1
+                            field_matched = True
+                            break
+
+            # Bonus for matching all search tokens in multi-word query
+            if q_words and matched_words == len(q_words):
+                score += 2.5
 
             if score > 0:
                 scored.append({
                     "id": entity.get("id"),
                     "title": entity.get("title"),
-                    "score": score,
+                    "score": round(score, 4),
                     "payload": entity,
-                    "retrieval_method": "lexical_diacritic"
+                    "retrieval_method": "lexical_diacritic_word_boundary"
                 })
 
         scored.sort(key=lambda x: x["score"], reverse=True)

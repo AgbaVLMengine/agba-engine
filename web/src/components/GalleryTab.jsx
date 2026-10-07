@@ -113,7 +113,7 @@ export default function GalleryTab() {
             }}>
               {item.source_url ? (
                 <img
-                  src={item.source_url}
+                  src={item.local_asset_url || item.image_url || item.source_url || "/assets/regalia/Foundational_Ade_Aare.jpeg"}
                   alt={item.canonical_name}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   loading="lazy"
@@ -227,7 +227,7 @@ export default function GalleryTab() {
               }}>
                 {activeModalItem.source_url ? (
                   <img
-                    src={activeModalItem.source_url}
+                    src={activeModalItem.local_asset_url || activeModalItem.image_url || activeModalItem.source_url || "/assets/regalia/Foundational_Ade_Aare.jpeg"}
                     alt={activeModalItem.canonical_name}
                     style={{ width: '100%', height: '100%', objectFit: 'contain' }}
                   />
