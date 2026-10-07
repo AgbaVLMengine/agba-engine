@@ -1,0 +1,23 @@
+version: "3.8"
+
+# ==============================================================================
+# 🏛️ ÀGBÀ ENGINE: LOCAL DOCKER COMPOSE HARNESS (v6.1.0)
+# Simulates Google Cloud Run container locally on port 8080
+# ==============================================================================
+services:
+  agba-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agba_enterprise_api
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - AGBA_ROOT_DIR=/app
+      - AGBA_COLLECTION_NAME=agba_master_corpus_v6
+      - AGBA_EMBEDDING_MODEL=all-MiniLM-L6-v2
+    volumes:
+      - ./feedback_store.jsonl:/app/feedback_store.jsonl
+      - ./qdrant_storage:/app/qdrant_storage
+    restart: unless-stopped

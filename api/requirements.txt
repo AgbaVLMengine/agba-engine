@@ -1,0 +1,10 @@
+# 🏛️ ÀGBÀ ENGINE: ENTERPRISE API REQUIREMENTS
+# Optimized for Google Cloud Run (Always Free Tier)
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.4.0
+qdrant-client>=1.6.0
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+google-genai>=0.1.0
+python-multipart>=0.0.6
