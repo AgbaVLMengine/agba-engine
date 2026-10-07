@@ -467,43 +467,13 @@ class ÀgbàHybridRetriever:
                 matched_visual_uri = self.image_assets[k]
                 break
 
-        # Canonical cross-reference for primordial Orisha/concepts
+        # Strict Provenance: Only assign visual asset if exact title/ID matches verified masterwork
+        # (Zero false assignments of Ade Aare or Fila to unrelated entities)
         if not matched_visual_uri:
-            CROSS_REFS = {
-                'esu': ['ogo elegba', 'dance staff for esu', 'ogo elegbara'],
-                'sango': ['shrine figure for sango', 'sango'],
-                'opon ifa': ['opon ifa', 'divination tray'],
-                'iroke ifa': ['iroke ifa', 'tapper'],
-                'agere ifa': ['agere ifa', 'divination vessel', 'arugba ifa'],
-                'edan ogboni': ['edan ogboni', 'pair of staffs'],
-                'ere ibeji': ['ere ibeji', 'twin figure'],
-                'opo ogoga': ['opo ogoga', 'veranda post'],
-                'udamalore': ['udamalore'],
-                'orufanran': ['orufanran'],
-                'aso oke': ['aso oke'],
-                'egungun': ['egungun'],
-                'gelede': ['gelede'],
-                'ade aare': ['ade aare', 'foundational_ade_aare'],
-                'ade': ['adenla', 'ade'],
-                'kabiyesi': ['kabiyesi'],
-                'onile': ['onile']
-            }
-            for ck, c_queries in CROSS_REFS.items():
-                if ck in stripped_title or ck in stripped_id:
-                    for query_kw in c_queries:
-                        for img_k, img_uri in self.image_assets.items():
-                            if query_kw in img_k:
-                                matched_visual_uri = img_uri
-                                break
-                        if matched_visual_uri:
-                            break
-                if matched_visual_uri:
-                    break
-
-        if not matched_visual_uri:
-            for k, path in self.image_assets.items():
-                if (k and (k in stripped_title or stripped_title in k or k in stripped_id or stripped_id in k) and len(k) > 4):
-                    matched_visual_uri = path
+            # Check strict exact match in image assets
+            for img_k, img_uri in self.image_assets.items():
+                if stripped_title == img_k or stripped_id == img_k:
+                    matched_visual_uri = img_uri
                     break
 
         if matched_visual_uri:

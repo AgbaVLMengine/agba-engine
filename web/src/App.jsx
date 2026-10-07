@@ -13,8 +13,8 @@ export default function App() {
   const [feedbackOpen, setFeedbackOpen] = useState(false);
   const [feedbackTarget, setFeedbackTarget] = useState({ concept: '', entityId: '' });
 
-  // Dynamically resolve API URL: local Vite dev proxy '/api' or direct Cloud Run
-  const apiBaseUrl = import.meta.env.VITE_API_URL || 'https://agba-enterprise-api-dgefvzanqq-uc.a.run.app';
+  // Dynamically resolve API URL: local port 8000 or production Cloud Run
+  const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
   const handleOpenFeedback = (concept, entityId) => {
     setFeedbackTarget({ concept, entityId });
@@ -57,25 +57,22 @@ export default function App() {
         apiBaseUrl={apiBaseUrl}
       />
 
-      {/* Luxury Footer */}
+      {/* Luxury Footer (Clean Single Line) */}
       <footer style={{
         borderTop: '1px solid var(--border-subtle)',
         background: 'rgba(6, 9, 14, 0.95)',
         padding: '24px 16px',
         textAlign: 'center',
-        fontSize: '0.85rem',
-        color: 'var(--text-muted)'
+        fontSize: '0.92rem'
       }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-          <div>
-            <strong className="font-royal text-gold" style={{ fontSize: '0.98rem' }}>ÀGBÀ ENGINE</strong> • Cultural Intelligence Framework
-          </div>
-          <div>
-            Lead Architect: <strong style={{ color: 'var(--gold-light)' }}>Aruna Olanrewaju Kabiru</strong> | License: <code>RAIL-Cultural-Heritage-v1.0</code>
-          </div>
-          <div>
-            Powered by <strong style={{ color: '#10b981' }}>Google Cloud Run</strong> & <strong style={{ color: '#38bdf8' }}>Gemini 2.5 Pro/Flash</strong>
-          </div>
+        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+          <strong className="font-royal text-gold" style={{ fontSize: '1.05rem', letterSpacing: '0.04em' }}>
+            ÀGBÀ ENGINE
+          </strong>
+          {' '}•{' '}
+          <span style={{ color: 'var(--text-secondary)' }}>
+            Cultural Intelligence Framework
+          </span>
         </div>
       </footer>
     </div>
