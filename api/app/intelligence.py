@@ -97,7 +97,7 @@ class ÀgbàIntelligenceSuite:
                     contents=user_prompt,
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
-                        temperature=0.2,
+                        thinking_config=types.ThinkingConfig(thinking_level="low"),
                         max_output_tokens=1000
                     )
                 )
@@ -153,7 +153,7 @@ class ÀgbàIntelligenceSuite:
                     contents=f"Text to diacritize: {ascii_text}",
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
-                        temperature=0.1,
+                        thinking_config=types.ThinkingConfig(thinking_level="low"),
                         max_output_tokens=500
                     )
                 )
@@ -207,7 +207,7 @@ class ÀgbàIntelligenceSuite:
                     contents=f"Text to translate and gloss: {yoruba_text}",
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
-                        temperature=0.2,
+                        thinking_config=types.ThinkingConfig(thinking_level="low"),
                         response_mime_type="application/json"
                     )
                 )
