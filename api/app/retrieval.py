@@ -46,11 +46,15 @@ def normalize_y(text: str) -> str:
     return unicodedata.normalize("NFC", str(text).strip().lower())
 
 def strip_accents(text: str) -> str:
-    """Strip accents and diacritics for phonetic/audio token mapping."""
+    """Strip accents and diacritics while preserving spaces."""
     if not text:
         return ""
     nfkd = unicodedata.normalize('NFKD', text)
-    return "".join([c for c in nfkd if not unicodedata.combining(c)]).lower().replace(" ", "").replace("_", "").replace("-", "")
+    return "".join([c for c in nfkd if not unicodedata.combining(c)]).lower()
+
+def audio_token_key(text: str) -> str:
+    """Strip accents and spaces for audio token mapping."""
+    return strip_accents(text).replace(" ", "").replace("_", "").replace("-", "")
 
 class ÀgbàHybridRetriever:
     """
@@ -151,7 +155,7 @@ class ÀgbàHybridRetriever:
         if optb_dir.exists():
             for f in sorted(optb_dir.glob("*.wav")):
                 stem = f.stem
-                clean = strip_accents(stem)
+                clean = audio_token_key(stem)
                 core_key = clean.replace("spoken", "").replace("dundungangan", "").replace("gangan", "").replace("dundun", "")
                 core_key = re.sub(r"[_\s]*0[1-9][_\s]*", "", core_key).strip()
                 
@@ -176,7 +180,7 @@ class ÀgbàHybridRetriever:
             if odir.exists():
                 for f in odir.glob("*.opus"):
                     fn = f.name
-                    clean_fn = strip_accents(fn)
+                    clean_fn = audio_token_key(fn)
                     if "ayalu" in clean_fn or "gudugudu" in clean_fn:
                         master_opus["oriki_oba_itire_ensemble"] = str(f)
                     elif "regalia" in clean_fn:
@@ -334,8 +338,9 @@ class ÀgbàHybridRetriever:
         """
         import re
         norm_query = normalize_y(query)
-        stripped_query = strip_accents(query)
-        q_words = [w for w in re.findall(r'\w+', stripped_query.lower()) if len(w) > 1]
+        stripped_query = strip_accents(query).strip()
+        stop_words = {"in", "at", "to", "of", "and", "the", "a", "an", "for", "on", "with", "by"}
+        q_words = [w for w in re.findall(r'\b\w+\b', stripped_query) if len(w) > 1 and w not in stop_words]
         scored = []
 
         for entity in self.corpus_entities:
@@ -346,7 +351,7 @@ class ÀgbàHybridRetriever:
             
             score = 0.0
 
-            # 1. Exact match on title (Top Priority: Parent concept ranks #1)
+            # 1. Exact match on title or aliases (Highest Priority)
             if norm_query == title:
                 score += 25.0
             elif stripped_query == stripped_title:
@@ -356,16 +361,16 @@ class ÀgbàHybridRetriever:
             elif stripped_query in stripped_aliases:
                 score += 12.0
 
-            # 2. Sub-phrase match in title (with strict boundary awareness for short tokens)
-            elif re.search(r'' + re.escape(stripped_query) + r'', stripped_title):
+            # 2. Sub-phrase match in title or aliases
+            elif stripped_query in stripped_title:
                 score += 8.0
-            elif len(stripped_query) >= 4 and (norm_query in title or stripped_query in stripped_title):
-                score += 3.5
+            elif any(stripped_query in a for a in stripped_aliases):
+                score += 6.0
 
-            # 3. Word-boundary token matching across 14 Knowledge Graph Tiers
+            # 3. Word-token matching across title, aliases, and 14 Knowledge Graph Tiers
             matched_words = 0
             for w in q_words:
-                pat = r'' + re.escape(w) + r''
+                pat = r'\b' + re.escape(w) + r'\b'
                 # Check title
                 if re.search(pat, stripped_title):
                     score += 4.0
@@ -375,8 +380,7 @@ class ÀgbàHybridRetriever:
                     score += 3.0
                     matched_words += 1
                 else:
-                    # Check all 14 metadata fields (English description, history, philosophy, craft, ritual, diaspora)
-                    field_matched = False
+                    # Check 14 metadata fields
                     for tier_key in [
                         "description", "historical_timeline", "etymology_and_philosophy",
                         "material_and_craftsmanship", "social_and_ritual_context",
@@ -388,12 +392,11 @@ class ÀgbàHybridRetriever:
                         if re.search(pat, strip_accents(val_str)):
                             score += 1.0
                             matched_words += 1
-                            field_matched = True
                             break
 
             # Bonus for matching all search tokens in multi-word query
             if q_words and matched_words == len(q_words):
-                score += 2.5
+                score += 3.0
 
             if score > 0:
                 scored.append({
