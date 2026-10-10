@@ -1,0 +1,57 @@
+name: Deploy Àgbà Enterprise API to Google Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'api/**'
+      - '.github/workflows/deploy-cloud-run.yml'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI anytime
+
+env:
+  SERVICE_NAME: agba-enterprise-api
+  REGION: us-central1
+
+jobs:
+  deploy:
+    name: Build & Deploy to Cloud Run
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy ${{ env.SERVICE_NAME }} \
+            --source ./api \
+            --region ${{ env.REGION }} \
+            --platform managed \
+            --allow-unauthenticated \
+            --memory 2Gi \
+            --cpu 1 \
+            --min-instances 0 \
+            --max-instances 2 \
+            --concurrency 80 \
+            --set-env-vars AGBA_ROOT_DIR=/app,AGBA_COLLECTION_NAME=agba_master_corpus_v6,AGBA_EMBEDDING_MODEL=all-MiniLM-L6-v2
+
+      - name: Show Live Service URL
+        run: |
+          SERVICE_URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} --region ${{ env.REGION }} --format='value(status.url)')
+          echo "================================================================================"
+          echo "🎉 LIVE CLOUD RUN SERVICE URL: $SERVICE_URL"
+          echo "   Health Check: $SERVICE_URL/health"
+          echo "   Docs URL:     $SERVICE_URL/docs"
+          echo "================================================================================"
