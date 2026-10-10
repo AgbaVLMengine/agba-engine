@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - main
+      - dev
     paths:
       - 'api/**'
       - '.github/workflows/deploy-cloud-run.yml'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions UI anytime
+  workflow_dispatch:
 
 env:
-  SERVICE_NAME: agba-enterprise-api
   REGION: us-central1
 
 jobs:
@@ -23,7 +23,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Authenticate to Google Cloud
-        id: auth
         uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
@@ -32,6 +31,16 @@ jobs:
         uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Set Environment & Service Name
+        run: |
+          if [ "${{ github.ref_name }}" = "main" ]; then
+            echo "SERVICE_NAME=agba-enterprise-api" >> $GITHUB_ENV
+            echo "ENV_TAG=production" >> $GITHUB_ENV
+          else
+            echo "SERVICE_NAME=agba-enterprise-api-dev" >> $GITHUB_ENV
+            echo "ENV_TAG=development" >> $GITHUB_ENV
+          fi
 
       - name: Deploy to Cloud Run
         run: |
@@ -45,13 +54,13 @@ jobs:
             --min-instances 0 \
             --max-instances 2 \
             --concurrency 80 \
-            --set-env-vars AGBA_ROOT_DIR=/app,AGBA_COLLECTION_NAME=agba_master_corpus_v6,AGBA_EMBEDDING_MODEL=all-MiniLM-L6-v2
+            --set-env-vars AGBA_ROOT_DIR=/app,AGBA_COLLECTION_NAME=agba_master_corpus_v6,AGBA_EMBEDDING_MODEL=all-MiniLM-L6-v2,AGBA_ENVIRONMENT=${{ env.ENV_TAG }}
 
-      - name: Show Live Service URL
+      - name: Output Service URL
         run: |
           SERVICE_URL=$(gcloud run services describe ${{ env.SERVICE_NAME }} --region ${{ env.REGION }} --format='value(status.url)')
           echo "================================================================================"
-          echo "🎉 LIVE CLOUD RUN SERVICE URL: $SERVICE_URL"
+          echo "🎉 DEPLOYED TO [${{ env.ENV_TAG }}]: $SERVICE_URL"
           echo "   Health Check: $SERVICE_URL/health"
           echo "   Docs URL:     $SERVICE_URL/docs"
           echo "================================================================================"
