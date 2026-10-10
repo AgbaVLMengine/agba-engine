@@ -2813,11 +2813,14 @@
     "culture": "Yorùbá",
     "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
+      "ceremonial headtie",
+      "cranial art",
       "gele",
       "gẹlẹ̀",
       "head wrap",
       "headtie",
-      "headwrap"
+      "headwrap",
+      "yoruba headwrap"
     ],
     "description": "A ceremonial Yoruba headtie or headwrap traditionally artfully folded and worn by women for celebrations, denoting Grace, Elegance, and Social Distinction.",
     "historical_timeline": "Originates in the pre‑16th‑century Oyo Empire, where royal women of the *Oba*’s court wore elaborately folded Gẹlẹ̀ as markers of rank. By the 19th‑century Lagos port city, the practice spread to merchant families and was recorded by European travelers as “the lady’s head‑scarf”. During the Transatlantic Era, enslaved Yoruba women carried the folding technique to the Caribbean and Brazil, where it merged with local textile traditions.",
@@ -2829,7 +2832,14 @@
     ],
     "diaspora_connections": "In Cuba’s Lucumí tradition the *tún* (headwrap) mirrors the Gẹlẹ̀, used in *bembé* ceremonies to honor *Ọ̀ṣun* and *Yemoja*. Brazil’s Candomblé practitioners wear the *capa* – a large, pleated headcloth of *baianá* cotton – directly descended from Yoruba folding patterns, often dyed in the same indigo‑red palette. In Trinidad and Tobago, the *tête* of the Orisha societies is a smaller, silk‑woven version worn during *Shango* festivals. Haitian Vodou’s *Nago* priests use a *tèt* of *pany* (woven raffia) to signify lineage. Among the Gullah Geechee of the US Southeast, the “head tie” (often called a *headscarf*) retains the clockwise wrap and is worn at weddings and church services, echoing the original Yoruba etiquette. In the UK and US diaspora, contemporary Yoruba fashion designers revive the Gẹlẹ̀ with organic linen and African‑print fabrics, showcasing it on runways and in diaspora cultural festivals, while Asian‑Pacific Yoruba communities incorporate silk brocades for inter‑faith ceremonies, demonstrating the garment’s adaptability across continents.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For film: research archival photos of Oyo court women (c. 1700‑1800) to replicate pleat count (typically 12‑16) and the clockwise wrap; use natural lighting to capture the sheen of indigo dye. Costume designers should source hand‑woven *aso‑òkè* or commission a tie‑dye workshop to achieve authentic patterns; avoid synthetic prints that lack the subtle texture of *adire*. Hair should be styled in a low bun or braids to allow the Gẹlẹ̀ to sit flush on the crown. Sound designers can layer a low‑drone *bàtá* rhythm with a whispered *ìgbà* chant during dressing scenes to convey the ritual aspect. Visual artists: emphasize the contrast between the smooth fabric surface and the intricate pleats; use close‑up shots of the knot hidden at the occiput to highlight the craftsmanship. Music producers: incorporate traditional *gangan* (talking drum) motifs that reference the proverb about the hand that ties, reinforcing the cultural weight of the headwrap in the score."
+    "media_production_notes": "For film: research archival photos of Oyo court women (c. 1700‑1800) to replicate pleat count (typically 12‑16) and the clockwise wrap; use natural lighting to capture the sheen of indigo dye. Costume designers should source hand‑woven *aso‑òkè* or commission a tie‑dye workshop to achieve authentic patterns; avoid synthetic prints that lack the subtle texture of *adire*. Hair should be styled in a low bun or braids to allow the Gẹlẹ̀ to sit flush on the crown. Sound designers can layer a low‑drone *bàtá* rhythm with a whispered *ìgbà* chant during dressing scenes to convey the ritual aspect. Visual artists: emphasize the contrast between the smooth fabric surface and the intricate pleats; use close‑up shots of the knot hidden at the occiput to highlight the craftsmanship. Music producers: incorporate traditional *gangan* (talking drum) motifs that reference the proverb about the hand that ties, reinforcing the cultural weight of the headwrap in the score.",
+    "is_parent": true,
+    "sub_variants": [
+      "Gèlè Òkè",
+      "Gẹlẹ̀ Ògódó",
+      "Gẹlẹ̀ Ìjàpá",
+      "Gẹlẹ̀ Ìpekú"
+    ]
   },
   {
     "id": "Fìlà Abetí Ajá",
@@ -5363,9 +5373,13 @@
     "culture": "Yorùbá",
     "category": "Ancestral Masquerades & Funerary Rites",
     "aliases": [
+      "awon iya wa",
+      "elder women mask",
       "gelede",
+      "geledé",
       "geledẹ́",
       "masquerade tradition",
+      "motherhood masquerade",
       "sacred masquerade tradition"
     ],
     "description": "A sacred masquerade tradition honoring spiritual motherhood, female elders, and community social harmony.",
@@ -5378,7 +5392,13 @@
     ],
     "diaspora_connections": "In Cuba's Lucumí tradition, the *Gelede* masquerade appears as *La Madre de los Espíritus*, performed during *Santería* rites honoring *Yemayá* and *Oba*. Brazil's Candomblé of the Nagô nation retains the *Gelede* dance in the *Iemanjá* festivals of Salvador, where the mask is rendered in papier‑mâché and adorned with seashells. In Trinidad, the *Orisha* societies stage a *Gelede* procession during *Emancipation Day*, linking the rite to the memory of enslaved women’s resistance. Haitian Vodou’s *Nago* houses invoke a similar veiled mother figure called *Maman Nago*, whose drumming patterns echo the *gangan* (talking drum) of the original Yoruba ceremony. Among the Gullah Geechee of the U.S. Southeast, oral histories recount a “Veiled Mother” dance performed at communal harvest celebrations, preserving the core choreography of hip‑shaking and hand‑clapping. In the United Kingdom and United States diaspora, cultural centres such as the Yoruba Cultural Society of London and the African Heritage Museum in New York host annual *Geledẹ́* workshops, teaching costume construction and the associated *oríkì* chants to second‑generation Yoruba‑Americans and interested allies. Across Asia‑Pacific, Nigerian diaspora communities in Australia and Singapore have incorporated Geledẹ́ into multicultural festivals, collaborating with local Indigenous artists to explore shared themes of matriarchal guardianship.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For film directors: shoot the mask‑making sequence in natural daylight within a traditional *ilé‑ìgbà* workshop; capture close‑ups of the *iroko* carving, the lacquer‑mixing ritual, and the rhythmic beating of the *gangan* drum. Use authentic Yoruba language for chants, subtitled in English, and avoid generic “African” drum loops. Visual artists should reference the indigo‑ochre palette and incorporate the distinctive elongated forehead and stylised cow‑hide fringe of the Geledẹ́ mask. Costume designers must source hand‑woven *aso‑òkè* or replicate its weave pattern digitally; avoid plastic substitutes for the cow‑hide, opting for ethically sourced leather or high‑quality faux alternatives. Music producers: layer traditional *bata* and *gangan* rhythms with field recordings of river water pouring over the mask during purification; incorporate call‑and‑response vocal lines from the *ìgbà* verses. Ensure cultural consultants—senior Yoruba elders or certified *Gelede* custodians—review all visual and auditory elements for authenticity before release."
+    "media_production_notes": "For film directors: shoot the mask‑making sequence in natural daylight within a traditional *ilé‑ìgbà* workshop; capture close‑ups of the *iroko* carving, the lacquer‑mixing ritual, and the rhythmic beating of the *gangan* drum. Use authentic Yoruba language for chants, subtitled in English, and avoid generic “African” drum loops. Visual artists should reference the indigo‑ochre palette and incorporate the distinctive elongated forehead and stylised cow‑hide fringe of the Geledẹ́ mask. Costume designers must source hand‑woven *aso‑òkè* or replicate its weave pattern digitally; avoid plastic substitutes for the cow‑hide, opting for ethically sourced leather or high‑quality faux alternatives. Music producers: layer traditional *bata* and *gangan* rhythms with field recordings of river water pouring over the mask during purification; incorporate call‑and‑response vocal lines from the *ìgbà* verses. Ensure cultural consultants—senior Yoruba elders or certified *Gelede* custodians—review all visual and auditory elements for authenticity before release.",
+    "is_parent": true,
+    "sub_variants": [
+      "Gelede-Mask",
+      "Èfé",
+      "Àwọn Ìyá Wa Rites"
+    ]
   },
   {
     "id": "Ẹ̀gbẹ́",
@@ -6762,13 +6782,16 @@
   },
   {
     "id": "Adire",
-    "title": "Adire",
+    "title": "Adìrẹ",
     "culture": "Yorùbá",
     "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "adire",
+      "adìrẹ",
+      "batik",
       "indigo resist cloth",
       "indigo resist-dyed cotton cloth",
+      "indigo textile",
       "tie dye",
       "yoruba indigo resist-dyed cotton cloth"
     ],
@@ -6782,7 +6805,17 @@
     ],
     "diaspora_connections": "Enslaved Yoruba artisans carried adirè techniques to the Caribbean, where the indigo‑resist aesthetic merged with local cotton traditions, giving rise to the Cuban guayabera fabric and the Santería ritual cloths dyed in blue and white. In Brazil, the patterns survived as paçoca and the blue‑white batik of the Candomblé terreiro, while in Trinidad and Tobago the Nago societies still use indigo‑dyed wrappers for ceremonial dances. Haitian Vodou practitioners reference the blue cloth of Ọ̀ṣun in altar décor. In the Sierra Leone Krio community, the term ‘adire’ evolved into a decorative motif on wedding blankets. Modern diaspora hubs—London’s Brixton, New York’s Harlem, Toronto’s Little Portugal, and Sydney’s Cabramatta—host workshops where second‑generation Yoruba artists revive the starch‑paste method, often fusing it with contemporary graphic design, thus keeping the visual language alive across continents.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For visual authenticity, film crews should depict women using wooden oníkò cones, the rhythmic tapping of the paste onto the cloth, and the large earthen indigo vats with a smoky, reducing surface. Lighting should capture the iridescent shift from deep navy to turquoise as the cloth dries. Costume designers must source hand‑woven cotton and avoid synthetic indigo substitutes; natural indigo yields the characteristic uneven bleed. Sound design can incorporate the low hum of the fermentation pit and the chant of the Òrìṣà Ọ̀ṣun. When portraying diaspora settings, integrate hybrid motifs—e.g., Cuban guayabera lapels or Brazilian batik borders—while maintaining the core blue‑on‑white palette. Consult Yoruba cultural advisors to ensure that ceremonial uses (e.g., wedding, naming, or funerary rites) are portrayed respectfully, avoiding the reduction of adirè to mere costume."
+    "media_production_notes": "For visual authenticity, film crews should depict women using wooden oníkò cones, the rhythmic tapping of the paste onto the cloth, and the large earthen indigo vats with a smoky, reducing surface. Lighting should capture the iridescent shift from deep navy to turquoise as the cloth dries. Costume designers must source hand‑woven cotton and avoid synthetic indigo substitutes; natural indigo yields the characteristic uneven bleed. Sound design can incorporate the low hum of the fermentation pit and the chant of the Òrìṣà Ọ̀ṣun. When portraying diaspora settings, integrate hybrid motifs—e.g., Cuban guayabera lapels or Brazilian batik borders—while maintaining the core blue‑on‑white palette. Consult Yoruba cultural advisors to ensure that ceremonial uses (e.g., wedding, naming, or funerary rites) are portrayed respectfully, avoiding the reduction of adirè to mere costume.",
+    "is_parent": true,
+    "sub_variants": [
+      "Adire Eleko",
+      "Adire Alabere",
+      "Adire Onikan",
+      "Adire-Iba",
+      "Adire-Oloba",
+      "Adire Ẹlẹ́kọ",
+      "Adire Ẹlẹ́ṣọ"
+    ]
   },
   {
     "id": "Adire Ẹlẹ́ṣọ",
@@ -7205,9 +7238,14 @@
     "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "bata",
+      "bata drum",
       "bàtá",
+      "conical drums",
+      "double headed drum",
       "footwear",
+      "sacred drums",
       "sandals",
+      "sango drum",
       "shoes"
     ],
     "description": "A sacred double-headed drum family (Iya Ilu, Omele, Kudi) dedicated to Ṣàngó, producing sharp, complex rhythms.",
@@ -7220,7 +7258,17 @@
     ],
     "diaspora_connections": "In Cuba, the Lucumí tradition preserves the BÀTÁ ensemble (BATA, IYA, OMELE) within Santería, where the drums are played in *toques* that call ṢÀNGÓ. In Brazil, the Nagô branch of Candomblé incorporates BÀTÁ drums (known as *atabaque* in a related form) to invoke *Xangô*. Trinidad’s Orisha communities maintain BÀTÁ rituals during *Shango* festivals, while Haitian Vodou’s Nago rites feature a single‑headed version called *bata* used in *Rada* ceremonies. Across the United States, Canada, the United Kingdom and France, Yoruba cultural centers teach BÀTÁ drumming to second‑generation diaspora youth, blending traditional rhythms with contemporary Afro‑jazz and hip‑hop. These global lineages illustrate how BÀTÁ adapts to new religious syncretisms, yet retains its core role as the thunderous conduit of ṢÀNGÓ’s authority.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For authentic visual storytelling, position the BÀTÁ drums on low wooden stands, spaced in a semi‑circular formation, with the IYA ILU (largest) centered. Actors should sit on woven mats, cross‑legged, and use the traditional *ìkòkò* (hand‑held beater) and *ìlò* (stick) techniques—alternating open tones, slaps, and muted bass. Costumes must include *aso‑òkè* (embroidered robes) and *agbada* for priests, with red, white and black color symbolism for ṢÀNGÓ. Capture sound with close‑mic techniques on each drumhead to preserve the intricate polyrhythms; avoid excessive reverb that masks the sharp attack. Lighting should highlight the polished wood grain and the sheen of the animal skin, using warm amber tones to evoke the fire of thunder. When depicting diaspora scenes, integrate local instruments (e.g., congas, djembe) alongside BÀTÁ to illustrate cultural fusion, but keep the core rhythmic patterns (e.g., *gó* and *yá* cycles) intact for credibility."
+    "media_production_notes": "For authentic visual storytelling, position the BÀTÁ drums on low wooden stands, spaced in a semi‑circular formation, with the IYA ILU (largest) centered. Actors should sit on woven mats, cross‑legged, and use the traditional *ìkòkò* (hand‑held beater) and *ìlò* (stick) techniques—alternating open tones, slaps, and muted bass. Costumes must include *aso‑òkè* (embroidered robes) and *agbada* for priests, with red, white and black color symbolism for ṢÀNGÓ. Capture sound with close‑mic techniques on each drumhead to preserve the intricate polyrhythms; avoid excessive reverb that masks the sharp attack. Lighting should highlight the polished wood grain and the sheen of the animal skin, using warm amber tones to evoke the fire of thunder. When depicting diaspora scenes, integrate local instruments (e.g., congas, djembe) alongside BÀTÁ to illustrate cultural fusion, but keep the core rhythmic patterns (e.g., *gó* and *yá* cycles) intact for credibility.",
+    "is_parent": true,
+    "sub_variants": [
+      "Ìyá Ìlù Bàtá",
+      "Omele Ako Bàtá",
+      "Omele Abo Bàtá",
+      "Kùdí",
+      "Bàtá Kókó",
+      "Bàtá Lápá",
+      "Egbe-Onibata"
+    ]
   },
   {
     "id": "Ìyá Ìlù",
@@ -9953,7 +10001,13 @@
     "culture": "Yorùbá",
     "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
+      "chief",
+      "chiefs",
+      "chieftaincy",
       "ijoye",
+      "kingmakers",
+      "palace council",
+      "traditional council",
       "ìjòyè"
     ],
     "description": "Formally installed Chiefs sworn to serve their compound, town, and Monarch in administrative roles.",
@@ -9968,7 +10022,18 @@
     ],
     "diaspora_connections": "The institutional memory of the Ìjòyè survived the Trans-Atlantic Slave Trade, deeply influencing the socio-religious structures of the Global African Diaspora. In the Lucumí and Santería traditions of Cuba, the Candomblé houses of Brazil, and the Orisha faiths of Trinidad and Tobago, the hierarchical structure of titled Elders—such as the Ìyálórìṣà, Bábálórìṣà, and various community Chiefs—mirrors the indigenous Yorùbá system. These diasporic Ìjòyè serve as the primary custodians of sacred knowledge, ensuring the preservation of Oríkì (praise poetry), ritual protocols, and communal solidarity across the Americas.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visual productions should emphasize the majestic textures and vibrant colors of the Aṣọ-Òkè, the luminous gleam of the Ìlẹ̀kẹ̀ coral beads, and the sweeping, authoritative motions of the Ìrùkẹ̀rẹ̀. Cinematography must capture the solemnity of the Akòkò leaf crowning ceremony, utilizing warm, golden lighting to evoke Ancestral presence. Audio design should be anchored by the complex, polyrhythmic cadences of the Gàngan (Talking Drum) reciting the specific Oríkì (Praise Poetry) of the Chief's lineage, layered with the reverent, communal chants of the populace acknowledging their new Ìjòyè."
+    "media_production_notes": "Visual productions should emphasize the majestic textures and vibrant colors of the Aṣọ-Òkè, the luminous gleam of the Ìlẹ̀kẹ̀ coral beads, and the sweeping, authoritative motions of the Ìrùkẹ̀rẹ̀. Cinematography must capture the solemnity of the Akòkò leaf crowning ceremony, utilizing warm, golden lighting to evoke Ancestral presence. Audio design should be anchored by the complex, polyrhythmic cadences of the Gàngan (Talking Drum) reciting the specific Oríkì (Praise Poetry) of the Chief's lineage, layered with the reverent, communal chants of the populace acknowledging their new Ìjòyè.",
+    "is_parent": true,
+    "sub_variants": [
+      "Ọ̀yọ́ Mèsì",
+      "Iwarefa",
+      "Baṣọ̀run (Prime Minister / Supreme Commander of Oyo)",
+      "Ààrẹ-Àgò",
+      "Oloyye",
+      "Àkóso-Ìlú",
+      "Otun Ọba",
+      "Osi Ọba"
+    ]
   },
   {
     "id": "Baálẹ̀",
@@ -14585,8 +14650,12 @@
     "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "agbo",
+      "botanical medicine",
+      "decoction",
       "herbal decoction",
+      "herbal infusion",
       "herbal liquid extract",
+      "herbal medicine",
       "herbal tea",
       "àgbo"
     ],
@@ -14602,7 +14671,17 @@
     ],
     "diaspora_connections": "Across the African Diaspora, the philosophy and materiality of Àgbo survived through deep cosmological retention. In Afro-Brazilian Candomblé (particularly the Ketu nation), it manifests as 'Amaci' and 'Banhos de Folhas' (sacred herbal infusions) curated by the Babalọ̀sanyìn for ritual head cleansings and bodily recalibration. In Cuban Lucumí (Santería), the preparation takes the form of 'Omiero', an indispensable sacred liquid synthesized from wild-harvested herbs consecrated to Osain. In Jamaican Folk Medicine and Haitian Vodou, parallel decoctions known as 'Bush Teas' and 'Bwason Fèy' preserve the same West African ethos of balancing interior temperatures, purging toxic humors, and invoking the spiritual benevolence of the plant kingdom.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematic and archival presentations should emphasize raw sensory authenticity. Visuals should foreground high-definition macro shots of simmering earthenware vessels (Ìkòkò Àgbo), highlighting the bubbling amber and deep emerald fluids over glowing hardwood embers. Set designs must incorporate textured bundles of dried barks, woven raffia mats, and traditional mortar and pestle sets (Odó àti Omodó). Audio design should balance the low, resonant boiling sound of the infusion with the measured recitation of Ọ̀sanyìn praises and the ambient polyphony of a traditional Yorùbá botanical market."
+    "media_production_notes": "Cinematic and archival presentations should emphasize raw sensory authenticity. Visuals should foreground high-definition macro shots of simmering earthenware vessels (Ìkòkò Àgbo), highlighting the bubbling amber and deep emerald fluids over glowing hardwood embers. Set designs must incorporate textured bundles of dried barks, woven raffia mats, and traditional mortar and pestle sets (Odó àti Omodó). Audio design should balance the low, resonant boiling sound of the infusion with the measured recitation of Ọ̀sanyìn praises and the ambient polyphony of a traditional Yorùbá botanical market.",
+    "is_parent": true,
+    "sub_variants": [
+      "Àgbo Jedijedi",
+      "Àgbo Iba",
+      "Àgbọbo",
+      "Àgunmu",
+      "Àṣá-Ewe",
+      "Omi-Ewe",
+      "Ọṣẹ-Àgbọ"
+    ]
   },
   {
     "id": "Àgbo Jedijedi",
@@ -32240,5 +32319,253 @@
     ],
     "description": "Òfún Ọ̀ṣẹ́ is the #256 chapter of the 256 Odù Ifá, formed by combining Òfún on the right and Ọ̀ṣẹ́ on the left of the Ọpọ́n Ifá.",
     "etymology_and_philosophy": "Composite oral chapter addressing specific life situations through the intertwined lessons of Òfún and Ọ̀ṣẹ́."
+  },
+  {
+    "id": "agba_parent_okele",
+    "title": "Òkèlè",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "okele",
+      "swallow",
+      "traditional swallows",
+      "morsel",
+      "swallow foods",
+      "morsel food"
+    ],
+    "description": "The quintessential category of dense, elastic starch swallows and cooked dough morsels (Òkèlè) rolled into smooth balls by hand and paired with rich traditional soups across Yorùbá gastronomy.",
+    "sub_variants": [
+      "Amàlà",
+      "Àmalà Isu",
+      "Àmalà Láfún",
+      "Ìyán",
+      "Ẹ̀bà",
+      "Láfún",
+      "Ẹ̀kọ"
+    ],
+    "historical_timeline": "Pre-colonial antiquity dating back to classical West African agrarian domestication of yams (Dioscorea) and 16th-century introduction of cassava flour processing.",
+    "etymology_and_philosophy": "Derived from 'Òkèlè' (a mouthful / morsel of food). Governed by customary eating etiquette (Abo-Ounjẹ) where elders are served first with hot, steaming swallows.",
+    "material_and_craftsmanship": "Processed by boiling, stirring, or pounding in heavy wooden mortars (Odó) using hardwood pestles (Ọmọ-Odó) or wooden paddles (Lọ́ọ́ṣì) to achieve smooth, lump-free texture.",
+    "social_and_ritual_context": "The central anchor of daily meals, milestone communal banquets, funeral wakes, and ancestral gatherings across all Yorùbá towns.",
+    "proverbs_and_oral_traditions": [
+      "Òkèlè àkọ́kọ́ kì í pani lẹ́yìn.",
+      "Bí a bá ń jẹ Òkèlè, a kì í bu ẹnu kọ́."
+    ],
+    "diaspora_connections": "Directly preserved in Cuban Lukumí, Brazilian Candomblé, and Caribbean Afro-descendant foodways as Fufú and starchy ceremonial swallows.",
+    "geographical_origin": "Pan-Yorùbá culinary domain with regional epicenter in Ọ̀yọ́, Ìbàdàn, Èkìtì, and Ìjẹ̀bú.",
+    "media_production_notes": "Cinematography should emphasize macro shots of steam rising from freshly turned Èlùbọ́ and smooth elasticity of hot Ìyán against carved wooden platters."
+  },
+  {
+    "id": "agba_parent_isu",
+    "title": "Iṣu",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "isu",
+      "yam",
+      "yams",
+      "indigenous yams",
+      "white yam",
+      "water yam",
+      "yam tubers"
+    ],
+    "description": "The sacred king of agrarian crops, staple tubers, and botanical deities (Iṣu) whose annual harvest inaugurates national Thanksgiving festivals (Ọdún-Iṣu) across Yorùbá kingdoms.",
+    "sub_variants": [
+      "Èwùrà",
+      "Ògùdù",
+      "Agùndo",
+      "Isu-Lílọ̀",
+      "Ojojo",
+      "Bọ̀lị̀",
+      "Dodo"
+    ],
+    "historical_timeline": "Indigenous West African domestication spanning over four millennia, celebrated as the supreme agricultural wealth of ancient Ifẹ̀ and Èkìtì kingdoms.",
+    "etymology_and_philosophy": "Revered as a life-giving divine gift; consecrated to Òrìṣà Oko (the deity of agriculture). Taboo to eat new yams before ritual thanksgiving rites are completed.",
+    "material_and_craftsmanship": "Harvested using specialized iron digging spades (Ìnwálẹ̀), stored in shaded timber yam barns (Àká), and processed through boiling, roasting, and frying.",
+    "social_and_ritual_context": "Central to traditional naming rites, bride-price presentations, and royal state harvest pageantry.",
+    "proverbs_and_oral_traditions": [
+      "Iṣu ẹni a kì í fọwọ́ bò ó jẹ.",
+      "Bí iṣu bá ta nínú igbó, alágba ló máa mọ̀."
+    ],
+    "diaspora_connections": "Known throughout the African diaspora in Cuba, Trinidad, Jamaica, and Brazil (Inhame) as the cornerstone sacred food for Òrìṣà offerings.",
+    "geographical_origin": "Highland agricultural heartlands of Èkìtì, Òndó, Ọ̀ṣun, and Kwara.",
+    "media_production_notes": "Capture the golden textured flesh of boiled Ògùdù and the sunlit rows of harvested tubers within traditional bamboo yam barns."
+  },
+  {
+    "id": "agba_parent_ewa",
+    "title": "Ẹ̀wà",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "ewa",
+      "beans",
+      "legumes",
+      "black-eyed peas",
+      "cowpeas",
+      "bean dishes"
+    ],
+    "description": "Indigenous cowpeas, black-eyed peas, and legume cultivars (Ẹ̀wà) revered as the primary protein cornerstone of traditional nutrition and ritual offerings for the divine twin Orisha (Ibejì).",
+    "sub_variants": [
+      "Ẹ̀wà Àgányìn",
+      "Ẹ̀wà-Àgbànyìn",
+      "Àkàrà",
+      "Mọ́ín-mọ́ín",
+      "Ẹ̀gúsí",
+      "Ọ̀pọ̀-Ẹ̀wà"
+    ],
+    "historical_timeline": "Classical cultivation across sub-Saharan West Africa, enriched through transatlantic maritime trade and returnee Togolese/Beninese Aganyin flavor techniques.",
+    "etymology_and_philosophy": "Symbolizes abundance, fraternal unity, and fertility. Specially consecrated in twins worship (Ẹbọ Ibejì).",
+    "material_and_craftsmanship": "De-hulled by hand wet-rubbing, pureed on flat granite grinding stones (Ọlọ́), or slow-cooked in earthenware pots (Ìṣáṣùn) over charcoal hearths.",
+    "social_and_ritual_context": "Essential food prepared for funeral milestones, community celebrations, and daily street-side nourishment.",
+    "proverbs_and_oral_traditions": [
+      "Ẹ̀wà dùn, àmọ́ ó gba iná púpọ̀.",
+      "Àkàrà kì í dun bí kò bá ní epo pupa."
+    ],
+    "diaspora_connections": "Directly birthed the iconic Brazilian Acarajé (from Àkàrà) and Cuban Frijoles Carita across the Afro-Atlantic corridor.",
+    "geographical_origin": "Pan-Yorùbá with epicenters in Lagos, Abeokuta, Ìbàdàn, and Ọ̀yọ́.",
+    "media_production_notes": "Document street vendors frying golden bean cakes (Àkàrà) in red palm oil and steaming Mọ́ín-mọ́ín in aromatic Ewe Èran broad leaves."
+  },
+  {
+    "id": "agba_parent_iresi",
+    "title": "Ìrẹsì",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "iresi",
+      "rice",
+      "indigenous rice",
+      "ofada",
+      "ofada rice",
+      "african rice",
+      "cereal grains"
+    ],
+    "description": "Indigenous unpolished rice (Oryza glaberrima) and heirloom grain cultivars (Ìrẹsì), celebrated for aromatic rustic terroir and festive culinary pageantry.",
+    "sub_variants": [
+      "Ofada",
+      "Ìrẹsì Ẹlẹ́pọ",
+      "Ofada Rice"
+    ],
+    "historical_timeline": "Grown along fertile river basins of Ogun, Lagos, and Osun for centuries, centered around the historic farming hub of Ofada in Ogun State.",
+    "etymology_and_philosophy": "Associated with communal festivity, marital weddings, and joyous civic assemblies where rice denotes plenty and prestige.",
+    "material_and_craftsmanship": "Short-grain brown varieties parboiled, naturally sun-dried on raffia mats, milled by stone, and served wrapped in fresh broad plantain or Ewe Èran leaves.",
+    "social_and_ritual_context": "Quintessential ceremonial feast staple served with spicy bleached palm oil locust-bean pepper sauces (Ayamase).",
+    "proverbs_and_oral_traditions": [
+      "Ìrẹsì tí kò ní ata kì í ṣe oúnjẹ ọba.",
+      "Ẹni tó jẹ Ìrẹsì Ofada mọ adùn ilẹ̀ wa."
+    ],
+    "diaspora_connections": "Shared lineage with Carolina Gold rice and Afro-Caribbean rice-and-beans traditions carried across Middle Passage routes.",
+    "geographical_origin": "Ogun State (Ofada, Abeokuta), Osogbo, and Lagos wetlands.",
+    "media_production_notes": "Focus on the steam curling from leaf-wrapped mounds of Ofada rice paired with dark green Ayamase pepper sauce."
+  },
+  {
+    "id": "agba_parent_obe",
+    "title": "Ọbẹ̀",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "obe",
+      "soup",
+      "soups",
+      "stews",
+      "traditional soups",
+      "indigenous stews",
+      "sauces"
+    ],
+    "description": "The complex culinary science of traditional soups, viscous sauces, and botanical stews (Ọbẹ̀) combining fermented locust beans (Ìrù), palm oil, indigenous leafy greens, and seasoned stocks.",
+    "sub_variants": [
+      "Gbẹ̀gị̀rị́",
+      "Ewedu",
+      "Ẹ̀gúsí",
+      "Ẹ̀fọ́ Rírò",
+      "Obe Ata",
+      "Obẹ-Marugbo",
+      "Obẹ-Ilá",
+      "Ẹ̀fọ́ Yànrin",
+      "Ilá-Aláṣẹ̀",
+      "Obẹ-Aro"
+    ],
+    "historical_timeline": "Centuries-old gastronomy preserving indigenous botanical pharmacopeia and complex fermentation arts (locust bean umami).",
+    "etymology_and_philosophy": "Embodied in the cultural aphorism 'Ọbẹ̀ tí kò l’óró, a kì í f’owó rà á' (Soup without substance is not bought with wealth). Soups must possess balance and aroma.",
+    "material_and_craftsmanship": "Simmered slowly in unglazed earthen clay pots (Ìṣáṣùn) allowing thermal retention and infusing mineral notes into broths.",
+    "social_and_ritual_context": "The mandatory accompaniment to all Òkèlè swallows, wedding feasts, and ancestral libations.",
+    "proverbs_and_oral_traditions": [
+      "Ọbẹ̀ tó dùn, owó ló pa á.",
+      "Ewédú kò ba ọbẹ̀ jẹ́, èlùbọ́ ló jẹ́."
+    ],
+    "diaspora_connections": "Direct ancestor of Brazilian Caruru (from Ẹ̀fọ́/Okra) and Cuban and Haitian Gumbo and Calalou stews.",
+    "geographical_origin": "Pan-Yorùbá with regional specialties like Obẹ-Marugbo (Ondo) and Gbẹ̀gị̀rị́ (Oyo).",
+    "media_production_notes": "Capture the golden bubbling of Ẹ̀gúsí melon seed cakes and deep velvet green ribbons of whisked Ewédú."
+  },
+  {
+    "id": "agba_parent_epa",
+    "title": "Epa",
+    "culture": "Yorùbá",
+    "category": "Ancestral Masquerades & Funerary Rites",
+    "is_parent": true,
+    "aliases": [
+      "epa",
+      "epa masquerade",
+      "helmet mask",
+      "epa mask",
+      "elefon"
+    ],
+    "description": "The monumental helmet mask masquerade tradition celebrated across northeastern Yorùbá regions, featuring single-block hardwood superstructures up to two meters tall.",
+    "sub_variants": [
+      "Epa-Mask",
+      "Epa Door",
+      "Oloko Mask"
+    ],
+    "historical_timeline": "Pre-colonial martial and fertility festival tradition originating in Èkìtì, Ìgbómìnà, and Kàbbà territories.",
+    "etymology_and_philosophy": "Commemorates legendary warriors, mothers of twins, and medicine herbalists, symbolizing courage, physical endurance, and communal renewal.",
+    "material_and_craftsmanship": "Carved from light yet tough Alstonia (Ahùn) wood, comprising a grotesque helmet base (Kókò) surmounted by complex figural tiers of equestrian generals and maidens.",
+    "social_and_ritual_context": "Young athletic initiates leap atop earthen mounds while balancing these monumental 50kg masks to prove strength and divine blessing.",
+    "proverbs_and_oral_traditions": [
+      "Ẹni gbé Epa kò gbọdọ̀ kọsẹ̀.",
+      "Epa fò, ilẹ̀ dákẹ́."
+    ],
+    "diaspora_connections": "Celebrated in international museum collections (Horniman, British Museum, MET) as the pinnacle of West African sculptural monumentalism.",
+    "geographical_origin": "Èkìtì State, Ìgbómìnà (Kwara), and Kàbbà (Kogi).",
+    "media_production_notes": "Dynamic wide-angle capture of the athletic leaping sequence against rugged granite hills during dry season festivals."
+  },
+  {
+    "id": "agba_parent_igi_ibile",
+    "title": "Igi Ìbílẹ̀",
+    "culture": "Yorùbá",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
+    "is_parent": true,
+    "aliases": [
+      "igi ibile",
+      "sacred trees",
+      "indigenous trees",
+      "cosmological trees",
+      "forest trees",
+      "sacred timber"
+    ],
+    "description": "Monumental, sacred, and cosmological forest tree species (Igi Ìbílẹ̀) revered as spiritual dwellings, medicinal sources, and environmental sanctuaries in Yorùbá cosmology.",
+    "sub_variants": [
+      "Irókò",
+      "Igi Àràbà",
+      "Igi Òṣè",
+      "Akọko",
+      "Ọ̀pẹ",
+      "Ọ̀pẹ-Àgàn",
+      "Igi Ọ̀pẹ-Àgàn"
+    ],
+    "historical_timeline": "Millennia-old forest reverence codifying ancestral conservation laws prohibiting the reckless felling of mother trees.",
+    "etymology_and_philosophy": "Venerated as living anchors bridging the underworld, physical earth, and heavens (Ọ̀run); honored with ritual offerings before woodcarvers harvest timber.",
+    "material_and_craftsmanship": "Yields dense, rot-resistant hardwood for palace pillars, drum shells, and divine statuary; barks and sap used in medicinal formulas.",
+    "social_and_ritual_context": "Centerpiece of sacred groves (Igbó Òrìṣà) and market squares (e.g., Giant Ọ̀dan shade trees).",
+    "proverbs_and_oral_traditions": [
+      "Igi Àràbà dá, ẹyẹ oko ròde.",
+      "A kì í bẹ̀rù igi kẹ́rẹ́kẹ̀rẹ̀ bí a kò bá bọ̀wọ̀ fún Irókò."
+    ],
+    "diaspora_connections": "Revered in Cuban and Brazilian Afro-diaspora shrines as the sacred Gameleira and Ceiba trees.",
+    "geographical_origin": "Tropical rainforest belts of Yorùbáland.",
+    "media_production_notes": "Towering vertical crane shots showcasing the buttress roots of the giant Silk Cotton tree (Àràbà)."
   }
 ]

@@ -3,8 +3,8 @@ import { Search, Image, ShieldCheck, Cpu, MessageSquare, Languages, ExternalLink
 
 export default function Navbar({ activeTab, setActiveTab }) {
   const tabs = [
-    { id: 'search', label: 'Imperial Search', icon: Search },
-    { id: 'chat', label: 'Scholar Chat', icon: MessageSquare, badge: 'Gemini RAG' },
+    { id: 'search', label: 'Sovereign Search', icon: Search },
+    { id: 'chat', label: 'Ọgbọ́n (Intelligence)', icon: MessageSquare, badge: 'Synthesis Core' },
     { id: 'translate', label: 'Diacritize & Translate', icon: Languages },
     { id: 'gallery', label: 'Museum Regalia', icon: Image },
     { id: 'admin', label: 'HITL Review', icon: ShieldCheck, badge: 'Protected' },

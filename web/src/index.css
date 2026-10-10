@@ -240,3 +240,243 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+
+/* ==============================================================================
+   🦷 THE TOOTH & ROOT DESIGN SYSTEM (Àgbà Engine v6.1.0)
+   Organic Wisdom Tooth Contours, Vascular Root System, and Cellular Bento Grid
+   ============================================================================== */
+
+/* The Tooth: Central Organic Search Crown */
+.wisdom-tooth-container {
+  background: linear-gradient(180deg, rgba(20, 27, 45, 0.95) 0%, rgba(12, 17, 28, 0.98) 100%);
+  border: 1.5px solid rgba(217, 119, 6, 0.45);
+  border-radius: 40px 40px 24px 24px;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.65), 0 0 28px rgba(217, 119, 6, 0.25), inset 0 1px 2px rgba(243, 229, 171, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: visible;
+}
+
+.wisdom-tooth-container:focus-within {
+  border-color: #d97706;
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.75), 0 0 38px rgba(217, 119, 6, 0.45), inset 0 1px 3px rgba(243, 229, 171, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Enamel Crown Top Arch */
+.tooth-crown-ridge {
+  height: 3px;
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(90deg, transparent 0%, rgba(217, 119, 6, 0.8) 50%, transparent 100%);
+  border-radius: 2px;
+  filter: blur(0.5px);
+}
+
+/* Root Network Vascular SVG Canvas */
+.root-network-container {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 12px;
+}
+
+.root-vessel-line {
+  stroke: url(#rootAmberGradient);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  fill: none;
+  filter: drop-shadow(0 0 4px rgba(217, 119, 6, 0.4));
+  animation: pulseVessel 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulseVessel {
+  0% { opacity: 0.6; stroke-width: 1.6; }
+  100% { opacity: 1; stroke-width: 2.2; filter: drop-shadow(0 0 7px rgba(217, 119, 6, 0.7)); }
+}
+
+/* Cultural Root Pods */
+.root-pod {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  border-radius: 14px;
+  padding: 10px 14px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.root-pod:hover {
+  transform: translateY(-3px);
+  border-color: #d97706;
+  background: rgba(22, 32, 54, 0.95);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 16px rgba(217, 119, 6, 0.35);
+}
+
+.root-pod-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.root-pod-title {
+  font-family: var(--font-royal);
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.root-pod-desc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+/* Cellular Bento Grid Layout */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.bento-cell {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.bento-cell:hover {
+  border-color: rgba(217, 119, 6, 0.3);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
+}
+
+/* Bento Cell Spans */
+.bento-cell-sovereign {
+  grid-column: span 7;
+  border-left: 4px solid #d97706;
+  background: linear-gradient(145deg, rgba(20, 27, 45, 0.85) 0%, rgba(12, 17, 28, 0.9) 100%);
+}
+
+.bento-cell-acoustic {
+  grid-column: span 5;
+  background: linear-gradient(145deg, rgba(17, 24, 39, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+}
+
+.bento-cell-regalia {
+  grid-column: span 5;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.85) 0%, rgba(12, 17, 26, 0.95) 100%);
+  border: 1px solid var(--gold-border);
+}
+
+.bento-cell-wisdom {
+  grid-column: span 7;
+  background: linear-gradient(145deg, rgba(17, 24, 39, 0.8) 0%, rgba(12, 17, 28, 0.85) 100%);
+}
+
+.bento-cell-morphology {
+  grid-column: span 6;
+}
+
+.bento-cell-roots {
+  grid-column: span 6;
+}
+
+@media (max-width: 960px) {
+  .bento-cell-sovereign,
+  .bento-cell-acoustic,
+  .bento-cell-regalia,
+  .bento-cell-wisdom,
+  .bento-cell-morphology,
+  .bento-cell-roots {
+    grid-column: span 12;
+  }
+}
+
+/* Acoustic Waveform Visualizer Animation */
+.waveform-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 36px;
+  padding: 0 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.waveform-bar {
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #d97706 0%, #f3e5ab 100%);
+  animation: wavePulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes wavePulse {
+  0% { height: 6px; opacity: 0.4; }
+  50% { height: 26px; opacity: 0.9; }
+  100% { height: 12px; opacity: 0.6; }
+}
+
+.waveform-bar:nth-child(1) { animation-delay: 0.1s; }
+.waveform-bar:nth-child(2) { animation-delay: 0.3s; }
+.waveform-bar:nth-child(3) { animation-delay: 0.5s; }
+.waveform-bar:nth-child(4) { animation-delay: 0.2s; }
+.waveform-bar:nth-child(5) { animation-delay: 0.6s; }
+.waveform-bar:nth-child(6) { animation-delay: 0.4s; }
+.waveform-bar:nth-child(7) { animation-delay: 0.7s; }
+.waveform-bar:nth-child(8) { animation-delay: 0.15s; }
+.waveform-bar:nth-child(9) { animation-delay: 0.45s; }
+.waveform-bar:nth-child(10) { animation-delay: 0.25s; }
+
+/* Modal Backdrop & Dialog (Acoustic API Subscription Restriction) */
+.agba-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 6, 10, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeInModal 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.agba-modal-dialog {
+  background: linear-gradient(165deg, #0e1523 0%, #080c14 100%);
+  border: 1.5px solid rgba(217, 119, 6, 0.45);
+  border-radius: 24px;
+  max-width: 540px;
+  width: 100%;
+  padding: 32px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.8), 0 0 36px rgba(217, 119, 6, 0.3);
+  position: relative;
+  text-align: center;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}

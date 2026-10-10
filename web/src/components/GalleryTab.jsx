@@ -271,7 +271,7 @@ export default function GalleryTab() {
 
             {/* Deep Description */}
             <div style={{ background: 'rgba(212, 175, 55, 0.05)', borderLeft: '4px solid var(--gold-primary)', padding: '16px', borderRadius: '4px', marginBottom: '16px' }}>
-              <h4 style={{ color: 'var(--gold-light)', marginBottom: '6px' }}>Corpus Deep Description</h4>
+              <h4 style={{ color: 'var(--gold-light)', marginBottom: '6px' }}>Ẹ̀kọ́ Ìṣẹ̀báyé</h4>
               <p style={{ fontSize: '0.92rem', lineHeight: 1.6, color: 'var(--text-primary)' }}>
                 {activeModalItem.corpus_deep_description}
               </p>

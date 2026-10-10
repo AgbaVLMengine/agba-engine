@@ -333,13 +333,13 @@ class ÀgbàHybridRetriever:
 
     def search_lexical(self, query: str, top_k: int = 15) -> List[Dict[str, Any]]:
         """
-        Perform diacritic-aware lexical, word-boundary, and cross-lingual semantic matching
+        Perform diacritic-aware lexical, strict word-boundary, and tier-weighted matching
         across all 14 Tiers of the master cultural knowledge graph.
         """
         import re
         norm_query = normalize_y(query)
         stripped_query = strip_accents(query).strip()
-        stop_words = {"in", "at", "to", "of", "and", "the", "a", "an", "for", "on", "with", "by"}
+        stop_words = {"in", "at", "to", "of", "and", "the", "a", "an", "for", "on", "with", "by", "is", "it"}
         q_words = [w for w in re.findall(r'\b\w+\b', stripped_query) if len(w) > 1 and w not in stop_words]
         scored = []
 
@@ -348,55 +348,58 @@ class ÀgbàHybridRetriever:
             stripped_title = strip_accents(entity.get("title", ""))
             aliases = [normalize_y(a) for a in entity.get("aliases", [])]
             stripped_aliases = [strip_accents(a) for a in entity.get("aliases", [])]
+            category = entity.get("category", "")
             
             score = 0.0
 
-            # 1. Exact match on title or aliases (Highest Priority)
+            # 1. Exact match on title or aliases (Supreme Priority)
             if norm_query == title:
-                score += 25.0
+                score += 35.0
             elif stripped_query == stripped_title:
-                score += 20.0
+                score += 30.0
             elif norm_query in aliases:
-                score += 15.0
+                score += 22.0
             elif stripped_query in stripped_aliases:
+                score += 18.0
+
+            # 2. Strict Word-Boundary Phrase Match in Title or Aliases
+            elif re.search(r'\b' + re.escape(stripped_query) + r'\b', stripped_title):
                 score += 12.0
+            elif any(re.search(r'\b' + re.escape(stripped_query) + r'\b', a) for a in stripped_aliases):
+                score += 9.0
 
-            # 2. Sub-phrase match in title or aliases
-            elif stripped_query in stripped_title:
-                score += 8.0
-            elif any(stripped_query in a for a in stripped_aliases):
-                score += 6.0
+            # 3. Category match bonus (e.g. searching 'Philosophy' gives boost to Philosophy category)
+            if any(re.search(r'\b' + re.escape(w) + r'\b', strip_accents(category)) for w in q_words):
+                score += 3.0
 
-            # 3. Word-token matching across title, aliases, and 14 Knowledge Graph Tiers
+            # 4. Strict Word-token matching across title, aliases, and 14 Knowledge Graph Tiers
             matched_words = 0
             for w in q_words:
                 pat = r'\b' + re.escape(w) + r'\b'
                 # Check title
                 if re.search(pat, stripped_title):
-                    score += 4.0
+                    score += 6.0
                     matched_words += 1
                 # Check aliases
                 elif any(re.search(pat, a) for a in stripped_aliases):
-                    score += 3.0
+                    score += 4.5
                     matched_words += 1
                 else:
-                    # Check 14 metadata fields
+                    # Check metadata fields with low weight to prevent noise
                     for tier_key in [
-                        "description", "historical_timeline", "etymology_and_philosophy",
-                        "material_and_craftsmanship", "social_and_ritual_context",
-                        "proverbs_and_oral_traditions", "diaspora_connections",
-                        "category", "culture", "geographical_origin", "media_production_notes"
+                        "description", "etymology_and_philosophy", "historical_timeline",
+                        "social_and_ritual_context", "proverbs_and_oral_traditions"
                     ]:
                         val = entity.get(tier_key, "")
                         val_str = " ".join(val) if isinstance(val, list) else str(val)
                         if re.search(pat, strip_accents(val_str)):
-                            score += 1.0
+                            score += 0.5
                             matched_words += 1
                             break
 
-            # Bonus for matching all search tokens in multi-word query
+            # Bonus for matching ALL query tokens
             if q_words and matched_words == len(q_words):
-                score += 3.0
+                score += 4.0
 
             if score > 0:
                 scored.append({

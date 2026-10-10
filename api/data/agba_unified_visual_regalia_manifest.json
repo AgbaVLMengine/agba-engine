@@ -20,7 +20,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/14605",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Iroke_Ifa_Divination_Tapper.jpg"
   },
   {
     "filename": "SI_Iroke_Ifa_Divination_Tapper.jpg",
@@ -43,7 +44,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Iroke_Ifa_Divination_Tapper.jpg"
   },
   {
     "filename": "CMA_Opon_Ifa_Divination_Tray.jpg",
@@ -66,7 +68,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1993.235/1993.235_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Opon_Ifa_Divination_Tray.jpg"
   },
   {
     "filename": "CMA_Agere_Ifa_Divination_Vessel.jpg",
@@ -89,7 +92,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1994.200/1994.200_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Agere_Ifa_Divination_Vessel.jpg"
   },
   {
     "filename": "MET_Agere_Ifa_Kneeling_Woman_316595.jpg",
@@ -112,7 +116,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-033.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Kneeling_Woman_316595.jpg"
   },
   {
     "filename": "MET_Agere_Ifa_Ivory_Vessel_316597.jpg",
@@ -135,7 +140,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-039.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Ivory_Vessel_316597.jpg"
   },
   {
     "filename": "MET_Agere_Ifa_Lidded_Vessel_316594.jpg",
@@ -158,7 +164,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-030.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Lidded_Vessel_316594.jpg"
   },
   {
     "filename": "SI_Agere_Ifa_Chameleon_Vessel.jpg",
@@ -181,7 +188,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg"
   },
   {
     "filename": "AIC_Arugba_Ifa_Kneeling_Figure.jpg",
@@ -204,7 +212,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/147895",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Arugba_Ifa_Kneeling_Figure.jpg"
   },
   {
     "filename": "CMA_Apo_Ifa_Diviners_Bag.jpg",
@@ -227,7 +236,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1993.234/1993.234_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Apo_Ifa_Diviners_Bag.jpg"
   },
   {
     "filename": "CMA_Odigba_Ifa_Diviner_Necklace.jpg",
@@ -250,7 +260,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1995.23/1995.23_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Odigba_Ifa_Diviner_Necklace.jpg"
   },
   {
     "filename": "Foundational_Ade_Aare.jpeg",
@@ -273,7 +284,8 @@
     "license": "Sovereign Cultural Heritage Archive",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Ade_Aare.jpeg"
   },
   {
     "filename": "CMA_Adenla_Great_Beaded_Crown.jpg",
@@ -296,7 +308,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1995.22/1995.22_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Adenla_Great_Beaded_Crown.jpg"
   },
   {
     "filename": "AIC_Opo_Ogoga_Veranda_Post.jpg",
@@ -319,7 +332,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/102611",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Opo_Ogoga_Veranda_Post.jpg"
   },
   {
     "filename": "CMA_Orikogbofo_Beaded_Coronet.jpg",
@@ -342,7 +356,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1998.278/1998.278_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Orikogbofo_Beaded_Coronet.jpg"
   },
   {
     "filename": "AIC_Orikogbofo_Royal_Beaded_Cap.jpg",
@@ -365,7 +380,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/141029",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Orikogbofo_Royal_Beaded_Cap.jpg"
   },
   {
     "filename": "CMA_Ago_Ade_Warrior_Helmet.jpg",
@@ -388,7 +404,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1969.5/1969.5_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Ago_Ade_Warrior_Helmet.jpg"
   },
   {
     "filename": "AIC_Apoti_Oba_Altar_Stool.jpg",
@@ -411,7 +428,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/116248",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Apoti_Oba_Altar_Stool.jpg"
   },
   {
     "filename": "Foundational_Kabiyesi.jpg",
@@ -434,7 +452,8 @@
     "license": "Living Cultural Heritage",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Kabiyesi.jpg"
   },
   {
     "filename": "Foundational_Ewu_Ileke.webp",
@@ -457,7 +476,8 @@
     "license": "Living Cultural Heritage",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Ewu_Ileke.webp"
   },
   {
     "filename": "Foundational_Fila_Abeti_Aja.jpeg",
@@ -480,7 +500,8 @@
     "license": "Living Cultural Heritage",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Fila_Abeti_Aja.jpeg"
   },
   {
     "filename": "Foundational_Fila_Gobi.jpeg",
@@ -503,7 +524,8 @@
     "license": "Living Cultural Heritage",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Fila_Gobi.jpeg"
   },
   {
     "filename": "Foundational_Pa_Kaja.jpeg",
@@ -526,7 +548,8 @@
     "license": "Living Cultural Heritage",
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/Foundational_Pa_Kaja.jpeg"
   },
   {
     "filename": "MET_Aso_Oke_Textile_321378.jpg",
@@ -549,7 +572,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP350849.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Aso_Oke_Textile_321378.jpg"
   },
   {
     "filename": "CMA_Onile_Ogboni_Altar_Figure.jpg",
@@ -572,7 +596,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/2007.160/2007.160_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Onile_Ogboni_Altar_Figure.jpg"
   },
   {
     "filename": "CMA_Edan_Ogboni_Staff_Pair.jpg",
@@ -595,7 +620,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1996.403/1996.403_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg"
   },
   {
     "filename": "AIC_Edan_Ogboni_Staff_Pair.jpg",
@@ -618,7 +644,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/124119",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Edan_Ogboni_Staff_Pair.jpg"
   },
   {
     "filename": "MET_Edan_Ogboni_Female_Staff_316596.jpg",
@@ -641,7 +668,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-036.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Edan_Ogboni_Female_Staff_316596.jpg"
   },
   {
     "filename": "MET_Orufanran_Altar_Ring_310180.jpg",
@@ -664,7 +692,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-001.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Altar_Ring_310180.jpg"
   },
   {
     "filename": "MET_Orufanran_Altar_Ring_316602.jpg",
@@ -687,7 +716,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-053.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Altar_Ring_316602.jpg"
   },
   {
     "filename": "MET_Egba_Owo_Bracelet_316606.jpg",
@@ -710,7 +740,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-062.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Egba_Owo_Bracelet_316606.jpg"
   },
   {
     "filename": "AIC_Egba_Owo_Royal_Bracelets.jpg",
@@ -733,7 +764,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/109489",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Egba_Owo_Royal_Bracelets.jpg"
   },
   {
     "filename": "SI_Egba_Ogboni_Bracelet_275.jpg",
@@ -756,7 +788,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_275.jpg"
   },
   {
     "filename": "SI_Egba_Ogboni_Bracelet_27.jpg",
@@ -779,7 +812,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg"
   },
   {
     "filename": "SI_Egba_Ogboni_Bracelet_28.jpg",
@@ -802,7 +836,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_28.jpg"
   },
   {
     "filename": "MET_Udamalore_Sword_316590.jpg",
@@ -825,7 +860,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-020.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Udamalore_Sword_316590.jpg"
   },
   {
     "filename": "MET_Orufanran_Crocodile_Head_316593.jpg",
@@ -848,7 +884,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-027.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Crocodile_Head_316593.jpg"
   },
   {
     "filename": "MET_Orufanran_Leopard_Head_316631.jpg",
@@ -871,7 +908,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-088.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Leopard_Head_316631.jpg"
   },
   {
     "filename": "MET_Orufanran_Ram_Head_316591.jpg",
@@ -894,7 +932,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-022.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg"
   },
   {
     "filename": "MET_Orufanran_Humans_Monkeys_316630.jpg",
@@ -917,7 +956,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-087.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Humans_Monkeys_316630.jpg"
   },
   {
     "filename": "CMA_Ogo_Elegba_Dance_Staff.jpg",
@@ -940,7 +980,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/2018.34/2018.34_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Ogo_Elegba_Dance_Staff.jpg"
   },
   {
     "filename": "AIC_Ogo_Elegbara_Dance_Staff.jpg",
@@ -963,7 +1004,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/14604",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Ogo_Elegbara_Dance_Staff.jpg"
   },
   {
     "filename": "CMA_Sango_Shrine_Figure_Ose.jpg",
@@ -986,7 +1028,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1972.339/1972.339_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Sango_Shrine_Figure_Ose.jpg"
   },
   {
     "filename": "SI_Iya_Orisha_Ivory_Figure.jpg",
@@ -1009,7 +1052,8 @@
     "license": "Smithsonian Open Access (CC0)",
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Iya_Orisha_Ivory_Figure.jpg"
   },
   {
     "filename": "CMA_Egungun_Masquerade_Costume.jpg",
@@ -1032,7 +1076,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1976.188/1976.188_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Egungun_Masquerade_Costume.jpg"
   },
   {
     "filename": "AIC_Ago_Egungun_Headdress.jpg",
@@ -1055,7 +1100,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/141028",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Ago_Egungun_Headdress.jpg"
   },
   {
     "filename": "AIC_Ere_Egungun_Mask.jpg",
@@ -1078,7 +1124,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/147896",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Ere_Egungun_Mask.jpg"
   },
   {
     "filename": "CMA_Gelede_Sacred_Mask.jpg",
@@ -1101,7 +1148,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/1921.1531/1921.1531_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Gelede_Sacred_Mask.jpg"
   },
   {
     "filename": "AIC_Gelede_Ceremonial_Mask.jpg",
@@ -1124,7 +1172,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://www.artic.edu/artworks/141027",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/AIC_Gelede_Ceremonial_Mask.jpg"
   },
   {
     "filename": "CMA_Ere_Ibeji_Twin_Figure.jpg",
@@ -1147,7 +1196,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://openaccess-cdn.clevelandart.org/2016.9/2016.9_web.jpg",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/CMA_Ere_Ibeji_Twin_Figure.jpg"
   },
   {
     "filename": "SI_Dùndún_ACM-acmobj-200300320362-r1.jpg",
@@ -1170,7 +1220,8 @@
     "license": "CC0 (Public Domain)",
     "source_url": "https://ids.si.edu/ids/download?id=ACM-acmobj-200300320362-r1_screen",
     "is_foundational": false,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/SI_Dùndún_ACM-acmobj-200300320362-r1.jpg"
   },
   {
     "filename": "VA_Alaari_Aso_Oke_O263819.jpg",
@@ -1198,6 +1249,7 @@
     "license": "Public Domain / CC BY-NC-SA (V&A Collections Data & IIIF Open Access)",
     "source_url": "https://framemark.vam.ac.uk/collections/2022NC7425/full/800,/0/default.jpg",
     "is_foundational": true,
-    "hitl_status": "VERIFIED_CANONICAL_MATCH"
+    "hitl_status": "VERIFIED_CANONICAL_MATCH",
+    "local_asset_url": "/assets/regalia/VA_Alaari_Aso_Oke_O263819.jpg"
   }
 ]

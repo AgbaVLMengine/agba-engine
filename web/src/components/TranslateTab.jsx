@@ -1,67 +1,104 @@
 import React, { useState } from 'react';
-import { Wand2, BookOpen, Check, Copy } from 'lucide-react';
+import { Wand2, BookOpen, Check, Copy, Sparkles, Feather } from 'lucide-react';
 import masterCorpus from '../data/yoruba_master_corpus.json';
+
+// Multi-Word Phrases for Greedy Match
+const MULTI_WORD_PHRASES = [
+  ['bawo ni o se wa', 'Báwo ni o ṣe wà'],
+  ['bawo ni gbogbo nkan', 'Báwo ni gbogbo nǹkan'],
+  ['bawo ni', 'Báwo ni'],
+  ['e kaasan o', 'Ẹ káàsán o'],
+  ['e kaaro o', 'Ẹ káàárọ̀ o'],
+  ['e kaale o', 'Ẹ káalẹ́ o'],
+  ['e kaasan', 'Ẹ káàsán'],
+  ['e kaaro', 'Ẹ káàárọ̀'],
+  ['e kaale', 'Ẹ káalẹ́'],
+  ['e ku aaro', 'Ẹ kú àárọ̀'],
+  ['e se pupo', 'Ẹ ṣe púpọ̀'],
+  ['o se pupo', 'Ó ṣe púpọ̀'],
+  ['e se', 'Ẹ ṣe'],
+  ['o se', 'Ó ṣe'],
+  ['o daabo', 'Ó dàbọ̀'],
+  ['alafia ni', 'Àlàáfíà ni'],
+  ['ogun lakaaye', 'Ògún Lákàyé'],
+  ['odu ifa', 'Odù Ifá'],
+  ['eji ogbe', 'Èjì Ogbè'],
+  ['ade aare', 'Adé Ààrẹ'],
+  ['opon ifa', 'Ọpọ́n Ifá'],
+  ['iroke ifa', 'Ìrókẹ́ Ifá'],
+  ['agere ifa', 'Àgéré Ifá'],
+  ['ileke owo', 'Ìlèkè Ọwọ́'],
+  ['ewa aganyin', 'Ẹ̀wà Àgányìn'],
+  ['amala isu', 'Amàlà Iṣu'],
+  ['obe egusi', 'Ọbẹ̀ Ègúsí'],
+  ['obe ewedu', 'Ọbẹ̀ Ewédú'],
+  ['igi ibile', 'Igi Ìbílẹ̀'],
+  ['ipinle ogun', 'Ìpínlẹ̀ Ògùn']
+];
 
 // Comprehensive dictionary for high-frequency Yorùbá orthographic restoration
 const DIACRITIC_LEXICON = {
-  'ogun': 'Ògún',
-  'lakaaye': 'Lákàyé',
-  'osin': 'ọ̀sìn',
-  'imole': 'imọ́lẹ̀',
-  'eni': 'ẹni',
-  'to': 'tó',
-  'ni': 'ní',
-  'nile': 'nílé',
-  'ti': 'tí',
-  'o': 'ó',
-  'fi': 'fi',
-  'eje': 'ẹ̀jẹ̀',
-  'we': 'wẹ̀',
-  'sango': 'Ṣàngó',
-  'osun': 'Ọ̀ṣun',
-  'orunmila': 'Ọ̀rúnmìlà',
-  'esu': 'Èṣù',
-  'obatala': 'Ọbàtálá',
-  'ifa': 'Ifá',
-  'odu': 'Odù',
-  'agbada': 'Agbádá',
-  'ileke': 'Ìlèkè',
-  'fila': 'Fìlà',
-  'ade': 'Adé',
-  'aare': 'Ààrẹ',
-  'kabiyesi': 'Kábíyèsí',
-  'oba': 'Ọba',
-  'orisa': 'Òrìṣà',
-  'opon': 'Ọpọ́n',
-  'iroke': 'Ìrókẹ́',
-  'agere': 'Àgéré',
-  'oriki': 'Oríkì',
-  'ewe': 'Ewé',
-  'ile': 'Ilé',
-  'aso': 'Aṣọ',
-  'oke': 'Òkè',
-  'orin': 'Orin',
-  'odun': 'Ọdún',
-  'alo': 'Àlọ́',
-  'itan': 'Ìtàn',
-  'irun': 'Ìrun',
-  'obi': 'Obì',
-  'ounje': 'Oúnjẹ',
-  'balogun': 'Balógun',
-  'jagunjagun': 'Jagunjagun',
-  'baba': 'Bàbá',
-  'iya': 'Ìyá',
-  'omo': 'Ọmọ',
-  'oko': 'Ọkọ',
-  'aya': 'Aya',
-  'iye': 'Ìyẹ́',
-  'lori': 'lórí',
-  'pelu': 'pẹ̀lú',
-  'ati': 'àti'
+  'emi': 'èmi', 'iwo': 'ìwọ', 'oun': 'òun', 'awa': 'àwa', 'eyin': 'ẹ̀yin', 'awon': 'àwọn',
+  'mo': 'mo', 'won': 'wọ́n', 'mi': 'mi', 're': 'rẹ', 'wa': 'wa', 'yin': 'yín',
+  'lo': 'lọ', 'se': 'ṣe', 'ri': 'rí', 'fe': 'fẹ́', 'je': 'jẹ', 'mu': 'mu',
+  'sun': 'sùn', 'dide': 'dìde', 'bo': 'bọ̀', 'fun': 'fún', 'ka': 'kà', 'ko': 'kọ',
+  'so': 'sọ', 'wi': 'wí', 'gbo': 'gbọ́', 'wo': 'wò', 'be': 'bẹ', 'dupe': 'dúpẹ́',
+  'ni': 'ní', 'si': 'sí', 'ti': 'tí', 'lati': 'láti', 'ninu': 'nínú', 'lori': 'lórí',
+  'pelu': 'pẹ̀lú', 'sugbon': 'ṣùgbọ́n', 'tabi': 'tàbí', 'gege': 'gẹ́gẹ́', 'bi': 'bí',
+  'eniyan': 'ènìyàn', 'aye': 'ayé', 'orun': 'ọ̀run', 'ile': 'ilé', 'omi': 'omi',
+  'ina': 'iná', 'afefe': 'afẹ́fẹ́', 'owo': 'owó', 'ori': 'orí', 'oju': 'ojú',
+  'eti': 'etí', 'enu': 'ẹnu', 'ese': 'ẹsẹ̀', 'okan': 'ọkàn', 'ara': 'ara',
+  'alafia': 'àlàáfíà', 'bawo': 'báwo', 'baba': 'bàbá', 'iya': 'ìyá', 'omo': 'ọmọ',
+  'oriki': 'oríkì', 'owe': 'òwe', 'itan': 'ìtàn', 'asa': 'àṣà', 'ise': 'iṣẹ́',
+  'ogbon': 'ọgbọ́n', 'imo': 'ìmọ̀', 'oye': 'òye', 'iwa': 'ìwà', 'rere': 'rere',
+  'suuru': 'sùúrù', 'ifarada': 'ìfaradà', 'otito': 'òtítọ́', 'ododo': 'òdodo',
+  'aje': 'ajé', 'ade': 'adé', 'oba': 'ọba', 'kabiyesi': 'kábíyèsí', 'orisa': 'òrìṣà',
+  'agbada': 'agbádá', 'ileke': 'ìlèkè', 'fila': 'fìlà', 'amala': 'amàlà',
+  'iyan': 'ìyán', 'eba': 'ẹ̀bà', 'iresi': 'ìrẹsì', 'ewa': 'ẹ̀wà', 'isu': 'iṣu',
+  'obe': 'ọbẹ̀', 'okele': 'òkèlè', 'bata': 'bàtá', 'gelede': 'geledẹ́',
+  'adire': 'adìrẹ', 'ijoye': 'ìjòyè', 'agbo': 'àgbo', 'sango': 'ṣàngó',
+  'osun': 'ọ̀ṣun', 'orunmila': 'ọ̀rúnmìlà', 'esu': 'èṣù', 'obatala': 'ọbàtálá',
+  'ifa': 'ifá', 'odu': 'odù', 'lakaaye': 'lákàyé', 'imole': 'imọ́lẹ̀'
 };
 
+function disambiguateClientHomograph(word, text) {
+  const wLow = word.toLowerCase();
+  const cLow = text.toLowerCase();
+
+  if (wLow === 'ogun') {
+    if (/\b(state|ipinle|ìpínlẹ̀|abeokuta|abẹ́òkúta|governor)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Ìpínlẹ̀ Ògùn' : 'ìpínlẹ̀ ògùn';
+    }
+    if (/\b(war|battle|warfare|conflict|kiriji|ijaye|balogun|jagunjagun)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Ogun' : 'ogun';
+    }
+    return word[0] === word[0].toUpperCase() ? 'Ògún' : 'ògún';
+  }
+
+  if (wLow === 'oro') {
+    if (/\b(wealth|rich|money|owo|ola|aje)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Ọrọ̀' : 'ọrọ̀';
+    }
+    if (/\b(cult|rite|ritual|secret|egungun|awo)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Orò' : 'orò';
+    }
+    return word[0] === word[0].toUpperCase() ? 'Ọ̀rọ̀' : 'ọ̀rọ̀';
+  }
+
+  if (wLow === 'owo') {
+    if (/\b(hand|arm|otun|osi|mu)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Ọwọ́' : 'ọwọ́';
+    }
+    if (/\b(respect|reverence|ibowo|agba)\b/.test(cLow)) {
+      return word[0] === word[0].toUpperCase() ? 'Ọ̀wọ̀' : 'ọ̀wọ̀';
+    }
+    return word[0] === word[0].toUpperCase() ? 'Owó' : 'owó';
+  }
+
+  return null;
+}
+
 export default function TranslateTab({ apiBaseUrl }) {
-  // Mode: 'diacritize' or 'cultural'
   const [activeMode, setActiveMode] = useState('diacritize');
 
   // Diacritize States
@@ -76,26 +113,51 @@ export default function TranslateTab({ apiBaseUrl }) {
 
   // Client-side rule-based diacritization algorithm
   const restoreDiacriticsAlgorithmic = (text) => {
-    // Split text into tokens while preserving punctuation and spacing
-    return text.replace(/\b[a-zA-Záàéèẹ́ẹ̀íìóòọ́ọ̀úùṣÁÀÉÈẸ́Ẹ̀ÍÌÓÒỌ́Ọ̀ÚÙṢ]+\b/g, (match) => {
+    let result = text;
+    const placeholders = {};
+
+    // 1. Multi-word phrases
+    MULTI_WORD_PHRASES.forEach(([phrase, diac], idx) => {
+      const reg = new RegExp(`\\b${phrase}\\b`, 'gi');
+      result = result.replace(reg, (m) => {
+        let finalVal = diac;
+        if (m === m.toUpperCase()) finalVal = diac.toUpperCase();
+        else if (m[0] === m[0].toUpperCase()) finalVal = diac[0].toUpperCase() + diac.slice(1);
+        const key = `__CLIENT_PHRASE_${idx}_${Object.keys(placeholders).length}__`;
+        placeholders[key] = finalVal;
+        return key;
+      });
+    });
+
+    // 2. Single token replacements
+    result = result.replace(/\b[a-zA-Z\u00C0-\u024F\u1E00-\u1EFF]+\b/g, (match) => {
+      if (match.startsWith('__CLIENT_')) return match;
       const lower = match.toLowerCase();
+
+      const homo = disambiguateClientHomograph(match, text);
+      if (homo) return homo;
+
       if (DIACRITIC_LEXICON[lower]) {
         const replacement = DIACRITIC_LEXICON[lower];
-        // Preserve capitalization if first letter was capitalized
-        if (match[0] === match[0].toUpperCase()) {
-          return replacement.charAt(0).toUpperCase() + replacement.slice(1);
-        }
+        if (match === match.toUpperCase()) return replacement.toUpperCase();
+        if (match[0] === match[0].toUpperCase()) return replacement.charAt(0).toUpperCase() + replacement.slice(1);
         return replacement;
       }
       return match;
     });
+
+    // 3. Restore placeholders
+    Object.keys(placeholders).forEach((k) => {
+      result = result.replace(k, placeholders[k]);
+    });
+
+    return result;
   };
 
   // Client-side cultural glossing synthesis
   const synthesizeCulturalGloss = (text) => {
     const textClean = text.toLowerCase();
     
-    // Check if query is about Eji Ogbe or Opon Ifa
     if (textClean.includes('eji ogbe') || textClean.includes('èjì ogbè')) {
       return {
         orthographic_retention: 'Èjì Ogbè lórí Ọpọ́n Ifá',
@@ -112,7 +174,6 @@ export default function TranslateTab({ apiBaseUrl }) {
       };
     }
 
-    // Default gloss synthesis from 1,241-entity archive
     const matched = masterCorpus.find(e => 
       e.title.toLowerCase().includes(textClean) || textClean.includes(e.title.toLowerCase())
     );
@@ -132,7 +193,6 @@ export default function TranslateTab({ apiBaseUrl }) {
     };
   };
 
-  // Handle Diacritize
   const handleDiacritize = async () => {
     if (!asciiInput.trim() || diacritizing) return;
     setDiacritizing(true);
@@ -159,7 +219,6 @@ export default function TranslateTab({ apiBaseUrl }) {
     }
   };
 
-  // Handle Cultural Translation
   const handleCulturalTranslate = async () => {
     if (!culturalInput.trim() || translating) return;
     setTranslating(true);
@@ -198,6 +257,7 @@ export default function TranslateTab({ apiBaseUrl }) {
           <Wand2 size={16} />
           Smart ASCII-to-Diacritic Restorer
         </button>
+
         <button
           onClick={() => setActiveMode('cultural')}
           className={activeMode === 'cultural' ? 'btn-gold' : 'btn-ghost'}
@@ -208,20 +268,22 @@ export default function TranslateTab({ apiBaseUrl }) {
         </button>
       </div>
 
-      {/* Mode 1: Smart Diacritic Restorer */}
+      {/* VIEW 1: SMART ASCII-TO-DIACRITIC RESTORER */}
       {activeMode === 'diacritize' && (
-        <div className="glass-panel" style={{ padding: '32px', borderRadius: '16px' }}>
-          <h2 className="font-royal text-gold" style={{ fontSize: '1.6rem', marginBottom: '6px' }}>
-            🔤 Smart ASCII-to-Diacritic Restorer
-          </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '24px' }}>
-            Paste raw ASCII Yorùbá text without tone marks. Context-aware models infer correct sub-dots (ẹ, ọ, ṣ) and tone marks (Àmì Re, Mi, Do) without loss of meaning.
-          </p>
+        <div className="glass-panel" style={{ padding: '32px', borderRadius: '18px' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <h3 className="font-royal text-gold" style={{ fontSize: '1.6rem', marginBottom: '6px' }}>
+              Universal 25-Letter Yorùbá Orthographic Restorer
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              Restores authentic sub-dots (ẹ, ọ, ṣ) and tonal contours (Àmì Ohùn: Re, Mi, Do) from ASCII input.
+            </p>
+          </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginBottom: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '24px' }}>
             <div>
               <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--gold-light)', marginBottom: '8px', fontWeight: 600 }}>
-                Input: Raw ASCII Yorùbá Text
+                Raw ASCII Yorùbá Input:
               </label>
               <textarea
                 value={asciiInput}
@@ -229,12 +291,13 @@ export default function TranslateTab({ apiBaseUrl }) {
                 rows={6}
                 style={{
                   width: '100%',
-                  background: 'rgba(0,0,0,0.4)',
+                  background: 'rgba(15, 23, 42, 0.85)',
                   border: '1px solid var(--border-subtle)',
-                  borderRadius: '10px',
+                  borderRadius: '12px',
                   padding: '14px',
-                  color: '#fff',
-                  fontSize: '0.98rem',
+                  color: '#f8fafc',
+                  fontSize: '1rem',
+                  fontFamily: 'monospace',
                   outline: 'none',
                   resize: 'vertical'
                 }}
@@ -242,108 +305,122 @@ export default function TranslateTab({ apiBaseUrl }) {
             </div>
 
             <div>
-              <label style={{ display: 'block', fontSize: '0.85rem', color: '#10b981', marginBottom: '8px', fontWeight: 600 }}>
-                Output: 25-Letter Diacritic-Restored Yorùbá
+              <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--gold-light)', marginBottom: '8px', fontWeight: 600 }}>
+                Pristine 25-Letter Restored Output:
               </label>
-              <textarea
-                value={diacritizedOutput}
-                readOnly
-                placeholder="Diacritized output will appear here..."
-                rows={6}
+              <div
                 style={{
                   width: '100%',
-                  background: 'rgba(15, 23, 42, 0.8)',
+                  minHeight: '160px',
+                  background: 'rgba(12, 17, 26, 0.95)',
                   border: '1px solid var(--gold-border)',
-                  borderRadius: '10px',
+                  borderRadius: '12px',
                   padding: '14px',
-                  color: 'var(--gold-light)',
-                  fontSize: '1.02rem',
-                  fontWeight: 600,
-                  outline: 'none',
-                  resize: 'vertical'
+                  color: diacritizedOutput ? '#f8fafc' : 'var(--text-muted)',
+                  fontSize: '1.05rem',
+                  fontWeight: diacritizedOutput ? 600 : 400,
+                  whiteSpace: 'pre-wrap'
                 }}
-              />
+              >
+                {diacritizedOutput || 'Restored text with accurate tone marks will appear here...'}
+              </div>
             </div>
           </div>
 
-          <button
-            onClick={handleDiacritize}
-            disabled={diacritizing || !asciiInput.trim()}
-            className="btn-gold"
-            style={{ padding: '12px 32px', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '8px' }}
-          >
-            <Wand2 size={16} />
-            {diacritizing ? 'Restoring Orthography...' : 'Restore Authentic Diacritics'}
-          </button>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px' }}>
+            {diacritizedOutput && (
+              <button
+                onClick={() => navigator.clipboard.writeText(diacritizedOutput)}
+                className="btn-ghost"
+                style={{ display: 'flex', alignItems: 'center', gap: '6px' }}
+              >
+                <Copy size={16} /> Copy Output
+              </button>
+            )}
+            <button
+              onClick={handleDiacritize}
+              disabled={diacritizing || !asciiInput.trim()}
+              className="btn-gold"
+              style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 24px' }}
+            >
+              <Wand2 size={16} />
+              {diacritizing ? 'Restoring Tonal Contours...' : 'Restore Orthography'}
+            </button>
+          </div>
         </div>
       )}
 
-      {/* Mode 2: Cultural Translation & Deep Glossing */}
+      {/* VIEW 2: CULTURAL TRANSLATION & DEEP GLOSSING */}
       {activeMode === 'cultural' && (
-        <div className="glass-panel" style={{ padding: '32px', borderRadius: '16px' }}>
-          <h2 className="font-royal text-gold" style={{ fontSize: '1.6rem', marginBottom: '6px' }}>
-            📜 Cultural Translation & Deep Glossing
-          </h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', marginBottom: '24px' }}>
-            Translates sacred Odù Ifá verses, Oríkì, and chants into English without flattening or stripping their metaphysical and cultural depth.
-          </p>
+        <div className="glass-panel" style={{ padding: '32px', borderRadius: '18px' }}>
+          <div style={{ marginBottom: '24px' }}>
+            <h3 className="font-royal text-gold" style={{ fontSize: '1.6rem', marginBottom: '6px' }}>
+              Sacred Translation & Deep Metaphysical Glossing
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              Dual-action translation that preserves indigenous philosophical depth without flat colonial truncation.
+            </p>
+          </div>
 
           <div style={{ marginBottom: '24px' }}>
             <label style={{ display: 'block', fontSize: '0.85rem', color: 'var(--gold-light)', marginBottom: '8px', fontWeight: 600 }}>
-              Input: Yorùbá Verse or Sacred Concept
+              Yorùbá Phrase or Odù Ifá Verse:
             </label>
             <input
               type="text"
               value={culturalInput}
               onChange={(e) => setCulturalInput(e.target.value)}
+              placeholder="e.g. Èjì Ogbè lori Ọpọ́n Ifá"
               style={{
                 width: '100%',
-                background: 'rgba(0,0,0,0.4)',
+                background: 'rgba(15, 23, 42, 0.85)',
                 border: '1px solid var(--border-subtle)',
-                borderRadius: '10px',
-                padding: '14px',
-                color: '#fff',
+                borderRadius: '12px',
+                padding: '12px 18px',
+                color: '#f8fafc',
                 fontSize: '1rem',
                 outline: 'none'
               }}
             />
           </div>
 
-          <button
-            onClick={handleCulturalTranslate}
-            disabled={translating || !culturalInput.trim()}
-            className="btn-gold"
-            style={{ padding: '12px 32px', borderRadius: '24px', display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '28px' }}
-          >
-            <BookOpen size={16} />
-            {translating ? 'Synthesizing Cultural Gloss...' : 'Translate & Deep Gloss'}
-          </button>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '28px' }}>
+            <button
+              onClick={handleCulturalTranslate}
+              disabled={translating || !culturalInput.trim()}
+              className="btn-gold"
+              style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 24px' }}
+            >
+              <BookOpen size={16} />
+              {translating ? 'Synthesizing Metaphysical Gloss...' : 'Translate & Gloss'}
+            </button>
+          </div>
 
           {culturalResult && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }} className="animate-fade-in">
-              <div style={{ background: 'rgba(0,0,0,0.3)', padding: '18px', borderRadius: '10px', border: '1px solid var(--border-subtle)' }}>
-                <strong style={{ color: 'var(--gold-light)', display: 'block', marginBottom: '6px' }}>
-                  1. Strict Orthographic Retention (25-Letter Yorùbá):
-                </strong>
-                <p style={{ fontSize: '1.1rem', color: '#fff', fontWeight: 700 }}>
+            <div className="animate-fade-in" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+              <div style={{ background: 'rgba(0, 0, 0, 0.4)', padding: '18px', borderRadius: '12px', border: '1px solid var(--border-subtle)' }}>
+                <span className="badge-gold" style={{ marginBottom: '8px' }}>
+                  1. Orthographic Retention
+                </span>
+                <p style={{ fontSize: '1.2rem', fontWeight: 700, color: '#f8fafc' }}>
                   {culturalResult.orthographic_retention}
                 </p>
               </div>
 
-              <div style={{ background: 'rgba(0,0,0,0.3)', padding: '18px', borderRadius: '10px', border: '1px solid var(--border-subtle)' }}>
-                <strong style={{ color: '#38bdf8', display: 'block', marginBottom: '6px' }}>
-                  2. Literal & Phonetic Translation:
-                </strong>
-                <p style={{ fontSize: '0.98rem', color: 'var(--text-primary)' }}>
+              <div style={{ background: 'rgba(0, 0, 0, 0.4)', padding: '18px', borderRadius: '12px', border: '1px solid var(--border-subtle)' }}>
+                <span className="badge-emerald" style={{ marginBottom: '8px' }}>
+                  2. Direct Contextual Translation
+                </span>
+                <p style={{ fontSize: '1.05rem', color: 'var(--text-primary)' }}>
                   {culturalResult.literal_translation}
                 </p>
               </div>
 
-              <div style={{ background: 'rgba(212, 175, 55, 0.1)', padding: '20px', borderRadius: '10px', border: '1px solid var(--gold-border)' }}>
-                <strong style={{ color: '#fbbf24', display: 'block', marginBottom: '6px', fontSize: '1.05rem' }}>
-                  3. The Cultural Gloss (Metaphysical, Historical & Philosophical Meaning):
-                </strong>
-                <p style={{ fontSize: '0.96rem', color: '#f8fafc', lineHeight: 1.65 }}>
+              <div style={{ background: 'rgba(217, 119, 6, 0.1)', padding: '22px', borderRadius: '12px', border: '1px solid rgba(217, 119, 6, 0.4)' }}>
+                <span className="badge-gold" style={{ marginBottom: '8px' }}>
+                  <Feather size={12} /> 3. Deep Metaphysical & Philosophical Gloss
+                </span>
+                <p style={{ fontSize: '0.96rem', color: 'var(--gold-light)', lineHeight: 1.65 }}>
                   {culturalResult.cultural_gloss}
                 </p>
               </div>

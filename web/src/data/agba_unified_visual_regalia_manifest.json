@@ -21,7 +21,7 @@
     "source_url": "https://www.artic.edu/artworks/14605",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Iroke_Ifa_Divination_Tapper.jpg",
+    "local_asset_url": "/assets/regalia/AIC_Iroke_Ifa_Divination_Tapper.jpg",
     "thumbnail_url": "/assets/regalia/SI_Iroke_Ifa_Divination_Tapper.jpg",
     "image_url": "/assets/regalia/SI_Iroke_Ifa_Divination_Tapper.jpg"
   },
@@ -99,7 +99,7 @@
     "source_url": "https://openaccess-cdn.clevelandart.org/1994.200/1994.200_web.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
+    "local_asset_url": "/assets/regalia/CMA_Agere_Ifa_Divination_Vessel.jpg",
     "thumbnail_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
     "image_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg"
   },
@@ -125,7 +125,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-033.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Kneeling_Woman_316595.jpg",
     "thumbnail_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
     "image_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg"
   },
@@ -151,7 +151,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-039.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Ivory_Vessel_316597.jpg",
     "thumbnail_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
     "image_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg"
   },
@@ -177,7 +177,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-030.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
+    "local_asset_url": "/assets/regalia/MET_Agere_Ifa_Lidded_Vessel_316594.jpg",
     "thumbnail_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
     "image_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg"
   },
@@ -203,7 +203,7 @@
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Agere_Ifa_Divination_Vessel.jpg",
+    "local_asset_url": "/assets/regalia/SI_Agere_Ifa_Chameleon_Vessel.jpg",
     "image_url": "/assets/regalia/CMA_Agere_Ifa_Divination_Vessel.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Agere_Ifa_Divination_Vessel.jpg"
   },
@@ -333,7 +333,7 @@
     "source_url": "https://openaccess-cdn.clevelandart.org/1995.22/1995.22_web.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/Foundational_Ade_Aare.jpeg",
+    "local_asset_url": "/assets/regalia/CMA_Adenla_Great_Beaded_Crown.jpg",
     "image_url": "/assets/regalia/Foundational_Ade_Aare.jpeg"
   },
   {
@@ -410,7 +410,7 @@
     "source_url": "https://www.artic.edu/artworks/141029",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Orikogbofo_Beaded_Coronet.jpg",
+    "local_asset_url": "/assets/regalia/AIC_Orikogbofo_Royal_Beaded_Cap.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Orikogbofo_Beaded_Coronet.jpg",
     "image_url": "/assets/regalia/CMA_Orikogbofo_Beaded_Coronet.jpg"
   },
@@ -436,7 +436,7 @@
     "source_url": "https://openaccess-cdn.clevelandart.org/1969.5/1969.5_web.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/Foundational_Ade_Aare.jpeg",
+    "local_asset_url": "/assets/regalia/CMA_Ago_Ade_Warrior_Helmet.jpg",
     "image_url": "/assets/regalia/Foundational_Ade_Aare.jpeg"
   },
   {
@@ -513,7 +513,7 @@
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/Èwù Ìlèkè.webp",
+    "local_asset_url": "/assets/regalia/Foundational_Ewu_Ileke.webp",
     "thumbnail_url": "/assets/regalia/Èwù Ìlèkè.webp",
     "image_url": "/assets/regalia/Èwù Ìlèkè.webp"
   },
@@ -539,7 +539,7 @@
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/Fìlà Abetí Ajá.jpeg",
+    "local_asset_url": "/assets/regalia/Foundational_Fila_Abeti_Aja.jpeg",
     "thumbnail_url": "/assets/regalia/Fìlà Abetí Ajá.jpeg",
     "image_url": "/assets/regalia/Fìlà Abetí Ajá.jpeg"
   },
@@ -565,7 +565,7 @@
     "source_url": "Local Sovereign Archive",
     "is_foundational": true,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/Fìlà Gọ̀bị́.jpeg",
+    "local_asset_url": "/assets/regalia/Foundational_Fila_Gobi.jpeg",
     "thumbnail_url": "/assets/regalia/Fìlà Gọ̀bị́.jpeg",
     "image_url": "/assets/regalia/Fìlà Gọ̀bị́.jpeg"
   },
@@ -617,7 +617,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP350849.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/VA_Alaari_Aso_Oke_O263819.jpg",
+    "local_asset_url": "/assets/regalia/MET_Aso_Oke_Textile_321378.jpg",
     "thumbnail_url": "/assets/regalia/VA_Alaari_Aso_Oke_O263819.jpg",
     "image_url": "/assets/regalia/VA_Alaari_Aso_Oke_O263819.jpg"
   },
@@ -695,7 +695,7 @@
     "source_url": "https://www.artic.edu/artworks/124119",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg",
+    "local_asset_url": "/assets/regalia/AIC_Edan_Ogboni_Staff_Pair.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg",
     "image_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg"
   },
@@ -721,7 +721,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-036.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg",
+    "local_asset_url": "/assets/regalia/MET_Edan_Ogboni_Female_Staff_316596.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg",
     "image_url": "/assets/regalia/CMA_Edan_Ogboni_Staff_Pair.jpg"
   },
@@ -773,7 +773,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-053.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/MET_Orufanran_Altar_Ring_310180.jpg",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Altar_Ring_316602.jpg",
     "image_url": "/assets/regalia/MET_Orufanran_Altar_Ring_310180.jpg",
     "thumbnail_url": "/assets/regalia/MET_Orufanran_Altar_Ring_310180.jpg"
   },
@@ -799,7 +799,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-062.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/AIC_Egba_Owo_Royal_Bracelets.jpg",
+    "local_asset_url": "/assets/regalia/MET_Egba_Owo_Bracelet_316606.jpg",
     "image_url": "/assets/regalia/AIC_Egba_Owo_Royal_Bracelets.jpg",
     "thumbnail_url": "/assets/regalia/AIC_Egba_Owo_Royal_Bracelets.jpg"
   },
@@ -851,7 +851,7 @@
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg",
+    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_275.jpg",
     "thumbnail_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg",
     "image_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg"
   },
@@ -903,7 +903,7 @@
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg",
+    "local_asset_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_28.jpg",
     "thumbnail_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg",
     "image_url": "/assets/regalia/SI_Egba_Ogboni_Bracelet_27.jpg"
   },
@@ -955,7 +955,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-027.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Crocodile_Head_316593.jpg",
     "thumbnail_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
     "image_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg"
   },
@@ -981,7 +981,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-088.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Leopard_Head_316631.jpg",
     "thumbnail_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
     "image_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg"
   },
@@ -1033,7 +1033,7 @@
     "source_url": "https://images.metmuseum.org/CRDImages/ao/original/DP-14287-087.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
+    "local_asset_url": "/assets/regalia/MET_Orufanran_Humans_Monkeys_316630.jpg",
     "thumbnail_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg",
     "image_url": "/assets/regalia/MET_Orufanran_Ram_Head_316591.jpg"
   },
@@ -1085,7 +1085,7 @@
     "source_url": "https://www.artic.edu/artworks/14604",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Ogo_Elegba_Dance_Staff.jpg",
+    "local_asset_url": "/assets/regalia/AIC_Ogo_Elegbara_Dance_Staff.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Ogo_Elegba_Dance_Staff.jpg",
     "image_url": "/assets/regalia/CMA_Ogo_Elegba_Dance_Staff.jpg"
   },
@@ -1137,7 +1137,7 @@
     "source_url": "https://africa.si.edu",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/CMA_Onile_Ogboni_Altar_Figure.jpg",
+    "local_asset_url": "/assets/regalia/SI_Iya_Orisha_Ivory_Figure.jpg",
     "image_url": "/assets/regalia/CMA_Onile_Ogboni_Altar_Figure.jpg",
     "thumbnail_url": "/assets/regalia/CMA_Onile_Ogboni_Altar_Figure.jpg"
   },
@@ -1163,7 +1163,7 @@
     "source_url": "https://openaccess-cdn.clevelandart.org/1976.188/1976.188_web.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/AIC_Ago_Egungun_Headdress.jpg",
+    "local_asset_url": "/assets/regalia/CMA_Egungun_Masquerade_Costume.jpg",
     "thumbnail_url": "/assets/regalia/AIC_Ago_Egungun_Headdress.jpg",
     "image_url": "/assets/regalia/AIC_Ago_Egungun_Headdress.jpg"
   },
@@ -1241,7 +1241,7 @@
     "source_url": "https://openaccess-cdn.clevelandart.org/1921.1531/1921.1531_web.jpg",
     "is_foundational": false,
     "hitl_status": "VERIFIED_CANONICAL_MATCH",
-    "local_asset_url": "/assets/regalia/AIC_Gelede_Ceremonial_Mask.jpg",
+    "local_asset_url": "/assets/regalia/CMA_Gelede_Sacred_Mask.jpg",
     "thumbnail_url": "/assets/regalia/AIC_Gelede_Ceremonial_Mask.jpg",
     "image_url": "/assets/regalia/AIC_Gelede_Ceremonial_Mask.jpg"
   },
