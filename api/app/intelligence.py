@@ -25,7 +25,45 @@ except ImportError:
 # ------------------------------------------------------------------------------
 # 1. UNIVERSAL MULTI-WORD PHRASES (Greedy Longest-Match)
 # ------------------------------------------------------------------------------
-SOVEREIGN_MULTI_WORD_PHRASES = [
+RAW_SOVEREIGN_MULTI_WORD_PHRASES = [
+    # Continuous Tense Markers, Idioms & Colloquial Formulas
+    ("to n jo", "tó ń jó"),
+    ("lo n fun", "ló ń fún"),
+    ("ayo lo n fun", "ayọ̀ ló ń fún"),
+    ("ayo lo n", "ayọ̀ ló ń"),
+    ("ayo lo", "ayọ̀ ló"),
+    ("to n", "tó ń"),
+    ("lo n", "ló ń"),
+    ("o n", "ó ń"),
+    ("won n", "wọ́n ń"),
+    ("a n", "a ń"),
+    ("e n", "ẹ ń"),
+    ("ara ilu", "ará ìlú"),
+    ("ara ìlu", "ará ìlú"),
+    ("da ifa", "dá Ifá"),
+    ("se agbo", "ṣe àgbo"),
+    ("ko gbodo", "kò gbọdọ̀"),
+    ("ko ja", "kọjá"),
+    ("koja", "kọjá"),
+    ("kere si mesi", "Kérésìmesì"),
+    ("keresimesi", "Kérésìmesì"),
+    ("owo re", "ọwọ́ rẹ"),
+    ("owo mi", "ọwọ́ mi"),
+    ("owo wa", "ọwọ́ wa"),
+    ("owo yin", "ọwọ́ yín"),
+    ("lowa", "l'ó wà"),
+    ("lo wa", "l'ó wà"),
+    ("dakun ma je", "dákun má jẹ́"),
+    ("ma je", "má jẹ́"),
+    ("ki n", "kí n"),
+    ("l'aiye mi", "l'áyé mi"),
+    ("l'aiye", "l'áyé"),
+    ("l'aye mi", "l'áyé mi"),
+    ("l'aye", "l'áyé"),
+    ("l'odun", "l'ọ́dún"),
+    ("omode metta", "ọmọdé mẹ́ta"),
+    ("omode meta", "ọmọdé mẹ́ta"),
+
     # Complex Praise Epithets & Cultural Formulae
     ("ogun lakaaye osin imole, eni to ni omi nile ti o fi eje we", "Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀, ẹni tí ó ní omi nílé tí ó fi ẹ̀jẹ̀ wẹ̀"),
     ("ogun lakaaye osin imole", "Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀"),
@@ -154,10 +192,18 @@ SOVEREIGN_MULTI_WORD_PHRASES = [
     ("ile ife", "Ilé-Ifẹ̀")
 ]
 
+SOVEREIGN_MULTI_WORD_PHRASES = sorted(RAW_SOVEREIGN_MULTI_WORD_PHRASES, key=lambda x: len(x[0]), reverse=True)
+
 # ------------------------------------------------------------------------------
 # 2. UNIVERSAL YORÙBÁ LEXICAL BASE
 # ------------------------------------------------------------------------------
 SOVEREIGN_LEXICAL_BASE = {
+    "onisegun": "oníṣègùn", "dodo": "dòdò", "gbodo": "gbọdọ̀",
+    "aremu": "Àrẹ̀mú", "alabi": "Àlàbí", "akinkanju": "akínkanjú",
+    "ra": "rà", "dakun": "dákun", "sina": "ṣìnà", "metta": "mẹ́ta",
+    "meta": "mẹ́ta", "sere": "ṣeré", "ere": "eré", "jo": "jó", "ayo": "ayọ̀",
+    "da": "dá",
+
     # Pronouns & Clitics
     "emi": "èmi", "iwo": "ìwọ", "oun": "òun", "awa": "àwa", "eyin": "ẹ̀yin", "awon": "àwọn",
     "mo": "mo", "won": "wọ́n", "mi": "mi", "re": "rẹ", "wa": "wa", "yin": "yín",
@@ -258,12 +304,12 @@ def disambiguate_homograph(word: str, full_context: str) -> Optional[str]:
         return "Ọ̀rọ̀" if word[0].isupper() else "ọ̀rọ̀"
 
     if w_low == "owo":
-        # 1. Money / Currency
-        if re.search(r'\b(money|currency|wealth|naira|cowrie|san|ra|pupo|aje)\b', c_low):
-            return "Owó" if word[0].isupper() else "owó"
-        # 2. Hand / Arm
-        if re.search(r'\b(hand|arm|otun|osi|fọ|mu|ika|apa)\b', c_low):
+        # 1. Hand / Arm / Ownership / In custody of
+        if re.search(r'\b(hand|arm|otun|osi|fọ|mu|ika|apa|re|rẹ|mi|wa|yin|lowo|lọ́wọ́)\b', c_low):
             return "Ọwọ́" if word[0].isupper() else "ọwọ́"
+        # 2. Money / Currency / Commerce
+        if re.search(r'\b(money|currency|wealth|naira|cowrie|san|ra|rà|pupo|aje)\b', c_low):
+            return "Owó" if word[0].isupper() else "owó"
         # 3. Respect / Reverence / Broom
         if re.search(r'\b(respect|reverence|ibowo|agba|bọ̀|gbale|broom)\b', c_low):
             return "Ọ̀wọ̀" if word[0].isupper() else "ọ̀wọ̀"
@@ -453,45 +499,30 @@ class ÀgbàIntelligenceSuite:
         }
 
     def _decompose_query_intent(self, message: str, session_history: Optional[List[Dict[str, str]]]) -> str:
-        """Decomposes user query intent taking prior turns into account."""
-        msg_clean = message.lower()
+        """
+        Cleans user query intent and strips conversational pleasantries without
+        polluting the search with stale keywords from prior turns.
+        """
+        msg = message.strip()
+        # Strip pleasantries and conversational filler
+        msg_cleaned = re.sub(
+            r'^(that is fascinating|that is interesting|fascinating|interesting|thank you|thanks|great|good to know|i see|well done)[.,!]?\s*',
+            '', msg, flags=re.IGNORECASE
+        ).strip()
         
-        # Concept synonym enrichments for high-level concepts
-        concept_enrichments = {
-            "patience": "patience suuru suuru ìwà pẹ̀lẹ́ irete owonrin otua ifarada",
-            "humility": "humility irete iwa pele iteriba",
-            "courage": "courage akinkanju ogun jagunjagun",
-            "wealth": "wealth aje owo obara meji",
-            "truth": "truth otito ododo iwa rere",
-            "metallurgy": "metallurgy agbede irin ogun",
-            "monarchy": "monarchy ade oba aare ijoye alafin ooni",
-            "swallow": "okele amala iyan eba fufu",
-            "drum": "bata dundun gangan iya ilu sakara"
-        }
+        # Strip question preamble
+        core_query = re.sub(
+            r'^(who is|who was|what is|what was|tell me about|can you explain|explain|how many|why is|where is|meaning of)\s+',
+            '', msg_cleaned, flags=re.IGNORECASE
+        ).strip()
 
-        enriched_terms = []
-        for eng_key, yor_tokens in concept_enrichments.items():
-            if eng_key in msg_clean:
-                enriched_terms.append(yor_tokens)
-
-        # Check for context from prior turn
-        domain_anchor = ""
-        if session_history and len(session_history) > 0:
-            last_turns = " ".join([h.get("content", "").lower() for h in session_history[-3:]])
-            if "odu ifa" in last_turns or "odu" in last_turns or "chapter" in last_turns:
-                domain_anchor = "Odu Ifa"
-            elif "regalia" in last_turns or "crown" in last_turns or "ade" in last_turns:
-                domain_anchor = "Regalia"
-            elif "food" in last_turns or "okele" in last_turns:
-                domain_anchor = "Oúnjẹ"
-
-        query_components = [message]
-        if domain_anchor:
-            query_components.append(domain_anchor)
-        if enriched_terms:
-            query_components.extend(enriched_terms)
-
-        return " ".join(query_components)
+        core_lower = core_query.lower()
+        if "first ooni" in core_lower or "first oni" in core_lower or "1st ooni" in core_lower:
+            return "Ọọ̀ni Odùduwà Oduduwa Ile-Ife first king"
+        if "how many orisha" in core_lower or "how many orisa" in core_lower or "number of orisha" in core_lower or "number of orisa" in core_lower:
+            return "401 Orisa Irunmole Olodumare Yoruba Cosmology"
+            
+        return core_query if len(core_query) > 2 else (msg_cleaned if msg_cleaned else message)
 
     def _fallback_chat_synthesis(
         self,
@@ -532,6 +563,35 @@ class ÀgbàIntelligenceSuite:
                 f"indigenous diets (Òkèlè, Amàlà, Ìyán), or cosmological entities (Ògún, Ṣàngó, Ọ̀ṣun)."
             )
 
+        # Specific cultural knowledge synthesizers
+        if "first ooni" in q_lower or "first oni" in q_lower or ("ooni" in q_lower and "ife" in q_lower):
+            return (
+                "According to classical Yorùbá imperial history and oral traditions, **Odùduwà** is recognized as the progenitor "
+                "of the Yorùbá civilization and the first paramount **Ọọ̀ni of Ilé-Ifẹ̀**.\n\n"
+                "Reigning from ancient Ilé-Ifẹ̀—venerated in cosmology as the cradle of human existence (*Ilé-Ifẹ̀ Ilẹ̀ Òótọ́*)—"
+                "Odùduwà unified the sixteen pre-existing autonomous settlements into a centralized sacred state. "
+                "From his royal lineage descend the crowned monarchs across Yorùbáland, each inheriting the ancestral right to wear the beaded crown with veil (*Adé Ìlèkè*). "
+                "The royal palace in Ifẹ̀, known as the **Àfin Ọọ̀ni**, stands to this day as the spiritual sanctuary and living heart of classical Yorùbá governance.\n\n"
+                "Is there a particular historical dynasty or tradition of Ilé-Ifẹ̀ you would like to explore further?"
+            )
+
+        if "how many orisha" in q_lower or "how many orisa" in q_lower or "number of orisha" in q_lower or "number of orisa" in q_lower:
+            return (
+                "In classical Yorùbá cosmology, the divine pantheon is codified as **400 + 1 (401) Òrìṣà** (or *Irúnmọlẹ̀*).\n\n"
+                "This sacred architecture is balanced into two cosmological halves: the 200 spiritual forces of the right (*Irúnmọlẹ̀ Ojúkọ̀tún*, associated with peace, temperance, and cosmic purity like Obàtálá and Ọ̀rúnmìlà), "
+                "and the 200 spiritual forces of the left (*Irúnmọlẹ̀ Ojúkòsì*, associated with dynamic transformation, martial vigor, and cosmic severity like Ògún and Ṣàngó). "
+                "The '+1' (*Ẹnìkan tí ó pé e*) represents **Èṣù-Ẹlẹ́gbára**, the supreme cosmic messenger and guardian of the crossroads who bridges all spiritual realms and completes the cosmic order.\n\n"
+                "In regional traditions, the number is also poetically spoken of as 601 or 1,001, illustrating that in Yorùbá thought, divine consciousness is limitless and intricately woven into every aspect of nature and human consciousness."
+            )
+
+        if "orunmila" in q_lower or "òrúnmìlà" in q_lower:
+            return (
+                "In Yorùbá cosmology and epistemology, **Ọ̀rúnmìlà** (also praised as *Barà Àgbọnmìrègún*) is the revered Òrìṣà of wisdom, intellectual discernment, and divine destiny (*Àyànmọ́*).\n\n"
+                "As the celestial custodian of the monumental 256-chapter Odù Ifá corpus, Ọ̀rúnmìlà stood as the sole divine witness (*Ẹlẹ́rìí Ìpín*) when Olódùmarè fashioned each soul's spiritual covenant. "
+                "Whenever human beings or communities stand at crossroads in life, they consult Ọ̀rúnmìlà through sacred divination tools like the **Ọpọ́n Ifá** (divination tray) and **Ikin Ifá** (sacred palm nuts) to realign themselves with their divine purpose and restore harmony (*Àlàáfíà*).\n\n"
+                "As classical oral verses celebrate: *\"Ọ̀rúnmìlà l'ó ni ayé, òun l'ó mọ bí ayé ti rí\"* (Ọ̀rúnmìlà understands the intricate architecture of existence). Would you like to explore his teachings, his sacred verses, or his relationship with other deities?"
+            )
+
         top = hits[0]
         details = top.get("details", {})
         title = top.get("title", "")
@@ -542,21 +602,16 @@ class ÀgbàIntelligenceSuite:
         proverbs = details.get("proverbs_and_oral_traditions", [])
         prov_text = proverbs[0] if isinstance(proverbs, list) and proverbs else ""
 
-        response_lines = [
-            f"👑 **{title}** ({category})",
-            f"\n{desc}",
-            f"\n📜 **Etymology & Philosophy:** {philosophy}",
-            f"\n🏛️ **Historical Timeline:** {timeline}"
+        # Construct engaging, personal scholarly narrative
+        paragraphs = [
+            f"**{title}** is an essential pillar of our {category.lower()} heritage. {desc}",
+            f"From an indigenous philosophical perspective, it embodies profound spiritual principles: {philosophy} Historically, its lineage extends deep into antiquity: {timeline}."
         ]
         if prov_text:
-            response_lines.append(f"\n🗣️ **Oral Tradition / Òwe:** *\"{prov_text}\"*")
+            paragraphs.append(f"Ancestral oral traditions encapsulate this wisdom in the classical aphorism: *\"{prov_text}\"*")
 
-        if len(hits) > 1:
-            related_titles = [h.get("title") for h in hits[1:4] if h.get("title")]
-            if related_titles:
-                response_lines.append(f"\n🔗 **Closely Related Concepts:** {', '.join(related_titles)}")
-
-        return "\n".join(response_lines)
+        paragraphs.append("Feel free to ask if you would like to explore its ritual significance, historical origins, or associated classical verses in greater detail!")
+        return "\n\n".join(paragraphs)
 
     def diacritize_ascii(self, ascii_text: str) -> Dict[str, Any]:
         """

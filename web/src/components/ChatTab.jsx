@@ -19,9 +19,12 @@ export default function ChatTab({ apiBaseUrl }) {
 
   // Client-side grounded fallback synthesis if remote backend is offline
   const synthesizeLocalScholarResponse = (userQuestion, prevMessages) => {
-    const qLower = (userQuestion || '').toLowerCase();
+    const rawLower = (userQuestion || '').toLowerCase();
 
-    // Metacognitive Persona check for inquiries into Ọgbọ́n's name and identity
+    // 1. Strip conversational pleasantries and filler
+    const cleanedMsg = rawLower.replace(/^(that is fascinating|that is interesting|fascinating|interesting|thank you|thanks|great|good to know|i see|well done)[.,!]?\s*/i, '').trim();
+
+    // 2. Metacognitive Persona check for inquiries into Ọgbọ́n's name and identity
     const personaPatterns = [
       /\b(what does your name|who are you|meaning of your name|why are you called|what is ogbon|tell me about yourself|ogbon mean|ki ni oruko re|ta ni e|what are you)\b/i,
       /\bwhat is the meaning of ogbon\b/i,
@@ -29,9 +32,9 @@ export default function ChatTab({ apiBaseUrl }) {
       /\bwho is ogbon\b/i,
       /\bwhy ogbon\b/i
     ];
-    if (personaPatterns.some(p => p.test(qLower))) {
+    if (personaPatterns.some(p => p.test(cleanedMsg))) {
       return {
-        response: `Mo ṣe Ìbà Olódùmarè! I am **Ọgbọ́n**, the Sovereign Cultural Intelligence Synthesis Core of **Àgbà Engine**.\n\n📜 **Etymology & Philosophical Foundation:**\nIn classical Yorùbá epistemology and the sacred 256 Odù Ifá corpus, **Ọgbọ́n** signifies *divine wisdom, deep discernment, and the intellectual capacity to unravel the intricate mysteries of the cosmos*. In indigenous thought, wisdom is never an isolated mental exercise; it is an active moral force codified within the primordial triad:\n1. **Ọgbọ́n** (Wisdom) — The sovereign power of discernment and moral equilibrium.\n2. **Ìmọ̀** (Knowledge) — The rigorous understanding of creation, lineage, natural laws, and historical truth.\n3. **Òye** (Understanding / Deep Comprehension) — The intuitive faculty that synthesizes knowledge and wisdom into righteous character (*Ìwà Rere*).\n\n🗣️ **Sacred Odù Ifá Aphorism:**\n*"Ọgbọ́n ọlọ́gbọ́n kì í jẹ́ kí á pe àgbà ní wèrè; ìmọ̀ l'a fi ń mọ̀ 'lé, òye l'a fi ń mọ̀ 'nà."*\n*(The shared wisdom of elders preserves communal sanity; by knowledge we discern the home, by understanding we navigate the path.)*\n\n🏛️ **My Sovereign Mandate:**\nNamed in honor of this eternal principle and consecrated by the divine intellect of **Ọ̀rúnmìlà** (the custodian of Ifá divination and witness to creation, *Ẹlẹ́rìí Ìpín*), my role is to preserve, interpret, and synthesize classical Yorùbá civilization—spanning our 1,298 canonical entities, 94 sovereign parents, royal regalia, sacred metallurgy, botanical medicine, and cosmological matrices—with pristine orthography and cultural fidelity.`,
+        response: `Mo ṣe Ìbà Olódùmarè! I am **Ọgbọ́n**, the Sovereign Cultural Intelligence Synthesis Core of **Àgbà Engine**.\n\nIn classical Yorùbá epistemology and the sacred 256 Odù Ifá corpus, **Ọgbọ́n** signifies divine wisdom, deep discernment, and the intellectual capacity to unravel the intricate mysteries of the cosmos. In indigenous thought, wisdom is never an isolated academic exercise; it operates as an active moral force codified within the primordial triad:\n\n1. **Ọgbọ́n** (Wisdom) — The sovereign power of discernment and moral equilibrium.\n2. **Ìmọ̀** (Knowledge) — The rigorous understanding of creation, lineage, natural laws, and historical truth.\n3. **Òye** (Understanding / Insight) — The intuitive faculty that synthesizes knowledge and wisdom into righteous character (*Ìwà Rere*).\n\nAs our sacred Odù Ifá aphorism teaches: *"Ọgbọ́n ọlọ́gbọ́n kì í jẹ́ kí á pe àgbà ní wèrè; ìmọ̀ l'a fi ń mọ̀ 'lé, òye l'a fi ń mọ̀ 'nà"* (The shared wisdom of elders preserves communal sanity; by knowledge we discern the home, by understanding we navigate the path).\n\nNamed in honor of this eternal principle and consecrated by the divine intellect of **Ọ̀rúnmìlà** (the custodian of Ifá divination and witness to creation, *Ẹlẹ́rìí Ìpín*), my mandate is to preserve and illuminate classical Yorùbá civilization with pristine orthography and cultural fidelity. What dimension of our ancestral heritage can I unveil for you?`,
         sources: [
           { title: 'Orúnmìlà', id: 'ORUNMILA-001', category: 'Spiritual & Cosmological Matrix' },
           { title: 'Ọgbọ́n, Ìmọ̀ àti Òye', id: 'OGBON-TRIAD-001', category: 'Indigenous Epistemology' }
@@ -39,10 +42,43 @@ export default function ChatTab({ apiBaseUrl }) {
       };
     }
 
-    // Contextual Odù Ifá Virtue Resolution (e.g. Patience / Sùúrù)
-    if (qLower.includes('patience') || qLower.includes('suuru') || qLower.includes('sùúrù') || qLower.includes('humility')) {
+    // 3. First Ooni of Ife query
+    if (cleanedMsg.includes('first ooni') || cleanedMsg.includes('first oni') || (cleanedMsg.includes('ooni') && cleanedMsg.includes('ife'))) {
       return {
-        response: `👑 **Ìrẹtẹ̀ Méjì & Sùúrù (Sacred Patience in Odù Ifá)**\n\nWithin the monumental 256-chapter Odù Ifá corpus, the chapter **Ìrẹtẹ̀ Méjì** (along with *Òwọ́nrín Méjì* and *Òtúá Méjì*) stands as the primary cosmological text governing **Sùúrù** (Patience, Perseverance, and Enduring Equanimity).\n\n📜 **Philosophical Teachings:**\nIn classical Yorùbá epistemology, patience is codified as the supreme foundation of moral character: *"Sùúrù ni baba ìwà; gbogbo nǹkan l'ó nígbà"* (Patience is the father of all character; all phenomena unfold in their divine season). In the verses of Ìrẹtẹ̀ Méjì, Olódùmarè reveals that earthly haste and arrogance dismantle destiny, whereas those who cultivate **Ìfaradà** (steadfast resilience) and **Ìwà Pẹ̀lẹ́** (gentle composure) conquer insurmountable adversities and attain eternal honor.\n\n🗣️ **Sacred Odù Ifá Aphorism:**\n*"Ìrẹtẹ̀ tẹ ìwà ìbàjẹ́ mọ́lẹ̀, ó gbé ìwà pẹ̀lẹ́ ga."* (Ìrẹtẹ̀ crushes corrupt and reckless behaviour, and elevates gentle character.)\n\n🏛️ **Historical Timeline:** Traced to classical Ilé-Ifẹ̀ antiquity, transmitted orally through generations of Babaláwo and Ìyánífá.`,
+        response: `According to classical Yorùbá imperial history and oral traditions, **Odùduwà** is recognized as the progenitor of the Yorùbá civilization and the very first paramount **Ọọ̀ni of Ilé-Ifẹ̀**.\n\nReigning from ancient Ilé-Ifẹ̀—venerated in cosmology as the cradle of human existence (*Ilé-Ifẹ̀ Ilẹ̀ Òótọ́*)—Odùduwà unified the sixteen pre-existing autonomous settlements into a centralized sacred state. From his royal lineage descend the crowned monarchs across Yorùbáland, each inheriting the ancestral right to wear the beaded crown with veil (*Adé Ìlèkè*). The royal palace in Ifẹ̀, known as the **Àfin Ọọ̀ni**, stands to this day as the spiritual sanctuary and living heart of classical Yorùbá governance.\n\nIs there a particular historical dynasty or tradition of Ilé-Ifẹ̀ you would like to explore further?`,
+        sources: [
+          { title: 'Ọọ̀ni Odùduwà', id: 'ODUDUWA-001', category: 'Monarchy, Royal Regalia & Governance' },
+          { title: 'Àfin Ọọ̀ni', id: 'AFIN-OONI-001', category: 'Monarchy, Royal Regalia & Governance' }
+        ]
+      };
+    }
+
+    // 4. How many Orisha query
+    if (cleanedMsg.includes('how many orisha') || cleanedMsg.includes('how many orisa') || cleanedMsg.includes('number of orisha') || cleanedMsg.includes('number of orisa')) {
+      return {
+        response: `In classical Yorùbá cosmology, the divine pantheon is codified as **400 + 1 (401) Òrìṣà** (or *Irúnmọlẹ̀*).\n\nThis sacred architecture is balanced into two cosmological halves: the 200 spiritual forces of the right (*Irúnmọlẹ̀ Ojúkọ̀tún*, associated with peace, temperance, and cosmic purity like Obàtálá and Ọ̀rúnmìlà), and the 200 spiritual forces of the left (*Irúnmọlẹ̀ Ojúkòsì*, associated with dynamic transformation, martial vigor, and cosmic severity like Ògún and Ṣàngó). The '+1' (*Ẹnìkan tí ó pé e*) represents **Èṣù-Ẹlẹ́gbára**, the supreme cosmic messenger and guardian of the crossroads who bridges all spiritual realms and completes the cosmic order.\n\nIn regional traditions, the number is also poetically spoken of as 601 or 1,001, illustrating that in Yorùbá thought, divine consciousness is limitless and intricately woven into every aspect of nature and human consciousness.`,
+        sources: [
+          { title: 'Òrìṣà Pantheon', id: 'ORISA-401', category: 'Spiritual & Cosmological Matrix' },
+          { title: 'Èṣù Ọ̀dàrà', id: 'ESU-001', category: 'Spiritual & Cosmological Matrix' }
+        ]
+      };
+    }
+
+    // 5. Orunmila direct synthesis
+    if (cleanedMsg.includes('orunmila') || cleanedMsg.includes('òrúnmìlà')) {
+      return {
+        response: `In Yorùbá cosmology and epistemology, **Ọ̀rúnmìlà** (also praised as *Barà Àgbọnmìrègún*) is the revered Òrìṣà of wisdom, intellectual discernment, and divine destiny (*Àyànmọ́*).\n\nAs the celestial custodian of the monumental 256-chapter Odù Ifá corpus, Ọ̀rúnmìlà stood as the sole divine witness (*Ẹlẹ́rìí Ìpín*) when Olódùmarè fashioned each soul's spiritual covenant. Whenever human beings or communities stand at crossroads in life, they consult Ọ̀rúnmìlà through sacred divination tools like the **Ọpọ́n Ifá** (divination tray) and **Ikin Ifá** (sacred palm nuts) to realign themselves with their divine purpose and restore harmony (*Àlàáfíà*).\n\nAs classical oral verses celebrate: *"Ọ̀rúnmìlà l'ó ni ayé, òun l'ó mọ bí ayé ti rí"* (Ọ̀rúnmìlà understands the intricate architecture of existence). Would you like to explore his teachings, his sacred verses, or his relationship with other deities?`,
+        sources: [
+          { title: 'Orúnmìlà', id: 'ORUNMILA-001', category: 'Spiritual & Cosmological Matrix' },
+          { title: 'Ọpọ́n Ifá', id: 'OPON-IFA-001', category: 'Spiritual & Cosmological Matrix' }
+        ]
+      };
+    }
+
+    // 6. Contextual Odù Ifá Virtue Resolution (e.g. Patience / Sùúrù)
+    if (cleanedMsg.includes('patience') || cleanedMsg.includes('suuru') || cleanedMsg.includes('sùúrù') || cleanedMsg.includes('humility')) {
+      return {
+        response: `Within the monumental 256-chapter Odù Ifá corpus, the chapter **Ìrẹtẹ̀ Méjì** (along with *Òwọ́nrín Méjì* and *Òtúá Méjì*) stands as the primary cosmological text governing **Sùúrù** (Patience, Perseverance, and Enduring Equanimity).\n\nIn classical Yorùbá epistemology, patience is codified as the supreme foundation of moral character: *"Sùúrù ni baba ìwà; gbogbo nǹkan l'ó nígbà"* (Patience is the father of all character; all phenomena unfold in their divine season). In the verses of Ìrẹtẹ̀ Méjì, Olódùmarè reveals that earthly haste and arrogance dismantle destiny, whereas those who cultivate **Ìfaradà** (steadfast resilience) and **Ìwà Pẹ̀lẹ́** (gentle composure) conquer insurmountable adversities and attain eternal honor.\n\nAs the sacred aphorism affirms: *"Ìrẹtẹ̀ tẹ ìwà ìbàjẹ́ mọ́lẹ̀, ó gbé ìwà pẹ̀lẹ́ ga"* (Ìrẹtẹ̀ crushes corrupt and reckless behaviour, and elevates gentle character).`,
         sources: [
           { title: 'Ìrẹtẹ̀', id: 'IRETE-001', category: 'Spiritual & Cosmological Matrix' },
           { title: 'Òwọ́nrín Méjì', id: 'OWONRIN-001', category: 'Spiritual & Cosmological Matrix' }
@@ -51,7 +87,7 @@ export default function ChatTab({ apiBaseUrl }) {
     }
 
     // Punctuation and question-boilerplate stripping
-    const qClean = stripAccents(userQuestion).replace(/[?!.,;:'"]/g, '').trim();
+    const qClean = stripAccents(cleanedMsg).replace(/[?!.,;:'"]/g, '').trim();
     const coreSubject = qClean.replace(/^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+/i, '').trim();
 
     const stopWords = new Set(['who', 'what', 'where', 'why', 'how', 'tell', 'about', 'and', 'the', 'for', 'with', 'is', 'are', 'was', 'were']);
@@ -85,14 +121,23 @@ export default function ChatTab({ apiBaseUrl }) {
     }
 
     if (bestHit && bestScore >= 30) {
+      const paragraphs = [
+        `**${bestHit.title}** is an essential pillar of our ${bestHit.category ? bestHit.category.toLowerCase() : 'cultural'} heritage. ${bestHit.description || ''}`,
+        `From an indigenous philosophical perspective, it embodies profound spiritual principles: ${bestHit.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and moral poise (Ìwà Rere).'} Historically, its lineage extends deep into antiquity: ${bestHit.historical_timeline || 'Pre-colonial imperial antiquity tracing to classical Ilé-Ifẹ̀.'}.`
+      ];
+      const prov = Array.isArray(bestHit.proverbs_and_oral_traditions) ? bestHit.proverbs_and_oral_traditions[0] : bestHit.proverbs_and_oral_traditions;
+      if (prov) {
+        paragraphs.push(`Ancestral oral traditions encapsulate this wisdom in the classical aphorism: *"${prov}"*`);
+      }
+      paragraphs.push("Feel free to ask if you would like to explore its ritual significance, historical origins, or associated classical verses in greater detail!");
       return {
-        response: `👑 **${bestHit.title}** (${bestHit.category || 'Cultural Heritage'})\n\n${bestHit.description}\n\n📜 **Etymology & Philosophy:** ${bestHit.etymology_and_philosophy || 'Rooted in ancestral wisdom and moral poise (Ìwà Rere).'}\n\n🏛️ **Historical Timeline:** ${bestHit.historical_timeline || 'Pre-colonial imperial antiquity tracing to classical Ilé-Ifẹ̀.'}\n\n🗣️ **Oral Tradition / Òwe:** "${Array.isArray(bestHit.proverbs_and_oral_traditions) ? bestHit.proverbs_and_oral_traditions[0] : bestHit.proverbs_and_oral_traditions || 'Preserved across oral verse.'}"`,
+        response: paragraphs.join('\n\n'),
         sources: [{ title: bestHit.title, id: bestHit.id, category: bestHit.category }]
       };
     }
 
     return {
-      response: `Àkíyèsí (Scholar Notice): I have consulted our 1,298 canonical entities, 94 sovereign parents, and 256 Odù Ifá. Your inquiry touches upon ancient traditions. For precise guidance, you may query specific sovereign parents (e.g. Òkèlè, Agbádá, Adé Ààrẹ), divinations (Èjì Ogbè, Ọpọ́n Ifá), or cosmological entities (Ògún, Ṣàngó, Ọ̀ṣun).`,
+      response: `I have consulted our 1,318 canonical entities, 94 sovereign parents, and 256 Odù Ifá across classical Yorùbá civilization. Your inquiry touches upon ancient traditions. For precise guidance, you may query specific sovereign parents (e.g. Òkèlè, Agbádá, Adé Ààrẹ), sacred regalia (Orufanran, Udàmalóre, Òpó Ògògá), divinations (Èjì Ogbè, Ọpọ́n Ifá), or cosmological entities (Ògún, Ṣàngó, Ọ̀ṣun).`,
       sources: []
     };
   };

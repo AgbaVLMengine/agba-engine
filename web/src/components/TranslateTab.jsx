@@ -3,7 +3,44 @@ import { Wand2, BookOpen, Check, Copy, Sparkles, Feather } from 'lucide-react';
 import masterCorpus from '../data/yoruba_master_corpus.json';
 
 // Multi-Word Phrases for Greedy Match (Àkànlò Èdè & Cosmological Formulae)
-const MULTI_WORD_PHRASES = [
+const RAW_MULTI_WORD_PHRASES = [
+  // Continuous Tense Markers, Idioms & Colloquial Formulas
+  ['to n jo', 'tó ń jó'],
+  ['lo n fun', 'ló ń fún'],
+  ['ayo lo n fun', 'ayọ̀ ló ń fún'],
+  ['ayo lo n', 'ayọ̀ ló ń'],
+  ['ayo lo', 'ayọ̀ ló'],
+  ['to n', 'tó ń'],
+  ['lo n', 'ló ń'],
+  ['o n', 'ó ń'],
+  ['won n', 'wọ́n ń'],
+  ['a n', 'a ń'],
+  ['e n', 'ẹ ń'],
+  ['ara ilu', 'ará ìlú'],
+  ['ara ìlu', 'ará ìlú'],
+  ['da ifa', 'dá Ifá'],
+  ['se agbo', 'ṣe àgbo'],
+  ['ko gbodo', 'kò gbọdọ̀'],
+  ['ko ja', 'kọjá'],
+  ['koja', 'kọjá'],
+  ['kere si mesi', 'Kérésìmesì'],
+  ['keresimesi', 'Kérésìmesì'],
+  ['owo re', 'ọwọ́ rẹ'],
+  ['owo mi', 'ọwọ́ mi'],
+  ['owo wa', 'ọwọ́ wa'],
+  ['owo yin', 'ọwọ́ yín'],
+  ['lowa', 'l\'ó wà'],
+  ['lo wa', 'l\'ó wà'],
+  ['dakun ma je', 'dákun má jẹ́'],
+  ['ma je', 'má jẹ́'],
+  ['ki n', 'kí n'],
+  ['l\'aiye mi', 'l\'áyé mi'],
+  ['l\'aiye', 'l\'áyé'],
+  ['l\'aye mi', 'l\'áyé mi'],
+  ['l\'aye', 'l\'áyé'],
+  ['l\'odun', 'l\'ọ́dún'],
+  ['omode metta', 'ọmọdé mẹ́ta'],
+  ['omode meta', 'ọmọdé mẹ́ta'],
   // Complex Praise Epithets & Cultural Formulae
   ['ogun lakaaye osin imole, eni to ni omi nile ti o fi eje we', 'Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀, ẹni tí ó ní omi nílé tí ó fi ẹ̀jẹ̀ wẹ̀'],
   ['ogun lakaaye osin imole', 'Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀'],
@@ -132,8 +169,15 @@ const MULTI_WORD_PHRASES = [
   ['ile ife', 'Ilé-Ifẹ̀']
 ];
 
+const MULTI_WORD_PHRASES = [...RAW_MULTI_WORD_PHRASES].sort((a, b) => b[0].length - a[0].length);
+
 // Comprehensive multi-tiered Yorùbá orthographic lexicon
 const DIACRITIC_LEXICON = {
+  'onisegun': 'oníṣègùn', 'dodo': 'dòdò', 'gbodo': 'gbọdọ̀',
+  'aremu': 'Àrẹ̀mú', 'alabi': 'Àlàbí', 'akinkanju': 'akínkanjú',
+  'ra': 'rà', 'dakun': 'dákun', 'sina': 'ṣìnà', 'metta': 'mẹ́ta',
+  'meta': 'mẹ́ta', 'sere': 'ṣeré', 'ere': 'eré', 'jo': 'jó', 'ayo': 'ayọ̀',
+  'da': 'dá',
   // Pronouns & Particles
   'emi': 'èmi', 'iwo': 'ìwọ', 'oun': 'òun', 'awa': 'àwa', 'eyin': 'ẹ̀yin', 'awon': 'àwọn',
   'mo': 'mo', 'won': 'wọ́n', 'mi': 'mi', 're': 'rẹ', 'wa': 'wa', 'yin': 'yín',
@@ -221,7 +265,7 @@ function disambiguateClientHomograph(word, text) {
   }
 
   if (wLow === 'owo') {
-    if (/\b(hand|arm|otun|osi|mu)\b/.test(cLow)) {
+    if (/\b(hand|arm|otun|osi|mu|re|rẹ|mi|wa|yin|lowo|lọ́wọ́)\b/.test(cLow)) {
       return word[0] === word[0].toUpperCase() ? 'Ọwọ́' : 'ọwọ́';
     }
     if (/\b(respect|reverence|ibowo|agba)\b/.test(cLow)) {
