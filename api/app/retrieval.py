@@ -334,12 +334,23 @@ class ÀgbàHybridRetriever:
     def search_lexical(self, query: str, top_k: int = 15) -> List[Dict[str, Any]]:
         """
         Perform diacritic-aware lexical, strict word-boundary, and tier-weighted matching
-        across all 14 Tiers of the master cultural knowledge graph.
+        across all 14 Tiers of the master cultural knowledge graph with title priority boost.
         """
         import re
-        norm_query = normalize_y(query)
-        stripped_query = strip_accents(query).strip()
-        stop_words = {"in", "at", "to", "of", "and", "the", "a", "an", "for", "on", "with", "by", "is", "it"}
+        # Clean query: strip punctuation and natural language inquiry fluff
+        q_cleaned = re.sub(r"[?!.,;:']", "", str(query)).replace("\"", "").strip()
+        core_subject = re.sub(
+            r'^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+',
+            '', q_cleaned, flags=re.IGNORECASE
+        ).strip()
+
+        norm_query = normalize_y(q_cleaned)
+        stripped_query = strip_accents(q_cleaned).strip()
+
+        norm_core = normalize_y(core_subject)
+        stripped_core = strip_accents(core_subject).strip()
+
+        stop_words = {"in", "at", "to", "of", "and", "the", "a", "an", "for", "on", "with", "by", "is", "it", "who", "what", "where", "why", "how", "tell", "me", "about"}
         q_words = [w for w in re.findall(r'\b\w+\b', stripped_query) if len(w) > 1 and w not in stop_words]
         scored = []
 
@@ -352,21 +363,25 @@ class ÀgbàHybridRetriever:
             
             score = 0.0
 
-            # 1. Exact match on title or aliases (Supreme Priority)
-            if norm_query == title:
-                score += 35.0
-            elif stripped_query == stripped_title:
-                score += 30.0
-            elif norm_query in aliases:
-                score += 22.0
-            elif stripped_query in stripped_aliases:
-                score += 18.0
+            # 1. Exact match on title or aliases with core subject (Supreme Priority +500)
+            if stripped_core and (stripped_core == stripped_title or norm_core == title):
+                score += 500.0
+            elif stripped_core and (stripped_core in stripped_aliases or norm_core in aliases):
+                score += 450.0
+            elif stripped_query == stripped_title or norm_query == title:
+                score += 400.0
+            elif stripped_query in stripped_aliases or norm_query in aliases:
+                score += 350.0
 
             # 2. Strict Word-Boundary Phrase Match in Title or Aliases
+            elif stripped_core and re.search(r'\b' + re.escape(stripped_core) + r'\b', stripped_title):
+                score += 250.0
+            elif stripped_core and any(re.search(r'\b' + re.escape(stripped_core) + r'\b', a) for a in stripped_aliases):
+                score += 200.0
             elif re.search(r'\b' + re.escape(stripped_query) + r'\b', stripped_title):
-                score += 12.0
+                score += 50.0
             elif any(re.search(r'\b' + re.escape(stripped_query) + r'\b', a) for a in stripped_aliases):
-                score += 9.0
+                score += 40.0
 
             # 3. Category match bonus (e.g. searching 'Philosophy' gives boost to Philosophy category)
             if any(re.search(r'\b' + re.escape(w) + r'\b', strip_accents(category)) for w in q_words):

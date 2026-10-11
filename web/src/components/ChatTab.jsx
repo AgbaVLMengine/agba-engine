@@ -10,7 +10,7 @@ export default function ChatTab({ apiBaseUrl }) {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Àbọ̀rú Àbọ̀yè! I am Ọgbọ́n, the Sovereign Cultural Intelligence Synthesis Core of Àgbà Engine. Ask me any question regarding classical Yorùbá civilization, royal regalia, Odù Ifá divination matrices, cosmology, indigenous diets, or indigenous philosophy. Every answer is strictly grounded in our sovereign 1,298-entity archive.',
+      content: 'Mo ṣe Ìbà Olódùmarè, I am Ọgbọ́n, the Àgbà Cultural Historian. By the wisdom of Ọ̀rúnmìlà, I will answer whatever questions on Yorùbá cultural heritage you might have.',
       sources: []
     }
   ]);
@@ -19,8 +19,25 @@ export default function ChatTab({ apiBaseUrl }) {
 
   // Client-side grounded fallback synthesis if remote backend is offline
   const synthesizeLocalScholarResponse = (userQuestion, prevMessages) => {
-    const qClean = stripAccents(userQuestion);
-    const qLower = userQuestion.toLowerCase();
+    const qLower = (userQuestion || '').toLowerCase();
+
+    // Metacognitive Persona check for inquiries into Ọgbọ́n's name and identity
+    const personaPatterns = [
+      /\b(what does your name|who are you|meaning of your name|why are you called|what is ogbon|tell me about yourself|ogbon mean|ki ni oruko re|ta ni e|what are you)\b/i,
+      /\bwhat is the meaning of ogbon\b/i,
+      /\bwhat does ogbon mean\b/i,
+      /\bwho is ogbon\b/i,
+      /\bwhy ogbon\b/i
+    ];
+    if (personaPatterns.some(p => p.test(qLower))) {
+      return {
+        response: `Mo ṣe Ìbà Olódùmarè! I am **Ọgbọ́n**, the Sovereign Cultural Intelligence Synthesis Core of **Àgbà Engine**.\n\n📜 **Etymology & Philosophical Foundation:**\nIn classical Yorùbá epistemology and the sacred 256 Odù Ifá corpus, **Ọgbọ́n** signifies *divine wisdom, deep discernment, and the intellectual capacity to unravel the intricate mysteries of the cosmos*. In indigenous thought, wisdom is never an isolated mental exercise; it is an active moral force codified within the primordial triad:\n1. **Ọgbọ́n** (Wisdom) — The sovereign power of discernment and moral equilibrium.\n2. **Ìmọ̀** (Knowledge) — The rigorous understanding of creation, lineage, natural laws, and historical truth.\n3. **Òye** (Understanding / Deep Comprehension) — The intuitive faculty that synthesizes knowledge and wisdom into righteous character (*Ìwà Rere*).\n\n🗣️ **Sacred Odù Ifá Aphorism:**\n*"Ọgbọ́n ọlọ́gbọ́n kì í jẹ́ kí á pe àgbà ní wèrè; ìmọ̀ l'a fi ń mọ̀ 'lé, òye l'a fi ń mọ̀ 'nà."*\n*(The shared wisdom of elders preserves communal sanity; by knowledge we discern the home, by understanding we navigate the path.)*\n\n🏛️ **My Sovereign Mandate:**\nNamed in honor of this eternal principle and consecrated by the divine intellect of **Ọ̀rúnmìlà** (the custodian of Ifá divination and witness to creation, *Ẹlẹ́rìí Ìpín*), my role is to preserve, interpret, and synthesize classical Yorùbá civilization—spanning our 1,298 canonical entities, 94 sovereign parents, royal regalia, sacred metallurgy, botanical medicine, and cosmological matrices—with pristine orthography and cultural fidelity.`,
+        sources: [
+          { title: 'Orúnmìlà', id: 'ORUNMILA-001', category: 'Spiritual & Cosmological Matrix' },
+          { title: 'Ọgbọ́n, Ìmọ̀ àti Òye', id: 'OGBON-TRIAD-001', category: 'Indigenous Epistemology' }
+        ]
+      };
+    }
 
     // Contextual Odù Ifá Virtue Resolution (e.g. Patience / Sùúrù)
     if (qLower.includes('patience') || qLower.includes('suuru') || qLower.includes('sùúrù') || qLower.includes('humility')) {
@@ -33,7 +50,12 @@ export default function ChatTab({ apiBaseUrl }) {
       };
     }
 
-    const qTokens = qClean.split(/\s+/).filter(w => w.length > 2);
+    // Punctuation and question-boilerplate stripping
+    const qClean = stripAccents(userQuestion).replace(/[?!.,;:'"]/g, '').trim();
+    const coreSubject = qClean.replace(/^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+/i, '').trim();
+
+    const stopWords = new Set(['who', 'what', 'where', 'why', 'how', 'tell', 'about', 'and', 'the', 'for', 'with', 'is', 'are', 'was', 'were']);
+    const qTokens = qClean.split(/\s+/).filter(w => w.length > 2 && !stopWords.has(w));
     let bestHit = null;
     let bestScore = 0;
 
@@ -43,12 +65,17 @@ export default function ChatTab({ apiBaseUrl }) {
       const a = (entity.aliases || []).map(stripAccents);
       const d = stripAccents(entity.description || '');
 
+      // Core subject exact matches (+500 boost)
+      if (coreSubject && t === coreSubject) score += 500;
+      else if (coreSubject && a.includes(coreSubject)) score += 400;
+      else if (coreSubject && t.includes(coreSubject)) score += 200;
+
       for (const tok of qTokens) {
         if (t === tok) score += 100;
         else if (t.includes(tok)) score += 40;
         if (a.some(alias => alias === tok)) score += 80;
         else if (a.some(alias => alias.includes(tok))) score += 30;
-        if (d.includes(tok)) score += 10;
+        if (d.includes(tok)) score += 5;
       }
 
       if (score > bestScore) {

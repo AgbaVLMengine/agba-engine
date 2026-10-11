@@ -108,9 +108,13 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
   // High-Precision Weighted Relevance Search
   const searchRankedCorpus = (q) => {
-    const qNorm = q.trim();
-    const qStripped = stripAccents(qNorm);
-    const qTokens = qStripped.split(/\s+/).filter((w) => w.length > 0);
+    const qClean = (q || '').replace(/[?!.,;:'"]/g, '').trim();
+    const coreSubject = qClean.replace(/^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+/i, '').trim();
+
+    const qStripped = stripAccents(qClean);
+    const coreStripped = stripAccents(coreSubject);
+    const stopWords = new Set(['who', 'what', 'where', 'why', 'how', 'tell', 'about', 'and', 'the', 'for', 'with', 'is', 'are', 'was', 'were']);
+    const qTokens = qStripped.split(/\s+/).filter((w) => w.length > 0 && !stopWords.has(w));
 
     const scored = [];
 
@@ -124,7 +128,12 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
       let score = 0;
 
-      // Exact phrase match
+      // 1. Supreme Core Subject Exact Match (+500 points)
+      if (coreStripped && titleStripped === coreStripped) score += 500;
+      else if (coreStripped && aliasesStripped.includes(coreStripped)) score += 400;
+      else if (coreStripped && titleStripped.includes(coreStripped)) score += 200;
+
+      // 2. Full Query Phrase Match
       if (titleStripped === qStripped) score += 200;
       else if (aliasesStripped.includes(qStripped)) score += 150;
       else if (titleStripped.startsWith(qStripped)) score += 80;

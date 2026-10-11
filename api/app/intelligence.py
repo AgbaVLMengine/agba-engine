@@ -26,9 +26,66 @@ except ImportError:
 # 1. UNIVERSAL MULTI-WORD PHRASES (Greedy Longest-Match)
 # ------------------------------------------------------------------------------
 SOVEREIGN_MULTI_WORD_PHRASES = [
+    # Complex Praise Epithets & Cultural Formulae
+    ("ogun lakaaye osin imole, eni to ni omi nile ti o fi eje we", "Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀, ẹni tí ó ní omi nílé tí ó fi ẹ̀jẹ̀ wẹ̀"),
+    ("ogun lakaaye osin imole", "Ògún Lákàyé, Ọ̀sìn Imọ́lẹ̀"),
+    ("eni to ni omi nile ti o fi eje we", "ẹni tí ó ní omi nílé tí ó fi ẹ̀jẹ̀ wẹ̀"),
+    ("orunmila bara agbonmiregun", "Ọ̀rúnmìlà Barà Àgbọnmìrègún"),
+    ("sango olukoso eleyinjue ina", "Ṣàngó Olúkòso, Ẹlẹ́yinjú Iná"),
+    ("sango olukoso", "Ṣàngó Olúkòso"),
+    ("obatala oosaala oba patapata", "Ọbàtálá Òòṣàálá, Ọba Pátápátá"),
+    ("obatala oosaala", "Ọbàtálá Òòṣàálá"),
+    ("alafia lounje okan", "Àlàáfíà l’oúnjẹ ọkàn"),
+    ("alafia loonje okan", "Àlàáfíà l’oúnjẹ ọkàn"),
     ("bawo ni o se wa", "Báwo ni o ṣe wà"),
     ("bawo ni gbogbo nkan", "Báwo ni gbogbo nǹkan"),
     ("bawo ni nkan", "Báwo ni nǹkan"),
+    ("bi o ti wu ki o ri", "bí ó ti wù kí ó rí"),
+    ("lati igba naa", "láti ìgbà náà"),
+    ("nitori pe", "nítorí pé"),
+    ("gege bi", "gẹ́gẹ́ bí"),
+    ("nigba ti", "nígbà tí"),
+    ("eni to ni", "ẹni tí ó ní"),
+    ("eni to", "ẹni tó"),
+    ("omi nile", "omi nílé"),
+    ("ti o fi", "tí ó fi"),
+    ("ti o", "tí ó"),
+    ("eje we", "ẹ̀jẹ̀ wẹ̀"),
+    ("ogun lakaaye", "Ògún Lákàyé"),
+    ("osin imole", "Ọ̀sìn Imọ́lẹ̀"),
+    
+    # Common Sentence Idioms & Compound Words (Àkànlò Èdè)
+    ("ebi ati ara", "ẹbí àti ara"),
+    ("ebi ati ore", "ẹbí àti ọ̀rẹ́"),
+    ("se patakai", "ṣe pàtàkì"),
+    ("se pataki", "ṣe pàtàkì"),
+    ("ni pataki", "ní pàtàkì"),
+    ("igbesi aiye eda", "ìgbésí-ayé ẹ̀dá"),
+    ("igbesi aiye", "ìgbésí-ayé"),
+    ("igbesi aye eda", "ìgbésí-ayé ẹ̀dá"),
+    ("igbesi aye", "ìgbésí-ayé"),
+    ("igbesiaye", "ìgbésí-ayé"),
+    ("aiye eda", "ayé ẹ̀dá"),
+    ("aye eda", "ayé ẹ̀dá"),
+    ("ayanmo eda", "àyànmọ́ ẹ̀dá"),
+    ("ori rere", "orí rere"),
+    ("ori buruku", "orí burúkú"),
+    ("ori apeere", "orí àpẹẹrẹ"),
+    ("akunleyan", "àkúnlẹ̀yàn"),
+    ("atelewo eni", "àtẹ́lẹwọ́ ẹni"),
+    ("iwa l'ewa", "ìwà l'ẹwà"),
+    ("iwa lewa", "ìwà l'ẹwà"),
+    ("omolúwabi", "ọmọlúwàbí"),
+    ("omolúabi", "ọmọlúwàbí"),
+    ("omolwabi", "ọmọlúwàbí"),
+    ("alajobi", "alájọbí"),
+    ("oju rere", "ojú rere"),
+    ("oju aanu", "ojú àánú"),
+    ("owo po", "ọwọ́ pọ̀"),
+    ("fokan bale", "fọkàn balẹ̀"),
+    ("fowo sowopo", "fọwọ́ sowọ́pọ̀"),
+    ("iwa pele", "Ìwà Pẹ̀lẹ́"),
+    ("iwa rere", "Ìwà Rere"),
     ("bawo ni", "Báwo ni"),
     ("e kaasan o", "Ẹ káàsán o"),
     ("e kaaro o", "Ẹ káàárọ̀ o"),
@@ -49,10 +106,8 @@ SOVEREIGN_MULTI_WORD_PHRASES = [
     ("o se", "Ó ṣe"),
     ("o daabo", "Ó dàbọ̀"),
     ("alafia ni", "Àlàáfíà ni"),
-    ("alafia lounje okan", "Àlàáfíà l’oúnjẹ ọkàn"),
-    ("ogun lakaaye", "Ògún Lákàyé"),
-    ("sango olukoso", "Ṣàngó Olúkòso"),
-    ("orunmila bara agbonmiregun", "Ọ̀rúnmìlà Barà Àgbọnmìrègún"),
+    
+    # 16 Olódù Méjì Chapters
     ("odu ifa", "Odù Ifá"),
     ("eji ogbe", "Èjì Ogbè"),
     ("oyeku meji", "Ọ̀yẹ̀kú Méjì"),
@@ -70,12 +125,17 @@ SOVEREIGN_MULTI_WORD_PHRASES = [
     ("irete meji", "Ìrẹtẹ̀ Méjì"),
     ("ose meji", "Ọ̀sẹ́ Méjì"),
     ("ofun meji", "Òfún Méjì"),
+
+    # Regalia, Textiles, Shrines & Food
     ("ade aare", "Adé Ààrẹ"),
     ("opon ifa", "Ọpọ́n Ifá"),
     ("iroke ifa", "Ìrókẹ́ Ifá"),
     ("agere ifa", "Àgéré Ifá"),
+    ("ikin ifa", "Ìkín Ifá"),
     ("ileke owo", "Ìlèkè Ọwọ́"),
     ("fila gobi", "Fìlà Gọ̀bị́"),
+    ("fila abeti aja", "Fìlà Abetí Ajá"),
+    ("agbada aada", "Agbádá Aadá"),
     ("ewa aganyin", "Ẹ̀wà Àgányìn"),
     ("ewa oloyin", "Ẹ̀wà Olóyin"),
     ("iresi ofada", "Ìrẹsì Ọ̀fàdà"),
@@ -86,8 +146,12 @@ SOVEREIGN_MULTI_WORD_PHRASES = [
     ("obe ewedu", "Ọbẹ̀ Ewédú"),
     ("igi ibile", "Igi Ìbílẹ̀"),
     ("ipinle ogun", "Ìpínlẹ̀ Ògùn"),
-    ("iwa pele", "Ìwà Pẹ̀lẹ́"),
-    ("iwa rere", "Ìwà Rere")
+    ("ipinle oyo", "Ìpínlẹ̀ Ọ̀yọ́"),
+    ("ipinle osun", "Ìpínlẹ̀ Ọ̀ṣun"),
+    ("ipinle ondo", "Ìpínlẹ̀ Oǹdó"),
+    ("ipinle ekiti", "Ìpínlẹ̀ Èkìtì"),
+    ("ipinle lagos", "Ìpínlẹ̀ Èkó"),
+    ("ile ife", "Ilé-Ifẹ̀")
 ]
 
 # ------------------------------------------------------------------------------
@@ -97,51 +161,63 @@ SOVEREIGN_LEXICAL_BASE = {
     # Pronouns & Clitics
     "emi": "èmi", "iwo": "ìwọ", "oun": "òun", "awa": "àwa", "eyin": "ẹ̀yin", "awon": "àwọn",
     "mo": "mo", "won": "wọ́n", "mi": "mi", "re": "rẹ", "wa": "wa", "yin": "yín",
-
-    # Standard Verbs
-    "lo": "lọ", "se": "ṣe", "ri": "rí", "fe": "fẹ́", "je": "jẹ", "mu": "mu",
-    "sun": "sùn", "dide": "dìde", "bo": "bọ̀", "fun": "fún", "ka": "kà", "ko": "kọ",
-    "so": "sọ", "wi": "wí", "gbo": "gbọ́", "wo": "wò", "be": "bẹ", "dupe": "dúpẹ́",
-    "ba": "bá", "le": "lè", "ma": "má", "gba": "gbà", "fi": "fi", "pe": "pè",
-    "bere": "bẹ̀rẹ̀", "pari": "parí", "ran": "rán", "tan": "tàn", "de": "dé",
-    "wole": "wọlé", "jade": "jáde", "sunmo": "súnmọ́", "pada": "padà", "gbe": "gbé",
-    "muwa": "múwá", "kede": "kédè", "ronu": "rònú", "mo": "mọ̀",
+    "to": "tó", "ti": "tí", "ko": "kò",
 
     # Prepositions, Conjunctions & Particles
-    "ni": "ní", "si": "sí", "ti": "tí", "lati": "láti", "ninu": "nínú", "lori": "lórí",
+    "ni": "ní", "si": "sí", "lati": "láti", "ninu": "nínú", "lori": "lórí",
     "pelu": "pẹ̀lú", "sugbon": "ṣùgbọ́n", "tabi": "tàbí", "gege": "gẹ́gẹ́", "bi": "bí",
     "bii": "bíi", "nje": "njẹ́", "ki": "kí", "nitori": "nítorí", "koto": "kótó",
     "titi": "títí", "kosi": "kòsí", "nkan": "nǹkan", "gbogbo": "gbogbo", "pupo": "púpọ̀",
     "die": "díẹ̀", "oto": "ọ̀tọ̀", "nikan": "nìkan", "bayi": "báyìí", "lodoodun": "lọ́dọọdún",
+    "ati": "àti",
 
-    # Cultural & Common Nouns
-    "eniyan": "ènìyàn", "aye": "ayé", "orun": "ọ̀run", "ile": "ilé", "omi": "omi",
-    "ina": "iná", "afefe": "afẹ́fẹ́", "owo": "owó", "ori": "orí", "oju": "ojú",
-    "eti": "etí", "enu": "ẹnu", "ese": "ẹsẹ̀", "okan": "ọkàn", "ara": "ara",
-    "egungun": "egúngún", "omode": "ọmọdé", "agbalagba": "àgbàlagbà", "alafia": "àlàáfíà",
-    "bawo": "báwo", "baba": "bàbá", "iya": "ìyá", "omo": "ọmọ", "oko": "ọkọ",
-    "aya": "aya", "egbon": "ẹgbọ́n", "aburo": "àbúrò", "ore": "ọ̀rẹ́", "oriki": "oríkì",
-    "owe": "òwe", "itan": "ìtàn", "asa": "àṣà", "ise": "iṣẹ́", "ogbon": "ọgbọ́n",
+    # Standard Verbs
+    "lo": "lọ", "se": "ṣe", "ri": "rí", "fe": "fẹ́", "je": "jẹ", "mu": "mu",
+    "sun": "sùn", "dide": "dìde", "bo": "bọ̀", "fun": "fún", "ka": "kà",
+    "so": "sọ", "wi": "wí", "gbo": "gbọ́", "wo": "wò", "be": "bẹ", "dupe": "dúpẹ́",
+    "ba": "bá", "le": "lè", "ma": "má", "gba": "gbà", "fi": "fi", "pe": "pè",
+    "bere": "bẹ̀rẹ̀", "pari": "parí", "ran": "rán", "tan": "tàn", "de": "dé",
+    "wole": "wọlé", "jade": "jáde", "sunmo": "súnmọ́", "pada": "padà", "gbe": "gbé",
+    "muwa": "múwá", "kede": "kédè", "ronu": "rònú", "we": "wẹ̀",
+
+    # Anatomy & Physical Body
+    "ori": "orí", "oju": "ojú", "eti": "etí", "enu": "ẹnu", "ese": "ẹsẹ̀", "okan": "ọkàn",
+    "ara": "ara", "eje": "ẹ̀jẹ̀", "egungun": "egúngún", "apa": "apá", "ite": "ìtẹ́",
+
+    # Kinship, Family & Human Society
+    "ebi": "ẹbí", "eniyan": "ènìyàn", "eda": "ẹ̀dá", "omode": "ọmọdé", "agbalagba": "àgbàlagbà",
+    "alafia": "àlàáfíà", "bawo": "báwo", "baba": "bàbá", "iya": "ìyá", "omo": "ọmọ", "oko": "ọkọ",
+    "aya": "aya", "egbon": "ẹgbọ́n", "aburo": "àbúrò", "ore": "ọ̀rẹ́", "obinrin": "obìnrin",
+    "okunrin": "ọkùnrin", "ilu": "ìlú", "agba": "àgbà", "ijoye": "ìjòyè", "oba": "ọba",
+    "kabiyesi": "kábíyèsí", "omolúwabi": "ọmọlúwàbí",
+
+    # Nature, Elements & Cosmos
+    "aye": "ayé", "aiye": "ayé", "orun": "ọ̀run", "ile": "ilé", "nile": "nílé", "omi": "omi",
+    "ina": "iná", "afefe": "afẹ́fẹ́", "owo": "owó", "ojo": "òjò", "igi": "igi", "ewe": "ewé",
+    "eran": "ẹran", "eye": "ẹyẹ", "aja": "ajá", "agbo": "àgbò", "agutan": "àgùntàn", "adie": "adìyẹ",
+    "ewure": "ewúrẹ́", "odidere": "òdídẹrẹ́",
+
+    # Philosophical Virtues & Abstract Concepts
+    "pataki": "pàtàkì", "patakai": "pàtàkì", "igbesi": "ìgbésí", "ogbon": "ọgbọ́n",
     "imo": "ìmọ̀", "oye": "òye", "iwa": "ìwà", "rere": "rere", "pele": "pẹ̀lẹ́",
     "suuru": "sùúrù", "ifarada": "ìfaradà", "otito": "òtítọ́", "ododo": "òdodo",
-    "aje": "ajé", "ola": "ọlá", "ade": "adé", "oba": "ọba", "kabiyesi": "kábíyèsí",
-    "orisa": "òrìṣà", "ilu": "ìlú", "agba": "àgbà", "opon": "ọpọ́n", "iroke": "ìrókẹ́",
-    "agere": "àgéré", "agbada": "agbádá", "buba": "bùbá", "sokoto": "ṣòkòtò",
-    "iro": "ìró", "gele": "gèlè", "fila": "fìlà", "ileke": "ìlèkè", "iyun": "ìyùn",
-    "akun": "akún", "segi": "ṣẹ́gi", "amala": "amàlà", "iyan": "ìyán", "eba": "ẹ̀bà",
-    "iresi": "ìrẹsì", "ewa": "ẹ̀wà", "isu": "iṣu", "obe": "ọbẹ̀", "okele": "òkèlè",
-    "bata": "bàtá", "dundun": "dùndún", "sakara": "sákárà", "apala": "àpàlà",
-    "fuji": "fújì", "juju": "jùjú", "gelede": "geledẹ́", "epa": "epa",
-    "adire": "adìrẹ", "ijoye": "ìjòyè", "agbo": "àgbo", "odun": "ọdún",
-    "ayo": "ayò", "ere": "eré", "orunmila": "ọ̀rúnmìlà", "sango": "ṣàngó",
-    "osun": "ọ̀ṣun", "oya": "ọya", "esu": "èṣù", "obatala": "ọbàtálá",
-    "yemoja": "yemọja", "osanyin": "ọ̀sanyìn", "sopona": "ṣọ̀pọ̀nná",
-    "ifa": "ifá", "odu": "odù", "awo": "awo", "babalawo": "babaláwo",
-    "iyanifa": "ìyánífá", "araba": "àràbà", "oluwo": "olúwo", "akoda": "àkọ́dá",
-    "aseda": "àṣẹ̀dá", "ejiogbe": "èjìogbè", "irete": "ìrẹtẹ̀", "ofun": "òfún",
-    "idi": "ìdí", "odidere": "òdídẹrẹ́", "eye": "ẹyẹ", "eran": "ẹran",
-    "aja": "ajá", "agbo": "àgbò", "agutan": "àgùntàn", "adie": "adìyẹ",
-    "ewure": "ewúrẹ́", "obinrin": "obìnrin", "okunrin": "ọkùnrin"
+    "aje": "ajé", "ola": "ọlá", "ade": "adé", "oriki": "oríkì", "owe": "òwe",
+    "itan": "ìtàn", "asa": "àṣà", "ise": "iṣẹ́",
+
+    # Deities & Sacred Cult
+    "osin": "ọ̀sìn", "imole": "imọ́lẹ̀", "eni": "ẹni", "orisa": "òrìṣà", "olodumare": "olódùmarè",
+    "orunmila": "ọ̀rúnmìlà", "sango": "ṣàngó", "osun": "ọ̀ṣun", "oya": "ọya", "esu": "èṣù",
+    "obatala": "ọbàtálá", "yemoja": "yemọja", "osanyin": "ọ̀sanyìn", "sopona": "ṣọ̀pọ̀nná",
+    "ifa": "ifá", "odu": "odù", "awo": "awo", "babalawo": "babaláwo", "iyanifa": "ìyánífá",
+    "araba": "àràbà", "oluwo": "olúwo", "akoda": "àkọ́dá", "aseda": "àṣẹ̀dá", "lakaaye": "lákàyé",
+
+    # Cultural Artefacts & Food
+    "opon": "ọpọ́n", "iroke": "ìrókẹ́", "agere": "àgéré", "agbada": "agbádá", "buba": "bùbá",
+    "sokoto": "ṣòkòtò", "iro": "ìró", "gele": "gèlè", "fila": "fìlà", "ileke": "ìlèkè",
+    "iyun": "ìyùn", "akun": "akún", "segi": "ṣẹ́gi", "amala": "amàlà", "iyan": "ìyán",
+    "eba": "ẹ̀bà", "iresi": "ìrẹsì", "ewa": "ẹ̀wà", "isu": "iṣu", "obe": "ọbẹ̀", "okele": "òkèlè",
+    "bata": "bàtá", "dundun": "dùndún", "sakara": "sákárà", "apala": "àpàlà", "fuji": "fújì",
+    "juju": "jùjú", "gelede": "geledẹ́", "adire": "adìrẹ", "odun": "ọdún", "ayo": "ayò", "ere": "eré"
 }
 
 # ------------------------------------------------------------------------------
@@ -218,6 +294,34 @@ def disambiguate_homograph(word: str, full_context: str) -> Optional[str]:
     return None
 
 
+OGBON_PERSONA_RESPONSE = (
+    "Mo ṣe Ìbà Olódùmarè! I am **Ọgbọ́n**, the Sovereign Cultural Intelligence Synthesis Core of **Àgbà Engine**.\n\n"
+    "📜 **Etymology & Philosophical Foundation:**\n"
+    "In classical Yorùbá epistemology and the sacred 256 Odù Ifá corpus, **Ọgbọ́n** signifies *divine wisdom, deep discernment, and the intellectual capacity to unravel the intricate mysteries of the cosmos*. "
+    "In indigenous thought, wisdom is never an isolated academic exercise; it is an active moral force codified within the primordial triad:\n"
+    "1. **Ọgbọ́n** (Wisdom) — The sovereign power of discernment and moral equilibrium.\n"
+    "2. **Ìmọ̀** (Knowledge) — The rigorous understanding of creation, lineage, natural laws, and historical truth.\n"
+    "3. **Òye** (Understanding / Deep Comprehension) — The intuitive faculty that synthesizes knowledge and wisdom into righteous character (*Ìwà Rere*).\n\n"
+    "🗣️ **Sacred Odù Ifá Aphorism:**\n"
+    "*\"Ọgbọ́n ọlọ́gbọ́n kì í jẹ́ kí á pe àgbà ní wèrè; ìmọ̀ l'a fi ń mọ̀ 'lé, òye l'a fi ń mọ̀ 'nà.\"*\n"
+    "*(The shared wisdom of elders preserves communal sanity; by knowledge we discern the home, by understanding we navigate the path.)*\n\n"
+    "🏛️ **My Sovereign Mandate:**\n"
+    "Named in honor of this eternal principle and consecrated by the divine intellect of **Ọ̀rúnmìlà** (the custodian of Ifá divination and witness to creation, *Ẹlẹ́rìí Ìpín*), "
+    "my role is to preserve, interpret, and synthesize classical Yorùbá civilization—spanning our 1,298 canonical entities, 94 sovereign parents, royal regalia, sacred metallurgy, botanical medicine, and cosmological matrices—with pristine orthography and cultural fidelity."
+)
+
+def is_ogbon_persona_query(text: str) -> bool:
+    t = text.lower().strip()
+    patterns = [
+        r'\b(what does your name|who are you|meaning of your name|why are you called|what is ogbon|tell me about yourself|ogbon mean|ki ni oruko re|ta ni e|what are you)\b',
+        r'\bwhat is the meaning of ogbon\b',
+        r'\bwhat does ogbon mean\b',
+        r'\bwho is ogbon\b',
+        r'\bwhy ogbon\b'
+    ]
+    return any(re.search(p, t) for p in patterns)
+
+
 class ÀgbàIntelligenceSuite:
     """Enterprise AI intelligence engine for authentic Yorùbá conversational RAG and translation."""
 
@@ -247,6 +351,21 @@ class ÀgbàIntelligenceSuite:
         """
         start_time = time.time()
         
+        # 0. Metacognitive Persona & Identity Check
+        if is_ogbon_persona_query(message):
+            latency_ms = round((time.time() - start_time) * 1000, 2)
+            return {
+                "status": "success",
+                "persona": "Ọgbọ́n • The Àgbà Cultural Intelligence Synthesis Core",
+                "response": OGBON_PERSONA_RESPONSE,
+                "model": "Ọgbọ́n Sovereign Metacognitive Core",
+                "latency_ms": latency_ms,
+                "grounding_sources": [
+                    {"id": "ORUNMILA-001", "title": "Orúnmìlà", "category": "Spiritual & Cosmological Matrix", "fusion_score": 1.0},
+                    {"id": "OGBON-TRIAD-001", "title": "Ọgbọ́n, Ìmọ̀ àti Òye", "category": "Indigenous Epistemology", "fusion_score": 0.95}
+                ]
+            }
+
         # 1. Multi-Turn Context Decomposer
         decomposed_query = self._decompose_query_intent(message, session_history)
         
@@ -382,6 +501,10 @@ class ÀgbàIntelligenceSuite:
     ) -> str:
         """Sovereign conversational synthesis for Ọgbọ́n when GenAI API is offline."""
         q_lower = query.lower()
+
+        # Metacognitive Persona inquiry
+        if is_ogbon_persona_query(query):
+            return OGBON_PERSONA_RESPONSE
 
         # Handle specific drill-down on Odù Ifá virtues (e.g. Patience)
         if "patience" in q_lower or "suuru" in q_lower or "sùúrù" in q_lower:

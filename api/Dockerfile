@@ -47,9 +47,5 @@ RUN mkdir -p /app/agba_enterprise_api /app/agba_engine_backups
 # Expose port (Cloud Run dynamically sets $PORT, default 8080)
 EXPOSE 8080
 
-# Health check endpoint for Cloud Run container liveness probe
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD curl -f http://localhost:${PORT:-8080}/health || exit 1
-
 # Launch production Uvicorn server with dynamic port resolution
 CMD exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080} --workers 1
