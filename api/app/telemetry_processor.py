@@ -169,6 +169,40 @@ class TelemetryProcessor:
                 candidate.update(analysis)
                 actionable.append(candidate)
 
+        # 3. Mine Zero-Hit Queries from Query Telemetry
+        seen_zero_concepts = set()
+        for qid, q in queries_by_id.items():
+            if q.get('results_count', 0) == 0:
+                concept = q.get('queried_concept') or q.get('raw_query') or q.get('query')
+                if not concept or not concept.strip():
+                    continue
+                c_norm = strip_accents(concept.strip())
+                if c_norm in seen_zero_concepts:
+                    continue
+                seen_zero_concepts.add(c_norm)
+
+                cid = f'cand_zero_{qid}'
+                status_val = 'PENDING_REVIEW'
+                if cid in existing_status_map:
+                    status_val = existing_status_map[cid].get('status', 'PENDING_REVIEW')
+
+                candidate = {
+                    'candidate_id': cid,
+                    'query_id': qid,
+                    'timestamp': q.get('timestamp', time.time()),
+                    'client_tier': q.get('client_tier', 'Universal_Web'),
+                    'rating': 'zero_hit',
+                    'queried_concept': concept.strip(),
+                    'returned_entity_id': None,
+                    'user_correction': 'Zero-shot search returned 0 hits from master corpus.',
+                    'tags': ['zero_hit', 'telemetry_mined'],
+                    'status': status_val
+                }
+
+                analysis = self._diagnose_candidate(candidate)
+                candidate.update(analysis)
+                actionable.append(candidate)
+
         return actionable
 
     def _diagnose_candidate(self, candidate: Dict[str, Any]) -> Dict[str, Any]:
@@ -291,7 +325,7 @@ class TelemetryProcessor:
             md_lines.append("✨ *No pending feedback items require action at this time. All telemetry is verified.*")
         else:
             for idx, c in enumerate(candidates, start=1):
-                status_icon = "⏳" if c.get("status") == "PENDING_REVIEW" else ("✅" if c.get("status") == "APPROVED" else "❌")
+                status_icon = "⏳" if c.get("status") == "PENDING_REVIEW" else ("✅" if c.get("status") in ["APPROVED", "COMMITTED"] else "❌")
                 md_lines.extend([
                     f"#### Candidate #{idx}: `{c.get('candidate_id')}` [{c.get('diagnosis_type')}] {status_icon}",
                     f"- **Queried Concept:** `{c.get('queried_concept')}`",
@@ -317,6 +351,20 @@ class TelemetryProcessor:
         md_content = chr(10).join(md_lines)
         with open(self.pending_md_path, "w", encoding="utf-8") as f:
             f.write(md_content)
+
+        # Mirror report to other standard paths for accessibility
+        extra_paths = [
+            Path('/home/aruna_olanrewaju/agba-engine/api/pending_self_learning_candidates.md'),
+            Path('/mnt/chromeos/shared/MyFiles/Projects /Agba Engine/agba_enterprise_api/pending_self_learning_candidates.md'),
+            Path('/home/aruna_olanrewaju/.gemini/antigravity-ide/brain/ef901e36-5592-4a8c-8b6d-ba3081572a24/pending_self_learning_candidates.md')
+        ]
+        for p in extra_paths:
+            try:
+                p.parent.mkdir(parents=True, exist_ok=True)
+                with open(p, "w", encoding="utf-8") as ef:
+                    ef.write(md_content)
+            except Exception:
+                pass
 
         print(f"✅ Generated HITL review state: {self.pending_json_path}")
         print(f"📄 Generated HITL Markdown report: {self.pending_md_path}")

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cpu, ShieldCheck, CheckCircle2, Database, Globe, Lock, ExternalLink, Code2 } from 'lucide-react';
+import { Cpu, ShieldCheck, CheckCircle2, Database, Globe, Lock, ExternalLink, Code2, BookOpen, Landmark, Sparkles, Layers, FileCode } from 'lucide-react';
 
 export default function ArchitectureTab() {
   return (
@@ -64,7 +64,84 @@ export default function ArchitectureTab() {
         </div>
       </div>
 
-      {/* Invariants & Ethical Standards */}
+
+      {/* Canonical Sources & Master Bibliography */}
+      <div className="glass-panel" style={{ padding: '32px', marginBottom: '36px', borderTop: '3px solid var(--gold-primary)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+          <BookOpen color="var(--gold-primary)" size={26} />
+          <div>
+            <h3 className="font-royal text-gold" style={{ fontSize: '1.5rem', margin: 0, fontWeight: 700 }}>
+              Canonical Sources & Master Bibliography
+            </h3>
+            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: '4px 0 0 0' }}>
+              The epistemological, ethnographical, and archival bedrock grounding every entity in the Àgbà Engine master corpus.
+            </p>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px', marginTop: '24px' }}>
+          {/* Category 1: Academic Literature */}
+          <div style={{ background: 'rgba(0,0,0,0.25)', padding: '20px', borderRadius: '10px', border: '1px solid rgba(212, 175, 55, 0.2)' }}>
+            <h4 style={{ color: 'var(--gold-light)', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <BookOpen size={16} /> Classical Scholarly Literature
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.86rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Rev. Samuel Johnson (1921)</strong><br />
+                <em>The History of the Yorubas</em> — Ọ̀yọ́ dynastic lineage, imperial warfare, and administrative statecraft.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Prof. Wande Abimbola (1975, 1976)</strong><br />
+                <em>Sixteen Great Poems of Ifá</em> & <em>An Exposition of Ifá Literary Corpus</em> — Sacred Odù Ifá poetic meters and ethical philosophy.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Prof. Rowland Abiodun (2014)</strong><br />
+                <em>Yoruba Art and Language</em> — Master aesthetic framework: <em>Ojú-Inú</em>, <em>Àṣẹ</em>, <em>Ìwà</em>, and visual semiotics.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Prof. Babatunde Lawal (1996, 2001)</strong><br />
+                <em>The Gẹ̀lẹ̀dẹ́ Spectacle</em> & <em>Awòrán: Representing the Self</em> — Mask symbology, maternal power (*Àwọn Ìyá Wa*), and scarifications.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Prof. William Bascom (1969, 1980)</strong><br />
+                <em>Ifa Divination</em> & <em>Sixteen Cowries</em> — Mechanics of Ọ̀pẹ̀lẹ̀, Ikin, and Ẹẹ́rìndínlógún divination.
+              </li>
+            </ul>
+          </div>
+
+          {/* Category 2: Museum Archives */}
+          <div style={{ background: 'rgba(0,0,0,0.25)', padding: '20px', borderRadius: '10px', border: '1px solid rgba(59, 130, 246, 0.2)' }}>
+            <h4 style={{ color: '#60a5fa', fontSize: '1.05rem', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Landmark size={16} /> Museum Collections & Curatorial Vaults
+            </h4>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.86rem', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>The Metropolitan Museum of Art (The Met)</strong><br />
+                Classical <em>Adé Beaded Crowns</em>, <em>Ọpọ́n Ifá</em>, <em>Ẹrùkẹ̀</em>, and sacred commemorative sculpture.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>The British Museum</strong><br />
+                12th–15th century classical <em>Ilé-Ifẹ̀ copper-alloy heads</em>, <em>Obalufon copper mask</em>, and Ọ̀wọ̀ ivories.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Cleveland Museum of Art & Art Institute of Chicago</strong><br />
+                Masterpieces carved by <em>Ọlọ́wẹ̀ of Ìsẹ̀</em>, ceremonial beaded royal boots (<em>Bàtà Ìlèkè</em>), and <em>Edan Ògbóni</em> bronzes.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>Smithsonian National Museum of African Art</strong><br />
+                Textile archives: wild-silk <em>Sányán</em>, camwood <em>Àlàárì</em>, indigo <em>Ẹtù</em>, and resist-dyed <em>Àdírẹ Ẹlẹ́kọ</em>.
+              </li>
+              <li>
+                <strong style={{ color: 'var(--text-primary)' }}>NCMM National Museum Lagos & Palace Shrines</strong><br />
+                Indigenous royal regalia, ancestral thrones, and living ceremonial instruments across Ifẹ̀, Ọ̀yọ́, and Ọ̀wọ̀.
+              </li>
+            </ul>
+          </div>
+
+          </div>
+      </div>
+
+{/* Invariants & Ethical Standards */}
       <div className="glass-panel" style={{ padding: '28px', marginBottom: '36px' }}>
         <h3 className="font-royal text-gold" style={{ fontSize: '1.4rem', marginBottom: '16px' }}>
           🏛️ Supreme Corpus Invariants & MLOps Governance

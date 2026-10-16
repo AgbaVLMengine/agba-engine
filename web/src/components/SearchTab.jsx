@@ -128,6 +128,9 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
       let score = 0;
 
+      // 0. Supreme Exact Tonal Match (+600 points)
+      if (q.trim() && (title === q.trim() || entity.id === q.trim())) score += 600;
+
       // 1. Supreme Core Subject Exact Match (+500 points)
       if (coreStripped && titleStripped === coreStripped) score += 500;
       else if (coreStripped && aliasesStripped.includes(coreStripped)) score += 400;
@@ -259,7 +262,56 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
   };
 
   const topMatch = results?.ranked_entities?.[0];
-  const relatedMatches = results?.ranked_entities?.slice(1) || [];
+  // Authentic Cultural Knowledge Graph Resolver
+  const resolvedRelatives = useMemo(() => {
+    if (!topMatch) return [];
+
+    const directRelatedNames = topMatch.related_entities || topMatch.cultural_relatives || topMatch.details?.related_entities || topMatch.details?.cultural_relatives || [];
+    const category = topMatch.category || topMatch.details?.category;
+
+    const resolved = [];
+    const seenIds = new Set([topMatch.id, topMatch.title]);
+
+    // 1. Resolve explicit related entities from knowledge graph
+    if (Array.isArray(directRelatedNames)) {
+      for (const relName of directRelatedNames) {
+        const found = masterCorpus.find(
+          (e) => e.id === relName || e.title === relName || stripAccents(e.title) === stripAccents(relName)
+        );
+        if (found && !seenIds.has(found.id)) {
+          seenIds.add(found.id);
+          resolved.push(found);
+        }
+      }
+    }
+
+    // 2. If fewer than 4 relatives, backfill with same-category sovereign entities
+    if (resolved.length < 4 && category) {
+      const sameCategoryEntities = masterCorpus.filter(
+        (e) => e.category === category && !seenIds.has(e.id)
+      );
+      for (const cand of sameCategoryEntities) {
+        if (resolved.length >= 6) break;
+        seenIds.add(cand.id);
+        resolved.push(cand);
+      }
+    }
+
+    // 3. Fallback to same-domain search hits
+    if (resolved.length < 2) {
+      const remainingHits = results?.ranked_entities?.slice(1) || [];
+      for (const hit of remainingHits) {
+        if (!seenIds.has(hit.id) && hit.category === topMatch.category) {
+          seenIds.add(hit.id);
+          resolved.push(hit.details || hit);
+        }
+      }
+    }
+
+    return resolved.slice(0, 6);
+  }, [topMatch, results]);
+
+  const relatedMatches = resolvedRelatives;
   const tonalContour = topMatch ? extractTonalContour(topMatch.title) : [];
 
   return (

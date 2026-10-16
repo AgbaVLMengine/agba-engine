@@ -59,7 +59,10 @@ export default function AdminTab({ apiBaseUrl }) {
   // Authentication Handler
   const handleLogin = (e) => {
     e.preventDefault();
-    if (passcode.trim() === 'agba2026' || passcode.startsWith('ghp_')) {
+    const entered = passcode.trim();
+    const envPasscode = import.meta.env.VITE_ARCHITECT_PASSCODE;
+
+    if ((envPasscode && entered === envPasscode) || (entered && entered.startsWith('ghp_'))) {
       setIsAuthenticated(true);
       setLoginError('');
     } else {
@@ -151,7 +154,7 @@ export default function AdminTab({ apiBaseUrl }) {
               type="password"
               value={passcode}
               onChange={(e) => setPasscode(e.target.value)}
-              placeholder="Enter architect passcode (e.g. agba2026)..."
+              placeholder="Enter sovereign architect passcode..."
               style={{
                 width: '100%',
                 padding: '12px 16px',
