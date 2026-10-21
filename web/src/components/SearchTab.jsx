@@ -6,6 +6,7 @@ import ToothSearchCore from './ToothSearchCore';
 import VeinRabbitHoleCanvas from './VeinRabbitHoleCanvas';
 import EntityBentoDeck from './EntityBentoDeck';
 import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
+import { hydrateSubVariantFromParent, findSubVariantMatchInCorpus } from '../utils/subVariantHydrator';
 
 function stripAccents(s) {
   return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -86,7 +87,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     );
   }, []);
 
-  const resolveSubVariantEntities = useCallback((subVariantNames = []) => {
+  const resolveSubVariantEntities = useCallback((subVariantNames = [], parentNode = null) => {
     const resolved = [];
     for (const svName of subVariantNames) {
       const svNFC = normalizeNFC(svName);
@@ -96,6 +97,8 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         masterCorpus.find((e) => stripAccents(e.title) === svClean || e.id === svName);
       if (hit) {
         resolved.push(hit);
+      } else if (parentNode) {
+        resolved.push(hydrateSubVariantFromParent(svName, parentNode));
       } else {
         resolved.push({
           id: `variant_${svClean}`,
@@ -145,7 +148,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
     let childVariants = [];
     if (Array.isArray(parentNode.sub_variants) && parentNode.sub_variants.length > 0) {
-      childVariants = resolveSubVariantEntities(parentNode.sub_variants).slice(0, 4);
+      childVariants = resolveSubVariantEntities(parentNode.sub_variants, parentNode).slice(0, 4);
     } else {
       childVariants = matches.filter((m) => m.title !== parentNode.title).slice(0, 4);
     }
@@ -278,41 +281,53 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
       try {
         let rankedEntities = [];
-        try {
-          const res = await fetch(`${apiBaseUrl}/v6/retrieve/deep-context`, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
-            },
-            body: JSON.stringify({
-              query: q,
-              cultural_domain: 'Comprehensive',
-              top_k: 6
-            })
-          });
-          if (res.ok) {
-            const data = await res.json();
-            if (data?.ranked_entities?.length > 0) {
-              rankedEntities = data.ranked_entities;
-              setResults(data);
-            }
-          }
-        } catch (_) {
-          // Fallback to local sovereign ranked search
-        }
 
-        if (rankedEntities.length === 0) {
-          const localMatches = searchRankedCorpus(q);
-          if (localMatches.length > 0) {
-            rankedEntities = localMatches.slice(0, 6).map((m, idx) => hydrateEntityForBento(m, idx === 0 ? 0.992 : 0.88 - idx * 0.05));
-            setResults({
-              status: 'success',
-              ranked_entities: rankedEntities
+        // Dynamic Sub-Variant Fallback Hydrator (Anti-Parent-Loop Guard)
+        const svMatch = findSubVariantMatchInCorpus(q, masterCorpus);
+        if (svMatch) {
+          const synthChild = hydrateSubVariantFromParent(svMatch.variantTitle, svMatch.parent);
+          rankedEntities = [hydrateEntityForBento(synthChild, 1.0)];
+          setResults({
+            status: 'success',
+            ranked_entities: rankedEntities
+          });
+        } else {
+          try {
+            const res = await fetch(`${apiBaseUrl}/v6/retrieve/deep-context`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
+              },
+              body: JSON.stringify({
+                query: q,
+                cultural_domain: 'Comprehensive',
+                top_k: 6
+              })
             });
-          } else {
-            setErrorMsg(`No direct matches found for '${q}'. Try searching for Òkèlè, Amàlà, Agbádá, Odù Ifá, Ògún, or Bàtá.`);
-            setResults(null);
+            if (res.ok) {
+              const data = await res.json();
+              if (data?.ranked_entities?.length > 0) {
+                rankedEntities = data.ranked_entities;
+                setResults(data);
+              }
+            }
+          } catch (_) {
+            // Fallback to local sovereign ranked search
+          }
+
+          if (rankedEntities.length === 0) {
+            const localMatches = searchRankedCorpus(q);
+            if (localMatches.length > 0) {
+              rankedEntities = localMatches.slice(0, 6).map((m, idx) => hydrateEntityForBento(m, idx === 0 ? 0.992 : 0.88 - idx * 0.05));
+              setResults({
+                status: 'success',
+                ranked_entities: rankedEntities
+              });
+            } else {
+              setErrorMsg(`No direct matches found for '${q}'. Try searching for Òkèlè, Amàlà, Agbádá, Odù Ifá, Ògún, or Bàtá.`);
+              setResults(null);
+            }
           }
         }
 

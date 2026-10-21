@@ -554,7 +554,7 @@
     "id": "Owó_Ẹyọ",
     "title": "Owó Ẹyọ",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "is_parent": true,
     "aliases": [
       "cowrie",
@@ -595,7 +595,8 @@
       ],
       "diaspora_connections": "Universal divination instrument (Dillogún / Merindilogún) in Cuban Santería and Candomblé.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show heaps of glistening cowrie shells counted in traditional tallies across wooden counting boards."
+      "media_production_notes": "Show heaps of glistening cowrie shells counted in traditional tallies across wooden counting boards.",
+      "category": "Civilization, History & Civic Heritage"
     }
   },
   {
@@ -1176,7 +1177,7 @@
     "id": "Ẹja",
     "title": "Ẹja",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "is_parent": true,
     "aliases": [
       "aquatic",
@@ -1221,14 +1222,25 @@
       ],
       "diaspora_connections": "Prominent in Cuban and Brazilian rites for Oshun, Yemoja, and Obatala (sacred offerings of eja and igbin).",
       "geographical_origin": "Lagos lagoons, Osun, Ogun, and Niger river basins.",
-      "media_production_notes": "Show fresh African mudfish and the large white-fleshed sacred land snail Ìgbín."
-    }
+      "media_production_notes": "Show fresh African mudfish and the large white-fleshed sacred land snail Ìgbín.",
+      "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+      "related_entities": [
+        "Apẹja",
+        "Odo Ọ̀ṣun",
+        "Olókun"
+      ]
+    },
+    "related_entities": [
+      "Apẹja",
+      "Odo Ọ̀ṣun",
+      "Olókun"
+    ]
   },
   {
     "id": "Ẹyẹ",
     "title": "Ẹyẹ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "is_parent": true,
     "aliases": [
       "avian",
@@ -1280,14 +1292,23 @@
       ],
       "diaspora_connections": "Avian attributes central to Santería and Candomblé offerings and bird-crowned Osanyin staves.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Focus on the bird crowning the monarch's beaded crown (Okin) and the sixteen birds of Ọ̀sanyìn."
-    }
+      "media_production_notes": "Focus on the bird crowning the monarch's beaded crown (Okin) and the sixteen birds of Ọ̀sanyìn.",
+      "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+      "related_entities": [
+        "Adé",
+        "Ìyámi (Our Mothers / Primordial Female Energy)"
+      ]
+    },
+    "related_entities": [
+      "Adé",
+      "Ìyámi (Our Mothers / Primordial Female Energy)"
+    ]
   },
   {
     "id": "Ẹranko",
     "title": "Ẹranko",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "is_parent": true,
     "aliases": [
       "animal",
@@ -1340,7 +1361,8 @@
       ],
       "diaspora_connections": "Totemic animals maintain prominent symbolic status in Afro-Atlantic religious sacrifices and iconography.",
       "geographical_origin": "Pan-Yorùbá rainforests and savannah belts.",
-      "media_production_notes": "Feature authentic African wildlife species; avoid portraying non-indigenous fauna."
+      "media_production_notes": "Feature authentic African wildlife species; avoid portraying non-indigenous fauna.",
+      "category": "Indigenous Zoology, Sacred Fauna & Wildlife"
     }
   },
   {
@@ -2067,8 +2089,22 @@
       ],
       "diaspora_connections": "Yorùbá riverine and coastal traditions influenced Afro-Brazilian fishing guilds in Salvador da Bahia.",
       "geographical_origin": "Èkó (Lagos), Ìjẹ̀bú-Waterside, Badagry, Ọ̀ṣun and Ògùn river valleys.",
-      "media_production_notes": "Show dugout wooden canoe gliding on mist-covered river with circular throw-net expanding in mid-air."
-    }
+      "media_production_notes": "Show dugout wooden canoe gliding on mist-covered river with circular throw-net expanding in mid-air.",
+      "related_entities": [
+        "Odo Ọ̀ṣun",
+        "Olókun",
+        "Ẹja",
+        "Ọkọ̀ Ojú Omi",
+        "Odò Ọ̀ṣun"
+      ]
+    },
+    "related_entities": [
+      "Odo Ọ̀ṣun",
+      "Olókun",
+      "Ẹja",
+      "Ọkọ̀ Ojú Omi",
+      "Odò Ọ̀ṣun"
+    ]
   },
   {
     "id": "Ìwunṣọ",
@@ -2297,19 +2333,18 @@
     ]
   },
   {
-    "id": "Àpáta",
-    "title": "Àpáta",
+    "id": "Àpáta_Shield",
+    "title": "Àpáta (Shield)",
     "culture": "Yorùbá",
     "category": "Military Traditions, Weaponry & Defense",
-    "is_parent": true,
+    "is_parent": false,
     "aliases": [
-      "apata",
-      "armor",
-      "buckler",
+      "apata shield",
       "defense shield",
-      "shield",
-      "shields",
-      "war shield"
+      "war shield",
+      "asa",
+      "body buckler",
+      "apata"
     ],
     "description": "The defensive war shield and body buckler handcrafted from cured elephant hide, buffalo leather, or carved hardwood to deflect arrows and blade strikes.",
     "sub_variants": [
@@ -2340,8 +2375,11 @@
       ],
       "diaspora_connections": "Appears symbolically in Afro-Cuban visual art of warrior orishas.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Ìbàdàn, Ìjẹ̀bú.",
-      "media_production_notes": "Textured thick animal hide finish with bold geometric tooling; oval or circular profile."
-    }
+      "media_production_notes": "Textured thick animal hide finish with bold geometric tooling; oval or circular profile.",
+      "title": "Àpáta (Shield)",
+      "id": "Àpáta_Shield"
+    },
+    "sovereign_parent": "Àpáta"
   },
   {
     "id": "Ọfà",
@@ -2390,8 +2428,20 @@
       ],
       "diaspora_connections": "Universal attribute of Oshosi in Cuban Lucumí and Brazilian Candomblé (Ofá bow emblem).",
       "geographical_origin": "Ọ̀yọ́, Èkìtì, Òkè-Ògùn, Ìbàrìbá borderlands.",
-      "media_production_notes": "Include the cylindrical embroidered leather quiver (Apó Ọfà) slung diagonally across the chest."
-    }
+      "media_production_notes": "Include the cylindrical embroidered leather quiver (Apó Ọfà) slung diagonally across the chest.",
+      "related_entities": [
+        "Idà",
+        "Àdá",
+        "Ògún",
+        "Ọ̀kọ̀"
+      ]
+    },
+    "related_entities": [
+      "Idà",
+      "Àdá",
+      "Ogun (Warfare & Military Tradition)",
+      "Ọ̀kọ̀"
+    ]
   },
   {
     "id": "Idà",
@@ -2443,8 +2493,20 @@
       ],
       "diaspora_connections": "Prominent in Cuban Santería representations of Ògún and Ọya's double-edged sword.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Authentic Yorùbá swords have distinctive hilt designs and leather sheaths; do not use European fencing swords."
-    }
+      "media_production_notes": "Authentic Yorùbá swords have distinctive hilt designs and leather sheaths; do not use European fencing swords.",
+      "related_entities": [
+        "Àdá",
+        "Ògún",
+        "Ọfà",
+        "Ọ̀kọ̀"
+      ]
+    },
+    "related_entities": [
+      "Àdá",
+      "Ogun (Warfare & Military Tradition)",
+      "Ọfà",
+      "Ọ̀kọ̀"
+    ]
   },
   {
     "id": "Ogun (Warfare & Military Tradition)",
@@ -2498,7 +2560,14 @@
       "diaspora_connections": "Narratives of the 19th-century Yorùbá wars directly shaped the demographics and cultural resilience of Cuba and Brazil.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Ìbàdàn, Ìjàyè, Èkìtì-Parapọ̀, Abẹ́òkúta.",
       "media_production_notes": "Portray historic battle maneuvers, disciplined battle formations, and authentic weaponry without anachronisms."
-    }
+    },
+    "related_entities": [
+      "Balógun",
+      "Idà",
+      "Àdá",
+      "Ọfà",
+      "Ọ̀kọ̀"
+    ]
   },
   {
     "id": "Àmì_Ọlá",
@@ -3112,8 +3181,16 @@
       ],
       "diaspora_connections": "Preserved in Afro-Cuban Santería/Lucumí coronal crowns of Ọbàtálá and Brazilian Candomblé Ketu adés.",
       "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Ìjẹ̀bú, Òndó, Òwò.",
-      "media_production_notes": "Cinematic visual must show authentic beaded fringe falling below the nose; never expose the king's bare eyes when crowned with Adéńlá."
-    }
+      "media_production_notes": "Cinematic visual must show authentic beaded fringe falling below the nose; never expose the king's bare eyes when crowned with Adéńlá.",
+      "related_entities": [
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Ẹyẹ"
+      ]
+    },
+    "related_entities": [
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Ẹyẹ"
+    ]
   },
   {
     "id": "Adé Ààrẹ",
@@ -3522,7 +3599,12 @@
     ],
     "diaspora_connections": "In the Caribbean, the reverence for river deities survived as the Orisha Ọ̀ṣun in Cuban Santería (where the river is symbolised by the flowing waters of the Yumurí) and in Brazilian Candomblé (where the Orixá Oxum is invoked in river‑based rites along the São Francisco). Trinidad’s Orisha worship retains the Odo Ọ̀ṣun motif in the annual “Water Festival” of the Shango Society. Haitian Vodou’s Nago lineage honours a water spirit called “Maman Souris” who parallels Ọ̀ṣun’s fertility aspects. In the Gullah Geechee tradition of the U.S. Southeast, river‑spirit chants echo Yoruba lyrical structures, preserving the concept of a living river goddess. West‑African migrations spread the cult to Benin (Nago), Togo (Ewe‑Yoruba syncretism), and Ghana (Akan‑Yoruba hybrid festivals). Contemporary diaspora communities in the UK, US, Canada, France, and Australia celebrate the Osun‑Osogbo Festival abroad, creating river‑themed art installations, virtual pilgrimages, and collaborative music projects that fuse traditional bata drumming with electronic soundscapes, ensuring the entity’s relevance across continents.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Film: shoot on location at dawn on the actual Osun River; use natural lighting to capture the mist and reflect the river’s sacred sheen. Authenticity requires consulting a Babaláwo for correct libation sequences and ensuring actors wear traditional white agbada and beaded crowns (ìrókò). Visual art: incorporate the iconic “Osun‑Osogbo” bronze sculptures and the stylised “Ọ̀ṣun’s fan” motif; colour palette should emphasize turquoise, gold, and ivory. Music: record live bata drums (ìyá, okónkolo, and bàtá) with call‑and‑response chants in Yoruba; blend with field recordings of river flow. Avoid generic “African” tropes—highlight the specific Yoruba cosmology of water as àṣẹ, and portray the river’s role as both a physical landscape and a living deity."
+    "media_production_notes": "Film: shoot on location at dawn on the actual Osun River; use natural lighting to capture the mist and reflect the river’s sacred sheen. Authenticity requires consulting a Babaláwo for correct libation sequences and ensuring actors wear traditional white agbada and beaded crowns (ìrókò). Visual art: incorporate the iconic “Osun‑Osogbo” bronze sculptures and the stylised “Ọ̀ṣun’s fan” motif; colour palette should emphasize turquoise, gold, and ivory. Music: record live bata drums (ìyá, okónkolo, and bàtá) with call‑and‑response chants in Yoruba; blend with field recordings of river flow. Avoid generic “African” tropes—highlight the specific Yoruba cosmology of water as àṣẹ, and portray the river’s role as both a physical landscape and a living deity.",
+    "related_entities": [
+      "Apẹja",
+      "Olókun",
+      "Ẹja"
+    ]
   },
   {
     "id": "Àpáta Ìdánre",
@@ -3759,13 +3841,25 @@
       ],
       "diaspora_connections": "Ogum in Brazil; Ogún in Cuban Lucumí.",
       "geographical_origin": "Pan-Yorùbáland",
-      "media_production_notes": "Blacksmith-warrior holding forged cutlass."
+      "media_production_notes": "Blacksmith-warrior holding forged cutlass.",
+      "related_entities": [
+        "Idà",
+        "Àdá",
+        "Ògún Lákàyé",
+        "Òrìṣà",
+        "Ọfà",
+        "Ọ̀kọ̀",
+        "Ọ̀ṣọ́ọ̀sì"
+      ]
     },
     "related_entities": [
+      "Idà",
+      "Àdá",
       "Ògún Lákàyé",
       "Òrìṣà",
-      "Ọ̀ṣọ́ọ̀sì",
-      "Idà"
+      "Ọfà",
+      "Ọ̀kọ̀",
+      "Ọ̀ṣọ́ọ̀sì"
     ],
     "cultural_relatives": [
       "Ògún Lákàyé",
@@ -4039,12 +4133,13 @@
   },
   {
     "id": "Ofada",
-    "title": "Ofada",
+    "title": "Ọ̀fàdà",
     "culture": "Yorùbá",
     "category": "Culinary Arts & Indigenous Gastronomy",
     "aliases": [
       "ofada",
-      "unpolished short-grain indigenous rice"
+      "unpolished short-grain indigenous rice",
+      "ọ̀fàdà"
     ],
     "description": "Unpolished short-grain indigenous rice, known for its distinct aroma and served in Ewe Èran leaves with bleached palm oil pepper sauce.",
     "historical_timeline": "Cultivation of Ofada rice traces back to the pre‑16th‑century Ọ̀yọ́ Empire, flourishing in the fertile lowlands of present‑day Ògún State. By the 19th century, Ofada became a staple for Ọ̀yọ́ aristocracy and later spread to Lagos markets during the colonial cash‑crop boom, retaining its status as a marker of Yorùbá identity through the post‑independence era.",
@@ -4062,7 +4157,7 @@
     "id": "Ẹ̀kọ",
     "title": "Ẹ̀kọ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Culinary Arts & Indigenous Gastronomy",
     "aliases": [
       "eko",
       "solid cornmeal cake",
@@ -4455,7 +4550,7 @@
     "id": "Àlọ́ ÌJÀPÁ",
     "title": "Àlọ́ ÌJÀPÁ",
     "culture": "Yorùbá",
-    "category": "Auditory Arts, Music, Drums & Chants",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "alo ijapa",
       "alo-ijapa",
@@ -4641,7 +4736,7 @@
     "id": "Ẹ̀ṣà Ẹégún",
     "title": "Ẹ̀ṣà Ẹégún",
     "culture": "Yorùbá",
-    "category": "Ancestral Masquerades & Funerary Rites",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "esa eegun",
       "esa-eegun",
@@ -4786,7 +4881,7 @@
     "id": "Orin Àárọ̀",
     "title": "Orin Àárọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "chant",
       "communal work songs",
@@ -4813,7 +4908,7 @@
     "id": "Èfé",
     "title": "Èfé",
     "culture": "Yorùbá",
-    "category": "Ancestral Masquerades & Funerary Rites",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "efe",
       "satirical oral poetry",
@@ -4931,7 +5026,7 @@
     "id": "Orin Ọ̀ṣun",
     "title": "Orin Ọ̀ṣun",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "chant",
       "devotional choral songs",
@@ -4981,7 +5076,7 @@
     "id": "Orin Ìṣẹ́gún",
     "title": "Orin Ìṣẹ́gún",
     "culture": "Yorùbá",
-    "category": "Military Traditions, Weaponry & Defense",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "chant",
       "hymn",
@@ -5414,13 +5509,25 @@
       ],
       "diaspora_connections": "Olokun in Cuban Santería and Brazilian Candomblé.",
       "geographical_origin": "Ilé-Ifẹ̀ and Atlantic Coast",
-      "media_production_notes": "Ocean sovereign holding serpent staff."
+      "media_production_notes": "Ocean sovereign holding serpent staff.",
+      "related_entities": [
+        "Adé",
+        "Apẹja",
+        "Odo Ọ̀ṣun",
+        "Odò",
+        "Yemọja",
+        "Òrìṣà",
+        "Ẹja"
+      ]
     },
     "related_entities": [
-      "Yemọja",
-      "Odò",
       "Adé",
-      "Òrìṣà"
+      "Apẹja",
+      "Odo Ọ̀ṣun",
+      "Odò",
+      "Yemọja",
+      "Òrìṣà",
+      "Ẹja"
     ],
     "cultural_relatives": [
       "Yemọja",
@@ -5623,10 +5730,7 @@
       "egungun",
       "egungun masquerade",
       "masquerade",
-      "masquerades",
-      "Ẹégún",
-      "ẹégún",
-      "Eegun"
+      "masquerades"
     ],
     "description": "The physical manifestation of ancestral spirits returning from the celestial realm (Ọ̀run) in layered textile masquerades to bless, cleanse, and counsel their living descendants.",
     "historical_timeline": "Ancestral veneration institutionalized under the sacred lineage of Aláapinni in classical Ọ̀yọ́ and Ifẹ̀.",
@@ -5800,7 +5904,7 @@
     "id": "Ìyẹ̀rosùn",
     "title": "Ìyẹ̀rosùn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "iyerosun",
       "yellow sacred powder",
@@ -5895,7 +5999,7 @@
     "id": "Bàtà Mi Àdùkẹ́",
     "title": "Bàtà Mi Àdùkẹ́",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "bata mi aduke",
       "bata-mi-aduke",
@@ -5921,7 +6025,7 @@
     "id": "Iṣẹ́ L’òògùn Ṣìọ̀rọ̀",
     "title": "Iṣẹ́ L’òògùn Ṣìọ̀rọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "ise loogun sioro",
       "ise l’oogun sioro",
@@ -5946,7 +6050,7 @@
     "id": "Epo Mọ̀bẹ̀ O",
     "title": "Epo Mọ̀bẹ̀ O",
     "culture": "Yorùbá",
-    "category": "Culinary Arts & Indigenous Gastronomy",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "epo mobe o",
       "epo mọ̀bẹ̀ o",
@@ -5993,7 +6097,7 @@
     "id": "Tọ́mọ Tọ́mọ Ọ̀yọ́",
     "title": "Tọ́mọ Tọ́mọ Ọ̀yọ́",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "tomo tomo oyo",
       "tomo-tomo-oyo",
@@ -6016,7 +6120,7 @@
     "id": "Kílọ̀ Fún Ọmọ Náà",
     "title": "Kílọ̀ Fún Ọmọ Náà",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "kilo fun omo naa",
       "kilo-fun-omo-naa",
@@ -6067,7 +6171,7 @@
     "id": "Awa L’ọmọ Yoruba",
     "title": "Awa L’ọmọ Yoruba",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "awa lomo yoruba",
       "awa l’omo yoruba",
@@ -6092,7 +6196,7 @@
     "id": "Ojo Rọ̀ Piri Piri",
     "title": "Ojo Rọ̀ Piri Piri",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "ojo ro piri piri",
       "ojo rọ̀ piri piri",
@@ -6165,7 +6269,7 @@
     "id": "Sáré Wa O, Sáré Wa",
     "title": "Sáré Wa O, Sáré Wa",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "sare wa o sare wa",
       "sare wa o, sare wa",
@@ -6190,7 +6294,7 @@
     "id": "Ọ̀rẹ́ Mi Ọ̀wọ́n",
     "title": "Ọ̀rẹ́ Mi Ọ̀wọ́n",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "ore mi owon",
       "ore-mi-owon",
@@ -6213,7 +6317,7 @@
     "id": "Ẹiyẹ Ẹ̀gbẹ́ Mi",
     "title": "Ẹiyẹ Ẹ̀gbẹ́ Mi",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "eiye egbe mi",
       "eiye-egbe-mi",
@@ -6236,7 +6340,7 @@
     "id": "Bí O Bá N lọ́",
     "title": "Bí O Bá N lọ́",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "bi o ba n lo",
       "bi-o-ba-n-lo",
@@ -6261,7 +6365,7 @@
     "id": "Ọmọ Kékeré O",
     "title": "Ọmọ Kékeré O",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "omo kekere o",
       "omo-kekere-o",
@@ -6284,7 +6388,7 @@
     "id": "Pàtẹ́wọ́ Fún Ọmọ Náà",
     "title": "Pàtẹ́wọ́ Fún Ọmọ Náà",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "n encouraging applause song",
       "patewo fun omo naa",
@@ -6308,7 +6412,7 @@
     "id": "Ọ̀sẹ̀ T’ó N Bọ̀",
     "title": "Ọ̀sẹ̀ T’ó N Bọ̀",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "ose to n bo",
       "ose t’o n bo",
@@ -6380,7 +6484,7 @@
     "id": "Gbọ́ Owe Mi",
     "title": "Gbọ́ Owe Mi",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "gbo owe mi",
       "gbo-owe-mi",
@@ -6403,7 +6507,7 @@
     "id": "Ayo Ọmọ",
     "title": "Ayo Ọmọ",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "ayo omo",
       "ayo ọmọ",
@@ -6453,7 +6557,7 @@
     "id": "Mọ̀ Ọ̀rọ̀ Yí Dáadáa",
     "title": "Mọ̀ Ọ̀rọ̀ Yí Dáadáa",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "mo oro yi daadaa",
       "mo-oro-yi-daadaa",
@@ -6477,7 +6581,7 @@
     "id": "Dìde Kúró Níbẹ̀",
     "title": "Dìde Kúró Níbẹ̀",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "dide kuro nibe",
       "dide-kuro-nibe",
@@ -7770,7 +7874,7 @@
     "id": "Ọ̀ṣọ́ọ̀rọ̀",
     "title": "Ọ̀ṣọ́ọ̀rọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "osooro",
       "rattle instrument",
@@ -7865,7 +7969,7 @@
     "id": "Kàkàkí",
     "title": "Kàkàkí",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "kakaki",
       "kàkàkí"
@@ -8413,7 +8517,7 @@
     "id": "Orí Olókùn",
     "title": "Orí Olókùn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "ori olokun",
       "ori-olokun",
@@ -8463,10 +8567,14 @@
     "id": "Ìwọ̀fà",
     "title": "Ìwọ̀fà",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
+      "ìwọ̀fà",
       "iwofa",
-      "ìwọ̀fà"
+      "traditional labor covenant",
+      "pawnship",
+      "pre-colonial labor contract",
+      "credit labor covenant"
     ],
     "description": "An ancient customary credit and labor arrangement where labor was provided as interest on credit loan.",
     "historical_timeline": "During the Pre-Colonial Era, particularly at the height of the Ọ̀yọ́ Empire (16th to 18th Century), the Ìwọ̀fà system flourished as a vital economic mechanism for agricultural expansion and trade financing. In the 19th Century, amidst the Yorùbá Civil Wars, it provided a crucial safety net for displaced families seeking economic stability. With the advent of the Colonial Era in the late 19th and early 20th Century, British Colonial Administrators frequently conflated the Ìwọ̀fà system with debt bondage and chattel slavery. This fundamental misunderstanding led to aggressive legislative efforts to abolish the practice. By the Mid-20th Century, the formal Ìwọ̀fà system had largely declined, evolving into modern cooperative financial structures such as the Ẹ̀súsú and Àjọ.",
@@ -8480,13 +8588,20 @@
     ],
     "diaspora_connections": "The underlying ethos of the Ìwọ̀fà system—communal economic resilience, mutual aid, and collective labor—survived the harrowing Middle Passage of the Trans-Atlantic Slave Trade. In the Global Diaspora, these Yorùbá financial philosophies adapted and evolved into various cooperative economic systems. In the Caribbean, it is mirrored in the Susu (derived from Ẹ̀súsú) and the Partner or Pardner systems in Jamaica and the United Kingdom. In the Americas, the tradition of pooling labor and resources to uplift community members echoes the ancestral memory of the Ìwọ̀fà, demonstrating how Indigenous African economic frameworks provided a blueprint for survival and prosperity among Afro-Descendant populations worldwide.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For visual and auditory media productions, it is critical to visually distinguish the Ìwọ̀fà from the Ẹrú (Slave). Wardrobe should reflect the Ìwọ̀fà wearing respectable, albeit practical, traditional attire such as Bùbá and Ṣòkòtò, maintaining their Ọmọlúwàbí status. Cinematography should utilize warm, golden-hour lighting over expansive agricultural landscapes of the Oyo Empire to evoke dignity and industriousness. The soundscape should feature rhythmic Orin Iṣẹ́ (Work Songs) synchronized with the striking of the Ọkọ́ (Hoe), accompanied by the encouraging tones of the Gàńgán (Talking Drum). Scripts must emphasize the contractual, temporary nature of the arrangement, portraying the Creditor and the Ìwọ̀fà engaging in formal, respectful negotiations overseen by Community Elders."
+    "media_production_notes": "For visual and auditory media productions, it is critical to visually distinguish the Ìwọ̀fà from the Ẹrú (Slave). Wardrobe should reflect the Ìwọ̀fà wearing respectable, albeit practical, traditional attire such as Bùbá and Ṣòkòtò, maintaining their Ọmọlúwàbí status. Cinematography should utilize warm, golden-hour lighting over expansive agricultural landscapes of the Oyo Empire to evoke dignity and industriousness. The soundscape should feature rhythmic Orin Iṣẹ́ (Work Songs) synchronized with the striking of the Ọkọ́ (Hoe), accompanied by the encouraging tones of the Gàńgán (Talking Drum). Scripts must emphasize the contractual, temporary nature of the arrangement, portraying the Creditor and the Ìwọ̀fà engaging in formal, respectful negotiations overseen by Community Elders.",
+    "is_parent": true,
+    "sub_variants": [
+      "Ìwọ̀fà Ọmọdé",
+      "Ìwọ̀fà Àgbà",
+      "Ìwọ̀fà Oko",
+      "Ìwọ̀fà Iṣẹ́-Ọwọ́"
+    ]
   },
   {
     "id": "Ọ̀ṣọ́gbó Grove",
     "title": "Ọ̀ṣọ́gbó Grove",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "osogbo grove",
       "osogbo-grove",
@@ -9142,7 +9257,7 @@
     "id": "Ẹ̀rị̀nfolà",
     "title": "Ẹ̀rị̀nfolà",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "carved ivory bangles",
       "erinfola",
@@ -9440,7 +9555,7 @@
     "id": "Ìsọmọlórúkọ",
     "title": "Ìsọmọlórúkọ",
     "culture": "Yorùbá",
-    "category": "Festivals, Celebrations & Civic Pageantry",
+    "category": "Social Structure, Kinship & Lineage",
     "aliases": [
       "isomoloruko",
       "ìsọmọlórúkọ"
@@ -9463,7 +9578,7 @@
     "id": "Ìgbéyàwó",
     "title": "Ìgbéyàwó",
     "culture": "Yorùbá",
-    "category": "Festivals, Celebrations & Civic Pageantry",
+    "category": "Social Structure, Kinship & Lineage",
     "aliases": [
       "igbeyawo",
       "ìgbéyàwó"
@@ -10038,7 +10153,7 @@
     "id": "Edan Ogboni",
     "title": "Edan Ogboni",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "earth society",
       "edan ogboni",
@@ -10654,7 +10769,7 @@
     "id": "Onígbàjámọ̀",
     "title": "Onígbàjámọ̀",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "onigbajamo",
       "onígbàjámọ̀"
@@ -10724,7 +10839,7 @@
     "id": "Aláṣọ",
     "title": "Aláṣọ",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "alaso",
       "aláṣọ",
@@ -10869,7 +10984,7 @@
     "id": "Ì̀wọ̀ntúnwọ̀nsì",
     "title": "Ì̀wọ̀ntúnwọ̀nsì",
     "culture": "Yorùbá",
-    "category": "Civilization, History & Civic Heritage",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "iwontunwonsi",
       "ì̀wọ̀ntúnwọ̀nsì"
@@ -11300,8 +11415,20 @@
       ],
       "diaspora_connections": "The universal machete of Afro-Cuban and Haitian rural laborers, consecrated to Ogou.",
       "geographical_origin": "Pan-Yorùbá agrarian towns.",
-      "media_production_notes": "Show authentic curved blade geometry (such as the hooked Ológeṣẹ́) and hand-finished hardwood handle."
-    }
+      "media_production_notes": "Show authentic curved blade geometry (such as the hooked Ológeṣẹ́) and hand-finished hardwood handle.",
+      "related_entities": [
+        "Idà",
+        "Ògún",
+        "Ọfà",
+        "Ọ̀kọ̀"
+      ]
+    },
+    "related_entities": [
+      "Idà",
+      "Ogun (Warfare & Military Tradition)",
+      "Ọfà",
+      "Ọ̀kọ̀"
+    ]
   },
   {
     "id": "Ọ̀kọ̀",
@@ -11349,14 +11476,26 @@
       ],
       "diaspora_connections": "Found in Candomblé Ketu Ogum ceremonies as sacred metal staves.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Ìlọrin, Kétu, Ẹ̀gbádò.",
-      "media_production_notes": "Cavalry lances were long and balanced for horsemen; hunting spears were shorter and sturdier."
-    }
+      "media_production_notes": "Cavalry lances were long and balanced for horsemen; hunting spears were shorter and sturdier.",
+      "related_entities": [
+        "Idà",
+        "Àdá",
+        "Ògún",
+        "Ọfà"
+      ]
+    },
+    "related_entities": [
+      "Idà",
+      "Àdá",
+      "Ogun (Warfare & Military Tradition)",
+      "Ọfà"
+    ]
   },
   {
     "id": "Abo",
     "title": "Abo",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "abo",
       "calabash bowl",
@@ -11478,7 +11617,7 @@
     "id": "Àbà",
     "title": "Àbà",
     "culture": "Yorùbá",
-    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "aba",
       "àbà"
@@ -11547,7 +11686,7 @@
     "id": "Àká",
     "title": "Àká",
     "culture": "Yorùbá",
-    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "aka",
       "elevated granary structures",
@@ -11774,7 +11913,7 @@
     "id": "Kò Sí Ẹni Tí Ó Mọ Ọ̀la",
     "title": "Kò Sí Ẹni Tí Ó Mọ Ọ̀la",
     "culture": "Yorùbá",
-    "category": "Civilization, History & Civic Heritage",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "ko si eni ti o mo ola",
       "ko-si-eni-ti-o-mo-ola",
@@ -11936,7 +12075,7 @@
     "id": "Ọdún Òṣun",
     "title": "Ọdún Òṣun",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Festivals, Celebrations & Civic Pageantry",
     "aliases": [
       "annual celebration",
       "festival",
@@ -11964,7 +12103,7 @@
     "id": "Ọdún Ìṣẹṣẹ",
     "title": "Ọdún Ìṣẹṣẹ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Festivals, Celebrations & Civic Pageantry",
     "aliases": [
       "annual celebration",
       "collective global day of celebration",
@@ -12048,7 +12187,7 @@
     "id": "Ọdún Agẹmọ",
     "title": "Ọdún Agẹmọ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Festivals, Celebrations & Civic Pageantry",
     "aliases": [
       "annual celebration",
       "festival",
@@ -12075,7 +12214,7 @@
     "id": "Ọdún Ọlojo Ife",
     "title": "Ọdún Ọlojo Ife",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Festivals, Celebrations & Civic Pageantry",
     "aliases": [
       "annual celebration",
       "festival",
@@ -12182,7 +12321,7 @@
     "id": "Màrìwo",
     "title": "Màrìwo",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "mariwo",
       "màrìwo"
@@ -12205,7 +12344,7 @@
     "id": "Ẹ̀yọ̀",
     "title": "Ẹ̀yọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Ancestral Masquerades & Funerary Rites",
     "aliases": [
       "eyo",
       "ẹ̀yọ̀"
@@ -12254,7 +12393,7 @@
     "id": "Ọdún Orí",
     "title": "Ọdún Orí",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Festivals, Celebrations & Civic Pageantry",
     "aliases": [
       "annual celebration",
       "festival",
@@ -12530,7 +12669,7 @@
     "id": "Ìjàpá",
     "title": "Ìjàpá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "ijapa",
       "tortoise",
@@ -12556,7 +12695,7 @@
     "id": "Àkùkọ",
     "title": "Àkùkọ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "akuko",
       "àkùkọ"
@@ -12580,7 +12719,7 @@
     "id": "Ẹsin",
     "title": "Ẹsin",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "esin",
       "ẹsin"
@@ -12604,7 +12743,7 @@
     "id": "Àgbọ̀nrin",
     "title": "Àgbọ̀nrin",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "agbonrin",
       "àgbọ̀nrin"
@@ -12628,7 +12767,7 @@
     "id": "Ẹ̀kùn",
     "title": "Ẹ̀kùn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "ekun",
       "ẹ̀kùn"
@@ -12651,7 +12790,7 @@
     "id": "Àmọ̀tẹ́kùn",
     "title": "Àmọ̀tẹ́kùn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "amotekun",
       "àmọ̀tẹ́kùn"
@@ -12674,7 +12813,7 @@
     "id": "Aáyá",
     "title": "Aáyá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "aaya",
       "aáyá"
@@ -12697,7 +12836,7 @@
     "id": "Ẹ̀yọ̀-Ẹran",
     "title": "Ẹ̀yọ̀-Ẹran",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "eyo eran",
       "eyo-eran",
@@ -12983,7 +13122,7 @@
     "id": "Egbin",
     "title": "Egbin",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "egbin",
       "the gazelle"
@@ -13006,7 +13145,7 @@
     "id": "Àwòko",
     "title": "Àwòko",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "awoko",
       "àwòko"
@@ -13105,7 +13244,7 @@
     "id": "Ẹ̀wù Àfẹ́",
     "title": "Ẹ̀wù Àfẹ́",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "ewu afe",
       "ewu-afe",
@@ -13392,7 +13531,7 @@
     "id": "Orí-Inú",
     "title": "Orí-Inú",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Spiritual & Cosmological Matrix",
     "aliases": [
       "ori inu",
       "ori-inu",
@@ -14013,7 +14152,7 @@
     "id": "Àṣà-Ìbị́Lẹ̀",
     "title": "Àṣà-Ìbị́Lẹ̀",
     "culture": "Yorùbá",
-    "category": "Ancestral Masquerades & Funerary Rites",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "asa ibile",
       "asa-ibile",
@@ -14063,7 +14202,7 @@
     "id": "Oríki Orile",
     "title": "Oríki Orile",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "oriki orile",
       "oriki-orile",
@@ -14088,7 +14227,7 @@
     "id": "Oríki Idile",
     "title": "Oríki Idile",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "family-specific praise poetry",
       "oriki idile",
@@ -14115,7 +14254,7 @@
     "id": "Oríki Inagije",
     "title": "Oríki Inagije",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "oriki inagije",
       "oriki-inagije",
@@ -14313,7 +14452,7 @@
     "id": "Olúmo Rock",
     "title": "Olúmo Rock",
     "culture": "Yorùbá",
-    "category": "Civilization, History & Civic Heritage",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "mountain fortress in abeokuta that",
       "olumo rock",
@@ -14545,7 +14684,7 @@
     "id": "Ikogosi Warm Springs",
     "title": "Ikogosi Warm Springs",
     "culture": "Yorùbá",
-    "category": "Civilization, History & Civic Heritage",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "ikogosi warm springs",
       "ikogosi-warm-springs",
@@ -14593,7 +14732,7 @@
     "id": "Kọ̀ba Palace Gate",
     "title": "Kọ̀ba Palace Gate",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "koba palace gate",
       "koba-palace-gate",
@@ -14697,7 +14836,7 @@
     "id": "Opó Ìkọ́lé",
     "title": "Opó Ìkọ́lé",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "opo ikole",
       "opo-ikole",
@@ -14722,7 +14861,7 @@
     "id": "Ọ̀ṣọ́-Ilé",
     "title": "Ọ̀ṣọ́-Ilé",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "compound",
       "dwelling",
@@ -15471,7 +15610,7 @@
     "id": "Ẹgbẹ̀fà",
     "title": "Ẹgbẹ̀fà",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "egbefa",
       "ẹgbẹ̀fà"
@@ -15518,7 +15657,7 @@
     "id": "Ẹgbàá-Mẹ́wàá",
     "title": "Ẹgbàá-Mẹ́wàá",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "egbaa mewaa",
       "egbaa-mewaa",
@@ -15689,7 +15828,7 @@
     "id": "Ìfọ-Aṣọ",
     "title": "Ìfọ-Aṣọ",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "cloth",
       "fabric",
@@ -16889,7 +17028,7 @@
     "id": "Ṣawọ̀rọ̀",
     "title": "Ṣawọ̀rọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "saworo",
       "ṣawọ̀rọ̀"
@@ -17281,7 +17420,7 @@
     "id": "Ẹran-Ọ̀sọ́",
     "title": "Ẹran-Ọ̀sọ́",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "eran oso",
       "eran-oso",
@@ -18154,7 +18293,7 @@
     "id": "Ọ̀bẹ",
     "title": "Ọ̀bẹ",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "blade",
       "forged iron knife or blade",
@@ -18182,7 +18321,7 @@
     "id": "Ìnwálẹ̀",
     "title": "Ìnwálẹ̀",
     "culture": "Yorùbá",
-    "category": "Culinary Arts & Indigenous Gastronomy",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "inwale",
       "ìnwálẹ̀"
@@ -18205,7 +18344,7 @@
     "id": "Ẹwiri",
     "title": "Ẹwiri",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "ewiri",
       "leather and wooden bellows",
@@ -18372,7 +18511,7 @@
     "id": "Ajeofole",
     "title": "Ajeofole",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "ajeofole",
       "medicinal plant",
@@ -18396,7 +18535,7 @@
     "id": "Akọko",
     "title": "Akọko",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "akoko",
       "akọko"
@@ -18447,7 +18586,7 @@
     "id": "Àgbàǹgbá",
     "title": "Àgbàǹgbá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "agbangba",
       "àgbàǹgbá"
@@ -18470,7 +18609,7 @@
     "id": "Ẹ̀fọ̀n",
     "title": "Ẹ̀fọ̀n",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "efon",
       "ẹ̀fọ̀n"
@@ -18493,7 +18632,7 @@
     "id": "Kiníun",
     "title": "Kiníun",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "kiniun",
       "kiníun"
@@ -18517,7 +18656,7 @@
     "id": "Àdàbà",
     "title": "Àdàbà",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
     "aliases": [
       "adaba",
       "àdàbà"
@@ -19266,7 +19405,7 @@
     "id": "Onídìrí",
     "title": "Onídìrí",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "onidiri",
       "onídìrí"
@@ -19290,7 +19429,7 @@
     "id": "Onípọ́nmọ̀",
     "title": "Onípọ́nmọ̀",
     "culture": "Yorùbá",
-    "category": "Civilization, History & Civic Heritage",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "oniponmo",
       "onípọ́nmọ̀"
@@ -20055,7 +20194,7 @@
     "id": "Otutu-Ọpọn",
     "title": "Otutu-Ọpọn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "otutu opon",
       "otutu-opon",
@@ -20259,7 +20398,7 @@
     "id": "Agbado-Ọba",
     "title": "Agbado-Ọba",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "agbado oba",
       "agbado-oba",
@@ -20286,7 +20425,7 @@
     "id": "Èlù-Agbẹ́",
     "title": "Èlù-Agbẹ́",
     "culture": "Yorùbá",
-    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "elu agbe",
       "elu-agbe",
@@ -20583,7 +20722,7 @@
     "id": "Èjì-Ọ̀rọ̀",
     "title": "Èjì-Ọ̀rọ̀",
     "culture": "Yorùbá",
-    "category": "Oral Literature, Philosophy & Folklore",
+    "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
       "eji oro",
       "eji-oro",
@@ -20632,7 +20771,7 @@
     "id": "Ìkan-Ẹ̀yọ̀",
     "title": "Ìkan-Ẹ̀yọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "bitter medicinal plant extract",
       "ikan eyo",
@@ -20736,7 +20875,7 @@
     "id": "Ere-Awọn",
     "title": "Ere-Awọn",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "botanical poultice",
       "ere awon",
@@ -20789,7 +20928,7 @@
     "id": "Èso-Àbá",
     "title": "Èso-Àbá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "eso aba",
       "eso-aba",
@@ -21603,7 +21742,7 @@
     "id": "Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀",
     "title": "Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "igbeyin ota oro",
       "igbeyin-ota-oro",
@@ -21682,7 +21821,7 @@
     "id": "Ifa Divination: Communication Between Gods and Men",
     "title": "Ifa Divination: Communication Between Gods and Men",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "ifa divination communication between gods and men",
       "ifa divination: communication between gods and men",
@@ -21785,7 +21924,7 @@
     "id": "Èsè Ifá nínú Àṣà Yorùbá",
     "title": "Èsè Ifá nínú Àṣà Yorùbá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "ese ifa ninu asa yoruba",
       "ese-ifa-ninu-asa-yoruba",
@@ -21886,7 +22025,7 @@
     "id": "Ìgbẹ́yìn Àjọ́",
     "title": "Ìgbẹ́yìn Àjọ́",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "igbeyin ajo",
       "igbeyin-ajo",
@@ -21989,7 +22128,7 @@
     "id": "Àṣà Àti ÌṢE Yorùbá",
     "title": "Àṣà Àti ÌṢE Yorùbá",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "asa ati ise yoruba",
       "asa-ati-ise-yoruba",
@@ -22326,7 +22465,7 @@
     "id": "Obẹ-Ata",
     "title": "Obẹ-Ata",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Culinary Arts & Indigenous Gastronomy",
     "aliases": [
       "blade",
       "foundational pepper stew",
@@ -22405,7 +22544,7 @@
     "id": "Dùndú",
     "title": "Dùndú",
     "culture": "Yorùbá",
-    "category": "Military Traditions, Weaponry & Defense",
+    "category": "Culinary Arts & Indigenous Gastronomy",
     "aliases": [
       "dundu",
       "dùndú"
@@ -22688,7 +22827,7 @@
     "id": "Agbada-Aro",
     "title": "Agbada-Aro",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Culinary Arts & Indigenous Gastronomy",
     "aliases": [
       "agbada aro",
       "agbada-aro",
@@ -22817,7 +22956,7 @@
     "id": "Saraa",
     "title": "Saraa",
     "culture": "Yorùbá",
-    "category": "Festivals, Celebrations & Civic Pageantry",
+    "category": "Social Structure, Kinship & Lineage",
     "aliases": [
       "almsgiving feast",
       "charity feast",
@@ -23193,7 +23332,7 @@
     "id": "Ẹ̀wiri-Iṣọ̀ọ̀nà",
     "title": "Ẹ̀wiri-Iṣọ̀ọ̀nà",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "ewiri isoona",
       "ewiri-isoona",
@@ -23245,7 +23384,7 @@
     "id": "Ọ̀bẹ-Aba",
     "title": "Ọ̀bẹ-Aba",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "blade",
       "heavy cleaver-style carving blade",
@@ -23299,7 +23438,7 @@
     "id": "Bẹ́mbẹ́-Ìlẹ̀kẹ̀",
     "title": "Bẹ́mbẹ́-Ìlẹ̀kẹ̀",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "beaded regalia",
       "beads",
@@ -23495,7 +23634,7 @@
     "id": "Ẹ̀yọ̀-Ìlẹ̀kẹ̀",
     "title": "Ẹ̀yọ̀-Ìlẹ̀kẹ̀",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "beaded regalia",
       "beads",
@@ -23580,7 +23719,7 @@
     "id": "Ọkọ́-Ilẹ̀",
     "title": "Ọkọ́-Ilẹ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "compound",
       "dwelling",
@@ -23633,7 +23772,7 @@
     "id": "Ọ̀pá-Àwọ̀n",
     "title": "Ọ̀pá-Àwọ̀n",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "opa awon",
       "opa-awon",
@@ -23712,7 +23851,7 @@
     "id": "Ikoko-Àmọ̀",
     "title": "Ikoko-Àmọ̀",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "heavy earthenware basin",
       "ikoko amo",
@@ -23738,7 +23877,7 @@
     "id": "Ọ̀bẹ-Àmọ̀",
     "title": "Ọ̀bẹ-Àmọ̀",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "blade",
       "knife",
@@ -23765,7 +23904,7 @@
     "id": "Ìfà-Ewe",
     "title": "Ìfà-Ewe",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "broad iron hook knife",
       "ifa ewe",
@@ -23821,7 +23960,7 @@
     "id": "Kọ̀tọ̀-Amọ̀",
     "title": "Kọ̀tọ̀-Amọ̀",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "clay pit kiln",
       "koto amo",
@@ -24867,7 +25006,7 @@
     "id": "Abe-Òrìṣà",
     "title": "Abe-Òrìṣà",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "abe orisa",
       "abe-orisa",
@@ -24922,7 +25061,7 @@
     "id": "Ìborí",
     "title": "Ìborí",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "ibori",
       "ìborí"
@@ -24976,7 +25115,7 @@
     "id": "Manilla-Irin",
     "title": "Manilla-Irin",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "manilla irin",
       "manilla-irin",
@@ -25000,7 +25139,7 @@
     "id": "Owó-Babà",
     "title": "Owó-Babà",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "copper coins",
       "copper tokens",
@@ -25030,7 +25169,7 @@
     "id": "Pọ́n-Un",
     "title": "Pọ́n-Un",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "early colonial currency terms",
       "pon un",
@@ -25056,7 +25195,7 @@
     "id": "Ìwọ̀n-Ìgẹ́",
     "title": "Ìwọ̀n-Ìgẹ́",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "iwon ige",
       "iwon-ige",
@@ -25108,7 +25247,7 @@
     "id": "Ìwọ̀n-Amọ̀",
     "title": "Ìwọ̀n-Amọ̀",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Civilization, History & Civic Heritage",
     "aliases": [
       "iwon amo",
       "iwon-amo",
@@ -25313,7 +25452,7 @@
     "id": "Agbere-Igi",
     "title": "Agbere-Igi",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "agbere igi",
       "agbere-igi",
@@ -25366,7 +25505,7 @@
     "id": "Aro-Pẹ́lẹ́",
     "title": "Aro-Pẹ́lẹ́",
     "culture": "Yorùbá",
-    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
       "aro pele",
       "aro-pele",
@@ -25642,7 +25781,7 @@
     "id": "Abobaku",
     "title": "Abobaku",
     "culture": "Yorùbá",
-    "category": "Ancestral Masquerades & Funerary Rites",
+    "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
       "abobaku",
       "ancestral burial attendant",
@@ -25741,7 +25880,7 @@
     "id": "Egbe-Awo",
     "title": "Egbe-Awo",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Social Structure, Kinship & Lineage",
     "aliases": [
       "egbe awo",
       "egbe-awo",
@@ -25962,7 +26101,7 @@
     "id": "Egbe-Olonika",
     "title": "Egbe-Olonika",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "egbe olonika",
       "egbe-olonika",
@@ -25986,7 +26125,7 @@
     "id": "Odo-Aro",
     "title": "Odo-Aro",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "odo aro",
       "odo-aro",
@@ -26336,7 +26475,7 @@
     "id": "Ata-Are",
     "title": "Ata-Are",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
     "aliases": [
       "ata are",
       "ata-are",
@@ -26703,7 +26842,7 @@
     "id": "Aso-Ogun",
     "title": "Aso-Ogun",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Military Traditions, Weaponry & Defense",
     "aliases": [
       "aso ogun",
       "aso-ogun",
@@ -27004,7 +27143,7 @@
     "id": "Oriki-Orisa",
     "title": "Oriki-Orisa",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "deity",
       "divinity",
@@ -27057,7 +27196,7 @@
     "id": "Oriki-Idile",
     "title": "Oriki-Idile",
     "culture": "Yorùbá",
-    "category": "Social Structure, Kinship & Lineage",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "oriki idile",
       "oriki-idile",
@@ -27082,7 +27221,7 @@
     "id": "Iwe-Orin",
     "title": "Iwe-Orin",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "chant",
       "early yoruba hymnals translated by",
@@ -27134,7 +27273,7 @@
     "id": "Iwe-Egbegi",
     "title": "Iwe-Egbegi",
     "culture": "Yorùbá",
-    "category": "Sacred Botany, Flora & Herbal Medicine",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "iwe egbegi",
       "iwe-egbegi",
@@ -27183,7 +27322,7 @@
     "id": "Ilé-Ìṣọ́-Ọba",
     "title": "Ilé-Ìṣọ́-Ọba",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Topography, Natural Landscapes & Architecture",
     "aliases": [
       "compound",
       "dwelling",
@@ -27348,7 +27487,7 @@
     "id": "Ọ̀bẹ-Ìbínú",
     "title": "Ọ̀bẹ-Ìbínú",
     "culture": "Yorùbá",
-    "category": "Sacred Botany, Flora & Herbal Medicine",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
     "aliases": [
       "blade",
       "heavy curved iron billhook blade",
@@ -27431,7 +27570,7 @@
     "id": "Ọ̀pá-Àjájá",
     "title": "Ọ̀pá-Àjájá",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Ancestral Masquerades & Funerary Rites",
     "aliases": [
       "heavy",
       "opa ajaja",
@@ -27483,7 +27622,7 @@
     "id": "Aṣọ-Ìgbálẹ̀",
     "title": "Aṣọ-Ìgbálẹ̀",
     "culture": "Yorùbá",
-    "category": "Attire, Textiles & Personal Adornment",
+    "category": "Ancestral Masquerades & Funerary Rites",
     "aliases": [
       "aso igbale",
       "aso-igbale",
@@ -27511,7 +27650,7 @@
     "id": "Ọ̀rọ̀-Ìṣẹ̀̀mbátí",
     "title": "Ọ̀rọ̀-Ìṣẹ̀̀mbátí",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Oral Literature, Philosophy & Folklore",
     "aliases": [
       "oro isembati",
       "oro-isembati",
@@ -27590,7 +27729,7 @@
     "id": "Ọ̀bẹ-Ẹran-Ọba",
     "title": "Ọ̀bẹ-Ẹran-Ọba",
     "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
     "aliases": [
       "blade",
       "king",
@@ -27722,7 +27861,11 @@
     ],
     "diaspora_connections": "Across the African Diaspora, the presence of Ìyámi persevered through coded ritual safeguards and sacred syncretism. In Cuban Lucumí and Regla de Ocha, their immense presence is strictly appeased within high-ranking Odù rituals of Ifá and through the sacred tripartite maternal realms of Yemayá, Ọ̀ṣun, and Ọya. In Brazilian Candomblé Ketu, they are recognized as Iyámi Oxorongá and revered with absolute solemnity during midnight rites, maintaining cosmic equilibrium over Terreiros (temple grounds). Their ancestral legacy also endures in Trinidad Orisha and Haitian Vodou, anchoring Afro-descendant communities in the veneration of autonomous, matriarchal ancestral agency.",
     "geographical_origin": "Ancient Ìfẹ̀ / General Yorùbáland",
-    "media_production_notes": "When producing visual or narrative content concerning Ìyámi, creators must completely avoid pejorative Western tropes such as 'witchcraft' or European-style sorcery. Depictions must highlight dignity, judicial severity, cosmic majesty, and maternal awe. Visual compositions should utilize rich contrasting palettes: deep nocturnal indigos, shimmering bronze tones, natural white chalk, and crimson parrot feathers. Sonic elements should prioritize low-register bàtá rhythms, muted iron gongs (Agogo), and reverent choral incantations (Oríkì) that evoke nocturnal grandeur and solemn ancestral authority."
+    "media_production_notes": "When producing visual or narrative content concerning Ìyámi, creators must completely avoid pejorative Western tropes such as 'witchcraft' or European-style sorcery. Depictions must highlight dignity, judicial severity, cosmic majesty, and maternal awe. Visual compositions should utilize rich contrasting palettes: deep nocturnal indigos, shimmering bronze tones, natural white chalk, and crimson parrot feathers. Sonic elements should prioritize low-register bàtá rhythms, muted iron gongs (Agogo), and reverent choral incantations (Oríkì) that evoke nocturnal grandeur and solemn ancestral authority.",
+    "related_entities": [
+      "Adé",
+      "Ẹyẹ"
+    ]
   },
   {
     "id": "Pọ́nmọ́",
@@ -34467,5 +34610,925 @@
       "Òrìṣà",
       "Yemọja"
     ]
+  },
+  {
+    "id": "Ifá",
+    "title": "Ifá",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "is_parent": true,
+    "aliases": [
+      "ifa",
+      "ifa oracle",
+      "orunmila",
+      "odu ifa",
+      "divination matrix",
+      "ifa divination",
+      "wisdom corpus",
+      "epistemology",
+      "holy odu"
+    ],
+    "description": "The supreme epistemological system, sacred divinatory science, and cosmological wisdom matrix of Yorùbá civilization, encompassing the 256 Odù Ifá corpus revealed through Ọ̀rúnmìlà (Bara Àgbọnnìrègún).",
+    "sub_variants": [
+      "Ojú Odù Méjìdínlógún",
+      "Àmọ̀lù Odù",
+      "Ikin Ifá",
+      "Ọ̀pẹ̀lẹ̀",
+      "Ọpọ́n Ifá",
+      "Ìrókẹ́ Ifá",
+      "Agẹrẹ Ifá"
+    ],
+    "historical_timeline": "Primordial origin dating to the divine descent at Ilé-Ifẹ̀ and institutionalized across millennia as the intellectual, moral, and judicial foundation of Yorùbá governance and spiritual life.",
+    "etymology_and_philosophy": "Ifá derives from the divine root 'fá' (to embrace, contain, and gather all knowledge). Represents pure intellectual discernment (Ìmọ̀), character ethics (Ìwà Rere), and cosmic balance (Àṣẹ).",
+    "material_and_craftsmanship": "Operated via sixteen sacred palm nuts (Ikin Ifá), divining chain (Ọ̀pẹ̀lẹ̀), carved wooden divination tray (Ọpọ́n Ifá), sacred yellow baphia camwood powder (Ìyẹ̀rosùn), and ivory or wooden tapper (Ìrókẹ́ Ifá).",
+    "social_and_ritual_context": "Consulted during all foundational rites of passage (naming, marriage, coronations, burials, war council, state policy). Custodians are initiated high priests (Babaláwo) and priestesses (Ìyanífá).",
+    "proverbs_and_oral_traditions": [
+      "Ifá ló loni, Ifá ló l’ọ̀la, Ifá ló l’ọ̀tuntun ọjọ́ mọ́kàndínlógún.",
+      "Bí a bá bọ́jú, Ifá là ń kọ́kọ́ gbé yẹ̀ wò.",
+      "Ifá kì í puro, òtítọ́ inú ni Ifá ń gbé."
+    ],
+    "diaspora_connections": "Venerated across Afro-Atlantic civilizations as Regla de Ocha/Lucumí/Ifá in Cuba, Candomblé Ketu in Brazil, and Orisha-Shango Baptist in Trinidad.",
+    "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Èkìtì, Ìjẹ̀bú, Benin Republic.",
+    "media_production_notes": "Portray with supreme reverence; show Babaláwo dressed in pristine white or woven Aṣọ Òkè, casting Ọ̀pẹ̀lẹ̀ upon carved Ọpọ́n Ifá covered in gold-hued Ìyẹ̀rosùn.",
+    "details": {
+      "id": "Ifá",
+      "title": "Ifá",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": true,
+      "aliases": [
+        "ifa",
+        "ifa oracle",
+        "orunmila",
+        "odu ifa",
+        "divination matrix",
+        "ifa divination",
+        "wisdom corpus",
+        "epistemology",
+        "holy odu"
+      ],
+      "description": "The supreme epistemological system, sacred divinatory science, and cosmological wisdom matrix of Yorùbá civilization, encompassing the 256 Odù Ifá corpus revealed through Ọ̀rúnmìlà (Bara Àgbọnnìrègún).",
+      "sub_variants": [
+        "Ojú Odù Méjìdínlógún",
+        "Àmọ̀lù Odù",
+        "Ikin Ifá",
+        "Ọ̀pẹ̀lẹ̀",
+        "Ọpọ́n Ifá",
+        "Ìrókẹ́ Ifá",
+        "Agẹrẹ Ifá"
+      ],
+      "historical_timeline": "Primordial origin dating to the divine descent at Ilé-Ifẹ̀ and institutionalized across millennia as the intellectual, moral, and judicial foundation of Yorùbá governance and spiritual life.",
+      "etymology_and_philosophy": "Ifá derives from the divine root 'fá' (to embrace, contain, and gather all knowledge). Represents pure intellectual discernment (Ìmọ̀), character ethics (Ìwà Rere), and cosmic balance (Àṣẹ).",
+      "material_and_craftsmanship": "Operated via sixteen sacred palm nuts (Ikin Ifá), divining chain (Ọ̀pẹ̀lẹ̀), carved wooden divination tray (Ọpọ́n Ifá), sacred yellow baphia camwood powder (Ìyẹ̀rosùn), and ivory or wooden tapper (Ìrókẹ́ Ifá).",
+      "social_and_ritual_context": "Consulted during all foundational rites of passage (naming, marriage, coronations, burials, war council, state policy). Custodians are initiated high priests (Babaláwo) and priestesses (Ìyanífá).",
+      "proverbs_and_oral_traditions": [
+        "Ifá ló loni, Ifá ló l’ọ̀la, Ifá ló l’ọ̀tuntun ọjọ́ mọ́kàndínlógún.",
+        "Bí a bá bọ́jú, Ifá là ń kọ́kọ́ gbé yẹ̀ wò.",
+        "Ifá kì í puro, òtítọ́ inú ni Ifá ń gbé."
+      ],
+      "diaspora_connections": "Venerated across Afro-Atlantic civilizations as Regla de Ocha/Lucumí/Ifá in Cuba, Candomblé Ketu in Brazil, and Orisha-Shango Baptist in Trinidad.",
+      "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Èkìtì, Ìjẹ̀bú, Benin Republic.",
+      "media_production_notes": "Portray with supreme reverence; show Babaláwo dressed in pristine white or woven Aṣọ Òkè, casting Ọ̀pẹ̀lẹ̀ upon carved Ọpọ́n Ifá covered in gold-hued Ìyẹ̀rosùn."
+    }
+  },
+  {
+    "id": "Were_Music",
+    "title": "Were Music",
+    "culture": "Yorùbá",
+    "category": "Auditory Arts, Music, Drums & Chants",
+    "is_parent": true,
+    "aliases": [
+      "were",
+      "were music",
+      "ajisaari",
+      "ajisari",
+      "fuji precursor",
+      "islamic awakening music",
+      "faaji",
+      "orin were"
+    ],
+    "description": "The historic Yorùbá Islamic musical genre and dawn awakening performance (Ajísààrì) during Ramadan, serving as the foundational stylistic and rhythmic precursor to modern Fújì music.",
+    "sub_variants": [
+      "Ajísààrì",
+      "Sákárà Were",
+      "Were Àdúgbò",
+      "Fújì Were"
+    ],
+    "historical_timeline": "Flourished in late 19th and early 20th-century Lagos, Ìbàdàn, Ìjẹ̀bú, and Ọ̀yọ́ Muslim quarters as competitive youth street choirs awakening fasting believers, evolving into secular Fújì in the late 1960s under Alhaji Sikiru Ayinde Barrister.",
+    "etymology_and_philosophy": "From 'Ajísààrì' (those who awaken people for Sahur / dawn meal). Celebrates communal solidarity, vocal agility, rhythm, and moral social commentary.",
+    "material_and_craftsmanship": "Acoustically driven by Sákárà frame drums, handheld agogo metal bells, sẹ̀kẹ̀rẹ̀ gourds, and improvisational call-and-response vocal counterpoints.",
+    "social_and_ritual_context": "Performed in pre-dawn twilight through residential alleys, followed by competitive neighborhood exhibitions during Eid celebrations.",
+    "proverbs_and_oral_traditions": [
+      "Ẹni tó jí lówùúrọ̀ tó gbọ́ Were, á mọ̀ pé ọjọ́ tuntun ti dé.",
+      "Ajísààrì kì í sùn lójú agogo."
+    ],
+    "diaspora_connections": "Heavily influenced West African Francophone and UK-diaspora Yorùbá community festivities and Afro-fusion percussion arrangements.",
+    "geographical_origin": "Isale Eko (Lagos Island), Ìbàdàn, Ìjẹ̀bú-Òde, Ọ̀yọ́.",
+    "media_production_notes": "Capture dynamic lanterns swinging in early morning mist, young men singing vibrant polyphonic Yorùbá rhymes accompanied by sharp ringing agogo bells and sákárà drums.",
+    "details": {
+      "id": "Were_Music",
+      "title": "Were Music",
+      "culture": "Yorùbá",
+      "category": "Auditory Arts, Music, Drums & Chants",
+      "is_parent": true,
+      "aliases": [
+        "were",
+        "were music",
+        "ajisaari",
+        "ajisari",
+        "fuji precursor",
+        "islamic awakening music",
+        "faaji",
+        "orin were"
+      ],
+      "description": "The historic Yorùbá Islamic musical genre and dawn awakening performance (Ajísààrì) during Ramadan, serving as the foundational stylistic and rhythmic precursor to modern Fújì music.",
+      "sub_variants": [
+        "Ajísààrì",
+        "Sákárà Were",
+        "Were Àdúgbò",
+        "Fújì Were"
+      ],
+      "historical_timeline": "Flourished in late 19th and early 20th-century Lagos, Ìbàdàn, Ìjẹ̀bú, and Ọ̀yọ́ Muslim quarters as competitive youth street choirs awakening fasting believers, evolving into secular Fújì in the late 1960s under Alhaji Sikiru Ayinde Barrister.",
+      "etymology_and_philosophy": "From 'Ajísààrì' (those who awaken people for Sahur / dawn meal). Celebrates communal solidarity, vocal agility, rhythm, and moral social commentary.",
+      "material_and_craftsmanship": "Acoustically driven by Sákárà frame drums, handheld agogo metal bells, sẹ̀kẹ̀rẹ̀ gourds, and improvisational call-and-response vocal counterpoints.",
+      "social_and_ritual_context": "Performed in pre-dawn twilight through residential alleys, followed by competitive neighborhood exhibitions during Eid celebrations.",
+      "proverbs_and_oral_traditions": [
+        "Ẹni tó jí lówùúrọ̀ tó gbọ́ Were, á mọ̀ pé ọjọ́ tuntun ti dé.",
+        "Ajísààrì kì í sùn lójú agogo."
+      ],
+      "diaspora_connections": "Heavily influenced West African Francophone and UK-diaspora Yorùbá community festivities and Afro-fusion percussion arrangements.",
+      "geographical_origin": "Isale Eko (Lagos Island), Ìbàdàn, Ìjẹ̀bú-Òde, Ọ̀yọ́.",
+      "media_production_notes": "Capture dynamic lanterns swinging in early morning mist, young men singing vibrant polyphonic Yorùbá rhymes accompanied by sharp ringing agogo bells and sákárà drums."
+    }
+  },
+  {
+    "id": "Oogun",
+    "title": "Oogun",
+    "culture": "Yorùbá",
+    "category": "Social Structure, Kinship & Lineage",
+    "is_parent": true,
+    "aliases": [
+      "oogun",
+      "ogun idile",
+      "ogún ìdílé",
+      "inu ile",
+      "inheritance",
+      "family estate",
+      "lineage property",
+      "ancestral inheritance"
+    ],
+    "description": "The ancestral estate, lineage landholding, compound residences, and familial inheritance (Ogún Ìdílé / Inú-Ilé) transmitted through patrilineal or cognatic descent in Yorùbá customary law.",
+    "sub_variants": [
+      "Ogún Ìdílé",
+      "Ogún Ilẹ̀",
+      "Inú Ilé",
+      "Ogún Ẹbí"
+    ],
+    "historical_timeline": "Governed since antiquity by customary land tenure covenants, royal boundary markers, and council of lineage elders (Ẹbí / Baálé).",
+    "etymology_and_philosophy": "From 'ogún' (inheritance, patrimony, legacy). Anchored in the principle that land and lineage honor belong to three generations: those who came before, those living today, and those unborn.",
+    "material_and_craftsmanship": "Demarcated by ancestral Peregun boundary trees (Dracaena arborea), earthen compound walls (Àgbàlá), and lineage shrine alcoves.",
+    "social_and_ritual_context": "Distributed post-funeral rites by the senior lineage head (Mọgàjí / Baálé) under strict customary jurisprudence (Ìpín Ogún), ensuring orphan and widow maintenance.",
+    "proverbs_and_oral_traditions": [
+      "Ọmọ tí kò kọ́ iṣẹ́, á ta ogún tí bàbá rẹ̀ fi sílẹ̀.",
+      "Ogún kì í jẹ́ kí ẹbí tú ká.",
+      "Inú ilé la ti ń kẹ́ṣẹ́ wálé."
+    ],
+    "diaspora_connections": "Manifests in Afro-Brazilian Terreiro compound succession structures and Lucumí house-sanctuary spiritual family lineages.",
+    "geographical_origin": "Pan-Yorùbáland.",
+    "media_production_notes": "Show lineage elders gathered under an ancient courtyard veranda (Ààfin or Agbo-Ilé) deliberating over ancestral boundary covenants.",
+    "details": {
+      "id": "Oogun",
+      "title": "Oogun",
+      "culture": "Yorùbá",
+      "category": "Social Structure, Kinship & Lineage",
+      "is_parent": true,
+      "aliases": [
+        "oogun",
+        "ogun idile",
+        "ogún ìdílé",
+        "inu ile",
+        "inheritance",
+        "family estate",
+        "lineage property",
+        "ancestral inheritance"
+      ],
+      "description": "The ancestral estate, lineage landholding, compound residences, and familial inheritance (Ogún Ìdílé / Inú-Ilé) transmitted through patrilineal or cognatic descent in Yorùbá customary law.",
+      "sub_variants": [
+        "Ogún Ìdílé",
+        "Ogún Ilẹ̀",
+        "Inú Ilé",
+        "Ogún Ẹbí"
+      ],
+      "historical_timeline": "Governed since antiquity by customary land tenure covenants, royal boundary markers, and council of lineage elders (Ẹbí / Baálé).",
+      "etymology_and_philosophy": "From 'ogún' (inheritance, patrimony, legacy). Anchored in the principle that land and lineage honor belong to three generations: those who came before, those living today, and those unborn.",
+      "material_and_craftsmanship": "Demarcated by ancestral Peregun boundary trees (Dracaena arborea), earthen compound walls (Àgbàlá), and lineage shrine alcoves.",
+      "social_and_ritual_context": "Distributed post-funeral rites by the senior lineage head (Mọgàjí / Baálé) under strict customary jurisprudence (Ìpín Ogún), ensuring orphan and widow maintenance.",
+      "proverbs_and_oral_traditions": [
+        "Ọmọ tí kò kọ́ iṣẹ́, á ta ogún tí bàbá rẹ̀ fi sílẹ̀.",
+        "Ogún kì í jẹ́ kí ẹbí tú ká.",
+        "Inú ilé la ti ń kẹ́ṣẹ́ wálé."
+      ],
+      "diaspora_connections": "Manifests in Afro-Brazilian Terreiro compound succession structures and Lucumí house-sanctuary spiritual family lineages.",
+      "geographical_origin": "Pan-Yorùbáland.",
+      "media_production_notes": "Show lineage elders gathered under an ancient courtyard veranda (Ààfin or Agbo-Ilé) deliberating over ancestral boundary covenants."
+    }
+  },
+  {
+    "id": "Òògùn",
+    "title": "Òògùn",
+    "culture": "Yorùbá",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
+    "is_parent": true,
+    "aliases": [
+      "òògùn",
+      "oogun",
+      "traditional medicine",
+      "herbal pharmacology",
+      "agbo",
+      "protective talisman",
+      "ayajo",
+      "pharmacopeia"
+    ],
+    "description": "The comprehensive Yorùbá pharmacopeia, traditional botanical medicine, therapeutic decoctions (Àgbọ), and protective spiritual formulations presided over by Ọ̀sanyìn.",
+    "sub_variants": [
+      "Àgbọ",
+      "Àséjẹ",
+      "Ìgùnnu",
+      "Ètù",
+      "Àbọ̀lẹ̀",
+      "Àyájọ́"
+    ],
+    "historical_timeline": "Developed over thousands of years of botanical empirical trial and cosmological revelation across forest and savanna ecosystems.",
+    "etymology_and_philosophy": "Rooted in the metaphysical and physiological unity of flora and human vital force (Ẹ̀mí). 'Ewé gbogbo kíkì òògùn' (All leaves are medicine).",
+    "material_and_craftsmanship": "Prepared using clay herbal cooking pots (Ikòkò Àgbọ), stone grinders (Ọlọ), mortars (Odó), leaves, barks, roots, and consecrated talismans.",
+    "social_and_ritual_context": "Administered by licensed herbal healers (Oníṣègùn) and priests (Adáhunṣe) for curing physiological afflictions, restoring prenatal vitality, and community protection.",
+    "proverbs_and_oral_traditions": [
+      "Ewé ń bẹ l’óko, òògùn ń bẹ l’óko.",
+      "Ọ̀sanyìn l’olórí ewé gbogbo.",
+      "Òògùn tó jẹ́, orúkọ ewé rẹ̀ la mọ̀."
+    ],
+    "diaspora_connections": "Central to Afro-Cuban Osainista herbal lore and Brazilian Candomblé Osanyin leaf rituals (Sasanyin).",
+    "geographical_origin": "Rainforests and savanna transitional belts of Yorùbáland.",
+    "media_production_notes": "Show fresh rainforest medicinal leaves with dewdrops, clay pots brewing steaming botanical infusions over wood embers.",
+    "details": {
+      "id": "Òògùn",
+      "title": "Òògùn",
+      "culture": "Yorùbá",
+      "category": "Sacred Botany, Flora & Herbal Medicine",
+      "is_parent": true,
+      "aliases": [
+        "òògùn",
+        "oogun",
+        "traditional medicine",
+        "herbal pharmacology",
+        "agbo",
+        "protective talisman",
+        "ayajo",
+        "pharmacopeia"
+      ],
+      "description": "The comprehensive Yorùbá pharmacopeia, traditional botanical medicine, therapeutic decoctions (Àgbọ), and protective spiritual formulations presided over by Ọ̀sanyìn.",
+      "sub_variants": [
+        "Àgbọ",
+        "Àséjẹ",
+        "Ìgùnnu",
+        "Ètù",
+        "Àbọ̀lẹ̀",
+        "Àyájọ́"
+      ],
+      "historical_timeline": "Developed over thousands of years of botanical empirical trial and cosmological revelation across forest and savanna ecosystems.",
+      "etymology_and_philosophy": "Rooted in the metaphysical and physiological unity of flora and human vital force (Ẹ̀mí). 'Ewé gbogbo kíkì òògùn' (All leaves are medicine).",
+      "material_and_craftsmanship": "Prepared using clay herbal cooking pots (Ikòkò Àgbọ), stone grinders (Ọlọ), mortars (Odó), leaves, barks, roots, and consecrated talismans.",
+      "social_and_ritual_context": "Administered by licensed herbal healers (Oníṣègùn) and priests (Adáhunṣe) for curing physiological afflictions, restoring prenatal vitality, and community protection.",
+      "proverbs_and_oral_traditions": [
+        "Ewé ń bẹ l’óko, òògùn ń bẹ l’óko.",
+        "Ọ̀sanyìn l’olórí ewé gbogbo.",
+        "Òògùn tó jẹ́, orúkọ ewé rẹ̀ la mọ̀."
+      ],
+      "diaspora_connections": "Central to Afro-Cuban Osainista herbal lore and Brazilian Candomblé Osanyin leaf rituals (Sasanyin).",
+      "geographical_origin": "Rainforests and savanna transitional belts of Yorùbáland.",
+      "media_production_notes": "Show fresh rainforest medicinal leaves with dewdrops, clay pots brewing steaming botanical infusions over wood embers."
+    }
+  },
+  {
+    "id": "Ẹ̀pà",
+    "title": "Ẹ̀pà",
+    "culture": "Yorùbá",
+    "category": "Culinary Arts & Indigenous Gastronomy",
+    "is_parent": true,
+    "aliases": [
+      "ẹ̀pà",
+      "epa",
+      "groundnut",
+      "peanut",
+      "arachis hypogaea",
+      "roasted groundnut",
+      "epa yiyan"
+    ],
+    "description": "The beloved legume, protein-rich staple, and commercial agricultural crop roasted with sea-sand, boiled in pods, or ground into culinary pastes and savory accompaniments across Yorùbáland.",
+    "sub_variants": [
+      "Ẹ̀pà Yíyan",
+      "Ẹ̀pà Bíbó",
+      "Ẹ̀pà Dídín",
+      "Ẹ̀pà Èlùbọ́"
+    ],
+    "historical_timeline": "Cultivated across Yorùbá savanna farmlands and central agrarian corridors; deeply paired with roasted plantain (Bọ̀lẹ̀) and cassava flakes (Gàrí) for centuries.",
+    "etymology_and_philosophy": "Derived from agrarian Yorùbá botanical vocabulary denoting the ground-pod legume. Represents sustenance, abundance, and the joy of shared snacking (Faaji).",
+    "material_and_craftsmanship": "Roasted in heated river sand inside wide shallow earthenware or cast-iron pans (Agbada-Aro) to ensure uniform caramelization without burning.",
+    "social_and_ritual_context": "A vital social street food, travel ration, and hospitable gift served with Gàrí, Ẹ̀kọ, or roasted corn (Àgbàdo Yíyan).",
+    "proverbs_and_oral_traditions": [
+      "Ẹ̀pà kò lè fọ́ koro kò gbádùn.",
+      "Bí a bá ń jẹ ẹ̀pà, a kì í fọwọ́ rọ́ gágá.",
+      "Ẹ̀pà ńlá ló ń bẹ́ sọ́wọ́ ọlọ́rọ̀."
+    ],
+    "diaspora_connections": "Known as peanut or goober (from Bantu nguba) across the African Diaspora; preserved in southern US soul food and Caribbean peanut stews.",
+    "geographical_origin": "Ọ̀yọ́, Òkè-Ògùn, Ìbàdàn, Ìlọrin, Èkìtì farmlands.",
+    "media_production_notes": "Visually depict freshly roasted, golden-brown groundnuts emerging from dark hot river sand, served wrapped in clean green banana leaves beside steaming Bọ̀lẹ̀.",
+    "details": {
+      "id": "Ẹ̀pà",
+      "title": "Ẹ̀pà",
+      "culture": "Yorùbá",
+      "category": "Culinary Arts & Indigenous Gastronomy",
+      "is_parent": true,
+      "aliases": [
+        "ẹ̀pà",
+        "epa",
+        "groundnut",
+        "peanut",
+        "arachis hypogaea",
+        "roasted groundnut",
+        "epa yiyan"
+      ],
+      "description": "The beloved legume, protein-rich staple, and commercial agricultural crop roasted with sea-sand, boiled in pods, or ground into culinary pastes and savory accompaniments across Yorùbáland.",
+      "sub_variants": [
+        "Ẹ̀pà Yíyan",
+        "Ẹ̀pà Bíbó",
+        "Ẹ̀pà Dídín",
+        "Ẹ̀pà Èlùbọ́"
+      ],
+      "historical_timeline": "Cultivated across Yorùbá savanna farmlands and central agrarian corridors; deeply paired with roasted plantain (Bọ̀lẹ̀) and cassava flakes (Gàrí) for centuries.",
+      "etymology_and_philosophy": "Derived from agrarian Yorùbá botanical vocabulary denoting the ground-pod legume. Represents sustenance, abundance, and the joy of shared snacking (Faaji).",
+      "material_and_craftsmanship": "Roasted in heated river sand inside wide shallow earthenware or cast-iron pans (Agbada-Aro) to ensure uniform caramelization without burning.",
+      "social_and_ritual_context": "A vital social street food, travel ration, and hospitable gift served with Gàrí, Ẹ̀kọ, or roasted corn (Àgbàdo Yíyan).",
+      "proverbs_and_oral_traditions": [
+        "Ẹ̀pà kò lè fọ́ koro kò gbádùn.",
+        "Bí a bá ń jẹ ẹ̀pà, a kì í fọwọ́ rọ́ gágá.",
+        "Ẹ̀pà ńlá ló ń bẹ́ sọ́wọ́ ọlọ́rọ̀."
+      ],
+      "diaspora_connections": "Known as peanut or goober (from Bantu nguba) across the African Diaspora; preserved in southern US soul food and Caribbean peanut stews.",
+      "geographical_origin": "Ọ̀yọ́, Òkè-Ògùn, Ìbàdàn, Ìlọrin, Èkìtì farmlands.",
+      "media_production_notes": "Visually depict freshly roasted, golden-brown groundnuts emerging from dark hot river sand, served wrapped in clean green banana leaves beside steaming Bọ̀lẹ̀."
+    }
+  },
+  {
+    "id": "Àpáta",
+    "title": "Àpáta",
+    "culture": "Yorùbá",
+    "category": "Topography, Natural Landscapes & Architecture",
+    "is_parent": true,
+    "aliases": [
+      "àpáta",
+      "apata",
+      "inselberg",
+      "granite hill",
+      "rock formation",
+      "sacred rock",
+      "sacred hills",
+      "olumo",
+      "idanre"
+    ],
+    "description": "The monumental granite inselbergs, rocky sanctuary formations, sacred hills, and ancient ancestral refuges (such as Olúmo Rock in Abẹ́òkúta and Ìdánre Hills) anchoring Yorùbá territorial identity.",
+    "sub_variants": [
+      "Àpáta Olúmo",
+      "Àpáta Ìdánre",
+      "Àpáta Àbò",
+      "Àpáta Àlọ"
+    ],
+    "historical_timeline": "Served as impregnable citadel sanctuaries during the 19th-century Yorùbá civil wars, sheltering sovereign populations and giving birth to metropolitan city-states.",
+    "etymology_and_philosophy": "Rooted in the permanence and immutability of the earth. 'Àpáta' embodies resilience, enduring sanctuary, and divine cosmic anchoring.",
+    "material_and_craftsmanship": "Natural Precambrian granite monoliths, basalt outcroppings, carved hillside stairways, and natural stone caverns.",
+    "social_and_ritual_context": "Venerated as protective geographic deities (Òrìṣà Òkè) where town founding rituals, annual civic covenants, and prayers for prosperity are enacted.",
+    "proverbs_and_oral_traditions": [
+      "Àpáta kì í jìnnìhìn fún òjò.",
+      "Àpáta ló ní ilẹ̀, kò sí ẹni tó lè yí i kúrò.",
+      "Bí ojú bá pọ́n wa, orí àpáta là ń sá pamọ́ sí."
+    ],
+    "diaspora_connections": "Preserved in Afro-Caribbean folklore and Brazilian Quilombo geographic defense traditions as symbols of maroon resilience.",
+    "geographical_origin": "Abẹ́òkúta (Olúmo), Ìdánre, Èkìtì, Òkè-Mèsì, Ìgbeti.",
+    "media_production_notes": "Wide cinematic drone panoramas sweeping across ancient majestic granite inselbergs rising out of tropical rainforest canopies.",
+    "details": {
+      "id": "Àpáta",
+      "title": "Àpáta",
+      "culture": "Yorùbá",
+      "category": "Topography, Natural Landscapes & Architecture",
+      "is_parent": true,
+      "aliases": [
+        "àpáta",
+        "apata",
+        "inselberg",
+        "granite hill",
+        "rock formation",
+        "sacred rock",
+        "sacred hills",
+        "olumo",
+        "idanre"
+      ],
+      "description": "The monumental granite inselbergs, rocky sanctuary formations, sacred hills, and ancient ancestral refuges (such as Olúmo Rock in Abẹ́òkúta and Ìdánre Hills) anchoring Yorùbá territorial identity.",
+      "sub_variants": [
+        "Àpáta Olúmo",
+        "Àpáta Ìdánre",
+        "Àpáta Àbò",
+        "Àpáta Àlọ"
+      ],
+      "historical_timeline": "Served as impregnable citadel sanctuaries during the 19th-century Yorùbá civil wars, sheltering sovereign populations and giving birth to metropolitan city-states.",
+      "etymology_and_philosophy": "Rooted in the permanence and immutability of the earth. 'Àpáta' embodies resilience, enduring sanctuary, and divine cosmic anchoring.",
+      "material_and_craftsmanship": "Natural Precambrian granite monoliths, basalt outcroppings, carved hillside stairways, and natural stone caverns.",
+      "social_and_ritual_context": "Venerated as protective geographic deities (Òrìṣà Òkè) where town founding rituals, annual civic covenants, and prayers for prosperity are enacted.",
+      "proverbs_and_oral_traditions": [
+        "Àpáta kì í jìnnìhìn fún òjò.",
+        "Àpáta ló ní ilẹ̀, kò sí ẹni tó lè yí i kúrò.",
+        "Bí ojú bá pọ́n wa, orí àpáta là ń sá pamọ́ sí."
+      ],
+      "diaspora_connections": "Preserved in Afro-Caribbean folklore and Brazilian Quilombo geographic defense traditions as symbols of maroon resilience.",
+      "geographical_origin": "Abẹ́òkúta (Olúmo), Ìdánre, Èkìtì, Òkè-Mèsì, Ìgbeti.",
+      "media_production_notes": "Wide cinematic drone panoramas sweeping across ancient majestic granite inselbergs rising out of tropical rainforest canopies."
+    }
+  },
+  {
+    "id": "Ẹlẹ́mù",
+    "title": "Ẹlẹ́mù",
+    "culture": "Yorùbá",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "is_parent": true,
+    "aliases": [
+      "ẹlẹ́mù",
+      "elemu",
+      "palm wine tapper",
+      "palm wine tapper guild",
+      "wine tapper",
+      "emu",
+      "oguro"
+    ],
+    "description": "The indigenous guild of master palm wine tappers and arborists skilled in climbing the royal oil palm (Ọ̀pẹ) and raffia palm to harvest fresh sap (Ẹ̀mù Ọ̀pẹ and Ògùrọ̀).",
+    "sub_variants": [
+      "Ẹlẹ́mù Ọ̀pẹ",
+      "Ẹlẹ́mù Ògùrọ̀",
+      "Ìgbà Ẹlẹ́mù",
+      "Kálukú"
+    ],
+    "historical_timeline": "Practiced across the forest belt since early agricultural settlement; regulated through customary forest guilds honoring Ògún (god of iron tools).",
+    "etymology_and_philosophy": "From 'ẹni tó ń mú ẹ̀mù' (he who harvests palm wine). Symbolizes courage, botanical expertise, heights mastery, and agrarian hospitality.",
+    "material_and_craftsmanship": "Equipped with strong climbing ropes (Ìgbà), curved tapping gouge chisels, and hanging collecting gourds (Agbè).",
+    "social_and_ritual_context": "Provides essential sweet palm wine for marriage negotiations, naming ceremonies, royal court libations, and communal evening storytelling.",
+    "proverbs_and_oral_traditions": [
+      "Ẹlẹ́mù kì í pa ẹ̀mù rẹ̀ mọ́ lórí ọ̀pẹ.",
+      "Ẹlẹ́mù tó mọ ìgbà kò ní bọ́ lórí igi.",
+      "Ẹ̀mù tútù là ń ta fún olówó, ẹ̀mù kíkan la fi ń bọ Ògún."
+    ],
+    "diaspora_connections": "Resonates with West African diaspora culinary cultures and Caribbean rum/punch fermentation rituals.",
+    "geographical_origin": "Ondo, Osun, Ogun, Ekiti, and Lagos palm groves.",
+    "media_production_notes": "Show a seasoned tapper scaling a tall oil palm at daybreak using an authentic fibrous Ìgbà harness, lowering gourd filled with frothing white wine.",
+    "details": {
+      "id": "Ẹlẹ́mù",
+      "title": "Ẹlẹ́mù",
+      "culture": "Yorùbá",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+      "is_parent": true,
+      "aliases": [
+        "ẹlẹ́mù",
+        "elemu",
+        "palm wine tapper",
+        "palm wine tapper guild",
+        "wine tapper",
+        "emu",
+        "oguro"
+      ],
+      "description": "The indigenous guild of master palm wine tappers and arborists skilled in climbing the royal oil palm (Ọ̀pẹ) and raffia palm to harvest fresh sap (Ẹ̀mù Ọ̀pẹ and Ògùrọ̀).",
+      "sub_variants": [
+        "Ẹlẹ́mù Ọ̀pẹ",
+        "Ẹlẹ́mù Ògùrọ̀",
+        "Ìgbà Ẹlẹ́mù",
+        "Kálukú"
+      ],
+      "historical_timeline": "Practiced across the forest belt since early agricultural settlement; regulated through customary forest guilds honoring Ògún (god of iron tools).",
+      "etymology_and_philosophy": "From 'ẹni tó ń mú ẹ̀mù' (he who harvests palm wine). Symbolizes courage, botanical expertise, heights mastery, and agrarian hospitality.",
+      "material_and_craftsmanship": "Equipped with strong climbing ropes (Ìgbà), curved tapping gouge chisels, and hanging collecting gourds (Agbè).",
+      "social_and_ritual_context": "Provides essential sweet palm wine for marriage negotiations, naming ceremonies, royal court libations, and communal evening storytelling.",
+      "proverbs_and_oral_traditions": [
+        "Ẹlẹ́mù kì í pa ẹ̀mù rẹ̀ mọ́ lórí ọ̀pẹ.",
+        "Ẹlẹ́mù tó mọ ìgbà kò ní bọ́ lórí igi.",
+        "Ẹ̀mù tútù là ń ta fún olówó, ẹ̀mù kíkan la fi ń bọ Ògún."
+      ],
+      "diaspora_connections": "Resonates with West African diaspora culinary cultures and Caribbean rum/punch fermentation rituals.",
+      "geographical_origin": "Ondo, Osun, Ogun, Ekiti, and Lagos palm groves.",
+      "media_production_notes": "Show a seasoned tapper scaling a tall oil palm at daybreak using an authentic fibrous Ìgbà harness, lowering gourd filled with frothing white wine."
+    }
+  },
+  {
+    "id": "Ẹégún",
+    "title": "Ẹégún",
+    "culture": "Yorùbá",
+    "category": "Ancestral Masquerades & Funerary Rites",
+    "is_parent": true,
+    "aliases": [
+      "ẹégún",
+      "eegun",
+      "egun",
+      "ara orun",
+      "ancestral spirit",
+      "masquerade",
+      "egungun manifestation"
+    ],
+    "description": "The colloquial, living ritual embodiment of ancestral spirits (Ará Ọ̀run) walking among the living during annual festivals, mortuary rites, and civic blessings.",
+    "sub_variants": [
+      "Ẹégún Olóògùn",
+      "Ẹégún Aláré",
+      "Ẹégún Alágbàá",
+      "Ẹégún Ìdílé"
+    ],
+    "historical_timeline": "Originating in classical Ọ̀yọ́-Ilé under the Aláàfin court and spread across every Yorùbá kingdom as the premier ancestral communion institution.",
+    "etymology_and_philosophy": "From 'egungun' (ancestral bone/lineage foundation). The masquerade represents the living continuation of ancestral protection, moral law, and family continuity.",
+    "material_and_craftsmanship": "Sumptuously costumed in layered brocades, velvet strips, carved wooden headdresses, mirror insets, and cowrie-studded aprons.",
+    "social_and_ritual_context": "Summoned from the sacred ancestral grove (Ìgbàlẹ̀) by initiated priests (Alágbàá) to cleanse towns of epidemics and bless families.",
+    "proverbs_and_oral_traditions": [
+      "Ẹégún tó jó t’ó wọ̀gbálẹ̀, orúkọ rẹ̀ kò ní parẹ́.",
+      "Ẹni tí kò mọ ẹégún, á bẹ̀rù aṣọ rẹ̀.",
+      "Ará Ọ̀run kò ní gbà kí ayé bàjẹ́."
+    ],
+    "diaspora_connections": "Actively preserved in Oyotunji African Village (USA) and Cuban Cabildo Egúngún funerary societies.",
+    "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Abẹ́òkúta, Ìjẹ̀bú, Òkè-Ìgbo.",
+    "media_production_notes": "Dynamic cinematic whirling of multi-colored fabric streamers accompanied by thundering Bàtá drums and singing women.",
+    "details": {
+      "id": "Ẹégún",
+      "title": "Ẹégún",
+      "culture": "Yorùbá",
+      "category": "Ancestral Masquerades & Funerary Rites",
+      "is_parent": true,
+      "aliases": [
+        "ẹégún",
+        "eegun",
+        "egun",
+        "ara orun",
+        "ancestral spirit",
+        "masquerade",
+        "egungun manifestation"
+      ],
+      "description": "The colloquial, living ritual embodiment of ancestral spirits (Ará Ọ̀run) walking among the living during annual festivals, mortuary rites, and civic blessings.",
+      "sub_variants": [
+        "Ẹégún Olóògùn",
+        "Ẹégún Aláré",
+        "Ẹégún Alágbàá",
+        "Ẹégún Ìdílé"
+      ],
+      "historical_timeline": "Originating in classical Ọ̀yọ́-Ilé under the Aláàfin court and spread across every Yorùbá kingdom as the premier ancestral communion institution.",
+      "etymology_and_philosophy": "From 'egungun' (ancestral bone/lineage foundation). The masquerade represents the living continuation of ancestral protection, moral law, and family continuity.",
+      "material_and_craftsmanship": "Sumptuously costumed in layered brocades, velvet strips, carved wooden headdresses, mirror insets, and cowrie-studded aprons.",
+      "social_and_ritual_context": "Summoned from the sacred ancestral grove (Ìgbàlẹ̀) by initiated priests (Alágbàá) to cleanse towns of epidemics and bless families.",
+      "proverbs_and_oral_traditions": [
+        "Ẹégún tó jó t’ó wọ̀gbálẹ̀, orúkọ rẹ̀ kò ní parẹ́.",
+        "Ẹni tí kò mọ ẹégún, á bẹ̀rù aṣọ rẹ̀.",
+        "Ará Ọ̀run kò ní gbà kí ayé bàjẹ́."
+      ],
+      "diaspora_connections": "Actively preserved in Oyotunji African Village (USA) and Cuban Cabildo Egúngún funerary societies.",
+      "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Abẹ́òkúta, Ìjẹ̀bú, Òkè-Ìgbo.",
+      "media_production_notes": "Dynamic cinematic whirling of multi-colored fabric streamers accompanied by thundering Bàtá drums and singing women."
+    }
+  },
+  {
+    "id": "Àrọ̀kọ̀_Ẹfà",
+    "title": "Àrọ̀kọ̀ Ẹfà (Love)",
+    "culture": "Yorùbá",
+    "category": "Oral Literature, Philosophy & Folklore",
+    "is_parent": false,
+    "sovereign_parent": "Àrọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aroko efa",
+      "aroko love",
+      "aroko efa (love)",
+      "efa messaging",
+      "symbolic love token",
+      "six cowries"
+    ],
+    "description": "The classic Yorùbá semiotic token of love and mutual affection, constructed by stringing six cowrie shells (Ẹfà) face-to-face to express romantic yearning and union.",
+    "historical_timeline": "Practiced across pre-colonial Yorùbá city-states as a discreet, dignified method of courtship between lovers.",
+    "etymology_and_philosophy": "From 'ẹfà' (six cowries, derived from 'fà' meaning to attract or draw near). Encodes the proverb: 'Ẹfà ló ní kí o fà mọ́ mi' (Six cowries decree that you draw near to me).",
+    "material_and_craftsmanship": "Six pristine white cowrie shells carefully perforated and strung along raffia thread or twisted cotton cord with shells facing each other.",
+    "social_and_ritual_context": "Hand-delivered by a trusted emissary to a romantic interest; receiving an affirmative symbolic response seals courtship intentions.",
+    "proverbs_and_oral_traditions": [
+      "Ẹfà ló ní kí o fà mọ́ mi.",
+      "Àrọ̀kọ̀ tí a rán sí olólùfẹ́ kì í parọ́."
+    ],
+    "diaspora_connections": "Survives symbolically in Afro-Cuban divination poetry (Ẹfà cowrie patterns in diloggún) as signs of love.",
+    "geographical_origin": "Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Ilé-Ifẹ̀.",
+    "media_production_notes": "Macro close-up shot of six white cowries strung facing inward on natural braided fiber resting upon handwoven indigo cloth.",
+    "details": {
+      "id": "Àrọ̀kọ̀_Ẹfà",
+      "title": "Àrọ̀kọ̀ Ẹfà (Love)",
+      "culture": "Yorùbá",
+      "category": "Oral Literature, Philosophy & Folklore",
+      "is_parent": false,
+      "sovereign_parent": "Àrọ̀kọ̀",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "aroko efa",
+        "aroko love",
+        "aroko efa (love)",
+        "efa messaging",
+        "symbolic love token",
+        "six cowries"
+      ],
+      "description": "The classic Yorùbá semiotic token of love and mutual affection, constructed by stringing six cowrie shells (Ẹfà) face-to-face to express romantic yearning and union.",
+      "historical_timeline": "Practiced across pre-colonial Yorùbá city-states as a discreet, dignified method of courtship between lovers.",
+      "etymology_and_philosophy": "From 'ẹfà' (six cowries, derived from 'fà' meaning to attract or draw near). Encodes the proverb: 'Ẹfà ló ní kí o fà mọ́ mi' (Six cowries decree that you draw near to me).",
+      "material_and_craftsmanship": "Six pristine white cowrie shells carefully perforated and strung along raffia thread or twisted cotton cord with shells facing each other.",
+      "social_and_ritual_context": "Hand-delivered by a trusted emissary to a romantic interest; receiving an affirmative symbolic response seals courtship intentions.",
+      "proverbs_and_oral_traditions": [
+        "Ẹfà ló ní kí o fà mọ́ mi.",
+        "Àrọ̀kọ̀ tí a rán sí olólùfẹ́ kì í parọ́."
+      ],
+      "diaspora_connections": "Survives symbolically in Afro-Cuban divination poetry (Ẹfà cowrie patterns in diloggún) as signs of love.",
+      "geographical_origin": "Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Ilé-Ifẹ̀.",
+      "media_production_notes": "Macro close-up shot of six white cowries strung facing inward on natural braided fiber resting upon handwoven indigo cloth."
+    }
+  },
+  {
+    "id": "Àrọ̀kọ̀_Ẹ̀jọ́",
+    "title": "Àrọ̀kọ̀ Ẹ̀jọ́ (Dispute)",
+    "culture": "Yorùbá",
+    "category": "Oral Literature, Philosophy & Folklore",
+    "is_parent": false,
+    "sovereign_parent": "Àrọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aroko ejo",
+      "aroko dispute",
+      "aroko ejo (dispute)",
+      "eight cowrie summons",
+      "judicial aroko",
+      "eight cowries"
+    ],
+    "description": "The formal semiotic notification of a dispute, pending litigation, or official summons to a palace tribunal, communicated by stringing eight cowries (Ẹ̀jọ́) facing outward.",
+    "historical_timeline": "Served as pre-colonial writ of summons within the legal jurisprudence of Old Ọ̀yọ́ and Ògbóni judicial lodges.",
+    "etymology_and_philosophy": "From 'ẹ̀jọ́' (eight cowries, a homophonic pun with 'ẹ̀jọ́' meaning dispute/lawsuit). Indicates that conflict must be resolved before the council of elders.",
+    "material_and_craftsmanship": "Eight cowrie shells tied back-to-back facing away from each other along coarse dark cordage, sometimes tied with a knot.",
+    "social_and_ritual_context": "Carried by royal court couriers (Ìkọ̀ Ọba) or Ògbóni emissaries to notify a party of legal claims against them.",
+    "proverbs_and_oral_traditions": [
+      "Àrọ̀kọ̀ ẹ̀jọ́ dé, kò sí àyè fún àwíwí.",
+      "Ẹ̀jọ́ kì í wọ ilé kí ó ma ní alárinà."
+    ],
+    "diaspora_connections": "Referenced in historical accounts of 19th-century Yorùbá diplomatic letters preserved in colonial archives.",
+    "geographical_origin": "Ọ̀yọ́-Ilé, Ìbàdàn, Abẹ́òkúta.",
+    "media_production_notes": "Show royal palace messenger handing a folded palm-leaf packet revealing eight outward-facing cowries to a village Baálé.",
+    "details": {
+      "id": "Àrọ̀kọ̀_Ẹ̀jọ́",
+      "title": "Àrọ̀kọ̀ Ẹ̀jọ́ (Dispute)",
+      "culture": "Yorùbá",
+      "category": "Oral Literature, Philosophy & Folklore",
+      "is_parent": false,
+      "sovereign_parent": "Àrọ̀kọ̀",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "aroko ejo",
+        "aroko dispute",
+        "aroko ejo (dispute)",
+        "eight cowrie summons",
+        "judicial aroko",
+        "eight cowries"
+      ],
+      "description": "The formal semiotic notification of a dispute, pending litigation, or official summons to a palace tribunal, communicated by stringing eight cowries (Ẹ̀jọ́) facing outward.",
+      "historical_timeline": "Served as pre-colonial writ of summons within the legal jurisprudence of Old Ọ̀yọ́ and Ògbóni judicial lodges.",
+      "etymology_and_philosophy": "From 'ẹ̀jọ́' (eight cowries, a homophonic pun with 'ẹ̀jọ́' meaning dispute/lawsuit). Indicates that conflict must be resolved before the council of elders.",
+      "material_and_craftsmanship": "Eight cowrie shells tied back-to-back facing away from each other along coarse dark cordage, sometimes tied with a knot.",
+      "social_and_ritual_context": "Carried by royal court couriers (Ìkọ̀ Ọba) or Ògbóni emissaries to notify a party of legal claims against them.",
+      "proverbs_and_oral_traditions": [
+        "Àrọ̀kọ̀ ẹ̀jọ́ dé, kò sí àyè fún àwíwí.",
+        "Ẹ̀jọ́ kì í wọ ilé kí ó ma ní alárinà."
+      ],
+      "diaspora_connections": "Referenced in historical accounts of 19th-century Yorùbá diplomatic letters preserved in colonial archives.",
+      "geographical_origin": "Ọ̀yọ́-Ilé, Ìbàdàn, Abẹ́òkúta.",
+      "media_production_notes": "Show royal palace messenger handing a folded palm-leaf packet revealing eight outward-facing cowries to a village Baálé."
+    }
+  },
+  {
+    "id": "Ọ̀kọ̀_Ẹlẹ́ṣin",
+    "title": "Ọ̀kọ̀ Ẹlẹ́ṣin",
+    "culture": "Yorùbá",
+    "category": "Military Traditions, Weaponry & Defense",
+    "is_parent": false,
+    "sovereign_parent": "Ọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "oko elesin",
+      "cavalry lance",
+      "cavalry spear",
+      "mounted spear",
+      "oyo cavalry lance"
+    ],
+    "description": "The long-shafted, balanced cavalry lance forged with a tempered leaf-shaped iron head and counterweight butt, utilized by Ọ̀yọ́ Empire mounted warriors (Ẹlẹ́ṣin) for tactical charges.",
+    "historical_timeline": "Central to the imperial dominance of the Old Ọ̀yọ́ Empire across the savanna from the 16th through early 19th centuries.",
+    "etymology_and_philosophy": "From 'ọ̀kọ̀' (spear/lance) and 'ẹlẹ́ṣin' (horseman/cavalryman). Embodying martial precision, velocity, and sovereign imperial expansion.",
+    "material_and_craftsmanship": "Forged high-carbon bloomery iron blade affixed to a flexible, seasoned hardwood shaft with brass collar bands.",
+    "social_and_ritual_context": "Consecrated before battle with libations to Ògún; wielded exclusively by aristocratic cavalry regiments under the command of Ọ̀yọ́ war lords.",
+    "proverbs_and_oral_traditions": [
+      "Ọ̀kọ̀ ẹlẹ́ṣin kì í fò lójú ogun lásán.",
+      "Ẹlẹ́ṣin kì í fẹsẹ̀ tẹ ọ̀kọ̀ rẹ̀ mọ́lẹ̀."
+    ],
+    "diaspora_connections": "Survives in Cuban Lucumí and Brazilian Candomblé iconography of Ògún and Ẹlẹ́gbára carrying martial spears.",
+    "geographical_origin": "Ọ̀yọ́-Ilé, Ìgbòho, Ìbàdàn.",
+    "media_production_notes": "Dramatic galloping cavalry charging across savanna grassland, lances held leveled at shoulder height with sunlight gleaming off polished iron tips.",
+    "details": {
+      "id": "Ọ̀kọ̀_Ẹlẹ́ṣin",
+      "title": "Ọ̀kọ̀ Ẹlẹ́ṣin",
+      "culture": "Yorùbá",
+      "category": "Military Traditions, Weaponry & Defense",
+      "is_parent": false,
+      "sovereign_parent": "Ọ̀kọ̀",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "oko elesin",
+        "cavalry lance",
+        "cavalry spear",
+        "mounted spear",
+        "oyo cavalry lance"
+      ],
+      "description": "The long-shafted, balanced cavalry lance forged with a tempered leaf-shaped iron head and counterweight butt, utilized by Ọ̀yọ́ Empire mounted warriors (Ẹlẹ́ṣin) for tactical charges.",
+      "historical_timeline": "Central to the imperial dominance of the Old Ọ̀yọ́ Empire across the savanna from the 16th through early 19th centuries.",
+      "etymology_and_philosophy": "From 'ọ̀kọ̀' (spear/lance) and 'ẹlẹ́ṣin' (horseman/cavalryman). Embodying martial precision, velocity, and sovereign imperial expansion.",
+      "material_and_craftsmanship": "Forged high-carbon bloomery iron blade affixed to a flexible, seasoned hardwood shaft with brass collar bands.",
+      "social_and_ritual_context": "Consecrated before battle with libations to Ògún; wielded exclusively by aristocratic cavalry regiments under the command of Ọ̀yọ́ war lords.",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀kọ̀ ẹlẹ́ṣin kì í fò lójú ogun lásán.",
+        "Ẹlẹ́ṣin kì í fẹsẹ̀ tẹ ọ̀kọ̀ rẹ̀ mọ́lẹ̀."
+      ],
+      "diaspora_connections": "Survives in Cuban Lucumí and Brazilian Candomblé iconography of Ògún and Ẹlẹ́gbára carrying martial spears.",
+      "geographical_origin": "Ọ̀yọ́-Ilé, Ìgbòho, Ìbàdàn.",
+      "media_production_notes": "Dramatic galloping cavalry charging across savanna grassland, lances held leveled at shoulder height with sunlight gleaming off polished iron tips."
+    }
+  },
+  {
+    "id": "Ọfà_Ọdẹ",
+    "title": "Ọfà Ọdẹ",
+    "culture": "Yorùbá",
+    "category": "Military Traditions, Weaponry & Defense",
+    "is_parent": false,
+    "sovereign_parent": "Ọfà",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ofa ode",
+      "hunter arrow",
+      "hunting arrow",
+      "game arrow",
+      "hunting bow arrow"
+    ],
+    "description": "The specialized hunting arrow fitted with barbed iron tips and aerodynamic guinea-fowl feather fletching, crafted by indigenous guilds under the tutelage of Òṣọ́ọ̀sì.",
+    "historical_timeline": "Predates firearm introduction by centuries; maintained by traditional hunters (Ọdẹ) as the quintessential woodland game implement.",
+    "etymology_and_philosophy": "From 'ọfà' (arrow) and 'ọdẹ' (hunter). Embodying stealth, patience, and non-wasteful harmony with the forest ecology.",
+    "material_and_craftsmanship": "Straight reeds or split bamboo shafts fitted with hand-forged barbed iron bodkins and stabilized with three-vane feather fletching glued with tree resin.",
+    "social_and_ritual_context": "Consecrated at hunter shrines with prayers to Òṣọ́ọ̀sì; carried in cylindrical leather quivers (Apó Ọfà) across shoulder straps.",
+    "proverbs_and_oral_traditions": [
+      "Ọfà ọdẹ kì í lọ kí ó padà l’ọ́wọ́ òfo.",
+      "Ọdẹ tó mọ ọfà ta kì í ba igbó jẹ́."
+    ],
+    "diaspora_connections": "Prominent in Cuban and Brazilian rites for Ochosi / Oxóssi (the divine hunter's bow and arrow emblem).",
+    "geographical_origin": "Forest belts of Èkìtì, Òndó, Ọ̀yọ́, and Ìjẹ̀bú.",
+    "media_production_notes": "Silent hunter crouching in dense tropical forest, drawing a taut bamboo bow with a razor-sharp barbed iron arrow aimed through leaves.",
+    "details": {
+      "id": "Ọfà_Ọdẹ",
+      "title": "Ọfà Ọdẹ",
+      "culture": "Yorùbá",
+      "category": "Military Traditions, Weaponry & Defense",
+      "is_parent": false,
+      "sovereign_parent": "Ọfà",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "ofa ode",
+        "hunter arrow",
+        "hunting arrow",
+        "game arrow",
+        "hunting bow arrow"
+      ],
+      "description": "The specialized hunting arrow fitted with barbed iron tips and aerodynamic guinea-fowl feather fletching, crafted by indigenous guilds under the tutelage of Òṣọ́ọ̀sì.",
+      "historical_timeline": "Predates firearm introduction by centuries; maintained by traditional hunters (Ọdẹ) as the quintessential woodland game implement.",
+      "etymology_and_philosophy": "From 'ọfà' (arrow) and 'ọdẹ' (hunter). Embodying stealth, patience, and non-wasteful harmony with the forest ecology.",
+      "material_and_craftsmanship": "Straight reeds or split bamboo shafts fitted with hand-forged barbed iron bodkins and stabilized with three-vane feather fletching glued with tree resin.",
+      "social_and_ritual_context": "Consecrated at hunter shrines with prayers to Òṣọ́ọ̀sì; carried in cylindrical leather quivers (Apó Ọfà) across shoulder straps.",
+      "proverbs_and_oral_traditions": [
+        "Ọfà ọdẹ kì í lọ kí ó padà l’ọ́wọ́ òfo.",
+        "Ọdẹ tó mọ ọfà ta kì í ba igbó jẹ́."
+      ],
+      "diaspora_connections": "Prominent in Cuban and Brazilian rites for Ochosi / Oxóssi (the divine hunter's bow and arrow emblem).",
+      "geographical_origin": "Forest belts of Èkìtì, Òndó, Ọ̀yọ́, and Ìjẹ̀bú.",
+      "media_production_notes": "Silent hunter crouching in dense tropical forest, drawing a taut bamboo bow with a razor-sharp barbed iron arrow aimed through leaves."
+    }
+  },
+  {
+    "id": "Àdá_Ìbílẹ̀",
+    "title": "Àdá Ìbílẹ̀",
+    "culture": "Yorùbá",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "is_parent": false,
+    "sovereign_parent": "Àdá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ada ibile",
+      "traditional cutlass",
+      "native machete",
+      "clearing cutlass",
+      "curved machete"
+    ],
+    "description": "The traditional broad-tipped Yorùbá clearing cutlass forged by master blacksmiths (Àgbẹ̀dẹ), serving as the supreme implement for clearing bush and harvesting crops.",
+    "historical_timeline": "A cornerstone of Yorùbá agrarian civilizational survival since the Iron Age, enabling forest clearing and yam cultivation across millennia.",
+    "etymology_and_philosophy": "From 'àdá' (machete) and 'ìbílẹ̀' (native/indigenous). Reflects the primordial pact with Ògún that raw iron transforms wilderness into civilization.",
+    "material_and_craftsmanship": "Forged locally from tough bloomery or scrap iron, shaped with a front-heavy convex curved edge, and fitted with a carved hardwood handle secured with pitch.",
+    "social_and_ritual_context": "Carried daily by farmers; sworn upon in traditional courts as an instrument of truth consecrated to Ògún.",
+    "proverbs_and_oral_traditions": [
+      "Àdá kì í mọ orí olówó rẹ̀ kí ó ṣá a l’ọ́gbẹ́.",
+      "Iṣẹ́ àdá kọ́ l’ọkọ́ ń ṣe."
+    ],
+    "diaspora_connections": "Represented throughout Caribbean Maroon and Afro-Cuban farm lore as the quintessential freedom machete of Ògún.",
+    "geographical_origin": "Agrarian farmlands across Yorùbáland.",
+    "media_production_notes": "Sparks flying from a blacksmith's anvil as a glowing orange cutlass blade is hammered to sharp curvature, quenching in water with a hiss.",
+    "details": {
+      "id": "Àdá_Ìbílẹ̀",
+      "title": "Àdá Ìbílẹ̀",
+      "culture": "Yorùbá",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+      "is_parent": false,
+      "sovereign_parent": "Àdá",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "ada ibile",
+        "traditional cutlass",
+        "native machete",
+        "clearing cutlass",
+        "curved machete"
+      ],
+      "description": "The traditional broad-tipped Yorùbá clearing cutlass forged by master blacksmiths (Àgbẹ̀dẹ), serving as the supreme implement for clearing bush and harvesting crops.",
+      "historical_timeline": "A cornerstone of Yorùbá agrarian civilizational survival since the Iron Age, enabling forest clearing and yam cultivation across millennia.",
+      "etymology_and_philosophy": "From 'àdá' (machete) and 'ìbílẹ̀' (native/indigenous). Reflects the primordial pact with Ògún that raw iron transforms wilderness into civilization.",
+      "material_and_craftsmanship": "Forged locally from tough bloomery or scrap iron, shaped with a front-heavy convex curved edge, and fitted with a carved hardwood handle secured with pitch.",
+      "social_and_ritual_context": "Carried daily by farmers; sworn upon in traditional courts as an instrument of truth consecrated to Ògún.",
+      "proverbs_and_oral_traditions": [
+        "Àdá kì í mọ orí olówó rẹ̀ kí ó ṣá a l’ọ́gbẹ́.",
+        "Iṣẹ́ àdá kọ́ l’ọkọ́ ń ṣe."
+      ],
+      "diaspora_connections": "Represented throughout Caribbean Maroon and Afro-Cuban farm lore as the quintessential freedom machete of Ògún.",
+      "geographical_origin": "Agrarian farmlands across Yorùbáland.",
+      "media_production_notes": "Sparks flying from a blacksmith's anvil as a glowing orange cutlass blade is hammered to sharp curvature, quenching in water with a hiss."
+    }
+  },
+  {
+    "id": "Idà_Agẹmọ",
+    "title": "Idà Agẹmọ",
+    "culture": "Yorùbá",
+    "category": "Military Traditions, Weaponry & Defense",
+    "is_parent": false,
+    "sovereign_parent": "Idà",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ida agemo",
+      "agemo ceremonial sword",
+      "agemo broadsword",
+      "sacred sword of agemo"
+    ],
+    "description": "The sacred curved brass-and-iron ceremonial broadsword carried by high priests (Olójà / Ọ̀rẹ́moje) during the ancient Agẹmọ masquerade festivals of the Ìjẹ̀bú kingdom.",
+    "historical_timeline": "Originating in Ìjẹ̀bú antiquity as the royal and priestly emblem of unity among the sixteen Agẹmọ priest-kings.",
+    "etymology_and_philosophy": "From 'idà' (sword) and 'Agẹmọ' (the chameleon-associated supreme deity of Ìjẹ̀bú). Symbolizes priestly sanctity, cosmic vigilance, and monarchical protection.",
+    "material_and_craftsmanship": "Forged iron blade richly inlaid with repoussé brass animal totems (chameleons, crocodiles) and a cast brass figurative hilt.",
+    "social_and_ritual_context": "Used in solemn ceremonial choreography to part the festival crowds, bless the Awùjalẹ̀ (King of Ìjẹ̀bú), and consecrate civic peace.",
+    "proverbs_and_oral_traditions": [
+      "Idà Agẹmọ kì í sá lasan, àlàáfíà ló ń mú wá.",
+      "Agẹmọ tí kò l’ádé, idà rẹ̀ l’ọlá rẹ̀."
+    ],
+    "diaspora_connections": "Preserved in Afro-Brazilian and Cuban Òrìṣà altar regalia for water and chameleon-linked divinities.",
+    "geographical_origin": "Ìjẹ̀bú-Òde, Ìjẹ̀bú-Igbó, Òwò.",
+    "media_production_notes": "Priestly procession through sacred palm mats with priest bearing the ornate brass-inlaid Idà Agẹmọ aloft under ceremonial parasols.",
+    "details": {
+      "id": "Idà_Agẹmọ",
+      "title": "Idà Agẹmọ",
+      "culture": "Yorùbá",
+      "category": "Military Traditions, Weaponry & Defense",
+      "is_parent": false,
+      "sovereign_parent": "Idà",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "aliases": [
+        "ida agemo",
+        "agemo ceremonial sword",
+        "agemo broadsword",
+        "sacred sword of agemo"
+      ],
+      "description": "The sacred curved brass-and-iron ceremonial broadsword carried by high priests (Olójà / Ọ̀rẹ́moje) during the ancient Agẹmọ masquerade festivals of the Ìjẹ̀bú kingdom.",
+      "historical_timeline": "Originating in Ìjẹ̀bú antiquity as the royal and priestly emblem of unity among the sixteen Agẹmọ priest-kings.",
+      "etymology_and_philosophy": "From 'idà' (sword) and 'Agẹmọ' (the chameleon-associated supreme deity of Ìjẹ̀bú). Symbolizes priestly sanctity, cosmic vigilance, and monarchical protection.",
+      "material_and_craftsmanship": "Forged iron blade richly inlaid with repoussé brass animal totems (chameleons, crocodiles) and a cast brass figurative hilt.",
+      "social_and_ritual_context": "Used in solemn ceremonial choreography to part the festival crowds, bless the Awùjalẹ̀ (King of Ìjẹ̀bú), and consecrate civic peace.",
+      "proverbs_and_oral_traditions": [
+        "Idà Agẹmọ kì í sá lasan, àlàáfíà ló ń mú wá.",
+        "Agẹmọ tí kò l’ádé, idà rẹ̀ l’ọlá rẹ̀."
+      ],
+      "diaspora_connections": "Preserved in Afro-Brazilian and Cuban Òrìṣà altar regalia for water and chameleon-linked divinities.",
+      "geographical_origin": "Ìjẹ̀bú-Òde, Ìjẹ̀bú-Igbó, Òwò.",
+      "media_production_notes": "Priestly procession through sacred palm mats with priest bearing the ornate brass-inlaid Idà Agẹmọ aloft under ceremonial parasols."
+    }
   }
 ]

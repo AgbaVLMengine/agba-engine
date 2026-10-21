@@ -20,15 +20,22 @@
   1. **Pillar 1 — "Tooth & Vein" Rabbit-Hole Navigation UI**: Decomposed the 1,279-line `SearchTab.jsx` into 6 modular files strictly `<350 LOC` (`useExplorationGraph.js`, `ToothSearchCore.jsx` with search input/button embedded inside the tooth crown, `VeinRabbitHoleCanvas.jsx` with cubic Bézier arterial pulse threads connecting `Tooth -> Node 1 -> Node 2 -> Node N` and one-click ancestor retracing, `EntityBentoDeck.jsx`, `SearchTab.jsx`, and `tooth-vein.css`).
   2. **Pillar 2 — Equal Multi-Culture Ingestion & Seamless Culture Swapping**: Designed `api/data/cultures_registry.json` (`yoruba`, `edo`, `igbo`, `akan` at 100% 14-Tier Sovereign Parity), `cross_cultural_resonances` schema, `api/app/orthography.py` (`<180 LOC`), `api/app/multimodal_mapper.py` (`<230 LOC`), decomposed `retrieval.py` from `607 LOC` to `<290 LOC` with Qdrant `culture_id` payload filtering, and designed `CultureProvider.jsx` (`<16ms` CSS theme + diacritic bar switching and Pan-Cultural Comparative Mode).
   3. **Pillar 3 — Custom Domain Acquisition & DNS Routing for `ágbaengine.com`**: Detailed IDNA2008 Punycode registration for `agbaengine.com` (ASCII primary), `ágbaengine.com` (`xn--gbaengine-21a.com`), and canonical `àgbàengine.com` (`xn--gbengine-rza0b.com`), registrar selection (Cloudflare/Porkbun/Namecheap), exact Netlify + Google Cloud Run (`api.agbaengine.com` -> `ghs.googlehosted.com.`) DNS zones, Let's Encrypt CAA records, and RFC 6454 Punycode `Origin` header whitelisting in FastAPI CORS.
-- **[2026-10-21] (`HANDOFF-AGBEDE-002A` & `HANDOFF-AGBEDE-002B`)**: Executed live implementation of Backend Retrieval/Corpus Upgrades & Frontend "Tooth & Vein" Rabbit-Hole UI (`<500 LOC` across all files):
-  - **Backend (`HANDOFF-AGBEDE-002A`)**:
-    - Extracted `api/app/semantic_bridge.py` (`160 LOC`) and `api/app/multimodal_resolver.py` (`252 LOC`), reducing `api/app/retrieval.py` from `606 LOC` to **`361 LOC`** while implementing `RC-1` (Tonal Invariant Tiering: `+600.0` exact diacritic match vs `+450.0` un-diacritized vs `+180.0` conflicting tones) and `RC-3` (Inquiry Stop-Word Expansion + `ENGLISH_TO_YORUBA_SEMANTIC_BRIDGE` + Compound-Prefix/Diaspora Phonetic Normalizer).
-    - Extracted `api/app/orthography_lexicon.py` (`337 LOC`), reducing `api/app/intelligence.py` from `797 LOC` to **`466 LOC`** and fixing `"Fìlà Gọ̀bị́"` -> `"Fìlà Gọ̀bí"` (`U+1ECB` bug), duplicate `"ayo"` lexicon key (with contextual `Ayò` game vs `Ayọ̀` joy disambiguation), `"Orúnmìlà"` -> `"Ọ̀rúnmìlà"`, and `"Obàtálá"` -> `"Ọbàtálá"`.
-    - Applied `27` corpus cleanups in `api/data/yoruba_corpus_1007_NORMALIZED.json` (`Olókun` `协调olokun`, `Udàmalóre` duplicate `ancestral ancestral`, `Rárà` `"king (ọba)"`, `Àròkin` typo, `Ààrẹ Ọ̀nà Kakanfò` tilde fix, `Ọmẹle` sub-dot enrichment, removed `'Bàtá'` from `Dùndún.sub_variants`, added `'Ẹégún'` alias to `Egúngún`) and synced all `1,333` entities to `web/src/data/yoruba_master_corpus.json`.
-  - **Frontend (`HANDOFF-AGBEDE-002B`)**:
-    - Decomposed `web/src/components/SearchTab.jsx` from `1,278 LOC` to **`445 LOC`** by creating `web/src/hooks/useExplorationGraph.js` (`232 LOC`), `web/src/components/ToothSearchCore.jsx` (`430 LOC`), `web/src/components/VeinRabbitHoleCanvas.jsx` (`338 LOC`), and `web/src/components/EntityBentoDeck.jsx` (`369 LOC`).
-    - Implemented the Central Tooth Search Core (search input/buttons/diacritics embedded directly inside the Tooth crown + Equal Multi-Culture Switcher for `Yorùbá`, `Ẹ̀dó (Benin)`, `Ìgbò`, `Akan (Asante)`) and the Living Cubic-Bézier Vein Rabbit-Hole Trail (`Tooth -> Node 1 -> Node 2 -> ...`) with one-click ancestor retracing.
-    - Fixed `RC-2` (`m.is_parent === true`, `\b` word-boundary regex instead of `.includes()`, direct `parentNode.sub_variants` lookup) and `extractTonalContour()` NFC/NFD grapheme cluster extraction.
-    - Added synchronous `useRef` double-tap locks (`busyRef`, `submitLockRef`) and UUID `idempotency_key` (`FeedbackModal.jsx`, `254 LOC`). Verified clean `npm run build` (`✓ 1910 modules transformed, built in 840ms`).
+- **[2026-10-21] (`HANDOFF-AGBEDE-004`)**: Executed comprehensive Category 17 Remapping, Sovereign Parents Ingestion & Dynamic Sub-Variant Hydrator:
+  - **Category 17 Remapping & 140 Misclassifications**:
+    - Created canonical Category 17: `Indigenous Zoology, Sacred Fauna & Wildlife` re-homing 18 standalone animal/avian/aquatic taxa (`Ẹja`, `Ẹyẹ`, `Ẹranko`, `Ìjàpá`, etc.).
+    - Executed 140 entry-by-entry remappings across Categories 1–16 with zero data loss, perfectly aligning with `AGY__REPORT_OYE_TAXONOMY_AUDIT_005.md` Table 4.
+  - **9 Missing Sovereign Parents & 6 Sub-Variants Ingested**:
+    - Ingested 9 canonical Sovereign Parents with rich 14-tier schemas: `Ifá`, `Were Music`, `Oogun` (Property/Inheritance), `Òògùn` (Pharmacology/Medicine), `Ẹ̀pà` (Groundnut/Legume), `Àpáta` (Inselberg Topography), `Ẹlẹ́mù` (Palm Wine Tapper Guild), `Ẹégún` (Ancestral Masquerades), `Ìwọ̀fà` (Pre-colonial Labor Covenant).
+    - Disambiguated `Àpáta (Shield)` (`Àpáta_Shield`), cleared `Ẹégún` alias collision from `Egúngún`, and diacritized `Ofada` -> `Ọ̀fàdà`.
+    - Ingested 6 dedicated standalone records for critical sub-variants: `Àrọ̀kọ̀ Ẹfà (Love)`, `Àrọ̀kọ̀ Ẹ̀jọ́ (Dispute)`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`, `Àdá Ìbílẹ̀`, `Idà Agẹmọ`. Total corpus: 1,347 entries synced across API and Web.
+  - **Zero-Hardcoded Dynamic Sub-Variant Fallback Hydrator**:
+    - Built `web/src/utils/subVariantHydrator.js` (`107 LOC`) and integrated into `web/src/components/SearchTab.jsx` (`460 LOC`) and `api/app/retrieval.py` (`470 LOC`).
+    - When a query or click matches an unindexed string in any Sovereign Parent's `sub_variants` list, dynamically synthesizes the child node inheriting category and craftsmanship, set `is_parent: false`, `sovereign_parent: parent.title`, and injects at Rank #1 (`fusion_score: 1.0`). Parent loop permanently eliminated (`loop: False` across 100% of tested pairs).
+  - **Bilateral Knowledge Graph Wiring**:
+    - Explicitly wired bilateral relations for `Apẹja` ↔ `Ẹja` ↔ `Ọkọ̀ Ojú Omi` ↔ `Odò Ọ̀ṣun` ↔ `Olókun`; `Idà` ↔ `Àdá` ↔ `Ọ̀kọ̀` ↔ `Ọfà` ↔ `Ògún`; and `Ẹyẹ` ↔ `Àwọn Ìyá Mi` ↔ `Odídẹrẹ́` ↔ `Adé`.
+  - **Verification & Industry Standards**:
+    - Passed `./scripts/review.sh` (0 hard violations across all Production Gates).
+    - Passed `npm run build` (Vite bundle built in 1.09s with zero errors).
+    - Validated Batteries X-1 (9/9 Sovereign Parents), X-2 (12/12 Anti-Loop Sub-Variants), and X-3 (10/10 Homograph Guards).
 
 
