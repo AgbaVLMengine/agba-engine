@@ -5,6 +5,7 @@ import { useExplorationGraph, PEER_CULTURES } from '../hooks/useExplorationGraph
 import ToothSearchCore from './ToothSearchCore';
 import VeinRabbitHoleCanvas from './VeinRabbitHoleCanvas';
 import EntityBentoDeck from './EntityBentoDeck';
+import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
 
 function stripAccents(s) {
   return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -63,16 +64,36 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     resetRabbitHole
   } = useExplorationGraph(activeCulture);
 
+  const findVisualRegaliaHit = useCallback((rawTitle) => {
+    if (!rawTitle) return null;
+    const tNFC = normalizeNFC(rawTitle);
+    const tClean = stripAccents(rawTitle);
+    return (
+      visualManifest.find((v) => normalizeNFC(v.canonical_name) === tNFC) ||
+      visualManifest.find((v) =>
+        (v.canonical_name || '')
+          .split('/')
+          .map((p) => normalizeNFC(p))
+          .includes(tNFC)
+      ) ||
+      visualManifest.find((v) => stripAccents(v.canonical_name) === tClean) ||
+      visualManifest.find((v) =>
+        (v.canonical_name || '')
+          .split('/')
+          .map((p) => stripAccents(p.trim()))
+          .includes(tClean)
+      )
+    );
+  }, []);
+
   const resolveSubVariantEntities = useCallback((subVariantNames = []) => {
     const resolved = [];
     for (const svName of subVariantNames) {
+      const svNFC = normalizeNFC(svName);
       const svClean = stripAccents(svName);
-      const hit = masterCorpus.find(
-        (e) =>
-          normalizeNFC(e.title) === normalizeNFC(svName) ||
-          stripAccents(e.title) === svClean ||
-          e.id === svName
-      );
+      const hit =
+        masterCorpus.find((e) => normalizeNFC(e.title) === svNFC || normalizeNFC(e.id) === svNFC) ||
+        masterCorpus.find((e) => stripAccents(e.title) === svClean || e.id === svName);
       if (hit) {
         resolved.push(hit);
       } else {
@@ -93,15 +114,17 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     if (!qTrim || qTrim.length < 2) return null;
     const qNFC = normalizeNFC(qTrim);
     const qClean = stripAccents(qTrim);
+    const hasDiacritics = qNFC !== qClean;
     const wordBoundaryRegex = new RegExp(`\\b${escapeRegExp(qClean)}\\b`, 'i');
 
     const matches = masterCorpus.filter((item) => {
       const tNFC = normalizeNFC(item.title);
       const tClean = stripAccents(item.title);
       const aliasesClean = (item.aliases || []).map(stripAccents);
+      if (hasDiacritics && tClean === qClean && tNFC !== qNFC) return false;
       return (
         tNFC === qNFC ||
-        tClean === qClean ||
+        (!hasDiacritics && tClean === qClean) ||
         wordBoundaryRegex.test(tClean) ||
         aliasesClean.some((a) => a === qClean || wordBoundaryRegex.test(a))
       );
@@ -127,10 +150,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       childVariants = matches.filter((m) => m.title !== parentNode.title).slice(0, 4);
     }
 
-    const relatedRegalia = visualManifest.find((v) => {
-      const vClean = stripAccents(v.canonical_name);
-      return vClean === qClean || wordBoundaryRegex.test(vClean);
-    });
+    const relatedRegalia = findVisualRegaliaHit(parentNode.title) || findVisualRegaliaHit(qTrim);
 
     return {
       query: qTrim,
@@ -139,7 +159,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       regalia: relatedRegalia,
       totalCount: matches.length
     };
-  }, [query, resolveSubVariantEntities]);
+  }, [findVisualRegaliaHit, query, resolveSubVariantEntities]);
 
   // RC-1 & RC-3 Local Ranked Search Fallback (Tonal Invariant Tiering)
   const searchRankedCorpus = useCallback((q) => {
@@ -204,10 +224,28 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
   }, []);
 
   const hydrateEntityForBento = useCallback((m, score = 0.992) => {
-    if (m.details && m.multimodal_assets) return m;
-    const mTitleClean = stripAccents(m.title);
-    const visualHit = visualManifest.find((v) => stripAccents(v.canonical_name) === mTitleClean);
-    const hasVisual = !!visualHit;
+    const visualHit = findVisualRegaliaHit(m.title || m.details?.title);
+    const hasVisual = !!(visualHit || m.multimodal_assets?.has_visual_asset);
+    const resolvedSourceUrl =
+      visualHit?.local_asset_url ||
+      visualHit?.image_url ||
+      m.multimodal_assets?.source_url ||
+      null;
+
+    if (m.details && m.multimodal_assets) {
+      return {
+        ...m,
+        multimodal_assets: {
+          ...m.multimodal_assets,
+          has_visual_asset: !!(hasVisual && resolvedSourceUrl),
+          source_url: resolvedSourceUrl,
+          canonical_title_full: visualHit?.canonical_title_full || m.multimodal_assets.canonical_title_full || m.title,
+          current_custodial_repository: visualHit?.current_custodial_repository || m.multimodal_assets.current_custodial_repository || 'Sovereign Heritage Vault',
+          accession_number: visualHit?.accession_number || m.multimodal_assets.accession_number || 'ARCHIVE-001',
+          medium_materials: visualHit?.medium_materials || m.multimodal_assets.medium_materials || m.details?.material_and_craftsmanship
+        }
+      };
+    }
 
     return {
       id: m.id || m.title,
@@ -215,8 +253,8 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       category: m.category || 'Cultural Heritage',
       fusion_score: score,
       multimodal_assets: {
-        has_visual_asset: hasVisual,
-        source_url: hasVisual ? visualHit.local_asset_url || visualHit.image_url : null,
+        has_visual_asset: !!(hasVisual && resolvedSourceUrl),
+        source_url: resolvedSourceUrl,
         canonical_title_full: visualHit?.canonical_title_full || m.title,
         current_custodial_repository: visualHit?.current_custodial_repository || 'Sovereign Heritage Vault',
         accession_number: visualHit?.accession_number || 'ARCHIVE-001',
@@ -225,7 +263,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       },
       details: m
     };
-  }, []);
+  }, [findVisualRegaliaHit]);
 
   const executeSearch = useCallback(
     async (searchTerm, options = { isBranchHop: false, relationLabel: 'Root Search' }) => {
@@ -328,47 +366,9 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     ? hydrateEntityForBento(activeNode.entityData)
     : results?.ranked_entities?.[0];
 
-  // RC-2 & RC-3 Fix: Prioritize sub_variants and explicit related_entities in resolvedRelatives
+  // RC-2 & RC-3 Fix: Global Knowledge Graph Relatives Resolver (Zero Repeated Category Slicing)
   const relatedMatches = useMemo(() => {
-    if (!topMatch) return [];
-    const details = topMatch.details || topMatch;
-    const seenIds = new Set([topMatch.id, topMatch.title, details.id, details.title]);
-    const resolved = [];
-
-    const candidateNames = [
-      ...(Array.isArray(details.sub_variants) ? details.sub_variants : []),
-      ...(Array.isArray(details.related_entities) ? details.related_entities : []),
-      ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
-    ];
-
-    for (const relName of candidateNames) {
-      const relClean = stripAccents(relName);
-      const found = masterCorpus.find(
-        (e) =>
-          e.id === relName ||
-          normalizeNFC(e.title) === normalizeNFC(relName) ||
-          stripAccents(e.title) === relClean
-      );
-      if (found && !seenIds.has(found.id) && !seenIds.has(found.title)) {
-        seenIds.add(found.id);
-        seenIds.add(found.title);
-        resolved.push(found);
-      }
-    }
-
-    const category = topMatch.category || details.category;
-    if (resolved.length < 5 && category) {
-      for (const cand of masterCorpus) {
-        if (resolved.length >= 6) break;
-        if (cand.category === category && !seenIds.has(cand.id) && !seenIds.has(cand.title)) {
-          seenIds.add(cand.id);
-          seenIds.add(cand.title);
-          resolved.push(cand);
-        }
-      }
-    }
-
-    return resolved.slice(0, 6);
+    return resolveKnowledgeGraphRelatives(topMatch, masterCorpus, 6);
   }, [topMatch]);
 
   const tonalContour = topMatch ? extractTonalContour(topMatch.title) : [];

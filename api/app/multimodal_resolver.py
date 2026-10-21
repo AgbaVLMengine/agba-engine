@@ -145,6 +145,11 @@ def map_image_assets(golden_matrix_dir: Path) -> Tuple[Dict[str, str], Dict[str,
                         if raw:
                             mapping[normalize_y(raw)] = fpath_str
                             mapping[strip_accents(raw)] = fpath_str
+                            for part in raw.split("/"):
+                                part_clean = part.strip()
+                                if part_clean:
+                                    mapping[normalize_y(part_clean)] = fpath_str
+                                    mapping[strip_accents(part_clean)] = fpath_str
                             for p in re.findall(r"\((.*?)\)", raw):
                                 mapping[normalize_y(p)] = fpath_str
                                 mapping[strip_accents(p)] = fpath_str
@@ -246,7 +251,9 @@ def resolve_entity_multimodal_links(
                 "origin_region", "master_artisan_or_guild", "creation_epoch",
                 "medium_materials", "corpus_deep_description", "philosophical_context",
                 "current_custodial_repository", "museum_archival_title", "accession_number",
+                "local_asset_url", "image_url",
             ]:
                 media_links[field] = meta.get(field)
+            media_links["source_url"] = meta.get("local_asset_url") or meta.get("image_url") or meta.get("source_url")
 
     return media_links

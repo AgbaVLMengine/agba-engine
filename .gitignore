@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Private Roadmaps, Secrets & Internal Strategic Documents
+AGBA_FUTURE_FEATURES_ROADMAP.md
+comprehensive_15_category_audit_catalog.md
+pending_self_learning_candidates.md
+*.env.local
+.env.*
+.env.local
+web/.env.local
+MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md
+
+# Additional internal candidate queues & roadmaps
+**/pending_candidates.json
+**/pending_self_learning_candidates.md
+**/MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md
+**/comprehensive_15_category_audit_catalog.md
+**/AGBA_FUTURE_FEATURES_ROADMAP.md

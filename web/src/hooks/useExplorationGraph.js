@@ -11,7 +11,9 @@ export const PEER_CULTURES = {
     diacritics: ['À', 'Á', 'È', 'É', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Ṣ'],
     anchors: ['Òkèlè', 'Amàlà', 'Ìyán', 'Agbádá', 'Odù Ifá', 'Ògún', 'Bàtá', 'Adé Ààrẹ', 'Ọfà', 'Ọbẹ̀'],
     accent: '#d4af37',
-    traditionLabel: 'Yorùbá Classical (25-Letter Orthography)'
+    traditionLabel: 'Yorùbá Classical (25-Letter Orthography)',
+    productionUnlocked: true,
+    statusBadge: 'ACTIVE CANON'
   },
   edo: {
     id: 'edo',
@@ -21,7 +23,9 @@ export const PEER_CULTURES = {
     diacritics: ['À', 'Á', 'È', 'É', 'Ẹ', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Vb', 'Kh', 'Gh', 'Rh'],
     anchors: ['Ọba', 'Adé', 'Idà', 'Igun Eronmwon', 'Ilé-Ifẹ̀', 'Olókun', 'Ààfin'],
     accent: '#e05a2b',
-    traditionLabel: 'Ẹ̀dó / Kingdom of Benin Peer Canon'
+    traditionLabel: 'Ẹ̀dó / Kingdom of Benin Peer Canon',
+    productionUnlocked: false,
+    statusBadge: 'LOCKED • SEQUENTIAL INGESTION'
   },
   igbo: {
     id: 'igbo',
@@ -31,7 +35,9 @@ export const PEER_CULTURES = {
     diacritics: ['Ị', 'Ị̀', 'Ị́', 'Ọ', 'Ọ̀', 'Ọ́', 'Ụ', 'Ụ̀', 'Ụ́', 'Ṅ', 'À', 'Á', 'È', 'É', 'Ò', 'Ó', 'Gb', 'Kp', 'Nw'],
     anchors: ['Obì', 'Iṣu', 'Ọfọ', 'Ikenga', 'Nsibidi', 'Ọbẹ̀', 'Ìyán'],
     accent: '#10b981',
-    traditionLabel: 'Ásụ̀sụ̀ Ìgbò (Ọnwụ Orthography Parity)'
+    traditionLabel: 'Ásụ̀sụ̀ Ìgbò (Ọnwụ Orthography Parity)',
+    productionUnlocked: false,
+    statusBadge: 'LOCKED • SEQUENTIAL INGESTION'
   },
   akan: {
     id: 'akan',
@@ -41,7 +47,9 @@ export const PEER_CULTURES = {
     diacritics: ['Ɛ', 'ɛ', 'Ɔ', 'ɔ', 'À', 'Á', 'È', 'É', 'Ì', 'Í', 'Ò', 'Ó', 'Ù', 'Ú', 'Dw', 'Gy', 'Ky', 'Tw'],
     anchors: ['Adinkra', 'Sika Dwa', 'Atumpan', 'Aṣọ Òkè', 'Ọba', 'Òwe'],
     accent: '#f59e0b',
-    traditionLabel: 'Akan / Ashanti Peer Sovereign Canon'
+    traditionLabel: 'Akan / Ashanti Peer Sovereign Canon',
+    productionUnlocked: false,
+    statusBadge: 'LOCKED • SEQUENTIAL INGESTION'
   }
 };
 

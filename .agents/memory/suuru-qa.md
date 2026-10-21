@@ -34,10 +34,14 @@
     3. `RC-3`: Only `18 / 1,333` entities have `related_entities` populated in JSON, and `SearchTab.jsx` ignored `sub_variants` when resolving `resolvedRelatives`.
     4. **Unresolved Corpus Data Defects Verified**: `Olókun` (`'协调olokun'` in `aliases[0]`), `Udàmalóre` (`"ancestral ancestral"`), `Rárà` (`"chief (ọba)"`), `Àròkin` (`"so precisely is it recounted"`), `Ààrẹ Ọ̀nà Kakañfò` (Spanish `ñ`), missing `Ẹégún` alias, missing `Were`, missing `Ẹlẹ́mù`, missing `Ẹ̀pà` (Groundnut), missing topographical `Àpáta` parent, and 35-entity drift between API (`1,333`) and Web (`1,298`) corpus files.
   - **Report Saved**: `.agents/local-seeds/AGY__REPORT_SUURU_QA_001.md`.
-- **[2026-10-21] (`HANDOFF-SUURU-002` — Post-Build Live QA Sign-Off)**:
-  - Executed live 42-query Zero-Shot Retrieval Benchmark against upgraded `api/app/retrieval.py` (`362` LOC) + `api/app/semantic_bridge.py` (`161` LOC): **Live Top-1 = `41 / 42` (`97.6%`)**, **Live Top-3 = `42 / 42` (`100.0%`)** (Category A: `12/12`, Category B: `11/12` T1 & `12/12` T3, Category C: `10/10`, Category D: `8/8`).
-  - Verified `RC-1`, `RC-2`, and `RC-3` fixes live: zero tonal homograph collisions and zero substring leakage in `SearchTab.jsx` across `Ọba`, `Adé`, `Fìlà`, `Aṣọ`, `Adìrẹ`, `Ọfà`, `Idà`, `Ẹ̀wà`, `Ọbẹ̀`, and `Obì`.
-  - Verified API & Web corpus parity (`1,333` == `1,333`) and zero CJK/`Rárà`/`Àròkin`/`Kakañfò` defects.
-  - Verified Tooth & Vein UI components (`ToothSearchCore.jsx` `431` LOC, `VeinRabbitHoleCanvas.jsx` `339` LOC, `useExplorationGraph.js` `233` LOC, `SearchTab.jsx` `446` LOC) and ran `npm run build` in `/web` (`✓ 1910 modules transformed` in `1.04s`, `0` errors).
+- **[2026-10-21] (`HANDOFF-SUURU-003` — Gate 7 HITL Review Oversight & Zero-Memory Passcode Secrecy)**:
+  - Formally granted oversight of the **Human-in-the-Loop Review Protocol** (`AdminTab.jsx`, `pending_self_learning_candidates.md`, `feedback_store.jsonl`) to supervise self-learning batch adaptations and corpus enrichment.
+  - **Zero-Memory Passcode Secrecy Rule (Strictly Bound)**: The Lead Architect's security passcode is NEVER recorded, written, logged, committed, or shared in memory vaults or Git. If received in session, it remains strictly ephemeral in runtime memory and is purged from all persistent notes immediately.
+  - Verified Sprint 003 features:
+    1. **Culture Switcher Production Lockout**: Verified `ToothSearchCore.jsx` locks non-Yorùbá cultures (`Ẹ̀dó`, `Ìgbò`, `Akan`) in production with `🔒` badge, permitting active queries only on the fully audited Yorùbá canon (`1,333` entities).
+    2. **Architecture Tab Governance & Provenance**: Verified replacement of `$0.00/mo Zero-Cost` text with `Enterprise Hybrid Cloud & Sovereign Global Edge CDN`, interactive 24-source bibliography dropdown, and orthography `Àrùnà Ọlànrewájú Kábírù`.
+    3. **Global Knowledge Graph Relatives Resolver**: Verified `web/src/utils/relativesResolver.js` eliminates repeated static category sequences across the entire corpus.
+    4. **Museum Masterwork Slash-Alias Matching**: Verified `Arugba Ifá`, `Òrùka Ògbóni`, and `Ọpọ́n Ọṣẹ` properly display verified museum photography and provenance.
+
 
 

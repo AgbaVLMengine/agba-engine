@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Search, Sparkles, GitBranch, Film, Feather, Shuffle, Globe } from 'lucide-react';
+import React, { useRef, useState } from 'react';
+import { Search, Sparkles, GitBranch, Film, Feather, Shuffle, Globe, Lock } from 'lucide-react';
 import { PEER_CULTURES } from '../hooks/useExplorationGraph';
 
 export default function ToothSearchCore({
@@ -18,7 +18,20 @@ export default function ToothSearchCore({
   onSelectRootNode
 }) {
   const submitLockRef = useRef(false);
+  const [lockedCultureNotice, setLockedCultureNotice] = useState('');
   const cultureMeta = PEER_CULTURES[activeCulture] || PEER_CULTURES.yoruba;
+
+  const handleCultureClick = (cult) => {
+    if (!cult.productionUnlocked) {
+      setLockedCultureNotice(
+        `🔒 ${cult.label} Canon is locked in production until sequential 14-Tier Corpus ingestion & Lead Architect HITL audit complete.`
+      );
+      setTimeout(() => setLockedCultureNotice(''), 4500);
+      return;
+    }
+    setLockedCultureNotice('');
+    onSelectCulture(cult.id);
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -76,11 +89,17 @@ export default function ToothSearchCore({
         </span>
         {Object.values(PEER_CULTURES).map((cult) => {
           const isSelected = cult.id === activeCulture;
+          const isLocked = !cult.productionUnlocked;
           return (
             <button
               key={cult.id}
               type="button"
-              onClick={() => onSelectCulture(cult.id)}
+              onClick={() => handleCultureClick(cult)}
+              title={
+                isLocked
+                  ? `${cult.label}: Locked in production (Sequential 14-Tier Ingestion Pending)`
+                  : `${cult.label}: Active Sovereign Canon`
+              }
               style={{
                 padding: '5px 13px',
                 borderRadius: '999px',
@@ -88,18 +107,40 @@ export default function ToothSearchCore({
                 background: isSelected
                   ? 'linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(217, 119, 6, 0.12) 100%)'
                   : 'transparent',
-                color: isSelected ? '#f8fafc' : 'var(--text-secondary)',
+                color: isSelected ? '#f8fafc' : isLocked ? 'rgba(148, 163, 184, 0.65)' : 'var(--text-secondary)',
                 fontSize: '0.78rem',
                 fontWeight: isSelected ? 700 : 500,
-                cursor: 'pointer',
+                cursor: isLocked ? 'not-allowed' : 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
                 transition: 'all 0.2s ease'
               }}
             >
+              {isLocked && <Lock size={11} color="#fbbf24" />}
               {cult.label}
             </button>
           );
         })}
       </div>
+
+      {lockedCultureNotice && (
+        <div
+          style={{
+            maxWidth: '640px',
+            margin: '0 auto 12px auto',
+            padding: '6px 14px',
+            borderRadius: '999px',
+            background: 'rgba(217, 119, 6, 0.14)',
+            border: '1px solid rgba(212, 175, 55, 0.35)',
+            color: '#fbbf24',
+            fontSize: '0.76rem',
+            fontWeight: 600
+          }}
+        >
+          {lockedCultureNotice}
+        </div>
+      )}
 
       {/* Brand Crest & Sovereign Title */}
       <div style={{ marginBottom: hasSearched ? '10px' : '18px' }}>
