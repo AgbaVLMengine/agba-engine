@@ -113,3 +113,24 @@
   - **Gate 5 (CORS, Telemetry & Cloud Run Free-Tier Guardrails — `PASS`)**: Confirmed wildcard CORS replacement with explicit IDN/Punycode/Netlify allowlist, offline pre-baked `all-MiniLM-L6-v2` in `Dockerfile`, free-tier flags (`--min-instances 0 --max-instances 2 --memory 2Gi --cpu 1`) in `deploy_cloud_run.sh`, and `flush=True` structured Cloud Logging JSON telemetry.
 - **Verification**: ✅ Sprint 002 Audit Verdict `PASS` transmitted to `Àgbà` (`agba-orchestrator`).
 
+### [2026-10-21] Checkpoint 008 (`HANDOFF-003`) — Production Culture Lockout, Global Knowledge Graph Relatives Resolver & Architecture Tab Governance (`9e044ae`)
+- **Agent Persona**: `Àgbà` (`agba-pa-architect`) supervising `Àgbẹ̀dẹ`, `Òye`, `Irin`, and `Sùúrù`
+- **Deliverables Completed**:
+  - **Culture Switcher Production Gating**: Locked non-Yorùbá cultures (`Ẹ̀dó`, `Ìgbò`, `Akan`) in `ToothSearchCore.jsx` (`471 LOC`) and `useExplorationGraph.js` (`240 LOC`) with `🔒` badge and non-intrusive safety notice, preserving `Yorùbá` as the single active canonical culture until full ingestion of peer canons.
+  - **Global Knowledge Graph Relatives Resolver**: Created `web/src/utils/relativesResolver.js` (`168 LOC`), completely replacing the old static category-array slicing logic with a 3-tier dynamic graph resolver (Tier 1: Explicit variants/relatives; Tier 2: Reverse Sovereign Parent & sibling variants; Tier 3: Bidirectional text mention and semantic/lexical token scorer).
+  - **Museum Masterwork Slash-Alias Resolution**: Updated `SearchTab.jsx` and `multimodal_resolver.py` (`259 LOC`) to index slash-separated titles (`"Òrùka Ògbóni / Ọ̀wọ̀ Altar Ring"`, `"Ọpọ́n Ọṣẹ / Àgéré Ifá"`, `"Adé / Adéńlá"`), enabling verified museum masterwork images for `Arugba Ifá`, `Òrùka Ògbóni`, and `Ọpọ́n Ọṣẹ`.
+  - **Architecture Tab Transformation**: Replaced "$0.00/month Zero-Cost" copy with `"Enterprise Hybrid Cloud & Sovereign Global Edge CDN"`, added collapsible 24-source bibliography drawer, and updated Lead Architect name to **`Àrùnà Ọlànrewájú Kábírù`**.
+  - **Sùúrù HITL Oversight & Zero-Memory Passcode Rule**: Codified Gate 7 in `.agents/AGENTS.md` and updated `.agents/memory/suuru-qa.md`. Untracked internal candidate queues from Git cache and hardened `.gitignore`.
+- **Verification**: ✅ All files `<500 LOC`; Vite production build succeeded in `553ms` (`1911 modules`); passed all Òye Production Gates; committed as `9e044ae` and pushed to `origin/dev`.
+
+### [2026-10-21] Checkpoint 009 (`HANDOFF-004`) — Comprehensive Forensic Corpus Discrepancy & 14-Tier Depth Audit Ledger
+- **Agent Persona**: `Òye` (`oye-auditor`) & `Sùúrù` (`suuru-qa`) supervised by `Àgbà`
+- **Deliverables Completed**:
+  - Executed exhaustive automated forensic audit across all `1,333` entities in `api/data/yoruba_corpus_1007_NORMALIZED.json`.
+  - Authored **`CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md`** (`66,232 bytes`), cataloging:
+    - **261 Thin 14-Tier Entities**: Primarily the 256 Odù Ifá matrix lacking historical timelines, materiality, and diaspora connections.
+    - **210 Un-Diacritized Titles & Aliases**: ASCII-folded titles (`Ewedu` -> `Ewédú`, `Ofada` -> `Ọ̀fàdà`, `Abula` -> `Àbùlà`, `Obe Ata` -> `Ọbẹ̀ Ata`, `Abeokuta` -> `Abẹ́òkúta`, `Moremi Ạjasoro` -> `Mọ́remí Àjàsorò`).
+    - **493 Missing English Proverb Translations**: Yorùbá liturgical verses lacking English translations and philosophical glosses.
+  - Stored privately in repo root (strictly protected in `.gitignore`) and mirrored in `.agents/local-seeds/`.
+- **Verification**: ✅ Confirmed `.gitignore` protects audit ledger from Git exposure; verified on `dev` branch.
+
