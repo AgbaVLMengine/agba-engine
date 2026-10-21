@@ -134,3 +134,29 @@
   - Stored privately in repo root (strictly protected in `.gitignore`) and mirrored in `.agents/local-seeds/`.
 - **Verification**: ✅ Confirmed `.gitignore` protects audit ledger from Git exposure; verified on `dev` branch.
 
+### [2026-10-21] Checkpoint 010 (`HANDOFF-OYE-005`) — Comprehensive 16-Category Taxonomy & Misclassification Audit
+- **Agent Persona**: `Òye` (`oye-auditor`)
+- **Deliverables Completed**:
+  - Forensically audited all **1,333 entities** across all 16 categories in `api/data/yoruba_corpus_1007_NORMALIZED.json`, identifying **140 systemic misclassifications** (10.5% of the total corpus).
+  - Isolated the root cause: **Category-Level Semantic Bleed** (conflating metaphysical/ritual associations with primary ontological essence; homograph/token traps such as `Dùndú` fried yam in Military, `Agbada-Aro` frying griddle in Attire, and `Obẹ-Ata` pepper stew in Social Structure).
+  - **Category 1 Bloat Relief**: Purged 59 misplaced entities from `Spiritual & Cosmological Matrix`, reducing it from 434 down to 375 pristine entries (256 Odù Ifá + 13 Sovereign Parents + authentic Òrìṣà/Cosmology).
+  - **Architectural Formulation of Category 17**: Formulated **`Indigenous Zoology, Sacred Fauna & Wildlife`** housing all 18 standalone animal/avian/aquatic taxa (`Ẹja`, `Ẹyẹ`, `Ẹranko`, `Ìjàpá`, `Àkùkọ`, `Ẹsin`, `Àgbọ̀nrin`, `Ẹ̀kùn`, `Àmọ̀tẹ́kùn`, `Aáyá`, `Egbin`, `Àwòko`, `Ẹ̀fọ̀n`, `Kiníun`, `Àdàbà`, `Ẹran-Ọ̀sọ́`, `Àgbàǹgbá`, `Ẹ̀yọ̀-Ẹran`) plus 26 sub-variant taxa.
+  - Remapped 81 additional entities across Categories 2–16, establishing the zero-loss 17-category balance (Auditory Arts: 89, Monarchy: 89, Culinary: 85, Civilization: 83, Social Structure: 79, Military: 71, Topography: 67, Sacred Botany: 64, Visual Arts: 60, Traditional Trades: 55, Attire: 100, Oral Literature: 48, Royal Regalia: 20, Indigenous Zoology: 18, Festivals: 15, Masquerades: 15).
+  - Verified runtime codebase resilience: `retrieval.py` and `relativesResolver.js` are fully dynamic with zero hardcoded category blockers.
+  - Authored comprehensive audit artifact in `AGY__REPORT_OYE_TAXONOMY_AUDIT_005.md` and updated memory in `.agents/memory/oye-auditor.md`.
+- **Verification**: ✅ Zero-loss remapping verified mathematically (`len == 1,333`); runtime dynamic compatibility confirmed.
+
+### [2026-10-21] Checkpoint 011 (`HANDOFF-SUURU-004`) — Category X Anti-Loop Test Battery & Zero-Shot Retrieval Harness
+- **Agent Persona**: `Sùúrù` (`suuru-qa`)
+- **Deliverables Completed**:
+  - Forensically reviewed `CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md` (261 thin entities, 210 un-diacritized titles, 493 proverbs missing English translations) alongside `AGY__REPORT_OYE_AUDIT_004.md` (9 missing Sovereign Parents, 100 unindexed sub-variants causing parent loops).
+  - Engineered **Category X Test Battery** comprising **35 stress queries across 3 specialized batteries**:
+    - **Battery X-1 (Missing Sovereign Parents - 9 queries)**: `Ifá`, `Were / Were Music`, `Oogun (Property)` vs `Òògùn (Medicine)`, `Ẹ̀pà (Groundnut)`, `Àpáta (Rock Formations)`, `Ẹlẹ́mù (Palm Wine Tappers)`, `Ẹégún`, `Ìwọ̀fà (Pawnship contract)`.
+    - **Battery X-2 (Anti-Loop Sub-Variant Dynamic Hydration - 16 queries)**: Stress-tests unindexed child variants across martial, semiotic, and craft lineages (`Àrọ̀kọ̀ Ẹfà`, `Àrọ̀kọ̀ Ẹ̀jọ́`, `Àrọ̀kọ̀ Ogun`, `Ẹyin Ìkódẹ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọ̀kọ̀ Ògún`, `Ọfà Ọdẹ`, `Apó Ọfà`, `Àdá Ìbílẹ̀`, `Àdá Pẹ́pẹ́`, `Idà Agẹmọ`, `Idà Ọba`, `Tanmogayi`, `Àwọ̀n Apẹja`, `Ẹja Àrọ̀`, `Odídẹrẹ́`). Enforces invariant that dynamic child synthesis creates dedicated node at Rank #1 (`is_parent: false`, `sovereign_parent: parent.title`), branches Vein rabbit-hole, and never collapses back to parent leaf.
+    - **Battery X-3 (Homograph & Collision Guards - 10 queries)**: Zero-shot traps (`Oogun` vs `Òògùn` vs `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀`; `Ọkọ́` vs `Ọ̀kọ̀` vs `Ọkọ` vs `Oko`; `Ọfà` vs `Ofada` vs `Ìwọ̀fà`; `Àpáta` topography vs shield; `Ẹ̀pà` vs `Epa`; `Were` vs `Wèrè`).
+  - Implemented Python test harness specification in `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md` and updated `.agents/memory/suuru-qa.md`.
+- **Verification**: ✅ Category X test specification complete and armored; staged to execute live zero-shot benchmark immediately once `Àgbẹ̀dẹ` finishes ingestion.
+
+
+
+
