@@ -34,13 +34,25 @@ app = FastAPI(
     version="6.0.0-alpha"
 )
 
-# Enable CORS for local web client, Netlify, and mobile apps
+# Enable hardened CORS for production IDN/Punycode domains, Netlify, and local dev
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=getattr(ÀgbàConfig, "ALLOWED_ORIGINS", [
+        "https://agbaengine.com",
+        "https://www.agbaengine.com",
+        "https://ágbaengine.com",
+        "https://xn--gbaengine-21a.com",
+        "https://www.xn--gbaengine-21a.com",
+        "https://àgbàengine.com",
+        "https://xn--gbengine-rza0b.com",
+        "https://www.xn--gbengine-rza0b.com",
+        "http://localhost:5173",
+        "http://localhost:3000",
+    ]),
+    allow_origin_regex=getattr(ÀgbàConfig, "ALLOWED_ORIGIN_REGEX", r"https://.*\.netlify\.app"),
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "Authorization", "X-AGBA-API-KEY", "X-ÀGBÀ-API-KEY"],
 )
 
 # 1. API Key Security Header Configuration (Both ASCII and Diacritic Supported)
@@ -82,6 +94,10 @@ class FeedbackPayload(BaseModel):
     returned_entity_id: Optional[str] = Field(None, description="The entity ID returned by the engine")
     user_correction: Optional[str] = Field(None, description="Suggested correction or missing cultural context")
     tags: Optional[List[str]] = Field(default_factory=list, description="Categorical tags (e.g. diacritic_error, domain_mismatch)")
+    idempotency_key: Optional[str] = Field(None, description="Client-generated UUID for idempotent feedback deduplication")
+
+# In-memory idempotency cache (seeded from feedback_store.jsonl on first write)
+_SEEN_IDEMPOTENCY_KEYS = set()
 
 # 3. Singleton Retriever Initialization
 retriever = None
@@ -142,6 +158,7 @@ async def retrieve_deep_context(payload: QueryRequest, client_info: Dict[str, An
     try:
         QUERY_STORE_PATH.parent.mkdir(parents=True, exist_ok=True)
         query_log_record = {
+            "telemetry_type": "AGBA_QUERY_LOG",
             "timestamp": time.time(),
             "query_id": query_id,
             "queried_concept": payload.query,
@@ -152,6 +169,8 @@ async def retrieve_deep_context(payload: QueryRequest, client_info: Dict[str, An
             "client_tier": client_info.get("tier"),
             "client_owner": client_info.get("owner")
         }
+        # Emit structured JSON to stdout for Google Cloud Logging Free Tier persistence across scale-to-zero
+        print(json.dumps(query_log_record, ensure_ascii=False), flush=True)
         with open(QUERY_STORE_PATH, "a", encoding="utf-8") as f:
             f.write(json.dumps(query_log_record, ensure_ascii=False) + "\n")
     except Exception as e:
@@ -181,10 +200,36 @@ async def submit_telemetry_feedback(feedback: FeedbackPayload, client_info: Dict
     """
     Telemetry ingestion endpoint for Continuous Learning MLOps Loop.
     Stages user evaluations, corrections, and implicit signals into staging table.
+    Enforces UUID idempotency deduplication and emits structured Cloud Logging JSON.
     """
+    dedup_key = feedback.idempotency_key or f"{feedback.query_id}:{feedback.rating}:{feedback.returned_entity_id or ''}"
+
+    if not _SEEN_IDEMPOTENCY_KEYS and FEEDBACK_STORE_PATH.exists():
+        try:
+            with open(FEEDBACK_STORE_PATH, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        existing = json.loads(line)
+                        if existing.get("idempotency_key"):
+                            _SEEN_IDEMPOTENCY_KEYS.add(existing["idempotency_key"])
+        except Exception:
+            pass
+
+    if dedup_key in _SEEN_IDEMPOTENCY_KEYS:
+        return {
+            "status": "duplicate_ignored",
+            "query_id": feedback.query_id,
+            "idempotency_key": dedup_key,
+            "message": "Idempotent duplicate feedback submission safely ignored."
+        }
+
+    _SEEN_IDEMPOTENCY_KEYS.add(dedup_key)
+
     record = {
+        "telemetry_type": "AGBA_FEEDBACK",
         "timestamp": time.time(),
         "query_id": feedback.query_id,
+        "idempotency_key": dedup_key,
         "client_tier": client_info.get("tier"),
         "client_owner": client_info.get("owner"),
         "rating": feedback.rating,
@@ -195,6 +240,9 @@ async def submit_telemetry_feedback(feedback: FeedbackPayload, client_info: Dict
         "status": "PENDING_REVIEW"
     }
 
+    # Emit structured JSON to stdout so Google Cloud Logging persists telemetry across scale-to-zero
+    print(json.dumps(record, ensure_ascii=False), flush=True)
+
     FEEDBACK_STORE_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(FEEDBACK_STORE_PATH, "a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -202,6 +250,7 @@ async def submit_telemetry_feedback(feedback: FeedbackPayload, client_info: Dict
     return {
         "status": "logged",
         "query_id": feedback.query_id,
+        "idempotency_key": dedup_key,
         "message": "Feedback safely recorded in telemetry staging store for continuous adaptation."
     }
 

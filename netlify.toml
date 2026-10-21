@@ -3,10 +3,34 @@
   publish = "dist"
   command = "npm run build"
 
+# Reverse-Proxy API Route to Google Cloud Run (eliminates CORS preflight on relative /v6/* calls)
+# When api.agbaengine.com custom domain is mapped, this routes seamlessly to Cloud Run
+[[redirects]]
+  from = "/v6/*"
+  to = "https://agba-enterprise-api-dgefvzanqq-uc.a.run.app/v6/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/health"
+  to = "https://agba-enterprise-api-dgefvzanqq-uc.a.run.app/health"
+  status = 200
+  force = true
+
+# SPA Catch-All Routing (must remain after /v6/* API proxy rules)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Production Security Headers for ágbaengine.com / àgbàengine.com / agbaengine.com
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
 # Production Context (main branch)
 [context.production.environment]

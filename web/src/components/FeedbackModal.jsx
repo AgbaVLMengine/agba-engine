@@ -1,5 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { X, Send, AlertTriangle, CheckCircle, ThumbsUp, ThumbsDown } from 'lucide-react';
+
+function generateIdempotencyKey() {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `hitl_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+}
 
 export default function FeedbackModal({ isOpen, onClose, defaultConcept, defaultEntityId, apiBaseUrl }) {
   const [rating, setRating] = useState('thumbs_down');
@@ -9,15 +16,22 @@ export default function FeedbackModal({ isOpen, onClose, defaultConcept, default
   const [submitting, setSubmitting] = useState(false);
   const [successMsg, setSuccessMsg] = useState('');
 
+  // Synchronous double-tap lock to prevent duplicate telemetry submissions
+  const submitLockRef = useRef(false);
+
   if (!isOpen) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitLockRef.current || submitting) return;
+    submitLockRef.current = true;
     setSubmitting(true);
     setSuccessMsg('');
 
+    const idempotencyKey = generateIdempotencyKey();
     const payload = {
       query_id: `hitl_${Date.now()}`,
+      idempotency_key: idempotencyKey,
       rating: rating,
       queried_concept: defaultConcept || '',
       returned_entity_id: defaultEntityId || defaultConcept || '',
@@ -30,7 +44,8 @@ export default function FeedbackModal({ isOpen, onClose, defaultConcept, default
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
+          'X-AGBA-API-KEY': 'agba_studio_dev_key_2026',
+          'X-Idempotency-Key': idempotencyKey
         },
         body: JSON.stringify(payload)
       });
@@ -43,7 +58,7 @@ export default function FeedbackModal({ isOpen, onClose, defaultConcept, default
       } else {
         setSuccessMsg('Failed to submit telemetry. Staged locally.');
       }
-    } catch (err) {
+    } catch (_) {
       setSuccessMsg('Logged to local telemetry stream.');
       setTimeout(() => {
         setSuccessMsg('');
@@ -51,6 +66,7 @@ export default function FeedbackModal({ isOpen, onClose, defaultConcept, default
       }, 2000);
     } finally {
       setSubmitting(false);
+      submitLockRef.current = false;
     }
   };
 

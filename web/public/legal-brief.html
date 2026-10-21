@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Àgbà Engine — Tuesday Lawyer Meeting Guide (iPhone Companion)</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #181b22;
+      --card-border: #2a2f3d;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.14);
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --green: #10b981;
+      --green-bg: rgba(16, 185, 129, 0.12);
+      --red: #ef4444;
+      --red-bg: rgba(239, 68, 68, 0.12);
+      --font-scale: 1;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --card-border: #e2e8f0;
+      --gold: #9a6f0a;
+      --gold-soft: rgba(154, 111, 10, 0.1);
+      --text: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      padding: 0 0 90px 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      font-size: calc(16px * var(--font-scale));
+      line-height: 1.55;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--card);
+      border-bottom: 1px solid var(--card-border);
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+    .controls {
+      display: flex;
+      gap: 6px;
+    }
+    button.ctrl {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+    .tab {
+      flex: 0 0 auto;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--card-border);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .tab.active {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: var(--gold-soft);
+      color: var(--gold);
+    }
+    .badge.green { background: var(--green-bg); color: var(--green); }
+    .badge.red { background: var(--red-bg); color: var(--red); }
+    h1, h2, h3 { margin: 0 0 8px 0; line-height: 1.3; }
+    h2 { font-size: 1.2rem; color: var(--gold); }
+    h3 { font-size: 1.05rem; }
+    p { margin: 0 0 10px 0; }
+    .quote {
+      background: var(--gold-soft);
+      border-left: 4px solid var(--gold);
+      padding: 12px 14px;
+      border-radius: 0 10px 10px 0;
+      margin: 10px 0;
+      font-style: italic;
+    }
+    .q-item {
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 12px;
+      background: rgba(255,255,255,0.01);
+    }
+    .q-item.checked {
+      opacity: 0.65;
+      border-color: var(--green);
+    }
+    .q-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .q-header input[type="checkbox"] {
+      width: 22px;
+      height: 22px;
+      margin-top: 2px;
+      accent-color: var(--gold);
+      flex-shrink: 0;
+    }
+    .why {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 6px 0;
+    }
+    ul { margin: 6px 0 0 0; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .progress-bar {
+      font-size: 0.82rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-row">
+      <div class="brand">⚖️ Àgbà Legal Companion</div>
+      <div class="controls">
+        <button class="ctrl" onclick="adjustFont(0.1)">A+</button>
+        <button class="ctrl" onclick="adjustFont(-0.1)">A-</button>
+        <button class="ctrl" onclick="document.body.classList.toggle('light')">☀/🌙</button>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <span>Counsel: Ahmed Abiola Mohammed (Fort Legis)</span>
+      <span id="q-counter">0 / 10 Asked</span>
+    </div>
+    <nav class="tabs">
+      <a class="tab active" href="#pitch">1. Opening Pitch</a>
+      <a class="tab" href="#questions">2. 10 Questions</a>
+      <a class="tab" href="#five-q">3. 5 Core Answers</a>
+      <a class="tab" href="#green-red">4. Can / Cannot Do</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pitch" class="card">
+      <span class="badge">STEP 1 • MINUTE 00–05</span>
+      <h2>60-Second Opening Pitch to Ahmed</h2>
+      <div class="quote">
+        "Thank you for the 43-page Advisory, Ahmed. In Section 2 (Page 4), you noted that Fort Legis hadn't yet inspected our actual source code, datasets, or open-source AI models.<br><br>
+        We ran a complete forensic audit this week so we have exact numbers for you today. We also loved your recommendation in Sections 13 and 54 to monetize Provenance and Confidence Scores as our Enterprise API tier.<br><br>
+        Let's walk through 10 quick decisions today so we can lock in our company structure, license, and launch documents."
+      </div>
+    </section>
+
+    <section id="questions" class="card">
+      <span class="badge">STEP 2 • TAP CHECKBOXES AS YOU ASK</span>
+      <h2>The 10 Questions for Tuesday's Meeting</h2>
+
+      <div class="q-item" id="qi-1">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(1, this.checked)" />
+          <div>
+            <h3>Q1. Consolidating the 36 Documents (Sec. 51) into 5 Launch Docs</h3>
+            <div class="why">Context: Section 51 (Pages 35–37) lists 36 documents. We want a lean 5-doc MVP bundle.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "Can we consolidate the 36 documents in Section 51 into 5 Master Launch Documents right now: (1) Founder IP Assignment + Incorporation, (2) Root Open-Source/RAIL License, (3) Website Terms + Accuracy/Herbal Disclaimer + Takedown Policy, (4) NDPA/GAID 2025 Privacy Policy, and (5) Commercial Enterprise API MSA? What is your timeline and fee for those 5?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-2">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(2, this.checked)" />
+          <div>
+            <h3>Q2. Open-Source Code vs. Closed Dataset Split (Sec. 17 & 36)</h3>
+            <div class="why">Context: Section 36 (Page 28) warns "Open-Source Does Not Mean Open Data."</div>
+          </div>
+        </label>
+        <div class="quote">
+          "We drafted our root RAIL-Cultural-Heritage-v1.0 license separating our open /web client from our closed ranking engine, 1,333-entity database, and 143 audio tokens. If we publish a Python client SDK on PyPI, should the SDK code use Apache 2.0 while the dataset stays under RAIL-Cultural-Heritage-v1.0?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-3">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(3, this.checked)" />
+          <div>
+            <h3>Q3. Nigerian Copyright Commission (NCC) e-Registration (Sec. 5.1 & 50)</h3>
+            <div class="why">Context: Section 5.1 (Page 7) recommends voluntary NCC registration for evidentiary proof.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "Can Fort Legis immediately file two NCC e-registrations for us: (1) the agba-engine software source code, and (2) our 1,333-Entity Normalized 14-Tier Database Compilation & Sovereign Parent Taxonomy as an original literary compilation?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-4">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(4, this.checked)" />
+          <div>
+            <h3>Q4. Nigerian Copyright Act 2022 — Folklore Rules (Sec. 11)</h3>
+            <div class="why">Context: Part IX (Sections 74–77) regulates commercial use of Expressions of Folklore.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "Since all 14-Tier descriptions are our own original analytical prose (Category D) and every entry credits the originating Yorùbá community and artisan guild (Section 75 source indication), do we need any separate clearance from the NCC before charging film studios and universities for API access?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-5">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(5, this.checked)" />
+          <div>
+            <h3>Q5. Our 52 Museum Photos: 45 CC0 vs. 7 Restricted (Sec. 9–10)</h3>
+            <div class="why">Context: Answering his Phase 3 Dataset Audit (Section 45).</div>
+          </div>
+        </label>
+        <div class="quote">
+          "45 of our 52 museum photos (86.5%) are CC0 Public Domain (The Met, CMA, AIC, Smithsonian), while 1 is V&A London (CC BY-NC-SA) and 6 are modern Foundational royal photos. We tagged commercial_use_cleared: false on those 7 so the paid Commercial API only serves the 45 CC0 photos until we get releases. Does that satisfy your Phase 3 Dataset Audit?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-6">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(6, this.checked)" />
+          <div>
+            <h3>Q6. 1-Page Performer Release for 143 Audio Tokens (Sec. 31)</h3>
+            <div class="why">Context: Section 31 (Pages 25–26) requires a 9-point audio chain of title.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "Can you draft a simple 1-page Performer & Master Recording Release under the Nigerian Copyright Act 2022 covering our 143 spoken Yorùbá and Dùndún/Gángan talking drum recordings for commercial API and AI-training use?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-7">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(7, this.checked)" />
+          <div>
+            <h3>Q7. NDPA 2023 & GAID 2025 for Voice & Photo Features (Sec. 29–32)</h3>
+            <div class="why">Context: Section 29 (Page 24) cites the new NDPC GAID 2025 directive (in force Sept 19, 2025).</div>
+          </div>
+        </label>
+        <div class="quote">
+          "For our upcoming v7.1 Voice Recorder and v7.2 Photo Scanner, we process audio pitch and camera frames strictly in temporary RAM (<200ms) and delete them immediately without storing voiceprints or GPS. Under GAID 2025, does ephemeral processing exempt us from heavy biometric registration with the NDPC?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-8">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(8, this.checked)" />
+          <div>
+            <h3>Q8. Accuracy Disclaimer + Herbal (Ewé) Liability Shield (Sec. 14–15 & 24)</h3>
+            <div class="why">Context: Protecting against studio reliance claims and medical misuse of ethnobotanical records.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "We implemented your 6-tier Confidence Level (Verified, Highly Supported, etc.) so we never guarantee 'infallible truth.' Since our corpus also documents historical Yorùbá ethnobotany (Ewé / Àgbo) and Odù Ifá verses, can we combine your Section 15 Accuracy Disclaimer with a No-Medical/Clinical-Reliance Disclaimer?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-9">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(9, this.checked)" />
+          <div>
+            <h3>Q9. Company Incorporation Structure (Sec. 7 & 52)</h3>
+            <div class="why">Context: Founder -> Àgbà Technology Company -> Core IP.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "Since our paying Enterprise API customers will include US, UK, and European museums, film studios, and universities alongside Nigerian institutions, should we incorporate Àgbà Technology Company in Nigeria (CAC) first, or form a Delaware/UK parent with a Nigerian subsidiary?"
+        </div>
+      </div>
+
+      <div class="q-item" id="qi-10">
+        <label class="q-header">
+          <input type="checkbox" onchange="toggleQ(10, this.checked)" />
+          <div>
+            <h3>Q10. Trademarks for ÀGBÀ, ÀGBÀ ENGINE & Tooth Logo (Sec. 33–34)</h3>
+            <div class="why">Context: Securing brand marks alongside agbaengine.com and ágbaengine.com.</div>
+          </div>
+        </label>
+        <div class="quote">
+          "We are registering agbaengine.com, ágbaengine.com, and àgbàengine.com. Can Fort Legis run a Nigerian Trade Marks Act clearance search this week and file trademark applications for 'ÀGBÀ', 'ÀGBÀ ENGINE', and our Tooth & Vein Logo in Classes 9, 41, and 42?"
+        </div>
+      </div>
+    </section>
+
+    <section id="five-q" class="card">
+      <span class="badge">STEP 3 • PAGE 43 OF HIS PDF</span>
+      <h2>Answers to Ahmed's 5 Core Questions</h2>
+      <ul>
+        <li><strong>1. Who created it?</strong> Software (`10,813` LOC) & 14-Tier original prose created 100% by Founder Aruna Olanrewaju Kabiru.</li>
+        <li><strong>2. Who owns it?</strong> Founder owns all code, database structure, and Sovereign Parent Taxonomy (assigning to Àgbà Technology Company).</li>
+        <li><strong>3. Where did it come from?</strong> 16 cited academic textbooks + 8 museum collections (`AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`). Zero blind web scraping.</li>
+        <li><strong>4. What rights exist in it?</strong> 100% permissive AI/software stack (`MIT`/`Apache-2.0`/`BSD`); 45 of 52 museum photos are CC0 Public Domain; 7 restricted photos are flagged `commercial_use_cleared: false`.</li>
+        <li><strong>5. What may Àgbà legally do with it?</strong> Offer free educational `/web` access under `RAIL-Cultural-Heritage-v1.0` and sell `/api` Enterprise subscriptions with Provenance & Confidence Tiers.</li>
+      </ul>
+    </section>
+
+    <section id="green-red" class="card">
+      <span class="badge green">WHAT WE CAN DO (GREEN LIGHT)</span>
+      <ul>
+        <li>Sell Commercial Enterprise API subscriptions to studios, museums, game devs, and universities.</li>
+        <li>Use all <strong>45 CC0 Museum Masterworks</strong> (17 CMA, 11 Met, 10 AIC, 7 Smithsonian) commercially.</li>
+        <li>Use pre-1929 public domain works (Rev. Samuel Johnson 1921) and historical facts (Category A).</li>
+        <li>Register copyright with the NCC for both our software and our 1,333-entity 14-Tier compilation.</li>
+      </ul>
+      <hr style="border:0;border-top:1px solid var(--card-border);margin:14px 0;" />
+      <span class="badge red">WHAT WE CANNOT DO (RED LINES)</span>
+      <ul>
+        <li>Never claim ownership over Yorùbá culture itself—we own the <em>retrieval engine, compilation, and provenance infrastructure</em>.</li>
+        <li>Never include the <strong>7 non-CC0 photos</strong> (1 V&A London `CC BY-NC-SA` + 6 modern `Foundational_*` royal photos) in paid commercial API bundles without clearance.</li>
+        <li>Never copy verbatim text from post-1929 books (Abímbọ́lá, Bascom, Abiodun, Lawal, Verger)—use original synthesis + citation.</li>
+        <li>Never ingest restricted sacred <em>Awo</em> secrets or promise "100% infallible truth" without Confidence Tiers & Disclaimers.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    let scale = 1;
+    function adjustFont(delta) {
+      scale = Math.min(1.4, Math.max(0.85, scale + delta));
+      document.documentElement.style.setProperty('--font-scale', scale);
+    }
+    function toggleQ(idx, checked) {
+      const el = document.getElementById('qi-' + idx);
+      if (el) el.classList.toggle('checked', checked);
+      const total = document.querySelectorAll('.q-header input:checked').length;
+      document.getElementById('q-counter').textContent = total + ' / 10 Asked';
+    }
+  </script>
+</body>
+</html>

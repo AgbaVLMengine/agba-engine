@@ -1,0 +1,94 @@
+RESPONSIBLE AI & SOVEREIGN CULTURAL HERITAGE LICENSE (RAIL-Cultural-Heritage-v1.0)
+==================================================================================
+
+Project: Àgbà Engine (agba-engine) — Global Heritage Cross-Modal Retrieval Infrastructure
+Version: 1.0 (Aligned with the Àgbà Engine Rights, Provenance & Licensing Architecture)
+Copyright (c) 2024–2026 Aruna Olanrewaju Kabiru / Àgbà Technology Company. All Rights Reserved.
+
+IMPORTANT NOTICE — OPEN-SOURCE SOFTWARE DOES NOT MEAN OPEN DATA OR UNRESTRICTED USE:
+In accordance with the Àgbà Engine Legal & Intellectual Property Framework, this License
+strictly separates:
+  (1) Open-Source Client & Developer Software (/web and public SDK components);
+  (2) Proprietary Core Technology, Ranking Algorithms, and Closed Commercial API (/api);
+  (3) Proprietary Compilations, 14-Tier Annotations, and Authentic Audio Datasets; and
+  (4) Third-Party Museum Archival Material and Protected Expressions of Folklore.
+
+1. DUAL-TIER LICENSING ARCHITECTURE
+-----------------------------------
+(a) COMMUNITY & OPEN-SOURCE SOFTWARE TIER (/web Client & Public Developer Tools):
+    Subject to the behavioral, attribution, and cultural-sovereignty restrictions in
+    Sections 2 through 6 below, permission is hereby granted, free of charge, to any
+    person obtaining a copy of the designated open-source client software (/web) to
+    use, study, and modify the software for personal, educational, academic, community
+    cultural preservation, and non-commercial research purposes.
+
+(b) CLOSED COMMERCIAL API & ENTERPRISE TIER (/api, Vector Indexes, Corpus & Audio Vault):
+    Access to the Àgbà Engine Commercial API (/api), proprietary hybrid ranking and
+    diacritic-restoration methodology, the complete 1,007+ entity 14-Tier Normalized
+    Database Compilation, dense cross-modal vector weights, and the 143 Authentic
+    Human & Talking Drum Audio Tokens (agba_audio_manifest.json) is PROPRIETARY.
+    Commercial use by film studios, game developers, museums, universities, media
+    companies, or AI platforms requires an executed Àgbà Engine Enterprise Master
+    Services Agreement (MSA) and Commercial API License (contact: only1mooseylion@gmail.com).
+
+2. MANDATORY CULTURAL SOVEREIGNTY & ACCEPTABLE USE RESTRICTIONS (RAIL CLAUSES)
+------------------------------------------------------------------------------
+Permission to download or access any open-source component of Àgbà Engine does NOT
+grant any right to, and you are expressly prohibited from:
+
+(a) Unauthorized Scraping, Bulk Extraction & Database Reconstruction:
+    Reverse engineering, scraping, bulk extracting, reconstructing the underlying
+    14-Tier database, circumventing API rate limits or security controls, or using
+    Àgbà Engine outputs to build a substantially competing database or train/distill
+    third-party commercial AI/LLM/speech models.
+
+(b) Orthographic & Tonal Erasure (The 25-Letter Tonal Invariant):
+    Stripping or corrupting the canonical 25-letter Yorùbá orthography and three-tone
+    acoustic diacritics (Àmì Ohùn: High ´, Mid -, Low `) when reproducing or citing
+    Àgbà Engine outputs.
+
+(c) Misuse of Traditional Cultural Expressions & Sacred Material (Awo):
+    Using any cultural record in violation of Part IX (Expressions of Folklore) of
+    the Nigerian Copyright Act 2022, removing source-community indications, willfully
+    distorting or demeaning indigenous cultural heritage, or attempting to ingest or
+    expose restricted sacred/initiatory material (Awo).
+
+3. MANDATORY SOURCE & ATTRIBUTION PARITY
+----------------------------------------
+Every authorized display, academic citation, or derivative work must preserve full
+Attribution Parity:
+1. Credit "Àgbà Engine (Aruna Olanrewaju Kabiru / Àgbà Technology Company)";
+2. Credit the originating Indigenous Community, Geographic Origin, and Master Artisan
+   Guild (e.g., Ọlọ́wẹ̀ of Ìsẹ̀, Ọ̀wọ̀ Royal Court Ivory Guild, Ìjẹ̀bú Brass Casters Guild); and
+3. Credit the custodial museum repository, accession number, and underlying license.
+
+4. THIRD-PARTY MUSEUM, ACADEMIC & OPEN-SOURCE NOTICES
+-----------------------------------------------------
+- CC0 Museum Assets (45 Assets from The Met, Cleveland Museum of Art, Art Institute of
+  Chicago, and Smithsonian Institution) are governed by their respective CC0 1.0
+  Universal Public Domain Dedications.
+- Non-Commercial / Restricted Visual Assets (including Victoria and Albert Museum
+  CC BY-NC-SA, British Museum CC BY-NC-SA 4.0, and Foundational Living Cultural
+  Heritage photographs) are excluded from commercial relicensing and subject to
+  their respective rightsholders' terms.
+- Third-party open-source libraries (FastAPI, React, Qdrant, FAISS, all-MiniLM-L6-v2,
+  BLIP, CLIP, Librosa, PyDub) remain governed by their respective MIT, Apache-2.0,
+  BSD-3-Clause, and ISC licenses.
+- Nothing in this License grants any right to use the "ÀGBÀ", "ÀGBÀ ENGINE" word marks
+  or the Àgbà Engine Logo without a separate written Trademark License.
+
+5. HISTORICAL ACCURACY, ETHNOBOTANICAL & LIABILITY DISCLAIMER
+-------------------------------------------------------------
+THE SOFTWARE, DATABASES, AND OUTPUTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+Àgbà Engine outputs are generated from available historical, ethnographic, and archival
+sources and confidence methodologies (`Verified`, `Highly Supported`, `Generally Accepted`,
+`Contested`, `Unverified`, `Insufficient Evidence`). Àgbà Engine:
+  (i)   does not warrant that every output is error-free or represents universal
+        scholarly or oral consensus;
+  (ii)  does not constitute formal certification by a museum, historian, archaeologist,
+        or traditional authority unless separately contracted;
+  (iii) does not replace professional human review for commercial film, game, or
+        publishing productions; and
+  (iv)  provides ethnobotanical (Ewé / Àgbo) and divinatory (Odù Ifá) records strictly
+        for historical and ethnographic education, and never as medical, clinical,
+        or pharmaceutical advice.

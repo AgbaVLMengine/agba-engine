@@ -1,120 +1,75 @@
 # 🎯 ZERO-WASTE HANDOFF CARDS (`.agents/HANDOFF.md`)
 
 > **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)
-> **Status**: 🟢 **APPROVED FOR IMMEDIATE EXECUTION BY LEAD ARCHITECT**
-> **Execution Rule**: Every agent must read its assigned Handoff Card below, execute the deliverable, update its `.agents/memory/<persona>.md` and `.agents/CHECKPOINTS.md`, and run `./scripts/sync-brain.sh "<persona>" "<summary>"`.
+> **Status**: 🟢 **SPRINT 002 (`HANDOFF-002`) — ACTIVE IMPLEMENTATION SPRINT**
+> **Execution Rule**: Every agent must execute its assigned `HANDOFF-*-002` implementation task below, enforce all 6 Production Gates (<500 LOC per file, synchronous `useRef` UI locks, UUID idempotency, 25-letter Tonal Invariant & Sacred Cosmology Reverence), update its `.agents/memory/<persona>.md` and `.agents/CHECKPOINTS.md`, and report back to `Àgbà`.
 
 ---
 
-## Active Sprint Directives (`HANDOFF-001` Series)
+## Active Implementation Sprint (`HANDOFF-002` Series)
 
-### 1. `HANDOFF-SUURU-001` — Dynamic Query Stress-Testing, Zero-Shot Retrieval QA & Corpus Audit
-- **Assigned To**: **`Sùúrù`** (`suuru-qa`)
-- **Mode**: Human-Simulated QA & Dynamic Zero-Shot Retrieval Stress Test
-- **Exact Files & Targets to Inspect/Test**:
-  - `/home/aruna_olanrewaju/agba-engine/api/app/retrieval.py`
-  - `/home/aruna_olanrewaju/agba-engine/api/app/main.py`
-  - `/home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json`
-  - `/home/aruna_olanrewaju/agba-engine/MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md`
-  - `/home/aruna_olanrewaju/agba-engine/pending_self_learning_candidates.md`
-- **Deliverables**:
-  1. **Dynamic User Query Anticipation & Zero-Shot Stress Test**:
-     - Design and run a comprehensive battery of **dynamic, real-world user queries** against the retrieval logic in `/api/app/retrieval.py` to anticipate what users will search *before* they ask:
-       - *Category A — Natural Language & Conversational Questions*: e.g., `"What did Yoruba warriors wear for protection in battle?"`, `"How do elders settle land disputes?"`, `"Who carved the palace doors in Ekiti?"`, `"What herbs or foods are used for postpartum care?"`
-       - *Category B — Un-diacritized / Diaspora / Phonetic / Typo Queries*: e.g., `"ogun vs ogun"`, `"oko and oko"`, `"gelede mask meaning"`, `"sango thunder staff"`, `"adire cloth indigo"`, `"ifa divination tray"`.
-       - *Category C — Homograph & Substring Collision Traps*: `Ogun` (Warfare) vs `Ògún` (Deity); `Ọkọ́` (Hoe) vs `Ọ̀kọ̀` (Spear); `Ọfà` (Arrow) vs `Ofada` (Rice) vs `Ìwọ̀fà` (Pawnship); `Idà` (Sword) vs `Àpáta Ìdánre`.
-       - *Category D — Multi-Concept & Thematic Queries*: Cross-domain queries linking regalia, proverbs (`Òwe`), panegyrics (`Oríkì`), and historical wars (`Ogun Kiriji`, `Ogun Osogbo`).
-  2. **Zero-Shot Gap Analysis & Self-Learning Pipeline**:
-     - Identify every query where Top-1 / Top-3 zero-shot retrieval fails, returns low-relevance results, or suffers from lexical/semantic blind spots.
-     - Propose exact algorithmic improvements to `retrieval.py` (synonym/intent expansion, English-to-Yorùbá semantic bridges, homograph disambiguation scoring) to achieve **95%–97% zero-shot retrieval accuracy**.
-  3. **Audit Adjustment Verification**:
-     - Verify which items in `MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md` are still unresolved in `yoruba_corpus_1007_NORMALIZED.json`.
-  4. **Memory Checkpoint**:
-     - Write the full QA & Dynamic Query Benchmark Report to `.agents/local-seeds/AGY__REPORT_SUURU_QA_001.md` and update `.agents/memory/suuru-qa.md` + `.agents/CHECKPOINTS.md`.
-
----
-
-### 2. `HANDOFF-AGBEDE-001` — Architectural Blueprint: "Tooth & Vein" Rabbit-Hole UI, Equal Multi-Culture Engine & `ágbaengine.com` Domain Acquisition
+### 1. `HANDOFF-AGBEDE-002A` — Backend Retrieval & Corpus Root-Cause Fixes (`97.6%` Zero-Shot Upgrade + `<500 LOC` Modularization)
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
-- **Mode**: Technical Architecture Blueprint & Modular Component Specification (<500 LOC rule)
-- **Exact Files to Inspect**:
-  - `/home/aruna_olanrewaju/agba-engine/web/src/App.jsx`
-  - `/home/aruna_olanrewaju/agba-engine/web/src/App.css`
-  - `/home/aruna_olanrewaju/agba-engine/web/src/index.css`
-  - `/home/aruna_olanrewaju/agba-engine/web/src/components/`
-  - `/home/aruna_olanrewaju/agba-engine/api/app/retrieval.py`
-  - `/home/aruna_olanrewaju/agba-engine/netlify.toml`
+- **Target Files**:
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/app/retrieval.py` (Modularize below 500 LOC by extracting `multimodal_resolver.py` & `semantic_bridge.py`)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/app/intelligence.py` (Fix `"Fìlà Gọ̀bí"` `U+1ECB` bug, duplicate `"ayo"` lexicon key, `"Ọ̀rúnmìlà"` sub-dot, and modularize below 500 LOC)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/data/yoruba_corpus_1007_NORMALIZED.json` & `web/src/data/yoruba_master_corpus.json`
 - **Deliverables**:
-  1. **Pillar 1 — The "Tooth & Vein" Rabbit-Hole Navigation UI Blueprint (`/web/src/components/`)**:
-     - Design the modular React + SVG/Canvas architecture (with every component strictly `<500 lines`) for the user's signature UI vision:
-       - **Central Tooth Search Anchor (`ToothSearchCore.jsx`)**: A sculpted tooth emblem at the center of the viewport with the interactive search input/button embedded directly inside the crown/core of the tooth.
-       - **Living Vein-Thread Graph (`VeinRabbitHoleCanvas.jsx` + `useExplorationGraph.js`)**: Every time a user submits a search and selects an entry, an organic, pulsing **vein-like root thread** (animated SVG Bézier path / Canvas) grows outward from the Central Tooth to that entry card (`Node 1`).
-       - **Infinite Rabbit-Hole Breadcrumb Trail**: As the user clicks deeper into Connected Cultural Relatives or Living Variants (`Tooth → Node 1 → Node 2 → Node 3 → ...`), the vein network continuously branches and connects each new node in sequence. Users can zoom/pan or click **any earlier node along the vein** (or the Central Tooth itself) to retrace their exact path back to the beginning of their search no matter how deep into the rabbit hole they go.
-  2. **Pillar 2 — Equal Multi-Culture Ingestion & Seamless Culture-Swapping Architecture**:
-     - Design the data schema, ingestion pipeline, and runtime switcher to expand Àgbà Engine to other cultures (e.g., Edo/Benin, Igbo, Akan/Ashanti, Nubia, etc.) while **guaranteeing strict structural and epistemological equality across every culture**:
-       - **Equal Schema & Depth Standard**: Every culture gets its own peer 14-Tier canonical manifest, Sovereign Parent taxonomy, native orthographic/diacritic restorer (e.g., Yorùbá 25-letter + `Àmì Ohùn`, Igbo sub-dots + tones, Akan symbols, Edo orthography), and museum/oral provenance parity—no culture is hardcoded as "secondary."
-       - **Seamless Culture Swapping**: How the UI theme tokens, diacritic keyboard/restorer, and FastAPI/Qdrant `culture_id` routing switch instantaneously (plus a "Pan-Cultural / Comparative Mode" in `Ọgbọ́n`).
-  3. **Pillar 3 — Custom Domain Acquisition & Routing Process for `ágbaengine.com`**:
-     - Write the complete step-by-step technical guide for acquiring and configuring **`ágbaengine.com`** (and canonical **`àgbàengine.com`** + ASCII **`agbaengine.com`**):
-       - **IDN / Punycode Registration**: Explain how Internationalized Domain Names (IDNA2008) convert `ágbaengine.com` (`xn--gbaengine-21a.com`) and `àgbàengine.com` (`xn--gbengine-rza0b.com`), which registrars support `.com` IDNs (Cloudflare Registrar, Namecheap, Porkbun, GoDaddy), and why registering **both** the accented IDN (`ágbaengine.com` / `àgbàengine.com`) and the ASCII fallback (`agbaengine.com`) with 301/alias routing is essential for universal browser/email compatibility.
-       - **Netlify + Google Cloud Run DNS & SSL Setup**: Exact DNS records (`APEX ALIAS/ANAME/A` to Netlify load balancer, `www` CNAME, `api.agbaengine.com` mapping to Google Cloud Run `agba-enterprise-api` in `us-central1`, and automated Let's Encrypt TLS certificates for both Punycode and ASCII domains).
-  4. **Memory Checkpoint**:
-     - Write the complete blueprint to `.agents/local-seeds/AGY__BLUEPRINT_AGBEDE_001.md` and update `.agents/memory/agbede-builder.md` + `.agents/CHECKPOINTS.md`.
+  1. Implement `Sùúrù`'s proven `RC-1` and `RC-3` upgrades in `retrieval.py`:
+     - Strict Tonal Invariant Tiering (`+600.0` exact diacritic match vs `+450.0` un-diacritized vs `+180.0` conflicting tones) so `Ọkọ́`, `Ọ̀kọ̀`, `Ọkọ`, and `Oko` resolve with 100% Top-1 precision.
+     - Inquiry Stop-Word Expansion + `ENGLISH_TO_YORUBA_SEMANTIC_BRIDGE` + Compound-Prefix/Diaspora Phonetic Normalizer (`97.6%` Top-1 / `100%` Top-3 accuracy).
+  2. Clean the remaining corpus anomalies in `yoruba_corpus_1007_NORMALIZED.json` (`Olókun` `协调olokun`, `Udàmalóre` duplicate `ancestral ancestral`, `Rárà` `"king (ọba)"`, `Àròkin`, `Kakañfò` -> `Kakanfò`, `Ọmẹle`, remove `'Bàtá'` from `Dùndún.sub_variants`, add `Ẹégún` alias) and sync `web/src/data/yoruba_master_corpus.json`.
+  3. Extract helper modules so `retrieval.py` and `intelligence.py` are strictly `<500 lines`.
 
 ---
 
-### 3. `HANDOFF-IMO-001` — Legal Advisory & Lawyer Briefing Document (For Next Tuesday's Counsel Meeting)
-- **Assigned To**: **`Ìmọ̀`** (`imo-legal`)
-- **Mode**: Comprehensive Legal Audit & Pre-Counsel Advisory Document Generation
-- **Exact Files to Inspect**:
-  - `/home/aruna_olanrewaju/agba-engine/LICENSE` (if present) & `README.md`
-  - `/home/aruna_olanrewaju/agba-engine/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`
-  - `/home/aruna_olanrewaju/agba-engine/AGBA_FUTURE_FEATURES_ROADMAP.md`
-  - `/home/aruna_olanrewaju/agba-engine/web/src/data/agba_unified_visual_regalia_manifest.json`
-  - `/home/aruna_olanrewaju/agba-engine/api/data/agba_audio_manifest.json`
+### 2. `HANDOFF-AGBEDE-002B` — Frontend "Tooth & Vein" Rabbit-Hole UI, Multi-Culture Switcher & `RC-2` Graph Fix (`<500 LOC`)
+- **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
+- **Target Files**:
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/components/SearchTab.jsx` (Decompose from 1,278 LOC to `<450 LOC`)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/components/ToothSearchCore.jsx` (New `<300 LOC`)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/components/VeinRabbitHoleCanvas.jsx` (New `<300 LOC`)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/hooks/useExplorationGraph.js` (New `<250 LOC`)
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/components/FeedbackModal.jsx` (Add synchronous `useRef` lock + UUID `idempotency_key`)
 - **Deliverables**:
-  1. Author a comprehensive, lawyer-ready **Legal Advisory & Counsel Briefing Document** saved to `/home/aruna_olanrewaju/agba-engine/docs/AGBA_LEGAL_ADVISORY_FOR_COUNSEL.md` (and mirrored in `.agents/local-seeds/AGY__REPORT_IMO_LEGAL_001.md`) structured for the Lead Architect's **meeting with his lawyer next Tuesday**:
-     - **Section 1 — Executive Legal Overview of Àgbà Engine**: What the platform is (Tri-Modal Cultural Heritage Retrieval Engine: Text/Diacritics, 52 Museum Visuals, 143 Audio Tokens, Conversational RAG).
-     - **Section 2 — What We CAN Legally Do (Green-Light Capabilities)**:
-       - Using CC0 / Public Domain museum images (The Met Open Access, Cleveland Museum of Art CC0, Art Institute of Chicago CC0, Smithsonian CC0) for both open-source and commercial/enterprise tiers.
-       - Indexing factual historical events, public-domain texts (e.g., Rev. Samuel Johnson 1921), and original synthesized 14-Tier descriptions authored for Àgbà Engine.
-       - Licensing our proprietary software, API access, vector weights, and original audio recordings under a dual-tier model (`RAIL-Cultural-Heritage-v1.0` for public client vs. Commercial Enterprise API license for studios/institutions).
-     - **Section 3 — What We CANNOT Do / High-Risk Boundaries (Red-Line Guardrails)**:
-       - **Museum Non-Commercial / Copyrighted Photography**: British Museum (CC BY-NC-SA 4.0 restricts commercial use without a separate license), Fowler Museum at UCLA, and contemporary photographers—how we must segregate CC0 assets from restricted/editorial assets in the Enterprise Tier.
-       - **Academic Bibliography Copyright**: Citing ideas/facts from Wándé Abímbọ́lá (1975/1976), William Bascom (1969/1980), Rowland Abiodun (2014), Babatunde Lawal (1996), and Pierre Verger (1995) is lawful, whereas verbatim reproduction of copyrighted book chapters or translations beyond fair use is prohibited.
-       - **Indigenous Cultural IP, Traditional Knowledge (TK) & Sacred *Awo* Boundaries**: WIPO Intergovernmental Committee on IP and Genetic Resources, Traditional Knowledge and Folklore (GRTKF), UNESCO 2003 Intangible Cultural Heritage Convention, Nigerian Copyright Act 2022 (expressions of folklore provisions under Part IV / NCMM custody), and unconditional exclusion of restricted *Awo* initiatory secrets.
-       - **Voice & Biometric Data Privacy (v7.0 Roadmap)**: Nigeria Data Protection Act (NDPA 2023), GDPR, and BIPA compliance for the upcoming Sovereign Voice Recorder (16kHz vocal pitch capture) and Museum Photo Scanner.
-     - **Section 4 — Missing Legal Artifacts to Draft with Counsel Next Tuesday**:
-       - Formal `LICENSE` file in repo root (`RAIL-Cultural-Heritage-v1.0` full legal text).
-       - Terms of Service, Privacy Policy, Cultural Takedown / Custodianship Dispute Protocol, and Enterprise API SLA/License Agreement.
-       - Specific **10 Questions Checklist for the Lawyer Meeting Next Tuesday**.
-  2. **Memory Checkpoint**:
-     - Update `.agents/memory/imo-legal.md` and `.agents/CHECKPOINTS.md`.
+  1. Build the **Central Tooth Search Anchor (`ToothSearchCore.jsx`)** with the search bar/button embedded inside the tooth and the **Living Vein Rabbit-Hole Trail (`VeinRabbitHoleCanvas.jsx` + `useExplorationGraph.js`)** that connects the Tooth to the active entry and branches vein-like threads as the user clicks deeper into relatives/variants, letting them click any node along the vein to retrace their path back to the start.
+  2. Fix `RC-2` (`m.is_parent === true`, `\b` word-boundary regex instead of `.includes()`, and direct `parentNode.sub_variants` lookup) and `extractTonalContour()` NFC grapheme handling.
+  3. Add the Equal Multi-Culture Switcher selector (`Yorùbá`, `Edo/Benin`, `Igbo`, `Akan`) with peer culture metadata and synchronous `useRef` double-tap locks across interactive handlers.
+  4. Verify `npm run build` succeeds cleanly in `web/`.
 
 ---
 
-### 4. `HANDOFF-OYE-001` — Codebase Architecture & 500-LOC Industry Standards Audit
-- **Assigned To**: **`Òye`** (`oye-auditor`)
-- **Mode**: Strictly Read-Only Code & Standards Audit
-- **Exact Files to Inspect**:
-  - `/home/aruna_olanrewaju/agba-engine/api/app/` (all `.py` files)
-  - `/home/aruna_olanrewaju/agba-engine/web/src/` (all `.jsx`, `.js`, `.css` files)
-- **Deliverables**:
-  1. Run `./scripts/review.sh` and perform a line-by-line audit of `/api/app/` and `/web/src/` against all 6 Production Gates (500-line ceiling, Anti-Bloat/Anti-Patch, synchronous `useRef` UI double-tap locks, UUID idempotency, 25-letter Tonal Invariant & Sacred Cosmology Reverence, OWASP/CORS security).
-  2. Write the immutable audit report to `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_001.md` and update `.agents/memory/oye-auditor.md` + `.agents/CHECKPOINTS.md`.
-
----
-
-### 5. `HANDOFF-IRIN-001` — Google Cloud Run & FastAPI Service Readiness Audit
+### 3. `HANDOFF-IRIN-002` — Cloud Run Cold-Start Pre-Baking, CORS Punycode Hardening & Telemetry Persistence
 - **Assigned To**: **`Irin`** (`irin-cloud`)
-- **Mode**: Read-Only Cloud, Container & API Diagnostic
-- **Exact Files to Inspect**:
-  - `/home/aruna_olanrewaju/agba-engine/api/Dockerfile`
-  - `/home/aruna_olanrewaju/agba-engine/api/deploy_cloud_run.sh`
-  - `/home/aruna_olanrewaju/agba-engine/api/requirements.txt`
-  - `/home/aruna_olanrewaju/agba-engine/api/app/main.py`
-  - `/home/aruna_olanrewaju/agba-engine/api/app/config.py`
-  - `/home/aruna_olanrewaju/agba-engine/netlify.toml`
+- **Target Files**:
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/Dockerfile`
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/deploy_cloud_run.sh`
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/app/main.py`
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/app/config.py`
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/netlify.toml`
 - **Deliverables**:
-  1. Audit Cloud Run Always Free Tier guardrails (`$0.00/mo`, `min-instances=0`, `2GiB` RAM), container cold-start behavior, Qdrant storage persistence vs. ephemeral container filesystem on Cloud Run, and CORS/env alignment with Netlify (including upcoming custom domain `ágbaengine.com` / `api.agbaengine.com`).
-  2. Write the diagnostic report to `.agents/local-seeds/AGY__REPORT_IRIN_CLOUD_001.md` and update `.agents/memory/irin-cloud.md` + `.agents/CHECKPOINTS.md`.
+  1. Pre-bake `sentence-transformers/all-MiniLM-L6-v2` in `api/Dockerfile` (`ENV HF_HOME=/app/model_cache`) so Cloud Run cold starts drop from 8–25s to `<3s` at `$0.00/mo`.
+  2. Harden `CORSMiddleware` in `api/app/main.py` to replace wildcard `*` with explicit origins including `https://agbaengine.com`, `https://ágbaengine.com` (`https://xn--gbaengine-21a.com`), `https://àgbàengine.com` (`https://xn--gbengine-rza0b.com`), and Netlify/localhost URLs.
+  3. Add structured JSON `stdout` Cloud Logging + UUID `idempotency_key` deduplication for `/v6/telemetry/feedback` in `api/app/main.py`, and add `--cpu-throttling --timeout 60` in `api/deploy_cloud_run.sh`.
+
+---
+
+### 4. `HANDOFF-IMO-002` — Provenance & Confidence Schema Integration (Fort Legis Sections 12, 14–15 & 54)
+- **Assigned To**: **`Ìmọ̀`** (`imo-legal`)
+- **Target Files**:
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/web/src/data/agba_unified_visual_regalia_manifest.json`
+  - `/home/aruna_olanrewaju/.gemini/antigravity/scratch/agy-command-center/workspace-mirror/api/data/agba_unified_visual_regalia_manifest.json`
+- **Deliverables**:
+  1. Enrich all 52 entries in `agba_unified_visual_regalia_manifest.json` with Fort Legis Attorneys' **Section 12 & 54 Provenance & Rights fields**:
+     - `commercial_use_cleared`: `true` on the 45 CC0 assets (The Met, CMA, AIC, Smithsonian); `false` on the 1 V&A `CC BY-NC-SA` asset and the 6 `Foundational_*` living-heritage photos.
+     - `ai_training_cleared`: `true` on CC0 assets, `false` on restricted assets.
+     - `confidence_tier`: `"Verified"` (per Fort Legis Section 14 6-tier scale).
+     - `legal_disclaimer`: Fort Legis Section 15 & Ethnobotanical Non-Certification notice.
+  2. Update `.agents/memory/imo-legal.md` and `.agents/CHECKPOINTS.md`.
+
+---
+
+### 5. `HANDOFF-OYE-002` & `HANDOFF-SUURU-002` — Post-Implementation Gate Audit & 42-Query Live QA Sign-Off
+- **Assigned To**: **`Òye`** (`oye-auditor`) & **`Sùúrù`** (`suuru-qa`)
+- **Deliverables**:
+  - Inspect and verify the upgraded codebase against `./scripts/review.sh` (<500 LOC compliance, security hardening, `useRef` locks) and run `Sùúrù`'s 42-query zero-shot benchmark + `npm run build` verification.

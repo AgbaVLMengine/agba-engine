@@ -209,3 +209,32 @@ In [SearchTab.jsx](file:///home/aruna_olanrewaju/agba-engine/web/src/components/
 2. Replace substring `.includes(qClean)` with strict word-boundary regex (`new RegExp('\\b' + escapeRegExp(qClean) + '\\b', 'i')`) and exact title prioritization (`stripAccents(m.title) === qClean`), and populate `variants` directly from `parentNode.sub_variants`!
 3. In `resolvedRelatives`, prioritize `topMatch.details?.sub_variants` and `topMatch.details?.related_entities` before falling back to same-category items.
 *(This single UI fix resolves all 10 Sovereign Parent & Living Variant substring leaks in `MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md` instantly!)*
+
+---
+
+## 6. Post-Build Verification Sign-Off (`HANDOFF-SUURU-002` — Live `v6.2.0` Validation)
+
+Following `Àgbẹ̀dẹ`'s Sprint 002 implementation across `/api/app/` and `/web/src/`, `Sùúrù` executed a live post-build QA verification suite (`suuru_postbuild_qa_002.py`) and a full production Vite bundle build (`npm run build`):
+
+1. **Live 42-Query Zero-Shot Retrieval Benchmark (`api/app/retrieval.py` + `api/app/semantic_bridge.py`)**:
+   - **Live Top-1 Accuracy**: **`41 / 42` (`97.6%`)** — **PASSES 95%–97% UX Lock-In Gate** ✅
+   - **Live Top-3 Accuracy**: **`42 / 42` (`100.0%`)** — **100% Recall** ✅
+   - **Category Breakdown**:
+     - Category A (Conversational / Natural-Language): **`12 / 12` (`100.0%`) Top-1**
+     - Category B (Un-diacritized / Diaspora / Typo): **`11 / 12` (`91.7%`) Top-1 | `12 / 12` (`100.0%`) Top-3**
+     - Category C (Homograph & Substring Traps — `Ọkọ́`, `Ọ̀kọ̀`, `Ọkọ`, `Oko`, `Ọfà`, `Ofada`, `Ìwọ̀fà`, `Idà`, `Ògún`, `Ogun`): **`10 / 10` (`100.0%`) Top-1**
+     - Category D (Multi-Concept & Telemetry Candidates): **`8 / 8` (`100.0%`) Top-1**
+2. **`RC-1`, `RC-2` & `RC-3` Live Verification**:
+   - **`RC-1` Resolved**: `Ọkọ́` (Hoe), `Ọ̀kọ̀` (Spear), `Ọkọ` (Husband), and `Oko` (Farmland) each deterministically rank #1 (`10/10` in Category C).
+   - **`RC-2` Resolved**: `SearchTab.jsx`'s `rootNetworkNodes` returns the exact Sovereign Parent and authentic `sub_variants` for `Ọba`, `Adé`, `Fìlà`, `Aṣọ`, `Adìrẹ`, `Ọfà`, `Idà`, `Ẹ̀wà`, `Ọbẹ̀`, and `Obì` with **zero substring leakage**.
+   - **`RC-3` Resolved**: `semantic_bridge.py` (`161` LOC) and `SearchTab.jsx`'s `relatedMatches` (`sub_variants` + `related_entities` priority) are active.
+3. **Corpus Hygiene & Parity Verification (`1,333` Entities)**:
+   - API (`yoruba_corpus_1007_NORMALIZED.json`) and Web (`yoruba_master_corpus.json`) are **100% synchronized (`1,333` vs `1,333` entities)**.
+   - `Olókun` CJK glitch (`协调olokun`): **`0` hits** ✅
+   - `Rárà` (`"chief (ọba)"`): **`0` hits** ✅
+   - `Àròkin` (`"so precisely is it recounted"`): **`0` hits** ✅
+   - `Ààrẹ Ọ̀nà Kakanfò` Spanish tilde (`ñ`): **`0` hits** ✅
+4. **Tooth & Vein Rabbit-Hole UI & Production Bundle Verification (`/web`)**:
+   - Verified modular `<500 LOC` compliance and synchronous `useRef` locks across [SearchTab.jsx](file:///home/aruna_olanrewaju/agba-engine/web/src/components/SearchTab.jsx) (`446` LOC, `busyRef`), [ToothSearchCore.jsx](file:///home/aruna_olanrewaju/agba-engine/web/src/components/ToothSearchCore.jsx) (`431` LOC, `submitLockRef`), [VeinRabbitHoleCanvas.jsx](file:///home/aruna_olanrewaju/agba-engine/web/src/components/VeinRabbitHoleCanvas.jsx) (`339` LOC), and [useExplorationGraph.js](file:///home/aruna_olanrewaju/agba-engine/web/src/hooks/useExplorationGraph.js) (`233` LOC, `navLockRef`).
+   - `npm run build` (`vite v8.3.3`): **`✓ 1910 modules transformed` in `1.04s` with `0` errors** ✅
+

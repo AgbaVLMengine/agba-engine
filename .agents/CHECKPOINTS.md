@@ -12,7 +12,7 @@
 | **`Sùúrù`** (`suuru-qa`) | Dedicated Agba Engine Human-Grade QA Bot | `.agents/memory/suuru-qa.md` | 🟢 Ready | End-to-end human-like testing per deliverable (95%–97% UX Lock-In) |
 | **`Òye`** (`oye-auditor`) | Adversarial Code Audit & Standards Bot | `.agents/memory/oye-auditor.md` | 🟢 Ready | Interval code audits, `./scripts/review.sh`, 500-LOC & security gates |
 | **`Ìmọ̀`** (`imo-legal`) | Legal, Licensing & Provenance Counsel Bot | `.agents/memory/imo-legal.md` | 🟢 Ready | `RAIL-Cultural-Heritage-v1.0`, Museum rights, Data Sovereignty & Legal Research |
-| **`Ògún`** (`ogun-cloud`) | Google Cloud Run & FastAPI Service Bot | `.agents/memory/ogun-cloud.md` | 🟢 Ready | Cloud Run (`$0.00/mo` 0-scale), FastAPI `/api`, Qdrant & Netlify ops |
+| **`Irin`** (`irin-cloud`) | Google Cloud Run & FastAPI Service Bot | `.agents/memory/irin-cloud.md` | 🟢 Ready | Cloud Run (`$0.00/mo` 0-scale), FastAPI `/api`, Qdrant & Netlify ops |
 | **`Àgbẹ̀dẹ`** (`agbede-builder`) | Rapid Feature, UI & Corpus Builder Bot | `.agents/memory/agbede-builder.md` | 🟢 Ready | Standalone React UI, FastAPI routes & 1,333-entity Corpus adjustments |
 
 ---
@@ -38,6 +38,16 @@
   - Saved full report to `.agents/local-seeds/AGY__REPORT_SUURU_QA_001.md` and updated `.agents/memory/suuru-qa.md`.
 - **Verification**: ✅ Benchmark validated (`41/42` Top-1, `42/42` Top-3).
 
+### [2026-10-21] Checkpoint 006 — `HANDOFF-SUURU-002` Live Post-Build 42-Query Benchmark & Tooth-and-Vein UI QA Sign-Off
+- **Agent Persona**: `Sùúrù` (`suuru-qa`)
+- **Deliverables Completed**:
+  - Executed live 42-query Zero-Shot Benchmark against the upgraded `api/app/retrieval.py` (`v6.2.0`) and `yoruba_corpus_1007_NORMALIZED.json` (`1,333` entities): confirmed **97.6% Top-1 (`41/42`)** and **100.0% Top-3 (`42/42`)** accuracy live.
+  - Confirmed `RC-1` (10/10 exact tonal homograph disambiguation on `Ọkọ́`, `Ọ̀kọ̀`, `Ọkọ`, `Oko`), `RC-2` (zero substring leakage in `SearchTab.jsx` across all 10 audited Sovereign Parents), and `RC-3` (English-to-Yorùbá semantic bridge & `sub_variants` relatives resolution) are 100% resolved.
+  - Confirmed API and Web corpus files are synchronized at `1,333` entities each with `0` hits for `协调olokun`, `chief (ọba)`, `Àròkin` typo, or `Kakañfò` Spanish tilde.
+  - Audited `ToothSearchCore.jsx` (`431` LOC), `VeinRabbitHoleCanvas.jsx` (`339` LOC), `useExplorationGraph.js` (`233` LOC), and `SearchTab.jsx` (`446` LOC) for `<500 LOC` modularity and synchronous `useRef` locks, and verified production bundle build via `npm run build` (`✓ 1910 modules transformed` in `1.04s`).
+- **Verification**: ✅ **SPRINT 002 QA SIGN-OFF GRANTED (`97.6%` Top-1 / `100.0%` Top-3 UX Lock-In)**.
+
+
 
 ### [2026-10-21] Checkpoint 002 (`HANDOFF-OYE-001`) — Codebase Architecture & 500-LOC Industry Standards Audit
 - **Agent Persona**: `Òye` (`oye-auditor`)
@@ -55,4 +65,51 @@
   - Authored `v2.0.0-FORT-LEGIS-RESPONSE` of the **Legal Advisory & Counsel Briefing Document** in `workspace-mirror/docs/AGBA_LEGAL_ADVISORY_FOR_COUNSEL.md` and `.agents/local-seeds/AGY__REPORT_IMO_LEGAL_001.md`.
   - Answered all 14 unexamined forensic items from **Section 2 (Page 4)** of Fort Legis's Advisory, aligned **Section 36 ("Open-Source Does Not Mean Open Data")** with `RAIL-Cultural-Heritage-v1.0` and PyPI licensing, mapped **Sections 12, 14–15 & 54** (6-tier Confidence Framework & Provenance API monetization) to our 14-Tier schema, incorporated **NDPA 2023 + NDPC GAID 2025 (effective 19 Sept 2025)** and the **Section 31 9-Point Audio Register**, consolidated the **Section 51 36-Document Suite** into 7 Priority Bundles, and prepared 10 targeted questions for Tuesday's meeting with Ahmed Abiola Mohammed.
 - **Verification**: ✅ Memory updated in `.agents/memory/imo-legal.md` and mirrored to `docs/AGBA_LEGAL_ADVISORY_FOR_COUNSEL.md`.
+
+### [2026-10-21] Checkpoint 004 (`HANDOFF-IRIN-001` & `HANDOFF-IRIN-002`) — Cloud Run Cold-Start Pre-Baking, CORS/IDN Hardening & Idempotent Cloud Logging
+- **Agent Persona**: `Irin` (`irin-cloud`)
+- **Deliverables Completed**:
+  - Completed full Cloud Run, Dockerfile, FastAPI & Netlify diagnostic audit in `.agents/local-seeds/AGY__REPORT_IRIN_CLOUD_001.md`.
+  - **Pre-Baked `all-MiniLM-L6-v2` in `api/Dockerfile`**: Added `ENV HF_HOME=/app/model_cache`, build-time `SentenceTransformer('all-MiniLM-L6-v2')` download, and `ENV TRANSFORMERS_OFFLINE=1 HF_HUB_OFFLINE=1` so Cloud Run cold starts drop from 8–25s to `<3s` at `$0.00/mo`.
+  - **Hardened `api/deploy_cloud_run.sh`**: Preserved `--min-instances 0`, `--max-instances 2`, `--memory 2Gi`, `--cpu 1`, `--concurrency 80` and added `--cpu-throttling --timeout 60`.
+  - **Hardened CORS, Idempotency & Telemetry in `api/app/main.py` & `api/app/config.py`**: Replaced wildcard `allow_origins=["*"]` with explicit ASCII + Punycode IDN origins (`agbaengine.com`, `ágbaengine.com` / `xn--gbaengine-21a.com`, `àgbàengine.com` / `xn--gbengine-rza0b.com`, `localhost:5173/3000`, and `allow_origin_regex=r"https://.*\.netlify\.app"`). Added `idempotency_key` deduplication to `FeedbackPayload` and structured JSON `stdout` logging (`AGBA_QUERY_LOG` / `AGBA_FEEDBACK`) for zero-loss Cloud Logging persistence across scale-to-zero.
+  - **Updated `netlify.toml`**: Added `/v6/*` and `/health` reverse-proxy rules above the `/* -> /index.html` SPA rule plus production security headers (`HSTS`, `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`).
+- **Verification**: ✅ All modified files remain well below the 500-LOC ceiling (`main.py`: 347 LOC, `config.py`: 245 LOC). Memory updated in `.agents/memory/irin-cloud.md`.
+
+### [2026-10-21] Checkpoint 005 (`HANDOFF-IMO-002`) — Live Provenance, Confidence & Commercial Rights Manifest Enrichment (52 Visual Assets)
+- **Agent Persona**: `Ìmọ̀` (`imo-legal`)
+- **Deliverables Completed**:
+  - Enriched all **52 visual asset entries** in both `web/src/data/agba_unified_visual_regalia_manifest.json` and `api/data/agba_unified_visual_regalia_manifest.json` with Fort Legis Attorneys' **Section 12, 14–15 & 54** provenance and rights schema fields:
+    - `rights_category`: `"Category A/CC0 Public Domain"` (`45` CC0 assets across CMA, The Met, AIC, Smithsonian) vs. `"Category B Restricted / Non-Commercial"` (`7` assets: `1` V&A London `CC BY-NC-SA` item `O263819` + `6` `Foundational_*` living-heritage assets).
+    - `commercial_use_cleared`: `true` (`45` assets) / `false` (`7` assets).
+    - `ai_training_cleared`: `true` (`45` assets) / `false` (`7` assets).
+    - `confidence_tier`: `"Verified"` (`52` assets, aligned with Fort Legis Section 14 6-tier confidence framework).
+    - `source_community_attribution_parity`: `true` (`52` assets, aligned with Nigerian Copyright Act 2022 Section 75).
+- **Verification**: ✅ Both JSON manifests validated (`total=52`, `CC0=45`, `Restricted=7`). Memory updated in `.agents/memory/imo-legal.md`.
+
+### [2026-10-21] Checkpoint 006 (`HANDOFF-AGBEDE-002A` & `HANDOFF-AGBEDE-002B`) — Backend `97.6%` Retrieval/Corpus Upgrades & Frontend "Tooth & Vein" Rabbit-Hole UI (`<500 LOC`)
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Deliverables Completed**:
+  - **Backend Retrieval, Intelligence & Corpus Fixes (`HANDOFF-AGBEDE-002A`)**:
+    - Extracted `api/app/semantic_bridge.py` (`160 LOC`) and `api/app/multimodal_resolver.py` (`252 LOC`), modularizing `api/app/retrieval.py` from `606 LOC` down to **`361 LOC`** and implementing `Sùúrù`'s `RC-1` (Strict Tonal Invariant Tiering: `+600.0` exact diacritic match vs `+450.0` un-diacritized vs `+180.0` conflicting tones) and `RC-3` (Inquiry Stop-Word Expansion + `ENGLISH_TO_YORUBA_SEMANTIC_BRIDGE` + Compound-Prefix/Diaspora Phonetic Normalizer).
+    - Extracted `api/app/orthography_lexicon.py` (`337 LOC`), modularizing `api/app/intelligence.py` from `797 LOC` down to **`466 LOC`**, fixing `"Fìlà Gọ̀bị́"` -> `"Fìlà Gọ̀bí"` (`U+1ECB` bug), duplicate `"ayo"` lexicon key (with contextual `Ayò` game vs `Ayọ̀` joy disambiguation), `"Orúnmìlà"` -> `"Ọ̀rúnmìlà"`, and `"Obàtálá"` -> `"Ọbàtálá"`.
+    - Applied `27` corpus cleanups in `api/data/yoruba_corpus_1007_NORMALIZED.json` (`Olókun` `协调olokun`, `Udàmalóre` `ancestral ancestral`, `Rárà` `"king (ọba)"`, `Àròkin`, `Ààrẹ Ọ̀nà Kakanfò` tilde fix, `Ọmẹle` sub-dot enrichment, removed `'Bàtá'` from `Dùndún.sub_variants`, added `'Ẹégún'` alias to `Egúngún`) and synced all `1,333` entities to `web/src/data/yoruba_master_corpus.json`.
+  - **Frontend "Tooth & Vein" Rabbit-Hole UI & `RC-2` Graph Fix (`HANDOFF-AGBEDE-002B`)**:
+    - Decomposed `web/src/components/SearchTab.jsx` from `1,278 LOC` to **`445 LOC`** by forging `web/src/hooks/useExplorationGraph.js` (`232 LOC`), `web/src/components/ToothSearchCore.jsx` (`430 LOC`), `web/src/components/VeinRabbitHoleCanvas.jsx` (`338 LOC`), and `web/src/components/EntityBentoDeck.jsx` (`369 LOC`).
+    - Built the Central Tooth Search Core (search input/button embedded inside the tooth crown + Peer Culture Switcher for `Yorùbá`, `Ẹ̀dó (Benin)`, `Ìgbò`, `Akan (Asante)`) and the Living Cubic-Bézier Vein Rabbit-Hole Trail (`Tooth -> Node 1 -> Node 2 -> ...`) with one-click ancestor retracing.
+    - Fixed `RC-2` (`m.is_parent === true`, `\b` word-boundary regex instead of `.includes()`, direct `parentNode.sub_variants` lookup), `extractTonalContour()` NFC/NFD grapheme handling, and added synchronous `useRef` locks + UUID `idempotency_key` in `FeedbackModal.jsx` (`254 LOC`).
+- **Verification**: ✅ All created/modified files strictly `<500 LOC`; Python `retrieval.py` & `intelligence.py` verified (`Ọkọ́`, `Ọ̀kọ̀`, `Ọkọ`, `Oko` all score `1060.0` at Rank #1; `Fìlà Gọ̀bí` & `ayọ̀` diacritized cleanly); Vite production build (`npm run build`) succeeded in `840ms` (`1910 modules transformed`).
+
+
+
+
+### [2026-10-21] Checkpoint 007 (`HANDOFF-OYE-002`) — Post-Implementation Gate & Security Verification Audit (`100% PASS`)
+- **Agent Persona**: `Òye` (`oye-auditor`)
+- **Deliverables Completed**:
+  - Audited all 15 created/modified Sprint 002 files across `/api` and `/web/src` against the 6 Production Gates and published `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_002.md`.
+  - **Gate 2 (`<500 LOC` Ceiling — `PASS`)**: Confirmed all 15 Sprint 002 modules are strictly under 500 lines (`retrieval.py`: 361, `semantic_bridge.py`: 160, `multimodal_resolver.py`: 252, `intelligence.py`: 466, `orthography_lexicon.py`: 337, `main.py`: 346, `config.py`: 244, `Dockerfile`: 58, `deploy_cloud_run.sh`: 70, `SearchTab.jsx`: 445, `ToothSearchCore.jsx`: 430, `VeinRabbitHoleCanvas.jsx`: 338, `EntityBentoDeck.jsx`: 369, `FeedbackModal.jsx`: 254, `useExplorationGraph.js`: 232).
+  - **Gate 3 (`useRef` Locks & UUID Idempotency — `PASS`)**: Confirmed synchronous `useRef` locks in `SearchTab.jsx` (`busyRef`), `ToothSearchCore.jsx` (`submitLockRef`), `useExplorationGraph.js` (`navLockRef`), and `FeedbackModal.jsx` (`submitLockRef`), plus UUIDv4 `idempotency_key` generation and backend deduplication (`_SEEN_IDEMPOTENCY_KEYS`) in `/v6/telemetry/feedback`.
+  - **Gate 4 (Yorùbá Orthography Invariants — `PASS`)**: Confirmed fixes for `"Fìlà Gọ̀bí"` (`U+1ECB` eliminated), single `"ayo": "ayọ̀"` key with contextual homograph disambiguation, `"Ọ̀rúnmìlà"` (`ORUNMILA-001`), and NFD/NFC grapheme-aware `extractTonalContour()` for `Ẹ́/Ẹ̀/Ọ́/Ọ̀`.
+  - **Gate 5 (CORS, Telemetry & Cloud Run Free-Tier Guardrails — `PASS`)**: Confirmed wildcard CORS replacement with explicit IDN/Punycode/Netlify allowlist, offline pre-baked `all-MiniLM-L6-v2` in `Dockerfile`, free-tier flags (`--min-instances 0 --max-instances 2 --memory 2Gi --cpu 1`) in `deploy_cloud_run.sh`, and `flush=True` structured Cloud Logging JSON telemetry.
+- **Verification**: ✅ Sprint 002 Audit Verdict `PASS` transmitted to `Àgbà` (`agba-orchestrator`).
 

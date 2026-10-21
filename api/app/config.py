@@ -163,6 +163,19 @@ class ÀgbàConfig:
     # 3. Security & Telemetry Configurations
     API_KEY_NAMES: List[str] = ["X-AGBA-API-KEY", "X-ÀGBÀ-API-KEY", "x-agba-api-key"]
     API_KEY_NAME: str = "X-AGBA-API-KEY"
+    ALLOWED_ORIGINS: List[str] = [
+        "https://agbaengine.com",
+        "https://www.agbaengine.com",
+        "https://ágbaengine.com",
+        "https://xn--gbaengine-21a.com",
+        "https://www.xn--gbaengine-21a.com",
+        "https://àgbàengine.com",
+        "https://xn--gbengine-rza0b.com",
+        "https://www.xn--gbengine-rza0b.com",
+        "http://localhost:5173",
+        "http://localhost:3000",
+    ]
+    ALLOWED_ORIGIN_REGEX: str = r"https://.*\.netlify\.app"
     
     # Authorized client registry with tiered access
     VALID_API_KEYS: Dict[str, Dict[str, Any]] = {

@@ -53,6 +53,8 @@ gcloud run deploy "$SERVICE_NAME" \
     --min-instances 0 \
     --max-instances 2 \
     --concurrency 80 \
+    --cpu-throttling \
+    --timeout 60 \
     --set-env-vars AGBA_ROOT_DIR=/app,AGBA_COLLECTION_NAME=agba_master_corpus_v6,AGBA_EMBEDDING_MODEL=all-MiniLM-L6-v2
 
 SERVICE_URL=$(gcloud run services describe "$SERVICE_NAME" --region "$REGION" --format="value(status.url)")

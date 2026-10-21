@@ -35,6 +35,13 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Pre-bake sentence-transformers/all-MiniLM-L6-v2 into image layer for <3s zero-network cold starts
+ENV HF_HOME=/app/model_cache \
+    SENTENCE_TRANSFORMERS_HOME=/app/model_cache
+RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('all-MiniLM-L6-v2')"
+ENV TRANSFORMERS_OFFLINE=1 \
+    HF_HUB_OFFLINE=1
+
 # Copy application code, bundled cultural data, and local storage
 COPY app/ ./app/
 COPY data/ ./data/
