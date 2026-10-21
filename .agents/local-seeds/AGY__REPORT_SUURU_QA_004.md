@@ -1,20 +1,21 @@
 # 🏛️ ÀGBÀ ENGINE: SÙÚRÙ ZERO-SHOT RETRIEVAL & ANTI-PARENT-LOOP QA BENCHMARK (SPRINT 004)
-## Category X: Sovereign Parents, Missing Root Entities & Dynamic Sub-Variant Hydration Suite
-**QA Specialist**: Sùúrù (`suuru-qa`)  
+## Task Reference: `HANDOFF-SUURU-004` (Regression Benchmark Suite & Empirical Baseline Ledger)
+**QA Specialist**: Sùúrù (`suuru-qa`) — *Human-Grade QA & UX Lock-In Specialist*  
 **Lead Architect & Visionary**: Àrùnà Ọlànrewájú Kábírù  
 **Supervising Chief Co-Architect**: Àgbà (`agba-pa-architect`)  
 **Lead Auditor**: Òye (`oye-auditor`)  
-**Target Builder**: Àgbẹ̀dẹ (`agbede-builder`)  
-**Reference Documents**: 
+**Target Fast Builder**: Àgbẹ̀dẹ (`agbede-builder`)  
+**Reference Audits**: 
 - `CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md`
 - `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_004.md`
+- `.agents/local-seeds/AGY__REPORT_OYE_TAXONOMY_AUDIT_005.md`
 - `api/data/yoruba_corpus_1007_NORMALIZED.json`
 
 ---
 
-### 📋 Executive Summary of Test Suite: Category X
+### 📋 Executive Summary: Sprint 004 Benchmark Harness & Baseline Findings
 
-**Category X** establishes the dedicated QA validation battery for Sprint 004, specifically formulated to stress-test the ingestion of **9 Missing Sovereign Parents**, eliminate **Sub-Variant Parent Loops** across **34 Sovereign Parents (100 unindexed child entities)**, and verify the **Zero-Hardcoding Dynamic Sub-Variant Fallback Hydrator** in `SearchTab.jsx` and `retrieval.py`.
+To fulfill Lead Architect Àrùnà Ọlànrewájú Kábírù's mandate, `Sùúrù` has engineered an automated regression test suite (`scripts/benchmark_sprint004.py`) and executed the pre-implementation baseline benchmark across the **14 Friction Queries**, **Sub-Variant Anti-Loop Invariants**, and **Category 17 Taxonomy**.
 
 ```
                       [ USER QUERY: "Àrọ̀kọ̀ Ẹfà" ]
@@ -28,112 +29,106 @@
    - Title: "Àrọ̀kọ̀ Ẹfà"                       - Title: "Àrọ̀kọ̀"
    - is_parent: false                         - is_parent: true
    - sovereign_parent: "Àrọ̀kọ̀"                 - sovereign_parent_status: "Parent"
-   - Vein Trail: [Àrọ̀kọ̀] ➔ [Àrọ̀kọ̀ Ẹfà]        - Never collapses back to self!
+   - Vein Trail: [Àrọ̀kọ̀] ➔ [Àrọ̀kọ̀ Ẹfà]        - Never collapses back to parent!
+```
+
+#### Pre-Implementation Baseline Benchmark Results (Executed 2026-10-21)
+- **Overall Top-1 Retrieval Accuracy**: **`6 / 24` (25.0%)** — *FAILED (Pending Ingestion & Remap)*
+- **14 Friction Queries Accuracy**: **`6 / 16` (37.5%)** — *FAILED*
+- **Anti-Parent-Loop Retrieval Accuracy**: **`0 / 8` (0.0%)** — *CRITICAL FAILURE (100% Parent Collapses)*
+- **Category 17 Faunal Classification Accuracy**: **`0 / 18` (0.0%)** — *PENDING REMAP*
+
+---
+
+## 🎯 SECTION 1: DETAILED AUDIT OF THE 14 FRICTION QUERIES
+
+| # | Query String | Expected Canonical Entity | Domain Category | Baseline Rank #1 Result | Baseline Status | Forensic Root Cause |
+|---|---|---|---|---|---|---|
+| 1 | `"Were"` | `Were / Were Music` | Auditory Arts (Cat 10) | `NO HITS` | ❌ FAIL | Missing root Sovereign Parent in master corpus; token collision with `Wèrè` (psychosis) avoided but no musical entity exists. |
+| 2 | `"Were Music"` | `Were / Were Music` | Auditory Arts (Cat 10) | `Àpala Music` | ❌ FAIL | Missing entity; falls back to related Yoruba genre `Àpala Music`. |
+| 3 | `"Ifa"` / `"Ifá"` | `Ifá` | Spiritual Matrix (Cat 01) | `Ikin Ifá` | ❌ FAIL | Missing root Sovereign Parent `Ifá`; falls back to divinatory tool `Ikin Ifá`. |
+| 4A | `"Àrọ̀kọ̀"` | `Àrọ̀kọ̀` | Oral Literature (Cat 12) | `Àrọ̀kọ̀` | ✅ PASS | Canonical parent correctly matches. |
+| 4B | `"Àrọ̀kọ̀ Ẹfà"` | `Àrọ̀kọ̀ Ẹfà` (Child) | Oral Literature (Cat 12) | `Àrọ̀kọ̀` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Unindexed sub-variant string collapses back to parent entity `Àrọ̀kọ̀`. |
+| 4C | `"Àrọ̀kọ̀ Ẹ̀jọ́"` | `Àrọ̀kọ̀ Ẹ̀jọ́` (Child) | Oral Literature (Cat 12) | `Àrọ̀kọ̀` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Judicial dispute summons sub-variant collapses to parent `Àrọ̀kọ̀`. |
+| 5A | `"Oogun"` | `Oogun` (Inheritance / Property) | Social Structure (Cat 04) | `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀` | ❌ FAIL | **False-Positive Token Collision**: Missing property parent; unaccented query matches proverb containing `òògùn`. |
+| 5B | `"Òògùn"` | `Òògùn` (Traditional Pharmacology) | Sacred Botany (Cat 11) | `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀` | ❌ FAIL | Missing pharmacological parent; matches proverb containing `òògùn`. |
+| 6A | `"Idà"` | `Idà` (Martial Sword) | Military Traditions (Cat 07) | `Idà` | ✅ PASS | Canonical parent matches. |
+| 6B | `"Idà Agẹmọ"` | `Idà Agẹmọ` (Child) | Military Traditions (Cat 07) | `Idà` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Ritual sword sub-variant collapses to parent `Idà`. |
+| 7A | `"Ọ̀kọ̀"` | `Ọ̀kọ̀` (Spear / Lance) | Military Traditions (Cat 07) | `Ọ̀kọ̀` | ✅ PASS | Canonical parent matches; diacritic tiering preserves spear over hoe (`Ọkọ́`) and husband (`Ọkọ`). |
+| 7B | `"Ọ̀kọ̀ Ẹlẹ́ṣin"` | `Ọ̀kọ̀ Ẹlẹ́ṣin` (Child) | Military Traditions (Cat 07) | `Ọkọ` (Husband) | ❌ FAIL | **False Collision & Parent Loop**: Multi-word query leaks into `Ọkọ` due to unindexed child. |
+| 8A | `"Ọfà"` | `Ọfà` (Bow & Arrow) | Military Traditions (Cat 07) | `Ọfà` | ✅ PASS | Word-boundary isolation prevents leakage into `Ofada` or `Ìwọ̀fà`. |
+| 8B | `"Ọfà Ọdẹ"` | `Ọfà Ọdẹ` (Child) | Military Traditions (Cat 07) | `Ofà` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Hunting arrow sub-variant collapses to parent `Ofà`. |
+| 9A | `"Àdá"` | `Àdá` (Cutlass / Machete) | Traditional Trades (Cat 13) | `Àdá` | ✅ PASS | Canonical parent matches. |
+| 9B | `"Àdá Ìbílẹ̀"` | `Àdá Ìbílẹ̀` (Child) | Traditional Trades (Cat 13) | `Àdá` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Blacksmith-forged cutlass collapses to parent `Àdá`. |
+| 10A | `"Epa"` | `Epa` (Helmet Masquerade) | Masquerades (Cat 15) | `Epa` | ✅ PASS | Correctly resolves northern Yoruba ancestral masquerade mask. |
+| 10B | `"Ẹ̀pà"` | `Ẹ̀pà` (Groundnut / Legume) | Culinary Arts (Cat 05) | `Epa Door` | ❌ FAIL | Missing culinary groundnut parent; falls back to wood sculpture `Epa Door`. |
+| 11 | `"Àpáta"` | `Àpáta` (Sacred Topography / Inselberg) | Topography & Architecture (Cat 09) | `Àpáta` (Military Shield) | ❌ FAIL | **Category Conflation**: Existing `Àpáta` entity is filed under Category 7 (Military Shield) instead of Category 9 (Sacred Topography/Inselbergs like Olúmo and Ìdánre). |
+| 12A | `"Ẹja"` | `Ẹja` (Aquatic Faunal Parent) | Indigenous Zoology (Cat 17) | `Ẹja` (Spiritual Matrix) | ❌ FAIL | **Category Conflation**: Filed under Category 1 (`Spiritual & Cosmological Matrix`) instead of formulated Category 17. |
+| 12B | `"Ẹja Àrọ̀"` | `Ẹja Àrọ̀` (Child) | Indigenous Zoology (Cat 17) | `Ẹja` (Parent) | ❌ FAIL | **Parent-Loop Detected**: Sacred catfish/mudfish collapses to parent `Ẹja`. |
+| 13A | `"Ẹyẹ"` | `Ẹyẹ` (Avian Faunal Parent) | Indigenous Zoology (Cat 17) | `Ẹyẹ` (Spiritual Matrix) | ❌ FAIL | **Category Conflation**: Filed under Category 1 (`Spiritual & Cosmological Matrix`) instead of formulated Category 17. |
+| 13B | `"Odídẹrẹ́"` | `Odídẹrẹ́` (Child) | Indigenous Zoology (Cat 17) | `Aiye Kooto` | ❌ FAIL | Missing child record; falls back to folklore entity `Aiye Kooto` without linkage to parent `Ẹyẹ`. |
+| 14 | `"Apẹja"` | `Apẹja` (Fishermen Guild) | Traditional Trades (Cat 13) | `Apẹja` | ❌ FAIL | Entity retrieved, but `related_entities` is completely empty (`[]`); lacks bilateral knowledge graph edges to `Ẹja`, `Ọkọ̀ Ojú Omi`, `Odò Ọ̀ṣun`, and `Olókun`. |
+
+---
+
+## 🦁 SECTION 2: CATEGORY 17 FAUNA AUDIT BASELINE
+
+The taxonomy audit in `AGY__REPORT_OYE_TAXONOMY_AUDIT_005.md` formulated Category 17: **`Indigenous Zoology, Sacred Fauna & Wildlife`**.
+Evaluation of the 18 standalone animal taxa across the master corpus confirmed **0/18 (0.0%)** currently reside in Category 17:
+
+| Faunal Taxon | English / Scientific Gloss | Current Erroneous Category | Target Canonical Category | Status |
+|---|---|---|---|---|
+| `Ẹja` | Fish / Aquatic Fauna Parent | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹyẹ` | Birds / Avian Fauna Parent | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹranko` | Terrestrial Mammals Parent | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ìjàpá` | Tortoise (Trickster Archetype) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àkùkọ` | Rooster (Dawn Divination) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹsin` | Horse (Cavalry Equine) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àgbọ̀nrin` | Bushbuck / Antelope | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹ̀kùn` | Leopard (Royal Totem) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àmọ̀tẹ́kùn` | Cheetah / Swift Spotted Leopard | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Aáyá` | Colobus Monkey | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Egbin` | Gazelle (Elegance Archetype) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àwòko` | Mockingbird / Singer of Songs | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹ̀fọ̀n` | African Buffalo (Strength Archetype) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Kiníun` | Lion (Sovereign Carnivore) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àdàbà` | Dove (Peace & Blessing Carrier) | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹran-Ọ̀sọ́` | Totemic Domestic Fauna | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Àgbàǹgbá` | Bongo / Giant Horned Antelope | Spiritual & Cosmological Matrix | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+| `Ẹ̀yọ̀-Ẹran` | Compound Livestock (Goats, Sheep) | Social Structure, Kinship & Lineage | Indigenous Zoology, Sacred Fauna & Wildlife | ❌ PENDING REMAP |
+
+---
+
+## 🛠️ SECTION 3: AUTOMATED BENCHMARK SPECIFICATION (`scripts/benchmark_sprint004.py`)
+
+The automated regression script is staged at `scripts/benchmark_sprint004.py`. It executes 24 test cases across two batteries:
+1. **Battery 1: 14 Friction Queries (16 test cases)**:
+   - Validates Top-1 title match against exact and diacritized variations.
+   - Enforces correct 17-category taxonomic classification.
+   - Enforces `is_parent: true` for newly ingested Sovereign Parents.
+   - Guards against false-positive token collisions (e.g. `Oogun` catching `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀`).
+   - Verifies bilateral knowledge graph edges on `Apẹja` (`Ẹja`, `Ọkọ̀ Ojú Omi`, `Odò Ọ̀ṣun`, `Olókun`).
+2. **Battery 2: Sub-Variant Anti-Loop Invariants (8 test cases)**:
+   - Validates that querying or clicking any sub-variant (`Àrọ̀kọ̀ Ẹfà`, `Àrọ̀kọ̀ Ẹ̀jọ́`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`, `Àdá Ìbílẹ̀`, `Ẹja Àrọ̀`, `Odídẹrẹ́`) returns the dedicated child record or dynamically synthesized child node at Rank #1.
+   - **Strict Assertion**: `norm_top1 != norm_parent`. Any result returning the parent entity is instantly flagged with `PARENT-LOOP DETECTED`.
+   - Enforces `is_parent: false` and `sovereign_parent: <Parent Title>`.
+3. **Battery 3: Category 17 Taxonomy Coverage (18 test cases)**:
+   - Scans the master corpus to confirm all 18 faunal entities are mapped to `Indigenous Zoology, Sacred Fauna & Wildlife`.
+
+### Execution Command:
+```bash
+python3 scripts/benchmark_sprint004.py --json
 ```
 
 ---
 
-## 🎯 CATEGORY X TEST SUITE SPECIFICATION
+## 🏛️ SECTION 4: SÙÚRÙ VERDICT & GREENLIGHT FOR ÀGBẸ̀DẸ (`HANDOFF-AGBEDE-004`)
 
-### Battery X-1: Missing Sovereign Parent Canonical Retrieval (9 Test Queries)
-*Objective*: Verify that exact-match and semantic token queries for newly ingested canonical parents return the parent at Rank #1 (`fusion_score: 1.0000` or `>0.9600`), establishing an authentic Sovereign Parent card (`is_parent: true`) with complete 14-tier schema.
-
-| Query ID | Test Query String | Canonical Target Entity | Domain Category | Expected Rank & Type | Pass / Fail Invariants |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `X-1.01` | `"Ifá"` / `"Ifa"` | **`Ifá`** | Spiritual & Cosmological Matrix | **Rank #1 (Sovereign Parent)** | `is_parent: true`; must NOT fall back to `Ọ̀rúnmìlà` or `Ọpọ́n Ifá` as primary root; contains 256 Odù matrix reference. |
-| `X-1.02` | `"Were"` / `"Were Music"` | **`Were / Were Music`** | Auditory Arts, Music, Drums & Chants | **Rank #1 (Sovereign Parent)** | `is_parent: true`; distinct from `Wèrè` (madness); traces Ajísààrì Islamic dawn awakening precursor to Fújì. |
-| `X-1.03` | `"Oogun (Property)"` / `"Oogun"` | **`Oogun`** | Social Structure, Kinship & Lineage | **Rank #1 (Sovereign Parent)** | `is_parent: true`; must NOT collide with `Òògùn` (medicine) or proverb `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀`. |
-| `X-1.04` | `"Òògùn"` / `"Oogun traditional medicine"` | **`Òògùn`** | Sacred Botany, Flora & Herbal Medicine | **Rank #1 (Sovereign Parent)** | `is_parent: true`; pharmacological infusions & talismans; homographically separated from `Oogun` property. |
-| `X-1.05` | `"Ẹ̀pà (Groundnut)"` / `"Epa"` | **`Ẹ̀pà`** | Culinary Arts & Indigenous Gastronomy | **Rank #1 (Sovereign Parent)** | `is_parent: true`; agrarian legume; disambiguated from `Epa` masquerade helmet mask. |
-| `X-1.06` | `"Àpáta (Rock Formation)"` / `"Apata"` | **`Àpáta`** | Topography, Natural Landscapes & Architecture | **Rank #1 (Sovereign Parent)** | `is_parent: true`; inselbergs & granite hills (Olúmo, Ìdánre); disambiguated from military shield. |
-| `X-1.07` | `"Ẹlẹ́mù"` / `"Elemu"` | **`Ẹlẹ́mù`** | Traditional Trades, Agriculture & Agrarian Guilds | **Rank #1 (Sovereign Parent)** | `is_parent: true`; palm wine tapper guild; linked to `Ẹ̀mù Ọ̀pẹ` and `Ògùrọ̀`. |
-| `X-1.08` | `"Ẹégún"` / `"Eegun"` | **`Ẹégún`** | Ancestral Masquerades & Funerary Rites | **Rank #1 (Sovereign Parent / Sovereign Alias)** | Maps deterministically to ancestral masquerade without dropping into generic `Ẹgbẹ́`. |
-| `X-1.09` | `"Ìwọ̀fà"` / `"Iwofa"` | **`Ìwọ̀fà`** | Civilization, History & Civic Heritage | **Rank #1 (Sovereign Parent)** | Traditional pre-colonial pawnship/labor contract; zero substring collision with `Ọfà` (arrow) or `Ofada`. |
-
----
-
-### Battery X-2: Anti-Parent-Loop Sub-Variant Dynamic Hydration (16 Test Queries)
-*Objective*: When querying or clicking unindexed sub-variants that exist in a parent's `sub_variants` array, the system MUST dynamically hydrate a dedicated child node at Rank #1 (`is_parent: false`, `sovereign_parent: parent.title`), branch the Vein Rabbit-Hole (`Parent ➔ Child`), and NEVER display the Parent card in place of the clicked child.
-
-| Query ID | Sub-Variant Query String | Parent Entity | Category | Expected Synthesized Node | Anti-Loop Invariant |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `X-2.01` | `"Àrọ̀kọ̀ Ẹfà"` / `"Aroko Efa"` | `Àrọ̀kọ̀` | Oral Literature | `Àrọ̀kọ̀ Ẹfà` (Rank #1 Child) | Must NOT collapse to `Àrọ̀kọ̀`; vein shows `[Àrọ̀kọ̀] ➔ [Àrọ̀kọ̀ Ẹfà]`. |
-| `X-2.02` | `"Àrọ̀kọ̀ Ẹ̀jọ́"` / `"Aroko Ejo"` | `Àrọ̀kọ̀` | Oral Literature | `Àrọ̀kọ̀ Ẹ̀jọ́` (Rank #1 Child) | Must NOT collapse to `Àrọ̀kọ̀`; indicates judicial conflict summons. |
-| `X-2.03` | `"Àrọ̀kọ̀ Ogun"` / `"Aroko Ogun"` | `Àrọ̀kọ̀` | Oral Literature | `Àrọ̀kọ̀ Ogun` (Rank #1 Child) | Must NOT collapse to `Àrọ̀kọ̀` or deity `Ògún`; represents war declaration. |
-| `X-2.04` | `"Ẹyin Ìkódẹ"` / `"Eyin Ikode"` | `Àrọ̀kọ̀` | Oral Literature | `Ẹyin Ìkódẹ` (Rank #1 Child) | Parent is `Àrọ̀kọ̀`; signifies supreme royal summons via parrot feather. |
-| `X-2.05` | `"Ọ̀kọ̀ Ẹlẹ́ṣin"` / `"Oko Elesin"` | `Ọ̀kọ̀` | Military Traditions | `Ọ̀kọ̀ Ẹlẹ́ṣin` (Rank #1 Child) | Must NOT collapse to `Ọ̀kọ̀`; identifies cavalry lance. |
-| `X-2.06` | `"Ọ̀kọ̀ Ògún"` / `"Oko Ogun"` | `Ọ̀kọ̀` | Military Traditions | `Ọ̀kọ̀ Ògún` (Rank #1 Child) | Must NOT collapse to `Ọ̀kọ̀` or `Ògún`; consecrated metallurgical lance. |
-| `X-2.07` | `"Ọfà Ọdẹ"` / `"Ofa Ode"` | `Ọfà` | Military Traditions | `Ọfà Ọdẹ` (Rank #1 Child) | Must NOT collapse to `Ọfà` or `Ọdẹ`; identifies hunting arrow. |
-| `X-2.08` | `"Apó Ọfà"` / `"Apo Ofa"` | `Ọfà` | Military Traditions | `Apó Ọfà` (Rank #1 Child) | Must NOT collapse to `Ọfà`; identifies leather quiver. |
-| `X-2.09` | `"Àdá Ìbílẹ̀"` / `"Ada Ibile"` | `Àdá` | Traditional Trades | `Àdá Ìbílẹ̀` (Rank #1 Child) | Must NOT collapse to `Àdá`; identifies standard clearing machete. |
-| `X-2.10` | `"Àdá Pẹ́pẹ́"` / `"Ada Pepe"` | `Àdá` | Traditional Trades | `Àdá Pẹ́pẹ́` (Rank #1 Child) | Must NOT collapse to `Àdá`; identifies pruning cutlass. |
-| `X-2.11` | `"Idà Agẹmọ"` / `"Ida Agemo"` | `Idà` | Military Traditions | `Idà Agẹmọ` (Rank #1 Child) | Must NOT collapse to `Idà`; ceremonial curved broadsword. |
-| `X-2.12` | `"Idà Ọba"` / `"Ida Oba"` | `Idà` | Military Traditions | `Idà Ọba` (Rank #1 Child) | Must NOT collapse to `Idà` or `Ọba`; royal state sword of justice. |
-| `X-2.13` | `"Tanmogayi"` | `Idà` | Military Traditions | `Tanmogayi` (Rank #1 Child) | Must NOT collapse to `Idà`; cavalry slashing sabre. |
-| `X-2.14` | `"Àwọ̀n Apẹja"` / `"Awon Apeja"` | `Apẹja` | Traditional Trades | `Àwọ̀n Apẹja` (Rank #1 Child) | Must NOT collapse to `Apẹja`; artisanal river casting net. |
-| `X-2.15` | `"Ẹja Àrọ̀"` / `"Eja Aro"` | `Ẹja` | Spiritual & Cosmological | `Ẹja Àrọ̀` (Rank #1 Child) | Must NOT collapse to `Ẹja` or `Àrọ̀`; sacred catfish/mudfish. |
-| `X-2.16` | `"Odídẹrẹ́"` / `"Odidere"` | `Ẹyẹ` | Spiritual & Cosmological | `Odídẹrẹ́` (Rank #1 Child) | Must NOT collapse to `Ẹyẹ`; sacred African grey parrot. |
-
----
-
-### Battery X-3: Tonal Homograph & Substring Collision Traps (10 Stress Queries)
-*Objective*: Prevent false-positive token collisions that historically corrupted retrieval in `SearchTab.jsx` and `retrieval.py`.
-
-| Query ID | Stress Query | False-Positive Trap to Avoid | Deterministic Target Entity | Validation Rule |
-| :--- | :--- | :--- | :--- | :--- |
-| `X-3.01` | `"Oogun"` | `Iṣẹ́ L’òògùn Ṣìọ̀rọ̀` (Proverb) / `Òògùn` (Medicine) | **`Oogun` (Inheritance / Property)** | Exact tonal invariant; does not match proverbs containing `òògùn`. |
-| `X-3.02` | `"Òògùn"` | `Oogun` (Property) | **`Òògùn` (Traditional Pharmacology)** | Exact diacritic match (+600.0) elevates pharmacological node. |
-| `X-3.03` | `"Ọkọ́"` | `Ọ̀kọ̀` (Spear) / `Ọkọ` (Husband) / `Oko` (Farm) | **`Ọkọ́` (Agricultural Hoe)** | Exact tone (1060.0) isolates Hoe; zero substring bleed. |
-| `X-3.04` | `"Ọ̀kọ̀"` | `Ọkọ́` (Hoe) / `Ọkọ` (Husband) / `Oko` (Farm) | **`Ọ̀kọ̀` (Military Spear)** | Exact tone (1060.0) isolates Spear; zero substring bleed. |
-| `X-3.05` | `"Ọfà"` | `Ofada` (Rice) / `Ìwọ̀fà` (Pawnship) | **`Ọfà` (Bow & Arrow)** | Word-boundary regex `\bọfà\b` prevents substring leakage into `Ofada` or `Ìwọ̀fà`. |
-| `X-3.06` | `"Ofada"` | `Ọfà` (Bow & Arrow) | **`Ọ̀fàdà` (Indigenous Rice)** | Diacritized canon `Ọ̀fàdà` ranks #1; no association with archery. |
-| `X-3.07` | `"Àpáta"` | `Àpáta` (Defense Shield) | **`Àpáta` (Inselberg Topography)** | Disambiguates rock topography from defensive shield standard. |
-| `X-3.08` | `"Epa"` | `Ẹ̀pà` (Groundnut) | **`Epa` (Ancestral Helmet Masquerade)** | Disambiguates northern Yorùbá masquerade from edible legume. |
-| `X-3.09` | `"Ẹ̀pà"` | `Epa` (Masquerade) | **`Ẹ̀pà` (Groundnut & Agronomy)** | Exact low-tone underdot `Ẹ̀pà` ranks culinary legume #1. |
-| `X-3.10` | `"Were"` | `Wèrè` (Madness / Psychosis) | **`Were / Were Music`** | Musical genre node takes priority under auditory art domain. |
-
----
-
-## 🔬 SÙÚRÙ AUTOMATION HARNESS (READY FOR INGESTION VERIFICATION)
-
-```python
-# test_category_x_anti_loop.py
-import json
-import pytest
-
-def test_missing_parents_exist(corpus_data):
-    REQUIRED_PARENTS = [
-        "Ifá", "Were / Were Music", "Oogun", "Òògùn", 
-        "Ẹ̀pà", "Àpáta", "Ẹlẹ́mù", "Ẹégún", "Ìwọ̀fà"
-    ]
-    corpus_titles = {e["title"] for e in corpus_data}
-    for parent in REQUIRED_PARENTS:
-        assert any(parent.lower() in t.lower() for t in corpus_titles), f"Missing Sovereign Parent: {parent}"
-
-def test_sub_variant_hydration_anti_loop(runtime_resolver):
-    TEST_PAIRS = [
-        ("Àrọ̀kọ̀ Ẹfà", "Àrọ̀kọ̀"),
-        ("Ọ̀kọ̀ Ẹlẹ́ṣin", "Ọ̀kọ̀"),
-        ("Ọfà Ọdẹ", "Ọfà"),
-        ("Àdá Ìbílẹ̀", "Àdá"),
-        ("Idà Agẹmọ", "Idà"),
-        ("Àwọ̀n Apẹja", "Apẹja"),
-        ("Ẹja Àrọ̀", "Ẹja"),
-        ("Odídẹrẹ́", "Ẹyẹ")
-    ]
-    for child_query, expected_parent in TEST_PAIRS:
-        node = runtime_resolver.resolve(child_query)
-        assert node["title"].lower() != expected_parent.lower(), f"Parent-Loop detected for query {child_query}!"
-        assert node["sovereign_parent"].lower() == expected_parent.lower(), f"Child node failed to declare {expected_parent} as parent."
-        assert node["is_parent"] is False, f"Sub-variant node {child_query} incorrectly flagged as parent."
-```
-
----
-
-## 🏛️ Sùúrù Human-Simulation Verification Verdict
-- **Status**: 🟢 **CATEGORY X TEST BATTERY ARMORED & READY**
-- **Action Required by Àgbẹ̀dẹ (`agbede-builder`)**:
-  1. Ingest the 9 missing Sovereign Parents with complete 14-tier attributes.
-  2. Implement the Zero-Hardcoding Dynamic Child Hydrator in `SearchTab.jsx` and `retrieval.py`.
-  3. Wire the bilateral knowledge graph links for `Apẹja`, `Ẹja`, `Idà`, and `Ẹyẹ`.
-- Once Àgbẹ̀dẹ signals deployment, Sùúrù will execute this 35-query battery to certify zero-shot retrieval and UX lock-in.
+- **Current Benchmark Verdict**: 🔴 **FAIL (25.0% Top-1 / 0.0% Anti-Loop / 0.0% Category 17)**
+- **Baseline Integrity**: The benchmark script correctly reproduces every friction vector reported by the Lead Architect and validates Òye's forensic audits.
+- **Immediate Action**: Greenlight granted for **`Àgbẹ̀dẹ` (`agbede-builder`)** to execute `HANDOFF-AGBEDE-004`:
+  1. Ingest the missing Sovereign Parents (`Ifá`, `Were / Were Music`, `Oogun`, `Òògùn`, `Ẹ̀pà`, `Àpáta`, `Ẹlẹ́mù`, `Ẹégún`, `Ìwọ̀fà`).
+  2. Implement the **Dynamic Sub-Variant Fallback Hydrator** in `retrieval.py` and `SearchTab.jsx`.
+  3. Remap the 140 misclassified entities, establishing **Category 17: `Indigenous Zoology, Sacred Fauna & Wildlife`**.
+  4. Wire bilateral `related_entities` edges on `Apẹja`, `Ẹja`, `Idà`, and `Ẹyẹ`.
+- Upon notification of completion from `Àgbẹ̀dẹ`, `Sùúrù` will immediately rerun `scripts/benchmark_sprint004.py` to certify **>= 95% Top-1 retrieval accuracy** and complete UX Lock-In.

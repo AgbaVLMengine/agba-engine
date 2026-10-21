@@ -157,6 +157,20 @@
   - Implemented Python test harness specification in `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md` and updated `.agents/memory/suuru-qa.md`.
 - **Verification**: ✅ Category X test specification complete and armored; staged to execute live zero-shot benchmark immediately once `Àgbẹ̀dẹ` finishes ingestion.
 
+### [2026-10-21] Checkpoint 012 (`HANDOFF-SUURU-004`) — Automated 14-Query & Anti-Loop Regression Script & Empirical Baseline Benchmark
+- **Agent Persona**: `Sùúrù` (`suuru-qa`)
+- **Deliverables Completed**:
+  - Developed the automated regression benchmark script `scripts/benchmark_sprint004.py` testing the Lead Architect's 14 friction queries (`Were`, `Were Music`, `Ifa`, `Àrọ̀kọ̀`, `Oogun`, `Idà`, `Ọ̀kọ̀`, `Ọfà`, `Àdá`, `Epa`, `Àpáta`, `Ẹja`, `Ẹyẹ`, `Apẹja`), 8 sub-variant anti-loop tests, and 18 Category 17 faunal entities.
+  - Executed pre-implementation baseline test against `api/app/retrieval.py` and `api/data/yoruba_corpus_1007_NORMALIZED.json`:
+    - Overall Top-1 Retrieval Accuracy: **`6 / 24` (25.0%)**
+    - 14 Friction Queries Accuracy: **`6 / 16` (37.5%)**
+    - Anti-Parent-Loop Accuracy: **`0 / 8` (0.0%)** (all 8 child queries collapsed to parents)
+    - Category 17 Faunal Accuracy: **`0 / 18` (0.0%)** (all faunal entities in Cat 1 or 4)
+  - Updated comprehensive report in `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md` and individual persona memory in `.agents/memory/suuru-qa.md`.
+  - Sent formal notification to `Àgbà` with empirical baseline ledger, greenlighting `Àgbẹ̀dẹ` (`agbede-builder`) to begin `HANDOFF-AGBEDE-004`.
+- **Verification**: ✅ Benchmark script validated and executable (`chmod +x scripts/benchmark_sprint004.py`). Standardized output captured.
+
+
 
 
 

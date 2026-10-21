@@ -42,12 +42,16 @@
     2. **Architecture Tab Governance & Provenance**: Verified replacement of `$0.00/mo Zero-Cost` text with `Enterprise Hybrid Cloud & Sovereign Global Edge CDN`, interactive 24-source bibliography dropdown, and orthography `Àrùnà Ọlànrewájú Kábírù`.
     3. **Global Knowledge Graph Relatives Resolver**: Verified `web/src/utils/relativesResolver.js` eliminates repeated static category sequences across the entire corpus.
     4. **Museum Masterwork Slash-Alias Matching**: Verified `Arugba Ifá`, `Òrùka Ògbóni`, and `Ọpọ́n Ọṣẹ` properly display verified museum photography and provenance.
-- **[2026-10-21] (`HANDOFF-SUURU-004` — Sprint 004 Forensic Corpus Discrepancy & Category X Anti-Loop Test Battery)**:
-  - Formulated **Category X Test Battery** (35 rigorous queries across Batteries X-1, X-2, X-3) targeting `CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md` and `AGY__REPORT_OYE_AUDIT_004.md`.
-  - **Battery X-1 (Missing Parents)**: Pre-calibrated queries for 9 Sovereign Parents (`Ifá`, `Were / Were Music`, `Oogun`, `Òògùn`, `Ẹ̀pà`, `Àpáta`, `Ẹlẹ́mù`, `Ẹégún`, `Ìwọ̀fà`).
-  - **Battery X-2 (Anti-Loop Sub-Variant Hydration)**: Specified anti-loop verification for 16 unindexed sub-variants (`Àrọ̀kọ̀ Ẹfà`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`, `Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Àwọ̀n Apẹja`, `Ẹja Àrọ̀`, `Odídẹrẹ́`, etc.) ensuring dynamically synthesized child nodes (`is_parent: false`, `sovereign_parent: <Parent>`) never collapse back to parent leaf.
-  - **Battery X-3 (Homograph & Collision Guards)**: 10 disambiguation traps (`Oogun` property vs `Òògùn` medicine, `Ọkọ́` vs `Ọ̀kọ̀`, `Ọfà` vs `Ofada` vs `Ìwọ̀fà`, `Àpáta` rock vs shield, `Ẹ̀pà` groundnut vs `Epa` mask, `Were` music vs `Wèrè` madness).
-  - Saved full specification to `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md`. Ready to execute live benchmark upon `Àgbẹ̀dẹ` ingestion.
+- **[2026-10-21] (`HANDOFF-SUURU-004` — Sprint 004 Automated Benchmark Harness & Empirical Baseline Ledger)**:
+  - Developed standalone executable regression benchmark harness in `scripts/benchmark_sprint004.py`.
+  - Executed pre-implementation baseline across the 14 friction queries, sub-variant anti-loop checks, and Category 17 taxonomy:
+    - Overall Top-1 Retrieval Accuracy: **`6 / 24` (25.0%)**
+    - 14 Friction Queries Accuracy: **`6 / 16` (37.5%)**
+    - Anti-Parent-Loop Accuracy: **`0 / 8` (0.0%)** (all 8 child sub-variants collapsed to parent nodes or unrelated entities)
+    - Category 17 Faunal Accuracy: **`0 / 18` (0.0%)** (all faunal entities currently trapped in Category 1 or 4)
+  - Updated comprehensive audit report at `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md`.
+  - Greenlight transmitted to `Àgbà` for `Àgbẹ̀dẹ` (`agbede-builder`) to execute `HANDOFF-AGBEDE-004` (corpus remapping, Sovereign Parent ingestion, dynamic child hydration, bilateral knowledge graph links). Standby for post-build verification.
+
 
 
 
