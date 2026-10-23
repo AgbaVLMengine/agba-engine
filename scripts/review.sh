@@ -123,7 +123,7 @@ for f in $CHANGED_FILES; do
 done
 
 echo ""
-echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 8 Persona Memory Vaults..."
+echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 9 Persona Memory Vaults..."
 REQUIRED_MEMORIES=(
   ".agents/AGENTS.md"
   ".agents/CHECKPOINTS.md"
@@ -138,6 +138,7 @@ REQUIRED_MEMORIES=(
   ".agents/memory/agbede-builder.md"
   ".agents/memory/eso-security.md"
   ".agents/memory/arokin-archivist.md"
+  "memory/disk_saver_memory.md"
 )
 for mem in "${REQUIRED_MEMORIES[@]}"; do
   if [ -f "$mem" ]; then

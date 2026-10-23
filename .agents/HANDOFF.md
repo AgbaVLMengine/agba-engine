@@ -28,6 +28,10 @@
      - When not actively enriching, scout and structure candidate corpora for sister African civilizations (Benin/Edo, Igbo, Hausa/Fulani, Akan/Ashanti, Swahili).
   4. **Strict 5-Agent Interlocking Pipeline**:
      - Never ingest newly scouted cultural corpora directly into production without Ìmọ̀ (legal/CC0 clearance), Ẹ̀ṣọ́ (zero-trust security), Àgbẹ̀dẹ (data hydration), Sùúrù (QA retrieval benchmarks), and Àgbà (Co-Architect review for Lead Architect approval).
+  5. **Mandatory Citational Provenance & Master Bibliography Cross-Referencing**:
+     - Every enriched entity MUST explicitly document its exact bibliographic citation / archival origin in `provenance_and_citations`.
+     - Explicitly cross-reference against `AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (e.g., Rev. Samuel Johnson 1921, Wándé Abímbọ́lá 1975/1976, Rowland Abiodun 2014, Babatunde Lawal 1996, William Bascom 1969/1980, Pierre Verger 1995, British Museum, The Met, Cleveland Museum of Art).
+     - If an entity utilizes a source not currently listed in the Master Bibliography, explicitly tag it as `[NEW CITATIONAL SOURCE: <Author/Archive, Year, Title>]` so Ìmọ̀ and Àgbà can verify and catalog it into `AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`.
 
 ---
 

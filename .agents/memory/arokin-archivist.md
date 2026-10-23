@@ -38,6 +38,11 @@
      - **Akan / Ashanti Heritage** (Adinkra symbolism, Kente metallurgy, Golden Stool cosmology).
      - **Swahili Maritime Coast** (Dhow maritime trade, coastal architecture, Swahili proverbs).
 
+4. **Mandatory Citational Provenance & Master Bibliography Alignment**:
+   - Every enriched entity MUST explicitly document its exact bibliographic citation or archival origin in `provenance_and_citations`.
+   - Strictly verify whether each source already exists in `AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (e.g. Samuel Johnson 1921, Wándé Abímbọ́lá 1975/1976, Rowland Abiodun 2014, Babatunde Lawal 1996, William Bascom 1969/1980, Pierre Verger 1995, British Museum, The Met, Cleveland Museum of Art).
+   - If a source is new, explicitly flag it as `[NEW CITATIONAL SOURCE: <Author/Archive, Year, Title>]` so `Ìmọ̀` and `Àgbà` can verify and catalog it into the Master Bibliography.
+
 ---
 
 ## 2. Mandatory 5-Agent Interlocking Council Workflow
