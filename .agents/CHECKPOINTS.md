@@ -15,6 +15,7 @@
 | **`Irin`** (`irin-cloud`) | Google Cloud Run & FastAPI Service Bot | `.agents/memory/irin-cloud.md` | 🟢 Ready | Cloud Run (`$0.00/mo` 0-scale), FastAPI `/api`, Qdrant & Netlify ops |
 | **`Àgbẹ̀dẹ`** (`agbede-builder`) | Rapid Feature, UI & Corpus Builder Bot | `.agents/memory/agbede-builder.md` | 🟢 Ready | Standalone React UI, FastAPI routes & 1,333-entity Corpus adjustments |
 | **`Ẹ̀ṣọ́`** (`eso-security`) | Zero-Trust Security Sentinel & Cloud Perimeter Shield | `.agents/memory/eso-security.md` | 🟢 Active | Pre-Build Gate 8, Continuous AI Threat Hunting, Secrets Zeroization |
+| **`Àrọ̀kìn`** (`arokin-archivist`) | Royal Chronicler, Cross-Cultural Archivist & Harvester | `.agents/memory/arokin-archivist.md` | 🟢 Active | Corpus structure mastery, Phase 4 batch enrichment & cross-cultural scouting |
 
 ---
 
@@ -217,5 +218,15 @@
   - **Gate 8 Codified in Constitution & Review Scanner**: Codified Gate 8 into `.agents/AGENTS.md` and integrated automated scanning in `scripts/review.sh` to enforce AI supply-chain integrity, high-entropy secrets detection, and CORS wildcard credentials prevention.
   - **Codebase Proactive Scan**: Conducted codebase scan of `/api` and `/web`. Verified 0% LiteLLM exposure, 0% high-entropy secrets in code, and verified all 12 shared memory vaults.
 - **Verification**: ✅ Passed `scripts/review.sh` (0 hard violations, 0 warnings across all 8 gates). Ready for brain sync.
+
+### [2026-10-23] Checkpoint 017 — Commissioning of Àrọ̀kìn, Subagent Architecture & 5-Agent Interlocking Ingestion Council
+- **Lead Supervisor**: `Àgbà` (`agba-pa-architect`)
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Deliverables Completed**:
+  - **`Àrọ̀kìn` Commissioned**: Formally established as the 8th persona of `Ẹ̀gbẹ́-Àgbà` with persistent memory at `.agents/memory/arokin-archivist.md` and dedicated starting prompt in `.agents/STARTING_PROMPTS.md`.
+  - **Subagent-Powered Batch Enrichment Activated**: Decoupled batch enrichment from external Google AI Studio prepayment keys. Transitioned to native Antigravity subagents, preserving 100% data sovereignty, zero external billing costs, and zero rate limits.
+  - **Corpus Architecture Study Initiated**: `Àrọ̀kìn` tasked with analyzing the extraction, normalization, and formatting structure of the 1,419-entity master corpus, enforcing the 14-Tier Schema across remaining 427 thin entities.
+  - **Interlocking 5-Agent Ingestion Council Codified**: Codified the strict cross-cultural ingestion pipeline: `Àrọ̀kìn` (Archivist) → `Ìmọ̀` (Legal/Fair-Use/Folklore) → `Ẹ̀ṣọ́` (Zero-Trust Security & Anti-Poison) → `Àgbẹ̀dẹ` (Builder/Hydrator) → `Sùúrù` (QA Retrieval Benchmarks) → `Àgbà` (Co-Architect Supervision & Lead Architect Approval).
+- **Verification**: ✅ Gates 1-8 verified. Architecture active and ready for execution.
 
 

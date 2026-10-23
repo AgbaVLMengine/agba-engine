@@ -1,9 +1,58 @@
 # 🎯 ZERO-WASTE HANDOFF CARDS (`.agents/HANDOFF.md`)
 
-> **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)
-> **Lead Architect**: Àrùnà Ọlànrewájú Kábírù
-> **Status**: 🟡 **SPRINT 004 (`HANDOFF-004`) — FORENSIC CORPUS AUDIT & ZERO-SHOT ARCHITECTURE**
-> **Mandate**: **Audit First Before Ingestion**. Establish exact inventory of missing parents, unindexed sub-variants, dynamic hydration architecture, and knowledge graph linkages before batch ingestion.
+> **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)  
+> **Lead Architect**: Àrùnà Ọlànrewájú Kábírù  
+> **Active Focus**: 📜 **HANDOFF-AROKIN-001 (CORPUS MASTERY, ENRICHMENT & CROSS-CULTURAL SCOUTING)** + 🛡️ **HANDOFF-ESO-001 (ZERO-TRUST PERIMETER)**
+
+---
+
+## 0. Active Archivist Handoff (`HANDOFF-AROKIN-001`)
+
+### `HANDOFF-AROKIN-001` — Corpus Structure Mastery, Phase 4 Batch Enrichment & Cross-Cultural Scouting Protocol
+- **Assigned To**: **`Àrọ̀kìn`** (`arokin-archivist`)
+- **Council Partners**: `Ìmọ̀` (Legal/Provenance), `Ẹ̀ṣọ́` (Security Sentinel), `Àgbẹ̀dẹ` (Builder/Hydrator), `Sùúrù` (QA Specialist)
+- **Supervising Co-Architect**: `Àgbà` (`agba-pa-architect`)
+- **Target Files**:
+  - `/home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json`
+  - `/home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json`
+  - `/home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json`
+  - `/home/aruna_olanrewaju/agba-engine/scripts/batch_enrich_subagent.py`
+  - `/home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md`
+- **Execution Mandates**:
+  1. **Corpus Structure Deep Study**:
+     - Systematically analyze the 1,419 canonical records to master data extraction, normalization, and formatting standards.
+     - Enforce the 14-Tier Schema: Multi-epoch timelines, dual-language proverbs with philosophical commentary, physical craftsmanship, court protocol, diaspora survivals, sensory aesthetics, living variants, and zero *Awo* disclosure.
+  2. **Phase 4 Batch Enrichment**:
+     - Backfill remaining 427 thin entities to elevate the entire 1,419 master corpus to 100% Àmọ̀tẹ́kùn-grade parity without external API keys.
+  3. **Autonomous Cross-Cultural Scouting (Idle Protocol)**:
+     - When not actively enriching, scout and structure candidate corpora for sister African civilizations (Benin/Edo, Igbo, Hausa/Fulani, Akan/Ashanti, Swahili).
+  4. **Strict 5-Agent Interlocking Pipeline**:
+     - Never ingest newly scouted cultural corpora directly into production without Ìmọ̀ (legal/CC0 clearance), Ẹ̀ṣọ́ (zero-trust security), Àgbẹ̀dẹ (data hydration), Sùúrù (QA retrieval benchmarks), and Àgbà (Co-Architect review for Lead Architect approval).
+
+---
+
+## 0. Active Security Handoff (`HANDOFF-ESO-001`) — Staged for Àgbà Review
+
+### `HANDOFF-ESO-001` — Proactive Zero-Trust Perimeter, Query-Key Deprecation & RAG Hardening
+- **Assigned To**: **`Ẹ̀ṣọ́`** (`eso-security`) in coordination with **`Àgbà`** (`agba-pa-architect`)
+- **Status**: 🟡 **Awaiting Chief Co-Architect (`Àgbà`) Architectural Review & Concurrence**
+- **Target Files**:
+  - `/home/aruna_olanrewaju/agba-engine/api/app/intelligence.py` (Current: 466 LOC; Target: <475 LOC)
+  - `/home/aruna_olanrewaju/agba-engine/api/app/main.py` (Current: 346 LOC; Target: <355 LOC)
+- **Security Specifications & Blast-Radius Mitigation**:
+  1. **Item 1: RAG Prompt Injection & System Exfiltration Hardening (`intelligence.py`)**:
+     - Wrap external input and canonical context in semantic XML delimiters: `<canonical_knowledge_base>` and `<user_query>`.
+     - Inscribe Rule 5 in `system_instruction`: Strict prohibition against revealing system prompts, internal variables, or role inversion under adversarial phrasing ("ignore previous instructions", "DAN", etc.).
+     - Truncate input message to max 1,500 characters prior to LLM synthesis.
+  2. **Item 2: URL Query-Parameter Credential Deprecation (`main.py` L72)**:
+     - Neutralize OWASP API3 risk (API keys leaked in Netlify/Cloud Run access logs and Referer headers).
+     - Restrict primary authentication to `X-AGBA-API-KEY` and `Authorization: Bearer` headers; emit a telemetry security warning if legacy query-param `api_key` is detected.
+  3. **Item 3: DoS & Context-Stuffing Payload Bounding (`main.py`)**:
+     - Enforce `max_length=1000` on `QueryRequest.query`, `DiacritizeRequest.text`, and `CulturalTranslateRequest.text`.
+     - Enforce `max_length=2000` on `ChatRequest.message` and `max_length=20` on `ChatRequest.session_history` to prevent Cloud Run 2GiB memory spikes on free tier.
+- **Verification Gates Required**:
+  - Gate 2: Both files must remain strictly `<500 LOC` (`intelligence.py` < 475, `main.py` < 355).
+  - Gate 8: Clean pass in `./scripts/review.sh`.
 
 ---
 
