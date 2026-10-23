@@ -35,6 +35,7 @@ git add \
   .agents/memory/imo-legal.md \
   .agents/memory/irin-cloud.md \
   .agents/memory/agbede-builder.md \
+  .agents/memory/eso-security.md \
   scripts/review.sh \
   scripts/sync-brain.sh
 

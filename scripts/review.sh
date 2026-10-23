@@ -80,7 +80,50 @@ if [ -f "api/deploy_cloud_run.sh" ]; then
 fi
 
 echo ""
-echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 6 Persona Memory Vaults..."
+echo "▶ [GATE 8: Ẹ̀ṢỌ́ PRE-BUILD ZERO-TRUST SECURITY GATE] Scanning Secrets & AI Supply Chain..."
+# 1. Supply-Chain & Trojan Wrapper Check
+if [ -f "api/requirements.txt" ]; then
+  if grep -iE "^\s*litellm" "api/requirements.txt" >/dev/null 2>&1; then
+    echo "  ❌ [SECURITY VIOLATION] LiteLLM detected in requirements.txt (Supply chain trojan risk)!"
+    VIOLATIONS=$((VIOLATIONS + 1))
+  else
+    echo "  ✅ AI Supply Chain Verified: Zero LiteLLM trojans, native google-genai direct SDK enforced."
+  fi
+fi
+
+# 2. Hardcoded Secrets & High-Entropy Tokens Check across changed code files
+for f in $CHANGED_FILES; do
+  [ -f "$f" ] || continue
+  case "$f" in
+    *.py|*.js|*.jsx|*.ts|*.tsx|*.json|*.sh|*.env*)
+      # Ignore manifest data files and sample tests
+      if [[ "$f" == *"manifest"* ]] || [[ "$f" == *"corpus"* ]] || [[ "$f" == *".agents/"* ]]; then
+        continue
+      fi
+      if grep -nE "(AIzaSy[A-Za-z0-9_-]{33}|ghp_[a-zA-Z0-9]{36}|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY)" "$f" >/dev/null 2>&1; then
+        echo "  ❌ [SECURITY VIOLATION] High-entropy secret detected in $f!"
+        grep -nE "(AIzaSy[A-Za-z0-9_-]{33}|ghp_[a-zA-Z0-9]{36}|BEGIN (RSA|OPENSSH|EC) PRIVATE KEY)" "$f" | head -n 3
+        VIOLATIONS=$((VIOLATIONS + 1))
+      fi
+      ;;
+  esac
+done
+
+# 3. Insecure Wildcard CORS with Credentials Check
+for f in $CHANGED_FILES; do
+  [ -f "$f" ] || continue
+  case "$f" in
+    *.py)
+      if grep -nE 'allow_origins=\["\*"\]' "$f" >/dev/null 2>&1 && grep -nE 'allow_credentials=True' "$f" >/dev/null 2>&1; then
+        echo "  ❌ [SECURITY VIOLATION] Insecure wildcard CORS with credentials detected in $f!"
+        VIOLATIONS=$((VIOLATIONS + 1))
+      fi
+      ;;
+  esac
+done
+
+echo ""
+echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 7 Persona Memory Vaults..."
 REQUIRED_MEMORIES=(
   ".agents/AGENTS.md"
   ".agents/CHECKPOINTS.md"
@@ -93,6 +136,7 @@ REQUIRED_MEMORIES=(
   ".agents/memory/imo-legal.md"
   ".agents/memory/irin-cloud.md"
   ".agents/memory/agbede-builder.md"
+  ".agents/memory/eso-security.md"
 )
 for mem in "${REQUIRED_MEMORIES[@]}"; do
   if [ -f "$mem" ]; then

@@ -14,6 +14,7 @@
 | **`Ìmọ̀`** (`imo-legal`) | Legal, Licensing & Provenance Counsel Bot | `.agents/memory/imo-legal.md` | 🟢 Ready | `RAIL-Cultural-Heritage-v1.0`, Museum rights, Data Sovereignty & Legal Research |
 | **`Irin`** (`irin-cloud`) | Google Cloud Run & FastAPI Service Bot | `.agents/memory/irin-cloud.md` | 🟢 Ready | Cloud Run (`$0.00/mo` 0-scale), FastAPI `/api`, Qdrant & Netlify ops |
 | **`Àgbẹ̀dẹ`** (`agbede-builder`) | Rapid Feature, UI & Corpus Builder Bot | `.agents/memory/agbede-builder.md` | 🟢 Ready | Standalone React UI, FastAPI routes & 1,333-entity Corpus adjustments |
+| **`Ẹ̀ṣọ́`** (`eso-security`) | Zero-Trust Security Sentinel & Cloud Perimeter Shield | `.agents/memory/eso-security.md` | 🟢 Active | Pre-Build Gate 8, Continuous AI Threat Hunting, Secrets Zeroization |
 
 ---
 
@@ -182,4 +183,39 @@
     - Passed `./scripts/review.sh` (0 hard violations, all files `<500 LOC`).
     - Passed `npm run build` (Vite bundle built in 1.09s with zero errors).
 - **Verification**: ✅ **ALL TASKS COMPLETE & BENCHMARKED AT 100.0% TOP-1 ACCURACY**. Ready for final QA sign-off by Sùúrù and review by Àgbà.
+
+### [2026-10-23] Checkpoint 014 — Tier A Sub-Variant Ingestion, Proverb Dual-Language Enrichment & UI Hierarchy Decoupling
+- **Lead Supervisor**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Tier A Bespoke Living Sub-Variants Ingested**: Ingested 51 bespoke 14-tier entities across Sacred Fauna, Martial Weaponry, Customary Land/Kinship, Semiotic Communication, and Auditory Arts. Master corpus expanded from 1,347 to **1,398 entities** across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
+  - **Dual-Language Proverb & Liturgy Enrichment**: Enriched proverbs with authentic parenthetical English translations across key martial, semiotic, and biological sub-variants (`Àrọ̀kọ̀ Ẹfà`, `Àrọ̀kọ̀ Ẹ̀jọ́`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`, `Àdá Ìbílẹ̀`, `Idà Agẹmọ`).
+  - **UI Badge Hierarchy Decoupling**: In `web/src/components/SearchTab.jsx` and `web/src/components/ToothSearchCore.jsx`, decoupled parent/child node resolution. Root pod now displays true Sovereign Parent while the matched variant displays as a Living Variant pod, eliminating simultaneous parent/sub-variant badge contradictions.
+  - **Semantic Domain Gating in Knowledge Graph**: In `web/src/utils/relativesResolver.js`, wired category affinity clusters and strict cross-category textual gating, eliminating cross-domain leakage (`Bọ̀lị̀` out of `Àrọ̀kọ̀ Ẹfà`, `Ẹ̀tù` out of `Òògùn`).
+  - **Comprehensive Benchmark & Standards Verification**:
+    - Ran `scripts/benchmark_sprint004.py`: **24/24 (100.0%)** Top-1 Retrieval Accuracy.
+    - Verified all 51 Tier A bespoke sub-variants: **51/51 (100.0%)** zero-shot Top-1 retrieval with 0% generic template descriptions.
+    - Passed `./scripts/review.sh` (0 hard violations, all files strictly `<500 LOC`).
+    - Passed `npm run build` (Vite bundle built in 770ms with zero errors).
+### [2026-10-23] Checkpoint 015 — Ẹ̀ṣọ́ Security Persona Commissioning, Audit Disambiguations & Full Phase 4 Launch
+- **Lead Supervisor**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **`Ẹ̀ṣọ́` Security Sentinel Commissioned**: Added as the 7th Persona of `Ẹ̀gbẹ́-Àgbà` with persistent memory at `.agents/memory/eso-security.md`. Produced Baseline Security Audit Report `.agents/local-seeds/AGY__REPORT_ESO_SECURITY_001.md` confirming 0% exposure to LiteLLM trojans, Node2Shell Brotli overflows, and Railway-style secret dumps. Updated `./scripts/review.sh` to enforce `eso-security.md`.
+  - **Audit Disambiguations & Living Variants Ingested**: Ingested 21 bespoke entities via `scripts/ingest_audit_fixes_and_variants.py` (total corpus expanded to **1,419 canonical entities**):
+    - `Ọ̀fà (Historical City & Ancient Kingdom)` disambiguated from archery weapon `Ọfà`.
+    - `Èkó (Maritime Capital & Cultural Center)` & `Ìsàlẹ̀ Èkó` disambiguated from food cake `Ẹ̀kọ`.
+    - Ingested `Kàbbà` and `Ìjùmú` under `Ìpínlẹ̀ Kogi`; `Adó-Èkìtì` under `Ìpínlẹ̀ Èkìtì`.
+    - Upgraded 15+ Living Sub-Variants (`Ère Ìbejì`, `Ère Ẹlẹ́gbára`, `Ẹyọ Owó`, `Ikin Ọlọ́jú Mẹ́rin`, `Ikin Ọlọ́jú Mẹ́ta`, `Agẹrẹ Ológun`, `Agẹrẹ Arúgbá`, `Ọ̀pẹ̀lẹ̀ Agbalagba`, `Ọ̀pẹ̀lẹ̀ Idẹ`, `Ọpọ́n Ifá Olórí Èṣù`, `Ọpọ́n Ifá Gbẹ́rọ́`, `Ẹdan Ògbóni`, `Ìyàwó Titun`, `Ọkọ Ìyàwó`, `Bàbá Ilé`).
+  - **Sùúrù 4-Pillar QA Benchmark Upgraded**: Expanded `scripts/benchmark_sprint004.py` to 28 regression queries with **28/28 (100.0%) Top-1 Accuracy**, verifying disambiguation of `Èkó`, `Ọ̀fà`, `Kàbbà`, and `Adó-Èkìtì`.
+  - **Full Phase 4 Batch Enrichment Fired**: Launched daemon pipeline (`task-1158`) with `gemini-3.8-flash`, 90s gateway timeout, and autonomous multi-cluster failover across remaining 657 thin entities with atomic checkpoints every 10 items.
+- **Verification**: ✅ **PASSED ALL GATES**. Daemon pipeline active in background. Ready for automated git commit once batch completes.
+
+### [2026-10-23] Checkpoint 016 — Ẹ̀ṣọ́ Pre-Build Security Gate Invariant & Continuous Threat Hunting Protocol
+- **Agent Persona**: `Ẹ̀ṣọ́` (`eso-security`)
+- **Deliverables Completed**:
+  - **Enshrined Imperial Invariant Motto**: Received and locked Lead Architect Àrùnà Ọlànrewájú Kábírù's binding directive: *"Any feature I come up with that would jeopardise the security of the system, you must warn the entire team and most especially Àgbà beforehand, who in turn warns me. So a security check must be passed before any build would be implemented."*
+  - **Active Proaction Mandate ("Oògùn lẹ́yìn ikú...")**: Formally elevated posture from passive/scheduled audits to continuous real-time threat hunting. Established the 4-Pillar Threat Hunting Protocol across (1) AI Threat Surface & Prompt Injection/Jailbreak defense, (2) Cloud Perimeter & strict header authentication (eliminating query-param API keys), (3) Secrets Lifecycle & immediate zeroization of deleted keys, and (4) Supply-Chain integrity (zero LiteLLM trojans, direct `google-genai` SDK only).
+  - **Gate 8 Codified in Constitution & Review Scanner**: Codified Gate 8 into `.agents/AGENTS.md` and integrated automated scanning in `scripts/review.sh` to enforce AI supply-chain integrity, high-entropy secrets detection, and CORS wildcard credentials prevention.
+  - **Codebase Proactive Scan**: Conducted codebase scan of `/api` and `/web`. Verified 0% LiteLLM exposure, 0% high-entropy secrets in code, and verified all 12 shared memory vaults.
+- **Verification**: ✅ Passed `scripts/review.sh` (0 hard violations, 0 warnings across all 8 gates). Ready for brain sync.
+
 

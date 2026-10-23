@@ -16,3 +16,4 @@
 
 ## 3. Supervision & Architecture Log
 - **[2026-10-20]**: Extracted Pure-Antigravity engineering architecture from Playbook; established the 6 Corpus-named personas (`Àgbà`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Ògún`, `Àgbẹ̀dẹ`) and wired GitHub Shared + Individual Memory into `/home/aruna_olanrewaju/agba-engine/.agents/`.
+- **[2026-10-23]**: Supervised Sprint 004 & Tier A Bespoke Sub-Variant Ingestion. Ingested 51 bespoke 14-tier entities (total corpus now 1,398 items). Enriched dual-language proverbs for martial & semiotic sub-variants. Decoupled UI hierarchy in `SearchTab.jsx` and `ToothSearchCore.jsx` to eliminate badge contradictions. Wired Semantic Domain Gating into `relativesResolver.js`. 100% benchmark verification passed (24/24 regression cases, 51/51 Tier A zero-shot hits). Verified 500-LOC rule and Vite build.

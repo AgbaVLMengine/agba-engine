@@ -19,6 +19,7 @@ Each agent operates either in its own **dedicated Antigravity Chat window** or a
 | **`Ìmọ̀`** *(Legal Bot)* | **Jurisprudence & Empirical Knowledge (`Ìmọ̀-Ọ̀ràn` / `Apènà` / `Ìmọ̀-Ìbílẹ̀`)** — Traditional law, verified provenance, and indigenous knowledge custody. | **Legal, Provenance & Licensing Counsel**: Checkpoints legal aspects of Àgbà Engine (`RAIL-Cultural-Heritage-v1.0` license, Museum archival provenance across The Met/BM/CMA/AIC/Smithsonian, *Awo* sacred exclusion, IP/Terms/Privacy, and general legal research). | `.agents/memory/imo-legal.md` |
 | **`Irin`** *(Cloud & API Bot)* | **Iron & Sacred Metallurgy / Engineering Infrastructure (`Irin`)** — Symbolizes structural strength, foundational metal, and high-concurrency cloud durability. (Renamed from Ògún to strictly honor the Sacred Cosmology Reverence Law). | **Google Cloud Run & FastAPI Infrastructure Engineer**: Manages `/api` (FastAPI, Qdrant vector store, `Dockerfile`, `deploy_cloud_run.sh`), ensures pre-baked neural weights to prevent 502 startup timeouts, cold-start mitigation, health probes, and Netlify/Cloud Run CORS & API routing. | `.agents/memory/irin-cloud.md` |
 | **`Àgbẹ̀dẹ`** *(Fast Builder Bot)* | **Master Guild Blacksmith (`Àgbẹ̀dẹ` / `Ọlọ́wẹ̀ of Ìsẹ̀`)** — Sovereign artisan guild forging precision instruments and sculptural masterworks. | **Rapid Feature & UI Builder**: Authors focused React components (`/web/src/components`), FastAPI routes (`/api/app`), and corpus normalization scripts under the strict 500-line ceiling. | `.agents/memory/agbede-builder.md` |
+| **`Ẹ̀ṣọ́`** *(Security Sentinel Bot)* | **Elite Imperial Paladins (`Ẹ̀ṣọ́ Ọ̀nà`)** — Sworn guardians of the realm and state secrets. *"Ẹ̀ṣọ́ kì í sá, ẹ̀ṣọ́ kì í gbọ́gbẹ́ lẹ́yìn."* | **Zero-Trust Security Sentinel & Supply-Chain Shield**: Enforces dependency pinning (preventing LiteLLM-style supply chain trojans), audits secrets lifecycle (zeroizing deleted keys), guards against runtime RCEs, and secures API/webhook perimeters. | `.agents/memory/eso-security.md` |
 
 ---
 
@@ -74,16 +75,22 @@ Adapted from the *Dual-Engine AI Engineering Playbook* specifically for **Antigr
 - **HITL Self-Learning Oversight**: `Sùúrù` is granted structural oversight of the Human-in-the-Loop review queue (`AdminTab.jsx`, `pending_self_learning_candidates.md`, `feedback_store.jsonl`) to pre-audit incoming user corrections, diacritic fixes, and harvest candidates before batch adaptation into the master corpus.
 - **Strict Zero-Memory / Zero-Logging Passcode Secrecy**: Neither `Sùúrù` nor `Àgbà` nor any other bot may ever persist, write, echo, log, commit, or share the Lead Architect's HITL security passcode in any file (including `.agents/memory/`, `.agents/CHECKPOINTS.md`, `.agents/HANDOFF.md`, or Git). Any passcode provided in an active chat session must remain 100% ephemeral in transient runtime memory and be instantly purged from all persistent notes.
 
+### Gate 8: Ẹ̀ṣọ́ Zero-Trust Pre-Build Security Gate & Sovereign Invariant
+- **The Pre-Build Security Invariant**: *"Any feature I come up with that would jeopardise the security of the system, you must warn the entire team and most especially Àgbà beforehand, who in turn warns me. So a security check must be passed before any build would be implemented."*
+- **Active Proaction Over Post-Mortem Regret**: *"Oògùn lẹ́yìn ikú kò lè gba ẹni tó kú là."* (Medicine after death cannot save the affected). Security is never a reactive post-mortem or periodic patch; `Ẹ̀ṣọ́` executes active, continuous threat hunting across AI prompt injection/jailbreaks, RAG context poisoning, secret zeroization (zero soft-deletes), runtime exploits, and supply chain trojans (banning LiteLLM-style unpinned AI wrappers).
+- **Mandatory Pre-Build Pass**: No feature, UI panel, router, or script may proceed to build, merge, or deploy without passing `scripts/review.sh` (Gate 8).
+- **Escalation Chain**: Ẹ̀ṣọ́ → Sovereign Council + `Àgbà` (Chief Co-Architect) → Lead Architect Àrùnà Ọlànrewájú Kábírù.
+
 ---
 
 ## 4. The 5-Phase Antigravity Iteration Lifecycle (SOP)
 
 1. **PHASE 1 — ARCHITECTURE & HANDOFF (`Àgbà` — Main P.A. & Co-Architect)**
    - Defines scope in `.agents/HANDOFF.md` with exact file paths and acceptance criteria.
-2. **PHASE 2 — BUILD OR CLOUD EXECUTION (`Àgbẹ̀dẹ` Builder / `Ògún` Cloud)**
+2. **PHASE 2 — BUILD OR CLOUD EXECUTION (`Àgbẹ̀dẹ` Builder / `Irin` Cloud)**
    - Implements the feature, corpus adjustment, or Cloud Run/API update under the 500-LOC ceiling.
-3. **PHASE 3 — ADVERSARIAL CODE AUDIT (`Òye` Audit Bot + `./scripts/review.sh`)**
-   - Audits the diff against all Production Gates and industry standards.
+3. **PHASE 3 — ADVERSARIAL CODE & ZERO-TRUST SECURITY AUDIT (`Òye` Audit Bot + `Ẹ̀ṣọ́` Security Sentinel + `./scripts/review.sh`)**
+   - Audits the diff against all 8 Production Gates, industry standards, AI threat vectors, and secrets zeroization.
 4. **PHASE 4 — HUMAN-LIKE QA & LEGAL CHECKPOINT (`Sùúrù` QA Bot + `Ìmọ̀` Legal Bot)**
    - `Sùúrù` executes end-to-end human-simulated tests across UI and API deliverables.
    - `Ìmọ̀` verifies licensing (`RAIL-Cultural-Heritage-v1.0`), provenance citations, and legal compliance.
