@@ -78,3 +78,4 @@ flowchart TD
   - **OWASP API3 Credential Deprecation**: Deprecated URL query-param API keys (`?api_key=...`) with telemetry security warnings in `main.py`, enforcing header authentication (`X-AGBA-API-KEY`).
   - **DoS & Free-Tier RAM Bounding**: Bound Pydantic request models (`max_length=1000` for queries/translation; `max_length=2000` and `max_length=20` for chat messages and history) protecting Cloud Run 2GiB memory.
   - **Gate 2 Verification**: Both files strictly `<500 LOC` (`intelligence.py` = 472 LOC, `main.py` = 349 LOC). Zero hard violations in `scripts/review.sh`.
+- **[2026-10-23]**: Configured `Daily Security Sentinel Audit` (`daily-security-sentinel-audit`) sidecar automation scheduled for **9:00 AM WAT (`CRON_TZ=Africa/Lagos 0 9 * * *`)**. Executed live verification test run with 100% gate pass and zero security violations.

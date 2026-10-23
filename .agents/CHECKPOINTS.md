@@ -258,6 +258,25 @@
     - `scripts/review.sh`: 0 hard violations, 0 warnings across all 8 gates.
 - **Verification**: ✅ Production ready. All gates passed.
 
+### [2026-10-23] Checkpoint 020 — Daily Security Sentinel Audit Automation Configured & Verified
+- **Agent Persona**: `Ẹ̀ṣọ́` (`eso-security`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Scheduled Daily Security Sentinel Automation**: Created `Daily Security Sentinel Audit` (`daily-security-sentinel-audit`) scheduled to fire every day at **9:00 AM WAT (`CRON_TZ=Africa/Lagos 0 9 * * *`)**.
+  - **Self-Contained Audit Execution Scope**: The automated conversation performs:
+    1. Full 8-Gate scanner execution via `scripts/review.sh` (500-LOC ceiling, $0.00/mo Cloud Run idle scale, Lean Commits, and Gate 8 Zero-Trust security).
+    2. PyPI & npm supply-chain trojan and version-pinning audit.
+    3. Git status, entropy check, and credential leak scan.
+    4. RAG XML semantic boundaries, header-only auth, and Netlify security headers verification.
+    5. Structured daily readiness report delivered to Lead Architect Àrùnà Ọlànrewájú Kábírù and Co-Architect Àgbà.
+    6. Brain memory sync via `scripts/sync-brain.sh`.
+  - **Test-Run Execution Verified**: Performed live test run:
+    - `scripts/review.sh`: 0 hard violations, 0 warnings across all 8 gates.
+    - AI supply chain: 0% LiteLLM / unpinned wrappers, official `google-genai` SDK locked.
+    - Git tree: Clean; zero high-entropy secrets or private keys.
+    - Scoped exact execution permissions in `sidecar.json`.
+- **Verification**: ✅ Automation created and permissions verified. Ready for user enablement in Automations dashboard.
+
 
 
 
