@@ -25,6 +25,51 @@ const STOP_WORDS = new Set([
   'spiritual', 'ritual', 'social', 'history', 'origin', 'meaning', 'form'
 ]);
 
+const CATEGORY_AFFINITY = {
+  'Military Traditions, Weaponry & Defense': new Set([
+    'Indigenous Sciences, Metallurgy & Traditional Engineering',
+    'Royalty, Aristocracy & Chieftaincy Systems'
+  ]),
+  'Indigenous Sciences, Metallurgy & Traditional Engineering': new Set([
+    'Military Traditions, Weaponry & Defense',
+    'Traditional Trades, Agriculture & Agrarian Guilds'
+  ]),
+  'Oral Literature, Philosophy & Folklore': new Set([
+    'Auditory Arts, Music, Drums & Chants',
+    'Ancestral Masquerades & Funerary Rites'
+  ]),
+  'Auditory Arts, Music, Drums & Chants': new Set([
+    'Oral Literature, Philosophy & Folklore',
+    'Ancestral Masquerades & Funerary Rites'
+  ]),
+  'Indigenous Zoology, Sacred Fauna & Wildlife': new Set([
+    'Sacred Botany, Flora & Herbal Medicine',
+    'Traditional Trades, Agriculture & Agrarian Guilds',
+    'Topography, Natural Landscapes & Architecture'
+  ]),
+  'Sacred Botany, Flora & Herbal Medicine': new Set([
+    'Indigenous Zoology, Sacred Fauna & Wildlife',
+    'Traditional Trades, Agriculture & Agrarian Guilds'
+  ]),
+  'Culinary Arts & Indigenous Gastronomy': new Set([
+    'Traditional Trades, Agriculture & Agrarian Guilds',
+    'Sacred Botany, Flora & Herbal Medicine'
+  ]),
+  'Textiles, Body Adornment & Sacred Regalia': new Set([
+    'Visual Arts, Regalia & Classical Iconography',
+    'Royalty, Aristocracy & Chieftaincy Systems'
+  ]),
+  'Visual Arts, Regalia & Classical Iconography': new Set([
+    'Textiles, Body Adornment & Sacred Regalia',
+    'Royalty, Aristocracy & Chieftaincy Systems',
+    'Ancestral Masquerades & Funerary Rites'
+  ]),
+  'Spiritual & Cosmological Matrix': new Set([
+    'Civilization, History & Civic Heritage',
+    'Ancestral Masquerades & Funerary Rites'
+  ])
+};
+
 function extractGraphTokens(entity) {
   const d = entity.details || entity;
   const raw = [
@@ -66,6 +111,8 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
     resolved.push(cand);
   };
 
+  const selfCategory = topMatch.category || details.category;
+
   // Tier 1: Explicit sub_variants, related_entities, and cultural_relatives (NFC-first)
   const explicitNames = [
     ...(Array.isArray(details.sub_variants) ? details.sub_variants : []),
@@ -82,12 +129,51 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
     const fallbackHit =
       exactHit ||
       masterCorpus.find(
-        (e) => e.id === relName || stripAccents(e.title) === relClean
+        (e) =>
+          (e.id === relName || stripAccents(e.title) === relClean) &&
+          (!selfCategory ||
+            !e.category ||
+            e.category === selfCategory ||
+            CATEGORY_AFFINITY[selfCategory]?.has(e.category))
       );
     pushUnique(fallbackHit);
   }
 
-  // Tier 2: Reverse Sovereign Parent & Sibling Lineage
+  // Tier 2: Direct Sovereign Parent & Sibling Lineage
+  if (resolved.length < limit && details.sovereign_parent) {
+    const parentNFC = normalizeNFC(details.sovereign_parent);
+    const parentClean = stripAccents(details.sovereign_parent);
+    const exactParent = masterCorpus.find((e) => normalizeNFC(e.title) === parentNFC);
+    const parentHit =
+      exactParent ||
+      masterCorpus.find((e) => stripAccents(e.title) === parentClean && e.is_parent === true) ||
+      masterCorpus.find(
+        (e) =>
+          stripAccents(e.title) === parentClean &&
+          (!selfCategory || !e.category || e.category === selfCategory || CATEGORY_AFFINITY[selfCategory]?.has(e.category))
+      );
+    if (parentHit) {
+      pushUnique(parentHit);
+      if (Array.isArray(parentHit.sub_variants)) {
+        for (const sib of parentHit.sub_variants) {
+          if (resolved.length >= limit) break;
+          const sibNFC = normalizeNFC(sib);
+          const sibClean = stripAccents(sib);
+          const exactSib = masterCorpus.find((e) => normalizeNFC(e.title) === sibNFC);
+          const sibHit =
+            exactSib ||
+            masterCorpus.find(
+              (e) =>
+                stripAccents(e.title) === sibClean &&
+                (!selfCategory || !e.category || e.category === selfCategory || CATEGORY_AFFINITY[selfCategory]?.has(e.category))
+            );
+          pushUnique(sibHit);
+        }
+      }
+    }
+  }
+
+  // Tier 2b: Reverse Sovereign Parent & Sibling Lineage
   if (resolved.length < limit) {
     for (const parentCand of masterCorpus) {
       if (!Array.isArray(parentCand.sub_variants)) continue;
@@ -106,7 +192,7 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
     }
   }
 
-  // Tier 3: Global Semantic & Lexical Knowledge Graph Scorer (Zero Static Slicing)
+  // Tier 3: Global Semantic & Lexical Knowledge Graph Scorer with Semantic Domain Gating
   if (resolved.length < limit) {
     const selfTokens = extractGraphTokens(topMatch);
     const selfFullText = stripAccents(
@@ -122,9 +208,27 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
       const candTitleClean = stripAccents(cand.title);
       if (!candTitleClean || candTitleClean === selfTitleClean) continue;
 
-      let score = 0;
+      const isCrossCategory = Boolean(selfCategory && cand.category && cand.category !== selfCategory);
+      const isAffinityCompatible =
+        !isCrossCategory ||
+        CATEGORY_AFFINITY[selfCategory]?.has(cand.category) ||
+        CATEGORY_AFFINITY[cand.category]?.has(selfCategory);
 
       // Bi-directional cross-reference in text
+      const hasDirectMention =
+        (candTitleClean.length >= 4 && selfFullText.includes(candTitleClean)) ||
+        (selfTitleClean.length >= 4 &&
+          stripAccents([cand.description, cand.etymology_and_philosophy].filter(Boolean).join(' ')).includes(
+            selfTitleClean
+          ));
+
+      // Domain Gate: reject cross-category candidates lacking affinity or direct textual mention
+      if (isCrossCategory && !isAffinityCompatible && !hasDirectMention) {
+        continue;
+      }
+
+      let score = 0;
+
       if (candTitleClean.length >= 4 && selfFullText.includes(candTitleClean)) {
         score += 85;
       }

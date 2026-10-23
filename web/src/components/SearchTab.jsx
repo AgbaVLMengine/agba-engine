@@ -141,16 +141,42 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       matches.find((m) => stripAccents(m.title) === qClean && (m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept')) ||
       matches.find((m) => stripAccents(m.title) === qClean);
 
-    const parentNode =
+    const matchedNode =
       exactMatch ||
       matches.find((m) => m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept') ||
       matches[0];
 
+    let parentNode = matchedNode;
     let childVariants = [];
-    if (Array.isArray(parentNode.sub_variants) && parentNode.sub_variants.length > 0) {
-      childVariants = resolveSubVariantEntities(parentNode.sub_variants, parentNode).slice(0, 4);
-    } else {
-      childVariants = matches.filter((m) => m.title !== parentNode.title).slice(0, 4);
+
+    // Decouple Sovereign Parent / Living Sub-Variant hierarchy:
+    // If the matched entity is a living sub-variant, resolve its sovereign parent for the root pod
+    if (matchedNode.sovereign_parent && matchedNode.is_parent !== true) {
+      const spClean = stripAccents(matchedNode.sovereign_parent);
+      const trueParent = masterCorpus.find(
+        (m) =>
+          normalizeNFC(m.title) === normalizeNFC(matchedNode.sovereign_parent) ||
+          (stripAccents(m.title) === spClean && (m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept')) ||
+          stripAccents(m.title) === spClean
+      );
+      if (trueParent) {
+        parentNode = trueParent;
+        const siblings = Array.isArray(trueParent.sub_variants)
+          ? resolveSubVariantEntities(trueParent.sub_variants, trueParent)
+          : [];
+        childVariants = [
+          matchedNode,
+          ...siblings.filter((s) => s.title !== matchedNode.title)
+        ].slice(0, 4);
+      }
+    }
+
+    if (childVariants.length === 0) {
+      if (Array.isArray(parentNode.sub_variants) && parentNode.sub_variants.length > 0) {
+        childVariants = resolveSubVariantEntities(parentNode.sub_variants, parentNode).slice(0, 4);
+      } else {
+        childVariants = matches.filter((m) => m.title !== parentNode.title).slice(0, 4);
+      }
     }
 
     const relatedRegalia = findVisualRegaliaHit(parentNode.title) || findVisualRegaliaHit(qTrim);

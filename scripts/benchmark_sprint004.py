@@ -79,6 +79,14 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q13B_ODIDERE", "query": "Odídẹrẹ́", "expected_titles": ["Odídẹrẹ́", "Odidere"], "expected_sovereign_parent": "Ẹyẹ", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Ẹyẹ", "suite": "ANTI_PARENT_LOOP"},
     # 14. Apẹja (Bilateral Relatives)
     {"id": "Q14_APEJA_RELATIVES", "query": "Apẹja", "expected_titles": ["Apẹja"], "expected_category": "Traditional Trades, Agriculture & Agrarian Guilds", "is_parent_expected": True, "expected_relatives": ["Ẹja", "Ọkọ̀ Ojú Omi", "Odò Ọ̀ṣun", "Olókun"], "suite": "14_FRICTION_QUERIES"},
+    # 15. Èkó vs Ẹ̀kọ Disambiguation
+    {"id": "Q15_EKO_DISAMBIGUATION", "query": "Èkó", "expected_titles": ["Èkó (Maritime Capital & Cultural Center)", "Ìpínlẹ̀ Èkó"], "expected_category": "Civilization, History & Civic Heritage", "must_not_contain": ["Ẹ̀kọ"], "suite": "DISAMBIGUATION_SUITE"},
+    # 16. Ọ̀fà vs Ọfà Disambiguation
+    {"id": "Q16_OFA_DISAMBIGUATION", "query": "Ọ̀fà", "expected_titles": ["Ọ̀fà (Historical City & Ancient Kingdom)"], "expected_category": "Civilization, History & Civic Heritage", "must_not_contain": ["Ọfà Ọdẹ"], "suite": "DISAMBIGUATION_SUITE"},
+    # 17. Kàbbà Settlement Ingestion
+    {"id": "Q17_KABBA_OKUN", "query": "Kàbbà", "expected_titles": ["Kàbbà (Historic Okun Kingdom & City)"], "expected_category": "Civilization, History & Civic Heritage", "suite": "LIVING_VARIANTS_SUITE"},
+    # 18. Adó-Èkìtì Settlement Ingestion
+    {"id": "Q18_ADO_EKITI", "query": "Adó-Èkìtì", "expected_titles": ["Adó-Èkìtì (Ancestral Capital & Seat of the Ẹwí)", "Ìpínlẹ̀ Èkìtì"], "expected_category": "Civilization, History & Civic Heritage", "suite": "LIVING_VARIANTS_SUITE"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [

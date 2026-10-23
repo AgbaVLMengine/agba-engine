@@ -1,0 +1,1226 @@
+[
+  {
+    "id": "eja_aro",
+    "title": "Ẹja Àrọ̀",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹja",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eja aro",
+      "eja_aro",
+      "mudfish",
+      "clarias gariepinus",
+      "sacred mudfish"
+    ],
+    "description": "The African sharptooth mudfish (Clarias gariepinus), revered as the supreme sacred aquatic emissary of water divinities Ọ̀ṣun and Yemọja in Yorùbá riverine ecology.",
+    "etymology_and_philosophy": "Derived from 'Ẹja' (fish) and 'Àrọ̀' (one with the smooth, scaleless dark mantle). Philosophically, Ẹja Àrọ̀ symbolizes resilience, regeneration, and the ability to thrive in both muddy substrate and clear freshwater currents, reflecting the spiritual virtue of emotional equilibrium (Ìfọ̀kànbalẹ̀).",
+    "historical_timeline": "Mudfish zoomorphic iconography was cast in royal brass during the Classical Ilé-Ifẹ̀ Era (12th–14th C. CE) and carved onto ceremonial ivory pectoral plaques in Ọ̀wọ̀ and Ọ̀yọ́. During the 19th-century regional conflicts, riverine priests carried mudfish emblems to sanctify sacred crossing points along the Ọ̀ṣun, Ògùn, and Yewa rivers.",
+    "material_and_craftsmanship": "Depicted in lost-wax brass castings, palace door reliefs by master carvers (Oníṣọ̀nà), and woven into ceremonial fish traps (Àgọ̀ Ẹja) crafted from cured raffia and wild cane by riverine fishing guilds (Apẹja).",
+    "social_and_ritual_context": "Presented as a living consecrated offering (Ẹbọ Tútù) at sacred riverbanks during the annual Ọdún Ọ̀ṣun festival to invoke maternal fertility, ancestral peace, and civic tranquility.",
+    "proverbs_and_oral_traditions": [
+      "Ẹja tútù kì í bọ́ sọ́wọ́ kí ó dákẹ́; àṣẹ Ọ̀ṣun ló fi ń wẹ̀ nínú odò. (The fresh mudfish does not slip into the hand without struggle; it navigates the river currents through the primordial grace of Ọ̀ṣun.)",
+      "Bí odò bá gbẹ, àrọ̀ a rìn nínú ẹrẹ̀. (When the riverbed recedes, the mudfish walks patiently through the silt, enduring hardship until the rains return.)"
+    ],
+    "diaspora_connections": "Preserved in Cuban Lucumí and Brazilian Candomblé Ketu rituals as 'Eja Oro', where freshwater offerings to Oxum and Yemanjá maintain direct continuity with classical riverine libations.",
+    "geographical_origin": "Yorùbá River Basins (Ọ̀ṣun, Ògùn, Yewa, Ọbà)",
+    "curatorial_guidelines": "When exhibiting or animating, highlight its distinctive barbels, smooth scaleless slate-black skin, and undulating movement. Avoid generic marine fish representations.",
+    "related_entities": [
+      "Ẹja",
+      "Apẹja",
+      "Odo Ọ̀ṣun",
+      "Olókun",
+      "Yemọja"
+    ]
+  },
+  {
+    "id": "abori_catfish",
+    "title": "Àbọ̀rí",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹja",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "abori",
+      "catfish",
+      "synodontis",
+      "eja abori"
+    ],
+    "description": "The large armored freshwater catfish (Synodontis / Chrysichthys species), distinguished by its formidable cranial bone structure and respected as a symbol of mental fortitude.",
+    "etymology_and_philosophy": "Compound of 'A-bọ́-orí' (One with a sheltered or armored head). Metaphysically tied to the cult of Orí (Inner Destiny), signifying protection of the spiritual crown and unyielding mental endurance.",
+    "historical_timeline": "Documented in oral hunting and fishing recitations since the early Ọ̀yọ́ Empire, celebrated by riverine guilds as a catch requiring specialized deep-water hook lines (Ìwọ̀ Apẹja).",
+    "material_and_craftsmanship": "Its dried dorsal spine and skull plates were historically utilized by herbalists and master carvers as natural burnishers for fine hardwood carving.",
+    "social_and_ritual_context": "Utilized in specialized Ìborí rites (feeding of one's personal spiritual head) to petition for clarity, resilience against witchcraft (Àjẹ́), and sovereign focus.",
+    "proverbs_and_oral_traditions": [
+      "Àbọ̀rí kì í bẹ̀rù orí kíkú; orí rẹ̀ l’aṣọ rẹ̀. (The armored catfish never fears injury to its head; its cranial bone is its own ancestral shield.)"
+    ],
+    "diaspora_connections": "Retained in Afro-Brazilian Umbanda and Candomblé under freshwater fish invocations honoring Oxóssi and Oxum.",
+    "geographical_origin": "Yorùbáland (Ogun and Osun River estuaries)",
+    "curatorial_guidelines": "Highlight the distinctive hardened cranial shield and whisker sensory arrays in display illustrations.",
+    "related_entities": [
+      "Ẹja",
+      "Apẹja",
+      "Orí",
+      "Odo Ọ̀ṣun"
+    ]
+  },
+  {
+    "id": "eja_kika",
+    "title": "Ẹja Kíka",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹja",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eja kika",
+      "smoked fish",
+      "ring-coiled fish",
+      "eja aro kika"
+    ],
+    "description": "The sacred ring-coiled smoked fish, prepared by bending a freshly harvested mudfish head-to-tail over hardwood smoke, forming the eternal circular emblem of infinity and divine offerings.",
+    "etymology_and_philosophy": "Derived from 'Ẹja' (fish) and 'Kíka' (coiled/curled in a circular ring). The unbroken circle represents continuity of life, lineage preservation, and completeness in ritual covenants.",
+    "historical_timeline": "Smoked fish processing is an ancient coastal and riverine trade documented by Duarte Pacheco Pereira in the 15th century, serving as both food preservation and staple ritual currency.",
+    "material_and_craftsmanship": "Smoked slowly over green hardwood branches (Igi Ọ̀pẹ or Igi Ìrókò) on elevated clay smoking racks (Àpáta Ẹja) until attaining a rich golden-amber sheen.",
+    "social_and_ritual_context": "Mandatory component of traditional engagement dowries (Ẹrù Ìgbéyàwó), Babaláwo divination consultations, and annual ancestor feasts.",
+    "proverbs_and_oral_traditions": [
+      "Ẹja tútù ní ń yí kika; bí ó bá ti gbẹ, tí a bá tẹ́ ẹ a já. (It is the fresh fish that bends smoothly into a ring; once dried, bending it will only shatter it.)"
+    ],
+    "diaspora_connections": "Revered across diaspora markets in London, Salvador da Bahia, Havana, and New York as a primary liturgical offering for Eshu and the Orishas.",
+    "geographical_origin": "Coastal Lagos, Badagry, and Niger-Delta lagoons",
+    "curatorial_guidelines": "Illustrate the distinct bamboo skewer that secures the tail into the mouth to form the ring.",
+    "related_entities": [
+      "Ẹja",
+      "Apẹja",
+      "Oúnjẹ",
+      "Èṣù"
+    ]
+  },
+  {
+    "id": "igbin_snail",
+    "title": "Ìgbín",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "igbin",
+      "land snail",
+      "archachatina marginata",
+      "sacred snail"
+    ],
+    "description": "The giant African land snail (Archachatina marginata), revered as the embodiment of tranquil coolness (Èrò), patience, and the primary sacred offering to Obàtálá.",
+    "etymology_and_philosophy": "Philosophically associated with 'Èrò' (soothing calm) and 'Ọ̀wọ̀' (reverence). Its clear hemolymph (Omi Ìgbín) is the supreme fluid of metaphysical peace, washing away spiritual heat and discord.",
+    "historical_timeline": "Snail shells dating back to archaeological deposits in Ifẹ̀ and Ìpetumodù show its ritual and gastronomic antiquity stretching back over a millennium.",
+    "material_and_craftsmanship": "Shells (Ìkarahun Ìgbín) were polished and carved into musical friction rasps, containers for sacred medicines, and shrine votives.",
+    "social_and_ritual_context": "Sacred offering presented at shrines of white divinities (Òrìṣà Funfun) to purify contested ground, crown monarchs, and bless newborns.",
+    "proverbs_and_oral_traditions": [
+      "Ìrọ̀rùn igbín ni ìrọ̀rùn igi; ilé tó tòrò ló ń gbé. (The comfort of the snail is the comfort of the tree it rests on; peace in one creates peace in all.)"
+    ],
+    "diaspora_connections": "Preserved in Cuban Santería as 'Babosa' (sacred to Obatala) and in Candomblé Ketu as 'Ibi', indispensable for consecrations of initiate heads.",
+    "geographical_origin": "Southern Yorùbá Rain Forest Belts",
+    "curatorial_guidelines": "Depict the spiral brown-striped shell and translucent calm fluids, avoiding repulsive or pest-like visual framing.",
+    "related_entities": [
+      "Obàtálá",
+      "Ẹranko",
+      "Òrìṣà"
+    ]
+  },
+  {
+    "id": "alagemo_chameleon",
+    "title": "Alágẹmọ",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "alagemo",
+      "chameleon",
+      "agemo",
+      "chamaeleo senegalensis"
+    ],
+    "description": "The West African chameleon (Chamaeleo senegalensis), celebrated in creation myths as Olódùmarè's royal tester of terrestrial stability and patron of the Ìjẹ̀bú Agẹmọ festival.",
+    "etymology_and_philosophy": "From 'A-ní-àgẹmọ' (The one possessing chameleon majesty). Symbolizes adaptability, profound deliberation, multidimensional vision, and patient mastery over changing circumstances.",
+    "historical_timeline": "Central to the Odù Ifá creation cosmology where Alágẹmọ was dispatched by Ọlọ́run to test whether the earth formed by Obàtálá was solid enough to sustain human footfalls.",
+    "material_and_craftsmanship": "Embodied in the monumental woven fiber masks and kinetic dancing masquerades of the annual Agẹmọ confederacy in Ìjẹ̀búland.",
+    "social_and_ritual_context": "Its slow, deliberate gait (Ìrìn Alágẹmọ) is taught to royalty and initiates as the highest model of diplomatic composure and thoughtful statecraft.",
+    "proverbs_and_oral_traditions": [
+      "Alágẹmọ ti dá tirẹ̀ tán, àwùjọ ló kù sí. (The chameleon has exhibited its diverse colors; it is now up to the assembly to interpret the spectacle.)"
+    ],
+    "diaspora_connections": "Revered in Afro-Caribbean traditions as a symbol of divine mystery and the messenger between earth and the sun.",
+    "geographical_origin": "Ìjẹ̀búland and Rainforest Woodlands",
+    "curatorial_guidelines": "Portray with independent turret eyes and prehensile tail in deliberate stepping postures.",
+    "related_entities": [
+      "Agẹmọ",
+      "Obàtálá",
+      "Olódùmarè",
+      "Ẹranko"
+    ]
+  },
+  {
+    "id": "odidere_parrot",
+    "title": "Odídẹrẹ́",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "odidere",
+      "african grey parrot",
+      "psittacus erithacus",
+      "ikode bird"
+    ],
+    "description": "The African grey parrot (Psittacus erithacus), celebrated for vocal mimicry, intellectual wisdom, and the sacred crimson tail plume (Ìkódẹ) that crowns royal monarchs.",
+    "etymology_and_philosophy": "Metaphysically recognized as the supreme communicator among winged creatures. Its crimson feather (Ìkódẹ) symbolizes executive royal speech, protective vitality, and the sanction of the Mothers (Àwọn Ìyá Mi).",
+    "historical_timeline": "Documented since pre-colonial times as a bird protected by royal edict; hunting parrots without palace authorization was strictly forbidden in ancient Ọ̀yọ́ and Ifẹ̀.",
+    "material_and_craftsmanship": "Its tail feathers (Ẹyin Ìkódẹ) are harvested non-destructively during seasonal molting and mounted onto conical beaded royal crowns (Adé Ìlèkè) by palace master beadworkers.",
+    "social_and_ritual_context": "Inserted into the monarch's crown during the Ìwúyè coronation rites, and bestowed upon newly initiated Babaláwos to confirm their authority to articulate divine truth.",
+    "proverbs_and_oral_traditions": [
+      "Odídẹrẹ́ kì í fò kí ó fi ìkódẹ rẹ̀ sílẹ̀; àwọ̀ pupa rẹ̀ ni àṣẹ adé. (The African grey parrot never takes flight without its sacred tail feather; its brilliant crimson plume is the sovereign sanctifier of the royal crown.)",
+      "Odídẹrẹ́ l’ẹlẹ́yẹ òde; ohùn rẹ̀ ní ń gbèdé l’ààfin. (The parrot is the sovereign bird of speech; its clear voice commands attention inside the palace chambers.)"
+    ],
+    "diaspora_connections": "The red Ìkódẹ feather is the most sacred badge of priesthood ordination across Cuban Santería / Regla de Ocha and Brazilian Candomblé Ketu.",
+    "geographical_origin": "Western Nigeria Rainforest Canopy",
+    "curatorial_guidelines": "Feature the ash-grey body contrasting sharply with the vivid crimson tail feather; avoid green Amazon parrot visual mistakes.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Adé",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Babaláwo"
+    ]
+  },
+  {
+    "id": "agbe_turaco",
+    "title": "Agbe",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "agbe",
+      "great blue turaco",
+      "corythaeola cristata",
+      "blue turaco"
+    ],
+    "description": "The Great Blue Turaco (Corythaeola cristata), revered for its magnificent indigo-blue plumage and invoked as the patron avian spirit of indigo dyers (Àró) and textile wealth.",
+    "etymology_and_philosophy": "In liturgical poetry, Agbe is the divine bird that dives into the deep indigo vat of heaven and emerges dyed in the celestial blue of royalty, abundance, and spiritual depth.",
+    "historical_timeline": "Celebrated in classical Ìwọ̀ and Ọ̀yọ́ praise chants for centuries, honored by the Guild of Indigo Dyers as the emblem of master craftsmanship.",
+    "material_and_craftsmanship": "Its iridescent turquoise-blue crest feathers were incorporated into the crowns of paramount queens (Ọlorì) and ceremonial fans of Ọ̀ṣun initiates.",
+    "social_and_ritual_context": "Chanted at the opening of major market covenants and trade guild initiations to petition for commercial prosperity and vibrant dyed cloths.",
+    "proverbs_and_oral_traditions": [
+      "Agbe kì í dákẹ́ lórí igi; bí ó bá dákẹ́, ilé á tutù. (The blue turaco never falls silent upon the high branches; its song brings lively vitality to the forest.)",
+      "Agbe ní ń gbé aró fún olúweri. (It is the sacred Agbe that carries indigo dye to the guardians of the deep waters.)"
+    ],
+    "diaspora_connections": "Revered in Cuban Ocha chants honoring Yemojá and Ochún, invoking 'Agbe' to bring blue garments and prosperity.",
+    "geographical_origin": "Dense Yorùbá Rainforests",
+    "curatorial_guidelines": "Accurately portray the tall feathered crest, long graduated tail, and rich blue-green sheen of the Great Blue Turaco.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Àró",
+      "Aṣọ",
+      "Ọ̀ṣun"
+    ]
+  },
+  {
+    "id": "aluko_turaco",
+    "title": "Àlùkò",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aluko",
+      "guinea turaco",
+      "tauraco persa",
+      "red turaco"
+    ],
+    "description": "The Guinea Turaco (Tauraco persa), celebrated for its brilliant carmine-crimson wing patches and honored as the avian guardian of camwood cosmetics (Osùn) and radiant royalty.",
+    "etymology_and_philosophy": "Paired liturgically with Agbe: while Agbe is blessed with indigo (Aró), Àlùkò is blessed with camwood (Osùn). Symbolizes joyful pageantry, radiant health, and aristocratic blessing.",
+    "historical_timeline": "Embodied on carved palace veranda posts by Olowe of Ise and documented in classic Odù Ifá chapters for over four centuries.",
+    "material_and_craftsmanship": "Wing feathers containing indigenous copper-rich turacin pigment were mounted onto royal hair ornaments and ceremonial dance staves.",
+    "social_and_ritual_context": "Invoked during royal bridal ceremonies (Ìgbéyàwó) and naming rites to bestow glowing beauty, fertility, and high social standing upon daughters.",
+    "proverbs_and_oral_traditions": [
+      "Àlùkò ní ń gbé osùn fún olú-ìfẹ̀. (It is the red turaco that bears sacred camwood powder to the supreme sovereign of Ifẹ̀.)"
+    ],
+    "diaspora_connections": "Preserved in Afro-Cuban patakís where the bird's red wings reward faithful devotion to ancestral rites.",
+    "geographical_origin": "Southwestern Nigeria Forests",
+    "curatorial_guidelines": "Ensure the crimson flight feathers flash prominently against the green plumage when wings are extended.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Agbe",
+      "Osùn",
+      "Adé"
+    ]
+  },
+  {
+    "id": "asa_hawk",
+    "title": "Àṣá",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "asa",
+      "hawk",
+      "african goshawk",
+      "falcon"
+    ],
+    "description": "The African goshawk and falcon (Accipiter species), revered for aerial speed, razor-sharp hunting precision, and unyielding military focus in warrior culture.",
+    "etymology_and_philosophy": "Emblem of martial decisiveness. Unlike scavenging birds, Àṣá attacks with swift directness, teaching warriors that victory requires unhesitating execution.",
+    "historical_timeline": "War generals (Balógun) during the 19th-century Kiriji and Owu wars were compared to Àṣá in their battle oríkì chants.",
+    "material_and_craftsmanship": "Feathers were bound to war helmets and defensive battle charms by military blacksmiths and armorers.",
+    "social_and_ritual_context": "Chanted in Ìjálá Ọdẹ (hunter poetry) to inspire courage in tracking dangerous game across rugged forest canopies.",
+    "proverbs_and_oral_traditions": [
+      "Àṣá kì í fò kí ó kùnà ẹran; ojú rẹ̀ mọ́ ju iná ogun lọ. (The hawk never dives to miss its prey; its gaze is keener than the flames of war.)"
+    ],
+    "diaspora_connections": "Associated with the hunting attributes of Oshosi in Cuban Lucumí and Candomblé.",
+    "geographical_origin": "Savannah-Forest Mosaic of Yorùbáland",
+    "curatorial_guidelines": "Depict in predatory flight or perched alertly with hooked talons and sharp yellow cere.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Ọ̀ṣọ́ọ̀sì",
+      "Balógun",
+      "Ọfà"
+    ]
+  },
+  {
+    "id": "awodi_black_kite",
+    "title": "Àwòdì",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "awodi",
+      "black kite",
+      "milvus migrans",
+      "kite"
+    ],
+    "description": "The Black Kite (Milvus migrans), famous for soaring effortlessly on thermal updrafts and embodying the philosophy of transcendent grace amidst environmental turmoil.",
+    "etymology_and_philosophy": "Associated with effortless elevation. While others scramble on the ground, Àwòdì rides the winds, teaching detachment and visionary perspective.",
+    "historical_timeline": "Referenced in Samuel Johnson's 1921 history as an omen bird observed by scouts during dry-season brush fires.",
+    "material_and_craftsmanship": "Its wing silhouettes are abstracted in geometric patterns on traditional indigo Àdìrẹ cloth (Àdìrẹ Ẹlẹ́yẹ).",
+    "social_and_ritual_context": "Invoked in seasonal prayers for peaceful transitions and the ability to rise above communal gossip and malice.",
+    "proverbs_and_oral_traditions": [
+      "Àwòdì ń fò, ó ń w’ara rẹ̀ l’ọ́jọ̀; ẹyẹ tí kò mọ̀ fò á rìn l’ẹ́sẹ̀ ilẹ̀. (The black kite soars, admiring its own aerial poise; only the bird that lacks wings walks the dust.)"
+    ],
+    "diaspora_connections": "Features in Lucumí folklore as the bird that carries prayers up to Olodumare.",
+    "geographical_origin": "Pan-Yorùbáland Skies",
+    "curatorial_guidelines": "Show the distinct forked tail and expansive brown wingspan soaring on air currents.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Àdìrẹ",
+      "Olódùmarè"
+    ]
+  },
+  {
+    "id": "eyele_pigeon",
+    "title": "Ẹyẹlé",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eyele",
+      "pigeon",
+      "domestic dove",
+      "columba livia"
+    ],
+    "description": "The domestic pigeon (Columba livia), universally revered across Yorùbá civilization as the supreme symbol of household peace, prosperity, and unshakeable domestic loyalty.",
+    "etymology_and_philosophy": "Compound of 'Ẹyẹ' (bird) and 'Ilé' (home/compound), literally 'The Bird of the Household'. Teaches that true prosperity resides in a harmonious domestic sanctuary.",
+    "historical_timeline": "Bred in royal palace courtyards (Ààfin) and compound lofts since antiquity as living emblems of peaceful governance.",
+    "material_and_craftsmanship": "Carved on wooden compound entrance posts and depicted in bronze courtyard finials throughout Ifẹ̀ and Ọ̀yọ́.",
+    "social_and_ritual_context": "Premier consecrated offering for personal Destiny (Orí) and household fertility ceremonies; never sacrificed in acts of conflict.",
+    "proverbs_and_oral_traditions": [
+      "Ẹyẹlé kì í bínú kúrò nílé; bí ó bá fò lọ, á tún padà sí kọ̀tọ̀ rẹ̀. (The domestic pigeon never abandons its home in anger; though it flies far, it always returns to its nesting nook.)"
+    ],
+    "diaspora_connections": "The white pigeon (Paloma) is the paramount offering to Obatala in Cuban Santería and Candomblé worldwide.",
+    "geographical_origin": "Pan-Yorùbá Compounds and Towns",
+    "curatorial_guidelines": "Portray gentle white, speckled, or iridescent plumage in peaceful domestic architectural surroundings.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Ilé",
+      "Orí",
+      "Obàtálá"
+    ]
+  },
+  {
+    "id": "aparo_bush_fowl",
+    "title": "Àpárò",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aparo",
+      "bush fowl",
+      "francolin",
+      "francolinus bicalcaratus"
+    ],
+    "description": "The Double-spurred Francolin or bush fowl (Francolinus bicalcaratus), renowned for its mottled camouflage, ground-nesting grit, and early morning agrarian alarm call.",
+    "etymology_and_philosophy": "Symbol of self-reliance, agrarian hardiness, and ground-level vigilance. Emphasizes that modesty and camouflage protect the vulnerable far better than vanity.",
+    "historical_timeline": "Central character in hundreds of classical Yorùbá fables collected by D.O. Fagunwa and Babalola, representing the industrious agrarian commoner.",
+    "material_and_craftsmanship": "Its mottled feathers were studied by master hunters to design camouflage hunting smocks (Àwọ̀tẹ́lẹ̀ Ọdẹ).",
+    "social_and_ritual_context": "Chanted by farmers (Àgbẹ̀) at sunrise to coordinate cooperative dawn farming expeditions (Àárọ̀).",
+    "proverbs_and_oral_traditions": [
+      "Bí àpárò bá mọ orí rẹ̀ l’óko, kò ní jẹ́ kí àkìtàn gbá a l’ọ́rùn. (If the bush fowl respects its own camouflage, it will never fall into the farmer's simple snare.)"
+    ],
+    "diaspora_connections": "Preserved in Lucumí folklore as the wise bird that outsmarts arrogant predators through silence.",
+    "geographical_origin": "Farmlands and Savannah Grasslands of Yorùbáland",
+    "curatorial_guidelines": "Depict ground-dwelling postures amidst dry grass, showcasing brown and cream mottled plumage.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Àgbẹ̀",
+      "Ọdẹ"
+    ]
+  },
+  {
+    "id": "igun_vulture",
+    "title": "Igun",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "igun",
+      "igunnugun",
+      "hooded vulture",
+      "neophron monachus",
+      "vulture"
+    ],
+    "description": "The Hooded Vulture (Necrosyrtes monachus), revered in Yorùbá cosmology as the supreme sacerdotal carrier of sacrifices (Ẹbọ) to the celestial realm of Olódùmarè.",
+    "etymology_and_philosophy": "Full liturgical title 'Igunnugun'. Far from being reviled, Igun is protected by sacred taboo; without its consumption of the sacrifice at the shrine crossroads, the prayer is not sealed.",
+    "historical_timeline": "Protected under strict ancestral law; harming or killing a vulture in traditional Yorùbá kingdoms incurred severe civic and spiritual penalties.",
+    "material_and_craftsmanship": "Symbolized in cast bronze ritual bells, Ọ̀sanyìn physician staves, and iron crossroads shrines.",
+    "social_and_ritual_context": "Crucial element of all high communal atonement rites; the arrival and feeding of the vulture signals divine acceptance of the community's prayers.",
+    "proverbs_and_oral_traditions": [
+      "Ẹni tó pa igun, ó pa ara rẹ̀; igun kì í kú l’ẹ́yìn odò lásán. (Whoever harms the sacred vulture harms their own destiny; the vulture never perishes without cosmic consequence.)",
+      "Igun kì í kú s’óko; orí ẹbọ ló ń gbé e lọ. (The vulture never dies uselessly in the field; it is drawn inexorably to the sacred altar of life.)"
+    ],
+    "diaspora_connections": "Known as 'Tiñosa' in Cuban Santería, recognized as the sacred bird through which Oshun saved the world from drought.",
+    "geographical_origin": "Pan-Yorùbá Settlements and Shrines",
+    "curatorial_guidelines": "Present with solemn spiritual reverence, highlighting its role as sacred purifier rather than modern horror trope.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Ẹbọ",
+      "Ọ̀ṣun",
+      "Olódùmarè"
+    ]
+  },
+  {
+    "id": "owiwi_owl",
+    "title": "Òwìwí",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹyẹ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "owiwi",
+      "barn owl",
+      "tyto alba",
+      "african wood owl",
+      "owl"
+    ],
+    "description": "The Barn Owl and African Wood Owl (Tyto alba / Strix woodfordii), revered as the nocturnal emissary of the Primordial Mothers (Àwọn Ìyá Mi) and custodian of nocturnal secrets.",
+    "etymology_and_philosophy": "Embodied with the power of nocturnal discernment, silent flight, and penetrating sight through darkness. Teaches that unseen deeds are always observed by the cosmic custodians.",
+    "historical_timeline": "Maintained in secret society shrines and referenced in the most esoteric Odù Ifá chapters (such as Òsá Méjì) for centuries.",
+    "material_and_craftsmanship": "Abstracted on the carved wooden headdress crests of Gẹ̀lẹ̀dẹ́ masquerades dedicated to appeasing female spiritual elders.",
+    "social_and_ritual_context": "Its night call is treated not with terror, but with ceremonial appeasement, prompting the offering of cooling fluids (Èrò) to honor the nocturnal council.",
+    "proverbs_and_oral_traditions": [
+      "Òwìwí kì í ké lásán l’álẹ́; àṣẹ Àwọn Ìyá Mi ló ń kéde. (The owl never calls in the dead of night without purpose; it proclaims the active vigilance of the Primordial Mothers.)"
+    ],
+    "diaspora_connections": "Revered in Cuban Palo Mayombe and Lucumí as the sacred nocturnal messenger of Oya and Yewá.",
+    "geographical_origin": "Forest-Savannah Ecotones of Yorùbáland",
+    "curatorial_guidelines": "Emphasize heart-shaped facial disk and silent, feathered wing anatomy in twilight or moonlight tones.",
+    "related_entities": [
+      "Ẹyẹ",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Gẹ̀lẹ̀dẹ́",
+      "Òsá Méjì"
+    ]
+  },
+  {
+    "id": "erin_elephant",
+    "title": "Erin",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "erin",
+      "ajanaku",
+      "african bush elephant",
+      "loxodonta africana",
+      "elephant"
+    ],
+    "description": "The African bush elephant (Loxodonta africana), reverently hailed by its honorific title 'Àjànàkú', the supreme monarch of all terrestrial beasts.",
+    "etymology_and_philosophy": "Known as 'Àjànàkú kọjá orí rò láti dọdẹ' (The colossus beyond casual pursuit). Symbolizes supreme physical authority, unshakeable memory, majesty, and peerless nobility.",
+    "historical_timeline": "Central to ancient hunter oral traditions (Ìjálá Ọdẹ); elephant tail hair and ivory tusks were sovereign monopolies of the Aláàfin of Ọ̀yọ́ and Ọlọ́wọ̀ of Ọ̀wọ̀ for over 700 years.",
+    "material_and_craftsmanship": "Its tusks (Eyín Erin) were carved into monumental sacred trumpets, royal armlets (Ẹ̀gbà Ọwọ́ Ọ̀wọ̀), ceremonial swords (Udàmalóre), and divination tappers (Ìrókẹ́ Ifá).",
+    "social_and_ritual_context": "Slaying an elephant in antiquity was the crowning achievement of a master hunter (Ògbójú Ọdẹ), requiring 7 days of purification rites and civic pageantry.",
+    "proverbs_and_oral_traditions": [
+      "Àjànàkú kọjá mo rí nǹkan fìrí; bí a bá r’ẹ́rin, ká sọ pé a r’ẹ́rin. (The elephant transcends a fleeting glimpse; when an elephant is seen, one must plainly proclaim: we have beheld a colossus!)",
+      "Erin kì í fọwọ́ rọ́ igi kí igi má wó. (The elephant never leans its mighty flank against a tree without the forest tree yielding.)"
+    ],
+    "diaspora_connections": "Revered as the animal totem of Obatala and Ogun across Cuba, Brazil, and Trinidad, symbolizing indestructible strength.",
+    "geographical_origin": "High Rainforests and Savannah Sanctuaries of Yorùbáland",
+    "curatorial_guidelines": "Highlight grand scale, majestic ivory tusks, and deep leathery wrinkled skin in noble postures.",
+    "related_entities": [
+      "Ẹranko",
+      "Adé",
+      "Udàmalóre",
+      "Ọdẹ"
+    ]
+  },
+  {
+    "id": "aguntan_sheep",
+    "title": "Àgùntàn",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aguntan",
+      "sheep",
+      "west african dwarf sheep",
+      "ewe"
+    ],
+    "description": "The West African dwarf sheep (Ovis aries), revered across Yorùbá traditions for supreme docility, patient forbearance, and cooling sacrificial reconciliation.",
+    "etymology_and_philosophy": "Embodied as the avatar of peaceful compliance (Ìfaradà). Where the goat (Ewúrẹ́) is headstrong, Àgùntàn accepts guidance, teaching civic obedience and quiet dignity.",
+    "historical_timeline": "Domesticated across compound settlements since early Ifẹ̀ agrarian eras, serving as customary gift currency between royal dynasties.",
+    "material_and_craftsmanship": "Its woolly fleece was utilized in ceremonial upholstery, and its horn (Ìwo Àgùntàn) crafted into consecrated medicinal containers.",
+    "social_and_ritual_context": "Sacred offering presented to deities of thunder and justice (Ṣàngó) and supreme peace (Obàtálá) to extinguish destructive wrath.",
+    "proverbs_and_oral_traditions": [
+      "Àgùntàn tó bá fẹ́ hùwà ewúrẹ́, á pẹ́ tẹ́; ìwà tútù l’aṣọ rẹ̀. (The sheep that mimics the stubbornness of the goat will meet early shame; gentle poise is its true ancestral garment.)"
+    ],
+    "diaspora_connections": "Preferred sacrificial offering for Changó and Obatala in Cuban Santería and Brazilian Candomblé.",
+    "geographical_origin": "Pan-Yorùbá Rural and Urban Settlements",
+    "curatorial_guidelines": "Portray the compact, hardy West African dwarf sheep breed rather than fluffy European wool sheep.",
+    "related_entities": [
+      "Ẹranko",
+      "Ṣàngó",
+      "Obàtálá",
+      "Ewúrẹ́"
+    ]
+  },
+  {
+    "id": "ewure_goat",
+    "title": "Ewúrẹ́",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ewure",
+      "goat",
+      "west african dwarf goat",
+      "capra hircus"
+    ],
+    "description": "The West African dwarf goat (Capra hircus), renowned for irrepressible tenacity, curiosity, obstinate resourcefulness, and ubiquitous presence in Yorùbá settlements.",
+    "etymology_and_philosophy": "Symbolizes tenacious individuality and stubborn persistence. Frequently contrasted with the sheep to warn against defiance of communal elder consensus.",
+    "historical_timeline": "Central to the domestic compound economy for thousands of years, tended primarily by matriarchs and young compound apprentices.",
+    "material_and_craftsmanship": "Cured goat hide (Awọ Ewúrẹ́) is the paramount leather membrane stretched over traditional Dùndún and Bàtá drums by master drum builders.",
+    "social_and_ritual_context": "Standard sacred offering for Èṣù-Ẹlẹ́gbára, honoring the principle of stubborn vitality and crossroads choices.",
+    "proverbs_and_oral_traditions": [
+      "Ewúrẹ́ ń bímọ, ó ń kọ́ ọ n’íwà; ẹni tó kọ̀ láti gbọ́ ẹ̀kọ́ á jẹ orúkọ ẹranko. (The mother goat bears offspring while instructing them in life; whoever refuses discipline takes on animal folly.)"
+    ],
+    "diaspora_connections": "Primary consecrated offering to Elegba and Oggun throughout Afro-Caribbean and South American traditions.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Illustrate the agile, short-legged West African dwarf goat with short coat and curious expressive eyes.",
+    "related_entities": [
+      "Ẹranko",
+      "Èṣù",
+      "Dùndún",
+      "Bàtá"
+    ]
+  },
+  {
+    "id": "aja_hunting_dog",
+    "title": "Ajá",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aja",
+      "hunting dog",
+      "canis familiaris",
+      "pariah dog",
+      "sacred hound"
+    ],
+    "description": "The indigenous Yorùbá hunting hound and domestic canine, celebrated as the faithful forest companion of hunters (Ọdẹ) and the sacred consecrated offering to Ògún.",
+    "etymology_and_philosophy": "Emblem of acute sensory perception (Ìwòye), absolute fidelity to its master, and fearless pathfinding through dangerous wilderness.",
+    "historical_timeline": "Depicted in ancient Ifẹ̀ terracotta hunting plaques and central to oral epics describing the founding of warrior settlements like Ìbàdàn and Òkèmèsí.",
+    "material_and_craftsmanship": "Fitted with consecrated iron hunting bells (Ṣawọ̀rọ̀ Ọdẹ) forged by blacksmiths to track position during dense bush drives.",
+    "social_and_ritual_context": "The central covenant offering to Ògún during the annual Blacksmith and Driver festivals, cementing oaths of justice and iron sanctity.",
+    "proverbs_and_oral_traditions": [
+      "Ajá kì í gbó lójú olówó rẹ̀ lásán; ohun tí ó rí l’ó ń fi gbó. (The dog never barks in its master's presence in vain; it barks only when it perceives an unseen reality.)"
+    ],
+    "diaspora_connections": "Indispensable in Cuban Santería and Candomblé for highest-level consecrations of Ogun's iron pot sanctuary.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Represent the sleek, alert, upright-eared African pariah hound with short fawn or brindle coat.",
+    "related_entities": [
+      "Ẹranko",
+      "Ògún",
+      "Ọdẹ",
+      "Ṣawọ̀rọ̀"
+    ]
+  },
+  {
+    "id": "obo_monkey",
+    "title": "Ọ̀bọ",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "obo",
+      "monkey",
+      "colobus",
+      "cercopithecus",
+      "forest monkey"
+    ],
+    "description": "The tree-dwelling forest monkey, celebrated for nimble acrobatic agility, sharp comedic intellect, and deep kinship connections to twin mysteries (Ìbejì).",
+    "etymology_and_philosophy": "Closely associated with the spirit world of twins; sacred taboos strictly prohibit the harming of monkeys by parents of twin children.",
+    "historical_timeline": "Venerated in oral folklore and masked theater for centuries; prominent in traditional masquerade lineages in Ọ̀yọ́ and Abẹ́òkúta.",
+    "material_and_craftsmanship": "Its dynamic leaping movements inspired specialized acrobatic dance routines in ancestral Egúngún masquerades (Alápatà and Ọlọ́dẹ).",
+    "social_and_ritual_context": "Honored during Ọdún Ìbejì festivals through offerings of sweet fruits, fried beans, and songs acknowledging ancestral twin heritage.",
+    "proverbs_and_oral_traditions": [
+      "Ọ̀bọ kì í sọ̀kalẹ̀ sílẹ̀ kí ó tẹ́; igi tí ó gùn ló mọ̀. (The agile monkey never descends to earth to face humiliation; it masters the canopy it traverses.)"
+    ],
+    "diaspora_connections": "Revered in Cuban Lucumí as sacred to the Ibeji (Taewo and Kehinde), celebrated with sweet banquets.",
+    "geographical_origin": "Forest Canopies of Yorùbáland",
+    "curatorial_guidelines": "Depict with expressive agile posture high among forest boughs, avoiding demeaning caricature.",
+    "related_entities": [
+      "Ẹranko",
+      "Ibejì",
+      "Egúngún"
+    ]
+  },
+  {
+    "id": "okete_pouched_rat",
+    "title": "Òkété",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "okete",
+      "giant pouched rat",
+      "cricetomys gambianus",
+      "sacred rat"
+    ],
+    "description": "The African giant pouched rat (Cricetomys gambianus), celebrated for nocturnal thrift, subterranean burrowing prowess, and its pivotal role in Ifá divination covenants.",
+    "etymology_and_philosophy": "In Odù Ifá, Òkété is the only terrestrial creature that honored its sacred pledge to Ọ̀rúnmìlà during cosmic famine, earning eternal honor in divinatory rites.",
+    "historical_timeline": "Documented in the primordial Odù Ọ̀yẹ̀kú Méjì and celebrated across all 256 divinatory chapters for its supreme fidelity.",
+    "material_and_craftsmanship": "Its pelt and bones were historically incorporated into protective medicine gourds (Àdó Òògùn) by senior Babaláwo.",
+    "social_and_ritual_context": "A required consecrated offering in high-level Ifá initiations (Ìtẹ́fá) to unlock longevity, ancestral covenants, and ward off sudden death.",
+    "proverbs_and_oral_traditions": [
+      "Òkété t’ó bá fi orí gbẹ́ ilẹ̀, á dé ilé Olódùmarè. (The giant pouched rat that patiently burrows deep into the earth connects with the primordial foundation of existence.)"
+    ],
+    "diaspora_connections": "Maintains sacred status in Afro-Cuban Ifá priesthood as the premier offering for high Odù consecrations.",
+    "geographical_origin": "Pan-Yorùbá Woodlands and Farmlands",
+    "curatorial_guidelines": "Accurately illustrate large slender body, cheek pouches, and white-tipped tail.",
+    "related_entities": [
+      "Ẹranko",
+      "Ifá",
+      "Ọ̀rúnmìlà",
+      "Odù Ifá"
+    ]
+  },
+  {
+    "id": "elede_pig",
+    "title": "Ẹlẹ́dẹ̀",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "elede",
+      "pig",
+      "red river hog",
+      "potamochoerus porcus",
+      "swine"
+    ],
+    "description": "The wild red river hog and domestic pig, noted in Yorùbá folklore for intense earthy rooting instincts, physical fortitude, and prolific maternal fecundity.",
+    "etymology_and_philosophy": "Symbolizes deep connection to the rich moist earth (Ilẹ̀) and maternal multiplication, but often serves as a proverb cautionary archetype against lack of decorum.",
+    "historical_timeline": "The red river hog was actively tracked by royal hunters in early forest kingdoms; domestic swine breeds were raised along coastal creek settlements.",
+    "material_and_craftsmanship": "Its tusks were occasionally carved into protective amulets for young children to ward off childhood illnesses.",
+    "social_and_ritual_context": "Invoked in female reproductive rites to petition for abundant childbearing (Ọmọ Púpọ̀) and continuous lineage expansion.",
+    "proverbs_and_oral_traditions": [
+      "Bí ẹlẹ́dẹ̀ bá wẹ̀ tán, a tún padà sí ẹrẹ̀; ìwà inú kò ní tètè yí padà. (When the pig washes clean, it promptly returns to the mud; true character is not easily altered by cosmetic washing.)"
+    ],
+    "diaspora_connections": "Features in Lucumí patakís associated with specific paths of Babalú-Ayé and Yewá.",
+    "geographical_origin": "Forest Riverbanks and Lowland Valleys",
+    "curatorial_guidelines": "Distinguish between the vibrant rufous-red wild forest hog with tufted ears and domestic livestock.",
+    "related_entities": [
+      "Ẹranko",
+      "Ilẹ̀",
+      "Ọdẹ"
+    ]
+  },
+  {
+    "id": "kolokolo_fox",
+    "title": "Kòlòkọ̀lò",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "kolokolo",
+      "fox",
+      "side-striped jackal",
+      "canis adustus",
+      "wild fox"
+    ],
+    "description": "The African side-striped jackal and fox (Canis adustus), celebrated in classical moral folktales (Àlọ́) for uncanny cunning, stealth, and elusive survival instincts.",
+    "etymology_and_philosophy": "The quintessential literary archetype of clever opportunism. In traditional storytelling, Kòlòkọ̀lò frequently outwits larger predators through deception and agile flattery.",
+    "historical_timeline": "Integral to fireside moral education recorded across early Yoruba anthologies by Samuel Johnson, D.O. Fagunwa, and Chief J.O. Ajibola.",
+    "material_and_craftsmanship": "Its cured tail was mounted on specialized leather dance wands used by traditional theater performers (Aláàrìnjó).",
+    "social_and_ritual_context": "Referenced in customary court deliberations to warn elders against being deceived by deceptive rhetorical flattery.",
+    "proverbs_and_oral_traditions": [
+      "Kòlòkọ̀lò kì í rìn ní ọ̀sán gangan fún asán; ọgbọ́n ẹ̀tàn ló ń wá kiri. (The fox never roams in broad daylight without motive; it is ever calculating an opportunistic stratagem.)"
+    ],
+    "diaspora_connections": "Preserved in Afro-Atlantic folk fables in Cuba and Brazil as the trickster companion of the forest.",
+    "geographical_origin": "Savannah Woodlands and Open Scrublands",
+    "curatorial_guidelines": "Depict with bushy white-tipped brush, slender snout, and alert foraging posture in savannah twilight.",
+    "related_entities": [
+      "Ẹranko",
+      "Àlọ́",
+      "Òwe"
+    ]
+  },
+  {
+    "id": "ehoro_hare",
+    "title": "Ehoro",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ehoro",
+      "african savannah hare",
+      "lepus microtis",
+      "hare",
+      "rabbit"
+    ],
+    "description": "The African savannah hare (Lepus microtis), renowned across Yorùbá folklore for lightning evasive speed, hyper-vigilance, and long sensitive sensory ears.",
+    "etymology_and_philosophy": "Emblem of watchful avoidance of danger. In hunting philosophy, Ehoro teaches that fleeing from senseless peril is not cowardice, but supreme survival intelligence.",
+    "historical_timeline": "Documented across centuries of oral literature; considered prime game for apprentice hunters learning the craft of tracking.",
+    "material_and_craftsmanship": "Its soft pelt was utilized to pad royal sword hilts and inner linings of delicate regalia boxes.",
+    "social_and_ritual_context": "Invoked in protective travel prayers to petition for the instinctive speed to evade ambushes and road mishaps.",
+    "proverbs_and_oral_traditions": [
+      "Ehoro kì í fẹsẹ̀ rìn lójú ọdẹ; eré àlọ́ ni ń gbà á là. (The hare never strolls casually before the hunter; blinding velocity is its only salvation.)"
+    ],
+    "diaspora_connections": "Ancestral root of the Br'er Rabbit trickster folklore passed through enslaved Yorùbá ancestors into the Gullah Geechee and African American folklore.",
+    "geographical_origin": "Savannah Grasslands and Farmlands of Yorùbáland",
+    "curatorial_guidelines": "Emphasize long erect ears, elongated hind legs, and golden-brown speckled fur.",
+    "related_entities": [
+      "Ẹranko",
+      "Ọdẹ",
+      "Àlọ́"
+    ]
+  },
+  {
+    "id": "inoki_baboon",
+    "title": "Inoki",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "inoki",
+      "baboon",
+      "papio anubis",
+      "olive baboon",
+      "inoki eranko"
+    ],
+    "description": "The Olive Baboon (Papio anubis), respected in Yorùbá forest traditions for imposing physical strength, complex troop governance, and aggressive defensive solidarity.",
+    "etymology_and_philosophy": "Symbolizes fierce collective solidarity and territorial defense. In hunting guilds, an encounter with a baboon troop requires maximum caution and defensive tactical respect.",
+    "historical_timeline": "Revered along the rocky inselbergs of Èkìtì and Òndó where baboon troops have inhabited granite cliffs for millennia.",
+    "material_and_craftsmanship": "Depicted on ancient stone sculptures in Èsìẹ́ and carved wooden masks celebrating wilderness fortitude.",
+    "social_and_ritual_context": "Chanted in Ìjálá hunting poetry to teach warrior scouts the vital importance of collective battalion discipline.",
+    "proverbs_and_oral_traditions": [
+      "Inoki kì í dá rìn; ẹgbẹ́ rẹ̀ ní ń gbè é l’ẹ́yìn. (The baboon never roams in isolation; the united troop stands formidable behind it.)"
+    ],
+    "diaspora_connections": "Honored in Afro-Cuban Ocha invocations for the protective warriors of Ogun.",
+    "geographical_origin": "Granite Hills and Savanna Woodlands of Upper Yorùbáland",
+    "curatorial_guidelines": "Portray canine-like muzzle, thick mane of olive-grey hair, and commanding quadrupedal stance on rocky outcrops.",
+    "related_entities": [
+      "Ẹranko",
+      "Ọdẹ",
+      "Àpáta"
+    ]
+  },
+  {
+    "id": "adan_bat",
+    "title": "Àdán",
+    "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ẹranko",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "adan",
+      "fruit bat",
+      "eidolon helvum",
+      "straw-coloured fruit bat",
+      "bat"
+    ],
+    "description": "The straw-coloured fruit bat (Eidolon helvum), occupying a unique liminal classification in Yorùbá taxonomy as neither bird nor beast, celebrated for colony loyalty and inverted rest.",
+    "etymology_and_philosophy": "The ultimate symbol of liminal transcendence. Hanging upside down, Àdán observes the world from a reversed perspective, teaching philosophical contemplation and seeing beyond orthodox convention.",
+    "historical_timeline": "Colonies inhabiting ancient royal trees in Ilé-Ifẹ̀, Ọ̀yọ́, and Ìbàdàn have been protected as living ancestral barometers of seasonal fruit harvests for centuries.",
+    "material_and_craftsmanship": "Stylized in copper and brass shrine amulets used by traditional navigators and night travelers.",
+    "social_and_ritual_context": "Invoked in specialized metaphysical formulas to develop night vision, sensory intuition, and the ability to find sanctuary where others find disorientation.",
+    "proverbs_and_oral_traditions": [
+      "Àdán d’orí kodò, ó ń wo iṣẹ́ ẹyẹ; ó mọ̀ pé ilẹ̀ kò fẹsẹ̀ mú. (The bat hangs inverted, observing the bustling of other birds; it knows the world looks entirely different from the heights.)"
+    ],
+    "diaspora_connections": "Preserved in Lucumí and Palo traditions as a creature of nocturnal vision and crossroads wisdom.",
+    "geographical_origin": "Canopy Trees and Sacred Caves of Yorùbáland",
+    "curatorial_guidelines": "Illustrate hanging clusters among mahogany or palm boughs with golden-orange fur and expansive dark wings.",
+    "related_entities": [
+      "Ẹranko",
+      "Ẹyẹ",
+      "Ilé"
+    ]
+  },
+  {
+    "id": "apata_igi",
+    "title": "Àpáta Igi",
+    "category": "Military Traditions, Weaponry & Defense",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àpáta",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "apata igi",
+      "wooden shield",
+      "hardwood shield",
+      "war shield"
+    ],
+    "description": "The classical Yorùbá military war-shield handcrafted from seasoned dense hardwoods (such as Ìrókò, Afara, or Apa), reinforced with forged iron boss studs to deflect poisoned arrows and cavalry spears.",
+    "etymology_and_philosophy": "From 'Àpáta' (protective buckler/shield) and 'Igi' (seasoned timber). Symbolizes defensive fortitude, patience under assault, and the physical preservation of warrior lineage.",
+    "historical_timeline": "Employed by infantry regiments (Ọmọ Ogun) during the imperial expansion of Ọ̀yọ́ and standard equipment in the 19th-century defensive sieges of Òṣogbo and Kiriji.",
+    "material_and_craftsmanship": "Carved from single trunk sections, treated with indigenous botanical oils to resist splitting, and fitted with raw leather grip handles by master armorers.",
+    "social_and_ritual_context": "Consecrated before battle with libations to Ògún; striking one's spear against the wooden shield served as the formal battlefield declaration of defiance.",
+    "proverbs_and_oral_traditions": [
+      "Àpáta igi ńlá tó ń gba ọfà lọ́wọ́ ológun; àkò igi àbàbọ̀ kì í jẹ́ kí ọfà oró kan ẹran-ara. (The seasoned hardwood war-shield deflects the arrows of adversaries; its reinforced grain ensures that poisoned darts never graze warrior flesh.)"
+    ],
+    "diaspora_connections": "Depicted in sacred iconography of Ogun's armory across Afro-Cuban and Brazilian ceremonial temples.",
+    "geographical_origin": "Ọ̀yọ́, Ìbàdàn, and Ìjẹ̀ṣà Warrior Guilds",
+    "curatorial_guidelines": "Show the heavy carved grain, circular or oblong shape, and forged central iron boss plate.",
+    "related_entities": [
+      "Àpáta",
+      "Ogun (Warfare & Military Tradition)",
+      "Idà",
+      "Ọ̀kọ̀",
+      "Ọfà"
+    ]
+  },
+  {
+    "id": "apata_awo",
+    "title": "Àpáta Awọ",
+    "category": "Military Traditions, Weaponry & Defense",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àpáta",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "apata awo",
+      "hide shield",
+      "leather buckler",
+      "buffalo hide shield"
+    ],
+    "description": "The lightweight tactical buckler crafted from thick cured buffalo (Ẹ̀fọ̀n) or elephant (Erin) hide, engineered for rapid close-quarters parrying in dense forest warfare.",
+    "etymology_and_philosophy": "Compound of 'Àpáta' (shield) and 'Awọ' (cured hide). Represents kinetic agility, rapid mobility, and the defensive doctrine of deflecting blows rather than absorbing blunt impact.",
+    "historical_timeline": "Favored by scout skirmishers and forest vanguard units during the Èkìtìparapọ̀ liberation campaigns against heavy infantry.",
+    "material_and_craftsmanship": "Master tanners (Aláwọ̀) boiled and stretched tough hides over circular wooden armatures, hammering them with stone mallets and treating them with acacia tannin.",
+    "social_and_ritual_context": "Worn strapped to the left forearm, freeing the warrior's hand to manipulate bow strings or draw a side cutlass (Àdá Ìbílẹ̀).",
+    "proverbs_and_oral_traditions": [
+      "Awọ tó dán ló ń wọ bàtà; àpáta awọ tó le ní ń fọ́ idà lójú ogun. (The smooth hide makes the walking sandal; but the toughened hide shield shatters the sword stroke on the battlefield.)"
+    ],
+    "diaspora_connections": "Revered in Candomblé Ketu martial dances where initiates of Ogum perform stylized parrying with leather arm guards.",
+    "geographical_origin": "Èkìtì and Ìjẹ̀ṣà Highland Forests",
+    "curatorial_guidelines": "Depict circular concave shape with rich dark leather tooling and woven wrist straps.",
+    "related_entities": [
+      "Àpáta",
+      "Ogun (Warfare & Military Tradition)",
+      "Àdá Ìbílẹ̀",
+      "Ẹ̀fọ̀n"
+    ]
+  },
+  {
+    "id": "oko_ogun",
+    "title": "Ọ̀kọ̀ Ògún",
+    "category": "Military Traditions, Weaponry & Defense",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "oko ogun",
+      "consecrated spear",
+      "blacksmith spear",
+      "sacred javelin"
+    ],
+    "description": "The consecrated wrought-iron spear forged directly at the blacksmith's furnace altar, serving as both a frontline thrusting weapon and the supreme oath scepter of Ògún.",
+    "etymology_and_philosophy": "The pinnacle of sacred metallurgy. As Ògún is the divinity of iron, Ọ̀kọ̀ Ògún embodies unyielding truth, the execution of justice, and the inviolable sanctity of oaths.",
+    "historical_timeline": "Forged by Guild Blacksmiths (Alágbẹ̀dẹ) since early Ifẹ̀ iron smelting, carried by war leaders to lead pre-battle invocations.",
+    "material_and_craftsmanship": "Hand-hammered from indigenous bloomery iron, featuring leaf-shaped dual-edged blade with raised central spine and socketed hardwood haft.",
+    "social_and_ritual_context": "Sworn upon in customary dispute resolutions; stepping across or kissing the blade of Ọ̀kọ̀ Ògún bound disputants to absolute honesty under pain of divine retribution.",
+    "proverbs_and_oral_traditions": [
+      "Ọ̀kọ̀ Ògún kì í bá ẹni tí kò jẹ́ ọ̀tá jà; òtítọ́ ló ń wá kiri. (The sacred spear of Ògún never attacks one who is not an enemy of justice; it seeks only the vindication of truth.)"
+    ],
+    "diaspora_connections": "Central iron implement installed in the cauldron of Oggun in Cuban Lucumí and Brazilian Candomblé.",
+    "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, and Blacksmith Guilds",
+    "curatorial_guidelines": "Highlight wrought-iron hammer marks and blackened oil patina along the blade socket.",
+    "related_entities": [
+      "Ọ̀kọ̀",
+      "Ògún",
+      "Ogun (Warfare & Military Tradition)",
+      "Alágbẹ̀dẹ"
+    ]
+  },
+  {
+    "id": "ada_pepe",
+    "title": "Àdá Pẹ́pẹ́",
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àdá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ada pepe",
+      "short cutlass",
+      "clearing machete",
+      "bush knife"
+    ],
+    "description": "The short, broad-bladed clearing cutlass handcrafted for heavy brush clearing, yam mound weeding, and close undergrowth maintenance.",
+    "etymology_and_philosophy": "From 'Àdá' (cutlass) and 'Pẹ́pẹ́' (short, broad, and flattened). Represents pragmatic labor, unpretentious industry, and agrarian self-sufficiency.",
+    "historical_timeline": "Standard implement of the Yorùbá peasantry for generations, foundational to the agricultural transformation of the forest belt.",
+    "material_and_craftsmanship": "Forged by village blacksmiths with high-carbon cutting edge and wrapped with cured hide or carved mahogany hilt.",
+    "social_and_ritual_context": "Passed from father to son upon reaching the age of agricultural apprenticeship (Ọmọ Olóko), marking the transition into productive labor.",
+    "proverbs_and_oral_traditions": [
+      "Àdá pẹ́pẹ́ ní ń ṣẹ́gi nínú igbó; kì í ṣe gíga rẹ̀ ló fi ń ṣiṣẹ́. (It is the short, sturdy cutlass that fells timber in the thicket; its stature is modest, but its cutting power is immense.)"
+    ],
+    "diaspora_connections": "Revered across Afro-Caribbean agriculture as the primary tool of sugarcane and agricultural autonomy.",
+    "geographical_origin": "Pan-Yorùbá Agricultural Communities",
+    "curatorial_guidelines": "Emphasize broad, weighted tip designed for downward hacking strokes and aged wooden grip.",
+    "related_entities": [
+      "Àdá",
+      "Àdá Ìbílẹ̀",
+      "Àgbẹ̀",
+      "Oko"
+    ]
+  },
+  {
+    "id": "ida_oba",
+    "title": "Idà Ọba",
+    "category": "Monarchy, Royal Regalia & Governance",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Idà",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ida oba",
+      "royal state sword",
+      "palace sword",
+      "ceremonial sword of state"
+    ],
+    "description": "The supreme royal sword of state, carried before paramount Yorùbá monarchs (Ọba) as the physical embodiment of executive justice, ancestral sovereignty, and state authority.",
+    "etymology_and_philosophy": "Derived from 'Idà' (sword) and 'Ọba' (king). Represents the divine right of executive capital authority, tempered by the monarch's moral obligation to uphold peace (Àlàáfíà).",
+    "historical_timeline": "Preserved in royal armories in Ọ̀yọ́-Ilé, Ilé-Ifẹ̀, and Benin since the 14th century, displayed only during paramount coronation and civic festivals.",
+    "material_and_craftsmanship": "Cast in bronze or hand-forged steel with openwork geometric engravings, featuring carved ivory, silver, or beaded royal hilts.",
+    "social_and_ritual_context": "Borne by the royal sword-bearer (Ìlárí Idà) walking ahead of the Ọba during public processions; touching the scabbard sealed pardons or judicial verdicts.",
+    "proverbs_and_oral_traditions": [
+      "Idà Ọba kì í pa aláìṣẹ̀; ẹni tó bá dẹ́ṣẹ̀ ló ń bẹ̀rù ojú rẹ̀. (The royal sword of state never strikes the innocent; only the transgressor trembles before its edge.)"
+    ],
+    "diaspora_connections": "Paralleled in Afro-Brazilian and Cuban royalty suites celebrating the court of Xangô and Ogum.",
+    "geographical_origin": "Royal Palaces of Ọ̀yọ́, Ifẹ̀, and Ọ̀wọ̀",
+    "curatorial_guidelines": "Show elaborate filigree engravings, royal scabbard (Àkọ̀) with red velvet or beadwork, and ivory pommel.",
+    "related_entities": [
+      "Idà",
+      "Ọba",
+      "Adé",
+      "Orufanran"
+    ]
+  },
+  {
+    "id": "tanmogayi_blade",
+    "title": "Tanmogayi",
+    "category": "Military Traditions, Weaponry & Defense",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Idà",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "tanmogayi",
+      "double-edged sword",
+      "war thrusting blade",
+      "tanmogayi ida"
+    ],
+    "description": "The formidable double-edged straight combat sword utilized exclusively by elite generals (Ààrẹ Ọ̀nà Kakanfò and Balógun) for decisive battlefield breakthrough.",
+    "etymology_and_philosophy": "Traditional compound meaning 'Break through the formation of adversaries'. Embodies offensive supremacy, martial valor, and the warrior's code of never retreating.",
+    "historical_timeline": "Made famous during the military campaigns of Kúrunmí of Ìjàyè and Balógun Ìbíkúnlé of Ìbàdàn in the 19th century.",
+    "material_and_craftsmanship": "Forged with twin cutting edges tapering to a deadly piercing tip, fitted with heavy crossguards and leather-bound iron grips.",
+    "social_and_ritual_context": "Presented to supreme commanders during war councils; swearing upon Tanmogayi committed the army to victory or honorable death on the field.",
+    "proverbs_and_oral_traditions": [
+      "Tanmogayi kì í pada s’ápó lójú ogun; àbájáde iṣẹ́ ló ń fihàn. (The Tanmogayi sword never retreats into its scabbard in the midst of conflict; it reveals only the final verdict of conquest.)"
+    ],
+    "diaspora_connections": "Remembered in Afro-Cuban warrior praise poetry dedicated to Chango and Oggun as the ultimate cleaving blade.",
+    "geographical_origin": "Ìbàdàn, Ọ̀yọ́, and Ìjàyè Military Barracks",
+    "curatorial_guidelines": "Depict the straight, uncurved double-edged blade geometry with prominent central fuller channel.",
+    "related_entities": [
+      "Idà",
+      "Balógun",
+      "Ààrẹ Ọ̀nà Kakanfò",
+      "Ogun (Warfare & Military Tradition)"
+    ]
+  },
+  {
+    "id": "ogun_idile",
+    "title": "Ogún Ìdílé",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Oogun",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ogun idile",
+      "family estate",
+      "ancestral inheritance",
+      "lineage property"
+    ],
+    "description": "The ancestral family estate and patrimonial heritage held collectively by a Yorùbá lineage (Ìdílé), encompassing compound dwellings, farmland, royal titles, and ancestral shrines.",
+    "etymology_and_philosophy": "From 'Ogún' (inherited legacy/estate) and 'Ìdílé' (family lineage root). Customary law dictates that Ogún Ìdílé can never be alienated or sold to strangers; it is held in trust for unborn generations.",
+    "historical_timeline": "Codified under customary common law since pre-colonial era, documented by colonial jurists (such as A.K. Ajisafe 1924) as the cornerstone of social stability.",
+    "material_and_craftsmanship": "Consists of physical ancestral compound structures (Agbolé), agricultural holdings (Oko Ìdílé), and sacred family relics.",
+    "social_and_ritual_context": "Administered by the family head (Baálé or Olórí Ẹbí) in consultation with elder matriarchs (Ìyá Àgbà); partitioned only according to maternal groupings (Ìdí-Igi).",
+    "proverbs_and_oral_traditions": [
+      "Ogún Ìdílé kì í ṣe ohun tí a ń tà l’ọ́jà; ẹni tó bá ta ogún bàbá rẹ̀ ti ta orúkọ rẹ̀ nù. (The ancestral family estate is not merchandise for the open marketplace; whoever sells their father's patrimony has squandered their own name.)"
+    ],
+    "diaspora_connections": "Paralleled in Afro-Brazilian Terreiro houses where communal religious compounds (Ilê Axé) are held in collective spiritual trust.",
+    "geographical_origin": "Pan-Yorùbá Compounds and Townships",
+    "curatorial_guidelines": "Illustrate extended family compound courtyards with multiple verandas opening into communal meeting halls.",
+    "related_entities": [
+      "Oogun",
+      "Ẹbí",
+      "Ìdílé",
+      "Baálé"
+    ]
+  },
+  {
+    "id": "ogun_ile",
+    "title": "Ogún Ilẹ̀",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Oogun",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ogun ile",
+      "land inheritance",
+      "ancestral land property",
+      "customary land tenure"
+    ],
+    "description": "The customary inheritance of ancestral land, farmlands, and territorial acreage, governed by communal stewardship and intergenerational tenancy laws.",
+    "etymology_and_philosophy": "From 'Ogún' (inheritance) and 'Ilẹ̀' (earth/land). Based on the core metaphysical axiom that the land belongs to three constituencies: the ancestors who cleared it, the living who farm it, and the unborn who inherit it.",
+    "historical_timeline": "Formed the economic bedrock of Yorùbá agrarian civilization, defended against arbitrary British colonial expropriation in the landmark Privy Council cases of the 1920s.",
+    "material_and_craftsmanship": "Demarcated on the landscape using living boundary trees (such as Pèrègún or Àkòko) planted by elders at survey corners.",
+    "social_and_ritual_context": "Disputes are arbitrated at the palace of the Ọba or before lineage councils; swearing false claims over Ogún Ilẹ̀ invoked the wrath of the Earth goddess (Onílẹ̀).",
+    "proverbs_and_oral_traditions": [
+      "Ilẹ̀ kì í purọ́; ẹni tó bá jalè lórí ogún ilẹ̀, ilẹ̀ á jẹ ẹ́ l’ẹ́yìn. (The land never utters falsehood; whoever steals ancestral acreage will ultimately be swallowed by the earth.)"
+    ],
+    "diaspora_connections": "Echoed in maroon communities across the Caribbean and Americas where collective communal land titles preserved African tenure systems.",
+    "geographical_origin": "Pan-Yorùbá Farmland Territories",
+    "curatorial_guidelines": "Depict verdant farmland parcels bounded by flowering Peregun boundary trees and ancient stone boundary markers.",
+    "related_entities": [
+      "Oogun",
+      "Ilẹ̀",
+      "Àgbẹ̀",
+      "Ọba"
+    ]
+  },
+  {
+    "id": "aroko_ogun",
+    "title": "Àrọ̀kọ̀ Ogun (War)",
+    "category": "Oral Literature, Philosophy & Folklore",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àrọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aroko ogun",
+      "war summons",
+      "declaration of war",
+      "military aroko"
+    ],
+    "description": "The ancient non-verbal semiotic message of formal military ultimatum, constructed using a gunpowder charge, bullet, red feather, and severed cord to declare irreversible martial hostilities.",
+    "etymology_and_philosophy": "From 'Àrọ̀kọ̀' (symbolic physical transmission) and 'Ogun' (warfare). Represents the supreme diplomatic protocol that war must be formally and honorably declared before attack.",
+    "historical_timeline": "Dispatched by courier heralds (Ìkọ̀ Ogun) between imperial capitals during the 18th-century Ọ̀yọ́-Dahomey campaigns and the 19th-century Kiriji Wars.",
+    "material_and_craftsmanship": "Assembled with physical mnemonic items: a piece of lead shot, black powder, red camwood or feather, and a knot of palm fiber.",
+    "social_and_ritual_context": "Presented directly to the opposing ruler in open council; if the council unloosened the knots, negotiations continued; if they retained the lead shot, war commenced.",
+    "proverbs_and_oral_traditions": [
+      "Bí àrọ̀kọ̀ ogun bá dé, kì í ṣe àsìkò orin kíkọ; àkókò gbígbé idà ni. (When the war summons arrives, it is not the hour for singing; it is the moment to grasp the sword.)"
+    ],
+    "diaspora_connections": "Symbolic object messaging persisted among enslaved African leaders in Bahia during the 1835 Malê Revolt to transmit covert tactical directives.",
+    "geographical_origin": "Ọ̀yọ́-Ilé and Yorùbá Military Capitals",
+    "curatorial_guidelines": "Illustrate the physical parcel with authentic elements wrapped in brown raffia cloth, avoiding modern paper envelopes.",
+    "related_entities": [
+      "Àrọ̀kọ̀",
+      "Ogun (Warfare & Military Tradition)",
+      "Balógun",
+      "Ààrẹ Ọ̀nà Kakanfò"
+    ]
+  },
+  {
+    "id": "eyin_ikode_summons",
+    "title": "Ẹyin Ìkódẹ (Royal Summons)",
+    "category": "Oral Literature, Philosophy & Folklore",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àrọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eyin ikode",
+      "royal summons",
+      "ikode summons",
+      "parrot feather summons"
+    ],
+    "description": "The paramount royal semiotic summons consisting of a single crimson parrot feather dispatched in a sealed calabash, commanding an immediate, non-negotiable audience before the Ọba.",
+    "etymology_and_philosophy": "The red feather of the African grey parrot represents the sovereign eye and word of the monarch. Disregarding Ẹyin Ìkódẹ was legally equivalent to high treason against the realm.",
+    "historical_timeline": "Recorded by Samuel Johnson as the imperial summons utilized by the Aláàfin of Ọ̀yọ́ to convene high provincial governors and tribute kings.",
+    "material_and_craftsmanship": "Presented in a miniature polished calabash container (Àkèrè) lined with pristine white cotton (Òwú) to cushion the vibrant feather.",
+    "social_and_ritual_context": "Delivered into the recipient's hands by the official palace emissary (Ìlárí Ọba); the recipient touched the feather to their forehead before following the herald.",
+    "proverbs_and_oral_traditions": [
+      "Ẹyin ìkódẹ ti jáde l’ààfin; kò sí ẹni tó lè sọ pé òun kò gbọ́ ìpè ọba. (The crimson parrot summons has departed the palace; no subject can claim ignorance of the royal call.)"
+    ],
+    "diaspora_connections": "Reflected in Afro-Cuban coronation ceremonies where the feather commands absolute reverence from all initiated devotees.",
+    "geographical_origin": "Palaces of Ọ̀yọ́, Ifẹ̀, and Òkìtìpupa",
+    "curatorial_guidelines": "Show the polished miniature lidded calabash opened to reveal the single radiant scarlet parrot plume.",
+    "related_entities": [
+      "Àrọ̀kọ̀",
+      "Odídẹrẹ́",
+      "Ọba",
+      "Adé"
+    ]
+  },
+  {
+    "id": "aroko_alaafia",
+    "title": "Àrọ̀kọ̀ Àlàáfíà (Peace)",
+    "category": "Oral Literature, Philosophy & Folklore",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Àrọ̀kọ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "aroko alaafia",
+      "peace pact",
+      "white chalk covenant",
+      "aroko peace"
+    ],
+    "description": "The sacred physical semiotic parcel signaling peace, reconciliation, and mutual friendship, constructed using white chalk (Ẹfun), pristine white cloth, and sweet honey.",
+    "etymology_and_philosophy": "From 'Àlàáfíà' (wholesome peace/well-being). Emphasizes that peace is a deliberate cultural covenant built upon purity, sweet intentions, and collective goodwill.",
+    "historical_timeline": "Dispatched between rival kingdoms to conclude treaties following extended wars, such as the 1886 Peace Treaty ending the Kiriji War.",
+    "material_and_craftsmanship": "Features a spherical lump of white chalk (Ẹfun), a piece of handwoven white cotton cloth (Aṣọ Funfun), and dried sugar cane or honey pod.",
+    "social_and_ritual_context": "Opened in public assembly with community libations; the chalk is used to mark the brows of heralds to sanctify the end of hostilities.",
+    "proverbs_and_oral_traditions": [
+      "Àrọ̀kọ̀ àlàáfíà ní ń gba ìlú là; ẹfun funfun kì í bá epo jà. (The peace summons preserves the kingdom; pure white chalk never wages war against sweet palm oil.)"
+    ],
+    "diaspora_connections": "Present in Brazilian Candomblé where white cloth and chalk covenants establish peace between competing spiritual houses.",
+    "geographical_origin": "Pan-Yorùbá Diplomatic Councils",
+    "curatorial_guidelines": "Highlight pure white textures, earthen chalk, and natural fibers signaling calmness and tranquility.",
+    "related_entities": [
+      "Àrọ̀kọ̀",
+      "Àlàáfíà",
+      "Aṣọ",
+      "Obàtálá"
+    ]
+  },
+  {
+    "id": "ajisaari_music",
+    "title": "Ajísààrì",
+    "category": "Auditory Arts, Music, Drums & Chants",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Were Music",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ajisaari",
+      "sari music",
+      "dawn awakening chant",
+      "were ajisaari"
+    ],
+    "description": "The traditional acoustic dawn awakening music and choral chant performed by youth ensembles during the Islamic holy month of Ramadan to wake communities for the pre-dawn meal (Sààrì), serving as the foundational root of modern Were and Fújì music.",
+    "etymology_and_philosophy": "Derived from 'A-jí-ṣe-sààrì' (Those who awaken people to prepare and take the dawn meal). Blends Islamic vocal cantillation with Yorùbá rhythmic syncopation, community solidarity, and praise poetry.",
+    "historical_timeline": "Emerged in the late 19th and early 20th centuries across Muslim quarters in Lagos Island, Ìbàdàn, Èpẹ́, and Ìlọrin, evolving into competitive neighborhood Were contests.",
+    "material_and_craftsmanship": "Performed using portable acoustic percussion: handheld Sákárà clay-ring drums, tambourines, small agogô bells, and resonant glass bottles struck with metal rods.",
+    "social_and_ritual_context": "Parades through community streets between 3:00 AM and 5:00 AM, chanting topical neighborhood news, moral exhortations, and family praise names (Oríkì).",
+    "proverbs_and_oral_traditions": [
+      "Ajísààrì kì í jí l’ọ́jọ́ lásán; ohùn rẹ̀ ní ń gbá òkùnkùn kúrò lójú ọjọ́. (The dawn awakening singer never rises in vain; their voice dispels the darkness and welcomes the day.)"
+    ],
+    "diaspora_connections": "Influenced Afro-Atlantic vocal chanting styles and formed the acoustic backbone for global Nigerian Fújì music pioneered by Sikiru Ayinde Barrister.",
+    "geographical_origin": "Lagos Island, Ìbàdàn, Ìlọrin, and Èpẹ́",
+    "curatorial_guidelines": "Present in dawn ambient street lighting with handheld acoustic percussion, capturing call-and-response vocal dynamism.",
+    "related_entities": [
+      "Were Music",
+      "Sákárà Music",
+      "Fuji Music",
+      "Dùndún"
+    ]
+  },
+  {
+    "id": "sakara_were",
+    "title": "Sákárà Were",
+    "category": "Auditory Arts, Music, Drums & Chants",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Were Music",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "sakara were",
+      "were sakara",
+      "were drum ensemble"
+    ],
+    "description": "The refined sub-genre of Were music driven by the circular earthenware Sákárà drum and horsehair Gòjé violin, characterized by philosophical elder contemplation and intricate rhythmic improvisation.",
+    "etymology_and_philosophy": "Blends the fast-paced awakening tempo of Were with the solemn, contemplative acoustic cadence of classical Sákárà.",
+    "historical_timeline": "Popularized in the 1930s and 1940s by early Lagos master drummers such as Abibu Oluwa, bridging sacred Ramadan performance with secular social entertainment.",
+    "material_and_craftsmanship": "Features the sun-baked circular clay drum (Sákárà) played with slender wooden sticks, alongside the calabash-resonated Gòjé chordophone.",
+    "social_and_ritual_context": "Performed at civic evening banquets, naming rites, and coronation celebrations across southwestern Nigerian metropolitan centers.",
+    "proverbs_and_oral_traditions": [
+      "Sákárà tó gbó kì í dún bí agogo lásán; ọgbọ́n àgbà ló fi ń kọrin. (The seasoned Sákárà drum does not rattle like a hollow bell; it articulates the profound wisdom of elders.)"
+    ],
+    "diaspora_connections": "Its acoustic drumming foundations laid the groundwork for modern Afrobeat and Nigerian world-music percussion sections.",
+    "geographical_origin": "Lagos, Abẹ́òkúta, and Ìbàdàn",
+    "curatorial_guidelines": "Highlight circular baked-earth drum body and the arched bow of the horsehair Gòjé.",
+    "related_entities": [
+      "Were Music",
+      "Sákárà Music",
+      "Goje",
+      "Oríkì"
+    ]
+  }
+]

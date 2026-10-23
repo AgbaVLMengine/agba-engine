@@ -1,0 +1,672 @@
+[
+  {
+    "id": "ofa_kwara_city",
+    "title": "Ọ̀fà (Historical City & Ancient Kingdom)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Kwara",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ofa",
+      "offa",
+      "ọfa kwara",
+      "offa kwara",
+      "ilu ofa",
+      "ofà",
+      "Ọ̀fà"
+    ],
+    "description": "The monumental frontline defensive city and sovereign Ìbọ̀lọ́ kingdom in Kwara State, famed for metallurgical independence, sweet potatoes (Ọ̀fà Ọlọ́rọ̀ Àjẹ́), and warrior king Olúmọdọ̀.",
+    "historical_timeline": "Classical Antiquity (c. 14th Century CE): Founded by Olúmọdọ̀, an Ifẹ̀ prince and master hunter-warrior. 19th Century: Functioned as the southern defensive rampart resisting imperial northern incursions during the Ọ̀fà wars (1887-1893). Contemporary: Celebrated educational, railway, and commercial crossroads.",
+    "etymology_and_philosophy": "From 'Ọ̀fà' (the swift archer/defender). Philosophically embodies civic fortitude and territorial sanctuary: 'Ọ̀fà kì í jẹ́ kí ogun kọjá lọ sí Ìkòyí' (Offa never allows warfare to reach the inner heartlands).",
+    "material_and_craftsmanship": "Ancient red-clay defensive ramparts (Odi Ọ̀fà), indigenous bloomery iron arrowheads, and traditional textile weaving looms.",
+    "social_and_ritual_context": "Presided over by the Ọlọ́fà of Ọ̀fà and high chiefs; home to the sacred Moremi festival honoring the immortal heroine born of Ọ̀fà royal stock.",
+    "proverbs_and_oral_traditions": [
+      "Ọ̀fà kì í jẹ́ kí ogun kọjá lọ sí Ìkòyí; Olúmọdọ̀ l’ẹlẹ́jọ̀ tí ń dá ẹjọ́ ọ̀kọ̀. (Ọ̀fà never permits warfare to cross unchecked into Ìkòyí; Olúmọdọ̀ is the rightful judge who arbitrates through the spear. Celebrates Offa as an impenetrable shield of inner Yorùbáland.)",
+      "Ọ̀fà ọmọ olórò àjẹ́, ọmọ iṣu tútù tí ń kọ́ ọ̀rọ̀. (Offa, children of sweet bounty, whose prosperous soil yields nourishment that builds generational wealth.)"
+    ],
+    "diaspora_connections": "Reflected in Afro-Cuban Lucumí songs honoring warrior settlements and Moremi praise recitations.",
+    "geographical_origin": "Kwara State (Ìbọ̀lọ́ Cultural Zone, Southern Kwara)",
+    "curatorial_guidelines": "Distinguish sharply from archery weaponry Ọfà; showcase palace architecture and Moremi shrines.",
+    "related_entities": [
+      "Ìpínlẹ̀ Kwara",
+      "Ọlọ́fà",
+      "Ilọrin",
+      "Mọ́remí",
+      "Ọ̀kọ̀"
+    ]
+  },
+  {
+    "id": "eko_capital",
+    "title": "Èkó (Maritime Capital & Cultural Center)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Èkó",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eko",
+      "eko city",
+      "èkó",
+      "lagos city",
+      "lagos island",
+      "eko ile",
+      "ilú èkó"
+    ],
+    "description": "The historic maritime capital, island citadel, and vibrant cosmopolitan center of the Yorùbá world, anchoring transatlantic commerce, royal dynastic councils, and pan-African artistic innovation.",
+    "historical_timeline": "15th Century: Founded as an Àwórì coastal settlement under Olofin. 16th-17th Century: Transformed into a fortified royal trading port and palace seat (Ìgá Ìdúngànrán) under the Ọba of Lagos. 1861: British annexation and treaty of cession. 20th-21st Century: Megacity and global cultural powerhouse.",
+    "etymology_and_philosophy": "Dual etymology: from Ẹ̀dó 'Èkó' (fortified war camp) and Yorùbá 'Oko' (agricultural farm settlement). Philosophically represents intense dynamism: 'Èkó àkétè ilé ọgbọ́n' (Lagos, the throne of discernment).",
+    "material_and_craftsmanship": "Stilt lagoon architecture, Portuguese-Brazilian stone-masonry compounds (Aguda Quarter), and the sacred carved pillars of Ìgá Ìdúngànrán.",
+    "social_and_ritual_context": "Vibrant arena of the Adámú Òrìṣà (Èyọ̀) festival, royal processions of the Idejo white-cap chiefs, and maritime offerings to Olókun.",
+    "proverbs_and_oral_traditions": [
+      "Èkó gb’ólé kò gb’ọ̀lẹ, o fi ọmọ lówó o fi ọmọ lẹ́kọ̀ọ́. (Lagos accommodates the industrious but rejects indolence; it enriches one child with fortune while instructing another through rigorous discipline.)",
+      "Èkó àkétè ilé ọgbọ́n; ẹni tí kò gbọ́n t’ó dé Èkó, a gbọ́n. (Lagos is the citadel of wisdom; the foolish person who enters its gates must either acquire discernment or become a servant to the astute.)"
+    ],
+    "diaspora_connections": "Primary point of return for Brazilian 'Tabom' and Saro returnees in the 19th century, birthing Afro-Brazilian architecture in Lagos Island.",
+    "geographical_origin": "Lagos Island and Coastline, Southwestern Nigeria",
+    "curatorial_guidelines": "Strictly prevent homophonic confusion with cornmeal food cake Ẹ̀kọ; highlight coastal lagoon life and Èyọ̀ masquerades.",
+    "related_entities": [
+      "Ìpínlẹ̀ Èkó",
+      "Ìsàlẹ̀ Èkó",
+      "Ọba Èkó",
+      "Èyọ̀",
+      "Idejo"
+    ]
+  },
+  {
+    "id": "isale_eko",
+    "title": "Ìsàlẹ̀ Èkó (Ancestral Island & Core Settlement)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Èkó",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "isale eko",
+      "isale-eko",
+      "downtown lagos",
+      "old lagos"
+    ],
+    "description": "The sacred indigenous heart of Lagos Island, housing Ìgá Ìdúngànrán (palace of the Ọba of Lagos), ancestral shrines of the Idejo chiefs, and the spiritual epicenter of the Èyọ̀ masquerade.",
+    "historical_timeline": "Dating to early 16th century Àwórì-Benin dynastic agreements; preserved through colonial expansion as the sovereign un-ceded heartland of indigenous Lagosians.",
+    "etymology_and_philosophy": "Literally 'Downtown / Lowland of Èkó', designating the primordial coastal base where lagoon meets the dry island ridge.",
+    "material_and_craftsmanship": "Historic courtyards, carved royal brass-studded entrance gates, and ancient burial crypts inside family compounds.",
+    "social_and_ritual_context": "Venue where the Ọba of Lagos performs annual state libations, and where each Èyọ̀ Iga group parades under solemn liturgical chants.",
+    "proverbs_and_oral_traditions": [
+      "A kì í mọ̀ ’nkan tí Ọba Èkó ń jẹ, àyàfi bí a bá jẹ́ ọmọ Ìgá. (One cannot divine the feast of the King of Lagos unless one is an initiate of the royal palace—underscoring palace confidentiality and sacred lineage protocols.)"
+    ],
+    "diaspora_connections": "Revered by Brazilian returnee families who settled across the Portuguese Quarter bordering Ìsàlẹ̀ Èkó.",
+    "geographical_origin": "Lagos Island, Lagos State",
+    "curatorial_guidelines": "Present historic streetscapes, brass staffs of the Ọba, and tall white Èyọ̀ crowns.",
+    "related_entities": [
+      "Ìpínlẹ̀ Èkó",
+      "Èkó (Maritime Capital & Cultural Center)",
+      "Èyọ̀",
+      "Ọba Èkó"
+    ]
+  },
+  {
+    "id": "kabba_kogi",
+    "title": "Kàbbà (Historic Okun Kingdom & City)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Kogi",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "kabba",
+      "kaba",
+      "ilu kabba",
+      "okun kabba"
+    ],
+    "description": "The historic cultural and administrative capital of the Okun-Yorùbá people in Kogi State, seat of the Obaro of Kabba and epicenter of indigenous mountain resistance and agrarian excellence.",
+    "historical_timeline": "14th Century: Dynastic roots tracing to Ilé-Ifẹ̀ migrations settling among the protective inselbergs. 19th Century: Center of heroic defense against Nupe imperial raiding armies. 20th Century: Educational and administrative hub of Kabba Province.",
+    "etymology_and_philosophy": "Philosophically signifies high-altitude community vigilance, steadfastness, and cultural autonomy.",
+    "material_and_craftsmanship": "Granite architectural terraces, handwoven Okun ceremonial cloth (Aṣọ Ìpàpà), and terraced yam cultivation implements.",
+    "social_and_ritual_context": "Celebrated during the annual Oro festival and the royal installation of the Obaro of Kabba.",
+    "proverbs_and_oral_traditions": [
+      "Ọmọ Kàbbà kì í sùn lójú ogun; àpáta tó gbé wa ga ní ń sọ wa d’olókun. (The child of Kabba sleeps not during conflict; the towering rock that elevates our homes makes us kings of the highlands.)"
+    ],
+    "diaspora_connections": "Okun linguistic patterns and ancestral proverbs survive in diaspora Lucumí liturgies.",
+    "geographical_origin": "Kogi West, Kogi State",
+    "curatorial_guidelines": "Highlight mountain topography and traditional woven textiles.",
+    "related_entities": [
+      "Ìpínlẹ̀ Kogi",
+      "Ìjùmú",
+      "Obaro of Kabba",
+      "Àpáta"
+    ]
+  },
+  {
+    "id": "ijumu_kogi",
+    "title": "Ìjùmú (Ancestral Okun Confederacy)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Kogi",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ijumu",
+      "ijumu kogi",
+      "ilu ijumu"
+    ],
+    "description": "The venerable Okun-Yorùbá confederacy of autonomous towns in Kogi State (Iyara, Ogidi, Iyamoye, Ekinrin-Adde), celebrated for democratic communal governance, granite sanctuaries, and sacred groves.",
+    "historical_timeline": "Early classical era: Settlements established around ancient caves and monoliths. 19th Century: Ogidi-Ijumú resistance alliances against external cavalry forces.",
+    "etymology_and_philosophy": "Emphasizes federated harmony and decentralized democracy: autonomous towns bound in mutual defense pacts.",
+    "material_and_craftsmanship": "Pottery guilds, iron smelting relics, and hand-carved ceremonial staves.",
+    "social_and_ritual_context": "Annual Ogidi Yam Festival and sacred rites honoring ancestors of the caves.",
+    "proverbs_and_oral_traditions": [
+      "Ìjùmú kì í jẹ́ kí àkókò kọjá láì kọ́ ọmọ ní ìwà rere. (Ìjùmú never allows a season to pass without schooling its children in noble character.)"
+    ],
+    "diaspora_connections": "Preserved in trans-Saharan and transatlantic oral historical accounts of northern Yorùbá resistance.",
+    "geographical_origin": "Kogi West, Kogi State",
+    "curatorial_guidelines": "Show monolith formations and festive community processions.",
+    "related_entities": [
+      "Ìpínlẹ̀ Kogi",
+      "Kàbbà",
+      "Ọlọ́jùmú",
+      "Àpáta"
+    ]
+  },
+  {
+    "id": "ado_ekiti_city",
+    "title": "Adó-Èkìtì (Ancestral Capital & Seat of the Ẹwí)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìpínlẹ̀ Èkìtì",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ado-ekiti",
+      "ado ekiti",
+      "ado",
+      "ilu ado"
+    ],
+    "description": "The paramount sovereign capital of Èkìtì State and royal seat of the Ẹwí of Adó-Èkìtì, famous for the magnificent Ẹwí Palace, rich oral poetry, and leadership in the Ẹ̀kìtìparapọ̀ liberation struggle.",
+    "historical_timeline": "c. 13th Century CE: Founded by the Ẹwí Awamaro, son of Odùduwà from Ilé-Ifẹ̀. 19th Century: Stood as the political hub during the Kiriji/Ẹ̀kìtìparapọ̀ liberation wars (1877-1893). 1996: Named state capital.",
+    "etymology_and_philosophy": "From 'Adó' (settlement/shelter) and 'Ẹwí' (the orator/monarch whose spoken decree is law).",
+    "material_and_craftsmanship": "Ancient palace courtyards with carved caryatids, monumental gables, and bronze ceremonial implements.",
+    "social_and_ritual_context": "Epicenter of the annual Udiroko festival (traditional new year), where the Ẹwí blesses the populace.",
+    "proverbs_and_oral_traditions": [
+      "Adó kò gbọ́dọ̀ dákẹ́ kí Ẹwí má sọ̀rọ̀; ohun tí Ẹwí bá wí ni àṣẹ ìlú. (Adó cannot remain silent when the Ẹwí speaks; whatever the monarch decrees is the law of the commonwealth.)"
+    ],
+    "diaspora_connections": "Documented in British archival records and Yoruba diasporic research in Cuba and Brazil.",
+    "geographical_origin": "Èkìtì Central, Èkìtì State",
+    "curatorial_guidelines": "Present the royal palace of the Ẹwí and festival assemblies.",
+    "related_entities": [
+      "Ìpínlẹ̀ Èkìtì",
+      "Ẹwí of Ado-Ekiti",
+      "Ìkọ̀lé-Èkìtì",
+      "Kiriji War"
+    ]
+  },
+  {
+    "id": "ere_ibeji",
+    "title": "Ère Ìbejì (Sacred Twin Memorial Effigy)",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ère",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ere ibeji",
+      "ibeji statue",
+      "twin carving",
+      "ere-ibeji"
+    ],
+    "description": "The sacred, intricately carved wooden memorial figure commissioned when a twin passes, serving as a metaphysical vessel through which the immortal spiritual vitality of the deceased child is sustained.",
+    "historical_timeline": "Antiquity tracing to classical Ọ̀yọ́ and Ẹ̀gbá traditions; heightened during the 18th century as the Yorùbá world developed the highest rate of twin births in humanity.",
+    "etymology_and_philosophy": "From 'Ère' (effigy/carving) and 'Ìbejì' (born-two / twin). Anchored in the belief that twins share a single spiritual essence and possess divine power (Àṣẹ) to bring fortune.",
+    "material_and_craftsmanship": "Carved from sacred Ìrókò or mahogany hardwood, rubbed with red camwood powder (Osùn), adorned with miniature cowrie-shell tunics and brass armlets.",
+    "social_and_ritual_context": "Bathed, fed, sung to, and clothed regularly by the mother as though living, ensuring familial harmony and balance.",
+    "proverbs_and_oral_traditions": [
+      "Ère Ìbejì kì í kú; ó lọ sí ọjà ni. (The sacred twin effigy never dies; it has merely departed on an errand to the ancestral market—affirming immortality.)",
+      "Ẹni tó bí Ìbejì kò gbọ́dọ̀ ráhùn; olówó ọjọ́ wájú l’ọ́mọ. (He who births twins must never utter laments of poverty; twins bring ancestral abundance.)"
+    ],
+    "diaspora_connections": "Revered as the 'Ibeji' or 'Jimaguas' in Cuban Santería and 'Ibêji' in Brazilian Candomblé.",
+    "geographical_origin": "Pan-Yorùbáland (special prominence in Ọ̀yọ́, Ìbàdàn, Abẹ́òkúta)",
+    "curatorial_guidelines": "Display with proper camwood patina, glass bead necklace, and respectful spiritual framing.",
+    "related_entities": [
+      "Ère",
+      "Ìbejì",
+      "Ọbàtálá",
+      "Osùn"
+    ]
+  },
+  {
+    "id": "ere_elegbara",
+    "title": "Ère Ẹlẹ́gbára (Consecrated Sculptural Icon of Èṣù)",
+    "category": "Visual Arts, Sculpture & Guild Metallurgy",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ère",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ere elegbara",
+      "ere esu",
+      "esu figure",
+      "elegba statue"
+    ],
+    "description": "The consecrated sculptural wooden or laterite figure representing Èṣù-Ẹlẹ́gbára, characterized by a long backward-curving phallic coiffure, whistles, and cowrie adornments.",
+    "historical_timeline": "Classical era onwards: Present at palace gateways, crossroads, and household thresholds as the prime divine messenger between humanity and Olódùmarè.",
+    "etymology_and_philosophy": "From 'Ẹlẹ́gbára' (the Owner of Dynamic Kinetic Force). Embodies ethical choice, mediation, and divine retribution.",
+    "material_and_craftsmanship": "Hardwood carving blackened with vegetal dyes, hung with cowrie strands, miniature calabashes, and leather bands.",
+    "social_and_ritual_context": "Venerated with palm oil (Ẹpo Pupa) at crossroads and shrine entrances before any divine consultation.",
+    "proverbs_and_oral_traditions": [
+      "Èṣù kì í jẹ́ kí awo tẹ́; ẹni tí ó bọ̀wọ̀ fún Èṣù a ri àlàáfíà. (Èṣù never permits the conscientious initiate to suffer disgrace; whoever honors the gatekeeper finds civic peace.)"
+    ],
+    "diaspora_connections": "Widely sculpted as Eleguá heads in Afro-Cuban religion and Exu statues in Brazilian Candomblé and Umbanda.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Present with backward headcrest, polished surface, and cowrie strings.",
+    "related_entities": [
+      "Ère",
+      "Èṣù",
+      "Ọpọ́n Ifá",
+      "Ọ̀pẹ̀lẹ̀"
+    ]
+  },
+  {
+    "id": "eyo_owo",
+    "title": "Ẹyọ Owó (Unit Cowrie Shell Currency)",
+    "category": "Civilization, History & Civic Heritage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Owó Ẹyọ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "eyo owo",
+      "cowrie unit",
+      "single cowrie"
+    ],
+    "description": "The fundamental unit shell of the historic Yorùbá monetary system, grouped mathematically into strings (Ọgọ́rùn-ún), bundles (Ẹgbàá), and bags (Àpò) for imperial commerce.",
+    "historical_timeline": "Active for over seven centuries until demonetized by British colonial fiat in the early 20th century.",
+    "etymology_and_philosophy": "From 'Ẹyọ' (single unit/grain) and 'Owó' (money/wealth).",
+    "material_and_craftsmanship": "Glossy porcelain-like white shell of Cypraea moneta with distinct serrated aperture.",
+    "social_and_ritual_context": "Used for dowry payments, marketplace barter, and liturgical offerings in Ẹsẹ̀ Ifá and Ẹbọ.",
+    "proverbs_and_oral_traditions": [
+      "Ẹyọ owó kan kì í rún; bí a bá kó o jọ, a di ẹgbàá. (A single cowrie is never discarded; when assembled patiently, it becomes thousands—praising thrift and compounding labor.)"
+    ],
+    "diaspora_connections": "Sacred cowries (diloggún) used across Lucumí and Candomblé divination systems.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Show natural dorsal view and serrated slit.",
+    "related_entities": [
+      "Owó Ẹyọ",
+      "Ẹgbàá",
+      "Àpò",
+      "Àrọ̀kọ̀"
+    ]
+  },
+  {
+    "id": "ikin_oloju_merin",
+    "title": "Ikin Ọlọ́jú Mẹ́rin (Four-Eyed Consecrated Palm Nut)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ikin Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ikin oloju merin",
+      "four eyed ikin",
+      "ikin merin"
+    ],
+    "description": "The supreme consecrated four-pored palm nut harvested from the sacred Ọ̀pẹ Ifá tree (*Elaeis guineensis*), held by high-priest Babaláwos as the ultimate physical vehicle of Ọ̀rúnmìlà's voice.",
+    "historical_timeline": "Rooted in the primordial Ifá corpus codified at Ilé-Ifẹ̀; preserved unchanged for millennia.",
+    "etymology_and_philosophy": "From 'Ọlọ́jú Mẹ́rin' (possessor of four eyes), symbolizing the four cardinal cosmic directions and complete clairvoyance.",
+    "material_and_craftsmanship": "Dense, oil-patinated palm nut with four distinct germination pores, polished by decades of herbal infusions.",
+    "social_and_ritual_context": "Cast in pairs of 16 during Itadogun and Itẹfa initiation rituals on the Ọpọ́n Ifá.",
+    "proverbs_and_oral_traditions": [
+      "Ikin ọlọ́jú mẹ́rin kì í purọ́; orí mẹ́rin ni ó fi ń wo ayé. (The four-eyed sacred nut utters no falsehood; with four eyes it surveys the four corners of existence.)"
+    ],
+    "diaspora_connections": "Preserved as 'Ikin' in Cuban and Brazilian Ifá lineages.",
+    "geographical_origin": "Ilé-Ifẹ̀ and Pan-Yorùbáland",
+    "curatorial_guidelines": "Highlight the 4 clear circular pores and dark sacred patina.",
+    "related_entities": [
+      "Ikin Ifá",
+      "Ọ̀rúnmìlà",
+      "Ọpọ́n Ifá",
+      "Babaláwo"
+    ]
+  },
+  {
+    "id": "ikin_oloju_meta",
+    "title": "Ikin Ọlọ́jú Mẹ́ta (Three-Eyed Sacred Palm Nut)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ikin Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ikin oloju meta",
+      "three eyed ikin",
+      "ikin meta"
+    ],
+    "description": "The sacred three-pored palm nut from the sacred palm tree, representing specialized metaphysical diagnostics and balance between the spiritual realm, the ancestors, and the living.",
+    "historical_timeline": "Integral companion in ancient babaláwo divination bags (Àpò Mìníjẹ̀kùn) alongside 4-eyed nuts.",
+    "etymology_and_philosophy": "Signifies tripartite cosmic harmony: Ọ̀run (Heaven), Ayé (Earth), and Ilẹ̀ (The Underworld/Ancestors).",
+    "material_and_craftsmanship": "Natural cured botanical palm nut showing three distinct indented apertures.",
+    "social_and_ritual_context": "Venerated in consultations seeking energetic balance and ancestral appeasement.",
+    "proverbs_and_oral_traditions": [
+      "Ọlọ́jú mẹ́ta ló mọ àdàbà orí igi; Ifá mọ ohun tó pamọ́. (He with three eyes discerns the hidden dove in the treetop; Ifá sees that which is invisible to mortal eyes.)"
+    ],
+    "diaspora_connections": "Maintained in diaspora divination sets.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Present alongside three-fold ancestral altar items.",
+    "related_entities": [
+      "Ikin Ifá",
+      "Ikin Ọlọ́jú Mẹ́rin",
+      "Ọpọ́n Ifá"
+    ]
+  },
+  {
+    "id": "agere_ologun",
+    "title": "Agẹrẹ Ológun (Equestrian Carved Divination Vessel)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Agẹrẹ Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "agere ologun",
+      "equestrian agere",
+      "warrior agere"
+    ],
+    "description": "A magnificent hand-carved hardwood caryatid divination cup supported by a mounted equestrian warrior (Ẹlẹ́ṣin) brandishing weapons, symbolizing martial vigilance and spiritual protection.",
+    "historical_timeline": "17th–19th Century: Fluctuation of Ọ̀yọ́ imperial military ethos into liturgical woodcarving masterworks by master sculptors.",
+    "etymology_and_philosophy": "Equestrian iconography (Ẹlẹ́ṣin) represents imperial command, divine fortitude, and the triumph of wisdom over chaos.",
+    "material_and_craftsmanship": "Carved from a single block of dense hardwood with polychrome pigments and brass inlays.",
+    "social_and_ritual_context": "Placed at the right side of the Babaláwo's consultation mat holding the 16 Ikin nuts.",
+    "proverbs_and_oral_traditions": [
+      "Ẹlẹ́ṣin inú agẹrẹ kì í bọ́; awo tó mọ̀wà ní ń gbé e. (The warrior atop the sacred vessel never falls; only the priest of exemplary character commands its spiritual power.)"
+    ],
+    "diaspora_connections": "Prominently featured in international museum collections (The Met, British Museum, Smithsonian).",
+    "geographical_origin": "Ọ̀yọ́ and Èkìtì Carving Guilds",
+    "curatorial_guidelines": "Showcase vertical relief, equestrian bridle details, and the cupped vessel above.",
+    "related_entities": [
+      "Agẹrẹ Ifá",
+      "Ère",
+      "Ọ̀kọ̀ Ẹlẹ́ṣin",
+      "Ọpọ́n Ifá"
+    ]
+  },
+  {
+    "id": "agere_arugba",
+    "title": "Agẹrẹ Arúgbá (Kneeling Maiden Caryatid Vessel)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Agẹrẹ Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "agere arugba",
+      "kneeling maiden agere",
+      "arugba ifa"
+    ],
+    "description": "An exquisite caryatid divination cup supported by a kneeling female devotee (Arúgbá) holding her breasts or balancing the bowl on her head, personifying devotion, fertility, and cosmic calm (Ètùtù).",
+    "historical_timeline": "Classical era onwards: Masterpieces carved by Ọ̀yọ́, Òwọ̀, and Ìjẹ̀bú sculptors.",
+    "etymology_and_philosophy": "From 'Arúgbá' (she who carries the sacred calabash). Represents unshakeable reverence: 'Ìkúnlẹ̀ ni ti obìnrin' (kneeling is the posture of feminine spiritual grace).",
+    "material_and_craftsmanship": "Sculpted hardwood rubbed with palm oil and camwood, exhibiting delicate facial scarifications (Kẹ́kẹ́/Gàbàsì).",
+    "social_and_ritual_context": "Vessel used in high-level royal and societal divination assemblies.",
+    "proverbs_and_oral_traditions": [
+      "Ìkúnlẹ̀ arúgbá kì í ṣe ojo; àṣẹ ló ń bọ̀wọ̀ fún. (The kneeling posture of the maiden is not cowardice; it is reverence paid to primordial authority.)"
+    ],
+    "diaspora_connections": "Revered in Afro-Cuban and Brazilian Yemọja/Ọ̀ṣun liturgical shrines.",
+    "geographical_origin": "Òwọ̀, Èkìtì, and Ọ̀yọ́",
+    "curatorial_guidelines": "Highlight symmetrical posture, calm facial expression, and caryatid balance.",
+    "related_entities": [
+      "Agẹrẹ Ifá",
+      "Ère",
+      "Ọ̀ṣun",
+      "Ikin Ifá"
+    ]
+  },
+  {
+    "id": "opele_agbalagba",
+    "title": "Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọ̀pẹ̀lẹ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "opele agbalagba",
+      "elder opele",
+      "senior opele chain"
+    ],
+    "description": "The heavy, consecrated divination chain wielded exclusively by veteran elder Babaláwos, strung with eight rare aged seed-pods, brass tokens, and ancestral relics.",
+    "historical_timeline": "Passed down across multiple generations from master to initiated successor.",
+    "etymology_and_philosophy": "From 'Agbalagba' (elder of venerable wisdom). Embodies lifetime mastery of the 256 Odù Ifá.",
+    "material_and_craftsmanship": "Heavy hand-braided leather cord or copper chain connecting seasoned seed pods backed by ancestral beads.",
+    "social_and_ritual_context": "Reserved for complex communal consultations, epidemic arbitrations, and king-making rites.",
+    "proverbs_and_oral_traditions": [
+      "Ọ̀pẹ̀lẹ̀ agbalagba kì í sọ̀rọ̀ lásán; bí ó bá dákẹ́, awo a bẹ̀rù. (The elder divination chain never speaks in vain; when it falls silent, priests re-examine the cosmos.)"
+    ],
+    "diaspora_connections": "Preserved in elder Lucumí and Candomblé house lineages.",
+    "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, and Ìjẹ̀bú",
+    "curatorial_guidelines": "Present with dark oiled patina and antique brass links.",
+    "related_entities": [
+      "Ọ̀pẹ̀lẹ̀",
+      "Ọ̀rúnmìlà",
+      "Babaláwo",
+      "Ọpọ́n Ifá"
+    ]
+  },
+  {
+    "id": "opele_ide",
+    "title": "Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọ̀pẹ̀lẹ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "opele ide",
+      "brass opele",
+      "opele bronze"
+    ],
+    "description": "An aristocratic divination chain whose eight half-pods are cast from sacred lost-wax brass (Idẹ), producing resonant acoustic chimes when dropped to summon ancestral attention.",
+    "historical_timeline": "Popularized in Ìjẹ̀bú and Òwọ̀ brass-working guilds during the 16th–18th centuries.",
+    "etymology_and_philosophy": "Brass (Idẹ) never rusts nor decays: symbolizes immortal truth and the incorruptibility of divine revelation.",
+    "material_and_craftsmanship": "Lost-wax cast brass half-pods decorated with geometric chevron and interlace motifs linked by brass chain.",
+    "social_and_ritual_context": "Utilized in royal courts and Òṣùgbó/Ògbóni ancestral sanctuaries.",
+    "proverbs_and_oral_traditions": [
+      "Idẹ kì í kànkàn; ọ̀pẹ̀lẹ̀ idẹ kì í d'ègún. (Brass never corrupts into rust; the brass divination chain never degenerates into falsehood.)"
+    ],
+    "diaspora_connections": "Survives in Cuban Lucumí and Brazilian Ketu high-priesthood regalia.",
+    "geographical_origin": "Ìjẹ̀bú-Òde and Òwọ̀",
+    "curatorial_guidelines": "Highlight golden metallic sheen and acoustic chime.",
+    "related_entities": [
+      "Ọ̀pẹ̀lẹ̀",
+      "Idẹ",
+      "Ògbóni",
+      "Ọpọ́n Ifá"
+    ]
+  },
+  {
+    "id": "opon_ifa_olori_esu",
+    "title": "Ọpọ́n Ifá Olórí Èṣù (Divination Tray with Crown of Èṣù)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọpọ́n Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "opon ifa olori esu",
+      "esu opon",
+      "crowned opon ifa"
+    ],
+    "description": "The canonical sacred divination tray carved with the high-relief crowned head of Èṣù-Ẹlẹ́gbára at its northern perimeter, looking inward upon the powdered surface.",
+    "historical_timeline": "Classical era: Standardized across all Yorùbá kingdoms as the primordial cosmogram of consultation.",
+    "etymology_and_philosophy": "Signifies that Èṣù is the vigilant inspector of cosmic truth, ensuring that what is revealed is honest and true.",
+    "material_and_craftsmanship": "Seasoned hardwood carved with intricate geometric interlace (Àwọrọ̀) borders framing the central flat plane.",
+    "social_and_ritual_context": "Oriented toward the rising sun; dusted with Ìyẹ̀rosùn powder where the Babaláwo marks the Odù.",
+    "proverbs_and_oral_traditions": [
+      "Bí a bá tẹ Ifá sórí ọpọ́n, ojú Èṣù ni a kọ́kọ́ ń kọjú sí. (When Ifá is inscribed upon the tray, it is Èṣù's face that we must first acknowledge; the keeper of the threshold precedes revelation.)"
+    ],
+    "diaspora_connections": "Replicated across hundreds of Cuban and Brazilian babaláwo altars.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Focus on the carved visage of Èṣù at top margin and the concentric border carvings.",
+    "related_entities": [
+      "Ọpọ́n Ifá",
+      "Èṣù",
+      "Ikin Ifá",
+      "Ìyẹ̀rosùn"
+    ]
+  },
+  {
+    "id": "opon_ifa_gbero",
+    "title": "Ọpọ́n Ifá Gbẹ́rọ́ (Deep Relief Ceremonial Divination Tray)",
+    "category": "Spiritual & Cosmological Matrix",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọpọ́n Ifá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "opon ifa gbero",
+      "deep relief opon",
+      "ceremonial opon"
+    ],
+    "description": "A monumental, deep-dish ceremonial divination tray with elevated multi-tiered perimeter carvings depicting kings, snakes, tortoises, and heraldic beasts.",
+    "historical_timeline": "Commissioned by sovereign monarchs (Ọba) and titled guild elders from master artists.",
+    "etymology_and_philosophy": "From 'Gbẹ́rọ́' (spacious and deeply recessed), symbolizing the vastness of the universe held within sacred boundaries.",
+    "material_and_craftsmanship": "Monumental circular or oblong hardwood dish carved with multi-scene pictorial narratives.",
+    "social_and_ritual_context": "Used during major state festivals and royal annual divinations.",
+    "proverbs_and_oral_traditions": [
+      "Ọpọ́n ńlá kì í fọ́ sọ́wọ́ awo; gbogbo ayé ló gbà sínú. (The monumental tray never shatters in the priest's hands; it holds the entire universe within its sacred rim.)"
+    ],
+    "diaspora_connections": "Prized in transatlantic exhibitions and historic collections.",
+    "geographical_origin": "Òwọ̀ and Ọ̀yọ́",
+    "curatorial_guidelines": "Present aerial view showing deep center basin and narrative relief perimeter.",
+    "related_entities": [
+      "Ọpọ́n Ifá",
+      "Ère",
+      "Ọ̀rúnmìlà"
+    ]
+  },
+  {
+    "id": "edan_ogboni",
+    "title": "Ẹdan Ògbóni (Sanctified Cast Brass Twin Rods)",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ògbóni",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "edan ogboni",
+      "edan",
+      "osugbo edan",
+      "edan brass"
+    ],
+    "description": "The sacred paired male and female lost-wax cast brass figures linked at the crowns by an iron chain, serving as the supreme judicial emblem, oath-taking implement, and constitutional insignia of the Ògbóni/Òṣùgbó society.",
+    "historical_timeline": "9th–12th Century Ilé-Ifẹ̀ origins: Exemplified in the classic metallurgical traditions of Ìjẹ̀bú and Ifẹ̀.",
+    "etymology_and_philosophy": "The iron core represents unbreakable strength, while the exterior brass represents eternal peace and moral incorruptibility: 'Idẹ kì í baje' (Brass never spoils).",
+    "material_and_craftsmanship": "Lost-wax cast brass over forged iron spikes, joined by hand-forged iron chain links.",
+    "social_and_ritual_context": "Driven into the earth during sacred arbitrations; initiates swear binding oaths of truth upon them under penalty of cosmic retribution.",
+    "proverbs_and_oral_traditions": [
+      "Ẹdan kì í purọ́; ẹni tí ó ba búra èké lórí Ẹdan, ilẹ̀ á mu ú. (The Ẹdan utters no falsehood; whoever swears deceitfully upon Ẹdan shall be claimed by Mother Earth.)",
+      "Ọkùnrin àti obìnrin ni Ẹdan; àṣẹ wọn kò ṣeé pín. (Male and female are joined as one in Ẹdan; their joint cosmic authority is indivisible.)"
+    ],
+    "diaspora_connections": "Revered in Cuban Cabildos and Brazilian Candomblé Ketu lineages as sacred emblems of judicial earth power.",
+    "geographical_origin": "Ìjẹ̀bú-Òde, Ilé-Ifẹ̀, and Ẹ̀gbá",
+    "curatorial_guidelines": "Display both figures standing joined by chain, emphasizing male/female complementarity.",
+    "related_entities": [
+      "Ògbóni",
+      "Onílẹ̀",
+      "Idẹ",
+      "Irin"
+    ]
+  },
+  {
+    "id": "iyawo_titun",
+    "title": "Ìyàwó Titun (The Newly Wedded Bride)",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ìyàwó",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "iyawo titun",
+      "new bride",
+      "bride of the lineage"
+    ],
+    "description": "The newly wedded bride arriving at her husband's ancestral compound (Agbo-Ilé), celebrated with ceremonial foot-washing rituals (Wíwẹ̀ Ẹsẹ̀), ancestral blessings, and protective choral escorts.",
+    "historical_timeline": "Classical antiquity: The matrimonial threshold rites transitioning a maiden into an honored partner and future matriarch.",
+    "etymology_and_philosophy": "Signifies renewal, lineage continuity, and the introduction of new spiritual vital energy into the clan.",
+    "material_and_craftsmanship": "Adorned in opulent handwoven Aṣọ Òkè (Sányán or Aláárì), coral beads (Ìyùn), and fragrant camwood body ointment.",
+    "social_and_ritual_context": "Received at the compound entrance by senior wives who wash her feet with water and coins symbolizing peace and prosperity.",
+    "proverbs_and_oral_traditions": [
+      "Ẹsẹ̀ tí ìyàwó titun fi wọlé, àlàáfíà ló ń mú wá. (The foot with which the new bride enters the compound brings peace and abundant blessings to the lineage.)"
+    ],
+    "diaspora_connections": "Ceremonial bridal songs preserved in Lucumí oral literature and wedding celebrations.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Display traditional foot-washing ceremonial bowl, coral beads, and handwoven head-ties.",
+    "related_entities": [
+      "Ìyàwó",
+      "Ọkọ Ìyàwó",
+      "Ẹ̀kún Ìyàwó",
+      "Agbo-Ilé"
+    ]
+  },
+  {
+    "id": "oko_iyawo",
+    "title": "Ọkọ Ìyàwó (The Matrimonial Bridegroom)",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọkọ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "oko iyawo",
+      "bridegroom",
+      "groom"
+    ],
+    "description": "The matrimonial husband/bridegroom who prostrates before his bride's family during the Idána ceremony, accepting solemn spiritual and material stewardship of the union.",
+    "historical_timeline": "Codified through centuries of Yorùbá customary law and Ifá marriage protocols.",
+    "etymology_and_philosophy": "Represents honorable stewardship, domestic leadership, and protective covenant.",
+    "material_and_craftsmanship": "Attired in three-piece Aṣọ Òkè Agbádá, Bùbá, and Ṣòkòtò with embroidered Fìlà.",
+    "social_and_ritual_context": "Flanked by his age-mates and paternal elders as he formally pays respects to his in-laws.",
+    "proverbs_and_oral_traditions": [
+      "Ọkọ tó mọyì aya rẹ̀ kì í fi ojú ẹgàn wò ó lójú àlejò. (The husband who honors his wife never diminishes her dignity before strangers.)"
+    ],
+    "diaspora_connections": "Customary respect and prostrations preserved in diaspora Yoruba cultural ceremonies.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Present in formal ceremonial Agbádá regalia with ancestral walking staff.",
+    "related_entities": [
+      "Ọkọ",
+      "Ìyàwó",
+      "Ìyàwó Titun",
+      "Agbádá"
+    ]
+  },
+  {
+    "id": "baba_ile",
+    "title": "Bàbá Ilé (Patriarch & Head of the Compound)",
+    "category": "Social Structure, Kinship & Lineage",
+    "culture": "Yorùbá",
+    "is_parent": false,
+    "sovereign_parent": "Ọkọ",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "baba ile",
+      "baale",
+      "head of household",
+      "compound head"
+    ],
+    "description": "The senior patriarch and judicial custodian of the extended family compound (Agbo-Ilé), responsible for resolving domestic disputes, allocating ancestral farmlands, and leading daily prayers to the ancestors.",
+    "historical_timeline": "Foundational cornerstone of Yorùbá civic urbanization and compound organization since classical times.",
+    "etymology_and_philosophy": "From 'Bàbá' (father) and 'Ilé' (house/compound). Symbolizes unshakeable stability, patience, and fair arbitration.",
+    "material_and_craftsmanship": "Occupies the central veranda (Òdè) overlooking the courtyard; keeper of ancestral staff (Ọ̀pá Àgbà).",
+    "social_and_ritual_context": "Pours morning water libations to the earth and conducts lineage family assemblies.",
+    "proverbs_and_oral_traditions": [
+      "Bí bàbá ilé bá wà nílé, olè kì í wọ àgbàlá. (When the father of the compound is present, chaos and theft never breach the courtyard.)"
+    ],
+    "diaspora_connections": "Preserved in the structure of Brazilian 'Terreiro' and Cuban 'Casa Templo' elder leadership.",
+    "geographical_origin": "Pan-Yorùbáland",
+    "curatorial_guidelines": "Show elder seated on ancestral bench in traditional courtyard.",
+    "related_entities": [
+      "Ọkọ",
+      "Ẹbí",
+      "Agbo-Ilé",
+      "Àgbà"
+    ]
+  }
+]

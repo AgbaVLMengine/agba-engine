@@ -380,10 +380,24 @@ export default function ToothSearchCore({
             >
               <div
                 className="root-pod"
-                onClick={() => onSelectRootNode(rootNetworkNodes.parent, 'Sovereign Parent')}
+                onClick={() =>
+                  onSelectRootNode(
+                    rootNetworkNodes.parent,
+                    rootNetworkNodes.parent.is_parent === false ? 'Living Variant' : 'Sovereign Parent'
+                  )
+                }
               >
                 <span className="root-pod-badge">
-                  <Sparkles size={11} /> Sovereign Parent
+                  {rootNetworkNodes.parent.is_parent === false ||
+                  rootNetworkNodes.parent.sovereign_parent_status === 'Living Sub-Variant' ? (
+                    <>
+                      <GitBranch size={11} /> Living Sub-Variant
+                    </>
+                  ) : (
+                    <>
+                      <Sparkles size={11} /> Sovereign Parent
+                    </>
+                  )}
                 </span>
                 <div className="root-pod-title">{rootNetworkNodes.parent.title}</div>
                 <div className="root-pod-desc">
