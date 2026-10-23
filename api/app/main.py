@@ -64,13 +64,16 @@ FEEDBACK_STORE_PATH = ÀgbàConfig.get_feedback_store_path()
 QUERY_STORE_PATH = ÀgbàConfig.get_query_store_path()
 
 async def verify_api_key(request: Request, api_key: Optional[str] = Security(api_key_header_auth)):
-    key = (
+    query_key = request.query_params.get("api_key")
+    header_key = (
         api_key
         or request.headers.get("x-agba-api-key")
         or request.headers.get("x-àgbà-api-key")
         or request.headers.get("authorization", "").replace("Bearer ", "")
-        or request.query_params.get("api_key")
     )
+    if not header_key and query_key:
+        print("⚠️ SECURITY WARNING [OWASP API3]: Client authenticated via deprecated query param 'api_key'. Migrate to 'X-AGBA-API-KEY' header.")
+    key = header_key or query_key
     if not key or key not in ÀgbàConfig.VALID_API_KEYS:
         if key == "agba_studio_dev_key_2026":
             return ÀgbàConfig.VALID_API_KEYS["agba_studio_dev_key_2026"]
@@ -82,7 +85,7 @@ async def verify_api_key(request: Request, api_key: Optional[str] = Security(api
 
 # 2. Pydantic Request & Response Data Models
 class QueryRequest(BaseModel):
-    query: str = Field(..., example="Ìyùn", description="Cultural concept, entity name, or keyword query")
+    query: str = Field(..., max_length=1000, example="Ìyùn", description="Cultural concept, entity name, or keyword query")
     cultural_domain: Optional[str] = Field("Comprehensive", description="Domain filter (e.g. Regalia, Cosmology, Metallurgy, Gastronomy)")
     top_k: Optional[int] = Field(5, ge=1, le=20, description="Number of ranked entities to return")
     include_diaspora_context: bool = Field(True, description="Whether to include transatlantic diaspora connections")
@@ -304,14 +307,14 @@ async def get_telemetry_stats(client_info: Dict[str, Any] = Security(verify_api_
 
 # Conversational & Translation Pydantic Request Models
 class ChatRequest(BaseModel):
-    message: str = Field(..., example="Who is Ògún and why is iron sacred in Yorùbá philosophy?")
-    session_history: Optional[List[Dict[str, str]]] = Field(default_factory=list)
+    message: str = Field(..., max_length=2000, example="Who is Ògún and why is iron sacred in Yorùbá philosophy?")
+    session_history: Optional[List[Dict[str, str]]] = Field(default_factory=list, max_length=20)
 
 class DiacritizeRequest(BaseModel):
-    text: str = Field(..., example="Ogun lakaaye osin imole")
+    text: str = Field(..., max_length=1000, example="Ogun lakaaye osin imole")
 
 class CulturalTranslateRequest(BaseModel):
-    text: str = Field(..., example="Èjì Ogbè lori Ọpọ́n Ifá")
+    text: str = Field(..., max_length=1000, example="Èjì Ogbè lori Ọpọ́n Ifá")
 
 intelligence_suite = None
 
