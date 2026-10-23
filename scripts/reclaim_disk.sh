@@ -13,7 +13,7 @@ echo "📍 Target OS: Linux | Safe Mode: Active"
 echo "=================================================================="
 
 # 1. Capture Pre-Cleanup Storage
-BEFORE_KB=$(df --output=avail / | tail -1 | tr -d ' ')
+BEFORE_KB=$(df --output=avail "$HOME" | tail -1 | tr -d ' ')
 
 # 2. Reclaim Google Chrome Caches (Preserves Profile, Cookies, Bookmarks, Logins)
 CHROME_CACHE_DIR="$HOME/.cache/google-chrome/Default"
@@ -46,7 +46,7 @@ find /tmp -type f -atime +2 -delete 2>/dev/null || true
 echo "  ✅ Stale /tmp files pruned."
 
 # 5. Capture Post-Cleanup Storage & Calculate Reclaimed Space
-AFTER_KB=$(df --output=avail / | tail -1 | tr -d ' ')
+AFTER_KB=$(df --output=avail "$HOME" | tail -1 | tr -d ' ')
 RECLAIMED_KB=$((AFTER_KB - BEFORE_KB))
 
 if [ "$RECLAIMED_KB" -lt 0 ]; then
@@ -54,7 +54,7 @@ if [ "$RECLAIMED_KB" -lt 0 ]; then
 fi
 
 RECLAIMED_MB=$((RECLAIMED_KB / 1024))
-FREE_GB=$(df -h / | tail -1 | awk '{print $(NF-2)}')
+FREE_GB=$(df -h "$HOME" | tail -1 | awk '{print $4}')
 
 echo "=================================================================="
 echo "🎉 DISK RECLAIM COMPLETE!"

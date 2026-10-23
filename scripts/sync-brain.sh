@@ -36,6 +36,10 @@ git add \
   .agents/memory/irin-cloud.md \
   .agents/memory/agbede-builder.md \
   .agents/memory/eso-security.md \
+  .agents/memory/arokin-archivist.md \
+  .agents/memory/disk_saver_memory.md \
+  memory/disk_saver_memory.md \
+  scripts/reclaim_disk.sh \
   scripts/review.sh \
   scripts/sync-brain.sh
 
@@ -50,8 +54,11 @@ fi
 if git remote get-url origin >/dev/null 2>&1; then
   CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
   echo "🚀 Pushing Shared Brain to GitHub (origin/$CURRENT_BRANCH)..."
-  git push origin "$CURRENT_BRANCH"
-  echo "✅ GitHub Shared Brain backup complete!"
+  if git push origin "$CURRENT_BRANCH" 2>/dev/null; then
+    echo "✅ GitHub Shared Brain backup complete!"
+  else
+    echo "ℹ️  Local commit saved. GitHub push skipped (offline/sandbox)."
+  fi
 else
   echo "ℹ️  Local commit complete. Add a 'git remote add origin <github-url>' to enable automatic remote push."
 fi
