@@ -91,13 +91,13 @@ class QueryRequest(BaseModel):
     include_diaspora_context: bool = Field(True, description="Whether to include transatlantic diaspora connections")
 
 class FeedbackPayload(BaseModel):
-    query_id: str = Field(..., description="Unique query transaction ID")
-    rating: str = Field(..., description="'thumbs_up' or 'thumbs_down'")
-    queried_concept: Optional[str] = Field(None, description="The concept originally queried")
-    returned_entity_id: Optional[str] = Field(None, description="The entity ID returned by the engine")
-    user_correction: Optional[str] = Field(None, description="Suggested correction or missing cultural context")
-    tags: Optional[List[str]] = Field(default_factory=list, description="Categorical tags (e.g. diacritic_error, domain_mismatch)")
-    idempotency_key: Optional[str] = Field(None, description="Client-generated UUID for idempotent feedback deduplication")
+    query_id: str = Field(..., max_length=100, description="Unique query transaction ID")
+    rating: str = Field(..., max_length=20, description="'thumbs_up' or 'thumbs_down'")
+    queried_concept: Optional[str] = Field(None, max_length=500, description="The concept originally queried")
+    returned_entity_id: Optional[str] = Field(None, max_length=100, description="The entity ID returned by the engine")
+    user_correction: Optional[str] = Field(None, max_length=2000, description="Suggested correction or missing cultural context")
+    tags: Optional[List[str]] = Field(default_factory=list, max_length=20, description="Categorical tags (e.g. diacritic_error, domain_mismatch)")
+    idempotency_key: Optional[str] = Field(None, max_length=100, description="Client-generated UUID for idempotent feedback deduplication")
 
 # In-memory idempotency cache (seeded from feedback_store.jsonl on first write)
 _SEEN_IDEMPOTENCY_KEYS = set()

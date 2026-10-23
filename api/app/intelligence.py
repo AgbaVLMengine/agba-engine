@@ -313,11 +313,13 @@ class ÀgbàIntelligenceSuite:
         diacritized_output = ""
         method = "Gemini-2.5-Flash (Orthographic Restorer)"
 
+        safe_ascii = (ascii_text or "").strip()[:1000]
+
         if self.client:
             try:
                 response = self.client.models.generate_content(
                     model="gemini-2.5-flash",
-                    contents=f"Text to diacritize: {ascii_text}",
+                    contents=f"<text_to_diacritize>\n{safe_ascii}\n</text_to_diacritize>",
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
                         thinking_config=types.ThinkingConfig(thinking_level="low"),
@@ -430,11 +432,13 @@ class ÀgbàIntelligenceSuite:
         structured_data = {}
         method = "Gemini-2.5-Flash (Cultural Glossing)"
 
+        safe_yoruba = (yoruba_text or "").strip()[:1000]
+
         if self.client:
             try:
                 response = self.client.models.generate_content(
                     model="gemini-2.5-flash",
-                    contents=f"Text to translate and gloss: {yoruba_text}",
+                    contents=f"<text_to_translate_and_gloss>\n{safe_yoruba}\n</text_to_translate_and_gloss>",
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
                         thinking_config=types.ThinkingConfig(thinking_level="low"),
