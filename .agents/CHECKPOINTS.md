@@ -258,6 +258,20 @@
     - `scripts/review.sh`: 0 hard violations, 0 warnings across all 8 gates.
 - **Verification**: ✅ Production ready. All gates passed.
 
+### [2026-10-23] Checkpoint 020 — Agbálẹ̀ (Disk Saver) Commissioned, Ìlù Agogo Corrected & Autonomous Ingestion Decree
+- **Lead Supervisor**: `Àgbà` (`agba-pa-architect`)
+- **Agent Personas**: `Agbálẹ̀` (`disk-saver`) & `Àrọ̀kìn` (`arokin-archivist`)
+- **Deliverables Completed**:
+  - **Royal Autonomous Ingestion Decree**: Lead Architect granted unconditional green light for `Àrọ̀kìn` to enrich all remaining thin entities without waiting for intermediate approvals.
+  - **`Agbálẹ̀` (Disk Saver) Commissioned**: Established as the 9th persona of `Ẹ̀gbẹ́-Àgbà` with specification at `agents/disk_saver.md`, memory at `memory/disk_saver_memory.md` (and `.agents/memory/disk_saver_memory.md`), and automated safe reclaim script at `scripts/reclaim_disk.sh` (<500 LOC). Tested and operational.
+  - **Linguistic Correction Applied**: Corrected `Elù Agogo` to canonical **`Ìlù Agogo`** across `yoruba_corpus_1007_NORMALIZED.json`, `yoruba_master_corpus.json`, and `scripts/enrich_batch_01.py`, preserving `Elù Agogo` as a secondary search alias.
+  - **16 Principal Odù Ifá (Ojú Odù Méjì) Enriched**: Ingested rich 14-Tier data across all 16 principal Odù chapters via `scripts/enrich_batch_1_olodu_meji.py`.
+  - **Quality & Standards Verification**:
+    - `benchmark_sprint004.py`: 28/28 (100.0%) Top-1 Accuracy.
+    - `scripts/review.sh`: 0 hard violations, 0 warnings across all 9 persona vaults.
+- **Verification**: ✅ ALL GATES PASSED. Synchronized and ready.
+
+
 ### [2026-10-23] Checkpoint 020 — Daily Security Sentinel Audit Automation Configured & Verified
 - **Agent Persona**: `Ẹ̀ṣọ́` (`eso-security`)
 - **Supervising Architect**: `Àgbà` (`agba-pa-architect`)

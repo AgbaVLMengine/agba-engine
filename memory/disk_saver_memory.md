@@ -1,0 +1,29 @@
+# 🧠 DISK SAVER MEMORY VAULT (`memory/disk_saver_memory.md`)
+
+> **Platform**: Linux OS (Ubuntu/Debian) + Google Chrome  
+> **Role**: System Storage Sentinel & Cache Reclaimer (`Agbálẹ̀` / `disk-saver`)  
+> **Commissioned**: 2026-10-23 by Lead Architect **Àrùnà Ọlànrewájú Kábírù**  
+
+---
+
+## 1. Storage Baseline & Targets
+- **Protected Environment**: `/home/aruna_olanrewaju/`
+- **Protected Database Perimeters**: `agba-engine/` (Qdrant storage, corpora, git repositories)
+- **Purge Targets**: `~/.cache/google-chrome/Default/Cache`, `~/.cache/pip`, `~/.npm/_cacache`, `/tmp`
+
+---
+
+## 2. Operational History & Reclaim Log
+
+| Timestamp (UTC) | Action Performed | Space Reclaimed | Post-Cleanup Free Space | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **2026-10-23 19:42** | Initial Storage Baseline Audit & Configuration Initialization | 0 MB (Baseline established) | 15.0 GB available | 🟢 Nominal |
+
+---
+
+## 3. Persistent Invariants
+1. Never touch user files in Documents, Downloads (unless explicitly marked `.tmp` or `.crdownload` abandoned), Desktop, or workspace repositories.
+2. Never delete Chrome user profile database files (`Bookmarks`, `Cookies`, `History`, `Login Data`, `Web Data`).
+3. Only purge `Cache`, `Code Cache`, `GPUCache`, and `DawnCache`.
+4. Always log reclaimed bytes and disk headroom after every cleanup cycle.
+| **2026-10-23 19:43 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 0% available | 🟢 Nominal |

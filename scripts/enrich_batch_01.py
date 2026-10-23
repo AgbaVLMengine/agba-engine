@@ -134,8 +134,8 @@ ENRICHMENTS: Dict[str, Dict[str, Any]] = {
             "Àyàn kò kọ́ ọmọ rẹ̀ l'orin kí ọmẹle ó sọ ọ̀rọ̀ àbùkù. (Àyàn never instructed his drum-scions to sing so that the omele would utter indignity: Emphasizing the sacred ethical lineage and speech-fidelity of the drummer guild.)"
         ]
     },
-    "Elù Agogo": {
-        "etymology_and_philosophy": "From 'Ẹlù' (the lead striker / keeper of the timeline beat) and 'Agogo' (the hand-forged clapperless iron bell). Philosophically represents temporal order, public warning, and the sacred resonance of Ògún's iron in structuring cosmic and communal time.",
+    "Ìlù Agogo": {
+        "etymology_and_philosophy": "From 'Ìlù' (the rhythmic strike / percussive sounding, from lù: to strike/beat) and 'Agogo' (the hand-forged clapperless iron bell). In musical guild vernacular, sometimes rendered as 'Ẹlù' (the lead striker/timekeeper). Philosophically represents temporal order, public warning, and the sacred resonance of Ògún's iron in structuring cosmic and communal time.",
         "historical_timeline": "Iron Age Antiquity: Forged in the earliest iron smelters of Ilé-Ifẹ̀ and Òwọ̀; consecrated to Ògún as the herald of civic gatherings and temple assemblies. Classical Era: Commanded market openings, royal proclamations, and sacred seasonal rites across Ọ̀yọ́, Benin, and Ìjẹ̀bú polities. Transatlantic Era: Retained as the indispensable rhythmic anchor in Afro-Cuban Santería/Abakuá and Brazilian Samba (as the Agogô). Modern Era: Endures as the driving metronome in contemporary highlife, Jùjú, and Fela Kuti's Afrobeat.",
         "material_and_craftsmanship": "Forged by master blacksmiths (Àwọn Àgbẹ̀dẹ) from high-grade wrought iron or cast bronze, tempered in cold water baths, and struck with a solid iron striker or dense camwood rod.",
         "proverbs_and_oral_traditions": [
