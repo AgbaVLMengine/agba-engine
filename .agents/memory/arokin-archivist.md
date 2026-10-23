@@ -68,7 +68,14 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
 - **2026-10-23 [HANDOFF-AROKIN-001]**: Successfully executed Batch 1 Phase 4 Enrichment for the first 25 thin entities in `scripts/thin_entities_manifest.json`:
   - Authored `/home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_01.py` (343 LOC, Gate 2 compliant).
   - Enriched 25 entities across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`:
-    - `Oba Akinyele`, `Awujalẹ`, `Deji`, `Akarigbo`, `Olofa`, `Alara`, `Aresa`, `D.O. Fagunwa`, `Adé Òrìṣà`, `Àpàlà Agba`, `Omele-Abo Dundun`, `Elù Agogo`, `Filà Abetíajá`, `Filà Oníde`, `Ìpájọ́`, `Àṣà-Ọmọlúwàbí`, `Ewe Àìdan`, `Obì Ìyàwó`, `Ìpèsè-Ẹ̀gbẹ́`, `Iyalálájẹ́ Market Council`, `Àgbàǹgbá`, `Ayò Olọ́pọ́n`, `Adire Oníkan`, `Ọ̀pọ̀ṣẹ́`, `Ofì Apá`.
+    - `Oba Akinyele`, `Awujalẹ`, `Deji`, `Akarigbo`, `Olofa`, `Alara`, `Aresa`, `D.O. Fagunwa`, `Adé Òrìṣà`, `Àpàlà Agba`, `Omele-Abo Dundun`, `Ìlù Agogo`, `Filà Abetíajá`, `Filà Oníde`, `Ìpájọ́`, `Àṣà-Ọmọlúwàbí`, `Ewe Àìdan`, `Obì Ìyàwó`, `Ìpèsè-Ẹ̀gbẹ́`, `Iyalálájẹ́ Market Council`, `Àgbàǹgbá`, `Ayò Olọ́pọ́n`, `Adire Oníkan`, `Ọ̀pọ̀ṣẹ́`, `Ofì Apá`.
   - Added multi-epoch antiquity timelines, dual-language proverbs formatted as `"Òwe Yorùbá (English Translation: Philosophical Commentary)"`, and deep etymological/craftsmanship contexts.
   - Reduced remaining thin entities from 427 to 402.
   - Verified with `scripts/review.sh`: 0 violations, 0 warnings. All gates passed.
+- **2026-10-23 [HANDOFF-AROKIN-002]**: Executed Native Subagent Enrichment across the 16 Principal Olódù Ifá (Ojú Odù Méjì):
+  - Subagent `Odù Ifá Chronicler & Corpus Hydrator` deployed and synthesized `scripts/olodu_meji_batch_1_data.json` and `scripts/enrich_batch_1_olodu_meji.py` (178 LOC).
+  - Fully hydrated all 16 major chapters (`ODU_001_Ogbè` to `ODU_016_Òfún`) across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` with 14-Tier depth parity:
+    * `Èjì Ogbè`, `Ọ̀yẹ̀kú Méjì`, `Ìwòrì Méjì`, `Òdí Méjì`, `Ìrosùn Méjì`, `Ọ̀wọ́nrín Méjì`, `Ọ̀bàrà Méjì`, `Ọ̀kànràn Méjì`, `Ògúndá Méjì`, `Ọ̀sá Méjì`, `Ìká Méjì`, `Òtúúrúpọ̀n Méjì`, `Òtúá Méjì`, `Ìrẹtẹ̀ Méjì`, `Ọ̀ṣẹ́ Méjì`, `Òfún Méjì`.
+    * Enriched each entity with 850–1100 character multi-epoch timelines, 3 dual-language proverbs with parenthetical English translation and philosophical commentary, sacred timber/Ikin craftsmanship, and diaspora links.
+  - Sùúrù QA benchmark verified at 100.0% (`28/28` Top-1 Accuracy).
+  - Reduced total remaining thin entities down to **240** (the remaining combined Odù).
