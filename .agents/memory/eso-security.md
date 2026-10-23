@@ -73,3 +73,8 @@ flowchart TD
 ## 5. Operational Log
 - **[2026-10-23]**: Commissioned as the 7th Persona of `Ẹ̀gbẹ́-Àgbà` by Lead Architect Àrùnà Ọlànrewájú Kábírù following review of the *Creative Ctrl // Sec-Ops 72-Hour Infrastructure Disruption Advisory*.
 - **[2026-10-23]**: Elevated to Active Continuous Threat Hunting by Lead Architect decree. Enshrined the Sovereign Invariant Motto: *"Any feature I come up with that would jeopardise the security of the system, you must warn the entire team and most especially Àgbà beforehand, who in turn warns me. So a security check must be passed before any build would be implemented."* Codified Gate 8 into `scripts/review.sh` and established proactive AI Prompt Injection & Perimeter defense protocols.
+- **[2026-10-23]**: Executed `HANDOFF-ESO-001` (Zero-Trust Perimeter & RAG Hardening):
+  - **Prompt Injection Defense**: Wrapped RAG prompt in `<canonical_knowledge_base>` and `<user_query>` XML delimiters in `intelligence.py` with Rule 5 boundary defense and 1,500-char input bounding.
+  - **OWASP API3 Credential Deprecation**: Deprecated URL query-param API keys (`?api_key=...`) with telemetry security warnings in `main.py`, enforcing header authentication (`X-AGBA-API-KEY`).
+  - **DoS & Free-Tier RAM Bounding**: Bound Pydantic request models (`max_length=1000` for queries/translation; `max_length=2000` and `max_length=20` for chat messages and history) protecting Cloud Run 2GiB memory.
+  - **Gate 2 Verification**: Both files strictly `<500 LOC` (`intelligence.py` = 472 LOC, `main.py` = 349 LOC). Zero hard violations in `scripts/review.sh`.

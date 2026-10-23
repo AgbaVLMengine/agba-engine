@@ -229,4 +229,21 @@
   - **Interlocking 5-Agent Ingestion Council Codified**: Codified the strict cross-cultural ingestion pipeline: `Àrọ̀kìn` (Archivist) → `Ìmọ̀` (Legal/Fair-Use/Folklore) → `Ẹ̀ṣọ́` (Zero-Trust Security & Anti-Poison) → `Àgbẹ̀dẹ` (Builder/Hydrator) → `Sùúrù` (QA Retrieval Benchmarks) → `Àgbà` (Co-Architect Supervision & Lead Architect Approval).
 - **Verification**: ✅ Gates 1-8 verified. Architecture active and ready for execution.
 
+### [2026-10-23] Checkpoint 018 — HANDOFF-ESO-001 Zero-Trust Perimeter Hardening & Prompt Injection Defense Implemented
+- **Agent Persona**: `Ẹ̀ṣọ́` (`eso-security`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Item 1: RAG Prompt Injection & Exfiltration Shielding (`api/app/intelligence.py`)**:
+    - Wrapped grounded context in `<canonical_knowledge_base>` and user input in `<user_query>` XML boundaries.
+    - Bound input messages to max 1,500 characters.
+    - Codified Rule 5 in `system_instruction` enforcing strict perimeter defense against system prompt leaks and persona tampering under adversarial prompts.
+  - **Item 2: OWASP API3 URL Query Credential Deprecation (`api/app/main.py`)**:
+    - Prioritized `X-AGBA-API-KEY` and `Authorization: Bearer` headers.
+    - Emitted an explicit telemetry warning (`OWASP API3`) when legacy query-param `api_key` is detected.
+  - **Item 3: DoS & Cloud Run Free-Tier RAM Bounding (`api/app/main.py`)**:
+    - Added `max_length=1000` to `QueryRequest.query`, `DiacritizeRequest.text`, and `CulturalTranslateRequest.text`.
+    - Added `max_length=2000` to `ChatRequest.message` and `max_length=20` to `ChatRequest.session_history`.
+- **Verification**: ✅ Gate 2 strictly maintained (`intelligence.py` = 472 LOC, `main.py` = 349 LOC). Zero hard violations in `./scripts/review.sh`.
+
+
 

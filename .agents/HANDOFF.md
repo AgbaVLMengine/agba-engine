@@ -35,7 +35,7 @@
 
 ### `HANDOFF-ESO-001` — Proactive Zero-Trust Perimeter, Query-Key Deprecation & RAG Hardening
 - **Assigned To**: **`Ẹ̀ṣọ́`** (`eso-security`) in coordination with **`Àgbà`** (`agba-pa-architect`)
-- **Status**: 🟡 **Awaiting Chief Co-Architect (`Àgbà`) Architectural Review & Concurrence**
+- **Status**: 🟢 **COMPLETED & VERIFIED (Checkpoint 018)**
 - **Target Files**:
   - `/home/aruna_olanrewaju/agba-engine/api/app/intelligence.py` (Current: 466 LOC; Target: <475 LOC)
   - `/home/aruna_olanrewaju/agba-engine/api/app/main.py` (Current: 346 LOC; Target: <355 LOC)
