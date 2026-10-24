@@ -329,6 +329,21 @@
   - **Legal Sign-Off**: **GREEN LIGHT / ALL CLEAR**. `Àrọ̀kìn` is formally authorized to proceed with Phase 4 Batch 3 ingestion under identical 14-Tier depth and citational standards.
 - **Verification**: ✅ `scripts/review.sh` passed (0 hard violations, 0 warnings); `benchmark_sprint004.py` passed (28/28 Top-1); `npm run build` passed (0 errors).
 
+### [2026-10-24] Checkpoint 023 (`CHECKPOINT-SUURU-005`) — Human-Grade QA, Zero-Shot & Orthography Audit of Batch 2 (25 Entities)
+- **Agent Persona**: `Sùúrù` (`suuru-qa`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Zero-Shot Canonical Title Benchmark (25/25 100.0% Pass)**: Executed live hybrid retrieval tests with `AgbaHybridRetriever` on all 25 newly elevated Batch 2 records. All 25 entities deterministically returned at **Rank #1**.
+  - **14-Tier Schema Parity & UX Verification**: Verified dual-language liturgical proverbs (Yorùbá verse + parenthetical English translation and philosophical gloss), multi-epoch historical timelines (Ancient/Classical, Imperial Ọ̀yọ́, Transatlantic Diaspora, Modern), and peer-reviewed academic citations across 100% of the batch.
+  - **Martial & Homograph Collision Check**: Confirmed that martial and historical nodes (`Ogun Kiriji`, `Ogun Ijaye`, `Ogun Bante-Oje`, `Balogun Ibikunle`, `Balogun Ogunmola`, `Ipado-Ogun`, `Ewe-Ogun`) resolve at Rank #1 without false-positive collisions with deity `Ògún` or generic warfare roots.
+  - **Sub-Surface Duplicate Twin Nodes Caught**: Identified 2 entities where legacy records in the corpus conflict with newly enriched hyphenated forms:
+    1. `Aso-Ẹbí` (Batch 2) vs `Aṣọ Ẹ̀bị́` (legacy entry with Vietnamese `ị`).
+    2. `Otun-Iyalode` (Batch 2) vs `Otun Iyalode` (unhyphenated legacy entry).
+    - Flagged for deduplication merge to guarantee clean ASCII folded resolution.
+  - **System Verification**: `benchmark_sprint004.py` passed (28/28 100.0%); `npm run build` completed in 745ms with 0 errors; `./scripts/review.sh` passed (0 hard violations, 0 warnings).
+  - **QA Verdict**: **GREEN LIGHT GRANTED** for Batch 3 and subsequent Phase 4 autonomous ingestions.
+
+
 
 
 

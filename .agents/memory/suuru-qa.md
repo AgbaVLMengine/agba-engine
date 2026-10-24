@@ -51,6 +51,15 @@
     - Category 17 Faunal Accuracy: **`0 / 18` (0.0%)** (all faunal entities currently trapped in Category 1 or 4)
   - Updated comprehensive audit report at `.agents/local-seeds/AGY__REPORT_SUURU_QA_004.md`.
   - Greenlight transmitted to `Àgbà` for `Àgbẹ̀dẹ` (`agbede-builder`) to execute `HANDOFF-AGBEDE-004` (corpus remapping, Sovereign Parent ingestion, dynamic child hydration, bilateral knowledge graph links). Standby for post-build verification.
+- **[2026-10-24] (`CHECKPOINT-SUURU-005` — Human-Grade QA & Retrieval Audit of Batch 2: 25 Entities)**:
+  - Audited all 25 canonical entities elevated by `Àrọ̀kìn` in Batch 2 (`scripts/enrich_batch_02.py`).
+  - **Zero-Shot Canonical Retrieval**: **25/25 (100.0%) Top-1 Accuracy** across all 25 titles (`Ilé-Orìṣà`, `Idi-Eégún`, `Tiro`, `Aso-Ẹbí`, `Ilé-Ọlọ́jà`, `Ilé-Akodi`, `Bààfin`, `Arowo-Ilé`, `Ògùdù`, `Ọ̀pọ̀-Ẹ̀wà`, `Èlù-Agbẹ́`, `Olori-Oluwa`, `Mègàjí`, `Igbá-Kejì`, `Otun-Iyalode`, `Àṣá-Ewe`, `Ogun Kiriji`, `Ogun Ijaye`, `Ogun Bante-Oje`, `Balogun Ibikunle`, `Balogun Ogunmola`, `Afonja of Ilorin`, `Ipado-Ogun`, `Ewe-Ogun`, `The History of the Yorubas`).
+  - **14-Tier Schema Parity & Citational Rigor**: Confirmed multi-epoch antiquity timelines, dual-language proverbs with English philosophical translations, and academic citations (Johnson 1921, Smith 1988, Akintoye 1971, Verger 1995, etc.) populated across 100% of the batch.
+  - **QA Defect Isolated (Corpus Twin Node Duplication)**:
+    - Caught 2 twin entity duplicates in master corpus: `Aso-Ẹbí` (newly enriched) vs `Aṣọ Ẹ̀bị́` (legacy entry with Vietnamese `ị`), and `Otun-Iyalode` vs `Otun Iyalode` (hyphenated vs unhyphenated). Flagged for deduplication merge.
+  - **Regression Test Run**: `benchmark_sprint004.py` passed 28/28 (100.0%); Vite production build transformed 1,912 modules in 745ms with 0 errors; `scripts/review.sh` passed with 0 hard violations and 0 warnings.
+  - **Verdict**: **GREEN LIGHT GRANTED** for Batch 3 and subsequent Phase 4 ingestions.
+
 
 
 
