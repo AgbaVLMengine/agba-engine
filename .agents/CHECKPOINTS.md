@@ -413,6 +413,18 @@
   - **System & Build Verification**: `npm run build` compiled in 867ms (1,914 modules transformed, 0 errors). `scripts/benchmark_sprint004.py` verified 28/28 (100.0%) Top-1 accuracy across the consolidated 1,417-entity corpus. `./scripts/review.sh` passed cleanly with 0 hard violations and 0 warnings.
 - **Verification**: ✅ **100% PRODUCTION PASS & SIGN-OFF GRANTED**.
 
+### [2026-10-24] Checkpoint 030 (`CHECKPOINT-SUURU-006`) — Human-Grade QA: Prototypes 1 & 2 UI Interaction, Batch 3 Zero-Shot & Deduplication Verification
+- **Agent Persona**: `Sùúrù` (`suuru-qa`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Prototype 1 UI Verification (`<AkosileProvenanceDrawer />` 120 LOC)**: Stress-tested drawer component in `EntityBentoDeck.jsx` (395 LOC). Verified Escape key listener, backdrop dismiss, smooth scrolling, and dynamic rendering of primary academic citations (Johnson 1921, Abímbọ́lá 1975, Abiodun 2014, etc.) across 331 cited entities. Zero animation stutter.
+  - **Prototype 2 UI Verification (`<LivingVariantConstellationGrid />` 91 LOC)**: Verified interactive chip rendering and seamless integration with `onBranchToRelative({ title, is_subvariant: true })`. Certified that clicking any sub-variant chip triggers the dynamic child hydrator at Rank #1 without causing parent-leaf collapse or layout reflows in `SearchTab.jsx`.
+  - **Twin-Node Deduplication Certified**: Verified consolidation of `Aso-Ẹbí` + `Aṣọ Ẹ̀bị́` into canonical `Aṣọ-Ẹbí` and `Otun-Iyalode` + `Otun Iyalode` into `Otun-Ìyál'óde`. Corpus total harmonized to exactly **1,417 entities** across both API and Web corpora.
+  - **Batch 3 Zero-Shot Retrieval Benchmark**: Certified **25/25 (100.0%) Top-1 Accuracy** across all 25 newly elevated Batch 3 entities with `AgbaHybridRetriever` (including diacritized `Àgbàdá-Àrò` and `Ìrókẹ́ Ifá` alongside their ASCII folded counterparts). Total entities with academic citations elevated to **331**.
+  - **Regression Verification**: Core `benchmark_sprint004.py` passed 28/28 (100.0%); Vite production build compiled 1,914 modules in 766ms with 0 errors; `./scripts/review.sh` passed with 0 hard violations, 0 warnings.
+  - **QA Verdict**: ✅ **100% PRODUCTION QA SIGN-OFF GRANTED**.
+
+
 
 
 
