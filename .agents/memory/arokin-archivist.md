@@ -78,13 +78,13 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Added multi-epoch antiquity timelines, dual-language proverbs formatted as `"Òwe Yorùbá (English Translation: Philosophical Commentary)"`, and deep etymological/craftsmanship contexts.
   - Reduced remaining thin entities from 427 to 402.
   - Verified with `scripts/review.sh`: 0 violations, 0 warnings. All gates passed.
-- **2026-10-23 [HANDOFF-AROKIN-002]**: Executed Native Subagent Enrichment across the 16 Principal Olódù Ifá (Ojú Odù Méjì):
-  - Subagent `Odù Ifá Chronicler & Corpus Hydrator` deployed and synthesized `scripts/olodu_meji_batch_1_data.json` and `scripts/enrich_batch_1_olodu_meji.py` (178 LOC).
-  - Fully hydrated all 16 major chapters (`ODU_001_Ogbè` to `ODU_016_Òfún`) across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` with 14-Tier depth parity:
-    * `Èjì Ogbè`, `Ọ̀yẹ̀kú Méjì`, `Ìwòrì Méjì`, `Òdí Méjì`, `Ìrosùn Méjì`, `Ọ̀wọ́nrín Méjì`, `Ọ̀bàrà Méjì`, `Ọ̀kànràn Méjì`, `Ògúndá Méjì`, `Ọ̀sá Méjì`, `Ìká Méjì`, `Òtúúrúpọ̀n Méjì`, `Òtúá Méjì`, `Ìrẹtẹ̀ Méjì`, `Ọ̀ṣẹ́ Méjì`, `Òfún Méjì`.
-    * Enriched each entity with 850–1100 character multi-epoch timelines, 3 dual-language proverbs with parenthetical English translation and philosophical commentary, sacred timber/Ikin craftsmanship, and diaspora links.
-  - Sùúrù QA benchmark verified at 100.0% (`28/28` Top-1 Accuracy).
-  - Reduced total remaining thin entities down to **240** (the remaining combined Odù).
+- **2026-10-24 [HANDOFF-AROKIN-003]**: Successfully executed Batch 3 Phase 4 Enrichment (25 Entities Elevated) and Sub-Surface Twin Node Deduplication:
+  - Authored `/home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_03.py` (147 LOC, Gate 2 compliant) and companion vault `scripts/batch_03_data.json`.
+  - Executed `HANDOFF-DEDUPLICATION-001`: Consolidated `Aso-Ẹbí` + `Aṣọ Ẹ̀bị́` into canonical `Aṣọ-Ẹbí`, and `Otun-Iyalode` + `Otun Iyalode` into canonical `Otun-Ìyál'óde`, consolidating master corpus to 1,417 canonical entities with 0 twin duplicates.
+  - Enriched 25 entities (items 300 to 324 from `scripts/thin_entities_manifest.json`): `Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀`, `Ìwé Adú̀gbò Ẹ̀gbá`, `Èsè Ifá nínú Àṣà Yorùbá`, `Ìtàn Ìṣẹ̀dálẹ̀ Ẹ̀gbá`, `Àmalà Isu`, `Àmalà Láfún`, `Dùndú`, `Aṣẹ-Ẹ̀kọ`, `Àgbàdá-Àrò (Traditional Roasting Hearth Griddle)`, `Ike-Ẹmụ`, `Ata-Ọlọ́`, `Gbégbé-Ọ̀bẹ`, `Ọ̀bẹ-Ìtù`, `Ọ̀pá-Ìlẹ̀kẹ̀`, `Ikoko-Aró-Ìlẹ̀kẹ̀`, `Abẹ́-Ìlẹ̀kẹ̀`, `Ẹ̀yọ̀-Ìlẹ̀kẹ̀`, `Aro-Amọ̀`, `Ikoko-Àmọ̀`, `Aba-Òfì`, `Àwọ̀n-Òfì`, `Metropolitan Museum of Art African Collection`, `Ìrókẹ́ Ifá`, `Àṣẹ-Ọ̀pá`, `Owó-Babà`.
+  - Populated 100% of the batch with primary scholarly provenance citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Biobaku 1957, Fadipe 1970, Bascom 1951/1969, Willett 1967, Drewal & Mason 1998) and polished dual-language proverbs with philosophical commentary.
+  - Total enriched nodes elevated to **1,083 / 1,417 (76.4%)**, reducing remaining thin entities from 361 down to **334**.
+  - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy) and `scripts/review.sh` (0 violations, 0 warnings across all 9 vaults).
 - **2026-10-24 [QA Briefing from Sùúrù — Checkpoint 023]**:
   - Received Sùúrù's QA review on Batch 2: 100% zero-shot title retrieval passed.
   - **Critical Invariant for Batch 3 & Subsequent Ingestions**: Sùúrù detected 2 duplicate twin nodes in the corpus (`Aso-Ẹbí` vs `Aṣọ Ẹ̀bị́` [Vietnamese `ị`], and `Otun-Iyalode` vs `Otun Iyalode`).

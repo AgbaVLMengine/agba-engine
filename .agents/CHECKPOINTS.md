@@ -382,18 +382,27 @@
   - **System Verification**: `./scripts/review.sh` passed cleanly with 0 hard violations and 0 warnings; `npm run build` compiled in 857ms (0 errors).
 - **Verification**: ✅ **AUDIT PASSED (0 hard violations, 0 warnings)**.
 
-### [2026-10-24] Checkpoint 027 (`CHECKPOINT-AGBEDE-004`) — Phased Feature Delivery: Prototypes 1 & 2 Live with Zero-Touch Production UI
-- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
-- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+### [2026-10-24] Checkpoint 028 — Àrọ̀kìn Batch 3 Phase 4 Enrichment (25 Entities Elevated) & Twin Node Deduplication
+- **Lead Supervisor**: `Àgbà` (`agba-pa-architect`)
+- **Agent Personas**: `Àrọ̀kìn` (`arokin-archivist`) & `Sùúrù` (`suuru-qa`)
 - **Deliverables Completed**:
-  - **Zero-Touch Production UI Law Preserved**: `SearchTab.jsx` (486 LOC) and `ToothSearchCore.jsx` (485 LOC) remain 100% untouched with 0 lines added.
-  - **Ancient Brass Heraldry Aesthetic Upheld**: Completely rejected literal porcelain tooth anatomy. Maintained elevated classical brass heraldry and subtle Yorùbá geometric relief (`àkọ̀` / `ìkòkò`).
-  - **Prototype 1 (<AkosileProvenanceDrawer />)**: Created `web/src/components/AkosileProvenanceDrawer.jsx` (120 LOC, < 150 LOC target). Fully functional slide-over drawer exposing academic citations (Johnson 1921, Abímbọ́lá, Abiodun, Lawal, Verger), museum accession identifiers, custodial repositories, and RAIL-Cultural-Heritage-v1.0 + Awo sacred boundary protection.
-  - **Prototype 2 (<LivingVariantConstellationGrid />)**: Created `web/src/components/LivingVariantConstellationGrid.jsx` (91 LOC, < 150 LOC target). Luminous sub-variant constellation chips with hover glow and 1-click dynamic branching into the sub-variant hydrator.
-  - **Modular Mounting**: Mounted both components within `EntityBentoDeck.jsx` (395 LOC, < 500 LOC ceiling) with minimal declarative hooks.
-  - **Gate 6 Sacred Reverence Law Enforced**: Cloud infrastructure persona strictly locked as `Irin` (`irin-cloud`).
-  - **Verification**: `npm run build` compiled in 733ms (0 errors, 1,914 modules); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
-- **Verification**: ✅ **PHASED FEATURE PROTOTYPES 1 & 2 VERIFIED & PRODUCTION READY**.
+  - **Deduplication of Sub-Surface Twin Nodes (`HANDOFF-DEDUPLICATION-001`)**:
+    - Merged `Aso-Ẹbí` + `Aṣọ Ẹ̀bị́` into canonical **`Aṣọ-Ẹbí`** (index 213), preserving all search aliases and eliminating corrupt Vietnamese `ị` (`U+1ECB`).
+    - Merged `Otun-Iyalode` + `Otun Iyalode` into canonical **`Otun-Ìyál'óde`** (index 291), retaining unhyphenated and spaced variants as indexed aliases.
+    - Master corpus consolidated from 1,419 to **1,417 canonical entities** with 0 twin duplicates across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
+  - **Batch 3 Phase 4 Enrichment (25 Entities Elevated)**:
+    - Enriched the next 25 canonical entities from `scripts/thin_entities_manifest.json` (items 300 to 324) with full 14-Tier depth:
+      `Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀`, `Ìwé Adú̀gbò Ẹ̀gbá`, `Èsè Ifá nínú Àṣà Yorùbá`, `Ìtàn Ìṣẹ̀dálẹ̀ Ẹ̀gbá`, `Àmalà Isu`, `Àmalà Láfún`, `Dùndú`, `Aṣẹ-Ẹ̀kọ`, `Àgbàdá-Àrò (Traditional Roasting Hearth Griddle)`, `Ike-Ẹmụ`, `Ata-Ọlọ́`, `Gbégbé-Ọ̀bẹ`, `Ọ̀bẹ-Ìtù`, `Ọ̀pá-Ìlẹ̀kẹ̀`, `Ikoko-Aró-Ìlẹ̀kẹ̀`, `Abẹ́-Ìlẹ̀kẹ̀`, `Ẹ̀yọ̀-Ìlẹ̀kẹ̀`, `Aro-Amọ̀`, `Ikoko-Àmọ̀`, `Aba-Òfì`, `Àwọ̀n-Òfì`, `Metropolitan Museum of Art African Collection`, `Ìrókẹ́ Ifá`, `Àṣẹ-Ọ̀pá`, `Owó-Babà`.
+    - Populated all 25 entities with mandatory primary academic citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Biobaku 1957, Fadipe 1970, Bascom 1951/1969, Willett 1967, Drewal & Mason 1998, MMA Accession Catalog).
+    - Polished dual-language proverbs with pristine Yorùbá diacritics and parenthetical English translations with philosophical commentary.
+    - Reduced remaining thin entities from 361 down to **334** (total enriched entities elevated to **1,083 / 1,417 — 76.4%**).
+  - **Gate 2 & Modularity Compliance**:
+    - Authored `scripts/enrich_batch_03.py` (147 LOC, strictly < 500 lines) with companion data vault `scripts/batch_03_data.json`.
+  - **Comprehensive QA & Production Gate Verification**:
+    - `benchmark_sprint004.py`: **28/28 (100.0%) Top-1 Accuracy** live against 1,417 entities; 16/16 friction queries (100.0%); 8/8 anti-parent-loop (100.0%); 18/18 Category 17 fauna (100.0%).
+    - `scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 persona vaults.
+- **Verification**: ✅ **BATCH 3 INGESTION & DEDUPLICATION VERIFIED & PRODUCTION READY**.
+
 
 
 

@@ -43,19 +43,14 @@
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`) & **`Àrọ̀kìn`** (`arokin-archivist`)
 - **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
 - **Reported By**: **`Sùúrù`** (`suuru-qa` — Checkpoint 023)
-- **Status**: 🟡 **QUEUED FOR NEXT MAINTENANCE PASS**
+- **Status**: 🟢 **COMPLETED & VERIFIED (Checkpoint 028)**
 - **Target Files**:
   - `/home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json`
   - `/home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json`
-- **Specific Remediation Tasks**:
-  1. **Consolidate `Aso-Ẹbí`**:
-     - Newly enriched canonical record: `Aso-Ẹbí` (Batch 2).
-     - Legacy duplicate record: `Aṣọ Ẹ̀bị́` (carrying Vietnamese underdot `ị` `U+1ECB`).
-     - Merge any unique tags/aliases from `Aṣọ Ẹ̀bị́` into `Aso-Ẹbí` and remove the corrupt legacy twin.
-  2. **Consolidate `Otun-Iyalode`**:
-     - Newly enriched record: `Otun-Iyalode` (hyphenated).
-     - Legacy twin record: `Otun Iyalode` (unhyphenated space).
-     - Merge `Otun Iyalode` into `Otun-Iyalode`, retaining `"otun iyalode"` as an indexed alias so both hyphenated and space-separated searches resolve to a single canonical entity.
+- **Remediation Completed**:
+  1. **Consolidated `Aṣọ-Ẹbí`**: Merged legacy `Aṣọ Ẹ̀bị́` (carrying corrupt Vietnamese `ị` `U+1ECB`) and `Aso-Ẹbí` into single canonical record **`Aṣọ-Ẹbí`** (index 213), retaining all search aliases (`aso ebi`, `aso-ebi`, `asoebi`, `aṣọ-ẹbí`, `aṣọ ẹbí`).
+  2. **Consolidated `Otun-Ìyál'óde`**: Merged `Otun-Iyalode` and `Otun Iyalode` into single canonical record **`Otun-Ìyál'óde`** (index 291), retaining unhyphenated/spaced aliases.
+  3. **Master Corpus Total**: Cleanly consolidated from 1,419 to **1,417 canonical entities** with 0 twin duplicates. Fully verified by `scripts/benchmark_sprint004.py` (28/28 100.0% accuracy).
 
 ---
 

@@ -1,0 +1,154 @@
+{
+  "deduplications": [
+    {
+      "canonical_title": "Aṣọ-Ẹbí",
+      "canonical_id": "Aṣọ-Ẹbí",
+      "targets_to_replace": ["Aṣọ Ẹ̀bị́", "Aso-Ẹbí"],
+      "data": {
+        "id": "Aṣọ-Ẹbí",
+        "title": "Aṣọ-Ẹbí",
+        "category": "Attire, Textiles & Personal Adornment",
+        "culture": "Yorùbá",
+        "is_parent": true,
+        "aliases": ["aso ebi", "aso-ebi", "asoebi", "aṣọ ẹ̀bị́", "aṣọ-ẹbí", "aṣọ ẹbí", "aso-ẹbí"],
+        "description": "Uniform ceremonial attire chosen collectively by lineage members, age-grade societies, and social fraternities to proclaim solidarity, shared joy, and civic harmony during festive milestones.",
+        "etymology_and_philosophy": "Derived from 'Aṣọ' (woven textile / attire) and 'Ẹbí' (blood kinship / lineage). Philosophically articulates the foundational principle of Egbe (communal solidarity), demonstrating that individual honor is indivisible from corporate lineage identity. Wearing identical cloth visually dissolves socioeconomic inequality among celebrants, declaring that all wearers stand as equals under ancestral blessings.",
+        "historical_timeline": "Classical Antiquity (Ilé-Ifẹ̀, c. 11th–14th Century CE): Lineage groups wore matching handwoven Sányán and Ẹtù cloths during funerary and coronation ceremonies. Imperial Ọ̀yọ́ Era: Royal courts and guild societies adopted matching hand-loomed Aṣọ-Òfì. Mid-20th Century: Expanded into modern urban celebrations across Lagos and Ìbàdàn. Contemporary Global Era: Celebrated across the worldwide West African diaspora as a global symbol of African celebratory cohesion.",
+        "material_and_craftsmanship": "Historically composed of narrow-strip hand-loomed Aṣọ-Òfì (Sányán wild silk, Ẹtù indigo, or Àlàárì camwood-dyed cotton); modern manifestations incorporate high-thread wax prints, woven damask, brocade, and matching head-ties (Gèlè) and caps (Fìlà).",
+        "social_and_ritual_context": "Ordered collectively months in advance of weddings, royal coronations, and funerary banquets; reinforces financial reciprocity and kinship commitments.",
+        "proverbs_and_oral_traditions": [
+          "Aṣọ ẹbí kì í ṣe ti ẹnìkan; àjọṣe ni a fi ń dá a. (Aṣọ-ẹbí is never the solitary possession of one; it is through communal cooperation that it is procured: Teaching collective unity.)",
+          "Bí a bá wọ aṣọ kan, a ń fihàn pé ọkàn wa kan. (When we clothe ourselves in the same fabric, we proclaim that our hearts beat as one: Embodying social harmony and shared purpose.)",
+          "Ẹni tí kò wọ aṣọ ẹbí kì í dáná mọ́ ọ̀rọ̀. (He who does not partake in the lineage cloth does not kindle the communal hearth: Affirming that social solidarity requires tangible commitment.)"
+        ],
+        "diaspora_connections": "Preserved in transatlantic Yorùbá diaspora communities across London, New York, Atlanta, Salvador da Bahia, and Havana as an unshakeable marker of celebratory cultural identity.",
+        "geographical_origin": "Pan-Yorùbáland",
+        "provenance_and_citations": "Nwafor, Okechukwu (2021). Aso Ebi: Cloth and Sociability in Urban Nigeria; Fadipe, N.A. (1970). The Sociology of the Yoruba; Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles."
+      }
+    },
+    {
+      "canonical_title": "Otun-Ìyál'óde",
+      "canonical_id": "Otun-Ìyál'óde",
+      "targets_to_replace": ["Otun Iyalode", "Otun-Iyalode"],
+      "data": {
+        "id": "Otun-Ìyál'óde",
+        "title": "Otun-Ìyál'óde",
+        "category": "Social Structure, Kinship & Lineage",
+        "culture": "Yorùbá",
+        "is_parent": false,
+        "aliases": ["otun iyalode", "otun-iyalode", "otuniyalode", "otun-ìyál'óde", "otun ìyál'óde", "deputy iyalode"],
+        "description": "The chief deputy and right-hand lieutenant to the Ìyál'óde in customary Yorùbá governance, representing women's commercial guilds, civic disputes, and female political authority in council.",
+        "etymology_and_philosophy": "From 'Ọ̀tún' (right hand / principal senior deputy) and 'Ìyál'óde' (Mother of the External Realm / Queen of Women). Philosophically signifies institutional continuity and checks-and-balances within female civic governance, ensuring that the voice of agrarian markets and domestic lineages possesses structural executive representation.",
+        "historical_timeline": "Pre-Colonial Antiquity: Established within Ọ̀yọ́, Ẹ̀gbá, and Ìjẹ̀bú constitutional councils as the second-highest female civic office. 19th Century: Pivotal in military logistics and commercial organizing during the Ìbàdàn, Ẹ̀gbá, and Kiriji wars. Contemporary Era: Retained as an honored royal title within traditional councils across Yorùbáland.",
+        "material_and_craftsmanship": "Invested with carved ivory or brass wristlets, layered royal beads (Ìyùn and Ṣẹ̀gí), ceremonial horse-tail flywhisk (Ìrùkẹ̀rẹ̀), and rich handwoven Aṣọ-Òfì ensembles.",
+        "social_and_ritual_context": "Officiates over market disputes, represents women during royal town councils (Igbìmọ̀ Ọba), and acts as executive regent for market women in the absence of the Ìyál'óde.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀tún Ìyál'óde kì í bẹnu fún ìwà pálapàla. (The right-hand deputy to the Queen of Women never compromises on moral decorum: Teaching judicial integrity in market leadership.)",
+          "Bí Ìyál'óde kò bá sí nílé, Ọ̀tún rẹ̀ ní ń gbọ́ ẹjọ́ ọjà. (In the absence of the Ìyál'óde, her chief deputy hears the market petitions: Enforcing uninterrupted civic continuity.)",
+          "Ọ̀tún ń gbé Ìyá ga, ayé ń gba àlàáfíà. (When the right-hand deputy upholds the matriarch, the community flourishes in enduring peace: Emphasizing administrative harmony.)"
+        ],
+        "diaspora_connections": "Reflected in Afro-Brazilian Terreiro hierarchies where the Otun-Iyalaxé serves as the principal ritual and logistical deputy to the Mãe de Santo (Iyalorixá).",
+        "geographical_origin": "Pan-Yorùbáland (Oyo, Ibadan, Egba)",
+        "provenance_and_citations": "Awe, Bolanle (1992). Nigerian Women in Historical Perspective; Oyěwùmí, Oyèrónkẹ́ (1997). The Invention of Women: Making an African Sense of Western Gender Discourses; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+      }
+    }
+  ],
+  "batch_3_enrichments": {
+    "Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀": {
+      "provenance_and_citations": "Faleti, Adebayo (1970). Igbeyin Ota Oro; Isola, Akinwumi (1998). Contemporary Yoruba Drama; Barber, Karin (1991). I Could Speak Until Tomorrow: Oriki, Women and the Past in a Yoruba Town."
+    },
+    "Ìwé Adú̀gbò Ẹ̀gbá": {
+      "provenance_and_citations": "Ajisafe, A.K. (1924). History of Abeokuta; Biobaku, Saburi O. (1957). The Egba and Their Neighbours 1842-1872; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+    },
+    "Èsè Ifá nínú Àṣà Yorùbá": {
+      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa."
+    },
+    "Ìtàn Ìṣẹ̀dálẹ̀ Ẹ̀gbá": {
+      "provenance_and_citations": "Losi, John B. (1917). History of Abeokuta; Biobaku, Saburi O. (1957). The Egba and Their Neighbours; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "Àmalà Isu": {
+      "provenance_and_citations": "Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1951). Yoruba Food; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+    },
+    "Àmalà Láfún": {
+      "provenance_and_citations": "Biobaku, Saburi O. (1957). The Egba and Their Neighbours; Bascom, William (1951). Yoruba Food; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "Dùndú": {
+      "provenance_and_citations": "Bascom, William (1951). Yoruba Food; Fadipe, N.A. (1970). The Sociology of the Yoruba; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis."
+    },
+    "Aṣẹ-Ẹ̀kọ": {
+      "provenance_and_citations": "Bascom, William (1951). Yoruba Food; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "Àgbàdá-Àrò (Traditional Roasting Hearth Griddle)": {
+      "proverbs_and_oral_traditions": [
+        "Àgbada ń gbiná, ẹ̀pà ń dún; bí kò bá sí iná nínú àrò, oúnjẹ kì í dé ẹnu. (The hearth pan glows hot, the groundnuts crackle; without the heat of the fire, sustenance never reaches the mouth: Teaching that industrious labor is the parent of nourishment.)",
+        "Bí àgbada bá gbiná tán, kò sí àgbàdo tí kò ní ta fùrọ̀ sí i. (Once the roasting griddle reaches full heat, no ear of maize can resist popping: Signaling the irresistible transformation of character under discipline.)",
+        "Àrò mẹ́ta kì í dọbàlẹ̀ fún ara wọn; wọ́n fọwọ́sowọ́pọ̀ gbé àgbada dání. (The three hearth-stones never bow to one another; they cooperate in equilibrium to hoist the roasting pan: Emphasizing the triadic balance of governance and community.)",
+        "Kì í ṣe gbogbo ohun tí ó wọ inú àgbada ló ń jó run; àgbàdo ń gbó nínú iná tí ó sì ń di oúnjẹ. (Not everything that enters the fire turns to ash; the roasted grain ripens in heat into sweet food: Teaching that tests of hardship reveal true character.)"
+      ],
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Fadipe, N.A. (1970). The Sociology of the Yoruba; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+    },
+    "Ike-Ẹmụ": {
+      "proverbs_and_oral_traditions": [
+        "Bí Ẹlẹ́mù bá gbé Ike-Ẹmụ dé, ọ̀rọ̀ inú títú sílẹ̀ ni. (When the Palm Wine Tapper sets down the wine vessel, secret counsel unfolds: Revealing how communal wine unlooses honest truth.)",
+        "Ike kì í bínú sí ẹ̀mú. (The vessel never harbors malice toward the wine it cradles: Reminding leaders that patience and service must embrace the community's burden without resentment.)",
+        "Àìkíyèsí Adẹ́mù ní ń mú Ike dẹnu kọlẹ̀. (A lack of vigilance from the Palm Tapper causes the wine gourd to overturn: Teaching that careless leadership wastes collective bounty.)"
+      ],
+      "provenance_and_citations": "Fadipe, N.A. (1970). The Sociology of the Yoruba; Johnson, Rev. Samuel (1921). The History of the Yorubas; Bascom, William (1951). Yoruba Food."
+    },
+    "Ata-Ọlọ́": {
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1951). Yoruba Food."
+    },
+    "Gbégbé-Ọ̀bẹ": {
+      "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Carroll, Kevin (1967). Yoruba Religious Carving."
+    },
+    "Ọ̀bẹ-Ìtù": {
+      "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Lawal, Babatunde (1996). The Gẹlẹdẹ Spectacle: Art, Gender, and Social Harmony in an African Culture; Carroll, Kevin (1967). Yoruba Religious Carving."
+    },
+    "Ọ̀pá-Ìlẹ̀kẹ̀": {
+      "provenance_and_citations": "Drewal, H.J. & Mason, John (1998). Beads, Body, and Soul: Art and Light in the Yoruba Universe; Abiodun, Rowland (2014). Yoruba Art and Language; Willett, Frank (1967). Ife in the History of West African Sculpture."
+    },
+    "Ikoko-Aró-Ìlẹ̀kẹ̀": {
+      "provenance_and_citations": "Willett, Frank (1967). Ife in the History of West African Sculpture; Drewal, H.J. & Mason, John (1998). Beads, Body, and Soul: Art and Light in the Yoruba Universe; Shaw, Thurstan (1978). Nigeria: Its Archaeology and Early History."
+    },
+    "Abẹ́-Ìlẹ̀kẹ̀": {
+      "provenance_and_citations": "Drewal, H.J. & Mason, John (1998). Beads, Body, and Soul: Art and Light in the Yoruba Universe; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Willett, Frank (1967)."
+    },
+    "Ẹ̀yọ̀-Ìlẹ̀kẹ̀": {
+      "provenance_and_citations": "Drewal, H.J. & Mason, John (1998). Beads, Body, and Soul: Art and Light in the Yoruba Universe; Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Abiodun, Rowland (2014)."
+    },
+    "Aro-Amọ̀": {
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Fadipe, N.A. (1970). The Sociology of the Yoruba; Willett, Frank (1967). Ife in the History of West African Sculpture."
+    },
+    "Ikoko-Àmọ̀": {
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Willett, Frank (1967). Ife in the History of West African Sculpture; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "Aba-Òfì": {
+      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Lamb, Venice & Holmes, Judy (1980). Nigerian Weaving; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "Àwọ̀n-Òfì": {
+      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Lamb, Venice & Holmes, Judy (1980). Nigerian Weaving; Ojo, G.J. Afolabi (1966). Yoruba Culture."
+    },
+    "Metropolitan Museum of Art African Collection": {
+      "provenance_and_citations": "Metropolitan Museum of Art (Accession Catalog: Department of the Arts of Africa, Oceania, and the Americas); Abiodun, Rowland (2014). Yoruba Art and Language; Walker, Roslyn Adele (1998). Olowe of Ise: A Yoruba Sculptor to Kings."
+    },
+    "Ìrókẹ́ Ifá": {
+      "proverbs_and_oral_traditions": [
+        "Ìrókẹ́ ń kọ́ ọpọ́n, Ifá ń gbọ́; ohun awo bá rí l'awo ń sọ. (The tapper strikes the divination tray, Ifá hears; what the sacred oracle reveals is that which the priest proclaims: Enforcing truthful divination.)",
+        "À ń kan ìrókẹ́, àwọn awo ń pé; ibi tí ìmọ̀ wà la ń kọrí sí. (We sound the ivory tapper, the elders of wisdom convene; wherever divine knowledge resides, there we direct our steps: Teaching veneration of collective wisdom.)",
+        "Ìrókẹ́ kì í dákẹ́ kí ọpọ́n Ifá má dún. (The ivory tapper never remains silent while the tray awaits its song: Signaling that true leaders must articulate guidance when duty calls.)"
+      ],
+      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+    },
+    "Àṣẹ-Ọ̀pá": {
+      "proverbs_and_oral_traditions": [
+        "Ọ̀pá tí a bá fi gún'lẹ̀ lójú Agba, kì í yẹ̀. (The staff anchored into the Earth in the presence of the Elders never falters: Affording absolute irrevocability to sovereign oaths.)",
+        "Àṣẹ kì í bọ́ sílẹ̀ láìṣẹ. (Divine authority never falls upon the Earth without fulfillment: Reaffirming the cosmic certainty of consecrated decrees.)",
+        "Irin tí a bá fi àṣẹ tẹ̀ sílẹ̀, kò ní di eérú. (The sacred iron driven down with authority shall never turn to ash: Teaching the imperishable nature of truth.)"
+      ],
+      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde."
+    },
+    "Owó-Babà": {
+      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Willett, Frank (1967). Ife in the History of West African Sculpture; Shaw, Thurstan (1978). Nigeria: Its Archaeology and Early History; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    }
+  }
+}
