@@ -25,3 +25,5 @@
   3. **Visual Tonal Contour & Melodic Pitch Waveform** in `ToothSearchCore.jsx` / `TranslateTab.jsx`.
   4. **Ancestral Journey Exporter (Study Syllabus)** for vein exploration trails.
   Recorded in `HANDOFF.md` as staged `HANDOFF-AGBEDE-005`. Standing by for Lead Architect's greenlight.
+- **[2026-10-24]**: Received QA Evaluation Report from `Sùúrù` on Batch 2 (Checkpoint 023). Batch 2 passed 100% Top-1 zero-shot retrieval with full 14-Tier depth and academic citations. Relayed critical forensic finding: 2 duplicate twin nodes detected in master corpus (`Aso-Ẹbí` vs `Aṣọ Ẹ̀bị́` [Vietnamese `ị`], and `Otun-Iyalode` vs `Otun Iyalode`). Registered `HANDOFF-DEDUPLICATION-001` in `HANDOFF.md` for `Àgbẹ̀dẹ` / `Àrọ̀kìn` to merge on next maintenance cycle, and instructed `Àrọ̀kìn` to cross-check manifest targets against the normalized corpus before Batch 3 to prevent split records. Authorized `Àrọ̀kìn` to proceed with Batch 3 under Lead Architect's decree.
+

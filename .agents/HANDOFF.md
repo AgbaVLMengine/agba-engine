@@ -32,6 +32,30 @@
      - Every enriched entity MUST explicitly document its exact bibliographic citation / archival origin in `provenance_and_citations`.
      - Explicitly cross-reference against `AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (e.g., Rev. Samuel Johnson 1921, Wándé Abímbọ́lá 1975/1976, Rowland Abiodun 2014, Babatunde Lawal 1996, William Bascom 1969/1980, Pierre Verger 1995, British Museum, The Met, Cleveland Museum of Art).
      - If an entity utilizes a source not currently listed in the Master Bibliography, explicitly tag it as `[NEW CITATIONAL SOURCE: <Author/Archive, Year, Title>]` so Ìmọ̀ and Àgbà can verify and catalog it into `AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`.
+  6. **QA Watchlist Alert (Sùúrù Forensic Discovery)**:
+     - Prior to enriching Batch 3 and subsequent batches, cross-check manifest targets against the normalized corpus to prevent generating split twin records (e.g. `Aso-Ẹbí` vs `Aṣọ Ẹ̀bị́`, `Otun-Iyalode` vs `Otun Iyalode`). Consolidate on exact canonical titles.
+
+---
+
+## 0B. Active Data Quality & QA Handoff (`HANDOFF-DEDUPLICATION-001`)
+
+### `HANDOFF-DEDUPLICATION-001` — Sub-Surface Duplicate Twin Node Consolidation
+- **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`) & **`Àrọ̀kìn`** (`arokin-archivist`)
+- **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
+- **Reported By**: **`Sùúrù`** (`suuru-qa` — Checkpoint 023)
+- **Status**: 🟡 **QUEUED FOR NEXT MAINTENANCE PASS**
+- **Target Files**:
+  - `/home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json`
+  - `/home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json`
+- **Specific Remediation Tasks**:
+  1. **Consolidate `Aso-Ẹbí`**:
+     - Newly enriched canonical record: `Aso-Ẹbí` (Batch 2).
+     - Legacy duplicate record: `Aṣọ Ẹ̀bị́` (carrying Vietnamese underdot `ị` `U+1ECB`).
+     - Merge any unique tags/aliases from `Aṣọ Ẹ̀bị́` into `Aso-Ẹbí` and remove the corrupt legacy twin.
+  2. **Consolidate `Otun-Iyalode`**:
+     - Newly enriched record: `Otun-Iyalode` (hyphenated).
+     - Legacy twin record: `Otun Iyalode` (unhyphenated space).
+     - Merge `Otun Iyalode` into `Otun-Iyalode`, retaining `"otun iyalode"` as an indexed alias so both hyphenated and space-separated searches resolve to a single canonical entity.
 
 ---
 

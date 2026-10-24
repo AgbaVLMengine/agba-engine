@@ -85,3 +85,8 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     * Enriched each entity with 850–1100 character multi-epoch timelines, 3 dual-language proverbs with parenthetical English translation and philosophical commentary, sacred timber/Ikin craftsmanship, and diaspora links.
   - Sùúrù QA benchmark verified at 100.0% (`28/28` Top-1 Accuracy).
   - Reduced total remaining thin entities down to **240** (the remaining combined Odù).
+- **2026-10-24 [QA Briefing from Sùúrù — Checkpoint 023]**:
+  - Received Sùúrù's QA review on Batch 2: 100% zero-shot title retrieval passed.
+  - **Critical Invariant for Batch 3 & Subsequent Ingestions**: Sùúrù detected 2 duplicate twin nodes in the corpus (`Aso-Ẹbí` vs `Aṣọ Ẹ̀bị́` [Vietnamese `ị`], and `Otun-Iyalode` vs `Otun Iyalode`).
+  - **Directive**: When drafting Batch 3 manifests, verify against existing corpus IDs to ensure we enrich existing canonical records directly rather than generating hyphenated/spaced duplicates. `HANDOFF-DEDUPLICATION-001` has been staged to consolidate the Batch 2 twins.
+
