@@ -54,19 +54,27 @@ if [ "$RECLAIMED_KB" -lt 0 ]; then
 fi
 
 RECLAIMED_MB=$((RECLAIMED_KB / 1024))
-FREE_GB=$(df -h "$HOME" | tail -1 | awk '{print $4}')
+FREE_GB=$(df --output=avail -h "$HOME" | tail -1 | tr -d ' ')
+
+# 5b. Headroom Alert Gate (< 2.0 GB = 2097152 KB)
+ALERT_STATUS="🟢 Nominal"
+if [ "$AFTER_KB" -lt 2097152 ]; then
+    ALERT_STATUS="🚨 CRITICAL (<2.0 GB)"
+    echo "⚠️ [CRITICAL STORAGE ALERT] Headroom on $HOME is critically low (< 2.0 GB)!"
+fi
 
 echo "=================================================================="
 echo "🎉 DISK RECLAIM COMPLETE!"
 echo "   📊 Space Reclaimed: ${RECLAIMED_MB} MB"
 echo "   💾 Current Available Storage: ${FREE_GB}"
+echo "   🛡️ Status: ${ALERT_STATUS}"
 echo "=================================================================="
 
 # 6. Append to Memory Vault
 MEMORY_FILE="/home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md"
 if [ -f "$MEMORY_FILE" ]; then
     TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-    echo "| **$TIMESTAMP** | Safe Cache Purge (Chrome + pip/npm + /tmp) | ${RECLAIMED_MB} MB | ${FREE_GB} available | 🟢 Nominal |" >> "$MEMORY_FILE"
+    echo "| **$TIMESTAMP** | Safe Cache Purge (Chrome + pip/npm + /tmp) | ${RECLAIMED_MB} MB | ${FREE_GB} available | ${ALERT_STATUS} |" >> "$MEMORY_FILE"
     echo "✅ Appended audit entry to memory/disk_saver_memory.md."
     cp "$MEMORY_FILE" "/home/aruna_olanrewaju/agba-engine/.agents/memory/disk_saver_memory.md" 2>/dev/null || true
 fi

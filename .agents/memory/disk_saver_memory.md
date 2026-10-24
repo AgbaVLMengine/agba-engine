@@ -2,6 +2,7 @@
 
 > **Platform**: Linux OS (Ubuntu/Debian) + Google Chrome  
 > **Role**: System Storage Sentinel & Cache Reclaimer (`Agbálẹ̀` / `disk-saver`)  
+> **Ethos**: *"Bí a bá gbálẹ̀ tán, ilé á tòrò; a kì í fi ìdọ̀tí bọ́ àwọn àlejò."*  
 > **Commissioned**: 2026-10-23 by Lead Architect **Àrùnà Ọlànrewájú Kábírù**  
 
 ---
@@ -10,21 +11,23 @@
 - **Protected Environment**: `/home/aruna_olanrewaju/`
 - **Protected Database Perimeters**: `agba-engine/` (Qdrant storage, corpora, git repositories)
 - **Purge Targets**: `~/.cache/google-chrome/Default/Cache`, `~/.cache/pip`, `~/.npm/_cacache`, `/tmp`
+- **Headroom Emergency Alert Floor**: `< 2.0 GB`
 
 ---
 
-## 2. Operational History & Reclaim Log
-
-| Timestamp (UTC) | Action Performed | Space Reclaimed | Post-Cleanup Free Space | Status |
-| :--- | :--- | :--- | :--- | :--- |
-| **2026-10-23 19:42** | Initial Storage Baseline Audit & Configuration Initialization | 0 MB (Baseline established) | 15.0 GB available | 🟢 Nominal |
-
----
-
-## 3. Persistent Invariants
+## 2. Persistent Invariants
 1. Never touch user files in Documents, Downloads (unless explicitly marked `.tmp` or `.crdownload` abandoned), Desktop, or workspace repositories.
 2. Never delete Chrome user profile database files (`Bookmarks`, `Cookies`, `History`, `Login Data`, `Web Data`).
 3. Only purge `Cache`, `Code Cache`, `GPUCache`, and `DawnCache`.
 4. Always log reclaimed bytes and disk headroom after every cleanup cycle.
-| **2026-10-23 19:43 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 0% available | 🟢 Nominal |
-| **2026-10-23 20:04 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 4.0G available | 🟢 Nominal |
+
+---
+
+## 3. Operational History & Reclaim Log
+
+| Timestamp (UTC) | Action Performed | Space Reclaimed | Post-Cleanup Free Space | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **2026-10-23 19:42** | Initial Storage Baseline Audit & Configuration Initialization | 0 MB (Baseline established) | 15.0 GB available | 🟢 Nominal |
+| **2026-10-23 19:43 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 15G available | 🟢 Nominal |
+| **2026-10-23 20:04 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 15G available | 🟢 Nominal |
+| **2026-10-24 08:38 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 15G available | 🟢 Nominal |

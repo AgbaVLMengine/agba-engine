@@ -272,7 +272,7 @@
 - **Verification**: ✅ ALL GATES PASSED. Synchronized and ready.
 
 
-### [2026-10-23] Checkpoint 020 — Daily Security Sentinel Audit Automation Configured & Verified
+### [2026-10-23] Checkpoint 020b — Daily Security Sentinel Audit Automation Configured & Verified
 - **Agent Persona**: `Ẹ̀ṣọ́` (`eso-security`)
 - **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
 - **Deliverables Completed**:
@@ -290,6 +290,20 @@
     - Git tree: Clean; zero high-entropy secrets or private keys.
     - Scoped exact execution permissions in `sidecar.json`.
 - **Verification**: ✅ Automation created and permissions verified. Ready for user enablement in Automations dashboard.
+
+### [2026-10-24] Checkpoint 021 — Scheduled Storage Sentinel Sweep & Reclaim Script Hardening
+- **Agent Persona**: `Agbálẹ̀` (`disk-saver`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Storage Headroom Audit**: Inspected root `/` (15G available), `/home/aruna_olanrewaju` (15G available), and `/tmp` (15G available). Storage headroom is verified nominal (15G available, well above the 2.0 GB alert floor).
+  - **Reclaim Script Hardening (`scripts/reclaim_disk.sh`)**:
+    - Replaced brittle column-position `awk` with universal `df --output=avail -h "$HOME"` to ensure 100% accurate reporting across headless/container and bare-metal filesystems.
+    - Embedded automated Gate 5b Headroom Alert Gate (<2.0 GB = 2,097,152 KB) with automatic critical alerts.
+    - Kept script ultra-lean and Gate 2 compliant (<500 LOC at 80 LOC).
+  - **Purge Execution**: Executed safe purge of stale developer caches (`pip`, `npm`), `/tmp` files older than 48 hours, and Chrome cache paths with zero collateral impact on user code, master corpora, Qdrant vectors, and session credentials.
+  - **Memory & Shared Brain Sync**: Updated `memory/disk_saver_memory.md`, synchronized with `.agents/memory/disk_saver_memory.md`, and registered audit log.
+- **Verification**: ✅ Headroom: 15G available (🟢 Nominal). Passed `./scripts/review.sh` (0 hard violations, 0 warnings).
+
 
 
 
