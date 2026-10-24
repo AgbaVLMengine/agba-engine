@@ -1,6 +1,6 @@
 # 📓 CHRONOLOGICAL LEDGER OF TRUTH (`.agents/CHECKPOINTS.md`)
 
-> **Governance Rule**: Every agent persona (`Àgbà`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Ògún`, `Àgbẹ̀dẹ`) MUST read this file before starting work and append a checkpoint entry + run `./scripts/sync-brain.sh` after every deliverable or coding checkpoint.
+> **Governance Rule**: Every agent persona (`Àgbà`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Irin`, `Àgbẹ̀dẹ`, `Ẹ̀ṣọ́`, `Àrọ̀kìn`, `Agbálẹ̀`) MUST read this file before starting work and append a checkpoint entry + run `./scripts/sync-brain.sh` after every deliverable or coding checkpoint.
 
 ---
 
