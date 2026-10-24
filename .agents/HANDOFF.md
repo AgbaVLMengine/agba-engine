@@ -101,6 +101,20 @@
 
 ---
 
-### 3. `HANDOFF-AGBEDE-004` (Staged — Pending Audit Review)
+### 3. `HANDOFF-AGBEDE-004` (Completed — Checkpoint 016)
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
-- **Mandate**: Staged on hold until Lead Architect reviews and approves Òye's audit findings. Implementation of the backfill, ingestion, and dynamic hydration code will commence immediately upon greenlight.
+- **Status**: 🟢 **COMPLETED** (Category 17 Remapping, 9 Sovereign Parents ingested, Zero-Hardcoded Dynamic Sub-Variant Hydrator active).
+
+---
+
+### 4. `HANDOFF-AGBEDE-005` (Staged — UI Prototype Proposals Awaiting Lead Architect Greenlight)
+- **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
+- **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
+- **Status**: 🟡 **STAGED FOR REVIEW**
+- **Proposal Memo**:
+  1. **Prototype A: "Àkọsílẹ̀" Citational Provenance Drawer (`EntityBentoDeck.jsx`)**: Render interactive scholarly citations on each Bento card exposing the 281+ backfilled primary sources (Johnson 1921, Smith 1988, Akintoye 1971, Abiodun 2014, Lawal 1996, Verger 1995).
+  2. **Prototype B: Living Sub-Variant "Constellation Grid" (`SearchTab.jsx`)**: Sculptural radial/bento constellation displaying living variants under Sovereign Parents for 1-click sub-vein expansion.
+  3. **Prototype C: Visual Tonal Contour & Melodic Pitch Waveform (`ToothSearchCore.jsx` / `TranslateTab.jsx`)**: Dynamic pitch contour curve rendering *Re, Mi, Do* (Mid, High, Low) tones over syllables for homographs and active queries.
+  4. **Prototype D: Ancestral Journey Exporter (`VeinRabbitHoleCanvas.jsx` / `SearchTab.jsx`)**: Visual journey trail exporter transforming explored vein paths into study syllabi / shareable heritage maps.
+- **Constraints**: Gate 2 (<500 LOC per module), Gate 3 (synchronous `useRef` locks), Gate 4 (100% 25-letter diacritics).
+- **Execution**: Standing by for Lead Architect Àrùnà Ọlànrewájú Kábírù's greenlight.
