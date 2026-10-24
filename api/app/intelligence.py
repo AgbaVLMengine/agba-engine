@@ -245,7 +245,7 @@ class ÀgbàIntelligenceSuite:
 
         if not hits:
             return (
-                f"Àkíyèsí (Scholar Notice): The concept '{query}' has been analyzed across our 1,333-entity sovereign archive. "
+                f"Àkíyèsí (Scholar Notice): The concept '{query}' has been analyzed across our 1,417-entity sovereign archive. "
                 f"You may query specific royal regalia (e.g. Adé Ààrẹ, Agbádá), Odù Ifá divinations (Èjì Ogbè, Ọpọ́n Ifá), "
                 f"indigenous diets (Òkèlè, Amàlà, Ìyán), or cosmological entities (Ògún, Ṣàngó, Ọ̀ṣun)."
             )
