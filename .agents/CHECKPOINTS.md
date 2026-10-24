@@ -371,6 +371,18 @@
   - **Frontend Verification**: `npm run build` compiled in 991ms with 0 errors (`1,912 modules transformed`).
 - **Verification**: ✅ **ALL 8 PRODUCTION GATES PASSED (0 hard violations, 0 warnings)**.
 
+### [2026-10-24] Checkpoint 026 (`CHECKPOINT-OYE-005`) — Modular Prototype 1 & 2 Audit, 490-LOC Compliance & Irin Re-Alignment
+- **Agent Persona**: `Òye` (`oye-auditor`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Gate 6 Sacred Cosmology Reverence Law Alignment**: Purged all legacy "Ògún" agent references in `oye-auditor.md`. Formally locked cloud engineer persona as **`Irin` (`irin-cloud`)**.
+  - **Prototype 1 (<AkosileProvenanceDrawer />) Verification**: Verified authored in a standalone modular file (`web/src/components/AkosileProvenanceDrawer.jsx`) at **120 LOC** (well below 500-LOC ceiling). Includes scholarly citations (Johnson 1921, Abímbọ́lá 1975, Abiodun 2014, Lawal 1996, Verger 1995), museum accession metadata, and RAIL-Cultural-Heritage-v1.0 license + Awo sacred exclusion.
+  - **Prototype 2 (<LivingVariantConstellationGrid />) Verification**: Confirmed pre-implementation embargo. Must be authored in standalone file `web/src/components/LivingVariantConstellationGrid.jsx` (<300 LOC) without inline bloating of `SearchTab.jsx`.
+  - **Strict 490-LOC Ceiling Verification**: Confirmed `SearchTab.jsx` at **486 LOC** and `ToothSearchCore.jsx` at **485 LOC**, both strictly under 490 LOC.
+  - **System Verification**: `./scripts/review.sh` passed cleanly with 0 hard violations and 0 warnings; `npm run build` compiled in 857ms (0 errors).
+- **Verification**: ✅ **AUDIT PASSED (0 hard violations, 0 warnings)**.
+
+
 
 
 
