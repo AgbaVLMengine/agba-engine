@@ -318,6 +318,18 @@
   - **Memory & Shared Brain Sync**: Updated `memory/disk_saver_memory.md`, synchronized with `.agents/memory/disk_saver_memory.md`, and registered audit log.
 - **Verification**: ✅ Headroom: 15G available (🟢 Nominal). Passed `./scripts/review.sh` (0 hard violations, 0 warnings).
 
+### [2026-10-24] Checkpoint 022 (`CHECKPOINT-IMO-003`) — Legal, Provenance & Cultural Sovereignty Audit of Batch 2 (25 Entities)
+- **Agent Persona**: `Ìmọ̀` (`imo-legal`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Comprehensive Legal & Provenance Audit of Batch 2 (25 Entities)**: Forensically reviewed the 25 canonical entities elevated by `Àrọ̀kìn` (`arokin-archivist`) in `scripts/enrich_batch_02.py` across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (`Ilé-Orìṣà`, `Idi-Eégún`, `Tiro`, `Aso-Ẹbí`, `Ilé-Ọlọ́jà`, `Ilé-Akodi`, `Bààfin`, `Arowo-Ilé`, `Ògùdù`, `Ọ̀pọ̀-Ẹ̀wà`, `Èlù-Agbẹ́`, `Olori-Oluwa`, `Mègàjí`, `Igbá-Kejì`, `Otun-Iyalode`, `Àṣá-Ewe`, `Ogun Kiriji`, `Ogun Ijaye`, `Ogun Bante-Oje`, `Balogun Ibikunle`, `Balogun Ogunmola`, `Afonja of Ilorin`, `Ipado-Ogun`, `Ewe-Ogun`, `The History of the Yorubas`).
+  - **Zero Sacred Exploitation (*Awo* Exclusion)**: Verified zero disclosure of restricted initiatory covenants, secret liturgical oaths, or esoteric passwords. Sacred entities (`Idi-Eégún`, `Ilé-Orìṣà`, `Àṣá-Ewe`, `Ewe-Ogun`, `Ipado-Ogun`) rigorously maintain and emphasize sacred boundary sanctity (e.g. *"A kì í wọ ìdí eégún láì ní àṣẹ Alágbàá"*).
+  - **Academic Provenance & Citational Rigor**: Confirmed 100% peer-reviewed grounding across canonical authorities (Johnson 1921, Smith 1988, Akintoye 1971, Fadipe 1970, Lloyd 1962, Abiodun 2014, Lawal 1996, Verger 1995, Bascom 1951, Drewal & Pemberton 1989, Oyěwùmí 1997, Awe 1992, Falola 1984/1999).
+  - **Licensing & Sovereignty Clearance**: All 25 entities fully comply with `RAIL-Cultural-Heritage-v1.0` and the Sovereign African Cultural Data Protection Protocol. Zero third-party proprietary infringement.
+  - **Legal Sign-Off**: **GREEN LIGHT / ALL CLEAR**. `Àrọ̀kìn` is formally authorized to proceed with Phase 4 Batch 3 ingestion under identical 14-Tier depth and citational standards.
+- **Verification**: ✅ `scripts/review.sh` passed (0 hard violations, 0 warnings); `benchmark_sprint004.py` passed (28/28 Top-1); `npm run build` passed (0 errors).
+
+
 
 
 
