@@ -382,6 +382,20 @@
   - **System Verification**: `./scripts/review.sh` passed cleanly with 0 hard violations and 0 warnings; `npm run build` compiled in 857ms (0 errors).
 - **Verification**: ✅ **AUDIT PASSED (0 hard violations, 0 warnings)**.
 
+### [2026-10-24] Checkpoint 027 (`CHECKPOINT-AGBEDE-004`) — Phased Feature Delivery: Prototypes 1 & 2 Live with Zero-Touch Production UI
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Zero-Touch Production UI Law Preserved**: `SearchTab.jsx` (486 LOC) and `ToothSearchCore.jsx` (485 LOC) remain 100% untouched with 0 lines added.
+  - **Ancient Brass Heraldry Aesthetic Upheld**: Completely rejected literal porcelain tooth anatomy. Maintained elevated classical brass heraldry and subtle Yorùbá geometric relief (`àkọ̀` / `ìkòkò`).
+  - **Prototype 1 (<AkosileProvenanceDrawer />)**: Created `web/src/components/AkosileProvenanceDrawer.jsx` (120 LOC, < 150 LOC target). Fully functional slide-over drawer exposing academic citations (Johnson 1921, Abímbọ́lá, Abiodun, Lawal, Verger), museum accession identifiers, custodial repositories, and RAIL-Cultural-Heritage-v1.0 + Awo sacred boundary protection.
+  - **Prototype 2 (<LivingVariantConstellationGrid />)**: Created `web/src/components/LivingVariantConstellationGrid.jsx` (91 LOC, < 150 LOC target). Luminous sub-variant constellation chips with hover glow and 1-click dynamic branching into the sub-variant hydrator.
+  - **Modular Mounting**: Mounted both components within `EntityBentoDeck.jsx` (395 LOC, < 500 LOC ceiling) with minimal declarative hooks.
+  - **Gate 6 Sacred Reverence Law Enforced**: Cloud infrastructure persona strictly locked as `Irin` (`irin-cloud`).
+  - **Verification**: `npm run build` compiled in 733ms (0 errors, 1,914 modules); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
+- **Verification**: ✅ **PHASED FEATURE PROTOTYPES 1 & 2 VERIFIED & PRODUCTION READY**.
+
+
 
 
 

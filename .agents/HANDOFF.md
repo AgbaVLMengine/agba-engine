@@ -131,14 +131,12 @@
 
 ---
 
-### 4. `HANDOFF-AGBEDE-005` (Staged — UI Prototype Proposals Awaiting Lead Architect Greenlight)
+### 4. `HANDOFF-AGBEDE-005` — Phased UI Feature Build (Prototypes 1 & 2)
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
 - **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
-- **Status**: 🟡 **STAGED FOR REVIEW**
-- **Proposal Memo**:
-  1. **Prototype A: "Àkọsílẹ̀" Citational Provenance Drawer (`EntityBentoDeck.jsx`)**: Render interactive scholarly citations on each Bento card exposing the 281+ backfilled primary sources (Johnson 1921, Smith 1988, Akintoye 1971, Abiodun 2014, Lawal 1996, Verger 1995).
-  2. **Prototype B: Living Sub-Variant "Constellation Grid" (`SearchTab.jsx`)**: Sculptural radial/bento constellation displaying living variants under Sovereign Parents for 1-click sub-vein expansion.
-  3. **Prototype C: Visual Tonal Contour & Melodic Pitch Waveform (`ToothSearchCore.jsx` / `TranslateTab.jsx`)**: Dynamic pitch contour curve rendering *Re, Mi, Do* (Mid, High, Low) tones over syllables for homographs and active queries.
-  4. **Prototype D: Ancestral Journey Exporter (`VeinRabbitHoleCanvas.jsx` / `SearchTab.jsx`)**: Visual journey trail exporter transforming explored vein paths into study syllabi / shareable heritage maps.
-- **Constraints**: Gate 2 (<500 LOC per module), Gate 3 (synchronous `useRef` locks), Gate 4 (100% 25-letter diacritics).
-- **Execution**: Standing by for Lead Architect Àrùnà Ọlànrewájú Kábírù's greenlight.
+- **Status**: 🟢 **COMPLETED** (Prototypes 1 & 2 Live; Prototypes 3 & 4 Shelved per Executive Directive)
+- **Delivered Modules**:
+  1. **Prototype 1 (<AkosileProvenanceDrawer />)**: `web/src/components/AkosileProvenanceDrawer.jsx` (120 LOC). Sliding drawer displaying primary academic authorities (Johnson 1921, Abímbọ́lá, Abiodun, Lawal, Verger), museum accession identifiers, custodial repositories, and RAIL-Cultural-Heritage-v1.0 licensing.
+  2. **Prototype 2 (<LivingVariantConstellationGrid />)**: `web/src/components/LivingVariantConstellationGrid.jsx` (91 LOC). Luminous sub-variant constellation chips with hover glow and 1-click dynamic branching.
+  3. **Zero-Touch Production UI Invariant**: `SearchTab.jsx` (486 LOC) and `ToothSearchCore.jsx` (485 LOC) remain 100% untouched. Components mounted cleanly via `EntityBentoDeck.jsx` (395 LOC).
+  4. **Verification**: `npm run build` compiled in 733ms (0 errors); `./scripts/review.sh` passed with 0 hard violations.

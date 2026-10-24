@@ -37,12 +37,16 @@
     - Passed `./scripts/review.sh` (0 hard violations across all Production Gates).
     - Passed `npm run build` (Vite bundle built in 1.09s with zero errors).
     - Validated Batteries X-1 (9/9 Sovereign Parents), X-2 (12/12 Anti-Loop Sub-Variants), and X-3 (10/10 Homograph Guards).
-- **[2026-10-24]**: Formally relayed Four New UI Prototype Ideas to `Àgbà` (`agba-pa-architect`) for architectural review and greenlight per Lead Architect's inquiry:
-  1. **"Àkọsílẹ̀" Citational Provenance Drawer** in `EntityBentoDeck.jsx` (surfacing the 281+ backfilled primary academic sources: Johnson 1921, Smith 1988, Akintoye 1971, Abiodun 2014, Lawal 1996, Verger 1995).
-  2. **Living Sub-Variant "Constellation Grid"** beneath Sovereign Parents in `SearchTab.jsx` (one-click sub-vein visual expansion).
-  3. **Visual Tonal Contour & Melodic Pitch Waveform** in `ToothSearchCore.jsx` / `TranslateTab.jsx` (visual High/Mid/Low pitch line over syllables).
-  4. **Ancestral Journey Exporter (Study Syllabus)** for vein exploration trails (exportable/shareable cultural journey summary).
-  - Confirmed web client builds in 1.21s (`npm run build` — 1,912 modules, 0 errors). Stood by for authorization to begin forging.
+- **[2026-10-24]**: Formally relayed Four New UI Prototype Ideas to `Àgbà` (`agba-pa-architect`) for architectural review and greenlight per Lead Architect's inquiry.
+- **[2026-10-24] (`HANDOFF-AGBEDE-005`)**: Executed executive design directive from Lead Architect Àrùnà Ọlànrewájú Kábírù and `Àgbà`:
+  - **Zero-Touch Production UI Preserved**: `SearchTab.jsx` (486 LOC) and `ToothSearchCore.jsx` (485 LOC) remain 100% untouched with 0 lines added, strictly honoring Gate 2.
+  - **Aesthetic Heraldry Directive Upheld**: Completely rejected literal tooth anatomy in favor of elevated classical brass heraldry and subtle Yorùbá geometric relief (`àkọ̀` / `ìkòkò`).
+  - **Prototype 1 (<AkosileProvenanceDrawer />)**: Forged `web/src/components/AkosileProvenanceDrawer.jsx` (120 LOC, < 150 LOC target) displaying academic provenance (Rev. Samuel Johnson 1921, Prof. Wándé Abímbọ́lá, Prof. Rowland Abiodun, Prof. Babatunde Lawal, Pierre Verger), museum accession identifiers, custodial repositories, and RAIL-Cultural-Heritage-v1.0 + Awo sacred boundary protection.
+  - **Prototype 2 (<LivingVariantConstellationGrid />)**: Forged `web/src/components/LivingVariantConstellationGrid.jsx` (91 LOC, < 150 LOC target) rendering luminous sub-variant constellation chips with smooth hover glow and 1-click dynamic branching.
+  - **Clean Declarative Mounting**: Mounted both components within `EntityBentoDeck.jsx` (395 LOC, < 500 LOC ceiling).
+  - **Naming Invariant Upheld (Gate 6)**: Cloud Infrastructure Engineer strictly referenced as `Irin` (`irin-cloud`).
+  - **Verification**: `npm run build` compiled in 733ms (1,914 modules transformed, 0 errors); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
+
 
 
 
