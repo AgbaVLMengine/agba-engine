@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import {
   Sparkles, BookOpen, MapPin, Feather, Flag, ChevronDown, ChevronUp,
-  Shield, Volume2, Lock, GitBranch, Key, CheckCircle
+  Shield, Volume2, Lock, GitBranch, Key, CheckCircle, Scroll
 } from 'lucide-react';
+import AkosileProvenanceDrawer from './AkosileProvenanceDrawer';
+import LivingVariantConstellationGrid from './LivingVariantConstellationGrid';
 
 export default function EntityBentoDeck({
   topMatch,
@@ -16,6 +18,7 @@ export default function EntityBentoDeck({
   const [showAudioModal, setShowAudioModal] = useState(false);
   const [apiKeyInput, setApiKeyInput] = useState('');
   const [apiKeySuccess, setApiKeySuccess] = useState(false);
+  const [provenanceOpen, setProvenanceOpen] = useState(false);
 
   if (!topMatch) return null;
 
@@ -102,6 +105,16 @@ export default function EntityBentoDeck({
             >
               <Flag size={15} />
               Audit / Report Correction
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setProvenanceOpen(true)}
+              className="btn-ghost"
+              style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '9px 16px', borderRadius: '10px', color: '#fbbf24', borderColor: 'rgba(251, 191, 36, 0.4)' }}
+            >
+              <Scroll size={15} />
+              Àkọsílẹ̀ Provenance
             </button>
           </div>
         </div>
@@ -254,6 +267,12 @@ export default function EntityBentoDeck({
         </div>
       </div>
 
+      {/* LIVING SUB-VARIANT CONSTELLATION GRID */}
+      <LivingVariantConstellationGrid
+        subVariants={topMatch.details?.sub_variants || topMatch.sub_variants || []}
+        onSelectVariant={(variantTitle) => onBranchToRelative({ title: variantTitle, is_subvariant: true }, 'Living Sub-Variant')}
+      />
+
       {/* 14-TIER KNOWLEDGE GRAPH ACCORDION */}
       {tier14Open && (
         <div className="glass-panel animate-fade-in" style={{ padding: '28px', marginBottom: '28px' }}>
@@ -364,6 +383,13 @@ export default function EntityBentoDeck({
           </div>
         </div>
       )}
+
+      {/* AKOSILE ACADEMIC PROVENANCE DRAWER */}
+      <AkosileProvenanceDrawer
+        isOpen={provenanceOpen}
+        onClose={() => setProvenanceOpen(false)}
+        entity={topMatch}
+      />
     </div>
   );
 }
