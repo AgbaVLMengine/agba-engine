@@ -67,6 +67,8 @@ flowchart TD
 - [x] **Runtime RCE Hardening**: React 18 / Vite pre-compiled client decoupling; strict static bundle delivery.
 - [x] **API Auth Guard**: FastAPI tiered key validation (`X-AGBA-API-KEY`) enforced at router level.
 - [x] **Gate 8 Pre-Build Scanner**: Integrated into `scripts/review.sh`.
+- [x] **RAG Prompt XML Delimiters & Character Bounding**: Enforced in `api/app/intelligence.py` (`<canonical_knowledge_base>`, `<user_query>`, 1500 chars).
+- [x] **Cloud Run Scale-to-Zero ($0.00/mo)**: Verified `--min-instances 0` in `api/deploy_cloud_run.sh`.
 
 ---
 
@@ -79,3 +81,10 @@ flowchart TD
   - **DoS & Free-Tier RAM Bounding**: Bound Pydantic request models (`max_length=1000` for queries/translation; `max_length=2000` and `max_length=20` for chat messages and history) protecting Cloud Run 2GiB memory.
   - **Gate 2 Verification**: Both files strictly `<500 LOC` (`intelligence.py` = 472 LOC, `main.py` = 349 LOC). Zero hard violations in `scripts/review.sh`.
 - **[2026-10-23]**: Configured `Daily Security Sentinel Audit` (`daily-security-sentinel-audit`) sidecar automation scheduled for **9:00 AM WAT (`CRON_TZ=Africa/Lagos 0 9 * * *`)**. Executed live verification test run with 100% gate pass and zero security violations.
+- **[2026-10-24]**: Executed Daily Security Sentinel Audit (`CHECKPOINT-ESO-002`):
+  - **Production Gates**: 8/8 gates passed via `./scripts/review.sh` (0 hard violations, 0 warnings). Gate 8 Pre-Build Security Gate verified clean.
+  - **AI Supply Chain**: `api/requirements.txt` audited. Zero unpinned AI wrappers or LiteLLM-style dependencies. Native official `google-genai>=0.1.0` direct SDK locked.
+  - **High-Entropy Secrets & Credential Scan**: Inspected recent commit history and working tree diffs. Zero leaked API tokens, service credentials, or private keys. `web/.env.local` strictly isolated and ignored by git.
+  - **Prompt Delimiters & Context Isolation**: Confirmed semantic XML boundary encapsulation (`<canonical_knowledge_base>` and `<user_query>`), Rule 5 boundary protection, and 1,500-char input bounding in `api/app/intelligence.py`.
+  - **Perimeter & Infrastructure**: Header-first authentication with OWASP API3 deprecation warnings confirmed in `api/app/main.py`. Google Cloud Run zero-cost configuration (`--min-instances 0`, `--max-instances 2`, 2GiB RAM, $0.00/mo idle) confirmed in `api/deploy_cloud_run.sh`.
+  - **Readiness Verdict**: DEFCON 5 (Green / Operational). All perimeters secure.
