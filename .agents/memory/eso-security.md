@@ -101,3 +101,10 @@ flowchart TD
   - **Secrets & Token Isolation**: Scanned recent commits (`5567b5d`, `dc75017`, `9961f09`). Zero high-entropy keys, secrets, or environment credentials committed.
   - **Perimeter & Memory Bounding**: RAG prompt delimiters (`<canonical_knowledge_base>`, `<user_query>`) and 1,500-char input boundaries verified in `api/app/intelligence.py`.
   - **Readiness Verdict**: DEFCON 5 (Green / Operational). All perimeters nominal and secure.
+- **[2026-10-26]**: Executed Daily Security Sentinel Audit (`CHECKPOINT-ESO-004`):
+  - **Production Gates**: 8/8 gates passed via `./scripts/review.sh` (0 hard violations, 0 warnings). Gate 8 Pre-Build Zero-Trust Security Gate verified 100% clean.
+  - **AI Supply Chain & Dependency Audit**: Audited `api/requirements.txt`. Zero unpinned AI wrappers or LiteLLM-style dependencies. Native official `google-genai>=0.1.0` direct SDK cryptographically verified.
+  - **High-Entropy Secrets & Credential Scan**: Audited recent git commit diffs, working tree status, and codebase. Zero API tokens, passwords, or cloud credentials committed. Local secret files (`web/.env.local`, `.env*`) strictly untracked and verified under multi-pattern `.gitignore` exclusion.
+  - **RAG Prompt Injection & Context Hardening**: Verified `api/app/intelligence.py` prompt framing (476 LOC < 500 LOC). Dynamic user inputs and grounded retrieval context strictly isolated within semantic `<canonical_knowledge_base>` and `<user_query>` XML boundaries, enforced by Rule 5 anti-override instruction and 1,500-char input truncation. Confirmed XML tagging across `diacritize_ascii` and `translate_cultural`.
+  - **API Gateway & Cloud Run Perimeter**: Confirmed header-first authentication (`X-AGBA-API-KEY` / `Authorization: Bearer`) in `api/app/main.py` (349 LOC < 500 LOC) with OWASP API3 telemetry warnings on query parameter fallback. Verified Cloud Run `$0.00/mo` scale-to-zero configuration (`--min-instances 0`, `--max-instances 2`, 2GiB RAM) in `api/deploy_cloud_run.sh`.
+  - **Readiness Verdict**: DEFCON 5 (Green / Operational). All perimeters nominal and secure.
