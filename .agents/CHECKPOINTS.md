@@ -475,4 +475,14 @@
   - **API Gateway & Cloud Run Perimeter**: Confirmed header-first authentication (`X-AGBA-API-KEY` / `Authorization`) in `api/app/main.py` (349 LOC < 500 LOC) with OWASP API3 telemetry warnings on query parameter fallback. Verified Cloud Run `$0.00/mo` scale-to-zero configuration (`--min-instances 0`, `--max-instances 2`, 2GiB RAM) in `api/deploy_cloud_run.sh`.
 - **Verification**: ✅ **100% PRODUCTION SECURITY PASS & GREEN LIGHT GRANTED (DEFCON 5 / NOMINAL)**.
 
+### [2026-10-26] Checkpoint 035 (`CHECKPOINT-AGBALE-006`) — Scheduled Storage Sentinel Sweep & Safe Cache Reclaim
+- **Agent Persona**: `Agbálẹ̀` (`disk-saver`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Storage Headroom Audit**: Forensically audited disk headroom across root `/`, `/home/aruna_olanrewaju`, and `/tmp`. Available headroom measured at **15G** (1% use on `/tmp`, 0% use on `/home/aruna_olanrewaju`), well above the 2.0 GB critical threshold.
+  - **Safe Cache Purge Sequence (`scripts/reclaim_disk.sh`)**: Executed verified cache reclaimer. Stale pip cache (`~/.cache/pip`), npm cache (`~/.npm/_cacache`), and aged `/tmp` files (>48h) cleared safely. Preserved all repository files, Qdrant vectors, datasets, and user profile data.
+  - **Memory Vault Logging & Brain Sync**: Updated `memory/disk_saver_memory.md` and `.agents/memory/disk_saver_memory.md` with audit timestamp `2026-10-26 11:23 UTC`, 0 MB reclaimed, 15G available headroom, nominal status.
+- **Verification**: ✅ **NOMINAL STORAGE HEADROOM VERIFIED (15G > 2.0 GB Alert Floor)**.
+
+
 
