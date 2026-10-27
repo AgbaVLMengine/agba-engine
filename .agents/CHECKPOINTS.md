@@ -630,6 +630,18 @@
     - `./scripts/review.sh` passed with **0 hard violations, 0 warnings** across all 9 persona vaults.
 - **Verification**: ✅ **FLOWING & GLOWING GOLDEN VEINS ANIMATING LIVE IN PRODUCTION**.
 
+### [2026-10-27] Checkpoint 048 (`CHECKPOINT-AGBEDE-009`) — Hearth De-Cluttering & Continuous Cultural Trail Feasibility
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Pill Badge Removal**: Removed `"ÀÁRÍN ÌMỌ̀ • SOVEREIGN HEARTH"` micro-badge from `web/src/components/OponSearchCore.jsx` (and `tooth_ui_prototype_lab.html`) per Lead Architect directive.
+  - **Vertical Balance Alignment**: Re-centered input capsule cleanly inside the golden *Ìyẹ̀ròsùn* hearth (`top: 102px`), allowing the search field and diacritic characters uninhibited space.
+  - **Code Hygiene**: `OponSearchCore.jsx` reduced to **249 LOC** (Gate 2 strictly satisfied < 500 LOC).
+  - **Feasibility Assessment**: Fully mapped out how `useExplorationGraph.js` and `VeinRabbitHoleCanvas.jsx` can maintain a continuous, lengthening arterial vein across sequential user searches without violating Gate 2, 3, 4, or 5 guardrails.
+  - **Verification**: `npm run build` compiled in **835ms** (0 errors); `./scripts/review.sh` passed with **0 hard violations, 0 warnings** across all 9 persona vaults.
+- **Verification**: ✅ **HEARTH PURIFIED & FEASIBILITY ROADMAP READY**.
+
+
 
 
 
