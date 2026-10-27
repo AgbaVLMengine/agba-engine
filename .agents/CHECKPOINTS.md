@@ -504,6 +504,16 @@
   - **Memory Vault Logging & Brain Sync**: Updated `memory/disk_saver_memory.md` and `.agents/memory/disk_saver_memory.md` with audit timestamp `2026-10-27 05:04 UTC`, 0 MB reclaimed, 15G available headroom, nominal status.
 - **Verification**: ✅ **NOMINAL STORAGE HEADROOM VERIFIED (15G > 2.0 GB Alert Floor)**.
 
+### [2026-10-27] Checkpoint 038 (`CHECKPOINT-AGBALE-008`) — Scheduled Storage Sentinel Sweep & Safe Cache Reclaim
+- **Agent Persona**: `Agbálẹ̀` (`disk-saver`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Storage Headroom Audit**: Forensically audited disk headroom across root `/`, `/home/aruna_olanrewaju`, and `/tmp`. Available headroom measured at **15G** (1% use on `/tmp`, 0% use on `/home/aruna_olanrewaju`), well above the 2.0 GB critical threshold.
+  - **Safe Cache Purge Sequence (`scripts/reclaim_disk.sh`)**: Executed verified cache reclaimer. Purged stale pip cache (`~/.cache/pip`), npm cache (`~/.npm/_cacache`), and temporary `/tmp` files older than 48 hours. Strictly preserved all source code, Yorùbá corpora, Qdrant vectors, and Chrome user profile data (`Bookmarks`, `Cookies`, `History`, `Login Data`).
+  - **Memory Vault Logging & Brain Sync**: Updated `memory/disk_saver_memory.md` and `.agents/memory/disk_saver_memory.md` with audit timestamp `2026-10-27 07:36 UTC`, 0 MB reclaimed, 15G available headroom, nominal status.
+- **Verification**: ✅ **NOMINAL STORAGE HEADROOM VERIFIED (15G > 2.0 GB Alert Floor)**.
+
+
 
 
 
