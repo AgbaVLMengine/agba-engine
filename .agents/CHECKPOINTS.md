@@ -686,6 +686,37 @@
     - `./scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 Production Gates (100% of files < 250 LOC).
 - **Verification**: ✅ **HOTSPOT #1 NEUTRALIZED — 0 CLIENT-SIDE GATE 2 VIOLATIONS REMAINING**.
 
+### [2026-10-27] Checkpoint 052 (`CHECKPOINT-AGBEDE-012`) — The Great Re-Wiring Pass (248 Orphaned Records Resolved in Lockstep)
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Testing Specialist**: `Sùúrù` (`suuru-qa`)
+- **Lead Directive**: Executive directive from Lead Architect Àrùnà Ọlànrewájú Kábírù and `Àgbà` ratifying Sùúrù's 100% Full-Corpus Zero-Shot Audit to wire 248 orphaned standalone records across `api/data/` and `web/src/data/` in lockstep.
+- **Deliverables Completed**:
+  - **Corpus Normalization & Invariant Preservation**:
+    - Built and executed `scripts/execute_rewiring_pass.py` (**209 LOC** < 500 LOC ceiling).
+    - Synchronized `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` in absolute lockstep.
+  - **Fìlà Family & Twin Node Deduplication**:
+    - Deduplicated twin node `Filà Abetíajá` into canonical `Fìlà Abetí Ajá`, copying academic citations from Eicher (1976) and Abiodun (2014); unified corpus at **1,416 canonical entities**.
+    - Cleansed Vietnamese `ị` in `Fìlà Gọ̀bị́` across ID, title, aliases, description, and etymology to canonical `Fìlà Gọ̀bí`.
+    - Wired all 8 Fìlà variants (`Fìlà Gọ̀bí`, `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Fìlà Oníderè`, `Fìlà Kọ̀gbọ́n`, `Filà Oníde`, `Fìlà Labankada`, `Filà Kọ̀ṣeébàá`) directly under Sovereign Parent `Fìlà`.
+  - **Paramount Monarchs & Bilateral Kingdom Wiring**:
+    - Wired `Awùjalẹ̀`, `Déjì`, `Akárìgbò`, `Ọlọ́fà`, `Alárá`, and `Arẹ́sà` to Sovereign Parent `Ọba`.
+    - Linked monarchs bidirectionally to their kingdoms in `related_entities` (`Ìjẹ̀bú-Òde`, `Akúrẹ́`, `Ṣagamu`, `Ọ̀fà`, `Ìpínlẹ̀ Èkìtì`, `Ìpínlẹ̀ Ọ̀yọ́`).
+  - **Ancient Capitals Wiring**:
+    - Wired `Ilé-Ifẹ̀`, `Òṣogbo` → `Ìpínlẹ̀ Ọ̀ṣun`; `Ìbàdàn`, `Ọ̀yọ́-Ilé` → `Ìpínlẹ̀ Ọ̀yọ́`; `Ilọrin` → `Ìpínlẹ̀ Kwara`; `Ìjẹ̀bú-Òde`, `Abẹ́òkúta` → `Ìpínlẹ̀ Ògùn`.
+  - **Auto-Wired Orphaned Records**:
+    - Auto-wired 223 additional orphaned records declared by Sovereign Parents. Total wired sub-variants elevated to **324**.
+  - **Prefix Collision Resolution**:
+    - In `api/app/semantic_bridge.py`: Added negative lookahead `(?!gba\b)([a-z]{4,})` protecting `agbadagba` from prefix splitting; normalized `_` and `-` to spaces.
+    - In `api/app/retrieval.py` and `web/src/utils/localRankedSearch.js`: Added entity ID matching to 1A and 1B scoring.
+    - Confirmed `Iwe-Agbadagba` achieves Rank #1 without `Agbádá` usurpation, and `baba_ile` achieves Rank #1 cleanly.
+  - **Verification & Production Gates**:
+    - `python3 scripts/benchmark_sprint004.py`: **28/28 Top-1 Accuracy** (100.0% PASS).
+    - `npm run build`: Compiled cleanly in **808ms** (1,922 modules transformed, 0 errors).
+    - `./scripts/review.sh`: **0 hard violations** across all 8 Production Gates.
+- **Verification**: ✅ **THE GREAT RE-WIRING COMPLETE — FULL-CORPUS COHESION CERTIFIED**.
+
+
 ### [2026-10-27] Checkpoint 052 (`CHECKPOINT-OYE-010`) — Post-Refactoring Verification: Hotspot #1 Neutralized & 0 Client-Side Violations (100% Pass)
 - **Agent Persona**: `Òye` (`oye-auditor`)
 - **Supervising Architect**: `Àgbà` (`agba-pa-architect`)

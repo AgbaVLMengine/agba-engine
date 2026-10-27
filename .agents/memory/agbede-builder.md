@@ -88,6 +88,19 @@
     - `npm run build`: compiled in 840ms (1,922 modules, 0 errors).
     - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
     - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+- **[2026-10-27] (`CHECKPOINT-AGBEDE-012` / Checkpoint 052)**: **Executed The Great Re-Wiring Pass (248 Orphaned Records Resolved)**:
+  - Objective: Re-wired orphaned standalone records to Sovereign Parents in lockstep across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
+  - Executed `scripts/execute_rewiring_pass.py` (209 LOC < 500 LOC ceiling):
+    1. Consolidated Fìlà Family: Deduplicated `Filà Abetíajá` into `Fìlà Abetí Ajá` (citations merged); cleansed Vietnamese `ị` in `Fìlà Gọ̀bị́` -> `Fìlà Gọ̀bí`; wired 8 Fìlà variants under Sovereign Parent `Fìlà`. Total corpus: 1,416 canonical entities.
+    2. Wired Paramount Monarchs: `Awùjalẹ̀`, `Déjì`, `Akárìgbò`, `Ọlọ́fà`, `Alárá`, `Arẹ́sà` wired to `Ọba` and linked bidirectionally to their kingdoms.
+    3. Wired ancient capitals: `Ilé-Ifẹ̀`, `Òṣogbo` → `Ìpínlẹ̀ Ọ̀ṣun`; `Ìbàdàn`, `Ọ̀yọ́-Ilé` → `Ìpínlẹ̀ Ọ̀yọ́`; `Ilọrin` → `Ìpínlẹ̀ Kwara`; `Ìjẹ̀bú-Òde`, `Abẹ́òkúta` → `Ìpínlẹ̀ Ògùn`.
+    4. Auto-wired 223 additional orphaned records declared by Sovereign Parents. Total wired sub-variants elevated to 324.
+    5. Resolved 2 Prefix Collisions: Tuned `preprocess_query_tokens` in `api/app/semantic_bridge.py` and `localRankedSearch.js` with negative lookahead protecting `agbadagba` from prefix splitting, and normalized `_` and `-` so `Iwe-Agbadagba` and `baba_ile` achieve clean Top-1 ranking without usurping.
+  - Verification:
+    - `benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
+    - `npm run build`: Compiled in 808ms (1,922 modules, 0 errors).
+    - `./scripts/review.sh`: 0 hard violations across all 8 Production Gates.
+
 
 
 
