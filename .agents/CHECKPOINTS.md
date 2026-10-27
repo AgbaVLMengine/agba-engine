@@ -669,6 +669,24 @@
     - `./scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 Production Gates.
 - **Verification**: ✅ **EXECUTIVE REFACTORING COMPLETE — GATE 2 HEADROOM SECURED**.
 
+### [2026-10-27] Checkpoint 051 (`CHECKPOINT-AGBEDE-011`) — Neutralized Hotspot #1: Executive Decomposition of TranslateTab.jsx (69 LOC)
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Executive Refactoring Directive from Lead Architect Àrùnà Ọlànrewájú Kábírù and `Àgbà` to neutralize Hotspot #1 (`web/src/components/TranslateTab.jsx`, 612 LOC), eliminating our last client-side Gate 2 violation according to Law 1 (The 250-LOC Coordinator Invariant) and Law 2 (The Three-Drawer Mandate).
+- **Deliverables Completed**:
+  - **Decomposed `TranslateTab.jsx`**: Slashed from **612 LOC** down to **69 LOC** (-543 LOC, Law 1 satisfied < 90 LOC target) purely orchestrating mode switches and child cards.
+  - **Modularized Across The Three-Drawer Mandate**:
+    1. *Pure Logic & Data Drawer*: `web/src/utils/yorubaDiacriticsLexicon.js` (**235 LOC**, target < 300 LOC). Contains `RAW_MULTI_WORD_PHRASES`, `MULTI_WORD_PHRASES`, `DIACRITIC_LEXICON`, `disambiguateClientHomograph`, `restoreDiacriticsAlgorithmic`, and `synthesizeCulturalGloss` with zero React dependencies.
+    2. *State & Lifecycle Drawer*: `web/src/hooks/useCulturalTranslation.js` (**92 LOC**, target < 120 LOC). Contains state lifecycles and Gate 3 synchronous double-tap lock (`busyRef.current = true`) guarding `/v6/translate/diacritize` and `/v6/translate/cultural`.
+    3. *Presentation Drawer (Card 1)*: `web/src/components/DiacritizerCard.jsx` (**91 LOC**, target < 120 LOC). Renders ASCII input, 25-letter restored preview, and copy button.
+    4. *Presentation Drawer (Card 2)*: `web/src/components/CulturalGlossCard.jsx` (**88 LOC**, target < 150 LOC). Renders cultural input, translation, and metaphysical glossing cards.
+  - **Gate Verification & System Health**:
+    - `npm run build`: Compiled in **840ms** (1,922 modules transformed, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **28/28 Top-1 Accuracy** (100.0% PASS, 0 regressions).
+    - `./scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 Production Gates (100% of files < 250 LOC).
+- **Verification**: ✅ **HOTSPOT #1 NEUTRALIZED — 0 CLIENT-SIDE GATE 2 VIOLATIONS REMAINING**.
+
+
 
 
 

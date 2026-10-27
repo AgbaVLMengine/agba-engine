@@ -77,6 +77,18 @@
     - `npm run build`: compiled in 927ms (1,918 modules, 0 errors).
     - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
     - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+- **[2026-10-27] (`CHECKPOINT-AGBEDE-011` / Checkpoint 051)**: **Executive Refactoring of TranslateTab.jsx (Neutralized Hotspot #1)**:
+  - Objective: Neutralized our last client-side Gate 2 violation by decomposing `web/src/components/TranslateTab.jsx` from **612 LOC** down to **69 LOC** (-543 LOC, Law 1 Coordinator Invariant satisfied < 90 LOC) using Law 2 (The Three-Drawer Mandate).
+  - Extracted 4 modular files strictly under limits:
+    1. Pure Logic & Data Drawer: `web/src/utils/yorubaDiacriticsLexicon.js` (**235 LOC**, target < 300 LOC). Pure functions with zero React deps.
+    2. State & Lifecycle Drawer: `web/src/hooks/useCulturalTranslation.js` (**92 LOC**, target < 120 LOC). Gate 3 synchronous double-tap lock (`busyRef.current = true`) guarding `/v6/translate/diacritize` and `/v6/translate/cultural`.
+    3. Presentation Drawer: `web/src/components/DiacritizerCard.jsx` (**91 LOC**, target < 120 LOC).
+    4. Presentation Drawer: `web/src/components/CulturalGlossCard.jsx` (**88 LOC**, target < 150 LOC).
+  - Verification:
+    - `npm run build`: compiled in 840ms (1,922 modules, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
+    - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+
 
 
 
