@@ -15,45 +15,18 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 try:
-    from .config import ÀgbàConfig, AgbaConfig
-    from .semantic_bridge import (
-        normalize_y,
-        strip_accents,
-        audio_token_key,
-        preprocess_query_tokens,
-    )
-    from .multimodal_resolver import (
-        map_call_and_response_audio,
-        map_image_assets,
-        resolve_entity_multimodal_links,
-    )
+    from app.config import ÀgbàConfig, AgbaConfig
+    from app.semantic_bridge import normalize_y, strip_accents, audio_token_key, preprocess_query_tokens
+    from app.multimodal_resolver import map_call_and_response_audio, map_image_assets, resolve_entity_multimodal_links
 except (ImportError, ValueError):
     try:
-        from app.config import ÀgbàConfig, AgbaConfig
-        from app.semantic_bridge import (
-            normalize_y,
-            strip_accents,
-            audio_token_key,
-            preprocess_query_tokens,
-        )
-        from app.multimodal_resolver import (
-            map_call_and_response_audio,
-            map_image_assets,
-            resolve_entity_multimodal_links,
-        )
-    except ImportError:
+        from .config import ÀgbàConfig, AgbaConfig
+        from .semantic_bridge import normalize_y, strip_accents, audio_token_key, preprocess_query_tokens
+        from .multimodal_resolver import map_call_and_response_audio, map_image_assets, resolve_entity_multimodal_links
+    except (ImportError, ValueError):
         from config import ÀgbàConfig, AgbaConfig
-        from semantic_bridge import (
-            normalize_y,
-            strip_accents,
-            audio_token_key,
-            preprocess_query_tokens,
-        )
-        from multimodal_resolver import (
-            map_call_and_response_audio,
-            map_image_assets,
-            resolve_entity_multimodal_links,
-        )
+        from semantic_bridge import normalize_y, strip_accents, audio_token_key, preprocess_query_tokens
+        from multimodal_resolver import map_call_and_response_audio, map_image_assets, resolve_entity_multimodal_links
 
 try:
     from qdrant_client import QdrantClient
@@ -189,27 +162,30 @@ class ÀgbàHybridRetriever:
         for entity in self.corpus_entities:
             title = normalize_y(entity.get("title", ""))
             stripped_title = strip_accents(entity.get("title", ""))
+            eid = str(entity.get("id", ""))
+            norm_eid = normalize_y(eid)
+            stripped_eid = strip_accents(eid).replace("_", " ")
             aliases = [normalize_y(a) for a in entity.get("aliases", [])]
             stripped_aliases = [strip_accents(a) for a in entity.get("aliases", [])]
             category = entity.get("category", "")
             score = 0.0
 
             # 1A. RC-1: Supreme Exact Diacritic/Tonal Match (1.0000 Parity -> +600)
-            if norm_core and norm_core == title:
+            if norm_core and (norm_core == title or norm_core == norm_eid):
                 score += 600.0
             elif norm_core and norm_core in aliases:
                 score += 540.0
-            elif norm_query == title:
+            elif norm_query == title or norm_query == norm_eid:
                 score += 520.0
             elif norm_query in aliases:
                 score += 480.0
 
             # 1B. RC-1: Accent-Folded Exact Match (+450 un-diacritized, or +180 if conflicting tones)
-            if stripped_core and stripped_core == stripped_title:
+            if stripped_core and (stripped_core == stripped_title or stripped_core == stripped_eid):
                 score += 180.0 if (has_query_diacritics and norm_core != title) else 450.0
             elif stripped_core and stripped_core in stripped_aliases:
                 score += 150.0 if (has_query_diacritics and norm_core not in aliases) else 400.0
-            elif stripped_query == stripped_title:
+            elif stripped_query == stripped_title or stripped_query == stripped_eid:
                 score += 160.0 if (has_query_diacritics and norm_query != title) else 380.0
             elif stripped_query in stripped_aliases:
                 score += 140.0 if (has_query_diacritics and norm_query not in aliases) else 340.0

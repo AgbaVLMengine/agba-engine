@@ -120,12 +120,13 @@ def preprocess_query_tokens(raw_query: str) -> tuple:
     Clean natural-language query, split compound prefix typos, normalize diaspora spellings,
     and extract core subject + expanded semantic bridge targets.
     """
-    q_cleaned = re.sub(r"[?!.,;:']", " ", str(raw_query)).replace('"', " ").strip()
+    q_cleaned = re.sub(r"[?!.,;:']", " ", str(raw_query)).replace('"', " ").replace("_", " ").replace("-", " ").strip()
     q_cleaned = re.sub(r"\s+", " ", q_cleaned)
 
     # Split compound prefix typos like "agbadaembroidered" -> "agbada embroidered"
+    # Negative lookahead protects genuine lexical roots like "agbadagba" (venerable elder records)
     for prefix in COMPOUND_ROOT_PREFIXES:
-        pattern = re.compile(rf"\b({prefix})([a-z]{{3,}})\b", re.IGNORECASE)
+        pattern = re.compile(rf"\b({prefix})(?!gba\b)([a-z]{{4,}})\b", re.IGNORECASE)
         q_cleaned = pattern.sub(r"\1 \2", q_cleaned)
 
     # Normalize diaspora spellings on accent-stripped copy
