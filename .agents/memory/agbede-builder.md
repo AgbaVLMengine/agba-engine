@@ -66,6 +66,18 @@
   - Removed badge `ÀÁRÍN ÌMỌ̀ • SOVEREIGN HEARTH` from `OponSearchCore.jsx` (249 LOC) and prototype lab per Lead Architect directive.
   - Re-centered the input capsule vertically inside the golden *Ìyẹ̀ròsùn* hearth (`top: 102px`), giving the search bar and diacritics pristine spatial balance.
   - Feasibility Analysis Conducted: Evaluated lengthening the continuous flowing vein trail across repeated searches via `useExplorationGraph.js` and `VeinRabbitHoleCanvas.jsx`.
+- **[2026-10-27] (`CHECKPOINT-AGBEDE-010` / Checkpoint 050)**: **Executive Refactoring of SearchTab.jsx (Gate 2 Headroom Reclaim)**:
+  - Objective: Decomposed `web/src/components/SearchTab.jsx` from **486 LOC** down to **227 LOC** (-259 LOC, reclaiming 273 lines of headroom under the 500-LOC ceiling) with zero runtime or UI regressions.
+  - Extracted 4 modular files strictly under limits:
+    1. `web/src/utils/tonalContour.js`: 34 LOC (< 60 target). `stripAccents`, `normalizeNFC`, `escapeRegExp`, `extractTonalContour`.
+    2. `web/src/utils/localRankedSearch.js`: 63 LOC (< 90 target). `searchRankedCorpus(q, masterCorpus)`.
+    3. `web/src/utils/bentoHydrator.js`: 67 LOC (< 80 target). `findVisualRegaliaHit`, `hydrateEntityForBento`.
+    4. `web/src/hooks/useRootNetworkNodes.js`: 83 LOC (< 110 target). `resolveSubVariantEntities`, `useRootNetworkNodes`.
+  - Verification:
+    - `npm run build`: compiled in 927ms (1,918 modules, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
+    - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+
 
 
 
