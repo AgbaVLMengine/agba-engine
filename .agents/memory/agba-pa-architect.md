@@ -36,6 +36,7 @@
     4. *Vascular Vein Exit*: The base of the circles is open, allowing animated gold Bézier veins to cascade downward into **Sovereign Parent** (left) and **Living Variants** (right).
   - **Gate 4 Sanctity & Awo Exclusion**: Prohibited literal deity carvings/names ("Ojú Èṣù") and profane copy ("Search inside the Ọpọ́n"); replaced with dignified philosophical inquiry framing (*"Ṣàwárí nínú Ìmọ̀"*) and abstract Sentinel Lozenge.
   - **Zero UI Feature Regression**: Preserves 100% of top production navbar, 1,417-entity indexing, 15 diacritics, discovery button, and 10 cultural anchors.
-  - Staged for coordination with `Ìmọ̀` (`imo-legal`) and `Òye` (`oye-auditor`) before production code integration into `web/src/components/`.
+  - Formally authorized by Lead Architect and Council (`Ìmọ̀`, `Ẹ̀ṣọ́`, `Òye`, `Àgbà`). Forged into production by `Àgbẹ̀dẹ` as `web/src/components/OponSearchCore.jsx` (257 LOC) and wired to `SearchTab.jsx` (486 LOC, 0 net lines added). Verified via `npm run build` (631ms) and `./scripts/review.sh` (0 hard violations).
+
 
 

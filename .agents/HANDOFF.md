@@ -141,17 +141,14 @@
 ### 5. `HANDOFF-AGBEDE-006` — Ratified Triple Concentric Ọpọ́n Ifá Search Core Integration
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
 - **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
-- **Council Checkpoints**: `Ìmọ̀` (Sacred/Legal Clearance) & `Òye` (Adversarial Code Audit)
-- **Status**: 🟡 **STAGED (Ratified by Lead Architect & Spouse)**
-- **Scope & Architectural Specifications**:
-  1. **Retire Tooth Anatomy**: Full retirement of the anatomical tooth container in favor of the **Triple Concentric Circular Ọpọ́n Ifá (`Àárín Ìmọ̀`)**.
-  2. **Three Concentric Arcs Open at Base**:
-     - *Outer Ring (`Etí Ọpọ́n`)*: Antique bronze perimeter arc with North Sentinel Lozenge.
-     - *Mid Ring (`Àyíká Ìmọ̀`)*: Celestial orbit carrying 15 sacred 25-letter diacritics.
-     - *Inner Ring (`Àárín Ọpọ́n`)*: Amber *Ìyẹ̀ròsùn* golden hearth housing flush search input.
-     - *Vascular Vein Exit*: Open base channels glowing gold Bézier veins into Sovereign Parent and Living Variants.
+- **Status**: 🟢 **COMPLETED & LIVE IN PRODUCTION**
+- **Delivered Deliverables**:
+  1. **Forged `web/src/components/OponSearchCore.jsx`** (257 LOC, < 500 LOC ceiling). Implements the Triple Concentric Ọpọ́n Ifá geometry:
+     - Outer Bronze Rim (`Etí Ọpọ́n`) open at base with North Sentinel Lozenge.
+     - Mid Celestial Diacritic Orbit (`Àyíká Ìmọ̀`) with 15 sacred 25-letter diacritics.
+     - Inner Golden Dust Hearth (`Àárín Ọpọ́n`) with flush search capsule and ambient *Ìyẹ̀ròsùn* glow.
+     - Open base portal channeling cascading gold Bézier veins into Sovereign Parent and Living Variants.
+  2. **Wired into `web/src/components/SearchTab.jsx`** (486 LOC, 0 net lines added).
   3. **Gate 4 Sacred Integrity (Awo Exclusion)**: Zero literal deity faces/names and zero profane copy; uses abstract geometric heraldry and *"Ṣàwárí nínú Ìmọ̀"* framing.
-  4. **Strict Modular Gate 2 Enforcement (< 500 LOC)**:
-     - Decompose existing `ToothSearchCore.jsx` (485 LOC) cleanly into modular `<OponSearchCore />` (< 350 LOC) with zero bloat in `SearchTab.jsx`.
-  5. **Pending Action**: Ready for implementation immediately upon `Ìmọ̀` and `Òye` confirmation.
+  4. **Verification**: `npm run build` compiled in 631ms (0 errors, 1,914 modules); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
 
