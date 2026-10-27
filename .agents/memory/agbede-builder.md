@@ -58,6 +58,11 @@
   - Wired into `web/src/components/SearchTab.jsx` (486 LOC, 0 net lines added).
   - Verification: `npm run build` compiled in 631ms (1,914 modules transformed, 0 errors); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
 - **[2026-10-27] (`CHECKPOINT-AGBEDE-007`)**: Removed distracting micro-label `"Open Base Gateway • Arterial Veins Flowing"` from `OponSearchCore.jsx` (253 LOC) and prototype lab per Lead Architect directive. Pure visual majesty restored; compiled in 627ms with 0 errors.
+- **[2026-10-27] (`CHECKPOINT-AGBEDE-008`)**: **Restored Flowing & Glowing Vein Keyframes in Production**:
+  - Root Cause: Keyframe animations (`@keyframes veinCascading`, `@keyframes ringGlow`, `@keyframes goldenDustPulse`) and classes (`.cascading-vein`, `.glowing-ring`, `.dust-heart`) were defined inside the prototype lab's `<style>` block but omitted from `web/src/index.css` and `OponSearchCore.jsx`.
+  - Resolution: Injected full keyframe animations and utility classes into `web/src/index.css`. Added `className="cascading-vein"` to left & right SVG arterial paths, `className="glowing-ring"` to Outer Rim, and ambient `dust-heart` golden pulse aura behind the hearth in `web/src/components/OponSearchCore.jsx` (256 LOC < 500 LOC ceiling).
+  - Verification: `npm run build` compiled in 910ms (0 errors); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
+
 
 
 

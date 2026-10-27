@@ -613,6 +613,24 @@
   - **Verification**: `npm run build` compiled cleanly in **627ms** (0 errors); `./scripts/review.sh` passed with **0 hard violations, 0 warnings** across all 9 persona vaults.
 - **Verification**: ✅ **UI POLISH VERIFIED & PRODUCTION READY**.
 
+### [2026-10-27] Checkpoint 047 (`CHECKPOINT-AGBEDE-008`) — Restored Flowing & Glowing Vein Keyframes in Production
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Root-Cause Resolution of Missing Vein Flow**:
+    - Identified why the glowing gold veins were static on `localhost`: the CSS keyframes (`@keyframes veinCascading`, `@keyframes ringGlow`, `@keyframes goldenDustPulse`) and animated utility classes (`.cascading-vein`, `.glowing-ring`, `.dust-heart`) were defined inside the standalone prototype lab (`tooth_ui_prototype_lab.html`) but had not been ported into the global production styling.
+  - **Production Styling & Animation Binding**:
+    - Appended `@keyframes veinCascading`, `@keyframes ringGlow`, `@keyframes goldenDustPulse`, `.cascading-vein`, `.glowing-ring`, and `.dust-heart` into `web/src/index.css`.
+    - Added `className="cascading-vein"` to left and right arterial SVG paths in `web/src/components/OponSearchCore.jsx`.
+    - Added `className="glowing-ring"` to Outer Rim 1 in `OponSearchCore.jsx`.
+    - Integrated the ambient golden dust heart pulse aura (`dust-heart`) behind the *Àárín Ìmọ̀* center hearth.
+  - **Line Count & Gate Checks**:
+    - `web/src/components/OponSearchCore.jsx` preserved at **256 LOC** (strictly under the 500-LOC ceiling).
+    - `npm run build` compiled in **910ms** (1,914 modules transformed, 0 errors).
+    - `./scripts/review.sh` passed with **0 hard violations, 0 warnings** across all 9 persona vaults.
+- **Verification**: ✅ **FLOWING & GLOWING GOLDEN VEINS ANIMATING LIVE IN PRODUCTION**.
+
+
 
 
 

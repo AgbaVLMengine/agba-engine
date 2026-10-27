@@ -37,6 +37,8 @@
   - **Gate 4 Sanctity & Awo Exclusion**: Prohibited literal deity carvings/names ("Ojú Èṣù") and profane copy ("Search inside the Ọpọ́n"); replaced with dignified philosophical inquiry framing (*"Ṣàwárí nínú Ìmọ̀"*) and abstract Sentinel Lozenge.
   - **Zero UI Feature Regression**: Preserves 100% of top production navbar, 1,417-entity indexing, 15 diacritics, discovery button, and 10 cultural anchors.
   - Formally authorized by Lead Architect and Council (`Ìmọ̀`, `Ẹ̀ṣọ́`, `Òye`, `Àgbà`). Forged into production by `Àgbẹ̀dẹ` as `web/src/components/OponSearchCore.jsx` (257 LOC) and wired to `SearchTab.jsx` (486 LOC, 0 net lines added). Verified via `npm run build` (631ms) and `./scripts/review.sh` (0 hard violations).
+- **[2026-10-27]**: Supervised `Àgbẹ̀dẹ`'s restoration of the flowing and glowing gold vein animations in production (`Checkpoint 047`). Root-cause resolved: CSS keyframes (`@keyframes veinCascading`, `@keyframes ringGlow`, `@keyframes goldenDustPulse`) and classes (`.cascading-vein`, `.glowing-ring`, `.dust-heart`) injected into `web/src/index.css` and bound to `OponSearchCore.jsx` (256 LOC). Production build confirmed clean (910ms).
+
 
 
 
