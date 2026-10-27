@@ -185,10 +185,6 @@ export default function OponSearchCore({
                 </button>
               ))}
             </div>
-
-            <div style={{ marginTop: '8px', fontSize: '0.68rem', color: 'rgba(251, 191, 36, 0.75)', fontFamily: 'monospace' }}>
-              Open Base Gateway • Arterial Veins Flowing
-            </div>
           </div>
         </div>
 
