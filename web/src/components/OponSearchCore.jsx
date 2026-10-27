@@ -136,15 +136,8 @@ export default function OponSearchCore({
           </svg>
 
           {/* INSET SEARCH CAPSULE & DIACRITIC STRIP (FLUSH INSIDE HEARTH) */}
-          <div style={{ position: 'absolute', top: '88px', width: '90%', maxWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 20 }}>
+          <div style={{ position: 'absolute', top: '102px', width: '90%', maxWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 20 }}>
             
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', padding: '2px 10px', borderRadius: '999px', background: 'rgba(20, 16, 11, 0.95)', border: '1px solid rgba(212, 175, 55, 0.5)', marginBottom: '8px' }}>
-              <Sparkles size={11} color="#fbbf24" />
-              <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#fbbf24', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-                ÀÁRÍN ÌMỌ̀ • SOVEREIGN HEARTH
-              </span>
-            </div>
-
             {/* Input Capsule */}
             <div style={{ width: '100%', background: 'rgba(5, 7, 13, 0.95)', border: isFocused ? '2px solid #fbbf24' : '2px solid #d4af37', borderRadius: '16px', padding: '6px 10px', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: isFocused ? '0 0 28px rgba(251, 191, 36, 0.4)' : '0 10px 30px rgba(0, 0, 0, 0.8)', transition: 'all 0.25s ease' }}>
               <input
