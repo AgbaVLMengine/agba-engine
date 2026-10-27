@@ -75,6 +75,12 @@
   - **Gate 1 & Gate 2 (Leaner & Purified)**: `OponSearchCore.jsx` reduced to **249 LOC** (-8 LOC) via removal of debug labels and redundant pill badge; input capsule cleanly re-centered at `top: 102px`. `SearchTab.jsx` remains strictly preserved at **486 LOC** (< 490 ceiling).
   - **Animation Binding**: Fluid vascular vein cascade animations and ambient golden dust pulse (@keyframes veinCascading, ringGlow, goldenDustPulse) verified live in `web/src/index.css`.
   - **Regression & Build**: `npm run build` compiled in **591ms** (0 errors). `scripts/benchmark_sprint004.py` achieved 28/28 (100.0%) Top-1 accuracy across 1,417 entities. `./scripts/review.sh` passed with 0 hard violations, 0 warnings.
+- **[2026-10-27 | Post-Refactoring Audit: Hotspot #1 TranslateTab.jsx Neutralized (`AGY__REPORT_20261027T160155Z.md`)]**:
+  - **Verdict**: 🏆 **100% PRODUCTION PASS & ZERO CLIENT-SIDE GATE 2 VIOLATIONS CERTIFIED** (Commit `2097f82`).
+  - **Gate 2 & Law 1 Coordinator Invariant**: `TranslateTab.jsx` decomposed from **612 LOC** down to **69 LOC** (-543 LOC, -88.7%). Every active client-side component is now strictly below 500 lines.
+  - **The Three-Drawer Mandate**: Verified 4 extracted modules: `yorubaDiacriticsLexicon.js` (235 LOC pure math/data), `useCulturalTranslation.js` (92 LOC hook with Gate 3 `busyRef` synchronous locks), `DiacritizerCard.jsx` (91 LOC UI card), and `CulturalGlossCard.jsx` (88 LOC UI card). Net lines saved: -37 LOC.
+  - **Automated Tooling**: Upgraded `scripts/review.sh` with 3-Tier Pre-Commit Scanner (350/450/500 thresholds) verified operational. `npm run build` compiled in **641ms** (1,922 modules, 0 errors). `benchmark_sprint004.py` verified 28/28 (100.0%) Top-1 accuracy.
+
 
 
 
