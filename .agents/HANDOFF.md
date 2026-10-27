@@ -135,3 +135,23 @@
   2. **Prototype 2 (<LivingVariantConstellationGrid />)**: `web/src/components/LivingVariantConstellationGrid.jsx` (91 LOC). Luminous sub-variant constellation chips with hover glow and 1-click dynamic branching.
   3. **Zero-Touch Production UI Invariant**: `SearchTab.jsx` (486 LOC) and `ToothSearchCore.jsx` (485 LOC) remain 100% untouched. Components mounted cleanly via `EntityBentoDeck.jsx` (395 LOC).
   4. **Verification**: `npm run build` compiled in 733ms (0 errors); `./scripts/review.sh` passed with 0 hard violations.
+
+---
+
+### 5. `HANDOFF-AGBEDE-006` — Ratified Triple Concentric Ọpọ́n Ifá Search Core Integration
+- **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`)
+- **Supervised By**: **`Àgbà`** (`agba-pa-architect`)
+- **Council Checkpoints**: `Ìmọ̀` (Sacred/Legal Clearance) & `Òye` (Adversarial Code Audit)
+- **Status**: 🟡 **STAGED (Ratified by Lead Architect & Spouse)**
+- **Scope & Architectural Specifications**:
+  1. **Retire Tooth Anatomy**: Full retirement of the anatomical tooth container in favor of the **Triple Concentric Circular Ọpọ́n Ifá (`Àárín Ìmọ̀`)**.
+  2. **Three Concentric Arcs Open at Base**:
+     - *Outer Ring (`Etí Ọpọ́n`)*: Antique bronze perimeter arc with North Sentinel Lozenge.
+     - *Mid Ring (`Àyíká Ìmọ̀`)*: Celestial orbit carrying 15 sacred 25-letter diacritics.
+     - *Inner Ring (`Àárín Ọpọ́n`)*: Amber *Ìyẹ̀ròsùn* golden hearth housing flush search input.
+     - *Vascular Vein Exit*: Open base channels glowing gold Bézier veins into Sovereign Parent and Living Variants.
+  3. **Gate 4 Sacred Integrity (Awo Exclusion)**: Zero literal deity faces/names and zero profane copy; uses abstract geometric heraldry and *"Ṣàwárí nínú Ìmọ̀"* framing.
+  4. **Strict Modular Gate 2 Enforcement (< 500 LOC)**:
+     - Decompose existing `ToothSearchCore.jsx` (485 LOC) cleanly into modular `<OponSearchCore />` (< 350 LOC) with zero bloat in `SearchTab.jsx`.
+  5. **Pending Action**: Ready for implementation immediately upon `Ìmọ̀` and `Òye` confirmation.
+
