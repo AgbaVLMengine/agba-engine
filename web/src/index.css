@@ -480,3 +480,56 @@ body {
   from { opacity: 0; transform: scale(0.96); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* ==============================================================================
+   ỌPỌ́N IFÁ CELESTIAL FLOW & GLOW ANIMATIONS (VASCULAR VEINS & HEARTH)
+   ============================================================================== */
+@keyframes veinCascading {
+  0% {
+    stroke-dashoffset: 120;
+    stroke-opacity: 0.4;
+  }
+  50% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 0.4;
+  }
+}
+
+@keyframes ringGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.7));
+  }
+}
+
+@keyframes goldenDustPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.45;
+    filter: blur(40px);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+    filter: blur(55px);
+  }
+}
+
+.cascading-vein {
+  stroke-dasharray: 8 5;
+  animation: veinCascading 2.8s linear infinite;
+}
+
+.glowing-ring {
+  animation: ringGlow 4s ease-in-out infinite;
+}
+
+.dust-heart {
+  animation: goldenDustPulse 4.5s ease-in-out infinite;
+}
+

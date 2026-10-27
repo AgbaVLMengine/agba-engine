@@ -95,6 +95,9 @@ export default function OponSearchCore({
         {/* DOM ANCHOR FOR CUBIC-BÉZIER VEIN RABBIT-HOLE GRAPH */}
         <div id="central-tooth-search-anchor" style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           
+          {/* AMBIENT IYERÒSÙN (GOLDEN WOOD DUST) HEARTH GLOW */}
+          <div className="dust-heart" style={{ position: 'absolute', width: '380px', height: '380px', background: 'radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(251, 191, 36, 0.08) 55%, transparent 75%)', borderRadius: '50%', pointerEvents: 'none', top: '10px' }} />
+
           <svg viewBox="0 0 640 430" style={{ width: '100%', maxWidth: '620px', height: 'auto', filter: 'drop-shadow(0 20px 45px rgba(0,0,0,0.9))' }} fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="oponBronzeRim" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -111,7 +114,7 @@ export default function OponSearchCore({
             </defs>
 
             {/* RING 1: OUTER BRONZE RIM (ETÍ ỌPỌ́N — OPEN AT SOUTHERN BASE) */}
-            <path d="M 175 355 A 250 250 0 1 1 465 355" stroke="url(#oponBronzeRim)" stroke-width="4.5" stroke-linecap="round" />
+            <path d="M 175 355 A 250 250 0 1 1 465 355" stroke="url(#oponBronzeRim)" stroke-width="4.5" stroke-linecap="round" className="glowing-ring" />
 
             {/* NORTH APEX HERALDIC SENTINEL LOZENGE */}
             <polygon points="320, 40 328, 48 320, 56 312, 48" fill="#fbbf24" stroke="#d4af37" stroke-width="1.5" />
@@ -126,8 +129,8 @@ export default function OponSearchCore({
             <path d="M 220 295 A 145 145 0 1 1 420 295" fill="url(#oponHearthGrad)" stroke="#fbbf24" stroke-width="2.8" stroke-linecap="round" />
 
             {/* CASCADING VASCULAR VEINS FLOWING DOWN OUT OF OPEN BASE */}
-            <path d="M 235 290 C 235 340, 180 370, 140 425" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8, 5" />
-            <path d="M 405 290 C 405 340, 460 370, 500 425" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="8, 5" />
+            <path d="M 235 290 C 235 340, 180 370, 140 425" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round" className="cascading-vein" />
+            <path d="M 405 290 C 405 340, 460 370, 500 425" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round" className="cascading-vein" />
             <circle cx="140" cy="425" r="4.5" fill="#fef08a" />
             <circle cx="500" cy="425" r="4.5" fill="#fef08a" />
           </svg>
