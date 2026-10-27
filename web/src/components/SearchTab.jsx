@@ -2,7 +2,7 @@ import React, { useState, useMemo, useRef, useCallback } from 'react';
 import visualManifest from '../data/agba_unified_visual_regalia_manifest.json';
 import masterCorpus from '../data/yoruba_master_corpus.json';
 import { useExplorationGraph, PEER_CULTURES } from '../hooks/useExplorationGraph';
-import ToothSearchCore from './ToothSearchCore';
+import OponSearchCore from './OponSearchCore';
 import VeinRabbitHoleCanvas from './VeinRabbitHoleCanvas';
 import EntityBentoDeck from './EntityBentoDeck';
 import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
@@ -416,8 +416,8 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 16px' }}>
-      {/* 1. CENTRAL TOOTH SEARCH CORE & MULTI-CULTURE SWITCHER */}
-      <ToothSearchCore
+      {/* 1. CENTRAL OPON IFA SEARCH CORE & MULTI-CULTURE SWITCHER */}
+      <OponSearchCore
         query={query}
         setQuery={setQuery}
         loading={loading}
