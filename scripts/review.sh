@@ -25,17 +25,23 @@ else
 fi
 
 echo ""
-echo "▶ [GATE 2] Checking 500-Line Component & Module Modularization Rule..."
+echo "▶ [GATE 2] Checking Component & Module Modularization (3-Tier Pre-Commit Scanner)..."
 for f in $CHANGED_FILES; do
   [ -f "$f" ] || continue
   case "$f" in
     *.ts|*.tsx|*.js|*.jsx|*.py|*.vue|*.svelte)
       LINES=$(wc -l < "$f" | tr -d ' ')
       if [ "$LINES" -gt 500 ]; then
-        echo "  ❌ [VIOLATION] $f has $LINES lines (Hard limit: 500 lines)."
+        echo "  ❌ [GATE 2 HARD VIOLATION] $f has $LINES lines (Hard ceiling: 500 lines). Build rejected."
         VIOLATIONS=$((VIOLATIONS + 1))
+      elif [ "$LINES" -ge 450 ]; then
+        echo "  🛑 [EMBARGO ALERT] $f has $LINES lines (≥ 450 lines). Zero inline additions allowed; modular extraction required."
+        WARNINGS=$((WARNINGS + 1))
+      elif [ "$LINES" -ge 350 ]; then
+        echo "  ⚠️  [ADVISORY NOTICE] $f has $LINES lines (≥ 350 lines). Nearing threshold; plan modular extraction."
+        WARNINGS=$((WARNINGS + 1))
       else
-        echo "  ✅ $f ($LINES / 500 lines)"
+        echo "  ✅ $f ($LINES / 500 lines — Healthy Headroom)"
       fi
       ;;
   esac

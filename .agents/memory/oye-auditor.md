@@ -10,7 +10,12 @@
 
 ## 2. Industry Standards & Playbook Production Gates Checklist
 1. **Gate 1 — Anti-Bloat & Root-Cause Resolution**: Zero defensive band-aids over corrupted state; flat guard clauses (`if (!valid) return;`); negative LOC preference; zero dead imports or unused variables.
-2. **Gate 2 — The 500-Line Modularization Ceiling**: Flag any `.py`, `.jsx`, `.tsx`, `.js`, or `.ts` file exceeding 500 lines (`./scripts/review.sh`).
+2. **Gate 2 — The 500-Line Modularization Ceiling (Anti-Exponential Scaling Laws)**:
+   - **Hard 500-Line Ceiling**: Hard pre-commit failure if any `.py`, `.jsx`, `.tsx`, `.js`, or `.ts` file exceeds 500 lines.
+   - **Law 1: The 250-LOC Coordinator Invariant**: Screen-level Tab components (`SearchTab.jsx`, `TranslateTab.jsx`, `ChatTab.jsx`) are strictly Coordinators, capped at 250 LOC.
+   - **Law 2: The Three-Drawer Mandate**: Components split into Presentation Drawer (`components/` < 300 LOC), Lifecycle & State Drawer (`hooks/` < 200 LOC), Pure Math & Logic Drawer (`utils/` < 150 LOC).
+   - **Law 3: Zero Net-Growth Rule for Hotspots**: Any file $\ge 350$ LOC enters the Yellow Watchlist; additions must be offset by modular extractions.
+   - **Law 4: Tiered Pre-Commit Scanner in `scripts/review.sh`**: 350 LOC (Advisory), 450 LOC (Embargo), 500 LOC (Hard Rejection).
 3. **Gate 3 — Synchronous Double-Tap Locks & Idempotency**: Verify `useRef` synchronous locks on mutating UI handlers and UUID `idempotency_key` on mutating API calls.
 4. **Gate 4 — Tonal Invariant & Unicode Normalization**: Ensure `unicodedata.normalize("NFC" / "NFD")` and 25-letter Yorùbá orthography integrity across Python and JS modules.
 5. **Gate 5 — Security, OWASP & API Hygiene**: Check FastAPI Pydantic schemas, CORS boundaries, rate-limiting/auth gates on enterprise endpoints, and zero hardcoded secrets.

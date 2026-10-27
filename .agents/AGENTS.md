@@ -52,9 +52,25 @@ Adapted from the *Dual-Engine AI Engineering Playbook* specifically for **Antigr
 - **Flat Code & Guard Clauses**: Ban deeply nested `if/else` pyramids (>2 levels). Use early returns (`if (!query) return;`).
 - **Negative Lines of Code (LOC)**: Prefer deleting dead code and redundant wrappers over adding new abstractions.
 
-### Gate 2: The 500-Line Component & Module Rule
-- **Hard 500-Line Ceiling**: No new feature code or UI panels may be added to any file over **500 lines**.
-- Modularize React UI panels into `/web/src/components/` and FastAPI logic into modular routers/utilities under `/api/app/`.
+### Gate 2: The 500-Line Component & Module Rule (The 4 Anti-Exponential Scaling Laws)
+- **Hard 500-Line Ceiling**: No code file may exceed **500 lines**. Build rejected immediately if breached.
+- **Law 1: The 250-LOC Coordinator Invariant (Zero Leaked Logic)**:
+  - Screen-level Tab components (`SearchTab.jsx`, `TranslateTab.jsx`, `ChatTab.jsx`) are strictly designated as **Coordinators**.
+  - Forbidden from containing: Regex parsers, data mapping loops, direct `fetch()` payload assemblies, or raw SVG definitions.
+  - Allowed contents: Local UI state, custom hook invocations, and declarative JSX layouts.
+  - **Ceiling**: A Coordinator must never exceed **250 LOC**.
+- **Law 2: The Three-Drawer Mandate**:
+  Every feature must be decomposed across three clean architectural drawers:
+  1. *Presentation Drawer* (`web/src/components/<Component>.jsx`): Pure rendering, strictly $< 300$ LOC.
+  2. *Lifecycle & State Drawer* (`web/src/hooks/use<Feature>.js`): Asynchronous lifecycles, refs, and synchronous locks, strictly $< 200$ LOC.
+  3. *Pure Math & Logic Drawer* (`web/src/utils/<utility>.js`): Pure deterministic functions with zero React dependencies, strictly $< 150$ LOC.
+- **Law 3: The Zero Net-Growth Rule for Hotspots**:
+  - Any file reaching $\ge 350$ LOC enters the **Yellow Watchlist**.
+  - Any task or PR modifying a file on the Watchlist must extract at least as many lines into a hook or utility module as it adds.
+- **Law 4: Automated 3-Tier Pre-Commit Scanner in `scripts/review.sh`**:
+  - `350 LOC`: ⚠️ Advisory Notice *(Plan modular extraction)*.
+  - `450 LOC`: 🛑 Embargo Alert *(Zero inline feature code allowed)*.
+  - `500 LOC`: ❌ Hard Failure *(Build rejected immediately)*.
 
 ### Gate 3: Synchronous Double-Tap UI Locks & Mutating Idempotency
 - **Synchronous `useRef` Locks**: React state (`setIsLoading(true)`) is asynchronous and leaves a 5–20ms race window. All mutating UI actions (feedback submission, audio synthesis triggers, future payment/enterprise endpoints) must use a synchronous ref lock (`if (busyRef.current) return; busyRef.current = true;`) before any `await`.
