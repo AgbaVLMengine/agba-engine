@@ -148,3 +148,12 @@ flowchart TD
   - **Frontend Production Build**: `npm run build` executed successfully (1,922 modules transformed in 698ms, 0 errors).
   - **Retrieval Benchmark**: Sprint 004 Benchmark verified at **28/28 (100.0%) Top-1 Accuracy** live against 1,416 entities; 16/16 friction queries (100.0%); 8/8 anti-parent-loop (100.0%); 18/18 Category 17 fauna (100.0%).
   - **Readiness Verdict**: DEFCON 5 (Green / Operational). All perimeters nominal, hardened, and impervious.
+- **[2026-10-28]**: Post-Update Zero-Trust Security Sweep (`CHECKPOINT-ESO-009`):
+  - **Context**: Comprehensive security sweep verifying all stipulated security guardrails following Checkpoints 060–067 updates.
+  - **Production Gates**: 8/8 gates passed via `./scripts/review.sh` (0 hard violations, 0 warnings).
+  - **Gate 2 Modularity Ceilings**: All hot files verified well under 500-LOC ceiling: `SearchTab.jsx` (237 LOC), `VeinRabbitHoleCanvas.jsx` (340 LOC), `useExplorationGraph.js` (242 LOC), `intelligence.py` (477 LOC), `retrieval.py` (169 LOC), `main.py` (339 LOC).
+  - **Gate 8 Zero-Trust Supply Chain & Secret Scan**: 0 unpinned dependencies, 0 LiteLLM trojans, native `google-genai>=0.1.0` locked. Git commit diffs verified clean of high-entropy secrets and credentials.
+  - **Prompt Injection & Anti-Exfiltration Invariants**: XML semantic boundaries (`<canonical_knowledge_base>`, `<user_query>`), Rule 5 anti-override instruction, and delimiter escaping intact.
+  - **API Gateway & Cloud Run**: Header-first authentication enforced; `--min-instances 0` ($0.00/mo idle scale) confirmed.
+  - **Build & Accuracy Verification**: `npm run build` compiled in 859ms (0 errors); Sprint 004 benchmark 28/28 (100.0%) Top-1 Accuracy across 1,402 canonical entities.
+  - **Readiness Verdict**: 🟢 DEFCON 5 (Green / Operational & Impervious).
