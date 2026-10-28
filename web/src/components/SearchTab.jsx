@@ -27,6 +27,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     graph,
     activeNode,
     activeLineageIds,
+    startVeinFromHearth,
     startVeinFromOpon,
     startVeinFromTooth,
     branchVeinToRelative,
@@ -110,7 +111,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
           if (options.isBranchHop) {
             branchVeinToRelative(primaryEntity, options.relationLabel || 'Rabbit-Hole Hop');
           } else {
-            (startVeinFromOpon || startVeinFromTooth)(q, primaryEntity);
+            (startVeinFromHearth || startVeinFromOpon || startVeinFromTooth)(q, primaryEntity);
           }
         }
       } finally {
@@ -118,7 +119,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         busyRef.current = false;
       }
     },
-    [apiBaseUrl, branchVeinToRelative, query, startVeinFromOpon, startVeinFromTooth]
+    [apiBaseUrl, branchVeinToRelative, query, startVeinFromHearth, startVeinFromOpon, startVeinFromTooth]
   );
 
   const handleBranchToRelative = useCallback(

@@ -6,7 +6,7 @@ export const PEER_CULTURES = {
   yoruba: {
     id: 'yoruba',
     label: 'Yorùbá',
-    subtitle: 'Ìmọ̀ Yorùbá • 1,415 Canonical Nodes & 256 Odù Ifá',
+    subtitle: 'Ìmọ̀ Yorùbá • 1,402 Canonical Nodes & 256 Odù Ifá',
     diacriticLabel: 'Àmì Ohùn',
     diacritics: ['À', 'Á', 'È', 'É', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Ṣ'],
     anchors: ['Òkèlè', 'Amàlà', 'Ìyán', 'Agbádá', 'Odù Ifá', 'Ògún', 'Bàtá', 'Adé Ààrẹ', 'Ọfà', 'Ọbẹ̀'],
@@ -98,7 +98,7 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
       title: firstEntity.title,
       category: firstEntity.category || 'Sovereign Concept',
       depth: 1,
-      parentNodeId: 'OPON_ROOT',
+      parentNodeId: 'AARIN_ROOT',
       branchIndex: 0,
       relationLabel: 'Root Search Anchor',
       queryContext: queryText,
@@ -184,10 +184,10 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     }, 120);
   }, []);
 
-  // Retrace to any ancestor node along the vein (or back to the Ọpọ́n Ifá Hearth)
+  // Retrace to any ancestor node along the vein (or back to the Sovereign Hearth)
   const retraceToNode = useCallback((targetNodeId) => {
     if (navLockRef.current) return null;
-    if (targetNodeId === 'OPON_ROOT' || targetNodeId === 'TOOTH_ROOT') {
+    if (targetNodeId === 'AARIN_ROOT' || targetNodeId === 'OPON_ROOT' || targetNodeId === 'TOOTH_ROOT') {
       const rootNode = graph.nodes[0] || null;
       setGraph((prev) => ({
         ...prev,
@@ -217,9 +217,9 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     [graph.nodes, graph.activeNodeId]
   );
 
-  // Active arterial lineage from OPON_ROOT down to activeNodeId
+  // Active arterial lineage from AARIN_ROOT down to activeNodeId
   const activeLineageIds = useMemo(() => {
-    const lineage = new Set(['OPON_ROOT', 'TOOTH_ROOT']);
+    const lineage = new Set(['AARIN_ROOT', 'OPON_ROOT', 'TOOTH_ROOT']);
     let curr = activeNode;
     while (curr) {
       lineage.add(curr.nodeId);
@@ -232,6 +232,7 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     graph,
     activeNode,
     activeLineageIds,
+    startVeinFromHearth: startVeinFromTooth,
     startVeinFromOpon: startVeinFromTooth,
     startVeinFromTooth,
     branchVeinToRelative,

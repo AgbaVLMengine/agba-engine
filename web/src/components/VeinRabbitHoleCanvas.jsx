@@ -21,8 +21,9 @@ export default function VeinRabbitHoleCanvas({
     const centerX = 460;
 
     const nodeCoords = {
-      OPON_ROOT: { x: centerX, y: 0, title: 'Ọpọ́n Ifá Central Hearth' },
-      TOOTH_ROOT: { x: centerX, y: 0, title: 'Ọpọ́n Ifá Central Hearth' }
+      AARIN_ROOT: { x: centerX, y: 0, title: 'Àárín Ìmọ̀ (Hearth Origin)' },
+      OPON_ROOT: { x: centerX, y: 0, title: 'Àárín Ìmọ̀ (Hearth Origin)' },
+      TOOTH_ROOT: { x: centerX, y: 0, title: 'Àárín Ìmọ̀ (Hearth Origin)' }
     };
 
     const depthGroups = [];
@@ -105,7 +106,7 @@ export default function VeinRabbitHoleCanvas({
               title="Retrace the vein back to your first search entry"
             >
               <Compass size={13} />
-              Retrace to Ọpọ́n Hearth (#1: {nodes[0]?.title})
+              Retrace to Origin Anchor (#1: {nodes[0]?.title})
             </button>
           )}
           <button
@@ -185,10 +186,10 @@ export default function VeinRabbitHoleCanvas({
             );
           })}
 
-          {/* 2. Render Origin Ọpọ́n Ifá Hearth Junction at (460, 6) */}
+          {/* 2. Render Origin Hearth Junction at (460, 6) */}
           <g
             style={{ cursor: 'pointer' }}
-            onClick={() => onRetraceToNode('OPON_ROOT')}
+            onClick={() => onRetraceToNode('AARIN_ROOT')}
           >
             <circle
               cx={460}
@@ -206,7 +207,7 @@ export default function VeinRabbitHoleCanvas({
               fontWeight="700"
               style={{ letterSpacing: '0.05em' }}
             >
-              👑 ỌPỌ́N IFÁ ROOT ({graph.rootQuery || nodes[0]?.title})
+              👑 ÀÁRÍN ÌMỌ̀ ({graph.rootQuery || nodes[0]?.title})
             </text>
           </g>
 
@@ -295,7 +296,7 @@ export default function VeinRabbitHoleCanvas({
         </span>
         <button
           type="button"
-          onClick={() => onRetraceToNode('OPON_ROOT')}
+          onClick={() => onRetraceToNode('AARIN_ROOT')}
           style={{
             background: 'rgba(212, 175, 55, 0.12)',
             border: '1px solid rgba(212, 175, 55, 0.35)',
@@ -307,7 +308,7 @@ export default function VeinRabbitHoleCanvas({
             fontWeight: 700
           }}
         >
-          👑 Ọpọ́n Ifá Origin
+          👑 Àárín Ìmọ̀
         </button>
         {nodes.map((n, idx) => {
           const isCurrent = activeNode?.nodeId === n.nodeId;
