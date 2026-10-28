@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Àgbà Engine — Secondary Legal Dossier & Safe Harbor Protocol (Counsel Brief)</title>
+  <style>
+    :root {
+      --bg: #0b0d11;
+      --card: #151821;
+      --card-border: #262b3a;
+      --gold: #d4af37;
+      --gold-soft: rgba(212, 175, 55, 0.12);
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --green: #10b981;
+      --green-bg: rgba(16, 185, 129, 0.12);
+      --red: #ef4444;
+      --red-bg: rgba(239, 68, 68, 0.12);
+      --blue: #38bdf8;
+      --blue-bg: rgba(56, 189, 248, 0.12);
+      --font-scale: 1;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --card-border: #e2e8f0;
+      --gold: #9a6f0a;
+      --gold-soft: rgba(154, 111, 10, 0.08);
+      --text: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body {
+      margin: 0;
+      padding: 0 0 100px 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      font-size: calc(16px * var(--font-scale));
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--card);
+      border-bottom: 1px solid var(--card-border);
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-gold { background: var(--gold-soft); color: var(--gold); border: 1px solid var(--gold); }
+    .badge-green { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+    .controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+    button.btn-ctrl {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    button.btn-ctrl:active { background: var(--card-border); }
+    main {
+      padding: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: linear-gradient(180deg, var(--gold-soft) 0%, transparent 100%);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px 18px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.45rem;
+      line-height: 1.3;
+      margin: 8px 0 12px 0;
+      color: var(--gold);
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 16px 0;
+      font-size: 0.85rem;
+      text-align: left;
+    }
+    .meta-box {
+      background: var(--card);
+      padding: 10px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+    .meta-label { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; font-weight: 700; }
+    .meta-val { font-weight: 600; margin-top: 2px; }
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 20px 16px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 0 0 14px 0;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 10px;
+    }
+    h3 { font-size: 1rem; margin: 18px 0 8px 0; color: var(--text); }
+    p, li { color: var(--text); font-size: 0.95rem; }
+    ul, ol { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .callout-green {
+      background: var(--green-bg);
+      border-left: 4px solid var(--green);
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+    .callout-blue {
+      background: var(--blue-bg);
+      border-left: 4px solid var(--blue);
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+    .callout-red {
+      background: var(--red-bg);
+      border-left: 4px solid var(--red);
+      padding: 12px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      font-size: 0.85rem;
+    }
+    th, td {
+      border: 1px solid var(--card-border);
+      padding: 8px 10px;
+      text-align: left;
+    }
+    th { background: var(--gold-soft); color: var(--gold); font-weight: 700; }
+    .copy-btn {
+      background: var(--gold-soft);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      float: right;
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--card);
+      border-top: 1px solid var(--card-border);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-around;
+      z-index: 100;
+    }
+    .nav-item {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-item.active { color: var(--gold); font-weight: 700; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="top-row">
+      <div class="brand">ÀGBÀ ENGINE • COUNSEL DOSSIER</div>
+      <div class="badge badge-green">CONFIDENTIAL • LEGAL COMPANION</div>
+    </div>
+    <div class="controls">
+      <button class="btn-ctrl" onclick="toggleTheme()">🌓 Dark / Light</button>
+      <button class="btn-ctrl" onclick="adjustFont(1)">A+ Larger</button>
+      <button class="btn-ctrl" onclick="adjustFont(-1)">A- Smaller</button>
+      <button class="btn-ctrl" onclick="window.print()">🖨️ Save as PDF</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span class="badge badge-gold">PARTNER EXECUTIVE BRIEF</span>
+      <h1>Secondary Legal Dossier & Cultural Safe Harbor Framework</h1>
+      <p style="color: var(--muted); font-size: 0.9rem; margin: 0 auto; max-width: 650px;">
+        Prepared by <strong>Ìmọ̀ (Legal & Provenance Counsel)</strong> for <strong>Barrister Ahmed Abiola Mohammed ACIArb(UK)</strong>, Partner at <strong>Fort Legis Attorneys</strong>, under the decree of Lead Architect <strong>Àrùnà Ọlànrewájú Kábírù</strong>.
+      </p>
+      <div class="meta-grid">
+        <div class="meta-box">
+          <div class="meta-label">Client</div>
+          <div class="meta-val">Àgbà Engine Project</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">External Counsel</div>
+          <div class="meta-val">Barr. Ahmed (Fort Legis)</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Corpus Baseline</div>
+          <div class="meta-val">1,415 Entities • 256 Odù Ifá</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Primary Defense</div>
+          <div class="meta-val">72h Safe Harbor Guarantee</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="section-card" id="safe-harbor">
+      <h2>🛡️ 1. The Preemptive 72-Hour Cultural Safe Harbor Protocol</h2>
+      <p>
+        To insulate Àgbà Engine from vexatious intellectual property litigation and community friction, we have established a binding administrative safe harbor under <strong>Part IX (Expressions of Folklore, Section 75) & Section 20 (Fair Dealing)</strong> of the <strong>Nigerian Copyright Act 2022</strong> and <strong>WIPO Intergovernmental Committee (IGC)</strong> guidelines.
+      </p>
+
+      <div class="callout-blue">
+        <strong>The 72-Hour Curatorial Guarantee:</strong>
+        Any certified royal house, ancestral guild, academic scholar, or cultural lineage that submits a <em>Notice of Cultural Dispute or Request for Redress (NCDRR)</em> is guaranteed:
+        <ul>
+          <li><strong>T+24h (Immediate Administrative Quarantine):</strong> The contested record is suspended from public search ranking while undergoing expedited review.</li>
+          <li><strong>T+48h (Forensic Provenance Audit):</strong> Counsel and the Sovereign Archivist inspect the primary citation against Samuel Johnson (1921), museum catalogs, or public folklore records.</li>
+          <li><strong>T+72h (Binding Curatorial Settlement):</strong> Formal correction, dual-custodial attribution, or permanent respectful de-indexing without costly litigation.</li>
+        </ul>
+      </div>
+
+      <h3>Dispute Classifications & Automatic Remedies</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Notice Classification</th>
+            <th>Primary Trigger</th>
+            <th>Remedy & Defense</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Class A: Sacred Boundary Violation (*Awo* Exclusion)</strong></td>
+            <td>Contention that an entity reveals restricted initiatory oaths or esoteric secrets.</td>
+            <td><strong>Immediate Quarantine (< 4h)</strong>. Gate 4 permanently prohibits initiatory oaths; instant de-indexing if verified.</td>
+          </tr>
+          <tr>
+            <td><strong>Class B: Lineage Orthography & Dialectal Dispute</strong></td>
+            <td>Dispute over historical titles, tonal marks, or sub-lineage spellings.</td>
+            <td><strong>Orthographic Co-Existence</strong>: Both forms preserved as primary and indexed aliases (e.g. <em>Elù Agogo</em> $\leftrightarrow$ <em>Ìlù Agogo</em>).</td>
+          </tr>
+          <tr>
+            <td><strong>Class C: Attribution & Academic Provenance Correction</strong></td>
+            <td>Claim of omission or misattribution of academic literature or museum accession numbers.</td>
+            <td><strong>Citational Patch (< 24h)</strong>: Immediate attribution update in both API and Web corpora.</td>
+          </tr>
+          <tr>
+            <td><strong>Class D: Commercial Exploitation Challenge</strong></td>
+            <td>Contention that community folklore is being commercialized without authorization.</td>
+            <td><strong>RAIL Affirmation</strong>: Reaffirmation that cultural texts remain under non-exclusive, non-commercial cultural custody (CC0/Fair Dealing).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section-card" id="provenance">
+      <h2>📚 2. Master Academic Provenance & Literary Compilation Rights</h2>
+      <p>
+        Under Nigerian, Commonwealth, and US Copyright jurisprudence, <strong>historical facts, cultural traditions, linguistic lexicons, and public-domain oral histories cannot be copyrighted</strong>. 
+      </p>
+      <div class="callout-green">
+        <strong>What Constitutes Our Intellectual Property:</strong>
+        Our protectable IP is our <strong>original 14-Tier Normalized Database Compilation, Vector Embeddings, and Software Architecture</strong>. Under Section 2(1)(a) of the Nigerian Copyright Act 2022, compilations of data that demonstrate intellectual effort, original categorization, and structured taxonomy are recognized and protected as original literary works.
+      </div>
+
+      <h3>Canonical Authorities Cited Across All 1,415 Entities</h3>
+      <ul>
+        <li><strong>Rev. Samuel Johnson (1921)</strong>: <em>The History of the Yorubas</em> (Public domain foundational historical anchor for royal lineages, monarchies, and imperial battles).</li>
+        <li><strong>Prof. Wándé Abímbọ́lá (1975, 1976)</strong>: <em>Sixteen Great Poems of Ifá</em> & <em>Ifá: An Exposition of Ifá Literary Corpus</em> (Definitive philosophical authority for 16 Principal Ojú Odù Ifá).</li>
+        <li><strong>Prof. Rowland Abiodun (2014)</strong>: <em>Yoruba Art and Language: Seeking the African in African Art</em> (Primary authority for material culture, craftsmanship, and aesthetics).</li>
+        <li><strong>Prof. Babatunde Lawal (1996, 2007)</strong>: <em>The Gẹ̀lẹ̀dẹ́ Spectacle</em> & <em>Embodying the Sacred</em> (Primary authority for masquerades, beaded crowns, and regalia).</li>
+        <li><strong>Pierre Fatumbi Verger (1995)</strong>: <em>Ewé: The Use of Plants in Yoruba Society</em> (Authoritative botanical grounding for sacred herbs and pharmacology).</li>
+        <li><strong>N.A. Fadipe (1970)</strong>: <em>The Sociology of the Yoruba</em> (Kinship, governance, chieftaincy, and social structure).</li>
+        <li><strong>Open-Access Museum Collections</strong>: The Metropolitan Museum of Art (CC0), The Cleveland Museum of Art (CC0), and The Art Institute of Chicago (CC0 Public Domain).</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section-card" id="trademark">
+      <h2>🏷️ 3. Trademark Defense & Corporate Asset Structuring</h2>
+      <p>
+        To ensure our brand assets and digital identity remain exclusively ours, we recommend Fort Legis initiate formal trademark e-filing with the Commercial Law Department of the Federal Ministry of Industry, Trade and Investment (Nigeria):
+      </p>
+      <ul>
+        <li><strong>Primary Word Mark</strong>: <code>ÀGBÀ ENGINE</code> / <code>AGBA ENGINE</code></li>
+        <li><strong>Class 9 (Software & Artificial Intelligence)</strong>: Computer software, mobile applications, downloadable neural models, cultural knowledge databases, and search engine infrastructure.</li>
+        <li><strong>Class 41 (Education, Cultural Preservation & Publishing)</strong>: Digital publishing of cultural literature, educational platforms, translation glossaries, and multimedia archives.</li>
+        <li><strong>Domain Defense Perimeter</strong>: Secured ownership of <code>agbaengine.com</code>, with secondary registration pathways for IDN domains (<code>ágbaengine.com</code> and <code>àgbàengine.com</code>).</li>
+      </ul>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="section-card" id="awo-exclusion">
+      <h2>🔒 4. Gate 4 (*Awo* Sacred Boundary Exclusion Proof)</h2>
+      <p>
+        A frequent vulnerability of indigenous AI projects is the accidental or reckless commercialization of sacred initiatory secrets (<em>Esoteric Awo</em>).
+      </p>
+      <div class="callout-red">
+        <strong>Our Sovereign Boundary Invariant:</strong>
+        Àgbà Engine enforces an absolute constitutional filter:
+        <ul>
+          <li>Zero disclosure of restricted sacred covenants, initiatory oaths, secret passwords, or esoteric rituals.</li>
+          <li>Sacred entities (such as <em>Idi-Eégún</em>, <em>Ilé-Orìṣà</em>, <em>Ẹ̀wọ̀</em>, and <em>Àṣá-Ewe</em>) strictly describe institutional and historical boundaries (e.g. <em>"A kì í wọ ìdí eégún láì ní àṣẹ Alágbàá"</em>) rather than exposing secret rites.</li>
+          <li>This preserves cultural sanctity, honors our traditional custodians, and eliminates risk under international cultural heritage conventions.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="section-card" id="agenda">
+      <h2>🤝 5. Counsel Action Items & Strategic Next Steps</h2>
+      <ol>
+        <li><strong>Confirm Dual-License Strategy</strong>: Affirm that our open React web client and closed API vector weights/corpora under <code>RAIL-Cultural-Heritage-v1.0</code> give us complete commercial freedom.</li>
+        <li><strong>NCC Database Compilation Filing</strong>: Formally submit the 1,415-entity Normalized 14-Tier Database Compilation for Copyright Registration with the Nigerian Copyright Commission.</li>
+        <li><strong>Class 9 & 41 Trademark Filing</strong>: File trademark applications for "Àgbà Engine".</li>
+        <li><strong>Adopt Safe Harbor Takedown Protocol</strong>: Designate Fort Legis as the formal Legal Agent of Record for Class A–D dispute notices.</li>
+      </ol>
+    </div>
+  </main>
+
+  <div class="nav-bar">
+    <a href="#safe-harbor" class="nav-item active">🛡️ Safe Harbor</a>
+    <a href="#provenance" class="nav-item">📚 Provenance</a>
+    <a href="#trademark" class="nav-item">🏷️ Trademark</a>
+    <a href="#awo-exclusion" class="nav-item">🔒 Awo Proof</a>
+    <a href="#agenda" class="nav-item">🤝 Action Items</a>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light');
+    }
+    let currentScale = 1;
+    function adjustFont(dir) {
+      currentScale += dir * 0.08;
+      if (currentScale < 0.8) currentScale = 0.8;
+      if (currentScale > 1.3) currentScale = 1.3;
+      document.documentElement.style.setProperty('--font-scale', currentScale);
+    }
+  </script>
+</body>
+</html>
