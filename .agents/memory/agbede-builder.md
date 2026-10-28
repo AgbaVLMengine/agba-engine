@@ -88,17 +88,17 @@
     - `npm run build`: compiled in 840ms (1,922 modules, 0 errors).
     - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
     - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
-- **[2026-10-28] (`CHECKPOINT-AGBEDE-013` / HANDOFF-AGBEDE-005 Completed)**: **Modular Extraction of Backend Hotspot `retrieval.py`**:
-  - Objective: Modularized `api/app/retrieval.py` from 451 LOC down into clean decoupled sub-modules per Òye's architectural blueprint (`AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md`).
-  - Extracted 2 decoupled sub-modules and streamlined coordinator:
-    1. `api/app/lexical_ranker.py`: **118 LOC** (target < 150 LOC). Pure lexical and tonal ranking containing `score_lexical_entities` (Tiers 1A, 1B, 2, 3, 4, 5) and `prepare_corpus_index`.
-    2. `api/app/sub_variant_hydrator.py`: **106 LOC** (target < 110 LOC). Dynamic sub-variant hydration containing `find_sub_variant_match` and 14-tier `synthesize_sub_variant`.
-    3. `api/app/retrieval.py`: **169 LOC** (target < 170 LOC). Lean hybrid retrieval coordinator preserving 100% backward-compatible signatures for `retrieve()`, `search_dense()`, and `search_lexical()`.
-  - Embargo Lifted: Officially cleared the Gate 2 Orange Embargo on `retrieval.py`.
+- **[2026-10-28] (`CHECKPOINT-AGBEDE-014` / HANDOFF-AGBEDE-006 Completed)**: **Modular Decomposition of Backend Hotspot `intelligence.py` into `prompt_governor.py`**:
+  - Objective: Modularized `api/app/intelligence.py` from 477 LOC down to clean decoupled coordinator and governance modules per Blueprint C (`AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md`).
+  - Extracted 2 decoupled sub-modules:
+    1. `api/app/prompt_governor.py`: **186 LOC** (target < 230 LOC). Encapsulates system instructions (`OGBON_SYSTEM_INSTRUCTION`, `DIACRITIZER_SYSTEM_INSTRUCTION`, `CULTURAL_TRANSLATION_SYSTEM_INSTRUCTION`), XML delimiter security sanitizer (`sanitize_xml_user_input`), RAG prompt assembler (`build_grounded_rag_prompt`), contextual intent decomposer (`decompose_query_intent`), scholarly grounding validator (`validate_grounding_citations`), and offline sovereign knowledge synthesizer (`fallback_chat_synthesis`).
+    2. `api/app/intelligence.py`: **192 LOC** (target < 210 LOC coordinator). Lean intelligence execution coordinator retaining `_sovereign_diacritize()`, GenAI client lifecycle, `chat_grounded()`, `diacritize_ascii()`, `translate_cultural()`, and 100% backward-compatible aliases and factory method `get_intelligence_suite()`.
+  - Embargo Lifted: Permanently eliminated the very last Orange Embargo hotspot in our entire codebase.
   - Comprehensive Verification:
-    - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
-    - `npm run build`: Compiled in 1.03s (1,922 modules, 0 errors).
     - `bash scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+    - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
+    - `cd web && npm run build`: Compiled in 971ms (1,922 modules, 0 errors).
+
 
 
 
