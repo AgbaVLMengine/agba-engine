@@ -88,18 +88,18 @@
     - `npm run build`: compiled in 840ms (1,922 modules, 0 errors).
     - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
     - `./scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
-- **[2026-10-27] (`CHECKPOINT-AGBEDE-012` / Checkpoint 052)**: **Executed The Great Re-Wiring Pass (248 Orphaned Records Resolved)**:
-  - Objective: Re-wired orphaned standalone records to Sovereign Parents in lockstep across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
-  - Executed `scripts/execute_rewiring_pass.py` (209 LOC < 500 LOC ceiling):
-    1. Consolidated Fìlà Family: Deduplicated `Filà Abetíajá` into `Fìlà Abetí Ajá` (citations merged); cleansed Vietnamese `ị` in `Fìlà Gọ̀bị́` -> `Fìlà Gọ̀bí`; wired 8 Fìlà variants under Sovereign Parent `Fìlà`. Total corpus: 1,416 canonical entities.
-    2. Wired Paramount Monarchs: `Awùjalẹ̀`, `Déjì`, `Akárìgbò`, `Ọlọ́fà`, `Alárá`, `Arẹ́sà` wired to `Ọba` and linked bidirectionally to their kingdoms.
-    3. Wired ancient capitals: `Ilé-Ifẹ̀`, `Òṣogbo` → `Ìpínlẹ̀ Ọ̀ṣun`; `Ìbàdàn`, `Ọ̀yọ́-Ilé` → `Ìpínlẹ̀ Ọ̀yọ́`; `Ilọrin` → `Ìpínlẹ̀ Kwara`; `Ìjẹ̀bú-Òde`, `Abẹ́òkúta` → `Ìpínlẹ̀ Ògùn`.
-    4. Auto-wired 223 additional orphaned records declared by Sovereign Parents. Total wired sub-variants elevated to 324.
-    5. Resolved 2 Prefix Collisions: Tuned `preprocess_query_tokens` in `api/app/semantic_bridge.py` and `localRankedSearch.js` with negative lookahead protecting `agbadagba` from prefix splitting, and normalized `_` and `-` so `Iwe-Agbadagba` and `baba_ile` achieve clean Top-1 ranking without usurping.
-  - Verification:
-    - `benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
-    - `npm run build`: Compiled in 808ms (1,922 modules, 0 errors).
-    - `./scripts/review.sh`: 0 hard violations across all 8 Production Gates.
+- **[2026-10-28] (`CHECKPOINT-AGBEDE-013` / HANDOFF-AGBEDE-005 Completed)**: **Modular Extraction of Backend Hotspot `retrieval.py`**:
+  - Objective: Modularized `api/app/retrieval.py` from 451 LOC down into clean decoupled sub-modules per Òye's architectural blueprint (`AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md`).
+  - Extracted 2 decoupled sub-modules and streamlined coordinator:
+    1. `api/app/lexical_ranker.py`: **118 LOC** (target < 150 LOC). Pure lexical and tonal ranking containing `score_lexical_entities` (Tiers 1A, 1B, 2, 3, 4, 5) and `prepare_corpus_index`.
+    2. `api/app/sub_variant_hydrator.py`: **106 LOC** (target < 110 LOC). Dynamic sub-variant hydration containing `find_sub_variant_match` and 14-tier `synthesize_sub_variant`.
+    3. `api/app/retrieval.py`: **169 LOC** (target < 170 LOC). Lean hybrid retrieval coordinator preserving 100% backward-compatible signatures for `retrieve()`, `search_dense()`, and `search_lexical()`.
+  - Embargo Lifted: Officially cleared the Gate 2 Orange Embargo on `retrieval.py`.
+  - Comprehensive Verification:
+    - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
+    - `npm run build`: Compiled in 1.03s (1,922 modules, 0 errors).
+    - `bash scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
+
 
 
 

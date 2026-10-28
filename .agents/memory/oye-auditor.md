@@ -75,16 +75,16 @@
   - **Gate 1 & Gate 2 (Leaner & Purified)**: `OponSearchCore.jsx` reduced to **249 LOC** (-8 LOC) via removal of debug labels and redundant pill badge; input capsule cleanly re-centered at `top: 102px`. `SearchTab.jsx` remains strictly preserved at **486 LOC** (< 490 ceiling).
   - **Animation Binding**: Fluid vascular vein cascade animations and ambient golden dust pulse (@keyframes veinCascading, ringGlow, goldenDustPulse) verified live in `web/src/index.css`.
   - **Regression & Build**: `npm run build` compiled in **591ms** (0 errors). `scripts/benchmark_sprint004.py` achieved 28/28 (100.0%) Top-1 accuracy across 1,417 entities. `./scripts/review.sh` passed with 0 hard violations, 0 warnings.
-- **[2026-10-28 | Executive Directive: Anti-Exponential Scaling Codification & Backend Hotspot Blueprints (`CHECKPOINT-OYE-011` / Checkpoint 060)]**:
+- **[2026-10-28 | Executive Execution: War Chest Pre-Emptive Backend Hotspot Audit (`HANDOFF-OYE-006` / Checkpoint 064)]**:
   - **Supervising Architect**: Lead Architect Àrùnà Ọlànrewájú Kábírù & `Àgbà`.
-  - **Verdict**: 🛡️ **"ONE STEP AHEAD" MANDATE ACTIVATED & PRE-COMMIT EMBARGO SCREENING LIVE**.
-  - **Tooling Verification**: Formally codified the **3-Tier Pre-Commit Scanner** inside `scripts/review.sh` (350 LOC Advisory, 450 LOC Embargo, 500 LOC Hard Rejection).
-  - **Frontend Architecture Certification**: All client-side UI files remain in pristine compliance. `TranslateTab.jsx` sits at **69 LOC** (down from 612), `SearchTab.jsx` sits at **227 LOC** (down from 486, strictly obeying Law 1 Coordinator ceiling of 250 LOC), and `OponSearchCore.jsx` sits at **249 LOC**.
-  - **Backend Hotspot Census & Embargo Alerts**:
-    - `api/app/retrieval.py` (**451 LOC**) and `api/app/intelligence.py` (**477 LOC**) have officially tripped the **Orange Embargo (≥ 450 lines)**. Zero inline additions permitted; all feature expansions must be preceded by modular decomposition.
-    - `api/app/telemetry_processor.py` (**607 LOC**) remains an active legacy Gate 2 violation, slated for immediate decomposition.
-  - **Architectural Decomposition Blueprint Published**: Authored immutable blueprint `.agents/local-seeds/AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md` establishing 3-module extractions for `retrieval.py` (`lexical_ranker.py` [~130 LOC], `sub_variant_hydrator.py` [~95 LOC], lean `retrieval.py` [~160 LOC]) and `telemetry_processor.py` (`hitl_diagnostics.py` [~170 LOC], `hitl_card_generator.py` [~120 LOC], lean `telemetry_processor.py` [~150 LOC]).
-  - **System Readiness**: `benchmark_sprint004.py` verified at **28/28 (100.0%) Top-1 Accuracy**; `web` build verified in **1.05s** (1,922 modules, 0 errors). Ready to audit `Àgbẹ̀dẹ` and `Irin` extractions.
+  - **Verdict**: 🛡️ **BACKEND HOTSPOT DECOMPOSITION BLUEPRINTS FULLY RATIFIED**.
+  - **Decomposition Audits Completed**:
+    1. `api/app/retrieval.py` (451 LOC): Verified 3-module boundary into `api/app/lexical_ranker.py` (~130 LOC, RC-1 Tonal Invariants + RC-3 Semantic Bridge), `api/app/sub_variant_hydrator.py` (~95 LOC, anti-parent-loop dynamic child synthesizer), and lean coordinator `api/app/retrieval.py` (~160 LOC, Qdrant dense vector + RRF $k=60$).
+    2. `api/app/intelligence.py` (477 LOC): Formulated companion blueprint into `api/app/prompt_governor.py` (~220 LOC: system instructions, XML input sanitization, multi-turn intent decomposition, scholarly citation validation for Johnson/Abímbọ́lá/Abiodun/Lawal/Verger/Bascom/Fadipe, and offline fallback synthesis) and lean execution suite `api/app/intelligence.py` (~200 LOC: GenAI SDK client, `chat_grounded`, algorithmic `_sovereign_diacritize`, `translate_cultural`).
+  - **Benchmark Parity & Zero Regressions**: `benchmark_sprint004.py` verified at **28/28 (100.0%) Top-1 Accuracy** live across 1,415 entities (16/16 friction queries, 8/8 anti-parent-loop, 18/18 Category 17 fauna).
+  - **Audit Artifacts Published**: Published `AGY__REPORT_OYE_AUDIT_006.md` and expanded `AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md` with Blueprint C.
+  - **Next Step Authorization**: `Àgbẹ̀dẹ` (`agbede-builder`) and `Irin` (`irin-cloud`) cleared to execute code extractions.
+
 
 
 

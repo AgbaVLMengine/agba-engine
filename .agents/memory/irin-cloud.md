@@ -41,3 +41,13 @@
      - Kept `api/app/telemetry_processor.py` (**197 LOC**, `< 200 LOC` coordinator ceiling) as a lean streaming coordinator with 100% CLI and API backward compatibility (`--status`, `--generate`, `--approve`, `--reject`, `--apply`).
   2. **Cloud Run Always-Free Tier Invariant Verified**: Confirmed `api/deploy_cloud_run.sh` preserves `--min-instances 0`, `--max-instances 2`, `--memory 2Gi`, `--cpu 1`, `--concurrency 80`, `--cpu-throttling`, `--timeout 60` (`$0.00/mo` Always-Free scale) and `api/Dockerfile` keeps `all-MiniLM-L6-v2` pre-baked with `TRANSFORMERS_OFFLINE=1`.
   3. **Verification**: Passed `./scripts/review.sh` with **0 hard violations and 0 warnings**.
+- **[2026-10-28] (`HANDOFF-IRIN-004` — Air-Gap Client Fallback & Zero-Downtime Edge Hardening)**:
+  1. **Edge & Cold-Start Timeout Fallback (`web/src/components/SearchTab.jsx` & `web/src/utils/localRankedSearch.js`)**:
+     - Added an explicit `3500ms` `AbortController` timeout (`controller.abort()`) around `/v6/retrieve/deep-context` in `SearchTab.jsx` (232 LOC < 250 LOC Coordinator Invariant) so mobile edge blackholes or cold-start delays >3.5s instantaneously fall back to `searchRankedCorpus(q, masterCorpus)` (`web/src/utils/localRankedSearch.js`, 71 LOC) without spinning loaders or blank errors.
+     - Verified `api/deploy_cloud_run.sh` (`--min-instances 0 --max-instances 2 --memory 2Gi --cpu 1 --concurrency 80 --cpu-throttling --timeout 60`) and `api/Dockerfile` (`TRANSFORMERS_OFFLINE=1` pre-baked `all-MiniLM-L6-v2`).
+  2. **IDN, Punycode & Mobile iOS Safari WebView / PWA CORS (`api/app/config.py`, `api/app/main.py`, `netlify.toml`)**:
+     - Expanded `ALLOWED_ORIGINS` and `ALLOWED_ORIGIN_REGEX` in `api/app/config.py` (255 LOC) and `api/app/main.py` (339 LOC) to cover `https://ágbaengine.com`, `https://www.ágbaengine.com` (`xn--gbaengine-21a.com`), `https://àgbàengine.com`, `https://www.àgbàengine.com` (`xn--gbengine-rza0b.com`), iOS Safari WKWebView / Capacitor / Ionic / PWA standalone schemes (`capacitor://localhost`, `ionic://localhost`, `http://localhost`, `https://localhost`, `127.0.0.1`), and `max_age=86400` (24-hour preflight cache).
+     - Added `/v6/*` CORS preflight caching headers (`Access-Control-Max-Age = "86400"`) and `Permissions-Policy` in `netlify.toml`.
+  3. **Zero-Loss Scale-to-Zero Telemetry (`api/app/main.py`)**:
+     - Verified both `AGBA_QUERY_LOG` (`main.py` L156) and `AGBA_FEEDBACK` (`main.py` L227) emit structured single-line UTF-8 JSON with `flush=True` to `stdout` prior to local `.jsonl` writes, guaranteeing 100% capture in Google Cloud Logging Free Tier across `--min-instances 0` container scale-downs.
+  4. **Verification**: `bash scripts/review.sh` passed with **0 hard violations and 0 warnings**.
