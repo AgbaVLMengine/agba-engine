@@ -77,6 +77,23 @@
     5. Verified prefix collision fixes: `Iwe-Agbadagba` retrieves at Rank #1 without `Agbádá` usurpation; `baba_ile` retrieves `Bàbá Ilé` at Rank #1 cleanly.
     6. Verified `benchmark_sprint004.py` passes 28/28 (100.0%); Vite bundle builds in 808ms; `./scripts/review.sh` passes with 0 hard violations.
   - **Verdict**: **UNCONDITIONAL QA SIGN-OFF & FULL-CORPUS INTEGRITY CERTIFIED**.
+- **[2026-10-28] (`CHECKPOINT-SUURU-008` — Operationalization of 3-Tier QA Suite & Adversarial Fuzzing Stress Testing)**:
+  - Formally operationalized the Sovereign 3-Tier QA Architecture mandated by Lead Architect Àrùnà Ọlànrewájú Kábírù and Àgbà:
+    1. **Tier 1 (Smoke-Test)**: `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1, 3.5s runtime).
+    2. **Tier 2 (Full-Corpus Zero-Shot Title Sweep)**: `scripts/audit_full_corpus_zero_shot.py` sweeping all 1,415 canonical entities:
+       - **1,396 / 1,415 (98.66%) Exact Top-1 Accuracy**; **1,415 / 1,415 (100.00%) Exact Top-3 Accuracy**.
+       - ASCII-Folded: **1,368 / 1,415 (96.68%) Top-1**, **1,413 / 1,415 (99.86%) Top-3**.
+       - Isolated 19 sub-surface twin node collisions for next deduplication pass (`Ìyá-Ọba` vs `Iyá Oba`, `Ìlẹ̀kẹ̀-Ọ̀rùn` vs `Ìlèkè Ọrùn`, `Ẹgbẹ́-Àgbẹ̀` vs `Ẹgbẹ́ Àgbẹ̀`, `Agbájó-Ogun` vs `Agbájọ Ogun`).
+    3. **Tier 3 (Bilateral Parent-Child Consistency Matrix)**: `scripts/audit_parent_variant_matrix.py` checking all 158 Sovereign Parents:
+       - 0 Self-Loop Violations, 0 Flag Parity Violations, 331 verified bilaterally wired child records.
+  - **Adversarial Human Fuzzing Harness**: Developed `scripts/audit_adversarial_fuzzing.py` testing 28 chaotic queries across 4 suites:
+    - User Typos & Transpositions (`ogeb oyeku`, `orunmial`, `shangooo`, `obattala`, `yemojaa`, `agbedee`).
+    - Missing Tones & Accent-Folded ASCII (`obatala`, `eshu`, `ogboni`, `gelede`, `fila abeti aja`, `ile ife`).
+    - Rapid Double-Clicks & Stutter (`ifa ifa`, `oba oba`, `sango sango`, `eko eko`, `were were`).
+    - Regional Dialect Variations (Èkìtì: `Ufe`, `Urunmila`, `Ewi Ado`; Ìjẹ̀bú: `Werenṣo`, `Awujale`, `Obanta`; Ẹ̀gbá: `Lisabi`, `Alake`, `Olumo`).
+    - Found baseline resilience of 53.6% Top-3 on chaotic inputs, uncovering critical engineering priorities for consecutive token deduplication (`ifa ifa` -> `ifa`), vowel collapse (`shangooo` -> `shango`), and dialectal alias expansion.
+  - **Gate & Build Parity**: `./scripts/review.sh` passed with 0 hard violations; `api/app/retrieval.py` cached pre-indexing boosted lexical throughput to 929 qps; all scripts under 500 LOC ceiling.
+
 
 
 

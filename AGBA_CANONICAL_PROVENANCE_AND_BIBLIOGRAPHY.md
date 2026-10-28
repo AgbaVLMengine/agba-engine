@@ -13,6 +13,18 @@
 
 This document serves as the **Master Architectural Baseline & Citational Vault** ensuring researchers, curators, institutions, and curious minds can verify the authentic provenance of every data point ingested into the engine.
 
+### 1.1 Statutory Legal Basis & Original Compilation Rights (Nigerian Copyright Act 2022)
+In formal alignment with our Retained External Counsel, **Ahmed Abiola Mohammed ACIArb(UK), Partner, Fort Legis Attorneys** (Section 4 & Section 36 of Legal Advisory), Àgbà Engine strictly separates public-domain cultural facts from proprietary intellectual property:
+
+1. **Facts vs. Folklore vs. Compilations**:
+   - *Underlying Historical Facts & Ancient Expressions of Folklore*: Pre-colonial historical events, proverbs, oral traditions, and traditional cultural expressions belong to the collective sovereign heritage of their respective African peoples (protected under Part IX, Section 75 of the Nigerian Copyright Act 2022). Àgbà Engine does not claim exclusive ownership over these communal truths.
+   - *Category (d) Original Compilations & Taxonomy Copyright*: Statutory copyright under **Section 2(1)(a) and Section 9 of the Nigerian Copyright Act 2022 (Act No. 31 of 2023)** vests directly in Founder **Aruna Olanrewaju Kabiru / Àgbà Technology Company** for the **14-Tier Normalized Database Compilation**, the **Sovereign Parent/Living Variant Taxonomy**, the proprietary JSON schemas, and all original historical commentaries and philosophical prose.
+   - *Category (e) Software & Hybrid Retrieval Algorithms*: Full copyright protection in the 23+ source files across `/api/app/` and `/web/src/` (including `retrieval.py`, `intelligence.py`, and `OponSearchCore.jsx`).
+   - *Category (d) Original Acoustic Tokens*: Full copyright in the master acoustic recordings and DSP pitch-contour normalizations for the 143 human voice and talking drum tokens.
+
+2. **Fair Dealing & Peer Citation Shield**:
+   - The extraction of bibliographic facts, linguistic definitions, and historical narratives from the 28+ academic authorities listed below is fully shielded under **Section 20(1)(a) & (b) of the Nigerian Copyright Act 2022** (Fair Dealing for non-commercial research, private study, criticism, and review accompanied by sufficient acknowledgment) and **Article 10(2) of the Berne Convention for the Protection of Literary and Artistic Works**. Full **Attribution Parity** is permanently preserved across all entity nodes.
+
 ---
 
 ## 📚 2. Academic Master Bibliography (Foundational Literature)
@@ -56,6 +68,32 @@ This document serves as the **Master Architectural Baseline & Citational Vault**
     - *Engine Coverage:* Weaving structures of hand-spun wild silk (`Sányán`), red camwood silk (`Àlàárì`), and indigo bark-cloth (`Ẹtù`).
 16. **Verger, Pierre Fatumbi (1995).** *Ewé: The Use of Plants in Yoruba Society.* São Paulo: Odebrecht & Paris: Editions M.H.
     - *Engine Coverage:* Indigenous botanical pharmacopeia, sacred leaves (`Ewé Òdúndún`, `Ewé Tẹ̀tẹ̀`, `Ewé Rinrin`), and incantatory herbal preparations (`Àgbo`).
+
+### E. 19th-Century Warfare, Urban Sociology, Guilds & Kinship Law (Batches 1–3 Additions)
+17. **Fadipe, N. A. (1970).** *The Sociology of the Yoruba.* Ibadan: Ibadan University Press.
+    - *Engine Coverage:* Foundational sociological structure of the compound (`Agbo-Ilé`), lineage headship (`Mègàjí` / `Baálé`), kinship solidarity (`Aṣọ-Ẹbí`), and dispute arbitration.
+18. **Lloyd, P. C. (1962).** *Yoruba Land Law.* London: Oxford University Press.
+    - *Engine Coverage:* Indigenous property jurisprudence, ancestral land tenure, lineage inheritance covenants (`Oogun`), and council hall governance (`Ilé-Akodi`).
+19. **Falola, Toyin (1984).** *The Political Economy of a Pre-colonial African State: Ibadan, 1830–1900.* Ile-Ife: University of Ife Press.
+    - *Engine Coverage:* Military republicanism, warrior lineages (`Balógun Ìbíkúnlé`, `Balógun Ògúnmọ́lá`), trade routes, and weapons technology.
+20. **Falola, Toyin (1999).** *Pioneer, Patriot and Patriarch: Samuel Johnson and the Yoruba.* Madison: African Studies Program, University of Wisconsin-Madison.
+    - *Engine Coverage:* Historiographical methodology and provenance validation of the 1897/1921 Samuel Johnson foundational corpus.
+21. **Babayemi, S. O. (1980).** *Egungun among the Oyo Yoruba.* Ibadan: Board Publications.
+    - *Engine Coverage:* Ancestral masquerade guilds, sacred forest enclosures (`Idi-Eégún`), Alágbàá custody, and funerary transition ethics.
+22. **Nwafor, Okechukwu (2021).** *Aso Ebi: Cloth and Sociability in Urban Nigeria.* Ann Arbor: University of Michigan Press.
+    - *Engine Coverage:* Contemporary and pre-colonial sociability, collective kinship uniform textiles, and economic reciprocity.
+23. **Ajayi, J. F. A., and Robert S. Smith (1964).** *Yoruba Warfare in the Nineteenth Century.* Cambridge: Cambridge University Press.
+    - *Engine Coverage:* Tactical analysis of the Ìjàyè War (1860–1862), siege fortifications, firearm integration, and pre-battle councils (`Ipado-Ogun`).
+24. **Awe, Bolanle (1992).** *Nigerian Women in Historical Perspective.* Lagos: Sankore / Bookcraft.
+    - *Engine Coverage:* Female political autonomy, maternal diplomacy, market leadership (`Ìyálòde`, `Ọ̀tun-Ìyál'óde`), and royal harem governance (`Bààfin`).
+25. **Bascom, William (1951).** *Yoruba Food & Cooking.* Africa 21, no. 1: 41–53.
+    - *Engine Coverage:* Indigenous gastronomy, pulse and cereal preparations (`Ògùdù`, `Ọ̀pọ̀-Ẹ̀wà`), and agrarian communal banqueting.
+26. **Vlach, John Michael (1984).** *The Brazilian House in Nigeria: The Emergence of a Bilingual Architecture.* Journal of American Folklore 97: 3–23.
+    - *Engine Coverage:* 19th-century Saro and Aguda returnee masonry, Afro-Brazilian baroque stucco (`Arowo-Ilé`), and hybrid compound architecture.
+27. **Hermon-Hodge, H. B. (1929).** *Gazetteer of Ilorin Province.* London: Allen & Unwin.
+    - *Engine Coverage:* Frontier defense chronologies, northern imperial treaties, and the historical records of `Afọ̀njá of Ìlọrin`.
+28. **Akinyele, I. B. (1911).** *Iwe Itan Ibadan (The History of Ibadan).* Exeter: James Townsend & Sons.
+    - *Engine Coverage:* Primary dynastic registers of Ìbàdàn military chieftains and civic administrators.
 
 ---
 

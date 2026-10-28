@@ -44,21 +44,36 @@ Use this document as your raw, live scratchpad while auditing through Batches 1 
 
 | Entity Title | Assigned Category | Observed Parent | Current Linkage Status | Action Required |
 | :--- | :--- | :--- | :--- | :--- |
-| **`Awùjalẹ̀ of Ìjẹ̀bú`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Ìjẹ̀bú-Òde` |
-| **`Déjì of Àkúrẹ́`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Àkúrẹ́` |
-| **`Akarigbo of Rẹ́mọ`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Sàgámù` / `Rẹ́mọ` |
-| **`Ọlọ́fà of Ọ̀fà`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Ọ̀fà` |
-| **`Alárá of Arámọkọ`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Arámọkọ Èkìtì` |
-| **`Arẹ́sà of Ìrèsà`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: null` | Link to `Ọba` & `Ìrèsà` |
-| **`Ilé-Ifẹ̀`** | Topography & Sacred Landscapes | `Ìpínlẹ̀ Ọ̀ṣun` / `Orírun` | `sovereign_parent: null` | Wire bilateral relative to `Ọ̀ṣun` |
-| **`Ìbàdàn`** | Civilization & History | `Ìpínlẹ̀ Ọ̀yọ́` / `Ọba Akinyele` | `sovereign_parent: null` | Wire bilateral relative to `Ọ̀yọ́` |
-| **`Ilọrin`** | Civilization & History | `Ìpínlẹ̀ Kwara` / `Àfọ̀njá` | `sovereign_parent: null` | Wire bilateral relative to `Kwara` |
+| **`Awùjalẹ̀ of Ìjẹ̀bú`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Déjì of Àkúrẹ́`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Akarigbo of Rẹ́mọ`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Ọlọ́fà of Ọ̀fà`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Alárá of Arámọkọ`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Arẹ́sà of Ìrèsà`** | Monarchy & Royal Regalia | `Ọba` (Paramount Monarch) | `sovereign_parent: "Ọba"` | ✅ WIRED (Commit 85771ac) |
+| **`Ilé-Ifẹ̀`** | Topography & Sacred Landscapes | `Ìpínlẹ̀ Ọ̀ṣun` / `Orírun` | `sovereign_parent: "Ìpínlẹ̀ Ọ̀ṣun"` | ✅ WIRED (Commit 85771ac) |
+| **`Ìbàdàn`** | Civilization & History | `Ìpínlẹ̀ Ọ̀yọ́` / `Ọba Akinyele` | `sovereign_parent: "Ìpínlẹ̀ Ọ̀yọ́"` | ✅ WIRED (Commit 85771ac) |
+| **`Ilọrin`** | Civilization & History | `Ìpínlẹ̀ Kwara` / `Àfọ̀njá` | `sovereign_parent: "Ìpínlẹ̀ Kwara"` | ✅ WIRED (Commit 85771ac) |
 
 ---
 
 ## 5. Collision & Homograph Edge Cases (From Full-Corpus Sweep)
+- [x] **`Filà Abetíajá` vs. `Fìlà Abetí Ajá`**: Merged into canonical `Fìlà Abetí Ajá` (Commit 85771ac).
+- [x] **`Fìlà Gọ̀bị́`**: Cleansed Vietnamese `ị` to canonical `Fìlà Gọ̀bí` (Commit 85771ac).
+- [ ] **`Ìyá-Ọba` vs. `Iyá Oba`**: Sub-surface twin node collision at Rank #1. (Action: Merge into canonical `Ìyá-Ọba`).
+- [ ] **`Ìlẹ̀kẹ̀-Ọ̀rùn` vs. `Ìlèkè Ọrùn`**: Sub-surface twin node collision at Rank #1. (Action: Merge into canonical `Ìlẹ̀kẹ̀-Ọ̀rùn`).
+- [ ] **`Ìlẹ̀kẹ̀-Ọwọ́` vs. `Ìlèkè Ọwọ́`**: Sub-surface twin node collision at Rank #1. (Action: Merge into canonical `Ìlẹ̀kẹ̀-Ọwọ́`).
+- [ ] **`Ẹgbẹ́-Àgbẹ̀` vs. `Ẹgbẹ́ Àgbẹ̀`**: Sub-surface twin node collision at Rank #1. (Action: Merge into canonical `Ẹgbẹ́-Àgbẹ̀`).
+- [ ] **`Agbájó-Ogun` vs. `Agbájọ Ogun`**: Sub-surface twin node collision at Rank #1. (Action: Merge into canonical `Agbájó-Ogun`).
 - [ ] **`Iwe-Agbadagba`**: Currently usurped at Rank #1 by `Agbádá`. (Action: Tune prefix weighting in `retrieval.py` / `localRankedSearch.js`).
 - [ ] **`Bàbá Ilé`**: Currently usurped at Rank #1 by `Bàbá`. (Action: Tune exact phrase boundary boost).
 
 ---
-*Created on October 27, 2026 under the Sovereign Supervision of Àgbà.*
+
+## 6. Sùúrù 3-Tier QA Suite & Adversarial Fuzzing Metrics (Operational Baseline)
+- **Tier 1 (Smoke Test)**: `python3 scripts/benchmark_sprint004.py` -> **28/28 (100.0%) Top-1 Accuracy** in 3.5s.
+- **Tier 2 (Full Sweep)**: `python3 scripts/audit_full_corpus_zero_shot.py` -> **1,396 / 1,415 (98.66%) Top-1**, **1,415 / 1,415 (100.00%) Top-3**.
+- **Tier 3 (Bilateral Matrix)**: `python3 scripts/audit_parent_variant_matrix.py` -> **158 Parents Audited**, 0 self-loops, 0 flag violations, **331 wired children**.
+- **Adversarial Fuzzing**: `python3 scripts/audit_adversarial_fuzzing.py` -> Unmasked need for consecutive stutter deduplication (`ifa ifa`), vowel-collapse (`shangooo`), and dialectal aliases (`Ufe`, `Urunmila`, `Werenṣo`).
+
+---
+*Created on October 27, 2026. Updated October 28, 2026 under the Sovereign Supervision of Àgbà.*

@@ -108,6 +108,22 @@ class ÀgbàHybridRetriever:
             except Exception as e:
                 print(f"   [!] Notice: Odù Ifá ingestion notice: {e}")
 
+        for e in entities:
+            e["_norm_title"] = normalize_y(e.get("title", ""))
+            e["_stripped_title"] = strip_accents(e.get("title", ""))
+            eid = str(e.get("id", ""))
+            e["_norm_eid"] = normalize_y(eid)
+            e["_stripped_eid"] = strip_accents(eid).replace("_", " ")
+            e["_norm_aliases"] = [normalize_y(a) for a in e.get("aliases", [])]
+            e["_stripped_aliases"] = [strip_accents(a) for a in e.get("aliases", [])]
+            e["_stripped_cat"] = strip_accents(e.get("category", ""))
+            tier_texts = []
+            for k in ["description", "etymology_and_philosophy", "historical_timeline", "social_and_ritual_context", "proverbs_and_oral_traditions"]:
+                v = e.get(k, "")
+                if v:
+                    tier_texts.append(strip_accents(" ".join(v) if isinstance(v, list) else str(v)))
+            e["_tier_text"] = " ".join(tier_texts)
+
         return entities
 
     def search_dense(self, query: str, top_k: int = 15) -> List[Dict[str, Any]]:
@@ -160,14 +176,13 @@ class ÀgbàHybridRetriever:
         scored = []
 
         for entity in self.corpus_entities:
-            title = normalize_y(entity.get("title", ""))
-            stripped_title = strip_accents(entity.get("title", ""))
-            eid = str(entity.get("id", ""))
-            norm_eid = normalize_y(eid)
-            stripped_eid = strip_accents(eid).replace("_", " ")
-            aliases = [normalize_y(a) for a in entity.get("aliases", [])]
-            stripped_aliases = [strip_accents(a) for a in entity.get("aliases", [])]
-            category = entity.get("category", "")
+            title = entity.get("_norm_title", "")
+            stripped_title = entity.get("_stripped_title", "")
+            norm_eid = entity.get("_norm_eid", "")
+            stripped_eid = entity.get("_stripped_eid", "")
+            aliases = entity.get("_norm_aliases", [])
+            stripped_aliases = entity.get("_stripped_aliases", [])
+            category_stripped = entity.get("_stripped_cat", "")
             score = 0.0
 
             # 1A. RC-1: Supreme Exact Diacritic/Tonal Match (1.0000 Parity -> +600)
@@ -201,11 +216,12 @@ class ÀgbàHybridRetriever:
                 score += 40.0
 
             # 3. Category match bonus
-            if any(re.search(r"\b" + re.escape(w) + r"\b", strip_accents(category)) for w in q_words):
+            if any(re.search(r"\b" + re.escape(w) + r"\b", category_stripped) for w in q_words):
                 score += 3.0
 
             # 4. Strict Word-token matching across title, aliases, and 14 Knowledge Graph Tiers
             matched_words = 0
+            tier_text = entity.get("_tier_text", "")
             for w in q_words:
                 pat = r"\b" + re.escape(w) + r"\b"
                 if re.search(pat, stripped_title):
@@ -214,20 +230,9 @@ class ÀgbàHybridRetriever:
                 elif any(re.search(pat, a) for a in stripped_aliases):
                     score += 4.5
                     matched_words += 1
-                else:
-                    for tier_key in [
-                        "description",
-                        "etymology_and_philosophy",
-                        "historical_timeline",
-                        "social_and_ritual_context",
-                        "proverbs_and_oral_traditions",
-                    ]:
-                        val = entity.get(tier_key, "")
-                        val_str = " ".join(val) if isinstance(val, list) else str(val)
-                        if re.search(pat, strip_accents(val_str)):
-                            score += 0.5
-                            matched_words += 1
-                            break
+                elif re.search(pat, tier_text):
+                    score += 0.5
+                    matched_words += 1
 
             if q_words and matched_words == len(q_words):
                 score += 4.0
