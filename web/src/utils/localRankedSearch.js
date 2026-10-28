@@ -2,7 +2,7 @@ import { stripAccents, normalizeNFC, escapeRegExp } from './tonalContour';
 
 // RC-1 & RC-3 Local Ranked Search Fallback (Tonal Invariant Tiering)
 export function searchRankedCorpus(q, masterCorpus = []) {
-  const qClean = (q || '').replace(/[?!.,;:'"_\-]/g, ' ').replace(/\s+/g, ' ').trim();
+  const qClean = (q || '').replace(/[?!.,;:'"_\-()[\]]/g, ' ').replace(/\s+/g, ' ').trim();
   const coreSubject = qClean
     .replace(/^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+/i, '')
     .trim();
@@ -54,6 +54,11 @@ export function searchRankedCorpus(q, masterCorpus = []) {
     // 2. Word-boundary phrase match
     if (coreStripped && new RegExp(`\\b${escapeRegExp(coreStripped)}\\b`, 'i').test(titleStripped)) {
       score += 220;
+    }
+
+    // 3. Sovereign Parent root priority
+    if (entity.is_parent === true || entity.sovereign_parent_status === 'Sovereign Parent Concept') {
+      score += 25;
     }
 
     for (const tok of qTokens) {
