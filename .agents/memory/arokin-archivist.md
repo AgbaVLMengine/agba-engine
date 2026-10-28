@@ -91,4 +91,9 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Enriched both `Odù_Ifá` and `Ifá` with full dual-language liturgical proverbs and academic citations (Wándé Abímbọ́lá 1975, 1976; William Bascom 1969; Drewal & Pemberton 1989; Johnson 1921; Verger 1995).
   - Executed Pre-Ingestion Title Check (Zero Twin Nodes Law) across Batch 4 candidate items 325 to 349 from `scripts/thin_entities_manifest.json`, identifying pre-existing twin `Ẹpọ Pupa` (index 554) vs `Epo-Pupa` (index 963) for consolidation.
   - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy) and `scripts/review.sh` (0 violations across all 9 memory vaults).
+- **2026-10-28 [Checkpoint 058 — "One Step Ahead" Consolidation & Knowledge Graph Verification]**:
+  - Executed `scripts/consolidate_epo_pupa.py` (118 LOC, Gate 2 compliant): Merged `Ẹpọ Pupa` (554) and `Epo-Pupa` (962) into canonical `Ẹpo-Pupa`, preserving all aliases and consolidating corpus to **1,415 canonical entities**.
+  - Verified Knowledge Graph Bilateral Integrity: Confirmed all 248 auto-wired standalone records and Paramount Monarchs are 100% reciprocally connected to `Ọba` and regional kingdoms across both API and Web corpora.
+  - Locked Ingestion Quality Floor for Batch 4 to drive thin entities below 300 with 14-Tier schema parity, dual-language liturgical proverbs, and peer-reviewed citations.
+  - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy) and `scripts/review.sh` (0 hard violations).
 

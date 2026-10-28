@@ -16560,29 +16560,35 @@
     "media_production_notes": "Cinematography should emphasize warm, high-contrast visual palettes with prominent vermilion, deep amber, and radiant gold tones. Recommended visual framing includes macro shots of glistening, oil-laden Ẹ̀yín clusters against weathered wooden surfaces, followed by dynamic captures of the climbing harness (Igbà) in motion against towering palm canopies. Acoustic elements should feature rhythmic percussion, the crackling of firewood beneath simmering caldrons, and traditional labor chants sung by processing cooperatives. Archival displays should juxtapose ancestral stone processing pits with sacred shrine installations to showcase both physical and metaphysical significance."
   },
   {
-    "id": "Ẹpọ Pupa",
-    "title": "Ẹpọ Pupa",
-    "culture": "Yorùbá",
+    "id": "Ẹpo-Pupa",
+    "title": "Ẹpo-Pupa",
     "category": "Culinary Arts & Indigenous Gastronomy",
+    "culture": "Yorùbá",
+    "is_parent": false,
     "aliases": [
       "epo pupa",
       "epo-pupa",
       "epopupa",
-      "ẹpọ pupa"
+      "ẹpọ pupa",
+      "ẹpo pupa",
+      "ẹpo-pupa",
+      "unrefined red palm oil",
+      "red palm oil"
     ],
-    "description": "Unrefined Red Palm Oil, Essential for Cooking and Ritual Offering medium across Yorùbá Society.",
-    "historical_timeline": "Archaeological and botanical records trace the harvesting of the Elaeis guineensis palm in the West African forest belt to over 5,000 BCE. During the classical era of Ilé-Ifẹ̀ (circa 11th–14th Century CE) and the subsequent rise of the Ọ̀yọ́ Empire, Ẹpọ Pupa functioned as an indispensable trade currency, domestic fuel, cosmetic balm, and liturgical staple. By the 19th Century CE, palm oil transitioned into a dominant commodity driving legitimate commerce between Yorùbá kingdoms and industrializing Europe, while permanently maintaining its sovereign status within sacred Yorùbá cosmology.",
-    "etymology_and_philosophy": "Derived from the Yorùbá words 'Ẹpọ' (oil or lipid extract) and 'Pupa' (red or scarlet), Ẹpọ Pupa symbolizes the vital fluid of the Earth, frequently serving as an earthly parallel to 'Ẹ̀jẹ̀' (blood) without invoking mammalian mortality. In Yorùbá Metaphysics, Ẹpọ Pupa carries a cooling yet dynamic energy; it mollifies the fierce temperament of wrathful Òrìṣà such as Ògún, Èṣù, and Ọbalúayé, mediating between primeval elemental forces and mortal fragility. It represents nourishment, pacification, life force (Àṣẹ), and the preservation of sacred covenants.",
-    "material_and_craftsmanship": "Produced through ancestral extraction methods using the ripe drupes of the African Oil Palm (Elaeis guineensis). Harvesters climb mature trees using specialized woven climbers (Ìbàtẹ́ or Àkàbà) to cut fresh fruit bunches (Ọ̀kún). The drupes are separated, boiled in large iron cauldrons, transferred into stone or clay maceration pits (Ẹgún), and trodden underfoot to release the pericarp pulp. The resulting mash is pressed and rinsed with spring water; the rich scarlet oil floats to the surface where it is skimmed, gently clarified over wood fires, and stored in unglazed terracotta jars (Ìkòkò) to prevent rancidity.",
-    "social_and_ritual_context": "Revered as a divine sacrificial lubricant and cooling element, Ẹpọ Pupa is liberally poured over the altars of Ògún, Èṣù, and ancestral shrines to temper volcanic cosmic energies and summon benevolent spiritual forces. Across naming ceremonies, matrimonial rites, and traditional healing therapies, it serves as an indispensable medium of sanctification that neutralizes malevolence and anchors communal harmony.",
+    "description": "Unrefined red palm oil cold-pressed and boiled from the pericarp of Elaeis guineensis, serving as the foundational culinary base, lighting fuel, and sacred soothing offering (Ẹbọ Ẹrọ) across Yorùbá civilization.",
+    "etymology_and_philosophy": "Compound of 'Ẹpo' (palm oil / primordial viscous essence) and 'Pupa' (red / crimson solar hue). Within Yorùbá metaphysics, red palm oil represents the sacred cooling and neutralizing medium that pacifies fiery, volatile divinities (notably Ògún and Èṣù Ọdàrà). It functions as a ritual substitute for blood (Ẹ̀jẹ̀), signifying life, hospitality, and cosmic balance (Ìwà-rere).",
+    "historical_timeline": "Archaeological and botanical antiquity confirms the extraction of palm oil across the West African forest belt since the Neolithic era (c. 3000 BCE). During the classical Ilé-Ifẹ̀ and Imperial Ọ̀yọ́ epochs, regional guilds of women oil-pressers (Alẹ́po) managed municipal processing groves. Across the transatlantic Middle Passage, palm oil survived as a foundational ingredient in Afro-Brazilian gastronomy and religion as Azeite de Dendê in Candomblé, and in Afro-Cuban Lucumí as Manteca de Corojo.",
+    "material_and_craftsmanship": "Produced through ancestral extraction: ripe palm fruit bunches are harvested from tall Elaeis guineensis palms, quartered, boiled in large earthenware vats (Ìkòkò-Ẹpo), treaded in stone mortars or pits to separate pericarp fibers from kernels, then re-boiled and skimmed to yield pure, unadulterated crimson oil.",
+    "social_and_ritual_context": "Pivotal in both culinary preparation (Ọbẹ̀ Ata, Ẹ̀fọ́, Èwà) and liturgical propitiation. Poured libationally upon shrines to cool celestial heat, sanctify child-naming ceremonies (Ìkómọ), and seal covenant offerings (Ẹbọ). Devotees invoke it to petition divine tranquility and avert malevolent contention.",
     "proverbs_and_oral_traditions": [
-      "Ẹpọ nìtẹ́lẹ̀ ẹ̀jẹ̀, kò sí ẹni tí kì í jẹ ẹ́pọ (Palm oil is the foundational essence parallel to blood; there is no mortal who does not depend on nourishment).",
-      "Bí Ògún bá ń bínú, ẹpọ pupa la fi ń rọ̀ ọ́ (When Ògún blazes with fury, it is unrefined red palm oil that softens his wrath).",
-      "A kì í fi ẹpo dídùn pa mọ́ kí ajá má là á (One cannot leave fragrant red oil unprotected and expect the hound not to lick it)."
+      "Ẹni tí ó gbé epo kọjá ọjà kì í bẹ́rẹ̀ sí í ju òkúta. (He who carries a calabash of red palm oil across the crowded marketplace does not engage in stone-throwing: Teaching that vulnerability and sacred value demand caution, diplomatic patience, and emotional restraint.)",
+      "Bí Ògún bá ń bínú, ẹpo pupa la fi ń rọ̀ ọ́. (When Ògún blazes with martial fury, it is red palm oil that softens his wrath: Illustrating the metaphysical power of gentle, cooling offerings to pacify destructive wrath.)",
+      "Ẹpo nìtẹ́lẹ̀ ẹ̀jẹ̀; kò sí ẹni tí kì í jẹ ẹ́po. (Palm oil is the terrestrial surrogate of blood; there is no living soul who does not partake of its life-giving sustenance: Affirming universal dependence on ancestral nutrition and peaceful communion.)",
+      "Epo ni mọ̀ ọn jẹ, n kò mọ̀ ọn jẹ̀jẹ̀. (It is red palm oil that I consume, I have no commerce with mortal blood: Spoken by righteous initiates to proclaim moral innocence, dedication to peace, and unblemished character.)"
     ],
-    "diaspora_connections": "Known throughout the Atlantic Diaspora as 'Dendê' in Afro-Brazilian Candomblé and Bahia cuisine, and 'Manteca de Corojo' or 'Aceite de Palma' in Cuban Lucumí and Trinidadian Orisha traditions. Enslaved Yorùbá women and men safeguarded palm oil processing techniques in the Americas, enshrining it as the central liturgical offering to the Òrìṣà and an indomitable pillar of Afro-Atlantic culinary heritage, anchoring dishes like Brazilian Acarajé and Vatapá.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematography requires high-contrast macro visuals capturing the viscous, luminous scarlet-orange hue of hot Ẹpọ Pupa flowing over ritual and culinary surfaces. Lighting should emphasize warm amber undertones against dark wood and terracotta backgrounds. Audio capture should accentuate the thick bubbling of boiling palm fruits and the ambient rhythm of rhythmic foot-treading or mortar-pounding during manual extraction."
+    "diaspora_connections": "Preserved centrally across Afro-Atlantic religious and culinary matrices: venerated in Brazilian Bahia as Dendê, an indispensable culinary and ritual lifeblood of Candomblé Ketu, and in Cuban Regla de Ocha (Santería) as Epó (Manteca de Corojo) consecrated to Changó, Elegguá, and Oggún.",
+    "geographical_origin": "Pan-Yorùbá Forest Belt",
+    "provenance_and_citations": "Bascom, William (1951). Yoruba Food; Fadipe, N.A. (1970). The Sociology of the Yoruba; Johnson, Rev. Samuel (1921). The History of the Yorubas; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde; Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles."
   },
   {
     "id": "Oró",
@@ -27304,31 +27310,6 @@
     "diaspora_connections": "Across the Global African Diaspora, Atáare preserves its sacred hierarchy under varied geographic designations. In Cuban Lucumí and Palo Monte traditions, it is celebrated as Atáre or Pimienta de Guinea, functioning as a vital offering and catalyst for Èṣù-Elégbára, Ògún, and the Eégún (Ancestral Spirits). In Brazilian Candomblé Ketu, known as Pimenta-da-Costa, it is thoroughly incorporated into the sacred Ebó offerings, herbal baths (Omieró), and the initiation oaths (Bori) of novices. In Trinidad Orisha and Haitian Vodou, practitioners maintain the ancestral custom of masticating the seeds to cleanse their spiritual breath, expelling protective infusions to ward off psychic malevolence.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Visually frame the pod with macro close-ups highlighting the leathery, alligator-skin texture against hand-woven Àdìrẹ or Aṣọ-Òkè fabrics. Sound design should accentuate the distinctive, rhythmic rattle of loose seeds within the dry pod, evoking an ancient percussive instrument. Lighting should utilize high-contrast, directional amber tones to suggest the warmth of Iná (Fire) and sacred ceremonial shrines. Archival diagrams or 3D animations demonstrating the botanical structure alongside the traditional behind-the-back opening method provide an educational and immersive portal into indigenous Yorùbá ritual mechanics."
-  },
-  {
-    "id": "Epo-Pupa",
-    "title": "Epo-Pupa",
-    "culture": "Yorùbá",
-    "category": "Culinary Arts & Indigenous Gastronomy",
-    "aliases": [
-      "epo pupa",
-      "epo-pupa",
-      "epopupa",
-      "unrefined red palm oil"
-    ],
-    "description": "Unrefined red palm oil used as culinary base, lamp fuel, and soothing offering in Orisha worship.",
-    "historical_timeline": "For millennia, indigenous populations across the West African forest belt cultivated the oil palm tree (Elaeis guineensis). Prior to European arrival, Epo-Pupa was central to the economies and spiritual rites of Ancient Ilé-Ifẹ̀ and the Ọ̀yọ́ Empire, serving as the universal medium for medicine, light, culinary art, and statecraft gifts. During the nineteenth century, following the abolition of the Transatlantic Slave Trade, the 'Palm Oil Boom' reshaped West African history: Epo-Pupa transformed from a sacred local domestic wealth into an industrial lubricant fueling Britain's Industrial Revolution. Coastal trading states such as the Niger Delta city-states and the Yorùbá kingdoms shifted entire agricultural fabrics to palm production. Despite colonial extraction, domestic processing remained fiercely community-based, preserving sacred spiritual liturgies and the ancient knowledge of the Oil Matrix throughout centuries of foreign encroachment.",
-    "etymology_and_philosophy": "Derived from the Yorùbá words 'Epo' (oil or fat) and 'Pupa' (red or scarlet), Epo-Pupa represents far more than a lipid; it is a foundational cosmic element embodying vitality, appeasement, and mediation. Within Yorùbá cosmology, Epo-Pupa acts as 'Èrò'—an active metaphysical soothing and neutralizing agent capable of pacifying wrathful, hot spiritual temperatures ('Gbigbona'). Unlike sacrificial blood ('Ẹ̀jẹ̀'), which implies conflict, severance, and the rupture of boundaries, Epo-Pupa carries the deep red hue of vitality while symbolizing peace, lubrication, and social harmony. It is the premier food offered to appease Èṣù-Ẹlẹ́gbára, the Divine Messenger and Catalyst, guaranteeing the smooth flow of prayers between Àyé (the physical world) and Ọ̀run (the invisible realm). Conversely, it is strictly forbidden ('Èèwọ̀') to Ọbàtálá, the Orisha of Primordial Purity and creation, whose spiritual station is defined by pristine whiteness ('Funfun'), balance, and quietude.",
-    "material_and_craftsmanship": "Traditional artisanal production of Epo-Pupa is predominantly governed by women cooperatives utilizing an intricate multistep technology. Bunches of ripe palm fruits ('Ọ̀pẹ') are harvested by skilled climbers, separated, and fermented to loosen the fleshy mesocarp. The fruit is then boiled in massive iron or terracotta cauldrons before being transferred into an outdoor stone or wooden mashing trough called an 'Ẹbu'. Here, processors mash the boiled fruit rhythmically underfoot or with heavy wooden pestles to separate the oily fiber from the inner hard nuts ('Ekùrọ́'). Water is introduced, causing the pure, unrefined, carotenoid-rich red oil to float to the surface, where it is hand-skimmed and clarified over low heat. Beyond culinary foundations like soups ('Ọbẹ̀') and stews, this high-viscosity oil fuels traditional clay lamps ('Àtùpà'), conditions skin and hair against harsh Harmattan winds, and forms the pharmacopeial carrier for plant medicines prepared by the Babaláwo.",
-    "social_and_ritual_context": "In the liturgical architecture of Yorùbá cosmology, Epo-Pupa acts as a primordial cooling and mediating element used to propitiate fiery spiritual forces like Èṣù and Ògún through restorative sacrificial offerings (Ẹbọ). While strictly tabooed on the shrines of cool deities like Ọbàtálá, it sustains civic life as an indispensable festive staple and feeds the ceremonial clay lamps that illuminate sacred nocturnal vigils.",
-    "proverbs_and_oral_traditions": [
-      "Ẹni tí ó gbé epo kọjá ọjà kì í bẹ́rẹ̀ sí í ju òkúta: One carrying red palm oil across the market does not start casting stones, reminding all that vulnerability demands caution and restraint.",
-      "Epo ni mọ̀ ọn jẹ, n kò mọ̀ ọn jẹ̀jẹ̀: It is palm oil that I eat, not blood, spoken by devotees to proclaim innocent intentions, purity of sustenance, and dedication to peace.",
-      "Bí epo bá kù lẹ́nu, a kì í fọwọ́ pa á rẹ́: When palm oil remains around the mouth, one does not wipe it off hastily with dirty hands, cautioning against careless reactions to ancestral fortunes."
-    ],
-    "diaspora_connections": "Carried across the Middle Passage in the collective memory and physical hold of slave ships, Epo-Pupa survived as an indispensable pillar of Afro-Atlantic survival and sacred identity. In Brazil, it evolved into 'Azeite de Dendê', where it sanctifies Bahian identity and is essential to Candomblé worship, flavoring dishes like Acarajé (consecrated to the Orisha Ọya) and Moqueca. In Cuba, Puerto Rico, and international Lucumí (Santería) communities, it is preserved under the name 'Manteca de Corojo' or 'Epo', maintaining its traditional role as an offering to Èṣù-Elegbá, Ògún, and Ṣàngó. In the Black Diaspora, the distinctive crimson oil remains an emblem of spiritual resilience, Ancestral nourishment, and cultural reclamation across centuries of displacement.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematographers and documentarians should emphasize the visceral, chromatic richness of Epo-Pupa through close-up macro shots highlighting its dense, warm viscosity and intense amber-red palette. Visually contrast the liquid against the porous, earthen textures of traditional terracotta lamps ('Àtùpà') and the pure chalk whiteness of 'Ẹfun'. In sound design, capture the thick, soft bubbling of boiling palm mash and the rhythmic thudding of pestles during the extraction process. When depicting sacred ceremonies, ensure reverent presentation: Epo-Pupa should never be treated as mere culinary grease, but staged as an active, radiant libation imbued with luminous ancestral power."
   },
   {
     "id": "Adi-Agbon",

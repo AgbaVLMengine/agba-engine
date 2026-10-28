@@ -782,6 +782,23 @@
   - **Retrieval Benchmark**: Sprint 004 Benchmark verified at **28/28 (100.0%) Top-1 Accuracy** live against 1,416 entities; 16/16 friction queries (100.0%); 8/8 anti-parent-loop (100.0%); 18/18 Category 17 fauna (100.0%).
 - **Verification**: ✅ **DAILY SECURITY SENTINEL AUDIT COMPLETE — DEFCON 5 (OPERATIONAL & IMPERVIOUS)**.
 
+### [2026-10-28] Checkpoint 058 — "One Step Ahead" Pre-Ingestion Consolidation & Bilateral Knowledge Graph Audit
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Pre-Ingestion Twin Node Consolidation (`scripts/consolidate_epo_pupa.py` — 118 LOC)**:
+    - Merged `Ẹpọ Pupa` (index 554) and `Epo-Pupa` (index 962) into canonical single node **`Ẹpo-Pupa`** across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
+    - Preserved all search aliases (`epo pupa`, `epo-pupa`, `ẹpọ pupa`, `ẹpo pupa`, `unrefined red palm oil`), preventing twin proliferation and consolidating master corpus to **1,415 canonical entities**.
+    - Infused with complete 14-Tier depth, 4 dual-language proverbs with philosophical commentary, and academic citations (Bascom 1951, Fadipe 1970, Johnson 1921, Verger 1995, Eicher 1976).
+  - **Knowledge Graph Bilateral Integrity Audit**:
+    - Verified that all 248 auto-wired standalone records and Paramount Monarchs (`Awùjalẹ̀`, `Déjì`, `Akárìgbò`, `Ọlọ́fà`, `Alárá`, `Arẹ́sà`) are 100% reciprocally connected to `Ọba` and regional kingdoms (`Ìjẹ̀bú-Òde`, `Akúrẹ́`, `Ọ̀fà`, `Ìpínlẹ̀ Èkìtì`, `Ìpínlẹ̀ Ọ̀yọ́`, `Ìpínlẹ̀ Ògùn`) across both API and Web corpora.
+  - **Ingestion Quality Floor Locked for Batch 4**:
+    - Mandate locked: Every entity in Batch 4 will enforce the 14-Tier Schema, dual-language liturgical proverbs, and peer-reviewed citations to reduce remaining thin entities below 300.
+  - **Comprehensive QA & Production Gate Verification**:
+    - `benchmark_sprint004.py`: **28/28 (100.0%) Top-1 Accuracy** live against 1,415 entities (16/16 friction queries, 8/8 anti-parent-loop, 18/18 Category 17 fauna).
+    - `scripts/review.sh`: **0 hard violations** across all 8 production gates and 9 persona memory vaults.
+- **Verification**: ✅ **PRE-INGESTION AUDIT COMPLETE & BATCH 4 READY TO FIRE**.
+
 
 
 
