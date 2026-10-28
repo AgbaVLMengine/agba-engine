@@ -93,6 +93,19 @@
     - Regional Dialect Variations (Èkìtì: `Ufe`, `Urunmila`, `Ewi Ado`; Ìjẹ̀bú: `Werenṣo`, `Awujale`, `Obanta`; Ẹ̀gbá: `Lisabi`, `Alake`, `Olumo`).
     - Found baseline resilience of 53.6% Top-3 on chaotic inputs, uncovering critical engineering priorities for consecutive token deduplication (`ifa ifa` -> `ifa`), vowel collapse (`shangooo` -> `shango`), and dialectal alias expansion.
   - **Gate & Build Parity**: `./scripts/review.sh` passed with 0 hard violations; `api/app/retrieval.py` cached pre-indexing boosted lexical throughput to 929 qps; all scripts under 500 LOC ceiling.
+- **[2026-10-28] (`HANDOFF-SUURU-005` — 100% Full-Corpus Zero-Shot Title & Diacritic Audit Execution)**:
+  - Executed full 2,830-query zero-shot audit across all 1,415 entities in `api/data/yoruba_corpus_1007_NORMALIZED.json`:
+    - **Exact Tonal Queries**: **1,396 / 1,415 (98.66%) Top-1 Accuracy** | **1,415 / 1,415 (100.00%) Top-3 Accuracy**.
+    - **ASCII-Folded Queries**: **1,368 / 1,415 (96.68%) Top-1 Accuracy** | **1,413 / 1,415 (99.86%) Top-3 Accuracy**.
+    - **100.00% Zero-Orphan Parity Certified**: Every entity in the master corpus resolves within Top-3.
+  - **Categorized Non-Top-1 Entities**:
+    1. **13 Sub-Surface Legacy Twin Nodes**: `Ìyá-Ọba` vs `Iyá Oba`, `Ìlẹ̀kẹ̀-Ọ̀rùn` vs `Ìlèkè Ọrùn`, `Ìlẹ̀kẹ̀-Ọwọ́` vs `Ìlèkè Ọwọ́`, `Ẹgbẹ́-Àgbẹ̀` vs `Ẹgbẹ́ Àgbẹ̀`, `Agbájó-Ogun` vs `Agbájọ Ogun`, `Obẹ-Ata` vs `Obe Ata`, `Ọmọ-Odo` vs `Ọmọ Odo`, `Owó-Ẹ̀yọ̀` vs `Owó Ẹyọ`, `Otun-Balogun` vs `Otun Balogun`, `Egbe-Ode` vs `Ẹgbẹ́ Ọ̀dẹ`, `Opa-Ogun` vs `Opa Ogun`, `Oriki-Idile` vs `Oríki Idile`, `Ilé-Awo` vs `Ilé Awo`.
+    2. **4 Prefix & Substring Usurpations**: `Ààrẹ-Àgò` vs `Ọ̀tún-Ààrẹ-Àgò`, `Ọmọ-Ọlọ́` vs `Ọlọ́ ati Ọmọ-Ọlọ́`, `Ọ̀pẹ-Àgàn` vs `Igi Ọ̀pẹ-Àgàn`, `Epa-Mask` vs `Epa`.
+    3. **2 Polysemous Titles**: `Èṣù-Ẹlẹ́gbára` vs `Èṣù Èdá`, `Bàbá Ilé` vs `Bàbá`.
+    4. **Unaccented Tonal Homographs**: 47 ASCII collisions representing expected linguistic clustering (`oko` -> `Ọkọ`, `Ọkọ́`, `Ọ̀kọ̀`, `Oko`).
+  - **Diagnostic Report Generated**: `.agents/local-seeds/AGY__REPORT_FULL_CORPUS_AUDIT_20261028.md`.
+  - **Verdict**: Certified ready for final twin-node deduplication pass by Àrọ̀kìn and Àgbẹ̀dẹ.
+
 
 
 

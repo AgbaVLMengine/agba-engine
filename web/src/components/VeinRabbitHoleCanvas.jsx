@@ -21,7 +21,8 @@ export default function VeinRabbitHoleCanvas({
     const centerX = 460;
 
     const nodeCoords = {
-      TOOTH_ROOT: { x: centerX, y: 0, title: 'Central Tooth Core' }
+      OPON_ROOT: { x: centerX, y: 0, title: 'Ọpọ́n Ifá Central Hearth' },
+      TOOTH_ROOT: { x: centerX, y: 0, title: 'Ọpọ́n Ifá Central Hearth' }
     };
 
     const depthGroups = [];
@@ -104,7 +105,7 @@ export default function VeinRabbitHoleCanvas({
               title="Retrace the vein back to your first search entry"
             >
               <Compass size={13} />
-              Retrace to Tooth Root (#1: {nodes[0]?.title})
+              Retrace to Ọpọ́n Hearth (#1: {nodes[0]?.title})
             </button>
           )}
           <button
@@ -184,10 +185,10 @@ export default function VeinRabbitHoleCanvas({
             );
           })}
 
-          {/* 2. Render Origin Tooth Root Junction at (460, 6) */}
+          {/* 2. Render Origin Ọpọ́n Ifá Hearth Junction at (460, 6) */}
           <g
             style={{ cursor: 'pointer' }}
-            onClick={() => onRetraceToNode('TOOTH_ROOT')}
+            onClick={() => onRetraceToNode('OPON_ROOT')}
           >
             <circle
               cx={460}
@@ -205,7 +206,7 @@ export default function VeinRabbitHoleCanvas({
               fontWeight="700"
               style={{ letterSpacing: '0.05em' }}
             >
-              🦷 TOOTH ROOT ({graph.rootQuery || nodes[0]?.title})
+              👑 ỌPỌ́N IFÁ ROOT ({graph.rootQuery || nodes[0]?.title})
             </text>
           </g>
 
@@ -294,7 +295,7 @@ export default function VeinRabbitHoleCanvas({
         </span>
         <button
           type="button"
-          onClick={() => onRetraceToNode('TOOTH_ROOT')}
+          onClick={() => onRetraceToNode('OPON_ROOT')}
           style={{
             background: 'rgba(212, 175, 55, 0.12)',
             border: '1px solid rgba(212, 175, 55, 0.35)',
@@ -306,7 +307,7 @@ export default function VeinRabbitHoleCanvas({
             fontWeight: 700
           }}
         >
-          🦷 Tooth Start
+          👑 Ọpọ́n Ifá Origin
         </button>
         {nodes.map((n, idx) => {
           const isCurrent = activeNode?.nodeId === n.nodeId;

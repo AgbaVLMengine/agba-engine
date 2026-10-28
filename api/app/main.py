@@ -34,25 +34,15 @@ app = FastAPI(
     version="6.0.0-alpha"
 )
 
-# Enable hardened CORS for production IDN/Punycode domains, Netlify, and local dev
+# Enable hardened CORS for production IDN/Punycode domains, iOS Safari WebViews, PWA standalone, Netlify, and local dev
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=getattr(ÀgbàConfig, "ALLOWED_ORIGINS", [
-        "https://agbaengine.com",
-        "https://www.agbaengine.com",
-        "https://ágbaengine.com",
-        "https://xn--gbaengine-21a.com",
-        "https://www.xn--gbaengine-21a.com",
-        "https://àgbàengine.com",
-        "https://xn--gbengine-rza0b.com",
-        "https://www.xn--gbengine-rza0b.com",
-        "http://localhost:5173",
-        "http://localhost:3000",
-    ]),
-    allow_origin_regex=getattr(ÀgbàConfig, "ALLOWED_ORIGIN_REGEX", r"https://.*\.netlify\.app"),
+    allow_origins=ÀgbàConfig.ALLOWED_ORIGINS,
+    allow_origin_regex=ÀgbàConfig.ALLOWED_ORIGIN_REGEX,
     allow_credentials=True,
     allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization", "X-AGBA-API-KEY", "X-ÀGBÀ-API-KEY"],
+    allow_headers=["Accept", "Accept-Language", "Content-Language", "Content-Type", "Authorization", "X-AGBA-API-KEY", "X-ÀGBÀ-API-KEY", "X-Requested-With"],
+    max_age=86400,
 )
 
 # 1. API Key Security Header Configuration (Both ASCII and Diacritic Supported)

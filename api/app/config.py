@@ -167,15 +167,26 @@ class ÀgbàConfig:
         "https://agbaengine.com",
         "https://www.agbaengine.com",
         "https://ágbaengine.com",
+        "https://www.ágbaengine.com",
         "https://xn--gbaengine-21a.com",
         "https://www.xn--gbaengine-21a.com",
         "https://àgbàengine.com",
+        "https://www.àgbàengine.com",
         "https://xn--gbengine-rza0b.com",
         "https://www.xn--gbengine-rza0b.com",
+        "capacitor://localhost",
+        "ionic://localhost",
+        "http://localhost",
+        "https://localhost",
         "http://localhost:5173",
         "http://localhost:3000",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:3000",
     ]
-    ALLOWED_ORIGIN_REGEX: str = r"https://.*\.netlify\.app"
+    ALLOWED_ORIGIN_REGEX: str = (
+        r"^https://([a-zA-Z0-9-]+\.)?(netlify\.app|agbaengine\.com|xn--gbaengine-21a\.com|xn--gbengine-rza0b\.com)$"
+        r"|^(capacitor|ionic|http|https)://(localhost|127\.0\.0\.1)(:\d+)?$"
+    )
     
     # Authorized client registry with tiered access
     VALID_API_KEYS: Dict[str, Dict[str, Any]] = {

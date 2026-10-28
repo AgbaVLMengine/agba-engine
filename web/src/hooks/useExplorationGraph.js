@@ -98,7 +98,7 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
       title: firstEntity.title,
       category: firstEntity.category || 'Sovereign Concept',
       depth: 1,
-      parentNodeId: 'TOOTH_ROOT',
+      parentNodeId: 'OPON_ROOT',
       branchIndex: 0,
       relationLabel: 'Root Search Anchor',
       queryContext: queryText,
@@ -184,10 +184,10 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     }, 120);
   }, []);
 
-  // Retrace to any ancestor node along the vein (or back to the Central Tooth)
+  // Retrace to any ancestor node along the vein (or back to the Ọpọ́n Ifá Hearth)
   const retraceToNode = useCallback((targetNodeId) => {
     if (navLockRef.current) return null;
-    if (targetNodeId === 'TOOTH_ROOT') {
+    if (targetNodeId === 'OPON_ROOT' || targetNodeId === 'TOOTH_ROOT') {
       const rootNode = graph.nodes[0] || null;
       setGraph((prev) => ({
         ...prev,
@@ -217,9 +217,9 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     [graph.nodes, graph.activeNodeId]
   );
 
-  // Active arterial lineage from TOOTH_ROOT down to activeNodeId
+  // Active arterial lineage from OPON_ROOT down to activeNodeId
   const activeLineageIds = useMemo(() => {
-    const lineage = new Set(['TOOTH_ROOT']);
+    const lineage = new Set(['OPON_ROOT', 'TOOTH_ROOT']);
     let curr = activeNode;
     while (curr) {
       lineage.add(curr.nodeId);
@@ -232,6 +232,7 @@ export function useExplorationGraph(activeCulture = 'yoruba') {
     graph,
     activeNode,
     activeLineageIds,
+    startVeinFromOpon: startVeinFromTooth,
     startVeinFromTooth,
     branchVeinToRelative,
     retraceToNode,

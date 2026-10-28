@@ -23,7 +23,7 @@
   to = "/index.html"
   status = 200
 
-# Production Security Headers for ágbaengine.com / àgbàengine.com / agbaengine.com
+# Production Security & Mobile PWA/WebView Headers for ágbaengine.com / àgbàengine.com / agbaengine.com
 [[headers]]
   for = "/*"
   [headers.values]
@@ -31,15 +31,24 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Permissions-Policy = "microphone=(self), geolocation=()"
+
+[[headers]]
+  for = "/v6/*"
+  [headers.values]
+    Access-Control-Allow-Methods = "GET, POST, OPTIONS"
+    Access-Control-Allow-Headers = "Accept, Accept-Language, Content-Language, Content-Type, Authorization, X-AGBA-API-KEY, X-ÀGBÀ-API-KEY, X-Requested-With"
+    Access-Control-Max-Age = "86400"
 
 # Production Context (main branch)
+# Empty string routes relative /v6/* via Netlify reverse-proxy directly to live Cloud Run
 [context.production.environment]
-  VITE_API_URL = "https://agba-enterprise-api-dgefvzanqq-uc.a.run.app"
+  VITE_API_URL = ""
 
 # Branch Deploys (dev branch)
 [context.branch-deploy.environment]
-  VITE_API_URL = "https://agba-enterprise-api-dev-dgefvzanqq-uc.a.run.app"
+  VITE_API_URL = ""
 
 # Deploy Previews (Pull Requests)
 [context.deploy-preview.environment]
-  VITE_API_URL = "https://agba-enterprise-api-dev-dgefvzanqq-uc.a.run.app"
+  VITE_API_URL = ""

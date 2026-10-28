@@ -27,6 +27,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     graph,
     activeNode,
     activeLineageIds,
+    startVeinFromOpon,
     startVeinFromTooth,
     branchVeinToRelative,
     retraceToNode,
@@ -59,9 +60,13 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
             ranked_entities: rankedEntities
           });
         } else {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 1200);
           try {
-            const res = await fetch(`${apiBaseUrl}/v6/retrieve/deep-context`, {
+            const endpoint = apiBaseUrl ? `${apiBaseUrl.replace(/\/$/, '')}/v6/retrieve/deep-context` : '/v6/retrieve/deep-context';
+            const res = await fetch(endpoint, {
               method: 'POST',
+              signal: controller.signal,
               headers: {
                 'Content-Type': 'application/json',
                 'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
@@ -80,7 +85,9 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
               }
             }
           } catch (_) {
-            // Fallback to local sovereign ranked search
+            // Air-gap & cold-start timeout fallback to local sovereign ranked search
+          } finally {
+            clearTimeout(timeoutId);
           }
 
           if (rankedEntities.length === 0) {
@@ -103,7 +110,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
           if (options.isBranchHop) {
             branchVeinToRelative(primaryEntity, options.relationLabel || 'Rabbit-Hole Hop');
           } else {
-            startVeinFromTooth(q, primaryEntity);
+            (startVeinFromOpon || startVeinFromTooth)(q, primaryEntity);
           }
         }
       } finally {
@@ -111,7 +118,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         busyRef.current = false;
       }
     },
-    [apiBaseUrl, branchVeinToRelative, query, startVeinFromTooth]
+    [apiBaseUrl, branchVeinToRelative, query, startVeinFromOpon, startVeinFromTooth]
   );
 
   const handleBranchToRelative = useCallback(
@@ -177,8 +184,10 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         }}
         rootNetworkNodes={rootNetworkNodes}
         onSelectRootNode={(nodeObj, relType) => {
+          busyRef.current = false;
+          setLoading(false);
           setQuery(nodeObj.title);
-          executeSearch(nodeObj.title, { isBranchHop: hasSearched, relationLabel: relType });
+          executeSearch(nodeObj.title, { isBranchHop: true, relationLabel: relType });
         }}
       />
 

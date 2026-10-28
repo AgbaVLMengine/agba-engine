@@ -215,26 +215,54 @@ export default function OponSearchCore({
         {hasSearched && rootNetworkNodes?.parent && (
           <div style={{ marginTop: '-20px', position: 'relative', zIndex: 25, width: '100%' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '10px' }}>
-              <div className="root-pod" onClick={() => onSelectRootNode(rootNetworkNodes.parent, 'Sovereign Parent')}>
+              <button
+                type="button"
+                className="root-pod"
+                style={{ textAlign: 'left', font: 'inherit', width: '100%', cursor: 'pointer' }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  onSelectRootNode(rootNetworkNodes.parent, 'Sovereign Parent');
+                }}
+              >
                 <span className="root-pod-badge"><Sparkles size={11} /> Sovereign Parent</span>
                 <div className="root-pod-title">{rootNetworkNodes.parent.title}</div>
                 <div className="root-pod-desc">{rootNetworkNodes.parent.category || 'Canonical Matrix'}</div>
-              </div>
+              </button>
 
               {rootNetworkNodes.variants?.slice(0, 2).map((v) => (
-                <div key={v.id || v.title} className="root-pod" onClick={() => onSelectRootNode(v, 'Living Variant')}>
+                <button
+                  key={v.id || v.title}
+                  type="button"
+                  className="root-pod"
+                  style={{ textAlign: 'left', font: 'inherit', width: '100%', cursor: 'pointer' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onSelectRootNode(v, 'Living Variant');
+                  }}
+                >
                   <span className="root-pod-badge"><GitBranch size={11} /> Living Variant</span>
                   <div className="root-pod-title">{v.title}</div>
                   <div className="root-pod-desc">{v.description ? v.description.slice(0, 36) + '...' : 'Child Node'}</div>
-                </div>
+                </button>
               ))}
 
               {rootNetworkNodes.regalia && (
-                <div className="root-pod" onClick={() => onSelectRootNode({ title: rootNetworkNodes.regalia.canonical_name, id: rootNetworkNodes.regalia.canonical_name }, 'Museum Regalia')}>
+                <button
+                  type="button"
+                  className="root-pod"
+                  style={{ textAlign: 'left', font: 'inherit', width: '100%', cursor: 'pointer' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onSelectRootNode({ title: rootNetworkNodes.regalia.canonical_name, id: rootNetworkNodes.regalia.canonical_name }, 'Museum Regalia');
+                  }}
+                >
                   <span className="root-pod-badge"><Film size={11} /> Museum Regalia</span>
                   <div className="root-pod-title">{rootNetworkNodes.regalia.canonical_name}</div>
                   <div className="root-pod-desc">{rootNetworkNodes.regalia.current_custodial_repository || 'Museum Vault'}</div>
-                </div>
+                </button>
               )}
             </div>
           </div>
