@@ -33,3 +33,11 @@
      - Replaced `allow_origins=["*"]` with explicit `ALLOWED_ORIGINS` (`https://agbaengine.com`, `https://www.agbaengine.com`, `https://ágbaengine.com`, `https://xn--gbaengine-21a.com`, `https://www.xn--gbaengine-21a.com`, `https://àgbàengine.com`, `https://xn--gbengine-rza0b.com`, `https://www.xn--gbengine-rza0b.com`, `http://localhost:5173`, `http://localhost:3000`) and `allow_origin_regex=r"https://.*\.netlify\.app"`.
      - Added `idempotency_key: Optional[str] = None` to `FeedbackPayload` with `_SEEN_IDEMPOTENCY_KEYS` deduplication and structured JSON `stdout` logging (`AGBA_QUERY_LOG` and `AGBA_FEEDBACK`) so Google Cloud Logging Free Tier retains telemetry across `--min-instances 0` scale-down events.
   4. **Updated `netlify.toml`**: Added `/v6/*` and `/health` reverse-proxy redirect rules above `/* -> /index.html` and added production HTTP security headers (`X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Strict-Transport-Security`).
+
+- **[2026-10-28] (`CHECKPOINT-IRIN-003` — Executive "One Step Ahead" Telemetry Decomposition)**:
+  1. **Eradicated Final Backend Gate 2 Violation (`api/app/telemetry_processor.py` 607 LOC → 197 LOC)**:
+     - Extracted HITL candidate extraction & cultural discrepancy diagnosis (`DIACRITIC_ERROR`, `NEW_ALIAS_PROPOSAL`, `NEW_ENTITY_CANDIDATE`, `GENERAL_FEEDBACK`) into `api/app/hitl_diagnostics.py` (**179 LOC**, `< 180 LOC` ceiling).
+     - Extracted HITL Markdown card rendering, JSON ledger writer, and CLI flywheel status formatter into `api/app/hitl_card_generator.py` (**129 LOC**, `< 130 LOC` ceiling).
+     - Kept `api/app/telemetry_processor.py` (**197 LOC**, `< 200 LOC` coordinator ceiling) as a lean streaming coordinator with 100% CLI and API backward compatibility (`--status`, `--generate`, `--approve`, `--reject`, `--apply`).
+  2. **Cloud Run Always-Free Tier Invariant Verified**: Confirmed `api/deploy_cloud_run.sh` preserves `--min-instances 0`, `--max-instances 2`, `--memory 2Gi`, `--cpu 1`, `--concurrency 80`, `--cpu-throttling`, `--timeout 60` (`$0.00/mo` Always-Free scale) and `api/Dockerfile` keeps `all-MiniLM-L6-v2` pre-baked with `TRANSFORMERS_OFFLINE=1`.
+  3. **Verification**: Passed `./scripts/review.sh` with **0 hard violations and 0 warnings**.

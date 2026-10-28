@@ -54,7 +54,7 @@ Read or paraphrase this to open the meeting on Tuesday:
 **What to ask Ahmed:**
 > *"Following your Section 36 rule that 'Open-Source Does Not Mean Open Data,' we drafted a 4-layer `RAIL-Cultural-Heritage-v1.0` license:*
 > - *The `/web` frontend client is open for educational/community use.*
-> - *Our ranking engine (`retrieval.py`), our 1,333-entity 14-Tier database, and our 143 audio tokens remain **100% closed-source trade secrets** behind our Commercial API.*
+> - *Our ranking engine (`retrieval.py`), our 1,415-entity 14-Tier database, and our 143 audio tokens remain **100% closed-source trade secrets** behind our Commercial API.*
 > - *If we publish a lightweight Python SDK on PyPI, should that SDK wrapper use **Apache 2.0** while our cultural dataset uses **`RAIL-Cultural-Heritage-v1.0`**?"*
 
 ---
@@ -65,7 +65,7 @@ Read or paraphrase this to open the meeting on Tuesday:
 **What to ask Ahmed:**
 > *"Can Fort Legis immediately file two registrations for us on the **Nigerian Copyright Commission (NCC) e-registration portal**:*
 > 1. *The `agba-engine` software source code (`10,813` lines of Python & React), and*
-> 2. *Our **1,333-Entity Normalized 14-Tier Database Compilation & Sovereign Parent Taxonomy** as an original literary compilation?"*
+> 2. *Our **1,415-Entity Normalized 14-Tier Database Compilation & Sovereign Parent Taxonomy** as an original literary compilation?"*
 
 ---
 
@@ -128,11 +128,11 @@ Read or paraphrase this to open the meeting on Tuesday:
 
 ---
 
-### 📌 Q10. Trademark Filing for `ÀGBÀ`, `ÀGBÀ ENGINE` & Tooth Logo (Sections 33–34)
+### 📌 Q10. Trademark Filing for `ÀGBÀ`, `ÀGBÀ ENGINE` & Ọpọ́n Ifá Emblem (Sections 33–34)
 **Why you're asking:** Locking down brand protection while acquiring `agbaengine.com` / `ágbaengine.com`.
 
 **What to ask Ahmed:**
-> *"We are securing the domains `agbaengine.com`, `ágbaengine.com`, and `àgbàengine.com`. Can Fort Legis run a **Nigerian Trade Marks Act clearance search** this week and file trademark applications for **'ÀGBÀ'**, **'ÀGBÀ ENGINE'**, and our **Central Tooth & Vein Logo** in Nice Classes 9, 41, and 42?"*
+> *"We are securing the domains `agbaengine.com`, `ágbaengine.com`, and `àgbàengine.com`. Can Fort Legis run a **Nigerian Trade Marks Act clearance search** this week and file trademark applications for **'ÀGBÀ'**, **'ÀGBÀ ENGINE'**, and our **Triple Concentric Ọpọ́n Ifá Emblem** in Nice Classes 9, 41, and 42?"*
 
 ---
 
@@ -168,7 +168,7 @@ On **Page 43 (Conclusion)** of his PDF, Ahmed wrote that the entire legal value 
 - ✅ **Use the 45 CC0 Museum Images Commercially** (17 Cleveland Museum, 11 Met, 10 Chicago, 7 Smithsonian) in both free and paid tiers.
 - ✅ **Use Pre-1929 Public Domain Texts** (such as Rev. Samuel Johnson's 1921 *History of the Yorubas*) and uncopyrightable historical facts (Category A).
 - ✅ **Deploy our Open-Source AI Stack Commercially** (`all-MiniLM-L6-v2`, `BLIP`, `CLIP`, `Qdrant`, `FAISS`, `FastAPI`, `React`) with zero licensing fees.
-- ✅ **Register Copyright with the NCC** for both our software code and our 1,333-entity 14-Tier database compilation.
+- ✅ **Register Copyright with the NCC** for both our software code and our 1,415-entity 14-Tier database compilation.
 
 ---
 

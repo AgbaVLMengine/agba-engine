@@ -198,8 +198,8 @@ In **Section 51 (Pages 35–37)**, Fort Legis Attorneys listed **36 legal docume
 9. **Corporate Vehicle Selection & International Expansion (Sections 7, 41 & 52):**
    > *"In Section 7 (Page 9) and Section 52 (Page 37), you recommended the structure: `Founder -> Àgbà Technology Company -> Core IP -> Open-Source & Commercial Ecosystems`. Given that our paying Enterprise API customers will include US/UK/European museums, film studios, and universities alongside Nigerian institutions, should **Àgbà Technology Company** be incorporated solely in Nigeria (CAC Limited by Shares), or should we form a Delaware/UK parent entity with a Nigerian operating/IP subsidiary?"*
 
-10. **Trademark Clearance & Nice Class Registration for `ÀGBÀ`, `ÀGBÀ ENGINE` & Tooth Emblem (Sections 33–34):**
-    > *"Following Sections 33–34 (Pages 26–27), we are securing the domain trio `agbaengine.com`, `ágbaengine.com`, and `àgbàengine.com`. Can Fort Legis immediately initiate a **Nigerian Trade Marks Act clearance search** and file trademark applications for the word marks **'ÀGBÀ'**, **'ÀGBÀ ENGINE'**, and our **Central Tooth & Vein Logo** across software/SaaS (Nice Classes 9 and 42) and education/cultural services (Class 41)?"*
+10. **Trademark Clearance & Nice Class Registration for `ÀGBÀ`, `ÀGBÀ ENGINE` & Ọpọ́n Ifá Emblem (Sections 33–34):**
+    > *"Following Sections 33–34 (Pages 26–27), we are securing the domain trio `agbaengine.com`, `ágbaengine.com`, and `àgbàengine.com`. Can Fort Legis immediately initiate a **Nigerian Trade Marks Act clearance search** and file trademark applications for the word marks **'ÀGBÀ'**, **'ÀGBÀ ENGINE'**, and our **Triple Concentric Ọpọ́n Ifá Emblem** across software/SaaS (Nice Classes 9 and 42) and education/cultural services (Class 41)?"*
 
 ---
 
