@@ -49,6 +49,14 @@
   - **Tonal Invariant (Gate 4)**: The celestial orbit ring (`Àyíká Ìmọ̀`) cleanly integrates the 15 25-letter Yorùbá diacritics (`À, Á, È, É, Ẹ̀, Ẹ́, Ì, Í, Ò, Ó, Ọ̀, Ọ́, Ù, Ú, Ṣ`), safeguarding against sub-token degradation.
   - **Modular Architecture (Gate 2)**: Decomposing `ToothSearchCore.jsx` (485 LOC) into modular `<OponSearchCore />` (<350 LOC) eliminates looming Gate 2 risks.
   - **Legal & Sacred Sign-Off**: **UNCONDITIONAL GREEN LIGHT / CLEARED TO BUILD**. `Àgbẹ̀dẹ` is cleared to proceed with production code integration into `web/src/components/`.
+- **[2026-10-28] (`CHECKPOINT-IMO-005`)**: Prepared Pre-Production "One Step Ahead" Legal Dossier for Barrister Ahmed Abiola Mohammed (Fort Legis Attorneys):
+  - **Secondary Legal Dossier**:
+    1. *Compilation Rights & Peer Citations*: Enriched `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (and mirrored root) with statutory compilation rights under Section 2(1)(a) & Section 9 of the Nigerian Copyright Act 2022 (protecting 14-Tier Normalized Matrix & Sovereign Parent Taxonomy as Category D Original Compilations), Fair Dealing shield (Section 20(1)(a)&(b)), and expanded Section 2E with 12 foundational warfare/sociology authorities (Fadipe, Lloyd, Falola, Babayemi, Nwafor, Ajayi & Smith, Awe, Bascom, Vlach, Hermon-Hodge, Akinyele).
+    2. *Root LICENSE*: Verified root `LICENSE` enforcing `RAIL-Cultural-Heritage-v1.0` dual-tier access, commercial scraping prohibition, tonal invariant protection, and Awo exclusion.
+    3. *Gate 4 Awo Exclusion Proof*: Formally tethered `docs/AGBA_OCT27_VICTORY_CHRONICLE.md` verifying architectural retirement of anatomical tooth in favor of the Triple Concentric Ọpọ́n Ifá with North Sentinel Lozenge, prohibiting deity facial imagery and profane commercial copy.
+  - **72-Hour Cultural Heritage Safe Harbor Dispute & Takedown Protocol**: Authored `docs/CULTURAL_SAFE_HARBOR_PROTOCOL.md` establishing a 4-tier dispute taxonomy (Type A *Awo* Emergency, Type B Lineage Custody, Type C Third-Party Rights, Type D Historiographical Contest), an accelerated 72-hour timeline (Hour 0 to Hour 72), remedies (quarantine, attribution correction, confidence re-tiering, de-indexing), and anti-frivolous claim shields.
+  - **Trademark Defense Strategy**: Formulated multi-tier trademark prosecution and defense strategy for "Àgbà Engine" and "ágbaengine.com" (NICE Classes 9, 41, 42; IDNA2008 / Punycode defense; UDRP anti-cybersquatting; common-law passing off).
+
 
 
 
