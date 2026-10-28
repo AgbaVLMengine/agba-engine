@@ -75,11 +75,17 @@
   - **Gate 1 & Gate 2 (Leaner & Purified)**: `OponSearchCore.jsx` reduced to **249 LOC** (-8 LOC) via removal of debug labels and redundant pill badge; input capsule cleanly re-centered at `top: 102px`. `SearchTab.jsx` remains strictly preserved at **486 LOC** (< 490 ceiling).
   - **Animation Binding**: Fluid vascular vein cascade animations and ambient golden dust pulse (@keyframes veinCascading, ringGlow, goldenDustPulse) verified live in `web/src/index.css`.
   - **Regression & Build**: `npm run build` compiled in **591ms** (0 errors). `scripts/benchmark_sprint004.py` achieved 28/28 (100.0%) Top-1 accuracy across 1,417 entities. `./scripts/review.sh` passed with 0 hard violations, 0 warnings.
-- **[2026-10-27 | Post-Refactoring Audit: Hotspot #1 TranslateTab.jsx Neutralized (`AGY__REPORT_20261027T160155Z.md`)]**:
-  - **Verdict**: 🏆 **100% PRODUCTION PASS & ZERO CLIENT-SIDE GATE 2 VIOLATIONS CERTIFIED** (Commit `2097f82`).
-  - **Gate 2 & Law 1 Coordinator Invariant**: `TranslateTab.jsx` decomposed from **612 LOC** down to **69 LOC** (-543 LOC, -88.7%). Every active client-side component is now strictly below 500 lines.
-  - **The Three-Drawer Mandate**: Verified 4 extracted modules: `yorubaDiacriticsLexicon.js` (235 LOC pure math/data), `useCulturalTranslation.js` (92 LOC hook with Gate 3 `busyRef` synchronous locks), `DiacritizerCard.jsx` (91 LOC UI card), and `CulturalGlossCard.jsx` (88 LOC UI card). Net lines saved: -37 LOC.
-  - **Automated Tooling**: Upgraded `scripts/review.sh` with 3-Tier Pre-Commit Scanner (350/450/500 thresholds) verified operational. `npm run build` compiled in **641ms** (1,922 modules, 0 errors). `benchmark_sprint004.py` verified 28/28 (100.0%) Top-1 accuracy.
+- **[2026-10-28 | Executive Directive: Anti-Exponential Scaling Codification & Backend Hotspot Blueprints (`CHECKPOINT-OYE-011` / Checkpoint 060)]**:
+  - **Supervising Architect**: Lead Architect Àrùnà Ọlànrewájú Kábírù & `Àgbà`.
+  - **Verdict**: 🛡️ **"ONE STEP AHEAD" MANDATE ACTIVATED & PRE-COMMIT EMBARGO SCREENING LIVE**.
+  - **Tooling Verification**: Formally codified the **3-Tier Pre-Commit Scanner** inside `scripts/review.sh` (350 LOC Advisory, 450 LOC Embargo, 500 LOC Hard Rejection).
+  - **Frontend Architecture Certification**: All client-side UI files remain in pristine compliance. `TranslateTab.jsx` sits at **69 LOC** (down from 612), `SearchTab.jsx` sits at **227 LOC** (down from 486, strictly obeying Law 1 Coordinator ceiling of 250 LOC), and `OponSearchCore.jsx` sits at **249 LOC**.
+  - **Backend Hotspot Census & Embargo Alerts**:
+    - `api/app/retrieval.py` (**451 LOC**) and `api/app/intelligence.py` (**477 LOC**) have officially tripped the **Orange Embargo (≥ 450 lines)**. Zero inline additions permitted; all feature expansions must be preceded by modular decomposition.
+    - `api/app/telemetry_processor.py` (**607 LOC**) remains an active legacy Gate 2 violation, slated for immediate decomposition.
+  - **Architectural Decomposition Blueprint Published**: Authored immutable blueprint `.agents/local-seeds/AGY__BLUEPRINT_BACKEND_HOTSPOTS_20261028.md` establishing 3-module extractions for `retrieval.py` (`lexical_ranker.py` [~130 LOC], `sub_variant_hydrator.py` [~95 LOC], lean `retrieval.py` [~160 LOC]) and `telemetry_processor.py` (`hitl_diagnostics.py` [~170 LOC], `hitl_card_generator.py` [~120 LOC], lean `telemetry_processor.py` [~150 LOC]).
+  - **System Readiness**: `benchmark_sprint004.py` verified at **28/28 (100.0%) Top-1 Accuracy**; `web` build verified in **1.05s** (1,922 modules, 0 errors). Ready to audit `Àgbẹ̀dẹ` and `Irin` extractions.
+
 
 
 
