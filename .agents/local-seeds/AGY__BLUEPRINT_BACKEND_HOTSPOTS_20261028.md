@@ -15,7 +15,8 @@ Two significant architectural bottlenecks require proactive de-escalation:
 
 | Backend File | Current LOC | Status under 3-Tier Scanner | Threat Assessment |
 | :--- | :---: | :---: | :--- |
-| [`api/app/retrieval.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/retrieval.py) | **`446`** | ⚠️ **4 lines from Orange Embargo (450 LOC)** | High risk of triggering build embargo during upcoming Ọgbọ́n or hybrid vector updates. |
+| [`api/app/retrieval.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/retrieval.py) | **`451`** | 🛑 **Tripped Orange Embargo (≥ 450 LOC)** | Officially embargoed; zero inline feature additions allowed until decomposed. |
+| [`api/app/intelligence.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/intelligence.py) | **`477`** | 🛑 **Under Orange Embargo (≥ 450 LOC)** | 23 lines from hard rejection; zero inline feature additions allowed. |
 | [`api/app/telemetry_processor.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/telemetry_processor.py) | **`607`** | ❌ **Pre-existing Gate 2 Hard Violation (> 500 LOC)** | Any single commit modifying this file will immediately trigger a hard build failure. |
 
 By applying **Law 1 (The 250-LOC Coordinator Invariant)** and **Law 2 (The Three-Drawer Mandate)** to `/api`, we can permanently neutralize both backend bottlenecks.
