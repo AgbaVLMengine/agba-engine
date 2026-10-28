@@ -533,3 +533,30 @@ body {
   animation: goldenDustPulse 4.5s ease-in-out infinite;
 }
 
+/* ==============================================================================
+   📱 MOBILE-FIRST RESPONSIVE NAV & ỌPỌ́N IFÁ VIEWPORT RULES (<900px)
+   ============================================================================== */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+  }
+  .cloud-run-badge .cloud-run-text {
+    display: none;
+  }
+  .mobile-heading-compact {
+    font-size: 1.8rem !important;
+    margin-bottom: 2px !important;
+  }
+  .mobile-subtitle-compact {
+    font-size: 0.78rem !important;
+    padding: 0 12px;
+  }
+  .opon-search-wrapper {
+    top: 24% !important;
+    width: 92% !important;
+  }
+}
+

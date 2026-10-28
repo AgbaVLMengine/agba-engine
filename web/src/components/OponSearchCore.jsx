@@ -21,6 +21,7 @@ export default function OponSearchCore({
 }) {
   const submitLockRef = useRef(false);
   const [lockedCultureNotice, setLockedCultureNotice] = useState('');
+  const [showDiacritics, setShowDiacritics] = useState(false);
   const cultureMeta = PEER_CULTURES[activeCulture] || PEER_CULTURES.yoruba;
 
   const handleCultureClick = (cult) => {
@@ -79,10 +80,10 @@ export default function OponSearchCore({
 
       {/* 2. CANONICAL BRAND CREST */}
       <div style={{ marginBottom: hasSearched ? '8px' : '16px' }}>
-        <h1 className="font-royal text-gold" style={{ fontSize: hasSearched ? '1.65rem' : '2.6rem', fontWeight: 800, letterSpacing: '0.04em', marginBottom: '3px' }}>
+        <h1 className="font-royal text-gold mobile-heading-compact" style={{ fontSize: hasSearched ? '1.65rem' : '2.6rem', fontWeight: 800, letterSpacing: '0.04em', marginBottom: '3px' }}>
           ÀGBÀ ENGINE
         </h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: hasSearched ? '0.82rem' : '0.94rem', maxWidth: '680px', margin: '0 auto' }}>
+        <p className="mobile-subtitle-compact" style={{ color: 'var(--text-secondary)', fontSize: hasSearched ? '0.82rem' : '0.94rem', maxWidth: '680px', margin: '0 auto' }}>
           {cultureMeta.subtitle}
         </p>
       </div>
@@ -136,7 +137,7 @@ export default function OponSearchCore({
           </svg>
 
           {/* INSET SEARCH CAPSULE & DIACRITIC STRIP (FLUSH INSIDE HEARTH) */}
-          <div style={{ position: 'absolute', top: '102px', width: '90%', maxWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 20 }}>
+          <div className="opon-search-wrapper" style={{ position: 'absolute', top: '102px', width: '90%', maxWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 20 }}>
             
             {/* Input Capsule */}
             <div style={{ width: '100%', background: 'rgba(5, 7, 13, 0.95)', border: isFocused ? '2px solid #fbbf24' : '2px solid #d4af37', borderRadius: '16px', padding: '6px 10px', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: isFocused ? '0 0 28px rgba(251, 191, 36, 0.4)' : '0 10px 30px rgba(0, 0, 0, 0.8)', transition: 'all 0.25s ease' }}>
@@ -146,7 +147,7 @@ export default function OponSearchCore({
                 onChange={(e) => setQuery(e.target.value)}
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
-                placeholder="Ṣàwárí nínú Ìmọ̀: sovereign parents, regalia, Odù..."
+                placeholder="Ṣàwárí Ìmọ̀: sovereign parents, Odù..."
                 style={{ flex: 1, background: 'transparent', border: 'none', color: '#f8fafc', fontSize: '0.92rem', fontWeight: 600, outline: 'none' }}
               />
 
@@ -166,21 +167,47 @@ export default function OponSearchCore({
               </button>
             </div>
 
+            {/* Collapsible Tone Marks Toggle */}
+            <button
+              type="button"
+              onClick={() => setShowDiacritics(!showDiacritics)}
+              style={{
+                marginTop: '8px',
+                background: showDiacritics ? 'rgba(212, 175, 55, 0.2)' : 'rgba(10, 14, 24, 0.75)',
+                border: '1px solid rgba(212, 175, 55, 0.35)',
+                borderRadius: '999px',
+                padding: '3px 12px',
+                color: 'var(--gold-light)',
+                fontSize: '0.70rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '5px',
+                transition: 'all 0.2s'
+              }}
+            >
+              <span>Àmì Ohùn (15 Yorùbá Tone Beads)</span>
+              <span style={{ fontSize: '0.62rem' }}>{showDiacritics ? '▲' : '▼'}</span>
+            </button>
+
             {/* 15 Sacred Yorùbá Diacritic Beads Mounted in Hearth */}
-            <div style={{ width: '100%', marginTop: '10px', padding: '6px 8px', borderRadius: '12px', background: 'rgba(10, 14, 24, 0.88)', border: '1px solid rgba(212, 175, 55, 0.3)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px' }}>
-              {DIACRITICS.map((char) => (
-                <button
-                  key={char}
-                  type="button"
-                  onClick={() => handleInsertDiacritic(char)}
-                  style={{ width: '26px', height: '26px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', background: 'rgba(18, 24, 38, 0.95)', border: '1px solid rgba(148, 163, 184, 0.25)', color: '#f8fafc', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.15s' }}
-                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#fbbf24'; e.currentTarget.style.color = '#fbbf24'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(148, 163, 184, 0.25)'; e.currentTarget.style.color = '#f8fafc'; }}
-                >
-                  {char}
-                </button>
-              ))}
-            </div>
+            {showDiacritics && (
+              <div style={{ width: '100%', marginTop: '6px', padding: '6px 8px', borderRadius: '12px', background: 'rgba(10, 14, 24, 0.95)', border: '1px solid rgba(212, 175, 55, 0.35)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.85)' }}>
+                {DIACRITICS.map((char) => (
+                  <button
+                    key={char}
+                    type="button"
+                    onClick={() => handleInsertDiacritic(char)}
+                    style={{ width: '26px', height: '26px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', background: 'rgba(18, 24, 38, 0.95)', border: '1px solid rgba(148, 163, 184, 0.25)', color: '#f8fafc', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.15s' }}
+                    onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#fbbf24'; e.currentTarget.style.color = '#fbbf24'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(148, 163, 184, 0.25)'; e.currentTarget.style.color = '#f8fafc'; }}
+                  >
+                    {char}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
