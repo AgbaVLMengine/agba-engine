@@ -96,4 +96,10 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Verified Knowledge Graph Bilateral Integrity: Confirmed all 248 auto-wired standalone records and Paramount Monarchs are 100% reciprocally connected to `Ọba` and regional kingdoms across both API and Web corpora.
   - Locked Ingestion Quality Floor for Batch 4 to drive thin entities below 300 with 14-Tier schema parity, dual-language liturgical proverbs, and peer-reviewed citations.
   - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy) and `scripts/review.sh` (0 hard violations).
+- **2026-10-28 [Checkpoint 063 — Batch 4 Phase 4 Ingestion (25 Entities Elevated)]**:
+  - Authored `/home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_04.py` (130 LOC, Gate 2 compliant) and companion vault `scripts/batch_04_data.json`.
+  - Enriched 25 canonical entities (manifest items 325 to 349): `Ọ̀pá-Ìwọ̀n`, `Ìra-Ìràwọ̀`, `Abo-Irin`, `Ewe-Ose`, `Abobaku`, `Osi-Iyalaje`, `Odo-Aro`, `Adire-Abo`, `Ẹpo-Pupa`, `Ori-Amo`, `Ilekere`, `Esi-Ike`, `Irin-Ife`, `Osa-Ogun`, `Aro-Ogun`, `Ilu-Ogun`, `Ipade-Ogun`, `Ewi-Ibala`, `Alo-Aragbe`, `Ewe-Ìyọ́`, `Ìyá-Ìlé`, `Ọ̀rọ̀-Ìṣẹ̀̀mbátí`, `Ọ̀bẹ-Ẹran-Ọba`, `Fìlà`, and `Odù Ifá`.
+  - Infused 100% with peer-reviewed academic citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Bascom 1951/1969, Fadipe 1970, Eicher 1976), pristine dual-language proverbs with philosophical commentary, and multi-epoch timelines (`Fìlà`, `Odù Ifá`).
+  - Total cited master entities elevated to **357**. Thin entities in Phase 4 manifest cohort reduced from 334 to **309**.
+  - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy), `scripts/review.sh` (0 violations), and `npm run build` (837ms, 0 errors).
 

@@ -834,6 +834,42 @@
     - `./scripts/review.sh`: **0 hard violations**, 2 advisory embargo alerts active on backend targets.
 - **Verification**: ✅ **ONE STEP AHEAD AUDIT MANDATE RATIFIED — BACKEND BLUEPRINTS READY FOR BUILDER/CLOUD EXECUTION**.
 
+### [2026-10-28] Checkpoint 062 (`CHECKPOINT-IRIN-003`) — Telemetry Processor 3-Module Decomposition (`607 → 197 LOC`) & Cloud Run Free-Tier Verification
+- **Agent Persona**: `Irin` (`irin-cloud`) in coordination with `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Executive infrastructure directive from Lead Architect Àrùnà Ọlànrewájú Kábírù and `Àgbà`: Decompose `api/app/telemetry_processor.py` (the last remaining backend Gate 2 violation at 607 LOC) below 200 LOC and verify Cloud Run `$0.00/mo` Free-Tier invariants.
+- **Deliverables Completed**:
+  - **3-Module Telemetry & HITL Extraction (Gate 2 Eradication)**:
+    - Created `api/app/hitl_diagnostics.py` (**179 LOC**, `< 180 LOC` target): Encapsulates `normalize_nfc`, `strip_accents`, `load_jsonl_records`, `diagnose_candidate`, and `extract_actionable_candidates`.
+    - Created `api/app/hitl_card_generator.py` (**129 LOC**, `< 130 LOC` target): Encapsulates `format_hitl_markdown_card`, `generate_hitl_report`, and `print_flywheel_status`.
+    - Refactored `api/app/telemetry_processor.py` from **607 LOC down to 197 LOC** (`< 200 LOC` target — **67.5% LOC reduction**): Lean streaming coordinator preserving 100% CLI and programmatic compatibility (`--status`, `--generate`, `--approve`, `--reject`, `--apply`).
+  - **Cloud Run Always-Free Tier Invariant (`$0.00/mo`)**:
+    - Verified `api/deploy_cloud_run.sh` strictly enforces `--min-instances 0`, `--max-instances 2`, `--memory 2Gi`, `--cpu 1`, `--concurrency 80`, `--cpu-throttling`, and `--timeout 60`.
+    - Verified `api/Dockerfile` retains pre-baked `sentence-transformers/all-MiniLM-L6-v2` weights (`TRANSFORMERS_OFFLINE=1`, `HF_HUB_OFFLINE=1`).
+- **Verification**:
+  - `python3 api/app/telemetry_processor.py --status`: Loaded 1,415 master entities and reported 27 feedback records cleanly.
+  - `./scripts/review.sh`: **PASSED with 0 hard violations and 0 warnings** across all 8 production gates.
+
+### [2026-10-28] Checkpoint 063 — Phase 4 Batch 4 Ingestion (25 Entities Elevated) & 14-Tier Citational Depth Sealed
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Royal decree from Lead Architect Àrùnà Ọlànrewájú Kábírù and `Àgbà` to commence Phase 4 Batch 4 Ingestion (items 325 to 349 in `scripts/thin_entities_manifest.json`) under the 14-Tier Schema, dual-language liturgical proverbs, and peer-reviewed academic citations.
+- **Deliverables Completed**:
+  - **Batch 4 Ingestion Engine (`scripts/enrich_batch_04.py` — 130 LOC)**:
+    - Authored modular ingestion engine and companion data vault `scripts/batch_04_data.json` (<500 LOC ceiling, Gate 2 compliant).
+    - Enriched 25 entities: `Ọ̀pá-Ìwọ̀n`, `Ìra-Ìràwọ̀`, `Abo-Irin`, `Ewe-Ose`, `Abobaku`, `Osi-Iyalaje`, `Odo-Aro`, `Adire-Abo`, `Ẹpo-Pupa`, `Ori-Amo`, `Ilekere`, `Esi-Ike`, `Irin-Ife`, `Osa-Ogun`, `Aro-Ogun`, `Ilu-Ogun`, `Ipade-Ogun`, `Ewi-Ibala`, `Alo-Aragbe`, `Ewe-Ìyọ́`, `Ìyá-Ìlé`, `Ọ̀rọ̀-Ìṣẹ̀̀mbátí`, `Ọ̀bẹ-Ẹran-Ọba`, `Fìlà`, and `Odù Ifá`.
+    - Populated 100% of the batch with foundational academic citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Bascom 1951/1969, Fadipe 1970, Eicher 1976) and polished dual-language proverbs with philosophical commentary.
+    - Expanded multi-epoch antiquity timelines for `Fìlà` and `Odù Ifá`.
+  - **Zero Twin Nodes Law & Invariants Preserved**:
+    - Maintained single canonical representation for `Ẹpo-Pupa` (with search aliases), preserving the 1,415-entity canonical master corpus count across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
+    - Total master corpus entities with explicit peer-reviewed citations elevated to **357**.
+    - Remaining thin entities in Phase 4 manifest cohort reduced from 334 to **309**.
+  - **Comprehensive QA & Production Gate Verification**:
+    - `benchmark_sprint004.py`: **28/28 (100.0%) Top-1 Accuracy** live against 1,415 entities (16/16 friction queries, 8/8 anti-parent-loop, 18/18 Category 17 fauna).
+    - `npm run build`: Compiled cleanly in **837ms** (1,922 modules transformed, 0 errors).
+    - `scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 9 persona vaults.
+- **Verification**: ✅ **BATCH 4 INGESTION SEALED & CITATIONAL DEPTH RATIFIED**.
+
 
 
 
