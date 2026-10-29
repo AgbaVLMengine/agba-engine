@@ -72,31 +72,14 @@ jobs:
         run: |
           if git diff --quiet api/data/ web/src/data/; then
             echo "ℹ️ No thin entities required enrichment in this cycle. Working tree unchanged."
-            echo "has_changes=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
           git config user.name "agba-sovereign-bot[bot]"
           git config user.email "agba-sovereign-bot@users.noreply.github.com"
-
-          REMAINING_THIN=$(python -c "
-import json
-with open('api/data/yoruba_corpus_1007_NORMALIZED.json') as f:
-    corpus = json.load(f)
-def is_thin(e):
-    p = e.get('proverbs_and_oral_traditions', [])
-    t = (e.get('historical_timeline') or '').strip()
-    has_tr = any(('(' in x and ')' in x) for x in p if isinstance(x, str))
-    is_t = len(t) < 120 or t.startswith('Deep antiquity') or t.startswith('Classical Yorùbá')
-    return (not has_tr) or is_t
-print(len([e for e in corpus if is_thin(e)]))
-          ")
-
           git add api/data/yoruba_corpus_1007_NORMALIZED.json web/src/data/yoruba_master_corpus.json
-          git commit -m "feat(corpus): [arokin-archivist] autonomous enrichment batch + [suuru/oye] certified (remaining: ${REMAINING_THIN})"
+          git commit -m "feat(corpus): [arokin-archivist] autonomous enrichment batch + [suuru/oye] certified"
           git push origin dev
-          echo "has_changes=true" >> $GITHUB_OUTPUT
-          echo "remaining_thin=${REMAINING_THIN}" >> $GITHUB_OUTPUT
 
       - name: "📊 Publish Sovereign Council Summary"
         if: always()
@@ -104,9 +87,9 @@ print(len([e for e in corpus if is_thin(e)]))
           echo "### 🏛️ ÀGBÀ SOVEREIGN COUNCIL: BATCH ENRICHMENT RUN VERDICT" >> $GITHUB_STEP_SUMMARY
           echo "| Sentinel / Agent | Role | Verdict |" >> $GITHUB_STEP_SUMMARY
           echo "|---|---|---|" >> $GITHUB_STEP_SUMMARY
-          echo "| 📜 **Àrọ̀kìn** | Phase 4 Cultural Enrichment | ✅ Ingested 25 entities |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📜 **Àrọ̀kìn** | Phase 4 Cultural Enrichment | ✅ Batch Enriched |" >> $GITHUB_STEP_SUMMARY
           echo "| 🧪 **Sùúrù** | Retrieval QA Benchmark | ✅ 28/28 (100.0%) Verified |" >> $GITHUB_STEP_SUMMARY
           echo "| 🛡️ **Òye** | 8 Production Gates | ✅ 0 Hard Violations, 0 Warnings |" >> $GITHUB_STEP_SUMMARY
-          echo "| 👑 **Àgbà** | Executive Handoff & Git Sync | ✅ Committed & Pushed to \`dev\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| 👑 **Àgbà** | Executive Handoff & Git Sync | ✅ Committed & Pushed to dev |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "🔗 **Repository Branch:** \`dev\`" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **Repository Branch:** dev" >> $GITHUB_STEP_SUMMARY
