@@ -35,7 +35,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: 📦 Install Full Dependencies & Google GenAI SDK
         run: |
@@ -53,7 +52,7 @@ jobs:
           fi
 
           BATCH_INPUT="${{ inputs.batch_limit }}"
-BATCH_SIZE="${BATCH_INPUT:-25}"
+          BATCH_SIZE="${BATCH_INPUT:-25}"
           echo "🏛️ Launching Àrọ̀kìn Batch Enrichment (Limit: $BATCH_SIZE entities)..."
           python scripts/batch_enrich_thin_entities.py --limit "$BATCH_SIZE"
 
