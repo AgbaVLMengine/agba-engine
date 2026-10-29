@@ -116,3 +116,27 @@ Adapted from the *Dual-Engine AI Engineering Playbook* specifically for **Antigr
    - `Ìmọ̀` verifies licensing (`RAIL-Cultural-Heritage-v1.0`), provenance citations, and legal compliance.
 5. **PHASE 5 — 7-POINT PRE-COMMIT BRIEFING & GITHUB BRAIN SYNC (`Àgbà`)**
    - Syncs all updated `.agents/memory/*.md` and `.agents/CHECKPOINTS.md` to GitHub via `./scripts/sync-brain.sh` and reports the 7-Point Briefing to the user.
+
+---
+
+## 5. The Daily Pre-Retirement Sentinel Protocol (The Dusk Sweep — Ìwọ́lẹ̀ Ọjọ́)
+
+> *"Just as in ancient Yorùbá palaces, before the Ọba retires to his inner chambers, the Ẹ̀ṣọ́ inspect the city ramparts and gate locks, and the Agbálẹ̀ sweep the courtyards and granaries. We never sleep on unverified state."*  
+> — **Direct Mandate of Lead Architect Àrùnà Ọlànrewájú Kábírù (October 29, 2026)**
+
+To ensure the system is permanently protected against cloud workflow stalls, network severance, or unattended nocturnal failures:
+
+### The Pre-Retirement Ritual (Every Evening Before Shutdown):
+1. **Never Depend Exclusively on Cloud Crons**: Remote CI/CD workflows (GitHub Actions, scheduled crons) can fail silently, hit rate limits, or suffer network disconnections. The local workstation is the **Sovereign Genesis Canon (Sphere 1)** and must be verified locally before the desk is closed.
+2. **`Ẹ̀ṣọ́` (Security Sweep)**:
+   - Scans modified files for uncommitted high-entropy secrets (`AIzaSy...`, `ghp_...`, `sk-...`).
+   - Audits AI dependencies in `requirements.txt` to enforce zero LiteLLM trojans and 100% native SDK compliance.
+   - Verifies RAG XML boundary isolation and confirms DEFCON 5 (Impervious) readiness.
+3. **`Agbálẹ̀` (Storage Sweep)**:
+   - Purges stale Chrome caches, build artifacts, and `/tmp` debris via `scripts/reclaim_disk.sh`.
+   - Confirms storage headroom across `/home/aruna_olanrewaju` remains safely above the **2.0 GB emergency floor**.
+   - Logs timestamp, reclaimed space, and headroom into `memory/disk_saver_memory.md`.
+4. **`Àsúnwọ̀n` & `Àgbà` (Sphere Lockstep Verification)**:
+   - Verifies working tree is clean and pushed to `origin/dev`.
+   - Verifies that a fresh compressed snapshot (`agba_engine_snapshot_*.tar.gz`) alongside its SHA-256 ledger is safely deposited into `/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups/` (Sphere 4).
+
