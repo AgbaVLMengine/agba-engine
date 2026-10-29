@@ -102,19 +102,19 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Infused 100% with peer-reviewed academic citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Bascom 1951/1969, Fadipe 1970, Eicher 1976), pristine dual-language proverbs with philosophical commentary, and multi-epoch timelines (`Fìlà`, `Odù Ifá`).
   - Total cited master entities elevated to **357**. Thin entities in Phase 4 manifest cohort reduced from 334 to **309**.
   - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy), `scripts/review.sh` (0 violations), and `npm run build` (837ms, 0 errors).
-- **2026-10-29 [Checkpoint 072 — HANDOFF-AROKIN-BATCH-002: Ingestion of 2 Ifá Sovereign Records & Batch 5 Phase 4 Enrichment]**:
-  - **Task 1: Dedicated Ingestion of Two Sovereign Ifá Records**:
-    - Ingested permanent canonical records for **`Ojú Odù Méjìdínlógún`** (The 16 Principal King Odùs) and **`Àmọ̀lù Odù`** (The 240 Composite / Permutated Chapters of Ifá) into `api/data/yoruba_corpus_1007_NORMALIZED.json` and synchronized with `web/src/data/yoruba_master_corpus.json`.
-    - Corpus count elevated from 1,402 to **1,404 canonical entities**.
-    - Infused with deep classical antiquity timelines, sacred mathematical ontology (16x16=256), sacred materiality (Ọpọ́n Ifá, Ìkín, Ọ̀pẹ̀lẹ̀), and dual-language proverbs with philosophical commentary.
-    - Verified live retrieval: queries `"Oju Odu"` and `"Oju Odu Mejidindlogun"` return `Ojú Odù Méjìdínlógún` at Rank #1; query `"Amolu Odu"` returns `Àmọ̀lù Odù` at Rank #1, without looping to parent Ifá.
+- **2026-10-29 [Checkpoint 072 — HANDOFF-AROKIN-BATCH-002: Ingestion of 2 Ifá Sovereign Records, 256 Odù Constellation Wiring & Batch 5 Phase 4 Enrichment]**:
+  - **Task 1: Dedicated Ingestion of Two Sovereign Ifá Records & Constellation Bilateral Wiring**:
+    - Ingested permanent canonical records for **`Ojú Odù Méjìdínlógún`** (The 16 Principal King Odùs) and **`Àmọ̀lù Odù`** (The 240 Composite / Permutated Chapters of Ifá) into `api/data/yoruba_corpus_1007_NORMALIZED.json` and synchronized with `web/src/data/yoruba_master_corpus.json` and `api/data/agba_odu_ifa_256_canonical.json`.
+    - Canonical corpus count established at **1,404 canonical entities**.
+    - Full Bilateral Constellation Wiring: Connected all 240 composite chapters (`ODU_017` through `ODU_256`) with `sovereign_parent: "Àmọ̀lù Odù"` (`is_parent: False`), and all 16 Principal King Odùs (`ODU_001` through `ODU_016`) with `sovereign_parent: "Ojú Odù Méjìdínlógún"` (`is_parent: False`). Set `is_parent: True` on both `Ojú Odù Méjìdínlógún` and `Àmọ̀lù Odù`, anchoring both to `sovereign_parent: "Odù Ifá"` and root `Ifá`.
+    - Live retrieval verified: queries `"Oju Odu"` and `"Oju Odu Mejidindlogun"` return `Ojú Odù Méjìdínlógún` at Rank #1; query `"Amolu Odu"` returns `Àmọ̀lù Odù` at Rank #1 without looping or synthetic fallback.
   - **Task 2: Phase 4 Batch 5 Enrichment (25 Thin Entities)**:
     - Authored companion data vault `scripts/batch_05_data.json` and updated `scripts/batch_enrich_thin_entities.py` with curated sovereign scholarship fallback.
-    - Successfully ran `python scripts/batch_enrich_thin_entities.py --limit 25`, elevating 25 thin entities: `Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀`, `Ìwé Adú̀gbò Ẹ̀gbá`, `Èsè Ifá nínú Àṣà Yorùbá`, `Ìtàn Ìṣẹ̀dálẹ̀ Ẹ̀gbá`, `Àmalà Isu`, `Àmalà Láfún`, `Dùndú`, `Aṣẹ-Ẹ̀kọ`, `Ata-Ọlọ́`, `Gbégbé-Ọ̀bẹ`, `Ọ̀bẹ-Ìtù`, `Ọ̀pá-Ìlẹ̀kẹ̀`, `Ikoko-Aró-Ìlẹ̀kẹ̀`, `Abẹ́-Ìlẹ̀kẹ̀`, `Ẹ̀yọ̀-Ìlẹ̀kẹ̀`, `Aro-Amọ̀`, `Ikoko-Àmọ̀`, `Aba-Òfì`, `Àwọ̀n-Òfì`, `Metropolitan Museum of Art African Collection`, `Ìrókẹ́ Ifá`, `Owó-Babà`, `Òrìṣà`, `Aṣọ`, and `Ewé`.
-    - Total master entities with peer-reviewed academic citations elevated to **384**. Remaining thin entities reduced from 332 down to **307**.
+    - Successfully ran `python scripts/batch_enrich_thin_entities.py --limit 25`, elevating 25 thin entities: `Ọdún`, `Orin`, `Ilé`, `Àlọ́`, `Ìtàn`, `Ìrun`, `Obì`, `Ilà Kíkọ`, `Oúnjẹ`, and 16 composite chapters `ODU_017_Ogbè_Ọ̀yẹ̀kú` through `ODU_032_Ọ̀yẹ̀kú_Ogbè`.
+    - Total master entities with peer-reviewed academic citations elevated to **384+**. Remaining thin entities reduced from 307 down to **282**.
   - **Comprehensive Standards & QA Verification**:
-    - `python3 scripts/benchmark_sprint004.py`: **28/28 (100.0%) Top-1 Accuracy** across 1,404 entities.
-    - `npm run build`: Compiled in **896ms** (1,922 modules transformed, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **31/31 (100.0%) Top-1 Accuracy** across 1,404 entities (including all 3 dedicated Odù verification queries).
+    - `npm run build`: Compiled cleanly in **832ms** (1,922 modules transformed, 0 errors).
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
 
 
