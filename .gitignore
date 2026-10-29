@@ -240,3 +240,4 @@ CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md
 **/CORPUS_COMPREHENSIVE_DISCREPANCY_AND_DEPTH_AUDIT.md
 backups/
 .github/workflows/daily-sweep-security.yml
+.github/workflows/autonomous-council-enrichment.yml
