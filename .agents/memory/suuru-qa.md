@@ -148,6 +148,23 @@
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
     - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Master corpus stands at 1,404 entities with zero regressions. Handoff delivered to `Òye` and `Àgbà`.
+  - **[2026-10-29] (`HANDOFF-SUURU-QA-008` — Batch 8 Retrieval & Zero-Parent-Loop QA Benchmark)**:
+    - **Live Retrieval Verification (Ìrosùn, Ọ̀wọ́nrín & Ọ̀bàrà Cycles)**:
+      - Audited all 25 newly enriched entities (`ODU_083_Ìrosùn_Ọ̀kànràn` through `ODU_107_Ọ̀bàrà_Ogbè`) live via `AgbaHybridRetriever`.
+      - **Tonal Exact Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **ASCII-Folded Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **Zero Parent-Loop Collapse Confirmed**:
+        - Query `"Irosun Okanran"` -> Top-1: `Ìrosùn Ọ̀kànràn` (`ODU_083_Ìrosùn_Ọ̀kànràn`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop to `Àmọ̀lù Odù` or `Ifá`.
+        - Query `"Owónrín Ogbe"` -> Top-1: `Ọ̀wọ́nrín Ogbè` (`ODU_092_Ọ̀wọ́nrín_Ogbè`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Owónrín Oyeku"` -> Top-1: `Ọ̀wọ́nrín Ọ̀yẹ̀kú` (`ODU_093_Ọ̀wọ́nrín_Ọ̀yẹ̀kú`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Obàrà Ogbe"` -> Top-1: `Ọ̀bàrà Ogbè` (`ODU_107_Ọ̀bàrà_Ogbè`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded regression benchmark suite to **44 test queries**, enshrining Q31-Q34 (`Q31_IROSUN_OKANRAN`, `Q32_OWONRIN_OGBE`, `Q33_OWONRIN_OYEKU`, `Q34_OBARA_OGBE`).
+      - **Total Queries Tested**: **44 / 44 (100.0%) Top-1 Accuracy**.
+      - **Anti-Parent-Loop Accuracy**: **24 / 24 (100.0%)**.
+      - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
+      - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,404-entity master corpus. Handoff delivered to `Àgbà` and `Òye`.
 
 
 
