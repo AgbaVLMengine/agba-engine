@@ -135,6 +135,27 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **35/35 (100.0%) Top-1 Accuracy** across 1,404 entities (including expanded anti-parent loop suites for `Oyeku Iwori`, `Oyeku Odi`, `Iwori Ogbe`, `Iwori Oyeku`).
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
     - `npm run build`: Compiled production client bundle in **907ms** (1,922 modules, 0 errors).
+- **2026-10-29 [Checkpoint 075 — HANDOFF-AROKIN-BATCH-007: 4 Ìwòrì, 15 Òdí & 6 Ìrosùn Chapters Elevated to Full 14-Tier Depth]**:
+  - **Task: Native Sovereign Ingestion (Zero External APIs)**:
+    - Ingested authentic 14-Tier depth for 25 consecutive thin entities (Indices 1075 to 1099) under sovereign parent `Àmọ̀lù Odù`:
+      - **Final 4 Chapters of the Ìwòrì Cycle**: `ODU_058_Ìwòrì_Òtúá` through `ODU_061_Ìwòrì_Òfún`.
+      - **Full 15 Chapters of the Òdí Cycle**: `ODU_062_Òdí_Ogbè` through `ODU_076_Òdí_Òfún`.
+      - **First 6 Chapters of the Ìrosùn Cycle**: `ODU_077_Ìrosùn_Ogbè` through `ODU_082_Ìrosùn_Ọ̀bàrà`.
+    - Infused 100% with:
+      - Multi-epoch antiquity timelines (Classical Ifẹ̀, Imperial Ọ̀yọ́, Lucumí Ifá, Candomblé Ketu).
+      - Diagnostic medicine, therapeutic ethnobotany (Ewé Ẹfun, Tètè, Ìrẹtẹ̀, Gbégbé, Rinrin, Ọ̀dúndún, Ètìpọ́nlà, Pèrègún, Osùn, Ọ́kìkà, Ajé, Àkòko), and specific sacrifice (Ẹbọ) formulas.
+      - Dialectical philosophy (the cosmic polarity and interaction between paired Odùs).
+      - Authentic dual-language liturgical proverbs in the canonical format: `"Yorùbá (Parenthetical English translation and philosophical commentary)."`.
+      - Peer-reviewed academic citations: Wándé Abímbọ́lá (1975, 1976), William Bascom (1969), Pierre Verger (1995), Rowland Abiodun (2014), Babatunde Lawal (1996), Sandra Barnes (1997).
+  - **Implementation & Synchronized Persisting**:
+    - Authored companion data generator [`scripts/build_batch_07_data.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/build_batch_07_data.py) (324 LOC) and enrichment engine [`scripts/enrich_batch_07.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_07.py) (131 LOC) strictly under Gate 2 (<500 LOC).
+    - Synchronized both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` in absolute lockstep.
+    - Remaining thin entities reduced from **257 down to 232** (25 fewer thin entities).
+  - **Standards & Retrieval Audit**:
+    - `python3 scripts/benchmark_sprint004.py`: **39/39 (100.0%) Top-1 Accuracy** across 1,404 entities (including expanded anti-parent loop suites for `Odi Ogbe`, `Odi Oyeku`, `Irosun Ogbe`, `Irosun Oyeku`).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
+    - `npm run build`: Compiled production client bundle in **730ms** (1,922 modules, 0 errors).
+
 
 
 

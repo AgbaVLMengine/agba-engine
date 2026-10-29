@@ -101,6 +101,16 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q24_IWORI_OGBE", "query": "Iwori Ogbe", "expected_titles": ["Ìwòrì Ogbè", "Iwori Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     # 25. Ìwòrì Ọ̀yẹ̀kú (Batch 6 Composite Sovereign Chapter)
     {"id": "Q25_IWORI_OYEKU", "query": "Iwori Oyeku", "expected_titles": ["Ìwòrì Ọ̀yẹ̀kú", "Iwori Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 26. Òdí Ogbè (Batch 7 Composite Sovereign Chapter)
+    {"id": "Q26_ODI_OGBE", "query": "Odi Ogbe", "expected_titles": ["Òdí Ogbè", "Odi Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 27. Òdí Ọ̀yẹ̀kú (Batch 7 Composite Sovereign Chapter)
+    {"id": "Q27_ODI_OYEKU", "query": "Odi Oyeku", "expected_titles": ["Òdí Ọ̀yẹ̀kú", "Odi Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 28. Ìrosùn Ogbè (Batch 7 Composite Sovereign Chapter)
+    {"id": "Q28_IROSUN_OGBE", "query": "Irosun Ogbe", "expected_titles": ["Ìrosùn Ogbè", "Irosun Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 29. Ìrosùn Ọ̀yẹ̀kú (Batch 7 Composite Sovereign Chapter)
+    {"id": "Q29_IROSUN_OYEKU", "query": "Irosun Oyeku", "expected_titles": ["Ìrosùn Ọ̀yẹ̀kú", "Irosun Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 30. Ìwòrì Òtúá (Batch 7 Composite Sovereign Chapter)
+    {"id": "Q30_IWORI_OTUA", "query": "Iwori Otua", "expected_titles": ["Ìwòrì Òtúá", "Iwori Otua"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [

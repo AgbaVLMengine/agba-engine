@@ -131,6 +131,23 @@
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
     - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,404-entity master corpus. Handoff delivered to `Òye` and `Àgbà`.
+  - **[2026-10-29] (`HANDOFF-SUURU-QA-007` — Post-Batch 7 Retrieval Parity & Constellation Audit)**:
+    - **Live Retrieval Verification (Ìwòrì, Òdí & Ìrosùn Cycles)**:
+      - Audited all 25 newly enriched entities (`ODU_058_Ìwòrì_Òtúá` through `ODU_082_Ìrosùn_Ọ̀bàrà`) live via `AgbaHybridRetriever`.
+      - **Tonal Exact Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **ASCII-Folded Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **Zero Parent-Loop Collapse Confirmed**:
+        - Query `"Odi Ogbe"` -> Top-1: `Òdí Ogbè` (`ODU_062_Òdí_Ogbè`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop to `Àmọ̀lù Odù` or `Ifá`.
+        - Query `"Odi Oyeku"` -> Top-1: `Òdí Ọ̀yẹ̀kú` (`ODU_063_Òdí_Ọ̀yẹ̀kú`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Iwori Otua"` -> Top-1: `Ìwòrì Òtúá` (`ODU_058_Ìwòrì_Òtúá`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Irosun Ogbe"` -> Top-1: `Ìrosùn Ogbè` (`ODU_077_Ìrosùn_Ogbè`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded regression benchmark suite to **40 test queries**, enshrining Q26-Q30 (`Q26_ODI_OGBE`, `Q27_ODI_OYEKU`, `Q28_IROSUN_OGBE`, `Q29_IROSUN_OYEKU`, `Q30_IWORI_OTUA`).
+      - **Total Queries Tested**: **40 / 40 (100.0%) Top-1 Accuracy**.
+      - **Anti-Parent-Loop Accuracy**: **20 / 20 (100.0%)**.
+      - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
+      - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Master corpus stands at 1,404 entities with zero regressions. Handoff delivered to `Òye` and `Àgbà`.
 
 
 

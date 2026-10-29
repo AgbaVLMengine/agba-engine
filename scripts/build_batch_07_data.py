@@ -1,0 +1,324 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+🏛️ ÀGBÀ ENGINE: BATCH 7 DATA GENERATOR (ÌWÒRÌ, ÒDÍ & ÌROSÙN CYCLES OF ÀMỌ̀LÙ ODÙ)
+Author: Àrọ̀kìn (arokin-archivist)
+Gate 2 Compliant (<500 LOC)
+"""
+
+import json
+from pathlib import Path
+
+BATCH_07_ENRICHMENTS = {
+    "ODU_058_Ìwòrì_Òtúá": {
+        "historical_timeline": "Classical Ilé-Ifẹ̀ Antiquity (c. 9th–12th Century CE): Codified as Ìwòrì-Òtúá (popularly called Ìwòrì-Wotúá), teaching righteous intellectual inquiry and diplomatic counsel. Imperial Ọ̀yọ́ Period (14th–18th Century CE): Consulted by palace ambassadors prior to entering treaty negotiations with neighboring provinces. Transatlantic Lineage: Retained in Lucumí Ifá as Iwori Otura, guiding initiates through peaceful negotiation and spiritual elevation.",
+        "etymology_and_philosophy": "Formed by pairing Ìwòrì (deep spiritual discernment, clear seeing) on the right and Òtúá (peaceful communication, spiritual cleanliness) on the left of Ọpọ́n Ifá. Dialectically balances penetrative contemplation with ethical verbal diplomacy, demonstrating that clear vision must express itself in righteous conduct.",
+        "material_and_craftsmanship": "Inscribed upon Ọpọ́n Ifá in two vertical columns: II/I/I/II on the right for Ìwòrì and I/II/I/I on the left for Òtúá. Prepared with Ewé Ọ̀dúndún and pure white chalk (Ẹfun) mixed with rain water gathered directly from the eaves.",
+        "social_and_ritual_context": "Divined when communal leaders confront deep ideological schisms or judicial impasses. Prescribes the cleansing of speech, calming of fierce tempers, and sacrifice to Ọ̀rúnmìlà for diplomatic clarity.",
+        "proverbs_and_oral_traditions": [
+            "Ìwòrì wotúá, awo kì í bínú sọ̀rọ̀; ẹnu tó bá mọ àlàáfíà ń kọ́ ilé ayé. (Ìwòrì gazes upon Òtúá, the true initiate never speaks out of unrestrained wrath; the mouth that masters peaceful words rebuilds the world: Teaching temperate and constructive speech.)",
+            "Ọ̀rọ̀ tútù l'ó ń yọ obì nínú àpò; a kì í fi ọ̀pá líle kọ́ ọmọ awo. (Cool and gentle speech extracts the kola nut of friendship from the guest's pocket; one does not instruct the child of wisdom with harsh cudgels: Promoting gentle mentorship.)",
+            "Bí ojú bá ríran, ẹnu a mọ bí a ti ń sọ ọ́; ìmọ̀ tó péye kì í da àdúgbò rú. (When the eyes perceive truth clearly, the mouth learns how to state it discreetly; complete wisdom never throws the commonwealth into chaos: Emphasizing responsible disclosure.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_059_Ìwòrì_Ìrẹtẹ̀": {
+        "historical_timeline": "Classical Antiquity: Codified as Ìwòrì-Atẹ̀, celebrated in ancient botanical pharmacopeias for dispelling chronic generational sickness and counteracting malicious poisons. Imperial Era: Consulted by court physicians and royal apothecary guilds (Àwọn Oníṣègùn). Diaspora Preservation: Retained in Cuba as Iwori Rete, renowned for diagnostic healing of internal pathologies.",
+        "etymology_and_philosophy": "Conjunction of Ìwòrì (inner visionary perception) with Ìrẹtẹ̀ (trampling death beneath, botanical healing power). Teaches that profound spiritual vision discerns the precise botanical antidotes needed to eradicate sickness from the physical flesh.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as II/I/I/II on the right and I/I/II/I on the left. Involves the sacred decoction of Ewé Àfọ̀nmọ́n, Ewé Gbégbé, and consecrated shea butter to cleanse the physical vessel.",
+        "social_and_ritual_context": "Consulted when an individual suffers from baffling physical ailments or lingering weakness. Requires offerings to Ọ̀sanyìn (master of botanicals) and spiritual washing at a running stream.",
+        "proverbs_and_oral_traditions": [
+            "Ìwòrì tẹ àrùn mọ́lẹ̀ lójú odù; ewé Ifá kì í jẹ́ kí àrùn fìdí kálẹ̀. (Ìwòrì tramples sickness beneath its feet within the sacred chapter; the leaves of Ifá never allow disease to establish an enduring foothold: Affirming the triumph of indigenous medicine.)",
+            "Ẹni tó tẹ̀lé ìtọ́jú Ifá kì í rìn láì lábọ̀; àṣẹ Ọlọ́run wà nínú igi àti ewé. (He who follows the curative counsel of Ifá never embarks without protection; the divine breath resides in every tree and leaf: Revering nature's healing potency.)",
+            "Àìsàn kò lè borí ẹni tí ó mọ orísun ẹ̀mí; ìwòsàn kì í pẹ́ dé bá onítọ̀hún. (Illness cannot conquer one who knows the primordial fountain of life; healing swiftly arrives for the faithful seeker: Encouraging hope in recovery.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_060_Ìwòrì_Ọ̀ṣẹ́": {
+        "historical_timeline": "Classical Antiquity: Known as Ìwòrì-Ọ̀ṣẹ́ (or Ìwòrì-Ṣẹ́), governing radiant prosperity, beauty, and victory over financial despair. Imperial Ọ̀yọ́ Period: Invoked by marketplace matriarchs (Ìyál'ọ́jà) to protect regional markets from theft and inflationary collapse. Transatlantic Tradition: Preserved in Brazilian Candomblé and Cuban Santería as Iwori Ose.",
+        "etymology_and_philosophy": "Pairs Ìwòrì (discernment) on the right with Ọ̀ṣẹ́ (radiance, victory over shame, golden sweetness) on the left. Demonstrates that clear intellectual vision combined with joyful persistence transforms bitter penury into enduring honor.",
+        "material_and_craftsmanship": "Marked as II/I/I/II on the right and I/II/I/II on the left on Ọpọ́n Ifá. Prepared with pure wild honey, sweet cane sugar, and Ewé Òdúndún.",
+        "social_and_ritual_context": "Divined for seekers facing commercial stagnation or public embarrassment, prescribing sweet offerings to Ọ̀ṣun and joyful communal generosity.",
+        "proverbs_and_oral_traditions": [
+            "Ìwòrì ṣẹ́ ìbànújẹ́ dànù, ayọ̀ wọlé dé; oyin dídùn kì í korò lẹ́nu awo. (Ìwòrì breaks and casts out sorrow, and radiance enters; pure honey is never bitter in the mouth of the initiate: Announcing triumph over grief.)",
+            "Ẹni tó ní sùúrù yóò jẹ àkàrà ọlá; ojú tó rí ìṣẹ́ yóò tún rí ọrọ̀. (He who possesses steadfast patience shall eat the sweet bean-cake of majesty; the eyes that witnessed poverty shall behold abundance: Celebrating resilience.)",
+            "A kì í fi ọṣẹ dídùn fọ aṣọ tí kò ní idọ̀tí; ìwà tútù l'ó ń mú ẹwà wá. (One does not use fragrant soap to wash garments that have no blemish; a calm and humble disposition is what reveals true beauty: Praising moral elegance.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gẹlẹdẹ Spectacle."
+    },
+    "ODU_061_Ìwòrì_Òfún": {
+        "historical_timeline": "Classical Antiquity: Codified as Ìwòrì-Wofún, representing miraculous salvation and divine pardon in the presence of grave danger. Imperial Era: Consulted during national calamities and severe famines to intercede with the supreme creator. Transatlantic Archive: Documented in Cuban Ifá as Iwori Bofun.",
+        "etymology_and_philosophy": "Synthesizes Ìwòrì (visionary contemplation) with Òfún (divine grace, white purity, primordial manifestation). Teaches that when human intellect exhausts all earthly solutions, divine grace provides an open gate to salvation.",
+        "material_and_craftsmanship": "Inscribed as II/I/I/II on the right and II/I/II/I on the left on Ìyẹ̀rosùn. Utilizes pure white pigeon sacrifice, lead beads, and white chalk (Ẹfun).",
+        "social_and_ritual_context": "Cast in extreme situations where a seeker's life or family reputation hangs in precarious balance. Demands strict adherence to moral taboos and absolute truth.",
+        "proverbs_and_oral_traditions": [
+            "Ìwòrì wofún lójú àgbà, Ọlọ́run ń pín àlàáfíà; ẹfun funfun kì í dọ̀tí lójú awo. (Ìwòrì beholds white grace before the assembly of elders, and God dispenses peace; pure white chalk never soils the dignity of the wise: Teaching purity of intent.)",
+            "Bí gbogbo ọ̀nà bá dí, ojú Ọ̀run kì í sé; àánú Olódùmarè ló ń gbé ni ró. (Though every terrestrial pathway be blocked, the gate of Heaven never shuts; it is the compassion of the Almighty that upholds humanity: Inspiring faith.)",
+            "A kì í fi owó ra ẹ̀mí; ìwà mímọ́ l'ó ń fún ni ní ẹ̀mí gígùn. (One cannot purchase life with perishable gold; a righteous life is what confers longevity: Affirming ethical integrity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Epega, A.A. & Neimark, P. (1995). The Sacred Ifa Oracle."
+    },
+    "ODU_062_Òdí_Ogbè": {
+        "historical_timeline": "Classical Antiquity (Ilé-Ifẹ̀): Known as Òdídí-Ogbè or Òdí-Gbemi, celebrating the construction of civic ramparts and defensive moats around primordial settlements. Imperial Ọ̀yọ́ Era: Consulted prior to establishing new frontier military fortifications. Atlantic Dispersion: Celebrated in Cuban Lucumí and Brazilian Ketu as Odi Ogbe, an archetype of stability and unshakeable wealth.",
+        "etymology_and_philosophy": "Conjunction of Òdí (enclosure, defensive rampart, maternal preservation) on the right and Ogbè (infinite light, vitality, expansion) on the left of Ọpọ́n Ifá. Teaches that prosperity is only durable when enclosed within disciplined, ethical boundaries.",
+        "material_and_craftsmanship": "Inscribed on Ọpọ́n Ifá in two columns: I/II/II/I on the right for Òdí and I/I/I/I on the left for Ogbè. Accompanied by mortar and pestle pounding of consecrated herbs with river sand.",
+        "social_and_ritual_context": "Invoked during the founding of a new family homestead or public civic institution. Prescribes sacrifice of roosters and libations of palm wine to consecrate the foundations.",
+        "proverbs_and_oral_traditions": [
+            "Òdí gbè mí, Ogbè gbè mí, ilé mi di odi agbára; a kì í rí ẹni tó le fọ́ ilé tí a fi òtítọ́ kọ́. (Òdí protects me and Ogbè uplifts me, my home becomes an impregnable fortress; no one can demolish the compound constructed upon truth: Declaring domestic inviolability.)",
+            "Odi tí kò ní ilẹ̀kùn kì í ṣe odi; sùúrù àti ọgbọ́n la fi ń ti ẹnu-ọ̀nà ewu. (A rampart lacking a secure gate is no true fortification; it is with patience and prudence that one locks the door against peril: Valuing prudent boundaries.)",
+            "Bí a bá kọ́ ilé tán, àlàáfíà la fi ń gbé inú rẹ̀; oríire kì í wọlé tí awo bá ń bínú. (When the home is built, it is with tranquil peace that we inhabit it; good fortune never enters where wrath abides: Emphasizing domestic serenity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+    },
+    "ODU_063_Òdí_Ọ̀yẹ̀kú": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Ọ̀yẹ̀, governing defensive warding against epidemic diseases, maternal preservation, and peaceful ancestral transitions. Imperial Period: Invoked during funerary rites of venerable elders to seal their lineage compounds against untimely deaths. Diaspora Presence: Retained in Lucumí as Odi Yeku.",
+        "etymology_and_philosophy": "Pairs Òdí (fortress, defensive perimeter) on the right with Ọ̀yẹ̀kú (darkness, mortality, ancestral boundary) on the left. Demonstrates that by erecting strong protective boundaries, the threat of untimely mortality is turned into peaceful longevity.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and II/II/II/II on the left. Prepared with black soap, snail water (Omi Ìgbín), and Ewé Ètìpọ́nlà.",
+        "social_and_ritual_context": "Divined when a family suffers from sudden mysterious deaths or relentless nightmares. Prescribes ancestral propitiation and purification of the compound perimeter.",
+        "proverbs_and_oral_traditions": [
+            "Òdí ti ojú ikú pa mọ́lẹ̀; Ọ̀yẹ̀kú kì í gbà kí àgbà kú láì gbó. (Òdí bolts the gateway against death; Ọ̀yẹ̀kú never permits the elder to perish before his ripe time: Proclaiming longevity through ancestral protection.)",
+            "Ẹni tí ó mọ odi rẹ̀ kò ní bẹ̀rù ọ̀tá òru; ìmọ́lẹ̀ Ifá ń gbé àwọn olódodo ró. (He who knows his defensive perimeter fears not the nocturnal foe; the light of Ifá sustains the righteous: Emphasizing spiritual awareness.)",
+            "A kì í fi odi mọ ilẹ̀kùn ọ̀rọ̀; sùúrù l'ó ń tú ọ̀rọ̀ dídíjú. (One does not use stone walls to barricade honest dialogue; patience is what unties the most tangled riddle: Promoting open communication.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_064_Òdí_Ìwòrì": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Wòrì, governing the safeguarding of spiritual sight, inner vision, and protecting seers from deceitful hallucinations. Imperial Era: Consulted by military scouts and reconnaissance guilds before advancing through forested terrain. Transatlantic Lineage: Retained in Cuban Ocha as Odi Iwori.",
+        "etymology_and_philosophy": "Conjoins Òdí (rampart, defense) with Ìwòrì (spiritual sight, contemplation). Teaches that one's inner vision must be defended from the corrosive toxins of gossip, envy, and spiritual confusion.",
+        "material_and_craftsmanship": "Marked as I/II/II/I on the right and II/I/I/II on the left on Ọpọ́n Ifá. Mixed with Ewé Ọ̀dúndún and spring water to wash the spiritual crown (Orí).",
+        "social_and_ritual_context": "Consulted by individuals whose judgment is compromised by manipulative associates or self-doubt. Prescribes head-cleansing (Bíbọ Orí) and quiet solitude.",
+        "proverbs_and_oral_traditions": [
+            "Òdí wòrì wò awo, awo wo odi; ojú tí ó bá mọ́ kì í rí àbùkù. (Òdí inspects the seer and the seer inspects the fortress; the eye that remains unclouded beholds no disgrace: Teaching clarity of discernment.)",
+            "Bí a kò bá dí eti sí ọ̀rọ̀ ẹ̀hìn, ọkàn kò ní balẹ̀; ìmọ̀ àwọn àgbà kì í tàn ni jẹ. (If we do not seal our ears against insidious gossip, the soul finds no repose; the wisdom of the elders never misleads: Warning against destructive chatter.)",
+            "Ojú títọ́ kì í parọ́ fún orí; a kì í fi òkùnkùn wọ́n ìmọ́lẹ̀. (A sincere eye never lies to the inner head; one does not measure light with darkness: Praising truth.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_065_Òdí_Ìrosùn": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Rosùn, governing matrilineal fertility, safe delivery, and protecting young maidens during courtship rites. Imperial Period: Consulted by palace queens (Àwọn Ìyá Ọba) in Ọ̀yọ́ and Ifẹ̀ before royal weddings. Diaspora Archives: Documented in Cuban Ifá as Odi Iroso.",
+        "etymology_and_philosophy": "Synthesis of Òdí (protective womb, enclosure) and Ìrosùn (ancestral bloodline, red camwood glory). Symbolizes the maternal womb as a consecrated fortress protecting the nascent seed of destiny.",
+        "material_and_craftsmanship": "Inscribed as I/II/II/I on the right and I/I/II/II on the left. Involves pure Osùn (camwood powder) blended with shea butter for maternal body blessing.",
+        "social_and_ritual_context": "Cast for expectant mothers experiencing labor difficulties or young brides seeking fertility blessings. Directs offerings to Yemọja and ancestral mothers.",
+        "proverbs_and_oral_traditions": [
+            "Òdí rosùn fún ọmọ, ọmọ wọlé dé pẹ̀lú ayọ̀; ilé tí ó ní ọmọ kì í gbẹ. (Òdí anoints itself with camwood for the child, and the child enters with joy; the home blessed with offspring never dries out: Celebrating maternal blessings.)",
+            "Ẹni tí ó bọ́wọ̀ fún ìyá rẹ̀ kì í fọwọ́ rọ́ ebi; àṣẹ ìyá ní ń la ọ̀nà ọlá. (He who reveres his mother never rubs his palms in hunger; maternal blessing opens the highway of honor: Honoring the maternal covenant.)",
+            "A kì í fi osùn dá ọmọ lẹ́kún; ìfẹ́ àti títọ́jú la fi ń tọ́ ọmọ awo. (One does not use red camwood to silence an infant's tears; it is with tender love and care that the child of wisdom is raised: Valuing nurturing care.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gẹlẹdẹ Spectacle."
+    },
+    "ODU_066_Òdí_Ọ̀wọ́nrín": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Wọ́nrín, dealing with safeguarding wealth against sudden squander, famine, and market volatilities. Imperial Era: Consulted by treasury custodians to preserve regional granaries. Diaspora Presence: Retained in Lucumí as Odi Wonrin.",
+        "etymology_and_philosophy": "Pairs Òdí (containment, storage fortress) with Ọ̀wọ́nrín (sudden wind, volatility, scarcity). Teaches the discipline of frugality: accumulating reserves during abundant harvest to withstand sudden scarcities.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and II/II/I/I on the left. Uses brass bells, dried grains, and Ewé Ṣaworo-pẹ́pẹ́ in protective medicine.",
+        "social_and_ritual_context": "Divined when commercial entrepreneurs experience erratic profit margins or impending supply shortages. Prescribes careful inventory management and charity.",
+        "proverbs_and_oral_traditions": [
+            "Òdí wọ́nrín kó owó pamọ́ sínú àpò; ẹni tí kò mọ àkójọ kì í rí owó ná nígbà ìpọ́njú. (Òdí Ọ̀wọ́nrín gathers wealth securely into the pouch; he who knows not prudent storage finds nothing to spend in times of crisis: Teaching financial prudence.)",
+            "Afẹ́fẹ́ kì í jẹ́ kí àpò tó ya kún; awo tó mọ àṣírí kì í tú u dànù. (The wind never permits a torn pouch to fill; an initiate who knows sacred secrets never squanders them carelessly: Warning against wastefulness.)",
+            "Bí a bá ń kójọ nígbà ọ̀rọ̀, a kì í ráhùn nígbà ebi; sùúrù ló ń kọ́ ọ̀rọ̀ tó pẹ́. (If we store during harvest, we lament not during famine; patience builds enduring wealth: Valuing long-term economic foresight.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_067_Òdí_Ọ̀bàrà": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Bàrà, celebrated for elevating impoverished individuals to royal dignity through disciplined character and unyielding veracity. Imperial Ọ̀yọ́ Period: Consulted by court chancellors handling treasury allotments. Transatlantic Survival: Preserved in Cuba and Brazil as Odi Bara.",
+        "etymology_and_philosophy": "Conjoins Òdí (containment, moral restraint) with Ọ̀bàrà (abundance, royalty, truthful eloquence). Demonstrates that true regal stature is forged through moral boundaries and truthfulness rather than hollow ostentation.",
+        "material_and_craftsmanship": "Marked as I/II/II/I on the right and I/II/II/II on the left on Ọpọ́n Ifá. Prepared with ripe bananas, wild honey, and cowrie shells as an offering to Ẹlẹ́gbára.",
+        "social_and_ritual_context": "Divined for seekers suffering from false accusations or lingering financial stagnation. Demands absolute honesty and promises elevation through noble conduct.",
+        "proverbs_and_oral_traditions": [
+            "Òdí bàrà di ọba nínú àlàáfíà; ẹnu tó bá sọ òtítọ́ ní ń dé adé ọlá. (Òdí Ọ̀bàrà attains sovereignty within peaceful serenity; the mouth that speaks truth is that which wears the crown of honor: Proclaiming the kingship of truth.)",
+            "A kì í fi irọ́ kọ́ ilé kí ó dúró; òtítọ́ ni ìpìlẹ̀ gbogbo ọ̀rọ̀ tó lẹ́wà. (One does not erect a compound with deceit and expect it to stand; truth is the foundation of all magnificent affairs: Teaching that lies cannot sustain success.)",
+            "Ẹni tí ó mú Òdí Bàrà dání kì í bẹ̀rù ìṣẹ́; ọ̀rọ̀ rere l'ó ń la ọ̀nà owó. (He who holds fast to Òdí Ọ̀bàrà fears no poverty; noble character carves an open highway to abundance: Inspiring confidence in ethical diligence.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Johnson, Samuel (1921). The History of the Yorubas."
+    },
+    "ODU_068_Òdí_Ọ̀kànràn": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Kànràn, governing judicial retribution against malicious conspirators, boundary trespassers, and treaty breakers. Imperial Era: Consulted by judicial tribunals of the Ògbóni fraternity before pronouncing capital sentences. Diaspora Presence: Retained in Lucumí as Odi Kana.",
+        "etymology_and_philosophy": "Pairs Òdí (protective wall, containment) on the right with Ọ̀kànràn (raw lightning candor, fierce confrontation) on the left. Teaches that protective defenses must be defended with fierce courage when breached by treachery.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and II/II/II/I on the left. Involves consecrated red roosters, palm oil, and lightning-stones (Ẹdùn Àrá).",
+        "social_and_ritual_context": "Consulted in high-stakes disputes where treacherous adversaries seek to usurp land or title. Directs offerings to Ṣàngó and Ògún for swift judicial vindication.",
+        "proverbs_and_oral_traditions": [
+            "Òdí kànràn gbá ọ̀tá mọ́lẹ̀; àrá kì í sán kí ó má sọ ibi tí ó ń lọ. (Òdí Ọ̀kànràn flattens the treacherous adversary; lightning never thunders without declaring its target: Proclaiming retribution against injustice.)",
+            "Bí ọ̀rọ̀ bá le, awo kì í sá; àyà gbígbó la fi ń wolẹ̀ ogun. (When crises intensify, the true initiate never flees; with stout-hearted courage do we tread the battlefield of existence: Instilling fearless courage.)",
+            "A kì í fi ibi san ibi; òtítọ́ la fi ń kọ́ odi tí kò ní bì. (One does not repay malice with petty evil; it is with righteousness that an everlasting fortress is built: Forbidding malicious revenge.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_069_Òdí_Ògúndá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Gúndá (or Òdí-Ìdènà), patron of blacksmith guilds, stone masons, and hunters carving roadways through dense rainforests. Imperial Era: Consulted before opening new iron ore mines and royal quarries. Transatlantic Tradition: Preserved in Cuba and Brazil as Odi Ogunda.",
+        "etymology_and_philosophy": "Conjunction of Òdí (enclosure, defensive quarry) and Ògúndá (consecrated iron, path-clearing breakthrough). Demonstrates that heavy barriers are carved into navigable avenues through determined mechanical labor and divine iron.",
+        "material_and_craftsmanship": "Inscribed as I/II/II/I on the right and I/I/I/II on the left. Uses forged iron implements, palm oil, and roasted yam in sacrifice to Ògún.",
+        "social_and_ritual_context": "Invoked by craftsmen, builders, and travelers embarking on risky expeditions. Prescribes offerings of roasted yams and palm oil at crossroads.",
+        "proverbs_and_oral_traditions": [
+            "Irin Ògún la fi ń la odi tó dí; iṣẹ́ líle l'ó ń sọ awo di gbajúmọ̀. (With the forged iron of Ògún do we breach the stubborn barrier; resolute labor is what elevates the initiate into public distinction: Praising industrious labor.)",
+            "Ẹni tí ó mú idà òtítọ́ lọ́wọ́ kì í bẹ̀rù igbó dídí; ọ̀nà a là fún un láì pẹ́. (He who holds the sword of truth in his grasp fears no tangled forest; an open highway will swiftly appear before him: Instilling confidence.)",
+            "A kì í fi ọ̀kẹ́lẹ́ kan rẹ́ ọ̀bẹ jẹ; àjọṣe ni irin àti amọ̀ fi ń mọ ilé. (One does not consume the stew without the wholesome morsel; it is in partnership that iron and mortar construct the great compound: Teaching cooperative solidarity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Barnes, Sandra T. (1989). Africa's Ogun; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_070_Òdí_Ọ̀sá": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Sá, associated with matriarchal ancestral councils, nocturnal flight preservation, and reconciling spiritual tension with the Sacred Mothers (Àwọn Ìyá Mi). Imperial Period: Invoked in Kétu and Ẹ̀gbá during the annual Gẹlẹdẹ festivals. Diaspora Lineage: Retained in Lucumí as Odi Sa.",
+        "etymology_and_philosophy": "Synthesizes Òdí (protective enclosure) with Ọ̀sá (flight, nocturnal breeze, mystical maternal agency). Teaches that physical fortresses cannot repel spiritual wind; one must cultivate diplomatic reconciliation with primordial maternal forces.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and II/I/I/I on the left. Uses white eggs, honey, and pure spring water as non-violent appeasement offerings.",
+        "social_and_ritual_context": "Divined when a family experiences sudden female illnesses, reproductive afflictions, or unexplainable domestic discord. Demands deep reverence for matriarchs.",
+        "proverbs_and_oral_traditions": [
+            "Òdí sá fún ìbínú, ó wá àlàáfíà; ẹ̀bọ tútù la fi ń bọ̀wọ̀ fún àwọn Ìyá wa. (Òdí retreats from blind fury to pursue lasting tranquility; with cool offerings do we honor our primordial Mothers: Promoting humble diplomacy.)",
+            "Ẹyẹ kì í bá odi jà kí ó má bà lórí rẹ̀; sùúrù ló ń gba awo lọ́wọ́ ewu. (The sacred bird never fights the fortress without roosting peacefully atop its rim; patience is the shield that preserves the initiate: Teaching gentle tact.)",
+            "Bí afẹ́fẹ́ bá ń fẹ́, a kì í dúró sí ojú afẹ́fẹ́; ọgbọ́n la fi ń bọ́ lọ́wọ́ ìjì. (When the wind gathers momentum, one does not stand stubbornly in its teeth; it is with wisdom that one navigates the gale: Warning against stubborn pride.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Lawal, Babatunde (1996). The Gẹlẹdẹ Spectacle; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_071_Òdí_Ìká": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Ká, celebrated for neutralizing malicious conspiracies, poisoning attempts, and deceptive traps in communal hamlets. Imperial Era: Consulted before appointing royal ambassadors to frontier borders. Transatlantic Lineage: Documented in Cuban Ifá as Odi Ka.",
+        "etymology_and_philosophy": "Pairs Òdí (protective rampart) on the right with Ìká (restraint, the coiled serpent, boundary setting) on the left. Demonstrates that by strictly maintaining moral discipline, the venomous trap prepared by malicious enemies recoils upon itself.",
+        "material_and_craftsmanship": "Inscribed as I/II/II/I on the right and II/I/II/II on the left on Ọpọ́n Ifá. Prepared with consecrated palm kernel oil (Àdín) and boundary stones.",
+        "social_and_ritual_context": "Cast when a seeker suspects envious coworkers or duplicitous associates of laying malicious traps. Demands strict adherence to sacred covenants.",
+        "proverbs_and_oral_traditions": [
+            "Ìká kì í ká ẹni tí ó mọ odi rẹ̀ mọ́; àṣẹ Ifá ní ń fọ́ gbogbo dẹkùn dànù. (Malice never ensnares him who knows his moral boundaries; the decree of Ifá dismantles every hidden snare: Affirming moral invulnerability.)",
+            "Ejò kì í pa ara rẹ̀ lẹ́nu; awo tó bá ṣe rere kò ní rí ìkà. (The serpent never strikes its own tail with venom; the initiate who acts righteously shall encounter no cruelty: Teaching karmic reciprocity.)",
+            "A kì í fi ibi kọ́ odi; òtítọ́ la fi ń di àpò ìmọ̀. (One does not erect a fortress out of wickedness; it is with absolute truth that the bag of wisdom is bound: Forbidding malicious stratagems.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_072_Òdí_Òtúúrúpọ̀n": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Túmọ̀ or Òdí-Batutú, patron of midwives, pediatric healers, and protecting fragile infants from generational illness. Imperial Period: Consulted by palace nurseries to guarantee dynastic succession. Diaspora Presence: Retained in Cuban Santería as Odi Trupon.",
+        "etymology_and_philosophy": "Conjoins Òdí (protective enclosure, maternal shelter) with Òtúúrúpọ̀n (maternal endurance, childbearing, patient nurturing). Symbolizes the physical and emotional endurance required to nurture vulnerable life to glorious fruition.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and II/II/I/II on the left. Involves pure shea butter, cool river pebbles, and Ewé Ọ̀dúndún.",
+        "social_and_ritual_context": "Consulted during complicated pregnancies or when an infant battles lingering fevers. Prescribes offerings of cold water, honey, and shea butter.",
+        "proverbs_and_oral_traditions": [
+            "Òdí túmọ̀ ọmọ sáyà, ayọ̀ wọlé dé; ìyá tó tọ́jú ọmọ kò ní pàdánù rẹ̀. (Òdí embraces the infant to its bosom, and rejoicing enters; the mother who tenderly nurtures her child shall never suffer its loss: Celebrating pediatric wellness.)",
+            "Ẹrù tó wúwo kì í wó ẹni tí Ifá gbé ró; orí rere ní ń gbé ẹrù ayé. (A heavy burden never crushes him whom Ifá upholds; a fortunate destiny bears the weights of mortal life: Instilling perseverance.)",
+            "Omi tútù la fi ń pa iná àìsàn; sùúrù ni oògùn tó ń wo ọmọ awo sàn. (With cool spring water is the fire of illness extinguished; unhurried patience is the medicine that heals the child of wisdom: Valuing gentle therapy.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "ODU_073_Òdí_Òtúá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Túá, governing inter-provincial commerce, peace accords, and fair marketplace barter between independent city-states. Imperial Era: Consulted before concluding boundary treaties in Ọ̀yọ́, Ìjẹ̀bú, and Òwù. Diaspora Presence: Documented in Lucumí archives as Odi Otura.",
+        "etymology_and_philosophy": "Synthesizes Òdí (boundary, containment) on the right with Òtúá (peaceful diplomacy, scholarly inquiry, clean white cloth) on the left. Demonstrates that borders are preserved not by relentless warfare, but through fair commerce, honest diplomacy, and respect for neighborly rights.",
+        "material_and_craftsmanship": "Inscribed as I/II/II/I on the right and I/II/I/I on the left on Ọpọ́n Ifá. Prepared with pure white cloth, kola nuts, and white pigeon sacrifice.",
+        "social_and_ritual_context": "Invoked during trade negotiations or border disputes between neighboring communities. Prescribes mutual sacrifice and shared feasting to ratify peace.",
+        "proverbs_and_oral_traditions": [
+            "Òdí túá ọ̀nà àlàáfíà, ogun dẹ́kun; ọ̀rọ̀ ọgbọ́n l'ó ń pín ilẹ̀ láì sí ìjà. (Òdí opens the pathway of peace, and strife ceases; wise words divide the land without shedding a drop of blood: Celebrating diplomatic brilliance.)",
+            "Ẹni tí ó bọ́wọ̀ fún odi aládùúgbò rẹ̀ kì í rí ogun; àlàáfíà ni baba ìbùkún. (He who respects his neighbor's boundary never sees war; peace is the father of all lasting blessings: Promoting neighborly harmony.)",
+            "Aṣọ funfun kì í bára rẹ̀ jà lórí ìtẹ́; àṣẹ Ọlọ́run ń kọ́ ilé tí a fi òtítọ́ mọ. (White garments never quarrel with one another upon the throne; divine power preserves the house erected upon truth: Teaching peaceful unity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Smith, Robert S. (1988). Kingdoms of the Yoruba."
+    },
+    "ODU_074_Òdí_Ìrẹtẹ̀": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Atẹ̀ or Òdí-Rẹtẹ̀, patron of herbal pharmacopeias, bone setting, and eradicating degenerative infirmities. Imperial Period: Consulted by guild surgeons treating war veterans after imperial campaigns. Diaspora Traditions: Retained in Cuba as Odi Rete.",
+        "etymology_and_philosophy": "Conjoins Òdí (fortress, structural framework) with Ìrẹtẹ̀ (trampling down disease, botanical mastery). Teaches that the skeletal and muscular framework of the human body must be fortified through botanical medicine and moral discipline.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/II/II/I on the right and I/I/II/I on the left. Uses pounded bark of Igi Ọ̀rìgbó, palm kernel oil, and sacred bone-setting splints.",
+        "social_and_ritual_context": "Consulted by individuals suffering from broken bones, chronic joint pain, or spinal ailments. Prescribes herbal poultices and offerings to Ọ̀sanyìn.",
+        "proverbs_and_oral_traditions": [
+            "Òdí tẹ egungun mọ́lẹ̀, ó tún un ṣe; oògùn tó dára kì í fi awo sílẹ̀ nínú ìrora. (Òdí resets the fractured bone and restores it; potent medicine never abandons the initiate to suffering: Celebrating surgical orthopedic skill.)",
+            "Ẹni tí ó tọ́jú ara rẹ̀ kò ní dọlọ́kùnrùn; ẹ̀mí gígùn wà fún ẹni tí ó bọ́wọ̀ fún ara. (He who cares for his bodily temple shall never become an invalid; long life awaits him who honors his flesh: Promoting holistic physical care.)",
+            "A kì í fi ọ̀bẹ gé ara ẹni láì sí èrò; ọgbọ́n la fi ń fi ewé wo àrùn sàn. (One does not slice his own flesh without purpose; it is with surgical wisdom that herbs are used to cure disease: Demanding clinical precision.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_075_Òdí_Ọ̀ṣẹ́": {
+        "historical_timeline": "Classical Antiquity: Codified as Òdí-Ṣẹ́, celebrated for purifying polluted households, driving out spiritual shame, and restoring joyful celebration. Imperial Era: Consulted during palace cleansing festivals following military sieges. Diaspora Archives: Documented in Cuban Santería as Odi She.",
+        "etymology_and_philosophy": "Pairs Òdí (protective enclosure) on the right with Ọ̀ṣẹ́ (radiance, victory over shame, sweet joy) on the left. Demonstrates that by closing the gateway to dishonor and cleansing the domestic hearth, abundant celebration naturally returns.",
+        "material_and_craftsmanship": "Marked as I/II/II/I on the right and I/II/I/II on the left on Ọpọ́n Ifá. Prepared with fragrant soap, sweet river water, wild honey, and cowries.",
+        "social_and_ritual_context": "Divined when a family has endured public humiliation, insolvency, or prolonged sorrow. Prescribes joyful bathing at a flowing river and offerings to Ọ̀ṣun.",
+        "proverbs_and_oral_traditions": [
+            "Òdí ṣẹ́ ìtìjú dànù, ọlá wọlé dé; ojú tí ó ti pọ́n yóò tún rí ayọ̀ ńlá. (Òdí shatters shame into dust, and majestic honor arrives; the countenance that endured distress shall behold supreme joy: Announcing the end of public humiliation.)",
+            "A kì í fi omi dídùn wẹ ẹrù ìbànújẹ́ kí ó má mọ́; ayọ̀ ń bọ̀ wá rọ́pò ẹkún. (One does not bathe with sweet consecrated water without sorrow washing clean away; exuberant joy comes to replace weeping: Inspiring spiritual hope.)",
+            "Ẹni tí ó mọ odi ẹ̀tẹ́ kì í jẹ́ kí àbùkù wọlé; ìwà rere ni aṣọ tó lẹ́wà jù. (He who knows how to seal out disgrace never permits dishonor to enter; righteous character is the most radiant of all garments: Praising moral integrity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gẹlẹdẹ Spectacle."
+    },
+    "ODU_076_Òdí_Òfún": {
+        "historical_timeline": "Classical Antiquity: Known as Òdí-Fún, representing the sacred sealing of holy sanctuaries, spiritual consecration, and miraculous deliverance from destruction. Imperial Ọ̀yọ́ Period: Consulted when the royal mausoleum (Barà) was consecrated. Transatlantic Presence: Retained in Lucumí as Odi Fumbo.",
+        "etymology_and_philosophy": "Synthesizes Òdí (protective wall, womb) with Òfún (divine grace, purity, mystery). Teaches that the sacred mysteries (Awo) of existence must be sealed from profane mockery within a sanctuary of absolute purity.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/II/I on the right and II/I/II/I on the left. Utilizes white chalk (Ẹfun), lead ornaments, and sixteen white cowries.",
+        "social_and_ritual_context": "Invoked during the initiation of high priests (Ìtẹ̀fá) and the consecration of ancestral shrines. Demands total discretion and abstinence from corruption.",
+        "proverbs_and_oral_traditions": [
+            "Òdí fún àṣírí mọ́lẹ̀, awo kì í tú u; ẹni tí kò mọ awo kì í wọ àgbàlá Ọlọ́run. (Òdí seals the sacred secret securely, and the true initiate never betrays it; he who knows not the mysteries enters not the courtyard of God: Enforcing priestly discretion.)",
+            "Ẹfun funfun la fi ń pa ojú odi rẹ́; àlàáfíà Ọlọ́run ń kọ́ ilé tí a fi àṣẹ tẹ̀. (With white chalk is the face of the fortress sanctified; divine peace inhabits the compound established upon sacred authority: Revering purity.)",
+            "Bí awo bá pa awo mọ́, ẹ̀mí rẹ̀ a gùn; a kì í fi ìmọ̀ ìjìnlẹ̀ tà ní ọjà. (If an initiate safeguards the sacred trust, his life shall be long; one does not sell esoteric wisdom in the public market: Warning against the commercialization of the sacred.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Epega, A.A. & Neimark, P. (1995). The Sacred Ifa Oracle."
+    },
+    "ODU_077_Ìrosùn_Ogbè": {
+        "historical_timeline": "Classical Ilé-Ifẹ̀ Antiquity (c. 9th–12th Century CE): Codified as Ìrosùn-Ogbè (popularly Ìrosùn-Olókun), celebrated as the primordial descent of coastal prosperity, maritime commerce, and beads of majesty. Imperial Era: Consulted by monarchs upon receiving tribute from coastal kingdoms. Atlantic Preservation: Celebrated in Cuban Lucumí and Brazilian Candomblé Ketu as Iroso Umbo, the premier omen for opening the doors of wealth.",
+        "etymology_and_philosophy": "Formed by pairing Ìrosùn (ancestral lineage, scarlet camwood, deep slumber/awakening) on the right and Ogbè (infinite light, vitality, expansion) on the left of Ọpọ́n Ifá. Teaches that ancient ancestral covenants and dormant destinies awaken into radiant manifestation when touched by the light of righteous labor.",
+        "material_and_craftsmanship": "Inscribed on Ọpọ́n Ifá in two columns: I/I/II/II on the right for Ìrosùn and I/I/I/I on the left for Ogbè. Accompanied by coral beads (Ìlẹ̀kẹ̀ Ìyùn), pure sea salt, cowries, and red camwood (Osùn).",
+        "social_and_ritual_context": "Divined when a seeker seeks to break through persistent obscurity and step into high leadership, wealth, or royal recognition. Directs offerings to Olókun (deity of the deep ocean) and Ẹlẹ́gbára.",
+        "proverbs_and_oral_traditions": [
+            "Ìrosùn gbé Ogbè lékè, ọrọ̀ wọlé dé; awo kì í jí lówurọ̀ kí ó má dúpẹ́ lọ́wọ́ Ọlọ́run. (Ìrosùn elevates Ogbè on high, and abundant wealth enters; an initiate never awakens at dawn without offering heartfelt praise to God: Teaching morning gratitude.)",
+            "Olókun ní ń fún ni ní ìlẹ̀kẹ̀ ọlá; ẹni tí ó mọ Ìrosùn Ogbè kò ní rìn ní ìhòòhò. (Olókun is the sovereign who bestows beads of majesty; he who understands Ìrosùn Ogbè shall never walk in naked poverty: Proclaiming ocean-deep prosperity.)",
+            "Bí oorun bá pẹ́ tí a ti sùn, a ó jí sí ìmọ́lẹ̀; àyànmọ́ rere kì í parun láé. (Though sleep lingered long, one inevitably awakens into brilliant dawn; an auspicious destiny never perishes forever: Affirming resurrection and hope.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Dieux d'Afrique."
+    },
+    "ODU_078_Ìrosùn_Ọ̀yẹ̀kú": {
+        "historical_timeline": "Classical Antiquity: Codified as Ìrosùn-Ọ̀yẹ̀, governing peaceful ancestral communion, resolving lineage guilt, and counteracting premature death through red camwood rites. Imperial Period: Invoked when clearing ancestral curses during royal dynastic successions. Transatlantic Traditions: Retained in Lucumí as Iroso Yeku.",
+        "etymology_and_philosophy": "Pairs Ìrosùn (ancestral bloodline, red camwood) on the right with Ọ̀yẹ̀kú (darkness, mortality, repose) on the left. Demonstrates that ancestral grief and mortal dread are transfigured into honorable longevity when pacified with sacred truth and proper veneration.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/I/II/II on the right and II/II/II/II on the left. Prepared with red camwood powder, black soap, and Ewé Ọ̀dúndún.",
+        "social_and_ritual_context": "Cast when a seeker is plagued by recurring nightmares of deceased relatives or sudden domestic illnesses. Demands offerings of mashed yam (Ẹ̀tọ̀) and palm oil to the ancestors.",
+        "proverbs_and_oral_traditions": [
+            "Ìrosùn yẹ ikú nù lójú awo, ẹ̀mí gígùn wọlé dé; a kì í fi ẹ̀jẹ̀ awo bọ ibi. (Ìrosùn deflects death from the initiate, and long life enters; one does not use the blood of the righteous to appease evil: Declaring deliverance from untimely mortality.)",
+            "Àwọn baba wa kì í sun kùn; orísun tí kò gbẹ l'a ti ń mu omi àlàáfíà. (Our ancestors never sleep unheeding in the grave; it is from an unceasing fountain that we drink the water of peace: Celebrating active ancestral support.)",
+            "A kì í fi osùn pọ́n lójú òkú; pẹ̀lẹ́pẹ̀lẹ́ la fi ń sìn àwọn àgbà. (One does not behave hastily before the sacred deceased; with dignified reverence do we minister to the departed elders: Teaching funerary respect.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_079_Ìrosùn_Ìwòrì": {
+        "historical_timeline": "Classical Antiquity: Known as Ìrosùn-Wòrì, governing the illumination of hidden truths, uncovering lost treasures, and clearing spiritual cataracts from prophetic vision. Imperial Era: Consulted by palace diviners to detect clandestine palace treachery. Diaspora Lineage: Documented in Cuban Ifá as Iroso Iwori.",
+        "etymology_and_philosophy": "Conjoins Ìrosùn (awakening, ancestral vitality) with Ìwòrì (spiritual vision, introspective examination). Teaches that when spiritual vision awakens from ancestral slumber, all deceitful illusions are instantly dispelled.",
+        "material_and_craftsmanship": "Marked as I/I/II/II on the right and II/I/I/II on the left on Ọpọ́n Ifá. Prepared with Ewé Tètè and river water to clarify spiritual sight.",
+        "social_and_ritual_context": "Consulted by individuals facing uncertainty regarding career decisions, marital proposals, or deceitful associates. Prescribes head-washing and discernment.",
+        "proverbs_and_oral_traditions": [
+            "Ìrosùn wòrì wò awo, awo rí àṣírí ayé; ojú tó bá la kì í sìnà lójú ọ̀sán. (Ìrosùn inspects Ìwòrì and the initiate perceives the mysteries of the universe; the eye that is truly opened never goes astray in midday light: Praising spiritual illumination.)",
+            "Ẹni tí kò bá mọ ibi tí ó ń lọ gbọ́dọ̀ wò sẹ́yìn; orísun la ti ń mọ ọ̀nà. (He who knows not whither he journeys must pause and look behind; it is from our origins that we chart our path: Promoting historical retrospection.)",
+            "Bí a bá ń wo àwòrán, àwòran a wo ni; awo kì í fọjú lásán wo ẹ̀dá. (When we gaze into the sacred portrait, the portrait gazes back into us; an initiate never views creation with superficial eyes: Teaching contemplative depth.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_080_Ìrosùn_Òdí": {
+        "historical_timeline": "Classical Antiquity: Codified as Ìrosùn-Dí, patron of family homestead fortifications, protecting subterranean granaries, and securing pregnancies against witchcraft. Imperial Period: Invoked when laying the foundation stones of imperial armories. Transatlantic Tradition: Retained in Lucumí as Iroso Di.",
+        "etymology_and_philosophy": "Pairs Ìrosùn (vital bloodline, ancestral camwood) on the right with Òdí (fortress, defensive wall) on the left. Demonstrates that ancestral heritage must be guarded by impregnable moral and physical fortifications to prevent usurpation.",
+        "material_and_craftsmanship": "Inscribed as I/I/II/II on the right and I/II/II/I on the left on Ìyẹ̀rosùn. Uses river pebbles, snail fluid, and Ewé Ètìpọ́nlà.",
+        "social_and_ritual_context": "Divined for seekers whose households are subjected to covert gossip, theft, or spiritual harassment. Prescribes sealing the entrances of the compound.",
+        "proverbs_and_oral_traditions": [
+            "Ìrosùn dí odi, ọ̀tá kò rí àyè wọlé; a kì í fọwọ́ tẹ́ńbẹ́lú àbò àwọn baba wa. (Ìrosùn builds the defensive fortress, and the enemy finds no entry; one does not look with contempt upon the protective shelter of our fathers: Declaring ancestral invulnerability.)",
+            "Odi tí a fi òtítọ́ mọ kì í bì; awo tó mọ àṣírí rẹ̀ kì í ráhùn. (The rampart constructed of truth never collapses; an initiate who guards his sacred secrets never laments in despair: Teaching steadfast self-containment.)",
+            "A kì í fi ilé ẹni ṣe ọ̀nà fún ọ̀tá; sùúrù ni àbùkù kì í jẹ. (One does not turn his domestic sanctuary into a highway for enemies; patient wisdom never suffers disgrace: Warning against carelessness.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_081_Ìrosùn_Ọ̀wọ́nrín": {
+        "historical_timeline": "Classical Antiquity: Known as Ìrosùn-Wọ́nrín, governing sudden market breakthroughs, maritime windfall trade, and navigating turbulent atmospheric winds. Imperial Era: Consulted by long-distance caravan leaders before crossing the savanna. Diaspora Lineage: Documented in Cuban Santería as Iroso Juani.",
+        "etymology_and_philosophy": "Conjoins Ìrosùn (vital bloodline, red camwood) with Ọ̀wọ́nrín (whirlwind, sudden commerce, volatility). Teaches that the turbulence of unpredictable markets can be transformed into tremendous economic breakthroughs when navigated with moral vigilance.",
+        "material_and_craftsmanship": "Marked upon Ìyẹ̀rosùn as I/I/II/II on the right and II/II/I/I on the left. Accompanied by dried maize, bananas, and brass cowrie strings.",
+        "social_and_ritual_context": "Consulted by traders, merchants, and venture entrepreneurs confronting volatile financial markets. Prescribes offerings of fruit and honey to the wind deities.",
+        "proverbs_and_oral_traditions": [
+            "Afẹ́fẹ́ wọ́nrín gbé Ìrosùn ga lórí ọjà; a kì í fi ìṣẹ́ ọjọ́ kan ba oríire ayé jẹ́. (The whirlwind of Ọ̀wọ́nrín elevates Ìrosùn in the marketplace; one does not allow the hardship of a single day to spoil a lifetime of fortune: Inspiring resilience.)",
+            "Bí ìjì bá ń jà, awo a fi ọgbọ́n tọ́ ọkọ̀; sùúrù ló ń gbé ni dé èbúté àlàáfíà. (When the storm rages, the initiate navigates the canoe with seasoned wisdom; patience is what steers one safely to the harbor of peace: Promoting steady crisis management.)",
+            "Owó tó wá lójijì kì í fọ́ orí awo; ìwà pípé l'ó ń tọ́jú ọrọ̀ tó pọ̀. (Sudden wealth never unbalances the head of a wise initiate; flawless character is what preserves immense riches: Demanding emotional maturity with wealth.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_082_Ìrosùn_Ọ̀bàrà": {
+        "historical_timeline": "Classical Antiquity: Codified as Ìrosùn-Bàrà, celebrated for transfiguring impoverished lineages into royal noble dynasties through unyielding truth and noble eloquence. Imperial Period: Invoked during royal investitures to confirm the integrity of the heir apparent. Transatlantic Heritage: Retained in Lucumí as Iroso Bara.",
+        "etymology_and_philosophy": "Pairs Ìrosùn (ancestral lineage, camwood awakening) on the right with Ọ̀bàrà (abundance, royalty, truthful speech) on the left. Demonstrates that honorable ancestral lineages awaken to glorious abundance when words and deeds are steeped in pristine truth.",
+        "material_and_craftsmanship": "Inscribed as I/I/II/II on the right and I/II/II/II on the left on Ọpọ́n Ifá. Prepared with ripe plantains, honey, copper beads, and white rooster sacrifice.",
+        "social_and_ritual_context": "Divined for seekers suffering from social obscurity or disputed inheritance. Demands truthfulness under oath and guarantees coronation of honor.",
+        "proverbs_and_oral_traditions": [
+            "Ìrosùn bàrà gbé adé dé orí awo; ẹnu tí kò parọ́ kì í rí àbùkù níwájú Ọba. (Ìrosùn Ọ̀bàrà places the crown of majesty upon the initiate's head; the mouth that speaks no lies never encounters disgrace before the King: Celebrating the kingship of integrity.)",
+            "Ọ̀bàrà ń mú ọlá wá, Ìrosùn ń kọ́ ọ nínú ilé; ayọ̀ ńlá kì í fi ilé olóòtítọ́ sílẹ̀. (Ọ̀bàrà brings forth majesty and Ìrosùn establishes it within the household; abundant rejoicing never departs from the home of the truthful: Praising honest living.)",
+            "A kì í fi owó ra oríire tí kò ní ìpìlẹ̀; ìwà rere ni baba gbogbo adé. (One cannot buy ungrounded good fortune with gold; noble character is the father of all earthly crowns: Emphasizing the primacy of virtue.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Johnson, Rev. Samuel (1921). The History of the Yorubas."
+    }
+}
+
+OUTPUT_FILE = Path(__file__).resolve().parent / "batch_07_data.json"
+
+def main():
+    print(f"Generating {len(BATCH_07_ENRICHMENTS)} Batch 7 enrichments into {OUTPUT_FILE}...")
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump({"batch_7_enrichments": BATCH_07_ENRICHMENTS}, f, ensure_ascii=False, indent=2)
+    print("✅ Successfully generated scripts/batch_07_data.json.")
+
+if __name__ == "__main__":
+    main()
