@@ -52,7 +52,8 @@ jobs:
             exit 1
           fi
 
-          BATCH_SIZE="${{ github.event.inputs.batch_limit || '25' }}"
+          BATCH_INPUT="${{ inputs.batch_limit }}"
+BATCH_SIZE="${BATCH_INPUT:-25}"
           echo "🏛️ Launching Àrọ̀kìn Batch Enrichment (Limit: $BATCH_SIZE entities)..."
           python scripts/batch_enrich_thin_entities.py --limit "$BATCH_SIZE"
 
