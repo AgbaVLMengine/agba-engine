@@ -38,6 +38,7 @@ git add \
   .agents/memory/eso-security.md \
   .agents/memory/arokin-archivist.md \
   .agents/memory/asunwon-ledger.md \
+  .agents/memory/akede-herald.md \
   .agents/memory/disk_saver_memory.md \
   memory/disk_saver_memory.md \
   scripts/reclaim_disk.sh \
