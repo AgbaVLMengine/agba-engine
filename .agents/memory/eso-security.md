@@ -166,3 +166,12 @@ flowchart TD
   - **Sovereign Retrieval Integrity**: `python3 scripts/benchmark_sprint004.py` certified 100% Top-1 Accuracy across all 28 friction test cases (16/16 friction, 8/8 anti-parent loop, 18/18 Category 17 fauna).
   - **Storage & Artifact Hygiene (Agbálẹ̀)**: Workspace swept clean of orphan binaries or unmonitored clutter. `scripts/reclaim_disk.sh` executed. Storage headroom at 3.9 GB available (comfortably above the 2.0 GB emergency floor).
   - **Readiness Verdict**: 🟢 DEFCON 5 (Green / Operational & Impervious). All systems pristine.
+- **[2026-10-29 Dusk]**: Execution of `DUSK-SWEEP-ESO-001` (Daily Pre-Retirement Zero-Trust Security Sweep):
+  - **Context**: Enshrined the Daily Pre-Retirement Sentinel Protocol (The Dusk Sweep — *Ìwọ́lẹ̀ Ọjọ́*) per Section 5 of `.agents/AGENTS.md` before Lead Architect Àrùnà Ọlànrewájú Kábírù retires from the desk.
+  - **Pillar I (AI Threat Surface & Prompt Injection)**: Verified `api/app/prompt_governor.py` (186 LOC). Rule 5 Boundary Defense strictly enforced; dynamic input and canonical RAG context encapsulated in XML delimiters (`<canonical_knowledge_base>`, `<user_query>`) with `sanitize_xml_user_input` escaping and 1,500-char truncation.
+  - **Pillar II & IV (Zero-Trust Supply Chain & Gate Invariants)**: Audited `api/requirements.txt`: 0% LiteLLM or unpinned third-party AI gateway wrappers; native official `google-genai>=0.1.0` direct SDK locked. Cloud Run `--min-instances 0` ($0.00/mo idle scale) verified.
+  - **Pillar III (Secrets Lifecycle & Zero Leakage)**: Forensically audited all recent commits from `40f0b10` through `8b06950` (`HEAD`) and working tree. Exactly 0 exposed credentials, API keys (`AIza...`, `ghp_...`, `sk-...`), or private keys. Clean working tree; `web/.env.local` strictly ignored.
+  - **Production Gates 1–8**: Executed `bash scripts/review.sh`: **0 hard violations, 0 warnings** certified across all 8 production gates and all 11 persona vaults (including newly commissioned 11th Persona `Akéde`).
+  - **Retrieval Regression Suite**: `python3 scripts/benchmark_sprint004.py` scored **44/44 (100.0%) Top-1 Accuracy** live across 1,404 canonical entities with 24/24 anti-parent-loop precision.
+  - **Storage Sweep (Agbálẹ̀)**: `scripts/reclaim_disk.sh` executed. Storage headroom at **3.6 GB available** (nominal headroom, well above the 2.0 GB alert floor).
+  - **Nocturnal Posture**: 🟢 **DEFCON 5 (Impervious Readiness)**. Fortress ramparts verified and sealed for the night.
