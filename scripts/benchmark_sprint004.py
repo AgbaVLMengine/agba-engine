@@ -87,6 +87,12 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q17_KABBA_OKUN", "query": "Kàbbà", "expected_titles": ["Kàbbà (Historic Okun Kingdom & City)"], "expected_category": "Civilization, History & Civic Heritage", "suite": "LIVING_VARIANTS_SUITE"},
     # 18. Adó-Èkìtì Settlement Ingestion
     {"id": "Q18_ADO_EKITI", "query": "Adó-Èkìtì", "expected_titles": ["Adó-Èkìtì (Ancestral Capital & Seat of the Ẹwí)", "Ìpínlẹ̀ Èkìtì"], "expected_category": "Civilization, History & Civic Heritage", "suite": "LIVING_VARIANTS_SUITE"},
+    # 19. Ojú Odù (Anti-Loop / Dedicated Sovereign Record)
+    {"id": "Q19_OJU_ODU", "query": "Oju Odu", "expected_titles": ["Ojú Odù Méjìdínlógún", "Oju Odu", "Ojú Odù"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Ifá", "suite": "ANTI_PARENT_LOOP"},
+    # 20. Ojú Odù Méjìdínlógún (Dedicated Sovereign Record)
+    {"id": "Q20_OJU_ODU_MEJIDINDLOGUN", "query": "Oju Odu Mejidindlogun", "expected_titles": ["Ojú Odù Méjìdínlógún", "Oju Odu Mejidindlogun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Ifá", "suite": "ANTI_PARENT_LOOP"},
+    # 21. Àmọ̀lù Odù (Dedicated Sovereign Record)
+    {"id": "Q21_AMOLU_ODU", "query": "Amolu Odu", "expected_titles": ["Àmọ̀lù Odù", "Amolu Odu"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Ifá", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
