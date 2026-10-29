@@ -144,6 +144,7 @@ REQUIRED_MEMORIES=(
   ".agents/memory/agbede-builder.md"
   ".agents/memory/eso-security.md"
   ".agents/memory/arokin-archivist.md"
+  ".agents/memory/asunwon-ledger.md"
   "memory/disk_saver_memory.md"
 )
 for mem in "${REQUIRED_MEMORIES[@]}"; do
