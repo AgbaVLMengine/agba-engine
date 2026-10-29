@@ -26,7 +26,8 @@ Following the direct command of Lead Architect Àrùnà Ọlànrewájú Kábír�
 | **Gate 2: Runtime Modularity** | Coordinators & Modular Drawers | ✅ **PASSED** | 100% Green Zone (< 250 LOC coordinators, < 350 LOC modules) |
 | **Production Gate Scanner** | `bash scripts/review.sh` | ✅ **PASSED** | **0 hard violations, 0 warnings** across all 8 gates |
 | **Vite Production Build** | `npm run build` in `web/` | ✅ **PASSED** | Compiled cleanly in **729ms** (1,922 modules, 0 errors) |
-| **QA Retrieval Benchmark** | `python3 scripts/benchmark_sprint004.py`| ✅ **PASSED** | **39/39 (100.0%) Top-1 Accuracy** across 1,404 entities |
+| **QA Retrieval Benchmark** | `python3 scripts/benchmark_sprint004.py`| ✅ **PASSED** | **40/40 (100.0%) Top-1 Accuracy** across 1,404 entities |
+
 
 ---
 
@@ -122,15 +123,15 @@ dist/assets/index-BoLN16io.js   7,463.94 kB │ gzip: 2,377.52 kB
 $ python3 scripts/benchmark_sprint004.py
 ==============================================================================
 📊 BENCHMARK SUMMARY METRICS:
-   - Total Queries Tested:       39
-   - Overall Top-1 Accuracy:     39/39 (100.0%)
+   - Total Queries Tested:       40
+   - Overall Top-1 Accuracy:     40/40 (100.0%)
    - 14 Friction Queries Acc:    16/16 (100.0%)
-   - Anti-Parent-Loop Acc:       19/19 (100.0%)
+   - Anti-Parent-Loop Acc:       20/20 (100.0%)
    - Category 17 Fauna Acc:      18/18 (100.0%)
 ==============================================================================
 🏛️ SÙÚRÙ QA VERDICT: PASS
 ```
-- **Result**: ✅ **39/39 (100.0%) Top-1 Accuracy live**. Zero parent-loop regression.
+- **Result**: ✅ **40/40 (100.0%) Top-1 Accuracy live**. Zero parent-loop regression.
 
 ---
 
@@ -141,7 +142,8 @@ $ python3 scripts/benchmark_sprint004.py
 - All 25 newly enriched entities (`ODU_058` to `ODU_082`) certified 100% compliant with Gate 4.
 - All 8 production gates pass with 0 hard violations and 0 warnings.
 - Frontend bundle compiles cleanly in 729ms.
-- 39/39 retrieval test suite certified by Sùúrù and ratified by Òye.
+- 40/40 retrieval test suite certified by Sùúrù and ratified by Òye.
+
 
 **Report Certified by**: `Òye` (`oye-auditor`)  
 **Archival Reference**: `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_011.md`  

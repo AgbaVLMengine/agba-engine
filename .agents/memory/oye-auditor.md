@@ -133,7 +133,8 @@
   - **QA & Build Verification**:
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
     - `web` build: Compiled cleanly in **729ms** (1,922 modules transformed, 0 errors).
-    - `scripts/benchmark_sprint004.py`: **39/39 (100.0%) Top-1 Accuracy** live (including Q26–Q29 composite Odù tests).
+    - `scripts/benchmark_sprint004.py`: **40/40 (100.0%) Top-1 Accuracy** live (including Q26–Q30 composite Odù tests: `Odi Ogbe`, `Odi Oyeku`, `Irosun Ogbe`, `Irosun Oyeku`, `Iwori Otua`).
+
 
 
 
