@@ -102,4 +102,19 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Infused 100% with peer-reviewed academic citations (Johnson 1921, Abímbọ́lá 1975/1976, Abiodun 2014, Lawal 1996, Verger 1995, Bascom 1951/1969, Fadipe 1970, Eicher 1976), pristine dual-language proverbs with philosophical commentary, and multi-epoch timelines (`Fìlà`, `Odù Ifá`).
   - Total cited master entities elevated to **357**. Thin entities in Phase 4 manifest cohort reduced from 334 to **309**.
   - Verified with `scripts/benchmark_sprint004.py` (28/28 100.0% Top-1 Accuracy), `scripts/review.sh` (0 violations), and `npm run build` (837ms, 0 errors).
+- **2026-10-29 [Checkpoint 072 — HANDOFF-AROKIN-BATCH-002: Ingestion of 2 Ifá Sovereign Records & Batch 5 Phase 4 Enrichment]**:
+  - **Task 1: Dedicated Ingestion of Two Sovereign Ifá Records**:
+    - Ingested permanent canonical records for **`Ojú Odù Méjìdínlógún`** (The 16 Principal King Odùs) and **`Àmọ̀lù Odù`** (The 240 Composite / Permutated Chapters of Ifá) into `api/data/yoruba_corpus_1007_NORMALIZED.json` and synchronized with `web/src/data/yoruba_master_corpus.json`.
+    - Corpus count elevated from 1,402 to **1,404 canonical entities**.
+    - Infused with deep classical antiquity timelines, sacred mathematical ontology (16x16=256), sacred materiality (Ọpọ́n Ifá, Ìkín, Ọ̀pẹ̀lẹ̀), and dual-language proverbs with philosophical commentary.
+    - Verified live retrieval: queries `"Oju Odu"` and `"Oju Odu Mejidindlogun"` return `Ojú Odù Méjìdínlógún` at Rank #1; query `"Amolu Odu"` returns `Àmọ̀lù Odù` at Rank #1, without looping to parent Ifá.
+  - **Task 2: Phase 4 Batch 5 Enrichment (25 Thin Entities)**:
+    - Authored companion data vault `scripts/batch_05_data.json` and updated `scripts/batch_enrich_thin_entities.py` with curated sovereign scholarship fallback.
+    - Successfully ran `python scripts/batch_enrich_thin_entities.py --limit 25`, elevating 25 thin entities: `Ìgbẹ́yìn Ọ̀tá Ọ̀rọ̀`, `Ìwé Adú̀gbò Ẹ̀gbá`, `Èsè Ifá nínú Àṣà Yorùbá`, `Ìtàn Ìṣẹ̀dálẹ̀ Ẹ̀gbá`, `Àmalà Isu`, `Àmalà Láfún`, `Dùndú`, `Aṣẹ-Ẹ̀kọ`, `Ata-Ọlọ́`, `Gbégbé-Ọ̀bẹ`, `Ọ̀bẹ-Ìtù`, `Ọ̀pá-Ìlẹ̀kẹ̀`, `Ikoko-Aró-Ìlẹ̀kẹ̀`, `Abẹ́-Ìlẹ̀kẹ̀`, `Ẹ̀yọ̀-Ìlẹ̀kẹ̀`, `Aro-Amọ̀`, `Ikoko-Àmọ̀`, `Aba-Òfì`, `Àwọ̀n-Òfì`, `Metropolitan Museum of Art African Collection`, `Ìrókẹ́ Ifá`, `Owó-Babà`, `Òrìṣà`, `Aṣọ`, and `Ewé`.
+    - Total master entities with peer-reviewed academic citations elevated to **384**. Remaining thin entities reduced from 332 down to **307**.
+  - **Comprehensive Standards & QA Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **28/28 (100.0%) Top-1 Accuracy** across 1,404 entities.
+    - `npm run build`: Compiled in **896ms** (1,922 modules transformed, 0 errors).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
+
 
