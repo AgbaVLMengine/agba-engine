@@ -93,6 +93,14 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q20_OJU_ODU_MEJIDINDLOGUN", "query": "Oju Odu Mejidindlogun", "expected_titles": ["Ojú Odù Méjìdínlógún", "Oju Odu Mejidindlogun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Ifá", "suite": "ANTI_PARENT_LOOP"},
     # 21. Àmọ̀lù Odù (Dedicated Sovereign Record)
     {"id": "Q21_AMOLU_ODU", "query": "Amolu Odu", "expected_titles": ["Àmọ̀lù Odù", "Amolu Odu"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Ifá", "suite": "ANTI_PARENT_LOOP"},
+    # 22. Ọ̀yẹ̀kú Ìwòrì (Batch 6 Composite Sovereign Chapter)
+    {"id": "Q22_OYEKU_IWORI", "query": "Oyeku Iwori", "expected_titles": ["Ọ̀yẹ̀kú Ìwòrì", "Oyeku Iwori"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 23. Ọ̀yẹ̀kú Òdí (Batch 6 Composite Sovereign Chapter)
+    {"id": "Q23_OYEKU_ODI", "query": "Oyeku Odi", "expected_titles": ["Ọ̀yẹ̀kú Òdí", "Oyeku Odi"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 24. Ìwòrì Ogbè (Batch 6 Composite Sovereign Chapter)
+    {"id": "Q24_IWORI_OGBE", "query": "Iwori Ogbe", "expected_titles": ["Ìwòrì Ogbè", "Iwori Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 25. Ìwòrì Ọ̀yẹ̀kú (Batch 6 Composite Sovereign Chapter)
+    {"id": "Q25_IWORI_OYEKU", "query": "Iwori Oyeku", "expected_titles": ["Ìwòrì Ọ̀yẹ̀kú", "Iwori Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [

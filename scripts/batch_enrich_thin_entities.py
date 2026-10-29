@@ -144,6 +144,10 @@ Enrich this entity into an authoritative Àmọ̀tẹ́kùn-grade node. Provide:
             return data
         except Exception as e:
             err_str = str(e)
+            if "402" in err_str or "prepayment credits are depleted" in err_str:
+                print(f"\n❌ FATAL BILLING ERROR: Gemini API returned 402 (Prepayment credits depleted).")
+                print(f"Please update GEMINI_API_KEY with a free-tier key or top up credits at https://ai.studio/projects.")
+                raise e
             if any(code in err_str for code in ["504", "DEADLINE_EXCEEDED", "503", "UNAVAILABLE", "404", "NOT_FOUND"]):
                 curr_idx = fallback_models.index(active_model) if active_model in fallback_models else 0
                 next_model = fallback_models[(curr_idx + 1) % len(fallback_models)]
