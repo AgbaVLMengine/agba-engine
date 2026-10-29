@@ -1,4 +1,4 @@
-name: 🏛️ Daily Sovereign Sweep & Security Sentinel
+name: "🏛️ Daily Sovereign Sweep & Security Sentinel"
 
 on:
   schedule:
@@ -17,37 +17,37 @@ concurrency:
 
 jobs:
   sweep-and-audit:
-    name: 🛡️ Ẹ̀ṣọ́ Zero-Trust & Agbálẹ̀ Storage Sweep
+    name: "🛡️ Ẹ̀ṣọ́ Zero-Trust & Agbálẹ̀ Storage Sweep"
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
     steps:
-      - name: 📥 Check out repository
+      - name: "📥 Check out repository"
         uses: actions/checkout@v4
         with:
           ref: dev
           fetch-depth: 1
 
-      - name: 🐍 Set up Python 3.11
+      - name: "🐍 Set up Python 3.11"
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 📦 Install Minimal Benchmark Dependencies
+      - name: "📦 Install Minimal Benchmark Dependencies"
         run: |
           python -m pip install --upgrade pip
           pip install sentence-transformers qdrant-client fastapi pydantic
 
-      - name: 🔍 Execute 3-Tier Pre-Commit Scanner (review.sh)
+      - name: "🔍 Execute 3-Tier Pre-Commit Scanner (review.sh)"
         run: |
           chmod +x scripts/review.sh
           bash scripts/review.sh
 
-      - name: 🧪 Execute Sprint 004 Retrieval & Anti-Parent-Loop Benchmark
+      - name: "🧪 Execute Sprint 004 Retrieval & Anti-Parent-Loop Benchmark"
         run: |
           python scripts/benchmark_sprint004.py
 
-      - name: 📜 Publish Sweep Verdict to Step Summary
+      - name: "📜 Publish Sweep Verdict to Step Summary"
         if: always()
         run: |
           echo "### 🏛️ ÀGBÀ ENGINE: DAILY SOVEREIGN SENTINEL VERDICT" >> $GITHUB_STEP_SUMMARY
