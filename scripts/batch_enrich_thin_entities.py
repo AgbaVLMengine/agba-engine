@@ -184,6 +184,37 @@ def main():
         print(f"\nTotal requiring Phase 4 backfill: {len(thin_indices)} entities.")
         return
 
+    targets = thin_indices[args.start:]
+    if args.limit > 0:
+        targets = targets[:args.limit]
+
+    # Offline / Pre-baked Scholarly Batch Fallback
+    batch_05_path = REPO_ROOT / "scripts/batch_05_data.json"
+    if not api_key and batch_05_path.exists():
+        print("\nℹ️  Notice: GEMINI_API_KEY not set. Engaging Curated Sovereign Scholarly Batch Vault (batch_05_data.json)...")
+        with open(batch_05_path, "r", encoding="utf-8") as f:
+            b_data = json.load(f).get("batch_5_enrichments", {})
+
+        enriched_count = 0
+        for step, c_idx in enumerate(targets):
+            entity = corpus[c_idx]
+            title = entity.get("title")
+            ent_id = entity.get("id")
+            match = b_data.get(title) or b_data.get(ent_id)
+            if match:
+                for k, v in match.items():
+                    if v:
+                        entity[k] = v
+                enriched_count += 1
+                print(f"[{step+1}/{len(targets)}] ✅ Enriched: '{title}' ({entity.get('category')}) from Sovereign Batch 05")
+            else:
+                print(f"[{step+1}/{len(targets)}] ⚠️ Unmatched in Batch 05: '{title}'")
+
+        save_json(API_CORPUS_PATH, corpus)
+        save_json(WEB_CORPUS_PATH, corpus)
+        print(f"\n💾 Successfully applied {enriched_count} enrichments across API & Web master corpora!")
+        return
+
     if not api_key:
         print("\n❌ ERROR: GEMINI_API_KEY is not set.")
         print("Please export GEMINI_API_KEY='...' or pass --api-key='...' to proceed.")
@@ -195,10 +226,6 @@ def main():
     except ImportError:
         print("❌ ERROR: 'google-genai' package is required. Install via 'pip install google-genai'.")
         sys.exit(1)
-
-    targets = thin_indices[args.start:]
-    if args.limit > 0:
-        targets = targets[:args.limit]
 
     print(f"\n🚀 Launching Enrichment on {len(targets)} entities (Indices {args.start} to {args.start + len(targets)})...\n")
 

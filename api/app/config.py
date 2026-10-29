@@ -84,6 +84,7 @@ class ÀgbàConfig:
             return Path(custom_path)
             
         candidates = [
+            cls.ROOT_DIR / "api" / "data" / "yoruba_corpus_1007_NORMALIZED.json",
             cls.ROOT_DIR / "Agba_Engine_Foundational_Vault" / "02_Master_Corpus_&_Taxonomy" / "yoruba_corpus_1007_NORMALIZED.json",
             cls.ROOT_DIR / "agba_enterprise_api" / "data" / "yoruba_corpus_1007_NORMALIZED.json",
             cls.ROOT_DIR / "data" / "yoruba_corpus_1007_NORMALIZED.json",
