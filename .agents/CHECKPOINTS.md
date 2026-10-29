@@ -1179,6 +1179,36 @@
     - `npm run build`: Compiled in **597ms** (1,922 modules, 0 errors).
 - **Verification**: ⚖️ **LEGAL & CONSTITUTIONAL AUDIT COMPLETE — 100% GREEN LIGHT / SSOT HARMONIZED**.
 
+### [2026-10-29] Checkpoint 081 (`CHECKPOINT-AROKIN-009`) — Execution of HANDOFF-AROKIN-BATCH-008: 9 Ìrosùn, 15 Ọ̀wọ́nrín & 1 Ọ̀bàrà Chapters Hydrated to 14-Tier Depth
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Execute HANDOFF-AROKIN-BATCH-008, harvesting and ingesting the next 25 thin entities (indices 1100 to 1124 under sovereign parent `Àmọ̀lù Odù`) to full 14-Tier depth without external APIs, upholding Gate 2 (<500 LOC), Gate 4 (*Awo* exclusion & authentic diacritics), and dual-corpus sync.
+- **Deliverables Completed**:
+  - **Native Sovereign Ingestion (Indices 1100–1124)**:
+    - Enriched the remaining 9 chapters of the Ìrosùn cycle: `ODU_083_Ìrosùn_Ọ̀kànràn` through `ODU_091_Ìrosùn_Òfún`.
+    - Enriched the full 15 chapters of the Ọ̀wọ́nrín cycle: `ODU_092_Ọ̀wọ́nrín_Ogbè` through `ODU_106_Ọ̀wọ́nrín_Òfún`.
+    - Enriched the first chapter of the Ọ̀bàrà cycle: `ODU_107_Ọ̀bàrà_Ogbè`.
+  - **Authentic 14-Tier Schema Parity Infused**:
+    - Multi-epoch timelines: Classical Ilé-Ifẹ̀ antiquity, Imperial Ọ̀yọ́, Transatlantic survival in Afro-Cuban Lucumí and Brazilian Candomblé Ketu, to contemporary global practice.
+    - Sacred ethnobotany, diagnostic medicine, craftsmanship, and sacrifice (Ẹbọ) formulas (Ewé Ọ́dúndún, Tètè, Gbégbé, Rinrin, Ìrẹtẹ̀, Ètìpọ́nlà, Osùn, Àkòko, Ajé, Ẹ̀fún, Ìkín, Ọpọ́n Ifá).
+    - Dialectical philosophical interaction between paired Odù polarities.
+    - Dual-language liturgical proverbs strictly matching `"Yorùbá (Parenthetical English translation and philosophical commentary)."`.
+    - Mandatory scholarly provenance and peer-reviewed citations: Wándé Abímbọ́lá (1975, 1976), William Bascom (1969), Pierre Verger (1995), Rowland Abiodun (2014), Babatunde Lawal (1996), Sandra Barnes (1997).
+    - Sacred exclusion (*Awo* protected): Zero disclosure of secret initiatory covenants.
+  - **Gate 2 Compliant Modular Architecture**:
+    - Authored [`scripts/build_batch_08_data.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/build_batch_08_data.py) (322 LOC) generating [`scripts/batch_08_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/batch_08_data.json).
+    - Authored [`scripts/enrich_batch_08.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_08.py) (145 LOC) to inject enrichments into both databases.
+    - Absolute lockstep synchronization between [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json).
+  - **Corpus Metrics Trajectory**:
+    - Remaining thin entities reduced from **232 down to 207**.
+    - Master corpus entities with full 14-Tier depth elevated across the entire Ìrosùn and Ọ̀wọ́nrín cycles.
+  - **Rigorous Verification & Quality Gates**:
+    - `python3 scripts/benchmark_sprint004.py`: **44/44 (100.0%) Top-1 Accuracy** live, with 0 parent-loop collapses across all Odù test queries (including `Irosun Okanran`, `Owonrin Ogbe`, `Owonrin Oyeku`, `Obara Ogbe`).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
+    - `npm run build`: Compiled production client bundle cleanly in **1.36s** (1,922 modules transformed, 0 errors).
+- **Verification**: 🏆 **BATCH 8 RATIFIED — 25 ODÙ CHAPTERS ENRICHED TO 14-TIER SCHOLARSHIP / 0 DEFECTS / PRODUCTION GATES PASSED**.
+
+
 
 
 

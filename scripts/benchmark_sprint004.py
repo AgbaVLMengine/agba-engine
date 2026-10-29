@@ -111,6 +111,14 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q29_IROSUN_OYEKU", "query": "Irosun Oyeku", "expected_titles": ["Ìrosùn Ọ̀yẹ̀kú", "Irosun Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     # 30. Ìwòrì Òtúá (Batch 7 Composite Sovereign Chapter)
     {"id": "Q30_IWORI_OTUA", "query": "Iwori Otua", "expected_titles": ["Ìwòrì Òtúá", "Iwori Otua"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 31. Ìrosùn Ọ̀kànràn (Batch 8 Composite Sovereign Chapter)
+    {"id": "Q31_IROSUN_OKANRAN", "query": "Irosun Okanran", "expected_titles": ["Ìrosùn Ọ̀kànràn", "Irosun Okanran"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 32. Ọ̀wọ́nrín Ogbè (Batch 8 Composite Sovereign Chapter)
+    {"id": "Q32_OWONRIN_OGBE", "query": "Owónrín Ogbe", "expected_titles": ["Ọ̀wọ́nrín Ogbè", "Owónrín Ogbe", "Owonrin Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 33. Ọ̀wọ́nrín Ọ̀yẹ̀kú (Batch 8 Composite Sovereign Chapter)
+    {"id": "Q33_OWONRIN_OYEKU", "query": "Owónrín Oyeku", "expected_titles": ["Ọ̀wọ́nrín Ọ̀yẹ̀kú", "Owónrín Oyeku", "Owonrin Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 34. Ọ̀bàrà Ogbè (Batch 8 Composite Sovereign Chapter)
+    {"id": "Q34_OBARA_OGBE", "query": "Obàrà Ogbe", "expected_titles": ["Ọ̀bàrà Ogbè", "Obàrà Ogbe", "Obara Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
