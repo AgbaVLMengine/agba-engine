@@ -164,7 +164,46 @@
       - **Anti-Parent-Loop Accuracy**: **24 / 24 (100.0%)**.
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
-    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,404-entity master corpus. Handoff delivered to `Àgbà` and `Òye`.
+  - **[2026-10-30] (`HANDOFF-SUURU-005` — Universal Constellation Zero-Parent-Loop Benchmark)**:
+    - **Universal Constellation Ingestion & Retrieval Parity**:
+      - Ingested 4 canonical living sub-variant entities with full 14-Tier depth into dual corpora (`api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at 1,408 entities):
+        - `Basọ̀run Olúyọ̀lé` (`sovereign_parent: Baṣọ̀run`)
+        - `Igbá Ìwà` (`sovereign_parent: Baṣọ̀run`)
+        - `Adé Ọ̀kín` (`sovereign_parent: Adé`)
+        - `Ìyáàlù Dùndún` (`sovereign_parent: Dùndún`)
+      - Successfully cross-linked sub-variant pointers on sovereign parents `Baṣọ̀run`, `Adé`, and `Dùndún`.
+    - **Constellation Retrieval & Zero-Parent-Loop Verification**:
+      - **Governance**:
+        - Query `"Baṣọ̀run"` -> Top-1: `Baṣọ̀run (Prime Minister / Supreme Commander of Oyo)`
+        - Query `"Basorun Gaa"` -> Top-1: `Basọ̀run Gáà` (Anti-loop: PASS, does not collapse to `Baṣọ̀run`)
+        - Query `"Basorun Oluyole"` -> Top-1: `Basọ̀run Olúyọ̀lé` (Anti-loop: PASS)
+        - Query `"Oyo Mesi"` -> Top-1: `Ọ̀yọ́ Mèsì` (Anti-loop: PASS)
+        - Query `"Igba Iwa"` -> Top-1: `Igbá Ìwà (The Sacred Calabash of Destiny & Abdication)` (Anti-loop: PASS)
+      - **Royal Regalia**:
+        - Query `"Ade"` -> Top-1: `Adé`
+        - Query `"Ade Aare"` -> Top-1: `Adé Ààrẹ` (Anti-loop: PASS, does not collapse to `Adé`)
+        - Query `"Ade Okin"` -> Top-1: `Adé Ọ̀kín (The Beaded Crown of the Sacred Peacock)` (Anti-loop: PASS)
+      - **Weaponry**:
+        - Query `"Ogun"` -> Top-1: `Ògún`
+        - Query `"Ada Ibile"` -> Top-1: `Àdá Ìbílẹ̀` (Anti-loop: PASS, does not collapse to `Àdá`)
+        - Query `"Ida Agemo"` -> Top-1: `Idà Agẹmọ` (Anti-loop: PASS, does not collapse to `Idà`)
+        - Query `"Oko Elesin"` -> Top-1: `Ọ̀kọ̀ Ẹlẹ́ṣin` (Anti-loop: PASS, does not collapse to `Ọ̀kọ̀`)
+        - Query `"Ofa Ode"` -> Top-1: `Ọfà Ọdẹ` (Anti-loop: PASS, does not collapse to `Ọfà`)
+      - **Auditory**:
+        - Query `"Dundun"` -> Top-1: `Dùndún`
+        - Query `"Gangan"` -> Top-1: `Gángan` (Anti-loop: PASS, does not collapse to `Dùndún`)
+        - Query `"Iyaalu"` -> Top-1: `Ìyáàlù (Lead Mother Drum of the Dùndún Ensemble)` (Anti-loop: PASS, does not collapse to `Dùndún`)
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded regression benchmark suite from 34 to **46 test cases** (elevating total test assertions from 44 to **56 queries**):
+        - Added `Q35_BASORUN_PARENT`, `Q36_BASORUN_GAA`, `Q37_BASORUN_OLUYOLE`, `Q38_OYO_MESI`, `Q39_IGBA_IWA`
+        - Added `Q40_ADE_PARENT`, `Q41_ADE_AARE`, `Q42_ADE_OKIN`
+        - Added `Q43_OGUN_PARENT`, `Q44_DUNDUN_PARENT`, `Q45_GANGAN`, `Q46_IYAALU`
+      - **Total Queries Tested**: **56 / 56 (100.0%) Top-1 Accuracy**.
+      - **Anti-Parent-Loop Accuracy**: **32 / 32 (100.0%)**.
+      - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
+      - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Master corpus stands at 1,408 entities with zero regressions and zero parent-loop collapses across all 4 universal constellation domains. Handoff delivered to `Àgbà` and `Òye`.
+
 
 
 

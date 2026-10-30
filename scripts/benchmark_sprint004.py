@@ -119,6 +119,31 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q33_OWONRIN_OYEKU", "query": "Owónrín Oyeku", "expected_titles": ["Ọ̀wọ́nrín Ọ̀yẹ̀kú", "Owónrín Oyeku", "Owonrin Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     # 34. Ọ̀bàrà Ogbè (Batch 8 Composite Sovereign Chapter)
     {"id": "Q34_OBARA_OGBE", "query": "Obàrà Ogbe", "expected_titles": ["Ọ̀bàrà Ogbè", "Obàrà Ogbe", "Obara Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # --- Universal Constellations Suite (HANDOFF-SUURU-005) ---
+    # 35. Baṣọ̀run (Governance Parent)
+    {"id": "Q35_BASORUN_PARENT", "query": "Baṣọ̀run", "expected_titles": ["Baṣọ̀run (Prime Minister / Supreme Commander of Oyo)", "Baṣọ̀run", "Basorun"], "expected_category": "Monarchy, Royal Regalia & Governance", "suite": "GOVERNANCE_CONSTELLATION"},
+    # 36. Basọ̀run Gáà (Child Anti-Loop)
+    {"id": "Q36_BASORUN_GAA", "query": "Basorun Gaa", "expected_titles": ["Basọ̀run Gáà", "Basorun Gaa"], "expected_category": "Monarchy, Royal Regalia & Governance", "anti_loop_parent_to_avoid": "Baṣọ̀run", "suite": "ANTI_PARENT_LOOP"},
+    # 37. Basọ̀run Olúyọ̀lé (Child Anti-Loop)
+    {"id": "Q37_BASORUN_OLUYOLE", "query": "Basorun Oluyole", "expected_titles": ["Basọ̀run Olúyọ̀lé", "Basorun Oluyole"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Baṣọ̀run", "anti_loop_parent_to_avoid": "Baṣọ̀run", "suite": "ANTI_PARENT_LOOP"},
+    # 38. Ọ̀yọ́ Mèsì (Governance Constellation / Anti-Loop)
+    {"id": "Q38_OYO_MESI", "query": "Oyo Mesi", "expected_titles": ["Ọ̀yọ́ Mèsì", "Oyo Mesi"], "expected_category": "Monarchy, Royal Regalia & Governance", "anti_loop_parent_to_avoid": "Baṣọ̀run", "suite": "ANTI_PARENT_LOOP"},
+    # 39. Igbá Ìwà (Child Anti-Loop)
+    {"id": "Q39_IGBA_IWA", "query": "Igba Iwa", "expected_titles": ["Igbá Ìwà (The Sacred Calabash of Destiny & Abdication)", "Igbá Ìwà", "Igba Iwa"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Baṣọ̀run", "anti_loop_parent_to_avoid": "Baṣọ̀run", "suite": "ANTI_PARENT_LOOP"},
+    # 40. Adé (Regalia Parent)
+    {"id": "Q40_ADE_PARENT", "query": "Ade", "expected_titles": ["Adé", "Ade"], "expected_category": "Monarchy, Royal Regalia & Governance", "is_parent_expected": True, "suite": "REGALIA_CONSTELLATION"},
+    # 41. Adé Ààrẹ (Child Anti-Loop)
+    {"id": "Q41_ADE_AARE", "query": "Ade Aare", "expected_titles": ["Adé Ààrẹ", "Ade Aare"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Adé", "anti_loop_parent_to_avoid": "Adé", "suite": "ANTI_PARENT_LOOP"},
+    # 42. Adé Ọ̀kín (Child Anti-Loop)
+    {"id": "Q42_ADE_OKIN", "query": "Ade Okin", "expected_titles": ["Adé Ọ̀kín (The Beaded Crown of the Sacred Peacock)", "Adé Ọ̀kín", "Ade Okin"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Adé", "anti_loop_parent_to_avoid": "Adé", "suite": "ANTI_PARENT_LOOP"},
+    # 43. Ògún (Weaponry & Cosmic Parent)
+    {"id": "Q43_OGUN_PARENT", "query": "Ogun", "expected_titles": ["Ògún", "Ogun"], "expected_category": "Spiritual & Cosmological Matrix", "is_parent_expected": True, "suite": "WEAPONRY_CONSTELLATION"},
+    # 44. Dùndún (Auditory Parent)
+    {"id": "Q44_DUNDUN_PARENT", "query": "Dundun", "expected_titles": ["Dùndún", "Dundun"], "expected_category": "Auditory Arts, Music, Drums & Chants", "is_parent_expected": True, "suite": "AUDITORY_CONSTELLATION"},
+    # 45. Gángan (Auditory Child Anti-Loop)
+    {"id": "Q45_GANGAN", "query": "Gangan", "expected_titles": ["Gángan", "Gangan"], "expected_category": "Auditory Arts, Music, Drums & Chants", "expected_sovereign_parent": "Dùndún", "anti_loop_parent_to_avoid": "Dùndún", "suite": "ANTI_PARENT_LOOP"},
+    # 46. Ìyáàlù (Auditory Child Anti-Loop)
+    {"id": "Q46_IYAALU", "query": "Iyaalu", "expected_titles": ["Ìyáàlù (Lead Mother Drum of the Dùndún Ensemble)", "Ìyáàlù", "Iyaalu", "Ìyáàlù Dùndún"], "expected_category": "Auditory Arts, Music, Drums & Chants", "expected_sovereign_parent": "Dùndún", "anti_loop_parent_to_avoid": "Dùndún", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [

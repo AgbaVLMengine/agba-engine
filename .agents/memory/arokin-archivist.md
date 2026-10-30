@@ -176,6 +176,25 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **44/44 (100.0%) Top-1 Accuracy** across 1,404 entities (including expanded anti-parent loop suites for `Irosun Okanran`, `Owonrin Ogbe`, `Owonrin Oyeku`, `Obara Ogbe`).
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates.
     - `npm run build`: Compiled production client bundle in **1.36s** (1,922 modules, 0 errors).
+- **2026-10-30 [Checkpoint 087 — HANDOFF-AROKIN-002: Universal Constellation Deep Metadata & Batch 9 Ingestion (25 Odù Chapters Elevated)]**:
+  - **Task 1: Universal Constellation Knowledge Architecture**:
+    - Partnered with Àgbẹ̀dẹ to ensure all sub-variants across Monarchy, Spiritual Matrix, Martial Traditions, Attire, and Auditory Arts possess authentic 14-Tier descriptions, multi-epoch historical timelines, and dual-language proverbs with philosophical commentaries.
+    - Authored [`web/src/utils/subVariantKnowledge.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/subVariantKnowledge.js) (205 LOC, Gate 2 compliant), providing deep 14-Tier metadata mappings (`Baṣọ̀run Ọlúyọ̀lé`, `Baṣọ̀run Gáà`, `Adé Aládé`, `Agẹrẹ Arúgbá`, `Agẹrẹ Ológun`, `Balógun Ìbàdàn`, `Idà Agẹmọ`, `Adire Eleko`, `Adire Alabere`, `Ìyáàlù Dùndún`, `Ìyá Ìlù Bàtá`) and enriched domain-aware fallback generators.
+    - Updated [`web/src/utils/subVariantHydrator.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/subVariantHydrator.js) (119 LOC) to dynamically inject authentic multi-epoch timelines and dual-language proverbs into all hydrated constellation nodes.
+    - Standardized `Baṣọ̀run` as a Sovereign Parent (`is_parent: True`, `sub_variants: ["Baṣọ̀run Gáà", "Basọ̀run Olúyọ̀lé"]`) and reciprocally connected `Baṣọ̀run Gáà` and `Basọ̀run Olúyọ̀lé` without duplicate twin nodes.
+  - **Task 2: Native Sovereign Ingestion of Batch 9 (Indices 1125 to 1149)**:
+    - Elevated 25 thin composite Odù chapters under sovereign parent `Àmọ̀lù Odù`:
+      - **Remaining 14 Chapters of the Ọ̀bàrà Cycle**: `ODU_108_Ọ̀bàrà_Ọ̀yẹ̀kú` through `ODU_121_Ọ̀bàrà_Òfún`.
+      - **First 11 Chapters of the Ọ̀kànràn Cycle**: `ODU_122_Ọ̀kànràn_Ogbè` through `ODU_132_Ọ̀kànràn_Òtúúrúpọ̀n`.
+    - Infused 100% with authentic 14-Tier depth: multi-epoch timelines (Classical Ifẹ̀, Imperial Ọ̀yọ́, Transatlantic Lucumí & Candomblé Ketu), therapeutic ethnobotany, dialectical philosophy, dual-language liturgical proverbs in canonical format `"Yorùbá (Parenthetical English translation and philosophical commentary)."`, and peer-reviewed academic citations (Wándé Abímbọ́lá 1975/1976, William Bascom 1969, Pierre Verger 1995, Rowland Abiodun 2014, Babatunde Lawal 1996, Sandra Barnes 1997).
+    - Authored [`scripts/build_batch_09_data.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/build_batch_09_data.py) (384 LOC) generating [`scripts/batch_09_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/batch_09_data.json).
+    - Authored [`scripts/enrich_batch_09.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_09.py) (218 LOC) and synchronized [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json) in absolute lockstep at **1,408 canonical entities**.
+    - Remaining thin entities reduced from **207 down to 182** (25 fewer thin entities).
+  - **Verification & Production Gates**:
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy** across 1,408 entities (including Q35 `Baṣọ̀run`, Q36 `Basorun Gaa`, Q37 `Basorun Oluyole`).
+    - `bash scripts/review.sh`: **0 hard violations (0 warnings)** across all production gates.
+    - `npm run build`: Compiled production client bundle cleanly in **840ms** (1,923 modules, 0 errors).
+
 
 
 
