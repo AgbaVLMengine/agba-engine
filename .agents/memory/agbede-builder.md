@@ -98,6 +98,25 @@
     - `bash scripts/review.sh`: 0 hard violations, 0 warnings across all 8 Production Gates.
     - `python3 scripts/benchmark_sprint004.py`: 28/28 Top-1 Accuracy (100.0% PASS).
     - `cd web && npm run build`: Compiled in 971ms (1,922 modules, 0 errors).
+- **[2026-10-30] (`CHECKPOINT-AGBEDE-015` / Checkpoint 089 / HANDOFF-AGBEDE-005 Completed)**: **Universal Sovereign Constellation Hydrator & Admin Console Upgrade**:
+  - **Universal Sovereign Constellation Re-Wiring**:
+    - Authored standalone script `scripts/rewire_universal_constellations.py` (**277 LOC**, Gate 2 compliant `<500 LOC`).
+    - Clustered orphaned living variants across all 17 categories under canonical Sovereign Parents in bit-for-bit lockstep (`api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at 1,408 entities):
+      - *Monarchy & Governance*: `Baṣọ̀run` configured as Sovereign Parent Concept with 5 sub-variants (`Basọ̀run Gáà`, `Basọ̀run Olúyọ̀lé`, `Ọ̀yọ́ Mèsì`, `Igbá Ìwà`, `Idà Ọrọ̀`). Wired `Basọ̀run Gáà` (`sovereign_parent: "Baṣọ̀run"`). Wired dynasty lineages (`Aláàfin Ọ̀rànmíyàn`, `Aláàfin Àtìbà`, `Àfin Aláàfin`, `Ìtàn Àwọn Aláàfin Ọ̀yọ́`, `Ọọ̀ni Odùduwà`, `Àfin Ọọ̀ni`, `Ooni Lúwo Gbàgìdá`, `Ọọ̀ni Adérẹ̀mí`) to `sovereign_parent: "Ọba"`.
+      - *Metallurgy & Weaponry*: `Ògún` configured as Cosmic Sovereign Parent with martial constellation (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`, `Ẹwiri Blacksmith Hearth`). Linked `Ẹwiri` to `Ògún` metallurgy network.
+      - *Textiles & Regalia*: `Agbádá` configured as Sovereign Parent Concept with `Sányán`, `Ẹ̀tù`, `Àlàárì`. Wired `Sányán` and `Àlàárì` to `Agbádá`. Corrected and re-wired `Ẹ̀tù` from herbal medicine (`Òògùn`) to `Agbádá`. Ensured `Adé` regalia hierarchy with `Adé Ààrẹ` and `Adé Ọ̀kín`.
+      - *Auditory & Chants*: `Dùndún` configured as Sovereign Parent Concept with complete drum ensemble (`Ìyáàlù Dùndún`, `Gángan`, `Goje`). Wired `Goje` to `Dùndún`.
+      - *17-Category Sweep*: Auto-wired unparented sub-variant records across the entire corpus. Final corpus: **144 Sovereign Parents**, **580 Wired Sub-Variants**.
+  - **Admin Tab Modernization (`web/src/components/AdminTab.jsx`)**:
+    - Replaced hardcoded static `1,007` box with live dynamic metrics imported from `yoruba_master_corpus.json`.
+    - Dynamically displays: **1,408** Master Corpus Base entities, **144** Parents, **580** Sub-Variants.
+    - Sized at **422 LOC** (strictly Gate 2 compliant `<500 LOC` and `<450 LOC` target).
+  - **Rabbit-Hole Exploration Verification**:
+    - Verified `LivingVariantConstellationGrid.jsx` (91 LOC) and `EntityBentoDeck.jsx` (395 LOC) for seamless sub-variant selection branching into child entities via `hydrateSubVariantFromParent` and `searchRankedCorpus` without page reload.
+  - **Verification Battery**:
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy**, 32/32 (100.0%) Anti-Parent-Loop, 18/18 Category 17 Fauna.
+    - `cd web && npm run build`: Compiled in **965ms** (1,923 modules, 0 errors).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 11 persona vaults.
 
 
 
