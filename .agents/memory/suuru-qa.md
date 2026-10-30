@@ -227,7 +227,28 @@
       - **Anti-Parent-Loop Accuracy**: **41 / 41 (100.0%)** (zero sub-variants collapsed to parents).
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
+  - **[2026-10-30] (`HANDOFF-SUURU-008` — Batch 10 Zero-Shot Retrieval & Regression Benchmark)**:
+    - **Live Retrieval Verification (Ọ̀kànràn, Ògúndá & Ọ̀sá Cycles)**:
+      - Audited all 25 newly enriched entities (`ODU_133_Ọ̀kànràn_Òtúá` through `ODU_157_Ọ̀sá_Ọ̀wọ́nrín`) live via `AgbaHybridRetriever`.
+      - **Tonal Exact Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **ASCII-Folded Retrieval**: **25 / 25 (100.0%) Top-1 Accuracy**.
+      - **Zero Parent-Loop Collapse Confirmed**:
+        - Query `"Okanran Otua"` -> Top-1: `Ọ̀kànràn Òtúá` (`ODU_133_Ọ̀kànràn_Òtúá`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop to `Àmọ̀lù Odù` or `Ifá`.
+        - Query `"Okanran Irete"` -> Top-1: `Ọ̀kànràn Ìrẹtẹ̀` (`ODU_134_Ọ̀kànràn_Ìrẹtẹ̀`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Ogunda Ogbe"` -> Top-1: `Ògúndá Ogbè` (`ODU_137_Ògúndá_Ogbè`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+        - Query `"Ogunda Oyeku"` -> Top-1: `Ògúndá Ọ̀yẹ̀kú` (`ODU_138_Ògúndá_Ọ̀yẹ̀kú`, `sovereign_parent: Àmọ̀lù Odù`, `is_parent: False`). Zero loop.
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded regression benchmark suite from 55 to **59 test cases** (elevating total test assertions from 65 to **69 queries**):
+        - Added `Q54_OKANRAN_OTUA` (`"Okanran Otua"`)
+        - Added `Q55_OKANRAN_IRETE` (`"Okanran Irete"`)
+        - Added `Q56_OGUNDA_OGBE` (`"Ogunda Ogbe"`)
+        - Added `Q57_OGUNDA_OYEKU` (`"Ogunda Oyeku"`)
+      - **Total Queries Tested**: **69 / 69 (100.0%) Top-1 Accuracy**.
+      - **Anti-Parent-Loop Accuracy**: **45 / 45 (100.0%)** (zero sub-variants collapsed to parents).
+      - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
+      - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
     - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,411-entity master corpus. Full handoff delivered to `Àgbà` and `Òye`.
+
 
 
 
