@@ -163,15 +163,16 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q52B_ALAARI", "query": "Alaari", "expected_titles": ["Àlàárì", "Alaari"], "expected_category": "Attire, Textiles & Personal Adornment", "expected_sovereign_parent": "Aṣọ Òkè", "anti_loop_parent_to_avoid": "Aṣọ Òkè", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
     # 53. Ewé Àkòko (Sacred Coronation Leaf Child)
     {"id": "Q53_EWE_AKOKO", "query": "Ewe Akoko", "expected_titles": ["Ewé Àkòko", "Ewe Akoko"], "expected_category": "Sacred Botany, Flora & Herbal Medicine", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
-    # --- Batch 10 Composite Odù Chapters Suite (HANDOFF-SUURU-008) ---
-    # 54. Ọ̀kànràn Òtúá (Batch 10 Composite Sovereign Chapter)
+    # 54-57. Batch 10 Composite Odù Chapters Suite
     {"id": "Q54_OKANRAN_OTUA", "query": "Okanran Otua", "expected_titles": ["Ọ̀kànràn Òtúá", "Okanran Otua"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
-    # 55. Ọ̀kànràn Ìrẹtẹ̀ (Batch 10 Composite Sovereign Chapter)
     {"id": "Q55_OKANRAN_IRETE", "query": "Okanran Irete", "expected_titles": ["Ọ̀kànràn Ìrẹtẹ̀", "Okanran Irete"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
-    # 56. Ògúndá Ogbè (Batch 10 Composite Sovereign Chapter)
     {"id": "Q56_OGUNDA_OGBE", "query": "Ogunda Ogbe", "expected_titles": ["Ògúndá Ogbè", "Ogunda Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
-    # 57. Ògúndá Ọ̀yẹ̀kú (Batch 10 Composite Sovereign Chapter)
     {"id": "Q57_OGUNDA_OYEKU", "query": "Ogunda Oyeku", "expected_titles": ["Ògúndá Ọ̀yẹ̀kú", "Ogunda Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 58-61. Batch 11 Composite Odù Chapters Suite
+    {"id": "Q58_OSA_OBARA", "query": "Osa Obara", "expected_titles": ["Ọ̀sá Ọ̀bàrà", "Osa Obara"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q59_IKA_OGBE", "query": "Ika Ogbe", "expected_titles": ["Ìká Ogbè", "Ika Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q60_IKA_OSA", "query": "Ika Osa", "expected_titles": ["Ìká Ọ̀sá", "Ika Osa"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q61_OTUURUPON_OGBE", "query": "Otuurupon Ogbe", "expected_titles": ["Òtúúrúpọ̀n Ogbè", "Otuurupon Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [

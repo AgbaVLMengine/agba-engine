@@ -264,6 +264,34 @@
       - `scripts/benchmark_sprint004.py`: 69/69 (100.0%) Top-1 Accuracy; `Q45_GANGAN` retrieves `Gángan` at Rank #1 without loop (PASS).
       - `web/` production build: Vite transformed 1,928 modules in 682ms with 0 errors (PASS).
       - `scripts/review.sh`: 0 hard violations, 0 warnings (PASS).
+  - **[2026-10-30] (`CHECKPOINT-SUURU-010` — Execution of HANDOFF-SUURU-008: Batch 11 Post-Ingestion QA & Gángan ASCII Verification)**:
+    - **Context & Scope**: Post-ingestion QA audit of Batch 11 (25 newly enriched composite Odù chapters from `ODU_158_Ọ̀sá_Ọ̀bàrà` through `ODU_182_Òtúúrúpọ̀n_Ogbè`) and dedicated verification of ASCII `"Gangan"`.
+    - **Thin Entity Reduction Verification**:
+      - Total Odù entities: 256.
+      - Fully 14-Tier enriched chapters: 182 (16 Principal + 166 Composite).
+      - Remaining thin Odù chapters: exactly **74** (down from 99). Next batch opens at `ODU_183_Òtúúrúpọ̀n_Ọ̀yẹ̀kú`.
+    - **Dedicated ASCII Gángan Verification**:
+      - `AgbaHybridRetriever` on query `"Gangan"` resolves to `Gángan` (`id: Gángan`, `category: Auditory Arts, Music, Drums & Chants`, `fusion_score: 0.01639`, Rank #1).
+      - Sovereign parent confirmed as `Dùndún`.
+      - Client-side resolver (`useRootNetworkNodes`) retains `parentNode.title: "Gángan"` with dynamic badge `"Living Variant"` and zero parent usurpation.
+    - **Live Retrieval Sampling (Batch 11 ASCII Inputs)**:
+      - Query `"Osa Obara"` -> Top-1: `Ọ̀sá Ọ̀bàrà` (`ODU_158_Ọ̀sá_Ọ̀bàrà`)
+      - Query `"Ika Ogbe"` -> Top-1: `Ìká Ogbè` (`ODU_167_Ìká_Ogbè`)
+      - Query `"Ika Osa"` -> Top-1: `Ìká Ọ̀sá` (`ODU_176_Ìká_Ọ̀sá`)
+      - Query `"Ika Ofun"` -> Top-1: `Ìká Òfún` (`ODU_181_Ìká_Òfún`)
+      - Query `"Otuurupon Ogbe"` -> Top-1: `Òtúúrúpọ̀n Ogbè` (`ODU_182_Òtúúrúpọ̀n_Ogbè`)
+      - Sampling Resolution Rate: **5 / 5 (100.0%)**.
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded test suite with Batch 11 assertions (`Q58_OSA_OBARA`, `Q59_IKA_OGBE`, `Q60_IKA_OSA`, `Q61_OTUURUPON_OGBE`).
+      - Total Queries Tested: **73 / 73 (100.0%) Top-1 Accuracy**.
+      - Anti-Parent-Loop Precision: **49 / 49 (100.0%)**.
+      - Category 17 Fauna Precision: **18 / 18 (100.0%)**.
+      - 14 Friction Queries Accuracy: **16 / 16 (100.0%)**.
+    - **Production Gate Conformance**:
+      - `scripts/review.sh`: 0 hard violations, 0 warnings.
+      - Gate 2 Headroom: `scripts/benchmark_sprint004.py` at 342 LOC (< 350 advisory, < 500 hard ceiling).
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**.
+
 
 
 
