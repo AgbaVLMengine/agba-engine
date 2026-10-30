@@ -46,3 +46,4 @@
 | **2026-10-29 16:55 UTC** | DUSK-SWEEP-AGBALE-001: Pre-Retirement Storage Sweep (Chrome + pip/npm + /tmp) | 0 MB | 3.6G available | 🟢 Nominal |
 | **2026-10-30 05:47 UTC** | HANDOFF-AGBALE-002: Morning Storage Clearance & Snapshot Retention Purge | 19.2 MB | 3.6G available | 🟢 Nominal |
 | **2026-10-30 07:36 UTC** | Safe Cache Purge (Chrome + pip/npm + /tmp) | 0 MB | 15G available | 🟢 Nominal |
+| **2026-10-30 07:46 UTC** | HANDOFF-AGBALE-003: Legacy Scratch Mirror Purge & Git Compaction | ~256 MB | 3.7G available (home down to 1.3G) | 🟢 Nominal |

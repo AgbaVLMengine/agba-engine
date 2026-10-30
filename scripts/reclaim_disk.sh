@@ -40,12 +40,30 @@ if [ -d "$HOME/.npm/_cacache" ]; then
     echo "  ✅ Stale npm cache cleared."
 fi
 
-# 4. Prune System /tmp (Files older than 2 days)
+# 4. Prune System /tmp & Vacuum System Logs
 echo "▶ Pruning temporary files older than 48h in /tmp..."
 find /tmp -type f -atime +2 -delete 2>/dev/null || true
 echo "  ✅ Stale /tmp files pruned."
 
-# 5. Capture Post-Cleanup Storage & Calculate Reclaimed Space
+echo "▶ Vacuuming system journal logs..."
+journalctl --vacuum-size=50M 2>/dev/null || true
+echo "  ✅ Journal logs vacuumed."
+
+# 5. Git Object Compaction & Intermediate Cache Pruning
+REPO_DIR="/home/aruna_olanrewaju/agba-engine"
+if [ -d "$REPO_DIR/.git" ]; then
+    echo "▶ Compacting git objects in $REPO_DIR..."
+    git -C "$REPO_DIR" gc --quiet 2>/dev/null || true
+    echo "  ✅ Git objects packed and compacted."
+fi
+
+# Clean transient Vite and Python bytecode caches
+rm -rf "$REPO_DIR/web/.vite" 2>/dev/null || true
+find "$REPO_DIR" -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
+rm -rf "$HOME/.gemini/antigravity/scratch"/*/workspace-mirror 2>/dev/null || true
+echo "  ✅ Transient bytecode and scratch mirrors cleared."
+
+# 6. Capture Post-Cleanup Storage & Calculate Reclaimed Space
 AFTER_KB=$(df --output=avail "$HOME" | tail -1 | tr -d ' ')
 RECLAIMED_KB=$((AFTER_KB - BEFORE_KB))
 
@@ -70,11 +88,12 @@ echo "   💾 Current Available Storage: ${FREE_GB}"
 echo "   🛡️ Status: ${ALERT_STATUS}"
 echo "=================================================================="
 
-# 6. Append to Memory Vault
+# 7. Append to Memory Vault
 MEMORY_FILE="/home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md"
+ACTION_NAME="${1:-Safe Storage Sweep (Chrome + git gc + pip/npm + /tmp)}"
 if [ -f "$MEMORY_FILE" ]; then
     TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
-    echo "| **$TIMESTAMP** | Safe Cache Purge (Chrome + pip/npm + /tmp) | ${RECLAIMED_MB} MB | ${FREE_GB} available | ${ALERT_STATUS} |" >> "$MEMORY_FILE"
+    echo "| **$TIMESTAMP** | ${ACTION_NAME} | ${RECLAIMED_MB} MB | ${FREE_GB} available | ${ALERT_STATUS} |" >> "$MEMORY_FILE"
     echo "✅ Appended audit entry to memory/disk_saver_memory.md."
     cp "$MEMORY_FILE" "/home/aruna_olanrewaju/agba-engine/.agents/memory/disk_saver_memory.md" 2>/dev/null || true
 fi
