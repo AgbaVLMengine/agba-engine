@@ -194,6 +194,32 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy** across 1,408 entities (including Q35 `Baṣọ̀run`, Q36 `Basorun Gaa`, Q37 `Basorun Oluyole`).
     - `bash scripts/review.sh`: **0 hard violations (0 warnings)** across all production gates.
     - `npm run build`: Compiled production client bundle cleanly in **840ms** (1,923 modules, 0 errors).
+- **2026-10-30 [Checkpoint 088 — HANDOFF-AROKIN-004: Phase 1 Monarchy & Royal Architecture Constellation Ingestion]**:
+  - **Context & Ancestral Mandate**:
+    - Guided by [`docs/AGBA_THE_SACRED_DOCTRINE_OF_ANCESTRAL_PRIMACY_AND_OPON_IFA.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_THE_SACRED_DOCTRINE_OF_ANCESTRAL_PRIMACY_AND_OPON_IFA.md) ratified by Lead Architect Àrùnà Ọlànrewájú Kábírù.
+    - Addressed Sùúrù's audit of 407 "phantom" sub-variant chips by ingesting the core Monarchy, Royal Architecture & Regalia cluster into canonical standalone 14-Tier records.
+  - **Ingestion & Harmonization Deliverables**:
+    - **Crowns & Dynasties**:
+      - Ingested [`Ọọ̀ni of Ifẹ̀`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: ooni_of_ife`, child of `Ọba`).
+      - Ingested [`Aláàfin of Ọ̀yọ́`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: alaafin_of_oyo`, child of `Ọba`).
+      - Ingested [`Awùjalẹ̀ of Ìjẹ̀bú`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: awujale_of_ijebu`, child of `Ọba`).
+      - Elevated pre-existing `Owa Obokun` to canonical [`Ọwá Obòkun of Ìjẹ̀ṣàland`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with 14-Tier depth and academic citations.
+      - Elevated pre-existing `Orangun` to canonical [`Ọ̀ràngún of Ìlá`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with 14-Tier depth and academic citations.
+    - **Palace Architecture**:
+      - Elevated `Àfin Ọọ̀ni` to canonical [`Ààfin Ọọ̀ni (Ilé-Ifẹ̀)`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with Potsherd impluvium history and citations.
+      - Elevated `Àfin Aláàfin` to canonical [`Ààfin Aláàfin (Ọ̀yọ́)`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with gabled courtyard history and citations.
+      - Ingested [`Kòbì Ààfin`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: kobi_aafin`, child of `Ààfin`), detailing the sacred royal gabled roof and sumptuary protection laws.
+    - **Regalia, Master Textiles & Sacred Ethnobotany**:
+      - Enriched [`Sányán`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json), [`Àlàárì`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json), and [`Ẹ̀tù`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with academic textile literature (Eicher 1976, Picton 1995, Wolff 1982, Abiodun 2014) and aligned them under parent `Aṣọ Òkè`.
+      - Ingested [`Ewé Àkòko`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: ewe_akoko`, *Newbouldia laevis*), documenting the sacred coronation leaf of kingship and boundary integrity.
+  - **Script & Corpus Metrics**:
+    - Authored [`scripts/enrich_monarchy_constellations.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_monarchy_constellations.py) (287 LOC, Gate 2 compliant).
+    - Synchronized both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` in absolute lockstep at **1,413 canonical entities**.
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy** across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 11 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **867ms** (1,928 modules transformed, 0 errors).
+
 
 
 

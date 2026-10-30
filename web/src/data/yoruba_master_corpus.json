@@ -7794,7 +7794,19 @@
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Visually, cinematography should contrast the earthy, tactile intimacy of traditional outdoor weaving compounds in Ìsẹ́yìn with the grand, sweeping visual choreography of modern Lagos wedding halls and Bahian Terreiros. Sound design requires intimate Foley captures: the metallic 'clink-clack' of the wooden shuttle (Ọkọ́), the synchronized thud of the reed (Asá) striking the weft, the friction of treadles on earthen pits, and the crisp rustle of dense, starched wild-silk ribbons. Lighting should emphasize rich directional amber tones to reveal the textured relief, supplementary weft embroidery, and the natural iridescence of Ṣányán and indigo vats, avoiding flat studio illumination in favor of cinematic chiaroscuro.",
     "sovereign_parent": "Aṣọ",
-    "sovereign_parent_status": "Living Sub-Variant"
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": true,
+    "sub_variants": [
+      "Sányán",
+      "Àlàárì",
+      "Ẹ̀tù"
+    ],
+    "living_variants": [
+      "Sányán",
+      "Àlàárì",
+      "Ẹ̀tù"
+    ],
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Picton, John (1995). The Art of African Textiles; Wolff, Norma H. (1982). Yoruba Adire Cloth; Abiodun, Rowland (2014). Yoruba Art and Language."
   },
   {
     "id": "Aṣọ-Ẹbí",
@@ -7849,9 +7861,10 @@
     "diaspora_connections": "Across the Atlantic, memories and symbolic counterparts of Sányán survived through the Lucumí traditions of Cuba and the Candomblé Ketu houses of Bahia, Brazil. In Cuban Lucumí rituals, the textile is remembered through oral liturgical song and esoteric invocations as 'achó sayán' or 'chayán', specifically associated with the primordial, unblemished vestments demanded by elevated roads of Obatalá and Oduduwa, frequently manifested in raw, unbleached slub silk or coarse ecru linen to retain the fabric's ancestral signature. In Brazilian Candomblé, the structural memory of Sányán is preserved via the imported and revered 'pano da costa' (traditional West African prestige wraps), worn over the shoulder by respected Iyalorixas and Ogãs during solemn Egúngún commemorations, signifying direct genealogical transmission from the ancient weaving centres of the Ọ̀yọ́ kingdom.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "When depicting Sányán in cinematic and museum productions, the camera must prioritize macro-cinematography using high-contrast anamorphic lenses to capture the slubbed, organic, and coarse micro-texture of the Anaphe wild silk fibers. The lighting should feature warm, directional cross-raking at a 45-degree angle to reveal the tactile cross-hatching and natural sheen that distinguishes real silk from synthetic cotton replications. Color grading must rigorously preserve the unbleached, raw oatmeal, beige, and fawn spectrum without letting the fabric wash out into artificial stark white. Sound designers should capture the percussive, woody clack of the narrow horizontal treadle loom, the papery rasp of ancient silk strips moving against one another during walking sequences, and layer these motifs alongside the resonant tones of the Dùndún drum reciting the textile's ancient 'oríkì' (praise poetry).",
-    "sovereign_parent": "Agbádá",
+    "sovereign_parent": "Aṣọ Òkè",
     "sovereign_parent_status": "Living Sub-Variant",
-    "is_parent": false
+    "is_parent": false,
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Picton, John (1995). The Art of African Textiles; Wolff, Norma H. (1982). Yoruba Adire Cloth; Abiodun, Rowland (2014). Yoruba Art and Language."
   },
   {
     "id": "Àlàárì",
@@ -7877,9 +7890,10 @@
     "diaspora_connections": "Across the Atlantic basin, memory of Àlàárì survived enslavement through sacred material culture. In Afro-Cuban Lucumí traditions, sacred textiles coded in crimson—referred to by initiates under retained Yorùbá ritual nomenclature—adorn the thrones (tronos), batá drums, and sacred vestments (trajes de santo) of Changó and Oyá during Orisha consecrations. In Brazilian Candomblé Ketu, the conceptual and technical legacy of Àlàárì remains visible in the coveted 'Pano da Costa' (coastal cloth), woven with deep scarlet and red stripes worn over the shoulders of Iyalorixás and initiates. In Trinidad and Tobago's Orisha religion, votive red fabrics directly evoke the protective martial shielding traced to Ọ̀yọ́’s imperial weavers.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "When documenting Àlàárì for historical or cinematic productions, deploy high-dynamic-range cinematography under natural, golden-hour illumination to capture the iridescent, dimensional texture of the crimson warp threads. Emphasize macro shots of the dense cotton-and-silk tension lines, showing the tactile contrast of the hand-stitched joining seams. Audio recording must highlight the resonant acoustic environment of the master loom: the percussive thud-click of the wooden beater (itẹwọ), the squeak of treadle pedals, and the swish of the horn shuttle traversing the shed. Wardrobe styling must strictly observe status-graded etiquette: ensure garments are draped with voluminous, structured folds characteristic of classical Yorùbá imperial grandeur.",
-    "sovereign_parent": "Agbádá",
+    "sovereign_parent": "Aṣọ Òkè",
     "sovereign_parent_status": "Living Sub-Variant",
-    "is_parent": false
+    "is_parent": false,
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Picton, John (1995). The Art of African Textiles; Wolff, Norma H. (1982). Yoruba Adire Cloth; Abiodun, Rowland (2014). Yoruba Art and Language."
   },
   {
     "id": "Ẹ̀tù",
@@ -7905,9 +7919,10 @@
     "diaspora_connections": "Survives in the Afro-Atlantic religious traditions of Brazilian Candomblé Ketu and Cuban Lucumí as a supreme symbol of ancestral lineage. Known in Bahia as Pano da Costa (Alakà de Costa), deep-indigo pin-striped cloths woven in West Africa were imported into Salvador da Bahia through the 19th century, where they became the ceremonial shoulder-wraps and head-ties (ojá) of senior Iyalorixás, functioning as spiritual barriers to protect the Orí (head) during spirit possession. In Cuban Regla de Ocha, Ẹ̀tù textiles are venerated as prestige cloths associated with elder pathways of Yemọja, Òṣóòsì, and ancestral Egún altars.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Cinematography requires high-contrast, directional rim-lighting to expose the granular texture of handspun cotton and the microscopic white pinstripes against the deep, light-absorbing indigo dye. Sound design should record the metallic click-clack of the loom's shuttle (ọkọ̀), the percussive strike of the wooden reed (asá), and the liquid resonance of dripping dye vats. Wardrobe and set dressing must emphasize tactile weight, showing the stiff, sculpture-like folds of authentic Ẹ̀tù as an Agbádá moves, distinguishing its heavy presence from industrial, synthetic imitations.",
-    "sovereign_parent": "Agbádá",
+    "sovereign_parent": "Aṣọ Òkè",
     "sovereign_parent_status": "Living Sub-Variant",
-    "is_parent": false
+    "is_parent": false,
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Picton, John (1995). The Art of African Textiles; Wolff, Norma H. (1982). Yoruba Adire Cloth; Abiodun, Rowland (2014). Yoruba Art and Language."
   },
   {
     "id": "Adire",
@@ -9109,14 +9124,17 @@
   },
   {
     "id": "Àfin Ọọ̀ni",
-    "title": "Àfin Ọọ̀ni",
+    "title": "Ààfin Ọọ̀ni (Ilé-Ifẹ̀)",
     "culture": "Yorùbá",
     "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
+      "aafin ooni",
       "afin ooni",
       "afin-ooni",
       "afinooni",
-      "àfin ọọ̀ni"
+      "àfin ọọ̀ni",
+      "ààfin ọọ̀ni",
+      "ààfin ọọ̀ni (ilé-ifẹ̀)"
     ],
     "description": "The Ancestral Royal Palace of the Ọọ̀ni of Ifẹ̀, repository of Ancient Sacred Shrines, Bronzes, and Royal Court tradition.",
     "historical_timeline": "The origins of the Àfin Ọọ̀ni trace back to the Dawn of the Ifẹ̀ Empire, established by the Progenitor Odùduwà. During the Classical Period (12th to 15th Century), the Palace expanded into a monumental complex, becoming the epicenter of art and spirituality. It endured the turbulence of the Pre-Colonial Era and the Trans-Atlantic Slave Trade Era, remaining an unbroken spiritual beacon. Through the British Colonial Era and into the Modern Era, the Àfin has continuously evolved, preserving its status as the paramount seat of Yorùbá Royalty and the custodian of the Sacred Shrines.",
@@ -9131,20 +9149,24 @@
     "diaspora_connections": "For the Global African Diaspora, the Àfin Ọọ̀ni stands as the ultimate Ancestral Homeland and Spiritual Mecca. Practitioners of Lùkùmí in Cuba, Candomblé in Brazil, and Orisha traditions in Trinidad and Tobago trace their spiritual lineage directly to the Sacred Shrines within this Palace. Modern initiatives by successive Ọọ̀ni monarchs have actively bridged the gap between Ilé-Ifẹ̀ and the Diaspora, welcoming descendants of the Trans-Atlantic Slave Trade back to the Cradle of Humanity to reconnect with their Odùduwà heritage.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Cinematic portrayals of the Àfin Ọọ̀ni should emphasize the majestic Enuwá Square and the intricate details of the Ifẹ̀ Bronzes. Lighting should capture the golden, ethereal hues of the sun over Ilé-Ifẹ̀ to highlight its status as the Cradle of Humanity. Audio design must incorporate the resonant, polyrhythmic beats of the Gẹ̀dẹ̀gbé drums, accompanied by authentic Ewì (Yorùbá Poetic Chants) reciting the Oriki (Praise Poetry) of the Ọọ̀ni and the Òrìṣà Pantheon.",
-    "sovereign_parent": "Ọba",
+    "sovereign_parent": "Ààfin",
     "sovereign_parent_status": "Living Sub-Variant",
-    "is_parent": false
+    "is_parent": false,
+    "provenance_and_citations": "Akinjogbin, I.A. (1992). The Cradle of a Race; Willett, Frank (1967). Ife in the History of West African Sculpture; Blier, Suzanne Preston (2015). Art and Risk in Ancient Yoruba; Drewal, H.J. & Pemberton, J. (1989). Yoruba."
   },
   {
     "id": "Àfin Aláàfin",
-    "title": "Àfin Aláàfin",
+    "title": "Ààfin Aláàfin (Ọ̀yọ́)",
     "culture": "Yorùbá",
     "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
+      "aafin alaafin",
       "afin alaafin",
       "afin-alaafin",
       "afinalaafin",
-      "àfin aláàfin"
+      "àfin aláàfin",
+      "ààfin aláàfin",
+      "ààfin aláàfin (ọ̀yọ́)"
     ],
     "description": "The vast royal court complex of the Aláàfin of Ọ̀yọ́, famous for its traditional thatched roofs, carved posts, and court etiquette.",
     "historical_timeline": "The historical continuum of the Àfin Aláàfin spans multiple classical eras. It has its mythological and geopolitical genesis at Ilé-Ifẹ̀ through Prince Ọ̀rànmíyàn, who migrated northward to establish the premier imperial dynasty of Ọ̀yọ́. During the medieval and early modern epochs (14th to late 18th centuries), the court expanded across vast square miles at Ọ̀yọ́-Ilé (Katunga), developing complex multi-courtyard complexes that coordinated the most powerful cavalry empire in West Africa. Following the geopolitical convulsions and regional wars of the early 19th century that prompted the abandonment of Ọ̀yọ́-Ilé, Aláàfin Àtìbà founded the modern capital at Ọ̀yọ́ Àtìbà in the late 1830s. There, he painstakingly replicated the ancient spatial, administrative, and sacred geography of the old palace. Throughout the British colonial protectorate and post-independence Nigeria, the Àfin Aláàfin has remained the living nerve center of classic Yorùbá statecraft, sacred monarchy, and monumental heritage.",
@@ -9159,9 +9181,10 @@
     "diaspora_connections": "Across the Afro-Atlantic diaspora, particularly in Cuban Lucumí and Brazilian Candomblé Ketu traditions, the sacred spatial organization of the Àfin Aláàfin was reassembled within the sacred community shrines (Ilé-Ocha and Terreiros). The ritual protocols surrounding the divine throne (Ibùsùn), the veneration of Ṣàngó as the divine monarch, the use of beaded insignia and staff emblems, and the hierarchical ordering of sacred spaces with distinct outer courtyards and forbidden inner sanctums directly mirror the imperial architectural and courtly disciplines of the Aláàfin of Ọ̀yọ́.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Visually, the production palette requires saturated terracotta, laterite earth reds, polished aged-wood patina, bleached shell whites, and royal indigo fabrics. Framing should utilize wide, low-angle tracking shots along peristyle colonnades lined with sculpted anthropomorphic wooden posts, contrasting with shadowed impluvium courtyards catching dramatic shafts of natural sunlight. The soundscape must feature the polyrhythmic acoustics of the sovereign Gbedu and royal Bàtá drums, the piercing, resonant flourish of the long Kákàkí trumpets, the ambient metallic clang of ancestral blacksmith anvils, and the evocative cadence of the royal bards (Àkígbe/Arokin) chanting long-meter lineage genealogies (Oríkì).",
-    "sovereign_parent": "Ọba",
+    "sovereign_parent": "Ààfin",
     "sovereign_parent_status": "Living Sub-Variant",
-    "is_parent": false
+    "is_parent": false,
+    "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Law, Robin (1977). The Oyo Empire; Ojo, G.J. Afolabi (1966). Yoruba Palaces; Vlach, John Michael (1976). Affecting Architecture of the Yoruba."
   },
   {
     "id": "Kọ̀tọ̀-Karfe",
@@ -16944,14 +16967,16 @@
   },
   {
     "id": "Orangun",
-    "title": "Orangun",
+    "title": "Ọ̀ràngún of Ìlá",
     "culture": "Yorùbá",
     "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
       "king of ila orangun",
       "orangun",
       "orangun of ila",
-      "paramount ruler of ila"
+      "paramount ruler of ila",
+      "ọ̀ràngún",
+      "ọ̀ràngún of ìlá"
     ],
     "description": "The Paramount Royal Monarch of Ila Orangun. Direct Descendant of Odùduwà, holding an Ancient Beaded Crown.",
     "historical_timeline": "Circa 11th to 12th Century CE: Prince Fágbamílà Àjàgún-nlá departs Ilé-Ifẹ̀ with an ancient Beaded Crown (Adé Ìlẹ̀kẹ̀), the Sword of Victory (Idà Ìṣẹ́gun), and sacred regalia bestowed by his father, Odùduwà, establishing the sovereign throne of the Ìgbómìnà people. 15th to 17th Century CE: The capital transitions through various strategic locations, historically moving from Ìlá Yára due to internal expansion and regional warfare, eventually settling at its permanent citadel, Ìlá-Òràngún. Late 18th to 19th Century CE: The Kingdom of Ìlá-Òràngún plays a decisive role during the Yorùbá Wars of the 19th century, resisting Fúlàní cavalry incursions from the Ilorin Emirate, weathering the devastating Jalumi War of 1878, and aligning strategic interests during the Kiriji Wars to preserve Ìgbómìnà sovereignty. 1897: Incorporation into the British Colonial Protectorate via strategic peace treaties while fiercely retaining the integrity of its native administrative structures. 20th Century to Present: Elevated to permanent first-class status within the Western Region House of Chiefs and contemporary Ọ̀ṣun State Council of Traditional Rulers, maintaining undisputed paramountcy over the historical Ìgbómìnà realm.",
@@ -16965,7 +16990,11 @@
     ],
     "diaspora_connections": "In the Transatlantic Diaspora, particularly within the Afro-Cuban Lucumí tradition, the Brazilian Candomblé Ketu/Nagô temples, and North American movements like the Kingdom of Oyotunji, the authority of the Òràngún is preserved through the profound veneration of the Odùduwà crown lineage (Adé Ọba). Ceremonial initiations that crown an initiate's head (Orí) with royal Orìṣà garments directly trace their liturgical authority back to the primordial kings of Yorùbáland, of which the Òràngún is a foundational patriarch. The artistic memory of Ìgbómìnà beadwork and wooden sculpture carried through Middle Passage descendants strongly influences sacred Lucumí and Candomblé altars, where sacred beaded staffs and crowns reflect the identical geometric aesthetics and spiritual protective designs safeguarded in Ìlá-Òràngún.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For cinematic, archival, and photographic documentation, depict the Òràngún strictly in regal, slow-cadence majesty, avoiding hurried movements to emulate the cosmological weight of divine kingship. Color palettes must center on royal indigo, deep crimson, polished bronze, and radiant coral. Lighting should capture the iridescent texture of the microscopic glass beads on the Adé Ìlẹ̀kẹ̀, allowing the facial veil to cast dramatic, sacred shadows over the monarch's visage. Audio design should incorporate the deep, multi-tonal rhythms of the Gbedu and traditional Bàtá royal court drums, alongside precise, resonant Dùndún talking drum recitations of the Òràngún's ancestral Oríkì (praise poetry). When showing royal artifacts, frame the intricate caryatids of the Ààfin with low-angle shots to emphasize their sacred architectural gravity."
+    "media_production_notes": "For cinematic, archival, and photographic documentation, depict the Òràngún strictly in regal, slow-cadence majesty, avoiding hurried movements to emulate the cosmological weight of divine kingship. Color palettes must center on royal indigo, deep crimson, polished bronze, and radiant coral. Lighting should capture the iridescent texture of the microscopic glass beads on the Adé Ìlẹ̀kẹ̀, allowing the facial veil to cast dramatic, sacred shadows over the monarch's visage. Audio design should incorporate the deep, multi-tonal rhythms of the Gbedu and traditional Bàtá royal court drums, alongside precise, resonant Dùndún talking drum recitations of the Òràngún's ancestral Oríkì (praise poetry). When showing royal artifacts, frame the intricate caryatids of the Ààfin with low-angle shots to emphasize their sacred architectural gravity.",
+    "is_parent": false,
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Pemberton, John & Afolayan, Funso S. (1996). Yoruba Sacred Kingship: A Power Like That of the Gods; Smith, Robert S. (1988). Kingdoms of the Yoruba."
   },
   {
     "id": "Soun",
@@ -17021,13 +17050,16 @@
   },
   {
     "id": "Owa Obokun",
-    "title": "Owa Obokun",
+    "title": "Ọwá Obòkun of Ìjẹ̀ṣàland",
     "culture": "Yorùbá",
     "category": "Monarchy, Royal Regalia & Governance",
     "aliases": [
       "owa obokun",
+      "owa obokun of ijeshaland",
       "owa-obokun",
-      "owaobokun"
+      "owaobokun",
+      "ọwá obòkun",
+      "ọwá obòkun of ìjẹ̀ṣàland"
     ],
     "description": "The Paramount Royal Monarch of Ijeshaland, based in Ilesa.",
     "historical_timeline": "The monarchy traces its genesis to the Classical Ilé-Ifẹ̀ Era when Prince Ajíbógun, having successfully traversed the wilderness to secure sea brine, was invested by Odùduwà with the Idà Ìṣẹ́gun (Sacred Sword of Victory) and granted dominion to establish his kingdom. Migrating northward through settlements such as Igbádáàyè and Iléwé, the seat of the Crown was permanently consolidated at Iléṣà in the fourteenth century under Ọwá Òbòkun Owaluse. Throughout the seventeenth and eighteenth centuries, the Ijesha Empire expanded into an indomitable confederate power, fiercely resisting internal imperial expansionism. During the nineteenth-century Kírìjì War (Èkìtìparapọ̀ War, 1877–1886), the Ọwá Òbòkun stood as the ultimate spiritual rallying point for the confederacy led by Balógun Ògúndèmígbé of Iléṣà against the militaristic hegemony of Ìbàdàn, cementing the crown's legacy of independence through the 1886 Peace Treaty and into modern Nigerian constitutional recognition.",
@@ -17044,7 +17076,9 @@
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "When visualizing or dramatizing the Ọwá Òbòkun, strict cultural decorum must be observed regarding the veil of beaded fringe hanging from the Adé Ilẹ̀kẹ̀, which obscures the monarch's divine countenance during formal state and spiritual functions. Sound design should emphasize the thunderous resonance of the imperial Bẹ̀mbẹ́ and Gbẹ̀du drums, accented by the sharp, metallic meter of traditional forged iron gongs (Agogo). Cinematographers should prioritize deep earthen tones, indigo hues, and polished bronze highlights to mirror the historic architecture of the Afin Ọwá (Palace of the Ọwá) in Iléṣà, ensuring that any representation of the Idà Ìṣẹ́gun communicates solemnity, reverence, and unyielding dignity.",
     "sovereign_parent": "Ọba",
-    "sovereign_parent_status": "Living Sub-Variant"
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false,
+    "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Peel, J.D.Y. (1983). Ijeshas and Nigerians: The Poetics of Social Experience; Akintoye, S.A. (1971). Revolution and Power Politics in Yorubaland."
   },
   {
     "id": "Akarigbo",
@@ -42481,5 +42515,152 @@
       ],
       "sub_variants": []
     }
+  },
+  {
+    "id": "ooni_of_ife",
+    "title": "Ọọ̀ni of Ifẹ̀",
+    "culture": "Yorùbá",
+    "category": "Monarchy, Royal Regalia & Governance",
+    "is_parent": false,
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ooni of ife",
+      "ọọ̀ni of ifẹ̀",
+      "ooni ife",
+      "ọọ̀ni ifẹ̀",
+      "ooni",
+      "ọọ̀ni",
+      "king of ife",
+      "spiritual head of the yoruba",
+      "arole oduduwa"
+    ],
+    "description": "The sacred Paramount Monarch of Ilé-Ifẹ̀, revered as the spiritual father of the Yorùbá race and living custodian of the ancestral cradle of humanity.",
+    "historical_timeline": "Classical Antiquity (c. 11th–14th Century CE): Rooted in the ancestral founding of Ilé-Ifẹ̀ by Odùduwà; formalized through dynasties succeeding Obàlùfọ̀n and Ọ̀rànmíyàn. Imperial & Inter-Kingdom Era (15th–19th Century): Recognized as the supreme spiritual father among all crowned Yoruba kings, holding the prerogative to sanction royal beaded crowns (Adé Aládé) and ancestral swords of state (Idà Ìṣẹ́gun). Modern Era: Head of the Osun State Council of Traditional Rulers and co-chair of the National Council of Traditional Rulers of Nigeria, embodying unbroken cultural continuity from the primordial dawn.",
+    "etymology_and_philosophy": "Linguistically contracted from 'Ọmọ-ẹni-tó-ni' (the child of he who owns the land) or 'Ọlọ́wọ̀-ọ̀ni' (The venerable lord of today). Philosophically, the Ọọ̀ni is 'Arole Odùduwà' (the earthly heir to Odùduwà) and 'Ọ̀jìkí-kí-Ọba' (The sovereign hailed before all monarchs). His office personifies cosmic sacrality (Aṣẹ), spiritual consensus, and the moral fountainhead from which all legitimate dynastic authority flows.",
+    "material_and_craftsmanship": "Adorned in pure white sacred textiles (Aṣọ Funfun), antique cylindrical Ìyun coral and Sègi cobalt beads, and the consecrated high beaded crown (Adé Arè) embroidered with sacred avian heraldry (Òkín). Holds the beaded staff of office (Ọ̀pá Aṣẹ) and horse-tail whisk (Ìrùkẹ̀rẹ̀).",
+    "social_and_ritual_context": "Presides over the ancient Ifẹ̀ royal court, the Ooni-in-Council (High Chiefs / Ìwàrẹ̀fà), and sacred ancestral annual rites including the Olojo Festival (wearing of the sacred Adé Arè), Edì, and Itapa festivals.",
+    "proverbs_and_oral_traditions": [
+      "Ọọ̀ni l'ó ni Ilé-Ifẹ̀, orísun gbogbo ẹ̀dá. (The Ọọ̀ni is the sovereign custodian of Ilé-Ifẹ̀, the primal source of all humanity: Celebrating spiritual antiquity.)",
+      "A kì í bá Ọọ̀ni jà kí a rí àbùkù tán; orísun aṣẹ kì í gbẹ. (One never contends with the Ọọ̀ni and avoids divine consequence; the fountainhead of spiritual mandate never dries up: Revering sacral authority.)",
+      "Adé Arè kò gbọdọ̀ kan ilẹ̀ lásán; orí tí yóò dé e gbọdọ̀ fẹsẹ̀ múlẹ̀ nínú ìwà. (The sacred crown of Arè must never touch the bare ground in vain; the head destined to wear it must be firmly rooted in righteous character: Demanding moral fortitude.)"
+    ],
+    "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Akinjogbin, I.A. (1992). The Cradle of a Race: Ife from the Beginning to 1980; Abiodun, Rowland (2014). Yoruba Art and Language; Lawal, Babatunde (1996). The Gelede Spectacle."
+  },
+  {
+    "id": "alaafin_of_oyo",
+    "title": "Aláàfin of Ọ̀yọ́",
+    "culture": "Yorùbá",
+    "category": "Monarchy, Royal Regalia & Governance",
+    "is_parent": false,
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "alaafin of oyo",
+      "aláàfin of ọ̀yọ́",
+      "alaafin oyo",
+      "aláàfin ọ̀yọ́",
+      "alaafin",
+      "aláàfin",
+      "emperor of oyo",
+      "lord of the palace"
+    ],
+    "description": "The imperial Paramount Monarch of the Ọ̀yọ́ Empire, titled Kábíyèsí, Emperor of the Yorùbá, and living earthly representative of Ṣàngó.",
+    "historical_timeline": "Classical Imperial Genesis (c. 14th–16th Century CE): Founded at Ọ̀yọ́-Ilé by Prince Ọ̀rànmíyàn; expanded under legendary monarchs including Ṣàngó, Àjàká, and Kori. Imperial Zenith (17th–18th Century CE): Governed the vast metropolitan Ọ̀yọ́ Empire from the Niger river to the Dahomey coast, commanding imperial cavalry regiments and international trade. 19th Century Renaissance: Relocated by Aláàfin Àtìbà to Ọ̀yọ́-Àtìbà (New Ọ̀yọ́) in the 1830s following the Fúlàní jihads, maintaining institutional hegemony into the contemporary era.",
+    "etymology_and_philosophy": "Contracted from 'Aláàfin' (Oní-ààfin: The Lord and Master of the Palace). Philosophically titled 'Kábíyèsí' (Ká-bí-yín-kò-sí: He whom none dare question), 'Iku Baba Yeye' (Death, the Sire and Mother), and 'Aláṣẹ Èkejì Òrìṣà' (Companion and second-in-command to the Deities). Balances absolute executive authority with constitutional checks by the Ọ̀yọ́ Mèsì council led by the Baṣọ̀run.",
+    "material_and_craftsmanship": "Wears the magnificent conical beaded crown with face-veiling seed-bead fringe (Adé Òkín), master-loomed raw silk Sányán and crimson Àlàárì agbádá robes, beaded leather footwear (Bàtà Ìlẹ̀kẹ̀), and holds the carved ivory tusk flywhisk (Ìrùkẹ̀rẹ̀).",
+    "social_and_ritual_context": "Presides over the imperial palace (Ààfin Aláàfin), the Kòso sacred coronation shrine, the Ọ̀yọ́ Mèsì council, and annual festivals honoring Ṣàngó, Ọya, and Ọ̀rùn.",
+    "proverbs_and_oral_traditions": [
+      "Aláàfin l'ó l'Orí, Ọ̀yọ́ Mèsì l'ó ni Ilẹ̀. (The Aláàfin presides over the Head; the Ọ̀yọ́ Mèsì holds the sovereignty of the Earth: Articulating classical separation of powers.)",
+      "Ọ̀rọ̀ tí Aláàfin bá sọ ti di àṣẹ; a kì í fẹnu kò lu idà ọba. (The word spoken by the Aláàfin becomes immutable decree; one never contends with the royal blade: Affirming executive authority.)",
+      "Ọba Ọ̀yọ́ kì í bẹ̀rù ogun; Ṣàngó l'ó fi iná kọ́ ààfin. (The King of Ọ̀yọ́ fears no war; it was Ṣàngó who established the palace with celestial fire: Celebrating martial heritage.)"
+    ],
+    "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Law, Robin (1977). The Oyo Empire c. 1600-c. 1836; Smith, Robert S. (1988). Kingdoms of the Yoruba; Atanda, J.A. (1973). The New Oyo Empire."
+  },
+  {
+    "id": "awujale_of_ijebu",
+    "title": "Awùjalẹ̀ of Ìjẹ̀bú",
+    "culture": "Yorùbá",
+    "category": "Monarchy, Royal Regalia & Governance",
+    "is_parent": false,
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "awujale of ijebu",
+      "awùjalẹ̀ of ìjẹ̀bú",
+      "awujale",
+      "awùjalẹ̀",
+      "king of ijebuland",
+      "paramount ruler of ijebu"
+    ],
+    "description": "The Paramount Monarch and sovereign ruler of the ancient Kingdom of Ìjẹ̀búland, reigning from the ancestral capital of Ìjẹ̀bú-Òde.",
+    "historical_timeline": "Classical Era (c. 14th Century CE to present): Traces royal descent to Ọbánta (Arígbábú), son of Odùduwà's daughter, who unified the Ìjẹ̀bú forest kingdoms. Commercial & Defensive Supremacy (16th–19th Century): Commanded coastal and lagoon trade routes between the interior and European maritime merchants; established Sungbo's Eredo earthwork defense ramparts and maintained fierce political autonomy until the 1892 British expedition. Modern Era: One of the oldest surviving monarchical institutions in West Africa.",
+    "etymology_and_philosophy": "Derived from 'A-wú-jọ-alẹ̀' (He who swells and unites the sovereign land / The arbiter who commands peace over the territorial earth). Philosophically represents administrative consensus, commercial acumen, and deep ritual integration with the Òsùgbó/Ògbóni judicial council and Agẹmọ sacerdotal confederacy.",
+    "material_and_craftsmanship": "Adorned in high-count indigo-dyed Kìjìpá, heirloom red coral necklaces, master-carved ivory armlets, and conical beaded crowns featuring stylized chameleon and tortoise icons honoring Agẹmọ.",
+    "social_and_ritual_context": "Presides over the Ìjẹ̀bú kingdom, the Òsùgbó judicial lodge, the Ìpàkí guild, and the sacred national Agẹmọ festival celebrated across sixteen constituent towns.",
+    "proverbs_and_oral_traditions": [
+      "Awùjalẹ̀ gb'orí ìtẹ́, Ìjẹ̀bú d'ọrọ̀; ẹni tó bọ̀wọ̀ fún ọba kì í ṣòfò. (When the Awùjalẹ̀ mounts the ancestral throne, Ìjẹ̀bú flourishes in prosperity; he who reverences the monarch never tastes loss: Praising economic governance.)",
+      "Ọba Ìjẹ̀bú kì í fojú kàn agẹmọ lásán; aṣẹ àtijọ́ ló ń sọ ilẹ̀ d'ọ̀wọ̀. (The King of Ìjẹ̀bú never beholds Agẹmọ lightly; ancient covenants sanctify the soil: Revering sacred civic oaths.)",
+      "Àwùjọ kì í tú tí Awùjalẹ̀ bá wà lórí ìtẹ́; àlàáfíà ni òkúta-ìpìlẹ̀ ìlú. (The civic assembly never scatters while the Awùjalẹ̀ occupies the throne; peace is the foundation of the realm: Celebrating social stability.)"
+    ],
+    "provenance_and_citations": "Ogunba, Oyin (1967). The Agemo Cult in Ijebuland; Lloyd, P.C. (1962). Yoruba Land Law; Ayandele, E.A. (1992). The Ijebu of Yorubaland 1850-1950; Smith, Robert S. (1988). Kingdoms of the Yoruba."
+  },
+  {
+    "id": "kobi_aafin",
+    "title": "Kòbì Ààfin",
+    "culture": "Yorùbá",
+    "category": "Topography, Natural Landscapes & Architecture",
+    "is_parent": false,
+    "sovereign_parent": "Ààfin",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "kobi aafin",
+      "kòbì ààfin",
+      "kobi",
+      "kòbì",
+      "royal gabled roof",
+      "palace gable porch",
+      "sacred gabled roof"
+    ],
+    "description": "The sacred gabled porch and projecting roof pavilion of a Yorùbá royal palace, reserved exclusively for the monarch and shrines of paramount ancestors, prohibited in ordinary private architecture.",
+    "historical_timeline": "Classical Era (c. 13th Century CE to present): Developed in ancient Ifẹ̀ and imperial Ọ̀yọ́ as an architectural signifier of supreme sovereignty. Customary Sumptuary Law: Under traditional law, no private citizen or non-crowned chief was permitted to build a Kòbì roof upon pain of severe judicial sanction. Survivals: Prominently preserved in the palaces of the Aláàfin of Ọ̀yọ́, Ọọ̀ni of Ifẹ̀, Ẹwí of Adó-Èkìtì, and Ọba of Òkè-Ìlá.",
+    "etymology_and_philosophy": "From 'Kò-bì' (That which projects outwards without falling / An architectural summit). Philosophically signifies the sheltering wing of the monarch over the commonwealth and the sacred spatial portal connecting ancestral spirits above with human assemblies below.",
+    "material_and_craftsmanship": "Steeply pitched triangular or gabled timber frame clad in thatch or embossed metal sheeting, supported by carved caryatid posts depicting royal mothers, equestrian warriors, and deities.",
+    "social_and_ritual_context": "The Aláàfin or Ọba appears beneath the Kòbì during major public festivals to greet chiefs and commoners. Sacred shrines to Ṣàngó, Ògún, or royal ancestors are housed beneath specific designated Kòbì.",
+    "proverbs_and_oral_traditions": [
+      "Ọba nìkan l'ó l'ẹtọ́ láti tẹ kòbì; ilé ọlọ́rọ̀ kì í díje pẹ̀lú ààfin. (The monarch alone possesses the prerogative to erect a gabled Kòbì; the mansion of the wealthy commoner never competes with the palace: Articulating royal architectural sovereignty.)",
+      "Kòbì ààfin kì í jóná kí ọba má tún un kọ́; àbùkù kì í bá adé baba. (The palace gable never burns down without the king rebuilding it grander; dishonor never afflicts the ancestral crown: Proclaiming resilience.)",
+      "Ẹni tó dúró sábẹ́ kòbì ti bọ́ sábẹ́ àbò ọba; àṣẹ kì í pa ẹni tó wà l'ọ́gbà ọba. (He who stands beneath the royal gable has entered royal sanctuary; divine authority never slays the guest of the palace: Teaching sanctuary law.)"
+    ],
+    "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Palaces; Vlach, John Michael (1976). Affecting Architecture of the Yoruba; Abiodun, Rowland (2014). Yoruba Art and Language; Johnson, Samuel (1921). The History of the Yorubas."
+  },
+  {
+    "id": "ewe_akoko",
+    "title": "Ewé Àkòko",
+    "culture": "Yorùbá",
+    "category": "Sacred Botany, Flora & Herbal Medicine",
+    "is_parent": false,
+    "sovereign_parent": "Òògùn",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "aliases": [
+      "ewe akoko",
+      "ewé àkòko",
+      "akoko leaf",
+      "newbouldia laevis",
+      "boundary tree",
+      "coronation leaf",
+      "sacred coronation leaf"
+    ],
+    "description": "Newbouldia laevis — the sacred coronation and boundary leaf of kingship, placed in the royal crown or chieftaincy cap during investiture rites to confer divine longevity, peace, and unshakeable authority.",
+    "historical_timeline": "Classical Antiquity to Present: Revered across Yorùbá history as the premier botanical emblem of longevity and divine royal mandate. Investitures: Placed behind the ear and inside the crown of every Ọba and chief at coronation since the dawn of Ilé-Ifẹ̀. Boundary Custody: Planted as living, indestructible boundary markers (Òpó Ààlà) across farmland and municipal territories.",
+    "etymology_and_philosophy": "Named 'Àkòko' (from 'Àkọ́-ọ̀kọ̀' / primordial foundation of time). Philosophically represents perpetual life, resilience against lightning and pestilence, and the unyielding permanence of ancestral authority: 'Àkòko kì í kú sí oko' (The Àkòko tree never withers into oblivion).",
+    "material_and_craftsmanship": "Lustrous dark-green pinnate leaves harvested with consecrated copper coins and palm gin; placed alongside consecrated parrot feathers (Ìkódẹ) and camwood.",
+    "social_and_ritual_context": "Indispensable during monarchical coronations, Ògbóni investitures, Òrìṣà Oko agricultural rites, and establishing inviolate land borders.",
+    "proverbs_and_oral_traditions": [
+      "Ewé àkòko kì í gbẹ lórí ìtẹ́; orí tí yóò jọba a gb'àkòko kọ́. (The Àkòko leaf never withers upon the throne; the head destined for kingship receives the sacred leaf: Celebrating legitimate investiture.)",
+      "Àkòko l'ó ni adé, àkòko l'ó l'oyè; ẹni tí Òrìṣà bá fi àkòko jẹ kì í rí àbùkù. (Àkòko commands the crown, Àkòko governs the title; he whom the deities invest with the leaf never faces dishonor: Affirming divine sanction.)",
+      "Bí a bá gbin àkòko sí ààlà, ogun kò lè mú ilẹ̀; àṣẹ àwọn àgbà wà nínú gbongbo rẹ̀. (When Àkòko is planted at the boundary, warfare cannot seize the land; ancestral authority resides in its roots: Teaching boundary sanctity.)"
+    ],
+    "provenance_and_citations": "Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society; Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Oliver-Bever, B. (1986). Medicinal Plants in Tropical West Africa."
   }
 ]

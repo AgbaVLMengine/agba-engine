@@ -1470,6 +1470,34 @@
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** (Advisory notice on `AdminTab.jsx` completely cleared).
 - **Verification**: 🏆 **HANDOFF-AGBEDE-006 RATIFIED — ADMINTAB DECOMPOSED TO 122 LOC / ZERO ADVISORY WARNINGS**.
 
+### [2026-10-30] Checkpoint 094 (`CHECKPOINT-AROKIN-011`) — Execution of HANDOFF-AROKIN-004: Phase 1 Monarchy & Royal Architecture Constellation Ingestion
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Execute `HANDOFF-AROKIN-004`: Ingest canonical 14-Tier standalone records for the paramount Monarchy, Royal Architecture & Regalia cluster, transforming phantom sub-variant chips into living rabbit-hole nodes per the Sacred Doctrine of Ancestral Primacy.
+- **Deliverables Completed**:
+  - **Crowns & Dynasties Ingestion**:
+    - Ingested [`Ọọ̀ni of Ifẹ̀`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: ooni_of_ife`, child of `Ọba`), documenting spiritual paternity, Adé Arè coronation rites, and Enùwá court etiquette.
+    - Ingested [`Aláàfin of Ọ̀yọ́`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: alaafin_of_oyo`, child of `Ọba`), documenting imperial metropolitan hegemony, Ṣàngó representation, and Ọ̀yọ́ Mèsì checks and balances.
+    - Ingested [`Awùjalẹ̀ of Ìjẹ̀bú`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: awujale_of_ijebu`, child of `Ọba`), documenting coastal trade diplomacy, Ọbánta royal lineage, and Agẹmọ confederacy oversight.
+    - Elevated pre-existing `Owa Obokun` to canonical [`Ọwá Obòkun of Ìjẹ̀ṣàland`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with 14-Tier depth and academic citations (Peel 1983, Akintoye 1971).
+    - Elevated pre-existing `Orangun` to canonical [`Ọ̀ràngún of Ìlá`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with 14-Tier depth and academic citations (Pemberton & Afolayan 1996).
+  - **Palace Architecture Ingestion**:
+    - Elevated `Àfin Ọọ̀ni` to canonical [`Ààfin Ọọ̀ni (Ilé-Ifẹ̀)`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with potsherd-paved impluvium history and citations (Akinjogbin 1992, Willett 1967, Blier 2015).
+    - Elevated `Àfin Aláàfin` to canonical [`Ààfin Aláàfin (Ọ̀yọ́)`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with royal courtyard architecture and citations (Ojo 1966, Vlach 1976).
+    - Ingested [`Kòbì Ààfin`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: kobi_aafin`, child of `Ààfin`), detailing the sacred royal gabled roof, carved caryatid posts, and sumptuary protection laws.
+  - **Master Textiles & Sacred Ethnobotany Ingestion**:
+    - Enriched [`Sányán`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json), [`Àlàárì`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json), and [`Ẹ̀tù`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) with academic textile literature (Eicher 1976, Picton 1995, Wolff 1982, Abiodun 2014) and aligned them under parent `Aṣọ Òkè`.
+    - Ingested [`Ewé Àkòko`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) (`id: ewe_akoko`, *Newbouldia laevis*), documenting the sacred coronation leaf of kingship, chieftaincy investiture, and territorial boundary sanctity.
+  - **Script & Dual-Corpus Synchronization**:
+    - Authored [`scripts/enrich_monarchy_constellations.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_monarchy_constellations.py) (**287 LOC**, Gate 2 compliant).
+    - Synchronized [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json) in absolute lockstep at **1,413 canonical entities**.
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy** across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 11 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **867ms** (1,928 modules transformed, 0 errors).
+- **Verification**: 🏆 **HANDOFF-AROKIN-004 COMPLETE — MONARCHY & ROYAL ARCHITECTURE CONSTELLATIONS INGESTED / ZERO VIOLATIONS**.
+
+
 
 
 
