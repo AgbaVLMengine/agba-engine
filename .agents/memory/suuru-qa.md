@@ -248,6 +248,23 @@
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
     - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,411-entity master corpus. Full handoff delivered to `Àgbà` and `Òye`.
+  - **[2026-10-30] (`CHECKPOINT-SUURU-009` — Forensic Verification & Post-Fix QA of Gángan Parent Usurpation)**:
+    - **Context & Audit Trigger**: Lead Architect reported that searching for ASCII `"Gangan"` failed to retrieve `Gángan`, appearing disconnected from the ASCII query in the UI.
+    - **Root Cause Isolated**:
+      1. `Dùndún` listed `'gangan'` in its aliases in both corpora, creating alias cross-contamination.
+      2. `useRootNetworkNodes.js` unconditionally reassigned `parentNode = trueParent` (`Dùndún`) whenever `matchedNode.sovereign_parent` was defined, usurping the primary Root Pod and displaying `Dùndún` instead of `Gángan`.
+      3. `SearchTab.jsx` prioritized stale `activeNode?.entityData` over `results.ranked_entities[0]`.
+    - **Remediation Implemented by Àgbà (Commit `7cd4d27`)**:
+      - `api/data/yoruba_corpus_1007_NORMALIZED.json` & `web/src/data/yoruba_master_corpus.json`: Removed `"gangan"` alias from `Dùndún`.
+      - `web/src/hooks/useRootNetworkNodes.js`: Added `isDirectChildMatch` guard; child entities queried directly now retain root pod status (`parentNode = matchedNode`), with `trueParent` placed as a related relative.
+      - `web/src/components/OponSearchCore.jsx`: Added dynamic badge distinction ("Living Variant" vs "Sovereign Parent").
+      - `web/src/components/SearchTab.jsx`: Prioritized fresh search hit `results?.ranked_entities?.[0]`.
+    - **QA Verification Results**:
+      - `useRootNetworkNodes("Gangan")`: Resolves `parent_node.title: "Gángan"`, `isDirectChildMatch: True`, `true_parent: "Dùndún"` (PASS).
+      - `scripts/benchmark_sprint004.py`: 69/69 (100.0%) Top-1 Accuracy; `Q45_GANGAN` retrieves `Gángan` at Rank #1 without loop (PASS).
+      - `web/` production build: Vite transformed 1,928 modules in 682ms with 0 errors (PASS).
+      - `scripts/review.sh`: 0 hard violations, 0 warnings (PASS).
+
 
 
 
