@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, CheckCircle2, XCircle, Edit3, Lock, Unlock, Play, RefreshCw, AlertTriangle, Layers, Database, Sparkles } from 'lucide-react';
+import masterCorpus from '../data/yoruba_master_corpus.json';
 
 // Sample real-world failure context queue seeded from telemetry events
 const INITIAL_QUEUE = [
@@ -123,6 +124,9 @@ export default function AdminTab({ apiBaseUrl }) {
   const pendingCount = queue.filter((i) => i.status === 'PENDING_REVIEW').length;
   const approvedCount = queue.filter((i) => i.status === 'APPROVED').length;
   const declinedCount = queue.filter((i) => i.status === 'DECLINED').length;
+  const totalMasterEntities = masterCorpus.length;
+  const totalParents = masterCorpus.filter((e) => e.is_parent).length;
+  const totalSubVariants = masterCorpus.filter((e) => e.sovereign_parent).length;
 
   if (!isAuthenticated) {
     return (
@@ -234,8 +238,12 @@ export default function AdminTab({ apiBaseUrl }) {
 
         <div className="glass-panel" style={{ padding: '20px', borderLeft: '4px solid var(--gold-primary)' }}>
           <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', textTransform: 'uppercase' }}>Master Corpus Base</div>
-          <div style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--gold-light)' }}>1,007</div>
-          <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Normalized cultural entities</div>
+          <div style={{ fontSize: '2.2rem', fontWeight: 800, color: 'var(--gold-light)' }}>
+            {totalMasterEntities.toLocaleString()}
+          </div>
+          <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>
+            {totalParents} Parents · {totalSubVariants} Sub-Variants
+          </div>
         </div>
       </div>
 

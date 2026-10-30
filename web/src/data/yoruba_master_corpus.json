@@ -53,8 +53,12 @@
       ],
       "diaspora_connections": "Recognized by global linguists as preserving the oldest tonal phonemes and dialectal root words of proto-Yorùbá.",
       "geographical_origin": "North-Central Nigeria (Kogi State / Okunland).",
-      "media_production_notes": "Show the majestic confluence of Rivers Niger and Benue, and highland mountain redoubts of Okun warriors."
-    }
+      "media_production_notes": "Show the majestic confluence of Rivers Niger and Benue, and highland mountain redoubts of Okun warriors.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Kwara",
@@ -107,8 +111,12 @@
       ],
       "diaspora_connections": "Cultural nexus connecting northern trans-Saharan trade routes with southern forest Yorùbá civilization.",
       "geographical_origin": "North-Central Nigeria (Kwara State).",
-      "media_production_notes": "Capture the enigmatic Èsìẹ́ soapstone figures, handlooms of Omu-Aran, and equestrian pageantry of Ilorin."
-    }
+      "media_production_notes": "Capture the enigmatic Èsìẹ́ soapstone figures, handlooms of Omu-Aran, and equestrian pageantry of Ilorin.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Èkó",
@@ -166,8 +174,12 @@
       ],
       "diaspora_connections": "Global gateway of return for African-Americans and Afro-Brazilians; world capital of Afrobeats and contemporary Yorùbá cinema.",
       "geographical_origin": "Southwestern Nigeria (Lagos State).",
-      "media_production_notes": "Juxtapose the pristine white robes and tall staves of Èyọ̀ masquerades against the Atlantic lagoon shoreline."
-    }
+      "media_production_notes": "Juxtapose the pristine white robes and tall staves of Èyọ̀ masquerades against the Atlantic lagoon shoreline.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Òndó",
@@ -219,8 +231,12 @@
       ],
       "diaspora_connections": "Preserves deep linguistic and artistic connections with the Benin/Edo realm and international African art collections.",
       "geographical_origin": "Southwestern Nigeria (Ondo State).",
-      "media_production_notes": "Show the magnificent rock-hewn steps of Òkè Ìdànrè and the beaded royal regalia of the Ọ̀ṣẹ́màwé and Olowo."
-    }
+      "media_production_notes": "Show the magnificent rock-hewn steps of Òkè Ìdànrè and the beaded royal regalia of the Ọ̀ṣẹ́màwé and Olowo.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Èkìtì",
@@ -271,11 +287,15 @@
       ],
       "diaspora_connections": "Renowned for producing foundational academic scholars and cultural preservationists throughout the diaspora.",
       "geographical_origin": "Southwestern Nigeria (Ekiti State).",
-      "media_production_notes": "Show lush undulating granite hills, carved palace verandas of Ìṣẹ̀-Èkìtì, and the confluent warm/cold waters of Ikogosi."
+      "media_production_notes": "Show lush undulating granite hills, carved palace verandas of Ìṣẹ̀-Èkìtì, and the confluent warm/cold waters of Ikogosi.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
     },
     "related_entities": [
       "Alárá"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Ọ̀ṣun",
@@ -327,8 +347,12 @@
       ],
       "diaspora_connections": "Universal spiritual motherland for millions of Yorùbá practitioners in Brazil, Cuba, Trinidad, and the United States.",
       "geographical_origin": "Southwestern Nigeria (Osun State).",
-      "media_production_notes": "Show the mystical bronze bust of Olókun, Orí Olókun at Ifẹ̀, and the canopy over Òṣun-Òṣogbo Sacred River."
-    }
+      "media_production_notes": "Show the mystical bronze bust of Olókun, Orí Olókun at Ifẹ̀, and the canopy over Òṣun-Òṣogbo Sacred River.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Ọ̀yọ́",
@@ -380,11 +404,15 @@
       ],
       "diaspora_connections": "Source of foundational Lucumí and Ketu rituals in the Americas; Ọ̀yọ́ language forms the basis of Standard Yorùbá.",
       "geographical_origin": "Southwestern Nigeria (Oyo State).",
-      "media_production_notes": "Contrast the monumental Bower Tower / Mapo Hall architecture with ancient Ọ̀yọ́ royal palace courtyards."
+      "media_production_notes": "Contrast the monumental Bower Tower / Mapo Hall architecture with ancient Ọ̀yọ́ royal palace courtyards.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
     },
     "related_entities": [
       "Arẹ́sà"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀ Ògùn",
@@ -437,11 +465,15 @@
       ],
       "diaspora_connections": "Ancestral homeland of transatlantic returnees (Saros) and Brazilian repatriates who shaped West African renaissance.",
       "geographical_origin": "Southwestern Nigeria (Ogun State).",
-      "media_production_notes": "Feature Olúmọ Rock granite crest, Itoku Adirẹ dyers, and the historic Ògùn riverbank."
+      "media_production_notes": "Feature Olúmọ Rock granite crest, Itoku Adirẹ dyers, and the historic Ògùn riverbank.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
     },
     "related_entities": [
       "Akárìgbò"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìpínlẹ̀",
@@ -494,8 +526,12 @@
       ],
       "diaspora_connections": "Yorùbá state diasporic federations across North America, the UK, Brazil, Cuba, and worldwide socio-cultural associations.",
       "geographical_origin": "Yorùbáland (Southwestern and North-Central Nigeria).",
-      "media_production_notes": "Cinematic visual showcases historical provincial landmarks, regional topography, and capital city skylines."
-    }
+      "media_production_notes": "Cinematic visual showcases historical provincial landmarks, regional topography, and capital city skylines.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ère",
@@ -549,8 +585,12 @@
       ],
       "diaspora_connections": "Twin sculptures and altar figures remain central in Cuban and Brazilian African-heritage shrines.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show the rich reddish camwood patina and glowing blue glass bead strands adorning the smooth wood sculpture."
-    }
+      "media_production_notes": "Show the rich reddish camwood patina and glowing blue glass bead strands adorning the smooth wood sculpture.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹgbẹ́",
@@ -603,8 +643,12 @@
       ],
       "diaspora_connections": "Reborn as the mutual-aid Cabildos and Sociedades in Cuba, Brazil, and Trinidad.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show unified dancing troupe of age-grade members dressed in splendid matching silks and commemorative pins."
-    }
+      "media_production_notes": "Show unified dancing troupe of age-grade members dressed in splendid matching silks and commemorative pins.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àrọ̀kọ̀",
@@ -654,8 +698,12 @@
       ],
       "diaspora_connections": "Sign systems survived in Abakuá and Palo secret symbol codes in Cuba.",
       "geographical_origin": "Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Ilé-Ifẹ̀.",
-      "media_production_notes": "Show the courier delivering a tied raffia bundle of paired cowrie shells, with elder reading the configuration."
-    }
+      "media_production_notes": "Show the courier delivering a tied raffia bundle of paired cowrie shells, with elder reading the configuration.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Oral Literature, Philosophy & Folklore"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ikin_Ifá",
@@ -705,8 +753,12 @@
       ],
       "diaspora_connections": "The foundation of all Ifá shrines (Adele) across Cuba and the transatlantic diaspora.",
       "geographical_origin": "Pan-Yorùbá sacred palm groves.",
-      "media_production_notes": "Show the sixteen dark, oily palm nuts cupped in the Babaláwo's palms before pressing against the tray."
-    }
+      "media_production_notes": "Show the sixteen dark, oily palm nuts cupped in the Babaláwo's palms before pressing against the tray.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Agẹrẹ_Ifá",
@@ -756,8 +808,12 @@
       ],
       "diaspora_connections": "Revered in Cuban and Brazilian Ifá houses as the sacred receptacle of Orula.",
       "geographical_origin": "Èkìtì, Òwò, Ọ̀yọ́, Ìjẹ̀bú.",
-      "media_production_notes": "Highlight intricate figurative sculpture underneath supporting the smooth rounded cup above."
-    }
+      "media_production_notes": "Highlight intricate figurative sculpture underneath supporting the smooth rounded cup above.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọ̀pẹ̀lẹ̀",
@@ -803,8 +859,12 @@
       ],
       "diaspora_connections": "Standard daily instrument of Ifá priests across Cuba, Puerto Rico, and the United States.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show fluid casting motion onto the straw mat and the instantaneous reading of the 8 binary pods."
-    }
+      "media_production_notes": "Show fluid casting motion onto the straw mat and the instantaneous reading of the 8 binary pods.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọpọ́n_Ifá",
@@ -853,8 +913,12 @@
       ],
       "diaspora_connections": "Universal in Cuban and American Ifá divination ceremonies (Tablero de Ifá).",
       "geographical_origin": "Ọ̀yọ́, Èkìtì, Òwò, Ìjẹ̀bú.",
-      "media_production_notes": "Show close-up of the carved face of Èṣù looking inward toward the golden-yellow wooddust markings."
-    }
+      "media_production_notes": "Show close-up of the carved face of Èṣù looking inward toward the golden-yellow wooddust markings.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ògbóni",
@@ -908,8 +972,12 @@
       ],
       "diaspora_connections": "Revered in Cuban Lucumí and Trinidadian Orisha shrines as the sacred society of elders and brass staves.",
       "geographical_origin": "Ìjẹ̀bú, Ẹ̀gbá, Ọ̀yọ́, Ilé-Ifẹ̀.",
-      "media_production_notes": "Show the linked brass Ẹdan staves carried with dignified solemnity; preserve traditional reverence."
-    }
+      "media_production_notes": "Show the linked brass Ẹdan staves carried with dignified solemnity; preserve traditional reverence.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìyàwó",
@@ -958,8 +1026,12 @@
       ],
       "diaspora_connections": "Bridal chants and respect protocols echo in diaspora marriage and initiation rites.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Depict emotional bride reciting poetic verses before elders, holding embroidered bridal fan."
-    }
+      "media_production_notes": "Depict emotional bride reciting poetic verses before elders, holding embroidered bridal fan.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọkọ",
@@ -1007,8 +1079,12 @@
       ],
       "diaspora_connections": "Customary wedding conventions adapted in modern Afro-Atlantic diasporic celebrations.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show groom in rich Agbádá prostrating fully to the ground before his bride's seated family."
-    }
+      "media_production_notes": "Show groom in rich Agbádá prostrating fully to the ground before his bride's seated family.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹbí",
@@ -1058,8 +1134,12 @@
       ],
       "diaspora_connections": "Transformed into religious family kinship lines (Egbe / Terreiro / Casa) in the diaspora.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Portray vibrant multi-generational family gathering dressed in unified commemorative Aṣọ Ẹbí."
-    }
+      "media_production_notes": "Portray vibrant multi-generational family gathering dressed in unified commemorative Aṣọ Ẹbí.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọmọ",
@@ -1110,8 +1190,12 @@
       ],
       "diaspora_connections": "Ceremonies for divine twins (Ibeji) and children thrive across Cuba, Brazil, and Trinidad.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Capture the eighth-day naming ritual with elder tasting honey and whispering ancestral names."
-    }
+      "media_production_notes": "Capture the eighth-day naming ritual with elder tasting honey and whispering ancestral names.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìyá",
@@ -1161,8 +1245,12 @@
       ],
       "diaspora_connections": "Universal title in Brazilian and Cuban houses (Iyalorisha, Iyami).",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Depict mother wrapping child in traditional Ọ̀já back-cloth with serene protective warmth."
-    }
+      "media_production_notes": "Depict mother wrapping child in traditional Ọ̀já back-cloth with serene protective warmth.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Bàbá",
@@ -1211,8 +1299,12 @@
       ],
       "diaspora_connections": "Title Bàbá (and Babalorisha / Babalawo) used universally across the Afro-Atlantic world.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Portray senior father seated on veranda chair conferring blessings with quiet moral authority."
-    }
+      "media_production_notes": "Portray senior father seated on veranda chair conferring blessings with quiet moral authority.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Social Structure, Kinship & Lineage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹja",
@@ -1271,13 +1363,16 @@
         "Apẹja",
         "Odo Ọ̀ṣun",
         "Olókun"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept"
     },
     "related_entities": [
       "Apẹja",
       "Odo Ọ̀ṣun",
       "Olókun"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹyẹ",
@@ -1342,12 +1437,15 @@
       "related_entities": [
         "Adé",
         "Ìyámi (Our Mothers / Primordial Female Energy)"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept"
     },
     "related_entities": [
       "Adé",
       "Ìyámi (Our Mothers / Primordial Female Energy)"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹranko",
@@ -1409,8 +1507,11 @@
       "diaspora_connections": "Totemic animals maintain prominent symbolic status in Afro-Atlantic religious sacrifices and iconography.",
       "geographical_origin": "Pan-Yorùbá rainforests and savannah belts.",
       "media_production_notes": "Feature authentic African wildlife species; avoid portraying non-indigenous fauna.",
-      "category": "Indigenous Zoology, Sacred Fauna & Wildlife"
-    }
+      "category": "Indigenous Zoology, Sacred Fauna & Wildlife",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìlú",
@@ -1469,8 +1570,12 @@
       ],
       "diaspora_connections": "Town origins (Nago, Oyo, Ijesha, Ketu) became foundational nation groups (Naciones) in Cuba and Brazil.",
       "geographical_origin": "Yorùbá homeland.",
-      "media_production_notes": "Present maps and aerial perspectives showing palace-centric radial layout and bustling urban quarters."
-    }
+      "media_production_notes": "Present maps and aerial perspectives showing palace-centric radial layout and bustling urban quarters.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Odò",
@@ -1525,8 +1630,12 @@
       ],
       "diaspora_connections": "Sacred river rites directly replicated in Cuban river pilgrimages to Oshun and Brazilian sea festivals to Yemoja.",
       "geographical_origin": "Òṣogbo, Ikogosi, Erin-Ijesha, Ọ̀yọ́, Abẹ́òkúta.",
-      "media_production_notes": "Capture pristine clear waters, cascading multi-tier falls, and devotees dipping brass vessels at dawn."
-    }
+      "media_production_notes": "Capture pristine clear waters, cascading multi-tier falls, and devotees dipping brass vessels at dawn.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òkè",
@@ -1580,8 +1689,12 @@
       ],
       "diaspora_connections": "Revered conceptually in transatlantic orisha cosmology as manifestations of Òkè, deity of heights.",
       "geographical_origin": "Abẹ́òkúta, Idanre, Ìbàdàn, Àdó-Awayè.",
-      "media_production_notes": "Dramatic panoramic shots of granite domes rising majestically above tropical forest canopies."
-    }
+      "media_production_notes": "Dramatic panoramic shots of granite domes rising majestically above tropical forest canopies.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Odi",
@@ -1633,8 +1746,12 @@
       ],
       "diaspora_connections": "Archeological study celebrated globally as evidence of indigenous West African civic engineering.",
       "geographical_origin": "Ìjẹ̀bú, Ọ̀yọ́, Ìbàdàn, Abẹ́òkúta.",
-      "media_production_notes": "Show monumental vertical earthen ditch cuts overgrown with moss, towering ramparts, and timber gates."
-    }
+      "media_production_notes": "Show monumental vertical earthen ditch cuts overgrown with moss, towering ramparts, and timber gates.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ojúbọ",
@@ -1686,8 +1803,12 @@
       ],
       "diaspora_connections": "Direct model for the home altars (tronos and panteones) of Cuban Santería and Brazilian Candomblé.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show authentic altar vessels, brass bells, kola nut lobes in water, and consecrated iron implements."
-    }
+      "media_production_notes": "Show authentic altar vessels, brass bells, kola nut lobes in water, and consecrated iron implements.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Igbó",
@@ -1738,8 +1859,12 @@
       ],
       "diaspora_connections": "Replicated in Cuban Afro-Cuban sacred woods (El Monte) where practitioners gather ritual herbs.",
       "geographical_origin": "Òṣogbo, Ilé-Ifẹ̀, Èkìtì, Òndó rainforests.",
-      "media_production_notes": "Dappled sunlight filtering through monumental tree ferns, sacred riverbanks, and secluded carved shrines."
-    }
+      "media_production_notes": "Dappled sunlight filtering through monumental tree ferns, sacred riverbanks, and secluded carved shrines.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọjà",
@@ -1790,8 +1915,12 @@
       ],
       "diaspora_connections": "Yorùbá market women's guild customs laid the foundation for street vendor traditions in Bahia and the Caribbean.",
       "geographical_origin": "Pan-Yorùbá urban centers.",
-      "media_production_notes": "Show lively twilight market lanterns (Ọjà Alẹ́), calabashes heaped with food, and colorful textile stalls."
-    }
+      "media_production_notes": "Show lively twilight market lanterns (Ọjà Alẹ́), calabashes heaped with food, and colorful textile stalls.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àwọ̀",
@@ -1844,8 +1973,12 @@
       ],
       "diaspora_connections": "Preserved in drumhead tanning (Añá drums in Cuba and Atabaques in Brazil).",
       "geographical_origin": "Ọ̀yọ́, Ìlọrin, Ìṣẹ́yìn.",
-      "media_production_notes": "Highlight rich reddish-brown hand-tooled leather with embossed geometric knotwork."
-    }
+      "media_production_notes": "Highlight rich reddish-brown hand-tooled leather with embossed geometric knotwork.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Gbẹ́nàgbẹ́nà",
@@ -1897,8 +2030,12 @@
       ],
       "diaspora_connections": "Directly influenced Yoruba-derived woodcarving styles in Bahia, Cuba, and Surinam.",
       "geographical_origin": "Èkìtì, Òwò, Ọ̀yọ́, Ìjẹ̀bú.",
-      "media_production_notes": "Show the rhythmic swinging of the curved hand-adze carving expressive facial features into hardwood."
-    }
+      "media_production_notes": "Show the rhythmic swinging of the curved hand-adze carving expressive facial features into hardwood.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Amọ̀",
@@ -1952,8 +2089,12 @@
       ],
       "diaspora_connections": "Preserved in Afro-Cuban cazuelas (clay pots) used in Palo and Santería rituals.",
       "geographical_origin": "Ìlorin, Erúwà, Ìbàdàn, Òṣogbo.",
-      "media_production_notes": "Show potters coiling clay by hand and burnishing the smooth rounded vessels before bonfire firing."
-    }
+      "media_production_notes": "Show potters coiling clay by hand and burnishing the smooth rounded vessels before bonfire firing.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Idẹ",
@@ -2004,8 +2145,12 @@
       ],
       "diaspora_connections": "Influenced sacred brass iconography of Ọ̀ṣun and Ògbóni in Cuba and Brazil.",
       "geographical_origin": "Ilé-Ifẹ̀, Òwò, Ìjẹ̀bú-Òde.",
-      "media_production_notes": "Show the lustrous golden patina of classical Ifẹ̀ bronze heads and intricate wax modeling."
-    }
+      "media_production_notes": "Show the lustrous golden patina of classical Ifẹ̀ bronze heads and intricate wax modeling.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àgbẹ̀dẹ",
@@ -2057,8 +2202,12 @@
       ],
       "diaspora_connections": "Revered in Cuban and Brazilian Ògún rituals where iron anvils and hammers form central altar shrines.",
       "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Ìlọrin, Ìjẹ̀bú.",
-      "media_production_notes": "Show red-hot glowing iron on the anvil, flying sparks under heavy hammer strikes, and working goatskin bellows."
-    }
+      "media_production_notes": "Show red-hot glowing iron on the anvil, flying sparks under heavy hammer strikes, and working goatskin bellows.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Visual Arts, Sculpture & Guild Metallurgy"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oníṣègùn",
@@ -2109,8 +2258,12 @@
       ],
       "diaspora_connections": "Direct predecessor of Afro-Cuban curanderos, Lucumí herbal doctors, and Brazilian Candomblé folhas masters.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Show shelves of medicinal roots, clay pots boiling infusions, and the iconic sixteen-bird iron Ọ̀pá Ọ̀sanyìn staff."
-    }
+      "media_production_notes": "Show shelves of medicinal roots, clay pots boiling infusions, and the iconic sixteen-bird iron Ọ̀pá Ọ̀sanyìn staff.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Sacred Botany, Flora & Herbal Medicine"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Apẹja",
@@ -2169,7 +2322,10 @@
         "Ẹja",
         "Ọkọ̀ Ojú Omi",
         "Odò Ọ̀ṣun"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
     },
     "related_entities": [
       "Odo Ọ̀ṣun",
@@ -2177,7 +2333,8 @@
       "Ẹja",
       "Ọkọ̀ Ojú Omi",
       "Odò Ọ̀ṣun"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìwunṣọ",
@@ -2229,8 +2386,12 @@
       ],
       "diaspora_connections": "Strip-loom weaving influenced African-American quilt traditions and Caribbean textiles.",
       "geographical_origin": "Ìsẹ́yìn, Ọ̀yọ́, Ìbàdàn, Òndó.",
-      "media_production_notes": "Capture rhythmic mechanical motion of foot treadles, flying shuttle, and rapid clacking of the beater reed."
-    }
+      "media_production_notes": "Capture rhythmic mechanical motion of foot treadles, flying shuttle, and rapid clacking of the beater reed.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọdẹ",
@@ -2284,8 +2445,12 @@
       ],
       "diaspora_connections": "Sacred hunting societies survived in Cuba and Brazil as Cabildos dedicated to Ochosi.",
       "geographical_origin": "Pan-Yorùbá forest kingdoms.",
-      "media_production_notes": "Show hunters in deep brown or indigo dyed work clothes hung with horn amulets and flintlock dane guns."
-    }
+      "media_production_notes": "Show hunters in deep brown or indigo dyed work clothes hung with horn amulets and flintlock dane guns.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọkọ́",
@@ -2338,8 +2503,12 @@
       ],
       "diaspora_connections": "Replicated across Afro-descendant agricultural communities in the American South and Caribbean.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Handle is curved hardwood fitted snugly into the iron socket; distinct sizes for mound-heaping vs light weeding."
-    }
+      "media_production_notes": "Handle is curved hardwood fitted snugly into the iron socket; distinct sizes for mound-heaping vs light weeding.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oko",
@@ -2400,7 +2569,10 @@
       ],
       "diaspora_connections": "Agricultural knowledge of yams, okra, and plantains was transplanted directly to Caribbean and Brazilian plantations.",
       "geographical_origin": "Pan-Yorùbá fertile farming belts.",
-      "media_production_notes": "Distinguish between near-home farms (Oko Èbá) and deep forest farms (Oko Egàn); portray communal farm labor."
+      "media_production_notes": "Distinguish between near-home farms (Oko Èbá) and deep forest farms (Oko Egàn); portray communal farm labor.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
     },
     "related_entities": [
       "Òrìṣà",
@@ -2413,7 +2585,8 @@
       "Ọbàtálá",
       "Òkè",
       "Ọ̀ṣọ́ọ̀sì"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àpáta_Shield",
@@ -2521,14 +2694,18 @@
         "Àdá",
         "Ògún",
         "Ọ̀kọ̀"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Military Traditions, Weaponry & Defense"
     },
     "related_entities": [
       "Idà",
       "Àdá",
       "Ogun (Warfare & Military Tradition)",
       "Ọ̀kọ̀"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Idà",
@@ -2588,14 +2765,18 @@
         "Ògún",
         "Ọfà",
         "Ọ̀kọ̀"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Military Traditions, Weaponry & Defense"
     },
     "related_entities": [
       "Àdá",
       "Ogun (Warfare & Military Tradition)",
       "Ọfà",
       "Ọ̀kọ̀"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ogun (Warfare & Military Tradition)",
@@ -2650,7 +2831,10 @@
       ],
       "diaspora_connections": "Narratives of the 19th-century Yorùbá wars directly shaped the demographics and cultural resilience of Cuba and Brazil.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Ìbàdàn, Ìjàyè, Èkìtì-Parapọ̀, Abẹ́òkúta.",
-      "media_production_notes": "Portray historic battle maneuvers, disciplined battle formations, and authentic weaponry without anachronisms."
+      "media_production_notes": "Portray historic battle maneuvers, disciplined battle formations, and authentic weaponry without anachronisms.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Military Traditions, Weaponry & Defense"
     },
     "related_entities": [
       "Balógun",
@@ -2658,7 +2842,8 @@
       "Àdá",
       "Ọfà",
       "Ọ̀kọ̀"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àmì_Ọlá",
@@ -2716,8 +2901,12 @@
       ],
       "diaspora_connections": "Widely present in Cuban and Brazilian Orisha altars (Iruke of Ọya and Ọbàtálá).",
       "geographical_origin": "All Yorùbá royal kingdoms.",
-      "media_production_notes": "Never conflate with crowns; Ìrukẹ̀rẹ̀ is held in the hand and waved gracefully."
-    }
+      "media_production_notes": "Never conflate with crowns; Ìrukẹ̀rẹ̀ is held in the hand and waved gracefully.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Monarchy, Royal Regalia & Governance"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọba",
@@ -2781,7 +2970,10 @@
       ],
       "diaspora_connections": "Survives as sacred royal invocations in Cuban Cabildo de San Agustín and Oyotunji African Village.",
       "geographical_origin": "Pan-Yorùbá royal capitals.",
-      "media_production_notes": "Portray with supreme courtly dignity; attendants must prostrate (Dọ̀bálẹ̀) or kneel (Kúnlẹ̀)."
+      "media_production_notes": "Portray with supreme courtly dignity; attendants must prostrate (Dọ̀bálẹ̀) or kneel (Kúnlẹ̀).",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Monarchy, Royal Regalia & Governance"
     },
     "related_entities": [
       "Awùjalẹ̀",
@@ -2790,7 +2982,8 @@
       "Ọlọ́fà",
       "Alárá",
       "Arẹ́sà"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Agbádá",
@@ -2819,7 +3012,13 @@
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "For film: dress male protagonists of royal or elite status in hand‑woven aso‑òkè dyed in deep indigo, gold, or earth tones; ensure sleeves extend at least 1.2 m and are draped over the forearms, not folded. Use authentic tie‑and‑seam techniques; avoid synthetic shortcuts that alter the weight and fall. Lighting should highlight the fabric’s subtle sheen and embroidered motifs. For visual art: render the Agbádá with accurate pattern repeats (e.g., ẹ̀kó turtle, ìrókò drum) and include the ritual anointment of palm‑oil drops on the collar. For music videos: synchronize the robe’s unfurling with percussion cues (bata or dundun) to echo the garment’s symbolic ‘opening of the spiritual path’. Consult a Yoruba cultural consultant for correct protocol—e.g., the wearer must stand upright, shoulders back, and never cross the robe’s front seam over the left leg during sacred rites.",
     "sovereign_parent": "Aṣọ",
-    "sovereign_parent_status": "Living Sub-Variant"
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "is_parent": true,
+    "sub_variants": [
+      "Sányán",
+      "Ẹ̀tù",
+      "Àlàárì"
+    ]
   },
   {
     "id": "Ìlèkè",
@@ -2875,8 +3074,12 @@
       ],
       "diaspora_connections": "Universal in Santería collares (elekes) and Candomblé contas representing specific Orishas.",
       "geographical_origin": "Ilé-Ifẹ̀, Ìjẹ̀bú, Òwò.",
-      "media_production_notes": "Distinguish royal coral from glass seed beads; ensure correct colors for specific deities."
-    }
+      "media_production_notes": "Distinguish royal coral from glass seed beads; ensure correct colors for specific deities.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Attire, Textiles & Personal Adornment"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìlèkè Ẹsẹ̀",
@@ -3022,7 +3225,8 @@
       "Gẹlẹ̀ Ògódó",
       "Gẹlẹ̀ Ìjàpá",
       "Gẹlẹ̀ Ìpekú"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Fìlà Abetí Ajá",
@@ -3319,13 +3523,17 @@
       "related_entities": [
         "Ìyámi (Our Mothers / Primordial Female Energy)",
         "Ẹyẹ"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Monarchy, Royal Regalia & Governance"
     },
     "related_entities": [
       "Ìyámi (Our Mothers / Primordial Female Energy)",
       "Ẹyẹ",
       "Adé Ọ̀kín"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Adé Ààrẹ",
@@ -3885,7 +4093,10 @@
       ],
       "diaspora_connections": "Changó in Cuba; Xangô in Brazil.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Oyo State",
-      "media_production_notes": "Thunder deity brandishing double-headed wooden axe."
+      "media_production_notes": "Thunder deity brandishing double-headed wooden axe.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     }
   },
   {
@@ -3934,7 +4145,10 @@
       ],
       "diaspora_connections": "Ochún in Cuba; Oxum in Brazil.",
       "geographical_origin": "Òṣogbo, Osun State",
-      "media_production_notes": "Golden queen with brass mirror beside sweet river."
+      "media_production_notes": "Golden queen with brass mirror beside sweet river.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Odo Ọ̀ṣun",
@@ -3972,7 +4186,12 @@
       "Ògún Lákàyé",
       "Ògún Alágbede (Blacksmith)",
       "Ògún Ọdẹ (Hunter)",
-      "Ògún Balógun (Warrior)"
+      "Ògún Balógun (Warrior)",
+      "Àdá Ìbílẹ̀",
+      "Idà Agẹmọ",
+      "Ọ̀kọ̀ Ẹlẹ́ṣin",
+      "Ọfà Ọdẹ",
+      "Ẹwiri Blacksmith Hearth"
     ],
     "historical_timeline": "Primordial origin at creation; formalized into royal military and artisan institutions during the rise of the early Ifẹ̀ and Ọ̀yọ́ iron-smelting complexes (c. 10th–14th Century CE). Spread globally through the transatlantic corridor, becoming the patron of enslaved rebellions and labor movements in Haiti, Cuba, and Brazil.",
     "etymology_and_philosophy": "The lexical root Ògún signifies 'metal, iron, armed power, or an immense, concentrated mass.' Linguistically and philosophically, Ògún represents the fundamental tension of human technology: the exact same metallurgical power that smelts an agricultural hoe to feed a nation also smelts the spear that devastates it. He embodies Ìṣẹ́ (productive, creative manual labor) and demands that technological mastery be governed by moral integrity.",
@@ -4006,7 +4225,10 @@
         "Ọfà",
         "Ọ̀kọ̀",
         "Ọ̀ṣọ́ọ̀sì"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Idà",
@@ -4744,8 +4966,12 @@
       ],
       "diaspora_connections": "Preserved in Lucumí patakís and Afro-Cuban consejo traditions.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Highlight elders speaking with expressive hand gestures and thoughtful pauses before delivering an adage."
-    }
+      "media_production_notes": "Highlight elders speaking with expressive hand gestures and thoughtful pauses before delivering an adage.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Oral Literature, Philosophy & Folklore"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àlọ́ ÌJÀPÁ",
@@ -4822,8 +5048,12 @@
       ],
       "diaspora_connections": "Liturgical Orisha salutes in Cuba and Brazil are direct retentions of classical Oríkì chants.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Feature solo female chanter with expressive vibrato and rhythmic call-and-response with talking drums."
-    }
+      "media_production_notes": "Feature solo female chanter with expressive vibrato and rhythmic call-and-response with talking drums.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Auditory Arts, Music, Drums & Chants"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìyẹ̀rẹ̀ Ifá",
@@ -5043,8 +5273,12 @@
       ],
       "diaspora_connections": "Indigo dyeing techniques were brought across the Atlantic, creating indigo industries in the Carolinas and Brazil.",
       "geographical_origin": "Abẹ́òkúta, Ìbàdàn, Òṣogbo.",
-      "media_production_notes": "Portray circular sunken clay dye pits with steaming purple-blue indigo foam and cloth hung on drying lines."
-    }
+      "media_production_notes": "Portray circular sunken clay dye pits with steaming purple-blue indigo foam and cloth hung on drying lines.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìgálà",
@@ -5500,7 +5734,10 @@
       ],
       "diaspora_connections": "Iemanjá in Brazil; Yemayá in Cuba.",
       "geographical_origin": "Odò Ògùn, Ogun State",
-      "media_production_notes": "Maternal queen crowned with sea pearls and cowries."
+      "media_production_notes": "Maternal queen crowned with sea pearls and cowries.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Olókun",
@@ -5584,7 +5821,10 @@
       ],
       "diaspora_connections": "Aganyú in Cuban Lucumí.",
       "geographical_origin": "Ọ̀yọ́-Ilé",
-      "media_production_notes": "Volcanic giant crossing river."
+      "media_production_notes": "Volcanic giant crossing river.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Ṣàngó",
@@ -5734,7 +5974,10 @@
       ],
       "diaspora_connections": "Osain in Cuba; Ossaim in Brazil.",
       "geographical_origin": "Pan-Yorùbáland",
-      "media_production_notes": "Herbalist holding sixteen-bird wrought iron staff."
+      "media_production_notes": "Herbalist holding sixteen-bird wrought iron staff.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Ewe Efinrin",
@@ -5800,7 +6043,10 @@
         "Yemọja",
         "Òrìṣà",
         "Ẹja"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Adé",
@@ -5937,8 +6183,12 @@
       ],
       "diaspora_connections": "Universal veneration of Ori and head rogation ceremonies (Kobori / Rogación de Cabeza) in Cuba and Brazil.",
       "geographical_origin": "Ilé-Ifẹ̀, Pan-Yorùbá.",
-      "media_production_notes": "Show the magnificent conical cowrie-encrusted shrine (Ilé-Orí) and solemn head prayer rituals."
-    }
+      "media_production_notes": "Show the magnificent conical cowrie-encrusted shrine (Ilé-Orí) and solemn head prayer rituals.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Èṣù Èdá",
@@ -6063,8 +6313,12 @@
       ],
       "diaspora_connections": "Preserved in the sacred Egungun societies of Oyotunji Village and Itaparica Island in Bahia, Brazil.",
       "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Òkè-Ògùn, Ìjẹ̀bú, Lagos.",
-      "media_production_notes": "Never expose any human skin beneath the masquerade; textiles must whirl dynamically during dance."
-    }
+      "media_production_notes": "Never expose any human skin beneath the masquerade; textiles must whirl dynamically during dance.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Ancestral Masquerades & Funerary Rites"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Geledẹ́",
@@ -6098,7 +6352,8 @@
       "Gelede-Mask",
       "Èfé",
       "Àwọn Ìyá Wa Rites"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹ̀gbẹ́",
@@ -7051,7 +7306,10 @@
     ],
     "diaspora_connections": "Within the transatlantic diaspora, Ọ̀rànmíyàn survives as a potent royal and warrior archetype in Cuban Lucumí (Regla de Ocha) and Brazilian Candomblé Ketu traditions. Although less frequently possessed directly in public festive dances compared to his divine successors Ṣàngó and Ògún, Ọ̀rànmíyàn is saluted in esoteric bàtá drum rhythms and revered as an ancestral pillar of royal dynasties (Egúngún Agba). In Candomblé Ketu shrines of Salvador da Bahia and in Afro-Cuban cabildos, his name invocates the unyielding militarism of the ancient Ọ̀yọ́ cavalry. In modern diaspora institutions, such as the Oyotunji African Village in South Carolina, USA, the ritual legacy of Aláàfin Ọ̀rànmíyàn forms the explicit constitutional framework for neo-traditional monarchical governance and warrior lineage reconstruction.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematic direction should balance severe imperial gravitas with ancient mystical realism. Visual Palette: Deep ochre earth, weathered granite, burnished brass, oxidized iron, and indigo-dyed imperial garments juxtaposed with vivid coral and crimson accents. Camera Dynamics: Low-angle tracking shots to accentuate the monumental stature of the Ọ̀pá Ọ̀rànmíyàn monolith against dawn skies; extreme close-ups on the trembling beaded veil of the Adé Ńlá to depersonalize the monarch's mortal visage; fluid handheld camerawork during battlefield re-enactments tracking cavalry charges through tall savanna grasses. Audio Design: Heavy acoustic orchestration driven by ancestral Gbèdu and Bàtá drums, clinking iron chainmail, the resonant snap of bowstrings, and resonant, guttural oríkì recitations chanted by palace praise-chanters (Akéwì) reverberating through stone palace corridors."
+    "media_production_notes": "Cinematic direction should balance severe imperial gravitas with ancient mystical realism. Visual Palette: Deep ochre earth, weathered granite, burnished brass, oxidized iron, and indigo-dyed imperial garments juxtaposed with vivid coral and crimson accents. Camera Dynamics: Low-angle tracking shots to accentuate the monumental stature of the Ọ̀pá Ọ̀rànmíyàn monolith against dawn skies; extreme close-ups on the trembling beaded veil of the Adé Ńlá to depersonalize the monarch's mortal visage; fluid handheld camerawork during battlefield re-enactments tracking cavalry charges through tall savanna grasses. Audio Design: Heavy acoustic orchestration driven by ancestral Gbèdu and Bàtá drums, clinking iron chainmail, the resonant snap of bowstrings, and resonant, guttural oríkì recitations chanted by palace praise-chanters (Akéwì) reverberating through stone palace corridors.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ọọ̀ni Odùduwà",
@@ -7076,7 +7334,10 @@
     ],
     "diaspora_connections": "Across the transatlantic diaspora, the memory of Ọọ̀ni Odùduwà survived chattel slavery to become a primary cosmological pillar. In Cuban Lucumí (Santería) tradition, Odùduwà (frequently invoked in the Odù Ifá Ogbè Ìwòrì and Òtúrá Méjì) is venerated as an ancient, highly revered Orisha of primordial purity, creation, and deep esoteric judgment, intimately connected to Ọbàtálá and symbolized by the sacred closed white vessel containing the secrets of life and death. In Brazilian Candomblé Ketu, Odudua is venerated as an ancestral progenitor and the living spirit of the earth/womb (Igbá Ìwà), receiving solemn white animal sacrifices and invoked during ceremonies honoring royal ancestors. In African-American re-indigenization movements, notably Oyotunji African Village in South Carolina, the throne of Ọọ̀ni Odùduwà is recognized as the ultimate papal and dynastic authority of global Yorùbá spiritual lineage.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematic visual design must prioritize high-contrast chiaroscuro lighting, emphasizing deep ochre earth, ancient laterite stone palace walls, and soft golden light cutting through sacred palace courtyards. Regalia should be textured with heavy tactile authenticity: aged glass beads reflecting natural torchlight, woven raw silk Aṣọ Òfì, and patinated antique bronzes that convey centuries of ritual oil libations. The camera should employ low-angle, reverent tracking shots to underscore the sovereign's untouchable presence, maintaining ritual spatial distance. Audio design must be anchored by the subterranean, physical resonance of the ancestral Gbedu drums and the piercing, metallic brilliance of Káàkàkí royal horns, interlaced with archaic, highly resonant oríkì chants whispered by hereditary court chanters (Akrigbe)."
+    "media_production_notes": "Cinematic visual design must prioritize high-contrast chiaroscuro lighting, emphasizing deep ochre earth, ancient laterite stone palace walls, and soft golden light cutting through sacred palace courtyards. Regalia should be textured with heavy tactile authenticity: aged glass beads reflecting natural torchlight, woven raw silk Aṣọ Òfì, and patinated antique bronzes that convey centuries of ritual oil libations. The camera should employ low-angle, reverent tracking shots to underscore the sovereign's untouchable presence, maintaining ritual spatial distance. Audio design must be anchored by the subterranean, physical resonance of the ancestral Gbedu drums and the piercing, metallic brilliance of Káàkàkí royal horns, interlaced with archaic, highly resonant oríkì chants whispered by hereditary court chanters (Akrigbe).",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Lísàbí Agbongbo Akala",
@@ -7188,7 +7449,10 @@
     ],
     "diaspora_connections": "The fall of Ìjàyè in 1862 resulted in thousands of displaced soldiers, royal retainers, and civilian captives being marched to the coast via Badagry and Lagos, entering the final decades of the Transatlantic Slave Trade. These Ìjàyè veterans carried the pure Ọ̀yọ́ martial cults of Ògún and Ṣàngó into Cuban *Cabildos de Nación* and Brazilian *Terreiros*. In Afro-Cuban *Regla de Ocha* (Santería), praises to the fiery, unrelenting manifestation of Ògún (Ògún Alágbede / Ògún Arere) preserve the kinetic war dances and specific liturgical drum beats of the Ìjàyè garrison. Similarly, in Bahia's *Candomblé Ketu*, songs invoking Ògún as a boundary-keeper and defender of ancient law reflect the tragic resistance of Ìjàyè's warriors against the dissolution of cosmological order.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "A visual narrative centering on Kúrunmí demands the aesthetic weight of classical Greek or Shakespearean tragedy fused with gritty 19th-century West African military realism. Production design should construct the sun-baked earthen ramparts of Ìjàyè, textured with red laterite clay, rough-spun handloomed *kíjìpá* textiles stained with indigo and camwood, and smoking flintlock musket lines. The auditory canvas must prioritize authentic Yorùbá acoustic architecture: the visceral, rhythmic cadence of the *dùndún* and *gángan* talking drums voicing military signals, counterbalanced by the deep, brassy resonance of the *agogo* bell and low polyphonic funeral chants in Old Ọ̀yọ́ dialect. Cinematography should emphasize claustrophobic fortress interiors contrasted against sprawling, smoke-choked skirmishes in high forest canopies along the Ọ̀tọ̀ River."
+    "media_production_notes": "A visual narrative centering on Kúrunmí demands the aesthetic weight of classical Greek or Shakespearean tragedy fused with gritty 19th-century West African military realism. Production design should construct the sun-baked earthen ramparts of Ìjàyè, textured with red laterite clay, rough-spun handloomed *kíjìpá* textiles stained with indigo and camwood, and smoking flintlock musket lines. The auditory canvas must prioritize authentic Yorùbá acoustic architecture: the visceral, rhythmic cadence of the *dùndún* and *gángan* talking drums voicing military signals, counterbalanced by the deep, brassy resonance of the *agogo* bell and low polyphonic funeral chants in Old Ọ̀yọ́ dialect. Cinematography should emphasize claustrophobic fortress interiors contrasted against sprawling, smoke-choked skirmishes in high forest canopies along the Ọ̀tọ̀ River.",
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ẹfúnṣetán Aníwúran",
@@ -7430,7 +7694,10 @@
       ],
       "diaspora_connections": "Inle in Cuba.",
       "geographical_origin": "Ìlobùú, Osun State",
-      "media_production_notes": "Physician holding bird-and-fish staff."
+      "media_production_notes": "Physician holding bird-and-fish staff.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Odo Ọ̀ṣun",
@@ -7556,7 +7823,8 @@
     ],
     "diaspora_connections": "Preserved in transatlantic Yorùbá diaspora communities across London, New York, Atlanta, Salvador da Bahia, and Havana as an unshakeable marker of celebratory cultural identity.",
     "geographical_origin": "Pan-Yorùbáland",
-    "provenance_and_citations": "Nwafor, Okechukwu (2021). Aso Ebi: Cloth and Sociability in Urban Nigeria; Fadipe, N.A. (1970). The Sociology of the Yoruba; Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles."
+    "provenance_and_citations": "Nwafor, Okechukwu (2021). Aso Ebi: Cloth and Sociability in Urban Nigeria; Fadipe, N.A. (1970). The Sociology of the Yoruba; Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Sányán",
@@ -7580,7 +7848,10 @@
     ],
     "diaspora_connections": "Across the Atlantic, memories and symbolic counterparts of Sányán survived through the Lucumí traditions of Cuba and the Candomblé Ketu houses of Bahia, Brazil. In Cuban Lucumí rituals, the textile is remembered through oral liturgical song and esoteric invocations as 'achó sayán' or 'chayán', specifically associated with the primordial, unblemished vestments demanded by elevated roads of Obatalá and Oduduwa, frequently manifested in raw, unbleached slub silk or coarse ecru linen to retain the fabric's ancestral signature. In Brazilian Candomblé, the structural memory of Sányán is preserved via the imported and revered 'pano da costa' (traditional West African prestige wraps), worn over the shoulder by respected Iyalorixas and Ogãs during solemn Egúngún commemorations, signifying direct genealogical transmission from the ancient weaving centres of the Ọ̀yọ́ kingdom.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When depicting Sányán in cinematic and museum productions, the camera must prioritize macro-cinematography using high-contrast anamorphic lenses to capture the slubbed, organic, and coarse micro-texture of the Anaphe wild silk fibers. The lighting should feature warm, directional cross-raking at a 45-degree angle to reveal the tactile cross-hatching and natural sheen that distinguishes real silk from synthetic cotton replications. Color grading must rigorously preserve the unbleached, raw oatmeal, beige, and fawn spectrum without letting the fabric wash out into artificial stark white. Sound designers should capture the percussive, woody clack of the narrow horizontal treadle loom, the papery rasp of ancient silk strips moving against one another during walking sequences, and layer these motifs alongside the resonant tones of the Dùndún drum reciting the textile's ancient 'oríkì' (praise poetry)."
+    "media_production_notes": "When depicting Sányán in cinematic and museum productions, the camera must prioritize macro-cinematography using high-contrast anamorphic lenses to capture the slubbed, organic, and coarse micro-texture of the Anaphe wild silk fibers. The lighting should feature warm, directional cross-raking at a 45-degree angle to reveal the tactile cross-hatching and natural sheen that distinguishes real silk from synthetic cotton replications. Color grading must rigorously preserve the unbleached, raw oatmeal, beige, and fawn spectrum without letting the fabric wash out into artificial stark white. Sound designers should capture the percussive, woody clack of the narrow horizontal treadle loom, the papery rasp of ancient silk strips moving against one another during walking sequences, and layer these motifs alongside the resonant tones of the Dùndún drum reciting the textile's ancient 'oríkì' (praise poetry).",
+    "sovereign_parent": "Agbádá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Àlàárì",
@@ -7605,7 +7876,10 @@
     ],
     "diaspora_connections": "Across the Atlantic basin, memory of Àlàárì survived enslavement through sacred material culture. In Afro-Cuban Lucumí traditions, sacred textiles coded in crimson—referred to by initiates under retained Yorùbá ritual nomenclature—adorn the thrones (tronos), batá drums, and sacred vestments (trajes de santo) of Changó and Oyá during Orisha consecrations. In Brazilian Candomblé Ketu, the conceptual and technical legacy of Àlàárì remains visible in the coveted 'Pano da Costa' (coastal cloth), woven with deep scarlet and red stripes worn over the shoulders of Iyalorixás and initiates. In Trinidad and Tobago's Orisha religion, votive red fabrics directly evoke the protective martial shielding traced to Ọ̀yọ́’s imperial weavers.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When documenting Àlàárì for historical or cinematic productions, deploy high-dynamic-range cinematography under natural, golden-hour illumination to capture the iridescent, dimensional texture of the crimson warp threads. Emphasize macro shots of the dense cotton-and-silk tension lines, showing the tactile contrast of the hand-stitched joining seams. Audio recording must highlight the resonant acoustic environment of the master loom: the percussive thud-click of the wooden beater (itẹwọ), the squeak of treadle pedals, and the swish of the horn shuttle traversing the shed. Wardrobe styling must strictly observe status-graded etiquette: ensure garments are draped with voluminous, structured folds characteristic of classical Yorùbá imperial grandeur."
+    "media_production_notes": "When documenting Àlàárì for historical or cinematic productions, deploy high-dynamic-range cinematography under natural, golden-hour illumination to capture the iridescent, dimensional texture of the crimson warp threads. Emphasize macro shots of the dense cotton-and-silk tension lines, showing the tactile contrast of the hand-stitched joining seams. Audio recording must highlight the resonant acoustic environment of the master loom: the percussive thud-click of the wooden beater (itẹwọ), the squeak of treadle pedals, and the swish of the horn shuttle traversing the shed. Wardrobe styling must strictly observe status-graded etiquette: ensure garments are draped with voluminous, structured folds characteristic of classical Yorùbá imperial grandeur.",
+    "sovereign_parent": "Agbádá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ẹ̀tù",
@@ -7631,8 +7905,9 @@
     "diaspora_connections": "Survives in the Afro-Atlantic religious traditions of Brazilian Candomblé Ketu and Cuban Lucumí as a supreme symbol of ancestral lineage. Known in Bahia as Pano da Costa (Alakà de Costa), deep-indigo pin-striped cloths woven in West Africa were imported into Salvador da Bahia through the 19th century, where they became the ceremonial shoulder-wraps and head-ties (ojá) of senior Iyalorixás, functioning as spiritual barriers to protect the Orí (head) during spirit possession. In Cuban Regla de Ocha, Ẹ̀tù textiles are venerated as prestige cloths associated with elder pathways of Yemọja, Òṣóòsì, and ancestral Egún altars.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Cinematography requires high-contrast, directional rim-lighting to expose the granular texture of handspun cotton and the microscopic white pinstripes against the deep, light-absorbing indigo dye. Sound design should record the metallic click-clack of the loom's shuttle (ọkọ̀), the percussive strike of the wooden reed (asá), and the liquid resonance of dripping dye vats. Wardrobe and set dressing must emphasize tactile weight, showing the stiff, sculpture-like folds of authentic Ẹ̀tù as an Agbádá moves, distinguishing its heavy presence from industrial, synthetic imitations.",
-    "sovereign_parent": "Òògùn",
-    "sovereign_parent_status": "Living Sub-Variant"
+    "sovereign_parent": "Agbádá",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Adire",
@@ -7669,7 +7944,8 @@
       "Adire-Oloba",
       "Adire Ẹlẹ́kọ",
       "Adire Ẹlẹ́ṣọ"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Adire Ẹlẹ́ṣọ",
@@ -8051,7 +8327,8 @@
       "Kẹríkẹrì",
       "Gángan",
       "Ìsájú",
-      "Kànàgó"
+      "Kànàgó",
+      "Goje"
     ],
     "details": {
       "description": "The hourglass-shaped pressure talking drum ensemble capable of reproducing the exact pitch contours, glissandos, and speech tones of the Yorùbá language.",
@@ -8066,11 +8343,15 @@
       ],
       "diaspora_connections": "Bàtá drum sacred trios survive with liturgical precision in Cuban Santería ceremonies.",
       "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Ìjẹ̀bú, Òkè-Ògùn.",
-      "media_production_notes": "Show the drummer squeezing tension cords beneath the arm while striking the drumhead with curved stick."
+      "media_production_notes": "Show the drummer squeezing tension cords beneath the arm while striking the drumhead with curved stick.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Auditory Arts, Music, Drums & Chants"
     },
     "related_entities": [
       "Ìyáàlù"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Gángan",
@@ -8156,7 +8437,8 @@
       "Bàtá Kókó",
       "Bàtá Lápá",
       "Egbe-Onibata"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìyá Ìlù",
@@ -8848,7 +9130,10 @@
     ],
     "diaspora_connections": "For the Global African Diaspora, the Àfin Ọọ̀ni stands as the ultimate Ancestral Homeland and Spiritual Mecca. Practitioners of Lùkùmí in Cuba, Candomblé in Brazil, and Orisha traditions in Trinidad and Tobago trace their spiritual lineage directly to the Sacred Shrines within this Palace. Modern initiatives by successive Ọọ̀ni monarchs have actively bridged the gap between Ilé-Ifẹ̀ and the Diaspora, welcoming descendants of the Trans-Atlantic Slave Trade back to the Cradle of Humanity to reconnect with their Odùduwà heritage.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematic portrayals of the Àfin Ọọ̀ni should emphasize the majestic Enuwá Square and the intricate details of the Ifẹ̀ Bronzes. Lighting should capture the golden, ethereal hues of the sun over Ilé-Ifẹ̀ to highlight its status as the Cradle of Humanity. Audio design must incorporate the resonant, polyrhythmic beats of the Gẹ̀dẹ̀gbé drums, accompanied by authentic Ewì (Yorùbá Poetic Chants) reciting the Oriki (Praise Poetry) of the Ọọ̀ni and the Òrìṣà Pantheon."
+    "media_production_notes": "Cinematic portrayals of the Àfin Ọọ̀ni should emphasize the majestic Enuwá Square and the intricate details of the Ifẹ̀ Bronzes. Lighting should capture the golden, ethereal hues of the sun over Ilé-Ifẹ̀ to highlight its status as the Cradle of Humanity. Audio design must incorporate the resonant, polyrhythmic beats of the Gẹ̀dẹ̀gbé drums, accompanied by authentic Ewì (Yorùbá Poetic Chants) reciting the Oriki (Praise Poetry) of the Ọọ̀ni and the Òrìṣà Pantheon.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Àfin Aláàfin",
@@ -8873,7 +9158,10 @@
     ],
     "diaspora_connections": "Across the Afro-Atlantic diaspora, particularly in Cuban Lucumí and Brazilian Candomblé Ketu traditions, the sacred spatial organization of the Àfin Aláàfin was reassembled within the sacred community shrines (Ilé-Ocha and Terreiros). The ritual protocols surrounding the divine throne (Ibùsùn), the veneration of Ṣàngó as the divine monarch, the use of beaded insignia and staff emblems, and the hierarchical ordering of sacred spaces with distinct outer courtyards and forbidden inner sanctums directly mirror the imperial architectural and courtly disciplines of the Aláàfin of Ọ̀yọ́.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visually, the production palette requires saturated terracotta, laterite earth reds, polished aged-wood patina, bleached shell whites, and royal indigo fabrics. Framing should utilize wide, low-angle tracking shots along peristyle colonnades lined with sculpted anthropomorphic wooden posts, contrasting with shadowed impluvium courtyards catching dramatic shafts of natural sunlight. The soundscape must feature the polyrhythmic acoustics of the sovereign Gbedu and royal Bàtá drums, the piercing, resonant flourish of the long Kákàkí trumpets, the ambient metallic clang of ancestral blacksmith anvils, and the evocative cadence of the royal bards (Àkígbe/Arokin) chanting long-meter lineage genealogies (Oríkì)."
+    "media_production_notes": "Visually, the production palette requires saturated terracotta, laterite earth reds, polished aged-wood patina, bleached shell whites, and royal indigo fabrics. Framing should utilize wide, low-angle tracking shots along peristyle colonnades lined with sculpted anthropomorphic wooden posts, contrasting with shadowed impluvium courtyards catching dramatic shafts of natural sunlight. The soundscape must feature the polyrhythmic acoustics of the sovereign Gbedu and royal Bàtá drums, the piercing, resonant flourish of the long Kákàkí trumpets, the ambient metallic clang of ancestral blacksmith anvils, and the evocative cadence of the royal bards (Àkígbe/Arokin) chanting long-meter lineage genealogies (Oríkì).",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Kọ̀tọ̀-Karfe",
@@ -9087,7 +9375,8 @@
       "Ìwọ̀fà Àgbà",
       "Ìwọ̀fà Oko",
       "Ìwọ̀fà Iṣẹ́-Ọwọ́"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọ̀ṣọ́gbó Grove",
@@ -9163,8 +9452,12 @@
       ],
       "diaspora_connections": "Concept survives metaphorically in Afro-Cuban Ilé-Osha (House of the Orishas).",
       "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Ìjẹ̀bú-Òde, Òwò.",
-      "media_production_notes": "Feature vast impluvium courtyards, sweeping gables (Kòbì), and elaborately carved veranda posts."
-    }
+      "media_production_notes": "Feature vast impluvium courtyards, sweeping gables (Kòbì), and elaborately carved veranda posts.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Kọ̀ba",
@@ -9686,8 +9979,12 @@
       ],
       "diaspora_connections": "Honored in martial salute chants in Afro-Cuban and Trinidadian Orisha communities.",
       "geographical_origin": "Ìbàdàn, Ọ̀yọ́, Ìjàyè, Abẹ́òkúta.",
-      "media_production_notes": "Show commanding military presence, war horse, retinue of drummers, and distinctive battle attire."
-    }
+      "media_production_notes": "Show commanding military presence, war horse, retinue of drummers, and distinctive battle attire.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Military Traditions, Weaponry & Defense"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Osi Balogun",
@@ -9992,8 +10289,12 @@
       ],
       "diaspora_connections": "Universal affirmative response and core theological concept across Candomblé (Axé) and Santería (Ashé).",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Evoke moments of solemn collective affirmation where a community resonates with 'Àṣẹ!'."
-    }
+      "media_production_notes": "Evoke moments of solemn collective affirmation where a community resonates with 'Àṣẹ!'.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹbọ",
@@ -10969,7 +11270,8 @@
       "Àkóso-Ìlú",
       "Otun Ọba",
       "Osi Ọba"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Baálẹ̀",
@@ -11386,8 +11688,12 @@
       ],
       "diaspora_connections": "Fundamental ethical bedrock upheld in transatlantic Orisha temples.",
       "geographical_origin": "Pan-Yorùbá.",
-      "media_production_notes": "Portray calm, dignified comportment, respectful bowing, and gracious elder mediation."
-    }
+      "media_production_notes": "Portray calm, dignified comportment, respectful bowing, and gracious elder mediation.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Oral Literature, Philosophy & Folklore"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọmọlúwàbí",
@@ -11727,8 +12033,12 @@
       ],
       "diaspora_connections": "Revered in transatlantic Orisha rites as a prime offering to warriors and ancestors.",
       "geographical_origin": "Èkìtì, Òndó, Ìjẹ̀bú, Ọ̀yọ́ rainforest fringes.",
-      "media_production_notes": "Show the tapper suspended high up a palm trunk with the woven Ìgbà belt, checking the tapping gourd."
-    }
+      "media_production_notes": "Show the tapper suspended high up a palm trunk with the woven Ìgbà belt, checking the tapping gourd.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oguro",
@@ -11861,14 +12171,18 @@
         "Ògún",
         "Ọfà",
         "Ọ̀kọ̀"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Traditional Trades, Agriculture & Agrarian Guilds"
     },
     "related_entities": [
       "Idà",
       "Ogun (Warfare & Military Tradition)",
       "Ọfà",
       "Ọ̀kọ̀"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọ̀kọ̀",
@@ -11924,14 +12238,18 @@
         "Àdá",
         "Ògún",
         "Ọfà"
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Military Traditions, Weaponry & Defense"
     },
     "related_entities": [
       "Idà",
       "Àdá",
       "Ogun (Warfare & Military Tradition)",
       "Ọfà"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Abo",
@@ -13689,7 +14007,10 @@
     ],
     "diaspora_connections": "Within the African Diaspora across the Americas—particularly in Lucumí, Candomblé, and Shango Baptist traditions—the legacy of Ọọ̀ni Lúwo Gbàgìdá resonates with the veneration of fierce feminine leadership and the maternal authority embedded in female Orisa such as Ọ̀ṣun, Ọya, and Yemọja. Her story provides an ancestral anchor for Afro-descendant women striving for leadership and historical agency, counteracting Eurocentric narratives that paint pre-colonial African societies as solely patriarchal. In Bahia, Brazil, and Matanzas, Cuba, Afro-diasporic memory honors her civilizational achievements as proof that urban planning, architecture, and sacred governance flourished under sovereign African matriarchs.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visually, depictions of Ọọ̀ni Lúwo Gbàgìdá should prioritize the regal terracotta aesthetic of Classical Ifẹ̀, featuring detailed renderings of her signature herringbone ceramic-paved courtyards. Cinematography should emphasize deep earthy ochres, glazed terracotta reds, and indigo adirẹ royal fabrics. Regalia should feature pristine coral beads, cast bronze bracelets, and the sacred conical crown (Adé Ìlẹ̀kẹ̀) without veiling that denies her formidable gaze. Audio design should incorporate the resonance of ancient Ìpèsè and Bàtá drums, punctuated by the rhythmic tapping of ceramic tiles and mosaic stones being laid across expansive stone boulevards."
+    "media_production_notes": "Visually, depictions of Ọọ̀ni Lúwo Gbàgìdá should prioritize the regal terracotta aesthetic of Classical Ifẹ̀, featuring detailed renderings of her signature herringbone ceramic-paved courtyards. Cinematography should emphasize deep earthy ochres, glazed terracotta reds, and indigo adirẹ royal fabrics. Regalia should feature pristine coral beads, cast bronze bracelets, and the sacred conical crown (Adé Ìlẹ̀kẹ̀) without veiling that denies her formidable gaze. Audio design should incorporate the resonance of ancient Ìpèsè and Bàtá drums, punctuated by the rhythmic tapping of ceramic tiles and mosaic stones being laid across expansive stone boulevards.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Àtàwatà",
@@ -14833,7 +15154,10 @@
     ],
     "diaspora_connections": "Across the Middle Passage, the memory of single-string bowed and plucked instruments survived in the collective consciousness of enslaved West Africans throughout the Americas. Elements of the Gòjé's construction, microtonal inflection, and communal role directly informed early African American bowed gourd traditions that predated the standardized banjo and country fiddle styles of the American South. Parallel retentions resonate within the Afro-Cuban Güiro and Bembé spiritual contexts, as well as the Haitian Rara traditions, where horsehair friction, resonance chambers, and praise-chanting continue to anchor ancestral rituals.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When capturing the Gòjé in studio or field environments, engineers should utilize paired small-diaphragm condenser microphones—one positioned approximately six inches from the lizard-skin resonator to capture low-mid warmth and percussive bow transients, and another focused near the neck to document fingers sliding across the horsehair. High-resolution archival recordings benefit from avoiding aggressive modern noise suppression, as the tactile raspy friction of the bow is an essential psychoacoustic marker of historical authenticity in traditional Yorùbá acoustic architecture."
+    "media_production_notes": "When capturing the Gòjé in studio or field environments, engineers should utilize paired small-diaphragm condenser microphones—one positioned approximately six inches from the lizard-skin resonator to capture low-mid warmth and percussive bow transients, and another focused near the neck to document fingers sliding across the horsehair. High-resolution archival recordings benefit from avoiding aggressive modern noise suppression, as the tactile raspy friction of the bow is an essential psychoacoustic marker of historical authenticity in traditional Yorùbá acoustic architecture.",
+    "sovereign_parent": "Dùndún",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Mọ́dọ́kọ́",
@@ -15593,7 +15917,8 @@
       "Àṣá-Ewe",
       "Omi-Ewe",
       "Ọṣẹ-Àgbọ"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àgbo Jedijedi",
@@ -16362,7 +16687,10 @@
     ],
     "diaspora_connections": "The fall of Old Ọ̀yọ́ and Aláàfin Àtìbà's subsequent consolidation coincided directly with the final, intense phase of the Transatlantic Slave Trade into Brazil (Bahia) and Cuba (Matanzas, Havana). Hundreds of thousands of Yorùbá subjects caught in the 19th-century civil wars were displaced across the Atlantic, carrying with them the precise royal protocol, court drumming (Káàkàkí and Kòtò), and religious liturgies that Àtìbà revived. In Afro-Cuban Lucumí and Brazilian Candomblé Ketu traditions, the veneration of royal Òrìṣà like Ṣàngó and Ọya, the hierarchical structure of Ilé-Àṣẹ (spiritual houses), and the royal salutations reflect the socio-political resilience championed by Àtìbà, establishing a direct living link between the reconstructed palace at New Ọ̀yọ́ and diaspora sanctuaries worldwide.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "For historical dramas, documentaries, or virtual heritage assets: Visual depictions must capture the red laterite walls and massive Kóbi verandas of the 19th-century Ààfin Àtìbà. Regalia should strictly avoid 20th-century synthetic fabrics, employing deep indigo-dyed Àdìrẹ, hand-woven Sányán, and intricate carnelian and glass seed-bead crowns (Adé Ilẹ̀kẹ̀). Sound design should integrate the thunderous cadence of Ṣàngó's royal Bàtá drums and the resonant praise songs of the imperial royal chanters (Akínyẹlú and the Aláàfin's Ayaba). Lighting should accentuate the drama of dry-season savannah sun against thatched roofs and the solemn interior shadows of the palace shrines."
+    "media_production_notes": "For historical dramas, documentaries, or virtual heritage assets: Visual depictions must capture the red laterite walls and massive Kóbi verandas of the 19th-century Ààfin Àtìbà. Regalia should strictly avoid 20th-century synthetic fabrics, employing deep indigo-dyed Àdìrẹ, hand-woven Sányán, and intricate carnelian and glass seed-bead crowns (Adé Ilẹ̀kẹ̀). Sound design should integrate the thunderous cadence of Ṣàngó's royal Bàtá drums and the resonant praise songs of the imperial royal chanters (Akínyẹlú and the Aláàfin's Ayaba). Lighting should accentuate the drama of dry-season savannah sun against thatched roofs and the solemn interior shadows of the palace shrines.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ọọ̀ni Adérẹ̀mí",
@@ -16387,7 +16715,10 @@
     ],
     "diaspora_connections": "For descendants of the Yorùbá Diaspora across Salvador da Bahia, Cuba, Trinidad, Puerto Rico, and the wider Americas, the Stool of the Ọọ̀ni is the ancestral epicenter of sacred lineages. Ọọ̀ni Adérẹ̀mí recognized this sacred umbilical cord, warmly receiving international African-descended scholars, artists, and diplomats during the mid-twentieth century, validating the spiritual survival of Orisha worship in Lucumí and Candomblé traditions. His enduring leadership reinforced Ilé-Ifẹ̀ as the spiritual Jerusalem for millions of displaced Afro-descendants seeking cultural reconnection with their Orisha roots.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When portraying Ọọ̀ni Adérẹ̀mí in visual or dramatic media, his aesthetic must balance dignified silence with resonant statesmanship. Costume designers should meticulously reproduce mid-century woven 'Aṣọ-Òkè' (such as 'Sányán' and 'Ẹtù') matched with regal high-collared agbádá robes, authentic red coral bead neckwear, and horse-hair whisks ('Ìrùkẹ̀rẹ̀'). The sacred 'Adé Arè' must never be shown casually; its appearance demands solemn reverence, dim ambient lighting, and traditional 'Kàkàkí' (ceremonial royal trumpets) and 'Dùndún' (talking drum) motifs that evoke the divine primordial sanctity of Ilé-Ifẹ̀."
+    "media_production_notes": "When portraying Ọọ̀ni Adérẹ̀mí in visual or dramatic media, his aesthetic must balance dignified silence with resonant statesmanship. Costume designers should meticulously reproduce mid-century woven 'Aṣọ-Òkè' (such as 'Sányán' and 'Ẹtù') matched with regal high-collared agbádá robes, authentic red coral bead neckwear, and horse-hair whisks ('Ìrùkẹ̀rẹ̀'). The sacred 'Adé Arè' must never be shown casually; its appearance demands solemn reverence, dim ambient lighting, and traditional 'Kàkàkí' (ceremonial royal trumpets) and 'Dùndún' (talking drum) motifs that evoke the divine primordial sanctity of Ilé-Ifẹ̀.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Oba Akinyele",
@@ -18802,7 +19133,10 @@
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "When documenting or recreating the Ẹwiri for archival and cinematographic media, prioritize authentic audio capture of the rhythmic pneumatic intake and expulsion (the distinct 'fùù-fùù' cadence) set against crackling charcoal. Visual framing should highlight the kinetic contrast between the tactile, weathered leather membranes, the carved patina of the timber, and the incandescent glow of the forge pit. Present the Alágbẹ̀dẹ operating the Ẹwiri not merely as a laborer, but as a ritual specialist orchestrating elemental forces, honoring the sacred precinct of Ògún through disciplined, rhythmic movement.",
     "sovereign_parent": "Àgbẹ̀dẹ",
-    "sovereign_parent_status": "Living Sub-Variant"
+    "sovereign_parent_status": "Living Sub-Variant",
+    "related_entities": [
+      "Ògún"
+    ]
   },
   {
     "id": "Àwúṣẹ́",
@@ -20499,7 +20833,10 @@
     ],
     "diaspora_connections": "Across the transatlantic African Diaspora, Ìlẹ̀kẹ̀-Ọ̀rùn survived centuries of cultural suppression to emerge as foundational markers of identity and spiritual lineage. In Afro-Cuban Lucumí (Santería), consecrated neck beads are termed 'Elekes' or 'Collares de Santo', serving as physical conduits for individual Òrìṣà affiliations received during the initial initiation ceremony of the same name. In Brazilian Candomblé Ketu, known as 'Guias' or 'Contas', they represent protective shields charged with Axé through sacred herbal baths and invocations. Similar direct continuities thrive in Trinidad Orisha and Haitian Vodou, where specific color patterns, counts, and sequences identify devotion to deities such as Ọbàtálá, Yemọja, Ṣàngó, and Ọ̀ṣun.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When visualizing Ìlẹ̀kẹ̀-Ọ̀rùn in documentary or narrative media, directors and curators must distinguish between sacred ritual necklaces and secular prestige accessories. Lighting should accentuate the microscopic imperfections and soft luster of genuine tumbled glass and polished coral, avoiding the uniform, plastic sheen typical of modern synthetic reproductions. In audio design, the tactile, muted clacking of dense stone and glass beads should register subtly, conveying weight, authenticity, and spiritual solemnity. If handling consecrated beads during production, consult initiated traditionalists to ensure proper reverence, ceremonial washings, and handling protocols are observed."
+    "media_production_notes": "When visualizing Ìlẹ̀kẹ̀-Ọ̀rùn in documentary or narrative media, directors and curators must distinguish between sacred ritual necklaces and secular prestige accessories. Lighting should accentuate the microscopic imperfections and soft luster of genuine tumbled glass and polished coral, avoiding the uniform, plastic sheen typical of modern synthetic reproductions. In audio design, the tactile, muted clacking of dense stone and glass beads should register subtly, conveying weight, authenticity, and spiritual solemnity. If handling consecrated beads during production, consult initiated traditionalists to ensure proper reverence, ceremonial washings, and handling protocols are observed.",
+    "sovereign_parent": "Ìlèkè",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ìlẹ̀kẹ̀-Ọwọ́",
@@ -20532,7 +20869,10 @@
     ],
     "diaspora_connections": "Across the Middle Passage, Ìlẹ̀kẹ̀-Ọwọ́ survived as a resilient emblem of continuity, transforming into the consecrated 'Idé' or 'Iddé' of Lucumí/Santería in Cuba, the 'Guias' and 'Pulseiras' of Candomblé Ketu in Brazil, and the sacred wrist cords of Trinidad Orisha traditions. Most prominently, the green and yellow Idé of Ọ̀rúnmìlà serves as an internationally recognized transatlantic passport of Ifá protection and sacred covenant against untimely death (Ikú). These beads remain a primary tactile connection through which African descendants across the Caribbean, the Americas, and Europe reclaim their ancestral lineage and spiritual sovereignty.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When visualizing Ìlẹ̀kẹ̀-Ọwọ́ in high-definition cinematography or archival exhibition, avoid generic synthetic or plastic beads. Spotlight natural coral, unpolished Sẹ̀gí glass, or hand-cut carnelian exhibiting natural striations and authentic imperfections. Cinematographers should prioritize extreme close-ups that emphasize the textural tension of hand-twined cotton threads and the patina of consecrated oils (Epo Pupa and Orí). Sound design must capture the organic, weighted percussive clinking of mineral beads against each other, underlaid with subtle tonal chanting of corresponding Òrìṣà Oríkì."
+    "media_production_notes": "When visualizing Ìlẹ̀kẹ̀-Ọwọ́ in high-definition cinematography or archival exhibition, avoid generic synthetic or plastic beads. Spotlight natural coral, unpolished Sẹ̀gí glass, or hand-cut carnelian exhibiting natural striations and authentic imperfections. Cinematographers should prioritize extreme close-ups that emphasize the textural tension of hand-twined cotton threads and the patina of consecrated oils (Epo Pupa and Orí). Sound design must capture the organic, weighted percussive clinking of mineral beads against each other, underlaid with subtle tonal chanting of corresponding Òrìṣà Oríkì.",
+    "sovereign_parent": "Ìlèkè",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Bẹ̀mbẹ́-Adé",
@@ -22570,7 +22910,10 @@
     ],
     "diaspora_connections": "The catastrophic collapse of Old Ọ̀yọ́ during the 19th Century dispersed thousands of captive royals, warriors, and priests directly into the transatlantic pipeline, deeply impacting the cultural landscapes of Cuba, Brazil, and Trinidad. In Cuba, the spiritual and dynastic legacy of the Ọ̀yọ́ Aláàfins became the architectural framework of Lucumí religious tradition, where Ṣàngó is honored as the paramount archetype of royal lightning and divine kingship. In Salvador da Bahia, Brazil, the liturgical structure of Candomblé Ketu preserves Ọ̀yọ́ court protocols, royal Batá rhythm lineages, and courtly salutations. The memory of the Aláàfin remains enshrined in Afro-Atlantic cabildos and terreiros, where displaced descendants maintain historical royal lines through liturgical songs, sacred percussion, and divine praise poetry (Oríkì).",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visual depictions should embrace a regal palette centered on royal crimson (Àlàárì), ancestral indigo (Àdírẹ), aged brass, and polychromatic micro-beading. Set design must emphasize the vastness of the imperial courtyard architecture with low-angle cinematography that accentuates the towering silhouette of the veiled Adé Ìlẹ̀kẹ̀. The sound design must avoid generic instrumentation, instead highlighting the acoustic authority of authentic Kàkàkí long trumpets, the resonance of the Kòsó drums, and the rhythmic recitations of the Àrokìn (Imperial Court Rhapsodists) chanting royal dynastic lineages in classical Yorùbá tonality."
+    "media_production_notes": "Visual depictions should embrace a regal palette centered on royal crimson (Àlàárì), ancestral indigo (Àdírẹ), aged brass, and polychromatic micro-beading. Set design must emphasize the vastness of the imperial courtyard architecture with low-angle cinematography that accentuates the towering silhouette of the veiled Adé Ìlẹ̀kẹ̀. The sound design must avoid generic instrumentation, instead highlighting the acoustic authority of authentic Kàkàkí long trumpets, the resonance of the Kòsó drums, and the rhythmic recitations of the Àrokìn (Imperial Court Rhapsodists) chanting royal dynastic lineages in classical Yorùbá tonality.",
+    "sovereign_parent": "Ọba",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Àṣà Àti ÌṢE Yorùbá",
@@ -22955,7 +23298,10 @@
     ],
     "diaspora_connections": "During the transatlantic enslavement, West African women retained the culinary blueprint of Ọbẹ̀-Ata, adapting it within plantation regimes across the Americas. In Bahia, Brazil, this ancestral memory manifested directly through the sacred Afro-Brazilian ritual sauce 'Molho de Pimenta' and the red palm oil reductions integral to Candomblé offerings and street food institutions like Acarajé. In Cuba and the broader Hispanic Caribbean, the foundation transformed into regional variants of 'Sofrito', retaining the essential marriage of garlic, sweet and spicy peppers, and annatto or lard substitutions where dendê was scarce. In Jamaica and Trinidad, the high consumption of Scotch Bonnet peppers, combined with allspice in Pepperpot and slow-cooked gravy sauces, stands as an unsevered umbilical cord linking Diaspora descendants back to the fiery hearths of their Yorùbá foremothers.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visually, the medium must prioritize rich, warm color palettes emphasizing deep crimson, sun-burnt orange, and the golden-red hue of pure palm oil. Close-up macro cinematography should highlight the tactile friction of granite on granite as peppers are crushed on the Ọlọ stone, capturing bursting seeds and aromatic vapor. The audio landscape requires crisp Foley recordings of crackling wood embers, the rhythmic bubbling of reducing pepper paste, and the initial, violent sizzle when sliced onions strike hot red palm oil. Lighting should mimic the amber glow of late-afternoon village hearths or historic domestic compounds, emphasizing smoke drifting across dark earthenware pots to convey spiritual, sensory, and cultural gravitas."
+    "media_production_notes": "Visually, the medium must prioritize rich, warm color palettes emphasizing deep crimson, sun-burnt orange, and the golden-red hue of pure palm oil. Close-up macro cinematography should highlight the tactile friction of granite on granite as peppers are crushed on the Ọlọ stone, capturing bursting seeds and aromatic vapor. The audio landscape requires crisp Foley recordings of crackling wood embers, the rhythmic bubbling of reducing pepper paste, and the initial, violent sizzle when sliced onions strike hot red palm oil. Lighting should mimic the amber glow of late-afternoon village hearths or historic domestic compounds, emphasizing smoke drifting across dark earthenware pots to convey spiritual, sensory, and cultural gravitas.",
+    "sovereign_parent": "Ọbẹ̀",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Guguru ati Ẹ̀pà",
@@ -25430,9 +25776,13 @@
       "diaspora_connections": "Universally employed by Babalawo practitioners in Cuba, Brazil, and across the Americas.",
       "geographical_origin": "Òwò, Ilé-Ifẹ̀, Ọ̀yọ́.",
       "media_production_notes": "Show rhythmic clicking sound against the wood of the tray; focus on the carved kneeling figure.",
-      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
-    "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+    "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹ̀là-Ọ̀rọ̀",
@@ -26184,7 +26534,10 @@
     ],
     "diaspora_connections": "Across the Afro-Atlantic Diaspora, the martial cosmology embodied by the Ọ̀tún-Bàlógún survived through syncretic sacred orders and civic mutual-aid associations. In Cuban Lucumí and Brazilian Candomblé Ketu traditions, the veneration of Ògún preserves the tactical hierarchy of the war camp, where specific manifestations such as Ògún Oníre, Ògún Alágbede, and Ògún Megé reflect the division between frontline leadership, armory stewardship, and flank coordination. In the historical Palenques of Colombia, the Quilombos of Brazil, and the Maroon settlements of Jamaica, military structures mirrored the dual-flank leadership inherited from Yorùbá and neighbouring West African martial doctrines, honoring the sacred duty of the right-hand commander to execute frontline resilience against colonial oppression.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When visualizing the Ọ̀tún-Bàlógún in cinematic, documentary, or theatrical productions, emphasis should be placed on a dignified, battle-hardened carriage. Costuming should avoid generic pan-African styles, leaning instead into structured, vintage indigo Aṣọ-Òkè (Ẹtù) accented with antique brass armlets, raw leather sword-sheaths, and iron talismans. Sound design must integrate the resonant cadence of the Bàtá drums playing the rhythmic war-stride known as Gángan or Kòkò, paired with historical praise chants (Oríkì) that evoke iron, gunpowder, and ancestry. Visual lighting should feature high-contrast chiaroscuro, utilizing warm earth tones, deep indigos, and reflective iron sheens to highlight the duality of physical military authority and ancestral spiritual responsibility."
+    "media_production_notes": "When visualizing the Ọ̀tún-Bàlógún in cinematic, documentary, or theatrical productions, emphasis should be placed on a dignified, battle-hardened carriage. Costuming should avoid generic pan-African styles, leaning instead into structured, vintage indigo Aṣọ-Òkè (Ẹtù) accented with antique brass armlets, raw leather sword-sheaths, and iron talismans. Sound design must integrate the resonant cadence of the Bàtá drums playing the rhythmic war-stride known as Gángan or Kòkò, paired with historical praise chants (Oríkì) that evoke iron, gunpowder, and ancestry. Visual lighting should feature high-contrast chiaroscuro, utilizing warm earth tones, deep indigos, and reflective iron sheens to highlight the duality of physical military authority and ancestral spiritual responsibility.",
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Seriki",
@@ -27751,7 +28104,10 @@
     ],
     "diaspora_connections": "Across the Transatlantic Diaspora, Oríkì transformed into an enduring technology of resistance and memory. In Afro-Cuban Lucumí (Santería) and Brazilian Candomblé Ketu, where individual bloodlines were violently disrupted by the Middle Passage, the mechanics of Oríkì Ìdílé were adapted to address the collective Spiritual Families of the Òrìṣà and Ancestral Egúngún rites. In Trinidad and Tobago's Orisha Tradition and North American spiritual revivals, global descendants increasingly study and reconstruct Oríkì Ìdílé as a restorative genealogical methodology to re-establish broken ancestral lineages and heal historical trauma.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When capturing Oríkì Ìdílé in documentary, audio-visual, or archival formats, field producers must emphasize the central role of Elder Women (Ìyá Àgbà), who remain the primary custodians of maternal and paternal bloodline histories. Recordings should feature dual-channel audio capture to cleanly separate the rapid tonal inflections of the chanter from the call-and-response accompaniment of the Dùndún or Gángan drum. Visually, framing should establish spatial continuity within ancestral spaces, such as ancient verandas, shrines, or family compounds, avoiding isolated portraiture to convey the collective spirit of the Lineage."
+    "media_production_notes": "When capturing Oríkì Ìdílé in documentary, audio-visual, or archival formats, field producers must emphasize the central role of Elder Women (Ìyá Àgbà), who remain the primary custodians of maternal and paternal bloodline histories. Recordings should feature dual-channel audio capture to cleanly separate the rapid tonal inflections of the chanter from the call-and-response accompaniment of the Dùndún or Gángan drum. Visually, framing should establish spatial continuity within ancestral spaces, such as ancient verandas, shrines, or family compounds, avoiding isolated portraiture to convey the collective spirit of the Lineage.",
+    "sovereign_parent": "Oríkì",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Iwe-Orin",
@@ -28265,7 +28621,10 @@
     ],
     "diaspora_connections": "Transmuted across the Middle Passage into the Western Hemisphere, surviving as the internal governance structure of Cuban Regla de Ocha and Lucumí Cabildos, where the Ilé functions as a refuge for collective legal and spiritual defense. In Brazilian Candomblé Ketu, its architectural and spiritual principles persist within the enclosed Peji and administrative chambers of the Ilê Axé, preserving the tradition of council-based elder arbitration, oath-taking upon the soil, and esoteric preservation outside of dominant colonial state scrutiny.",
     "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematic treatments must avoid sensationalism, prioritizing atmospheric, low-key lighting that emphasizes the rich, tactile ochre of hand-smoothed mud walls and the aged patina of brass Ẹdán. Spatial audio design should emphasize subdued acoustics, distant nocturnal forest ambience, resonant iron clappers (Aago), and low-register consecrated drums, capturing an aura of profound constitutional gravity, sovereign antiquity, and reverent silence."
+    "media_production_notes": "Cinematic treatments must avoid sensationalism, prioritizing atmospheric, low-key lighting that emphasizes the rich, tactile ochre of hand-smoothed mud walls and the aged patina of brass Ẹdán. Spatial audio design should emphasize subdued acoustics, distant nocturnal forest ambience, resonant iron clappers (Aago), and low-register consecrated drums, capturing an aura of profound constitutional gravity, sovereign antiquity, and reverent silence.",
+    "sovereign_parent": "Ògbóni",
+    "sovereign_parent_status": "Living Sub-Variant",
+    "is_parent": false
   },
   {
     "id": "Ọ̀bẹ-Ẹran-Ọba",
@@ -28495,11 +28854,15 @@
     "diaspora_connections": "The governance ethos personified by the Baṣọ̀run survived the Middle Passage, taking deep root in the organizational councils of the Afro-Atlantic Diaspora. In Cuba's Lucumí traditions and Brazil's Candomblé Ketu nations, the concept of a sovereign collegiate council checking the absolute authority of a spiritual monarch lives on in the institutional roles of the Obá Ará, the Ogboni remnants, and the Axogun/Babaloshas councils within sacred Terreiros and Cabildos de Nación. These councils preserved the Yorùbá tenet that divine kingship must always remain accountable to the community of Elders, the Sacred Earth (Ilẹ̀), and the Ancestral Consensus, insulating Afro-Descendant enclaves against absolute authoritarianism across the Americas.",
     "geographical_origin": "Old Ọ̀yọ́ Empire",
     "media_production_notes": "For historical dramas, documentaries, and archival visualizations: Costuming must strictly differentiate the Baṣọ̀run from the Aláàfin; the Baṣọ̀run wears a high coronet or velvet embroidered Cap (Fìlà Kẹbẹ / Fìlà Abetí-Ajá) rather than the Ade Ilẹ̀kẹ̀ (Beaded Crown with Fringe), which belongs exclusively to the King. The soundscape must feature the polyrhythmic cadence of the Talking Drum (Dùndún) reciting Imperial Oríkì in pristine Ọ̀yọ́ dialect. Scenes set in the Baṣọ̀run's courtyard require aged laterite architecture, deep impluviums, brass ritual vessels, and an atmosphere of solemn deliberation that emphasizes statesman-like gravity rather than common militarism.",
-    "sovereign_parent": "Ìjòyè",
-    "sovereign_parent_status": "Living Sub-Variant",
+    "sovereign_parent": null,
+    "sovereign_parent_status": "Sovereign Parent Concept",
     "sub_variants": [
       "Baṣọ̀run Gáà",
-      "Basọ̀run Olúyọ̀lé"
+      "Basọ̀run Olúyọ̀lé",
+      "Basọ̀run Gáà",
+      "Ọ̀yọ́ Mèsì",
+      "Igbá Ìwà",
+      "Idà Ọrọ̀"
     ],
     "related_entities": [
       "Basọ̀run Olúyọ̀lé",
@@ -28566,9 +28929,13 @@
       "diaspora_connections": "Worn in African diaspora ceremonies across the Americas as a badge of ancestral African identity.",
       "geographical_origin": "Pan-Yorùbá.",
       "media_production_notes": "Must be folded neatly (Gọ̀bị́ or Abetí Ajá ears erect or folded down); never worn backwards or flat.",
-      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Attire, Textiles & Personal Adornment"
     },
-    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Odù_Ifá",
@@ -28653,9 +29020,13 @@
         "Ọ̀ṣẹ́ Méjì",
         "Òfún Méjì"
       ],
-      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
-    "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+    "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òrìṣà",
@@ -28722,9 +29093,13 @@
       "diaspora_connections": "Venerated by tens of millions across Cuba (Santería), Brazil (Candomblé), Trinidad, and the United States.",
       "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Òṣogbo, Ẹdẹ, Abẹ́òkúta.",
       "media_production_notes": "Present each Òrìṣà with accurate canonical colors, liturgical dance steps, and authentic sacred implements.",
-      "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Abiodun, Rowland (2014). Yoruba Art and Language; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa et vodun."
+      "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Abiodun, Rowland (2014). Yoruba Art and Language; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa et vodun.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
-    "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Abiodun, Rowland (2014). Yoruba Art and Language; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa et vodun."
+    "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Abiodun, Rowland (2014). Yoruba Art and Language; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa et vodun.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Aṣọ",
@@ -28786,9 +29161,13 @@
       "diaspora_connections": "Preserved in ceremonial Afro-Atlantic liturgical garments worn by priestesses and initiates.",
       "geographical_origin": "Ìsẹ́yìn, Ọ̀yọ́, Ìbàdàn, Òkè-Ògùn, Ìjẹ̀bú.",
       "media_production_notes": "Highlight rich textile textures, Sányán silk luster, and stately flowing drapery.",
-      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Perani, Judith & Wolff, Norma H. (1999). Cloth, Dress and Art Patronage in Africa; Renne, Elisha P. (1995). Cloth That Does Not Die; Lawal, Babatunde (1996). The Gelede Spectacle."
+      "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Perani, Judith & Wolff, Norma H. (1999). Cloth, Dress and Art Patronage in Africa; Renne, Elisha P. (1995). Cloth That Does Not Die; Lawal, Babatunde (1996). The Gelede Spectacle.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Attire, Textiles & Personal Adornment"
     },
-    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Perani, Judith & Wolff, Norma H. (1999). Cloth, Dress and Art Patronage in Africa; Renne, Elisha P. (1995). Cloth That Does Not Die; Lawal, Babatunde (1996). The Gelede Spectacle."
+    "provenance_and_citations": "Eicher, Joanne B. (1976). Nigerian Handcrafted Textiles; Perani, Judith & Wolff, Norma H. (1999). Cloth, Dress and Art Patronage in Africa; Renne, Elisha P. (1995). Cloth That Does Not Die; Lawal, Babatunde (1996). The Gelede Spectacle.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ewé",
@@ -28844,9 +29223,13 @@
       "diaspora_connections": "Essential knowledge preserved in Cuban Osainistas and Brazilian Candomblé Babalossanys (Masters of Leaves).",
       "geographical_origin": "Pan-Yorùbá botanical zones.",
       "media_production_notes": "Close-up of fresh green dew-covered leaves plucked in morning light for anointing ceremonies.",
-      "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. Odebrecht; Buckley, Anthony D. (1985). Yoruba Medicine; Sofowora, Abayomi (1982). Medicinal Plants and Traditional Medicine in Africa; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study."
+      "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. Odebrecht; Buckley, Anthony D. (1985). Yoruba Medicine; Sofowora, Abayomi (1982). Medicinal Plants and Traditional Medicine in Africa; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Sacred Botany, Flora & Herbal Medicine"
     },
-    "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. Odebrecht; Buckley, Anthony D. (1985). Yoruba Medicine; Sofowora, Abayomi (1982). Medicinal Plants and Traditional Medicine in Africa; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study."
+    "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. Odebrecht; Buckley, Anthony D. (1985). Yoruba Medicine; Sofowora, Abayomi (1982). Medicinal Plants and Traditional Medicine in Africa; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọdún",
@@ -28899,9 +29282,13 @@
       "diaspora_connections": "Influenced Caribbean carnival traditions and Afro-Brazilian festive processions in Bahia.",
       "geographical_origin": "Ilé-Ifẹ̀, Òṣogbo, Ìjẹ̀bú-Òde, Òwò.",
       "media_production_notes": "Portray vibrant community atmosphere, royal retinue, dynamic drumming, and shared feast tables.",
-      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Festivals, Celebrations & Civic Pageantry"
     },
-    "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+    "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Orin",
@@ -28955,9 +29342,13 @@
       "diaspora_connections": "The foundation of Afro-Cuban rumba, Brazilian samba roots, and afro-spiritual music styles.",
       "geographical_origin": "Pan-Yorùbá.",
       "media_production_notes": "Dynamic call-and-response vocal delivery with communal chorus joining in infectious joy.",
-      "provenance_and_citations": "Waterman, Christopher A. (1990). Juju: A Social History and Ethnography of an African Popular Music; Euba, Akin (1990). Yoruba Drumming: The Dundun Tradition; Vidal, Tunji (2012). Essays on Yoruba Music; Lawal, Babatunde (1996). The Gelede Spectacle."
+      "provenance_and_citations": "Waterman, Christopher A. (1990). Juju: A Social History and Ethnography of an African Popular Music; Euba, Akin (1990). Yoruba Drumming: The Dundun Tradition; Vidal, Tunji (2012). Essays on Yoruba Music; Lawal, Babatunde (1996). The Gelede Spectacle.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Auditory Arts, Music, Drums & Chants"
     },
-    "provenance_and_citations": "Waterman, Christopher A. (1990). Juju: A Social History and Ethnography of an African Popular Music; Euba, Akin (1990). Yoruba Drumming: The Dundun Tradition; Vidal, Tunji (2012). Essays on Yoruba Music; Lawal, Babatunde (1996). The Gelede Spectacle."
+    "provenance_and_citations": "Waterman, Christopher A. (1990). Juju: A Social History and Ethnography of an African Popular Music; Euba, Akin (1990). Yoruba Drumming: The Dundun Tradition; Vidal, Tunji (2012). Essays on Yoruba Music; Lawal, Babatunde (1996). The Gelede Spectacle.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ilé",
@@ -29009,9 +29400,13 @@
       "diaspora_connections": "Replicated spiritually in the Ilé Asé compound communities of Salvador da Bahia, Brazil.",
       "geographical_origin": "Pan-Yorùbá.",
       "media_production_notes": "Show continuous rectangular earthen buildings opening into a shared central social courtyard.",
-      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Palaces: A Study of Afins of Yorubaland; Denyer, Susan (1978). African Traditional Architecture; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+      "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Palaces: A Study of Afins of Yorubaland; Denyer, Susan (1978). African Traditional Architecture; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Topography, Natural Landscapes & Architecture"
     },
-    "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Palaces: A Study of Afins of Yorubaland; Denyer, Susan (1978). African Traditional Architecture; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+    "provenance_and_citations": "Ojo, G.J. Afolabi (1966). Yoruba Palaces: A Study of Afins of Yorubaland; Denyer, Susan (1978). African Traditional Architecture; Fadipe, N.A. (1970). The Sociology of the Yoruba; Bascom, William (1969). The Yoruba of Southwestern Nigeria.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àlọ́",
@@ -29062,9 +29457,13 @@
       "diaspora_connections": "Directly influenced the Uncle Remus / Br'er Rabbit trickster tales in the American South and Caribbean Anansi stories.",
       "geographical_origin": "Pan-Yorùbá rural and urban towns.",
       "media_production_notes": "Children gathered around an elder under a star-filled African night, clapping hands during chorus songs.",
-      "provenance_and_citations": "Babalola, Adeboye (1966). The Content and Form of Yoruba Ijala; Bascom, William (1975). African Dilemma Tales; Lindfors, Bernth (1973). Folklore in Nigerian Literature; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+      "provenance_and_citations": "Babalola, Adeboye (1966). The Content and Form of Yoruba Ijala; Bascom, William (1975). African Dilemma Tales; Lindfors, Bernth (1973). Folklore in Nigerian Literature; Fadipe, N.A. (1970). The Sociology of the Yoruba.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Oral Literature, Philosophy & Folklore"
     },
-    "provenance_and_citations": "Babalola, Adeboye (1966). The Content and Form of Yoruba Ijala; Bascom, William (1975). African Dilemma Tales; Lindfors, Bernth (1973). Folklore in Nigerian Literature; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    "provenance_and_citations": "Babalola, Adeboye (1966). The Content and Form of Yoruba Ijala; Bascom, William (1975). African Dilemma Tales; Lindfors, Bernth (1973). Folklore in Nigerian Literature; Fadipe, N.A. (1970). The Sociology of the Yoruba.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìtàn",
@@ -29116,9 +29515,13 @@
       "diaspora_connections": "Historical narratives kept alive in transatlantic Cabildo archives and elder memories in the Americas.",
       "geographical_origin": "Ọ̀yọ́-Ilé, Ilé-Ifẹ̀, Ìjẹ̀bú, Òwò.",
       "media_production_notes": "Portray the royal palace historian (Arokin) narrating ancient chronicles with rhythmic authority.",
-      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas. CMS; Biobaku, Saburi O. (1973). Sources of Yoruba History. Clarendon Press; Smith, Robert S. (1988). Kingdoms of the Yoruba; Falola, Toyin (1991). Yoruba Historiography."
+      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas. CMS; Biobaku, Saburi O. (1973). Sources of Yoruba History. Clarendon Press; Smith, Robert S. (1988). Kingdoms of the Yoruba; Falola, Toyin (1991). Yoruba Historiography.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Civilization, History & Civic Heritage"
     },
-    "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas. CMS; Biobaku, Saburi O. (1973). Sources of Yoruba History. Clarendon Press; Smith, Robert S. (1988). Kingdoms of the Yoruba; Falola, Toyin (1991). Yoruba Historiography."
+    "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas. CMS; Biobaku, Saburi O. (1973). Sources of Yoruba History. Clarendon Press; Smith, Robert S. (1988). Kingdoms of the Yoruba; Falola, Toyin (1991). Yoruba Historiography.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìrun",
@@ -29175,9 +29578,13 @@
       "diaspora_connections": "Influenced African-American and Caribbean protective braiding patterns and crown aesthetics.",
       "geographical_origin": "Pan-Yorùbá.",
       "media_production_notes": "Depict intricate geometric braiding and elevated crowns with lustrous black finish.",
-      "provenance_and_citations": "Lawal, Babatunde (2000). Orilonise: The Hermeneutics of the Head and Hairstyles among the Yoruba; Ojeikere, J.D. 'Okhai (2000). Hairstyles. Scalo; Sagay, Esi (1983). African Hairstyles; Abiodun, Rowland (2014). Yoruba Art and Language."
+      "provenance_and_citations": "Lawal, Babatunde (2000). Orilonise: The Hermeneutics of the Head and Hairstyles among the Yoruba; Ojeikere, J.D. 'Okhai (2000). Hairstyles. Scalo; Sagay, Esi (1983). African Hairstyles; Abiodun, Rowland (2014). Yoruba Art and Language.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Attire, Textiles & Personal Adornment"
     },
-    "provenance_and_citations": "Lawal, Babatunde (2000). Orilonise: The Hermeneutics of the Head and Hairstyles among the Yoruba; Ojeikere, J.D. 'Okhai (2000). Hairstyles. Scalo; Sagay, Esi (1983). African Hairstyles; Abiodun, Rowland (2014). Yoruba Art and Language."
+    "provenance_and_citations": "Lawal, Babatunde (2000). Orilonise: The Hermeneutics of the Head and Hairstyles among the Yoruba; Ojeikere, J.D. 'Okhai (2000). Hairstyles. Scalo; Sagay, Esi (1983). African Hairstyles; Abiodun, Rowland (2014). Yoruba Art and Language.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Obì",
@@ -29228,9 +29635,13 @@
       "diaspora_connections": "Universal divination tool in Cuban Santería (Coco / Obi Abata) and Candomblé ceremonies.",
       "geographical_origin": "Pan-Yorùbá kola belts.",
       "media_production_notes": "Show elder holding fresh deep-red four-lobed kola nut, breaking it cleanly by hand and whispering blessings.",
-      "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society; Fadipe, N.A. (1970). The Sociology of the Yoruba; Lovejoy, Paul E. (1980). Caravans of Kola."
+      "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society; Fadipe, N.A. (1970). The Sociology of the Yoruba; Lovejoy, Paul E. (1980). Caravans of Kola.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Sacred Botany, Flora & Herbal Medicine"
     },
-    "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society; Fadipe, N.A. (1970). The Sociology of the Yoruba; Lovejoy, Paul E. (1980). Caravans of Kola."
+    "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society; Fadipe, N.A. (1970). The Sociology of the Yoruba; Lovejoy, Paul E. (1980). Caravans of Kola.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ilà_Kíkọ",
@@ -29288,9 +29699,13 @@
       "diaspora_connections": "Documented in 18th-19th century transatlantic ship manifests as unmistakable marks of Yorùbá identity.",
       "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Ìjẹ̀bú, Èkìtì, Òndó.",
       "media_production_notes": "Render marks precisely according to historical kingdom (e.g. Ọ̀yọ́ Àbàjà vs Ìjẹ̀bú Pẹ́lẹ́).",
-      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Abiodun, Rowland (2014). Yoruba Art and Language; Oduwobi, Tunde (2004). The Preservation of Yoruba Cultural Heritage; Lawal, Babatunde (1996). The Gelede Spectacle."
+      "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Abiodun, Rowland (2014). Yoruba Art and Language; Oduwobi, Tunde (2004). The Preservation of Yoruba Cultural Heritage; Lawal, Babatunde (1996). The Gelede Spectacle.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Attire, Textiles & Personal Adornment"
     },
-    "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Abiodun, Rowland (2014). Yoruba Art and Language; Oduwobi, Tunde (2004). The Preservation of Yoruba Cultural Heritage; Lawal, Babatunde (1996). The Gelede Spectacle."
+    "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Abiodun, Rowland (2014). Yoruba Art and Language; Oduwobi, Tunde (2004). The Preservation of Yoruba Cultural Heritage; Lawal, Babatunde (1996). The Gelede Spectacle.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oúnjẹ",
@@ -29352,9 +29767,13 @@
       "diaspora_connections": "Foundation of Afro-Caribbean cuisine (fufu, callaloo, mofongo) and Afro-Brazilian acarajé.",
       "geographical_origin": "Pan-Yorùbá culinary centers.",
       "media_production_notes": "Show the rhythmic pounding of steaming yam in a deep wooden mortar and piping-hot soup steaming in clay bowls.",
-      "provenance_and_citations": "Bascom, William (1951). Yoruba Food. Africa: Journal of the International African Institute; Fadipe, N.A. (1970). The Sociology of the Yoruba; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society."
+      "provenance_and_citations": "Bascom, William (1951). Yoruba Food. Africa: Journal of the International African Institute; Fadipe, N.A. (1970). The Sociology of the Yoruba; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Culinary Arts & Indigenous Gastronomy"
     },
-    "provenance_and_citations": "Bascom, William (1951). Yoruba Food. Africa: Journal of the International African Institute; Fadipe, N.A. (1970). The Sociology of the Yoruba; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society."
+    "provenance_and_citations": "Bascom, William (1951). Yoruba Food. Africa: Journal of the International African Institute; Fadipe, N.A. (1970). The Sociology of the Yoruba; Ojo, G.J. Afolabi (1966). Yoruba Culture: A Geographical Analysis; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "ODU_001_Ogbè",
@@ -35889,7 +36308,8 @@
     ],
     "diaspora_connections": "Directly preserved in Cuban Lukumí, Brazilian Candomblé, and Caribbean Afro-descendant foodways as Fufú and starchy ceremonial swallows.",
     "geographical_origin": "Pan-Yorùbá culinary domain with regional epicenter in Ọ̀yọ́, Ìbàdàn, Èkìtì, and Ìjẹ̀bú.",
-    "media_production_notes": "Cinematography should emphasize macro shots of steam rising from freshly turned Èlùbọ́ and smooth elasticity of hot Ìyán against carved wooden platters."
+    "media_production_notes": "Cinematography should emphasize macro shots of steam rising from freshly turned Èlùbọ́ and smooth elasticity of hot Ìyán against carved wooden platters.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_isu",
@@ -35926,7 +36346,8 @@
     ],
     "diaspora_connections": "Known throughout the African diaspora in Cuba, Trinidad, Jamaica, and Brazil (Inhame) as the cornerstone sacred food for Òrìṣà offerings.",
     "geographical_origin": "Highland agricultural heartlands of Èkìtì, Òndó, Ọ̀ṣun, and Kwara.",
-    "media_production_notes": "Capture the golden textured flesh of boiled Ògùdù and the sunlit rows of harvested tubers within traditional bamboo yam barns."
+    "media_production_notes": "Capture the golden textured flesh of boiled Ògùdù and the sunlit rows of harvested tubers within traditional bamboo yam barns.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_ewa",
@@ -35961,7 +36382,8 @@
     ],
     "diaspora_connections": "Directly birthed the iconic Brazilian Acarajé (from Àkàrà) and Cuban Frijoles Carita across the Afro-Atlantic corridor.",
     "geographical_origin": "Pan-Yorùbá with epicenters in Lagos, Abeokuta, Ìbàdàn, and Ọ̀yọ́.",
-    "media_production_notes": "Document street vendors frying golden bean cakes (Àkàrà) in red palm oil and steaming Mọ́ín-mọ́ín in aromatic Ewe Èran broad leaves."
+    "media_production_notes": "Document street vendors frying golden bean cakes (Àkàrà) in red palm oil and steaming Mọ́ín-mọ́ín in aromatic Ewe Èran broad leaves.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_iresi",
@@ -35994,7 +36416,8 @@
     ],
     "diaspora_connections": "Shared lineage with Carolina Gold rice and Afro-Caribbean rice-and-beans traditions carried across Middle Passage routes.",
     "geographical_origin": "Ogun State (Ofada, Abeokuta), Osogbo, and Lagos wetlands.",
-    "media_production_notes": "Focus on the steam curling from leaf-wrapped mounds of Ofada rice paired with dark green Ayamase pepper sauce."
+    "media_production_notes": "Focus on the steam curling from leaf-wrapped mounds of Ofada rice paired with dark green Ayamase pepper sauce.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_obe",
@@ -36034,7 +36457,8 @@
     ],
     "diaspora_connections": "Direct ancestor of Brazilian Caruru (from Ẹ̀fọ́/Okra) and Cuban and Haitian Gumbo and Calalou stews.",
     "geographical_origin": "Pan-Yorùbá with regional specialties like Obẹ-Marugbo (Ondo) and Gbẹ̀gị̀rị́ (Oyo).",
-    "media_production_notes": "Capture the golden bubbling of Ẹ̀gúsí melon seed cakes and deep velvet green ribbons of whisked Ewédú."
+    "media_production_notes": "Capture the golden bubbling of Ẹ̀gúsí melon seed cakes and deep velvet green ribbons of whisked Ewédú.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_epa",
@@ -36065,7 +36489,8 @@
     ],
     "diaspora_connections": "Celebrated in international museum collections (Horniman, British Museum, MET) as the pinnacle of West African sculptural monumentalism.",
     "geographical_origin": "Èkìtì State, Ìgbómìnà (Kwara), and Kàbbà (Kogi).",
-    "media_production_notes": "Dynamic wide-angle capture of the athletic leaping sequence against rugged granite hills during dry season festivals."
+    "media_production_notes": "Dynamic wide-angle capture of the athletic leaping sequence against rugged granite hills during dry season festivals.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "agba_parent_igi_ibile",
@@ -36101,7 +36526,8 @@
     ],
     "diaspora_connections": "Revered in Cuban and Brazilian Afro-diaspora shrines as the sacred Gameleira and Ceiba trees.",
     "geographical_origin": "Tropical rainforest belts of Yorùbáland.",
-    "media_production_notes": "Towering vertical crane shots showcasing the buttress roots of the giant Silk Cotton tree (Àràbà)."
+    "media_production_notes": "Towering vertical crane shots showcasing the buttress roots of the giant Silk Cotton tree (Àràbà).",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Orufanran",
@@ -36138,8 +36564,12 @@
       "social_and_ritual_context": "Suspended from the left hip sash of ceremonial regalia (Aṣọ Ọba) during royal dances and court processions.",
       "proverbs_and_oral_traditions": [
         "Ọlọ́wọ̀ t'ó gbé Orufanran wọ̀ kò bẹ̀rù ọ̀tá (The king who wears Orufanran fears no adversary)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Udàmalóre",
@@ -36173,7 +36603,10 @@
       "social_and_ritual_context": "Held upright in the right hand during royal state entries and allegiance oaths.",
       "proverbs_and_oral_traditions": [
         "Idà ọba kì í jẹ́ kí ìlú tú (The royal sword preserves civic order)."
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
     },
     "related_entities": [
       "Idà",
@@ -36186,7 +36619,8 @@
       "Àmì Ọlá",
       "Ẹrùkẹ̀",
       "Bàtà Ìlèkè"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òpó Ògògá",
@@ -36220,8 +36654,12 @@
       "social_and_ritual_context": "Architectural support for royal reception verandas and ceremonial court chambers.",
       "proverbs_and_oral_traditions": [
         "Òpó t'ó mú ilé dúró ni àwọn obìnrin (The post that holds up the house represents the ancestral mothers)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ọpọ́n Ọṣẹ",
@@ -36255,8 +36693,12 @@
       "social_and_ritual_context": "Positioned at the apex of the central shrine altar during annual Ṣàngó and Odun festivals.",
       "proverbs_and_oral_traditions": [
         "Ọṣẹ Ṣàngó kì í gbé ilé lásán (The sacred staff and tray never rest without spiritual potency)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Arugba Ifá",
@@ -36290,8 +36732,12 @@
       "social_and_ritual_context": "Used in the Babaláwo's consultation chamber to house the sacred palm nuts (Ikin Ifá).",
       "proverbs_and_oral_traditions": [
         "Ìkúnlẹ̀ abiyamo kì í jẹ́ kí ọmọ kú (The kneeling prayer of a devoted mother protects destiny)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oríkògbófo",
@@ -36324,7 +36770,10 @@
       "social_and_ritual_context": "Worn during palace council meetings, judicial hearings, and state visits.",
       "proverbs_and_oral_traditions": [
         "Orí ọba kì í wà láìsí fìlà (The monarch's head must never stay bare)."
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
     },
     "related_entities": [
       "Adé",
@@ -36337,7 +36786,8 @@
       "Fìlà",
       "Adé Òrìṣà",
       "Àkọ̀tùn"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àpótí Ọba",
@@ -36370,8 +36820,12 @@
       "social_and_ritual_context": "Occupied exclusively by crowned monarchs and divine priests during ceremonial state darbars.",
       "proverbs_and_oral_traditions": [
         "Ẹni t'ó jókòó lórí àpótí ọba gbọ́dọ̀ wọ àṣẹ (He who sits on the king's stool must possess legitimate authority)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òrùka Ògbóni",
@@ -36405,8 +36859,12 @@
       "social_and_ritual_context": "Placed upon the earth altar in the Ìlédì (lodge) during supreme judicial ratifications and peace treaties.",
       "proverbs_and_oral_traditions": [
         "Ilẹ̀ kì í purọ́, Ògbóni kì í jẹ́ kí òtítọ́ sọnù (The Earth never lies, and Ogboni never permits truth to perish)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹ̀gbà Ọwọ́ Ọ̀wọ̀",
@@ -36440,8 +36898,12 @@
       "social_and_ritual_context": "Worn in pairs or sets of four around both forearms during festival state pageants.",
       "proverbs_and_oral_traditions": [
         "Ẹ̀gbà ọwọ́ kì í wọ̀ láìsí ọlá (The armlet of ivory is never worn without noble standing)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹ̀gbà Ògbóni",
@@ -36474,8 +36936,12 @@
       "social_and_ritual_context": "Worn on the wrist during council assemblies inside the Ìlédì.",
       "proverbs_and_oral_traditions": [
         "Ọwọ́ t'ó wọ ẹ̀gbà Ògbóni kì í ṣe aburú (The hand that wears the Ogboni armlet must uphold divine justice)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ògò Èlẹ́gba",
@@ -36509,8 +36975,12 @@
       "social_and_ritual_context": "Hooked over the dancer's shoulder or brandished rhythmically to orchestrate sacred market rites.",
       "proverbs_and_oral_traditions": [
         "Èṣù Òdàrà, ọlọ́jà ẹ̀bọ, ẹni tí ń kọ́ ọmọdé l'ọgbọ́n (Eshu Odara, master of offerings, who instructs mankind in wisdom)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ìyá Òrìṣà",
@@ -36544,8 +37014,12 @@
       "social_and_ritual_context": "Kept in sacred inner sanctums and displayed during annual ancestral renewal rites.",
       "proverbs_and_oral_traditions": [
         "Ìyá l'ó ni ayé (The sacred mothers hold custody over the harmony of the world)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ère Ìbejì",
@@ -36579,13 +37053,17 @@
       "social_and_ritual_context": "Cared for on the family domestic altar by the mother to ensure perpetual blessing and protection for the household.",
       "proverbs_and_oral_traditions": [
         "Ìbejì l'ó ni ayọ̀, ẹni tí ó bi ìbejì kì í f'òṣì kú (Twins possess sacred joy; parents of twins never die in poverty)."
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
     },
     "sub_variants": [
       "Ère Ìbejì (Sacred Twin Memorial Effigy)",
       "Ère Ẹlẹ́gbára (Consecrated Sculptural Icon of Èṣù)",
       "Ère Ọbàtálá"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àgéré Ifá",
@@ -36618,8 +37096,12 @@
       "social_and_ritual_context": "Resting beside the Ọpọ́n Ifá during divination consultations.",
       "proverbs_and_oral_traditions": [
         "Àgéré Ifá kì í f'ẹsẹ̀ lásán tẹ ilẹ̀ (The sacred divination container never rests unworthily upon the earth)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹdan Ògbóni",
@@ -36652,8 +37134,12 @@
       "social_and_ritual_context": "Used in conflict resolution, treaty sealing, and judicial oath administration.",
       "proverbs_and_oral_traditions": [
         "Ẹdan kì í purọ́ lórí ilẹ̀ (Edan never bears false witness upon the Earth)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Onílé",
@@ -36685,8 +37171,12 @@
       "social_and_ritual_context": "Permanently enthroned within the inner sanctuary of the Ìlédì lodge.",
       "proverbs_and_oral_traditions": [
         "Ilẹ̀ l'ẹlẹ́jọ́, gbogbo wa l'a ń tẹ ilẹ̀ (Earth is the final arbiter; we all tread upon her)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àpò Ifá",
@@ -36718,8 +37208,12 @@
       "social_and_ritual_context": "Slung across the left shoulder during consultations and travel.",
       "proverbs_and_oral_traditions": [
         "Àpò Ifá l'ó kún f'ọgbọ́n (The divination bag is filled with ancestral wisdom)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òdìgbà Ìlèkè Ifá",
@@ -36752,8 +37246,12 @@
       "social_and_ritual_context": "Worn during high royal and liturgical festivals.",
       "proverbs_and_oral_traditions": [
         "Òdìgbà kì í ṣe ohun àbùkù (The sacred necklace is an insignia of boundless dignity)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ère Egúngún",
@@ -36785,13 +37283,17 @@
       "social_and_ritual_context": "Danced during the annual Odún Egúngún festival.",
       "proverbs_and_oral_traditions": [
         "Egúngún t'ó jó dáadáa, ayọ̀ ni f'ará ìlú (The masquerade that dances well brings joy to the town)."
-      ]
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
     },
     "sub_variants": [
       "Ère Ìbejì (Sacred Twin Memorial Effigy)",
       "Ère Ẹlẹ́gbára (Consecrated Sculptural Icon of Èṣù)",
       "Ère Ọbàtálá"
-    ]
+    ],
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Gẹ̀lẹ̀dẹ́",
@@ -36824,8 +37326,12 @@
       "social_and_ritual_context": "Danced at night (Èfẹ̀) and day during the post-harvest season.",
       "proverbs_and_oral_traditions": [
         "Ojú t'ó rí Gẹ̀lẹ̀dẹ́ ti rí òpin eré (The eyes that have beheld Gelede have witnessed the ultimate spectacle)."
-      ]
-    }
+      ],
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Royal Regalia, Sacred Art & Architecture"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "CORPUS_ORUNMILA_001",
@@ -36880,7 +37386,10 @@
       ],
       "diaspora_connections": "Orula in Cuban Lucumí; Orunmila in Brazilian Candomblé Ketu.",
       "geographical_origin": "Òkè-Ìtasẹ̀ Shrine, Ilé-Ifẹ̀, Osun State, Nigeria",
-      "media_production_notes": "Canonical representation: elder sage holding beaded Ìrukẹ̀rẹ̀ fly-whisk and Ikin palm nuts."
+      "media_production_notes": "Canonical representation: elder sage holding beaded Ìrukẹ̀rẹ̀ fly-whisk and Ikin palm nuts.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Odù Ifá",
@@ -37003,7 +37512,10 @@
       ],
       "diaspora_connections": "Santería/Lucumí (Cuba), Candomblé (Brazil), Shango Baptist (Trinidad).",
       "geographical_origin": "Ilé-Ifẹ̀, Osun State, Nigeria",
-      "media_production_notes": "Circular cosmological matrix diagram."
+      "media_production_notes": "Circular cosmological matrix diagram.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     }
   },
   {
@@ -37108,7 +37620,10 @@
       ],
       "diaspora_connections": "Exu in Brazil; Eleggua in Cuba.",
       "geographical_origin": "Pan-Yorùbáland",
-      "media_production_notes": "Crossroads guardian with backward topknot."
+      "media_production_notes": "Crossroads guardian with backward topknot.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     }
   },
   {
@@ -37325,7 +37840,10 @@
       ],
       "diaspora_connections": "Iansã in Brazil; Oyá in Cuba.",
       "geographical_origin": "River Niger Basin & Ọ̀yọ́",
-      "media_production_notes": "Warrior matriarch holding copper machete."
+      "media_production_notes": "Warrior matriarch holding copper machete.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     }
   },
   {
@@ -37372,7 +37890,10 @@
       ],
       "diaspora_connections": "Oxóssi in Brazil; Ochosi in Cuba.",
       "geographical_origin": "Kétu & Ọ̀yọ́",
-      "media_production_notes": "Hunter drawing iron arrow in sacred forest."
+      "media_production_notes": "Hunter drawing iron arrow in sacred forest.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Ògún Lákàyé",
@@ -37430,7 +37951,10 @@
       ],
       "diaspora_connections": "Yewá in Cuban Lucumí.",
       "geographical_origin": "Ìlarò & Yewaland, Ogun State",
-      "media_production_notes": "Veiled priestess holding pink beaded wand."
+      "media_production_notes": "Veiled priestess holding pink beaded wand.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Òrìṣà",
@@ -37491,7 +38015,10 @@
       ],
       "diaspora_connections": "Obatalá across all Afro-Atlantic traditions.",
       "geographical_origin": "Ilé-Ifẹ̀ & Ejigbo",
-      "media_production_notes": "Sovereign draped in white cloth holding ivory staff."
+      "media_production_notes": "Sovereign draped in white cloth holding ivory staff.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Ọ̀rúnmìlà",
@@ -37550,7 +38077,10 @@
       ],
       "diaspora_connections": "Orisha Oko in Cuba.",
       "geographical_origin": "Ìráwọ̀, Oyo State",
-      "media_production_notes": "Farmer leaning on iron staff beside yams."
+      "media_production_notes": "Farmer leaning on iron staff beside yams.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Òrìṣà",
@@ -37611,7 +38141,10 @@
       ],
       "diaspora_connections": "Babalú Ayé in Cuba; Omolu in Brazil.",
       "geographical_origin": "Western Yorùbáland",
-      "media_production_notes": "Raffia-covered elder holding Ṣàṣàrà wand."
+      "media_production_notes": "Raffia-covered elder holding Ṣàṣàrà wand.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     }
   },
   {
@@ -37658,7 +38191,10 @@
       ],
       "diaspora_connections": "Nanã in Brazilian Candomblé.",
       "geographical_origin": "Western Yorùbá Borderlands",
-      "media_production_notes": "Matriarch cradling cowrie-bound Ìbírí wand."
+      "media_production_notes": "Matriarch cradling cowrie-bound Ìbírí wand.",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "category": "Spiritual & Cosmological Matrix"
     },
     "related_entities": [
       "Ọbalúayé",
@@ -37783,9 +38319,11 @@
       "diaspora_connections": "Venerated across Afro-Atlantic civilizations as Regla de Ocha/Lucumí/Ifá in Cuba, Candomblé Ketu in Brazil, and Orisha-Shango Baptist in Trinidad.",
       "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, Èkìtì, Ìjẹ̀bú, Benin Republic.",
       "media_production_notes": "Portray with supreme reverence; show Babaláwo dressed in pristine white or woven Aṣọ Òkè, casting Ọ̀pẹ̀lẹ̀ upon carved Ọpọ́n Ifá covered in gold-hued Ìyẹ̀rosùn.",
-      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Rev. Samuel (1921). The History of the Yorubas; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde."
+      "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Rev. Samuel (1921). The History of the Yorubas; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
     },
-    "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Rev. Samuel (1921). The History of the Yorubas; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde."
+    "provenance_and_citations": "Abimbola, Wande (1975). Sixteen Great Poems of Ifa; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Rev. Samuel (1921). The History of the Yorubas; Verger, Pierre (1995). Dieux d'Afrique / Òrìṣà: Les Dieux Yorouba en Afrique et au Nouveau Monde.",
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Were_Music",
@@ -37854,8 +38392,10 @@
       ],
       "diaspora_connections": "Heavily influenced West African Francophone and UK-diaspora Yorùbá community festivities and Afro-fusion percussion arrangements.",
       "geographical_origin": "Isale Eko (Lagos Island), Ìbàdàn, Ìjẹ̀bú-Òde, Ọ̀yọ́.",
-      "media_production_notes": "Capture dynamic lanterns swinging in early morning mist, young men singing vibrant polyphonic Yorùbá rhymes accompanied by sharp ringing agogo bells and sákárà drums."
-    }
+      "media_production_notes": "Capture dynamic lanterns swinging in early morning mist, young men singing vibrant polyphonic Yorùbá rhymes accompanied by sharp ringing agogo bells and sákárà drums.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Oogun",
@@ -37926,8 +38466,10 @@
       ],
       "diaspora_connections": "Manifests in Afro-Brazilian Terreiro compound succession structures and Lucumí house-sanctuary spiritual family lineages.",
       "geographical_origin": "Pan-Yorùbáland.",
-      "media_production_notes": "Show lineage elders gathered under an ancient courtyard veranda (Ààfin or Agbo-Ilé) deliberating over ancestral boundary covenants."
-    }
+      "media_production_notes": "Show lineage elders gathered under an ancient courtyard veranda (Ààfin or Agbo-Ilé) deliberating over ancestral boundary covenants.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Òògùn",
@@ -38002,8 +38544,10 @@
       ],
       "diaspora_connections": "Central to Afro-Cuban Osainista herbal lore and Brazilian Candomblé Osanyin leaf rituals (Sasanyin).",
       "geographical_origin": "Rainforests and savanna transitional belts of Yorùbáland.",
-      "media_production_notes": "Show fresh rainforest medicinal leaves with dewdrops, clay pots brewing steaming botanical infusions over wood embers."
-    }
+      "media_production_notes": "Show fresh rainforest medicinal leaves with dewdrops, clay pots brewing steaming botanical infusions over wood embers.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹ̀pà",
@@ -38072,8 +38616,10 @@
       ],
       "diaspora_connections": "Known as peanut or goober (from Bantu nguba) across the African Diaspora; preserved in southern US soul food and Caribbean peanut stews.",
       "geographical_origin": "Ọ̀yọ́, Òkè-Ògùn, Ìbàdàn, Ìlọrin, Èkìtì farmlands.",
-      "media_production_notes": "Visually depict freshly roasted, golden-brown groundnuts emerging from dark hot river sand, served wrapped in clean green banana leaves beside steaming Bọ̀lẹ̀."
-    }
+      "media_production_notes": "Visually depict freshly roasted, golden-brown groundnuts emerging from dark hot river sand, served wrapped in clean green banana leaves beside steaming Bọ̀lẹ̀.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àpáta",
@@ -38146,8 +38692,10 @@
       ],
       "diaspora_connections": "Preserved in Afro-Caribbean folklore and Brazilian Quilombo geographic defense traditions as symbols of maroon resilience.",
       "geographical_origin": "Abẹ́òkúta (Olúmo), Ìdánre, Èkìtì, Òkè-Mèsì, Ìgbeti.",
-      "media_production_notes": "Wide cinematic drone panoramas sweeping across ancient majestic granite inselbergs rising out of tropical rainforest canopies."
-    }
+      "media_production_notes": "Wide cinematic drone panoramas sweeping across ancient majestic granite inselbergs rising out of tropical rainforest canopies.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹlẹ́mù",
@@ -38216,8 +38764,10 @@
       ],
       "diaspora_connections": "Resonates with West African diaspora culinary cultures and Caribbean rum/punch fermentation rituals.",
       "geographical_origin": "Ondo, Osun, Ogun, Ekiti, and Lagos palm groves.",
-      "media_production_notes": "Show a seasoned tapper scaling a tall oil palm at daybreak using an authentic fibrous Ìgbà harness, lowering gourd filled with frothing white wine."
-    }
+      "media_production_notes": "Show a seasoned tapper scaling a tall oil palm at daybreak using an authentic fibrous Ìgbà harness, lowering gourd filled with frothing white wine.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Ẹégún",
@@ -38286,8 +38836,10 @@
       ],
       "diaspora_connections": "Actively preserved in Oyotunji African Village (USA) and Cuban Cabildo Egúngún funerary societies.",
       "geographical_origin": "Ọ̀yọ́, Ìbàdàn, Abẹ́òkúta, Ìjẹ̀bú, Òkè-Ìgbo.",
-      "media_production_notes": "Dynamic cinematic whirling of multi-colored fabric streamers accompanied by thundering Bàtá drums and singing women."
-    }
+      "media_production_notes": "Dynamic cinematic whirling of multi-colored fabric streamers accompanied by thundering Bàtá drums and singing women.",
+      "sovereign_parent_status": "Sovereign Parent Concept"
+    },
+    "sovereign_parent_status": "Sovereign Parent Concept"
   },
   {
     "id": "Àrọ̀kọ̀_Ẹfà",
