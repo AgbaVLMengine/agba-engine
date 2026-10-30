@@ -202,7 +202,33 @@
       - **Anti-Parent-Loop Accuracy**: **32 / 32 (100.0%)**.
       - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
       - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
-    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Master corpus stands at 1,408 entities with zero regressions and zero parent-loop collapses across all 4 universal constellation domains. Handoff delivered to `Àgbà` and `Òye`.
+  - **[2026-10-30] (`HANDOFF-SUURU-007` — Audit of Monarchy Constellations & Zero-Parent-Loop Benchmark Expansion)**:
+    - **Monarchy & Royal Architecture Constellation Ingestion & Consolidation**:
+      - Verified canonical 14-Tier standalone records ingested by Àrọ̀kìn (`Ọọ̀ni of Ifẹ̀`, `Aláàfin of Ọ̀yọ́`, `Awùjalẹ̀ of Ìjẹ̀bú`, `Ààfin Ọọ̀ni (Ilé-Ifẹ̀)`, `Ààfin Aláàfin (Ọ̀yọ́)`, `Kòbì Ààfin`, `Sányán`, `Àlàárì`, `Ewé Àkòko`).
+      - Forensically identified and merged legacy twin nodes (`Awujalẹ` -> `awujale_of_ijebu`, `Ewe Akọko` -> `ewe_akoko`), preserving alias coverage while ensuring single-node integrity.
+      - Purged child monarch title collisions (`ooni`, `alaafin`, `awujale`) from parent `Ọba` aliases, guaranteeing 100% anti-parent-loop precision when regional monarchs are queried directly.
+      - Master corpus stabilized in 100% lockstep across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at **1,411 canonical entities**.
+    - **Live Monarchy Retrieval & Anti-Parent-Loop Verification**:
+      - Query `"Ooni of Ife"` -> Top-1: `Ọọ̀ni of Ifẹ̀` (Category: Monarchy, Royal Regalia & Governance; anti-loop: PASS, zero collapse to `Ọba`).
+      - Query `"Alaafin of Oyo"` -> Top-1: `Aláàfin of Ọ̀yọ́` (anti-loop: PASS, zero collapse to `Ọba`).
+      - Query `"Awujale"` -> Top-1: `Awùjalẹ̀ of Ìjẹ̀bú` (anti-loop: PASS, zero collapse to `Ọba`).
+      - Query `"Awujale of Ijebu"` -> Top-1: `Awùjalẹ̀ of Ìjẹ̀bú` (anti-loop: PASS).
+      - Query `"Aafin Ooni"` -> Top-1: `Ààfin Ọọ̀ni (Ilé-Ifẹ̀)` (anti-loop: PASS, zero collapse to `Ààfin`).
+      - Query `"Kobi Aafin"` -> Top-1: `Kòbì Ààfin` (anti-loop: PASS, zero collapse to `Ààfin`).
+      - Query `"Sanyan"` -> Top-1: `Sányán` (anti-loop: PASS, zero collapse to `Aṣọ Òkè`).
+      - Query `"Alaari"` -> Top-1: `Àlàárì` (anti-loop: PASS, zero collapse to `Aṣọ Òkè`).
+      - Query `"Ewe Akoko"` -> Top-1: `Ewé Àkòko` (anti-loop: PASS, zero collapse to `Òògùn`).
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded regression benchmark suite from 46 to **55 test cases** (elevating total test assertions from 56 to **65 queries**):
+        - Added `Q47_OONI_OF_IFE`, `Q48_ALAAFIN_OF_OYO`, `Q49A_AWUJALE`, `Q49B_AWUJALE_OF_IJEBU`
+        - Added `Q50_AAFIN_OONI`, `Q51_KOBI_AAFIN`
+        - Added `Q52A_SANYAN`, `Q52B_ALAARI`, `Q53_EWE_AKOKO`
+      - **Total Queries Tested**: **65 / 65 (100.0%) Top-1 Accuracy**.
+      - **Anti-Parent-Loop Accuracy**: **41 / 41 (100.0%)** (zero sub-variants collapsed to parents).
+      - **14 Friction Queries Accuracy**: **16 / 16 (100.0%)**.
+      - **Category 17 Indigenous Fauna**: **18 / 18 (100.0%)**.
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Zero regressions across entire 1,411-entity master corpus. Full handoff delivered to `Àgbà` and `Òye`.
+
 
 
 
