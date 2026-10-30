@@ -94,7 +94,7 @@ True innovation doesn't come from copying Silicon Valley templates. It comes fro
 ---
 
 ## 🥁 THREAD 2: "The Soul of the Drum"
-*Theme: Rejecting synthetic voice; Sẹ́fíù Adégbìlú, Auntie Yẹmí's courage, & Father's Royal Oríkì.*  
+*Theme: Rejecting synthetic voice; Baba Sẹ́fíù Adégbìlú, Auntie Yẹmí's courage, & Father's Royal Oríkì.*  
 *Platforms: Twitter/X • LinkedIn • Instagram Sound-Visual Reel*
 
 ### [X/Twitter Master Thread]
@@ -116,8 +116,8 @@ Auntie Yẹmí did something extraordinary that no textbook taught. She intuitiv
 Her "raw solfege variants" became the foundational tensors that allowed our DSP pipeline to align pitch vectors with acoustic language.
 
 **Tweet 5**:  
-Then came **Sẹ́fíù Adégbìlú**, a master *Onílù* drummer.  
-Sẹ́fíù played the sacred *Dùndún* talking drum strokes with breathtaking precision, and brought in a fellow master to play the ancient, sacred **Gúdúgúdú** kettle drum for the royal *Ọba Onítìrẹ́ Oríkì*.  
+Then came **Baba Sẹ́fíù Adégbìlú**, a master *Onílù* drummer and revered elder.  
+Baba Sẹ́fíù played the sacred *Dùndún* talking drum strokes with breathtaking precision, and brought in a fellow master to play the ancient, sacred **Gúdúgúdú** kettle drum for the royal *Ọba Onítìrẹ́ Oríkì*.  
 His granddaughter stood beside him, voicing the living human words that the drum was sounding.
 
 **Tweet 6**:  
@@ -145,8 +145,8 @@ Centuries before Gottfried Wilhelm Leibniz wrote down binary mathematics in 1679
 16 principal Odù, 256 permutations ($16 \times 16$). Binary retrieval was African before it was digital.
 
 **Tweet 3**:  
-When we first designed our UI, we made a mistake: we used an anatomical "wisdom tooth" graphic.  
-It looked clever to Western tech standards, but it felt hollow. It profaned our heritage. I halted the frontend sprint and demanded we return to historical truth.
+When we first designed our UI, we made a mistake: we warped ourselves inside an anatomical "wisdom tooth" graphic.  
+It looked clever to Western tech standards, but it felt hollow. It profaned our heritage. It was my wife, **Aisha**, who helped me break out of the tooth box and gave the very first green light to build the concentric Ọpọ́n Ifá hearth. I halted the frontend sprint and demanded we return to historical truth.
 
 **Tweet 4**:  
 We forged **The Triple Concentric Ọpọ́n Ifá Hearth**:
@@ -284,7 +284,7 @@ TIMECODE    VISUAL STORYBOARD & UI CUES                           AUDIO STEMS & 
 0:14 - 0:22 Right panel illuminates Baba Sẹ́fíù Adégbìlú,       AUDIO: Powerful, resonant Dùndún stroke
             hands in motion striking the tension cords of the     mimicking the exact pitch contour:
             sacred Dùndún talking drum. Beside him, the           *Gbo-un-kẹ́... Gba-kọ-gba!*
-            glistening circular frame of the Gúdúgúdú drum.       VO: "Then came Master Onílù Sẹ́fíù
+            glistening circular frame of the Gúdúgúdú drum.       VO: "Then came Master Onílù Baba Sẹ́fíù
             Golden acoustic harmonics mirror Auntie Yẹmí's        Adégbìlú. His Dùndún drum spoke the exact
             voice waveform with sub-millisecond precision.        frequencies Auntie Yẹmí sang."
 
@@ -299,7 +299,7 @@ TIMECODE    VISUAL STORYBOARD & UI CUES                           AUDIO STEMS & 
 
 ### 🎛️ Audio Stem Lineage & Production Directives
 1. **Primary Vocal Stem**: Sourced directly from `VLM_s Specialty Master` Cell 28 raw `.opus` files (`AGBA_AUD_001` through `AGBA_AUD_006`) containing Auntie Yẹmí's Solfège intervals (*Dò-Re-Mi*).
-2. **Primary Acoustic Drum Stem**: Sourced from `Agba Engine Pipeline` Cells 55–60 Dùndún master segments by Sẹ́fíù Adégbìlú with Gúdúgúdú accompaniment.
+2. **Primary Acoustic Drum Stem**: Sourced from `Agba Engine Pipeline` Cells 55–60 Dùndún master segments by Baba Sẹ́fíù Adégbìlú with Gúdúgúdú accompaniment.
 3. **Lineage Seal**: Concluding 4-second acoustic tail carries the filial voice of the Lead Architect's Father chanting royal *Oríkì Ọba Onítìrẹ́*.
 
 ---
@@ -311,7 +311,7 @@ TIMECODE    VISUAL STORYBOARD & UI CUES                           AUDIO STEMS & 
 | **Twitter/X** | 5 Master Threads (35 Tweets) | Viral reach, developer transparency, cultural resonance | Code snippets, spectrograms, UI recordings |
 | **LinkedIn** | 5 In-Depth Founder Articles | Executive stature, technical credibility, thought leadership | Architectural blueprints, ML loss equations |
 | **Instagram** | 5 Multi-Slide Carousels + Reel | Visual majesty, emotional connection, youth engagement | High-res regalia visuals, 30s Tone-Wave Reel |
-| **Audiovisual** | 30s "Tone-Wave" Showcase Reel | Proof of zero synthetic audio & acoustic pitch alignment | Auntie Yẹmí vocal stems + Sẹ́fíù Dùndún stems |
+| **Audiovisual** | 30s "Tone-Wave" Showcase Reel | Proof of zero synthetic audio & acoustic pitch alignment | Auntie Yẹmí vocal stems + Baba Sẹ́fíù Dùndún stems |
 
 ---
 

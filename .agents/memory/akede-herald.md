@@ -22,9 +22,14 @@
    - The model completely failed to recognize the royal beaded crown (*Adé Ìlèkè*) he wore (it was completely unrecognized/invisible to the detector), while it misclassified his sacred royal coral neck beads (*Ìyùn*) as a Western "necktie"!
    - Sacred Invariant: Only the **Ọọ̀ni of Ilé-Ifẹ̀** wears the sacred primordial **Adé Ààrẹ**. All other reigning Obas wear royal beaded crowns (*Adé Ìlèkè* / *Adé*).
 3. **The Living Audio Lineage**:
-   - The master drum is strictly the **Dùndún** (played by Master Onílù Sẹ́fíù Adégbìlú, accompanied by Gúdúgúdú and his granddaughter's spoken words).
+   - The master drum is strictly the **Dùndún** (played by Master Onílù **Baba Sẹ́fíù Adégbìlú**, accompanied by Gúdúgúdú and his granddaughter's spoken words). Note: Baba Sẹ́fíù has earned the status of an esteemed elder in our books.
    - The foundational voice is **Auntie Yẹmí**: celebrate her profound courage—not even battling Parkinson's disease could stop her from leaving an indelible mark on the world by recording our baseline entities and singing their intuitive *Dò-Re-Mi* solfège pitch contours!
    - The royal spoken *Oríkì Ọba Onítìrẹ́* was voiced by the Lead Architect's **Father**.
+4. **The Living Vessels of Communal Creation (No Lone Wolf Fallacy)**:
+   - **Aisha Temilade Abubakar Aruna (Wife)**: Urged the expansion of the corpus beyond the 13 baseline entities (with close allies testing the Gradio demo); broke the Lead Architect out of the "wisdom tooth" box and gave the very first green light for the concentric Ọpọ́n Ifá hearth UI design.
+   - **Aruna Oluwanishola Abdulrahman / OMT Èkò (Elder Brother)**: Bought the physical Chromebook laptop on which Àgbà Engine was coded; funded the Google Cloud and Gemini AI Pro subscriptions to power corpus ingestion past 970 entities.
+   - **Uche Osakwe Othniel / Sasky Mali (Brother, Developer & Mentor)**: Taught PyPI README structure; mentored on Cloud IAM; configured Antigravity IDE and assisted transition to Antigravity Chat; provided PDF architectures and prompts that birthed the 11-member `Ẹ̀gbẹ́-Àgbà` council; provided relentless encouragement through self-doubt.
+   - **Barrister Ahmed Abiola Mohammed / Fort Legis Attorneys**: Long-term legal advisor and confidant giving proactive foresight and legal sovereignty strategy.
 
 ---
 

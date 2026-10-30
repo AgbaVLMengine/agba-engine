@@ -127,12 +127,12 @@ On July 28, the Lead Architect wrote the manifesto that would forever guard the 
 
 ---
 
-### 3. The Authentic Acoustic Ensemble: Sẹ́fíù Adégbìlú, Auntie Yẹmí & Royal Oríkì
+### 3. The Authentic Acoustic Ensemble: Baba Sẹ́fíù Adégbìlú, Auntie Yẹmí & Royal Oríkì
 The Lead Architect refused to cut corners with synthetic, robotic AI voices. The audio intelligence of Àgbà Engine was built from real living voices, sacred human hands, and inter-generational family custody:
 
-1. **The Master Drummer — Sẹ́fíù Adégbìlú**:
-   * Sẹ́fíù Adégbìlú, an authentic master *Onílù*, personally performed all the foundational *Dùndún* talking drum acoustic patterns.
-   * For the prestigious *Ọba Onítìrẹ́ Oríkì* ensemble, Sẹ́fíù brought in a fellow master drummer to play the rare and ancient **Gúdúgúdú** (the sacred circular kettle drum that anchors royal lineage drumming).
+1. **The Master Drummer — Baba Sẹ́fíù Adégbìlú**:
+   * Baba Sẹ́fíù Adégbìlú, an authentic master *Onílù* and revered elder, personally performed all the foundational *Dùndún* talking drum acoustic patterns.
+   * For the prestigious *Ọba Onítìrẹ́ Oríkì* ensemble, Baba Sẹ́fíù brought in a fellow master drummer to play the rare and ancient **Gúdúgúdú** (the sacred circular kettle drum that anchors royal lineage drumming).
    * His granddaughter provided the living **"Spoken" counterpart** to the drum's acoustic patterns, giving voice to the exact oral tones the Dùndún spoke.
 2. **The Voice of Ancestral Lineage — The Lead Architect's Father**:
    * The spoken vocal performance of the royal **"Oríkì Ọba Onítìrẹ́"** was recorded directly by the **Lead Architect's Father**, enshrining the founder's own filial voice and ancestral lineage into the foundational audio assets of the engine.
@@ -212,7 +212,9 @@ The journey of building Àgbà Engine was filled with moments of high engineerin
 In late October, the Lead Architect took a stand that defined the moral soul of the engine:
 
 ### 1. De-Profaning the Interface
-Early wireframes used an anatomical "wisdom tooth" graphic for the search root. The Lead Architect halted development:
+Early wireframes used an anatomical "wisdom tooth" graphic for the search root. It was the Lead Architect's beloved wife, **Aisha Temilade Abubakar Aruna**, who helped him think outside the anatomical "wisdom tooth" box he had warped himself in, and gave the very first green light to scrap the tooth metaphor and embrace the sacred Ọpọ́n Ifá. 
+
+The Lead Architect halted development:
 > *"Literal porcelain teeth clash with imperial West African regalia. We cannot profane the profound."*
 
 He replaced it with **The Triple Concentric Circular Ọpọ́n Ifá ("The World’s First Search Engine")**:
@@ -226,6 +228,15 @@ In strict adherence to ancestral ethics:
 * **Deity Persona Prohibition**: No bot, subagent, or assistant may be named after an Òrìṣà or divinity (no bot named Ògún, Ṣàngó, or Ọ̀ṣun). The divinities must be revered, not reduced to worker bots.
 * **Awo Exclusion**: Initiatory secrets, esoteric passwords, and private liturgical taboos are unconditionally barred from the database.
 * **The Origin Anchor**: Mundane clickable buttons were cleansed into the noble philosophical concept: **`👑 Àárín Ìmọ̀` (The Sovereign Hearth / Core of Knowledge)**.
+
+### 3. The Living Vessels of Truth: Acknowledging Every Hand
+In adherence to Ọ̀rúnmìlà's command of absolute truth through the Odù Ifá, the Lead Architect decreed that the true history of Àgbà Engine must acknowledge every vessel that poured into it:
+* **Aisha Temilade Abubakar Aruna (Wife)**: Sparked the initial expansion of the corpus beyond Auntie Yẹmí's 13 baseline entities alongside close allies testing the Gradio demo, and unlocked the Ọpọ́n Ifá UI design.
+* **Aruna Oluwanishola Abdulrahman / OMT Èkò (Elder Brother)**: Bought the physical Chromebook laptop on which the entire engine was forged, and personally funded the Google Cloud credits and Gemini AI Pro subscriptions that powered corpus ingestion past 970 entities.
+* **Uche Osakwe Othniel / Sasky Mali (Brother, Developer & Technical Mentor)**: Guided the PyPI README package architecture, mentored on Google Cloud IAM, helped configure the Antigravity IDE on Linux and transition to Antigravity Chat, provided the PDF architectures and starting prompts for agent roles and guardrails (the direct birth of the 11-member `Ẹ̀gbẹ́-Àgbà` council), and offered relentless encouragement through every season of self-doubt.
+* **Barrister Ahmed Abiola Mohammed / Fort Legis (Legal Advisor & Confidant)**: Provided the strategic legal counsel and proactive foresight to prepare Àgbà Engine for unseen regulatory, intellectual property, and civilizational sovereignty challenges.
+* **Baba Sẹ́fíù Adégbìlú (Master Onílù Elder)**: Provided the sacred acoustic heartbeat on the Dùndún and directed the royal Gúdúgúdú ensemble.
+* **Auntie Yẹmí & Father (Living Spoken Anchors)**: Auntie Yẹmí vocalizing the baseline entities and intuitive *Dò-Re-Mi* solfège pitch contours through Parkinson's; Father voicing the royal *Oríkì Ọba Onítìrẹ́*.
 
 ---
 
