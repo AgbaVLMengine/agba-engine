@@ -1,0 +1,42 @@
+[
+  {
+    "id": "HITL-ERR-101",
+    "timestamp": "2026-10-06 14:22:10 UTC",
+    "queried_concept": "Adé Ààrẹ",
+    "returned_entity_id": "Adé Imperial Crown",
+    "failure_type": "Historical Attribution Error",
+    "user_notes": "Adé Ààrẹ was incorrectly described as worn by the Alaafin. It is exclusively worn by the Ọ̀ọ̀ni of Ifẹ̀ during Olojo Festival.",
+    "suggested_correction": "Correct Place of Origin to Ilé-Ifẹ̀ and sovereign wearer to Ọ̀ọ̀ni of Ifẹ̀ exclusively.",
+    "status": "PENDING_REVIEW"
+  },
+  {
+    "id": "HITL-ERR-102",
+    "timestamp": "2026-10-06 15:45:02 UTC",
+    "queried_concept": "Ìyùn",
+    "returned_entity_id": "Ìlèkè Ọrùn",
+    "failure_type": "Material Taxonomy Restriction",
+    "user_notes": "Ìyùn was restricted to Ìlèkè Ọrùn and Èwù Ìlèkè in descriptions. Ìyùn is the foundational coral material in all beaded regalia.",
+    "suggested_correction": "Expand Ìyùn description to foundational beadmaking material across all royal attire.",
+    "status": "PENDING_REVIEW"
+  },
+  {
+    "id": "HITL-ERR-103",
+    "timestamp": "2026-10-07 09:12:44 UTC",
+    "queried_concept": "Gọ̀mbọ́",
+    "returned_entity_id": "Gombo",
+    "failure_type": "Diacritic Under-Dot Stripping",
+    "user_notes": "Missing under-dots on both \"ọ\" letters and grave accent on \"ọ̀\". Should be strictly Gọ̀mbọ́.",
+    "suggested_correction": "Canonical key update: Gọ̀mbọ́ with tone marks (Low-High).",
+    "status": "PENDING_REVIEW"
+  },
+  {
+    "id": "HITL-ERR-104",
+    "timestamp": "2026-10-07 11:30:19 UTC",
+    "queried_concept": "Agbádá Sovereign Robe",
+    "returned_entity_id": "Agbada",
+    "failure_type": "Visual Candidate Batch 03 Approval",
+    "user_notes": "World Museum Vienna candidate VO_187528_a matches historical Oyo Empire voluminous robe.",
+    "suggested_correction": "Verify origin as Ọ̀yọ́ Empire / Ìbàdàn before index addition.",
+    "status": "PENDING_REVIEW"
+  }
+]
