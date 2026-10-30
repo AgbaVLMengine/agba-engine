@@ -28,7 +28,7 @@ His motivation was raw, sacred, and determined: **to master modern AI tools to b
 
 Yet, what began as a quest for professional mastery soon ignited an ancient spiritual and intellectual homecoming. For years, the Lead Architect had walked the path familiar to millions across the post-colonial world: running away from his Yorùbá heritage, keeping his ancestral roots at an emotional distance, and reserving his deepest reverence for foreign systems.
 
-It was only when he sat before the screen—watching YOLOv8 look at a portrait of the Awùjalẹ̀ of Òkèlúsẹ̀ (the youngest reigning monarch in Yorùbáland today), completely failing to recognize his royal crown (*Adé*) and misclassifying his sacred coral beads (*Ìyùn*) as a Western "necktie," while tokenizers stripped the musical tonal marks from his mother tongue—that the sleeping giant awoke.
+It was only when he sat before the screen—watching YOLOv8 look at a portrait of the Awùjalẹ̀ of Òkèlúsẹ̀ (the youngest reigning monarch in Yorùbáland today), completely failing to recognize the royal beaded crown (*Adé Ìlèkè*) he wore (rendering it completely invisible to the algorithm), while misclassifying his sacred coral neck beads (*Ìyùn*) as a Western "necktie," while tokenizers stripped the musical tonal marks from his mother tongue—that the sleeping giant awoke.
 
 **The genius to build the World's First Civilizational Heritage Search Engine lay dormant while he was running. The very moment he turned around, faced his ancestors, and surrendered to his heritage in every ramification, the architecture of Àgbà Engine unlocked.**
 

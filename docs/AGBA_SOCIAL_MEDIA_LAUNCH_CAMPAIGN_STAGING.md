@@ -43,12 +43,12 @@ Every compiler error felt like a personal verdict. I labeled one of my earliest 
 
 **Tweet 3**:  
 The turning point came when I tested modern computer vision models against our royal heritage.  
-I watched YOLOv8 look at a portrait of the Awùjalẹ̀ of Òkèlúsẹ̀—the youngest reigning monarch in Yorùbáland today—and completely fail to recognize his royal crown (*Adé*).  
+I watched YOLOv8 look at a portrait of the Awùjalẹ̀ of Òkèlúsẹ̀—the youngest reigning monarch in Yorùbáland today—and completely fail to recognize the royal beaded crown (*Adé Ìlèkè*) he wore (rendering it completely invisible to the algorithm).  
 Worse, it labeled his sacred coral neck beads (*Ìyùn*) as a "tie."  
 I watched tokenizers strip the musical tonal marks from our vowels, turning poetry into flat, unreadable ASCII mush.
 
 **Tweet 4**:  
-Western AI wasn't malicious; it was simply culturally blind. It was pre-trained on datasets where African royalty did not exist. It could recognize a medieval European helmet down to the rivet, but called our sacred coronation crowns generic "hats" and sacred coral regalia "neckties."  
+Western AI wasn't malicious; it was simply culturally blind. It was pre-trained on datasets where African royalty did not exist. It could recognize a medieval European helmet down to the rivet, but African royal beaded crowns were completely invisible to its detectors and sacred coral neck beads were labeled "neckties."  
 I realized: You cannot decolonize knowledge using an engine that cannot see you.
 
 **Tweet 5**:  

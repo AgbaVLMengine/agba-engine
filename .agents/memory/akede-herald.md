@@ -19,7 +19,8 @@
    - Core motivation: mastering AI to build a sustainable career and secure a solid future for his household (purged "feed his family by January").
 2. **The True Visual Climax**:
    - The computer vision turning point occurred when testing YOLOv8 against a portrait of the **Awùjalẹ̀ of Òkèlúsẹ̀**—the youngest reigning monarch in Yorùbáland today.
-   - The model completely failed to recognize his royal crown (*Adé*) and misclassified his sacred coral neck beads (*Ìyùn*) as a Western "tie"!
+   - The model completely failed to recognize the royal beaded crown (*Adé Ìlèkè*) he wore (it was completely unrecognized/invisible to the detector), while it misclassified his sacred royal coral neck beads (*Ìyùn*) as a Western "necktie"!
+   - Sacred Invariant: Only the **Ọọ̀ni of Ilé-Ifẹ̀** wears the sacred primordial **Adé Ààrẹ**. All other reigning Obas wear royal beaded crowns (*Adé Ìlèkè* / *Adé*).
 3. **The Living Audio Lineage**:
    - The master drum is strictly the **Dùndún** (played by Master Onílù Sẹ́fíù Adégbìlú, accompanied by Gúdúgúdú and his granddaughter's spoken words).
    - The foundational voice is **Auntie Yẹmí**: celebrate her profound courage—not even battling Parkinson's disease could stop her from leaving an indelible mark on the world by recording our baseline entities and singing their intuitive *Dò-Re-Mi* solfège pitch contours!
