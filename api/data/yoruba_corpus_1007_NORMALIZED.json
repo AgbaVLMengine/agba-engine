@@ -2915,9 +2915,7 @@
     "category": "Monarchy, Royal Regalia & Governance",
     "is_parent": true,
     "aliases": [
-      "alaafin",
       "alase",
-      "awujale",
       "kabiyesi",
       "king",
       "kings",
@@ -2925,7 +2923,6 @@
       "oba",
       "oba alade",
       "olubadan",
-      "ooni",
       "paramount monarch",
       "paramount ruler"
     ],
@@ -13693,35 +13690,6 @@
     "media_production_notes": "When documenting Ewé Èran visually, prioritize high-definition macro cinematography emphasizing the intricate, ribbed venation glistening with morning dew. Capture direct sound recordings of the crisp acoustic snapping as the central spine is trimmed and the rhythmic rustle of the leaves during rhythmic market packaging. Utilize warm, organic color palettes highlighting earth tones, firelight, and deep forest greens, staging culinary demonstrations alongside ancestral earthenware, steaming clay pots, and carved wooden ladles to ground the viewer in timeless Classical Yorùbá materiality."
   },
   {
-    "id": "Ewe Akọko",
-    "title": "Ewe Akọko",
-    "culture": "Yorùbá",
-    "category": "Sacred Botany, Flora & Herbal Medicine",
-    "aliases": [
-      "ewe akoko",
-      "ewe akọko",
-      "ewe-akoko",
-      "eweakoko",
-      "medicinal leaf",
-      "sacred herb"
-    ],
-    "description": "The Sacred boundary tree leaf placed on a new Chief or King's head during installation to confer Authority and Longevity.",
-    "historical_timeline": "Dating back to the Classical Era of Ilé-Ifẹ̀ under the sacred lineage of Odùduwà, the planting of the Àkòko tree marked the physical demarcations of royal compounds, holy groves, and kingdom frontiers. During the zenith of the Ọ̀yọ́ Empire (circa 1400–1835 CE), the ceremonial presentation and placement of Ewé Àkòko became formalized within the Oyomesi council rites during the investiture of the Aláàfin. Through centuries of regional evolution across kingdoms such as Ẹ̀gbá, Ìjẹ̀bú, Èkìtì, and Òwò, the leaf retained its mandatory function: no coronation or installation of royal titles could be deemed legitimate in traditional constitutional jurisprudence without the sacred placement of Ewé Àkòko upon the initiate's head.",
-    "etymology_and_philosophy": "Ewé Àkòko derives its name from the botanical entity Newbouldia laevis, an indigenous West African tree that symbolizes resilience, regenerative vitality, and spiritual sovereignty. In Classical Yorùbá cosmology, foliage carries inherent consciousness and specific frequency of divine energy known as Àṣẹ. Ewé Àkòko is universally recognized as the Leaf of Investiture, embodying the ontological principle that true power must be rooted in longevity, balance, and Ancestral sanction. Placing the leaf upon the crown of a monarch-elect (Ọba) or initiate Chief (Òloye) serves as a metaphysical anchor, sealing the conduit between the physical head (Orí Òde) and the celestial destiny (Orí Inú), thereby sanctifying the bearer with the right to dispense justice and hold dominion over sacred boundaries.",
-    "material_and_craftsmanship": "Botanically classified as Newbouldia laevis within the Bignoniaceae family, the Àkòko tree possesses exceptional regenerative capacities, capable of thriving from dry cuttings and resisting fire, pestilence, and seasonal drought. Material harvesting of the leaf requires ritualized protocol overseen by the designated Kingmakers (Afọbaaje) or Priests of Òrìṣà. The leaves are picked at dawn before direct sunlight falls upon them, accompanied by prayers (Ìwúre) to awaken the spirit of the plant. The foliage is treated with cool spring water and specific medicinal infusions (Àgbo), remaining intact to preserve the spiritual integrity of its pinnate structure before it is bound to the forehead or tucked beneath the Beaded Crown (Adé Ilẹ̀kẹ̀).",
-    "social_and_ritual_context": "Indispensable to sacred political legitimacy, Ewé Àkòko is the definitive leaf placed upon the head of a prospective monarch or hereditary chief during installation rites to confer longevity, ancestral authority, and sovereign victory. Concurrently, cuttings of the Àkòko tree are planted as living boundary shrines dedicated to Ògún and Ọ̀sanyìn, establishing an enduring nexus between terrestrial governance and divine sanction.",
-    "proverbs_and_oral_traditions": [
-      "Àkòko kì í ṣe igi tí a ń fi dáná; igi oyè ni. (The Àkòko is not a tree used for firewood; it is the tree of sacred sovereign titles.)",
-      "Bí ewé bá pẹ́ lára àkòko, a d’òrìṣà. (When a leaf endures long upon the branch of the Àkòko, it ascends to the dignity of an Òrìṣà.)",
-      "Ọba kì í joyè láì sí ewé àkòko. (No King ascends the throne without the sanction of the sacred Àkòko leaf.)"
-    ],
-    "diaspora_connections": "Across the Atlantic Diaspora, Ewé Àkòko retained its foundational status in the memory of Yorùbá descendants preserved within Cuban Regla de Ocha (Lucumí), Brazilian Candomblé Ketu, and Trinidad Orisha traditions. Due to the initial geographic absence of Newbouldia laevis in the Americas, historical initiates engaged in sacred botanical transference, identifying ecological substitutes while preserving the sacred liturgical nomenclature, songs, and invocations for Àkòko during initiation crowns (Kariocha or Asiento) and royal priestly installations, reinforcing a continuous spiritual lineage across oceanic divides.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematographic depictions should emphasize the visceral reverence of coronation rites. Frame the leaf using high-contrast, atmospheric natural dawn lighting, capturing droplets of consecrated water on the vibrant green pinnate veins. Audio design must avoid generic instrumentation, utilizing the deep, solemn cadence of the royal Gbedu drum, traditional brass rattles (Ṣẹ̀kẹ̀rẹ̀), and the low polyphonic recitation of Ìwúre chants by elder Priests to reflect the solemn weight of conferring royal and spiritual authority.",
-    "sovereign_parent": "Ewé",
-    "sovereign_parent_status": "Living Sub-Variant"
-  },
-  {
     "id": "Ewe Ìrosùn",
     "title": "Ewe Ìrosùn",
     "culture": "Yorùbá",
@@ -16824,37 +16792,6 @@
     "media_production_notes": "Visually, depictions of the Olúbàdàn require dramatic contrast between the iconic 'rust and gold' ochre corrugated iron roofs of historic Ìbàdàn and rich royal textiles. Cinematographers should prioritize natural light catching the metallic iridescence of Sányán weave and intricate micro-beadwork on the Adé Ilẹ̀kẹ̀. Audio design must incorporate traditional acoustic instruments: the resonance of the Dùndún (Talking Drum) declaiming royal Oríkì, the commanding cadence of the Bàtá drums sacred to martial traditions, and the ceremonial fanfare of the long Kàkàkí brass horns announcing the monarch's official entry into civic spaces.",
     "sovereign_parent": "Ọba",
     "sovereign_parent_status": "Living Sub-Variant"
-  },
-  {
-    "id": "Awujalẹ",
-    "title": "Awujalẹ",
-    "culture": "Yorùbá",
-    "category": "Monarchy, Royal Regalia & Governance",
-    "aliases": [
-      "awujale",
-      "awujalẹ"
-    ],
-    "description": "The Paramount Royal Monarch of Ijebuland, holding Court in Ijebu-Ode.",
-    "historical_timeline": "Ancient Antiquity (c. 10th–14th Century CE): Dynastic foundation established by Ọbànta (Ògbòrògàn-idà) following the pioneering migration of Olú-Ìwà from Ilé-Ifẹ̀, institutionalizing the throne at Ìjẹ̀bú-Òde; engineering of the colossal Sùngbó Èrèdo earthen defensive ramparts. Classical & Pre-Colonial Era: Commanded regional coastal commerce and monopoly over maritime trading corridors buffering forest states. 1892: The British-Ìjẹ̀bú War (Battle of Ìmágwà) dismantled commercial blockades, subjecting the kingdom to colonial restructuring. Modern Era: Exemplified by Ọba Sikiru Kayọ̀dé Adétọ̀nà, Ogbagba II (enthroned 1960), one of Africa's longest-reigning paramount sovereigns, championing the global renaissance of the annual Ọjọ́dé Ọba festival.",
-    "etymology_and_philosophy": "From classical Yorùbá 'A-mú-ìjà-lẹ̀' ('The One Who Quells and Reconciles Strife'), designating the sacred peacemaker, royal arbiter, and paramount sovereign of Ìjẹ̀búland. Philosophically embodies balanced majesty where supreme authority exists to harmonize competing interest groups, guild merchants, and civil confederacies.",
-    "material_and_craftsmanship": "Sacred cone-shaped beaded crown (Adé Oríko) embellished with avian totems, cast brass Osùgbó/Ògbóni royal edan sceptres, ceremonial brass bracelets, and high-thread-count royal Kíjìpá and Aṣọ Olóonà textiles crafted by royal guild matriarchs.",
-    "social_and_ritual_context": "Within the socio-political hierarchy of Ìjẹ̀búland, the Awùjalẹ̀ functions as the supreme earthly arbiter whose spiritual consecration is intimately bound to the sacred Agẹmọ cult and the cryptic legislative authority of the Ọṣùgbó society. Annually, during the Ọjọ́dé Ọba festival and ancestral propitiations to Obìnrin Òjòwú, the monarch receives the allegiance of age-grade regiments (Rẹ́gbẹ́rẹ́gbẹ́) while renewing the collective covenant of peace, fertility, and economic prosperity for the entire realm.",
-    "proverbs_and_oral_traditions": [
-      "Awùjalẹ̀, Aláìyélúwà, Ọmọ Aládé Mẹ́rìndínlógún. (The Awùjalẹ̀, Sovereign of the Cosmos, royal scion of the sixteen consecrated crowns of primordial Ifẹ̀: Affirming the imperial antiquity and uninterrupted lineage of Ìjẹ̀bú sovereignty.)",
-      "Ìjẹ̀bú Òde, Àpèbí: Ìlú tó fi owó bọ Òrìṣà, ilé ọlá àti ọpọ̀lọpọ̀ ogbọ́n. (Ijebu-Ode, the sanctuary that venerates the sacred with boundless prosperity, the dwelling of nobility and profound intellect: Reflecting the commercial brilliance, financial mastery, and sacred stewardship of the Ìjẹ̀bú nation.)",
-      "Bí a kò bá rí Awùjalẹ̀, a ò lè mọ Ìjẹ̀bú tán. (If one has never encountered the Awùjalẹ̀, one cannot fully comprehend the depth of Ijebu civilization: Emphasizing the sovereign as the living incarnation and spiritual focal point of communal identity.)"
-    ],
-    "diaspora_connections": "Throughout the era of the transatlantic slave trade, countless Ìjẹ̀bú captives entered the Americas, documented in archival registers as 'Yebu' or 'Ijebu'. In Brazil, notably in Salvador da Bahia, and across Cuba in Lucumí spiritual houses, the ritual memory of Ìjẹ̀bú customs, specifically relating to Yemọja, Òṣun, and the Agẹmọ masquerade cycle, remains prominent. Caribbean and Latin American Orisha communities continue to recite Oriki referencing the majesty of Ìjẹ̀bú-Òde and the ancestral seat of the Awùjalẹ̀, serving as a primary cultural root connecting descendants of enslaved Yorùbá populations back to their ancestral governance systems in West Africa.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "When capturing the Court of the Awùjalẹ̀, cinematography should focus on the annual Ọjọ́dé Ọba Festival, emphasizing the equestrian pageantry of the Balogun and Otunba nobility parading before the royal dais. The acoustic track must feature the deep resonant rhythms of the royal Gbèdu and Bembe drums coupled with classical praise-singing (oríkì) performed by court bards. Filmmakers must respect palace etiquette: cameras should be stationed at chest-height or lower to convey the structural authority of the throne, framing the monarch with adequate focal depth to capture the complex beadwork of the Adé Ilẹ̀kẹ̀, while strictly avoiding direct electronic flashes during sanctified inner-court rituals.",
-    "provenance_and_citations": "Johnson, Rev. Samuel (1921). The History of the Yorubas; Smith, Robert S. (1988). Kingdoms of the Yoruba; Adetona, Ọba S.K. (2010). Awujale: An Autobiography.",
-    "sovereign_parent": "Ọba",
-    "sovereign_parent_status": "Living Sub-Variant",
-    "related_entities": [
-      "Ọba",
-      "Ìjẹ̀bú-Òde",
-      "Ìpínlẹ̀ Ògùn"
-    ]
   },
   {
     "id": "Aseyin",
@@ -42586,10 +42523,11 @@
     "sovereign_parent": "Ọba",
     "sovereign_parent_status": "Living Sub-Variant",
     "aliases": [
-      "awujale of ijebu",
-      "awùjalẹ̀ of ìjẹ̀bú",
       "awujale",
+      "awujale of ijebu",
+      "awujalẹ",
       "awùjalẹ̀",
+      "awùjalẹ̀ of ìjẹ̀bú",
       "king of ijebuland",
       "paramount ruler of ijebu"
     ],
@@ -42643,13 +42581,18 @@
     "sovereign_parent": "Òògùn",
     "sovereign_parent_status": "Living Sub-Variant",
     "aliases": [
-      "ewe akoko",
-      "ewé àkòko",
       "akoko leaf",
-      "newbouldia laevis",
       "boundary tree",
       "coronation leaf",
-      "sacred coronation leaf"
+      "ewe akoko",
+      "ewe akọko",
+      "ewe-akoko",
+      "eweakoko",
+      "ewé àkòko",
+      "medicinal leaf",
+      "newbouldia laevis",
+      "sacred coronation leaf",
+      "sacred herb"
     ],
     "description": "Newbouldia laevis — the sacred coronation and boundary leaf of kingship, placed in the royal crown or chieftaincy cap during investiture rites to confer divine longevity, peace, and unshakeable authority.",
     "historical_timeline": "Classical Antiquity to Present: Revered across Yorùbá history as the premier botanical emblem of longevity and divine royal mandate. Investitures: Placed behind the ear and inside the crown of every Ọba and chief at coronation since the dawn of Ilé-Ifẹ̀. Boundary Custody: Planted as living, indestructible boundary markers (Òpó Ààlà) across farmland and municipal territories.",

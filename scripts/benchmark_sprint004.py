@@ -144,6 +144,25 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q45_GANGAN", "query": "Gangan", "expected_titles": ["Gángan", "Gangan"], "expected_category": "Auditory Arts, Music, Drums & Chants", "expected_sovereign_parent": "Dùndún", "anti_loop_parent_to_avoid": "Dùndún", "suite": "ANTI_PARENT_LOOP"},
     # 46. Ìyáàlù (Auditory Child Anti-Loop)
     {"id": "Q46_IYAALU", "query": "Iyaalu", "expected_titles": ["Ìyáàlù (Lead Mother Drum of the Dùndún Ensemble)", "Ìyáàlù", "Iyaalu", "Ìyáàlù Dùndún"], "expected_category": "Auditory Arts, Music, Drums & Chants", "expected_sovereign_parent": "Dùndún", "anti_loop_parent_to_avoid": "Dùndún", "suite": "ANTI_PARENT_LOOP"},
+    # --- Monarchy & Royal Architecture Constellation Suite (HANDOFF-SUURU-007) ---
+    # 47. Ọọ̀ni of Ifẹ̀ (Regional Sovereign Monarch Child)
+    {"id": "Q47_OONI_OF_IFE", "query": "Ooni of Ife", "expected_titles": ["Ọọ̀ni of Ifẹ̀", "Ooni of Ife"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Ọba", "anti_loop_parent_to_avoid": "Ọba", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 48. Aláàfin of Ọ̀yọ́ (Regional Sovereign Monarch Child)
+    {"id": "Q48_ALAAFIN_OF_OYO", "query": "Alaafin of Oyo", "expected_titles": ["Aláàfin of Ọ̀yọ́", "Alaafin of Oyo"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Ọba", "anti_loop_parent_to_avoid": "Ọba", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 49A. Awùjalẹ̀ of Ìjẹ̀bú (Direct Regional Monarch Query)
+    {"id": "Q49A_AWUJALE", "query": "Awujale", "expected_titles": ["Awùjalẹ̀ of Ìjẹ̀bú", "Awùjalẹ̀", "Awujale"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Ọba", "anti_loop_parent_to_avoid": "Ọba", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 49B. Awùjalẹ̀ of Ìjẹ̀bú (Full Kingdom Query)
+    {"id": "Q49B_AWUJALE_OF_IJEBU", "query": "Awujale of Ijebu", "expected_titles": ["Awùjalẹ̀ of Ìjẹ̀bú", "Awujale of Ijebu"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Ọba", "anti_loop_parent_to_avoid": "Ọba", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 50. Ààfin Ọọ̀ni (Sacred Palace Architecture Child)
+    {"id": "Q50_AAFIN_OONI", "query": "Aafin Ooni", "expected_titles": ["Ààfin Ọọ̀ni (Ilé-Ifẹ̀)", "Ààfin Ọọ̀ni", "Aafin Ooni"], "expected_category": "Monarchy, Royal Regalia & Governance", "expected_sovereign_parent": "Ààfin", "anti_loop_parent_to_avoid": "Ààfin", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 51. Kòbì Ààfin (Sacred Royal Gabled Porch Architecture Child)
+    {"id": "Q51_KOBI_AAFIN", "query": "Kobi Aafin", "expected_titles": ["Kòbì Ààfin", "Kobi Aafin"], "expected_category": "Topography, Natural Landscapes & Architecture", "expected_sovereign_parent": "Ààfin", "anti_loop_parent_to_avoid": "Ààfin", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 52A. Sányán (Royal Master Weave Child)
+    {"id": "Q52A_SANYAN", "query": "Sanyan", "expected_titles": ["Sányán", "Sanyan"], "expected_category": "Attire, Textiles & Personal Adornment", "expected_sovereign_parent": "Aṣọ Òkè", "anti_loop_parent_to_avoid": "Aṣọ Òkè", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 52B. Àlàárì (Royal Master Weave Child)
+    {"id": "Q52B_ALAARI", "query": "Alaari", "expected_titles": ["Àlàárì", "Alaari"], "expected_category": "Attire, Textiles & Personal Adornment", "expected_sovereign_parent": "Aṣọ Òkè", "anti_loop_parent_to_avoid": "Aṣọ Òkè", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
+    # 53. Ewé Àkòko (Sacred Coronation Leaf Child)
+    {"id": "Q53_EWE_AKOKO", "query": "Ewe Akoko", "expected_titles": ["Ewé Àkòko", "Ewe Akoko"], "expected_category": "Sacred Botany, Flora & Herbal Medicine", "is_parent_expected": False, "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
