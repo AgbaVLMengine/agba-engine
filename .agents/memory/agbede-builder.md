@@ -117,6 +117,20 @@
     - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy**, 32/32 (100.0%) Anti-Parent-Loop, 18/18 Category 17 Fauna.
     - `cd web && npm run build`: Compiled in **965ms** (1,923 modules, 0 errors).
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 11 persona vaults.
+- **[2026-10-30] (`CHECKPOINT-AGBEDE-016` / Checkpoint 090 / HANDOFF-AGBEDE-006 Completed)**: **De-Escalation of `AdminTab.jsx` from 422 LOC to 122 LOC**:
+  - **Applied Three-Drawer Mandate**: Neutralized the last remaining Yellow Watchlist advisory warning in the frontend:
+    1. *Data Drawer*: Extracted telemetry seed queue into `web/src/data/hitlInitialQueue.json` (**42 LOC**).
+    2. *Lifecycle & State Drawer*: Created custom hook `web/src/hooks/useHitlQueue.js` (**120 LOC** `< 200 LOC` ceiling), encapsulating authentication, queue state, approval/decline/edit mutations, batch learning simulation, and live master corpus metric derivation.
+    3. *Presentation Drawer*:
+       - `web/src/components/AdminLoginCard.jsx` (**64 LOC**): Passcode authentication card with Lead Architect gate.
+       - `web/src/components/HitlReviewCard.jsx` (**87 LOC**): Individual telemetry failure review card with status borders.
+       - `web/src/components/HitlEditModal.jsx` (**57 LOC**): Refine candidate metadata modal with strict diacritic guidelines.
+    4. *Lean Tab Coordinator*: Refactored `web/src/components/AdminTab.jsx` down to **122 LOC** (from 422 LOC, -300 LOC reduction), strictly satisfying Law 1 (the 250-LOC Coordinator Invariant) and `< 130 LOC` target.
+  - **Zero UI/Pixel Drift**: 100% of styles, responsiveness, metrics, and batch learning animations preserved.
+  - **Verification Battery**:
+    - `cd web && npm run build`: Compiled in **809ms** (1,928 modules, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy**, 32/32 (100.0%) Anti-Parent-Loop, 18/18 Category 17 Fauna.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** (Advisory notice on `AdminTab.jsx` completely cleared).
 
 
 

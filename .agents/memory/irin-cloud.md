@@ -51,3 +51,12 @@
   3. **Zero-Loss Scale-to-Zero Telemetry (`api/app/main.py`)**:
      - Verified both `AGBA_QUERY_LOG` (`main.py` L156) and `AGBA_FEEDBACK` (`main.py` L227) emit structured single-line UTF-8 JSON with `flush=True` to `stdout` prior to local `.jsonl` writes, guaranteeing 100% capture in Google Cloud Logging Free Tier across `--min-instances 0` container scale-downs.
   4. **Verification**: `bash scripts/review.sh` passed with **0 hard violations and 0 warnings**.
+
+### [2026-10-30] HANDOFF-IRIN-006 (Checkpoint 092): Backend Sub-Variant Hydrator Parity & Cloud Run Alignment
+- **Backend/Frontend Hydrator Parity (`api/app/sub_variant_hydrator.py` — 122 LOC)**:
+  - Upgraded `synthesize_sub_variant()` via `_domain_metadata()` to inject domain-aware multi-epoch `historical_timeline` (Classical Antiquity, Imperial Era, Contemporary/Transatlantic Retention), domain-specific `material_and_craftsmanship`, dual-language `proverbs_and_oral_traditions`, and `provenance_and_citations` into both top-level and `details` dictionaries, matching `web/src/utils/subVariantKnowledge.js` 100%.
+- **Live 1,408 Master Corpus Baseline (`api/app/main.py` — 341 LOC)**:
+  - Updated `/health` (`root_health_check()`) and `/v6/retrieve/deep-context` (`query_metadata.historical_guardrail`) to dynamically report `len(retriever.corpus_entities)` (1,408 canonical entities) instead of the legacy `"970+"` string.
+- **Cloud Run CI/CD Parity (`.github/workflows/deploy-cloud-run.yml`)**:
+  - Appended `--cpu-throttling` and `--timeout 60` to the `gcloud run deploy` command, achieving 100% flag parity with `api/deploy_cloud_run.sh` under the $0.00/mo Always-Free Tier.
+- **Verification**: `bash scripts/review.sh` passed with 0 hard violations and 0 warnings.

@@ -1441,6 +1441,35 @@
   - **Memory Vault Logging & Brain Sync**: Updated `memory/disk_saver_memory.md` and `.agents/memory/disk_saver_memory.md` with audit timestamp `2026-10-30 07:36 UTC`, 0 MB reclaimed, 15G available headroom, nominal status.
 - **Verification**: ✅ **SCHEDULED STORAGE SENTINEL SWEEP COMPLETE & SYSTEM STORAGE NOMINAL**.
 
+### [2026-10-30] Checkpoint 092 (`HANDOFF-IRIN-006`) — Backend Sub-Variant Hydrator Parity & Cloud Run CI/CD Alignment
+- **Agent Persona**: `Irin` (`irin-cloud`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Deliverables Completed**:
+  - **Backend/Frontend Sub-Variant Hydrator Parity (`api/app/sub_variant_hydrator.py` — 122 LOC)**: Upgraded `synthesize_sub_variant()` with `_domain_metadata()` so backend fallback synthesis injects domain-aware multi-epoch `historical_timeline`, artisan `material_and_craftsmanship`, canonical dual-language `proverbs_and_oral_traditions`, and `provenance_and_citations` (both top-level and inside `details`) matching `web/src/utils/subVariantKnowledge.js`.
+  - **Dynamic 1,408 Master Corpus Reporting (`api/app/main.py` — 341 LOC)**: Updated `/health` and `/v6/retrieve/deep-context` (`historical_guardrail`) to dynamically report the live 1,408 master corpus baseline (`len(retriever.corpus_entities)`).
+  - **Cloud Run CI/CD Flag Parity (`.github/workflows/deploy-cloud-run.yml`)**: Appended `--cpu-throttling` and `--timeout 60` to `gcloud run deploy`, aligning 100% with `api/deploy_cloud_run.sh` (`$0.00/mo` Always-Free Tier).
+- **Verification**: ✅ **ALL PRODUCTION GATES PASSED (0 VIOLATIONS, 0 WARNINGS)**.
+
+### [2026-10-30] Checkpoint 093 (`CHECKPOINT-AGBEDE-016`) — Execution of HANDOFF-AGBEDE-006: De-Escalation of AdminTab.jsx from 422 LOC to 122 LOC
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Execute `HANDOFF-AGBEDE-006`: Apply the Three-Drawer Mandate to de-escalate `AdminTab.jsx` from 422 LOC down to < 130 LOC; extract static seed queue to JSON; extract state, authentication, and batch logic to `useHitlQueue.js`; extract modular presentation components (`AdminLoginCard.jsx`, `HitlReviewCard.jsx`, `HitlEditModal.jsx`); and eliminate the Yellow Watchlist advisory notice with zero build or UI regressions.
+- **Deliverables Completed**:
+  - **Applied Three-Drawer Mandate to `AdminTab.jsx`**:
+    - **Data Drawer**: Extracted static failure context seed queue to [`web/src/data/hitlInitialQueue.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/hitlInitialQueue.json) (**42 LOC**).
+    - **Lifecycle & State Drawer**: Created custom hook [`web/src/hooks/useHitlQueue.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/hooks/useHitlQueue.js) (**120 LOC**, `< 200 LOC` target), encapsulating authentication, passcode verification, queue state mutations (`handleApprove`, `handleDecline`, `handleStartEdit`, `handleSaveEdit`), batch learning simulation with timestamped safety backup notifications, and dynamic master corpus metrics calculation.
+    - **Presentation Drawer**:
+      - Authored [`web/src/components/AdminLoginCard.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/AdminLoginCard.jsx) (**64 LOC**): Passcode login card with Lead Architect gate.
+      - Authored [`web/src/components/HitlReviewCard.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/HitlReviewCard.jsx) (**87 LOC**): Individual telemetry failure review card with status-coded borders and action buttons.
+      - Authored [`web/src/components/HitlEditModal.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/HitlEditModal.jsx) (**57 LOC**): Candidate metadata refinement modal.
+    - **Lean Tab Coordinator**: Refactored [`web/src/components/AdminTab.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/AdminTab.jsx) down to **122 LOC** (from 422 LOC, **-300 LOC reduction** / -71% reduction), strictly satisfying Law 1 (the 250-LOC Coordinator Invariant) and beating the `< 130 LOC` target.
+  - **Zero UI/Pixel Regressions**: 100% of styles, responsiveness, metrics cards, auth flows, and batch learning animations verified.
+  - **Verification & Production Gates**:
+    - `npm run build`: Compiled production client bundle cleanly in **809ms** (1,928 modules, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy** live.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** (Advisory notice on `AdminTab.jsx` completely cleared).
+- **Verification**: 🏆 **HANDOFF-AGBEDE-006 RATIFIED — ADMINTAB DECOMPOSED TO 122 LOC / ZERO ADVISORY WARNINGS**.
+
 
 
 
