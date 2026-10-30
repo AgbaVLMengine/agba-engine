@@ -291,6 +291,33 @@
       - `scripts/review.sh`: 0 hard violations, 0 warnings.
       - Gate 2 Headroom: `scripts/benchmark_sprint004.py` at 342 LOC (< 350 advisory, < 500 hard ceiling).
     - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**.
+  - **[2026-10-30] (`CHECKPOINT-SUURU-011` — Execution of HANDOFF-SUURU-009: Batch 12 Post-Ingestion QA & Sub-50 Milestone Certification)**:
+    - **Context & Scope**: Post-ingestion QA audit of Batch 12 (25 newly enriched composite Odù chapters from `ODU_183_Òtúúrúpọ̀n_Ọ̀yẹ̀kú` through `ODU_207_Òtúá_Ìká`), certifying sub-50 thin entity milestone and expanding automated regression harness.
+    - **Sub-50 Thin Entity Milestone Verified**:
+      - Total Odù entities: 256.
+      - Fully 14-Tier enriched chapters: **207 chapters** (16 Principal Ojú Odù + 191 Composite Àmọ̀lù Odù).
+      - Remaining thin Odù chapters: officially crossed into sub-50 territory with **exactly 49 remaining** (down from 74). Next batch opens at `ODU_208_Òtúá_Òtúúrúpọ̀n`.
+    - **Dual Corpora Lockstep & Checksum**:
+      - `api/data/yoruba_corpus_1007_NORMALIZED.json` & `web/src/data/yoruba_master_corpus.json` match byte-for-byte (`85d0e97ac750d696b2962335a1871f9a58b6d84f5f733db33ec98e210624e118`).
+    - **Live Retrieval Sampling (Batch 12 ASCII Inputs)**:
+      - Query `"Otuurupon Oyeku"` -> Top-1: `Òtúúrúpọ̀n Ọ̀yẹ̀kú` (`ODU_183_Òtúúrúpọ̀n_Ọ̀yẹ̀kú`) — PASS
+      - Query `"Otuurupon Ogunda"` -> Top-1: `Òtúúrúpọ̀n Ògúndá` (`ODU_190_Òtúúrúpọ̀n_Ògúndá`) — PASS
+      - Query `"Otuurupon Ofun"` -> Top-1: `Òtúúrúpọ̀n Òfún` (`ODU_196_Òtúúrúpọ̀n_Òfún`) — PASS
+      - Query `"Otua Ogbe"` -> Top-1: `Òtúá Ogbè` (`ODU_197_Òtúá_Ogbè`) — PASS
+      - Query `"Otua Ika"` -> Top-1: `Òtúá Ìká` (`ODU_207_Òtúá_Ìká`) — PASS
+      - Sampling Resolution Rate: **5 / 5 (100.0%)** with zero parent usurpation.
+    - **Corpus-Wide Regression Benchmark Suite (`scripts/benchmark_sprint004.py`)**:
+      - Expanded test suite from 73 to **78 test assertions** with Batch 12 additions (`Q62` through `Q66`).
+      - Total Queries Tested: **78 / 78 (100.0%) Top-1 Accuracy**.
+      - Anti-Parent-Loop Precision: **54 / 54 (100.0%)**.
+      - Category 17 Fauna Precision: **18 / 18 (100.0%)**.
+      - 14 Friction Queries Accuracy: **16 / 16 (100.0%)**.
+    - **Production Gate Conformance**:
+      - `scripts/review.sh`: 0 hard violations, 0 warnings.
+      - Gate 2 Headroom: `scripts/benchmark_sprint004.py` at 348 LOC (< 350 advisory, < 500 hard ceiling).
+      - Vite production build: Transformed 1,928 modules in 810ms with 0 errors.
+    - **Sùúrù QA Verdict**: **100.0% CERTIFIED PASS**. Full milestone certified for Lead Architect and Àgbà.
+
 
 
 

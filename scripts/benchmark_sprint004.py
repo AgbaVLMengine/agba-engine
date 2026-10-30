@@ -173,6 +173,12 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q59_IKA_OGBE", "query": "Ika Ogbe", "expected_titles": ["Ìká Ogbè", "Ika Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q60_IKA_OSA", "query": "Ika Osa", "expected_titles": ["Ìká Ọ̀sá", "Ika Osa"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q61_OTUURUPON_OGBE", "query": "Otuurupon Ogbe", "expected_titles": ["Òtúúrúpọ̀n Ogbè", "Otuurupon Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 62-66. Batch 12 Composite Odù Chapters Suite (HANDOFF-SUURU-009)
+    {"id": "Q62_OTUURUPON_OYEKU", "query": "Otuurupon Oyeku", "expected_titles": ["Òtúúrúpọ̀n Ọ̀yẹ̀kú", "Otuurupon Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q63_OTUURUPON_OGUNDA", "query": "Otuurupon Ogunda", "expected_titles": ["Òtúúrúpọ̀n Ògúndá", "Otuurupon Ogunda"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q64_OTUURUPON_OFUN", "query": "Otuurupon Ofun", "expected_titles": ["Òtúúrúpọ̀n Òfún", "Otuurupon Ofun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q65_OTUA_OGBE", "query": "Otua Ogbe", "expected_titles": ["Òtúá Ogbè", "Otua Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q66_OTUA_IKA", "query": "Otua Ika", "expected_titles": ["Òtúá Ìká", "Otua Ika"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
