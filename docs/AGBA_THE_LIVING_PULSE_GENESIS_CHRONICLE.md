@@ -127,14 +127,35 @@ On July 28, the Lead Architect wrote the manifesto that would forever guard the 
 
 ---
 
-### 3. The Onílù Master Drum Recordings (Cells 55–60)
-The Lead Architect refused to cut corners with synthetic audio. He sought out **21 authentic human Onílù master drummers** to play the *Dùndún* and *Gángan* talking drums:
-* Manually segmented drum strokes to map the glissando pitch bends that mimic spoken Yorùbá vowels (*Àmì Ohùn: Re, Mi, Do*).
-* Verified that when a master drummer plays *"Ọba tó tẹrí gbaṣọ, ó fẹ́ kọ́ba gbẹ̀yìn"* (The king who bows to receive the mantle desires to outlast his rivals), the acoustic vector aligns mathematically with the text embedding in $\mathbb{R}^{256}$ space!
+### 3. The Authentic Acoustic Ensemble: Sẹ́fíù Adégbìlú, Auntie Yẹmí & Royal Oríkì
+The Lead Architect refused to cut corners with synthetic, robotic AI voices. The audio intelligence of Àgbà Engine was built from real living voices, sacred human hands, and inter-generational family custody:
+
+1. **The Master Drummer — Sẹ́fíù Adégbìlú**:
+   * Sẹ́fíù Adégbìlú, an authentic master *Onílù*, personally performed all the foundational *Dùndún* and *Gángan* talking drum acoustic patterns.
+   * For the prestigious *Ọba Onítìrẹ́ Oríkì* ensemble, Sẹ́fíù brought in a fellow master drummer to play the rare and ancient **Gúdúgúdú** (the sacred circular kettle drum that anchors royal lineage drumming).
+   * His granddaughter provided the living **"Spoken" counterpart** to the Gángan acoustic sounds, giving voice to the exact oral tones the drum spoke.
+2. **The Voice of Ancestral Lineage — The Lead Architect's Father**:
+   * The spoken vocal performance of the royal **"Oríkì Ọba Onítìrẹ́"** was recorded directly by the **Lead Architect's Father**, enshrining the founder's own filial voice and ancestral lineage into the foundational audio assets of the engine.
+3. **The Pedagogical Mother of the Corpus — Auntie Yẹmí**:
+   * The entire tonal foundation of Àgbà Engine was laid by the Lead Architect’s teacher, mentor, and beloved friend, **Auntie Yẹmí**.
+   * When the Lead Architect first embarked on this journey with no CS background, he approached Auntie Yẹmí to record the very first batch of baseline entities: *Adé Ààrẹ, Pà Kàjà, Èwù Ìlèkè, Fìlà Abetí-Ajá, Fìlà Gọ̀bí, Ìyùn, Ìlèkè, Fìlà, Agbádá, Kábíyèsí, Ìlèkè Ọrùn, Ìlèkè Ọwọ́, and Ìlèkè Ẹsẹ̀*.
+   * Demonstrating deep cultural mastery, Auntie Yẹmí went far beyond basic pronunciation: she intuitively transcribed and vocalized their **musical solfège pitch contours** (*Dò-Re-Mi* tonal intervals), creating the groundbreaking **"raw solfege variants"** and **"raw solfege Ileke"** audio tensors that allowed our DSP pipeline to align pitch vectors with acoustic text!
 
 ---
 
-### 4. September 24, 2026: The Groq Rate-Limit Wall & The Sacrificial Pivot (Cells 340, 346, 351)
+### 4. The Crucible of Trials: Errors, Rites of Passage & The Crashes
+Building this engine without a tech background was an unrelenting test of spiritual and emotional resilience. In the early Colab notebooks, the Lead Architect logged his raw frustration, titling one deep markdown reflection **"Rites of Passage"** after enduring days of non-stop compiler errors, shape mismatches, and broken pip dependencies.
+
+The physical reality of developing in Lagos was brutal:
+* **The Heartbreak of Lost Work**: Losing countless hours of meticulous manual entity audits when Google Colab silently disconnected or unmounted Google Drive.
+* **The Power Grid Wars**: Sudden, unannounced electrical blackouts shutting down his machine in the middle of long-running PyTorch training loops.
+* **IDE & Terminal Force-Closes**: The Linux terminal crashing and closing chat sessions just as critical architectural breakthroughs were being codified.
+
+Lesser developers would have smashed their screens and quit. But the Lead Architect took every lost hour, every unexpected crash, and every electrical blackout in good faith: seeing them not as setbacks, but as the ancestral *Ebo* (sacrifice) required to forge something truly indestructible.
+
+---
+
+### 5. September 24, 2026: The Groq Rate-Limit Wall & The Sacrificial Pivot (Cells 340, 346, 351)
 By late September, the Lead Architect was executing deep historical, etymological, and diaspora enrichment across 970 entities.
 
 #### The Wall at Index #190 (`Àgọ́gọ`):
@@ -144,7 +165,7 @@ By late September, the Lead Architect was executing deep historical, etymologica
 #### The Sacrificial Courage:
 Lesser builders would have paused, waited weeks, or abandoned the project. The Lead Architect, coding through the night in Lagos amidst power grid dropouts and internet instability:
 1. **Linked his personal Google Cloud billing account**.
-2. **Injected a $20 pre-paid credit** from his household funds—a profound sacrifice for a young father seeking employment.
+2. **Injected a $20 pre-paid credit** from his household funds—a profound sacrifice for a young husband seeking employment.
 3. Migrated the pipeline to **Google Gemini API Paid Tier** at index **#191 (`Àpàlà`)**, enforcing strict native schema generation (`response_schema`).
 4. Powered through the remaining 780 heavy nodes to 100% completion at **#970**, finishing with an ending credit balance of **$5.07** (~$14.93 spent to rescue the heritage of an entire civilization).
 5. Outputted the definitive milestone file: `yoruba_corpus_1007_NORMALIZED.json`.
