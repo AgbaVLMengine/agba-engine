@@ -107,7 +107,7 @@ async def startup_event():
 @app.get("/health")
 async def root_health_check():
     """System health check and operational status."""
-    corpus_count = len(retriever.corpus_entities) if retriever and getattr(retriever, "corpus_entities", None) else 1408
+    corpus_count = len(retriever.corpus_entities) if retriever and getattr(retriever, "corpus_entities", None) else 1411
     return {
         "engine": "Àgbà Engine Enterprise Core",
         "status": "Operational",
@@ -185,7 +185,7 @@ async def retrieve_deep_context(payload: QueryRequest, client_info: Dict[str, An
             "queried_concept": payload.query,
             "selected_domain": payload.cultural_domain,
             "results_count": len(results),
-            "historical_guardrail": f"Verified against {len(retriever.corpus_entities) if retriever and getattr(retriever, 'corpus_entities', None) else 1408} master entity corpus with NFC diacritic parity."
+            "historical_guardrail": f"Verified against {len(retriever.corpus_entities) if retriever and getattr(retriever, 'corpus_entities', None) else 1411} master entity corpus with NFC diacritic parity."
         },
         "ranked_entities": results
     }

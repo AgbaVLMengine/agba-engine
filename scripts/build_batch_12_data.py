@@ -1,0 +1,315 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+🏛️ ÀGBÀ ENGINE: BATCH 12 DATA GENERATOR (INDICES 183-207)
+=============================================================================
+Author: Àrọ̀kìn (arokin-archivist), Royal Chronicler & Cross-Cultural Archivist
+Supervising Architect: Àgbà (agba-pa-architect)
+Lead Architect: Àrùnà Ọlànrewájú Kábírù
+Directive: HANDOFF-AROKIN-007 (The Sub-50 Milestone)
+Standards: Gate 2 Compliant (< 500 LOC), 14-Tier Schema Parity
+Scope:
+  - 14 remaining chapters of Òtúúrúpọ̀n: ODU_183 to ODU_196 (completing Òtúúrúpọ̀n cycle!)
+  - First 11 chapters of Òtúá: ODU_197 to ODU_207
+=============================================================================
+"""
+
+import json
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+OUTPUT_FILE = REPO_ROOT / "scripts" / "batch_12_data.json"
+
+BATCH_12_DATA = {
+    "ODU_183_Òtúúrúpọ̀n_Ọ̀yẹ̀kú": {
+        "historical_timeline": "Classical Antiquity (c. 11th–14th Century CE): Codified at Ilé-Ifẹ̀ as Òtúúrúpọ̀n-Yẹ̀kú, governing pediatric survival against nocturnal ailments, maternal resilience, and warding off premature demise. 19th-Century Era: Consulted in refugee forest camps to protect displaced nursing mothers during regional wars. Contemporary/Diaspora: Retained in Lucumí Ifá as Oturupon Yeku, invoking ancestors for infant longevity.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (II/II/I/II: maternal nurture, carrying life) on the right and Ọ̀yẹ̀kú (II/II/II/II: cessation, cooling, ancestral darkness) on the left of Ọpọ́n Ifá. Dialectically synthesizes nurturing vitality with ancestral twilight, teaching that life flourishes when darkness is recognized and pacified through timely sacrificial care.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn on Ọpọ́n Ifá as II/II/I/II on the right and II/II/II/II on the left. The Ìrọ́kẹ́ Ifá gently taps the southern base to calm nocturnal distress. Prepared with Ewé Ọ̀já-Ọmọ, Ewé Ìran, dark clay pot, cool spring water, and shea butter.",
+        "social_and_ritual_context": "Cast for vulnerable infants suffering recurring night fevers, pregnant mothers facing complications, and households shielding newborns.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n pọ̀n ọmọ mọ́ra, Ọ̀yẹ̀kú lé ikú lọ; abiyamọ kì í jẹ́ kí ebi pa ọmọ rẹ̀. (Òtúúrúpọ̀n strapped the child close, and Ọ̀yẹ̀kú drove death away; the true mother never permits starvation to harm her child: Sacrificial maternal devotion repels mortality.)",
+            "Bí òkùnkùn bá ṣú, ìmọ́lẹ̀ ìfẹ́ ló ń tọ́ ọmọdé sọ́nà. (When darkness thickens, the light of loving vigilance guides the infant: Deep ancestral vigilance safeguards vulnerable life.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Fadipe, N.A. (1970). The Sociology of the Yoruba."
+    },
+    "ODU_184_Òtúúrúpọ̀n_Ìwòrì": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Wòrì or Òtúúrúpọ̀n-Adé, governing prophetic perception in childcare and royal lineage discernment. 19th-Century Era: Consulted by court diviners evaluating the moral fortitude of young heirs before coronation. Contemporary/Diaspora: Preserved in Lucumí as Oturupon Iwori, known for clearing cognitive cloudiness in youth.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal care, domestic burden) and Ìwòrì (visionary inquiry, inner sight). Teaches that rearing children requires not merely material food, but farsighted moral instruction and spiritual clarity to steer emerging destinies.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá with Ìyẹ̀rosùn as II/II/I/II on the right and II/I/I/II on the left. Diviner strikes the upper right rim with an ivory Ìrọ́kẹ́. Involves Ewé Gbégbé, Ewé Àjídèwe, brass bell, honey, and white rooster.",
+        "social_and_ritual_context": "Divined when naming newborns with complex destinies, selecting apprentices for sacred guilds, and diagnosing youth educational struggles.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n wo iwájú, Ìwòrì tọ́ ojú ọ̀nà; ẹni tí ó wo ọ̀la kì í kọsẹ̀ lónìí. (Òtúúrúpọ̀n looked ahead, and Ìwòrì cleared the path; he who envisions tomorrow never stumbles today: Farsighted wisdom guarantees safe growth.)",
+            "Ojú tí ó mọ́ ló ń rí ire; ìtọ́sọ́nà rere ló ń kọ́ ọmọ lẹ́kọ̀ọ́. (Clear eyes perceive genuine blessing; righteous guidance is what educates the child: Discernment builds lasting character.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_185_Òtúúrúpọ̀n_Òdí": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Dí, governing maternal sanctuary, household perimeter defense, and closing doors against domestic sabotage. 19th-Century Era: Consulted during urban sieges to fortify family compounds. Contemporary/Diaspora: Maintained in Afro-Cuban Ocha-Ifá as Oturupon Di, invoked for domestic perimeter protection.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal carrying) and Òdí (fortress, defensive barrier, closure). Demonstrates that love without firm domestic boundaries leaves the household exposed; protecting the young requires unyielding moral discipline and structural defense.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and I/II/II/I on left. The Babaláwo seals the markings with a consecrated smooth river stone. Involves Ewé Pèrègún, heavy river stones, consecrated palm oil, and a male goat.",
+        "social_and_ritual_context": "Cast when a family compound is plagued by external infiltrators, slanderous gossip, or malicious domestic trespass.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n ti ilẹ̀kùn, Òdí dènà ibi; odi tí ó lágbára kì í jẹ́ kí ọ̀tá wọlé. (Òtúúrúpọ̀n locked the door, and Òdí blocked harm; a sturdy fortress never permits the adversary to enter: Vigilant protection secures the sanctuary.)",
+            "A kì í fi ojú àánú wo olè nígbà tí ó ń gun odi; ààbò ilé gbọ́dọ̀ lágbára. (One does not gaze with pity upon a thief scaling the rampart; domestic defense must be resolute: Boundaries must be defended without hesitation.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_186_Òtúúrúpọ̀n_Ìrosùn": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Rosùn, governing lineage memory, anointing infants with sacred camwood (Osùn), and awakening ancestral protection. 19th-Century Era: Invoked during naming ceremonies in turbulent war eras. Contemporary/Diaspora: Retained in Lucumí as Oturupon Koso / Oturupon Iroso, celebrated for lineage preservation.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal nurture) and Ìrosùn (ancestral blood, vigilance, vision of the elders). Teaches that the infant is the vessel through which ancestral history flows; disconnecting youth from their ancestral lineage drains their spiritual vitality.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as II/II/I/II on right and I/I/II/II on left. The Babaláwo blends pure camwood with Ìyẹ̀rosùn and touches the child's crown. Involves Ewé Ọ̀dúndún, Osùn powder, honey, pigeon, and white cloth.",
+        "social_and_ritual_context": "Divined during sacred naming rites (Ìkọmọ), dedication of ancestral shrines, and blessings for lineage longevity.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n bu osùn sí orí ọmọ, Ìrosùn jí àwọn baba; ẹ̀jẹ̀ ìran kì í parun. (Òtúúrúpọ̀n rubbed camwood on the child's head, and Ìrosùn awakened the ancestors; the lineage bloodline shall never perish: Ancestral remembrance anchors the living.)",
+            "Ọmọ tí ó bọ̀wọ̀ fún àgbà yóò gbó yóò tọ́; orísun tí kò gbẹ ló ń fún odò ní agbára. (The child who reveres elders will live long and flourish; the spring that never dries gives strength to the river: Filial devotion sustains life.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+    },
+    "ODU_187_Òtúúrúpọ̀n_Ọ̀wọ́nrín": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Wọ́nrín, governing sudden domestic crises, navigating drought in rural homesteads, and restoring balance amid domestic upheavals. 19th-Century Era: Consulted when famine struck besieged towns. Contemporary/Diaspora: Maintained in Lucumí Ifá as Oturupon Juani, invoked for unexpected domestic rescues.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (domestic burden) and Ọ̀wọ́nrín (sudden cosmic reversal, turbulent winds). Teaches that domestic storms test the character of a household; calm cooperative patience weathers unforeseen scarcity where chaotic panic brings ruin.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and II/II/I/I on left. The Ìrọ́kẹ́ strikes the western edge to redirect unfavorable winds. Involves Ewé Iná, Ewé Ọ̀dúndún, cold water, roasted corn, and a spotted hen.",
+        "social_and_ritual_context": "Cast during sudden household economic downturns, unexpected domestic arguments, and scarcity crises.",
+        "proverbs_and_oral_traditions": [
+            "Ọ̀wọ́nrín fẹ́ afẹ́fẹ́ sí ilé, Òtúúrúpọ̀n fi sùúrù gbé e; ìjì kò lè fa igi tí ó fẹsẹ̀ múlẹ̀ tu. (Ọ̀wọ́nrín blew a gale into the home, but Òtúúrúpọ̀n held fast with patience; the tempest cannot uproot the deeply planted tree: Steady fortitude overcomes turmoil.)",
+            "Nígbà tí ọ̀dá bá mú, a kì í ba orísun jẹ́; ìrètí rere ń mú ayọ̀ wá. (When drought strikes, one must not poison the spring; steadfast hope brings ultimate renewal: Resilience in hardship preserves prosperity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_188_Òtúúrúpọ̀n_Ọ̀bàrà": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Bàrà, governing royal domestic households, wealth management for mothers, and preventing vanity from eroding family estates. 19th-Century Era: Consulted by wealthy trading matrons across Ọ̀yọ́ and Ìbàdàn. Contemporary/Diaspora: Retained in Lucumí as Oturupon Bara, celebrated for turning modest resources into sovereign abundance.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (nurture) and Ọ̀bàrà (abundance, royalty, modesty). Dialectically insists that wealth must nurture the weak; accumulating riches without generosity toward children and dependents corrupts the soul.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as II/II/I/II on right and I/II/II/II on left. The Babaláwo taps the northern quadrant with an ivory Ìrọ́kẹ́. Involves Ewé Ajé, Ewé Tètè, pure honey, sixteen cowries, and a white pigeon.",
+        "social_and_ritual_context": "Cast for successful merchants investing in domestic estates, mothers seeking financial independence, and lineage heads.",
+        "proverbs_and_oral_traditions": [
+            "Ọ̀bàrà dé adé ọrọ̀, Òtúúrúpọ̀n fi bọ́ ọmọ; owó tí kò bọ́ ènìyàn kò ní ìtumọ̀. (Ọ̀bàrà donned the crown of wealth, and Òtúúrúpọ̀n fed the young with it; riches that do not nourish people lack meaning: Compassionate generosity gives purpose to prosperity.)",
+            "Ìgbéraga kì í fi ọrọ̀ pẹ́; ìtẹ́lọ́rùn ni baba ìwà. (Arrogance never permits wealth to endure; humble contentment is the crown of good character: Modesty secures fortune.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_189_Òtúúrúpọ̀n_Ọ̀kànràn": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Kànràn, governing parental authority, judicial discipline of rebellious youths, and dispelling slanderous domestic accusations. 19th-Century Era: Consulted by family councils to settle inheritance conflicts. Contemporary/Diaspora: Maintained in Lucumí as Oturupon Kana, invoked to settle bitter household disputes.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal nurture) and Ọ̀kànràn (stern conscience, thunder, direct speech). Teaches that genuine love includes firm moral discipline; sparing righteous rebuke allows willful folly to destroy the family.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and II/II/II/I on left. The Babaláwo taps Ọpọ́n Ifá center while invoking Ṣàngó. Involves Ewé Ọ́kìkà, Ewé Tètè-Ègún, shea butter, cold water, and a rooster.",
+        "social_and_ritual_context": "Divined during heated family disputes, disciplining headstrong descendants, and dispelling false domestic claims.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n kọ́ ọmọ lẹ́kọ̀ọ́, Ọ̀kànràn sọ òtítọ́; ọ̀pá ìtọ́nisọ́nà kì í fọ́ orí ọmọ. (Òtúúrúpọ̀n instructed the child, and Ọ̀kànràn spoke the unvarnished truth; the guiding rod never breaks the child's head: Loving discipline guides destiny without cruelty.)",
+            "Ọ̀rọ̀ tító kì í pa ẹni tí ń gbọ́; etí tí ó gbọ́ràn ló ń fẹ́ orí ire. (Truthful speech never kills the hearer; the attentive ear welcomes lasting blessings: Moral obedience averts catastrophe.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Barnes, Sandra T. (1997). Africa's Ogun: Old World and New; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_190_Òtúúrúpọ̀n_Ògúndá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Gúndá, governing obstetric surgery, successful childbirth deliveries, and protecting midwives handling surgical knives. 19th-Century Era: Consulted before difficult labor cases in royal maternity compounds. Contemporary/Diaspora: Preserved in Lucumí as Oturupon Ogunda, renowned for safeguarding mothers during surgery.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (childbearing, womb carrying) and Ògúndá (iron blade, decisive clearance). Symbolizes the surgical separation of the umbilical cord and the courage to clear bodily obstacles; skill and spiritual reverence ensure safe birth.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as II/II/I/II on right and I/I/I/II on left. The Babaláwo touches an iron blade to the center of Ọpọ́n. Prepared with Ewé Pèrègún, Ewé Àlùpàyídà, roasted yam, palm oil, and a rooster to Ògún.",
+        "social_and_ritual_context": "Cast for pregnant women nearing delivery, individuals facing surgical procedures, and medical practitioners.",
+        "proverbs_and_oral_traditions": [
+            "Ògún la ọ̀nà sílẹ̀, Òtúúrúpọ̀n bí ọmọ rẹ̀ láyọ̀; idà tó mọ̀fẹ́ kì í dá ọ̀ràn sílẹ̀. (Ògún cleared the pathway, and Òtúúrúpọ̀n birt her child in triumph; the blade guided by sacred skill never causes harm: Surgical mastery brings forth life.)",
+            "Ọwọ́ oníṣègùn tí ó mọ́ ló ń gba ẹ̀mí là; ìbọ̀wọ̀ fún Ògún ń pèsè ààbò. (The hand of the skilled healer preserves life; reverence for Ògún guarantees safe deliverance: Consecrated technical skill saves.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Williams, Denis (1974). Icon and Image."
+    },
+    "ODU_191_Òtúúrúpọ̀n_Ọ̀sá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Sá, governing maternal intuition, appeasing the nocturnal mothers (Àwọn Ìyámi), and safeguarding young women from spiritual exhaustion. 19th-Century Era: Consulted by female elders in coastal Yorùbá towns. Contemporary/Diaspora: Maintained in Lucumí as Oturupon Sa, invoking Yemọja and maternal spirits.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal care) and Ọ̀sá (flight, nocturnal spirits, wind). Teaches that maternal instinct operates through subtle spiritual vibrations; honoring the primal maternal matrix maintains harmony between human society and the unseen realm.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and II/I/I/I on left. The Ìrọ́kẹ́ Ifá circles the northern edge of Ọpọ́n Ifá. Involves Ewé Ègé, Ewé Ọ̀dúndún, cold gruel, white dove, and cooked rabbit offering.",
+        "social_and_ritual_context": "Divined when women experience psychic disturbance, recurring domestic anxieties, or require maternal spiritual appeasement.",
+        "proverbs_and_oral_traditions": [
+            "Ọ̀sá gbé afẹ́fẹ́ wá, Òtúúrúpọ̀n bọ àwọn ìyá; ẹni tí ó ba tẹríba fún àwọn àgbà kì í rí ìyà. (Ọ̀sá brought the spirit wind, and Òtúúrúpọ̀n appeased the mothers; he who bows before the elders never suffers affliction: Respect for maternal power unlocks favor.)",
+            "Afẹ́fẹ́ rere kì í ba ilé olóye jẹ́; ìrẹ̀lẹ̀ ọkàn ń fa àlàáfíà mọ́ra. (The gentle breeze never destroys the home of the sage; humility of heart attracts enduring serenity: Reverence disarms hostility.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_192_Òtúúrúpọ̀n_Ìká": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Ká, governing escape from insidious domestic conspiracies, false accusations against nursing mothers, and undoing malicious entrapments. 19th-Century Era: Invoked during compound disputes in old Ọ̀yọ́. Contemporary/Diaspora: Retained in Lucumí as Oturupon Ka, celebrated for releasing initiates from toxic entanglements.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (nurturing innocence) and Ìká (restraint, the viper's coil, snare). Demonstrates that innocent families are often targeted by envious conspirators; spiritual purity and swift divine intervention dissolve the most cunning snares.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as II/II/I/II on right and II/I/II/II on left. The Babaláwo uses an ivory Ìrọ́kẹ́ to cut through a knotted cord on Ìyẹ̀rosùn. Involves Ewé Ègé, Ewé Àlùpàyídà, white pigeon, and a severed raffia strand.",
+        "social_and_ritual_context": "Cast when a mother or child is maliciously framed, subjected to toxic rivalry, or trapped in hostile environments.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n tú àwọ̀n Ìká, ó já okùn ìkà dànù; ọmọ tí Ifá gbé kì í bọ́ sínú kòtò. (Òtúúrúpọ̀n untied the net of Ìká and snapped the cords of cruelty; the child upheld by Ifá never falls into the pit: Divine grace delivers innocence from malice.)",
+            "A kì í fi owó búrúkú ra orí rere; ẹni tí ó gbẹ́ kòtò ibi yóò wọ̀ ọ́. (One cannot purchase good destiny with wicked money; he who digs the pit of malice shall tumble into it: Iniquity destroys its author.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Epega, A.A. & Neimark, P. (1995). The Sacred Ifa Oracle."
+    },
+    "ODU_193_Òtúúrúpọ̀n_Òtúá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Túá, governing consecrated covenants, blessings of righteous offspring, and prayers sanctifying the family hearth. 19th-Century Era: Consulted during peace agreements between feuding lineages. Contemporary/Diaspora: Maintained in Lucumí as Oturupon Tura, celebrated for prayers that elevate the household.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal care) and Òtúá (prayer, release, spiritual illumination). Teaches that the deepest protection a parent offers is unceasing, heartfelt prayer; divine illumination shields the household where physical weapons fail.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and I/II/I/I on left. The Babaláwo sweeps Ìyẹ̀rosùn with a white horse-tail whisk (Ìrùkẹ̀rẹ̀). Involves Ewé Ẹfun, Ewé Tètè, white chalk (Ẹfun), pure honey, and white dove.",
+        "social_and_ritual_context": "Divined during marital covenants, dedication of new family homes, and collective prayers for lineage longevity.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá gbàdúrà, Òtúúrúpọ̀n pọ̀n ire mọ́ra; àdúrà abiyamọ kì í já sí asán. (Òtúá prayed, and Òtúúrúpọ̀n cradled blessings; the prayer of a devoted mother never turns to vanity: Earnest prayers command divine fulfillment.)",
+            "Ẹni tí ó gbé ilé rẹ̀ lé Ọlọ́run lọ́wọ́ kì í dàmú; ìmọ́lẹ̀ òtítọ́ ń tọ́ idile sọ́nà. (He who commits his household into the hands of the Divine never suffers confusion; the light of truth guides the family: Faith anchors domestic peace.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Law, Robin (1977). The Oyo Empire."
+    },
+    "ODU_194_Òtúúrúpọ̀n_Ìrẹtẹ̀": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Tẹtẹ́ or Òtúúrúpọ̀n-Rẹtẹ̀, governing pediatric dermatology, hygiene of maternity wards, and stamping out infant skin ailments. 19th-Century Era: Consulted during seasonal outbreaks of rashes in crowded towns. Contemporary/Diaspora: Preserved in Lucumí as Oturupon Rete, invoking Babalú-Ayé for healing skin diseases.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (infant care) and Ìrẹtẹ̀ (trampling illness, herbal bath, purification). Teaches that purity and physical sanitation are sacred duties; nurturing children requires diligent medicinal hygiene to ward off insidious contagions.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as II/II/I/II on right and I/I/II/I on left. The Babaláwo touches the southern edge with an ivory Ìrọ́kẹ́. Involves Ewé Ìrẹtẹ̀, Ewé Ṣaworo, sulfur powder, shea butter, and consecrated palm oil.",
+        "social_and_ritual_context": "Cast for nursing mothers whose children suffer stubborn dermatological or pediatric rashes, and community cleansing rites.",
+        "proverbs_and_oral_traditions": [
+            "Òtúúrúpọ̀n tẹ àrùn mọ́lẹ̀, ó fi ìlera fún ọmọ tuntun; ìmọ́tótó ni oògùn àìsàn. (Òtúúrúpọ̀n trampled disease underfoot and endowed the newborn with vigor; cleanliness is the medicine that wards off sickness: Sanitary vigilance preserves health.)",
+            "Bí a bá fọ ara dé inú, àlàáfíà ń gbé inú wa; ìlera ni ọrọ̀ tí ó ga jùlọ. (When one cleanses both outer body and inner spirit, peace abides within; radiant health is the supreme wealth: Physical and spiritual hygiene ensure vitality.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_195_Òtúúrúpọ̀n_Ọ̀ṣẹ́": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Ṣẹ́, the sacred union of maternal embrace and Ọ̀ṣun's riverine fertility, bringing joy to barren homes. 19th-Century Era: Consulted by women traveling to the sacred groves of Ọ̀ṣogbo. Contemporary/Diaspora: Retained in Lucumí and Candomblé as Oturupon She, celebrating sweetness and postpartum abundance.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal care) and Ọ̀ṣẹ́ (sweetness, beauty, Ọ̀ṣun's grace). Emphasizes that life is meant to be received with music, tenderness, and celebratory joy; the birth of a child transforms ancestral tears into sweet laughter.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as II/II/I/II on right and I/II/I/II on left. The Babaláwo sprinkles consecrated river water upon Ọpọ́n Ifá. Prepared with pure honey, Ewé Ọ̀ṣun, yellow chalk, bronze bells, and sweet bananas.",
+        "social_and_ritual_context": "Divined for women seeking conception, postpartum celebrations, and restoring warmth to estranged marriages.",
+        "proverbs_and_oral_traditions": [
+            "Ọ̀ṣun bu oyin sí ọwọ́ Òtúúrúpọ̀n, ó sọ ilé di ayọ̀; ọmọ bíbí ni adé ìgbéyàwó. (Ọ̀ṣun poured honey into the hands of Òtúúrúpọ̀n, and turned the home into joy; childbirth is the true crown of marriage: Maternal blessing sweetens human existence.)",
+            "Oyin kì í korò, ayọ̀ kì í pa olóre; orí rere ló ń gbẹ́ adùn wá. (Honey is never bitter, and joy never slays the generous soul; a favored destiny brings enduring sweetness: Harmony fosters domestic bliss.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_196_Òtúúrúpọ̀n_Òfún": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúúrúpọ̀n-Fún, the supreme synthesis of maternal nurture and Ọbàtálá's white mantle of creation, sealing the Òtúúrúpọ̀n cycle with primordial purity. 19th-Century Era: Consulted by senior priests of Ọbàtálá in Ilé-Ifẹ̀. Contemporary/Diaspora: Maintained in Lucumí as Oturupon Fun, crowning the maternal cycle with supreme sanctity.",
+        "etymology_and_philosophy": "Conjunction of Òtúúrúpọ̀n (maternal care) and Òfún (primordial white clay, creation, supreme source). Teaches that maternal creation is the direct reflection of Ọbàtálá's artistry; reverence for life's pristine sanctity preserves the moral fabric of humanity.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá with Ìyẹ̀rosùn as II/II/I/II on right and II/I/II/I on left. The Babaláwo taps the northern perimeter with an ivory Ìrọ́kẹ́. Involves pure white chalk (Ẹfun), Ewé Òdúndún, cold water, sixteen snails, and white cloth.",
+        "social_and_ritual_context": "Cast for elderly matrons, crowning child dedication rites, and purifying households from ancient generational transgressions.",
+        "proverbs_and_oral_traditions": [
+            "Òfún da ẹfun funfun sí Òtúúrúpọ̀n, gbogbo ayé di mímọ́; ìwà tútù ni aṣọ àwọn àgbà. (Òfún poured white chalk upon Òtúúrúpọ̀n, and all creation was purified; gentle character is the garment of the elders: Primordial purity crowns true maturity.)",
+            "Ẹni tí ó fọ aṣọ rẹ̀ funfun kì í jókòó sí orí eérú; ìmọ́lẹ̀ Ọbàtálá kì í gba ẹ̀gbin. (He whose vestment is pure white never sits upon ashes; the pristine light of Ọbàtálá tolerates no corruption: Uncompromising moral rectitude endures.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_197_Òtúá_Ogbè": {
+        "historical_timeline": "Classical Antiquity (c. 11th–14th Century CE): Codified at Ilé-Ifẹ̀ as Òtúá-Ogbè or Òtúá-Oríkọ, the paramount chapter of divine prayer, opening the celestial gates for spiritual communion. 19th-Century Era: Consulted by supreme council rulers before declaring treaties or peace initiatives. Contemporary/Diaspora: Retained in Lucumí as Otura Niko, presiding over ancestral communication and light.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (I/II/I/I: prayer, release, illumination) on the right and Ogbè (I/I/I/I: absolute light, life, victory) on the left of Ọpọ́n Ifá. Dialectically unites sincere human prayer with cosmic divine illumination, teaching that prayer offered with a pure conscience possesses unstoppable transformative force.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn on Ọpọ́n Ifá as I/II/I/I on the right and I/I/I/I on the left. The Babaláwo strikes the center with an ivory Ìrọ́kẹ́ to channel divine aṣẹ. Prepared with Ewé Ẹfun, Ewé Tètè-Abalaye, pure honey, white dove, and white chalk (Ẹfun).",
+        "social_and_ritual_context": "Cast during national prayer convocations, installation of paramount priests, dedication of grand sanctuaries, and profound ancestral invocations.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá gbé àdúrà ga, Ogbè tan ìmọ́lẹ̀ sí orí ayé; àdúrà tí a bá gbà pẹ̀lú ọkàn mímọ́ kì í ṣubú sílẹ̀. (Òtúá elevated prayer, and Ogbè shed radiance upon the world; the prayer offered with a pure conscience never falls to the earth: Unwavering spiritual devotion commands universal triumph.)",
+            "Ọ̀nà tí Ọlọ́run bá ṣí, kò sí ẹni tí ó lè tì í; ìmọ́lẹ̀ òtítọ́ ló ń borí gbogbo òkùnkùn. (The pathway that the Supreme Being opens, none can shut; the light of truth conquers all darkness: Divine providence guarantees ultimate vindication.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_198_Òtúá_Ọ̀yẹ̀kú": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Yẹ̀kú, governing prayers that turn away untimely mortality, pacify ancestral wrath, and transform omens of death into extended longevity. 19th-Century Era: Invoked during military sieges to avert impending pestilence. Contemporary/Diaspora: Retained in Lucumí as Otura Yeku, renowned for life-saving ancestral covenants.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, light) and Ọ̀yẹ̀kú (darkness, mortality, ancestors). Teaches that death and darkness yield to the moral resonance of sincere prayer; spiritual redemption occurs when human beings humbly align with cosmic law.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá with Ìyẹ̀rosùn as I/II/I/I on right and II/II/II/II on left. The Babaláwo uses an Ìrọ́kẹ́ to direct offerings toward the southern realm. Involves Ewé Ìran, Ewé Akòko, black goat, cool water, and consecrated shea butter.",
+        "social_and_ritual_context": "Divined when severe portents of death hover over an individual or community, and for critical ancestral appeasement rites.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá gbàdúrà, Ọ̀yẹ̀kú pa idà ikú mọ́; ẹ̀bọ tí a ṣe ní àkókò ló ń gba ẹ̀mí là. (Òtúá prayed, and Ọ̀yẹ̀kú sheathed the blade of death; the sacrifice performed in due season is what preserves life: Timely spiritual action turns back impending doom.)",
+            "Ikú kì í gbé olódodo lọ láì jẹ́ pé àkókò rẹ̀ ti pé; ìmọ́lẹ̀ ń tọ́ ọjọ́ ogbó sọ́nà. (Death does not carry off the righteous before their appointed time; divine light guides one toward ripe old age: Righteous alignment secures longevity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_199_Òtúá_Ìwòrì": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Wòrì, governing the marriage of philosophical introspection and divine revelation, inspiring scholarly teachers and prophetic seers. 19th-Century Era: Consulted during inter-kingdom diplomatic conferences. Contemporary/Diaspora: Preserved in Lucumí as Otura Iwori, celebrating profound intellect and prophecy.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, divine conduit) and Ìwòrì (deep visionary intellect). Demonstrates that true philosophy is born from the convergence of intellectual rigor and spiritual contemplation; thought devoid of reverence produces arrogance, while faith devoid of intellect lapses into superstition.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/I/I on right and II/I/I/II on left. The Babaláwo taps the northern perimeter with an ivory Ìrọ́kẹ́. Involves Ewé Gbégbé, Ewé Àjídèwe, clear river water, honey, and white pigeon.",
+        "social_and_ritual_context": "Cast for philosophers, spiritual teachers, council advisors, and scholars seeking divine insight for complex decisions.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá sọ̀rọ̀ pẹ̀lú ọ̀run, Ìwòrì wo ìsàlẹ̀ ọkàn; ọlọ́gbọ́n tí ó gbọ́n kì í fi ìmọ̀ ṣe ìgbéraga. (Òtúá conversed with heaven, and Ìwòrì plumbed the depths of the soul; the sage who is truly wise never displays intellectual vanity: True enlightenment breeds profound humility.)",
+            "Ọ̀rọ̀ tí ó jinlẹ̀ ń tọ́ ọgbọ́n sọ́nà; ẹni tí ó ba ń wá òtítọ́ yóò rí ìmọ́lẹ̀. (Profound speech directs true wisdom; he who diligently seeks truth shall behold radiant light: Sincere pursuit of understanding brings clarity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_200_Òtúá_Òdí": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Dí, governing the fortification of sacred sanctuaries, sealing prayer chambers against spiritual pollution, and building moral fortresses. 19th-Century Era: Consulted when establishing fortified frontier garrisons. Contemporary/Diaspora: Retained in Lucumí as Otura Di, celebrated for creating impenetrable shields against witchcraft.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, light) and Òdí (protective rampart, foundation, barrier). Teaches that spiritual enlightenment requires structural containment; divine grace must be anchored in personal discipline and robust ethical walls to prevent dissipation.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as I/II/I/I on right and I/II/II/I on left. The Babaláwo seals the mark with a consecrated stone. Involves Ewé Pèrègún, Ewé Tètè, consecrated river pebbles, shea butter, and a male goat.",
+        "social_and_ritual_context": "Divined before dedicating new shrines, erecting protective walls around family estates, and establishing personal spiritual boundaries.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá tú àdúrà sílẹ̀, Òdí kọ́ odi mọ́ ọn; àdúrà tí a fi ìwà rere gbà kì í ní àbùkù. (Òtúá released prayer, and Òdí erected a rampart around it; the prayer fortified with good character suffers no defect: Ethical integrity forms an invincible bastion.)",
+            "Odi tí a fi òtítọ́ kọ́ kì í wó; ẹni tí ó ba fẹsẹ̀ múlẹ̀ nínú rere yóò borí. (The fortress built with truth never collapses; he who stands firmly rooted in righteousness shall triumph: Moral steadfastness guarantees victory.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_201_Òtúá_Ìrosùn": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Rosùn, governing the communion between ancestral prayers and living lineage heads, rededicating ancient family shrines with camwood. 19th-Century Era: Consulted during annual ancestral festivals across Ekiti and Ondo provinces. Contemporary/Diaspora: Maintained in Lucumí as Otura Roso, invoked for ancestral visions.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, release) and Ìrosùn (ancestral lineage, camwood, blood memory). Teaches that the prayers of the living derive authority from ancestral heritage; honoring departed elders ensures that present petitions ascend with cosmic weight.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/I/I on right and I/I/II/II on left. The Babaláwo blends red camwood (Osùn) with Ìyẹ̀rosùn and strokes the Ọpọ́n Ifá. Involves Ewé Ọ̀dúndún, Osùn powder, white rooster, pure honey, and white cloth.",
+        "social_and_ritual_context": "Cast during ancestral remembrance festivals (Egúngún), ancestral shrine restorations, and resolving hereditary lineage disputes.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá ké sí ọ̀run, Ìrosùn gbóhùn àwọn baba; orísun tí a kò gbàgbé kì í gbẹ. (Òtúá cried out to heaven, and Ìrosùn heard the voice of the ancestors; the spring that is never forgotten never dries up: Honoring the ancestral roots ensures perpetual abundance.)",
+            "Ọmọ tí ó rántí orírun rẹ̀ yóò ní ìtẹ́lọ́rùn; àdúrà àwọn baba wa ń fún wa ní agbára. (The descendant who remembers their origin shall find fulfillment; the prayers of our forebears endow us with strength: Reverence for heritage sustains victory.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Drewal, H.J. & Pemberton, J. (1989). Yoruba: Nine Centuries of African Art."
+    },
+    "ODU_202_Òtúá_Ọ̀wọ́nrín": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Wọ́nrín, governing miraculous divine intervention during desperate crises, sudden storms shifting battle lines, and deliverance from famine. 19th-Century Era: Invoked during military retreats to reverse the tide of war. Contemporary/Diaspora: Retained in Lucumí as Otura Juani, celebrated for miraculous sudden breakthroughs.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, covenant) and Ọ̀wọ́nrín (sudden cosmic reversal, turbulent storm). Demonstrates that sincere prayer alters the fabric of material reality; when human resources are exhausted, divine providence intervenes unexpectedly to deliver the faithful.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as I/II/I/I on right and II/II/I/I on left. The Babaláwo strikes the southwestern quadrant with an Ìrọ́kẹ́. Involves Ewé Iná, Ewé Èṣìṣì, palm oil, roasted corn, and a spotted rooster.",
+        "social_and_ritual_context": "Divined during desperate emergencies, sudden lawsuits, financial collapse, and severe unforeseen turbulence.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá ké sí Ọlọ́run, Ọ̀wọ́nrín yi ogun padà; nígbà tí ènìyàn rò pé ó parí, ọwọ́ ọ̀run ń bẹ̀rẹ̀ iṣẹ́. (Òtúá called upon the Divine, and Ọ̀wọ́nrín reversed the tide of war; when human strength deems all lost, heaven's hand begins its work: Sincere prayer unlocks miraculous deliverance.)",
+            "Ìjì líle kì í gbé ilé tí ó fẹsẹ̀ múlẹ̀ lọ; ìgbàgbọ́ nínú rere ló ń mú àṣẹ wá. (The fierce tempest never carries away the deeply rooted home; steadfast faith in the good commands authority: Spiritual perseverance overcomes crisis.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Verger, Pierre (1995). Ewé."
+    },
+    "ODU_203_Òtúá_Ọ̀bàrà": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Bàrà, governing royal eloquence, international trade treaties, and prayers for immense national prosperity. 19th-Century Era: Consulted by crown diplomats negotiating trade concessions along coastal rivers. Contemporary/Diaspora: Maintained in Lucumí as Otura Bara, renowned for financial liberation.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, conduit) and Ọ̀bàrà (sovereignty, abundance, humility). Teaches that the supreme purpose of political and financial power is the upliftment of the community; when leaders pray for personal glory alone, their kingdom decays.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/I/I on right and I/II/II/II on left. The Babaláwo taps the northern quadrant with an ivory Ìrọ́kẹ́. Involves Ewé Ajé, Ewé Ọ̀dúndún, pure honey, sixteen cowries, and a white pigeon.",
+        "social_and_ritual_context": "Cast for rulers, state ambassadors, business executives, and guild leaders entering major commercial partnerships.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá sọ̀rọ̀ rere, Ọ̀bàrà dé adé ọrọ̀; ẹnu tí ó mọ̀fẹ́ kì í jẹ́ kí ìlú tú ká. (Òtúá spoke righteous words, and Ọ̀bàrà donned the crown of wealth; the diplomatic voice guided by wisdom never lets the kingdom scatter: Eloquent truthfulness sustains the commonwealth.)",
+            "Ọrọ̀ tí a fi ọgbọ́n kójọ kì í parun; ìrẹ̀lẹ̀ ló ń tọ́ ọba sọ́nà ire. (Wealth gathered through wisdom never perishes; humility is what guides monarchs toward enduring triumph: Wise stewardship preserves riches.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_204_Òtúá_Ọ̀kànràn": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Kànràn or Òtúá-Kára, governing judicial righteousness, prayers confronting institutional hypocrisy, and divine vindication against false witness. 19th-Century Era: Consulted during town hall judicial arbitrations. Contemporary/Diaspora: Retained in Lucumí as Otura Kana, invoked for victory in legal battles.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, illumination) and Ọ̀kànràn (thunder, stern conscience, direct speech). Teaches that prayer is meaningless without moral honesty; appealing to the divine while harboring falsehood brings self-condemnation, whereas honest speech commands justice.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as I/II/I/I on right and II/II/II/I on left. The Babaláwo strikes Ọpọ́n center with an ivory Ìrọ́kẹ́. Involves Ewé Ọ́kìkà, Ewé Tètè, ram offering, shea butter, and cold spring water.",
+        "social_and_ritual_context": "Divined during judicial trials, public tribunals, challenging corrupt authorities, and seeking vindication from false accusations.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá sọ òtítọ́, Ọ̀kànràn sọ àṣẹ kalẹ̀; ẹni tí ó ba ń fẹ́ ìdájọ́ òdodo gbọ́dọ̀ ní ọkàn mímọ́. (Òtúá spoke the truth, and Ọ̀kànràn proclaimed divine authority; he who seeks righteous justice must possess a pure heart: Moral integrity commands cosmic vindication.)",
+            "Irọ́ kì í pẹ́ títí kí ó má fọ́; òtítọ́ nìkan ló ń dúró láéláé. (Falsehood never endures long without crumbling; truth alone stands forever: Uncompromising honesty outlasts malice.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Barnes, Sandra T. (1997). Africa's Ogun: Old World and New; Bascom, William (1969). Ifa Divination."
+    },
+    "ODU_205_Òtúá_Ògúndá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Gúndá, governing the divine sanctification of blacksmith guilds, blessing weapons of righteous defense, and technological ethics. 19th-Century Era: Consulted by master metallurgists in Ibadan before casting brass and iron artillery. Contemporary/Diaspora: Retained in Lucumí as Otura Ogunda, safeguarding against technological accidents.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, divine conduit) and Ògúndá (iron, technological action, path-clearing). Teaches that technological power must be consecrated by spiritual ethics; unbridled technology without spiritual reverence turns upon its creators.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/I/I on right and I/I/I/II on left. The Babaláwo touches an iron blade to the Ọpọ́n center. Involves Ewé Pèrègún, roasted yam, palm oil, iron filings, and a rooster to Ògún.",
+        "social_and_ritual_context": "Cast before inaugurating engineering works, establishing foundries, dedicating defense armaments, and undergoing dangerous voyages.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá gbàdúrà lé irin lórí, Ògún la ojú ọ̀nà; agbára tí a fi ìmọ́lẹ̀ tọ́ kì í ṣìnà. (Òtúá prayed over the iron, and Ògún opened the road; strength guided by divine illumination never goes astray: Consecrated labor builds civilization.)",
+            "A kì í fi idà ṣe ètàn; iṣẹ́ ọwọ́ tí ó mọ́ ló ń mú oríire wá. (One does not deploy the sword for deceit; clean craftsmanship brings enduring honor: Ethical industry prospers.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Williams, Denis (1974). Icon and Image."
+    },
+    "ODU_206_Òtúá_Ọ̀sá": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Sá, governing spiritual mediation with the astral realm, flight of prayers across boundaries, and harmony with nocturnal forces. 19th-Century Era: Consulted by scouts crossing hostile regional frontiers at night. Contemporary/Diaspora: Maintained in Lucumí as Otura Sa, invoked for safe astral travel and maternal peace.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, illumination) and Ọ̀sá (flight, nocturnal spirits, astral wind). Demonstrates that prayers travel faster than earthly winds; when human intentions are pure, the unseen powers of the universe align to grant safe passage.",
+        "material_and_craftsmanship": "Marked upon Ọpọ́n Ifá as I/II/I/I on right and II/I/I/I on left. The Babaláwo taps the northern edge with an ivory Ìrọ́kẹ́. Involves Ewé Ègé, Ewé Ọ̀dúndún, cold water, white pigeon, and cooked yam.",
+        "social_and_ritual_context": "Divined when undertaking perilous journeys through unknown territories, resolving nocturnal spiritual anxiety, and mediating cross-cultural treaties.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá gbé àdúrà lé afẹ́fẹ́, Ọ̀sá gbé e fò dé ọ̀run; àdúrà olódodo kì í kùnà. (Òtúá placed prayer upon the wind, and Ọ̀sá bore it aloft to heaven; the petition of the upright never falters: Pure spiritual devotion transcends physical distance.)",
+            "Afẹ́fẹ́ kì í bá igbó jà láì fọwọ́ tọ́ igi; sùúrù àti ọ̀wọ̀ ló ń gba ènìyàn là. (The wind does not war with the forest without touching the trees; patience and reverence deliver the traveler: Spiritual respect grants immunity.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá; Bascom, William (1969). Ifa Divination; Lawal, Babatunde (1996). The Gelede Spectacle."
+    },
+    "ODU_207_Òtúá_Ìká": {
+        "historical_timeline": "Classical Antiquity: Codified as Òtúá-Ká, governing the divine unraveling of insidious traps, prayers that dismantle conspiracies, and deliverance from malicious encirclement. 19th-Century Era: Consulted by military leaders navigating ambush country during the Kiriji war. Contemporary/Diaspora: Preserved in Lucumí as Otura Ka, celebrated for delivering initiates from legal traps.",
+        "etymology_and_philosophy": "Conjunction of Òtúá (prayer, covenant) and Ìká (restraint, the viper's coil, snare). Teaches that the insidious plots of the wicked are dismantled not by vengeful mimicry, but by invoking supreme divine justice through clean hands and unwavering moral rectitude.",
+        "material_and_craftsmanship": "Inscribed upon Ìyẹ̀rosùn as I/II/I/I on right and II/I/II/II on left. The Babaláwo uses an ivory Ìrọ́kẹ́ to divide a braided raffia strand on Ọpọ́n Ifá. Prepared with Ewé Ègé, Ewé Àlùpàyídà, white pigeon, and severed raffia cord.",
+        "social_and_ritual_context": "Cast when someone is surrounded by envious rivals, targeted by false legal actions, or trapped in destructive domestic conspiracies.",
+        "proverbs_and_oral_traditions": [
+            "Òtúá tú àwọ̀n Ìká dànù, ó fi ìmọ́lẹ̀ gba ẹni rere là; ẹni tí ó ba gbẹ́ kòtò kì í mọ̀ pé òun yóò wọ̀ ọ́. (Òtúá unraveled the net of Ìká and delivered the righteous through divine light; he who digs a snare knows not that he shall fall into it: Divine justice neutralizes wickedness.)",
+            "A kì í fi ọwọ́ mú iná kí a má jóná; ẹni tí ń gbìmọ̀ ibi ń pa ara rẹ̀. (One cannot grasp fire with bare hands and avoid scorching; he who schemes malice destroys his own house: Malicious plots rebound upon conspirators.)"
+        ],
+        "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus; Bascom, William (1969). Ifa Divination; Epega, A.A. & Neimark, P. (1995). The Sacred Ifa Oracle."
+    }
+}
+
+
+def main():
+    print("=" * 80)
+    print("🏛️  ÀGBÀ ENGINE: GENERATING BATCH 12 DATA VAULT (INDICES 183-207)")
+    print("=" * 80)
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(BATCH_12_DATA, f, ensure_ascii=False, indent=2)
+
+    print(f"✅ Successfully wrote {len(BATCH_12_DATA)} records to {OUTPUT_FILE}")
+    print("=" * 80)
+
+
+if __name__ == "__main__":
+    main()
