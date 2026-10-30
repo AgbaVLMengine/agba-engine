@@ -54,6 +54,10 @@ export function useRootNetworkNodes(query, masterCorpus = []) {
     let childVariants = [];
 
     // Decouple Sovereign Parent / Living Sub-Variant hierarchy
+    const isDirectChildMatch = stripAccents(matchedNode.title) === qClean ||
+      normalizeNFC(matchedNode.title) === qNFC ||
+      (matchedNode.aliases || []).some((a) => stripAccents(a) === qClean || normalizeNFC(a) === qNFC);
+
     if (matchedNode.sovereign_parent && matchedNode.is_parent !== true) {
       const spClean = stripAccents(matchedNode.sovereign_parent);
       const trueParent = masterCorpus.find((m) =>
@@ -61,7 +65,13 @@ export function useRootNetworkNodes(query, masterCorpus = []) {
         (stripAccents(m.title) === spClean && (m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept')) ||
         stripAccents(m.title) === spClean
       );
-      if (trueParent) {
+      if (isDirectChildMatch) {
+        parentNode = matchedNode;
+        if (trueParent) {
+          const siblings = Array.isArray(trueParent.sub_variants) ? resolveEntities(trueParent.sub_variants, trueParent) : [];
+          childVariants = [trueParent, ...siblings.filter((s) => s.title !== matchedNode.title)].slice(0, 4);
+        }
+      } else if (trueParent) {
         parentNode = trueParent;
         const siblings = Array.isArray(trueParent.sub_variants) ? resolveEntities(trueParent.sub_variants, trueParent) : [];
         childVariants = [matchedNode, ...siblings.filter((s) => s.title !== matchedNode.title)].slice(0, 4);

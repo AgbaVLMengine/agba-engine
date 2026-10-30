@@ -24,11 +24,11 @@ When modern technologists write of their creations, they fill pages with sanitiz
 
 Àgbà Engine was not born inside a venture-backed laboratory in Silicon Valley, nor did it originate from an elite Computer Science doctoral thesis. It was forged in the heat of Lagos, Nigeria, by a devoted young husband who picked up Artificial Intelligence for the first time in **April 2026** with no formal software engineering degree. 
 
-His initial motivation was raw, sacred, and human: **to master the most in-demand technology on earth so he could provide for his wife and family by January.**
+His motivation was raw, sacred, and determined: **to master modern AI tools to build a lasting career and secure a sustainable future for his household.**
 
-Yet, what began as a quest for economic survival soon ignited an ancient spiritual and intellectual homecoming. For years, the Lead Architect had walked the path familiar to millions across the post-colonial world: running away from his Yorùbá heritage, keeping his ancestral roots at an emotional distance, and reserving his deepest reverence for foreign systems.
+Yet, what began as a quest for professional mastery soon ignited an ancient spiritual and intellectual homecoming. For years, the Lead Architect had walked the path familiar to millions across the post-colonial world: running away from his Yorùbá heritage, keeping his ancestral roots at an emotional distance, and reserving his deepest reverence for foreign systems.
 
-It was only when he sat before the screen—watching Western AI models collapse sacred beaded crowns (*Adé*) into generic "hats," listening to tokenizers strip the musical tonal marks from his mother tongue, and seeing vision algorithms fail to recognize royal beads (*Ìyùn*)—that the sleeping giant awoke.
+It was only when he sat before the screen—watching YOLOv8 look at a portrait of the Awùjalẹ̀ of Òkèlúsẹ̀ (the youngest reigning monarch in Yorùbáland today), completely failing to recognize his royal crown (*Adé*) and misclassifying his sacred coral beads (*Ìyùn*) as a Western "necktie," while tokenizers stripped the musical tonal marks from his mother tongue—that the sleeping giant awoke.
 
 **The genius to build the World's First Civilizational Heritage Search Engine lay dormant while he was running. The very moment he turned around, faced his ancestors, and surrendered to his heritage in every ramification, the architecture of Àgbà Engine unlocked.**
 
@@ -131,14 +131,14 @@ On July 28, the Lead Architect wrote the manifesto that would forever guard the 
 The Lead Architect refused to cut corners with synthetic, robotic AI voices. The audio intelligence of Àgbà Engine was built from real living voices, sacred human hands, and inter-generational family custody:
 
 1. **The Master Drummer — Sẹ́fíù Adégbìlú**:
-   * Sẹ́fíù Adégbìlú, an authentic master *Onílù*, personally performed all the foundational *Dùndún* and *Gángan* talking drum acoustic patterns.
+   * Sẹ́fíù Adégbìlú, an authentic master *Onílù*, personally performed all the foundational *Dùndún* talking drum acoustic patterns.
    * For the prestigious *Ọba Onítìrẹ́ Oríkì* ensemble, Sẹ́fíù brought in a fellow master drummer to play the rare and ancient **Gúdúgúdú** (the sacred circular kettle drum that anchors royal lineage drumming).
-   * His granddaughter provided the living **"Spoken" counterpart** to the Gángan acoustic sounds, giving voice to the exact oral tones the drum spoke.
+   * His granddaughter provided the living **"Spoken" counterpart** to the drum's acoustic patterns, giving voice to the exact oral tones the Dùndún spoke.
 2. **The Voice of Ancestral Lineage — The Lead Architect's Father**:
    * The spoken vocal performance of the royal **"Oríkì Ọba Onítìrẹ́"** was recorded directly by the **Lead Architect's Father**, enshrining the founder's own filial voice and ancestral lineage into the foundational audio assets of the engine.
 3. **The Pedagogical Mother of the Corpus — Auntie Yẹmí**:
    * The entire tonal foundation of Àgbà Engine was laid by the Lead Architect’s teacher, mentor, and beloved friend, **Auntie Yẹmí**.
-   * When the Lead Architect first embarked on this journey with no CS background, he approached Auntie Yẹmí to record the very first batch of baseline entities: *Adé Ààrẹ, Pà Kàjà, Èwù Ìlèkè, Fìlà Abetí-Ajá, Fìlà Gọ̀bí, Ìyùn, Ìlèkè, Fìlà, Agbádá, Kábíyèsí, Ìlèkè Ọrùn, Ìlèkè Ọwọ́, and Ìlèkè Ẹsẹ̀*.
+   * Not even battling Parkinson's disease could stop her from leaving an indelible mark on the world: with profound courage, intellectual clarity, and cultural pride, she sat down and voiced our very first batch of baseline entities: *Adé Ààrẹ, Pà Kàjà, Èwù Ìlèkè, Fìlà Abetí-Ajá, Fìlà Gọ̀bí, Ìyùn, Ìlèkè, Fìlà, Agbádá, Kábíyèsí, Ìlèkè Ọrùn, Ìlèkè Ọwọ́, and Ìlèkè Ẹsẹ̀*.
    * Demonstrating deep cultural mastery, Auntie Yẹmí went far beyond basic pronunciation: she intuitively transcribed and vocalized their **musical solfège pitch contours** (*Dò-Re-Mi* tonal intervals), creating the groundbreaking **"raw solfege variants"** and **"raw solfege Ileke"** audio tensors that allowed our DSP pipeline to align pitch vectors with acoustic text!
 
 ---
@@ -289,7 +289,7 @@ Akéde has distilled this epic journey into three public storytelling pillars fo
 
 ### Pillar I: "The Husband Who Walked into the Dark"
 * **Focus**: Raw vulnerability, zero CS background, learning AI in April 2026 to provide for family, coding in Lagos through heat and power outages.
-* **Target Audience**: Global tech builders, indie hackers, fathers, and dreamers who feel unqualified.
+* **Target Audience**: Global tech builders, indie hackers, young striving spouses, and dreamers who feel unqualified.
 * **Key Emotion**: Awe, relatability, grit, and hope.
 
 ### Pillar II: "The Cultural Awakening Through Code"

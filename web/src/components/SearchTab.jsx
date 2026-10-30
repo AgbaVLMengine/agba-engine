@@ -152,9 +152,9 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
     executeSearch(randomConcept, { isBranchHop: false, relationLabel: 'Curated Anchor' });
   };
 
-  const topMatch = activeNode?.entityData
-    ? hydrateEntityForBento(activeNode.entityData)
-    : results?.ranked_entities?.[0];
+  const topMatch = results?.ranked_entities?.[0]
+    ? results.ranked_entities[0]
+    : (activeNode?.entityData ? hydrateEntityForBento(activeNode.entityData) : null);
 
   // RC-2 & RC-3 Fix: Global Knowledge Graph Relatives Resolver (Zero Repeated Category Slicing)
   const relatedMatches = useMemo(() => {

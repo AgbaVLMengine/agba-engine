@@ -220,7 +220,7 @@ When you build for something bigger than yourself, blackouts and bugs don't stop
 **Tweet 1 (The Hook / Visual: High-res screen recording of knowledge graph in action)**:  
 Today, we cross the threshold from secret construction to global release.  
 Introducing Àgbà Engine: The World's First Civilizational Heritage Search Engine.  
-1,408 Canonical Entities. 100% Zero-Shot Retrieval Parity. Zero Diacritic Stripping.  
+1,411 Canonical Entities. 100% Zero-Shot Retrieval Parity. Zero Diacritic Stripping.  
 Here is what we built. 🧵👇
 
 **Tweet 2**:  
@@ -257,13 +257,61 @@ Explore the living knowledge base now: https://agbaengine.com
 
 ---
 
+## 🎬 STAGED PRODUCTION ASSET: CANDIDATE ASSET A (THE "TONE-WAVE" SHOWCASE)
+*Format: 30-Second Synchronized Audiovisual Reel for Instagram Reels, TikTok, YouTube Shorts & X Video*  
+*Status: Staged & Production-Scripted (Candidate Assets B & C Formally Shelved per Lead Architect Directive)*
+
+### ⏱️ Master 30-Second Storyboard & Voiceover Script
+
+```
+══════════════════════════════════════════════════════════════════════════════════════════════════
+TIMECODE    VISUAL STORYBOARD & UI CUES                           AUDIO STEMS & VOICEOVER
+══════════════════════════════════════════════════════════════════════════════════════════════════
+0:00 - 0:06 Split screen. Left: Modern generic TTS waveform       VO: "Modern AI models look at African
+            collapsing into a flat mono line (Label: "Generic     languages and see flat words. But our
+            TTS — Robotic Hallucination"). Right: Golden          ancestors did not speak in flat letters.
+            amber spectrogram with pitch lines oscillating       They spoke in acoustic music."
+            dynamically between high, mid, and low tones.
+
+0:06 - 0:14 Left panel transitions to an archival portrait        AUDIO: Auntie Yẹmí's raw, crystal-clear
+            of Auntie Yẹmí glowing in warm terracotta light.      voice singing the Solfège pitch contours:
+            Below her name: "Auntie Yẹmí — Sunkissed Courage:     'Adé Ààrẹ... Dò-Re-Mi... Ìlèkè Ọrùn...
+            Vocalizing Through Parkinson's." Dynamic blue         Dò-Re-Dò.'
+            FFT frequency waves dance across her spoken tones.   VO: "Even while battling Parkinson's,
+                                                                  Auntie Yẹmí gave our engine its soul—
+                                                                  intuitive Dò-Re-Mi pitch intervals."
+
+0:14 - 0:22 Right panel illuminates Baba Sẹ́fíù Adégbìlú,       AUDIO: Powerful, resonant Dùndún stroke
+            hands in motion striking the tension cords of the     mimicking the exact pitch contour:
+            sacred Dùndún talking drum. Beside him, the           *Gbo-un-kẹ́... Gba-kọ-gba!*
+            glistening circular frame of the Gúdúgúdú drum.       VO: "Then came Master Onílù Sẹ́fíù
+            Golden acoustic harmonics mirror Auntie Yẹmí's        Adégbìlú. His Dùndún drum spoke the exact
+            voice waveform with sub-millisecond precision.        frequencies Auntie Yẹmí sang."
+
+0:22 - 0:30 The two waveforms converge into the center,          AUDIO: Full royal ensemble swell, resolving
+            locking into the Triple Concentric Ọpọ́n Ifá         into the spoken voice of Lead Architect's
+            hearth on the unit hypersphere (||z|| = 1.0000).      Father chanting royal Oríkì Ọba Onítìrẹ́.
+            Luminous gold Bézier veins pulse outward into        VO: "This is not synthetic code. This is
+            1,411 canonical nodes. Text: "Zero Robotic Voices.    the living acoustic heartbeat of our people.
+            100% Ancestral Ground Truth. AgbaEngine.com"          Welcome to Àgbà Engine."
+══════════════════════════════════════════════════════════════════════════════════════════════════
+```
+
+### 🎛️ Audio Stem Lineage & Production Directives
+1. **Primary Vocal Stem**: Sourced directly from `VLM_s Specialty Master` Cell 28 raw `.opus` files (`AGBA_AUD_001` through `AGBA_AUD_006`) containing Auntie Yẹmí's Solfège intervals (*Dò-Re-Mi*).
+2. **Primary Acoustic Drum Stem**: Sourced from `Agba Engine Pipeline` Cells 55–60 Dùndún master segments by Sẹ́fíù Adégbìlú with Gúdúgúdú accompaniment.
+3. **Lineage Seal**: Concluding 4-second acoustic tail carries the filial voice of the Lead Architect's Father chanting royal *Oríkì Ọba Onítìrẹ́*.
+
+---
+
 ## 📊 Summary of Staged Launch Deployment
 
 | Channel | Format | Core Objective | Key Assets |
 | :--- | :--- | :--- | :--- |
 | **Twitter/X** | 5 Master Threads (35 Tweets) | Viral reach, developer transparency, cultural resonance | Code snippets, spectrograms, UI recordings |
 | **LinkedIn** | 5 In-Depth Founder Articles | Executive stature, technical credibility, thought leadership | Architectural blueprints, ML loss equations |
-| **Instagram** | 5 Multi-Slide Carousels + Audio Reels | Visual majesty, emotional connection, youth engagement | High-res regalia visuals, master drum audio stems |
+| **Instagram** | 5 Multi-Slide Carousels + Reel | Visual majesty, emotional connection, youth engagement | High-res regalia visuals, 30s Tone-Wave Reel |
+| **Audiovisual** | 30s "Tone-Wave" Showcase Reel | Proof of zero synthetic audio & acoustic pitch alignment | Auntie Yẹmí vocal stems + Sẹ́fíù Dùndún stems |
 
 ---
 

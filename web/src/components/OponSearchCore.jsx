@@ -222,10 +222,20 @@ export default function OponSearchCore({
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
-                  onSelectRootNode(rootNetworkNodes.parent, 'Sovereign Parent');
+                  onSelectRootNode(
+                    rootNetworkNodes.parent,
+                    rootNetworkNodes.parent.is_parent === false || rootNetworkNodes.parent.sovereign_parent_status === 'Living Sub-Variant'
+                      ? 'Living Sub-Variant'
+                      : 'Sovereign Parent'
+                  );
                 }}
               >
-                <span className="root-pod-badge"><Sparkles size={11} /> Sovereign Parent</span>
+                <span className="root-pod-badge">
+                  <Sparkles size={11} />{' '}
+                  {rootNetworkNodes.parent.is_parent === false || rootNetworkNodes.parent.sovereign_parent_status === 'Living Sub-Variant'
+                    ? 'Living Variant'
+                    : 'Sovereign Parent'}
+                </span>
                 <div className="root-pod-title">{rootNetworkNodes.parent.title}</div>
                 <div className="root-pod-desc">{rootNetworkNodes.parent.category || 'Canonical Matrix'}</div>
               </button>
