@@ -158,6 +158,25 @@ for mem in "${REQUIRED_MEMORIES[@]}"; do
   fi
 done
 
+echo ""
+echo "▶ [GATE 9: SACRED PRIMACY & BIOGRAPHICAL INVARIANT GATE] Scanning Hallucinations & Metaphysical Transgressions..."
+for f in $CHANGED_FILES; do
+  [ -f "$f" ] || continue
+  # Exclude review.sh, AGENTS.md, and STARTING_PROMPTS.md where rules are defined
+  if [[ "$f" == *"scripts/review.sh"* ]] || [[ "$f" == *".agents/AGENTS.md"* ]] || [[ "$f" == *".agents/STARTING_PROMPTS.md"* ]]; then
+    continue
+  fi
+  if grep -inE "digital\s+ọ?pọ́n" "$f" | grep -vEi "(never|purged|banned|prohibit|rule|invariant|not a|exclude|no digital)" >/dev/null 2>&1; then
+    echo "  ❌ [SACRED PRIMACY VIOLATION] 'Digital Ọpọ́n Ifá' detected in $f! Software must never claim to be Ọpọ́n Ifá."
+    VIOLATIONS=$((VIOLATIONS + 1))
+  fi
+  if grep -inE "(husband and father|devoted husband and father|young father)" "$f" | grep -vEi "(never|purged|banned|prohibit|rule|invariant|not a|exclude|no father)" >/dev/null 2>&1; then
+    echo "  ❌ [BIOGRAPHICAL VIOLATION] Lead Architect misidentified as 'father' in $f! Lead Architect has no children."
+    VIOLATIONS=$((VIOLATIONS + 1))
+  fi
+done
+
+
 echo "=================================================================="
 if [ "$VIOLATIONS" -gt 0 ]; then
   echo "🚨 AUDIT FAILED: $VIOLATIONS violation(s), $WARNINGS warning(s) found."

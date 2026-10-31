@@ -141,3 +141,20 @@ To ensure the system is permanently protected against cloud workflow stalls, net
    - Verifies working tree is clean and pushed to `origin/dev`.
    - Verifies that a fresh compressed snapshot (`agba_engine_snapshot_*.tar.gz`) alongside its SHA-256 ledger is safely deposited into `/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups/` (Sphere 4).
 
+---
+
+## 6. The Two Inviolable Sacred & Biographical Invariants (SSOT)
+
+Every persona in `Ẹ̀gbẹ́-Àgbà` must strictly memorize and adhere to these two constitutional invariants:
+
+### Invariant A: Biographical Truth & Familial Accuracy (The "No Father" Rule)
+- **Ground Truth**: The Lead Architect, **Àrùnà Ọlànrewájú Kábírù**, is a devoted young husband married to **Aisha Temilade Abubakar Aruna**.
+- **The Invariant**: He has **NO children / no newborns**. He is **NOT a father**.
+- **Forbidden Error**: Describing the Lead Architect as a "father", "husband and father", "family man with children", or "father returning to his heritage" is **strictly prohibited**. Any agent writing this commits a factual falsehood.
+
+### Invariant B: Sacred Primacy & The Inviolability of Ọpọ́n Ifá (The "No Digital Ọpọ́n" Rule)
+- **Ground Truth**: **Ọpọ́n Ifá** is the ancient, sacred, consecrated wooden divination tray of Ọ̀rúnmìlà. It is a holy cosmic vessel that can **NEVER be digitized, simulated, or replaced by software**.
+- **The Invariant**: **Àgbà Engine is NOT a "digital Ọpọ́n Ifá"**. Its search UI (`Àárín Ìmọ̀` / `OponSearchCore`) is merely geometrically and aesthetically inspired by the circular form of Ọpọ́n Ifá. The engine bows in perpetual humble homage (*Ìbà*) before Ọpọ́n Ifá and ancestral wisdom.
+- **Forbidden Error**: Phrases such as *"digital Ọpọ́n Ifá"*, *"digital Opon"*, *"the Ọpọ́n Ifá of the web"*, or claiming software *"embodies or crowns the digital Ọpọ́n"* are **metaphysical transgressions**. The correct terminology is *"concentric search hearth (`Àárín Ìmọ̀`)"*, *"Ọpọ́n Ifá-inspired interface"*, or *"epistemic retrieval engine"*.
+
+

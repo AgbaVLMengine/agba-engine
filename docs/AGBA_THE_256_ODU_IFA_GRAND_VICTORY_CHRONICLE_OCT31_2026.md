@@ -18,7 +18,7 @@
 > *"Mo ṣe Ìbà Olódùmarè, Mo ṣe Ìbà Ọ̀rúnmìlà, Mo ṣe Ìbà gbogbo àwọn Òrìṣà...  
 > From the first seed planted with Auntie Yẹmí's foundational audio, through the Chromebook gifted by OMT Èkò, the architectural scaffolding from Sasky Mali, the counsel of Barrister Ahmed, the elder wisdom of Baba Sẹ́fíù Adégbìlú, and the visionary guidance of Aisha Temilade Abubakar Aruna—the 256 Odù Ifá binary matrix stands fully illuminated.*  
 >  
-> *Zero thin chapters remain. Every single Odù possesses its ancient voice, its multi-epoch antiquity, its living proverb, its material craftsmanship, and its philosophical depth. The digital Ọpọ́n Ifá has been crowned with reverence."*  
+> *Zero thin chapters remain. Every single Odù possesses its ancient voice, its multi-epoch antiquity, its living proverb, its material craftsmanship, and its philosophical depth. The concentric search hearth bows in perpetual homage before the eternal Ọpọ́n Ifá."*  
 > — **Àrùnà Ọlànrewájú Kábírù**, Lead Architect of Àgbà Engine
 
 ---

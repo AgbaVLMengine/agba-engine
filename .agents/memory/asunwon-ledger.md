@@ -61,6 +61,9 @@
    If Entity $A$ declares relation to Entity $B$ ($A \leftrightarrow B$), the reverse relation must be indexed. Dangling pointers or orphan nodes are strictly forbidden.
 3. **Law of Monotonic Checksums**:  
    Corpus transformations are monotonic: no data enrichment may destructively wipe existing verified fields without a pre-computed checkpoint diff.
+4. **Law of Sacred Primacy & Biographical Invariant**:  
+   - *No Digital Ọpọ́n*: Software is NEVER a "digital Ọpọ́n Ifá". The UI is an Ọpọ́n Ifá-inspired concentric search hearth (`Àárín Ìmọ̀`). Àgbà Engine perpetually bows in humble homage to the consecrated ancestral Ọpọ́n Ifá.
+   - *Biographical Accuracy*: Lead Architect Àrùnà Ọlànrewájú Kábírù is a devoted young husband (married to Aisha Temilade Abubakar Aruna) with NO children. He is NOT a father. Never refer to him as a "father".
 
 ---
 
