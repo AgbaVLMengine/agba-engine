@@ -6,10 +6,10 @@ export const PEER_CULTURES = {
   yoruba: {
     id: 'yoruba',
     label: 'Yorùbá',
-    subtitle: 'Ìmọ̀ Yorùbá • 1,402 Canonical Nodes & 256 Odù Ifá',
+    subtitle: 'Ìmọ̀ Yorùbá • 1,411 Canonical Nodes & 256 Odù Ifá',
     diacriticLabel: 'Àmì Ohùn',
     diacritics: ['À', 'Á', 'È', 'É', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Ṣ'],
-    anchors: ['Òkèlè', 'Amàlà', 'Ìyán', 'Agbádá', 'Odù Ifá', 'Ògún', 'Bàtá', 'Adé Ààrẹ', 'Ọfà', 'Ọbẹ̀'],
+    anchors: ['Òkèlè', 'Amàlà', 'Ìyán', 'Agbádá', 'Odù Ifá', 'Ògún', 'Bàtá', 'Adé', 'Ọfà', 'Ọbẹ̀'],
     accent: '#d4af37',
     traditionLabel: 'Yorùbá Classical (25-Letter Orthography)',
     productionUnlocked: true,
