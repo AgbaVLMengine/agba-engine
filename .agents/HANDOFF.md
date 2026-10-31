@@ -154,26 +154,36 @@
 
 ---
 
-### 6. `HANDOFF-COSMIC-FLOW-001` (Staged Design Blueprint) — The Solar System & Cosmic Vein Particle Stream
+### 6. `HANDOFF-COSMIC-FLOW-001` (Shelved Blueprint) — The Solar System & Cosmic Vein Particle Stream
 - **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`) in collaboration with **`Àgbà`** (`agba-pa-architect`)
-- **Status**: 💡 **STAGED FOR IMPLEMENTATION (Post-Token Refresh)**
-- **Vision Catalyst**: Lead Architect Àrùnà Ọlànrewájú Kábírù & Uche Osakwe Othniel (Sasky Mali) — The "Flow" Paradigm.
-- **Architectural Specification**:
-  1. *Cosmic Solar System Metaphor*: The inner search hearth (`Àárín Ìmọ̀`) serves as the central luminescent Sun. Queries trigger orbital energy particles (*Ìyẹ̀ròsùn* golden dust dots) traversing the mid diacritic orbit (`Àyíká Ìmọ̀`).
-  2. *Vascular Vein Particle Stream*: When a query resolves or an anchor chip is tapped, animated SVG particle dots flow continuously along the dual Bézier trajectories:
-     - Left trajectory streaming into the **Sovereign Parent Node**.
-     - Right trajectory branching and fanning particles into the **Living Sub-Variant Constellation Grid**.
-  3. *Zero-Bloat Invariant*: Zero heavy WebGL or three.js dependencies. Pure lightweight SVG `<path>` and CSS `<animateMotion>` / stroke animations, strictly preserving `OponSearchCore.jsx` (< 350 LOC) and fluid 120Hz ProMotion on iPhone 15 Pro Max.
+- **Status**: ⏸️ **SHELVED PER EXECUTIVE DIRECTIVE (Anti-Bloat Grounding)**
+- **Decree of the Lead Architect**: UI embellishments must never precede functional depth and human utility. We do not need more visual gizmos; we need our current search, audio, and knowledge representation to be flawless, fast, and accessible to the people who need it.
 
 ---
 
-### 7. `HANDOFF-MISSION-CONTROL-001` (Staged Architecture Blueprint) — Zero-Token Local Council Cockpit & Fleet Telemetry
+### 7. `HANDOFF-MISSION-CONTROL-001` (Shelved Blueprint) — Zero-Token Local Council Cockpit & Fleet Telemetry
 - **Assigned To**: **`Irin`** (`irin-cloud`), **`Àsúnwọ̀n`** (`asunwon-ledger`), **`Àgbà`** (`agba-pa-architect`)
-- **Status**: 💡 **STAGED FOR IMPLEMENTATION (Post-Token Refresh)**
-- **Architectural Scope**:
-  1. *Zero-Token Local Daemon*: Standalone Node.js/TypeScript daemon (`tsx` + native `node:http`, `node:fs`, `node:child_process`) monitoring `.agents/memory/*.md`, `.agents/CHECKPOINTS.md`, and `git log` with zero cloud token consumption.
-  2. *Server-Sent Events (SSE)*: Streaming real-time updates via `GET /api/stream` to the fleet frontend.
-  3. *Multi-Node Private Mesh Telemetry*: Ingesting node telemetry (CPU, VRAM, RAM, thermals) over private Tailscale mesh (`100.x.y.z:3333`).
-  4. *Council Integration*: Provides a tactical watchtower for all 12 personas of `Ẹ̀gbẹ́-Àgbà` and hardware fleet nodes.
+- **Status**: ⏸️ **SHELVED PER EXECUTIVE DIRECTIVE (Anti-Bloat Grounding)**
+- **Decree of the Lead Architect**: The council exists to serve humanity and preserve ancestral knowledge, not to build control towers for ourselves. Our target audience (Yorùbá youth, elders, researchers, diaspora seekers) does not care about fleet telemetry. Feature additions frozen.
+
+---
+
+### 8. `HANDOFF-SOVEREIGN-PURPOSE-001` — The Great Grounding: Revealing the 1,411 Treasures & Perfecting Core Depth
+- **Assigned To**: The Entire Council (`Ẹ̀gbẹ́-Àgbà`) Supervised by **`Àgbà`** (`agba-pa-architect`)
+- **Status**: 🌟 **ACTIVE CANONICAL MANDATE (October 31, 2026)**
+- **Guiding Truth from Lead Architect Àrùnà Ọlànrewájú Kábírù**:
+  > *"Why exactly are we doing this? Who are these things we labored so hard to put together meant for? And do these people care about such features? Truth is not every idea, however great it is, deserves to be implemented. It's not wise to add more new features when we are yet to develop the functionality of all our current features.*  
+  > *All we need to do now is focus on how best to improve what we have further, using this plethora of information our Ancestors have bestowed upon us. There's so much that's lost to the world that currently lives within our Corpus. How best do we show the world all these things without getting carried away by UI enhancements and control towers?"*
+- **Four Core Pillars of Realization**:
+  1. **Corpus Reveal (Discovery over Blind Search)**:
+     - The vast majority of people don't know the exact scholarly names of all 1,411 entities or 256 Odù Ifá.
+     - Perfect thematic journeys, category storytelling, and intuitive entry points so curious youth and seekers can discover ancestral wisdom without needing prior academic expertise.
+  2. **Living Spoken Voice (Acoustic Sovereignty)**:
+     - Polish and foreground our authentic audio stems (Auntie Yẹmí's pitch contours, Baba Sẹ́fíù's dùndún, Father's royal oríkì). Hearing the language spoken with accurate tonal inflection (*Àmì Ohùn*) is what preserves it from extinction.
+  3. **Rock-Solid Functional Polish**:
+     - Improve search retrieval speed, offline PWA cache reliability, zero-latency diacritic diacritization, and frictionless mobile performance.
+  4. **Sacred Storytelling & Public Bridgebuilding (`Akéde` & `Ìmọ̀`)**:
+     - Bring the stories, proverbs, and craftsmanship out of the JSON files into essays, diaspora educational bridges, and public chronicles that touch real human lives.
+
 
 
