@@ -47,7 +47,7 @@ export default function OponSearchCore({
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: hasSearched ? '10px 0 8px 0' : '28px 0 20px 0', transition: 'all 0.35s ease' }}>
+    <div className="opon-search-core-container" style={{ textAlign: 'center', padding: hasSearched ? '10px 0 8px 0' : '28px 0 20px 0', transition: 'all 0.35s ease' }}>
       
       {/* 1. SOVEREIGN PEER CULTURE SWITCHER */}
       <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', borderRadius: '999px', background: 'rgba(12, 17, 28, 0.85)', border: '1px solid rgba(212, 175, 55, 0.3)', marginBottom: '14px', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -91,7 +91,7 @@ export default function OponSearchCore({
       {/* =====================================================================
           3. THE TRIPLE CONCENTRIC OPON IFÁ (ÀÁRÍN ÌMỌ̀ — OPEN AT BASE)
          ===================================================================== */}
-      <form onSubmit={handleFormSubmit} style={{ maxWidth: '780px', margin: '0 auto', position: 'relative' }}>
+      <form onSubmit={handleFormSubmit} style={{ maxWidth: '780px', margin: '0 auto', position: 'relative', width: '100%' }}>
         
         {/* DOM ANCHOR FOR CUBIC-BÉZIER VEIN RABBIT-HOLE GRAPH */}
         <div id="central-tooth-search-anchor" style={{ position: 'relative', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -137,10 +137,10 @@ export default function OponSearchCore({
           </svg>
 
           {/* INSET SEARCH CAPSULE & DIACRITIC STRIP (FLUSH INSIDE HEARTH) */}
-          <div className="opon-search-wrapper" style={{ position: 'absolute', top: '102px', width: '90%', maxWidth: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 20 }}>
+          <div className="opon-search-wrapper">
             
             {/* Input Capsule */}
-            <div style={{ width: '100%', background: 'rgba(5, 7, 13, 0.95)', border: isFocused ? '2px solid #fbbf24' : '2px solid #d4af37', borderRadius: '16px', padding: '6px 10px', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: isFocused ? '0 0 28px rgba(251, 191, 36, 0.4)' : '0 10px 30px rgba(0, 0, 0, 0.8)', transition: 'all 0.25s ease' }}>
+            <div className="opon-input-capsule" style={{ width: '100%', background: 'rgba(5, 7, 13, 0.95)', border: isFocused ? '2px solid #fbbf24' : '2px solid #d4af37', borderRadius: '16px', padding: '6px 10px', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: isFocused ? '0 0 28px rgba(251, 191, 36, 0.4)' : '0 10px 30px rgba(0, 0, 0, 0.8)', transition: 'all 0.25s ease' }}>
               <input
                 type="text"
                 value={query}
@@ -160,7 +160,7 @@ export default function OponSearchCore({
               <button
                 type="submit"
                 disabled={loading}
-                className="btn-gold"
+                className="btn-gold opon-search-btn"
                 style={{ padding: '6px 14px', borderRadius: '10px', fontSize: '0.82rem', fontWeight: 800, display: 'inline-flex', alignItems: 'center', gap: '4px', cursor: 'pointer' }}
               >
                 {loading ? '...' : 'Ṣàwárí'}
@@ -170,6 +170,7 @@ export default function OponSearchCore({
             {/* Collapsible Tone Marks Toggle */}
             <button
               type="button"
+              className="opon-diacritics-toggle"
               onClick={() => setShowDiacritics(!showDiacritics)}
               style={{
                 marginTop: '8px',
@@ -193,11 +194,12 @@ export default function OponSearchCore({
 
             {/* 15 Sacred Yorùbá Diacritic Beads Mounted in Hearth */}
             {showDiacritics && (
-              <div style={{ width: '100%', marginTop: '6px', padding: '6px 8px', borderRadius: '12px', background: 'rgba(10, 14, 24, 0.95)', border: '1px solid rgba(212, 175, 55, 0.35)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.85)' }}>
+              <div className="opon-diacritics-grid animate-fade-in" style={{ width: '100%', marginTop: '6px', padding: '6px 8px', borderRadius: '12px', background: 'rgba(10, 14, 24, 0.95)', border: '1px solid rgba(212, 175, 55, 0.35)', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px', boxShadow: '0 8px 24px rgba(0, 0, 0, 0.85)' }}>
                 {DIACRITICS.map((char) => (
                   <button
                     key={char}
                     type="button"
+                    className="opon-diacritic-btn"
                     onClick={() => handleInsertDiacritic(char)}
                     style={{ width: '26px', height: '26px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', background: 'rgba(18, 24, 38, 0.95)', border: '1px solid rgba(148, 163, 184, 0.25)', color: '#f8fafc', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer', transition: 'all 0.15s' }}
                     onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#fbbf24'; e.currentTarget.style.color = '#fbbf24'; }}
@@ -213,8 +215,8 @@ export default function OponSearchCore({
 
         {/* 4. POST-SEARCH LIVING ROOT PODS (IF ACTIVE) */}
         {hasSearched && rootNetworkNodes?.parent && (
-          <div style={{ marginTop: '-20px', position: 'relative', zIndex: 25, width: '100%' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))', gap: '10px' }}>
+          <div className="opon-root-pods-container" style={{ marginTop: '-12px' }}>
+            <div className="opon-root-pods-grid">
               <button
                 type="button"
                 className="root-pod"

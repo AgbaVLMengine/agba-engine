@@ -31,51 +31,37 @@ except ImportError as e:
 
 # Compact, rigorous specification of the 24 test cases
 BENCHMARK_TEST_CASES = [
-    # 1. Were
+    # 1-3. Were, Were Music, Ifá
     {"id": "Q01_WERE", "query": "Were", "expected_titles": ["Were", "Were / Were Music", "Were Music"], "expected_category": "Auditory Arts, Music, Drums & Chants", "is_parent_expected": True, "must_not_contain": ["Wèrè", "Madness"], "suite": "14_FRICTION_QUERIES"},
-    # 2. Were Music
     {"id": "Q02_WERE_MUSIC", "query": "Were Music", "expected_titles": ["Were / Were Music", "Were Music", "Were"], "expected_category": "Auditory Arts, Music, Drums & Chants", "is_parent_expected": True, "must_not_contain": ["Wèrè"], "suite": "14_FRICTION_QUERIES"},
-    # 3. Ifa
     {"id": "Q03_IFA", "query": "Ifa", "expected_titles": ["Ifá", "Ifa"], "expected_category": "Spiritual & Cosmological Matrix", "is_parent_expected": True, "must_not_contain": ["Ikin Ifá", "Ọpọ́n Ifá", "Agẹrẹ Ifá"], "suite": "14_FRICTION_QUERIES"},
-    # 4A. Àrọ̀kọ̀ (Parent)
+    # 4A-4C. Àrọ̀kọ̀ Parent & Anti-Loop Children
     {"id": "Q04A_AROKO_PARENT", "query": "Àrọ̀kọ̀", "expected_titles": ["Àrọ̀kọ̀", "Aroko"], "expected_category": "Oral Literature, Philosophy & Folklore", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 4B. Àrọ̀kọ̀ Ẹfà (Sub-variant Anti-Loop)
     {"id": "Q04B_AROKO_EFA", "query": "Àrọ̀kọ̀ Ẹfà", "expected_titles": ["Àrọ̀kọ̀ Ẹfà", "Aroko Efa"], "expected_sovereign_parent": "Àrọ̀kọ̀", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Àrọ̀kọ̀", "suite": "ANTI_PARENT_LOOP"},
-    # 4C. Àrọ̀kọ̀ Ẹ̀jọ́ (Sub-variant Anti-Loop)
     {"id": "Q04C_AROKO_EJO", "query": "Àrọ̀kọ̀ Ẹ̀jọ́", "expected_titles": ["Àrọ̀kọ̀ Ẹ̀jọ́", "Aroko Ejo"], "expected_sovereign_parent": "Àrọ̀kọ̀", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Àrọ̀kọ̀", "suite": "ANTI_PARENT_LOOP"},
-    # 5A. Oogun (Property / Inheritance)
+    # 5A-5B. Oogun Property vs Òògùn Medicine
     {"id": "Q05A_OOGUN_PROPERTY", "query": "Oogun", "expected_titles": ["Oogun", "Oogun (Property)", "Ogún Ìdílé"], "expected_category": "Social Structure, Kinship & Lineage", "is_parent_expected": True, "must_not_contain": ["Iṣẹ́ L’òògùn Ṣìọ̀rọ̀"], "suite": "14_FRICTION_QUERIES"},
-    # 5B. Òògùn (Medicine)
     {"id": "Q05B_OOGUN_MEDICINE", "query": "Òògùn", "expected_titles": ["Òògùn", "Òògùn Ìbílẹ̀", "Oogun (Medicine)"], "expected_category": "Sacred Botany, Flora & Herbal Medicine", "is_parent_expected": True, "must_not_contain": ["Iṣẹ́ L’òògùn Ṣìọ̀rọ̀"], "suite": "14_FRICTION_QUERIES"},
-    # 6A. Idà (Parent)
+    # 6A-6B. Idà Weaponry & Idà Agẹmọ
     {"id": "Q06A_IDA_PARENT", "query": "Idà", "expected_titles": ["Idà", "Ida"], "expected_category": "Military Traditions, Weaponry & Defense", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 6B. Idà Agẹmọ (Sub-variant Anti-Loop)
     {"id": "Q06B_IDA_AGEMO", "query": "Idà Agẹmọ", "expected_titles": ["Idà Agẹmọ", "Ida Agemo"], "expected_sovereign_parent": "Idà", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Idà", "suite": "ANTI_PARENT_LOOP"},
-    # 7A. Ọ̀kọ̀ (Parent)
+    # 7A-7B. Ọ̀kọ̀ Spear & Ọ̀kọ̀ Ẹlẹ́ṣin
     {"id": "Q07A_OKO_SPEAR_PARENT", "query": "Ọ̀kọ̀", "expected_titles": ["Ọ̀kọ̀"], "expected_category": "Military Traditions, Weaponry & Defense", "is_parent_expected": True, "must_not_contain": ["Ọkọ́", "Ọkọ", "Oko"], "suite": "14_FRICTION_QUERIES"},
-    # 7B. Ọ̀kọ̀ Ẹlẹ́ṣin (Sub-variant Anti-Loop)
     {"id": "Q07B_OKO_ELESIN", "query": "Ọ̀kọ̀ Ẹlẹ́ṣin", "expected_titles": ["Ọ̀kọ̀ Ẹlẹ́ṣin", "Oko Elesin"], "expected_sovereign_parent": "Ọ̀kọ̀", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Ọ̀kọ̀", "suite": "ANTI_PARENT_LOOP"},
-    # 8A. Ọfà (Parent)
+    # 8A-8B. Ọfà Weaponry & Ọfà Ọdẹ
     {"id": "Q08A_OFA_PARENT", "query": "Ọfà", "expected_titles": ["Ọfà"], "expected_category": "Military Traditions, Weaponry & Defense", "is_parent_expected": True, "must_not_contain": ["Ofada", "Ìwọ̀fà"], "suite": "14_FRICTION_QUERIES"},
-    # 8B. Ọfà Ọdẹ (Sub-variant Anti-Loop)
     {"id": "Q08B_OFA_ODE", "query": "Ọfà Ọdẹ", "expected_titles": ["Ọfà Ọdẹ", "Ofa Ode"], "expected_sovereign_parent": "Ọfà", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Ọfà", "suite": "ANTI_PARENT_LOOP"},
-    # 9A. Àdá (Parent)
+    # 9A-9B. Àdá Agricultural & Àdá Ìbílẹ̀
     {"id": "Q09A_ADA_PARENT", "query": "Àdá", "expected_titles": ["Àdá"], "expected_category": "Traditional Trades, Agriculture & Agrarian Guilds", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 9B. Àdá Ìbílẹ̀ (Sub-variant Anti-Loop)
     {"id": "Q09B_ADA_IBILE", "query": "Àdá Ìbílẹ̀", "expected_titles": ["Àdá Ìbílẹ̀", "Ada Ibile"], "expected_sovereign_parent": "Àdá", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Àdá", "suite": "ANTI_PARENT_LOOP"},
-    # 10A. Epa (Masquerade Mask)
+    # 10-11. Epa Masquerade, Ẹ̀pà Groundnut, Àpáta Topography
     {"id": "Q10A_EPA_MASK", "query": "Epa", "expected_titles": ["Epa"], "expected_category": "Ancestral Masquerades & Funerary Rites", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 10B. Ẹ̀pà (Groundnut)
     {"id": "Q10B_EPA_GROUNDNUT", "query": "Ẹ̀pà", "expected_titles": ["Ẹ̀pà"], "expected_category": "Culinary Arts & Indigenous Gastronomy", "is_parent_expected": True, "must_not_contain": ["Epa Door"], "suite": "14_FRICTION_QUERIES"},
-    # 11. Àpáta (Sacred Topography vs Shield)
     {"id": "Q11_APATA_TOPOGRAPHY", "query": "Àpáta", "expected_titles": ["Àpáta"], "expected_category": "Topography, Natural Landscapes & Architecture", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 12A. Ẹja (Category 17 Parent)
+    # 12-14. Ẹja Fish, Ẹyẹ Bird & Bilateral Relatives
     {"id": "Q12A_EJA_PARENT", "query": "Ẹja", "expected_titles": ["Ẹja"], "expected_category": "Indigenous Zoology, Sacred Fauna & Wildlife", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 12B. Ẹja Àrọ̀ (Sub-variant Anti-Loop)
     {"id": "Q12B_EJA_ARO", "query": "Ẹja Àrọ̀", "expected_titles": ["Ẹja Àrọ̀", "Eja Aro"], "expected_sovereign_parent": "Ẹja", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Ẹja", "suite": "ANTI_PARENT_LOOP"},
-    # 13A. Ẹyẹ (Category 17 Parent)
     {"id": "Q13A_EYE_PARENT", "query": "Ẹyẹ", "expected_titles": ["Ẹyẹ"], "expected_category": "Indigenous Zoology, Sacred Fauna & Wildlife", "is_parent_expected": True, "suite": "14_FRICTION_QUERIES"},
-    # 13B. Odídẹrẹ́ (Sub-variant Anti-Loop)
     {"id": "Q13B_ODIDERE", "query": "Odídẹrẹ́", "expected_titles": ["Odídẹrẹ́", "Odidere"], "expected_sovereign_parent": "Ẹyẹ", "is_parent_expected": False, "anti_loop_parent_to_avoid": "Ẹyẹ", "suite": "ANTI_PARENT_LOOP"},
     # 14. Apẹja (Bilateral Relatives)
     {"id": "Q14_APEJA_RELATIVES", "query": "Apẹja", "expected_titles": ["Apẹja"], "expected_category": "Traditional Trades, Agriculture & Agrarian Guilds", "is_parent_expected": True, "expected_relatives": ["Ẹja", "Ọkọ̀ Ojú Omi", "Odò Ọ̀ṣun", "Olókun"], "suite": "14_FRICTION_QUERIES"},
@@ -173,12 +159,18 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q59_IKA_OGBE", "query": "Ika Ogbe", "expected_titles": ["Ìká Ogbè", "Ika Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q60_IKA_OSA", "query": "Ika Osa", "expected_titles": ["Ìká Ọ̀sá", "Ika Osa"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q61_OTUURUPON_OGBE", "query": "Otuurupon Ogbe", "expected_titles": ["Òtúúrúpọ̀n Ogbè", "Otuurupon Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
-    # 62-66. Batch 12 Composite Odù Chapters Suite (HANDOFF-SUURU-009)
+    # 62-66. Batch 12 Composite Odù Chapters Suite
     {"id": "Q62_OTUURUPON_OYEKU", "query": "Otuurupon Oyeku", "expected_titles": ["Òtúúrúpọ̀n Ọ̀yẹ̀kú", "Otuurupon Oyeku"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q63_OTUURUPON_OGUNDA", "query": "Otuurupon Ogunda", "expected_titles": ["Òtúúrúpọ̀n Ògúndá", "Otuurupon Ogunda"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q64_OTUURUPON_OFUN", "query": "Otuurupon Ofun", "expected_titles": ["Òtúúrúpọ̀n Òfún", "Otuurupon Ofun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q65_OTUA_OGBE", "query": "Otua Ogbe", "expected_titles": ["Òtúá Ogbè", "Otua Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q66_OTUA_IKA", "query": "Otua Ika", "expected_titles": ["Òtúá Ìká", "Otua Ika"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 67-71. Batch 13 Composite Odù Chapters Suite (HANDOFF-SUURU-010)
+    {"id": "Q67_OTUA_OTUURUPON", "query": "Otua Otuurupon", "expected_titles": ["Òtúá Òtúúrúpọ̀n", "Otua Otuurupon"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q68_IRETE_OGBE", "query": "Irete Ogbe", "expected_titles": ["Ìrẹtẹ̀ Ogbè", "Irete Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q69_IRETE_OFUN", "query": "Irete Ofun", "expected_titles": ["Ìrẹtẹ̀ Òfún", "Irete Ofun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q70_OSE_OGBE", "query": "Ose Ogbe", "expected_titles": ["Ọ̀ṣẹ́ Ogbè", "Ose Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q71_OSE_OWONRIN", "query": "Ose Owonrin", "expected_titles": ["Ọ̀ṣẹ́ Ọ̀wọ́nrín", "Ose Owonrin"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
