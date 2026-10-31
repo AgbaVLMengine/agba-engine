@@ -131,6 +131,21 @@
     - `cd web && npm run build`: Compiled in **809ms** (1,928 modules, 0 errors).
     - `python3 scripts/benchmark_sprint004.py`: **56/56 (100.0%) Top-1 Accuracy**, 32/32 (100.0%) Anti-Parent-Loop, 18/18 Category 17 Fauna.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** (Advisory notice on `AdminTab.jsx` completely cleared).
+- **[2026-10-31] (`CHECKPOINT-AGBEDE-017` / HANDOFF-AGBEDE-005 Mobile UI Refinement Completed)**: **Mobile UI Refinement: Ọpọ́n Ifá Viewport & Scroll Serenity**:
+  - **Edge-to-Edge Serenity & Proportional Hearth Scaling**:
+    - Eliminated fixed `top: 102px` inline positioning in `web/src/components/OponSearchCore.jsx` (**316 LOC**, Gate 2 compliant `< 500 LOC`), transitioning to responsive CSS scaling via `.opon-search-wrapper`.
+    - Added dedicated responsive rules in `web/src/index.css`: `@media (max-width: 640px)` scaling the search wrapper to `top: clamp(44px, 16vw, 76px)` and `@media (max-width: 380px)` scaling to `top: clamp(38px, 14vw, 56px)` — keeping the search capsule and 15 tone marks drawer flush inside the golden *Ìyẹ̀ròsùn* hearth without overshooting the southern rim on mobile screens (< 400px width).
+  - **Zero Horizontal Touch Scroll Jitter**:
+    - Constrained `.opon-search-core-container` to `max-width: 100vw; overflow-x: hidden; box-sizing: border-box;`.
+    - Replaced negative margin with mobile-friendly spacing (`margin-top: 4px` on mobile) on `.opon-root-pods-container`.
+    - Updated `.opon-root-pods-grid` to responsive 2-column layout (`repeat(2, minmax(0, 1fr))` on `<= 640px`) and single column on ultra-narrow screens (`<= 380px`), completely eliminating touch-scroll jitter.
+    - Crafted root pod buttons with clean, rounded aspect ratios (`border-radius: 12px`, soft gradient padding) echoing ctrlartspace.com card aesthetics.
+  - **Non-Clipping Yorùbá Diacritics**:
+    - Elevated `.font-royal` and `.root-pod-title` with generous `line-height: 1.45` and vertical padding (`padding: 2px 0 4px 0`), preventing upper acute/grave accents (`Á, À, Ẹ́, Ẹ̀, Ọ́, Ọ̀, Ṣ`) and lower sub-dots from being clipped on touch viewports.
+  - **Verification Battery**:
+    - `npm run build`: Compiled production client bundle in **968ms** (1,928 modules, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **78/78 (100.0%) Top-1 Accuracy**, 54/54 (100.0%) Anti-Parent-Loop, 18/18 Category 17 Fauna.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
 
 
 

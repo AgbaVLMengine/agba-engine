@@ -1980,6 +1980,29 @@
     - Updated [`arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) and [`CHECKPOINTS.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/CHECKPOINTS.md).
 - **Verification**: 🏛️ **HANDOFF-AROKIN-008 RATIFIED — 25 CHAPTERS ELEVATED, SUB-25 BREAKTHROUGH (24 THIN ODÙ REMAINING), ZERO DRIFT**.
 
+### [2026-10-31 Morning] Checkpoint 114 (`CHECKPOINT-AGBEDE-017`) — Execution of HANDOFF-AGBEDE-005: Mobile UI Refinement (Ọpọ́n Ifá Viewport & Scroll Serenity)
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Execute `HANDOFF-AGBEDE-005`: Elevate Àgbà Engine's mobile web interface to the edge-to-edge serenity of ctrlartspace.com; eliminate fixed `top: 102px` overshoot on small screens; remove horizontal scroll jitter caused by root pod grids; ensure uppercase Yorùbá titles render with generous vertical line-height (1.4–1.5) preventing diacritic clipping; and pass all production gates.
+- **Deliverables Completed**:
+  - **Proportional Hearth Scaling & Viewport Responsiveness**:
+    - Refactored [`web/src/components/OponSearchCore.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/OponSearchCore.jsx) (**316 LOC**, strictly Gate 2 compliant `< 500 LOC`), replacing fixed inline `top: '102px'` with class-based responsive positioning `.opon-search-wrapper`.
+    - Added responsive rules in [`web/src/index.css`](file:///home/aruna_olanrewaju/agba-engine/web/src/index.css): `@media (max-width: 640px)` scaling the search wrapper to `top: clamp(44px, 16vw, 76px)` and `@media (max-width: 380px)` scaling to `top: clamp(38px, 14vw, 56px)` — keeping the search capsule and 15 tone marks drawer flush inside the golden *Ìyẹ̀ròsùn* hearth without overshooting the southern rim on mobile screens (< 400px width).
+  - **Zero Horizontal Touch Scroll Jitter**:
+    - Constrained `.opon-search-core-container` to `max-width: 100vw; overflow-x: hidden; box-sizing: border-box;`.
+    - Eliminated negative margin on `.opon-root-pods-container` on mobile devices (`margin-top: 4px` on mobile).
+    - Upgraded `.opon-root-pods-grid` to responsive 2-column layout (`repeat(2, minmax(0, 1fr))` on `<= 640px`) and single column on ultra-narrow screens (`<= 380px`), completely eliminating touch-scroll jitter.
+    - Re-styled root pod buttons with clean, rounded aspect ratios (`border-radius: 12px`, soft gradient padding) echoing ctrlartspace.com card aesthetics.
+  - **Non-Clipping Yorùbá Diacritics**:
+    - Elevated `.font-royal` and `.root-pod-title` with generous `line-height: 1.45` and vertical padding (`padding: 2px 0 4px 0`), preventing upper acute/grave accents (`Á, À, Ẹ́, Ẹ̀, Ọ́, Ọ̀, Ṣ`) and lower sub-dots from being clipped on touch viewports.
+  - **Standards & Production Gate Verification**:
+    - `cd web && npm run build`: Compiled production client bundle cleanly in **968ms** (1,928 modules transformed, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **78/78 (100.0%) Top-1 Accuracy** live across 1,411 entities (54/54 anti-parent-loop, 18/18 Category 17 fauna, 16/16 friction queries).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
+  - **Memory Vaults Synchronized**:
+    - Updated [`agbede-builder.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/agbede-builder.md) and [`CHECKPOINTS.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/CHECKPOINTS.md).
+- **Verification**: 🏆 **HANDOFF-AGBEDE-005 RATIFIED — EDGE-TO-EDGE MOBILE SERENITY / ZERO SCROLL JITTER / 100% DIACRITIC BREATHING ROOM**.
+
 
 
 

@@ -129,7 +129,7 @@ for f in $CHANGED_FILES; do
 done
 
 echo ""
-echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 11 Persona Memory Vaults..."
+echo "▶ [DUAL-MEMORY GATE] Verifying Shared Team Brain & 12 Persona Memory Vaults..."
 REQUIRED_MEMORIES=(
   ".agents/AGENTS.md"
   ".agents/CHECKPOINTS.md"
