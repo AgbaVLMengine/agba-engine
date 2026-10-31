@@ -152,3 +152,28 @@
   3. **Gate 4 Sacred Integrity (Awo Exclusion)**: Zero literal deity faces/names and zero profane copy; uses abstract geometric heraldry and *"Ṣàwárí nínú Ìmọ̀"* framing.
   4. **Verification**: `npm run build` compiled in 631ms (0 errors, 1,914 modules); `./scripts/review.sh` passed with 0 hard violations and 0 warnings.
 
+---
+
+### 6. `HANDOFF-COSMIC-FLOW-001` (Staged Design Blueprint) — The Solar System & Cosmic Vein Particle Stream
+- **Assigned To**: **`Àgbẹ̀dẹ`** (`agbede-builder`) in collaboration with **`Àgbà`** (`agba-pa-architect`)
+- **Status**: 💡 **STAGED FOR IMPLEMENTATION (Post-Token Refresh)**
+- **Vision Catalyst**: Lead Architect Àrùnà Ọlànrewájú Kábírù & Uche Osakwe Othniel (Sasky Mali) — The "Flow" Paradigm.
+- **Architectural Specification**:
+  1. *Cosmic Solar System Metaphor*: The inner search hearth (`Àárín Ìmọ̀`) serves as the central luminescent Sun. Queries trigger orbital energy particles (*Ìyẹ̀ròsùn* golden dust dots) traversing the mid diacritic orbit (`Àyíká Ìmọ̀`).
+  2. *Vascular Vein Particle Stream*: When a query resolves or an anchor chip is tapped, animated SVG particle dots flow continuously along the dual Bézier trajectories:
+     - Left trajectory streaming into the **Sovereign Parent Node**.
+     - Right trajectory branching and fanning particles into the **Living Sub-Variant Constellation Grid**.
+  3. *Zero-Bloat Invariant*: Zero heavy WebGL or three.js dependencies. Pure lightweight SVG `<path>` and CSS `<animateMotion>` / stroke animations, strictly preserving `OponSearchCore.jsx` (< 350 LOC) and fluid 120Hz ProMotion on iPhone 15 Pro Max.
+
+---
+
+### 7. `HANDOFF-MISSION-CONTROL-001` (Staged Architecture Blueprint) — Zero-Token Local Council Cockpit & Fleet Telemetry
+- **Assigned To**: **`Irin`** (`irin-cloud`), **`Àsúnwọ̀n`** (`asunwon-ledger`), **`Àgbà`** (`agba-pa-architect`)
+- **Status**: 💡 **STAGED FOR IMPLEMENTATION (Post-Token Refresh)**
+- **Architectural Scope**:
+  1. *Zero-Token Local Daemon*: Standalone Node.js/TypeScript daemon (`tsx` + native `node:http`, `node:fs`, `node:child_process`) monitoring `.agents/memory/*.md`, `.agents/CHECKPOINTS.md`, and `git log` with zero cloud token consumption.
+  2. *Server-Sent Events (SSE)*: Streaming real-time updates via `GET /api/stream` to the fleet frontend.
+  3. *Multi-Node Private Mesh Telemetry*: Ingesting node telemetry (CPU, VRAM, RAM, thermals) over private Tailscale mesh (`100.x.y.z:3333`).
+  4. *Council Integration*: Provides a tactical watchtower for all 12 personas of `Ẹ̀gbẹ́-Àgbà` and hardware fleet nodes.
+
+
