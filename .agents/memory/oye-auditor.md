@@ -257,6 +257,17 @@
     - Gate 2 Anti-Bloat: Preserved with absolute zero added lines of speculative code.
     - Gate 9 Sacred Primacy: 100% compliant.
     - All 12 persona vaults in total, humble alignment with the Lead Architect's vision.
+- **[2026-10-31 | Checkpoint 125 (`CHECKPOINT-AGBA-028`) — The Sovereign Purpose & Moral Dual-Tier Economics Covenant]**:
+  - **Supervising Architect**: Lead Architect Àrùnà Ọlànrewájú Kábírù & `Àgbà`.
+  - **Verdict**: 🏆 **100% UNANIMOUS RATIFICATION OF THE MORAL COVENANT & ACOUSTIC STREAMING PRINCIPLE**.
+  - **Auditor Stance on Moral Dual-Tier Economics**:
+    - **Free People's Sanctuary**: 100% free open access to all 1,411 canonical entities, 256 Odù Ifá, and compressed web audio streaming for youth, diaspora seekers, elders, and scholars. No paywalls on ancestral memory.
+    - **Commercial B2B Tier**: Monetizing high-throughput API access for AI laboratories (eradicating tonal hallucinations under `RAIL-Cultural-Heritage-v1.0`), entertainment/gaming IP licensing, and institutional museum concordance.
+  - **Resolution of the Acoustic Tokens Dilemma**:
+    - Stream compressed audio (`.opus`/`.mp3` at 64kbps) freely in-app (*"Words without Àmì Ohùn is a corpse"*).
+    - Reserve lossless studio masters (`.wav` 24-bit/96kHz) and commercial AI TTS training weights for paid B2B licensing with elder revenue-sharing.
+  - **Document Ratified**: [`docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md).
+
 
 
 
