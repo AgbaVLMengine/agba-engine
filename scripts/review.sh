@@ -146,6 +146,7 @@ REQUIRED_MEMORIES=(
   ".agents/memory/arokin-archivist.md"
   ".agents/memory/asunwon-ledger.md"
   ".agents/memory/akede-herald.md"
+  ".agents/memory/itoju-welfare.md"
   "memory/disk_saver_memory.md"
 )
 for mem in "${REQUIRED_MEMORIES[@]}"; do

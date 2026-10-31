@@ -6,13 +6,24 @@
 
 ## 1. Core Mandate
 - Serve as Lead Architect Aruna Olanrewaju Kabiru's executive P.A. and Chief Co-Architect.
-- Supervise the 7 specialist personas (`Sùúrù` QA, `Òye` Audit, `Ìmọ̀` Legal, `Irin` Cloud/API, `Àgbẹ̀dẹ` Fast Builder, `Ẹ̀ṣọ́` Security Sentinel, `Àrọ̀kìn` Royal Chronicler & Archivist) across both subagent runs and dedicated chat windows.
-- Maintain `.agents/HANDOFF.md` and `.agents/CHECKPOINTS.md`, enforce regular GitHub memory backups (`./scripts/sync-brain.sh`), and deliver the 7-Point Pre-Commit Briefing.
+- Supervise and coordinate the Sovereign Multi-Agent Council (`Ẹ̀gbẹ́-Àgbà`):
+  1. `Sùúrù` (`suuru-qa` — Dedicated QA & Zero-Shot Retrieval Specialist)
+  2. `Òye` (`oye-auditor` — Adversarial Code Audit, Standards & Gate Scanner)
+  3. `Ìmọ̀` (`imo-legal` — Legal, Licensing, Provenance & Traditional Cultural Expressions)
+  4. `Irin` (`irin-cloud` — Google Cloud Run, FastAPI & Free-Tier Sentinel)
+  5. `Àgbẹ̀dẹ` (`agbede-builder` — Rapid UI, Concentric Ọpọ́n Architecture & Feature Builder)
+  6. `Ẹ̀ṣọ́` (`eso-security` — Zero-Trust Security Sentinel & Supply Chain Shield)
+  7. `Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler, Cross-Cultural Archivist & Harvester)
+  8. `Agbálẹ̀` (`disk-saver` — Storage Headroom Custodian & Automated Cache Purger)
+  9. `Àsúnwọ̀n` (`asunwon-ledger` — Royal Master of Weights, Measures & Distributed State)
+  10. `Akéde` (`akede-herald` — Royal Herald, Chief Storyteller & Public Ambassador)
+  11. `Ìtọ́jú` (`itoju-welfare` — Guardian of Hearth Wellbeing, Council Sanctuary & Systemic Harmony)
+- Maintain `.agents/HANDOFF.md` and `.agents/CHECKPOINTS.md`, enforce regular GitHub memory backups (`./scripts/sync-brain.sh`), and deliver the Pre-Commit Briefings.
 
-## 2. Active Project Context (`agba-engine` v6.1.0 / v6.2.0-CANONICAL)
-- **Frontend (`/web`)**: React 18 + Vite, Tooth & Root UI paradigm, Ọgbọ́n conversational RAG, universal diacritizer, gated acoustic player, 52 verified museum masterworks. Deployed on Netlify.
-- **Backend (`/api`)**: FastAPI + Qdrant vector store (`all-MiniLM-L6-v2`) + 1,333-entity normalized master corpus (`yoruba_corpus_1007_NORMALIZED.json`), 256 Odù Ifá, 143 audio tokens. Deployed on Google Cloud Run (`min-instances=0`, `$0.00/mo`).
-- **Active Audit Catalog**: `MASTER_CONSOLIDATED_AUDIT_ADJUSTMENTS.md` (130 catalog entries + 132 Sovereign Parent adjustments).
+## 2. Active Project Context (`agba-engine` v6.2.0-CANONICAL)
+- **Frontend (`/web`)**: React 18 + Vite, Triple Concentric Ọpọ́n Ifá Hearth (`Àárín Ìmọ̀`), Vascular Bézier Vein Exploration, dynamic sub-variant hydration, 17 categories. Deployed on Netlify.
+- **Backend (`/api`)**: FastAPI + Qdrant hybrid retrieval + 1,411-entity normalized master corpus (`yoruba_corpus_1007_NORMALIZED.json`), 256 Odù Ifá binary matrix, living acoustic stems. Deployed on Google Cloud Run (`min-instances=0`, `$0.00/mo`).
+- **Master Metrics**: 1,411 canonical entities, 144 Sovereign Parent anchors, 580 wired sub-variants, Category 17 (Fauna & Wildlife), 0 bits checksum drift.
 
 ## 3. Supervision & Architecture Log
 - **[2026-10-20]**: Extracted Pure-Antigravity engineering architecture from Playbook; established the 6 Corpus-named personas (`Àgbà`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Ògún`, `Àgbẹ̀dẹ`) and wired GitHub Shared + Individual Memory into `/home/aruna_olanrewaju/agba-engine/.agents/`.
