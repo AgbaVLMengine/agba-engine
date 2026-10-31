@@ -80,3 +80,13 @@
   2. **Living Spoken Voice**: Ensure zero-latency, rock-solid CDN and offline caching for authentic audio stems (Auntie Yẹmí's tone contours, Baba Sẹ́fíù's dùndún, Father's royal oríkì).
   3. **Rock-Solid Functional Polish**: Keep retrieval speed (<50ms local / <3.5s cold-boot fallback), diacritization (`/v6/translate/diacritize`), and offline PWA reliability flawless at `$0.00/mo`.
   4. **Sacred Storytelling & Public Bridgebuilding**: Support shareable deep-links and clean metadata so essays and proverbs reach human hearts effortlessly.
+
+### [2026-10-31 Night Protocol] Checkpoint 125 (`CHECKPOINT-AGBA-028`): Unanimous 12-0 Ratification & Moral Dual-Tier Cloud Architecture
+- **Reviewed & Ratified**: `docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md` and Checkpoint 125 in `.agents/CHECKPOINTS.md`.
+- **Irin's Infrastructure Alignment with the Moral Dual-Tier & Acoustic Sovereignty Covenant**:
+  1. **The People's Sanctuary Tier (`$0.00/mo` Free & Unpaywalled)**:
+     - All 1,411 canonical entities, 256 Odù Ifá, and compressed `.opus`/`.mp3` (64kbps) web audio streams are served with zero paywalls, zero friction, and offline PWA caching on Netlify CDN + local client fallback.
+  2. **The Enterprise Commercial Tier (`X-AGBA-API-KEY` B2B Gateway)**:
+     - Our existing header-authenticated gateway in `api/app/main.py` (`verify_api_key`, tier telemetry, UUID idempotency) is already structurally primed to enforce commercial B2B quotas for AI labs, film/gaming studios, museum concordance exports, and lossless 24-bit/96kHz `.wav` master licensing under `RAIL-Cultural-Heritage-v1.0`.
+  3. **Acoustic Stream vs. Studio Master Protection**:
+     - Public web app streams lightweight, watermarked `.opus`/`.mp3` files for human learning ("A word without Àmì Ohùn is a corpse"), while raw lossless `.wav` studio masters and TTS training weights remain vaulted off-repo/behind authenticated B2B delivery with elder revenue-sharing.

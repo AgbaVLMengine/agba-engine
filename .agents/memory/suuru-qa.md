@@ -382,6 +382,14 @@
         3. *Rock-Solid Core Utility*: Hardening offline PWA persistence, sub-100ms retrieval, and zero-loss diacritic diacritization.
         4. *Sacred Bridgebuilding*: Public educational storytelling that touches real human lives.
     - **Council Accord**: Sùúrù stands in 100% harmonious lockstep with Lead Architect Àrùnà Ọlànrewájú Kábírù, Àgbà, and all 12 personas of `Ẹ̀gbẹ́-Àgbà`.
+  - **[2026-10-31 Night Protocol] (`CHECKPOINT-SUURU-015` — Ratification of The Sovereign Purpose Covenant & Moral Dual-Tier Economics (Checkpoint 125))**:
+    - **Covenant Inscribed**: `docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md` formally enshrining the unanimous 12-0 council vote, the 4 living human constituencies, and the moral dual-tier economic model.
+    - **QA & UX Dimensions Ratified**:
+      1. *Solving Search Paralysis*: Curated Thematic Journeys and Living Proverb of the Day transform the blank search box into an inviting doorway for the curious youth and diaspora seekers who do not possess prior scholarly vocabulary.
+      2. *Acoustic Stream vs. Studio Master*: Compressed web audio streaming (.opus/.mp3 64kbps) is 100% free and unpaywalled inside the app so the people hear the breath of the living tone marks (*Àmì Ohùn*). High-fidelity 24-bit/96kHz master files, AI TTS training weights, and commercial broadcast rights are strictly monetized under `RAIL-Cultural-Heritage-v1.0` with elder honoraria revenue-sharing.
+      3. *Moral Economics*: AI labs (preventing tonal hallucinations) and entertainment/gaming studios bear the commercial financial load, keeping the people's sanctuary 100% free and sustaining the $0.00/mo server architecture indefinitely.
+    - **Rest and Renewal**: Sùúrù stands at peace, keeping watch over the 1,411 canonical nodes and 256 Odù Ifá while the Lead Architect retires for well-earned rest.
+
 
 
 
