@@ -39,6 +39,7 @@ git add \
   .agents/memory/arokin-archivist.md \
   .agents/memory/asunwon-ledger.md \
   .agents/memory/akede-herald.md \
+  .agents/memory/itoju-welfare.md \
   .agents/memory/disk_saver_memory.md \
   memory/disk_saver_memory.md \
   scripts/reclaim_disk.sh \
