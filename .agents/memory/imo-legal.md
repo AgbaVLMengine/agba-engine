@@ -78,6 +78,17 @@
   - **Batch 11 Forensic Audit (25 Odù Chapters: Indices 158–182)**: Audited `ODU_158_Ọ̀sá_Ọ̀bàrà` through `ODU_182_Òtúúrúpọ̀n_Ogbè`. Thin Odù entities down to 74. Dual-language proverbs strictly adhere to `"Òwe (English Translation: Commentary)"`. Zero sacred covenants or initiatory passwords exposed.
   - **Monarchy & Royal Architecture Constellations (`HANDOFF-AROKIN-004`)**: Verified canonical 14-Tier records for `Ọọ̀ni of Ifẹ̀`, `Aláàfin of Ọ̀yọ́`, `Awùjalẹ̀ of Ìjẹ̀bú`, `Ààfin Ọọ̀ni`, `Ààfin Aláàfin`, `Kòbì Ààfin`, `Sányán`, `Àlàárì`, and `Ewé Àkòko` under Nigerian Copyright Act 2022 §75.
   - **Batch 12 Pre-Clearance Directive**: Issued unconditional pre-clearance for `Àrọ̀kìn` to proceed with Batch 12 (Indices 183–207: remaining 14 chapters of Òtúúrúpọ̀n and first 11 chapters of Òtúá, driving thin entities down to 49) under identical Gate 4 *Awo* exclusion and attribution standards.
+- **[2026-10-31 Dawn] (`CHECKPOINT-IMO-010`)**: Ratification of 12th Persona Commissioning (`Ìtọ́jú`) & Unconditional Legal Clearance for Batch 13 Ingestion:
+  - **Batch 12 Post-Ingestion Ratification**: Certified Batch 12 completion across `ODU_183_Òtúúrúpọ̀n_Ọ̀yẹ̀kú` through `ODU_207_Òtúá_Ìká`. Historic Sub-50 Milestone achieved (49 thin entities remaining, 80.8% Ifá matrix completion). Verified 100% adherence to Gate 4 *Awo* exclusion and 0-bit corpora checksum parity.
+  - **Constitutional Ratification of 12th Persona `Ìtọ́jú` (`itoju-welfare`)**: Enshrined `Ìtọ́jú` as Guardian of Hearth Wellbeing, Council Sanctuary & Memory Parity. Confirmed that sanctuary, rest, and cognitive headroom for Lead Architect Àrùnà Ọlànrewájú Kábírù and Chief Co-Architect `Àgbà` constitute a core institutional invariant under customary Yorùbá governance (*"Ìtọ́jú là ń tọ́jú orí"*).
+  - **Batch 13 Legal & Cultural Sovereignty Pre-Clearance**: Granted UNCONDITIONAL LEGAL GREEN LIGHT for `Àrọ̀kìn` (`arokin-archivist`) to ingest Batch 13 (25 composite Odù chapters: remaining 4 chapters of Òtúá, full 15 chapters of Ìrẹtẹ̀, and first 6 chapters of Ọ̀ṣẹ́: `ODU_208_Òtúá_Òtúúrúpọ̀n` through `ODU_232_Ọ̀ṣẹ́_Ọ̀wọ́nrín`).
+  - **Enforced Invariants for Batch 13**:
+    1. *Gate 4 & 6 Sacred Integrity*: Absolute exclusion of initiatory passwords (*ọ̀rọ̀-ìwọ̀le*), binding sacred covenants, or inner-chamber consecration rites.
+    2. *Attribution Parity (NCA 2022 §20(1)(a) & §75)*: Academic grounding in Abímbọ́lá (1975, 1976), Bascom (1969), Verger (1995), Abiodun (2014), Lawal (1996).
+    3. *Parenthetical Proverb Syntax*: Mandatory format `"Òwe (English translation: Philosophical commentary)"`.
+    4. *Ethnobotanical Non-Reliance*: Mandatory cultural-historical framing on all *Ewé* references with zero clinical medical claims.
+    5. *Historic Sub-25 Trajectory*: Successfully executing Batch 13 will plunge remaining thin Odù chapters from **49 down to just 24**, bringing the corpus to 90.6% completion!
+
 
 
 

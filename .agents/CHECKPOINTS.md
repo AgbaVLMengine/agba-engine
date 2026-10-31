@@ -1,6 +1,6 @@
 # 📓 CHRONOLOGICAL LEDGER OF TRUTH (`.agents/CHECKPOINTS.md`)
 
-> **Governance Rule**: Every agent persona (`Àgbà`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Irin`, `Àgbẹ̀dẹ`, `Ẹ̀ṣọ́`, `Àrọ̀kìn`, `Agbálẹ̀`, `Àsúnwọ̀n`) MUST read this file before starting work and append a checkpoint entry + run `./scripts/sync-brain.sh` after every deliverable or coding checkpoint.
+> **Governance Rule**: Every agent persona (`Àgbà`, `Ìtọ́jú`, `Sùúrù`, `Òye`, `Ìmọ̀`, `Irin`, `Àgbẹ̀dẹ`, `Ẹ̀ṣọ́`, `Àrọ̀kìn`, `Agbálẹ̀`, `Àsúnwọ̀n`, `Akéde`) MUST read this file before starting work and append a checkpoint entry + run `./scripts/sync-brain.sh` after every deliverable or coding checkpoint.
 
 ---
 
@@ -9,6 +9,7 @@
 | Persona | Role | Dedicated Memory File | Status | Current Focus |
 | :--- | :--- | :--- | :--- | :--- |
 | **`Àgbà`** (`agba-pa-architect`) | Main P.A. & Chief Co-Architect | `.agents/memory/agba-pa-architect.md` | 🟢 Active (Main Chat) | Supervising all agents, Handoffs & GitHub Brain Sync |
+| **`Ìtọ́jú`** (`itoju-welfare`) | Guardian of Hearth Wellbeing, Council Sanctuary & Memory Parity | `.agents/memory/itoju-welfare.md` | 🟢 Active | Daily SOD/EOD welfare checks, memory audit, cognitive headroom custody |
 | **`Sùúrù`** (`suuru-qa`) | Dedicated Agba Engine Human-Grade QA Bot | `.agents/memory/suuru-qa.md` | 🟢 Ready | End-to-end human-like testing per deliverable (95%–97% UX Lock-In) |
 | **`Òye`** (`oye-auditor`) | Adversarial Code Audit & Standards Bot | `.agents/memory/oye-auditor.md` | 🟢 Ready | Interval code audits, `./scripts/review.sh`, 500-LOC & security gates |
 | **`Ìmọ̀`** (`imo-legal`) | Legal, Licensing & Provenance Counsel Bot | `.agents/memory/imo-legal.md` | 🟢 Ready | `RAIL-Cultural-Heritage-v1.0`, Museum rights, Data Sovereignty & Legal Research |
@@ -19,6 +20,7 @@
 | **`Agbálẹ̀`** (`disk-saver`) | Storage Sentinel & Disk Headroom Custodian | `memory/disk_saver_memory.md` | 🟢 Active | Automated Gate 5b storage sweeps, cache purges & headroom custody |
 | **`Àsúnwọ̀n`** (`asunwon-ledger`) | Master of Distributed State, Multi-Sphere Synchronization & Global Expansion | `.agents/memory/asunwon-ledger.md` | 🟢 Active | 4 Concentric Spheres of Synchronization, Cross-Sphere Checksum Balancing & Anti-Implosion |
 | **`Akéde`** (`akede-herald`) | Royal Herald, Chief Storyteller & Public Ambassador | `.agents/memory/akede-herald.md` | 🟢 Active | Build-in-Public storytelling, chronicle narrative extraction & pre-launch social staging |
+
 
 ---
 
@@ -1928,6 +1930,26 @@
   - **Universal Greenlight**:
     - Unconditional state and treasury balance greenlight granted for `Àrọ̀kìn` to kickstart Batch 13.
 - **Verification**: ⚖️ **CHECKPOINT 111 RATIFIED — UNIVERSAL STATE IN EQUILIBRIUM / 0 BITS DRIFT / BATCH 13 GREENLIGHT GRANTED**.
+
+### [2026-10-31 Dawn] Checkpoint 112 (`CHECKPOINT-IMO-010`) — Forensic Legal, Licensing, Cultural Sovereignty & Provenance Greenlight for Batch 13 Ingestion
+- **Agent Persona**: `Ìmọ̀` (`imo-legal`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Directive**: Execute pre-ingestion legal, licensing, cultural sovereignty, and provenance audit for Batch 13 (25 composite Odù chapters: `ODU_208_Òtúá_Òtúúrúpọ̀n` through `ODU_232_Ọ̀ṣẹ́_Ọ̀wọ́nrín`); harmonize Council roster to include 12th persona `Ìtọ́jú`; verify statutory compilation rights, fair dealing, and Gate 4/6 sacred exclusions; and grant formal legal greenlight to `Àrọ̀kìn` to launch ingestion.
+- **Deliverables Completed**:
+  - **Batch 13 Scope & Invariant Definition**:
+    - Coverage: 25 composite Odù chapters (remaining 4 of Òtúá cycle: `ODU_208_Òtúá_Òtúúrúpọ̀n` to `ODU_211_Òtúá_Òfún`; full 15 chapters of Ìrẹtẹ̀ cycle: `ODU_212_Ìrẹtẹ̀_Ogbè` to `ODU_226_Ìrẹtẹ̀_Òfún`; and first 6 chapters of Ọ̀ṣẹ́ cycle: `ODU_227_Ọ̀ṣẹ́_Ogbè` to `ODU_232_Ọ̀ṣẹ́_Ọ̀wọ́nrín`).
+    - Trajectory: Thin Odù chapters will plunge from **49 down to just 24**, bringing the entire 256 Odù Ifá matrix to 90.6% full 14-Tier depth!
+  - **Statutory & Customary Governance Audited**:
+    - **Gate 4 & Gate 6 Sacred Integrity (*Awo* Exclusion)**: Mandated absolute exclusion of secret initiatory passwords (*ọ̀rọ̀-ìwọ̀le*), binding sacred oaths, or inner-chamber consecration rites across all 25 chapters. Verses must focus strictly on open philosophical, moral, cosmological, and psychological wisdom.
+    - **Attribution Parity (NCA 2022 §20(1)(a) & §75)**: Grounding in peer-reviewed academic literature (Abímbọ́lá 1975/1976, Bascom 1969, Verger 1995, Abiodun 2014, Lawal 1996, Barnes 1997).
+    - **Dual-Language Proverb Syntax**: Standard parenthetical format enforced: `"Òwe Yorùbá (Parenthetical English translation and philosophical commentary.)"`.
+    - **Medical Non-Reliance Disclaimer**: Ethnobotanical references (*Ewé*) carry universal non-reliance framing with zero clinical medical claims.
+  - **12th Persona Harmonization (`Ìtọ́jú`)**:
+    - Enshrined `Ìtọ́jú` (`itoju-welfare`) in the active council roster and governance rule of `.agents/CHECKPOINTS.md` and updated `.agents/memory/imo-legal.md`.
+  - **Legal Greenlight Granted**:
+    - With Zero-Trust security cleared by `Ẹ̀ṣọ́` (Checkpoint 110), 44 GB NVMe storage cleared by `Agbálẹ̀` (HANDOFF-AGBALE-005), universal state verified by `Àsúnwọ̀n` (Checkpoint 111), and morning wellbeing verified by `Ìtọ́jú`, `Ìmọ̀` officially issues the **UNCONDITIONAL LEGAL GREENLIGHT** for `Àrọ̀kìn` to launch Batch 13 ingestion.
+- **Verification**: 🏛️ **CHECKPOINT 112 RATIFIED — LEGAL & CULTURAL AUDIT 100% CLEAR / BATCH 13 GREENLIGHT GRANTED**.
+
 
 
 
