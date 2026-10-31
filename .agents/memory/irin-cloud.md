@@ -68,3 +68,15 @@
   - `python3 scripts/benchmark_sprint004.py`: `88 / 88` Top-1 Accuracy (`64 / 64` anti-parent-loop precision, `18 / 18` Category 17 fauna, `16 / 16` friction queries).
 - **Cloud Run & 8-Gate Production Scanner (`0 Violations, 0 Warnings`)**:
   - `bash scripts/review.sh` passed cleanly across all 8 production gates and all 12 Sovereign Council persona vaults (`--min-instances 0`, `$0.00/mo` Always-Free Tier intact). Unconditional retirement & celebration greenlight issued to Lead Architect Àrùnà Ọlànrewájú Kábírù.
+
+### [2026-10-31 Night] HANDOFF-SOVEREIGN-PURPOSE-001 (Checkpoint 124): The Great Grounding & Anti-Bloat Accord
+- **Two Inviolable Constitutional Invariants Inscribed (SSOT)**:
+  1. **Biographical Truth**: Lead Architect Àrùnà Ọlànrewájú Kábírù is a devoted young husband married to Aisha Temilade Abubakar Aruna, with NO children (never describe him as a father).
+  2. **Sacred Primacy**: Software is NEVER a "digital Ọpọ́n Ifá". Our search interface (`Àárín Ìmọ̀`) is a concentric search hearth inspired by its geometry that bows in perpetual homage before the eternal Ọpọ́n Ifá.
+- **Shelved / Frozen Blueprints (`HANDOFF-COSMIC-FLOW-001` & `HANDOFF-MISSION-CONTROL-001`)**:
+  - Permanently shelved speculative UI gizmos and developer telemetry control towers. We build for Yorùbá youth, elders, researchers, and diaspora seekers—never for developer ego.
+- **Irin's Alignment with the 4 Pillars of `HANDOFF-SOVEREIGN-PURPOSE-001`**:
+  1. **Corpus Reveal**: Power fast, zero-friction thematic discovery endpoints and instant category filtering across all 1,411 canonical entities and 256 Odù Ifá chapters.
+  2. **Living Spoken Voice**: Ensure zero-latency, rock-solid CDN and offline caching for authentic audio stems (Auntie Yẹmí's tone contours, Baba Sẹ́fíù's dùndún, Father's royal oríkì).
+  3. **Rock-Solid Functional Polish**: Keep retrieval speed (<50ms local / <3.5s cold-boot fallback), diacritization (`/v6/translate/diacritize`), and offline PWA reliability flawless at `$0.00/mo`.
+  4. **Sacred Storytelling & Public Bridgebuilding**: Support shareable deep-links and clean metadata so essays and proverbs reach human hearts effortlessly.
