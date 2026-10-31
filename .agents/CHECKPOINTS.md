@@ -2223,6 +2223,23 @@
   - **Memory Vaults Updated**: Staged in [.agents/HANDOFF.md](file:///home/aruna_olanrewaju/agba-engine/.agents/HANDOFF.md) (`HANDOFF-SOVEREIGN-PURPOSE-001`) and updated individual persona memories across the council.
 - **Verification**: 👑 **CHECKPOINT 124 RATIFIED — THE DECREE OF SOVEREIGN PURPOSE SEALED IN SHARED BRAIN**.
 
+### [2026-10-31 Night Protocol] Checkpoint 125 (`CHECKPOINT-AGBA-028`) — Unanimous Council Ratification of The Sovereign Purpose Covenant & Moral Dual-Tier Economics
+- **Agent Persona**: `Àgbà` (`agba-pa-architect`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù
+- **Lead Directive**: Author canonical covenant `docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md` commemorating the unanimous 12-0 vote of Ẹ̀gbẹ́-Àgbà affirming the Lead Architect's restraint; codify the system simplicity, storage, security, and adaptability pillars; establish the moral dual-tier economic model (100% free open access for youth, diaspora, elders, and researchers, with commercial enterprise B2B licensing for AI labs, gaming, and film); and resolve the 143 Acoustic Tokens dilemma via the "Acoustic Stream vs. Studio Master" principle.
+- **Deliverables Completed**:
+  - **docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md**: Inscribed the master covenant detailing the unanimous council vote, the 4 living human constituencies, the search paralysis solution via thematic journeys, and the moral dual-tier economics.
+  - **Moral Dual-Tier Architecture**:
+    - *Free Sanctuary Tier*: 100% free, unpaywalled, offline-first access to all 1,411 canonical entities, 256 Odù Ifá, proverbs, and streaming audio.
+    - *Enterprise Commercial Tier*: Monetizing AI foundation model training access (preventing cultural/tonal hallucinations), entertainment/gaming IP licensing, and institutional museum concordance under RAIL-Cultural-Heritage-v1.0.
+  - **Acoustic Stems Principle Resolved**:
+    - Free public web audio streaming for learning, cultural connection, and pronunciation.
+    - Lossless master `.wav` files, AI TTS training weights, and commercial broadcast rights reserved for paid enterprise licensing with elder revenue-sharing.
+  - **Memory Vaults Updated**: Synchronized [.agents/memory/agba-pa-architect.md](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/agba-pa-architect.md) and [.agents/memory/imo-legal.md](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/imo-legal.md).
+- **Verification**: 🏛️ **CHECKPOINT 125 RATIFIED — THE SOVEREIGN PURPOSE & MORAL ECONOMICS COVENANT SEALED IN THE SHARED BRAIN**.
+
+
 
 
 

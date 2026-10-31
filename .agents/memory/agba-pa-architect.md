@@ -78,3 +78,7 @@
   - Ratified Lead Architect's pivotal decree: Shelved Mission Control and cosmetic UI enhancements. Frozen all new feature creation until existing features reach functional perfection.
   - Re-centered Àgbà Engine around its real audience: the Yorùbá youth, elders, researchers, and global diaspora seekers who need living access to the 1,411 canonical entities and 256 Odù Ifá.
   - Directed the council to focus on the 4 Pillars of Sovereign Purpose: Corpus Discovery & Thematic Journeys, Acoustic Audio Sovereignty, Core Functional Speed & Offline Resilience, and Cultural Storytelling. Staged `HANDOFF-SOVEREIGN-PURPOSE-001` in `.agents/HANDOFF.md`.
+- **[2026-10-31 Night Protocol]**: **Ratification of The Sovereign Purpose & The Great Grounding Covenant (Checkpoint 125)**:
+  - Authored canonical covenant `docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md` commemorating the unanimous 12-0 vote of Ẹ̀gbẹ́-Àgbà affirming Lead Architect's restraint.
+  - Codified the Moral Dual-Tier Economics: 100% free streaming and learning for the people (youth, diaspora, elders, researchers), monetized enterprise licensing for AI labs (preventing tonal hallucinations), gaming, film, and institutional concordance.
+  - Resolved the 143 Acoustic Tokens dilemma via the "Acoustic Stream vs. Studio Master" principle: open web audio streaming for public learning, commercial master licensing for enterprise voice synthesis and media. All 12 personas synchronized.

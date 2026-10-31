@@ -106,6 +106,9 @@
     2. *Living Spoken Voice*: Protecting and foregrounding the authentic acoustic register (Auntie Yẹmí, Baba Sẹ́fíù, Father) as non-distillable living human heritage under RAIL-Cultural-Heritage-v1.0.
     3. *Core Functional Depth*: Ensuring fast, unencumbered, offline PWA access for global African communities.
     4. *Sacred Storytelling & Diaspora Bridgebuilding*: Partnering with `Akéde` to turn normalized 14-Tier scholarship into living public chronicles and educational bridges.
+    5. *Moral Economics & Acoustic Streaming vs. Studio Master Principle*:
+       - *Free Stream & Learn*: Public web/mobile streaming of the 143 acoustic tokens is 100% free and unrestricted for youth, diaspora, elders, and researchers worldwide.
+       - *Commercial B2B Master Licensing*: Lossless studio-grade master files (`.wav`), AI TTS voice model weights, and commercial broadcast rights are restricted to enterprise B2B licensing (AI labs, gaming, film) with revenue-sharing for native voice elders under RAIL-Cultural-Heritage-v1.0.
 
 
 
