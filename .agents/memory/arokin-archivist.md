@@ -284,6 +284,28 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **73/73 (100.0%) Top-1 Accuracy** live across 1,411 entities.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 11 persona vaults.
     - `npm run build`: Compiled production client bundle cleanly in **814ms** (1,928 modules transformed, 0 errors).
+- **2026-10-31 [Checkpoint 113 — HANDOFF-AROKIN-008: Batch 13 Composite Odù Ingestion — The Sub-25 Breakthrough (Down to 24 Thin Entities)]**:
+  - **Task: Native Sovereign Ingestion of Batch 13 (Indices 208 to 232)**:
+    - Ingested authentic 14-Tier depth for 25 consecutive thin composite Odù chapters from `scripts/thin_entities_manifest.json`:
+      - **Remaining 4 Chapters of Òtúá**: `ODU_208_Òtúá_Òtúúrúpọ̀n` through `ODU_211_Òtúá_Òfún` (completes all 15 composite chapters of the Òtúá cycle!).
+      - **Full 15 Chapters of Ìrẹtẹ̀**: `ODU_212_Ìrẹtẹ̀_Ogbè` through `ODU_226_Ìrẹtẹ̀_Òfún` (completes all 15 composite chapters of the Ìrẹtẹ̀ cycle!).
+      - **First 6 Chapters of Ọ̀ṣẹ́**: `ODU_227_Ọ̀ṣẹ́_Ogbè` through `ODU_232_Ọ̀ṣẹ́_Ọ̀wọ́nrín`.
+    - Infused 100% with:
+      - Multi-epoch antiquity timelines (Ancient Ifẹ̀, 19th-Century Wars, Transatlantic Lucumí & Candomblé Ketu, Contemporary/Modern).
+      - Diagnostic medicine, therapeutic ethnobotany (Ewé Ọ̀já-Ọmọ, Ewé Ìrẹtẹ̀, Ewé Ṣaworo, Ewé Ọ̀ṣun, Ewé Òdúndún, Ewé Tètè, Ewé Ìran, Ewé Akòko, Ewé Gbégbé, Ewé Àjídèwe, Ewé Pèrègún, Ewé Iná, Ewé Èṣìṣì, Ewé Ajé, Ewé Ọ́kìkà, Ewé Ègé, Ewé Àlùpàyídà, Ewé Ẹfun), craftsmanship materiality (Ìyẹ̀rosùn, Ọpọ́n Ifá, Ìrọ́kẹ́ Ifá), and specific sacrifice context.
+      - Dialectical philosophy and paired binary permutations.
+      - Authentic dual-language liturgical proverbs strictly matching: `"Òwe Yorùbá (English Translation: Philosophical Commentary)"`.
+      - Foundational peer-reviewed academic citations: Wándé Abímbọ́lá (1975, 1976), William Bascom (1969), Pierre Verger (1995), Babatunde Lawal (1996), Sandra Barnes (1997), Denis Williams (1974), Robin Law (1977), N.A. Fadipe (1970).
+      - Strict Gate 6 Sacred Cosmology Reverence (*Awo* exclusion): Complete protection of esoteric initiatory oaths and confidential passwords.
+  - **Implementation & Historic Sub-25 Breakthrough**:
+    - Authored [`scripts/build_batch_13_data.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/build_batch_13_data.py) (**316 LOC**, strictly Gate 2 compliant `< 500 LOC`) generating isolated payload [`scripts/batch_13_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/batch_13_data.json).
+    - Authored [`scripts/enrich_batch_13.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_13.py) (**158 LOC**, strictly Gate 2 compliant `< 250 LOC`).
+    - Synchronized both [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json) in absolute lockstep at **1,411 canonical entities**.
+    - **HISTORIC SUB-25 BREAKTHROUGH**: Thin composite Odù chapters plunged from **49 down to exactly 24 remaining thin entities** (232 of 256 Odù chapters now fully 14-Tier enriched — 90.6% Ifá matrix completion!).
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **78/78 (100.0%) Top-1 Accuracy** live across 1,411 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **962ms** (1,928 modules transformed, 0 errors).
 
 
 
