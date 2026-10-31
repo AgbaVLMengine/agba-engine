@@ -171,6 +171,12 @@ BENCHMARK_TEST_CASES = [
     {"id": "Q69_IRETE_OFUN", "query": "Irete Ofun", "expected_titles": ["Ìrẹtẹ̀ Òfún", "Irete Ofun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q70_OSE_OGBE", "query": "Ose Ogbe", "expected_titles": ["Ọ̀ṣẹ́ Ogbè", "Ose Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
     {"id": "Q71_OSE_OWONRIN", "query": "Ose Owonrin", "expected_titles": ["Ọ̀ṣẹ́ Ọ̀wọ́nrín", "Ose Owonrin"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    # 72-76. Batch 14 Composite Odù Chapters Suite (HANDOFF-SUURU-011 Final 256 Matrix)
+    {"id": "Q72_OSE_OBARA", "query": "Ose Obara", "expected_titles": ["Ọ̀ṣẹ́ Ọ̀bàrà", "Ose Obara"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q73_OSE_OFUN", "query": "Ose Ofun", "expected_titles": ["Ọ̀ṣẹ́ Òfún", "Ose Ofun"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q74_OFUN_OGBE", "query": "Ofun Ogbe", "expected_titles": ["Òfún Ogbè", "Ofun Ogbe"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q75_OFUN_IRETE", "query": "Ofun Irete", "expected_titles": ["Òfún Ìrẹtẹ̀", "Ofun Irete"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
+    {"id": "Q76_OFUN_OSE", "query": "Ofun Ose", "expected_titles": ["Òfún Ọ̀ṣẹ́", "Ofun Ose"], "expected_category": "Spiritual & Cosmological Matrix", "anti_loop_parent_to_avoid": "Àmọ̀lù Odù", "suite": "ANTI_PARENT_LOOP"},
 ]
 
 CATEGORY_17_FAUNA_CASES = [
