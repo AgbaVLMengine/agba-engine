@@ -42,9 +42,9 @@
 - **Custody Action**: Verify that edge deployment mirrors Sphere 1 exactly upon merge.
 
 ### Sphere 3: Mobile & Offline Sanctuary
-- **Seat**: iPhone 15 Pro Max via Working Copy Git client and Web Progressive Web App (PWA) offline cache.
-- **Standard**: Complete offline independence. The Lead Architect can search, cross-reference, and inspect the corpus in off-grid conditions.
-- **Custody Action**: Verify fast-forward sync paths to prevent merge conflicts or diverged branches during field harvesting.
+- **Seat**: iPhone 15 Pro Max via Antigravity Remote Control PWA (Home Screen) + Working Copy Git client + Netlify Web PWA.
+- **Standard**: Complete mobile command & control and offline independence. The Lead Architect commands the 12-member council (`Ẹ̀gbẹ́-Àgbà`) directly from iPhone with zero friction.
+- **Custody Action**: Verify tunnel connection persistence, battery-friendly background execution, and fast-forward git sync paths.
 
 ### Sphere 4: Cold Archive & Imperial Redundancy
 - **Seat**: Google Drive Encrypted Vault, multi-cloud cold tarball archives.
@@ -73,3 +73,4 @@
 - **2026-10-30T12:08:00+01:00** (Checkpoint 109): Post-Batch 12 State Audit & Historic Sub-50 Milestone Certification. Audited dual-corpora bitwise lockstep across all 1,411 canonical entities at SHA-256 `85d0e97ac750d696b2962335a1871f9a58b6d84f5f733db33ec98e210624e118` (0 bits drift). Verified Sùúrù's 78/78 (100.0%) Top-1 retrieval benchmark and 54/54 anti-parent-loop precision. Verified Òye's 8-gate scan and modularity ceilings. Confirmed remaining thin Odù chapters plunged to **49** (80.8% Ifá completion). Verified all 4 Concentric Spheres aligned; granted unconditional departure clearance for Lead Architect Àrùnà Ọlànrewájú Kábírù.
 - **2026-10-31T06:07:00+01:00** (Checkpoint 111): Dawn Pre-Batch 13 State Clearance & Universal Balance Audit. Audited bitwise dual-corpora lockstep at SHA-256 `85d0e97ac750d696b2962335a1871f9a58b6d84f5f733db33ec98e210624e118` (0 bits drift, 1,411 entities). Verified 50 GB disk expansion (44 GB available headroom), 17.4 GB available RAM, 0% LiteLLM/trojans, and passing of all 8 production gates across all 12 persona vaults (including 12th persona Ìtọ́jú). Formally granted unconditional greenlight for Àrọ̀kìn to ingest Batch 13 (driving thin Odùs from 49 down to 24 towards the finish line).
 - **2026-10-31T07:06:00+01:00** (Checkpoint 119): Historic 100% 256 Odù Ifá Matrix Completion & Celebratory Retirement Clearance. Audited bitwise dual-corpora lockstep across all 1,411 canonical entities at SHA-256 `74c507cf0274ad200f0062be766126b1517726905be41de0e8e3d640fd5b9fe4` (0 bits drift). Verified Sùúrù's 88/88 (100.0%) Top-1 retrieval benchmark and 64/64 anti-parent-loop precision. Verified Òye's 8-gate review and coordinator limits. Confirmed remaining thin Odù chapters dropped to **EXACTLY ZERO (0)** — 100% completion of all 256 Odù Ifá chapters. Verified all 4 Concentric Spheres aligned; granted unconditional celebratory retirement clearance for Lead Architect Àrùnà Ọlànrewájú Kábírù.
+- **2026-10-31T16:45:00+01:00** (Checkpoint 122): Sphere 3 (Mobile Sanctuary) Remote Control Activation & Terminal Keep-Alive Protocol. Ratified active Antigravity Remote Control connection from Lead Architect's iPhone 15 Pro Max (Standalone PWA mode). Audited KeepComputerAwake (`app_storage.json`), Crostini Linux container persistence, and zero-drift state streaming. Confirmed Sphere 3 live and synchronized with Sphere 1 (Genesis Workstation).

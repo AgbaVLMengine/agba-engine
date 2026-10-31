@@ -2177,6 +2177,20 @@
   - **Memory Vaults Updated**: Inscribed the two invariants into `.agents/memory/agba-pa-architect.md`, `memory/disk_saver_memory.md` (`Agbálẹ̀`), `.agents/memory/asunwon-ledger.md` (`Àsúnwọ̀n`), and `.agents/memory/itoju-welfare.md` (`Ìtọ́jú`).
 - **Verification**: 🛡️ **CHECKPOINT 121 RATIFIED — SACRED PRIMACY & BIOGRAPHICAL TRUTH SEALED ACROSS ALL 12 PERSONAS & PRE-COMMIT GATES**.
 
+### [2026-10-31 Afternoon] Checkpoint 122 (`CHECKPOINT-ASUNWON-005`) — Sphere 3 (iPhone 15 Pro Max) Remote Control Activation & Terminal Keep-Alive Protocol
+- **Agent Persona**: `Àsúnwọ̀n` (`asunwon-ledger`) & `Àgbà` (`agba-pa-architect`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù
+- **Lead Directive**: Formalize live activation of **Sphere 3: Mobile & Offline Sanctuary** via Antigravity Remote Control on Lead Architect's iPhone 15 Pro Max (Standalone PWA mode); guide settings navigation (`Settings -> General` for Tool Execution Policy, `keepComputerAwake: true`); explain ChromeOS Crostini Linux VM persistence and terminal reconnect behavior; and update the Shared Brain so all 12 personas are in full alignment.
+- **Deliverables Completed**:
+  - **Sphere 3 Activation**: Antigravity Remote Control connected from iPhone 15 Pro Max, installed to Home Screen as standalone PWA, native Yorùbá orthography keyboard enabled.
+  - **Tool Execution Navigation**: Guided Lead Architect to `Settings -> General` where Tool Execution Policy (Proceed in Sandbox / Request Review) and Non-Workspace File Access are managed.
+  - **Host Keep-Awake Verified**: Confirmed `keepComputerAwake: "true"` inside `/home/aruna_olanrewaju/.config/Antigravity/app_storage.json`. Recommended ChromeOS power settings (`Settings -> Device -> Power` -> Keep display on / Stay awake when lid is closed).
+  - **Terminal & State Disconnect Resilience**: Codified the event-driven persistent session architecture. The agent runs on the host Linux workstation (Sphere 1) independently of the mobile browser tab; phone screen sleep or momentary Wi-Fi interruptions do NOT terminate or corrupt running tasks. Re-opening the app reconnects to the live transcript.
+  - **Memory Vaults Updated**: Synchronized [.agents/memory/asunwon-ledger.md](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/asunwon-ledger.md) and [.agents/memory/agba-pa-architect.md](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/agba-pa-architect.md).
+- **Verification**: 📱 **CHECKPOINT 122 RATIFIED — SPHERE 3 REMOTE CONTROL ACTIVATED & SYNCHRONIZED ACROSS THE SHARED BRAIN**.
+
+
 
 
 
