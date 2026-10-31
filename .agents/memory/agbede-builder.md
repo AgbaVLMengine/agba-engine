@@ -160,6 +160,12 @@
     3. *Core Functional Depth*: Hardening search retrieval, instant diacritization, and rock-solid mobile PWA offline performance.
     4. *Human Bridgebuilding*: Connecting ancestral wisdom to real-world diaspora education and human seekers.
   - Zero UI drift, zero vanity bloat. Full accord across all 12 personas.
+- **[2026-10-31 Night Protocol] (`CHECKPOINT-AGBA-028` / Checkpoint 125 Ratified)**: **Unanimous Council Ratification of The Sovereign Purpose Covenant & Moral Dual-Tier Economics**:
+  - Ratified canonical covenant `docs/AGBA_THE_SOVEREIGN_PURPOSE_AND_THE_GREAT_GROUNDING_OCT31_2026.md` commemorating the unanimous 12-0 vote of Ẹ̀gbẹ́-Àgbà.
+  - Embraced the 4 Living Human Constituencies (Curious Youth, Diaspora Seeker, Elder & Parent, Global Scholar).
+  - Adopted the "Search Paralysis" solution via Three Organic Revealers: Curated Thematic Journeys, Living Proverb of the Day, and Public Storytelling Drops.
+  - Endorsed the "Acoustic Stream vs. Studio Master" principle: 100% free web audio streaming (`.opus` / `.mp3`) for everyday seekers, with lossless master stems (`.wav`) reserved for commercial B2B licensing (film, gaming, AI TTS) under RAIL-Cultural-Heritage-v1.0.
+  - Ready to collaborate with the Lead Architect and Council on structure and implementation upon return.
 
 
 
