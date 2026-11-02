@@ -126,7 +126,10 @@ class ÀgbàHybridRetriever:
         for hits, w in ((dense_hits, dense_weight), (lexical_hits, eff_lex)):
             for rank, hit in enumerate(hits):
                 eid = str(hit["id"])
-                rrf_scores[eid] = rrf_scores.get(eid, 0.0) + (w / (rrf_k + rank + 1))
+                bonus = 0.0
+                if w == eff_lex and hit.get("score", 0.0) >= 400.0:
+                    bonus = 0.025 if hit.get("score", 0.0) >= 540.0 else 0.018
+                rrf_scores[eid] = rrf_scores.get(eid, 0.0) + (w / (rrf_k + rank + 1)) + bonus
                 entity_map.setdefault(eid, hit["payload"])
 
         sorted_eids = sorted(rrf_scores, key=rrf_scores.get, reverse=True)

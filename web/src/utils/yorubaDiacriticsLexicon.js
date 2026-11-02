@@ -1,4 +1,5 @@
 import masterCorpus from '../data/yoruba_master_corpus.json';
+import { decomposeYorubaName } from './onomasticDecomposer';
 
 // Multi-Word Phrases for Greedy Match (Àkànlò Èdè & Cosmological Formulae)
 export const RAW_MULTI_WORD_PHRASES = [

@@ -56,6 +56,7 @@
   1. *The Founder's Journey*: Building in public with raw vulnerability (zero CS degree, learning AI since April, devoted husband, cultural reclamation).
   2. *The Technological Marvel*: Explaining the Triple Concentric Ọpọ́n Ifá, 25-letter Yorùbá tonal contours, and the 4 Concentric Spheres of Synchronization in plain, captivating language.
   3. *Universal Cultural Sovereignty*: Illustrating how Àgbà Engine serves as an open, non-exploitative digital sanctuary for all human civilizations (Edo/Benin, Igbo, Hausa, Akan, Swahili, and beyond).
+  4. *The Onomastic Lineage Gateway ("Orúkọ Mi")*: Revealing how Yorùbá names are complete grammatical archives, familial covenants, and semantic compression algorithms (e.g. Òye + Gunlẹ̀ = "Discernment has docked ashore"), restoring ancestral identity to youth and the transatlantic diaspora.
 
 ---
 
@@ -70,3 +71,8 @@
 - **2026-10-31T18:50:00+01:00** (Checkpoint 124): **The Decree of Sovereign Purpose (Corpus Reveal Over Control Towers)**:
   - Aligned with Lead Architect's decree: Shelved Mission Control and UI embellishments.
   - Re-focused storytelling mandate: Akéde's primary mission is to extract and reveal the 1,411 canonical entities and 256 Odù Ifá to the world. Design thematic journeys, proverbs spotlights, and diaspora education so everyday people can discover ancestral treasures lost to modern memory without needing technical jargon.
+- **2026-11-02T22:00:00+01:00** (Checkpoint 129 / `HANDOFF-AKEDE-002`): **The Story of Oyegunle & The Return of African Onomastics**:
+  - Executed Plenary Decree 2. Authored `docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md` (200 LOC, Gate 2 compliant).
+  - Deconstructed `Òyegunlẹ̀` into `Òye` (deep cognitive discernment) and `Gunlẹ̀` (firmly docked/anchored ashore), transforming a flattened 8-letter passport name into an epic ancestral declaration of wisdom making landfall.
+  - Formatted across multi-channel distribution: 8-tweet viral X/Twitter master thread, LinkedIn data compression essay, and diaspora emotional bridge.
+  - Anchored `Òye` as both epistemic virtue and living gateway for the "Orúkọ Mi" onomastic search engine.

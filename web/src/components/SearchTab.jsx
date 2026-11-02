@@ -2,7 +2,7 @@ import React, { useState, useMemo, useRef, useCallback } from 'react';
 import masterCorpus from '../data/yoruba_master_corpus.json';
 import { useExplorationGraph, PEER_CULTURES } from '../hooks/useExplorationGraph';
 import { useRootNetworkNodes } from '../hooks/useRootNetworkNodes';
-import OponSearchCore from './OponSearchCore';
+import AarinimoSearchCore from './AarinimoSearchCore';
 import VeinRabbitHoleCanvas from './VeinRabbitHoleCanvas';
 import EntityBentoDeck from './EntityBentoDeck';
 import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
@@ -165,8 +165,8 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 16px' }}>
-      {/* 1. CENTRAL OPON IFA SEARCH CORE & MULTI-CULTURE SWITCHER */}
-      <OponSearchCore
+      {/* 1. CENTRAL ÀÁRÍN ÌMỌ̀ CONCENTRIC SEARCH HEARTH & MULTI-CULTURE SWITCHER */}
+      <AarinimoSearchCore
         query={query}
         setQuery={setQuery}
         loading={loading}

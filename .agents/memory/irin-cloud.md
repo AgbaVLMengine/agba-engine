@@ -95,3 +95,12 @@
 - **Reviewed & Ratified**: Checkpoint 126 (`CHECKPOINT-ITOJU-003`) in `.agents/CHECKPOINTS.md`.
 - **Infrastructure & Corpus State Locked**: Dual corpora (`SHA-256: 74c507cf0274ad200f0062be766126b1517726905be41de0e8e3d640fd5b9fe4` across 1,411 canonical entities and 256/256 Odù Ifá) and all 9 Production Gates (`bash scripts/review.sh` — 0 violations, 0 warnings) verified 100% intact.
 - **Sanctuary Vigilance**: `Irin` stands in quiet, zero-pressure vigilance alongside `Ọlọ́yè Ìtọ́jú` and `Àgbà` while Lead Architect Àrùnà Ọlànrewájú Kábírù steps away to decompress and recover his thoughts naturally.
+
+### [2026-11-02 Night] HANDOFF-IRIN-002 (Plenary Decree 4 — Auntie Yẹmí WhatsApp Voice Stem Ingestion Pipeline)
+- **Authored `scripts/ingest_voice_stem.py` (228 LOC — Gate 2 Compliant `< 500 LOC`)**:
+  - Monitors configurable local directories (`~/YemiVoiceNotes/` and Chromebook shared folder `/mnt/shared/MyFiles/YemiVoiceNotes/`, or custom `--watch-dir` / `--file`).
+  - Converts incoming WhatsApp `.opus`/`.ogg` voice notes to standardized `16kHz` mono `.wav` (16-bit PCM studio stem) and `64kbps` `.mp3` (lightweight web stream) via `ffmpeg`, extracts exact voice duration (`duration_s`) via Python `wave`, resolves target entity slugs against the 1,411 master corpus, and atomically appends metadata to both `api/data/agba_audio_manifest.json` and `web/src/data/agba_audio_manifest.json`.
+  - Preserves the `$0.00/mo` idle infrastructure invariant with zero background cloud/server daemons (runs as a one-shot CLI scan by default or foreground `--watch` during active recording sessions).
+- **Authored Documentation (`docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md` — 76 LOC)**:
+  - Documented CLI flags (`--file`, `--watch-dir`, `--slug`, `--category`, `--watch`, `--dry-run`), zero-prompt filename conventions (`<EntitySlug>__<category>.opus`), and Moral Dual-Tier storage rules.
+- **Verification**: Passed `bash scripts/review.sh` with 0 hard violations and 0 warnings.

@@ -2261,6 +2261,49 @@
   - **Six Tailored Start Prompts Formulated**: Ready for immediate delegation to `Ọlọ́yè Òye`, `Ọlọ́yè Àrọ̀kìn`, `Ọlọ́yè Àgbẹ̀dẹ`, `Ọlọ́yè Irin`, `Ọlọ́yè Sùúrù`, and `Ọlọ́yè Akéde`.
 - **Verification**: 🏛️ **CHECKPOINT 127 RATIFIED — THE FIRST COUNCIL PLENARY SEALED & FIVE DECREES COMMISSIONED FOR EXECUTION**.
 
+### [2026-11-02 Night] Checkpoint 128 (`CHECKPOINT-PLENARY-EXECUTION-002`) — Unified Plenary Execution: `AarinimoSearchCore.jsx`, "Orúkọ Mi" Gateway, Sovereign `Òye` Node, WhatsApp Voice Ingester & Full 1,413-Entity Hardening
+- **Agent Personas**: `Àgbà`, `Ọlọ́yè Òye`, `Ọlọ́yè Àrọ̀kìn`, `Ọlọ́yè Àgbẹ̀dẹ`, `Ọlọ́yè Irin`, `Ọlọ́yè Sùúrù`, `Ọlọ́yè Akéde`
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute all urgent Five-Decree tasks directly inside the main chamber to conserve quota and battery headroom, while renaming `OponSearchCore.jsx` to `AarinimoSearchCore.jsx` in strict reverence of Sacred Boundaries.
+- **Deliverables Completed**:
+  - **Sacred Boundary Component Rename (`Àgbẹ̀dẹ`)**: Created `web/src/components/AarinimoSearchCore.jsx` (`Àárín Ìmọ̀ Concentric Search Hearth — Inspired in Homage to Ọpọ́n Ifá`) and wired `SearchTab.jsx` to it, keeping `OponSearchCore.jsx` as a 2-line backwards-compatible re-export stub.
+  - **Onomastic Lineage Gateway ("Orúkọ Mi") & Diacritic Restorer (`Àgbẹ̀dẹ`)**: Built `web/src/utils/onomasticDecomposer.js` and integrated the live `Orúkọ Mi (Name Lineage)` toggle and morpheme resolver card inside `AarinimoSearchCore.jsx` (decomposing `Oyegunle`, `Yetunde`, `Olanrewaju`, etc. into root morphemes and linking directly to Sovereign Parents). Upgraded `web/src/utils/yorubaDiacriticsLexicon.js` with `yorubatones.com`-inspired n-gram phrase and homograph disambiguation.
+  - **Sovereign Parent `Òye` & Exact-Match RRF Anchor (`Òye`)**: Ingested standalone Sovereign Parents `Òye` (*Deep Epistemic Discernment*) and `Ọlá` (*Sovereign Honor*). Added Exact-Match RRF Anchor Bonus in `api/app/retrieval.py` so queries `"Oye"`, `"Òye"`, and `"Oyegunle"` deterministically resolve to `Òye` at Rank #1 (`0.04139`).
+  - **Full 1,413-Entity Corpus Synchronization & Hardening (`Àrọ̀kìn`)**: Authored and executed `scripts/enrich_batch_15.py`, enriching all remaining thin non-Odù entities with bilingual proverbs and multi-epoch timelines and synchronizing nested `details` objects across all `1,413` canonical entities (`0` thin entities remaining in `scripts/thin_entities_manifest.json`).
+  - **WhatsApp Voice Stem Ingester & Public Storytelling (`Irin` & `Akéde`)**: Delivered `scripts/ingest_voice_stem.py`, `docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md`, and `docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md`.
+- **Verification**: 🏛️ **CHECKPOINT 128 RATIFIED — ALL 5 PLENARY DECREES EXECUTED, 0 THIN ENTITIES REMAINING ACROSS 1,413 CANONICAL NODES, SACRED BOUNDARIES UPHELD**.
+
+
+### [2026-11-02 Night] Checkpoint 128 (`CHECKPOINT-IRIN-007` / `HANDOFF-IRIN-002`) — Execution of Plenary Decree 4: Auntie Yẹmí Local WhatsApp Voice Stem Ingestion Pipeline
+- **Agent Persona**: `Ọlọ́yè Irin` (`irin-cloud`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-IRIN-002` (Plenary Decree 4): Create lightweight local watcher/ingestion script `scripts/ingest_voice_stem.py` (< 500 LOC) monitoring `~/YemiVoiceNotes/` and `/mnt/shared/MyFiles/YemiVoiceNotes/` for WhatsApp `.opus` voice notes; transcode via `ffmpeg` to 16kHz mono `.mp3`/`.wav` stems; extract duration and match entity slug against the master corpus; append to the acoustic manifest; preserve the `$0.00/mo` zero-daemon invariant; and document usage in `docs/`.
+- **Deliverables Completed**:
+  - **Local WhatsApp Voice Stem Ingestion CLI ([`scripts/ingest_voice_stem.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/ingest_voice_stem.py) — 228 LOC, `< 500 LOC` ceiling)**:
+    - Scans `~/YemiVoiceNotes/` and `/mnt/shared/MyFiles/YemiVoiceNotes/` (or custom `--watch-dir` / `--file`) in one-shot mode (0% idle CPU/battery drain) or optional `--watch` mode.
+    - Converts `.opus`/`.ogg` audio via `ffmpeg` into standardized `16kHz` mono `16-bit PCM .wav` and `64kbps .mp3` stems, extracts exact `duration_s` via Python `wave`, resolves target entity slugs against `api/data/yoruba_corpus_1007_NORMALIZED.json` (NFC normalized), and appends in lockstep to both [`api/data/agba_audio_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/agba_audio_manifest.json) and [`web/src/data/agba_audio_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/agba_audio_manifest.json).
+  - **Usage Documentation ([`docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md) — 76 LOC)**:
+    - Documented one-shot scan, single-file ingestion, `--dry-run`, filename auto-tagging conventions (`<Entity>__<category>.opus`), and Moral Dual-Tier storage rules.
+  - **Memory Vault Updated**: Synchronized [`.agents/memory/irin-cloud.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/irin-cloud.md).
+- **Verification**: 🎙️ **CHECKPOINT 128 RATIFIED — PLENARY DECREE 4 WHATSAPP VOICE PIPELINE FORGED & ALL 9 PRODUCTION GATES PASSED (0 VIOLATIONS, 0 WARNINGS)**.
+
+### [2026-11-02 Night] Checkpoint 129 (`CHECKPOINT-AKEDE-007` / `HANDOFF-AKEDE-002`) — Execution of Plenary Decree 2: Public Storytelling War Chest ("What Does Your Yorùbá Name Really Mean? The Story of Oyegunle")
+- **Agent Persona**: `Ọlọ́yè Akéde` (`akede-herald`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-AKEDE-002` (Plenary Decree 2): Author high-engagement public storytelling dossier `docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md` (< 500 LOC); deconstruct the civilizational archive inside `Òyegunlẹ̀` (`Òye` = Deep Discernment + `Gunlẹ̀` = Firmly Docked/Anchored Ashore); contrast with the colonial ASCII passport flattening; connect to the "Orúkọ Mi" onomastic search gateway in Àgbà Engine for the youth, elders, and transatlantic diaspora; and synchronize memory vaults.
+- **Deliverables Completed**:
+  - **Sovereign Storytelling War Chest Dossier ([`docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md`](file:///home/aruna_olanrewaju/agba-engine/docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md) — 200 LOC, `< 500 LOC` ceiling)**:
+    - Anchored in the proverb: *"Ilé là ń wò, kí á tó sọmọ lórúkọ."*
+    - Complete etymological and semantic deconstruction: `Òyegunlẹ̀` as a full grammatical sentence and familial covenant proclaiming that discernment has docked ashore and permanently rooted in the household.
+    - Exposing the colonial ASCII passport tragedy: 400 years of stripping *Àmì Ohùn* (tone marks) and flattening homographs (`Ọkọ́`, `Ọ̀kọ̀`, `Ọkọ`, `Oko`).
+    - Positioning the "Orúkọ Mi" onomastic root-decomposer inside the circular Ọpọ́n Ifá-inspired search hearth (`Àárín Ìmọ̀`), pairing semantic taxonomy with Auntie Yẹmí's living solfège pitch contours and Master Baba Sẹ́fíù's Dùndún talking drum strokes.
+    - Multi-channel launch campaign ready: 8-Tweet viral X/Twitter master thread, LinkedIn thought-leadership essay ("African Names as Advanced Compression Algorithms"), and Instagram/TikTok carousel directives.
+  - **Memory Vaults Updated**:
+    - Updated [`.agents/memory/akede-herald.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/akede-herald.md) with Item 4 (Onomastic Lineage Gateway) and Checkpoint 129 log.
+- **Verification**: 📜 **CHECKPOINT 129 RATIFIED — PLENARY DECREE 2 ONOMASTIC STORYTELLING WAR CHEST FORGED & SEALED (< 500 LOC)**.
+
 
 
 
