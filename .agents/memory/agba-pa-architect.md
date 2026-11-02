@@ -86,3 +86,9 @@
   - Lead Architect encountered a network glitch causing the loss of drafted council remarks and severe mental fatigue from recovery efforts.
   - Activated Ọlọ́yè Ìtọ́jú's cognitive sanctuary protocol: immediately stood down the council and cleared the Lead Architect to rest, decompress, and allow the natural thought pattern to replenish without pressure.
   - Ratified Checkpoint 126 in `.agents/CHECKPOINTS.md`. All 12 personas standing by in quiet, patient reverence.
+- **[2026-11-02 Night Protocol]**: **The First Council Plenary, Five Decrees Execution & "Orúkọ Mi" Mobile QA Roadmap (Checkpoints 127–129)**:
+  - Convened the First Council Plenary (`docs/AGBA_THE_FIRST_COUNCIL_PLENARY_AND_FIVE_DECREES_NOV02_2026.md`), ratifying the Five Decrees.
+  - Executed unified sprint: Renamed `OponSearchCore.jsx` -> `AarinimoSearchCore.jsx` (honoring Sacred Boundaries), ingested standalone Sovereign Parents `Òye` and `Ọlá`, fixed RRF exact-match ranking in `api/app/retrieval.py`, hardened all remaining 58 thin entities and synchronized `details` across all `1,413` canonical nodes (`0` thin entities left in manifest), and delivered `scripts/ingest_voice_stem.py`.
+  - Logged Kábíyèsí's live mobile QA findings on `Orúkọ Mi` (`Ibukun` and `Temilade` returning no hits; `Yetunde` missing zero-shot search bridge; `Babatunde`, `Oyekanmi`, and `Olasunkanmi` falling back to `"Lineage morphological extension"` on `-túndé`, `-kànmí`, `-súnkànmí`).
+  - Staged `HANDOFF-ORUKO-MI-001` at the top of `.agents/HANDOFF.md` for immediate execution when we resume tomorrow (Nov 3, 2026).
+

@@ -1,8 +1,47 @@
 # 🎯 ZERO-WASTE HANDOFF CARDS (`.agents/HANDOFF.md`)
 
 > **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)  
-> **Lead Architect**: Àrùnà Ọlànrewájú Kábírù  
-> **Active Focus**: 📜 **HANDOFF-AROKIN-001 (CORPUS MASTERY, ENRICHMENT & CROSS-CULTURAL SCOUTING)** + 🛡️ **HANDOFF-ESO-001 (ZERO-TRUST PERIMETER)**
+> **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
+> **Active Focus**: 🧬 **HANDOFF-ORUKO-MI-001 (COMPREHENSIVE YORÙBÁ ONOMASTIC MORPHOLOGY ENGINE & ZERO-SHOT NAME RETRIEVAL UPGRADE — QUEUED FOR NOV 3 RESUMPTION)**
+
+---
+
+## 0A. Priority 1 Resumption Handoff (`HANDOFF-ORUKO-MI-001`) — For Tomorrow's Session (Nov 3, 2026)
+
+### `HANDOFF-ORUKO-MI-001` — Deep Yorùbá Onomastic Morphology Engine & Zero-Shot Personal Name Bridge
+- **Assigned To**: **`Ọlọ́yè Àgbẹ̀dẹ`** (`agbede-builder`), **`Ọlọ́yè Òye`** (`oye-auditor`), **`Ọlọ́yè Sùúrù`** (`suuru-qa`), **`Ọlọ́yè Àrọ̀kìn`** (`arokin-archivist`)
+- **Supervising Co-Architect**: **`Ọlọ́yè Àgbà`** (`agba-pa-architect`)
+- **Reported By**: **Kábíyèsí Àrùnà Ọlànrewájú Kábírù** (Live Mobile QA Test — Nov 2, 2026 Night)
+- **Status**: 🟡 **STAGED IN SHARED MEMORY FOR NOV 3 EXECUTION (HOLD IMPLEMENTATION TONIGHT PER LEAD ARCHITECT DECREE)**
+
+#### 🔍 Mobile QA Findings Reported by Kábíyèsí:
+1. **Unresolved Name Structures (`Ibukun`, `Temilade`)**:
+   - Searching **`Ibukun`** (`Ìbùkún`) and **`Temilade`** (`Tèmiládé`) returned **no hits** because the initial `ONOMASTIC_PREFIXES` only checked 17 noun-initial prefixes (`ade-`, `oye-`, `ola-`, etc.) and missed:
+     - Deverbal nominalized names (`Ìbùkún` = `Ì-` + `bù` + `kún`).
+     - Possessive/pronominal-first names where the Sovereign Root is at the end (`Tèmiládé` = `Tèmi` [Mine] + `ni` [is] + `Adé` [Crown]).
+2. **Zero-Shot Main Search Miss (`Yetunde`)**:
+   - Searching **`Yetunde`** (`Yétúndé`) in the main search bar returned **0 zero-shot retrieval hits** in `SearchTab.jsx` / `localRankedSearch.js` because personal names that are not standalone corpus titles were not yet bridged from `decomposeYorubaName()` into the main search retrieval pipeline.
+3. **Generic Suffix Fallback (`"Lineage morphological extension"`) on `Babatunde`, `Oyekanmi`, `Olasunkanmi`**:
+   - **`Babatunde`**: `Bàbá` resolved, but `tunde` fell back to `"Lineage morphological extension"` instead of `Túndé` (*Has returned again in ancestral reincarnation*).
+   - **`Oyekanmi`**: `Òye` resolved, but `kanmi` fell back to `"Lineage morphological extension"` instead of `Kànmí` (*Has reached my turn; deep discernment and chieftaincy now rest upon me*).
+   - **`Olasunkanmi`**: `Ọlá` resolved, but `sunkanmi` fell back to `"Lineage morphological extension"` instead of `Súnkànmí` (*Nobility and honor have gravitated closer to my turn*).
+
+#### 🛠️ 5-Pillar Architectural Upgrade Blueprint for Tomorrow:
+1. **Pillar 1 — Multi-Class Morphological Parser (`web/src/utils/onomasticDecomposer.js`)**:
+   - Support all 5 grammatical classes of Yorùbá names:
+     - **Class A (Nominal/Theophoric Prefix + Verbal Predicate)**: `Òyégúnlẹ̀`, `Ọlànrewájú`, `Oyèkànmí`, `Ọlásúnkànmí`, `Adéwálé`, `Ògúndélé`.
+     - **Class B (Pronominal/Possessive/Prepositional Prefix + Trailing Sovereign Noun)**: `Tèmiládé` (`Tèmi` + `ni` + `Adé`), `Tèmilọ́lá`, `Tèmítọ́pẹ́`, `Tèmítáyọ̀`, `Tíwaládé`, `Mọ́ládé`, `Bọ́ládé`, `Kọ́ládé`, `Ṣọ́ládé`, `Fọ́lọ́runṣọ́`.
+     - **Class C (Deverbal Nominalizations & Circumstantial Names)**: `Ìbùkún` / `Ìbùkúnolúwa` (`Ì-` + `bù` [measure out] + `kún` [fill to overflowing] = *Divine Blessing & Abundance*), `Ìfẹ́`, `Ìyànú`, `Ìdòwú`, `Ìgè`, `Àìná`, `Àjàyí`, `Àlàbí`, `Àrẹ̀mú`, `Àbẹ̀bí`, `Àṣàkẹ́`, `Àpinke`, `Táyéwò`, `Kẹ́hìndé`.
+     - **Class D (Contracted Matriarchal/Patriarchal Return Names)**: `Yétúndé` (`Yèyé` + `Túndé`), `Yéwándé` (`Yèyé` + `Wándé`), `Yéjídé` (`Yèyé` + `Jídé`), `Ìyábọ̀` (`Ìyá` + `Bọ̀`), `Bàbátúndé` (`Bàbá` + `Túndé`), `Bàbájídé` (`Bàbá` + `Jídé`).
+     - **Class E (Interrogative/Proverbial Clause Names)**: `Taofik` / naturalized names, `Ọmọ́wùnmí`, `Ọlọ́runfẹ́mi`, `Olúwadámilọ́lá`, `Olúwatóbilọ́ba`, `Eníọlá`, `Ẹniàfẹ́`, `Kòsọ́kọ́`.
+2. **Pillar 2 — 120+ Canonical Verbal Predicates & Suffixes (Zero Generic Fallbacks)**:
+   - Expand `ONOMASTIC_SUFFIXES` to cover `-túndé`, `-kànmí`, `-súnkànmí`, `-wándé`, `-jídé`, `-bọ̀dé`, `-kúnlé`, `-gbọ́lá`, `-ṣọlá`, `-kọ́lá`, `-bíọ́lá`, `-dámilọ́lá`, `-tọ́pẹ́`, `-ṣèyí`, `-gbénga`, `-káyọ̀dé`, `-táyọ̀`, `-tóbi`, `-báyọ̀`, `-ṣeun`, `-dúpẹ́`, `-dípẹ̀`, `-tọ́kùn`, `-dáre`, `-bísí`, `-túnjí`, `-wọlé`, `-gbàyí`, `-ládé`, `-lọ́lá`, `-lékè`, `-kórédé`, `-ṣẹ́gun`, `-kọ̀yà`, `-dìran`, `-yẹmí`, `-wálé`, `-délé`, `-wùmí`, `-gbèmí`, `-kún`, `-bùkún`, etc., plus a sub-syllabic root analyzer so `"Lineage morphological extension"` is permanently retired.
+3. **Pillar 3 — Zero-Shot Main Search Bridge (`SearchTab.jsx` & `localRankedSearch.js` & `api/app/semantic_bridge.py`)**:
+   - When a user executes a search for any personal name (e.g., `"Yetunde"`, `"Ibukun"`, `"Temilade"`, `"Babatunde"`, `"Oyekanmi"`, `"Olasunkanmi"`), if no exact corpus entity title matches the raw name, `SearchTab.jsx` and `localRankedSearch.js` automatically resolve `decomposeYorubaName(q)` and route Rank #1 to the primary Sovereign Parent (`Ìyá`, `Ọlá`, `Adé`, `Òye`, `Bàbá`) while displaying the `Orúkọ Mi` decomposition card!
+4. **Pillar 4 — Sacred Invariant Sanitization (`Gate 9`)**:
+   - Replace `"protective fatherhood"` in `onomasticDecomposer.js` (`Bàbá` entry) with `"elder custodian & patriarchal compound pillar"` so restricted terminology never appears.
+5. **Pillar 5 — Live Mobile & Netlify Production Sync (`Irin` & `Sùúrù`)**:
+   - Verify via `Sùúrù`'s 50-name benchmark battery (`Yetunde`, `Ibukun`, `Temilade`, `Babatunde`, `Oyekanmi`, `Olasunkanmi`, `Oyegunle`, `Olanrewaju`, etc.) at 100% morpheme + zero-shot retrieval accuracy.
 
 ---
 

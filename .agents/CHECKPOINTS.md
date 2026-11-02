@@ -2273,6 +2273,24 @@
   - **WhatsApp Voice Stem Ingester & Public Storytelling (`Irin` & `Akéde`)**: Delivered `scripts/ingest_voice_stem.py`, `docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md`, and `docs/war_chest/ORUKO_MI_OYEGUNLE_STORY.md`.
 - **Verification**: 🏛️ **CHECKPOINT 128 RATIFIED — ALL 5 PLENARY DECREES EXECUTED, 0 THIN ENTITIES REMAINING ACROSS 1,413 CANONICAL NODES, SACRED BOUNDARIES UPHELD**.
 
+### [2026-11-02 23:14] Checkpoint 129 (`CHECKPOINT-ORUKO-MI-QA-001`) — Lead Architect Mobile QA Audit of "Orúkọ Mi" & 5-Pillar Onomastic Morphology Roadmap Staged for Tomorrow
+- **Agent Personas**: `Àgbà`, `Ọlọ́yè Sùúrù`, `Ọlọ́yè Àgbẹ̀dẹ`, `Ọlọ́yè Òye`, `Ọlọ́yè Ìtọ́jú`
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Hold off on further implementation tonight; log Kábíyèsí's live mobile QA findings on `Orúkọ Mi` (`Ibukun`, `Temilade`, `Yetunde`, `Babatunde`, `Oyekanmi`, `Olasunkanmi`) into Shared Memory so the entire Council knows the exact linguistic and retrieval architecture to execute upon resuming tomorrow.
+- **Mobile QA Anomalies Logged for Tomorrow's Execution (`HANDOFF-ORUKO-MI-001`)**:
+  1. **Zero Hits on Non-Prefix-Initial & Deverbal Names (`Ibukun`, `Temilade`)**:
+     - `Ibukun` (`Ìbùkún` = `Ì-` nominalizer + `bù` + `kún` = *Divine Blessing & Overflowing Abundance*) and `Temilade` (`Tèmiládé` = `Tèmi` [Mine] + `ni` [is] + `Adé` [Crown]) missed because the initial dictionary only scanned 17 noun-initial prefixes.
+  2. **Zero-Shot Main Search Miss on `Yetunde`**:
+     - Executing a full search on `Yetunde` (`Yétúndé`) in `SearchTab.jsx` / `localRankedSearch.js` did not automatically bridge through `decomposeYorubaName()` to its Sovereign Parent (`Ìyá` / `Ẹbí`).
+  3. **Generic `"Lineage morphological extension"` Suffix Fallbacks on `Babatunde`, `Oyekanmi`, `Olasunkanmi`**:
+     - `Babatunde` resolved `Bàbá` but left `tunde` (`Túndé` — *has returned again*) as `"Lineage morphological extension"`.
+     - `Oyekanmi` resolved `Òye` but left `kanmi` (`Kànmí` — *has reached my turn*) as `"Lineage morphological extension"`.
+     - `Olasunkanmi` resolved `Ọlá` but left `sunkanmi` (`Súnkànmí` — *has gravitated closer to my turn*) as `"Lineage morphological extension"`.
+  4. **5-Pillar Upgrade Queued (`HANDOFF-ORUKO-MI-001`)**:
+     - Tomorrow, `Àgbẹ̀dẹ`, `Òye`, and `Sùúrù` will implement the 5-Class Yorùbá Morphological Parser (covering Nominal-Initial, Possessive/Pronominal-Initial `Tèmi-/Tíwa-/Mọ́-/Bọ́-`, Deverbal `Ì-/À-`, Contracted Return `Yé-/Bàbá-`, and Clause names), expand verbal predicates to 120+ canonical suffixes, wire `decomposeYorubaName` directly into `SearchTab.jsx` / `localRankedSearch.js` zero-shot retrieval, and validate against a 50-name QA benchmark.
+- **Verification**: 🌙 **CHECKPOINT 129 SEALED IN SHARED MEMORY — IMPLEMENTATION HELD FOR TONIGHT PER LEAD ARCHITECT DECREE; COUNCIL READY FOR NOV 3 RESUMPTION**.
+
+
 
 ### [2026-11-02 Night] Checkpoint 128 (`CHECKPOINT-IRIN-007` / `HANDOFF-IRIN-002`) — Execution of Plenary Decree 4: Auntie Yẹmí Local WhatsApp Voice Stem Ingestion Pipeline
 - **Agent Persona**: `Ọlọ́yè Irin` (`irin-cloud`)
