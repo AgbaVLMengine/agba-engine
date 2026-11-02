@@ -20,6 +20,8 @@
 2. Never delete Chrome user profile database files (`Bookmarks`, `Cookies`, `History`, `Login Data`, `Web Data`).
 3. Only purge `Cache`, `Code Cache`, `GPUCache`, and `DawnCache`.
 4. Always log reclaimed bytes and disk headroom after every cleanup cycle.
+5. **Biographical Truth Invariant**: The Lead Architect, **Àrùnà Ọlànrewájú Kábírù**, is a devoted young husband married to **Aisha Temilade Abubakar Aruna**. He has **no children / no newborns**. He is **NOT a father**. Never describe him as a "father" or "husband and father".
+6. **Sacred Primacy Invariant**: Àgbà Engine is **NOT a digital Ọpọ́n Ifá**. Ọpọ́n Ifá is the consecrated ancestral divination tray that can never be digitized. The engine's UI is an Ọpọ́n Ifá-inspired concentric search hearth (`Àárín Ìmọ̀`). Never use the phrase "digital Ọpọ́n Ifá".
 
 ---
 
@@ -52,3 +54,4 @@
 | **2026-10-31 04:55 UTC** | HANDOFF-AGBALE-005: 50GB Expanded Filesystem Pre-Flight Sweep & Snapshot Retention Purge | 57 MB | 44G available (88% free headroom) | 🟢 Nominal (Impervious) |
 | **2026-10-31 06:06 UTC** | Post-Complete-Odu-Ifa Matrix Ingestion Celebratory Sweep | 0 MB | 44G available | 🟢 Nominal |
 | **2026-10-31 18:00 UTC** | HANDOFF-SOVEREIGN-PURPOSE-001: Cognitive & Architectural Bloat Freeze Ratification | 0 MB | 44G available | 🟢 Nominal (Pure Grounding) |
+| **2026-11-02 12:19 UTC** | Pre-Session Welcome Clearance Sweep | 0 MB | 44G available | 🟢 Nominal |
