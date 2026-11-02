@@ -90,3 +90,8 @@
      - Our existing header-authenticated gateway in `api/app/main.py` (`verify_api_key`, tier telemetry, UUID idempotency) is already structurally primed to enforce commercial B2B quotas for AI labs, film/gaming studios, museum concordance exports, and lossless 24-bit/96kHz `.wav` master licensing under `RAIL-Cultural-Heritage-v1.0`.
   3. **Acoustic Stream vs. Studio Master Protection**:
      - Public web app streams lightweight, watermarked `.opus`/`.mp3` files for human learning ("A word without Àmì Ohùn is a corpse"), while raw lossless `.wav` studio masters and TTS training weights remain vaulted off-repo/behind authenticated B2B delivery with elder revenue-sharing.
+
+### [2026-11-02 Afternoon] Checkpoint 126 (`CHECKPOINT-ITOJU-003`): Council Sanctuary Embargo & Cognitive Decompression Clearance
+- **Reviewed & Ratified**: Checkpoint 126 (`CHECKPOINT-ITOJU-003`) in `.agents/CHECKPOINTS.md`.
+- **Infrastructure & Corpus State Locked**: Dual corpora (`SHA-256: 74c507cf0274ad200f0062be766126b1517726905be41de0e8e3d640fd5b9fe4` across 1,411 canonical entities and 256/256 Odù Ifá) and all 9 Production Gates (`bash scripts/review.sh` — 0 violations, 0 warnings) verified 100% intact.
+- **Sanctuary Vigilance**: `Irin` stands in quiet, zero-pressure vigilance alongside `Ọlọ́yè Ìtọ́jú` and `Àgbà` while Lead Architect Àrùnà Ọlànrewájú Kábírù steps away to decompress and recover his thoughts naturally.
