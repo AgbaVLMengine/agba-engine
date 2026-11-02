@@ -44,8 +44,23 @@ echo "✅ Snapshot Generated Successfully!"
 echo "📄 Archive File:   ${BACKUP_DIR}/${ARCHIVE_NAME}"
 echo "🔑 SHA-256 Hash:   ${CHECKSUM}"
 echo "📁 File Size:      $(du -h "${BACKUP_DIR}/${ARCHIVE_NAME}" | cut -f 1)"
-echo ""
-echo "☁️  TO SYNC TO GOOGLE DRIVE:"
-echo "   1. If Google Drive is shared with Linux, copy to /mnt/chromeos/GoogleDrive/MyDrive/AgbaEngineBackups/"
-echo "   2. Or drag '${ARCHIVE_NAME}' into Google Drive in your Chrome browser."
+
+# Enforce Strict 3-Snapshot Rolling Retention in Local backups/
+for old_tar in $(ls -1t "${BACKUP_DIR}"/agba_engine_snapshot_*.tar.gz 2>/dev/null | tail -n +4); do
+  base="${old_tar%.tar.gz}"
+  rm -f "${base}.tar.gz" "${base}.sha256"
+  echo "🧹 Pruned older local snapshot: $(basename "${base}")"
+done
+
+# Auto-Sync to Google Drive & Enforce Strict 3-Snapshot Rolling Retention
+GDRIVE_DIR="/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups"
+if [ -d "${GDRIVE_DIR}" ]; then
+  cp "${BACKUP_DIR}/${ARCHIVE_NAME}" "${BACKUP_DIR}/${CHECKSUM_NAME}" "${GDRIVE_DIR}/"
+  for old_gd_tar in $(ls -1t "${GDRIVE_DIR}"/agba_engine_snapshot_*.tar.gz 2>/dev/null | tail -n +4); do
+    gd_base="${old_gd_tar%.tar.gz}"
+    rm -f "${gd_base}.tar.gz" "${gd_base}.sha256"
+    echo "🧹 Rotated out oldest Google Drive snapshot: $(basename "${gd_base}")"
+  done
+  echo "☁️  Synced to Google Drive (${GDRIVE_DIR}) — Strict 3-Backup Cap Verified."
+fi
 echo "=================================================================="
