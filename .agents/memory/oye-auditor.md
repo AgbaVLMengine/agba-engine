@@ -331,6 +331,31 @@
        - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 gates and 12 vaults.
        - `npm run build`: Compiled in **1.19s** (1,933 modules, 0 errors).
        - `scripts/benchmark_oruko_mi.py`: **25 / 25 (100.0%) Tests Passed**.
+- **[2026-11-03 Dusk | Checkpoint 139 (`CHECKPOINT-OYE-022` / `CHECKIN-OYE-011`) — Dusk Gate Review & 50-Line Data Radar Verification]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🛡️ **100% UNCONDITIONAL PRODUCTION APPROVAL — DUSK 9-GATE BASELINE CERTIFIED GREEN (0 HARD VIOLATIONS, 0 WARNINGS)**.
+  - **Verification Protocol Executed**:
+    1. *Dusk 9-Gate Sweep (`bash scripts/review.sh`)*:
+       - Gate 2 (Modularity & Headroom): All active files strictly below 500 LOC ceiling with healthy headroom; zero files in advisory or embargo zones.
+       - Gate 2 (Orphan Component Sentinel): 100% clean across `web/src/components/`. All 19 active components verified with active external consumers (including newly mounted `OrukoMiLineageRibbon.jsx` rendered by `EntityBentoDeck.jsx`). Recognized compatibility shims (`OponSearchCore.jsx` [2 LOC], `ToothSearchCore.jsx` [8 LOC]) accurately bypassed. Zero false positives.
+       - Gate 3 (Financial & Concurrency): Verified 0 floating-point money risks and monotonic sequence locks (`searchSeq = useRef(0)`) in UI coordinators.
+       - Gate 5 (Lean Commits): Zero raw dumps or oversize binaries.
+       - Cloud Run Free-Tier: Verified `--min-instances 0` ($0.00/mo idle scale).
+       - Gate 8 (Ẹ̀ṣọ́ Zero-Trust & Supply Chain): Zero hardcoded secrets, zero LiteLLM trojans, native `google-genai` direct SDK locked.
+       - Dual-Memory Gate: All 12 persona memory vaults and 5 root governance ledgers intact.
+       - Gate 9 (Sacred Invariants): Zero biographical hallucinations or diacritical degradations in onomastic cards.
+    2. *50-Line Data-in-Code AST Radar Verification*:
+       - Verified AST data radar correctly scans changed Python files for static collections > 50 lines.
+       - Confirmed pipeline components (`scripts/pipeline/batch_enricher.py` at 138 LOC) and benchmark runner (`scripts/benchmark_oruko_mi.py` at 183 LOC) run clean. Zero false positives.
+    3. *Corpus Parity & Thin Manifest Count*:
+       - Dual-corpora SHA-256 Checksum: `df3a9a90368edc9c31277b29258fd9837437b16f67e9bb5d0bc9509b81f2ec3b` on both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (**0-bit drift** across 1,413 canonical entities).
+       - `scripts/thin_entities_manifest.json`: Decremented from 591 to **566 remaining** following Batch 18 ingestion.
+    4. *Test Suite & Production Build*:
+       - `scripts/benchmark_oruko_mi.py`: **29 / 29 (100.0%) Tests Passed** (zero generic fallbacks).
+       - `npm run build`: Compiled in **1.23s** (1,934 modules, 0 errors).
+    5. *Proactive Domain Hygiene Proposals Submitted*:
+       - Submitted 4 core efficiency and preventative architecture recommendations for Council review.
+
 
 
 

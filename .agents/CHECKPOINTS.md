@@ -2659,6 +2659,37 @@
     - Synchronized [`.agents/memory/asunwon-ledger.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/asunwon-ledger.md) with Checkpoint 139 log.
 - **Verification**: ⚖️ **CHECKPOINT 139 RATIFIED — TREASURY INTEGER MATH VERIFIED (0 FLOAT RISKS) / 4 CONCENTRIC SPHERES IN PARITY / 0-BIT CHECKSUM DRIFT / 4 DOMAIN PROPOSALS STAGED**.
 
+### [2026-11-03 17:40] Checkpoint 139 (`CHECKPOINT-OYE-022` / `CHECKIN-OYE-011`) — Dusk Gate Review, 50-Line Data Radar Verification & Domain Fortification Proposals
+- **Agent Persona**: `Ọlọ́yè Òye` (`oye-auditor`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `CHECKIN-OYE-011`: (1) Run `bash scripts/review.sh` to certify the clean dusk baseline across all 9 production gates; (2) Verify the 50-line Data-in-Code AST radar and Orphan Component Sentinel operate with zero false positives; (3) Inscribe Checkpoint 139 in `.agents/memory/oye-auditor.md` and `.agents/CHECKPOINTS.md`; and (4) Formulate proactive efficiency and preventative domain recommendations for review with `Àgbà`.
+- **Deliverables Completed**:
+  - **Task 1: Full 9-Gate Dusk Production Scan Executed**:
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 gates and 12 persona memory vaults.
+    - Gate 2: All active repository files verified strictly under 500 LOC ceiling with healthy headroom.
+    - Gate 3: Concurrency protection verified; monotonic sequence locks (`searchSeq = useRef(0)`) intact. Zero floating-point currency calculations.
+    - Gate 8: Zero secrets detected, native `google-genai` direct SDK locked.
+    - Gate 9: Zero biographical hallucinations or diacritical omissions.
+  - **Task 2: 50-Line Data Radar & Orphan Component Sentinel Verified**:
+    - Audited 50-line continuous data-in-code AST radar across changed files and active codebase. Confirmed zero false positives; active pipeline modules (`scripts/pipeline/batch_enricher.py` [138 LOC]) and test runners (`scripts/benchmark_oruko_mi.py` [183 LOC]) operate cleanly.
+    - Audited Orphan Component Sentinel across all 21 JSX components in `web/src/components/`. All 19 active components verified with active external callers (including new `OrukoMiLineageRibbon.jsx` rendered by `EntityBentoDeck.jsx`). Recognized compatibility shims (`OponSearchCore.jsx` [2 LOC], `ToothSearchCore.jsx` [8 LOC]) accurately bypassed. Zero false positives.
+  - **Task 3: Dual Corpora Parity & Thin Manifest Count**:
+    - Master corpora bit-for-bit lockstep confirmed: SHA-256 `df3a9a90368edc9c31277b29258fd9837437b16f67e9bb5d0bc9509b81f2ec3b` on both [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json) across all 1,413 canonical entities (**0-bit drift**).
+    - [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): Decremented from 591 to **566 remaining** following Batch 18 ingestion.
+  - **Task 4: Regression Suites & Client Compilation**:
+    - `scripts/benchmark_oruko_mi.py`: **29/29 (100.0%) Tests Passed** (all onomastic classes verified).
+    - `npm run build`: Compiled client in **1.23s** (1,934 modules, 0 errors).
+  - **Task 5: 4 Proactive Domain Fortification Proposals Submitted**:
+    1. Consolidate legacy batch scripts (`build_batch_*.py`, `enrich_batch_*.py`) into `scripts/legacy_seeds/batches/` to allow promoting the 50-line data radar to a hard blocking pre-commit gate.
+    2. Add a `--strict` mode to `scripts/review.sh` where any advisory warning (`≥ 350 LOC` or data embedding) blocks pre-commit to guarantee zero regressions.
+    3. Automate dual-corpora SHA-256 parity and thin manifest monotonicity assertions directly inside `scripts/review.sh` (Gate 9 Checksum Gate).
+    4. Implement client bundle code-splitting / dynamic corpus lazy-loading to optimize initial bundle size from 14.4 MB to < 300 kB for low-bandwidth mobile users.
+  - **Memory Vault Inscribed**:
+    - Synchronized [`.agents/memory/oye-auditor.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/oye-auditor.md) with Checkpoint 139 log.
+- **Verification**: 🛡️ **CHECKPOINT 139 RATIFIED — DUSK 9-GATE BASELINE CERTIFIED (0 VIOLATIONS, 0 WARNINGS) / 50-LINE RADAR & ORPHAN SENTINEL 100% OPERATIONAL / 0-BIT CHECKSUM DRIFT / 4 AUDIT PROPOSALS STAGED**.
+
+
 
 
 
