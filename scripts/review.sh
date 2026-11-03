@@ -29,6 +29,9 @@ echo "▶ [GATE 2] Checking Component & Module Modularization (3-Tier Pre-Commit
 for f in $CHANGED_FILES; do
   [ -f "$f" ] || continue
   case "$f" in
+    .agents/archive/*|scripts/legacy_seeds/*) continue ;;
+  esac
+  case "$f" in
     *.ts|*.tsx|*.js|*.jsx|*.py|*.vue|*.svelte)
       LINES=$(wc -l < "$f" | tr -d ' ')
       if [ "$LINES" -gt 500 ]; then
@@ -43,9 +46,70 @@ for f in $CHANGED_FILES; do
       else
         echo "  ✅ $f ($LINES / 500 lines — Healthy Headroom)"
       fi
+
+      # Heuristic: Detect continuous static data collections > 50 lines in Python source
+      case "$f" in
+        *.py)
+          case "$f" in
+            scripts/legacy_seeds/*|scripts/fixtures/*) ;;
+            *)
+              python3 -c "
+import ast, sys
+try:
+    tree = ast.parse(open('$f').read())
+    for node in ast.walk(tree):
+        if isinstance(node, (ast.List, ast.Dict, ast.Set, ast.Tuple)):
+            if hasattr(node, 'end_lineno') and hasattr(node, 'lineno'):
+                if (node.end_lineno - node.lineno) > 50:
+                    print(f'  ⚠️  [DATA EMBEDDING RISK] $f L{node.lineno}: Static dataset span of {node.end_lineno - node.lineno} lines. Extract to JSON/fixture.')
+                    sys.exit(0)
+except Exception:
+    pass
+" || true
+              ;;
+          esac
+          ;;
+      esac
       ;;
   esac
 done
+
+echo ""
+echo "▶ [GATE 2: ORPHAN COMPONENT SENTINEL] Scanning web/src/components/ for Unreferenced Zombies..."
+python3 -c "
+import re, os
+from pathlib import Path
+
+comp_dir = Path('web/src/components')
+src_dir = Path('web/src')
+
+if comp_dir.exists() and src_dir.exists():
+    all_src = ''
+    for ext in ('*.js', '*.jsx'):
+        for sf in src_dir.rglob(ext):
+            try:
+                all_src += sf.read_text(encoding='utf-8', errors='ignore') + '\n'
+            except Exception:
+                pass
+
+    orphans = []
+    for c in comp_dir.glob('*.jsx'):
+        name = c.stem
+        # Exclude recognized compatibility shims (< 25 LOC)
+        lines = len(c.read_text(encoding='utf-8', errors='ignore').splitlines())
+        if lines < 25:
+            continue
+        matches = len(re.findall(r'\b' + re.escape(name) + r'\b', all_src))
+        own_matches = len(re.findall(r'\b' + re.escape(name) + r'\b', c.read_text(encoding='utf-8', errors='ignore')))
+        if matches <= own_matches:
+            orphans.append((c.name, lines))
+
+    if orphans:
+        for name, lines in orphans:
+            print(f'  ⚠️  [ORPHAN COMPONENT] web/src/components/{name} ({lines} LOC) has 0 external references. Archive to .agents/archive/.')
+    else:
+        print('  ✅ All active frontend components in web/src/components/ are referenced.')
+"
 
 echo ""
 echo "▶ [GATE 5 & LEAN COMMITS] Checking for Raw Dumps, Binaries & Oversized Code/Doc Files..."

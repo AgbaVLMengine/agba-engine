@@ -1,0 +1,401 @@
+[
+  {
+    "id": "OM01_MORENIKEJI",
+    "query": "Morenikeji",
+    "expected_canonical": "Mọ́rẹ́nikéjì",
+    "expected_parents": [
+      "Orí",
+      "Ẹbí",
+      "Ọ̀rọ̀"
+    ],
+    "expected_class": "CLASS_E",
+    "semantic_keywords": [
+      "partner",
+      "second self",
+      "companion",
+      "destiny"
+    ],
+    "category": "Oral Literature, Philosophy & Folklore"
+  },
+  {
+    "id": "OM02_FOLAKEMI",
+    "query": "Folakemi",
+    "expected_canonical": "Fọlákẹ́mi",
+    "expected_parents": [
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "nobility",
+      "honor",
+      "cherish"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM03_OLAKUNLE",
+    "query": "Olakunle",
+    "expected_canonical": "Ọlákúnlé",
+    "expected_parents": [
+      "Ọlá",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "household",
+      "overflowing",
+      "abundance",
+      "honor"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM04_IFAGBEMI",
+    "query": "Ifagbemi",
+    "expected_canonical": "Ifágbèmí",
+    "expected_parents": [
+      "Ifá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "favors",
+      "supports",
+      "sustains"
+    ],
+    "category": "Spiritual & Cosmological Matrix"
+  },
+  {
+    "id": "OM05_OLABODE",
+    "query": "Olabode",
+    "expected_canonical": "Ọlábọ̀dé",
+    "expected_parents": [
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "threshold",
+      "gateway",
+      "arrived"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM06_ADEBAYO",
+    "query": "Adebayo",
+    "expected_canonical": "Adébáyọ̀",
+    "expected_parents": [
+      "Adé",
+      "Ayọ̀"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "joy",
+      "jubilation",
+      "crown"
+    ],
+    "category": "Monarchy, Royal Regalia & Governance"
+  },
+  {
+    "id": "OM07_IFAYEKU",
+    "query": "Ifayeku",
+    "expected_canonical": "Ifáyẹ̀kú",
+    "expected_parents": [
+      "Ifá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "mortality",
+      "Ọ̀yẹ̀kú",
+      "spared"
+    ],
+    "category": "Spiritual & Cosmological Matrix"
+  },
+  {
+    "id": "OM08_ODEGBAMI",
+    "query": "Odegbami",
+    "expected_canonical": "Ọdẹgbàmí",
+    "expected_parents": [
+      "Ọdẹ",
+      "Ògún"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "hunter",
+      "sustains",
+      "delivers"
+    ],
+    "category": "Traditional Trades, Agriculture & Agrarian Guilds"
+  },
+  {
+    "id": "OM09_ADIGUN",
+    "query": "Adigun",
+    "expected_canonical": "Adígun",
+    "expected_parents": [
+      "Akín",
+      "Ògún",
+      "Àdá",
+      "Idà",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "armor",
+      "shielding",
+      "defense"
+    ],
+    "category": "Military Traditions, Weaponry & Defense"
+  },
+  {
+    "id": "OM10_AROWOLO",
+    "query": "Arowolo",
+    "expected_canonical": "Arówólò",
+    "expected_parents": [
+      "Owó Ẹyọ",
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "cowrie",
+      "wealth",
+      "expend"
+    ],
+    "category": "Economy, Commerce & Trade Guilds"
+  },
+  {
+    "id": "OM11_ALAKIJA",
+    "query": "Alakija",
+    "expected_canonical": "Alákìíjà",
+    "expected_parents": [
+      "Akín",
+      "Ọba"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "warrior",
+      "brave",
+      "covenant"
+    ],
+    "category": "Military Traditions, Weaponry & Defense"
+  },
+  {
+    "id": "OM12_ODUTAYO",
+    "query": "Odutayo",
+    "expected_canonical": "Odùtáyọ̀",
+    "expected_parents": [
+      "Odù Ifá",
+      "Odù"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "divination",
+      "joy",
+      "surpasses"
+    ],
+    "category": "Spiritual & Cosmological Matrix"
+  },
+  {
+    "id": "OM13_ABAYOMI",
+    "query": "Abayomi",
+    "expected_canonical": "Àbáyọmí",
+    "expected_parents": [
+      "Òye",
+      "Ọ̀rọ̀",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_E",
+    "semantic_keywords": [
+      "gloated",
+      "adversaries",
+      "shielded"
+    ],
+    "category": "Oral Literature, Philosophy & Folklore"
+  },
+  {
+    "id": "OM14_KOFOROWOLA",
+    "query": "Koforowola",
+    "expected_canonical": "Kòfowórọ́lá",
+    "expected_parents": [
+      "Owó Ẹyọ",
+      "Ọlá",
+      "Ọ̀rọ̀"
+    ],
+    "expected_class": "CLASS_E",
+    "semantic_keywords": [
+      "money",
+      "nobility",
+      "unpurchasable"
+    ],
+    "category": "Oral Literature, Philosophy & Folklore"
+  },
+  {
+    "id": "OM15_FOWOWE",
+    "query": "Fowowe",
+    "expected_canonical": "Fowowe",
+    "expected_parents": [
+      "Owó Ẹyọ",
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_E",
+    "semantic_keywords": [
+      "wealth",
+      "bathes",
+      "abundance"
+    ],
+    "category": "Economy, Commerce & Trade Guilds"
+  },
+  {
+    "id": "OM16_KAYODE",
+    "query": "Kayode",
+    "expected_canonical": "Káyọ̀dé",
+    "expected_parents": [
+      "Ayọ̀",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "joy",
+      "home",
+      "spiritual"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM17_OGUNFUA",
+    "query": "Ogunfua",
+    "expected_canonical": "Ògúnfúà",
+    "expected_parents": [
+      "Ògún"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "pure",
+      "radiates",
+      "stainless"
+    ],
+    "category": "Spiritual & Cosmological Matrix"
+  },
+  {
+    "id": "OM18_OLATUNJI",
+    "query": "Olatunji",
+    "expected_canonical": "Ọlátúnjí",
+    "expected_parents": [
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "reawakened",
+      "resurrected",
+      "nobility"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM19_ADISA",
+    "query": "Adisa",
+    "expected_canonical": "Àdìsá",
+    "expected_parents": [
+      "Òye",
+      "Ẹbí",
+      "Ọ̀rọ̀"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "oríkì",
+      "deeds",
+      "speech",
+      "distinction"
+    ],
+    "category": "Oral Literature, Philosophy & Folklore"
+  },
+  {
+    "id": "OM20_AROSANYI",
+    "query": "Arosanyi",
+    "expected_canonical": "Àròsanyìn",
+    "expected_parents": [
+      "Ọ̀sanyìn"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "healing",
+      "leaves",
+      "deity"
+    ],
+    "category": "Sacred Botany, Flora & Herbal Medicine"
+  },
+  {
+    "id": "OM21_AFOLABI",
+    "query": "Afolabi",
+    "expected_canonical": "Àfọlábí",
+    "expected_parents": [
+      "Ọlá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "born",
+      "honor",
+      "nobility",
+      "dignity"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM22_AJAYI",
+    "query": "Ajayi",
+    "expected_canonical": "Àjàyí",
+    "expected_parents": [
+      "Ẹbí",
+      "Orí",
+      "Àmútọ̀runwá"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "face",
+      "downward",
+      "spiritual",
+      "shielding"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM23_BALOGUN_FABUNMI",
+    "query": "Balogun Fabunmi",
+    "expected_canonical": "Balogun Fabunmi",
+    "expected_parents": [
+      "Balógun",
+      "Ifá"
+    ],
+    "is_corpus_subvariant": true,
+    "is_parent_expected": false,
+    "sovereign_parent_expected": "Balógun",
+    "category": "Military Traditions, Weaponry & Defense"
+  },
+  {
+    "id": "OM24_BALOGUN_AJAYI_OGBORIEFON",
+    "query": "Balogun Ajayi Ogboriefon",
+    "expected_canonical": "Balogun Ajayi Ogboriefon",
+    "expected_parents": [
+      "Balógun",
+      "Àjàyí",
+      "Ẹbí"
+    ],
+    "is_corpus_subvariant": true,
+    "is_parent_expected": false,
+    "sovereign_parent_expected": "Balógun",
+    "category": "Military Traditions, Weaponry & Defense"
+  },
+  {
+    "id": "OM25_IFABUNMI",
+    "query": "Ifábunmi",
+    "expected_canonical": "Ifábùnmi",
+    "expected_parents": [
+      "Ifá"
+    ],
+    "expected_class": "CLASS_A",
+    "semantic_keywords": [
+      "gifted",
+      "blessing",
+      "bestowed"
+    ],
+    "category": "Spiritual & Cosmological Matrix"
+  }
+]

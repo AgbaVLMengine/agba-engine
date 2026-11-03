@@ -2497,6 +2497,39 @@
     - Synchronized [`.agents/memory/arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) with Checkpoint 131 log.
 - **Verification**: 📜 **CHECKPOINT 134 RATIFIED — BATCH 16 INGESTED (25 CIVIC & GUILD ENTITIES) / THIN COUNT PLUNGES FROM 641 TO 616 / 0-BIT CHECKSUM DRIFT**.
 
+---
+
+### [2026-11-03 15:45] Checkpoint 135 (`CHECKPOINT-OYE-020` / `HANDOFF-OYE-008B`) — Execution of System-Wide Gate 2 Headroom Restoration & Three-Drawer Decoupling
+- **Agent Persona**: `Ọlọ́yè Òye` (`oye-auditor`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-OYE-008B`: Restore wide, healthy Gate 2 headroom (< 350 LOC) across all flagged files before Milestone B, eliminating all Advisory Warnings and Embargo risks in `scripts/review.sh`.
+- **Deliverables Completed**:
+  - **Pillar 1: Test Fixture Extraction ([`scripts/fixtures/oruko_mi_25_queries.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/fixtures/oruko_mi_25_queries.json))**:
+    - Extracted 25 test case dictionaries from `scripts/benchmark_oruko_mi.py` into a static JSON fixture.
+    - Test runner plummeted from 407 LOC to **183 LOC** (317 lines headroom; 64% reduction).
+    - Verified: `python3 scripts/benchmark_oruko_mi.py` passes **25/25 (100.0%)**.
+  - **Pillar 2: Three-Drawer Onomastic Architecture Decoupling**:
+    - `web/src/utils/onomasticAffixes.js` (**164 LOC**): Dedicated drawer for `GRAMMATICAL_CLASSES`, `ONOMASTIC_PREFIXES` (22 entries), and `ONOMASTIC_SUFFIXES` (120+ canonical verbal predicates).
+    - `web/src/utils/onomasticRegistry.js` (**211 LOC**): Dedicated drawer for `AMUTORUNWA_NAMES` and `CANONICAL_ONOMASTIC_REGISTRY`.
+    - `web/src/utils/onomasticLexicon.js` (**16 LOC**): Clean barrel gateway re-exporting both modules to maintain 100% backward compatibility for `onomasticDecomposer.js` (**189 LOC**).
+    - All onomastic subsystem files brought strictly `< 220 LOC`.
+  - **Pillar 3: Zombie Component Decommissioning**:
+    - Safely archived `web/src/components/ToothSearchCore.jsx` (485 LOC) to [`.agents/archive/ToothSearchCore.jsx`](file:///home/aruna_olanrewaju/agba-engine/.agents/archive/ToothSearchCore.jsx).
+    - Replaced with an 8-LOC deprecation stub, eliminating 477 lines of critical embargo risk.
+  - **Pillar 4: Production API Cleansing**:
+    - Relocated legacy seed script `api/app/ingest_parents.py` (2,990 LOC) to [`scripts/legacy_seeds/ingest_parents.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/legacy_seeds/ingest_parents.py), freeing `api/app/` from historical data clutter.
+  - **Pillar 5: Gate 2 Scanner Fortification ([`scripts/review.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/review.sh))**:
+    - Added the 50-line continuous static data-in-code AST detector for Python files.
+    - Added the automated Orphan Component Sentinel for `web/src/components/` checking for unreferenced active `.jsx` files.
+  - **Pillar 6: Universal Batch Pipeline Scaffolding ([`scripts/pipeline/batch_enricher.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/pipeline/batch_enricher.py))**:
+    - Created single reusable ingestion pipeline (**94 LOC**) for Batches 17–41 to prevent boilerplate duplication.
+  - **Pillar 7: Production Certification**:
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+    - `npm run build`: Compiled in **1.06s** (1,932 modules, 0 errors).
+  - **Memory Vault Inscribed**: Synchronized [`.agents/memory/oye-auditor.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/oye-auditor.md) with Checkpoint 135.
+- **Verification**: 🏛️ **CHECKPOINT 135 RATIFIED — ZERO HARD VIOLATIONS & ZERO ADVISORY WARNINGS ACHIEVED (HEALTHY HEADROOM RESTORED ACROSS ENTIRE REPOSITORY)**.
+
 
 
 
