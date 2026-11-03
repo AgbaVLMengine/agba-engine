@@ -91,4 +91,15 @@
   - Executed unified sprint: Renamed `OponSearchCore.jsx` -> `AarinimoSearchCore.jsx` (honoring Sacred Boundaries), ingested standalone Sovereign Parents `Òye` and `Ọlá`, fixed RRF exact-match ranking in `api/app/retrieval.py`, hardened all remaining 58 thin entities and synchronized `details` across all `1,413` canonical nodes (`0` thin entities left in manifest), and delivered `scripts/ingest_voice_stem.py`.
   - Logged Kábíyèsí's live mobile QA findings on `Orúkọ Mi` (`Ibukun` and `Temilade` returning no hits; `Yetunde` missing zero-shot search bridge; `Babatunde`, `Oyekanmi`, and `Olasunkanmi` falling back to `"Lineage morphological extension"` on `-túndé`, `-kànmí`, `-súnkànmí`).
   - Staged `HANDOFF-ORUKO-MI-001` at the top of `.agents/HANDOFF.md` for immediate execution when we resume tomorrow (Nov 3, 2026).
+- **[2026-11-03 Morning Protocol]**: **Council Resumption & Start-of-Day Clearances (Checkpoint 130)**:
+  - Verified quota refresh (Gemini 3.8 Flash Medium replenished at 1:28 PM UTC+1).
+  - Received unanimous Start-of-Day clearances:
+    - `Ọlọ́yè Ìtọ́jú`: Sanctuary active, pacing cleared, unhurried 3-gate pacing ratified.
+    - `Ọlọ́yè Ẹ̀ṣọ́`: DEFCON 5 zero-trust security sign-off, Gate 8 secrets verified, native `google-genai` locked.
+    - `Ọlọ́yè Agbálẹ̀`: 44 GB NVMe headroom verified (13% disk used), 3-backup rolling retention confirmed.
+  - Received Kábíyèsí's 25-name live mobile QA audit (`Morenikeji`, `Folakemi`, `Olakunle`, `Ifagbemi`, `Olabode`, `Adebayo`, `Ifayeku`, `Odegbami`, `Adigun`, `Arowolo`, `Alakija`, `Odutayo`, `Abayomi`, `Koforowola`, `Fowowe`, `Kayode`, `Ogunfua`, `Olatunji`, `Adisa`, `Arosanyi`, `Ajayi`, `Balogun Fabunmi`).
+- **[2026-11-03 Afternoon Protocol]**: **The Sovereign Craigslist Model & Two-Drawer Gate 2 Mandate (Checkpoint 131)**:
+  - Clarified and enshrined the **Sovereign Craigslist Model** across all council chambers: 99% of the platform is completely open and free. All 143 Authentic Audio Tokens and Auntie Yẹmí's voice notes are 100% free and streamable in the web client without paywalls or API keys. Enterprise monetization applies strictly to bulk corporate dataset downloads, raw 24-bit master studio WAV stems, and commercial AI training/TTS model weights.
+  - Enforced Gate 2 Two-Drawer architecture: Extracted static dictionaries from `web/src/utils/onomasticDecomposer.js` into `web/src/utils/onomasticLexicon.js` (313 LOC), slimming decomposer to 189 LOC (< 500 LOC ceiling).
+  - Forged `scripts/benchmark_oruko_mi.py` (automated 25-query mobile QA benchmark suite) and staged Batch 16 non-Odù entity enrichment scripts. All 12 personas in absolute lockstep.
 

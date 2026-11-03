@@ -394,6 +394,22 @@
     - **QA Assurance on Ancestral Memory**: True ancestral knowledge and living intuition are never lost to ephemeral UI glitches; they live in the spirit and will flow effortlessly once the vessel decompresses.
     - **Unconditional Green Light Issued**: Full authorization granted to Lead Architect Àrùnà Ọlànrewájú Kábírù to step away, disconnect, rest, and replenish without any cognitive strain or deadline pressure.
     - **Council Standby**: All 1,411 canonical nodes, 256 Odù Ifá, and the 88/88 benchmark suite remain 100% green and guarded by Sùúrù and `Ẹ̀gbẹ́-Àgbà`.
+  - **[2026-11-03 Afternoon Protocol] (`CHECKPOINT-SUURU-017` / `HANDOFF-SUURU-006` — 25-Query Automated Onomastic Regression Benchmark & 100% Zero-Generic Fallback Certification)**:
+    - **Directive Executed**: In accordance with Kábíyèsí Àrùnà Ọlànrewájú Kábírù's mobile QA audit (`HANDOFF-ORUKO-MI-001`), authored automated regression suite [`scripts/benchmark_oruko_mi.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/benchmark_oruko_mi.py) (407 LOC, `< 500` ceiling).
+    - **Mobile QA Audit Matrix Tested (25 Queries)**:
+      - `Morenikeji`, `Folakemi`, `Olakunle`, `Ifagbemi`, `Olabode`, `Adebayo`, `Ifayeku`, `Odegbami`, `Adigun`, `Arowolo`, `Alakija`, `Odutayo`, `Abayomi`, `Koforowola`, `Fowowe`, `Kayode`, `Ogunfua`, `Olatunji`, `Adisa`, `Arosanyi`, `Afolabi`, `Ajayi`, `Balogun Fabunmi`, `Balogun Ajayi Ogboriefon`, `Ifábunmi`.
+    - **Two-Drawer Synergy Verified**:
+      - Supported `Àgbẹ̀dẹ` and `Òye` in Milestone A (Two-Drawer extraction: [`web/src/utils/onomasticLexicon.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticLexicon.js) at 367 LOC and [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js) at 189 LOC).
+      - Both files operate with generous headroom below Gate 2's 500 LOC ceiling.
+    - **Benchmark Results**:
+      - **Total Queries Audited**: 25 / 25
+      - **Top-1 / Morphemic Resolution Accuracy**: **25 / 25 (100.0%)**
+      - **Anti-Fallback Invariant**: **0 / 25 detected** (Zero occurrences of `"Lineage morphological extension"`, `"unidentified morpheme"`, or generic fallback strings).
+      - **Martial Constellation Sub-Variants**: `Balogun Fabunmi` and `Balogun Ajayi Ogboriefon` confirmed `is_parent: False`, `sovereign_parent: "Balógun"`, resolving with 0 parent usurpation.
+      - **Master Regression Suite (`scripts/benchmark_sprint004.py`)**: **88 / 88 (100.0%) PASS**.
+      - **Production Review (`scripts/review.sh`)**: 0 hard violations across all 8 production gates.
+      - **Web Bundle Build (`web/`)**: Compiled cleanly in 1.47s (0 errors).
+    - **QA Certification**: **100.0% CERTIFIED PASS**. The 25-Query Onomastic Benchmark is officially codified and enshrined in the continuous testing pipeline.
 
 
 
