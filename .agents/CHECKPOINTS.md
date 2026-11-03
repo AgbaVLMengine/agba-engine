@@ -2581,6 +2581,30 @@
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
 - **Verification**: 📜 **CHECKPOINT 137 RATIFIED — ONOMASTIC ZERO-SHOT RETRIEVAL BRIDGE OPERATIONAL / ZERO UI REGRESSION / GATE 2 & LAW 1 ENFORCED / 0 ERRORS**.
 
+### [2026-11-03 17:05] Checkpoint 138 (`CHECKPOINT-AROKIN-012` / `HANDOFF-AROKIN-005`) — Batch 18 Non-Odù Hardening (Primordial Divinities, Sacred Gastronomy & Proverbs) Ingested — Thin Count Decrements to 566
+- **Agent Persona**: `Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`) / Lead Architect Àrùnà Ọlànrewájú Kábírù
+- **Deliverables Completed**:
+  - **Task 1: Declarative Ingestion of Batch 18 via Universal Pipeline Runner**:
+    - Authored purely declarative JSON payload [`scripts/data/batches/batch_18_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_18_data.json) (ZERO single-use Python scripts authored) covering 25 entities across three foundational cultural domains:
+      1. *Primordial Cosmological Divinities*: `Ọbàtálá` (ethical whiteness, arch-sculptor of humanity, moral character), `Èṣù` (divine crossroad mediator, supreme cosmic translator, impartial guardian of Àṣẹ; strictly zero demonizing framing; Gate 9 digital deity invariants enforced).
+      2. *Sacred Gastronomy & Agrarian Heritage Matrix*: `Èlùbọ́` (yam flour technology), `Gbẹ̀gị̀rị́` (indigenous cowpea soup), `Abula` (tripartite soup synergy), `Ìyán` (pounded yam queen of meals), `Ẹ̀fọ́ Rírò` (stirred vegetable stew), `Àkàrà` (fried bean fritters), `Mọ́ín-mọ́ín` (steamed bean pudding), `Ofada` (ancestral upland rice `Ọ̀fàdà`), `Ọ̀̀gị̀` (fermented maize porridge), `Pọ́n mọ́` (delicacy cowhide), `Èwùrà` (water yam), `Ikọkọrẹ` (Ìjẹ̀bú water yam pottage), `Àṣáró` (savory yam pottage), `Egbọ` (stewed hominy corn), `Ẹ̀wà Àgányìn` (caramelized mashed beans), `Ẹ̀bà` (cassava meal communion), `Àádùn` (sacred ceremonial spiced maize confectionery), `Wàrà` (Fulani/Yorùbá curd cheese), `Obẹ-Ata` (ancestral pepper soup/stew), `Ìrù` (alkaline fermented locust bean seasoning), `Aṣaro Ẹlẹ́pọ` (palm oil enriched porridge), `Ẹ̀fọ́ Yànrin` (wild medicinal lettuce).
+      3. *Sacred Rhetoric & Metaphysical Maxims*: `Òwe` (Indigenous Proverbs & Philosophical Maxims).
+    - Resolved canonical ID mapping for `Obẹ-Ata` (manifest: `Obe Ata`) and normalized Unicode NFC representation for `Ọ̀gì` (`Ọ̀̀gị̀`).
+  - **Task 2: Academic Provenance & Triad Proverbs Infusion**:
+    - Anchored 100% of the batch into authoritative academic literature cross-referenced with `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (William Bascom 1951, Pierre Verger 1995, Samuel Johnson 1921, Babatunde Lawal 1996, E. Bọ́lájì Ìdòwú 1962, Wándé Abímbọ́lá 1975/1976, Henry Louis Gates Jr. 1988, I.O. Delano 1966, Oyekan Owomoyela 2005, N.A. Fadipe 1970).
+    - Completed 3-proverb canonical triads with parenthetical English translation and philosophical commentary for all 7 entities previously lacking their third proverb (`Gbẹ̀gị̀rị́`, `Abula`, `Ẹ̀fọ́ Rírò`, `Èwùrà`, `Ikọkọrẹ`, `Ẹ̀wà Àgányìn`, `Àádùn`).
+    - Executed `python3 scripts/pipeline/batch_enricher.py scripts/data/batches/batch_18_data.json`:
+      - Dual master corpora synchronized at **1,413 canonical entities** with **0-bit checksum drift** (`df3a9a90368edc9c31277b29258fd9837437b16f67e9bb5d0bc9509b81f2ec3b`).
+      - Manifest auto-sliced: **reduced thin entities from 591 down to exactly 566 remaining thin entities**.
+  - **Task 3: Production Quality Gates & Regression Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 canonical entities (64/64 anti-parent-loop precision).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **1.18s** (1,934 modules transformed, 0 errors).
+  - **Memory Vault Inscribed**:
+    - Synchronized [`.agents/memory/arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) with Checkpoint 138 log.
+- **Verification**: 📜 **CHECKPOINT 138 RATIFIED — UNIVERSAL BATCH PIPELINE INGESTION / BATCH 18 INGESTED (PRIMORDIAL DIVINITIES, SACRED GASTRONOMY & PROVERBS) / THIN COUNT DROPS FROM 591 TO 566 / 0-BIT CHECKSUM DRIFT / 88/88 BENCHMARK PASS**.
+
 
 
 

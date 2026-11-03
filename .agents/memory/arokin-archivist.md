@@ -327,28 +327,7 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **83/83 (100.0%) Top-1 Accuracy** live across 1,411 entities.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
     - `npm run build`: Compiled production client bundle cleanly in **963ms** (1,928 modules transformed, 0 errors).
-- **2026-11-03 [Checkpoint 136 — HANDOFF-AROKIN-004B: Universal Batch Pipeline Fortification & Batch 17 Ingestion — Thin Count Plunges from 616 to 591]**:
-  - **Task: Fortify `batch_enricher.py` & Ingest Batch 17 Royal Regalia & Beadwork (Indices 50 to 74)**:
-    - Fortified [`scripts/pipeline/batch_enricher.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/pipeline/batch_enricher.py) (138 LOC, Gate 2 compliant `< 150 LOC`):
-      1. Dual CLI invocation: supports positional file path (`batch_enricher.py scripts/data/batches/batch_17_data.json`) or `--batch <num>`.
-      2. Polymorphic payload normalization: seamlessly parses `List[Dict]` or `Dict[str, Dict]`.
-      3. Alias resolution shield: indexes `aliases`, `id`, and `title` to prevent twin duplicate nodes (mapped `Ìlèkè Ọrùn` $\rightarrow$ canonical `Ìlẹ̀kẹ̀-Ọ̀rùn`).
-      4. Automated nested `details` synchronization: updates both top-level attributes and nested `entity["details"]` dictionary.
-      5. Automated manifest slicing: decrements [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json) automatically on each successful batch run.
-    - Authored [`scripts/data/batches/batch_17_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_17_data.json) covering 25 royal, beadwork, textile, and sacred geography nodes:
-      - *Monarchical Authority & Insignia*: `Ọba`, `Kábíyèsí`, `Adé`, `Adé Ààrẹ`, `Ọ̀pá Ọ̀rànmíyàn`, `Ọ̀pá Àṣẹ`.
-      - *Sacred Beadwork Regalia*: `Ìlèkè`, `Ìlèkè Ẹsẹ̀`, `Ìlẹ̀kẹ̀-Ọ̀rùn`, `Ìyùn`, `Èwù Ìlèkè`, `Bàtà Ìlèkè`, `Ìlèkè Ọ̀pẹ̀tẹ̀`.
-      - *Court Headwear & Textiles*: `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Fìlà Oníderè`, `Gẹlẹ̀ Ògódó`, `Gẹlẹ̀ Ìpekú`, `Gẹlẹ̀ Ìjàpá`, `Yẹ̀rị̀`, `Pà Kaja`, `Àborù`, `Àkẹ̀tẹ̀`.
-      - *Sacred Geography*: `Odo Ọ̀ṣun`, `Igbo Olódùmarè`.
-    - Populated 100% of the batch with primary scholarly citations cross-referenced with `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (Johnson 1921, Abiodun 2014, Drewal & Pemberton 1989, Willett 1967, Eicher 1976, Lawal 1996, Nwafor 2021, Fadipe 1970, Smith 1988, Ìdòwú 1962, Abímbọ́lá 1976, Fágúnwà 1938, Verger 1995).
-    - Added 3rd authentic proverb with philosophical commentary to all entities with 2 proverbs (`Ìlèkè Ẹsẹ̀`, `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Pà Kaja`, `Ọ̀pá Ọ̀rànmíyàn`, `Èwù Ìlèkè`, `Ọ̀pá Àṣẹ`) completing their canonical triads.
-    - Synchronized dual master corpora at **1,413 canonical entities** with **0-bit checksum drift**.
-    - Updated [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): **reduced thin non-Odù entities from 616 down to exactly 591** (Next: Batch 18 starting at index 90: `Obàtálá`).
-  - **Standards & Production Gate Verification**:
-    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
-    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates.
-    - `cd web && npm run build`: Compiled production client bundle cleanly in **1.17s** (1,933 modules transformed, 0 errors).
-
+- **2026-11-03 [Checkpoint 134 — HANDOFF-AROKIN-003: Batch 16 Non-Odù Hardening (Entities 25–49) Ingested — Thin Count Plunges from 641 to 616]**:
   - **Task: Native Sovereign Ingestion of Batch 16 Non-Odù Entities (Indices 25 to 49)**:
     - Ingested authentic 14-Tier depth for 25 consecutive foundational civic, guild, ecological, and martial entities from `scripts/thin_entities_manifest.json`:
       - **Fauna & Ecology**: `Ẹyẹ` (winged messengers), `Ẹranko` (faunal biodiversity).
@@ -370,6 +349,51 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
     - `bash scripts/review.sh`: **0 hard violations** across all 9 production gates and 12 persona vaults.
     - `npm run build`: Compiled production client bundle cleanly in **1.21s** (1,930 modules transformed, 0 errors).
+- **2026-11-03 [Checkpoint 136 — HANDOFF-AROKIN-004B: Universal Batch Pipeline Fortification & Batch 17 Ingestion — Thin Count Plunges from 616 to 591]**:
+  - **Task: Fortify `batch_enricher.py` & Ingest Batch 17 Royal Regalia & Beadwork (Indices 50 to 74)**:
+    - Fortified [`scripts/pipeline/batch_enricher.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/pipeline/batch_enricher.py) (138 LOC, Gate 2 compliant `< 150 LOC`):
+      1. Dual CLI invocation: supports positional file path (`batch_enricher.py scripts/data/batches/batch_17_data.json`) or `--batch <num>`.
+      2. Polymorphic payload normalization: seamlessly parses `List[Dict]` or `Dict[str, Dict]`.
+      3. Alias resolution shield: indexes `aliases`, `id`, and `title` to prevent twin duplicate nodes (mapped `Ìlèkè Ọrùn` $\rightarrow$ canonical `Ìlẹ̀kẹ̀-Ọ̀rùn`).
+      4. Automated nested `details` synchronization: updates both top-level attributes and nested `entity["details"]` dictionary.
+      5. Automated manifest slicing: decrements [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json) automatically on each successful batch run.
+    - Authored [`scripts/data/batches/batch_17_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_17_data.json) covering 25 royal, beadwork, textile, and sacred geography nodes:
+      - *Monarchical Authority & Insignia*: `Ọba`, `Kábíyèsí`, `Adé`, `Adé Ààrẹ`, `Ọ̀pá Ọ̀rànmíyàn`, `Ọ̀pá Àṣẹ`.
+      - *Sacred Beadwork Regalia*: `Ìlèkè`, `Ìlèkè Ẹsẹ̀`, `Ìlẹ̀kẹ̀-Ọ̀rùn`, `Ìyùn`, `Èwù Ìlèkè`, `Bàtà Ìlèkè`, `Ìlèkè Ọ̀pẹ̀tẹ̀`.
+      - *Court Headwear & Textiles*: `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Fìlà Oníderè`, `Gẹlẹ̀ Ògódó`, `Gẹlẹ̀ Ìpekú`, `Gẹlẹ̀ Ìjàpá`, `Yẹ̀rị̀`, `Pà Kaja`, `Àborù`, `Àkẹ̀tẹ̀`.
+      - *Sacred Geography*: `Odo Ọ̀ṣun`, `Igbo Olódùmarè`.
+    - Populated 100% of the batch with primary scholarly citations cross-referenced with `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (Johnson 1921, Abiodun 2014, Drewal & Pemberton 1989, Willett 1967, Eicher 1976, Lawal 1996, Nwafor 2021, Fadipe 1970, Smith 1988, Ìdòwú 1962, Abímbọ́lá 1976, Fágúnwà 1938, Verger 1995).
+    - Added 3rd authentic proverb with philosophical commentary to all entities with 2 proverbs (`Ìlèkè Ẹsẹ̀`, `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Pà Kaja`, `Ọ̀pá Ọ̀rànmíyàn`, `Èwù Ìlèkè`, `Ọ̀pá Àṣẹ`) completing their canonical triads.
+    - Synchronized dual master corpora at **1,413 canonical entities** with **0-bit checksum drift**.
+    - Updated [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): **reduced thin non-Odù entities from 616 down to exactly 591**.
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates.
+    - `cd web && npm run build`: Compiled production client bundle cleanly in **1.17s** (1,933 modules transformed, 0 errors).
+- **2026-11-03 [Checkpoint 138 — HANDOFF-AROKIN-005: Batch 18 Ingestion (Primordial Divinities, Sacred Gastronomy & Proverbs) — Thin Count Decrements to 566]**:
+  - **Task: Declarative Ingestion of Batch 18 via Universal Pipeline (Indices 0 to 24 in Manifest)**:
+    - Authored purely declarative JSON payload [`scripts/data/batches/batch_18_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_18_data.json) (ZERO Python scripts required) covering 25 entities:
+      - *Primordial Cosmological Divinities*: `Ọbàtálá` (ethical whiteness, arch-sculptor, moral purity), `Èṣù` (divine crossroad mediator, translator, impartial guardian of Àṣẹ).
+      - *Sacred Gastronomy & Agrarian Heritage Matrix*: `Èlùbọ́`, `Gbẹ̀gị̀rị́`, `Abula`, `Ìyán`, `Ẹ̀fọ́ Rírò`, `Àkàrà`, `Mọ́ín-mọ́ín`, `Ọ̀fàdà` (`Ofada`), `Ọ̀̀gị̀`, `Pọ́n mọ́`, `Èwùrà`, `Ikọkọrẹ`, `Àṣáró`, `Egbọ`, `Ẹ̀wà Àgányìn`, `Ẹ̀bà`, `Àádùn`, `Wàrà`, `Obẹ-Ata` (`Obe Ata`), `Ìrù`, `Aṣaro Ẹlẹ́pọ`, `Ẹ̀fọ́ Yànrin`.
+      - *Sacred Rhetoric & Metaphysical Maxims*: `Òwe` (Indigenous Proverbs & Philosophical Maxims).
+    - Inscribed 100% of the batch with authoritative academic provenance citations cross-referenced with `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`:
+      - William Bascom (1951), *Yoruba Food & Cooking* (indigenous culinary taxonomy, fermentation, pulses).
+      - Pierre Fatumbi Verger (1995), *Ewé: The Use of Plants in Yoruba Society* (botanical and pharmacopeic analysis).
+      - Samuel Johnson (1921), *The History of the Yorubas* (royal banquets, agrarian feasts).
+      - Babatunde Lawal (1996), *The Gẹ̀lẹ̀dẹ́ Spectacle* (female market women and food culture).
+      - E. Bọ́lájì Ìdòwú (1962), *Olódùmarè: God in Yoruba Belief* (cosmological primacy of Ọbàtálá and Èṣù).
+      - Wándé Abímbọ́lá (1975, 1976), *Sixteen Great Poems of Ifá* & *Ifá Literary Corpus* (sacrificial meals, Èṣù liturgical prayers, and Òwe).
+      - Henry Louis Gates Jr. (1988), *The Signifying Monkey* (Èṣù-Ẹlẹ́gbára hermeneutics).
+      - I.O. Delano (1966) & Oyekan Owomoyela (2005) (systematic Yorùbá paremiology).
+    - Completed 3-proverb canonical triads with parenthetical English translation and philosophical commentary for all 7 entities with 2 proverbs (`Gbẹ̀gị̀rị́`, `Abula`, `Ẹ̀fọ́ Rírò`, `Èwùrà`, `Ikọkọrẹ`, `Ẹ̀wà Àgányìn`, `Àádùn`).
+    - Resolved canonical ID mapping for `Obẹ-Ata` (manifest: `Obe Ata`) and NFC Unicode normalization for `Ọ̀gì` (`Ọ̀̀gị̀`).
+    - Executed `python3 scripts/pipeline/batch_enricher.py scripts/data/batches/batch_18_data.json`:
+      - Dual corpora synchronized at **1,413 canonical entities** with **0-bit checksum drift** (`df3a9a9...`).
+      - Manifest auto-sliced: **reduced thin entities from 591 down to exactly 566**.
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates.
+    - `cd web && npm run build`: Compiled production client bundle cleanly in **1.18s** (1,934 modules transformed, 0 errors).
 
 
 
