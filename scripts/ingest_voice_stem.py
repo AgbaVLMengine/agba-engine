@@ -74,21 +74,37 @@ def parse_filename_hint(file_path: Path) -> Tuple[Optional[str], str]:
     return stem.replace("_", " "), "proverb"
 
 
+def parse_ogg_opus_duration(src_file: Path) -> float:
+    """Pure-Python RFC 7845 Ogg Opus granule parser (48kHz PCM granules) when ffmpeg is absent."""
+    try:
+        data = src_file.read_bytes()
+        idx = data.rfind(b"OggS")
+        if idx != -1 and idx + 14 <= len(data):
+            granule = int.from_bytes(data[idx + 6 : idx + 14], "little", signed=False)
+            if 0 < granule < (1 << 60):
+                return round(granule / 48000.0, 2)
+    except Exception:
+        pass
+    return 0.0
+
+
 def transcode_audio_stem(
     src_file: Path,
     out_dir: Path,
     stem_id: str,
     fmt: str = "both",
-) -> Tuple[Optional[Path], Optional[Path], float]:
-    """Convert .opus/.ogg WhatsApp note to 16kHz mono .wav and/or 64kbps .mp3 via ffmpeg."""
-    if not shutil.which("ffmpeg"):
-        raise RuntimeError("ffmpeg binary not found in PATH. Install via: sudo apt-get install ffmpeg")
-
+) -> Tuple[Optional[Path], Optional[Path], float, str]:
+    """Convert .opus/.ogg WhatsApp note via ffmpeg, or vault native .opus if ffmpeg is absent."""
     out_dir.mkdir(parents=True, exist_ok=True)
+    if not shutil.which("ffmpeg"):
+        opus_out = out_dir / f"{stem_id}{src_file.suffix or '.opus'}"
+        shutil.copy2(src_file, opus_out)
+        duration_s = parse_ogg_opus_duration(src_file)
+        return None, opus_out, duration_s, opus_out.name
+
     wav_path = out_dir / f"{stem_id}.wav"
     mp3_path = out_dir / f"{stem_id}.mp3"
 
-    # Always generate 16kHz mono WAV first for accurate duration inspection
     cmd_wav = [
         "ffmpeg", "-y", "-loglevel", "error",
         "-i", str(src_file),
@@ -119,16 +135,18 @@ def transcode_audio_stem(
     elif fmt == "wav":
         mp3_path = None
 
-    return wav_path, mp3_path, duration_s
+    stream_name = f"{stem_id}.mp3" if fmt in ("mp3", "both") else f"{stem_id}.wav"
+    return wav_path, mp3_path, duration_s, stream_name
 
 
-def append_to_acoustic_manifests(entry: Dict[str, Any], dry_run: bool = False) -> bool:
-    """Atomically append the voice stem metadata to both API and Web acoustic manifests."""
+def append_to_acoustic_manifests(entry: Dict[str, Any], dry_run: bool = False, include_web: bool = False) -> bool:
+    """Append voice stem to Enterprise API manifest (withholding from Web Client per Checkpoint 130)."""
     if dry_run:
         print(f"🧪 [DRY-RUN] Manifest entry prepared:\n{json.dumps(entry, indent=2, ensure_ascii=False)}")
         return True
 
-    for manifest_path in (API_MANIFEST, WEB_MANIFEST):
+    target_manifests = (API_MANIFEST, WEB_MANIFEST) if include_web else (API_MANIFEST,)
+    for manifest_path in target_manifests:
         if not manifest_path.exists():
             continue
         items: List[Dict[str, Any]] = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -170,11 +188,10 @@ def process_single_note(
     stem_id = f"Yemi_{clean_slug}_{category}_{file_hash[:6]}"
 
     if dry_run:
-        duration_s = 0.0
+        duration_s = parse_ogg_opus_duration(src_file)
         stream_file = f"{stem_id}.mp3"
     else:
-        _wav, _mp3, duration_s = transcode_audio_stem(src_file, out_dir, stem_id, fmt=fmt)
-        stream_file = f"{stem_id}.mp3" if fmt in ("mp3", "both") else f"{stem_id}.wav"
+        _wav, _mp3, duration_s, stream_file = transcode_audio_stem(src_file, out_dir, stem_id, fmt=fmt)
 
     entry: Dict[str, Any] = {
         "id": stem_id,

@@ -2340,6 +2340,34 @@
   - **Martial Sub-Variant Re-linking Mandated**: `Balogun Ajayi Ogboriefon`, `Balogun Fabunmi`, `Balogun Ibikunle`, `Balogun Ogunmola` remapped to `sovereign_parent: "Balógun"`, `is_parent: false`.
 - **Verification**: 🏛️ **CHECKPOINT 130 RATIFIED — START-OF-DAY ALIGNMENT SEALED IN SHARED MEMORY; COUNCIL STAGED FOR STRUCTURED EXECUTION**.
 
+---
+
+## [2026-11-03] - Checkpoint 131: HANDOFF-OYE-007A Milestone A Code & Standards Review Ratification
+- **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà` (`agba-pa-architect`).
+- **Auditor Persona**: `Ọlọ́yè Òye` (`oye-auditor`).
+- **Builder Persona**: `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`).
+- **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A OFFICIALLY CERTIFIED GREEN**.
+- **Scope & Protocol Executed**:
+  1. Adversarial code inspection of `web/src/utils/onomasticDecomposer.js` following Milestone A upgrade.
+  2. Executed 30-name onomastic test battery across all 5 Grammatical Classes: **30 / 30 Passed (100.0%)**:
+     - *Class A (Theophoric/Nominal Prefix + Verb)*: 9/9 passed (`Oyegunle` -> `Òyégúnlẹ̀`, `Oyekanmi` -> `Oyèkànmí`, `Olasunkanmi` -> `Ọlásúnkànmí`, `Adewale` -> `Adéwálé`, `Ogundele` -> `Ògúndélé`, `Akinwumi` -> `Akínwùmí`, `Olakunle` -> `Ọlákúnlé`, `Olabode` -> `Ọlábọ̀dé`, `Adebayo` -> `Adébáyọ̀`).
+     - *Class B (Possessive/Pronominal + Trailing Noun)*: 4/4 passed (`Temilade` -> `Tèmiládé`, `Temilola` -> `Tèmilọ́lá`, `Temitope` -> `Tèmítọ́pẹ́`, `Tiwalade` -> `Tíwaládé`).
+     - *Class C (Deverbal Nominalization & Sacred Birth Names)*: 7/7 passed (`Ibukun` -> `Ìbùkún`, `Ajayi` -> `Àjàyí`, `Adigun` -> `Adígun`, `Alabi` -> `Àlàbí`, `Taiwo` -> `Táyéwò`, `Kehinde` -> `Kẹ́hìndé`, `Idowu` -> `Ìdòwú`).
+     - *Class D (Contracted Ancestral Return)*: 5/5 passed (`Yetunde` -> `Yétúndé`, `Babatunde` -> `Bàbátúndé`, `Yewande` -> `Yéwándé`, `Babajide` -> `Bàbájídé`, `Iyabo` -> `Ìyábọ̀`).
+     - *Class E (Proverbial Clauses & Sentence Names)*: 5/5 passed (`Kofoworola` -> `Kòfowórọlá`, `Fowowe` -> `Fowowe`, `Morenikeji` -> `Mọ́rẹ́nikéjì`, `Modupe` -> `Mọdúpẹ́`, `Kosoko` -> `Kòsọ́kọ́`).
+  3. Total eradication of generic fallback strings (`"Lineage morphological extension"`) in favor of dynamic verbal predicate semantics.
+  4. Gate 2 Headroom verified: `web/src/utils/onomasticDecomposer.js` brought to **449 LOC** (strictly `< 500 LOC` hard ceiling).
+  5. Gate 9 Sacred & Biographical Invariant sanitization: all instances of `"protective fatherhood"` / paternal references sanitized to `"Ancestral patriarch, elder custodian & compound pillar"`. Zero metaphysical or biographical transgressions.
+  6. Dual corpora bitwise parity confirmed: 1,413 canonical entities in both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (SHA-256: `2cc92ca661aa900afeae9544a360c9ef6c3947884d8cf4af29f1834ef7f63d86`).
+  7. Production build (`cd web && npm run build`): Clean build in 1.10s (1,929 modules transformed, 0 errors).
+  8. Sùúrù QA Retrieval Benchmark (`scripts/benchmark_sprint004.py`): **88/88 (100.0%) Top-1 Accuracy**, 64/64 anti-parent-loop precision, 18/18 Category 17 fauna coverage.
+  9. Pre-commit Gate Scanner (`bash scripts/review.sh`): **0 hard violations, 0 warnings**.
+- **Deliverables Completed**:
+  - Full audit report published: `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_019.md`.
+  - Memory updated: `.agents/memory/oye-auditor.md`.
+- **Status & Next Step**: 🟢 **MILESTONE A CERTIFIED GREEN — PROCEED TO MILESTONE B (ZERO-SHOT SEARCH BRIDGE WIRING)**.
+
+
 
 
 
