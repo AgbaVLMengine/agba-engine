@@ -5,6 +5,7 @@ import {
 } from 'lucide-react';
 import AkosileProvenanceDrawer from './AkosileProvenanceDrawer';
 import LivingVariantConstellationGrid from './LivingVariantConstellationGrid';
+import OrukoMiLineageRibbon from './OrukoMiLineageRibbon';
 
 export default function EntityBentoDeck({
   topMatch,
@@ -45,6 +46,9 @@ export default function EntityBentoDeck({
 
   return (
     <div className="animate-fade-in" style={{ marginBottom: '48px' }}>
+      {topMatch.details?.onomastic_card && (
+        <OrukoMiLineageRibbon card={topMatch.details.onomastic_card} />
+      )}
       <div className="bento-grid">
         {/* CELL 1: PRIME SOVEREIGN CROWN CELL */}
         <div className="bento-cell bento-cell-sovereign">
