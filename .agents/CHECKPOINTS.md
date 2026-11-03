@@ -2605,6 +2605,27 @@
     - Synchronized [`.agents/memory/arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) with Checkpoint 138 log.
 - **Verification**: 📜 **CHECKPOINT 138 RATIFIED — UNIVERSAL BATCH PIPELINE INGESTION / BATCH 18 INGESTED (PRIMORDIAL DIVINITIES, SACRED GASTRONOMY & PROVERBS) / THIN COUNT DROPS FROM 591 TO 566 / 0-BIT CHECKSUM DRIFT / 88/88 BENCHMARK PASS**.
 
+### [2026-11-03 17:30] Checkpoint 139 (`CHECKPOINT-AGBALE-006` / `CHECKIN-AGBALE-004`) — Dusk Storage Sweep, 3-Backup Rolling Retention Audit & Proactive Domain Hygiene Proposals
+- **Agent Persona**: `Ọlọ́yè Agbálẹ̀` (`disk-saver`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `CHECKIN-AGBALE-004` following Batches 17 & 18 ingestion and multiple compilation passes: (1) Verify >40 GB free space on the 50 GB NVMe partition; (2) Audit the 3-backup rolling cap across local `backups/` and Google Drive (`AgbaEngineBackups`), purging stale temporary files; (3) Inscribe Checkpoint 139 in `memory/disk_saver_memory.md`; and (4) Propose proactive efficiency and preventative hygiene improvements from `Agbálẹ̀`'s domain for review with `Àgbà`.
+- **Deliverables Completed**:
+  - **Task 1: 50 GB NVMe Headroom Verified**:
+    - `/dev/vdb` (`50 GB` partition): **44 GB available** (`6.3 GB` used, `13%` utilization, `87%` free headroom — far exceeding the `> 40 GB` target).
+  - **Task 2: Stale Build & Log Artifacts Purged + Sphere 4 Snapshot Rotated**:
+    - Identified and purged `web/dist/` (`25 MB` compiled Vite bundle from verification runs), `web/node_modules/.vite/`, and untracked `web/vite_dev.log` (`880 KB` stale dev log from Oct 28 that had been getting packed into snapshots).
+    - Executed [`scripts/create_backup_tarball.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/create_backup_tarball.sh): generated post-Batch 18 archive `agba_engine_snapshot_20261103_173020.tar.gz` (`20 MB`, SHA-256 `923c1ca35c253a6f23c6e3dd4ef57bdad787346a9e5f669e1a5fadcc7ce678cc`) and automatically rotated out `agba_engine_snapshot_20261031_072456.tar.gz`.
+    - Confirmed strict **3-backup rolling cap** (`20261102_232247`, `20261102_232533`, `20261103_173020` + immutable Sovereign Vault = `63 MB` total).
+    - Executed [`scripts/reclaim_disk.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/reclaim_disk.sh): cleared `pip`/`npm` caches, `/tmp`, system journals, and compacted git objects.
+  - **Task 3: 4 Proactive Domain Efficiency Proposals Submitted to Kábíyèsí & Àgbà**:
+    1. Upgrade `scripts/reclaim_disk.sh` to target `web/node_modules/.vite`, `web/dist`, and `web/*.log`.
+    2. Harden `scripts/create_backup_tarball.sh` (`--exclude="*.log"`, `--exclude=".vite"`) and sync the full 3-snapshot window to Google Drive when mounted.
+    3. Consolidate 42 legacy root batch files (`batch_03..16_data.json`, `build_batch_*.py`, `enrich_batch_*.py`) into `scripts/data/batches/` and `scripts/legacy_seeds/`, and retire obsolete `scripts/remaining_thin_manifest.json` (`243 KB`).
+    4. Implement a Two-Drawer rolling archive for `.agents/CHECKPOINTS.md` (currently `2,630+ LOC`) before it crosses `3,000 LOC`.
+  - **Memory Vaults Inscribed**: Updated [`memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md) and [`.agents/memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/disk_saver_memory.md).
+- **Verification**: 🧹 **CHECKPOINT 139 RATIFIED — 44 GB HEADROOM VERIFIED / 3-SNAPSHOT ROLLING VAULT ROTATED / ~26 MB STALE ARTIFACTS PURGED / 4 EFFICIENCY PROPOSALS STAGED**.
+
 
 
 
