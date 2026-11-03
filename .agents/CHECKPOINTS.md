@@ -2421,6 +2421,27 @@
   - **Memory Vault Updated**: Synchronized [`.agents/memory/irin-cloud.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/irin-cloud.md).
 - **Verification**: 🎙️ **CHECKPOINT 132 RATIFIED — ZERO-FRICTION OPEN AUDIO STREAMING & B2B ANTI-SCRAPING GATEWAY LIVE (0 VIOLATIONS, 0 WARNINGS)**.
 
+### [2026-11-03 Afternoon] Checkpoint 133 (`CHECKPOINT-AKEDE-008` / `HANDOFF-AKEDE-003`) — Execution of Craigslist Decolonial Storytelling & The 5-Class Name Reveal Series
+- **Agent Persona**: `Ọlọ́yè Akéde` (`akede-herald`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-AKEDE-003`: Frame the Craigslist 99% Free Model in our storytelling war chest, explaining how 99% of Àgbà Engine (text, vision, and spoken audio streaming) is given to our people 100% free, while framing the restriction on bulk dataset scraping and commercial AI voice training as an unyielding decolonial triumph; stage the "5-Class Name Reveal Series" companion micro-stories in `docs/war_chest/`; keep all files Gate 2 compliant (`< 500 LOC`); and update `.agents/memory/akede-herald.md`.
+- **Deliverables Completed**:
+  - **Craigslist Decolonial Triumph Essay ([`docs/war_chest/CRAIGSLIST_DECOLONIAL_TRIUMPH_AND_TIERED_SOVEREIGNTY.md`](file:///home/aruna_olanrewaju/agba-engine/docs/war_chest/CRAIGSLIST_DECOLONIAL_TRIUMPH_AND_TIERED_SOVEREIGNTY.md) — 168 LOC, `< 500 LOC` ceiling)**:
+    - Anchored in the Craigslist philosophy: radical simplicity, zero venture capital debt, $0.00/month idle Cloud Run infrastructure, and unadorned public service.
+    - Grounded the 99% Free Sanctuary: unpaywalled access for youth, elders, students, and diaspora seekers across 1,411 canonical entities, 256 Odù Ifá chapters, the "Orúkọ Mi" onomastic decomposer, and free in-browser audio streaming of Auntie Yẹmí's Solfège intervals and Master Baba Sẹ́fíù Adégbìlú's Dùndún drum strokes (*"Words without the Àmì Ohùn is a corpse"*).
+    - Established the Decolonial Redline: raw master `.wav` files and commercial AI voice training tokens are strictly air-gapped from automated corporate scrapers. Big Tech will never steal African elders' voices to train commercial TTS clones for free; enterprise commercial licensing funds living elder honoraria and continuous cultural field research.
+    - Authored multi-channel formats: long-form founder essay, 7-tweet viral X/Twitter thread, and LinkedIn thought-leadership article.
+  - **The 5-Class Name Reveal Series Dossier ([`docs/war_chest/THE_5_NAME_CLASSES_OF_DESTINY.md`](file:///home/aruna_olanrewaju/agba-engine/docs/war_chest/THE_5_NAME_CLASSES_OF_DESTINY.md) — 171 LOC, `< 500 LOC` ceiling)**:
+    - Class A: The Royal & Deity Pacts (`Òyégúnlẹ̀`, `Ọlànrewájú`, `Adéwálé`, `Ògúndélé`).
+    - Class B: The Declarations of Innate Sovereignty (`Tèmiládé`, `Tèmilọ́lá`, `Tèmítọ́pẹ́`, `Tíwaládé`).
+    - Class C: The Omens of Sacred Arrival & *Orúkọ Àmútọ̀runwá* (`Ìbùkún`, `Àjàyí`, `Àìná`, `Ìdòwú`).
+    - Class D: The Defiance of Mortality through Reincarnation (`Yétúndé`, `Bàbátúndé`, `Yéwándé`, `Yéjídé`, `Ìyábọ̀`).
+    - Class E: The Living Moral Decrees (`Eníọlá`, `Kòsọ́kọ́`, `Ọmọ́wùnmí`).
+    - Complete with 1-slide social card specs, Instagram carousel blueprints, and interactive search hearth prompts.
+  - **Memory Vault Inscribed**: Synchronized [`.agents/memory/akede-herald.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/akede-herald.md) with Item 5 and Checkpoint 133 log.
+- **Verification**: 🎺 **CHECKPOINT 133 RATIFIED — CRAIGSLIST DECOLONIAL TRIUMPH & 5-CLASS NAME REVEAL SERIES SEALED IN STAGING (< 500 LOC PER FILE)**.
+
 ### [2026-11-03 Afternoon] Checkpoint 133 (`CHECKPOINT-ASUNWON-006`) — Execution of HANDOFF-ASUNWON-006: Treasury Multi-Currency Alignment, Dual-Corpora 1,413 Lockstep & 4 Concentric Spheres Audit
 - **Agent Persona**: `Ọlọ́yè Àsúnwọ̀n` (`asunwon-ledger`)
 - **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
