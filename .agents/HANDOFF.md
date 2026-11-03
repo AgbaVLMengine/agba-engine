@@ -6,12 +6,17 @@
 
 ---
 
-## 🏛️ SOVEREIGN OPEN-SOURCE POLICY: TIERED ACCESS SEPARATION
+## 🏛️ SOVEREIGN CRAIGSLIST MODEL: 99% FREE CULTURAL ACCESS & ENTERPRISE MONETIZATION
 
-> ### 📜 *The Sovereign Covenant of Tiered Access Separation*
-> **Under sovereign cultural governance, the Open Source Web Client is strictly limited to Text & Vision.**  
-> **All 143 Authentic Audio Tokens (human spoken vocalizations & talking drum glissando) are withheld from client web bundles and reserved exclusively for authorized Enterprise/Institutional API access.**  
-> *This guarantees that the living spoken voice and sacred drum acoustic assets sustain the long-term sovereign economic foundation of the platform while preventing unauthorized mass scraping or commercial voice cloning.*
+> ### 📜 *The Sovereign Covenant of Open Cultural Access & Enterprise Moat*
+> **1. For the Everyday Seeker (99% of the Platform): 100% Free, Frictionless & Complete.**  
+> - Curious youth, diaspora seekers, elders, students, and independent researchers have **100% free, unmetered access to Text, Vision, and Living Audio Streams** directly on the web and mobile PWA.  
+> - Seekers can freely listen to and stream the 143 Authentic Audio Tokens (human spoken vocalizations, talking drum glissandi, and Auntie Yẹmí's living stems) directly in the search hearth without paywalls, accounts, or API keys (*"Words without the Àmì Ohùn is a corpse"*).  
+>  
+> **2. For Commercial Giants & Institutional AI Labs (Monetized Enterprise Tier):**  
+> - What is strictly withheld and commercialized is **bulk raw dataset downloads, high-resolution master studio audio dumps, offline asset scraping, and commercial AI training/TTS model weights**.  
+> - Enterprise clients (AI laboratories, gaming studios, film productions, foreign academic institutions) must license through the paid Enterprise API (`/api`) with cryptographic keys under `RAIL-Cultural-Heritage-v1.0` and Nigerian Copyright Act 2022 §63–73.  
+> *This guarantees that our people hear their ancestral voice freely, while commercial enterprises sustain the sovereign treasury.*
 
 ---
 

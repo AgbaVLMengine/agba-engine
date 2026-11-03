@@ -2340,6 +2340,21 @@
   - **Martial Sub-Variant Re-linking Mandated**: `Balogun Ajayi Ogboriefon`, `Balogun Fabunmi`, `Balogun Ibikunle`, `Balogun Ogunmola` remapped to `sovereign_parent: "Balógun"`, `is_parent: false`.
 - **Verification**: 🏛️ **CHECKPOINT 130 RATIFIED — START-OF-DAY ALIGNMENT SEALED IN SHARED MEMORY; COUNCIL STAGED FOR STRUCTURED EXECUTION**.
 
+### [2026-11-03 14:15] Checkpoint 131 (`CHECKPOINT-CRAIGSLIST-MODEL-ALIGNMENT-001`) — Universal Sovereign Council Re-Alignment: Craigslist 99% Free Access Model & Two-Drawer Lexicon Mandate
+- **Agent Personas**: `Àgbà` (`agba-pa-architect`), `Àsúnwọ̀n`, `Irin`, `Àrọ̀kìn`, `Ìmọ̀`, `Sùúrù`, `Akéde`, `Àgbẹ̀dẹ`, `Òye`
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directives & Critical Re-Alignments**:
+  1. **Rectify Council Audio Policy Understanding**: Eradicate the misconception that audio tokens are withheld from the web client. Enforce the true **Craigslist Model**: 99% of the platform is completely open, free, and accessible. Everyday seekers (youth, diaspora, elders, researchers) have 100% free, friction-free streaming access to all 143 Authentic Audio Tokens and Auntie Yẹmí's voice notes in the UI (*"Words without the Àmì Ohùn is a corpse"*). Monetization is strictly applied to institutional enterprise consumers (bulk dataset dumps, commercial AI voice training weights, raw lossless studio stems).
+  2. **Adopt the Two-Drawer Architecture for Gate 2**: In response to `Àsúnwọ̀n`, `Irin`, and `Ìmọ̀`'s proactive warning regarding `onomasticDecomposer.js` (nearing the 500-line ceiling), mandate extracting all static lookup tables into `web/src/utils/onomasticLexicon.js`, leaving `onomasticDecomposer.js` lean (~150 LOC) and purely algorithmic.
+  3. **Authorize Parallel Council Action**:
+     - `Àgbẹ̀dẹ` & `Òye`: Execute Milestone A with the Two-Drawer split, 5 name classes, 120+ suffixes, and martial sub-variant remapping.
+     - `Àrọ̀kìn`: Ingest Batch 16 (next 25 entities of the remaining 641 thin backlog).
+     - `Sùúrù`: Forge `scripts/benchmark_oruko_mi.py` for automated QA testing.
+     - `Ìmọ̀` & `Akéde`: Frame the Craigslist model as sovereign cultural safe-harbor and anti-exploitation leadership.
+- **Verification**: 🏛️ **CHECKPOINT 131 RATIFIED — CRAIGSLIST MODEL SEALED ACROSS ALL COUNCIL CHANNELS; TWO-DRAWER GATE 2 MANDATE RATIFIED**.
+
+
 ---
 
 ## [2026-11-03] - Checkpoint 131: HANDOFF-OYE-007A Milestone A Code & Standards Review Ratification
