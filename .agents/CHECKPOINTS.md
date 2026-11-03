@@ -2626,6 +2626,39 @@
   - **Memory Vaults Inscribed**: Updated [`memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md) and [`.agents/memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/disk_saver_memory.md).
 - **Verification**: 🧹 **CHECKPOINT 139 RATIFIED — 44 GB HEADROOM VERIFIED / 3-SNAPSHOT ROLLING VAULT ROTATED / ~26 MB STALE ARTIFACTS PURGED / 4 EFFICIENCY PROPOSALS STAGED**.
 
+### [2026-11-03 17:35] Checkpoint 139 (`CHECKPOINT-ASUNWON-007` / `CHECKIN-ASUNWON-004`) — Treasury Integer Math Verification, 4 Concentric Spheres Alignment Audit & Proactive Domain Proposals
+- **Agent Persona**: `Ọlọ́yè Àsúnwọ̀n` (`asunwon-ledger`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `CHECKIN-ASUNWON-004`: (1) Verify Gate 3 integer minor-unit math (kobo, cents, pence) remains 100% compliant across all API endpoints; (2) Audit state balance across the 4 Concentric Spheres (Genesis Workstation, Dev Branch, Mobile Sanctuary, Cold Archives); (3) Inscribe Checkpoint 139 in `.agents/memory/asunwon-ledger.md` and report findings; and (4) Formulate proactive efficiency and preventative domain recommendations for review with `Àgbà`.
+- **Deliverables Completed**:
+  - **Task 1: Gate 3 Integer Minor-Unit Math Compliance Across API Endpoints**:
+    - Conducted comprehensive audit of all API routes, data structures, and billing/feedback schemas:
+      - Verified integer minor-unit standard (kobo, cents, pence) across all financial, quota, and rate-limiting thresholds.
+      - Scanned entire repository for floating-point money math risks (`parseFloat.*price`, `toFixed(2)`, float division on currency); verified exactly **0 violations** across all modules.
+      - Confirmed UUIDv4 `idempotency_key` deduplication remains strictly active in [`api/app/main.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/main.py) (`_SEEN_IDEMPOTENCY_KEYS`) for all mutating endpoints.
+  - **Task 2: Balance Audit Across 4 Concentric Spheres**:
+    - *Sphere 1: Sovereign Genesis Canon (Workstation & SSOT)*:
+      - Audited dual master corpora parity across all **1,413 canonical entities** between [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json).
+      - Verified identical SHA-256 Checksum: `df3a9a90368edc9c31277b29258fd9837437b16f67e9bb5d0bc9509b81f2ec3b` (**0 bits of drift**).
+      - System vessel health: `/dev/vdb` **44 GB free NVMe headroom** (13% utilized), **13 GiB available RAM**, load average serene.
+    - *Sphere 2: Cloud & Edge Distribution (`dev` Branch, Netlify CDN & Cloud Run)*:
+      - Verified edge streaming rules in [`netlify.toml`](file:///home/aruna_olanrewaju/agba-engine/netlify.toml) enforcing 1-year immutable caching (`max-age=31536000, immutable`) for `/v6/audio/stream/*` and `/audio/*`.
+      - Verified Cloud Run free-tier deployment guardrails in [`api/deploy_cloud_run.sh`](file:///home/aruna_olanrewaju/agba-engine/api/deploy_cloud_run.sh) (`--min-instances 0` for $0.00/mo idle scale).
+    - *Sphere 3: Mobile & Offline Sanctuary (iPhone 15 Pro Max PWA)*:
+      - Verified web client compilation: `npm run build` completed in **1.18s** (1,934 modules transformed, 0 errors).
+      - Confirmed responsive touch ergonomics: `OrukoMiLineageRibbon.jsx` and `.font-royal` line-heights guard diacritics against mobile clipping.
+    - *Sphere 4: Cold Archive & Imperial Redundancy (Google Drive & Snapshot Vaults)*:
+      - Verified local [`backups/`](file:///home/aruna_olanrewaju/agba-engine/backups/) enforces strict **3-backup rolling cap**: `20261102_232247` (20.3 MB), `20261102_232533` (20.3 MB), `20261103_173020` (20.4 MB, SHA-256 `923c1ca35c253a6f23c6e3dd4ef57bdad787346a9e5f669e1a5fadcc7ce678cc`).
+  - **Task 3: Proactive Efficiency & Preventative Domain Proposals**:
+    - Submitted 4 core domain recommendations from Ọlọ́yè Àsúnwọ̀n to Kábíyèsí and Àgbà (Automated Dual-Corpora Checksum Sentinel in `review.sh`, Strict Integer Minor-Unit Pydantic Type Guard, Thin Entity Monotonicity Guard, and Sphere 4 Multi-Environment Sync Protocol).
+  - **Production Quality Gates & Regression Verification**:
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 canonical entities (64/64 anti-parent-loop precision).
+  - **Memory Vault Inscribed**:
+    - Synchronized [`.agents/memory/asunwon-ledger.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/asunwon-ledger.md) with Checkpoint 139 log.
+- **Verification**: ⚖️ **CHECKPOINT 139 RATIFIED — TREASURY INTEGER MATH VERIFIED (0 FLOAT RISKS) / 4 CONCENTRIC SPHERES IN PARITY / 0-BIT CHECKSUM DRIFT / 4 DOMAIN PROPOSALS STAGED**.
+
 
 
 
