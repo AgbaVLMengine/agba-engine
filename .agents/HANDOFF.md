@@ -2,17 +2,66 @@
 
 > **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)  
 > **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
-> **Active Focus**: 🧬 **HANDOFF-ORUKO-MI-001 (COMPREHENSIVE YORÙBÁ ONOMASTIC MORPHOLOGY ENGINE & ZERO-SHOT NAME RETRIEVAL UPGRADE — QUEUED FOR NOV 3 RESUMPTION)**
+> **Active Focus**: 🧬 **HANDOFF-ORUKO-MI-001 (COMPREHENSIVE ONOMASTIC MORPHOLOGY ENGINE & 641 NON-ODÙ CORPUS HARDENING)**
 
 ---
 
-## 0A. Priority 1 Resumption Handoff (`HANDOFF-ORUKO-MI-001`) — For Tomorrow's Session (Nov 3, 2026)
+## 🏛️ SOVEREIGN OPEN-SOURCE POLICY: TIERED ACCESS SEPARATION
 
-### `HANDOFF-ORUKO-MI-001` — Deep Yorùbá Onomastic Morphology Engine & Zero-Shot Personal Name Bridge
+> ### 📜 *The Sovereign Covenant of Tiered Access Separation*
+> **Under sovereign cultural governance, the Open Source Web Client is strictly limited to Text & Vision.**  
+> **All 143 Authentic Audio Tokens (human spoken vocalizations & talking drum glissando) are withheld from client web bundles and reserved exclusively for authorized Enterprise/Institutional API access.**  
+> *This guarantees that the living spoken voice and sacred drum acoustic assets sustain the long-term sovereign economic foundation of the platform while preventing unauthorized mass scraping or commercial voice cloning.*
+
+---
+
+## 0A. Priority 1 Resumption Handoff (`HANDOFF-ORUKO-MI-001`) — Active Sprint
+
+### `HANDOFF-ORUKO-MI-001` — Deep Yorùbá Onomastic Morphology Engine & 641 Non-Odù Hardening
 - **Assigned To**: **`Ọlọ́yè Àgbẹ̀dẹ`** (`agbede-builder`), **`Ọlọ́yè Òye`** (`oye-auditor`), **`Ọlọ́yè Sùúrù`** (`suuru-qa`), **`Ọlọ́yè Àrọ̀kìn`** (`arokin-archivist`)
 - **Supervising Co-Architect**: **`Ọlọ́yè Àgbà`** (`agba-pa-architect`)
-- **Reported By**: **Kábíyèsí Àrùnà Ọlànrewájú Kábírù** (Live Mobile QA Test — Nov 2, 2026 Night)
-- **Status**: 🟡 **STAGED IN SHARED MEMORY FOR NOV 3 EXECUTION (HOLD IMPLEMENTATION TONIGHT PER LEAD ARCHITECT DECREE)**
+- **Reported By**: **Kábíyèsí Àrùnà Ọlànrewájú Kábírù** (Deep Mobile QA Audit — Nov 3, 2026)
+- **Commendation**: 👑 *Lead Architect Commendation to Ọlọ́yè Àgbẹ̀dẹ for a fantastic job on the "Orúkọ Mi" UI integration within the Concentric Search Hearth (`AarinimoSearchCore.jsx`).*
+- **Status**: 🟢 **ACTIVE FOR EXECUTION**
+
+#### 🔍 Forensic Mobile QA Audit Matrix (Reported by Kábíyèsí):
+| Input Query | Current Result / Behavior | Root Cause Forensic | Target Canonical Behavior |
+| :--- | :--- | :--- | :--- |
+| **`Morenikeji`** | No retrieval | Unindexed deverbal name | `Mọ́-orí-ní-ìkejì` (`Orí` + `Ìkejì` [Destiny Companion]) $\rightarrow$ Root: `Orí` |
+| **`Folakemi`** | Retrieved `Fìlà Onídẹrẹ` | Lexical acoustic collision | `Fi-ọlá-kẹ́-mi` (`Ọlá` + `Kẹ́ mi` [Cherish me with honor]) $\rightarrow$ Root: `Ọlá` |
+| **`Olakunle`** | Retrieved `Ọlá` + `kunle` (generic extension) | Suffix `-kunle` missing rich schema | `Kúnlé` (*Fills the ancestral household to overflowing*) $\rightarrow$ Root: `Ọlá` & `Ẹbí` |
+| **`Ifagbemi`** | Retrieved `Ifá` + `Gbèmí` | ✅ Perfect retrieval | Suffix `-gbemi` mapped accurately |
+| **`Olabode`** | Retrieved `Ọlá` + `bode` (generic extension) | Suffix `-bode` missing | `Bọ́dé` (*Has arrived home across the threshold*) $\rightarrow$ Root: `Ọlá` |
+| **`Adebayo`** | Retrieved `Adé` + `bayo` (generic extension) | Suffix `-bayo` missing | `Báyọ̀` (*Arrives to meet boundless joy*) $\rightarrow$ Root: `Adé` |
+| **`Ifayeku`** | Retrieved `Ifá` + `yeku` (generic extension) | Suffix `-yeku` missing | `Yẹ̀kú` (*Averts sudden mortality; Odù Ọ̀yẹ̀kú covenant*) $\rightarrow$ Root: `Ifá` |
+| **`Odegbami`** | Retrieved `Ọlá` | Misrouted prefix `ode-` | `Ọdẹ` (*Hunter Guild / Iron Guild*) + `Gbà mí` (*Sustains me*) $\rightarrow$ Root: `Ọdẹ` / `Ògún` |
+| **`Adigun`** | Retrieved `Ọlá` | Misrouted prefix `adi-` | `Adígun` (*Orúkọ Àmútọ̀runwá: Born with natural protective armor*) $\rightarrow$ Root: `Àdá` / `Idà` |
+| **`Arowolo`** | Retrieved `Ọlá` | Misrouted prefix `aro-` | `A-rí-owó-lò` (*One who finds cowrie wealth to expend*) $\rightarrow$ Root: `Owó Ẹyọ` |
+| **`Alakija`** | Retrieved `Àlàáfíà` | Homograph collision | `Alákìíjà` (*Lineage title / Brave warrior covenant*) $\rightarrow$ Root: `Akín` / `Ọba` |
+| **`Odutayo`** | Retrieved `Odù` + `Táyọ̀` | ✅ Perfect retrieval | Accurate prefix + suffix match |
+| **`Abayomi`** | Retrieved `Afonja of Ilorin` | Lexical string overlap | `Àbáyọmí` (*Ọ̀tá ìbá yọ̀ mí: Adversaries would have gloated*) $\rightarrow$ Root: `Òye` |
+| **`Koforowola`** | Retrieved `Ọ̀ṣọ́ọ̀sì` | Missing clause parser | `Kò-f'owó-r'ọlá` (*Does not buy nobility with money*) $\rightarrow$ Root: `Owó Ẹyọ` & `Ọlá` |
+| **`Fowowe`** | Retrieved `Ìsààsùn` | Lexical noise | `Fi-owó-wẹ̀` (*Bathes in clean honorable wealth*) $\rightarrow$ Root: `Owó Ẹyọ` |
+| **`Kayode`** | Retrieved `Otun-Iyalode` | Syllable overlap with `ode` | `K'áyọ̀-dé` (*Brings home spiritual joy*) $\rightarrow$ Root: `Ayọ̀` & `Ẹbí` |
+| **`Ogunfua`** | Retrieved `Ògún` + `fua` (generic extension) | Suffix `-fua` missing | `Fúà` (*Soars with clarity and speed*) $\rightarrow$ Root: `Ògún` |
+| **`Olatunji`** | Retrieved `Ọlá` + `tunji` (generic extension) | Suffix `-tunji` missing | `Túnjí` (*Has awoken again to sustain nobility*) $\rightarrow$ Root: `Ọlá` |
+| **`Adisa`** | Retrieved `Adìrẹ Ẹlẹ́kọ` | Lexical string overlap | `Àdìsá` (*Orúkọ Oríkì: One whose speech commands distinction*) $\rightarrow$ Root: `Òye` |
+| **`Arosanyi`** | Retrieved `Afonja of Ilorin` | Lexical noise | `A-ro-Ọ̀sanyìn` (*Dedicated to the healing deity of leaves*) $\rightarrow$ Root: `Ọ̀sanyìn` |
+| **`Afolabi`** | Retrieved `Afonja of Ilorin` | Lexical noise | `A-fi-ọlá-bí` (*Born into sovereign honor and dignity*) $\rightarrow$ Root: `Ọlá` |
+| **`Ajayi`** | Retrieved 3 partial titles | Missing Sacred Birth Name | `Àjàyí` (*Orúkọ Àmútọ̀runwá: Born face downwards*) $\rightarrow$ Root: `Àmútọ̀runwá` |
+| **`Balogun Fabunmi`** | Showed as Sovereign Parent | `is_parent` not `False` | Sub-variant of `Balógun` $\rightarrow$ Re-linked to `sovereign_parent: "Balógun"` |
+| **`Balogun Ajayi Ogboriefon`** | Showed as Sovereign Parent | `is_parent` not `False` | Sub-variant of `Balógun` $\rightarrow$ Re-linked to `sovereign_parent: "Balógun"` |
+| **`Ifábunmi`** | Decomposed from `Fabunmi` | ✅ Worked via `fa-` prefix! | Suffix `-bunmi` (`Bùn mí` = *Gifted to me*) $\rightarrow$ Root: `Ifá` |
+
+#### 💡 Forensic Diagnostic: Why `Balogun Fabunmi` Poped `Ifábunmi` While `Ade Ajayi` Did Not
+- In `onomasticDecomposer.js`, `decomposeYorubaName` tokenizes multi-word queries.
+- For `"Balogun Fabunmi"`, token `"Fabunmi"` begins with `"fa"`, which was in `ONOMASTIC_PREFIXES` (`fa` $\rightarrow$ `Ifá`). Thus, it automatically synthesized `Ifábunmi` and displayed the card.
+- For `"Ade Ajayi"`, token `"Ade"` matched `Adé`, but `"Ajayi"` had no entry in `ONOMASTIC_PREFIXES` or `CANONICAL_ONOMASTIC_REGISTRY`, so the compound could not resolve both parts. Adding primordial birth names (*Orúkọ Àmútọ̀runwá*) fixes this permanently.
+
+#### 📦 641 Remaining Non-Odù Thin Entities Roadmap:
+- Total Non-Odù Corpus: 666 entities in `thin_entities_manifest.json` originally.
+- Batch 15 Enriched: 25 entities (Indices 0–24: 8 State homelands + foundational civic concepts).
+- Remaining: Exactly **641 thin entities** scheduled across Batches 16–41 under `Ọlọ́yè Àrọ̀kìn`.
 
 #### 🔍 Mobile QA Findings Reported by Kábíyèsí:
 1. **Unresolved Name Structures (`Ibukun`, `Temilade`)**:
