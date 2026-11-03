@@ -327,7 +327,28 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **83/83 (100.0%) Top-1 Accuracy** live across 1,411 entities.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
     - `npm run build`: Compiled production client bundle cleanly in **963ms** (1,928 modules transformed, 0 errors).
-- **2026-11-03 [Checkpoint 131 — HANDOFF-AROKIN-003: Batch 16 Non-Odù Hardening (Entities 25–49) — Thin Count Plunges from 641 to 616]**:
+- **2026-11-03 [Checkpoint 136 — HANDOFF-AROKIN-004B: Universal Batch Pipeline Fortification & Batch 17 Ingestion — Thin Count Plunges from 616 to 591]**:
+  - **Task: Fortify `batch_enricher.py` & Ingest Batch 17 Royal Regalia & Beadwork (Indices 50 to 74)**:
+    - Fortified [`scripts/pipeline/batch_enricher.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/pipeline/batch_enricher.py) (138 LOC, Gate 2 compliant `< 150 LOC`):
+      1. Dual CLI invocation: supports positional file path (`batch_enricher.py scripts/data/batches/batch_17_data.json`) or `--batch <num>`.
+      2. Polymorphic payload normalization: seamlessly parses `List[Dict]` or `Dict[str, Dict]`.
+      3. Alias resolution shield: indexes `aliases`, `id`, and `title` to prevent twin duplicate nodes (mapped `Ìlèkè Ọrùn` $\rightarrow$ canonical `Ìlẹ̀kẹ̀-Ọ̀rùn`).
+      4. Automated nested `details` synchronization: updates both top-level attributes and nested `entity["details"]` dictionary.
+      5. Automated manifest slicing: decrements [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json) automatically on each successful batch run.
+    - Authored [`scripts/data/batches/batch_17_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_17_data.json) covering 25 royal, beadwork, textile, and sacred geography nodes:
+      - *Monarchical Authority & Insignia*: `Ọba`, `Kábíyèsí`, `Adé`, `Adé Ààrẹ`, `Ọ̀pá Ọ̀rànmíyàn`, `Ọ̀pá Àṣẹ`.
+      - *Sacred Beadwork Regalia*: `Ìlèkè`, `Ìlèkè Ẹsẹ̀`, `Ìlẹ̀kẹ̀-Ọ̀rùn`, `Ìyùn`, `Èwù Ìlèkè`, `Bàtà Ìlèkè`, `Ìlèkè Ọ̀pẹ̀tẹ̀`.
+      - *Court Headwear & Textiles*: `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Fìlà Oníderè`, `Gẹlẹ̀ Ògódó`, `Gẹlẹ̀ Ìpekú`, `Gẹlẹ̀ Ìjàpá`, `Yẹ̀rị̀`, `Pà Kaja`, `Àborù`, `Àkẹ̀tẹ̀`.
+      - *Sacred Geography*: `Odo Ọ̀ṣun`, `Igbo Olódùmarè`.
+    - Populated 100% of the batch with primary scholarly citations cross-referenced with `docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md` (Johnson 1921, Abiodun 2014, Drewal & Pemberton 1989, Willett 1967, Eicher 1976, Lawal 1996, Nwafor 2021, Fadipe 1970, Smith 1988, Ìdòwú 1962, Abímbọ́lá 1976, Fágúnwà 1938, Verger 1995).
+    - Added 3rd authentic proverb with philosophical commentary to all entities with 2 proverbs (`Ìlèkè Ẹsẹ̀`, `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Pà Kaja`, `Ọ̀pá Ọ̀rànmíyàn`, `Èwù Ìlèkè`, `Ọ̀pá Àṣẹ`) completing their canonical triads.
+    - Synchronized dual master corpora at **1,413 canonical entities** with **0-bit checksum drift**.
+    - Updated [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): **reduced thin non-Odù entities from 616 down to exactly 591** (Next: Batch 18 starting at index 90: `Obàtálá`).
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates.
+    - `cd web && npm run build`: Compiled production client bundle cleanly in **1.17s** (1,933 modules transformed, 0 errors).
+
   - **Task: Native Sovereign Ingestion of Batch 16 Non-Odù Entities (Indices 25 to 49)**:
     - Ingested authentic 14-Tier depth for 25 consecutive foundational civic, guild, ecological, and martial entities from `scripts/thin_entities_manifest.json`:
       - **Fauna & Ecology**: `Ẹyẹ` (winged messengers), `Ẹranko` (faunal biodiversity).

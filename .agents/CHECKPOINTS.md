@@ -2530,6 +2530,39 @@
   - **Memory Vault Inscribed**: Synchronized [`.agents/memory/oye-auditor.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/oye-auditor.md) with Checkpoint 135.
 - **Verification**: 🏛️ **CHECKPOINT 135 RATIFIED — ZERO HARD VIOLATIONS & ZERO ADVISORY WARNINGS ACHIEVED (HEALTHY HEADROOM RESTORED ACROSS ENTIRE REPOSITORY)**.
 
+### [2026-11-03 16:25] Checkpoint 136 (`CHECKPOINT-AROKIN-011` / `HANDOFF-AROKIN-004B`) — Universal Batch Pipeline Fortification & Batch 17 Non-Odù Ingestion (Thin Count Decrements to 591)
+- **Agent Persona**: `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-AROKIN-004B`: Fortify `scripts/pipeline/batch_enricher.py` with positional path support, polymorphic payload parsing, alias checking, automated nested `details` synchronization, and automatic manifest slicing; author `scripts/data/batches/batch_17_data.json` for the 25 royal regalia, beadwork, and sacred geography entities (indices 50–74); ingest into dual corpora with 0-bit drift; reduce the thin entities manifest from 616 to 591; and confirm 0 gate violations.
+- **Deliverables Completed**:
+  - **Task 1: Universal Batch Pipeline Fortification ([`scripts/pipeline/batch_enricher.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/pipeline/batch_enricher.py))**:
+    - Enhanced to **138 LOC** (strictly `< 150 LOC` Gate 2 limit).
+    - Added dual CLI support: accepts positional file path (`batch_enricher.py scripts/data/batches/batch_17_data.json`) or `--batch <num>`.
+    - Added polymorphic payload parser: seamlessly normalizes `Dict[str, Dict]` or `List[Dict]`.
+    - Added alias-aware index resolution in `build_index_map()` to protect the Zero Twin Nodes Law (mapped `Ìlèkè Ọrùn` $\rightarrow$ canonical `Ìlẹ̀kẹ̀-Ọ̀rùn`).
+    - Added automated nested `details` dictionary synchronization so frontend drawers and backend APIs reflect updated citations and proverbs in complete lockstep.
+    - Added automated manifest slicing to decrement [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json) automatically on each successful batch run.
+  - **Task 2: Batch 17 Non-Odù Corpus Ingestion (25 Entities Elevated)**:
+    - Authored [`scripts/data/batches/batch_17_data.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/batch_17_data.json) covering 25 royal authority, regalia, beadwork, and sacred landscape entities:
+      - *Monarchical Authority & Royal Insignia*: `Ọba`, `Kábíyèsí`, `Adé`, `Adé Ààrẹ`, `Ọ̀pá Ọ̀rànmíyàn`, `Ọ̀pá Àṣẹ`.
+      - *Sacred Beadwork Regalia*: `Ìlèkè`, `Ìlèkè Ẹsẹ̀`, `Ìlẹ̀kẹ̀-Ọ̀rùn`, `Ìyùn`, `Èwù Ìlèkè`, `Bàtà Ìlèkè`, `Ìlèkè Ọ̀pẹ̀tẹ̀`.
+      - *Court Headwear & Traditional Textiles*: `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Fìlà Oníderè`, `Gẹlẹ̀ Ògódó`, `Gẹlẹ̀ Ìpekú`, `Gẹlẹ̀ Ìjàpá`, `Yẹ̀rị̀`, `Pà Kaja`, `Àborù`, `Àkẹ̀tẹ̀`.
+      - *Sacred Geography & Metaphysical Landscape*: `Odo Ọ̀ṣun`, `Igbo Olódùmarè`.
+    - Infused 100% of entities with Master Bibliography academic citations (`provenance_and_citations`) citing Samuel Johnson (1921), Rowland Abiodun (2014), Henry John Drewal & John Pemberton III (1989), Frank Willett (1967), Joanne Eicher (1976), Babatunde Lawal (1996), Okechukwu Nwafor (2021), N.A. Fadipe (1970), Robert S. Smith (1988), E. Bọ́lájì Ìdòwú (1962), Wándé Abímbọ́lá (1976), D.O. Fágúnwà (1938), Pierre Verger (1995).
+    - Completed canonical proverb triads with philosophical commentary on all entities with 2 proverbs (`Ìlèkè Ẹsẹ̀`, `Fìlà Abetí Ajá`, `Fìlà Ọ̀ránmíyàn`, `Pà Kaja`, `Ọ̀pá Ọ̀rànmíyàn`, `Èwù Ìlèkè`, `Ọ̀pá Àṣẹ`).
+    - Successfully ingested via `python3 scripts/pipeline/batch_enricher.py scripts/data/batches/batch_17_data.json`.
+    - Synchronized dual master corpora at **1,413 canonical entities** with **0-bit checksum drift**.
+    - Updated [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): **reduced thin non-Odù entities from 616 down to exactly 591** (Next: Batch 18 starting at index 90: `Obàtálá`).
+  - **Task 3: Production Quality Gates & Regression Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 canonical entities (64/64 anti-parent-loop precision).
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **1.17s** (1,933 modules transformed, 0 errors).
+  - **Memory Vault Inscribed**:
+    - Synchronized [`.agents/memory/arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) with Checkpoint 136 log.
+- **Verification**: 📜 **CHECKPOINT 136 RATIFIED — UNIVERSAL BATCH ENRICHER FORTIFIED / BATCH 17 INGESTED (25 ROYAL REGALIA & BEADWORK NODES) / THIN COUNT DROPS TO 591 / 0-BIT CHECKSUM DRIFT**.
+
+
 
 
 

@@ -63,11 +63,12 @@
 - For `"Balogun Fabunmi"`, token `"Fabunmi"` begins with `"fa"`, which was in `ONOMASTIC_PREFIXES` (`fa` $\rightarrow$ `Ifá`). Thus, it automatically synthesized `Ifábunmi` and displayed the card.
 - For `"Ade Ajayi"`, token `"Ade"` matched `Adé`, but `"Ajayi"` had no entry in `ONOMASTIC_PREFIXES` or `CANONICAL_ONOMASTIC_REGISTRY`, so the compound could not resolve both parts. Adding primordial birth names (*Orúkọ Àmútọ̀runwá*) fixes this permanently.
 
-#### 📦 616 Remaining Non-Odù Thin Entities Roadmap:
+#### 📦 591 Remaining Non-Odù Thin Entities Roadmap:
 - Total Non-Odù Corpus: 666 entities in `thin_entities_manifest.json` originally.
 - Batch 15 Enriched: 25 entities (Indices 0–24: 8 State homelands + foundational civic concepts).
 - Batch 16 Enriched: 25 entities (Indices 25–49: `Ẹyẹ` through `Àmì_Ọlá` — Checkpoint 134).
-- Remaining: Exactly **616 thin entities** scheduled across Batches 17–41 under `Ọlọ́yè Àrọ̀kìn` (Next: Batch 17 starting at index 50: `Ọba`).
+- Batch 17 Enriched: 25 entities (Indices 50–74: `Ọba` through `Igbo Olódùmarè` — Checkpoint 136).
+- Remaining: Exactly **591 thin entities** scheduled across Batches 18–41 under `Ọlọ́yè Àrọ̀kìn` (Next: Batch 18 starting at index 90: `Obàtálá`).
 
 #### 🔍 Mobile QA Findings Reported by Kábíyèsí:
 1. **Unresolved Name Structures (`Ibukun`, `Temilade`)**:
