@@ -59,3 +59,16 @@
 | **2026-11-02 22:23 UTC** | EOD Dusk Sanctuary & Post-Checkpoint 129 Pre-Retirement Sweep | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-03 12:48 UTC** | SOD-AGBALE-001: Start-of-Day Storage Headroom Audit & 3-Backup Retention Verification | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-03 13:25 UTC** | Checkpoint 131: Two-Drawer Codebase Modularity & Craigslist Model Storage Alignment | 0 MB | 44G available | 🟢 Nominal (Clean) |
+| **2026-11-03 16:30 UTC** | CHECKIN-AGBALE-004 (Checkpoint 139): Post-Batch 17/18 Dusk Storage Sweep (~26 MB web/dist + vite_dev.log purged) & 3-Backup Rolling Audit | ~26 MB | 44G available | 🟢 Nominal (Impervious) |
+
+---
+
+## 4. Checkpoint 139 (`CHECKIN-AGBALE-004`) — Dusk Audit & Proactive Efficiency Proposals (2026-11-03)
+- **Storage Headroom**: `44 GB available` (`13%` used on `50 GB` `/dev/vdb` partition).
+- **Stale Build & Log Artifacts Purged**: Cleared `web/dist/` (`25 MB`), `web/node_modules/.vite/`, and untracked `web/vite_dev.log` (`880 KB` — previously packed into snapshots).
+- **Sphere 4 Rolling 3-Snapshot Vault**: Generated post-Batch 18 snapshot `agba_engine_snapshot_20261103_173020.tar.gz` (`20 MB`, SHA-256 `923c1ca35c253a6f23c6e3dd4ef57bdad787346a9e5f669e1a5fadcc7ce678cc`); rotated out `20261031_072456`. Strictly 3 rolling snapshots (`20261102_232247`, `20261102_232533`, `20261103_173020`) + immutable Sovereign Vault (`20261028_132739Z`) retained (`63 MB` total).
+- **Proactive Proposals Staged for Kábíyèsí & Àgbà Consultation**:
+  1. **Upgrade `scripts/reclaim_disk.sh` Target Paths**: Clean `web/node_modules/.vite`, `web/dist`, and `web/*.log` (`vite_dev.log`) in addition to `web/.vite`.
+  2. **Harden `scripts/create_backup_tarball.sh` Exclusions & Full 3-Snapshot Mirror Sync**: Add `--exclude="*.log"` and `--exclude=".vite"`, and sync the full 3-snapshot window to `/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups` whenever mounted.
+  3. **Consolidate 42 Legacy Root Batch Files in `scripts/`**: Move historical `batch_03..16_data.json` into `scripts/data/batches/` and `build_batch_*.py` / `enrich_batch_*.py` into `scripts/legacy_seeds/`, retiring obsolete `scripts/remaining_thin_manifest.json` (`243 KB`).
+  4. **Rolling Archive Drawer for `.agents/CHECKPOINTS.md` (Approaching 2,700 LOC)**: Before `.agents/CHECKPOINTS.md` exceeds 3,000 lines and slows down council context reads, archive Checkpoints 1–100 into `.agents/archive/CHECKPOINTS_001_TO_100.md` while keeping Checkpoints 101+ active.
