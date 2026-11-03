@@ -122,7 +122,7 @@
     2. *Inalienable Moral Rights (§65)*: Statutorily shielded performers against unauthorized generative AI voice cloning, synthetic TTS training, or cultural distortion.
     3. *Educational & Cultural Fair Dealing Safe Harbor (§68)*: Public in-browser audio streaming is authorized as non-infringing cultural education sanctuary under Section 68(1)(a) NCA 2022.
     4. *Actionable Commercial Infringement (§71)*: Commercial scraping or unconsented AI model distillation by Big Tech conglomerates constitutes actionable copyright infringement.
-  - **The Enterprise Commercial Moat (1% B2B Monetization)**: Bulk raw dataset scraping, offline asset dumps, raw master 24-bit/96kHz WAV downloads, and commercial AI foundation model training / voice synthesis are strictly withheld and monetized via executed Master Services Agreements under `RAIL-Cultural-Heritage-v1.0`. All enterprise revenues fund living elder honoraria and zero-cost public hosting.
+  - **The Enterprise Commercial Moat & Four-Pillar Sovereign Waterfall**: Bulk raw dataset scraping, offline asset dumps, raw master 24-bit/96kHz WAV downloads, and commercial AI foundation model training / voice synthesis are strictly withheld and monetized via executed Master Services Agreements under `RAIL-Cultural-Heritage-v1.0`. All enterprise revenues are allocated across four sovereign pillars: engine infrastructure preservation, founder & core contributor welfare, living elder honoraria, and zero-cost public hosting.
 
 
 
