@@ -2322,6 +2322,25 @@
     - Updated [`.agents/memory/akede-herald.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/akede-herald.md) with Item 4 (Onomastic Lineage Gateway) and Checkpoint 129 log.
 - **Verification**: 📜 **CHECKPOINT 129 RATIFIED — PLENARY DECREE 2 ONOMASTIC STORYTELLING WAR CHEST FORGED & SEALED (< 500 LOC)**.
 
+### [2026-11-03 Noon] Checkpoint 130 (`CHECKPOINT-COUNCIL-RESUMPTION-001`) — Start-of-Day (SOD) Council Resumption, Lead Architect Commendation for Àgbẹ̀dẹ, 25-Query Mobile QA Audit & Tiered Access Separation
+- **Agent Personas**: `Àgbà` (`agba-pa-architect`), `Ìtọ́jú`, `Ẹ̀ṣọ́`, `Agbálẹ̀`, `Àgbẹ̀dẹ`, `Àrọ̀kìn`, `Òye`, `Sùúrù`
+- **Supervising Architect**: `Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directives**:
+  1. Confirm baseline quota refresh for Gemini 3.8 Flash (active at 1:28 PM, Nov 3, 2026).
+  2. Formulate SOD check prompts for `Ìtọ́jú` (welfare/sanctuary), `Ẹ̀ṣọ́` (zero-trust security), and `Agbálẹ̀` (storage/backup rotation).
+  3. Formulate start prompts for all council members to resume structured execution.
+  4. Transmit Lead Architect's special commendation to `Ọlọ́yè Àgbẹ̀dẹ` for the exceptional UI and hearth design of the "Orúkọ Mi" feature in `AarinimoSearchCore.jsx`.
+  5. Inscribe the comprehensive 25-query mobile QA audit matrix into Shared Memory for `Àrọ̀kìn`, `Sùúrù`, and `Òye`.
+  6. Document the remaining 641 thin entities (666 non-Odù minus 25 Batch 15) for Batches 16–41.
+  7. Formally codify the Open Source Tiered Access Separation Policy (Open Source client limited to Text & Vision; all 143 Authentic Audio Tokens withheld and reserved exclusively for authorized Enterprise/Institutional API access).
+- **Deliverables Completed**:
+  - **Shared Memory Synchronized**: Updated `.agents/HANDOFF.md` with `HANDOFF-ORUKO-MI-001` containing the complete 25-query audit matrix, the 641 thin entities roadmap, and the Tiered Access Separation covenant.
+  - **Forensic Diagnosis Recorded**: Clarified that `Balogun Fabunmi` surfaced `Ifábunmi` because token `"Fabunmi"` matched prefix `"fa"` (`Ifá`) + suffix `"bunmi"` in `onomasticDecomposer.js`, whereas `"Ajayi"` is an unindexed sacred birth-circumstance name (*orúkọ àmútọ̀runwá*).
+  - **Martial Sub-Variant Re-linking Mandated**: `Balogun Ajayi Ogboriefon`, `Balogun Fabunmi`, `Balogun Ibikunle`, `Balogun Ogunmola` remapped to `sovereign_parent: "Balógun"`, `is_parent: false`.
+- **Verification**: 🏛️ **CHECKPOINT 130 RATIFIED — START-OF-DAY ALIGNMENT SEALED IN SHARED MEMORY; COUNCIL STAGED FOR STRUCTURED EXECUTION**.
+
+
 
 
 
