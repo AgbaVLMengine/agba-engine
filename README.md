@@ -35,10 +35,17 @@ agba-engine/
 
 ---
 
-## 🛡️ Tiered Access & Governance Policy
+## 🛡️ The Sovereign Craigslist 99% Free Model & Enterprise Commercial Moat
 
-* **Open-Source Client Tier (`/web`):** Free, public access to **Text & Diacritic Retrieval** (`1.0000` exact tone match, `0.9600` folded) and the **Verified Museum Regalia Gallery** (52 verified masterworks from The Met, British Museum, CMA, AIC, Vienna).
-* **Enterprise & Institutional API Tier (`/api`):** Secure access to the full **Tri-Modal Pipeline** (**Text**, **Neural Vision**, and **143 Authentic Human Audio Tokens** including spoken vocalizations and Dùndún / Gángan talking drum Solfège mimicry), reserved for verified studios, museums, and academic institutions.
+Àgbà Engine operates on the **Sovereign Craigslist Model**: 99% of its cultural utility is completely open, friction-free, and unpaywalled for everyday humanity, while maintaining an ironclad commercial moat against corporate AI extraction.
+
+* **The People's Sanctuary (99% Free Access):**
+  - **100% Free Streaming for All Everyday Seekers:** Curious youth, elders, teachers, researchers, and diaspora seekers enjoy unrestricted in-browser streaming access to all **1,411 Canonical Entities**, all **256 Odù Ifá Chapters**, and all **143 Authentic Audio Tokens** (Auntie Yẹmí's pitch contours, Baba Sẹ́fíù Adégbìlú's Dùndún/Gúdúgúdú talking drum glissando, and Father's royal Oríkì).
+  - **Zero Friction:** No paywalls, no mandatory logins, no API keys, and no subscription barriers. *"Words without the Àmì Ohùn is a corpse"*—we never withhold the living spoken voice of our ancestors from our people.
+* **The Enterprise Commercial Moat (Monetized B2B):**
+  - **Strictly Restricted & Withheld:** Automated bulk dataset scraping, raw lossless 24-bit/96kHz studio WAV downloads, offline database dumps, and commercial AI foundation model training / synthetic TTS voice cloning weights for Big Tech conglomerates.
+  - **Enterprise B2B Licensing (`api.agbaengine.com`):** High-throughput authenticated API concordance, cultural training dataset synchronization, and commercial gaming/film IP licensing governed by executed Master Services Agreements (MSA) under `RAIL-Cultural-Heritage-v1.0` and Part III (Performers' Rights) of the Nigerian Copyright Act 2022. All enterprise revenues fund living elder honoraria and zero-cost cloud infrastructure.
+  - *Full Economic Specification:* See [`docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md).
 
 ---
 

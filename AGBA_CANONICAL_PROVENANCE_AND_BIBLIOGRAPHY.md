@@ -25,6 +25,12 @@ In formal alignment with our Retained External Counsel, **Ahmed Abiola Mohammed 
 2. **Fair Dealing & Peer Citation Shield**:
    - The extraction of bibliographic facts, linguistic definitions, and historical narratives from the 28+ academic authorities listed below is fully shielded under **Section 20(1)(a) & (b) of the Nigerian Copyright Act 2022** (Fair Dealing for non-commercial research, private study, criticism, and review accompanied by sufficient acknowledgment) and **Article 10(2) of the Berne Convention for the Protection of Literary and Artistic Works**. Full **Attribution Parity** is permanently preserved across all entity nodes.
 
+### 1.2 The Sovereign Craigslist 99% Free Cultural Model & Performers' Rights Anchor (Part III NCA 2022)
+In accordance with Kábíyèsí's sovereign decree (*"Words without the Àmì Ohùn is a corpse"*), Àgbà Engine operates on the **Sovereign Craigslist Model**:
+1. **The Free Cultural Sanctuary (99% of System)**: All natural persons—curious youth, diaspora seekers, elders, students, and independent researchers—enjoy 100% free, friction-free in-browser and offline streaming access to all 1,411 canonical entities, 256 Odù Ifá chapters, and 143 Authentic Audio Tokens without paywalls, logins, or API keys. Under **Section 68(1)(a) of the Nigerian Copyright Act 2022**, non-commercial educational streaming constitutes protected fair dealing.
+2. **The Enterprise Commercial Moat (1% B2B Monetization)**: Bulk raw dataset scraping, offline dumps, lossless master 24-bit/96kHz WAV downloads, and commercial AI training / synthetic TTS voice cloning weights for Big Tech conglomerates are strictly withheld and monetized via commercial Master Services Agreements under `RAIL-Cultural-Heritage-v1.0`.
+3. **Statutory Protection of Living Performers (Part III, §§63–74 NCA 2022)**: The 143 audio recordings embody living cultural performances by traditional elders and artists (including Auntie Yẹmí, Baba Sẹ́fíù Adégbìlú, and Father). Under Sections 63, 65, and 71 of the NCA 2022, said performers retain exclusive rights over commercial reproduction and broadcast, as well as inalienable moral rights against unauthorized generative AI voice cloning or synthetic distortion. Enterprise licensing proceeds directly fund elder honoraria and zero-cost public hosting. (See [`docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md)).
+
 ---
 
 ## 📚 2. Academic Master Bibliography (Foundational Literature)

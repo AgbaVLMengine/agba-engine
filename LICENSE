@@ -13,23 +13,35 @@ strictly separates:
   (3) Proprietary Compilations, 14-Tier Annotations, and Authentic Audio Datasets; and
   (4) Third-Party Museum Archival Material and Protected Expressions of Folklore.
 
-1. DUAL-TIER LICENSING ARCHITECTURE
------------------------------------
-(a) COMMUNITY & OPEN-SOURCE SOFTWARE TIER (/web Client & Public Developer Tools):
-    Subject to the behavioral, attribution, and cultural-sovereignty restrictions in
-    Sections 2 through 6 below, permission is hereby granted, free of charge, to any
-    person obtaining a copy of the designated open-source client software (/web) to
-    use, study, and modify the software for personal, educational, academic, community
-    cultural preservation, and non-commercial research purposes.
+1. DUAL-TIER LICENSING ARCHITECTURE (THE SOVEREIGN CRAIGSLIST MODEL)
+---------------------------------------------------------------------
+(a) COMMUNITY & OPEN-SOURCE CULTURAL SANCTUARY (/web Client & Everyday Public Access):
+    Subject to Sections 2 through 6, permission is granted, 100% free of charge and
+    without paywalls, logins, or API keys, to any natural person accessing the web/PWA
+    client (/web) to search, study, read, and stream all canonical entities, Odù Ifá
+    chapters, and living audio tokens (including spoken vocalizations and Dùndún / Gángan
+    talking drum pitch glissandos) for personal education, diaspora heritage connection,
+    academic research, and non-commercial cultural appreciation. Under Section 68 of the
+    Nigerian Copyright Act 2022 (Act No. 34 of 2022), public streaming of these cultural
+    audio tokens constitutes protected educational and cultural fair dealing.
 
-(b) CLOSED COMMERCIAL API & ENTERPRISE TIER (/api, Vector Indexes, Corpus & Audio Vault):
-    Access to the Àgbà Engine Commercial API (/api), proprietary hybrid ranking and
-    diacritic-restoration methodology, the complete 1,007+ entity 14-Tier Normalized
-    Database Compilation, dense cross-modal vector weights, and the 143 Authentic
-    Human & Talking Drum Audio Tokens (agba_audio_manifest.json) is PROPRIETARY.
-    Commercial use by film studios, game developers, museums, universities, media
-    companies, or AI platforms requires an executed Àgbà Engine Enterprise Master
-    Services Agreement (MSA) and Commercial API License (contact: only1mooseylion@gmail.com).
+(b) CLOSED COMMERCIAL API & ENTERPRISE MOAT (/api, Bulk Dumps & Master Studio Vault):
+    Commercial exploitation, automated bulk database scraping, offline raw dataset dumps,
+    access to raw lossless 24-bit/96kHz master studio WAV files, and the training of
+    third-party commercial AI/LLM models or synthetic text-to-speech (TTS) voice clones
+    is strictly PROPRIETARY and WITHHELD. Commercial use by film studios, game developers,
+    museums, universities, media companies, or commercial AI labs requires an executed
+    Àgbà Engine Enterprise Master Services Agreement (MSA) and Commercial API License
+    (contact: only1mooseylion@gmail.com).
+
+(c) STATUTORY PROTECTION OF LIVING PERFORMERS (Part III, §§63–74 NCA 2022):
+    All live acoustic tokens and voice notes embody statutory performances by identified
+    traditional elders and artists (including Auntie Yẹmí, Baba Sẹ́fíù Adégbìlú, and
+    Father). Under Sections 63, 65, 67, and 71 of the Nigerian Copyright Act 2022, said
+    performers retain exclusive rights over the commercial reproduction, broadcast, and
+    commercial communication of their fixations, as well as inalienable moral rights
+    prohibiting unauthorized voice cloning, synthetic distortion, or commercial AI training.
+    All enterprise licensing revenues directly fund elder honoraria and zero-cost public hosting.
 
 2. MANDATORY CULTURAL SOVEREIGNTY & ACCEPTABLE USE RESTRICTIONS (RAIL CLAUSES)
 ------------------------------------------------------------------------------
