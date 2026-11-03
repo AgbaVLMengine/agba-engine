@@ -10,6 +10,7 @@ import { hydrateSubVariantFromParent, findSubVariantMatchInCorpus } from '../uti
 import { extractTonalContour } from '../utils/tonalContour';
 import { searchRankedCorpus } from '../utils/localRankedSearch';
 import { hydrateEntityForBento } from '../utils/bentoHydrator';
+import { resolveOnomasticZeroShot } from '../utils/onomasticBridge';
 
 export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
   const [query, setQuery] = useState('');
@@ -22,6 +23,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
   // Synchronous double-tap lock for search and branch mutations
   const busyRef = useRef(false);
+  const searchSeq = useRef(0);
 
   const {
     graph,
@@ -42,6 +44,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
       const q = (searchTerm ?? query).trim();
       if (!q || busyRef.current) return;
       busyRef.current = true;
+      const seq = ++searchSeq.current;
 
       setLoading(true);
       setErrorMsg('');
@@ -56,10 +59,6 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         if (svMatch) {
           const synthChild = hydrateSubVariantFromParent(svMatch.variantTitle, svMatch.parent);
           rankedEntities = [hydrateEntityForBento(synthChild, 1.0)];
-          setResults({
-            status: 'success',
-            ranked_entities: rankedEntities
-          });
         } else {
           const controller = new AbortController();
           const timeoutId = setTimeout(() => controller.abort(), 1200);
@@ -82,7 +81,6 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
               const data = await res.json();
               if (data?.ranked_entities?.length > 0) {
                 rankedEntities = data.ranked_entities;
-                setResults(data);
               }
             }
           } catch (_) {
@@ -95,24 +93,30 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
             const localMatches = searchRankedCorpus(q, masterCorpus);
             if (localMatches.length > 0) {
               rankedEntities = localMatches.slice(0, 6).map((m, idx) => hydrateEntityForBento(m, idx === 0 ? 0.992 : 0.88 - idx * 0.05));
-              setResults({
-                status: 'success',
-                ranked_entities: rankedEntities
-              });
-            } else {
-              setErrorMsg(`No direct matches found for '${q}'. Try searching for Òkèlè, Amàlà, Agbádá, Odù Ifá, Ògún, or Bàtá.`);
-              setResults(null);
             }
           }
         }
 
+        // Zero-Shot Onomastic Lineage Bridge (Preempts weak description noise)
+        const onomasticEntity = resolveOnomasticZeroShot(q, masterCorpus, rankedEntities);
+        if (onomasticEntity) {
+          const synth = hydrateEntityForBento(onomasticEntity, 0.99);
+          rankedEntities = [synth, ...rankedEntities.filter((e) => e.id !== synth.id)].slice(0, 6);
+        }
+
+        if (seq !== searchSeq.current) return;
+
         if (rankedEntities.length > 0) {
+          setResults({ status: 'success', ranked_entities: rankedEntities });
           const primaryEntity = rankedEntities[0];
           if (options.isBranchHop) {
             branchVeinToRelative(primaryEntity, options.relationLabel || 'Rabbit-Hole Hop');
           } else {
             (startVeinFromHearth || startVeinFromOpon || startVeinFromTooth)(q, primaryEntity);
           }
+        } else {
+          setErrorMsg(`No direct matches found for '${q}'. Try searching for Òkèlè, Amàlà, Agbádá, Odù Ifá, Ògún, or Bàtá.`);
+          setResults(null);
         }
       } finally {
         setLoading(false);

@@ -2562,6 +2562,26 @@
     - Synchronized [`.agents/memory/arokin-archivist.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/arokin-archivist.md) with Checkpoint 136 log.
 - **Verification**: 📜 **CHECKPOINT 136 RATIFIED — UNIVERSAL BATCH ENRICHER FORTIFIED / BATCH 17 INGESTED (25 ROYAL REGALIA & BEADWORK NODES) / THIN COUNT DROPS TO 591 / 0-BIT CHECKSUM DRIFT**.
 
+### [2026-11-03] Checkpoint 137 — `HANDOFF-AGBEDE-005B` Onomastic Zero-Shot Retrieval Bridge (`SearchTab.jsx` & `onomasticBridge.js`)
+- **Agent Persona**: `Àgbẹ̀dẹ` (`agbede-builder`)
+- **Deliverables Completed**:
+  - **Forged `web/src/utils/onomasticBridge.js` (86 LOC, strictly < 100 LOC)**:
+    - **Sùúrù's Canonical Sovereign Alias Map**: Remaps `'Owó Ẹyọ'` $\rightarrow$ `'eyo_owo'`, `'Akín'` $\rightarrow$ `'Ògún'`, `'Ayọ̀'` $\rightarrow$ `'Ẹbí'`, `'Ọ̀rọ̀'` $\rightarrow$ `'Òye'`.
+    - **Òye's Anti-Shadowing Rule**: If an exact canonical corpus entity matches the query (`Òye`, `Ifá`, `Adé`, `Ògún`, etc.), returns `null` to ensure canonical entities remain unshadowed and personal name synthesis is not triggered.
+    - **Àgbẹ̀dẹ's Weak Noise Preemption**: If no exact title match exists, onomastic decomposition preempts weak description matches and secures Rank #1.
+    - **Òye's Gate 9 Sanitizer**: Sets `is_synthesized: true`, category `'Social Structure, Kinship & Lineage'`, and sanitizes `Bàbá` to `'Ancestral patriarch, elder custodian & compound pillar'`.
+    - **Golden Lineage Ribbon**: Attaches `onomastic_card` payload `"🏷️ Orúkọ Mi: '{name}' • Ancestral Lineage of {parent}"`.
+  - **Wired into `web/src/components/SearchTab.jsx` (241 LOC, strictly < 245 LOC / Law 1 < 250 LOC)**:
+    - Integrated `resolveOnomasticZeroShot` cleanly inside the search fallback flow.
+    - Added Òye's monotonic sequence lock `const searchSeq = useRef(0)` and monotonic check to prevent asynchronous keystroke race conditions.
+  - **Production Quality Gates & Regression Verification**:
+    - Zero-Shot Bridge Tests: Verified 7/7 personal names (`Yetunde` $\rightarrow$ `Ìyá`, `Ibukun` $\rightarrow$ `Ọlá`, `Temilade` $\rightarrow$ `Adé`, `Morenikeji` $\rightarrow$ `Ẹbí`, `Olakunle` $\rightarrow$ `Ọlá`, `Babatunde` $\rightarrow$ `Bàbá`, `Adebayo` $\rightarrow$ `Adé`) with exact-title priority matching over prefix collision; verified 4/4 anti-shadowing canonicals (`Òye`, `Ifá`, `Adé`, `Ògún`).
+    - `npm run build`: Vite client bundle compiled in **1.26s** (1,933 modules transformed, 0 errors).
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 canonical entities.
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+- **Verification**: 📜 **CHECKPOINT 137 RATIFIED — ONOMASTIC ZERO-SHOT RETRIEVAL BRIDGE OPERATIONAL / ZERO UI REGRESSION / GATE 2 & LAW 1 ENFORCED / 0 ERRORS**.
+
+
 
 
 
