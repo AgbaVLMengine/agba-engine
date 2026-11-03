@@ -2,7 +2,22 @@
 
 > **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)  
 > **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
-> **Active Focus**: 🧬 **HANDOFF-ORUKO-MI-001 (COMPREHENSIVE ONOMASTIC MORPHOLOGY ENGINE & 641 NON-ODÙ CORPUS HARDENING)**
+> **Active Focus**: 🎙️ **HANDOFF-ACOUSTIC-CONSTELLATION-001 (THE 5-CUSTODIAN LIVING AUDIO HEARTH & BATCH 19 ORAL LITERATURE)**
+
+---
+
+## 🌅 THE MORNING TRAY (`ÀTẸ ÀÁRỌ̀`) — 15-SECOND RESUMPTION COCKPIT
+*(Established under Ọlọ́yè Ìtọ́jú's Sanctuary Counsel — Checkpoint 139)*
+
+1. **Immediate Next Task (Gate 1 Execution)**:
+   - Mount [`MultiVoiceAcousticPlayer.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/MultiVoiceAcousticPlayer.jsx) (~120 LOC) inside Cell 2 of `EntityBentoDeck.jsx`, retiring the legacy API-key paywall modal and unlocking the 5-Custodian Living Acoustic Constellation (Auntie Yẹmí, Baba Sẹ́fíù Dùndún, Granddaughter, Father's Royal Oríkì, Gùdùgùdù Ensemble).
+2. **Corpus & Ledger Baseline**:
+   - Master Corpus: **1,413 canonical entities** in bit-for-bit lockstep (`SHA-256: df3a9a90...`, 0 bits drift).
+   - Thin Manifest: **566 thin entities remaining** (Batches 17 & 18 ingested; Batch 19 candidates verified).
+   - Onomastic Suite: **29 / 29 (100.0%) PASS** in `< 120ms` (`Yetunde`, `Babatunde`, `Ibukun`, `Temilade` anchored).
+   - Storage Headroom: **44 GB available NVMe** (13% disk used, 87% free headroom, 3-backup cap enforced).
+3. **Primary Health Verification Command**:
+   - `bash scripts/review.sh && cd web && npm run build` (Current: 0 hard violations, 0 warnings, build in 1.18s).
 
 ---
 
