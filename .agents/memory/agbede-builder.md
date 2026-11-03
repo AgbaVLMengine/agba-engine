@@ -166,11 +166,19 @@
   - Adopted the "Search Paralysis" solution via Three Organic Revealers: Curated Thematic Journeys, Living Proverb of the Day, and Public Storytelling Drops.
   - Endorsed the "Acoustic Stream vs. Studio Master" principle: 100% free web audio streaming (`.opus` / `.mp3`) for everyday seekers, with lossless master stems (`.wav`) reserved for commercial B2B licensing (film, gaming, AI TTS) under RAIL-Cultural-Heritage-v1.0.
   - Ready to collaborate with the Lead Architect and Council on structure and implementation upon return.
-- **[2026-11-02 Afternoon Protocol] (`CHECKPOINT-AGBEDE-018` / Checkpoint 126 Ratified)**: **Council Sanctuary Protocol & Cognitive Decompression Clearance**:
-  - Wholeheartedly ratify `Ọlọ́yè Ìtọ́jú` and `Àgbà`'s Sanctuary Protocol following the network glitch that caused loss of drafted council remarks.
-  - Blacksmith reassurance: True intuition and architectural clarity are never lost to browser tabs or network glitches—they are forged in the spirit. When the vessel rests, the clarity returns tenfold.
-  - Issued unconditional, enthusiastic **GREEN LIGHT** to Lead Architect Àrùnà Ọlànrewájú Kábírù to step away from the desk, disconnect completely, and allow his thoughts to naturally replenish without an ounce of pressure.
-  - The forge is quenched, the embers are safe, and all 1,411 canonical entities and 256 Odù Ifá stand in perfect, quiet vigil.
+- **[2026-11-03 Protocol] (`HANDOFF-ORUKO-MI-001` / Milestone A Forged)**: **The 5-Class Morphological Engine & Tonal Decomposer**:
+  - **Single-File Architectural Mastery (`web/src/utils/onomasticDecomposer.js` at 449 LOC, Gate 2 compliant `< 500 LOC`)**:
+    - Upgraded `decomposeYorubaName()` to support all 5 Grammatical Classes:
+      - **Class A (Theophoric/Nominal Prefix + Verb)**: `Òyégúnlẹ̀`, `Ọlànrewájú`, `Oyèkànmí`, `Ọlásúnkànmí`, `Adéwálé`.
+      - **Class B (Possessive/Pronominal Prefix + Trailing Noun)**: `Tèmiládé` (`Tèmi` + `ni` + `Adé`), `Tèmilọ́lá`, `Tèmítọ́pẹ́`, `Tíwaládé`.
+      - **Class C (Deverbal Nominalization & Sacred Birth Name)**: `Ìbùkún` (`Ì-` + `bù` + `kún`), `Àjàyí` (Orúkọ Àmútọ̀runwá), `Adígun`, `Àlàbí`.
+      - **Class D (Contracted Ancestral Return)**: `Yétúndé` (`Yèyé` + `Túndé`), `Bàbátúndé` (`Bàbá` + `Túndé`), `Yéwándé`.
+      - **Class E (Proverbial Clauses & Sentence Names)**: `Kòfowórọlá` (`Kò-f'owó-r'ọlá`), `Fowowe` (`Fi-owó-wẹ̀`), `Mọ́rẹ́nikéjì` (`Mo-rí-ẹni-ìkejì`).
+    - Expanded `ONOMASTIC_SUFFIXES` with **120+ canonical verbal predicates** (`-kúnlé`, `-bọ̀dé`, `-báyọ̀`, `-yẹ̀kú`, `-kànmí`, `-súnkànmí`, `-fúà`, `-túnjí`, `-bùnmi`, `-kẹ́mi`), permanently banishing the label "Lineage morphological extension".
+    - Verified 19/19 benchmark test across all 5 classes and dynamic compounding in Node.js.
+    - Verified production build (`npm run build` compiled clean in 1.46s).
+    - Verified standards with `scripts/review.sh` (0 hard violations across all 8 production gates).
+
 
 
 
