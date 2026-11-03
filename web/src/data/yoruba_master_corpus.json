@@ -16811,7 +16811,11 @@
       "Òsì Balógun",
       "Balógun Ìbàdàn",
       "Bàbá Ìkòyí",
-      "Seriki"
+      "Seriki",
+      "Balogun Ibikunle",
+      "Balogun Fabunmi",
+      "Balogun Ogunmola",
+      "Balogun Ajayi Ogboriefon"
     ],
     "details": {
       "description": "The supreme military general, field marshal, and commander-in-chief of a Yorùbá kingdom's army (Bàbá-ní-Ògún: Father/Leader in War).",
@@ -40531,7 +40535,10 @@
       "diaspora_connections": "The Kírìjì War coincided with the emergence of educated Yorùbá returnees (the Saro and Aguda) from Freetown, Sierra Leone, and Brazil. Many Èkìtìparapọ̀ partisans were connected to transatlantic lineages; these returned kinsmen organized the Èkìtìparapọ̀ Society in Lagos in the late 1870s and 1880s to provide logistical, financial, and modern weaponry supply lines to Bálógun Fágbùmí and his generals. In the contemporary African Diaspora—throughout Cuba (Lucumí), Brazil (Candomblé Ketu), and Trinidad (Ọ̀rìṣà tradition)—the historical archetype of Fágbùmí reverberates in the liturgical veneration of Ògún as the divine breaker of chains and archetype of revolutionary resistance against oppression, mirroring the maroons and anticolonial insurgencies of the Americas.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Cinematic depictions of Bálógun Fágbùmí should prioritize atmospheric authenticity, set against the jagged topography, mist-shrouded ridges, and deciduous canopies of Òkèmèsí and Ìmẹ̀sí-Ilé. Visuals should showcase the contrasted aesthetics: the raw iron, indigo cloths, and heavy firearms of the Èkìtìparapọ̀ forces versus the seasoned red-clay fortifications of the Ìbàdàn encampments. Sound design must capture the signature sonic character of the Kírìjì artillery—the distinct, deafening boom-echo of breech-loading repeaters that earned the war its onomatopoeic name. Lighting should rely heavily on low-contrast morning mists, torchlight across camp council pavilions, and chiaroscuro fires illuminating iron talismans and determined, seasoned faces."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant"
   },
   {
     "id": "Balogun Ibikunle",
@@ -40582,7 +40589,10 @@
       "diaspora_connections": "The 19th-Century Yorùbá military upheavals over which Balógun Ìbíkúnlé presided were intrinsically linked to the transatlantic displacement of hundreds of thousands of Yorùbá captives into the Americas. Displaced combatants and civilian survivors from the Ìjàyè and central Ọ̀yọ́ clashes carried Ìbàdàn military stratagems, drum languages, and religious devotions directly into Bahia (Brazil), Matanzas and Havana (Cuba), Trinidad, and Puerto Rico. The martial, unyielding ethos of Ògún celebrated by Ìbíkúnlé's legions became the theological backbone of Afro-diasporic resistance, finding institutional continuity within the Lucumí and Candomblé Ketu nations, while liberated captives returning from Freetown, Sierra Leone (the Saro community) mediated Ìbàdàn diplomacy and documented his military prowess in early regional archives.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing Balógun Ìbíkúnlé in historical cinema, exhibitions, or high-definition digital reconstructions, visual designers must reject romanticized or primitive tropes in favor of rigorous 19th-Century historical accuracy. Costuming must foreground heavyweight hand-spun Indigo-dyed Aṣọ Òkè, structured leather breastplates, and ceremonial feather headgear (Òkòkó) denoting high military rank. Soundscapes must incorporate the thunderous, staccato cadences of royal and military drums, specifically Gbedu, Kòsó, and Bẹ̀mbẹ́ ensembles communicating complex tonal military dispatches. Dialogue should be delivered in classical, formal Ọ̀yọ́-Yorùbá idioms, capturing the calculated reserve, statesmanship, and immense tactical gravitas characteristic of the senior military council of the Ìbàdàn Republic."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant"
   },
   {
     "id": "Kurunmi of Ijaye",
@@ -40729,7 +40739,10 @@
       "diaspora_connections": "Ògúnmọ́lá’s tactical era directly overlapped with the final waves of the Transatlantic Slave Trade to Cuba and Brazil. Enslaved veterans and civilian survivors of his campaigns carried the military songs, drum languages, and specific liturgical invocations of Ògún into Lucumí and Candomblé Ketu traditions. The archetype of Ògún as a master strategist, cavalry leader, and iron-willed administrator venerated in Salvador da Bahia, Matanzas, and Trinidad directly mirrors the historical memories and legendary persona of Balógun Ògúnmọ́lá.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Cinematic and documentary representations should highlight a lean, austere figure whose physical presence commands respect through silence rather than bombast. Key visual motifs must include hand-dyed deep indigo Àdìrẹ war garments, aged brass amulets, dark burnished leather, and sweat-glistening cavalry horses. Lighting should feature dramatic chiaroscuro to emphasize the smoke-filled forge and battlefield encampments of 19th-century Yorùbáland. Soundscapes must incorporate the resonant, urgent rhythms of the Kòso and Dùndún war drums communicating tactical orders across rolling savanna terrain."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant"
   },
   {
     "id": "Madame Tinubu",
@@ -40831,7 +40844,10 @@
       "diaspora_connections": "The strategic campaigns orchestrated by military architects such as Balógun Àjàyí Ọ̀gbóríẹfọ̀n reshaped the geopolitical landscape that fueled the transatlantic capture corridors in the twilight of the slave trade. In the African Diaspora—most notably within Afro-Cuban Lucumí, Brazilian Candomblé Ketu, and Trinidad Orisha traditions—the spirit of Ìbàdàn's military vanguard survives within the liturgy of Ògún, particularly in manifestations such as Ògún Oníre, Ògún Meji, and Ògún Alágbede. The veneration of iron tools, the sacred red-and-black accoutrements, and the dynamic warrior dance patterns preserved across the Caribbean and the Americas echo the unyielding discipline, tactical stoicism, and battlefield invocations pioneered by nineteenth-century commanders like Ọ̀gbóríẹfọ̀n.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing Balógun Àjàyí Ọ̀gbóríẹfọ̀n in film, digital games, or theatrical re-enactments, depict him with an austere, weathered countenance framed by heavy indigo-dyed Gánnúki armor adorned with genuine leather tírà talismans and aged brass accents. Visual directors should utilize high-contrast, dramatic chiaroscuro lighting, contrasting the muddy, rain-drenched crimson soil of the Òtin River basin with flashes of flintlock muzzle fire. The auditory landscape must be driven by deep, complex rhythms of Bàtá and Gbẹ̀du drums executing authentic Ìbàdàn war-meters (Ìlù Ògún), underscored by classical, non-standardized Oríkì chants recited in archaic Ọ̀yọ́-Ìbàdàn Yorùbá phonology, avoiding modern digital embellishments to maintain historical fidelity."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": "Balógun",
+    "sovereign_parent_status": "Living Sub-Variant"
   },
   {
     "id": "Afonja of Ilorin",
