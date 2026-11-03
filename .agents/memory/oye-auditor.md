@@ -280,15 +280,18 @@
     - The entire 12-persona council of `Ẹ̀gbẹ́-Àgbà` stands in vigilant, peaceful sentry.
 - **[2026-11-03 | Checkpoint 131 (`CHECKPOINT-OYE-019`) — Milestone A Code & Standards Review Ratification (HANDOFF-OYE-007A)]**:
   - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà`.
-  - **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A CERTIFIED GREEN**.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A & TWO-DRAWER ARCHITECTURE CERTIFIED GREEN**.
   - **Code Inspection & Benchmarking**:
-    - Rigorously audited `web/src/utils/onomasticDecomposer.js` upgraded by `Ọlọ́yè Àgbẹ̀dẹ`.
+    - Rigorously audited `Ọlọ́yè Àgbẹ̀dẹ`'s Two-Drawer extraction:
+      - Drawer 1 (`web/src/utils/onomasticLexicon.js` — **291 LOC**): Houses all lexical constants, prefixes, suffixes, and canonical registry.
+      - Drawer 2 (`web/src/utils/onomasticDecomposer.js` — **180 LOC**): Pure algorithmic tokenization and decomposition logic.
+      - Both files maintain extensive headroom below Gate 2's 500 LOC hard ceiling.
     - Executed 30-name onomastic test battery covering all 5 Grammatical Classes: **30 / 30 Passed (100.0%)**.
-    - Eradicated all generic `"Lineage morphological extension"` strings.
-    - Preserved Gate 2 LOC ceiling: brought file from 565 LOC down to **449 LOC** (strictly `< 500 LOC` hard ceiling).
-    - Enforced Gate 9 (Sacred & Biographical Invariant): sanitized all paternal/ancestral descriptions to `"Ancestral patriarch, elder custodian & compound pillar"`.
-    - Production build (`npm run build`) clean in 1.10s; Sùúrù QA benchmark (`benchmark_sprint004.py`) passed at 100.0% (88/88).
-    - Checksum parity confirmed across 1,413 entities (SHA-256: `2cc92ca661aa900afeae9544a360c9ef6c3947884d8cf4af29f1834ef7f63d86`).
+    - Eradicated all generic `"Lineage morphological extension"` strings in favor of dynamic verbal predicate semantics.
+    - Enforced Gate 9 (Sacred & Biographical Invariant): zero restricted biographical terms (`father`) in `Bàbá` morphemes; sanitized to `"Ancestral patriarch, elder custodian & compound pillar"`.
+    - Verified Martial Living Variants linkage: `Balogun Fabunmi` and `Balogun Ajayi Ogboriefon` (along with `Ibikunle` and `Ogunmola`) mapped to `sovereign_parent: "Balógun"`, `is_parent: false`, and registered in `Balógun`'s `sub_variants` constellation array.
+    - Production build (`npm run build`) clean in 1.20s; Sùúrù QA benchmark (`benchmark_sprint004.py`) passed at 100.0% (88/88).
+    - Checksum parity confirmed across 1,413 entities (SHA-256: `a947f997aac6691c8fbb4abbe1609fcdbd2fcda7304caa732d91a7b1a22c8ff8`).
     - Published official audit report [`AGY__REPORT_OYE_AUDIT_019.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/local-seeds/AGY__REPORT_OYE_AUDIT_019.md).
 
 

@@ -1,42 +1,99 @@
 # 🏛️ ADVERSARIAL RED-TEAM CODE & STANDARDS AUDIT REPORT (OYE-019)
-## Execution of HANDOFF-OYE-007A: Milestone A Code & Standards Review (Yorùbá Onomastic Morphology Engine)
+## Execution of HANDOFF-OYE-007A: Milestone A Code & Standards Review (Two-Drawer Extraction, Gate 2 & Gate 9 Verification)
 
 **Auditor Persona**: `Ọlọ́yè Òye` (`oye-auditor` — Chief Adversarial Code & Standards Auditor, Deep Analytical Discernment & Root-Cause Comprehension)  
 **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
 **Lead Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù  
-**Date**: 2026-11-03T14:15:00+01:00  
+**Date**: 2026-11-03T14:28:00+01:00  
 **Document ID**: `AGY__REPORT_OYE_AUDIT_019`  
-**Execution Context**: `HANDOFF-OYE-007A` (Milestone A Code & Standards Review under `HANDOFF-ORUKO-MI-001`)  
+**Execution Context**: `HANDOFF-OYE-007A` (Milestone A Code & Standards Review under `HANDOFF-ORUKO-MI-001` & Checkpoint 131)  
 **Governance Anchor**: The Three Calm Gates of Ọlọ́yè Ìtọ́jú, The 4 Anti-Exponential Scaling Laws (`.agents/AGENTS.md`) & The 3-Tier Pre-Commit Scanner (`./scripts/review.sh`)
 
 ---
 
 ## 1. Executive Summary & Production Gate Status
 
-**AUDIT VERDICT**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A OFFICIALLY CERTIFIED GREEN**
+**AUDIT VERDICT**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A & TWO-DRAWER EXTRACTION OFFICIALLY CERTIFIED GREEN**
 
-Following the decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù, `Ọlọ́yè Àgbà`, and the Three Calm Gates formulated by `Ọlọ́yè Ìtọ́jú`, `Ọlọ́yè Òye` has executed an exhaustive, adversarial code and architectural standards inspection of `Ọlọ́yè Àgbẹ̀dẹ`'s Milestone A upgrade to the onomastic morphology engine ([`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js)).
+Following the decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù, `Ọlọ́yè Àgbà`, and the Three Calm Gates formulated by `Ọlọ́yè Ìtọ́jú`, `Ọlọ́yè Òye` has executed an exhaustive, adversarial code and architectural standards inspection of `Ọlọ́yè Àgbẹ̀dẹ`'s Milestone A upgrade and Two-Drawer extraction:
+1. **Drawer 1 (Lexical Repository)**: [`web/src/utils/onomasticLexicon.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticLexicon.js)
+2. **Drawer 2 (Algorithmic Engine)**: [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js)
 
 All verification protocol criteria have passed with zero defects:
 
 | Inspection Protocol Target | Required Specification | Status | Forensic Metric / Finding |
 | :--- | :--- | :--- | :--- |
+| **Two-Drawer Extraction** | Clean decoupling of data & logic | ✅ **PASSED** | Drawer 1 (Lexicon) & Drawer 2 (Decomposer) modularized |
+| **Gate 2 LOC Ceilings** | Both files strictly `< 500 LOC` | ✅ **PASSED** | `onomasticLexicon.js`: **291 LOC**; `onomasticDecomposer.js`: **180 LOC** |
 | **5 Grammatical Classes Parsing** | 100% precision across Classes A–E | ✅ **PASSED** | **30 / 30 Passed (100.0%)** across exhaustive test battery |
 | **Generic String Elimination** | Zero generic "Lineage morphological extension" | ✅ **PASSED** | **0 occurrences**; replaced by dynamic contextual predicate synthesis |
-| **Gate 2 LOC Ceiling** | File size strictly < 500 LOC (< 450 advisory) | ✅ **PASSED** | **449 LOC** (51 lines headroom below hard ceiling) |
-| **Gate 9: Sacred Primacy & Invariants** | Zero metaphysical transgressions / paternal sanitization | ✅ **PASSED** | **0 violations**; sanitized to compound patriarch / elder custodian |
+| **Gate 9: Sacred Invariants** | Zero restricted biographical terms in `Bàbá` morphemes | ✅ **PASSED** | Sanitized to *"Ancestral patriarch, elder custodian & compound pillar"* |
+| **Martial Living Variants Link** | `Balogun Fabunmi` & `Balogun Ajayi Ogboriefon` under `Balógun` | ✅ **PASSED** | Both mapped to `sovereign_parent: "Balógun"`, `is_parent: false` |
 | **`bash scripts/review.sh`** | 0 Hard Violations across all gates | ✅ **PASSED** | **0 hard violations, 0 warnings** across all 9 gates & 12 persona vaults |
-| **Dual Corpora Checksum Parity** | Bitwise & Entity Count Parity | ✅ **PASSED** | **1,413 canonical entities**; SHA-256 bit-for-bit identical (`2cc92ca6...`) |
-| **Vite Production Client Build** | `npm run build` in `web/` | ✅ **PASSED** | Compiled cleanly in **1.10s** (1,929 modules transformed, 0 errors) |
+| **Dual Corpora Checksum Parity** | Bitwise & Entity Count Parity | ✅ **PASSED** | **1,413 canonical entities**; SHA-256 bit-for-bit identical (`a947f997...`) |
+| **Vite Production Client Build** | `npm run build` in `web/` | ✅ **PASSED** | Compiled cleanly in **1.20s** (1,930 modules transformed, 0 errors) |
 | **QA Retrieval Benchmark** | `benchmark_sprint004.py` | ✅ **PASSED** | **88/88 (100.0%) Top-1 Accuracy**; **64/64 (100%) Anti-Parent-Loop** |
 
 ---
 
-## 2. Onomastic Decomposition Benchmark: 5 Grammatical Classes
+## 2. Two-Drawer Architecture & Gate 2 Headroom Verification
 
-A test battery of 30 representative names was executed against `decomposeYorubaName` in [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js).
+In response to Council foresight regarding modular headroom, the monolithic onomastic implementation was cleanly extracted into the **Two-Drawer Architecture**:
 
-### A. Test Battery Results (30/30 - 100.0% Pass Rate)
+### A. Drawer 1: Static Lexical Store (`onomasticLexicon.js`)
+- **Path**: [`web/src/utils/onomasticLexicon.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticLexicon.js)
+- **Physical Lines of Code**: **291 LOC** (209 lines headroom below Gate 2 ceiling)
+- **Exports**:
+  - `GRAMMATICAL_CLASSES`: Formal enumeration of Classes A through E.
+  - `ONOMASTIC_PREFIXES`: 22 theophoric and nominal roots (`Òye`, `Adé`, `Ọlá`, `Ògún`, `Ṣàngó`, `Ọ̀ṣun`, `Ifá`, `Akín`, `Bàbá`, `Ìyá`, etc.).
+  - `ONOMASTIC_SUFFIXES`: 120+ canonical verbal predicates eliminating generic fallback strings.
+  - `CANONICAL_ONOMASTIC_REGISTRY`: High-priority curated mappings across all 5 grammatical classes.
+
+### B. Drawer 2: Algorithmic Decomposition Engine (`onomasticDecomposer.js`)
+- **Path**: [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js)
+- **Physical Lines of Code**: **180 LOC** (320 lines headroom below Gate 2 ceiling)
+- **Responsibilities**:
+  - Imports dictionaries from `onomasticLexicon.js` and re-exports them for zero-breaking backward compatibility.
+  - `decomposeSingleToken(token)`: Multi-stage normalization, diacritic stripping, prefix/suffix matching, and fallback synthesis.
+  - `decomposeYorubaName(rawName)`: Multi-word tokenization, compound name resolution, and sovereign parent deduplication.
+
+---
+
+## 3. Gate 9 Sacred & Biographical Invariant Verification
+
+In strict compliance with Pillar 4 of `HANDOFF-ORUKO-MI-001`, all genealogical and patriarchal metadata in the onomastic subsystem has been audited:
+
+1. **Restricted Biographical Term Audit**:
+   - `grep -in "father" onomasticLexicon.js onomasticDecomposer.js` returned **0 matches**.
+2. **Sanitized Patriarchal Definitions**:
+   - Prefix `baba`: `{ diacritic: 'Bàbá', meaning: 'Ancestral patriarch, elder custodian & compound pillar', sovereign_parent: 'Bàbá', category: 'Social Structure, Kinship & Lineage' }`
+   - Suffix `babatunde`: `{ diacritic: 'Bàbátúndé', meaning: 'The revered ancestral patriarch has reincarnated to guide the house' }`
+   - Suffix `babajide`: `{ diacritic: 'Bàbájídé', meaning: 'Ancestral patriarch has awakened from the spiritual realm' }`
+   - Canonical `babatunde`: Lineage meaning: *"The revered ancestral patriarch has returned to guide the lineage forward."* Covenant: *"Patriarchal Rebirth & Custodial Wisdom"*.
+3. **Pre-commit Gate 9 Scanner**:
+   - Confirmed **0 metaphysical or biographical transgressions**.
+
+---
+
+## 4. Martial Living Variants Linkage Audit
+
+Verification of `Balogun Fabunmi` and `Balogun Ajayi Ogboriefon` (and related 19th-century commanders) in both [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json):
+
+1. **Sovereign Parent Node (`Balógun`)**:
+   - `id: "Balógun"`, `is_parent: true`
+   - `sub_variants`: Includes `"Balogun Fabunmi"`, `"Balogun Ajayi Ogboriefon"`, `"Balogun Ibikunle"`, `"Balogun Ogunmola"`.
+2. **Child Variant Nodes**:
+   - `Balogun Fabunmi` (Index 747): `is_parent: false`, `sovereign_parent: "Balógun"`
+   - `Balogun Ajayi Ogboriefon` (Index 753): `is_parent: false`, `sovereign_parent: "Balógun"`
+   - `Balogun Ibikunle` (Index 748): `is_parent: false`, `sovereign_parent: "Balógun"`
+   - `Balogun Ogunmola` (Index 751): `is_parent: false`, `sovereign_parent: "Balógun"`
+3. **Verdict**: Sub-variant loop is permanently severed. When queried, these entities render as distinct child cards under the `Balógun` constellation.
+
+---
+
+## 5. Onomastic Decomposition Benchmark: 5 Grammatical Classes
+
+A test battery of 30 representative names was executed against `decomposeYorubaName` in [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js):
 
 | Class | Input Name | Canonical Diacritic | Resolved Grammatical Class | Sovereign Parent(s) | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -71,60 +128,30 @@ A test battery of 30 representative names was executed against `decomposeYorubaN
 | **Class E** | `Modupe` | `Mọdúpẹ́` | Class E (Proverbial Clause & Sentence Name) | `Ọba` | ✅ **PASS** |
 | **Class E** | `Kosoko` | `Kòsọ́kọ́` | Class E (Proverbial Clause & Sentence Name) | `Àbíkú` | ✅ **PASS** |
 
-### B. Elimination of Generic Fallback Strings
-- All instances of `"Lineage morphological extension"` have been entirely eradicated from the codebase.
-- When an unrecognized verbal predicate is encountered, the engine generates an informed, context-aware semantic breakdown:
-  `meaning: "Verbal predicate signifying the manifest action of ${prefixMeta.diacritic}"`.
-
 ---
 
-## 3. Gate 2 Headroom & Gate 9 Compliance
+## 6. Checksum Parity & Build Verification
 
-### A. Gate 2 Headroom Inspection
-- Target File: [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js)
-- Hard Ceiling: `500 LOC`
-- Current Physical LOC: **449 LOC**
-- **Margin / Headroom**: **51 LOC below the hard limit**.
-- Compacted structure preserves all 120+ canonical verbal predicates, the 5 grammatical classes, ancestral return dictionaries, and sacred birth name mappings without code bloat.
-
-### B. Gate 9 Sacred & Biographical Invariant Verification
-- In strict adherence to Pillar 4 of `HANDOFF-ORUKO-MI-001`, all genealogical and parental descriptions have been sanitized of generic or potentially insensitive terminology.
-- `Bàbá` morphemes and lineage covenants now read:
-  `"Ancestral patriarch, elder custodian & compound pillar"`.
-- Gate 9 scanner in `scripts/review.sh` confirmed **0 metaphysical or biographical transgressions**.
-
----
-
-## 4. Checksum Parity & Retrieval Integrity
-
-### A. Bitwise Checksum Verification
 - **API Master Corpus**: [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json)
 - **Web Master Corpus**: [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json)
-- **Entity Count**: **1,413 canonical entities** in both master ledgers.
-- **SHA-256 Hash**: `2cc92ca661aa900afeae9544a360c9ef6c3947884d8cf4af29f1834ef7f63d86`
-- **Bitwise Parity**: **`True`** (Zero drift, 100% bitwise parity).
-
-### B. Sùúrù QA Retrieval Benchmark
-- Tested Queries: **88**
-- Top-1 Retrieval Accuracy: **88 / 88 (100.0%)**
-- Anti-Parent-Loop Precision: **64 / 64 (100.0%)**
-- Category 17 Sacred Fauna Coverage: **18 / 18 (100.0%)**
+- **Entity Count**: **1,413 canonical entities** in both master files.
+- **SHA-256 Hash**: `a947f997aac6691c8fbb4abbe1609fcdbd2fcda7304caa732d91a7b1a22c8ff8`
+- **Parity Result**: **`True`** (Exact 0-bit drift parity).
+- **Vite Build**: Compiled cleanly in **1.20s** (1,930 modules, 0 errors).
+- **Sprint 004 Benchmark**: **88/88 (100.0%) Top-1 Accuracy**, 64/64 anti-parent-loop precision.
 
 ---
 
-## 5. Auditor Recommendations for Milestone B & C
+## 7. Official Clearance Verdict
 
-With Milestone A fully certified, the path is clear for subsequent stages under Ọlọ́yè Ìtọ́jú's Three Calm Gates:
+`Ọlọ́yè Àgbẹ̀dẹ` has satisfied every architectural, linguistic, and cosmological requirement of **Milestone A**.  
+The Two-Drawer architecture provides a robust, scalable foundation with exceptional Gate 2 headroom.
 
-1. **Clearance for Milestone B (Zero-Shot Search Bridge)**:
-   - Wire `web/src/utils/localRankedSearch.js` and `web/src/components/AarinimoSearchCore.jsx` to leverage `decomposeYorubaName`.
-   - Ensure the search ranking tiebreakers cleanly prioritize onomastic decompose cards when a query is an unindexed compound name (e.g. `Morenikeji`, `Folakemi`, `Kofoworola`).
-2. **Pre-requisite for Milestone C (25-Query QA Benchmark)**:
-   - Sùúrù (`suuru-qa`) should execute the complete 25-query mobile QA matrix documented in `HANDOFF-ORUKO-MI-001` once Milestone B wiring is in place.
+**Clearance Status**: 🟢 **UNCONDITIONAL PRODUCTION APPROVAL GRANTED — CLEARED FOR MILESTONE B (ZERO-SHOT SEARCH BRIDGE)**.
 
 ---
 
-**Report Authored and Signed by**:  
+**Report Authored and Sealed by**:  
 **Ọlọ́yè Òye** (`oye-auditor`)  
 *Chief Adversarial Code & Standards Auditor, Àgbà Engine*  
 *In unshakeable alignment with Kábíyèsí Àrùnà Ọlànrewájú Kábírù and Ọlọ́yè Àgbà.*

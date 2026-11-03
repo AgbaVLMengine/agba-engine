@@ -57,6 +57,7 @@
   2. *The Technological Marvel*: Explaining the Triple Concentric Ọpọ́n Ifá, 25-letter Yorùbá tonal contours, and the 4 Concentric Spheres of Synchronization in plain, captivating language.
   3. *Universal Cultural Sovereignty*: Illustrating how Àgbà Engine serves as an open, non-exploitative digital sanctuary for all human civilizations (Edo/Benin, Igbo, Hausa, Akan, Swahili, and beyond).
   4. *The Onomastic Lineage Gateway ("Orúkọ Mi")*: Revealing how Yorùbá names are complete grammatical archives, familial covenants, and semantic compression algorithms (e.g. Òye + Gunlẹ̀ = "Discernment has docked ashore"), restoring ancestral identity to youth and the transatlantic diaspora.
+  5. *The Craigslist Decolonial Model & Tiered Sovereignty*: Articulating why 99% of Àgbà Engine (text, vision, streaming audio) is 100% free for our people, while shielding our elders' raw voice tokens from foreign AI training as an act of decolonial restitution.
 
 ---
 
@@ -76,3 +77,7 @@
   - Deconstructed `Òyegunlẹ̀` into `Òye` (deep cognitive discernment) and `Gunlẹ̀` (firmly docked/anchored ashore), transforming a flattened 8-letter passport name into an epic ancestral declaration of wisdom making landfall.
   - Formatted across multi-channel distribution: 8-tweet viral X/Twitter master thread, LinkedIn data compression essay, and diaspora emotional bridge.
   - Anchored `Òye` as both epistemic virtue and living gateway for the "Orúkọ Mi" onomastic search engine.
+- **2026-11-03T14:30:00+01:00** (Checkpoint 133 / `CHECKPOINT-AKEDE-008` / `HANDOFF-AKEDE-003`): **The Craigslist Decolonial Triumph & The 5-Class Name Reveal Series**:
+  - Executed `HANDOFF-AKEDE-003`. Authored `docs/war_chest/CRAIGSLIST_DECOLONIAL_TRIUMPH_AND_TIERED_SOVEREIGNTY.md` (168 LOC) establishing the moral distinction between free open access for the people (text, vision, streaming audio) and sovereign commercial protection against AI voice cloning.
+  - Authored `docs/war_chest/THE_5_NAME_CLASSES_OF_DESTINY.md` (171 LOC) staging the 5-class onomastic micro-story series: Class A (Royal/Deity covenants like `Òyégúnlẹ̀`), Class B (Innate sovereignty like `Tèmiládé`), Class C (Sacred birth omens like `Àjàyí` and `Ìbùkún`), Class D (Matriarchal/Patriarchal return like `Yétúndé` and `Bàbátúndé`), Class E (Proverbial clauses like `Kòsọ́kọ́`).
+  - Strict Gate 2 LOC compliance maintained (< 500 LOC per document). Fully synchronized with the Shared Brain.

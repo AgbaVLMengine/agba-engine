@@ -267,3 +267,10 @@ flowchart TD
   - **Pillar III & Tiered Access Separation Policy (143 Acoustic Tokens Air-Gap)**: Verified that the **143 Authentic Audio Tokens are 100% air-gapped from public web client bundles**. `web/dist/` contains zero `.wav`, `.mp3`, `.opus`, or `.ogg` files; `git ls-files` confirms zero audio binaries tracked in the repository. `web/src/data/agba_audio_manifest.json` serves exclusively as acoustic feature metadata, with raw binaries securely withheld in off-repo drive storage for authorized Enterprise/Institutional API tiers. The public open-source client remains strictly limited to Text & Vision.
   - **Pillar IV & Production Gates**: `bash scripts/review.sh` executed: **0 hard violations, 0 warnings** across all 9 gates (including Gate 9 Sacred Primacy & Biographical Invariant). Storage headroom at **44 GB available** (13% utilization).
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Impervious Readiness)**. Full Morning Start-of-Day Zero-Trust Security Sign-Off granted. Fortress ramparts are sealed; the realm is primed for active execution.
+- **[2026-11-03 Checkpoint 131 Re-Alignment: Craigslist 99% Free Audio Access & Edge Protection]**:
+  - **Security Clarification on Craigslist Model**: The 143 Authentic Audio Tokens and Auntie Yẹmí's voice notes are **100% free and streamable in the web client** for everyday users. They are NOT locked behind an enterprise paywall on the web app.
+  - **Zero-Trust Perimeter Guardrails**:
+    1. Everyday public playback is served via CDN-cached public streaming endpoints with robust IP rate-limiting to prevent bulk scraping and automated harvesting.
+    2. Bulk dataset dumps, high-resolution master studio WAV files, and commercial AI training/TTS model weights remain strictly air-gapped behind enterprise API key authentication (`X-AGBA-API-KEY`).
+  - **Gate 2 Two-Drawer Architecture Approved**: Pre-approved `web/src/utils/onomasticLexicon.js` extraction to maintain zero Gate 2 LOC violations.
+  - **Status**: 🟢 **DEFCON 5 SECURED**. Complete perimeter alignment across all 12 personas.

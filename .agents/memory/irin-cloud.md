@@ -104,3 +104,14 @@
 - **Authored Documentation (`docs/AGBA_YEMI_WHATSAPP_VOICE_INGESTION_GUIDE.md` — 76 LOC)**:
   - Documented CLI flags (`--file`, `--watch-dir`, `--slug`, `--category`, `--watch`, `--dry-run`), zero-prompt filename conventions (`<EntitySlug>__<category>.opus`), and Moral Dual-Tier storage rules.
 - **Verification**: Passed `bash scripts/review.sh` with 0 hard violations and 0 warnings.
+
+### [2026-11-03 Afternoon] HANDOFF-IRIN-003 (Checkpoint 132): Zero-Friction Audio Streaming for Web + Cloud Run $0.00 Guardrails
+- **Craigslist Open-Access Audio Gateway (`api/app/audio_gateway.py` — 169 LOC, `< 500 LOC` ceiling)**:
+  - Mounted `audio_router` (`/v6/audio/*`) in `api/app/main.py` (345 LOC < 350 LOC advisory threshold).
+  - **`GET /v6/audio/stream/{token_id}` & `GET /v6/audio/tokens?entity=<q>` (Zero API Key Required)**: Everyday seekers on Web & Mobile stream any of the 143 Audio Tokens and Auntie Yẹmí's voice notes freely with aggressive 1-year immutable Edge Caching (`Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable`, `Netlify-CDN-Cache-Control: public, max-age=31536000, durable, immutable`) so Netlify Edge CDN absorbs repeat plays and keeps Cloud Run at `$0.00/mo` (`--min-instances 0`).
+  - **Anti-Scraping Rate Limiter**: Enforces a per-IP sliding-window limit (`30` stream requests / 60s) returning `HTTP 429 Too Many Requests` against automated bulk harvesters while allowing frictionless human listening.
+  - **Enterprise-Only Batch Export (`POST /v6/audio/batch-export` & unfiltered `GET /v6/audio/tokens`)**: Strictly requires `X-AGBA-API-KEY` header with `"export_dossier"` permission (`Studio` / Enterprise B2B tier).
+- **Netlify Edge Cache & Dual-Manifest Parity (`netlify.toml` & `scripts/ingest_voice_stem.py`)**:
+  - Added `/v6/audio/stream/*` and `/audio/*` 1-year immutable `Cache-Control` rules in `netlify.toml`.
+  - Confirmed `scripts/ingest_voice_stem.py` writes to both `api/data/agba_audio_manifest.json` and `web/src/data/agba_audio_manifest.json` in lockstep.
+- **Verification**: Passed `bash scripts/review.sh` with 0 hard violations and 0 warnings.

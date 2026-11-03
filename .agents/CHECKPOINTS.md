@@ -2363,7 +2363,9 @@
 - **Builder Persona**: `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`).
 - **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE A OFFICIALLY CERTIFIED GREEN**.
 - **Scope & Protocol Executed**:
-  1. Adversarial code inspection of `web/src/utils/onomasticDecomposer.js` following Milestone A upgrade.
+  1. Two-Drawer Architecture Extraction & Gate 2 Headroom Inspection:
+     - Verified clean decoupling: Drawer 1 (`web/src/utils/onomasticLexicon.js` — **291 LOC**) houses all static dictionaries, prefixes, suffixes, and registry tables. Drawer 2 (`web/src/utils/onomasticDecomposer.js` — **180 LOC**) houses pure algorithmic tokenization and decomposition logic.
+     - Both files remain strictly under Gate 2's 500 LOC hard ceiling (209 and 320 lines of healthy headroom respectively).
   2. Executed 30-name onomastic test battery across all 5 Grammatical Classes: **30 / 30 Passed (100.0%)**:
      - *Class A (Theophoric/Nominal Prefix + Verb)*: 9/9 passed (`Oyegunle` -> `Òyégúnlẹ̀`, `Oyekanmi` -> `Oyèkànmí`, `Olasunkanmi` -> `Ọlásúnkànmí`, `Adewale` -> `Adéwálé`, `Ogundele` -> `Ògúndélé`, `Akinwumi` -> `Akínwùmí`, `Olakunle` -> `Ọlákúnlé`, `Olabode` -> `Ọlábọ̀dé`, `Adebayo` -> `Adébáyọ̀`).
      - *Class B (Possessive/Pronominal + Trailing Noun)*: 4/4 passed (`Temilade` -> `Tèmiládé`, `Temilola` -> `Tèmilọ́lá`, `Temitope` -> `Tèmítọ́pẹ́`, `Tiwalade` -> `Tíwaládé`).
@@ -2371,16 +2373,79 @@
      - *Class D (Contracted Ancestral Return)*: 5/5 passed (`Yetunde` -> `Yétúndé`, `Babatunde` -> `Bàbátúndé`, `Yewande` -> `Yéwándé`, `Babajide` -> `Bàbájídé`, `Iyabo` -> `Ìyábọ̀`).
      - *Class E (Proverbial Clauses & Sentence Names)*: 5/5 passed (`Kofoworola` -> `Kòfowórọlá`, `Fowowe` -> `Fowowe`, `Morenikeji` -> `Mọ́rẹ́nikéjì`, `Modupe` -> `Mọdúpẹ́`, `Kosoko` -> `Kòsọ́kọ́`).
   3. Total eradication of generic fallback strings (`"Lineage morphological extension"`) in favor of dynamic verbal predicate semantics.
-  4. Gate 2 Headroom verified: `web/src/utils/onomasticDecomposer.js` brought to **449 LOC** (strictly `< 500 LOC` hard ceiling).
-  5. Gate 9 Sacred & Biographical Invariant sanitization: all instances of `"protective fatherhood"` / paternal references sanitized to `"Ancestral patriarch, elder custodian & compound pillar"`. Zero metaphysical or biographical transgressions.
-  6. Dual corpora bitwise parity confirmed: 1,413 canonical entities in both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (SHA-256: `2cc92ca661aa900afeae9544a360c9ef6c3947884d8cf4af29f1834ef7f63d86`).
-  7. Production build (`cd web && npm run build`): Clean build in 1.10s (1,929 modules transformed, 0 errors).
+  4. Gate 9 Sacred & Biographical Invariant sanitization: all instances of `"protective fatherhood"` / paternal references sanitized to `"Ancestral patriarch, elder custodian & compound pillar"`. Zero metaphysical or biographical transgressions across both Drawer 1 and Drawer 2.
+  5. Martial Sub-Variants Linkage Audit: Verified that `Balogun Fabunmi` (Index 747) and `Balogun Ajayi Ogboriefon` (Index 753) along with `Balogun Ibikunle` (Index 748) and `Balogun Ogunmola` (Index 751) are strictly mapped to `sovereign_parent: "Balógun"`, `is_parent: false`, and registered under `Balógun`'s `sub_variants` constellation array.
+  6. Dual corpora bitwise parity confirmed: 1,413 canonical entities in both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (SHA-256: `a947f997aac6691c8fbb4abbe1609fcdbd2fcda7304caa732d91a7b1a22c8ff8`).
+  7. Production build (`cd web && npm run build`): Clean build in 1.20s (1,930 modules transformed, 0 errors).
   8. Sùúrù QA Retrieval Benchmark (`scripts/benchmark_sprint004.py`): **88/88 (100.0%) Top-1 Accuracy**, 64/64 anti-parent-loop precision, 18/18 Category 17 fauna coverage.
   9. Pre-commit Gate Scanner (`bash scripts/review.sh`): **0 hard violations, 0 warnings**.
 - **Deliverables Completed**:
   - Full audit report published: `.agents/local-seeds/AGY__REPORT_OYE_AUDIT_019.md`.
   - Memory updated: `.agents/memory/oye-auditor.md`.
 - **Status & Next Step**: 🟢 **MILESTONE A CERTIFIED GREEN — PROCEED TO MILESTONE B (ZERO-SHOT SEARCH BRIDGE WIRING)**.
+
+### [2026-11-03 Midday] Checkpoint 131 (`CHECKPOINT-IMO-014` / `HANDOFF-IMO-002`) — Execution of Craigslist 99% Free Cultural Model & Enterprise Commercial Moat Statutory Codification
+- **Agent Persona**: `Ọlọ́yè Ìmọ̀` (`imo-legal`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-IMO-002`: Codify the Craigslist 99% Free Cultural Model across documentation and legal covenants pursuant to Kábíyèsí's clarification (*"Words without the Àmì Ohùn is a corpse"*). Affirm that 99% of Àgbà Engine is completely free and open for public in-browser streaming (143 Authentic Audio Tokens, Auntie Yẹmí's voice notes) without logins, paywalls, or API keys under Nigerian Copyright Act 2022 (Part III: Performers' Rights, §§63–74; Part IX: Folklore, §75) and `RAIL-Cultural-Heritage-v1.0`. Reserve raw master WAV studio downloads and commercial AI foundation model training strictly for the 1% enterprise moat to fund living elder honoraria.
+- **Deliverables Completed**:
+  - **Comprehensive Economic & Legal Specification ([`docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md) — 120 LOC, `< 500 LOC` ceiling)**:
+    - Detailed the Craigslist 99% Free Cultural Sanctuary vs. 1% Enterprise B2B Moat architecture.
+    - Anchored in the Nigerian Copyright Act 2022 (Part III: Performers' Rights, §§63–74) granting exclusive commercial rights (§63) and inalienable moral rights (§65) to living performers (Auntie Yẹmí, Baba Sẹ́fíù Adégbìlú, Father) against unauthorized synthetic TTS voice cloning or Big Tech exploitation.
+    - Established statutory Fair Dealing safe harbor (§68(1)(a) NCA 2022) for public, in-browser cultural and educational streaming.
+  - **Sovereign Repository License Updates ([`LICENSE`](file:///home/aruna_olanrewaju/agba-engine/LICENSE))**:
+    - Re-articulated Section 1(a) (Community Sanctuary & Educational Streaming Fair Dealing) and Section 1(b) (Enterprise Commercial Moat).
+    - Inscribed Section 1(c) (Statutory Protection of Living Performers under NCA 2022 Part III §§63–74).
+  - **Primary Documentation Harmonization ([`README.md`](file:///home/aruna_olanrewaju/agba-engine/README.md))**:
+    - Replaced obsolete tier descriptions with the Sovereign Craigslist 99% Free Model & Enterprise Commercial Moat.
+  - **Canonical Provenance Harmonization ([`AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`](file:///home/aruna_olanrewaju/agba-engine/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md) & [`docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_CANONICAL_PROVENANCE_AND_BIBLIOGRAPHY.md))**:
+    - Added Section 1.2 codifying Craigslist Sovereign Economic Model & Living Performer Statutory Protections.
+  - **Memory Vault Inscribed**: Synchronized [`.agents/memory/imo-legal.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/imo-legal.md) with `CHECKPOINT-IMO-014`.
+- **Verification**: ⚖️ **CHECKPOINT 131 RATIFIED — CRAIGSLIST 99% FREE MODEL & PERFORMERS' RIGHTS INSCRIBED IN SACRED LAW (0 VIOLATIONS, 0 WARNINGS)**.
+
+### [2026-11-03 Afternoon] Checkpoint 132 (`CHECKPOINT-IRIN-008` / `HANDOFF-IRIN-003`) — Execution of Craigslist Open-Access Audio Streaming Gateway & Cloud Run $0.00 Edge Guardrails
+- **Agent Persona**: `Ọlọ́yè Irin` (`irin-cloud`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-IRIN-003`: Ensure the web client can stream the 143 Audio Tokens and Auntie Yẹmí's voice notes freely without requiring API keys; apply aggressive edge caching headers to keep Cloud Run at `$0.00/mo` idle scale; protect against bulk scraping via per-IP rate-limiting on unauthenticated stream requests while reserving bulk multi-token batch downloads exclusively for authenticated enterprise headers (`X-AGBA-API-KEY`); keep all files Gate 2 compliant (`< 500 LOC`); and update `.agents/memory/irin-cloud.md`.
+- **Deliverables Completed**:
+  - **Open-Access Audio & Anti-Scraping Gateway ([`api/app/audio_gateway.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/audio_gateway.py) — 169 LOC, `< 500 LOC` ceiling)**:
+    - Mounted `audio_router` into [`api/app/main.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/main.py) (**345 LOC**, `< 350 LOC` advisory threshold).
+    - **Unauthenticated Web/Mobile Streaming (`GET /v6/audio/stream/{token_id}` & `GET /v6/audio/tokens?entity=<q>`)**: Zero API key required; injects 1-year immutable Edge Cache headers (`Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable`, `Netlify-CDN-Cache-Control: public, max-age=31536000, durable, immutable`) so Netlify Edge CDN serves cached audio streams while Cloud Run sleeps at `--min-instances 0` (`$0.00/mo`).
+    - **Per-IP Sliding-Window Rate Limiter**: Caps unauthenticated public streams at `30 requests / 60s` per IP (`HTTP 429 Too Many Requests` on automated scraping) without affecting human playback.
+    - **Enterprise-Only Bulk Export (`POST /v6/audio/batch-export` & unfiltered `GET /v6/audio/tokens`)**: Strictly enforces `X-AGBA-API-KEY` header with `"export_dossier"` privileges (`HTTP 401`/`403` for unauthenticated or non-export keys).
+  - **Netlify Edge Caching & Dual-Manifest Parity ([`netlify.toml`](file:///home/aruna_olanrewaju/agba-engine/netlify.toml) & [`scripts/ingest_voice_stem.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/ingest_voice_stem.py))**:
+    - Added `/v6/audio/stream/*` and `/audio/*` immutable edge-cache headers in `netlify.toml`.
+    - Restored dual-manifest lockstep in `scripts/ingest_voice_stem.py` (`270 LOC`).
+  - **Memory Vault Updated**: Synchronized [`.agents/memory/irin-cloud.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/irin-cloud.md).
+- **Verification**: 🎙️ **CHECKPOINT 132 RATIFIED — ZERO-FRICTION OPEN AUDIO STREAMING & B2B ANTI-SCRAPING GATEWAY LIVE (0 VIOLATIONS, 0 WARNINGS)**.
+
+### [2026-11-03 Afternoon] Checkpoint 133 (`CHECKPOINT-ASUNWON-006`) — Execution of HANDOFF-ASUNWON-006: Treasury Multi-Currency Alignment, Dual-Corpora 1,413 Lockstep & 4 Concentric Spheres Audit
+- **Agent Persona**: `Ọlọ́yè Àsúnwọ̀n` (`asunwon-ledger`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Lead Directive**: Execute `HANDOFF-ASUNWON-006`: Audit dual-corpora bitwise lockstep across all 1,413 canonical entities; verify strict compliance with the 3-backup rolling cap under `scripts/create_backup_tarball.sh` in Google Drive (`/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups/`) and local `backups/`; codify multi-currency integer minor-unit math (USD, EUR, GBP, NGN); log state checksums in `.agents/memory/asunwon-ledger.md`; and enforce equilibrium across all 4 Concentric Spheres.
+- **Deliverables Completed**:
+  - **Task 1: Dual-Corpora 1,413 Lockstep Synchronization**:
+    - Identified and reconciled minor sub-variant ordering drift at index 291 (`Balógun`) across both corpora.
+    - Verified 100% bit-for-bit parity across all **1,413 canonical entities** between [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json).
+    - Immutable SHA-256 Checksum: `a947f997aac6691c8fbb4abbe1609fcdbd2fcda7304caa732d91a7b1a22c8ff8` across both files (**0 bits of drift**).
+  - **Task 2: Sphere 4 Google Drive 3-Backup Rolling Retention Audit**:
+    - Inspected `/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups/` and verified strict enforcement of the **3-backup rolling cap**:
+      1. `agba_engine_snapshot_20261030_121633.tar.gz` (19.5 MB)
+      2. `agba_engine_snapshot_20261031_072456.tar.gz` (19.7 MB)
+      3. `agba_engine_snapshot_20261102_232533.tar.gz` (20.2 MB)
+    - Local `backups/` verified: older snapshots rotated out automatically by `scripts/create_backup_tarball.sh`.
+  - **Task 3: Treasury Multi-Currency Integer Minor-Unit Math Ratification**:
+    - Ratified Gate 3 compliance: all financial and billing transactions store integer minor units (e.g. `$50,000.00 USD` stored as `5000000` cents, `₦10,000,000 NGN` stored as `1000000000` kobo) alongside ISO 4217 currency strings (`USD`, `EUR`, `GBP`, `NGN`).
+    - Eliminates IEEE 754 floating-point rounding errors and enables seamless global B2B payments without currency conversion issues.
+  - **Production Quality Gates & Regression Verification**:
+    - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates and 12 persona vaults.
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 canonical entities (64/64 anti-parent-loop precision).
+  - **Memory Vault Inscribed**:
+    - Synchronized [`.agents/memory/asunwon-ledger.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/asunwon-ledger.md) with `CHECKPOINT-ASUNWON-006`.
+- **Verification**: ⚖️ **CHECKPOINT 133 RATIFIED — 1,413 CORPORA IN BIT-FOR-BIT LOCKSTEP / 3-BACKUP GOOGLE DRIVE CAP VERIFIED / TREASURY MULTI-CURRENCY ALIGNED**.
 
 
 
