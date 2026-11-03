@@ -139,14 +139,13 @@ def transcode_audio_stem(
     return wav_path, mp3_path, duration_s, stream_name
 
 
-def append_to_acoustic_manifests(entry: Dict[str, Any], dry_run: bool = False, include_web: bool = False) -> bool:
-    """Append voice stem to Enterprise API manifest (withholding from Web Client per Checkpoint 130)."""
+def append_to_acoustic_manifests(entry: Dict[str, Any], dry_run: bool = False) -> bool:
+    """Atomically append the voice stem metadata to both API and Web acoustic manifests (Craigslist Open-Access Model)."""
     if dry_run:
         print(f"🧪 [DRY-RUN] Manifest entry prepared:\n{json.dumps(entry, indent=2, ensure_ascii=False)}")
         return True
 
-    target_manifests = (API_MANIFEST, WEB_MANIFEST) if include_web else (API_MANIFEST,)
-    for manifest_path in target_manifests:
+    for manifest_path in (API_MANIFEST, WEB_MANIFEST):
         if not manifest_path.exists():
             continue
         items: List[Dict[str, Any]] = json.loads(manifest_path.read_text(encoding="utf-8"))

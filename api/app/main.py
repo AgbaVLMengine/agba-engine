@@ -19,20 +19,24 @@ try:
     from .config import ÀgbàConfig, AgbaConfig
     from .retrieval import ÀgbàHybridRetriever, AgbaHybridRetriever
     from .intelligence import ÀgbàIntelligenceSuite
+    from .audio_gateway import audio_router
 except (ImportError, ValueError):
     try:
         from app.config import ÀgbàConfig, AgbaConfig
         from app.retrieval import ÀgbàHybridRetriever, AgbaHybridRetriever
+        from app.audio_gateway import audio_router
     except ImportError:
         from config import ÀgbàConfig, AgbaConfig
         from retrieval import ÀgbàHybridRetriever, AgbaHybridRetriever
         from intelligence import ÀgbàIntelligenceSuite
+        from audio_gateway import audio_router
 
 app = FastAPI(
     title="Àgbà Engine Enterprise API",
     description="Production Enterprise API for Tri-Modal Cultural Retrieval, Deep Context RAG, and Telemetry.",
     version="6.0.0-alpha"
 )
+app.include_router(audio_router)
 
 # Enable hardened CORS for production IDN/Punycode domains, iOS Safari WebViews, PWA standalone, Netlify, and local dev
 app.add_middleware(
