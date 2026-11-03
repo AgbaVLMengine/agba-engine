@@ -30,7 +30,18 @@ except (ImportError, ValueError):
 
 audio_router = APIRouter(prefix="/v6/audio", tags=["Acoustic Sovereignty Gateway"])
 
-AUDIO_MANIFEST_PATH = ÀgbàConfig.DATA_DIR / "agba_audio_manifest.json"
+def _resolve_audio_manifest_path() -> Path:
+    candidates = [
+        getattr(ÀgbàConfig, "DATA_DIR", Path(__file__).resolve().parent.parent / "data") / "agba_audio_manifest.json",
+        Path("/app/data/agba_audio_manifest.json"),
+        Path(__file__).resolve().parent.parent / "data" / "agba_audio_manifest.json",
+    ]
+    for c in candidates:
+        if c.exists():
+            return c
+    return Path(__file__).resolve().parent.parent / "data" / "agba_audio_manifest.json"
+
+AUDIO_MANIFEST_PATH = _resolve_audio_manifest_path()
 LOCAL_STEMS_DIR = Path.home() / "YemiVoiceNotes" / "processed_stems"
 
 # Per-IP sliding window rate limiter for unauthenticated public streams (30 req / 60s)

@@ -397,5 +397,73 @@
       "bestowed"
     ],
     "category": "Spiritual & Cosmological Matrix"
+  },
+  {
+    "id": "OM26_YETUNDE",
+    "query": "Yetunde",
+    "expected_canonical": "Yétúndé",
+    "expected_parents": [
+      "Ìyá",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_D",
+    "semantic_keywords": [
+      "mother",
+      "reincarnation",
+      "rebirth",
+      "returned"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM27_BABATUNDE",
+    "query": "Babatunde",
+    "expected_canonical": "Bàbátúndé",
+    "expected_parents": [
+      "Bàbá",
+      "Ẹbí"
+    ],
+    "expected_class": "CLASS_D",
+    "semantic_keywords": [
+      "father",
+      "patriarch",
+      "reincarnation",
+      "returned"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM28_IBUKUN",
+    "query": "Ibukun",
+    "expected_canonical": "Ìbùkún",
+    "expected_parents": [
+      "Ọlá",
+      "Òye",
+      "Owó Ẹyọ"
+    ],
+    "expected_class": "CLASS_C",
+    "semantic_keywords": [
+      "blessing",
+      "abundance",
+      "overflowing"
+    ],
+    "category": "Social Structure, Kinship & Lineage"
+  },
+  {
+    "id": "OM29_TEMILADE",
+    "query": "Temilade",
+    "expected_canonical": "Tèmiládé",
+    "expected_parents": [
+      "Adé",
+      "Ọba"
+    ],
+    "expected_class": "CLASS_B",
+    "semantic_keywords": [
+      "crown",
+      "rightful",
+      "portion",
+      "royalty"
+    ],
+    "category": "Monarchy, Royal Regalia & Governance"
   }
 ]

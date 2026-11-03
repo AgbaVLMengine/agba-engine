@@ -62,10 +62,12 @@ export function resolveOnomasticZeroShot(query, masterCorpus = [], existingResul
     sanitizedDesc = 'Ancestral patriarch, elder custodian & compound pillar. ' + sanitizedDesc;
   }
 
+  const cleanParentTitle = parentEntity.title.replace(/\s*\(.*?\)/g, '').trim();
+
   return {
     ...parentEntity,
     id: `onomastic_${decomposition.canonical_name.toLowerCase().replace(/[^a-z0-9]/g, '_')}`,
-    title: `${parentEntity.title} (${decomposition.canonical_name})`,
+    title: `${cleanParentTitle} (${decomposition.canonical_name})`,
     canonical_name: decomposition.canonical_name,
     is_synthesized: true,
     is_parent: true,

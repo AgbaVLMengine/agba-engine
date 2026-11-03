@@ -49,6 +49,7 @@ class ÀgbàConfig:
     """
     # 1. Dynamically resolved root
     ROOT_DIR: Path = _resolve_root_dir()
+    DATA_DIR: Path = Path(__file__).resolve().parent.parent / "data"
 
     # 2. Database & Corpus Paths
     COLLECTION_NAME: str = os.environ.get("AGBA_COLLECTION_NAME", "agba_master_corpus_v6")
