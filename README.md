@@ -44,7 +44,7 @@ agba-engine/
   - **Zero Friction:** No paywalls, no mandatory logins, no API keys, and no subscription barriers. *"Words without the Àmì Ohùn is a corpse"*—we never withhold the living spoken voice of our ancestors from our people.
 * **The Enterprise Commercial Moat (Monetized B2B):**
   - **Strictly Restricted & Withheld:** Automated bulk dataset scraping, raw lossless 24-bit/96kHz studio WAV downloads, offline database dumps, and commercial AI foundation model training / synthetic TTS voice cloning weights for Big Tech conglomerates.
-  - **Enterprise B2B Licensing (`api.agbaengine.com`):** High-throughput authenticated API concordance, cultural training dataset synchronization, and commercial gaming/film IP licensing governed by executed Master Services Agreements (MSA) under `RAIL-Cultural-Heritage-v1.0` and Part III (Performers' Rights) of the Nigerian Copyright Act 2022. All enterprise revenues fund living elder honoraria and zero-cost cloud infrastructure.
+  - **Enterprise B2B Licensing (`api.agbaengine.com`):** High-throughput authenticated API concordance, cultural training dataset synchronization, and commercial gaming/film IP licensing governed by executed Master Services Agreements (MSA) under `RAIL-Cultural-Heritage-v1.0` and Part III (Performers' Rights) of the Nigerian Copyright Act 2022. All enterprise revenues are reinvested across four sovereign pillars: engine infrastructure preservation, founder & core contributor welfare, living elder honoraria, and zero-cost public hosting.
   - *Full Economic Specification:* See [`docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_CRAIGSLIST_SOVEREIGN_ECONOMIC_MODEL.md).
 
 ---

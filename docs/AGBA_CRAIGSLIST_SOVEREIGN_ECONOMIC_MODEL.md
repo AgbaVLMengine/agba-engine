@@ -29,7 +29,7 @@ Access Friction         Zero Paywalls, Zero Logins, Zero Keys        Executed Ma
 Audio Delivery          In-Browser Compressed Streaming (64kbps)     Lossless 24-bit/96kHz Master Studio WAVs
 Corpus Depth            1,411 Canonical Entities + 256 Odù Ifá       Structured B2B Dataset Sync & API Pipeline
 Commercial AI Training  Strictly Forbidden                           Licensed High-Throughput Concordance API
-Cost to User            100% FREE ($0.00 Indefinitely)               Enterprise Licensing (Elder Honoraria Fund)
+Cost to User            100% FREE ($0.00 Indefinitely)               Enterprise Licensing (Four-Pillar Reinvestment)
 Statutory Shield        NCA 2022 §68 & §75 (Fair Dealing / Culture)  NCA 2022 §§63–67, 71 & RAIL License
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════
 ```
@@ -105,11 +105,12 @@ Section 1 of the root [`LICENSE`](file:///home/aruna_olanrewaju/agba-engine/LICE
    The licensee agrees that all individual human users may interact with, read, and listen to the streaming content of Àgbà Engine free of charge.
 2. **Covenant Against Automated Mass Extraction**:
    The licensee shall not employ automated bots, headless scrapers, or programmatic pipelines to bulk-harvest text, metadata, or audio tokens.
-3. **Covenant of Enterprise Revenue Reinvestment**:
-   All commercial revenues derived from the Enterprise Commercial Moat are bound by customary fiduciary covenant to fund:
-   - Elder contributor honoraria and living performer royalties;
-   - Free zero-cost cloud hosting for the public web sanctuary; and
-   - Primary anthropological and linguistic field research in sister African cultures.
+3. **Covenant of Enterprise Revenue Reinvestment (The Four-Pillar Sovereign Waterfall)**:
+   Commercial revenues derived from the Enterprise Commercial Moat are allocated under customary fiduciary covenant (*"Àgbẹ̀ tó roko l’ó gbọ́dọ̀ jẹ nínú èso oko"*) across four foundational pillars:
+   - **Pillar 1: Engine Preservation, R&D & Sovereign Infrastructure**: Server capacity, multi-cloud redundancy, vector index scaling, zero-trust security audits, and continuous software evolution;
+   - **Pillar 2: Founder & Core Contributor Welfare & Sustenance**: Equitable compensation, livelihood security, research stipends, and intellectual property stewardship for the Lead Architect and core contributors who engineer and guard the hearth;
+   - **Pillar 3: Living Elder & Performer Honoraria / Royalties**: Sustainable honoraria, royalties, and welfare support for Auntie Yẹmí, Baba Sẹ́fíù Adégbìlú, Father, and all contributing traditional knowledge holders; and
+   - **Pillar 4: Communal Cultural Sanctuary ($0.00 Public Access) & Field Expansion**: Ensuring permanent zero-cost streaming for everyday seekers worldwide, alongside field expeditions for further linguistic and onomastic heritage documentation.
 
 ---
 
