@@ -327,15 +327,29 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **83/83 (100.0%) Top-1 Accuracy** live across 1,411 entities.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 8 production gates and 12 persona vaults.
     - `npm run build`: Compiled production client bundle cleanly in **963ms** (1,928 modules transformed, 0 errors).
-- **2026-10-31 [Checkpoint 124 — Ratification of HANDOFF-SOVEREIGN-PURPOSE-001: The Great Grounding & Reveal of the 1,411 Treasures]**:
-  - **Task: Formal Council Alignment on the Decree of Sovereign Purpose**:
-    - Shelved speculative UI features (`HANDOFF-COSMIC-FLOW-001`) and internal telemetry towers (`HANDOFF-MISSION-CONTROL-001`).
-    - Anchored `Àrọ̀kìn`'s mandate firmly into the **4 Pillars of Sovereign Purpose**:
-      1. **Corpus Reveal**: Architecting thematic journeys, curated entry points, and conceptual guides so everyday Yorùbá youth, elders, and diaspora seekers can discover the 1,411 canonical entities and 256 Odù chapters without needing prior academic expertise.
-      2. **Living Acoustic Sovereignty**: Championing the spoken voice—foregrounding Auntie Yẹmí's Solfège pitch contours, Baba Sẹ́fíù's *Dùndún* speech, and Father's royal *Oríkì* so the living breath of tonal inflection is preserved.
-      3. **Core Functional Depth**: Protecting lightning-fast retrieval, offline PWA stability, and diacritic accuracy.
-      4. **Sacred Storytelling & Diaspora Bridgebuilding**: Collaborating with `Akéde` and `Ìmọ̀` to bring the proverbs, philosophies, and botanical wisdom out of raw JSON files into human-facing narratives that transform lives.
-  - **Verdict**: 100% in one accord with Lead Architect Àrùnà Ọlànrewájú Kábírù and the Sovereign Council (`Ẹ̀gbẹ́-Àgbà`).
+- **2026-11-03 [Checkpoint 131 — HANDOFF-AROKIN-003: Batch 16 Non-Odù Hardening (Entities 25–49) — Thin Count Plunges from 641 to 616]**:
+  - **Task: Native Sovereign Ingestion of Batch 16 Non-Odù Entities (Indices 25 to 49)**:
+    - Ingested authentic 14-Tier depth for 25 consecutive foundational civic, guild, ecological, and martial entities from `scripts/thin_entities_manifest.json`:
+      - **Fauna & Ecology**: `Ẹyẹ` (winged messengers), `Ẹranko` (faunal biodiversity).
+      - **Settlement & Landscape**: `Ìlú` (autonomous city-state), `Odò` (sacred waterways), `Òkè` (sacred inselbergs), `Odi` (earthen ramparts/moats), `Ojúbọ` (consecrated shrines), `Igbó` (sacred groves), `Ọjà` (municipal market sovereignty).
+      - **Artisanal & Guild Metallurgy**: `Àwọ̀` (leatherworking/hide tanning), `Gbẹ́nàgbẹ́nà` (master woodcarving/sculpture), `Amọ̀` (sacred ceramic arts), `Idẹ` (brass/bronze lost-wax casting), `Àgbẹ̀dẹ` (blacksmith forge & smithy).
+      - **Sacred Botany & Agrarian Trades**: `Oníṣègùn` (indigenous medical botany), `Apẹja` (riverine/lagoon fishing guild), `Ìwunṣọ` (textile weaving guild), `Ọdẹ` (hunting/scouting guild), `Ọkọ́` (forged iron hoe), `Oko` (sacred farmland & agriculture).
+      - **Military Traditions & Regalia**: `Àpáta_Shield` (defensive war shield/buckler), `Ọfà` (archery bow & arrows), `Idà` (consecrated battle blade), `Ogun (Warfare & Military Tradition)` (martial institution & strategy), `Àmì_Ọlá` (sovereign royal regalia).
+    - Infused 100% with:
+      - Multi-epoch antiquity timelines (Classical Ifẹ̀/Ọ̀yọ́, 19th-Century Wars & Guild Politics, Modern & Contemporary continuity).
+      - Master bibliography peer-reviewed citations (`provenance_and_citations`) citing Samuel Johnson (1921), Robert S. Smith (1988), J.F.A. Ajayi & R.S. Smith (1964), S.A. Akíntóyè (1971), Babatunde Lawal (1996, 2001), Rowland Abiodun (2014), Pierre Verger (1995), William Bascom (1951, 1969), N.A. Fadipe (1970), Sandra Barnes (1997), Denis Williams (1974), Frank Willett (1967), Joanne Eicher (1976), Toyin Falola (1984), Bolanle Awe (1992).
+      - Standardized authentic dual-language proverbs with parenthetical English translation and philosophical commentary: `"Òwe Yorùbá (Parenthetical English translation and philosophical commentary.)"`. Added 3rd proverb to `Oníṣègùn` to complete its canonical triad.
+      - 100% lockstep synchronization between top-level attributes and nested `details` dictionary across all 1,413 canonical entities in both API and Web corpora.
+  - **Implementation & Thin Entity Reduction Milestone**:
+    - Authored [`scripts/build_batch_16_data.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/build_batch_16_data.py) (**243 LOC**, Gate 2 compliant `< 500 LOC`).
+    - Authored [`scripts/enrich_batch_16.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/enrich_batch_16.py) (**129 LOC**, Gate 2 compliant `< 200 LOC`).
+    - Synchronized [`api/data/yoruba_corpus_1007_NORMALIZED.json`](file:///home/aruna_olanrewaju/agba-engine/api/data/yoruba_corpus_1007_NORMALIZED.json) and [`web/src/data/yoruba_master_corpus.json`](file:///home/aruna_olanrewaju/agba-engine/web/src/data/yoruba_master_corpus.json) with **0-bit checksum drift**.
+    - Updated [`scripts/thin_entities_manifest.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/thin_entities_manifest.json): **reduced thin non-Odù entities from 641 down to exactly 616** (Batches 17–41 roadmap staged, next: index 50 `Ọba`).
+  - **Standards & Production Gate Verification**:
+    - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
+    - `bash scripts/review.sh`: **0 hard violations** across all 9 production gates and 12 persona vaults.
+    - `npm run build`: Compiled production client bundle cleanly in **1.21s** (1,930 modules transformed, 0 errors).
+
 
 
 
