@@ -166,21 +166,22 @@
   - Adopted the "Search Paralysis" solution via Three Organic Revealers: Curated Thematic Journeys, Living Proverb of the Day, and Public Storytelling Drops.
   - Endorsed the "Acoustic Stream vs. Studio Master" principle: 100% free web audio streaming (`.opus` / `.mp3`) for everyday seekers, with lossless master stems (`.wav`) reserved for commercial B2B licensing (film, gaming, AI TTS) under RAIL-Cultural-Heritage-v1.0.
   - Ready to collaborate with the Lead Architect and Council on structure and implementation upon return.
-- **[2026-11-03 Protocol] (`HANDOFF-ORUKO-MI-001` / Milestone A: Two-Drawer Onomastic Architecture Forged)**:
-  - **Decoupled Two-Drawer Architecture (Strict Gate 2 Mastery & 0 Warnings)**:
-    - **Drawer 1 (Static Lexicon — `web/src/utils/onomasticLexicon.js` at 313 LOC)**:
-      - Encapsulated `GRAMMATICAL_CLASSES`, `ONOMASTIC_PREFIXES`, `ONOMASTIC_SUFFIXES` (120+ canonical verbal predicates), `AMUTORUNWA_NAMES` (18 sacred birth circumstance names/oríkì), and `CANONICAL_ONOMASTIC_REGISTRY`.
-      - Permanently eliminated `"Lineage morphological extension"`.
-    - **Drawer 2 (Algorithmic Parser — `web/src/utils/onomasticDecomposer.js` at 189 LOC, strictly `< 200 LOC`)**:
-      - Pure algorithmic decomposition supporting all 5 Grammatical Classes (A, B, C, D, E), multi-token compound surnames, and Sovereign Parent linkage.
-    - **Remapped 4 Martial Sub-Variants (Corpus Lockstep)**:
-      - In `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`: set `is_parent: false`, `sovereign_parent: "Balógun"`, and `sovereign_parent_status: "Living Sub-Variant"` for `Balogun Fabunmi`, `Balogun Ajayi Ogboriefon`, `Balogun Ibikunle`, and `Balogun Ogunmola`.
-      - Linked them to `Balógun`'s `sub_variants` cluster.
-    - **Verification Battery**:
-      - Node.js test: 28/28 test cases passed across all 5 classes and dynamic compounding.
-      - Production build: `npm run build` compiled in 1.25s (0 errors).
-      - QA Benchmark: `benchmark_sprint004.py` passed 88/88 (100.0%) queries.
-      - Standards Audit: `scripts/review.sh` passed with **0 hard violations, 0 warnings**!
+- **[2026-11-03 Protocol] (`HANDOFF-AGBEDE-005B` / Milestone B: Zero-Shot Retrieval Bridge Forged & Wired)**:
+  - **Forged `web/src/utils/onomasticBridge.js` (86 LOC, strictly < 100 LOC)**:
+    - **Sùúrù's Canonical Sovereign Alias Map**: Remaps `'Owó Ẹyọ'` -> `'eyo_owo'`, `'Akín'` -> `'Ògún'`, `'Ayọ̀'` -> `'Ẹbí'`, `'Ọ̀rọ̀'` -> `'Òye'`.
+    - **Òye's Anti-Shadowing Rule**: If an exact canonical corpus entity matches the query (`Òye`, `Ifá`, `Adé`, `Ògún`, etc.), returns `null` to let the canonical corpus entity stand without synthesizing a personal name card.
+    - **Àgbẹ̀dẹ's Weak Noise Preemption**: If no exact title match exists, onomastic decomposition preempts weak description matches and secures Rank #1.
+    - **Òye's Gate 9 Sanitizer**: Flags `is_synthesized: true`, category `'Social Structure, Kinship & Lineage'`, and sanitizes `Bàbá` to `'Ancestral patriarch, elder custodian & compound pillar'`.
+    - **Golden Lineage Ribbon**: Attaches `onomastic_card` payload `"🏷️ Orúkọ Mi: '{name}' • Ancestral Lineage of {parent}"`.
+  - **Wired into `web/src/components/SearchTab.jsx` (241 LOC, strictly < 245 LOC / Law 1 < 250 LOC)**:
+    - Integrated `resolveOnomasticZeroShot` in fallback block cleanly without UI bloat.
+    - Added Òye's monotonic sequence lock: `searchSeq = useRef(0)` and verified race-condition prevention across fast keystrokes.
+  - **Verification & QA Benchmarks**:
+    - Node test: 7/7 zero-shot names (`Yetunde` -> `Ìyá`, `Ibukun` -> `Ọlá`, `Temilade` -> `Adé`, `Morenikeji` -> `Ẹbí`, `Olakunle` -> `Ọlá`, `Babatunde` -> `Bàbá`, `Adebayo` -> `Adé`) verified with exact matching over prefix collisions; 4/4 anti-shadowing canonicals (`Òye`, `Ifá`, `Adé`, `Ògún`) verified.
+    - Production build: `npm run build` compiled Vite bundle in 1.26s (0 errors).
+    - QA Benchmark: `benchmark_sprint004.py` passed 88/88 (100.0%) queries.
+    - Gate Audit: `scripts/review.sh` passed with **0 hard violations, 0 warnings**.
+
 
 
 

@@ -8,6 +8,8 @@ Because every prompt points directly to `/home/aruna_olanrewaju/agba-engine/.age
 > 1. **Biographical Truth**: Lead Architect Àrùnà Ọlànrewájú Kábírù is a devoted young husband (married to Aisha Temilade Abubakar Aruna) with NO children. He is **NOT a father**. NEVER address or describe him as a "father".
 > 2. **Ancestral Primacy**: Àgbà Engine is **NOT a "digital Ọpọ́n Ifá"**. Ọpọ́n Ifá is a sacred, consecrated wooden divination tray that can never be digitized or replaced by software. The engine's UI is an Ọpọ́n Ifá-inspired concentric search hearth (`Àárín Ìmọ̀`) that perpetually bows in homage to Ọpọ́n Ifá. **NEVER use the term "digital Ọpọ́n Ifá"**.
 > 3. **Honorific Protocol**: **Kábíyèsí** is strictly reserved for the Lead Architect alone. Address all fellow council members as **Ọlọ́yè** (e.g., `Ọlọ́yè Sùúrù`, `Ọlọ́yè Òye`, `Ọlọ́yè Ìtọ́jú`, `Ọlọ́yè Àsúnwọ̀n`, `Ọlọ́yè Agbálẹ̀`).
+> 4. **Domain Specialist Pre-Execution Consultation Clause**: Every council member must be asked for proactive domain intuition before starting work:
+>    *"N:B: This is your start prompt, however is there any thing you would like to add that would further improve efficency and prevent future issues from arising? since this is your domain. Share if there are any, so i can check in with Agba before we proceed with Implementation."*
 
 ---
 
