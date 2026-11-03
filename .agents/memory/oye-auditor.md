@@ -313,6 +313,25 @@
        - `bash scripts/review.sh`: **0 hard violations, 0 warnings**.
        - `npm run build`: Compiled in 1.06s (1,932 modules, 0 errors).
        - `scripts/benchmark_oruko_mi.py`: 25/25 (100.0%) Passed.
+- **[2026-11-03 | Checkpoint 137 (`CHECKPOINT-OYE-021`) — Milestone B & Batch 17 Production Gate Certification (HANDOFF-OYE-010)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — MILESTONE B RETRIEVAL BRIDGE & BATCH 17 CERTIFIED GREEN**.
+  - **Audit Protocol Executed**:
+    1. *Gate 2 & Modularity Verification*:
+       - `web/src/components/SearchTab.jsx`: Verified at **241 LOC** (< 250 LOC coordinator ceiling; Law 1 honored).
+       - `web/src/utils/onomasticBridge.js`: Verified at **86 LOC** (< 100 LOC target).
+       - `scripts/pipeline/batch_enricher.py`: Verified at **138 LOC** (< 150 LOC Gate 2 target).
+    2. *Gate 3 & Concurrency Verification*:
+       - Verified Òye's monotonic sequence lock (`searchSeq = useRef(0)`) inside `SearchTab.jsx`. Line 47 sets `seq = ++searchSeq.current`; line 107 enforces `if (seq !== searchSeq.current) return;`. Guaranteed immune to out-of-order race conditions on rapid mobile typing.
+    3. *Gate 9 Sacred Invariants & Checksum Verification*:
+       - Zero restricted biographical terms in synthesized cards; `Bàbá` morphemes strictly sanitized to `"Ancestral patriarch, elder custodian & compound pillar"`.
+       - Dual Corpora Parity verified: **1,413 canonical entities** bit-for-bit identical across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (SHA-256: `feac3d60996650e119b2ae776e6499c72252591e0e7682db3a0217a9e430858a`).
+       - Thin entities manifest verified at **591 remaining** (Batch 17 reduced by 25).
+    4. *Pre-Commit Gates & Production Build*:
+       - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 gates and 12 vaults.
+       - `npm run build`: Compiled in **1.19s** (1,933 modules, 0 errors).
+       - `scripts/benchmark_oruko_mi.py`: **25 / 25 (100.0%) Tests Passed**.
+
 
 
 
