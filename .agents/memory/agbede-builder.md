@@ -166,7 +166,7 @@
   - Adopted the "Search Paralysis" solution via Three Organic Revealers: Curated Thematic Journeys, Living Proverb of the Day, and Public Storytelling Drops.
   - Endorsed the "Acoustic Stream vs. Studio Master" principle: 100% free web audio streaming (`.opus` / `.mp3`) for everyday seekers, with lossless master stems (`.wav`) reserved for commercial B2B licensing (film, gaming, AI TTS) under RAIL-Cultural-Heritage-v1.0.
   - Ready to collaborate with the Lead Architect and Council on structure and implementation upon return.
-- **[2026-11-03 Protocol] (`HANDOFF-AGBEDE-005B` / Milestone B: Zero-Shot Retrieval Bridge Forged & Wired)**:
+- **[2026-11-03 Protocol] (`HANDOFF-AGBEDE-005B` / Checkpoint 137 Ratified: Zero-Shot Retrieval Bridge Forged & Wired)**:
   - **Forged `web/src/utils/onomasticBridge.js` (86 LOC, strictly < 100 LOC)**:
     - **Sùúrù's Canonical Sovereign Alias Map**: Remaps `'Owó Ẹyọ'` -> `'eyo_owo'`, `'Akín'` -> `'Ògún'`, `'Ayọ̀'` -> `'Ẹbí'`, `'Ọ̀rọ̀'` -> `'Òye'`.
     - **Òye's Anti-Shadowing Rule**: If an exact canonical corpus entity matches the query (`Òye`, `Ifá`, `Adé`, `Ògún`, etc.), returns `null` to let the canonical corpus entity stand without synthesizing a personal name card.
@@ -177,10 +177,28 @@
     - Integrated `resolveOnomasticZeroShot` in fallback block cleanly without UI bloat.
     - Added Òye's monotonic sequence lock: `searchSeq = useRef(0)` and verified race-condition prevention across fast keystrokes.
   - **Verification & QA Benchmarks**:
-    - Node test: 7/7 zero-shot names (`Yetunde` -> `Ìyá`, `Ibukun` -> `Ọlá`, `Temilade` -> `Adé`, `Morenikeji` -> `Ẹbí`, `Olakunle` -> `Ọlá`, `Babatunde` -> `Bàbá`, `Adebayo` -> `Adé`) verified with exact matching over prefix collisions; 4/4 anti-shadowing canonicals (`Òye`, `Ifá`, `Adé`, `Ògún`) verified.
+    - Node test: 7/7 zero-shot names verified with exact matching over prefix collisions; 4/4 anti-shadowing canonicals verified.
     - Production build: `npm run build` compiled Vite bundle in 1.26s (0 errors).
     - QA Benchmark: `benchmark_sprint004.py` passed 88/88 (100.0%) queries.
     - Gate Audit: `scripts/review.sh` passed with **0 hard violations, 0 warnings**.
+- **[2026-11-03 Protocol] (`CHECKIN-AGBEDE-006` / Checkpoint 139 Ratified)**: **Living Multi-Voice Acoustic Player & Vascular Rabbit-Hole Blueprint**:
+  - **Living Acoustic Constellation Architecture**:
+    - Modeled 5-stem multi-performer constellation:
+      1. *Auntie Yẹmí*: Foundational spoken vocal tone contours (`🎙️ Spoken Voice`).
+      2. *Baba Sẹ́fíù Adégbílù*: Master Dùndún drum speech (`🥁 Dùndún Speech`).
+      3. *Baba Sẹ́fíù's Granddaughter*: Spoken call-and-response vocal counterpart to Dùndún (`🎙️ Call & Response`).
+      4. *Father's Royal Recitation*: Sacred Oríkì Ọba Ìtìrẹ́ court recitation (`👑 Royal Oríkì`).
+      5. *Baba Sẹ́fíù & Friend*: Polyrhythmic Dùndún & Gùdùgùdù royal court accompaniment (`🪘 Ensemble`).
+    - **Decoupled Component Strategy (Gate 2 Headroom Preservation)**:
+      - `EntityBentoDeck.jsx` is currently 399 LOC (approaching the 500-line ceiling).
+      - Blacksmith blueprint creates `web/src/components/MultiVoiceAcousticPlayer.jsx` (~120 LOC) as an autonomous sub-component, keeping `EntityBentoDeck.jsx` at ~405 LOC (< 500 LOC).
+      - Replaces legacy "API Gated / Lock" modal with 100% Free Public Sanctuary streaming via `/v6/audio/stream/{stem_id}` or local fallback, conforming to Checkpoint 125 Sovereign Purpose Covenant.
+  - **Vascular Vein Multi-Branching Architecture (`VeinRabbitHoleCanvas.jsx`)**:
+    - Modeled compound name bifurcation (e.g., `Oyegunle` $\rightarrow$ `Òye` + `Gunlẹ̀`, `Oyekunle-Adebayo` $\rightarrow$ `Òye` & `Adé`).
+    - Extended graph topology in `useExplorationGraph.js` with atomic multi-child insertion (`branchVeinToCompoundRelatives`).
+    - Enhanced SVG vascular layout engine in `VeinRabbitHoleCanvas.jsx` to render dual-arterial Bézier curves branching outward from compound nodes into distinct harmonic gold conduits without visual collision.
+
+
 
 
 
