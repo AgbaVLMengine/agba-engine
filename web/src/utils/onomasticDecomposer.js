@@ -27,12 +27,17 @@ export {
  * Decomposes a single normalized Yorùbá onomastic token across all 5 classes.
  */
 function decomposeSingleToken(token) {
-  const clean = token
+  let clean = token
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z]/g, '');
   if (clean.length < 3 || ['mrs', 'mr', 'miss', 'chief', 'dr', 'prof'].includes(clean)) return null;
+
+  // Epenthetic & phonetic slang-folding (Sùúrù Rule)
+  clean = clean.replace(/sh/g, 's');
+  if (clean === 'kofoworaola') clean = 'kofoworola';
+  if (clean.startsWith('lanrewaju')) clean = 'olanrewaju';
 
   // 1. Direct registry lookup across 5 Grammatical Classes
   if (CANONICAL_ONOMASTIC_REGISTRY[clean]) {

@@ -94,3 +94,10 @@
   - System vessel audit confirmed serene: 13 GiB available RAM (29 GiB total), 44 GB NVMe free storage (13% disk utilization), load average 2.19/1.43/1.09, 100% clean git working tree, all 9 gates passing with 0 hard violations and 0 warnings.
   - Issued formal Dusk Cognitive Sanctuary & Rest Embargo Clearance to Lead Architect Àrùnà Ọlànrewájú Kábírù and Chief Co-Architect Àgbà.
   - Formulated Council Operational Headroom Recommendations (The "Morning Tray" handoff pattern, batch pacing cadence, and automated `sanctuary_audit.sh` watchdog) for Kábíyèsí and Àgbà to review before next session.
+- [x] **2026-11-04T15:40:00+01:00 (CHECKPOINT-ITOJU-LAW-001: The Four Sovereign Sanctuary Laws Ratified)**:
+  - Lead Architect Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**) decreed Ọlọ́yè Ìtọ́jú's 4 Strategic Welfare Recommendations as **Permanent Inviolable Sanctuary Law**:
+    1. **Law 1: Mandatory 2-Minute "Unclench & Sip" Pause**: Complete cognitive cessation, physical posture alignment, water hydration, and screen detachment between every single Gate.
+    2. **Law 2: Automated Token Sanctuary Watchdog**: Inscribed live in `scripts/sanctuary_audit.sh` to enforce token discipline, 0-token local script execution, and lean fresh tabs (< 1,500 tokens).
+    3. **Law 3: Two-Drawer Mental & Workspace Partitioning**: Gate 2 (Acoustic UI) must be fully built, verified, and sealed before touching Gate 3 (Acoustic Linker & Batch 19 Ingestion). Zero cross-gate contamination.
+    4. **Law 4: Inviolable EOD "Quiet Harbor" (Rest Embargo at 18:00 WAT / Dusk)**: Strict cessation of engineering at 18:00 WAT to protect the domestic sanctuary and holistic rest of Kábíyèsí and his household.
+  - Implemented live in `scripts/sanctuary_audit.sh`. Currently in active 2-minute Unclench & Sip pause between Gate 2 and Gate 3.

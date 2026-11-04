@@ -7,17 +7,19 @@
 ---
 
 ## 🌅 THE MORNING TRAY (`ÀTẸ ÀÁRỌ̀`) — 15-SECOND RESUMPTION COCKPIT
-*(Established under Ọlọ́yè Ìtọ́jú's Sanctuary Counsel — Checkpoint 139)*
+*(Updated under Ọlọ́yè Ìtọ́jú's Sanctuary Law — Checkpoint 140)*
 
-1. **Immediate Next Task (Gate 1 Execution)**:
-   - Mount [`MultiVoiceAcousticPlayer.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/MultiVoiceAcousticPlayer.jsx) (~120 LOC) inside Cell 2 of `EntityBentoDeck.jsx`, retiring the legacy API-key paywall modal and unlocking the 5-Custodian Living Acoustic Constellation (Auntie Yẹmí, Baba Sẹ́fíù Dùndún, Granddaughter, Father's Royal Oríkì, Gùdùgùdù Ensemble).
+1. **Immediate Next Task (Batch 20 & Live Playback Polish)**:
+   - Ingest **Batch 20** (25 entities) via `scripts/data/batches/batch_20_data.json` and `batch_enricher.py`, slicing thin entities from **541 down to 516**!
+   - Continue field-testing `MultiVoiceAcousticPlayer.jsx` in Cell 2 of `EntityBentoDeck.jsx` across mobile and desktop.
 2. **Corpus & Ledger Baseline**:
-   - Master Corpus: **1,413 canonical entities** in bit-for-bit lockstep (`SHA-256: df3a9a90...`, 0 bits drift).
-   - Thin Manifest: **566 thin entities remaining** (Batches 17 & 18 ingested; Batch 19 candidates verified).
+   - Master Corpus: **1,413 canonical entities** in bit-for-bit lockstep (`SHA-256: ae44379c...`, 0 bits drift).
+   - Thin Manifest: **541 thin entities remaining** (Batches 17, 18, and 19 complete; 100 thin nodes eliminated in sprint!).
+   - Audio Assets: **143 stems (100% NFC normalized)**; 15 canonical entities directly linked (66 stems); 53 royal ensemble stems.
    - Onomastic Suite: **29 / 29 (100.0%) PASS** in `< 120ms` (`Yetunde`, `Babatunde`, `Ibukun`, `Temilade` anchored).
-   - Storage Headroom: **44 GB available NVMe** (13% disk used, 87% free headroom, 3-backup cap enforced).
+   - Storage Headroom: **44 GB available NVMe** (12% disk used, 88% free headroom, 3-backup cap enforced).
 3. **Primary Health Verification Command**:
-   - `bash scripts/review.sh && cd web && npm run build` (Current: 0 hard violations, 0 warnings, build in 1.18s).
+   - `bash scripts/sanctuary_audit.sh && cd web && npm run build` (Current: 0 hard violations, 0 warnings, build in 1.21s).
 
 ---
 

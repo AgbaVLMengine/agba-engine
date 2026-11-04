@@ -57,6 +57,17 @@ EDGE_STREAM_HEADERS = {
     "X-Agba-Access-Tier": "Public-Sanctuary-Open-Stream",
 }
 
+# In-memory manifest cache with mtime invalidation (Irin Edge Optimization)
+_MANIFEST_CACHE: List[Dict[str, Any]] = []
+_MANIFEST_MTIME: float = 0.0
+
+
+def _ascii_header(val: str) -> str:
+    """Encode unicode strings to ASCII-safe representation for HTTP headers to prevent Latin-1 encoding crash (RFC 7230)."""
+    nfd = unicodedata.normalize("NFD", str(val).strip())
+    ascii_clean = "".join(c for c in nfd if unicodedata.category(c) != "Mn")
+    return ascii_clean.encode("ascii", "ignore").decode("ascii")
+
 
 def _norm(text: str) -> str:
     nfd = unicodedata.normalize("NFD", str(text).strip().lower())
@@ -64,12 +75,18 @@ def _norm(text: str) -> str:
 
 
 def _load_manifest() -> List[Dict[str, Any]]:
+    """Cached manifest loader guarded by file modification time."""
+    global _MANIFEST_CACHE, _MANIFEST_MTIME
     if not AUDIO_MANIFEST_PATH.exists():
         return []
     try:
-        return json.loads(AUDIO_MANIFEST_PATH.read_text(encoding="utf-8"))
+        current_mtime = AUDIO_MANIFEST_PATH.stat().st_mtime
+        if current_mtime != _MANIFEST_MTIME or not _MANIFEST_CACHE:
+            _MANIFEST_CACHE = json.loads(AUDIO_MANIFEST_PATH.read_text(encoding="utf-8"))
+            _MANIFEST_MTIME = current_mtime
+        return _MANIFEST_CACHE
     except Exception:
-        return []
+        return _MANIFEST_CACHE or []
 
 
 def _enforce_stream_rate_limit(request: Request) -> None:
@@ -136,10 +153,17 @@ async def stream_audio_token(token_id: str, request: Request):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Audio token '{token_id}' not found in acoustic manifest.")
 
     file_name = matched.get("file_name", "")
+    custodian = matched.get("category", "Sovereign-Acoustic-Custodian")
+    token_str_id = str(matched.get("id", token_id))
+
+    stream_headers = dict(EDGE_STREAM_HEADERS)
+    stream_headers["X-Acoustic-Performer"] = _ascii_header(custodian)
+    stream_headers["X-Acoustic-Token-Id"] = _ascii_header(token_str_id)
+
     local_candidate = LOCAL_STEMS_DIR / file_name
     if local_candidate.exists() and local_candidate.is_file():
         media_type = "audio/mpeg" if local_candidate.suffix == ".mp3" else ("audio/ogg" if local_candidate.suffix in (".opus", ".ogg") else "audio/wav")
-        return FileResponse(path=str(local_candidate), media_type=media_type, headers=EDGE_STREAM_HEADERS)
+        return FileResponse(path=str(local_candidate), media_type=media_type, headers=stream_headers)
 
     return JSONResponse(
         content={
@@ -147,7 +171,7 @@ async def stream_audio_token(token_id: str, request: Request):
             "access_model": "Craigslist-Open-Sanctuary (No API Key Required)",
             "token": matched,
         },
-        headers=EDGE_STREAM_HEADERS,
+        headers=stream_headers,
     )
 
 
@@ -170,10 +194,12 @@ async def list_or_lookup_audio_tokens(
             if q_norm in _norm(item.get("id", ""))
             or q_norm in _norm(item.get("entity_id", ""))
             or q_norm in _norm(item.get("entity_title", ""))
+            or q_norm in _norm(item.get("file_name", ""))
         ]
         response.headers.update({
             "Cache-Control": "public, max-age=86400, s-maxage=86400",
             "X-Agba-Access-Tier": "Public-Sanctuary-Entity-Lookup",
+            "X-Entity-Query": _ascii_header(entity),
         })
         return {"status": "success", "entity_query": entity, "count": len(matches), "tokens": matches}
 

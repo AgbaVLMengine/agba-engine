@@ -160,5 +160,15 @@ export const ONOMASTIC_SUFFIXES = {
   alaba: { diacritic: 'Àlàbá', meaning: 'Child born following Ìdòwú, the keeper of homestead peace' },
   malomo: { diacritic: 'Málọmọ̀', meaning: 'Pleading with the sacred spirit child to abide permanently' },
   kokumo: { diacritic: 'Kòkúmọ́', meaning: 'Has conquered mortality, will never return to the grave' },
-  durosinmi: { diacritic: 'Dúrósinmi', meaning: 'Tarry with me to comfort my later years and bury me in peace' }
+  durosinmi: { diacritic: 'Dúrósinmi', meaning: 'Tarry with me to comfort my later years and bury me in peace' },
+  sanya: { diacritic: 'Ṣànyá', meaning: 'Compensates and vindicates the lineage for past tribulations' },
+  yele: { diacritic: 'Yẹlé', meaning: 'Befits the royal homestead and confers honor upon the compound' },
+  lana: { diacritic: 'Lànà', meaning: 'Clears and pioneers a righteous path of destiny and elevation' },
+  biyi: { diacritic: 'Bíyìí', meaning: 'Birthed this noble one into generational prestige and favor' },
+  poju: { diacritic: 'Pọ̀jù', meaning: 'Abounds in great dignity and overflows with transgenerational blessing' },
+  boyejo: { diacritic: 'Bọ́yèjọ', meaning: 'Harmonizes with chieftaincy dignity and adorns the family title' },
+  tayo: { diacritic: 'Táyọ̀', meaning: 'Surpasses ordinary joy, bringing supreme celestial celebration' },
+  odunayo: { diacritic: 'Ọdúnayọ̀', meaning: 'A festive year of joy, marking a season of generational triumph' },
+  faosole: { diacritic: 'Fáwọ̀sọ́lé', meaning: 'Draws prosperity and spiritual shielding directly into the home' },
+  nikoro: { diacritic: 'Níkọ̀rọ̀', meaning: 'Commands sacred reverence, awe, and majesty in the royal court' }
 };

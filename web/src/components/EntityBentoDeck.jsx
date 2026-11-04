@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import {
   Sparkles, BookOpen, MapPin, Feather, Flag, ChevronDown, ChevronUp,
-  Shield, Volume2, Lock, GitBranch, Key, CheckCircle, Scroll
+  Shield, Volume2, GitBranch, Scroll
 } from 'lucide-react';
 import AkosileProvenanceDrawer from './AkosileProvenanceDrawer';
 import LivingVariantConstellationGrid from './LivingVariantConstellationGrid';
 import OrukoMiLineageRibbon from './OrukoMiLineageRibbon';
+import MultiVoiceAcousticPlayer from './MultiVoiceAcousticPlayer';
 
 export default function EntityBentoDeck({
   topMatch,
@@ -16,9 +17,6 @@ export default function EntityBentoDeck({
   onOpenFeedback
 }) {
   const [tier14Open, setTier14Open] = useState(false);
-  const [showAudioModal, setShowAudioModal] = useState(false);
-  const [apiKeyInput, setApiKeyInput] = useState('');
-  const [apiKeySuccess, setApiKeySuccess] = useState(false);
   const [provenanceOpen, setProvenanceOpen] = useState(false);
 
   if (!topMatch) return null;
@@ -123,50 +121,9 @@ export default function EntityBentoDeck({
           </div>
         </div>
 
-        {/* CELL 2: ACOUSTIC & PRONUNCIATION CELL */}
+        {/* CELL 2: LIVING ACOUSTIC HEARTH */}
         <div className="bento-cell bento-cell-acoustic">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-            <span className="badge-gold"><Volume2 size={13} /> ACOUSTIC CELL</span>
-            <span style={{ fontSize: '0.72rem', color: '#fbbf24', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              <Lock size={12} /> API Access Only
-            </span>
-          </div>
-
-          <h4 className="font-royal text-gold" style={{ fontSize: '1.25rem', marginBottom: '8px' }}>
-            Tonal Phonetics & Pitch Contour
-          </h4>
-
-          <p style={{ fontSize: '0.86rem', color: 'var(--text-secondary)', marginBottom: '16px', lineHeight: 1.4 }}>
-            Authentic 25-letter Yorùbá pronunciation with tonal frequency modulation (Re, Mi, Do).
-          </p>
-
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '18px' }}>
-            {tonalContour.map((t, idx) => (
-              <div key={idx} style={{ background: 'rgba(0, 0, 0, 0.45)', border: '1px solid var(--border-subtle)', borderRadius: '8px', padding: '6px 10px', textAlign: 'center' }}>
-                <div style={{ fontSize: '1.1rem', fontWeight: 700, color: '#f8fafc' }}>{t.char}</div>
-                <div style={{ fontSize: '0.7rem', color: '#fbbf24' }}>{t.arrow} {t.pitch}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="waveform-container" style={{ marginBottom: '18px' }}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((bar) => (
-              <div key={bar} className="waveform-bar" />
-            ))}
-            <span style={{ fontSize: '0.74rem', color: 'var(--text-muted)', marginLeft: '8px' }}>
-              Sovereign Phonetic Stream [48kHz]
-            </span>
-          </div>
-
-          <button
-            type="button"
-            onClick={() => setShowAudioModal(true)}
-            className="btn-gold"
-            style={{ width: '100%', padding: '11px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '0.92rem' }}
-          >
-            <Lock size={15} />
-            Play Acoustic Mimicry (API Gated)
-          </button>
+          <MultiVoiceAcousticPlayer entity={topMatch} tonalContour={tonalContour} />
         </div>
 
         {/* CELL 3: VERIFIED REGALIA & VISUAL ARCHIVE CELL */}
@@ -323,67 +280,6 @@ export default function EntityBentoDeck({
                 </p>
               </div>
             ))}
-          </div>
-        </div>
-      )}
-
-      {/* ACOUSTIC ENTERPRISE MODAL */}
-      {showAudioModal && (
-        <div className="agba-modal-backdrop" onClick={() => setShowAudioModal(false)}>
-          <div className="agba-modal-dialog" onClick={(e) => e.stopPropagation()}>
-            <div style={{ width: '64px', height: '64px', borderRadius: '50%', margin: '0 auto 16px auto', background: 'rgba(217, 119, 6, 0.15)', border: '1.5px solid #d97706', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fbbf24', fontSize: '28px', boxShadow: '0 0 24px rgba(217, 119, 6, 0.4)' }}>
-              🔒
-            </div>
-            <span className="badge-gold" style={{ marginBottom: '10px' }}>RESTRICTED ENTERPRISE TOKEN</span>
-            <h3 className="font-royal text-gold" style={{ fontSize: '1.5rem', marginBottom: '10px' }}>
-              Audio Cell Restricted to API Access Only
-            </h3>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.6, marginBottom: '20px' }}>
-              Sovereign acoustic mimicry, tonal voice playback, and native phonetic voice streams require an active <strong>Àgbà Enterprise API subscription</strong> or licensed developer key.
-            </p>
-            <div style={{ background: 'rgba(0, 0, 0, 0.4)', border: '1px solid var(--border-subtle)', borderRadius: '12px', padding: '16px', textAlign: 'left', marginBottom: '20px', fontSize: '0.84rem' }}>
-              <div style={{ color: '#fbbf24', fontWeight: 700, marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                <Key size={14} /> Included in Enterprise Acoustic Tier:
-              </div>
-              <ul style={{ paddingLeft: '18px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <li>Full 25-letter tonal pronunciation synthesis (High/Mid/Low pitch)</li>
-                <li>Sacred liturgical chant audio streams (Oríkì & Odù Ifá)</li>
-                <li>Studio-grade indigenous phonetic token playback API</li>
-              </ul>
-            </div>
-            {apiKeySuccess ? (
-              <div style={{ background: 'rgba(16, 185, 129, 0.15)', border: '1px solid rgba(16, 185, 129, 0.4)', borderRadius: '10px', padding: '12px', color: '#34d399', marginBottom: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', fontSize: '0.88rem' }}>
-                <CheckCircle size={16} /> Enterprise Developer Key Activated for Session!
-              </div>
-            ) : (
-              <div style={{ marginBottom: '20px', display: 'flex', gap: '8px' }}>
-                <input
-                  type="text"
-                  placeholder="Enter Enterprise API Key (e.g. agba_...)"
-                  value={apiKeyInput}
-                  onChange={(e) => setApiKeyInput(e.target.value)}
-                  style={{ flex: 1, background: 'rgba(0, 0, 0, 0.4)', border: '1px solid var(--border-subtle)', borderRadius: '8px', padding: '8px 12px', color: '#f8fafc', fontSize: '0.85rem' }}
-                />
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (apiKeyInput.trim()) {
-                      setApiKeySuccess(true);
-                      setTimeout(() => setShowAudioModal(false), 1200);
-                    }
-                  }}
-                  className="btn-gold"
-                  style={{ padding: '8px 16px', fontSize: '0.85rem' }}
-                >
-                  Verify Key
-                </button>
-              </div>
-            )}
-            <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
-              <button type="button" onClick={() => setShowAudioModal(false)} className="btn-ghost" style={{ padding: '10px 20px' }}>
-                Dismiss
-              </button>
-            </div>
           </div>
         </div>
       )}

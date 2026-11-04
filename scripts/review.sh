@@ -6,7 +6,8 @@
 set -euo pipefail
 
 BASE_REF="${1:-HEAD}"
-REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$REPO_ROOT"
 
 echo "=================================================================="
@@ -239,6 +240,25 @@ for f in $CHANGED_FILES; do
     VIOLATIONS=$((VIOLATIONS + 1))
   fi
 done
+
+echo ""
+echo "▶ [DUAL-CORPORA PARITY GATE] Verifying SHA-256 Lockstep between Master Corpora..."
+API_CORPUS="api/data/yoruba_corpus_1007_NORMALIZED.json"
+WEB_CORPUS="web/src/data/yoruba_master_corpus.json"
+if [ -f "$API_CORPUS" ] && [ -f "$WEB_CORPUS" ]; then
+  HASH_API=$(sha256sum "$API_CORPUS" | awk '{print $1}')
+  HASH_WEB=$(sha256sum "$WEB_CORPUS" | awk '{print $1}')
+  if [ "$HASH_API" != "$HASH_WEB" ]; then
+    echo "  ❌ [PARITY VIOLATION] Dual-corpora SHA-256 mismatch!"
+    echo "     API ($HASH_API) != WEB ($HASH_WEB)"
+    VIOLATIONS=$((VIOLATIONS + 1))
+  else
+    echo "  ✅ Bit-for-bit lockstep verified ($HASH_API)."
+  fi
+else
+  echo "  ⚠️  Master corpus files missing from expected paths."
+  WARNINGS=$((WARNINGS + 1))
+fi
 
 
 echo "=================================================================="

@@ -159,7 +159,7 @@ export default function AarinimoSearchCore({
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
                 placeholder={orukoMode ? "Orúkọ Mi: Enter Yorùbá name (e.g. Oyegunle, Yetunde)..." : "Ṣàwárí Ìmọ̀: sovereign parents, Odù, or Yorùbá name..."}
-                style={{ flex: 1, background: 'transparent', border: 'none', color: '#f8fafc', fontSize: '0.92rem', fontWeight: 600, outline: 'none' }}
+                style={{ flex: 1, background: 'transparent', border: 'none', color: '#f8fafc', fontSize: '16px', fontWeight: 600, outline: 'none' }}
               />
 
               {query && (
