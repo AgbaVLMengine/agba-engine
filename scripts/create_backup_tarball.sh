@@ -53,14 +53,30 @@ for old_tar in $(ls -1t "${BACKUP_DIR}"/agba_engine_snapshot_*.tar.gz 2>/dev/nul
 done
 
 # Auto-Sync to Google Drive & Enforce Strict 3-Snapshot Rolling Retention
-GDRIVE_DIR="/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups"
-if [ -d "${GDRIVE_DIR}" ]; then
-  cp "${BACKUP_DIR}/${ARCHIVE_NAME}" "${BACKUP_DIR}/${CHECKSUM_NAME}" "${GDRIVE_DIR}/"
-  for old_gd_tar in $(ls -1t "${GDRIVE_DIR}"/agba_engine_snapshot_*.tar.gz 2>/dev/null | tail -n +4); do
-    gd_base="${old_gd_tar%.tar.gz}"
-    rm -f "${gd_base}.tar.gz" "${gd_base}.sha256"
-    echo "🧹 Rotated out oldest Google Drive snapshot: $(basename "${gd_base}")"
-  done
-  echo "☁️  Synced to Google Drive (${GDRIVE_DIR}) — Strict 3-Backup Cap Verified."
+GDRIVE_CANDIDATES=(
+  "/mnt/chromeos/GoogleDrive/MyDrive/AgbaEngineBackups"
+  "/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups"
+  "/mnt/chromeos/removable/AgbaEngineBackups"
+  "/home/aruna_olanrewaju/GoogleDrive/AgbaEngineBackups"
+)
+
+GDRIVE_SYNCED=0
+for GDRIVE_DIR in "${GDRIVE_CANDIDATES[@]}"; do
+  if [ -d "${GDRIVE_DIR}" ]; then
+    cp "${BACKUP_DIR}/${ARCHIVE_NAME}" "${BACKUP_DIR}/${CHECKSUM_NAME}" "${GDRIVE_DIR}/"
+    for old_gd_tar in $(ls -1t "${GDRIVE_DIR}"/agba_engine_snapshot_*.tar.gz 2>/dev/null | tail -n +4); do
+      gd_base="${old_gd_tar%.tar.gz}"
+      rm -f "${gd_base}.tar.gz" "${gd_base}.sha256"
+      echo "🧹 Rotated out oldest Google Drive snapshot: $(basename "${gd_base}")"
+    done
+    echo "☁️  Synced to Google Drive (${GDRIVE_DIR}) — Strict 3-Backup Cap Verified."
+    GDRIVE_SYNCED=1
+    break
+  fi
+done
+
+if [ "$GDRIVE_SYNCED" -eq 0 ]; then
+  echo "⚠️  Google Drive external mount not active. Snapshot securely retained in local backups/."
+  echo "    To mirror to Google Drive, right-click 'AgbaEngineBackups' in ChromeOS Files app and select 'Share with Linux'."
 fi
 echo "=================================================================="
