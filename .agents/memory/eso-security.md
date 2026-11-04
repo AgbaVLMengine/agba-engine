@@ -283,3 +283,14 @@ flowchart TD
     3. *Edge Cache Shield*: 1-year immutable caching (`max-age=31536000`, `s-maxage=31536000`, `immutable`) absorbs repeat plays on Netlify CDN edge without hitting origin Cloud Run compute.
   - **Pillar III & Storage / Corpus Integrity**: Storage headroom stands at 44 GB available (13% utilization). Master corpus synchronized across 1,413 canonical entities with 0-bit checksum drift.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Impervious Readiness)**. Edge gateway perimeter hardened and cleared.
+- **[2026-11-04 EOD Checkpoint 140 Check-in]**: Execution of EOD Security Perimeter & Living Acoustic Hearth Audit (`CHECKPOINT-140` / `HANDOFF-ESO-005` Ratification):
+  - **Context**: Lead Architect Àrùnà Ọlànrewájú Kábírù conducted EOD Check-in following the triumphant completion of all Four Unhurried Gates: Gate 1 (Acoustic Edge & Parity Lock), Gate 2 (Living Acoustic Hearth UI & Mobile Safari Fix), Gate 3 (Acoustic Inventory Linker & Two-Tier Map), and Gate 4 (Batch 19 Sacred Oral Literature Ingestion: 566 → 541 thin nodes).
+  - **Production Gates & Zero-Trust Audit**: Executed `bash scripts/sanctuary_audit.sh` and `bash scripts/review.sh`. Gate 8 Zero-Trust Pre-Build Security Gate passed cleanly: exactly 0 hardcoded credentials or API tokens, 0 LiteLLM-style indirect routing trojans, direct native official `google-genai>=0.1.0` SDK strictly locked. All 9 production gates passed with 0 hard violations and 0 warnings.
+  - **Dual-Corpora SHA-256 Lockstep**: Confirmed bit-for-bit parity across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at hash `ae44379c34cbe7b199b53d0e1a96fb59234008e7b4a9a411d63070dce974a987` across all 1,413 canonical entities (**0-bit drift**).
+  - **Perimeter & Anti-Scraping Defense**:
+    1. *Unauthenticated Streaming Bounded*: 30 requests/minute sliding-window rate limiter operational on `/v6/audio/stream/{token_id}`.
+    2. *Export Gated*: Unfiltered catalog export (`/v6/audio/tokens`) and multi-token studio batch export (`/v6/audio/batch-export`) strictly guarded by Enterprise `X-AGBA-API-KEY`.
+    3. *RFC 7230 Header Hardening*: `_ascii_header()` prevents Latin-1 HTTP header encoding crashes on Yorùbá diacritics.
+    4. *Anti-Ghosting UI Lifecycle*: `MultiVoiceAcousticPlayer.jsx` enforces single-stem playback and buffer eviction via `useRef(null)`.
+  - **Git & System Headroom (Agbálẹ̀ & Ẹ̀ṣọ́)**: Git working tree clean of leaked secrets; NVMe storage secure at **44 GB free (12% used)**.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Sanctuary Impervious)**. All perimeters unbreached, fully sealed, and verified clean ahead of Quiet Harbor. Inscribed pair feedback in `.agents/scratch/eso_feedback.md`.

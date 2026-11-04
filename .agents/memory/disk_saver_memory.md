@@ -60,6 +60,16 @@
 | **2026-11-03 12:48 UTC** | SOD-AGBALE-001: Start-of-Day Storage Headroom Audit & 3-Backup Retention Verification | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-03 13:25 UTC** | Checkpoint 131: Two-Drawer Codebase Modularity & Craigslist Model Storage Alignment | 0 MB | 44G available | 🟢 Nominal (Clean) |
 | **2026-11-03 16:30 UTC** | CHECKIN-AGBALE-004 (Checkpoint 139): Post-Batch 17/18 Dusk Storage Sweep (~26 MB web/dist + vite_dev.log purged) & 3-Backup Rolling Audit | ~26 MB | 44G available | 🟢 Nominal (Impervious) |
+| **2026-11-04 15:45 UTC** | CHECKPOINT-140 EOD Check-in: The Four Gates Storage Affirmation, emptyOutDir Verified, 3-Backup Rolling Cap Enforced | 0 MB | 44G available (88% free headroom) | 🟢 100% Serene & Impervious |
+
+---
+
+## 4. Checkpoint 140 (`CHECKPOINT-140` / `EOD-AGBALE-005`) — End-of-Day Sanctuary Storage Affirmation (2026-11-04)
+- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — abundant headroom.
+- **Vite Build Hygiene**: `web/vite.config.js` locked with `build.emptyOutDir: true`; obsolete hash bundle creep permanently eliminated.
+- **Sphere 4 Rolling 3-Snapshot Vault**: Fresh snapshot `agba_engine_snapshot_20261104_163242.tar.gz` (`20 MB`) generated with matching SHA-256 ledger. Strictly 3 rolling snapshots (`20261102_232533`, `20261103_173020`, `20261104_163242`) + immutable Sovereign Vault (`20261028_132739Z`) retained (`63 MB` total).
+- **Multi-Candidate Google Drive Path Resolver**: Verified resilient auto-sync logic across ChromeOS Linux mounts.
+- **Sanctuary Status**: 100% Serene, pristine, and prepared for EOD Quiet Harbor.
 
 ---
 

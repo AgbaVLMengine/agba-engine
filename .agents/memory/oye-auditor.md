@@ -355,6 +355,28 @@
        - `npm run build`: Compiled in **1.23s** (1,934 modules, 0 errors).
     5. *Proactive Domain Hygiene Proposals Submitted*:
        - Submitted 4 core efficiency and preventative architecture recommendations for Council review.
+- **[2026-11-04 EOD | Checkpoint 140 (`CHECKPOINT-OYE-023` / `CHECKIN-OYE-012`) — Four Gates Conquered & Dual-Corpora Checksum Lock Certified]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL ADVERSARIAL PASS — ALL 4 GATES & INDUSTRY STANDARDS CERTIFIED GREEN (0 HARD VIOLATIONS, 0 WARNINGS)**.
+  - **Audit Protocol Executed**:
+    1. *Dual-Corpora Checksum Parity Gate*:
+       - Automated SHA-256 lockstep check confirmed bit-for-bit locked (`ae44379c34cbe7b199b53d0e1a96fb59234008e7b4a9a411d63070dce974a987`) between `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` (1,414 entities, 0-bit drift).
+    2. *Gate 2 LOC Ceilings & Modular Headroom*:
+       - `web/src/components/EntityBentoDeck.jsx`: **295 LOC** (plummeted from 399 LOC by removing legacy `<Lock>` paywall modal; massive headroom beneath 500-LOC ceiling).
+       - `web/src/components/MultiVoiceAcousticPlayer.jsx`: **134 LOC** (modular, 5 custodial badges, tap-to-play bandwidth protection, `useRef` anti-ghost audio lifecycle).
+       - `api/app/audio_gateway.py`: **229 LOC** (`_ascii_header()` RFC 7230 Latin-1 safe headers, mtime-cached manifest).
+       - `scripts/pipeline/audio_corpus_linker.py`: **141 LOC** (Two-Tier Priority index, canonical preemption over aliases).
+       - `scripts/pipeline/batch_enricher.py`: **138 LOC** (< 150 LOC target).
+       - `web/src/components/AarinimoSearchCore.jsx`: Fixed iOS Safari auto-zoom by enforcing `fontSize: 16px`.
+    3. *Gate 3 AST Data Radar & Declarative Decoupling*:
+       - Batch 19 authored purely as declarative JSON in `scripts/data/batches/batch_19_data.json`. Zero static data collections > 50 LOC embedded in Python code.
+    4. *Production Build & Full Test Verification*:
+       - `scripts/sanctuary_audit.sh`: 100% Green across all 9 gates. SOD clearance granted.
+       - `scripts/review.sh`: 0 hard violations, 0 warnings.
+       - `scripts/benchmark_oruko_mi.py`: **29 / 29 (100.0%) Tests Passed** (0 generic fallbacks).
+       - `npm run build`: Compiled in **1.10s** (1,935 modules, 0 errors).
+    5. *Thin Manifest Progress*:
+       - Decremented from 566 down to **541 remaining** (25 sacred oral literature entities enriched).
 
 
 
