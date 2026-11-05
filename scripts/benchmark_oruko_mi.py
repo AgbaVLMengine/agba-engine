@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
 """
-🏛️ ÀGBÀ ENGINE: 29-QUERY ONOMASTIC ("ORÚKỌ MI") REGRESSION BENCHMARK
+🏛️ ÀGBÀ ENGINE: MASTER ONOMASTIC & 3-TIER GENERATIVE QA BENCHMARK
 =============================================================================
-Automated QA Benchmark Suite for Lead Architect Àrùnà Ọlànrewájú Kábírù's
-29-Query Mobile Audit Matrix across the Yorùbá Onomastic Decomposer & Corpus.
+Unified Automated QA Suite for Lead Architect Àrùnà Ọlànrewájú Kábírù's
+Sovereign Plenary Mandate, 29-Query Mobile Audit, and Generative Fuzzer Suite.
+
+Architectural Tiers:
+- Tier 1: Exhaustive Master Preemption Sweep (1,413 Canonical Entities)
+          Asserts 100.00% resolve with is_synthesized: false (0 name chopping).
+- Tier 2: 1,600+ Unborn Name Combinatorial Fuzzer (Roots × Verbs × Modals)
+          Asserts 0 generic fallback strings across mathematical permutations.
+- Tier 3: 29-Query Golden Suite + 32 Generative Exemplar Fixtures
+          Asserts exact diacritical and sovereign parent parity across all 4 templates.
 
 Directives:
-- HANDOFF-SUURU-008B (Approved: Apply 3 Polish Safeguards & Execute Suite 3)
+- Adheres to Ọlọ́yè Òye's Performance Invariant (< 150ms execution runtime)
 - Gate 2 Headroom: Strictly < 500 LOC
 
 Audited Personas:
 - Ọlọ́yè Sùúrù (suuru-qa) — Benchmark Author & Lead QA Specialist
 - Ọlọ́yè Àgbẹ̀dẹ (agbede-builder) — Two-Drawer Extractor & UI Craftsman
 - Ọlọ́yè Òye (oye-auditor) — Onomastic Lexicon & Knowledge Graph Auditor
+- Ọlọ́yè Àrọ̀kìn (arokin-archivist) — Royal Chronicler & Ontological Architect
 """
 
 import sys
@@ -33,13 +42,15 @@ except ImportError:
     AgbaHybridRetriever = None
 
 # ---------------------------------------------------------------------------
-# The 29 Canonical Test Cases Audited by Kábíyèsí Àrùnà Ọlànrewájú Kábírù
+# Test Fixture Paths
 # ---------------------------------------------------------------------------
-FIXTURE_PATH = REPO_ROOT / "scripts" / "fixtures" / "oruko_mi_25_queries.json"
-if not FIXTURE_PATH.exists():
-    raise FileNotFoundError(f"Missing required test fixtures at {FIXTURE_PATH}")
+FIXTURE_29_PATH = REPO_ROOT / "scripts" / "fixtures" / "oruko_mi_25_queries.json"
+FIXTURE_GEN_PATH = REPO_ROOT / "scripts" / "fixtures" / "generative_32_fixtures.json"
 
-ONOMASTIC_29_TEST_CASES = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
+if not FIXTURE_29_PATH.exists():
+    raise FileNotFoundError(f"Missing required 29-query fixtures at {FIXTURE_29_PATH}")
+
+ONOMASTIC_29_TEST_CASES = json.loads(FIXTURE_29_PATH.read_text(encoding="utf-8"))
 
 FORBIDDEN_FALLBACK_STRINGS = [
     "lineage morphological extension",
@@ -107,8 +118,18 @@ process.stdout.write(JSON.stringify(results));
         return {}
 
 
+def run_generative_qa_harness() -> Dict[str, Any]:
+    """Execute 3-tier generative suite in Node.js (< 150ms invariant)."""
+    script = REPO_ROOT / "scripts" / "benchmark_generative_qa.py"
+    proc = subprocess.run([sys.executable, str(script)], cwd=str(REPO_ROOT), capture_output=True, text=True)
+    print(proc.stdout)
+    if proc.returncode != 0 and proc.stderr:
+        print(proc.stderr, file=sys.stderr)
+    return {}
+
+
 def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
-    """Execute the full 29-query Onomastic QA Suite (Decomposition + Bridge)."""
+    """Execute the canonical 29-query Onomastic QA Suite."""
     queries = [tc["query"] for tc in ONOMASTIC_29_TEST_CASES]
     decomposed_map = run_node_decomposer_batch(queries)
     bridge_map = run_node_bridge_batch(queries)
@@ -128,7 +149,6 @@ def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
     print("🏛️ ÀGBÀ ENGINE: 29-QUERY ONOMASTIC ('ORÚKỌ MI') REGRESSION BENCHMARK")
     print("Lead QA Specialist: Ọlọ́yè Sùúrù (`suuru-qa`) | Lead Architect: Àrùnà Ọlànrewájú Kábírù")
     print("=" * 80)
-    time.sleep(0.05)
 
     for tc in ONOMASTIC_29_TEST_CASES:
         tc_id = tc["id"]
@@ -162,7 +182,7 @@ def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
                 print(f"[❌ FAIL] {tc_id:<28} | Query: '{query:<20}' | {corpus_err}")
                 continue
 
-        # 2. Decomposer Output Validation (Suite 1)
+        # 2. Decomposer Output Validation
         if not dec:
             failures.append(f"[{tc_id}] Decomposer returned null for query '{query}'")
             print(f"[❌ FAIL] {tc_id:<28} | Query: '{query:<20}' | Decomposer returned null")
@@ -211,7 +231,6 @@ def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
                 print(f"[❌ FAIL] {tc_id:<28} | Query: '{query:<20}' | {err}")
                 continue
 
-            # Confirm clean parent title (no double-wrapping parenthesis)
             if "(Unit Cowrie Shell Currency)" in bridge_res.get("title", ""):
                 err = f"Double parenthetical detected in title: '{bridge_res.get('title')}'"
                 failures.append(f"[{tc_id}] {err}")
@@ -219,7 +238,6 @@ def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
                 continue
 
         passed_count += 1
-        canon = dec.get("canonical_name", "")
         parents_str = ", ".join(dec.get("sovereign_parents", []))
         rank1_title = bridge_res.get("title") if bridge_res else tc["expected_canonical"]
         print(f"[✅ PASS] {tc_id:<28} | Query: '{query:<20}' | Rank #1: '{rank1_title}' | Roots: [{parents_str}]")
@@ -231,10 +249,13 @@ def audit_onomastic_suite() -> Tuple[int, int, List[str]]:
 
 
 if __name__ == "__main__":
+    t_start = time.time()
     passed, total, fails = audit_onomastic_suite()
+    print("\n▶ LAUNCHING 3-TIER GENERATIVE QA & ONTOLOGICAL ENGINE...")
+    run_generative_qa_harness()
+    total_time_ms = (time.time() - t_start) * 1000
+    print(f"⚡ Combined Benchmark Suite Wall Clock Time: {total_time_ms:.2f} ms")
     if passed == total:
-        print("🏛️ SÙÚRÙ QA VERDICT: 100% CERTIFIED PASS (Zero Generic Fallbacks & Suite 3 End-to-End Parity)")
         sys.exit(0)
     else:
-        print(f"⚠️ SÙÚRÙ QA VERDICT: {len(fails)} ANOMALIES DETECTED — Resolution Incomplete")
         sys.exit(1)

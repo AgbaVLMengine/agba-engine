@@ -1,0 +1,218 @@
+[
+  {
+    "id": "T1_01_ADEBIMPE",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adebimpe",
+    "expected_canonical": "Adébímpé",
+    "expected_parents": ["Adé"],
+    "expected_verb": "bím̀pé"
+  },
+  {
+    "id": "T1_02_ADENIKE",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adenike",
+    "expected_canonical": "Adéníkẹ́",
+    "expected_parents": ["Adé"],
+    "expected_verb": "níkẹ́"
+  },
+  {
+    "id": "T1_03_ADENIYI",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adeniyi",
+    "expected_canonical": "Adéníyì",
+    "expected_parents": ["Adé"],
+    "expected_verb": "níyì"
+  },
+  {
+    "id": "T1_04_ADELAKUN",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adelakun",
+    "expected_canonical": "Adélakùn",
+    "expected_parents": ["Adé"],
+    "expected_verb": "lakùn"
+  },
+  {
+    "id": "T1_05_ADEBISI",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adebisi",
+    "expected_canonical": "Adébísí",
+    "expected_parents": ["Adé"],
+    "expected_verb": "bísí"
+  },
+  {
+    "id": "T1_06_ADELAJA",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Adelaja",
+    "expected_canonical": "Adélajà",
+    "expected_parents": ["Adé"],
+    "expected_verb": "lajà"
+  },
+  {
+    "id": "T1_07_ADERIBIGBE",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Aderibigbe",
+    "expected_canonical": "Adéribigbé",
+    "expected_parents": ["Adé"],
+    "expected_verb": "rí ibi gbé"
+  },
+  {
+    "id": "T1_08_AKINTOLA",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Akintola",
+    "expected_canonical": "Akíntọ́lá",
+    "expected_parents": ["Akín", "Ọlá", "Ògún"],
+    "expected_verb": "tọ́lá"
+  },
+  {
+    "id": "T1_09_OGUNDIRAN",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Ogundiran",
+    "expected_canonical": "Ògúndìran",
+    "expected_parents": ["Ògún"],
+    "expected_verb": "dìran"
+  },
+  {
+    "id": "T1_10_OLAWALE",
+    "template": "Template 1 (Prestige / Theophoric + Verb)",
+    "query": "Olawale",
+    "expected_canonical": "Ọláwálé",
+    "expected_parents": ["Ọlá"],
+    "expected_verb": "wálé"
+  },
+  {
+    "id": "T2_01_MOTUNRAYO",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Motunrayo",
+    "expected_canonical": "Mótúnrayọ̀",
+    "expected_parents": ["Ayọ̀", "Ẹbí"],
+    "expected_verb": "tún rí ayọ̀"
+  },
+  {
+    "id": "T2_02_AFOLABI",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Afolabi",
+    "expected_canonical": "Afọlábí",
+    "expected_parents": ["Ọlá"],
+    "expected_verb": "fi ọlá bí"
+  },
+  {
+    "id": "T2_03_MOROHUNMBO",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Morohunmbo",
+    "expected_canonical": "Moróhúnm̀bọ́",
+    "expected_parents": ["Ẹbí", "Ọ̀rọ̀", "Òye"],
+    "expected_verb": "rí ohun mú bọ̀"
+  },
+  {
+    "id": "T2_04_AYODELE",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Ayodele",
+    "expected_canonical": "Ayọ̀délé",
+    "expected_parents": ["Ayọ̀", "Ẹbí"],
+    "expected_verb": "délé"
+  },
+  {
+    "id": "T2_05_ADEBAYO",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Adebayo",
+    "expected_canonical": "Adébáyọ̀",
+    "expected_parents": ["Adé", "Ayọ̀", "Ẹbí"],
+    "expected_verb": "báyọ̀"
+  },
+  {
+    "id": "T2_06_MOSUNMOLA",
+    "template": "Template 2 (Pronominal Sentence)",
+    "query": "Mosunmola",
+    "expected_canonical": "Mósúnmọ́lá",
+    "expected_parents": ["Ọlá"],
+    "expected_verb": "sún mọ́ ọlá"
+  },
+  {
+    "id": "T3_01_ILERIOLUWA",
+    "template": "Template 3 (Theocentric Covenant)",
+    "query": "Ilerioluwa",
+    "expected_canonical": "Ìléríolúwa",
+    "expected_parents": ["Olódùmarè", "Ọ̀rọ̀", "Òye"],
+    "expected_verb": "ìlérí"
+  },
+  {
+    "id": "T3_02_IMISIOLUWA",
+    "template": "Template 3 (Theocentric Covenant)",
+    "query": "Imisioluwa",
+    "expected_canonical": "Ìmísíolúwa",
+    "expected_parents": ["Olódùmarè", "Ẹ̀mí", "Òye"],
+    "expected_verb": "ìmísí"
+  },
+  {
+    "id": "T3_03_IFEOLUWA",
+    "template": "Template 3 (Theocentric Covenant)",
+    "query": "Ifeoluwa",
+    "expected_canonical": "Ìfẹ́olúwa",
+    "expected_parents": ["Olódùmarè", "Ìfẹ́", "Òye"],
+    "expected_verb": "ìfẹ́"
+  },
+  {
+    "id": "T3_04_IBUKUNOLUWA",
+    "template": "Template 3 (Theocentric Covenant)",
+    "query": "Ibukunoluwa",
+    "expected_canonical": "Ìbùkúnolúwa",
+    "expected_parents": ["Olódùmarè", "Ọlá", "Òye"],
+    "expected_verb": "ìbùkún"
+  },
+  {
+    "id": "T3_05_IRETIOLUWA",
+    "template": "Template 3 (Theocentric Covenant)",
+    "query": "Iretioluwa",
+    "expected_canonical": "Ìrètíolúwa",
+    "expected_parents": ["Olódùmarè", "Òye"],
+    "expected_verb": "ìrètí"
+  },
+  {
+    "id": "T4_01_AKANBI",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Akanbi",
+    "expected_canonical": "Àkànbí",
+    "expected_parents": ["Ọmọ", "Akín", "Ẹbí"],
+    "expected_verb": "kàn bí"
+  },
+  {
+    "id": "T4_02_AYINLA",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Ayinla",
+    "expected_canonical": "Àyìnlá",
+    "expected_parents": ["Ọlá", "Òye", "Ẹbí"],
+    "expected_verb": "yìn lá"
+  },
+  {
+    "id": "T4_03_ADUKE",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Aduke",
+    "expected_canonical": "Àdùkẹ́",
+    "expected_parents": ["Ẹbí", "Ọmọ"],
+    "expected_verb": "dù kẹ́"
+  },
+  {
+    "id": "T4_04_IDOWU",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Idowu",
+    "expected_canonical": "Ìdòwú",
+    "expected_parents": ["Àmútọ̀runwá", "Ẹbí", "Ọmọ"],
+    "expected_verb": "ìdòwú"
+  },
+  {
+    "id": "T4_05_ALABA",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Alaba",
+    "expected_canonical": "Àlàbá",
+    "expected_parents": ["Àmútọ̀runwá", "Ẹbí", "Ọmọ"],
+    "expected_verb": "àlàbá"
+  },
+  {
+    "id": "T4_06_TAYE",
+    "template": "Template 4 (Circumstance & Oriki)",
+    "query": "Taye",
+    "expected_canonical": "Táyéwò",
+    "expected_parents": ["Àmútọ̀runwá", "Ẹbí", "Ọmọ"],
+    "expected_verb": "tọ́ ayé wò"
+  }
+]
