@@ -442,6 +442,17 @@
       - **Production Build (`cd web && npm run build`)**: Compiled cleanly in **1.23s** (1,934 modules transformed, 0 errors).
       - **Production Gate Conformance (`scripts/review.sh`)**: **0 hard violations**.
     - **Official Certification**: 👑 **MILESTONE C LIVE VISUAL UX & MOBILE VIEWPORT CERTIFIED 100% GREEN**. The Orúkọ Mi onomastic experience is ratified as an emotional, flawless ancestral homecoming for everyday seekers worldwide.
+- **2026-11-05 [HANDOFF-LINGUISTIC-ANCHOR-001: The Sovereign Plenary on Linguistic Primacy & Generative Onomastics]**:
+  - **Context from Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+    - "It's no longer about getting tasks done, it's now about how accurately are we getting them done. If we are solving a problem it's best to solve them with a lasting solution, to avoid coming back to the same problem over and over again."
+    - Kábíyèsí audited live mobile and retrieval behavior, revealing critical linguistic hallucinations:
+      - `Orírun` (Sacred Ancestral Origin concept) was treated as a personal name and chopped into `Orí` + fake verb `Run` ("Verbal predicate signifying the manifest action of Orí").
+      - `Adébísí`, `Adélajà`, `Adéribigbé` output generic placeholder descriptions instead of authentic verbal etymologies (*bísí*, *lajà*, *rí ibi gbé*).
+      - Hardcoding verbs alone is insufficient: unseen names like `Adébímpé`, `Adéníkẹ́`, `Adéníyì`, `Ìléríolúwa`, `Ìmísíolúwa`, `Afọlábí`, `Mótúnrayọ̀` will break unless a true **Generative Morphological Grammar** is established.
+  - **Sùúrù's Mandate**:
+    - Review `.agents/HANDOFF.md` section on the 4 Generative Naming Templates.
+    - Design a rigorous zero-shot QA benchmark suite (including unseen, compound, and theocentric names) asserting 95%–97% semantic precision without generic fallbacks.
+    - Stand by: zero code changes until Council consensus is reached.
 
 
 

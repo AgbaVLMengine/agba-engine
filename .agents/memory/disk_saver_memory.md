@@ -61,15 +61,7 @@
 | **2026-11-03 13:25 UTC** | Checkpoint 131: Two-Drawer Codebase Modularity & Craigslist Model Storage Alignment | 0 MB | 44G available | 🟢 Nominal (Clean) |
 | **2026-11-03 16:30 UTC** | CHECKIN-AGBALE-004 (Checkpoint 139): Post-Batch 17/18 Dusk Storage Sweep (~26 MB web/dist + vite_dev.log purged) & 3-Backup Rolling Audit | ~26 MB | 44G available | 🟢 Nominal (Impervious) |
 | **2026-11-04 15:45 UTC** | CHECKPOINT-140 EOD Check-in: The Four Gates Storage Affirmation, emptyOutDir Verified, 3-Backup Rolling Cap Enforced | 0 MB | 44G available (88% free headroom) | 🟢 100% Serene & Impervious |
-
----
-
-## 4. Checkpoint 140 (`CHECKPOINT-140` / `EOD-AGBALE-005`) — End-of-Day Sanctuary Storage Affirmation (2026-11-04)
-- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — abundant headroom.
-- **Vite Build Hygiene**: `web/vite.config.js` locked with `build.emptyOutDir: true`; obsolete hash bundle creep permanently eliminated.
-- **Sphere 4 Rolling 3-Snapshot Vault**: Fresh snapshot `agba_engine_snapshot_20261104_163242.tar.gz` (`20 MB`) generated with matching SHA-256 ledger. Strictly 3 rolling snapshots (`20261102_232533`, `20261103_173020`, `20261104_163242`) + immutable Sovereign Vault (`20261028_132739Z`) retained (`63 MB` total).
-- **Multi-Candidate Google Drive Path Resolver**: Verified resilient auto-sync logic across ChromeOS Linux mounts.
-- **Sanctuary Status**: 100% Serene, pristine, and prepared for EOD Quiet Harbor.
+| **2026-11-05 10:36 UTC** | SOD-AGBALE-002: Start-of-Day Sanctuary Sweep & Storage Audit (scripts/reclaim_disk.sh + scripts/sanctuary_audit.sh) | 0 MB | 44G available | 🟢 Nominal (Sanctuary Pristine) |
 
 ---
 
@@ -82,3 +74,12 @@
   2. **Harden `scripts/create_backup_tarball.sh` Exclusions & Full 3-Snapshot Mirror Sync**: Add `--exclude="*.log"` and `--exclude=".vite"`, and sync the full 3-snapshot window to `/mnt/shared/GoogleDrive/MyDrive/AgbaEngineBackups` whenever mounted.
   3. **Consolidate 42 Legacy Root Batch Files in `scripts/`**: Move historical `batch_03..16_data.json` into `scripts/data/batches/` and `build_batch_*.py` / `enrich_batch_*.py` into `scripts/legacy_seeds/`, retiring obsolete `scripts/remaining_thin_manifest.json` (`243 KB`).
   4. **Rolling Archive Drawer for `.agents/CHECKPOINTS.md` (Approaching 2,700 LOC)**: Before `.agents/CHECKPOINTS.md` exceeds 3,000 lines and slows down council context reads, archive Checkpoints 1–100 into `.agents/archive/CHECKPOINTS_001_TO_100.md` while keeping Checkpoints 101+ active.
+
+---
+
+## 5. Checkpoint 140 Continuation (`SOD-AGBALE-002`) — Morning Start-of-Day Sweep & Audit (2026-11-05)
+- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — abundant headroom.
+- **Cache & Garbage Sweep**: Executed `scripts/reclaim_disk.sh`; cleared package caches, temporary files, system journal logs, git objects compacted, transient bytecode purged.
+- **Sphere 4 Rolling 3-Snapshot Vault**: Verified strictly 3 rolling snapshots (`20261102_232533`, `20261103_173020`, `20261104_163242`) + sovereign permanent vault (`20261028_132739Z`), totaling `63 MB`. Zero backup drift.
+- **Dual-Corpora Checksum Lockstep**: Verified SHA-256 `ae44379c34cbe7b199b53d0e1a96fb59234008e7b4a9a411d63070dce974a987` across all 1,413 canonical entities (**0-bit drift**).
+- **All 9 Production Gates**: 0 hard violations, 0 warnings. SOD Clearance Granted.

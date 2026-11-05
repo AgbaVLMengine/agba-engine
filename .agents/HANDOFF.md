@@ -2,24 +2,77 @@
 
 > **Supervised By**: `Àgbà` (`agba-pa-architect` — Main P.A. & Chief Co-Architect)  
 > **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
-> **Active Focus**: 🎙️ **HANDOFF-ACOUSTIC-CONSTELLATION-001 (THE 5-CUSTODIAN LIVING AUDIO HEARTH & BATCH 19 ORAL LITERATURE)**
+> **Active Focus**: 🧬 **HANDOFF-LINGUISTIC-ANCHOR-001 (ONTOLOGICAL BOUNDARY: ORÚKỌ VS. ÈRÒ ÌJÌNLẸ̀ & GENERATIVE ONOMASTIC MORPHOLOGY)**
 
 ---
 
 ## 🌅 THE MORNING TRAY (`ÀTẸ ÀÁRỌ̀`) — 15-SECOND RESUMPTION COCKPIT
-*(Updated under Ọlọ́yè Ìtọ́jú's Sanctuary Law — Checkpoint 140)*
+*(Ratified by Kábíyèsí Àrùnà Ọlànrewájú Kábírù — Nov 05, 2026)*
 
-1. **Immediate Next Task (Batch 20 & Live Playback Polish)**:
-   - Ingest **Batch 20** (25 entities) via `scripts/data/batches/batch_20_data.json` and `batch_enricher.py`, slicing thin entities from **541 down to 516**!
-   - Continue field-testing `MultiVoiceAcousticPlayer.jsx` in Cell 2 of `EntityBentoDeck.jsx` across mobile and desktop.
+1. **Strategic Directive: Slow Down, Halt Batch Racing & Solve the Root Cause**:
+   - Ingestion sprints (Batch 20) are **TEMPORARILY FROZEN** by royal decree.
+   - Core Priority: Solve the root linguistic failure in Yorùbá onomastics so the engine permanently grasps the difference between a **Personal Name (`Orúkọ`)** and a **Philosophical Concept (`Èrò Ìjìnlẹ̀`)**, and implements a **Generative Morphological Grammar** capable of parsing names that haven't even been named yet.
 2. **Corpus & Ledger Baseline**:
-   - Master Corpus: **1,413 canonical entities** in bit-for-bit lockstep (`SHA-256: ae44379c...`, 0 bits drift).
-   - Thin Manifest: **541 thin entities remaining** (Batches 17, 18, and 19 complete; 100 thin nodes eliminated in sprint!).
-   - Audio Assets: **143 stems (100% NFC normalized)**; 15 canonical entities directly linked (66 stems); 53 royal ensemble stems.
-   - Onomastic Suite: **29 / 29 (100.0%) PASS** in `< 120ms` (`Yetunde`, `Babatunde`, `Ibukun`, `Temilade` anchored).
-   - Storage Headroom: **44 GB available NVMe** (12% disk used, 88% free headroom, 3-backup cap enforced).
+   - Master Corpus: **1,413 canonical entities** in bit-for-bit lockstep (`SHA-256: ae44379c...`, 0 bits drift). Note: Twin node on `Èjì Ogbè` staged for consolidation.
+   - Thin Manifest: **541 thin entities remaining** (held steady until linguistic accuracy hits 95%–97%).
+   - Storage Headroom: **44 GB available NVMe** (Google Drive backups 100% synced).
 3. **Primary Health Verification Command**:
-   - `bash scripts/sanctuary_audit.sh && cd web && npm run build` (Current: 0 hard violations, 0 warnings, build in 1.21s).
+   - `bash scripts/sanctuary_audit.sh && cd web && npm run build` (Current: 0 hard violations, 0 warnings).
+
+---
+
+## 🏛️ THE SOVEREIGN PLENARY ON LINGUISTIC PRIMACY & ONOMASTIC INTEGRITY (NOV 05, 2026)
+
+> ### 👑 *Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù*
+> *"It's no longer about getting tasks done, it's now about how accurately are we getting them done. If we are solving a problem it's best to solve them with a lasting solution, to avoid coming back to the same problem over and over again. We have to teach the engine the basic differences between a Personal name and Philosophical concept. If the engine can't fully grasp the simple difference between the two, at any point in time where a Name or Philosophical concept we never ingested is input into it, it is bound to break again."*
+
+### 1. The Forensic Evidence from Kábíyèsí's Live Audit
+1. **The "Orírun" Hallucination (`Orí` + `Run`)**:
+   - **User Input**: Querying `"Ebi"` surfaces living variant `"Orirun"`. Clicking it opens `Orúkọ Mi`:
+     `Orúkọ Mi: “Orírun” (Class A (Theophoric/Nominal Prefix + Verb))`  
+     `Orí (Inner spiritual head, personal destiny & divine consciousness) + Run (Verbal predicate signifying the manifest action of Orí)`
+   - **Forensic Diagnosis**: `Orírun` is a sacred philosophical noun (*Èrò Ìjìnlẹ̀*) meaning **"Ancestral Origin / Fountainhead of Being"** (*Orí* [source] + *ìrun* [spring]). It is **NOT** a personal name! The algorithm blindly assumed any token starting with `ori` is a personal name and chopped it into a fake verb `run`!
+2. **Generic Verbal Predicates (The Static Filler Trap)**:
+   - `Adébísí`: Output `Bisi: Verbal predicate signifying the manifest action of Adé (generic)`. (True: *bísí* = "has multiplied / birthed increase").
+   - `Adélajà`: Output `Laja: Verbal predicate signifying the manifest action of Adé (generic)`. (True: *lajà* = *la èjọ̀ / la ìjà*, "crown reconciles disputes / brings peace").
+   - `Adéribigbé`: Output `Ribigbe: Verbal predicate signifying the manifest action of Adé`. (True: *rí ibi gbé* = "the crown has found a worthy dwelling place").
+   - **Kábíyèsí's Warning**: If we only hardcode `bísí`, `lajà`, and `rí ibi gbé`, what happens when a user types `Adébímpé`, `Adéníkẹ́`, `Adéníyì`, `Adélakùn`? It breaks again!
+3. **The Unanchored Names (`Akín`, `Ìléríolúwa`, `Ìmísíolúwa`, `Afọlábí`, `Mótúnrayọ̀`)**:
+   - `Akín` currently retrieves `Ọlá` because `Akín` was omitted from `onomasticLexicon.js` and does not exist as a standalone Sovereign Parent in the master corpus.
+   - What happens when a user inputs names like `Ìléríolúwa` (*Ìlérí* [Promise of] + *Olúwa* [the Lord]), `Ìmísíolúwa` (*Ìmísí* [Divine Inspiration]), `Afọlábí` (*A* + *fi* + *ọlá* + *bí*), or `Mótúnrayọ̀` (*Mo* + *tún* + *rí* + *ayọ̀*)? Without generative grammar, every single one of these fails.
+4. **Corpus Gaps & Misclustering**:
+   - `Dàńdógó`: Searching for the supreme royal pleated robe retrieves `Òjòjò` (a fried water-yam snack) because `Dàńdógó` is completely absent from the corpus (0 records).
+   - `Bọ̀lì`: Roasted plantain (*ọ̀gẹ̀dẹ̀ yíyan*) is clustered under Yam (*Iṣu*).
+   - `Ogun Ìbílẹ̀`, `Ogun Ọ̀yọ́ àti Ìbàdàn`, `Bàbá Ìkòyí`: Generic filler descriptions.
+   - `Balógun Òdélúkù`, `Balógun Olúyòlé`, `Jím̀bà`, `Látẹ́jú`, `Kúrúnmí`: Crucial 19th-century Yorùbá military leaders missing or severed from the Balógun matrix.
+
+---
+
+### 2. The Architectural Solution: Two Foundations
+
+#### Foundation A: First-Class Ontological Gate (Personal Name vs Philosophical Concept)
+- **Rule 1: Knowledge Corpus Preemption (Anti-Onomastic Usurpation)**:
+  - If a term exists in the canonical 1,413 corpus or represents an established philosophical/cosmological concept (`Orírun`, `Ìwà Rere`, `Àṣẹ`, `Àjọ̀dún`, `Orí`, `Ọ̀rọ̀`), it MUST NEVER be routed into the `Orúkọ Mi` personal name decomposer. It must open its Sovereign Knowledge Cell in `Àárín Ìmọ̀`.
+- **Rule 2: Onomastic Intent Qualification**:
+  - The engine must only trigger morphological name decomposition when the query matches authentic anthroponymic grammar or when explicitly in `Orúkọ Mi` mode.
+
+#### Foundation B: Generative Morphological Grammar of Yorùbá Names
+Yorùbá names are structured, rule-governed sentences. We must codify the **4 Generative Structural Templates** established by Samuel Johnson, J.F. Odunjo, and Prof. Wande Abimbola:
+
+| Template | Grammatical Structure | Core Morpheme Components | Examples (Living & Unborn) |
+| :--- | :--- | :--- | :--- |
+| **Template 1: Nominal/Theophoric + Verb Phrase** | `[Prestige/Deity Prefix] + [Active Verb/Predicate]` | `Adé-`, `Ọlá-`, `Ògún-`, `Ọya-`, `Ṣàngó-`, `Ayọ̀-`, `Akín-` + `bísí`, `níyì`, `kẹ́`, `bímpé`, `lajà`, `dàpọ̀`, `wálé`, `kúnlé` | `Adébímpé`, `Adéníkẹ́`, `Adéníyì`, `Akíntọ́lá`, `Ògúndìran`, `Ọláwálé` |
+| **Template 2: Pronominal Sentence / Action Clause** | `[Pronoun (Mo/A)] + [Tense/Modal (tún/fi/ti)] + [Verb] + [Noun]` | `Mo-` (I), `A-` (We) + `tún` (again), `fi` (with) + `rí` (see), `bí` (give birth), `dé` (arrive) + `ayọ̀`, `ọlá`, `olúwa` | `Mótúnrayọ̀`, `Afọlábí`, `Moróhúnm̀bọ́`, `Ayọ̀délé`, `Adébáyọ̀` |
+| **Template 3: Nominalized Theocentric Covenant** | `[Gerund/Nominalized Prefix (Ì...)] + [Theophoric Suffix (Olúwa/Ọlọ́run)]` | `Ìlérí-` (Promise), `Ìmísí-` (Inspiration/Breath), `Ìfẹ́-` (Love), `Ìbùkún-` (Blessing), `Ìrètí-` (Hope) + `-Olúwa` | `Ìléríolúwa`, `Ìmísíolúwa`, `Ìfẹ́olúwa`, `Ìbùkúnolúwa`, `Ìrètíolúwa` |
+| **Template 4: Sacred Circumstance & Oríkì Pet Names** | `[Birth Phenomenon / Attributive Praise Prefix]` | Circumstantial: `Táyé`, `Kẹ́hìndé`, `Ìdòwú`, `Àlàbá`, `Òní`<br>Oríkì Attributive: `À-` + `verb` (`Àyìnlá`, `Àkànbí`, `Àkànmú`, `Àdùkẹ́`, `Àbẹ̀kẹ́`, `Àpèkẹ́`) | `Àyìnlá`, `Àkànbí`, `Àdùkẹ́`, `Àlàbá`, `Ìdòwú`, `Táyé` |
+
+---
+
+### 3. Standing Directive for Ọlọ́yè Sùúrù and Ọlọ́yè Àrọ̀kìn
+- **No code execution is permitted yet.**
+- Both specialists are summoned to review this plenary record and provide their domain wisdom:
+  - **Ọlọ́yè Sùúrù (`suuru-qa`)**: Formulate the automated test fixtures across all 4 Generative Templates (including unseen and compound names) to assert 95%–97% zero-shot precision without generic fallbacks.
+  - **Ọlọ́yè Àrọ̀kìn (`arokin-archivist`)**: Validate the philosophical boundary dictionary (`Orírun` and philosophical nouns) and design the Balógun pantheon ingestion payload (`Balógun Òdélúkù`, `Balógun Olúyòlé`, `Jím̀bà`, `Látẹ́jú`, `Kúrúnmí`, `Dàńdógó`).
 
 ---
 

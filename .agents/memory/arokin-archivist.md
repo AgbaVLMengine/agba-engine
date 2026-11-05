@@ -394,6 +394,19 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live across 1,413 entities.
     - `bash scripts/review.sh`: **0 hard violations, 0 warnings** across all 9 production gates.
     - `cd web && npm run build`: Compiled production client bundle cleanly in **1.18s** (1,934 modules transformed, 0 errors).
+- **2026-11-05 [HANDOFF-LINGUISTIC-ANCHOR-001: Ontological Boundary & Corpus Integrity Plenary]**:
+  - **Context from Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+    - "It's no longer about getting tasks done, it's now about how accurately are we getting them done. If we are solving a problem it's best to solve them with a lasting solution, to avoid coming back to the same problem over and over again."
+    - Kábíyèsí audited live mobile and retrieval behavior, revealing critical linguistic and corpus gaps:
+      - `Orírun` (Sacred Ancestral Origin concept) was treated as a personal name and chopped into `Orí` + fake verb `Run`.
+      - `Dàńdógó` (the supreme 100-yard pleated royal robe) is completely missing from the corpus (0 records), causing search to fall back to `Òjòjò` (fried water yam).
+      - `Bọ̀lì` (roasted plantain) is erroneously clustered under `Iṣu` (yam).
+      - Crucial 19th-century martial giants (`Balógun Òdélúkù`, `Balógun Olúyòlé`, `Jím̀bà`, `Látẹ́jú`, `Kúrúnmí`) are missing sub-variants or detached from the Balógun/Martial matrix.
+  - **Àrọ̀kìn's Mandate**:
+    - Review `.agents/HANDOFF.md` section on the First-Class Ontological Gate: separating Personal Names (`Orúkọ`) from Philosophical/Cultural Concepts (`Èrò Ìjìnlẹ̀`).
+    - Authoritative boundary definition: Ensure `Orírun` and similar concepts remain exclusively within `Àárín Ìmọ̀` and cannot be hijacked by the onomastic decomposer.
+    - Prepare canonical 14-tier payload for missing sovereign nodes: `Dàńdógó`, `Balógun Òdélúkù`, `Balógun Olúyòlé`, `Jím̀bà`, `Látẹ́jú`, and link `Kúrúnmí` into the Balógun/Martial matrix.
+    - Stand by: zero code changes until Council consensus is reached.
 
 
 

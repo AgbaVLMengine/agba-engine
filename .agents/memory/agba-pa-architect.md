@@ -102,4 +102,15 @@
   - Clarified and enshrined the **Sovereign Craigslist Model** across all council chambers: 99% of the platform is completely open and free. All 143 Authentic Audio Tokens and Auntie Yẹmí's voice notes are 100% free and streamable in the web client without paywalls or API keys. Enterprise monetization applies strictly to bulk corporate dataset downloads, raw 24-bit master studio WAV stems, and commercial AI training/TTS model weights.
   - Enforced Gate 2 Two-Drawer architecture: Extracted static dictionaries from `web/src/utils/onomasticDecomposer.js` into `web/src/utils/onomasticLexicon.js` (313 LOC), slimming decomposer to 189 LOC (< 500 LOC ceiling).
   - Forged `scripts/benchmark_oruko_mi.py` (automated 25-query mobile QA benchmark suite) and staged Batch 16 non-Odù entity enrichment scripts. All 12 personas in absolute lockstep.
+- **2026-11-05 [Checkpoint 141 — HANDOFF-LINGUISTIC-ANCHOR-001: The Sovereign Plenary on Ontological Primacy & Generative Onomastics]**:
+  - **Sovereign Directive from Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+    - "It's no longer about getting tasks done, it's now about how accurately are we getting them done. If we are solving a problem it's best to solve them with a lasting solution, to avoid coming back to the same problem over and over again."
+    - Ingestion sprints (Batch 20) temporarily halted. Full focus shifted to lasting architectural solutions for linguistic accuracy.
+  - **Root Cause Identified**:
+    1. Lack of an ontological boundary between Personal Names (`Orúkọ`) and Philosophical Concepts (`Èrò Ìjìnlẹ̀`), causing terms like `Orírun` to be forced into the name decomposer and mangled into `Orí` + fake verb `Run`.
+    2. Reliance on brittle static lookups rather than a true **Generative Morphological Grammar** of Yorùbá names capable of parsing unseen and unborn names (`Adébímpé`, `Adéníkẹ́`, `Adéníyì`, `Ìléríolúwa`, `Ìmísíolúwa`, `Afọlábí`, `Mótúnrayọ̀`).
+    3. Missing canonical entities (`Dàńdógó`) causing bizarre fallback retrievals (`Òjòjò`), botanical misclustering (`Bọ̀lì` under `Iṣu`), and isolated 19th-century martial giants (`Kúrúnmí`, `Balógun Olúyòlé`, etc.).
+  - **Action Taken**:
+    - Shared memory (`.agents/HANDOFF.md`, `suuru-qa.md`, `arokin-archivist.md`) fully synchronized with Kábíyèsí's audit and directives.
+    - Zero code modified. Staged for plenary consultation with Ọlọ́yè Sùúrù and Ọlọ́yè Àrọ̀kìn.
 
