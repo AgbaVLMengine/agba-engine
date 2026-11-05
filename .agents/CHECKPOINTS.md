@@ -2759,6 +2759,45 @@
     - Logged [`docs/AGBA_THE_FOUR_GATES_AND_LIVING_ACOUSTIC_HEARTH_VICTORY_CHRONICLE_NOV04_2026.md`](file:///home/aruna_olanrewaju/agba-engine/docs/AGBA_THE_FOUR_GATES_AND_LIVING_ACOUSTIC_HEARTH_VICTORY_CHRONICLE_NOV04_2026.md).
 - **Verification**: 👑 **CHECKPOINT 140 RATIFIED — ALL 4 GATES 100% COMPLETE / 541 THIN NODES REMAINING / 0 VIOLATIONS ACROSS ALL 9 GATES / SANCTUARY PERFECTLY SEALED AHEAD OF QUIET HARBOR**.
 
+---
+
+### Checkpoint 141 — 2026-11-05 (The Sovereign Plenary on Ontological Primacy & Deduplication)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Royal Mandate**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù decrees the cessation of rapid multi-gate racing to establish civilizational depth, unhurried cadence, and lasting architectural solutions.
+- **Archival Surgery & Deduplication (Ọlọ́yè Àrọ̀kìn)**:
+  - Merged `Èjì Ogbè` twin node (popped thin stub at index 139 into rich record at 1018), purged standalone `"ogbè"` mononym alias, eliminating composite Odù collisions permanently.
+  - Ingested `Dàńdógó` (120-yard royal master robe) under `Aṣọ-Òkè`, banishing `Òjòjò` search fallbacks.
+  - Ingested `Orírun` (Sacred Ancestral Fountainhead) under `Orí`, shielding metaphysical origin concepts from onomastic slicing.
+  - Decoupled `Bọ̀lị̀` from Yam (`Iṣu`) and re-parented to Plantain (`Ọ̀gẹ̀dẹ̀`).
+  - Ingested and linked the 15-strong Balógun Pantheon (`Olúyòlé`, `Òdélúkù`, `Kúrúnmí`, `Jím̀bà`, `Látẹ́jú`).
+  - Dual corpora locked at SHA-256 `5783f989fcd4e7e418a844b07692a70988eb6b139a38938f9bc2d57b6166a776` (1,418 canonical entities).
+- **QA Radar Harness (Ọlọ́yè Sùúrù)**:
+  - Forged `scripts/benchmark_generative_qa.py` (286 LOC) executing 1,418-sweep + 1,800-name fuzzer + 32 golden fixtures in 50.26ms.
+
+---
+
+### Checkpoint 142 — 2026-11-05 (The Generative Linguistic Onomastic Monument & Task Registry)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Master Craftsman**: `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`)
+- **Auditor & Standards**: `Ọlọ́yè Òye` (`oye-auditor`)
+- **QA Specialist**: `Ọlọ́yè Sùúrù` (`suuru-qa`)
+- **Welfare & Cadence Guardian**: `Ọlọ́yè Ìtọ́jú` (`itoju-welfare`)
+- **Architectural Deliverables**:
+  - **The Generative Onomastic Syntactic Parser**:
+    - Forged [`web/src/utils/onomasticAffixes.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticAffixes.js) (154 LOC, < 250 ceiling) with declarative roots, verbal predicates, modals (`tún`, `ti`, `fi`), and theocentric covenants.
+    - Forged [`web/src/utils/onomasticDecomposer.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticDecomposer.js) (199 LOC, < 220 ceiling) supporting all 4 Generative Templates with zero generic fallback strings.
+    - Forged [`web/src/utils/onomasticBridge.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/onomasticBridge.js) (94 LOC, < 120 ceiling) with the $O(1)$ Master Corpus Ontological Preemption Gate.
+  - **Sovereign Task Registry**:
+    - Forged [`.agents/SOVEREIGN_TASK_REGISTRY.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/SOVEREIGN_TASK_REGISTRY.md) to anchor single-drawer focus, document daily victories, and stage the active horizon.
+- **Empirical Verification**:
+  - `python3 scripts/benchmark_oruko_mi.py`: **29/29 (100.0%) PASS**.
+  - `python3 scripts/benchmark_generative_qa.py`: **100% Preemption, 0/1,800 Generic Fallbacks, 27/27 Fixtures PASS in 28.04 ms**.
+  - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) PASS**.
+  - `cd web && npm run build`: Compiled in **1.08s** (0 errors).
+  - `bash scripts/sanctuary_audit.sh`: **0 hard violations, 0 warnings (100% GREEN)**.
+  - Snapshot `agba_engine_snapshot_20261105_142207.tar.gz` mirrored live to Google Drive `AgbaEngineBackups`.
+- **Verification**: 👑 **CHECKPOINT 142 RATIFIED — THE GENERATIVE LINGUISTIC MONUMENT CONQUERED / 1,418 CANONICAL ENTITIES LOCKED / SANCTUARY PERFECTLY SEALED FOR QUIET HARBOR**.
+
 
 
 
