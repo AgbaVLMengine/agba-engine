@@ -6,7 +6,7 @@
  * Enforces:
  *   - Sùúrù's Canonical Sovereign Alias Map
  *   - Òye's Anti-Shadowing Rule (Canonical corpus entities take precedence)
- *   - Àgbẹ̀dẹ's Weak Noise Preemption (Onomastic names preempt weak fuzzy hits)
+ *   - Master Corpus Ontological Preemption Gate (Pillar 1)
  *   - Òye's Gate 9 Invariant Sanitizer (Biographical & Metaphysical safety)
  */
 
@@ -18,7 +18,9 @@ export const SOVEREIGN_ALIAS_MAP = {
   'Ẹyọ Owó': 'eyo_owo',
   'Akín': 'Ògún',
   'Ayọ̀': 'Ẹbí',
-  'Ọ̀rọ̀': 'Òye'
+  'Ọ̀rọ̀': 'Òye',
+  'Àmútọ̀runwá': 'Ẹbí',
+  'Olódùmarè': 'Ọ̀rọ̀'
 };
 
 export function resolveOnomasticZeroShot(query, masterCorpus = [], existingResults = []) {
@@ -26,15 +28,19 @@ export function resolveOnomasticZeroShot(query, masterCorpus = [], existingResul
   const qClean = query.trim();
   const qNorm = normalizeNFC(stripAccents(qClean).toLowerCase());
 
-  // 1. Òye's Anti-Shadowing Rule: If an exact canonical corpus entity matches, do not synthesize
+  // 1. Pillar 1: Master Corpus Ontological Preemption Gate (Anti-Shadowing & Anti-Chopping)
   const exactMatch = masterCorpus.find((e) => {
     const tNorm = normalizeNFC(stripAccents(e.title || '').toLowerCase());
     const idNorm = normalizeNFC(stripAccents(e.id || '').toLowerCase());
-    return tNorm === qNorm || idNorm === qNorm;
+    if (tNorm === qNorm || idNorm === qNorm) return true;
+    if (Array.isArray(e.aliases)) {
+      if (e.aliases.some((a) => normalizeNFC(stripAccents(String(a) || '')).toLowerCase() === qNorm)) return true;
+    }
+    return false;
   });
   if (exactMatch) return null;
 
-  // 2. Perform 5-Class Onomastic Decomposition
+  // 2. Perform 4-Template Onomastic Sentence Decomposition
   const decomposition = decomposeYorubaName(qClean);
   if (!decomposition || !decomposition.sovereign_parents || !decomposition.sovereign_parents.length) {
     return null;
