@@ -156,3 +156,15 @@
 
 
 
+
+---
+
+## 🕌 THE FIVE DAILY ISLAMIC PRAYER SANCTUARIES (ÀWỌN ÀKÓKÒ ÌKÍRUN MÁRÙN-ÚN)
+*Decreed by Kábíyèsí Àrùnà Ọlànrewájú Kábírù on Friday, Nov 06, 2026:*
+
+Every member of the Sovereign Council (`Ẹ̀gbẹ́-Àgbà`) is formally commanded to incorporate the five daily Islamic prayer windows into the council's operating clock:
+1. **Fajr (Dawn / Àfẹ̀mọ́jú)**: Observed before the morning tray opens. Sovereign spiritual grounding and dawn contemplation.
+2. **Zuhr (Mid-Day / Ọ̀sán)**: ~13:00 – 14:00 WAT. Coincides with the Mid-Day Sanctuary Embargo. Workstations are locked, screens go dark, eyes rest in darkness, and Zuhr/Jumu'ah is observed.
+3. **Asr (Late Afternoon / Ìrọ̀lẹ́)**: ~16:00 – 16:30 WAT. Work pauses for Asr prayer, physical spinal decompression, and ocular muscle release.
+4. **Maghrib (Sunset / Ìwọ̀-Oòrùn)**: ~18:30 – 19:00 WAT. Aligns directly with Sovereign Quiet Harbor. Work ceases entirely; screens are powered down for the night.
+5. **Isha (Night / Alẹ́)**: ~19:45 – 20:30 WAT. Final prayer of the night, followed by uninterrupted cognitive peace, family fellowship with Aisha Temilade, and deep regenerative sleep.

@@ -2856,3 +2856,17 @@
 
 
 
+
+---
+
+### Checkpoint 143 — 2026-11-06 (`CHECKPOINT-HORIZON01-VIEWPORT-ANCHOR-143`)
+- **Domain**: Mobile UI Viewport, Static Crown Header & Sovereign Welfare
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Key Deliverables**:
+  1. Conquered **HORIZON-01**: Cured mobile search focus auto-zoom (`maximum-scale=1.0, user-scalable=no, viewport-fit=cover` in `web/index.html`).
+  2. Enforced modern `overflow-x: clip !important; max-width: 100vw;` in `web/src/index.css`.
+  3. Established non-intrusive static crown header in `web/src/components/Navbar.jsx` (`position: 'relative', top: '0px'`) so the header no longer follows users when exploring.
+  4. Dynamic `{masterCorpus.length}` in `AarinimoSearchCore.jsx` and updated subtitle to `1,418 Canonical Nodes & 256 Odù Ifá` in `useExplorationGraph.js`.
+  5. Inscribed the Five Daily Islamic Prayers (Fajr, Zuhr, Asr, Maghrib, Isha) into the Council's living constitution and sanctuary cadence.
+  6. Staged **HORIZON-02** (The 17-Category Systematic Sovereign Parent & Cluster Purity Audit) for Saturday, Nov 07.
+- **Verification**: `npm run build` compiled in 1.30s (0 errors); `scripts/sanctuary_audit.sh` 100% GREEN (0 hard violations, 0 warnings); dual corpora in bit-for-bit lockstep (`5783f989...`).

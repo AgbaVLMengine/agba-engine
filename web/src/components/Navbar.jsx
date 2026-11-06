@@ -20,8 +20,8 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
   return (
     <header className="glass-panel" style={{
-      position: 'sticky',
-      top: '12px',
+      position: 'relative',
+      top: '0px',
       zIndex: 50,
       margin: '8px auto 16px auto',
       maxWidth: '1280px',
