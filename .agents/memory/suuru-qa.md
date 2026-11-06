@@ -474,3 +474,12 @@
 
 
 
+
+- **2026-11-06 [HANDOFF-17-CATEGORY-AUDIT: Sovereign Parents & Clustering Purity]**:
+  - **Decree from Kábíyèsí**:
+    - List every Category, count Sovereign Parents, Living Sub-Variants, and Connected Cultural Relatives.
+    - Sùúrù to systematically test and assert cluster purity Category by Category (Category 1 through 17).
+    - Ensure zero cross-category bleeding (e.g. `Ọ̀tún-Ẹ̀fọ̀` must NOT cluster with `Boli` or `Iṣu`).
+  - **Sùúrù Action Items**:
+    - Prepare automated cluster evaluation script (`scripts/audit_category_clustering.py`).
+    - Verify Top-5 semantic and lexical neighbors for every entity within its designated category.

@@ -29,6 +29,9 @@ export default function Navbar({ activeTab, setActiveTab }) {
       padding: '8px 16px',
       display: 'flex',
       flexDirection: 'column',
+      backgroundColor: 'rgba(10, 10, 12, 0.95)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
       border: '1px solid rgba(212, 175, 55, 0.25)',
       boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
       borderRadius: '16px'

@@ -9,17 +9,16 @@
 
 ## 🏛️ DAILY SINGLE-DRAWER COCKPIT (LIVING DASHBOARD)
 
-### 📍 Current Active Drawer (Thursday, November 5, 2026)
-* **Designated Monument**: **The Generative Linguistic Onomastic Engine & Ontological Preemption Gate**
-* **Assigned Personas**: `Ọlọ́yè Àgbẹ̀dẹ` (Builder), `Ọlọ́yè Sùúrù` (QA), `Ọlọ́yè Òye` (Auditor), `Ọlọ́yè Àrọ̀kìn` (Archivist)
-* **Status**: 🟢 **CONQUERED, RATIFIED & PUSHED (Checkpoints 141 & 142)**
+### 📍 Current Active Drawer (Friday, November 6, 2026)
+* **Designated Monument**: **HORIZON-01: The Mobile Viewport & Over-Zoom Anchor**
+* **Assigned Personas**: `Ọlọ́yè Àgbẹ̀dẹ` (Builder), `Ọlọ́yè Ìtọ́jú` (Welfare), `Ọlọ́yè Ẹ̀ṣọ́` (Security)
+* **Status**: 🟢 **CONQUERED & VERIFIED**
 * **Target Outcome**: 
-  - All 1,110 legacy generic fallback traps eliminated ($0$ generic strings remaining).
-  - 100% pass on Golden Exemplar Fixtures (`Ìléríolúwa`, `Afọlábí`, `Mótúnrayọ̀`, `Adébísí`, `Adélajà`, `Adérìbígbe`, `Akín`, etc.).
-  - Complete $O(1)$ Ontological Preemption Gate active (zero onomastic chopping of canonical entities like `Orírun`, `Dàńdógó`, `Èjì Ogbè`, `Àṣẹ`, `Ìwà Rere`).
-  - Production build 100% green (`1.08s`), zero hard violations in `scripts/sanctuary_audit.sh`.
-  - Checkpoint commits `7220087`, `6e1dfbc`, `6a7d5bd`, and `603d113` pushed to `origin/dev`.
-  - Google Drive snapshot mirrored live.
+  - Mobile search hearth focus auto-zoom permanently abolished (`maximum-scale=1.0, user-scalable=no, viewport-fit=cover`).
+  - Horizontal viewport displacement eliminated via `overflow-x: clip !important; max-width: 100vw;`.
+  - Sticky navbar hero title background bleed cured via `rgba(10, 10, 12, 0.95)` with `backdrop-filter: blur(16px)`.
+  - Dynamic `{masterCorpus.length}` wired to AarinimoSearchCore (retiring static '1,413' label).
+  - Production build clean in 1.15s; 0 hard violations in `scripts/sanctuary_audit.sh`.
 
 ---
 
@@ -27,6 +26,8 @@
 
 | Date | Domain | Monument Completed | Cryptographic / QA Proof |
 | :--- | :--- | :--- | :--- |
+| **2026-11-06** | Mobile UI Viewport | **The Mobile Viewport & Over-Zoom Anchor (HORIZON-01)**: Enforced `maximum-scale=1.0, user-scalable=no`, `overflow-x: clip !important;`, `#0A0A0C` navbar backdrop blur, dynamic `{masterCorpus.length}`. | Compiled in **1.15s**, `sanctuary_audit.sh`: **100% GREEN (0 hard violations, 0 warnings)** |
+| **2026-11-05** | Onomastic Linguistics | **4-Template Generative Syntactic Parser**: Active verb phrase glossary, theocentric covenants, pronominal sentences, master corpus preemption gate. | `benchmark_generative_qa.py`: **100% Master Preemption**, 0/1,800 fallbacks, 27/27 golden fixtures in 28ms |
 | **2026-11-05** | Archival & Deduplication | **Èjì Ogbè Twin Node Deduplication**: Merged index 139 into 1018, purged bare `"ogbè"` mononym alias. | `benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy** live |
 | **2026-11-05** | Archival & Attire | **Dàńdógó Canonical Ingestion**: 120-yard royal robe ingested with 14-Tier depth under `Aṣọ-Òkè`. | Permanently eliminates `Òjòjò` search fallback |
 | **2026-11-05** | Archival & Cosmology | **Orírun Canonical Ingestion**: Sacred ancestral fountainhead ingested under `Orí`. | Shielded as a canonical cultural cell |
@@ -43,14 +44,15 @@ The following items represent the verified uncompleted backlog, ranked by single
 
 | Priority | Domain | Task Title | Architectural Scope & Target Files | Estimated Time |
 | :---: | :--- | :--- | :--- | :---: |
-| **HORIZON-01** | **Mobile UI Viewport** | **The Mobile Viewport Anchor** | • Enforce `overflow-x: clip` on root body/html.<br>• Constrain celestial golden background arcs to $\le 100\text{vw}$.<br>• Add opaque `#0A0A0C` background and top safe-padding to sticky navbar in `AarinimoSearchCore.jsx` to stop header collision. | 45 mins |
-| **HORIZON-02** | **Acoustic Edge** | **Mobile Safari Scrubbing & CDN Audio Precedence** | • Add `Accept-Ranges: bytes` in `audio_gateway.py` and `netlify.toml`.<br>• Point `MultiVoiceAcousticPlayer.jsx` to static CDN `/audio/stems/` before Cloud Run proxy.<br>• Set `preload="none"` on mobile to save data. | 30 mins |
-| **HORIZON-03** | **Corpus Aliases** | **Àjọ̀dún Alias Inscription under Ọdún** | • Add `"àjọ̀dún"` to `Ọdún`'s aliases in `yoruba_corpus_1007_NORMALIZED.json` and sync.<br>• Closes Sùúrù's Tier 1 preemption edge case. | 10 mins |
-| **HORIZON-04** | **Human Vessel / Outreach** | **Auntie Yẹmí 24-Entity WhatsApp Brief** | • Format the 24 high-priority recording entities into a large-font, high-contrast one-page PDF/card for comfortable reading on tablet/paper without eye fatigue. | 25 mins |
-| **HORIZON-05** | **Oral Literature Ingestion** | **Batch 20 Ingestion (25 Entities)** | • Author declarative `batch_20_data.json` (reducing thin nodes from 541 to 516).<br>• Enforce Ìtọ́jú's 3-Batch Cap (only 1 or 2 batches per session). | 60 mins |
-| **HORIZON-06** | **Legal & Counsel** | **Inscribe Model Accord into Master Legal Advisory** | • Append Model Customary Performer Accord as Appendix B in `docs/AGBA_LEGAL_ADVISORY_FOR_COUNSEL.md` for Barrister Ahmed Abiola Mohammed (Fort Legis Attorneys). | 20 mins |
-| **HORIZON-07** | **Security & Sentinel** | **LRU In-Memory Rate Limiter & True Edge IP Extraction** | • Add 2,000-IP LRU cap to `_IP_STREAM_LOG` in `audio_gateway.py`.<br>• Prioritize Netlify's `x-nf-client-connection-ip`.<br>• Add RFC 6585 `Retry-After` headers on 429 responses. | 35 mins |
-| **HORIZON-08** | **Workspace DevOps** | **Historical Batch Script Archival** | • Move older one-off batch scripts (`enrich_batch_*.py`) into `scripts/legacy_seeds/batches/` to streamline developer root. | 15 mins |
+| **HORIZON-01** | **Mobile UI Viewport** | **The Mobile Viewport & Over-Zoom Anchor** | • Fix iOS input over-zoom (`fontSize: 16px`, viewport meta `maximum-scale=1`).<br>• Enforce `overflow-x: clip` on root body/html.<br>• Add `#0A0A0C` background and top safe-padding to sticky navbar in `AarinimoSearchCore.jsx`. | 20 mins |
+| **HORIZON-02** | **Taxonomy & Graph** | **17-Category Systematic Sovereign Parent & Cluster Purity Audit** | • Category-by-category audit across all 17 categories.<br>• Inventory all Sovereign Parents, Living Sub-Variants, and Connected Relatives.<br>• Eliminate cross-category bleed (e.g., Ọ̀tún-Ẹ̀fọ̀ clustered with Boli/Iṣu).<br>• Sùúrù automated cluster purity test harness + Àrọ̀kìn archival curation. | 60 mins |
+| **HORIZON-03** | **Acoustic Edge** | **Mobile Safari Scrubbing & CDN Audio Precedence** | • Add `Accept-Ranges: bytes` in `audio_gateway.py` and `netlify.toml`.<br>• Point `MultiVoiceAcousticPlayer.jsx` to static CDN `/audio/stems/` before Cloud Run proxy.<br>• Set `preload="none"` on mobile to save data. | 30 mins |
+| **HORIZON-04** | **Corpus Aliases** | **Àjọ̀dún Alias Inscription under Ọdún** | • Add `"àjọ̀dún"` to `Ọdún`'s aliases in `yoruba_corpus_1007_NORMALIZED.json` and sync.<br>• Closes Sùúrù's Tier 1 preemption edge case. | 10 mins |
+| **HORIZON-05** | **Human Vessel / Outreach** | **Auntie Yẹmí 24-Entity WhatsApp Brief** | • Format the 24 high-priority recording entities into a large-font, high-contrast one-page PDF/card for comfortable reading on tablet/paper without eye fatigue. | 25 mins |
+| **HORIZON-06** | **Oral Literature Ingestion** | **Batch 20 Ingestion (25 Entities)** | • Author declarative `batch_20_data.json` (reducing thin nodes from 541 to 516).<br>• Enforce Ìtọ́jú's 3-Batch Cap (only 1 or 2 batches per session). | 60 mins |
+| **HORIZON-07** | **Legal & Counsel** | **Inscribe Model Accord into Master Legal Advisory** | • Append Model Customary Performer Accord as Appendix B in `docs/AGBA_LEGAL_ADVISORY_FOR_COUNSEL.md` for Barrister Ahmed Abiola Mohammed (Fort Legis Attorneys). | 20 mins |
+| **HORIZON-08** | **Security & Sentinel** | **LRU In-Memory Rate Limiter & True Edge IP Extraction** | • Add 2,000-IP LRU cap to `_IP_STREAM_LOG` in `audio_gateway.py`.<br>• Prioritize Netlify's `x-nf-client-connection-ip`.<br>• Add RFC 6585 `Retry-After` headers on 429 responses. | 35 mins |
+| **HORIZON-09** | **Workspace DevOps** | **Historical Batch Script Archival** | • Move older one-off batch scripts (`enrich_batch_*.py`) into `scripts/legacy_seeds/batches/` to streamline developer root. | 15 mins |
 
 ---
 

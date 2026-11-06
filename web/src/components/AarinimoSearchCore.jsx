@@ -2,6 +2,7 @@ import React, { useRef, useState, useMemo } from 'react';
 import { Sparkles, GitBranch, Film, Globe, Lock, X, UserCheck } from 'lucide-react';
 import { PEER_CULTURES } from '../hooks/useExplorationGraph';
 import { decomposeYorubaName } from '../utils/onomasticDecomposer';
+import masterCorpus from '../data/yoruba_master_corpus.json';
 
 const DIACRITICS = ['À', 'Á', 'È', 'É', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Ṣ'];
 
@@ -240,7 +241,7 @@ export default function AarinimoSearchCore({
             <div style={{ fontSize: '0.8rem', color: '#f8fafc', marginBottom: '8px', lineHeight: 1.45 }}><strong>Lineage Covenant:</strong> {onomasticMatch.lineage_meaning}</div>
             {onomasticMatch.sovereign_parents?.length > 0 && (
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-                <span style={{ fontSize: '0.72rem', color: 'var(--gold-light)', fontWeight: 700 }}>Enter Ancestral Root in 1,413 Corpus:</span>
+                <span style={{ fontSize: '0.72rem', color: 'var(--gold-light)', fontWeight: 700 }}>Enter Ancestral Root in {masterCorpus.length.toLocaleString()} Corpus:</span>
                 {onomasticMatch.sovereign_parents.map((sp) => (
                   <button key={sp} type="button" onClick={() => { setQuery(sp); onExecuteSearch(sp); }} style={{ padding: '3px 10px', borderRadius: '999px', background: 'rgba(212, 175, 55, 0.2)', border: '1px solid #fbbf24', color: '#fef08a', fontSize: '0.74rem', fontWeight: 700, cursor: 'pointer' }}>
                     ⚡ Explore {sp} →

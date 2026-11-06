@@ -83,3 +83,24 @@
 - **Sphere 4 Rolling 3-Snapshot Vault**: Verified strictly 3 rolling snapshots (`20261102_232533`, `20261103_173020`, `20261104_163242`) + sovereign permanent vault (`20261028_132739Z`), totaling `63 MB`. Zero backup drift.
 - **Dual-Corpora Checksum Lockstep**: Verified SHA-256 `ae44379c34cbe7b199b53d0e1a96fb59234008e7b4a9a411d63070dce974a987` across all 1,413 canonical entities (**0-bit drift**).
 - **All 9 Production Gates**: 0 hard violations, 0 warnings. SOD Clearance Granted.
+
+---
+
+## 6. Checkpoint 142 (`EOD-AGBALE-003`) — Pre-Retirement Storage Sweep & End-of-Day Sanctuary Audit (2026-11-05)
+- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — zero storage friction, 88% free headroom.
+- **Cache & System Cleanup**: Executed `scripts/reclaim_disk.sh`; safe purge on package caches (pip/npm), `/tmp`, journal logs, git object compaction (`git gc`), and transient bytecode.
+- **Sphere 4 Rolling 3-Snapshot Vault**: Today's EOD snapshot `agba_engine_snapshot_20261105_142207.tar.gz` (`20 MB`) generated and SHA-256 sealed. Exactly 3 rolling snapshots (`20261103_173020`, `20261104_163242`, `20261105_142207`) + permanent Sovereign Vault (`20261028_132739Z`) retained at `64 MB` total. Oldest snapshot (`20261102_232533`) cleanly rotated out.
+- **Dual-Corpora Bit-for-Bit Lockstep**: Certified post-Checkpoints 141 & 142 SHA-256 parity at `5783f989fcd4e7e418a844b07692a70988eb6b139a38938f9bc2d57b6166a776` (**0-bit drift**).
+- **All 9 Production Gates**: 0 hard violations, 0 warnings verified live via `scripts/sanctuary_audit.sh`.
+- **Sanctuary Status**: 100% serene, sealed, and ready for Kábíyèsí's restful retirement.
+
+---
+
+## 7. Friday Start-of-Day Sweep & Hygiene Audit (`SOD-AGBALE-003`) (2026-11-06)
+- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — abundant headroom.
+- **Vite Build Debris & Cache**: `web/dist/` completely wiped clean; `web/node_modules/.vite` purged.
+- **Dual-Corpora Checksum Lockstep**: SHA-256 bit-for-bit lockstep confirmed at `5783f989fcd4e7e418a844b07692a70988eb6b139a38938f9bc2d57b6166a776` across exactly 1,418 entities (**0-bit drift**).
+- **Gate 2 LOC Budget Verified**: `onomasticAffixes.js` (154 LOC), `onomasticDecomposer.js` (199 LOC), `onomasticBridge.js` (94 LOC). Zero active files exceed 500 LOC (maximum active file: 363 LOC).
+- **All 9 Production Gates**: 0 hard violations, 0 warnings. SOD Clearance Granted.
+| **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
+| **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |

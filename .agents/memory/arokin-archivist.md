@@ -416,3 +416,11 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
 
 
 
+
+- **2026-11-06 [HANDOFF-17-CATEGORY-AUDIT: Sovereign Parents & Clustering Purity]**:
+  - **Decree from Kábíyèsí**:
+    - Systematically map all 17 categories, auditing every Sovereign Parent, Living Sub-Variant, and Connected Cultural Relative.
+    - Audit miscategorized entities (e.g. `Ọ̀tún-Ẹ̀fọ̀` missing martial categorization, bizarre cross-domain pairings).
+  - **Àrọ̀kìn Action Items**:
+    - Build comprehensive category inventory manifests of Sovereign Parents vs Sub-Variants.
+    - Provide authentic historical and cultural lineages for connected relatives across each category.

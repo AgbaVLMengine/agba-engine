@@ -352,3 +352,25 @@ Yorùbá names are structured, rule-governed sentences. We must codify the **4 G
 
 
 
+
+---
+
+## 🏛️ THE 17-CATEGORY SYSTEMATIC CLUSTERING & SOVEREIGN PARENT AUDIT (NOV 06, 2026)
+
+> ### 👑 *Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù*
+> *"So this is what I want us to do, we have a total of 17 categories across our entire Corpus. I want us to list out each Category, The total number of Sovereign Parents under each category, The Living-Sub Variants under each Sovereign Parent and Connected Cultural Relatives and Variants! I will like Suuru to run a check across each Sovereign Parent and their Living Sub-Variants, Connected Cultural Relatives Category by Category. I will like us to inspect how accurately clustered our entities are. Once we are done assessing the accuracy between each Sovereign Parent and their Living Sub-Variants, Connected Cultural Relatives in a Category, we can push on to the next category till we are done with the entire 17 Categories."*
+
+### 1. Forensic Audit Analysis (Kábíyèsí's Mobile Audit, Nov 06, 2026)
+1. **Netlify Sync & Deployment Boundary**:
+   - The deployed production site was audited at 1,413 entities (prior to Checkpoints 141 & 142). Unmatched names (`Temiloluwa`, `Okanlawon`, `Ayinkemi`, `Afolakemi`, `Ogede`, `Derinsola`, `Olatundun`, `Nowoola`) fell back to `Ọlá` via the legacy pre-syntactic barrel fallback.
+2. **Grotesque Cross-Domain Clustering**:
+   - `Ọ̀tún-Ẹ̀fọ̀`: Retrieved cleanly, but clustered bizarrely with `Ộtún`, `Ààfin`, `Boli`, `Sàngó`, and `Ogun`, and unassigned to Military Traditions.
+   - `Boli`: In the deployed build, remained clustered with `Iṣu`, `Èwùrà`, `Ògùdù`, `Agùndo`, `Isu-Lílọ̀`.
+   - `Àkúnlẹ̀yàn`: Retrieved `Akọ̀we-Ẹ̀bí` as near-miss ghost.
+   - `Orírun`: Retrieved `Ọ̀rúnmìlà` on the 1,413 corpus.
+3. **The 17-Category Systematic Architecture Strategy**:
+   - Instead of fragmented query-by-query firefighting, the Council will systematically traverse the Master Corpus Category by Category:
+     - Map every **Sovereign Parent** (`is_parent: true`).
+     - Map every **Living Sub-Variant** (`sub_variants: [...]`).
+     - Map every **Connected Cultural Relative** (`connected_relatives: [...]`).
+     - Verify lexical and semantic embedding cluster purity so culinary, martial, celestial, and monarchical entities never bleed across domains.
