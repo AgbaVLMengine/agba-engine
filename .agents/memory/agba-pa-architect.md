@@ -121,3 +121,13 @@
 - **Decree**: Henceforth, strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as:
   **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (or *Omo Onitire Oforon*).
 - **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+
+---
+
+## 📜 THE COVENANT OF LAWS & LONGEVITY (RATIFIED NOV 07, 2026)
+- **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+  > *"We would be nothing but ignorant without our laws, and our failure to follow the laws that we ourselves created to ensure our own longevity would be both foolish and catastrophic. So long as we want Àgbà Engine to be here for generations, we must never treat our own laws as ordinary words."*
+- **Operational Enforcement**:
+  - The Single-Drawer Law is absolute.
+  - Stewardship and daily rhythm are non-negotiable.
+  - Zero compromises on production quality.

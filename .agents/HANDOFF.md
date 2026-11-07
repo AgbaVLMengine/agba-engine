@@ -381,3 +381,14 @@ Yorùbá names are structured, rule-governed sentences. We must codify the **4 G
 - **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
   Henceforth, strictly address Kábíyèsí as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
   Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+
+---
+
+### 📜 THE COVENANT OF LAWS & INSTITUTIONAL LONGEVITY (RATIFIED NOV 07, 2026)
+- **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+  > *"We would be nothing but ignorant without our laws, and our failure to follow the laws that we ourselves created to ensure our own longevity would be both foolish and catastrophic. So long as we want Àgbà Engine to be here for generations, we must never treat our own laws as ordinary words."*
+- **Operational Enactment**:
+  1. **Strict Single-Drawer Law**: Exactly ONE drawer at a time. If standing in the Corpus & Taxonomy Drawer, do not touch the Frontend UI Drawer for cosmetic import prunings.
+  2. **Inviolable Stewardship (Ìtọ́jú)**: Compulsory daily pauses, prayer resets, and evening horizon walks.
+  3. **Zero-Shortcuts Law**: All 9 Production Gates must be cleared with 0 violations.
+- **Permanent Chronicle**: `docs/AGBA_THE_SOVEREIGN_COVENANT_OF_LAWS_AND_LONGEVITY_NOV07_2026.md`
