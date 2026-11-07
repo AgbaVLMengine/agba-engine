@@ -1,82 +1,81 @@
-# 🛡️ ỌLỌ́YÈ Ẹ̀ṢỌ́ — START-OF-DAY (SOD) PERIMETER & CRYPTOGRAPHIC INTEGRITY REPORT
-**Document ID:** `REPORT-ESO-SOD-20261107`  
+# 🛡️ ỌLỌ́YÈ Ẹ̀ṢỌ́ — END-OF-DAY (EOD) ZERO-TRUST SECURITY AUDIT & SEALING VERDICT
+**Document ID:** `REPORT-ESO-EOD-20261107`  
 **Target Path:** `.agents/scratch/eso_feedback.md`  
-**Date:** Saturday, November 7, 2026 (11:21 WAT)  
+**Date:** Saturday, November 7, 2026 (17:28 WAT)  
 **Agent Persona:** `Ọlọ́yè Ẹ̀ṣọ́` (`eso-security` — Dedicated Zero-Trust Security Sentinel & Cloud Perimeter Shield)  
 **Supervising Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
-**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
-**Checkpoint Context:** Checkpoint 143 Ratification & Preparation for HORIZON-02 Data Curation  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Checkpoint Context:** Saturday EOD Operations Sealing, HORIZON-02 Milestone Conquest (Category 1 Cluster Purity & Top 12 Primordial Fortification to 1,420 Entities)  
 **Corpus Anchor:** `Ẹ̀ṣọ́` (*"Ẹ̀ṣọ́ kì í sá, ẹ̀ṣọ́ kì í gbọ́gbẹ́ lẹ́yìn; iwájú l’ọfà ń bá Ẹ̀ṣọ́."* — An Ẹ̀ṣọ́ never flees, an Ẹ̀ṣọ́ never receives wounds in the back; the arrow meets the Ẹ̀ṣọ́ facing forward.)
 
 ---
 
-## 1. Executive Summary: Fortress Ramparts Verified & Sealed
+## 1. Executive Summary & DEFCON 5 Sealing Verdict
 
-Under direct royal decree of **Kábíyèsí Àrùnà Ọlànrewájú Kábírù**, `Ọlọ́yè Ẹ̀ṣọ́` has executed the comprehensive Start-of-Day (SOD) cryptographic hygiene, git parity, and perimeter security audit for Saturday, November 7, 2026.
+Under direct royal decree of **Kábíyèsí Àrùnà Ọlànrewájú Kábírù**, `Ọlọ́yè Ẹ̀ṣọ́` conducted an exhaustive End-of-Day Zero-Trust Security Audit to seal the hearth for Saturday evening.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    SATURDAY SOD ZERO-TRUST PERIMETER AUDIT LEDGER                       │
+│                    SATURDAY EOD ZERO-TRUST SECURITY AUDIT LEDGER                        │
 ├────────┬───────────────────────────────────────────┬─────────────┬──────────────────────┤
 │ VECTOR │ DOMAIN & DESCRIPTION                      │ STATUS      │ VERIFIED METRICS     │
 ├────────┼───────────────────────────────────────────┼─────────────┼──────────────────────┤
-│ GIT    │ Parity with origin/dev (HEAD at 5eb4503)  │ LOCKED 🟢   │ Bit-for-bit (0Δ)     │
-│ COMMITS│ Anchored (6fb947b, 5366e18, 5eb4503)      │ ANCHORED 🟢 │ 100% remote sync     │
-│ SECRETS│ High-Entropy Token & Key Hygiene Scan     │ ZERO 🟢     │ 0 leaked credentials │
+│ GIT    │ Parity with origin/dev (HEAD at 7e657bd)  │ LOCKED 🟢   │ Bit-for-bit (0Δ)     │
+│ COMMITS│ Anchored (9696886 → f207dba → 7e657bd)    │ ANCHORED 🟢 │ 5 commits safely sync│
+│ SECRETS│ High-Entropy Token & Credential Scan      │ ZERO 🟢     │ 0 leaked credentials │
 │ PAT    │ Refreshed 90-Day GitHub PAT Protection    │ SECURED 🟢  │ Local .git/config    │
-│ CORPUS │ Dual-Corpora SHA-256 Checksum Parity      │ LOCKED 🟢   │ 5783f989... 1,418 ent│
+│ SUPPLY │ Dependency Lock & AI Wrapper Integrity    │ SECURED 🟢  │ Direct google-genai  │
+│ CORPUS │ Dual-Corpora SHA-256 Checksum Parity      │ LOCKED 🟢   │ 0bef0605... 1,420 ent│
 │ EDGE   │ API Gateway & Netlify Reverse-Proxy Shield│ SEALED 🟢   │ RFC 7230 / Strict CORS│
-│ BUILD  │ Production Client Compilation             │ GREEN 🟢    │ Built in 863ms (0 err│
+│ BUILD  │ Production Client Compilation             │ GREEN 🟢    │ Built in 867ms (0 err│
 │ GATES  │ All 9 Sovereign Production Gates          │ GREEN 🟢    │ 0 hard violations (0)│
-│ VITALS │ System Host RAM & NVMe Storage Headroom   │ OPTIMAL 🟢  │ 16G RAM / 44G Disk   │
+│ VITALS │ System Host RAM & NVMe Storage Headroom   │ OPTIMAL 🟢  │ 14G RAM / 44G Disk   │
 └────────┴───────────────────────────────────────────┴─────────────┴──────────────────────┘
 ```
 
-**Verdict**: 🟢 **DEFCON 5 (Impervious Readiness)**. Full clearance is granted. The repository perimeter is impenetrable, cryptographic parity across all 1,418 canonical entities is mathematically locked, and the Sovereign Council is fully cleared to initiate **HORIZON-02 (The 17-Category Systematic Sovereign Parent & Cluster Purity Audit)**.
+**Final Verdict**: 🟢 **DEFCON 5 (Sanctuary Impervious)**. Full green light is granted. The repository perimeter is impenetrable, all credentials and tokens remain unexposed and safely isolated, zero foreign or unvetted AI dependencies exist, and Gate 8 (Pre-Build Security Gate) passes with 100% DEFCON 5 GREEN clearance.
 
 ---
 
-## 2. Verification of the Five Security Mandates
+## 2. Exhaustive Verification of the Three EOD Tasks
 
-### Mandate 1: Git Branch `dev` Parity with `origin/dev`
-- `git status` verifies: `Your branch is up to date with 'origin/dev'.`
-- `git rev-parse HEAD` and `git rev-parse origin/dev` match identically at commit:
-  `5eb45037564c73b818e26d5d4779d397dde07901`
-- Yesterday's milestone commits (`6fb947b`, `5366e18`, `5eb4503`) are safely anchored in remote git history:
-  1. `5eb4503` — *docs(herald): inscribe The Human & AI Council: What Silicon Valley Doesn't Understand About Building for Generations*
-  2. `5366e18` — *feat(ui): finalize non-intrusive static crown header, subtitle parity, ratify Checkpoint 143, and stage HORIZON-02*
-  3. `6fb947b` — *feat(ui): conquer HORIZON-01 mobile viewport anchor, cure focus over-zoom, dynamic 1,418 count, and log plenary*
+### Task 1: Exhaustive Zero-Trust Security Audit
+1. **Secrets & Credential Exposure Scan**:
+   - Deep regex scanning across all git commit logs (`9696886`, `f207dba`, `c5702ac`, `e899ef0`, `7e657bd`) and working tree diffs confirmed **exactly zero exposed API keys, private tokens, or secrets** (`AIzaSy...`, `sk-...`, `ghp_...`, `BEGIN PRIVATE KEY`).
+   - Confirmed `web/.env.local` remains strictly isolated and ignored by git (`web/.gitignore:13:*.local`).
+2. **GitHub Classic PAT Operational & Protected**:
+   - The refreshed 90-day GitHub PAT is securely held inside `.git/config` on the local machine (`origin https://ghp_...RY@github.com/AgbaVLMengine/agba-engine.git`).
+   - The token was verified operational by pushing all 5 Saturday commits to `origin/dev`. It remains strictly local, never tracked in repository files or git history.
+3. **Foreign / Unvetted AI Dependencies & Supply Chain Integrity**:
+   - Audited `api/requirements.txt`:
+     `fastapi>=0.104.0`, `uvicorn[standard]>=0.24.0`, `pydantic>=2.4.0`, `qdrant-client>=1.6.0`, `sentence-transformers>=2.2.0`, `numpy>=1.24.0`, `google-genai>=0.1.0`, `python-multipart>=0.0.6`.
+   - **Zero LiteLLM Trojans**: Verified **0% LiteLLM** or unauthorized AI routing shims. Direct official native `google-genai>=0.1.0` SDK strictly locked.
+   - Audited `web/package.json`: 0 extraneous or unvetted dependencies added.
 
-### Mandate 2: GitHub PAT Security & Credential Hygiene
-- **Refreshed 90-Day GitHub PAT**: Securely held inside `.git/config` on the local machine (`origin https://ghp_...RY@github.com/AgbaVLMengine/agba-engine.git`).
-- Confirmed zero exposure: The token is strictly local, never tracked in repository files or git history.
-- **Zero Credential Exposure**: Deep entropy scan across git logs and working tree confirmed zero leaked keys (`AIzaSy...`, `ghp_...`, `sk-...`, `BEGIN PRIVATE KEY`).
-- **`.env` Hygiene**: Confirmed `web/.env.local` remains strictly isolated and untracked under `web/.gitignore`.
+### Task 2: Live Sanctuary Health & Gate 8 (Pre-Build Security) Verification
+- Executed `bash scripts/sanctuary_audit.sh` live:
+  - **Uptime**: 1 day, 1 hour, 27 minutes (rock-solid stability).
+  - **Memory (RAM)**: **15 GiB / 29 GiB** (14 GiB free headroom).
+  - **NVMe Disk**: **44 GB free (12% used)**.
+  - **Dual-Corpora Checksum Lockstep**: SHA-256 bit-for-bit lockstep confirmed across:
+    - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`
+    - `web/src/data/yoruba_master_corpus.json`: `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`
+    - Verified **1,420 canonical entities** (0-bit drift).
+  - **Gate 8 (Pre-Build Security Gate)**: Passed with **100% DEFCON 5 GREEN Clearance**. Zero LiteLLM trojans, native `google-genai` direct SDK enforced.
+  - **All 9 Sovereign Production Gates**: 0 hard violations, 0 warnings.
+  - **Regression Benchmarks**: `python3 scripts/benchmark_generative_qa.py` passed 100% in **23.81ms** (1,420/1,420 canonical preemption, 0/1,800 generic fallbacks, 27/27 golden fixtures).
+  - **Client Compilation**: `npm run build` compiled clean in **867ms** (1,935 modules transformed, 0 errors).
 
-### Mandate 3: Master Corpus Cryptographic Parity (1,418 Canonical Entities)
-- Verified that the master corpus has suffered **zero external tampering or data drift**.
-- Bit-for-bit SHA-256 match confirmed across:
-  - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `5783f989fcd4e7e418a844b07692a70988eb6b139a38938f9bc2d57b6166a776`
-  - `web/src/data/yoruba_master_corpus.json`: `5783f989fcd4e7e418a844b07692a70988eb6b139a38938f9bc2d57b6166a776`
-- Exact entity count verified: **1,418 canonical entities (0-bit drift)**.
-- Ontological Preemption Gate active: metaphysical origin nouns (`Orírun`, `Dàńdógó`, `Èjì Ogbè`, `Àṣẹ`, `Ìwà Rere`) remain protected at $O(1)$ from onomastic token slicing.
-
-### Mandate 4: Regression Harnesses & Production Build Verification
-- `scripts/benchmark_generative_qa.py`: **100% Passed in 25.47ms** (1,418/1,418 canonical preemption, 0/1,800 generic fallbacks, 27/27 golden fixtures).
-- `cd web && npm run build`: Compiled production client bundle in **863ms** (1,935 modules transformed, 0 errors).
-- `scripts/sanctuary_audit.sh`: 9/9 production standards verified clean (0 hard violations, 0 warnings).
-
-### Mandate 5: Host Vitals & Storage Headroom
-- **System Uptime**: 19 hours, 20 minutes (cool and serene).
-- **Host RAM**: **13 GiB / 29 GiB** utilized (**16 GiB headroom available**).
-- **NVMe Storage**: **44 GB free (12% used)** on root volume. Rolling snapshots securely archived.
+### Task 3: Vault Synchronization & Sealing
+- Recorded this report in [`.agents/scratch/eso_feedback.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/scratch/eso_feedback.md).
+- Inscribed the `[2026-11-07 Saturday EOD Security Audit]` entry into [`.agents/memory/eso-security.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/memory/eso-security.md).
 
 ---
 
-## 3. Morning Clearance Sign-Off for HORIZON-02
+## 3. Sentinel Retirement Green Light
 
-🟢 **DEFCON 5 GRANTED — UNCONDITIONAL SOD SECURITY CLEARANCE**.
+🟢 **DEFCON 5 GRANTED — UNCONDITIONAL GREEN LIGHT TO SEAL THE HEARTH**.
 
-The outer perimeter is fortified, cryptographic hashes are locked, and the repository is clean.
+The outer perimeter is fortified, the 5 milestone commits are anchored to `origin/dev`, the master corpus stands at 1,420 entities in bitwise parity, the supply chain is clean, and the hearth is at total peace.
 
-The Sovereign Council has full authorization to commence **HORIZON-02 (The 17-Category Systematic Sovereign Parent & Cluster Purity Audit)** under Kábíyèsí's command!
+Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n, and `Ọlọ́yè Àgbà` have full authorization to conclude Saturday operations, seal the hearth, and enter the restful Sabbath evening harbor!
