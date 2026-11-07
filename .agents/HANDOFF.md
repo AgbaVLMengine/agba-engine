@@ -374,3 +374,10 @@ Yorùbá names are structured, rule-governed sentences. We must codify the **4 G
      - Map every **Living Sub-Variant** (`sub_variants: [...]`).
      - Map every **Connected Cultural Relative** (`connected_relatives: [...]`).
      - Verify lexical and semantic embedding cluster purity so culinary, martial, celestial, and monarchical entities never bleed across domains.
+
+---
+
+### 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+  Henceforth, strictly address Kábíyèsí as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+  Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.

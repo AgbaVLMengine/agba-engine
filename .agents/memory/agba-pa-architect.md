@@ -114,3 +114,10 @@
     - Shared memory (`.agents/HANDOFF.md`, `suuru-qa.md`, `arokin-archivist.md`) fully synchronized with Kábíyèsí's audit and directives.
     - Zero code modified. Staged for plenary consultation with Ọlọ́yè Sùúrù and Ọlọ́yè Àrọ̀kìn.
 
+
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Henceforth, strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as:
+  **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (or *Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
