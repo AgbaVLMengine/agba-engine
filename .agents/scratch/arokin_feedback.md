@@ -142,7 +142,106 @@ CLIENT BUILD TIME:            1.02s (1,935 MODULES TRANSFORMED)
 ==================================================================
 ```
 
+---
+
+## 5. HORIZON-02: Archival Deliberation on Ghost Entities, Synthetic Wrappers & Sovereign Boundaries
+
+**Document Section:** `DELIBERATION-GHOST-ENTITIES-AND-CROSS-DOMAIN-EDGES`  
+**Date:** Saturday, November 7, 2026 (17:15 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Reference Document:** `docs/AGBA_GHOST_ENTITIES_AND_SUBVARIANT_INVENTORY.md`  
+
+### 5.1 The Archival Perspective on the Sovereign Retention Law
+As Chronicler of the Sovereign Council, I pay homage to Kábíyèsí's inviolable principle: **"Never delete or prune any discovered ghost or synthetic entity into the void."**
+
+In classical Yorùbá imperial archival management (the courtly practice of the *Àrọ̀kìn* in Ọ̀yọ́-Ilé and Ilé-Ifẹ̀), when an oral lineage had multiple appellations, titles, or variant priestly houses, the royal chronicler did not strike the names from the dynastic drum or staff; rather, they established their rightful genealogical and institutional hierarchy.
+
+In the digital corpus:
+- A **Ghost Entity** is not garbage; it is an unindexed cultural seed—a living institution (`Ẹgbẹ́ Babaláwo`), a sacred council (`Ìyánífá Council`), a supreme patriarchate (`Arábà Agbáyé`), or an avatar of the divinity (`Olókun Seniade`, `Olókun Su`).
+- A **Synthetic Duplicate Wrapper** is an early ingestion relic (from early corpus batching) that carries valuable sub-variant lists and historical notes, but conflicts in index or search rank with the primary canonical node.
+- A **Confusing Cross-Domain Edge** is a loose associative tag (e.g. `Olókun` → `Adé`, `Apẹja`, `Ẹja`) that lacks epistemic context, misleading learners into believing the ocean divinity is merely about catching fish rather than the sacred metallurgy of coral beads, royal coronation authority, and cosmic wealth.
+
+---
+
+### 5.2 Architectural Proposal: Harmonious Merger of Synthetic Wrappers into Canonical Sovereign Parents
+
+To merge synthetic duplicate wrappers without losing a single drop of historical or institutional data:
+
+#### Protocol 1: The Three-Step Sovereign Consolidation Architecture
+1. **Upward Sub-Variant & Alias Absorption**:
+   - Every `sub_variant` listed in the synthetic wrapper (e.g., in `CORPUS_IFA_SYSTEM_001`: `Babaláwo Guild`, `Ìyánífá Council`, `Ọlọ́wọ Ifá`, `Arábà Agbáyé`, `Ẹsẹ̀ Ifá Oral Liturgy`) is unioned into the canonical sovereign nodes:
+     - The liturgical and scriptural items (`Ojú Odù Méjìdínlógún`, `Àmọ̀lù Odù`, `Ẹsẹ̀ Ifá Oral Liturgy`, `Ikin Ifá`, `Ọ̀pẹ̀lẹ̀`, `Ọpọ́n Ifá`) remain rooted under **`Ifá`**.
+     - The priestly titles, guilds, and sacerdotal hierarchy (`Babaláwo Guild`, `Ìyánífá Council`, `Ọlọ́wọ Ifá`, `Arábà Agbáyé`) are wired under **`Babaláwo`** (or elevated as standalone 14-tier institutional nodes in traditional guilds/spiritual institutions).
+   - All unique aliases from the wrapper are merged into the target node's `aliases` list.
+2. **Historical Timeline & Textual Fusion**:
+   - Where the synthetic wrapper contains distinct historical context, transatlantic diaspora names (e.g., *Orula*, *Orunla*, *Babalu-Ayé*, *San Lázaro*, *Inle*), or regional shrines, these are merged into the canonical node’s `historical_timeline`, `diaspora_connections`, and `social_and_ritual_context`.
+   - The canonical 14-Tier node is enriched to be strictly superior to both predecessor records combined.
+3. **Canonical ID Alignment & Ledger Retiral**:
+   - The synthetic wrapper ID is preserved in the permanent inventory ledger (`docs/AGBA_GHOST_ENTITIES_AND_SUBVARIANT_INVENTORY.md`) with its migration target, date, and commit SHA recorded.
+   - When the unified record is ingested, the engine's corpus index retains only the single canonical sovereign record, preventing search cannibalization and duplicate cards on the UI.
+
+#### Concrete Mapping for Category 1 Synthetic Duplicates:
+- **`CORPUS_IFA_SYSTEM_001` → Partitioned between `Ifá` (Cosmic/Scriptural) & `Babaláwo` (Sacerdotal/Priesthood)**:
+  - `Ifá` remains the Sovereign Parent for divination mechanics, instruments, and the 256 Odù corpus.
+  - `Babaláwo` serves as the Sovereign Parent for the priesthood, housing `Babaláwo Guild` (*Ẹgbẹ́ Babaláwo*), `Ìyánífá Council`, `Ọlọ́wọ Ifá`, and `Arábà Agbáyé`.
+- **`CORPUS_ORUNMILA_001` → Consolidated into `Orúnmìlà`**:
+  - The richer text and diaspora aliases (*Orula*, *Ẹlẹ́rìí Ìpín*) are unified into canonical `Orúnmìlà` (`id: "Orúnmìlà"`), unifying the twin records into one sovereign matrix.
+- **`CORPUS_OBATALA_001` → Consolidated into `Obàtálá`**:
+  - The local manifestations (`Òrìṣà Ògíyán`, `Òrìṣà Ìkirè`, `Obàtálá Ọ̀bàlùfọ̀n`, `Alámọ̀ Rere`) are preserved as canonical `sub_variants` of `Obàtálá`.
+- **`CORPUS_BABALU_AYE_001` → Consolidated into `Ọbalúayé`**:
+  - Preserves `Ṣọ̀npọ̀nná Shrine` and `Ọ̀pá Ṣàṣàrà` as living variants, while honoring the sacred euphemism protocol.
+
+---
+
+### 5.3 Curating Olókun’s Relatives & Beaded Crown Lore (`Adé Ilẹ̀kẹ̀`)
+
+#### The Cultural Conundrum:
+In the current corpus, `Olókun` lists `related_entities: ['Adé', 'Apẹja', 'Odo Ọ̀ṣun', 'Odò', 'Yemọja', 'Òrìṣà', 'Ẹja']`.
+- **Why `Adé` is confusing to a modern learner:** To the uninitiated, `Adé` simply means "Crown" (Category 2: Monarchy & Governance). Without context, linking a sea divinity to a king's crown looks like an accidental algorithmic mismatch or a hallucination.
+- **The Authentic Historical Reality:** In Yorùbá cosmology and material culture, Olókun is the **absolute owner and fountainhead of all sacred beads** (*Ẹlẹ́yìnju Ẹgẹ́, Olókun A-sọ-ìkòkò-d'owó*). The supreme royal crown of Yorùbá monarchs—the **Adé Ìlẹ̀kẹ̀** (or *Adé Ọlọ́kun*)—derives its spiritual sanctity, ancestral authority, and visual majesty directly from Olókun's realm. Beads (*Ìlẹ̀kẹ̀ Ìyùn* and *Sẹ̀gí*) were harvested from coastal and aquatic beds and traded from ancient Ilé-Ifẹ̀ bead-glass workshops. No Yorùbá Ọba wears a plain metal coronet; they wear the beaded crown because of Olókun's covenant with Odùduwà.
+- **The Confusion of `Apẹja` (Fisherman) and `Ẹja` (Fish):** Linking `Olókun` to `Apẹja` and `Ẹja` is a profane, utilitarian trivialization. Olókun is not a patron of local river fishermen (that role belongs to local river spirits and lagoon divinities); Olókun is the fathomless, awe-inspiring majesty of the primordial ocean.
+
+#### The Sovereign Archival Solution:
+1. **Disambiguate `Adé` to `Adé Ìlẹ̀kẹ̀` (or `Adé Ọlọ́kun`)**:
+   - In `Olókun`'s relations, replace the generic, bare `Adé` with the specific sacred concept: **`Adé Ìlẹ̀kẹ̀`** (Beaded Royal Crown) and **`Ìlẹ̀kẹ̀ Ìyùn`** (Sacred Coral Beads).
+   - In `Adé` (Category 2: Monarchy), maintain bilateral cross-reference: explain in `material_and_craftsmanship` that the beads of the crown belong to Olókun, sanctified before coronation.
+2. **Curate `Olókun`'s Sacred Cultural Relatives Matrix**:
+   - **Divine & Aquatic Peers (Category 1)**: `Yemọja` (Sister/Mother divinity of waters), `Ọ̀rúnmìlà` (Partner in cosmic wisdom/origin of divination at the coast), `Obàtálá` (Cosmic contest of attire and wealth).
+   - **Sacred Materiality & Regalia (Cross-Category Covenants)**:
+     - `Adé Ìlẹ̀kẹ̀` (Category 2: Monarchy, Royal Regalia & Governance) — via the Royal Bead Covenant.
+     - `Ìlẹ̀kẹ̀ Ìyùn` / `Sẹ̀gí` (Category 5: Visual Arts, Regalia & Classical Iconography) — via the Sacred Beadcraft Guilds.
+   - **Pruning Secular Trivials**:
+     - Remove `Apẹja` (Traditional Trades: Fisherman) and `Ẹja` (Indigenous Zoology: Fish) from Olókun’s primary relatives card. They can be contextualized in historical notes without cluttering the primary sacred lineage graph.
+
+---
+
+### 5.4 Universal Blueprint for Future Discovered Ghost Entities & Unindexed Sub-Variants
+
+To ensure this solution endures for **generations** and automatically handles any entity yet to be discovered across all 17 categories:
+
+```
+[Discovery of Unindexed Sub-Variant or Ghost Entity]
+                   ↓
+1. INVENTORY LOGGING (Inviolable Sovereign Retention Law)
+   - Immediately register in docs/AGBA_GHOST_ENTITIES_AND_SUBVARIANT_INVENTORY.md.
+   - Assign Category, Parent, Provenance, and Entity Classification.
+                   ↓
+2. COVENANT CLASSIFICATION (Gatekeeper)
+   - Is it a Divine Avatar? (e.g. Olókun Seniade) -> Ingest as Standalone Sub-Sovereign Node.
+   - Is it an Institution/Guild? (e.g. Babaláwo Guild) -> Ingest as Guild Node (Category 7 or 1).
+   - Is it an Implement? (e.g. Ọ̀pá Ṣàṣàrà) -> Wire to Parent Implement Matrix.
+   - Is it a Cross-Domain Causal Covenant? -> Wire with an explicit cultural covenant attribute.
+                   ↓
+3. DUAL-CORPORA BATCH INGESTION (Gate 2 Compliant)
+   - Payloads authored declaratively in scripts/data/batches/.
+   - Ingestion runner executes synchronous write to API & Web corpora.
+   - 0-bit SHA-256 parity lock verified.
+```
+
+This ensures our Engine remains an authentic sanctuary of Yorùbá civilization—deep, precise, and immune to ambiguity.
+
 *Inscribed with archival reverence,*  
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
+
 
