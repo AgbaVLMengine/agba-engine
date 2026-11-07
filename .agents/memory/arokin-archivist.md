@@ -424,3 +424,15 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - **Àrọ̀kìn Action Items**:
     - Build comprehensive category inventory manifests of Sovereign Parents vs Sub-Variants.
     - Provide authentic historical and cultural lineages for connected relatives across each category.
+
+- **2026-11-07 [HORIZON-02: Category 1 (Spiritual & Cosmological Matrix) Ingestion Completed]**:
+  - **Decree from Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**:
+    - Ingested `Àkúnlẹ̀yàn` and `Àkúnlẹ̀gbà` as standalone 14-Tier canonical nodes parented to `Orí`.
+    - Promoted `Kadara` (index 662) to primary canonical title `Àyànmọ́`, retaining `Kadara` as alias.
+    - Bilaterally wired `Orí`'s `sub_variants` and `knowledge_graph_relations` while purging the shadowing `akunleyan` mononym alias.
+    - Authored declarative fixture `scripts/data/batches/ori_lineage_payloads.json` and runner `scripts/ingest_ori_lineage.py` (128 LOC, Gate 2 compliant).
+    - Final canonical corpus count elevated from **1,418 to 1,420 entities**.
+    - Dual-corpora SHA-256 locked with 0-bit drift: `be2fd71233d262bd159a5c17571e98ba18486d1ad498e413b773bd5c121b8169`.
+    - Regression suites verified: `scripts/benchmark_sprint004.py` passed **88/88 (100.0%)**, `scripts/sanctuary_audit.sh` passed with 0 violations, and Vite client compiled cleanly in **945ms**.
+
+

@@ -6,7 +6,7 @@
 // Specifications: AGY__REPORT_OYE_AUDIT_004.md (Part III) & HANDOFF-AGBEDE-004.
 // ==============================================================================
 
-import { getSubVariantDeepMetadata } from './subVariantKnowledge';
+import { getSubVariantDeepMetadata } from './subVariantKnowledge.js';
 
 function stripAccents(s) {
   return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');

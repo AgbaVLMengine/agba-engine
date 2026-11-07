@@ -208,22 +208,10 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
       const candTitleClean = stripAccents(cand.title);
       if (!candTitleClean || candTitleClean === selfTitleClean) continue;
 
-      const isCrossCategory = Boolean(selfCategory && cand.category && cand.category !== selfCategory);
-      const isAffinityCompatible =
-        !isCrossCategory ||
-        CATEGORY_AFFINITY[selfCategory]?.has(cand.category) ||
-        CATEGORY_AFFINITY[cand.category]?.has(selfCategory);
-
-      // Bi-directional cross-reference in text
-      const hasDirectMention =
-        (candTitleClean.length >= 4 && selfFullText.includes(candTitleClean)) ||
-        (selfTitleClean.length >= 4 &&
-          stripAccents([cand.description, cand.etymology_and_philosophy].filter(Boolean).join(' ')).includes(
-            selfTitleClean
-          ));
-
-      // Domain Gate: reject cross-category candidates lacking affinity or direct textual mention
-      if (isCrossCategory && !isAffinityCompatible && !hasDirectMention) {
+      // Universal Intra-Domain Confinement Law (P_Tier3 = 100%):
+      // Dynamic token scoring in Tier 3 is strictly confined to the source entity's canonical category.
+      // Inter-category links are strictly barred in Tier 3 unless forged via explicit curated edges in Tier 1 or Tier 2.
+      if (selfCategory && cand.category && cand.category !== selfCategory) {
         continue;
       }
 

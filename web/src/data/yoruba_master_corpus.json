@@ -9547,7 +9547,6 @@
     "culture": "Yorùbá",
     "category": "Spiritual & Cosmological Matrix",
     "aliases": [
-      "akunleyan",
       "destiny",
       "inner consciousness",
       "inner head",
@@ -9598,7 +9597,6 @@
       "title": "Orí",
       "culture": "Yorùbá",
       "aliases": [
-        "akunleyan",
         "destiny",
         "inner consciousness",
         "inner head",
@@ -9613,9 +9611,33 @@
         "Àyànmọ́",
         "Ilé-Orí",
         "Orírun"
-      ]
+      ],
+      "knowledge_graph_relations": {
+        "sovereign_complex": "Trinitarian Destiny Architecture",
+        "metaphysical_aspects": [
+          "Orírun",
+          "Orí Inú",
+          "Àkúnlẹ̀yàn",
+          "Àkúnlẹ̀gbà",
+          "Àyànmọ́"
+        ],
+        "witness_deity": "Ọ̀rúnmìlà",
+        "sacred_reliquary": "Ilé-Orí"
+      }
     },
-    "sovereign_parent_status": "Sovereign Parent Concept"
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "knowledge_graph_relations": {
+      "sovereign_complex": "Trinitarian Destiny Architecture",
+      "metaphysical_aspects": [
+        "Orírun",
+        "Orí Inú",
+        "Àkúnlẹ̀yàn",
+        "Àkúnlẹ̀gbà",
+        "Àyànmọ́"
+      ],
+      "witness_deity": "Ọ̀rúnmìlà",
+      "sacred_reliquary": "Ilé-Orí"
+    }
   },
   {
     "id": "Èṣù Èdá",
@@ -36238,16 +36260,20 @@
     }
   },
   {
-    "id": "Kadara",
-    "title": "Kadara",
+    "id": "Àyànmọ́",
+    "title": "Àyànmọ́",
     "culture": "Yorùbá",
     "category": "Spiritual & Cosmological Matrix",
     "aliases": [
+      "affixed destiny",
       "ayanmo",
       "destiny",
+      "destiny lot",
       "fate",
       "kadara",
-      "pre-ordained destiny"
+      "kàdárà",
+      "pre-ordained destiny",
+      "àyànmọ́"
     ],
     "description": "The cosmological concept of pre-ordained Destiny chosen by the individual soul in the presence of Olódùmarè.",
     "historical_timeline": "Classical Era (c. 11th–15th Century CE): Centralized theological development at Ilé-Ifẹ̀ establishes the veneration of Orí and destiny rituals, linking the divine legitimacy of the Ọwọ́ni (Ọọ̀ni) to ordained heavenly pacts. Imperial Era (c. 16th–18th Century CE): The expansion of the Ọ̀yọ́ Empire codifies divination protocols through the royal Babaláwo, emphasizing that communal triumph and monarchical governance rely on the harmonization of individual and imperial Kàdárà through annual rituals such as the Ìbọrí. Transatlantic Middle Passage (c. 16th–19th Century CE): The philosophical concept of Kàdárà sustains millions of enslaved Yorùbá ancestors, offering an unassailable theological framework that spiritual sovereignty transcends physical bondage. Modern and Post-Colonial Era: Kàdárà continues to function across West Africa and global metropolitan diaspora centers as an existential framework reconciling predestination with individual moral responsibility (Àkúnlẹ̀kàn) and deliberate action (Ipa).",
@@ -36263,20 +36289,24 @@
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "Cinematic portrayal requires rich, high-contrast chiaroscuro lighting using warm celestial ambers, luminous Ẹfun whites, and deep Ìndigò (Àdírẹ) blues. Visual focus should linger macro-scopically on the tactile geometry of cowrie-covered Ilé Orí, the textured patina of aged Ọ̀pọ́n Ifá, and the deliberate strokes of yellow Iyẹ̀ròsùn dust. Audio design must incorporate sacred bàtá drum rhythms attuned to Ọ̀rúnmìlà, paired with resonant spoken-word recitations of Odù Ifá in ancient Yorùbá tonal cadences, accented by subtle sounds of falling cowries and wind chimes to evoke the threshold between Ọ̀run and Ilé Ayé.",
     "sovereign_parent": "Orí",
-    "sovereign_parent_status": "Living Sub-Variant",
+    "sovereign_parent_status": "sub_variant",
     "details": {
-      "id": "Kadara",
-      "title": "Kadara",
+      "id": "Àyànmọ́",
+      "title": "Àyànmọ́",
       "culture": "Yorùbá",
       "category": "Spiritual & Cosmological Matrix",
       "sovereign_parent": "Orí",
-      "sovereign_parent_status": "Living Sub-Variant",
+      "sovereign_parent_status": "sub_variant",
       "aliases": [
+        "affixed destiny",
         "ayanmo",
         "destiny",
+        "destiny lot",
         "fate",
         "kadara",
-        "pre-ordained destiny"
+        "kàdárà",
+        "pre-ordained destiny",
+        "àyànmọ́"
       ],
       "description": "The cosmological concept of pre-ordained Destiny chosen by the individual soul in the presence of Olódùmarè.",
       "historical_timeline": "Classical Era (c. 11th–15th Century CE): Centralized theological development at Ilé-Ifẹ̀ establishes the veneration of Orí and destiny rituals, linking the divine legitimacy of the Ọwọ́ni (Ọọ̀ni) to ordained heavenly pacts. Imperial Era (c. 16th–18th Century CE): The expansion of the Ọ̀yọ́ Empire codifies divination protocols through the royal Babaláwo, emphasizing that communal triumph and monarchical governance rely on the harmonization of individual and imperial Kàdárà through annual rituals such as the Ìbọrí. Transatlantic Middle Passage (c. 16th–19th Century CE): The philosophical concept of Kàdárà sustains millions of enslaved Yorùbá ancestors, offering an unassailable theological framework that spiritual sovereignty transcends physical bondage. Modern and Post-Colonial Era: Kàdárà continues to function across West Africa and global metropolitan diaspora centers as an existential framework reconciling predestination with individual moral responsibility (Àkúnlẹ̀kàn) and deliberate action (Ipa).",
@@ -36291,7 +36321,8 @@
       "diaspora_connections": "In the Afro-Atlantic diaspora, Kàdárà and its sister concept Orí survived the cataclysm of chattel slavery by evolving into fundamental tenets of Regla de Ocha (Lucumí) in Cuba, Candomblé Ketu in Brazil, and the Orisha Tradition in Trinidad and Tobago. In Lucumí practice, an initiate's 'Camino' (spiritual path determined by the Itá divination ceremony) serves as the direct continuation of Kàdárà, guiding personal taboo (Eewo) and sacred duty. In Brazilian Candomblé, the Bori ritual cleanses and empowers the Orí, unlocking one's pre-ordained spiritual Axé (Àṣẹ) and offering enslaved and disenfranchised communities a restorative reclaiming of divine selfhood and ancestral alignment.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Cinematic portrayal requires rich, high-contrast chiaroscuro lighting using warm celestial ambers, luminous Ẹfun whites, and deep Ìndigò (Àdírẹ) blues. Visual focus should linger macro-scopically on the tactile geometry of cowrie-covered Ilé Orí, the textured patina of aged Ọ̀pọ́n Ifá, and the deliberate strokes of yellow Iyẹ̀ròsùn dust. Audio design must incorporate sacred bàtá drum rhythms attuned to Ọ̀rúnmìlà, paired with resonant spoken-word recitations of Odù Ifá in ancient Yorùbá tonal cadences, accented by subtle sounds of falling cowries and wind chimes to evoke the threshold between Ọ̀run and Ilé Ayé."
-    }
+    },
+    "is_parent": false
   },
   {
     "id": "Ẹ̀mí",
@@ -77535,5 +77566,103 @@
     },
     "sacred_exclusion_awo": "Logistical and historical records open. Family ancestral praise chants cited from accredited oral collections.",
     "provenance_and_citations": "Samuel Johnson (1921), The History of the Yorubas; Karin Barber (1991), I Could Speak Until Tomorrow: Oriki, Women, and the Past in a Yoruba Town; Toyin Falola (1984), The Political Economy of a Pre-colonial African State: Ibadan."
+  },
+  {
+    "id": "Àkúnlẹ̀yàn",
+    "title": "Àkúnlẹ̀yàn",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "sovereign_parent": "Orí",
+    "sovereign_parent_status": "sub_variant",
+    "is_parent": false,
+    "aliases": [
+      "akunleyan",
+      "àkúnlẹ̀yàn",
+      "the chosen destiny",
+      "destiny chosen kneeling",
+      "pre-natal destiny"
+    ],
+    "description": "The sacred cosmological reality of the personal destiny chosen by the soul while kneeling before Olódùmarè in the heavenly realm (Ọ̀run) prior to physical incarnation on earth (Ayé).",
+    "historical_timeline": "Dating to antiquity and the primordial epoch of Ilé-Ifẹ̀, where Yorùbá metaphysical cosmology first formulated the tripartite doctrine of human destiny (Àkúnlẹ̀yàn, Àkúnlẹ̀gbà, Àyànmọ́). Documented exhaustively in classical Ifá liturgical chapters—most notably in Ògúndá Méjì, Ọ̀yẹ̀kú Méjì, and Èjì Ogbè—where the soul visits the house of Àjàlá Mọ̀pín (the cosmic potter who molds heads from clay) to select its Orí before kneeling before the Creator. Throughout 19th-century oral poetry and across Transatlantic Lucumí and Candomblé traditions, the concept of Àkúnlẹ̀yàn has provided the philosophical explanation for individual personality, gifts, and earthly vocations.",
+    "etymology_and_philosophy": "A compound metaphysical noun derived from 'À' (nominal prefix: that which) + 'kúnlẹ̀' (kneel upon the ground) + 'yàn' (to select or choose), literally signifying 'That which was chosen on bended knee'. In Yorùbá philosophy, kneeling (Ìkúnlẹ̀) is the ultimate posture of humility, reverence, and existential covenant before the Divine. Àkúnlẹ̀yàn affirms that human existence is not a product of blind chance or mechanical fate; every human being is an autonomous moral agent who voluntarily selected their life's purpose and spiritual portion. However, this celestial choice is forgotten at the threshold of physical birth (Oníbode Ọ̀run), necessitating the consultation of Ifá divination to decode one's original pre-natal covenant.",
+    "material_and_craftsmanship": "Materialized ritualistically through Ifá divination trays (Ọpọ́n Ifá) and sacred palm nuts (Ikin Ifá), which serve as the cosmic instruments through which a diviner (Babaláwo) reads the forgotten blueprint of an individual's Àkúnlẹ̀yàn. In personal shrines, it is honored through the consecration of the Ilé-Orí (cowrie-encrusted container of destiny).",
+    "social_and_ritual_context": "Invoked during the traditional naming ceremony (Ikọ́mọjá / Ìsọmọlórúkọ) on the 8th day, when the diviner performs the Esèntáyé ('Stepping into the World') rite to divine the child's Àkúnlẹ̀yàn and instruct parents on the taboos (Èèwọ̀) and professions aligned with the child's chosen path. In civil disputes, it inspires empathy and tolerance: recognizing that each person walks a unique path chosen in heaven.",
+    "proverbs_and_oral_traditions": [
+      "Àkúnlẹ̀yàn ni àdáyébá; a dé ayé tán, ojú ń kán gbogbo wa. (That which was chosen kneeling in heaven is what we meet on earth; but having arrived in the physical world, we become impatient.)",
+      "A kì í kúnlẹ̀ yan èrò kan, kí a wá dé ayé tọ́jọ́ kọ́. (One does not kneel down in heaven to choose one destiny, only to arrive on earth and covet another's portion.)",
+      "Orí tí ó kúnlẹ̀ yan ọlá, kì í fẹsẹ̀ rìn nígbà tí àkókò rẹ̀ bá pé. (The head that knelt to choose sovereign honor will not walk in misery when its appointed season arrives.)"
+    ],
+    "diaspora_connections": "Preserved intact within Cuban Lucumí and Brazilian Candomblé as the spiritual bedrock of divination rites (Itá). In the Lucumí 'Plante de Ifá' and 'Mano de Orula', the initiate's Odù is interpreted as the direct revelation of the Àkúnlẹ̀yàn made before Olodumare.",
+    "cinematic_and_media_production": "Visual staging should emphasize dreamlike, luminous aesthetics: soft celestial white light, shadows of a kneeling figure in pristine white robes before an ancient, benevolent silhouette, dissolving into the gentle earthy tones of a newborn baby's naming feast. Audio should incorporate the rhythmic, whispering cadence of Ikin nuts clicking together in a diviner's hands.",
+    "living_variants": [
+      "Àkúnlẹ̀yàn Ọlá (Destiny of Nobility)",
+      "Àkúnlẹ̀yàn Ọgbọ́n (Destiny of Wisdom)",
+      "Àkúnlẹ̀yàn Ìwòsàn (Destiny of Healing)"
+    ],
+    "sub_variants": [],
+    "knowledge_graph_relations": {
+      "sovereign_parent": "Orí",
+      "philosophical_counterparts": [
+        "Àkúnlẹ̀gbà",
+        "Àyànmọ́",
+        "Orírun",
+        "Orí Inú"
+      ],
+      "witness_divinity": "Ọ̀rúnmìlà"
+    },
+    "sensory_aesthetics": {
+      "tactile": "Cool white chalk (Ẹfun) marked on the forehead; smooth polished sacred Ikin palm nuts.",
+      "auditory": "Gentle, resonant murmur of Ifá divination chants recited at dawn.",
+      "visual": "A serene, contemplative kneeling figure bathed in golden morning light."
+    },
+    "sacred_exclusion_awo": "Exoteric philosophy of destiny and ethical responsibility fully accessible. Secret initiatory chants for head-washing (Wíwẹ̀ Orí) remain within priesthood custody.",
+    "provenance_and_citations": "Wándé Abímbọ́lá (1976), Ifá: An Exposition of Ifá Literary Corpus, Ibadan: Oxford University Press Nigeria; E. Bọ́lájì Ìdòwú (1962), Olódùmarè: God in Yoruba Belief, Longmans; Babatunde Lawal (1996), The Gẹ̀lẹ̀dẹ́ Spectacle, University of Washington Press; Rowland Abiodun (2014), Yoruba Art and Language, Cambridge University Press."
+  },
+  {
+    "id": "Àkúnlẹ̀gbà",
+    "title": "Àkúnlẹ̀gbà",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "sovereign_parent": "Orí",
+    "sovereign_parent_status": "sub_variant",
+    "is_parent": false,
+    "aliases": [
+      "akunlegba",
+      "àkúnlẹ̀gbà",
+      "the received destiny",
+      "destiny received kneeling",
+      "endowed capacity"
+    ],
+    "description": "The metaphysical portion of human destiny that is received or conferred by celestial authorities while the soul kneels in the presence of Olódùmarè, encompassing ancestral traits, physical constitution, and natural limitations.",
+    "historical_timeline": "Codified in classical Yorùbá philosophy alongside Àkúnlẹ̀yàn since antiquity. While Àkúnlẹ̀yàn emphasizes active choice, Àkúnlẹ̀gbà addresses inherited capacity, genetic lineage, and the cosmic parameters assigned to the individual by the Irúnmọlẹ̀. Detailed in classical Odù Ifá such as Ìrosùn Méjì and Òbàrà Méjì.",
+    "etymology_and_philosophy": "Compound noun: 'À' (that which) + 'kúnlẹ̀' (kneel) + 'gbà' (to receive or accept). It reflects the complementary dialectic of Yorùbá philosophy: humans have the freedom to choose (Àkúnlẹ̀yàn), but they must also receive and accept certain unalterable cosmic endowments (Àkúnlẹ̀gbà), such as biological parents, ancestral heritage, and natural lifespan.",
+    "material_and_craftsmanship": "Ritualized through offerings to the ancestral spirits (Ẹbọ Ìran) and the maintenance of personal balance through good character (Ìwà Pẹ̀lẹ́).",
+    "social_and_court_protocol": "Invoked to counsel humility, self-acceptance, and gratitude. Elders teach that when one recognizes one's Àkúnlẹ̀gbà, one ceases destructive envy and instead focuses on perfecting one's endowed talents.",
+    "proverbs_and_oral_traditions": [
+      "Àkúnlẹ̀gbà kò ṣeé fọwọ́ pa rẹ́; ohun tí Ọlọ́run bá fi fúnni, a kì í fi agbára gba òmíràn. (That which was received kneeling cannot be rubbed out by human hands; what the Creator has bestowed cannot be violently exchanged for another's portion.)",
+      "Bí a kúnlẹ̀ gbà á, bẹ́ẹ̀ ni a gbọdọ̀ tẹ́wọ́ gbà á lórí ayé pẹ̀lú ìdùnnú. (As we knelt to receive it in heaven, so must we embrace it on earth with joyful gratitude.)",
+      "Àkúnlẹ̀gbà lẹ́wà; olúkálukú pẹ̀lú ẹ̀bùn tí Ọba Ọ̀run kọ́ fún un. (The received portion is beautiful; each soul carries the specific gifts fashioned for it by the King of Heaven.)"
+    ],
+    "diaspora_connections": "Reflected in Afro-Cuban and Brazilian Candomblé traditions as the divine recognition of an initiate's natural spiritual faculties (Camino / Odù de Nacimiento).",
+    "cinematic_and_media_production": "Visuals of cupped open hands receiving water or glowing embers from an unseen celestial presence, framed against calm ancestral twilight.",
+    "living_variants": [
+      "Àkúnlẹ̀gbà Ìran (Ancestral Endowment)"
+    ],
+    "sub_variants": [],
+    "knowledge_graph_relations": {
+      "sovereign_parent": "Orí",
+      "philosophical_counterparts": [
+        "Àkúnlẹ̀yàn",
+        "Àyànmọ́",
+        "Orí Inú"
+      ]
+    },
+    "sensory_aesthetics": {
+      "tactile": "Cool sensation of palm oil and shea butter (Òrí) applied during head propitiation.",
+      "auditory": "Calm, reassuring voice of family matriarchs offering ancestral blessings.",
+      "visual": "Open palms held upward in reverent reception."
+    },
+    "sacred_exclusion_awo": "Exoteric wisdom openly documented.",
+    "provenance_and_citations": "Wándé Abímbọ́lá (1976), Ifá Literary Corpus; E.B. Ìdòwú (1962), Olódùmarè: God in Yoruba Belief; Rowland Abiodun (2014), Yoruba Art and Language."
   }
 ]
