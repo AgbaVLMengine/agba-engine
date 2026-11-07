@@ -8,7 +8,7 @@ import EntityBentoDeck from './EntityBentoDeck';
 import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
 import { hydrateSubVariantFromParent, findSubVariantMatchInCorpus } from '../utils/subVariantHydrator';
 import { extractTonalContour } from '../utils/tonalContour';
-import { searchRankedCorpus } from '../utils/localRankedSearch';
+import { searchRankedCorpus, searchRankedCorpusWithScores } from '../utils/localRankedSearch';
 import { hydrateEntityForBento } from '../utils/bentoHydrator';
 import { resolveOnomasticZeroShot } from '../utils/onomasticBridge';
 
@@ -60,39 +60,50 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
           const synthChild = hydrateSubVariantFromParent(svMatch.variantTitle, svMatch.parent);
           rankedEntities = [hydrateEntityForBento(synthChild, 1.0)];
         } else {
-          const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 1200);
-          try {
-            const endpoint = apiBaseUrl ? `${apiBaseUrl.replace(/\/$/, '')}/v6/retrieve/deep-context` : '/v6/retrieve/deep-context';
-            const res = await fetch(endpoint, {
-              method: 'POST',
-              signal: controller.signal,
-              headers: {
-                'Content-Type': 'application/json',
-                'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
-              },
-              body: JSON.stringify({
-                query: q,
-                cultural_domain: 'Comprehensive',
-                top_k: 6
-              })
-            });
-            if (res.ok) {
-              const data = await res.json();
-              if (data?.ranked_entities?.length > 0) {
-                rankedEntities = data.ranked_entities;
-              }
-            }
-          } catch (_) {
-            // Air-gap & cold-start timeout fallback to local sovereign ranked search
-          } finally {
-            clearTimeout(timeoutId);
-          }
+          // Local-First Sovereign Shield: Rank locally over 1,418 master corpus
+          const localScored = searchRankedCorpusWithScores(q, masterCorpus);
+          const topMatch = localScored[0];
 
-          if (rankedEntities.length === 0) {
-            const localMatches = searchRankedCorpus(q, masterCorpus);
-            if (localMatches.length > 0) {
-              rankedEntities = localMatches.slice(0, 6).map((m, idx) => hydrateEntityForBento(m, idx === 0 ? 0.992 : 0.88 - idx * 0.05));
+          // If top match is an exact tonal/alias/root hit (score >= 220), resolve locally at O(1) (<2ms)
+          if (topMatch && topMatch.score >= 220) {
+            rankedEntities = localScored.slice(0, 6).map((m, idx) =>
+              hydrateEntityForBento(m.entity, idx === 0 ? 0.995 : Math.max(0.70, 0.90 - idx * 0.05))
+            );
+          } else {
+            // Exploratory / Generative API Fallback (Cloud Run / V6 vector search)
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 1200);
+            try {
+              const endpoint = apiBaseUrl ? `${apiBaseUrl.replace(/\/$/, '')}/v6/retrieve/deep-context` : '/v6/retrieve/deep-context';
+              const res = await fetch(endpoint, {
+                method: 'POST',
+                signal: controller.signal,
+                headers: {
+                  'Content-Type': 'application/json',
+                  'X-AGBA-API-KEY': 'agba_studio_dev_key_2026'
+                },
+                body: JSON.stringify({
+                  query: q,
+                  cultural_domain: 'Comprehensive',
+                  top_k: 6
+                })
+              });
+              if (res.ok) {
+                const data = await res.json();
+                if (data?.ranked_entities?.length > 0) {
+                  rankedEntities = data.ranked_entities;
+                }
+              }
+            } catch (_) {
+              // Air-gap & cold-start timeout fallback
+            } finally {
+              clearTimeout(timeoutId);
+            }
+
+            if (rankedEntities.length === 0 && localScored.length > 0) {
+              rankedEntities = localScored.slice(0, 6).map((m, idx) =>
+                hydrateEntityForBento(m.entity, idx === 0 ? 0.992 : 0.88 - idx * 0.05)
+              );
             }
           }
         }

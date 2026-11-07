@@ -1,7 +1,7 @@
 import { stripAccents, normalizeNFC, escapeRegExp } from './tonalContour';
 
 // RC-1 & RC-3 Local Ranked Search Fallback (Tonal Invariant Tiering)
-export function searchRankedCorpus(q, masterCorpus = []) {
+export function searchRankedCorpusWithScores(q, masterCorpus = []) {
   const qClean = (q || '').replace(/[?!.,;:'"_\-()[\]]/g, ' ').replace(/\s+/g, ' ').trim();
   const coreSubject = qClean
     .replace(/^(who is|what is|tell me about|explain|who was|what was|meaning of|history of|where is|why is)\s+/i, '')
@@ -72,5 +72,9 @@ export function searchRankedCorpus(q, masterCorpus = []) {
   }
 
   scored.sort((a, b) => b.score - a.score);
-  return scored.map((s) => s.entity);
+  return scored;
+}
+
+export function searchRankedCorpus(q, masterCorpus = []) {
+  return searchRankedCorpusWithScores(q, masterCorpus).map((s) => s.entity);
 }
