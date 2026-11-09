@@ -397,6 +397,21 @@
        - `npm run build`: Compiled cleanly in **1.40s** (1,935 modules, 0 errors).
     5. *Findings Inscribed*: Documented in `.agents/scratch/oye_feedback.md`.
 
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ DUAL-CORPORA STATE (POST HORIZON-02 BATCH 2)
+- **Canonical Entity Count**: Exactly **1,420 Entities** (+2 ingested: `Àkúnlẹ̀yàn`, `Àkúnlẹ̀gbà`; `Àyànmọ́` promoted).
+- **Cryptographic Lock**: SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` (0-bit drift).
+- **Cluster Purity Score (CPS)**: 100.0000% across Category 1.
+- **Single-Drawer Law**: Strictly enforced for HORIZON-03 (Universal Ghost Entity & Synthetic Wrapper Catharsis).
+
 
 
 

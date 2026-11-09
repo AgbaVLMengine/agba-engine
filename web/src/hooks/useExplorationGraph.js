@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import masterCorpus from '../data/yoruba_master_corpus.json';
 
 const STORAGE_KEY = 'agba_vein_rabbit_hole_v1';
 
@@ -6,7 +7,7 @@ export const PEER_CULTURES = {
   yoruba: {
     id: 'yoruba',
     label: 'Yorùbá',
-    subtitle: 'Ìmọ̀ Yorùbá • 1,418 Canonical Nodes & 256 Odù Ifá',
+    subtitle: `Ìmọ̀ Yorùbá • ${masterCorpus.length.toLocaleString()} Canonical Nodes & 256 Odù Ifá`,
     diacriticLabel: 'Àmì Ohùn',
     diacritics: ['À', 'Á', 'È', 'É', 'Ẹ̀', 'Ẹ́', 'Ì', 'Í', 'Ò', 'Ó', 'Ọ̀', 'Ọ́', 'Ù', 'Ú', 'Ṣ'],
     anchors: ['Òye', 'Òkèlè', 'Amàlà', 'Ìyán', 'Agbádá', 'Odù Ifá', 'Ògún', 'Bàtá', 'Adé', 'Ọfà', 'Ọbẹ̀'],

@@ -198,6 +198,20 @@
     - Extended graph topology in `useExplorationGraph.js` with atomic multi-child insertion (`branchVeinToCompoundRelatives`).
     - Enhanced SVG vascular layout engine in `VeinRabbitHoleCanvas.jsx` to render dual-arterial Bézier curves branching outward from compound nodes into distinct harmonic gold conduits without visual collision.
 
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ BUILDER CORPUS & DYNAMIC SUBTITLE BASELINE (POST HORIZON-02)
+- **Master Corpus**: Exactly **1,420 Canonical Entities** locked at SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
+- **Dynamic Subtitle Parity**: `useExplorationGraph.js` dynamic subtitle updated to `${masterCorpus.length.toLocaleString()} Canonical Nodes & 256 Odù Ifá`.
+- **Single-Drawer Law**: Inviolable. Frontend remains sealed unless intentionally opening a UI drawer.
+
 
 
 

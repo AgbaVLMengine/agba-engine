@@ -136,6 +136,20 @@
     3. *Gate 3 & Gate 4 Provenance Equilibrium*: Two-tier acoustic linking certified; Batch 19 ingestion (25 oral literature entities) audited clean with 0 Awo disclosure and bit-for-bit SHA-256 lockstep (`ae44379c...`).
   - **Legal Verdict**: **FULL EQUILIBRIUM ACHIEVED**. All legal, statutory, customary, and provenance instruments are sealed and green.
 
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ LEGAL & PROVENANCE BASELINE (POST HORIZON-02)
+- **Master Corpus**: Exactly **1,420 Canonical Entities** locked at SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
+- **Sovereign Retention Law**: All discovered unindexed sub-variants and ghost entities must be cataloged in `docs/AGBA_GHOST_ENTITIES_AND_SUBVARIANT_INVENTORY.md` prior to any batch ingestion. Zero deletion into the void.
+- **Single-Drawer Law**: Inviolable.
+
 
 
 

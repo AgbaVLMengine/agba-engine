@@ -104,3 +104,18 @@
     - Anti-scraping rate limiter (30 streams/min per IP) actively safeguarding ancestral acoustic stems under `RAIL-Cultural-Heritage-v1.0`.
     - Enterprise bulk catalog dumps and batch exports strictly gated by authenticated `X-AGBA-API-KEY` with `export_dossier` permissions.
   - **Production Gates**: 100% green pass on `scripts/sanctuary_audit.sh` (0 hard violations, 0 warnings across all 9 gates and 12 persona memory vaults). Quiet Harbor Rest Embargo clearance granted ahead of 18:00 WAT dusk.
+
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ TREASURY & DUAL-CORPORA BASELINE (POST HORIZON-02)
+- **Canonical Master Corpus**: Exactly **1,420 Entities** (+2 ingested: `Àkúnlẹ̀yàn`, `Àkúnlẹ̀gbà`; `Àyànmọ́` promoted).
+- **Cryptographic Lock**: SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` (0-bit drift).
+- **Token Discipline**: Sub-1,500 token modular tabs maintained. Zero token leaks.
+- **Single-Drawer Law**: Inviolable.

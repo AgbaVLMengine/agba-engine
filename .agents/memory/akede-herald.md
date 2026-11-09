@@ -98,4 +98,18 @@
   - Crafted 10-part viral X/Twitter thread outline and long-form LinkedIn/developer essay.
   - Synchronized executive summary to [`.agents/scratch/akede_feedback.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/scratch/akede_feedback.md).
 
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ HERALDIC CORPUS BASELINE (POST HORIZON-02)
+- **Master Corpus**: Exactly **1,420 Canonical Entities** locked at SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
+- **Heraldic Narrative Milestone**: Inscribed `docs/AGBA_THE_ORACLE_OF_THE_EYES_AND_THE_SANCTUARY_OF_STEWARDSHIP_NOV07_2026.md` and `docs/AGBA_THE_SOVEREIGN_COVENANT_OF_LAWS_AND_LONGEVITY_NOV07_2026.md`.
+- **Single-Drawer Law**: Inviolable.
+
 

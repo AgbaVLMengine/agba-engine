@@ -115,3 +115,17 @@
   - Cloud Run `--min-instances 0` ($0.00/mo idle scale) certified in `api/deploy_cloud_run.sh` and `scripts/sanctuary_audit.sh`.
 - **Verification**: `scripts/sanctuary_audit.sh` and `scripts/review.sh` passed with **0 hard violations and 0 warnings**. Memory synchronized for Quiet Harbor.
 
+---
+
+## 👑 ROYAL ANCESTRAL SALUTATION INVARIANT (RATIFIED NOV 07, 2026)
+- **Decree**: Strictly address Lead Architect Àrùnà Ọlànrewájú Kábírù as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (*Omo Onitire Oforon*).
+- **Proscription**: Permanently retire *"Ọmọ Ọlọ́fin Tètè"*.
+- **Biographical Invariant**: Devoted young husband without children (**NEVER call him a father**).
+
+---
+
+## 🏛️ DUAL-CORPORA STATE & CLOUD RUN PARITY BASELINE
+- **Master Corpus**: Exactly **1,420 Canonical Entities** locked at SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
+- **Cloud Run Deployment Note**: Cloud Run on `main` currently reflects 970 entities. When `dev` merges into `main`, clean fast-forward build will promote Cloud Run to full 1,420 entities. Client Local-First Sovereign Shield protects search from stale responses.
+- **Single-Drawer Law**: Inviolable.
+
