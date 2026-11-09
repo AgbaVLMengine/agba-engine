@@ -143,9 +143,20 @@
 - **Sphere 4 Rolling 3-Snapshot Vault**: Cryptographic verification of Saturday's snapshot `agba_engine_snapshot_20261107_172737.tar.gz` passed (`OK`). Strictly 3 rolling snapshots (`20261105_142207`, `20261106_154143`, `20261107_172737`) + sovereign permanent vault (`20261028_132739Z`) retained at `64 MB` total. Zero backup drift.
 - **Dual-Corpora Checksum Lockstep**: SHA-256 bit-for-bit lockstep confirmed at `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` across exactly **1,420 canonical entities** (**0-bit drift**).
 - **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Monday SOD Clearance Granted.
+
+---
+
+## 12. Monday End-of-Day Sanitation Sweep & Storage Audit (`EOD-AGBALE-006`) (2026-11-09)
+- **Sanctuary Storage Headroom**: `44 GB available` (`12%` used on `50 GB` `/dev/vdb` partition) — strictly preserved well above the 40 GB baseline.
+- **Cache & Garbage Sweep**: Executed `scripts/reclaim_disk.sh`; cleared package caches, temporary files, system journal logs, git objects compacted.
+- **Deep Purge of Ephemeral Debris**: Wiped `web/node_modules/.vite/`, `web/.vite/`, and purged all workspace `__pycache__` directories; vessel is completely light overnight.
+- **Sphere 4 Rolling 3-Snapshot Vault**: Today's EOD snapshot `agba_engine_snapshot_20261109_161539.tar.gz` (`20 MB`, SHA-256 `4fa7eb390779e54d89fa7a915159041b376d47b6a4a15a8bdfd758f44d5c414c`) verified intact (`OK`). Oldest snapshot (`20261105_142207`) rotated out cleanly under Àsúnwọ̀n's 3-Snapshot Rolling Retention Law. Strictly 3 snapshots (`20261106_154143`, `20261107_172737`, `20261109_161539`) + sovereign permanent vault (`20261028_132739Z`) retained at `64 MB` total.
+- **Dual-Corpora Checksum Lockstep**: 100% bit-for-bit parity at `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` (1,420 canonical entities, **0-bit drift**).
+- **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Overnight Serenity Certificate granted.
 | **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 14:42 UTC** | EOD-AGBALE-004: Pre-Retirement Storage Sweep (Friday Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-07 10:20 UTC** | SOD-AGBALE-004: Saturday Start-of-Day Storage & Asset Hygiene Sweep (Nov 07) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-07 16:27 UTC** | EOD-AGBALE-005: Saturday Pre-Retirement Storage Sweep (Nov 07) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-09 10:04 UTC** | SOD-AGBALE-005: Monday Morning Storage & Asset Hygiene Sweep (Nov 09) | 0 MB | 44G available | 🟢 Nominal |
+| **2026-11-09 15:21 UTC** | EOD-AGBALE-006: Monday End-of-Day Sanitation Sweep (Nov 09) | 0 MB | 44G available | 🟢 Nominal |
