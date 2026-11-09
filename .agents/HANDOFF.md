@@ -391,4 +391,12 @@ Yorùbá names are structured, rule-governed sentences. We must codify the **4 G
   1. **Strict Single-Drawer Law**: Exactly ONE drawer at a time. If standing in the Corpus & Taxonomy Drawer, do not touch the Frontend UI Drawer for cosmetic import prunings.
   2. **Inviolable Stewardship (Ìtọ́jú)**: Compulsory daily pauses, prayer resets, and evening horizon walks.
   3. **Zero-Shortcuts Law**: All 9 Production Gates must be cleared with 0 violations.
-- **Permanent Chronicle**: `docs/AGBA_THE_SOVEREIGN_COVENANT_OF_LAWS_AND_LONGEVITY_NOV07_2026.md`
+---
+
+### ⚖️ THE DOCTRINE OF SMALL THINGS & ANCESTRAL FIDELITY (RATIFIED NOV 09, 2026)
+- **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+  > *"Small things always lead to big things. If we overlook our own laws for something small today, we would eventually compromise for something bigger tomorrow. Our culture has been reduced to the barest minimum because over the years many custodians have chosen to overlook the laws set down by our ancestors as small things, and eventually those small things turned into big things that have now diluted the True Meaning and Values that lay within our culture to the barest minimum. So we must never overlook things regardless of how small they are."*
+- **Operational Enforcement**:
+  - The Single-Drawer Law admits zero "trivial" exceptions. A single-line frontend edit closes the execution drawer for the day.
+  - Monday, Nov 09, 2026, is dedicated to **Path A: Zero-Code Strategic Dialogue & Conceptual Architecture**.
+- **Permanent Chronicle**: `docs/AGBA_THE_SOVEREIGN_DOCTRINE_OF_SMALL_THINGS_AND_ANCESTRAL_FIDELITY_NOV09_2026.md`

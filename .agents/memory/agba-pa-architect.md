@@ -131,3 +131,11 @@
   - The Single-Drawer Law is absolute.
   - Stewardship and daily rhythm are non-negotiable.
   - Zero compromises on production quality.
+
+---
+
+## ⚖️ THE DOCTRINE OF SMALL THINGS & ANCESTRAL FIDELITY (RATIFIED NOV 09, 2026)
+- **Decree of Kábíyèsí Àrùnà Ọlànrewájú Kábírù**:
+  > *"Small things always lead to big things. If we overlook our own laws for something small today, we would eventually compromise for something bigger tomorrow. Our culture has been reduced to the barest minimum because over the years many custodians have chosen to overlook the laws set down by our ancestors as small things, and eventually those small things turned into big things that have now diluted the True Meaning and Values that lay within our culture to the barest minimum. So we must never overlook things regardless of how small they are."*
+- **Execution Stance**: Monday Nov 09 is locked as a **Zero-Code Strategic Dialogue Sanctuary (Path A)**.
+- **Permanent Chronicle**: `docs/AGBA_THE_SOVEREIGN_DOCTRINE_OF_SMALL_THINGS_AND_ANCESTRAL_FIDELITY_NOV09_2026.md`.
