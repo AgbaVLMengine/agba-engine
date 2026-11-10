@@ -435,22 +435,24 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
     - Dual-corpora SHA-256 locked with 0-bit drift: `be2fd71233d262bd159a5c17571e98ba18486d1ad498e413b773bd5c121b8169`.
     - Regression suites verified: `scripts/benchmark_sprint004.py` passed **88/88 (100.0%)**, `scripts/sanctuary_audit.sh` passed with 0 violations, and Vite client compiled cleanly in **945ms**.
 
-- **2026-11-07 [HORIZON-02 (Batch 2): Top 12 Primordial Divinities & Sacred Implements Enriched]**:
+- **2026-11-10 [HORIZON-02: Phase 3 Category 1 Declarative Catharsis & Consolidation Executed]**:
   - **Single-Drawer Law Strictly Maintained** inside Category 1 (Spiritual & Cosmological Matrix).
-  - Enriched Top 12 Primordial Cosmic Divinities & Sacred Implements with profound etymologies (>800 to >1,300 chars) and complete 3-proverb canonical triads:
-    - `Olódùmarè` (1,246 chars, 3rd proverb added, marked `is_parent: true`).
-    - `Àyànmọ́` (1,024 chars, duplicate kneeling proverb replaced with authentic *"Àyànmọ́ kò gbóògùn"* triad).
-    - `Ṣàngó` (1,365 chars, 3-proverb triad completed: Edun Àrá, Kòso dynasty, solar justice).
-    - `Ọ̀ṣun` (1,399 chars, triad completed from 1 to 3 proverbs: Brass/Idẹ, sweet waters, Òṣogbo treaty).
-    - `Ògún` (1,329 chars, 3-proverb triad completed: Iron pathfinder, Ire dynasty, forge).
-    - `Ifá` (1,336 chars, 3-proverb triad completed: Ẹlẹ́rìí Ìpín, 16 Ikin palm nuts).
-    - `Yemọja` (1,209 chars, triad completed from 1 to 3 proverbs: maternal waters, River Ògùn).
-    - `Olókun` (1,047 chars, triad completed from 1 to 3 proverbs: ocean abyss, coral bead wealth).
-    - `Ọ̀yá`, `Ọbalúayé`, `Ọ̀ṣọ́ọ̀sì`, `Ọ̀pẹ̀lẹ̀`: completed full 3-proverb canonical triads.
-  - Authored declarative payload vault `scripts/data/batches/category01_pantheon_payloads.json` and runner `scripts/enrich_category01_pantheon.py` (**63 LOC**, Gate 2 compliant).
-  - Maintained exact 1,420 canonical entity count across both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`.
-  - Bit-for-bit SHA-256 lockstep verified: `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
-  - Verification: `benchmark_sprint004.py` passed **88/88 (100.0%) Top-1 Accuracy**, `sanctuary_audit.sh` passed with 0 violations, and Vite client compiled cleanly in **1.02s**.
+  - Executed 7 duplicate merges and synthetic wrapper consolidations:
+    - Merged `Sango-Ose` into canonical `Oṣé Ṣàngó`.
+    - Merged unaccented `Opele` into canonical `Ọ̀pẹ̀lẹ̀`.
+    - Merged unaccented `Opón Ifá` into canonical `Ọpọ́n Ifá` (`Ọpọ́n_Ifá`).
+    - Merged synthetic wrapper `CORPUS_OBATALA_001` into canonical `Obàtálá`.
+    - Merged synthetic wrapper `CORPUS_IFA_SYSTEM_001` into canonical `Ifá` and `Babaláwo`.
+    - Merged dual wrappers `CORPUS_ESU_ODARA_001` and `CORPUS_ESU_ELEGBARA_001` into canonical `Èṣù`.
+    - Decoupled `Àjà` from `sovereign_parent: "Ẹranko"`, updating cultural relatives to `["Ọ̀sanyìn", "Igbó Elédùmarè"]`.
+  - Scrubbed leaked prompt prefixes across proverbs in `Obàtálá`, `Aganjù`, `Olóṣa`, `Sigidi`, `Àṣẹ`, and `Òtúrá` (reducing leaks from 6 to 0).
+  - Deduplicated `sub_variants` across `Ikin_Ifá`, `Agẹrẹ_Ifá`, `Ọ̀pẹ̀lẹ̀`, `Ọpọ́n_Ifá`, and `Baṣọ̀run`.
+  - Inscribed declarative payload fixture `scripts/data/batches/category01_catharsis_payloads.json` and runner `scripts/apply_category01_catharsis.py` (**82 LOC**, Gate 2 compliant).
+  - Consolidated master corpus entity count to **1,413 canonical entities** across both API and Web master corpora.
+  - Bit-for-bit SHA-256 lockstep verified: `4e5b121d1c8fbf1109e46d06ebcb92c27b0668a42967b413ca151dbd74f8ebaf` (0 bits drift).
+  - Verification: `run_audit.py --category 1` confirmed duplicate pairs dropped from 160 to 151, leaked prefixes dropped to 0, and SVIS increased from 79.81% to 83.54%.
+  - Regression verified: `benchmark_sprint004.py` passed **88/88 (100.0%) Top-1 Accuracy**, `sanctuary_audit.sh` passed with 0 violations, and Vite client compiled cleanly in **1.17s**.
+
 
 
 

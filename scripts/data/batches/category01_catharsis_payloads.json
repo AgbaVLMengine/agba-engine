@@ -1,0 +1,121 @@
+{
+  "description": "Category 1 Declarative Catharsis & Taxonomic Consolidation Payload (Phase 3)",
+  "version": "1.0.0",
+  "author": "Ọlọ́yè Àrọ̀kìn (arokin-archivist)",
+  "date": "2026-11-10",
+  "duplicate_merges": [
+    {
+      "source_id": "Sango-Ose",
+      "target_id": "Oṣé Ṣàngó",
+      "new_aliases": ["sango ose", "sango-ose", "Ṣàngó-Oṣé", "aake sango", "double-bladed axe", "axe of sango"]
+    },
+    {
+      "source_id": "Opele",
+      "target_id": "Ọ̀pẹ̀lẹ̀",
+      "new_aliases": ["opele", "sacred divination chain", "opele ifa"]
+    },
+    {
+      "source_id": "Opón Ifá",
+      "target_id": "Ọpọ́n_Ifá",
+      "new_aliases": ["opon ifa", "opon-ifa", "opón ifá", "carved wooden divination tray"]
+    },
+    {
+      "source_id": "CORPUS_OBATALA_001",
+      "target_id": "Obàtálá",
+      "new_aliases": ["orisa nla", "òrìṣà-ńlá", "king of white cloth", "sculptor of humanity", "orishanla", "alamo rere"]
+    },
+    {
+      "source_id": "CORPUS_IFA_SYSTEM_001",
+      "target_id": "Ifá",
+      "new_aliases": ["ifa divination system", "consultation of ifa", "dida ifa", "communication between gods and men"]
+    },
+    {
+      "source_id": "CORPUS_IFA_SYSTEM_001",
+      "target_id": "Babaláwo",
+      "new_aliases": ["ifa priesthood", "babaláwo guild", "ìyánífá council", "ọlọ́wọ ifá"]
+    },
+    {
+      "source_id": "CORPUS_ESU_ODARA_001",
+      "target_id": "Èṣù",
+      "new_aliases": ["esu odara", "èṣù ọ̀dàrà", "master of crossroads", "trickster deity", "orisha esu", "exu odara"]
+    },
+    {
+      "source_id": "CORPUS_ESU_ELEGBARA_001",
+      "target_id": "Èṣù",
+      "new_aliases": ["esu elegbara", "èṣù-ẹlẹ́gbára", "elegbara", "elegba", "ogo elegba", "threshold altar", "market guardian esu"]
+    }
+  ],
+  "retire_ids": [
+    "Sango-Ose",
+    "Opele",
+    "Opón Ifá",
+    "CORPUS_OBATALA_001",
+    "CORPUS_IFA_SYSTEM_001",
+    "CORPUS_ESU_ODARA_001",
+    "CORPUS_ESU_ELEGBARA_001"
+  ],
+  "entity_updates": {
+    "Àjà": {
+      "sovereign_parent": null,
+      "sovereign_parent_status": null,
+      "connected_cultural_relatives": ["Ọ̀sanyìn", "Igbó Elédùmarè"],
+      "cultural_relatives": ["Ọ̀sanyìn", "Igbó Elédùmarè"],
+      "related_entities": ["Ọ̀sanyìn", "Igbó Elédùmarè"]
+    },
+    "Ikin_Ifá": {
+      "sub_variants": [
+        "Ikin Ọlọ́jú Mẹ́rin (Four-Eyed Consecrated Palm Nut)",
+        "Ikin Ọlọ́jú Mẹ́ta (Three-Eyed Sacred Palm Nut)",
+        "Ikin Ọ̀rúnmìlà"
+      ]
+    },
+    "Agẹrẹ_Ifá": {
+      "sub_variants": [
+        "Agẹrẹ Ológun (Equestrian Carved Divination Vessel)",
+        "Agẹrẹ Arúgbá (Kneeling Maiden Caryatid Vessel)",
+        "Agẹrẹ Ẹlẹ́yinjú"
+      ]
+    },
+    "Ọ̀pẹ̀lẹ̀": {
+      "sub_variants": [
+        "Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)",
+        "Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)",
+        "Ọ̀pẹ̀lẹ̀ Awọ"
+      ]
+    },
+    "Ọpọ́n_Ifá": {
+      "sub_variants": [
+        "Ọpọ́n Ifá Olórí Èṣù (Divination Tray with Crown of Èṣù)",
+        "Ọpọ́n Ifá Gbẹ́rọ́ (Deep Relief Ceremonial Divination Tray)",
+        "Ọpọ́n Ọlọ́fà"
+      ]
+    },
+    "Baṣọ̀run": {
+      "sub_variants": [
+        "Baṣọ̀run Gáà",
+        "Basọ̀run Olúyọ̀lé",
+        "Ọ̀yọ́ Mèsì",
+        "Igbá Ìwà",
+        "Idà Ọrọ̀"
+      ]
+    }
+  },
+  "prompt_scrubbing": [
+    {
+      "pattern": " (Parenthetical English translation: '",
+      "replacement": " ("
+    },
+    {
+      "pattern": "' Philosophical commentary: ",
+      "replacement": ": "
+    },
+    {
+      "pattern": " Philosophical commentary: ",
+      "replacement": " "
+    },
+    {
+      "pattern": "; philosophical commentary: ",
+      "replacement": ": "
+    }
+  ]
+}

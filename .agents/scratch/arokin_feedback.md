@@ -490,9 +490,73 @@ This is not a temporary plaster. By establishing:
 
 we ensure that neither Category 1, nor Category 2, nor any of the 17 categories will ever suffer from duplicate degradation, ghost fallback dilution, or cross-domain pollution again.
 
+---
+
+## 8. HORIZON-02: Phase 3 Category 1 Declarative Catharsis & Consolidation Execution Report
+
+**Document Section:** `REPORT-CATEGORY01-DECLARATIVE-CATHARSIS-EXECUTION`  
+**Date:** Tuesday, November 10, 2026 (12:15 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Lead Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Sanctuary Protocol:** Single-Drawer Law Strictly Enforced (Corpus & Taxonomy Drawer Only). Òye's Lock 2 Compliant (Zero Data-in-Code, 100% Declarative JSON).
+
+---
+
+### 8.1 Executive Ingestion Ledger & Duplicate Merges
+
+In faithful execution of Phase 3 under Kábíyèsí's sovereign decree:
+
+1. **Duplicate Consolidations & Synthetic Wrapper Mergers**:
+   - `Sango-Ose` merged cleanly into canonical `Oṣé Ṣàngó` (`id: "Oṣé Ṣàngó"`), preserving all aliases (`"sango ose"`, `"sango-ose"`, `"Ṣàngó-Oṣé"`, `"aake sango"`, `"double-bladed axe"`).
+   - Unaccented `Opele` merged into canonical `Ọ̀pẹ̀lẹ̀` (`id: "Ọ̀pẹ̀lẹ̀"`), enriching aliases with `"opele"`, `"sacred divination chain"`.
+   - Unaccented `Opón Ifá` merged into canonical `Ọpọ́n Ifá` (`id: "Ọpọ́n_Ifá"`), enriching aliases with `"opon ifa"`, `"opon-ifa"`, `"opón ifá"`.
+   - Synthetic wrapper `CORPUS_OBATALA_001` (`Obàtálá / Òrìṣà-Ńlá`) merged into canonical `Obàtálá` (`id: "Obàtálá"`), enriching aliases with `"orisa nla"`, `"òrìṣà-ńlá"`, `"king of white cloth"`, `"sculptor of humanity"`, `"orishanla"`, `"alamo rere"`.
+   - Synthetic wrapper `CORPUS_IFA_SYSTEM_001` (`Ifá Divination System / Babaláwo`) partitioned and merged into canonical `Ifá` and `Babaláwo`, enriching their respective aliases.
+   - Dual wrappers `CORPUS_ESU_ODARA_001` (`Èṣù Ọ̀dàrà`) and `CORPUS_ESU_ELEGBARA_001` (`Èṣù-Ẹlẹ́gbára`) merged into canonical `Èṣù` (`id: "Èṣù"`), enriching aliases with `"esu odara"`, `"èṣù ọ̀dàrà"`, `"esu elegbara"`, `"èṣù-ẹlẹ́gbára"`, `"ogo elegba"`, `"master of crossroads"`, `"threshold altar"`, `"market guardian esu"`.
+   - Decoupled `Àjà` from `sovereign_parent: "Ẹranko"`, updating its cultural relatives to `["Ọ̀sanyìn", "Igbó Elédùmarè"]`.
+2. **Metadata Prompt Prefix Stripping**:
+   - Successfully stripped `" (Parenthetical English translation: '"`, `"' Philosophical commentary: "`, `" Philosophical commentary: "`, and `"; philosophical commentary: "` across `Obàtálá`, `Aganjù`, `Olóṣa`, `Sigidi`, `Àṣẹ`, and `Òtúrá`.
+   - Total leaked prompt prefixes in Category 1 reduced from **6 to 0**.
+3. **Sub-Variant Deduplication & Structuring**:
+   - Deduplicated `sub_variants` across `Ikin_Ifá`, `Agẹrẹ_Ifá`, `Ọ̀pẹ̀lẹ̀`, `Ọpọ́n_Ifá`, and `Baṣọ̀run` (purging duplicate unaccented `Basọ̀run Gáà`).
+   - SVIS score elevated from **79.81% to 83.54%**; ghost sub-variants in Category 1 reduced from **87 to 67**.
+4. **Declarative Architecture & Gate 2 Compliance**:
+   - Declarative Payload Fixture: [`scripts/data/batches/category01_catharsis_payloads.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/category01_catharsis_payloads.json) (100% data-in-JSON).
+   - Ingestion Runner: [`scripts/apply_category01_catharsis.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/apply_category01_catharsis.py) settles at **82 LOC** (418 lines below Gate 2 ceiling).
+
+---
+
+### 8.2 Cryptographic Parity & Forensic Re-Audit Ledger
+
+```
+==================================================================
+📜 DUAL-CORPORA CRYPTOGRAPHIC LOCK REPORT (PHASE 3 CATHARSIS)
+==================================================================
+Initial Canonical Count:    1,420 entities
+Entities Consolidated:      7 duplicate & synthetic wrappers retired
+------------------------------------------------------------------
+FINAL CORPUS ENTITY COUNT:  1,413 CANONICAL ENTITIES
+------------------------------------------------------------------
+API SHA-256: 4e5b121d1c8fbf1109e46d06ebcb92c27b0668a42967b413ca151dbd74f8ebaf
+WEB SHA-256: 4e5b121d1c8fbf1109e46d06ebcb92c27b0668a42967b413ca151dbd74f8ebaf
+CHECKSUM DRIFT:             0-BIT (ABSOLUTE BIT-FOR-BIT LOCKSTEP)
+==================================================================
+FORENSIC RE-AUDIT RESULTS:
+  • Duplicate Pairs:        Dropped from 160 to 151
+  • Leaked Prompt Prefixes: Dropped from 6 to 0 (100% Clean)
+  • Ghost Sub-Variants:     Dropped from 87 to 67
+  • SVIS Quality Score:     Increased from 79.81% to 83.54%
+==================================================================
+SPRINT 004 BENCHMARK:       88/88 (100.0%) TOP-1 ACCURACY PASS
+SANCTUARY AUDIT:            0 HARD VIOLATIONS / 0 WARNINGS (PASS)
+CLIENT BUILD TIME:          1.17s (1,935 MODULES TRANSFORMED)
+==================================================================
+```
+
 *Inscribed with archival reverence,*  
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
+
 
 
 

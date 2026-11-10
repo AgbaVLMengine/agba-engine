@@ -143,15 +143,20 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
   if (resolved.length < limit && details.sovereign_parent) {
     const parentNFC = normalizeNFC(details.sovereign_parent);
     const parentClean = stripAccents(details.sovereign_parent);
-    const exactParent = masterCorpus.find((e) => normalizeNFC(e.title) === parentNFC);
+    const isDomainAligned = (e) =>
+      !selfCategory ||
+      !e.category ||
+      e.category === selfCategory ||
+      CATEGORY_AFFINITY[selfCategory]?.has(e.category);
+
+    const exactParent = masterCorpus.find(
+      (e) => normalizeNFC(e.title) === parentNFC && isDomainAligned(e)
+    );
     const parentHit =
       exactParent ||
-      masterCorpus.find((e) => stripAccents(e.title) === parentClean && e.is_parent === true) ||
-      masterCorpus.find(
-        (e) =>
-          stripAccents(e.title) === parentClean &&
-          (!selfCategory || !e.category || e.category === selfCategory || CATEGORY_AFFINITY[selfCategory]?.has(e.category))
-      );
+      masterCorpus.find((e) => stripAccents(e.title) === parentClean && e.is_parent === true && isDomainAligned(e)) ||
+      masterCorpus.find((e) => stripAccents(e.title) === parentClean && isDomainAligned(e));
+
     if (parentHit) {
       pushUnique(parentHit);
       if (Array.isArray(parentHit.sub_variants)) {
@@ -159,33 +164,43 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
           if (resolved.length >= limit) break;
           const sibNFC = normalizeNFC(sib);
           const sibClean = stripAccents(sib);
-          const exactSib = masterCorpus.find((e) => normalizeNFC(e.title) === sibNFC);
+          const exactSib = masterCorpus.find((e) => normalizeNFC(e.title) === sibNFC && isDomainAligned(e));
           const sibHit =
             exactSib ||
-            masterCorpus.find(
-              (e) =>
-                stripAccents(e.title) === sibClean &&
-                (!selfCategory || !e.category || e.category === selfCategory || CATEGORY_AFFINITY[selfCategory]?.has(e.category))
-            );
+            masterCorpus.find((e) => stripAccents(e.title) === sibClean && isDomainAligned(e));
           pushUnique(sibHit);
         }
       }
     }
   }
 
-  // Tier 2b: Reverse Sovereign Parent & Sibling Lineage
+  // Tier 2b: Reverse Sovereign Parent & Sibling Lineage (Strict NFC & Intra-Domain Confinement)
   if (resolved.length < limit) {
     for (const parentCand of masterCorpus) {
       if (!Array.isArray(parentCand.sub_variants)) continue;
+      const isParentAligned =
+        !selfCategory ||
+        !parentCand.category ||
+        parentCand.category === selfCategory ||
+        CATEGORY_AFFINITY[selfCategory]?.has(parentCand.category);
+      if (!isParentAligned) continue;
+
       const hasSelfInVariants = parentCand.sub_variants.some(
-        (sv) => normalizeNFC(sv) === selfTitleNFC || stripAccents(sv) === selfTitleClean
+        (sv) => normalizeNFC(sv) === selfTitleNFC
       );
       if (hasSelfInVariants) {
         pushUnique(parentCand);
         for (const siblingName of parentCand.sub_variants) {
           if (resolved.length >= limit) break;
           const sibNFC = normalizeNFC(siblingName);
-          const sibHit = masterCorpus.find((e) => normalizeNFC(e.title) === sibNFC);
+          const sibHit = masterCorpus.find(
+            (e) =>
+              normalizeNFC(e.title) === sibNFC &&
+              (!selfCategory ||
+                !e.category ||
+                e.category === selfCategory ||
+                CATEGORY_AFFINITY[selfCategory]?.has(e.category))
+          );
           pushUnique(sibHit);
         }
       }

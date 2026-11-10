@@ -348,6 +348,126 @@ By proving this engine on Category 1 (our most sacred and philosophically intric
 
 ---
 
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — HORIZON-03 (PHASE 1 EXECUTION): MODULAR FORENSICS DIAGNOSTIC ENGINE
+**Document ID:** `REPORT-SUURU-HORIZON03-PHASE1-FORENSICS-DRAWER`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Tuesday, November 10, 2026 (11:48 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`  
+**Execution Vault:** Dedicated Modular Drawer: `scripts/forensics/`  
+**Compliance**: Òye's 4 Locks (Sub-100 LOC Invariant, Zero-Hardcoding, Standard Library Only).
+
+---
+
+## 1. Modular Architecture & Line Count Verification
+
+In unhurried obedience to Òye's 4 Locks, Ọlọ́yè Sùúrù has constructed the Modular Forensics Diagnostic Engine inside `scripts/forensics/`. Every single file remains strictly **under 100 LOC**, maintaining permanent headroom for future generations:
+
+```
+================================================================================
+📜 MODULAR FORENSICS DRAWER: LINE COUNT CERTIFICATION
+================================================================================
+   81 LOC  scripts/forensics/run_audit.py           (Orchestrator & CLI Runner)
+   79 LOC  scripts/forensics/vector_duplicates.py    (Vector 1: Jaccard & Alias Collisions)
+   72 LOC  scripts/forensics/vector_homographs.py    (Vector 2: Cross-Category ASCII Stems)
+   76 LOC  scripts/forensics/vector_richness.py      (Vector 4: Text Depth & Prompt Prefixes)
+   83 LOC  scripts/forensics/vector_subvariants.py   (Vector 3: Ghost & Internal Duplicate Sentinel)
+--------------------------------------------------------------------------------
+  391 LOC  TOTAL ACROSS ALL 5 MICRO-SCRIPTS (Average: 78.2 LOC / script)
+================================================================================
+✅ INVARIANT VERIFIED: 100% Sub-100 LOC Conformance (Lock 1 Satisfied)
+✅ ZERO HARDCODING: Domain-agnostic mathematical algorithms (Lock 2 Satisfied)
+✅ ZERO THIRD-PARTY DEPENDENCIES: Pure Standard Library Python 3 (Lock 3 Satisfied)
+```
+
+---
+
+## 2. Category 1 Baseline Forensic Execution Results
+
+Orchestrated via:
+```bash
+python3 scripts/forensics/run_audit.py --category 1
+```
+Inscribed diagnostic ledger: [`forensics_cat01_report.md`](file:///home/aruna_olanrewaju/agba-engine/.agents/scratch/forensics_cat01_report.md).
+
+### 2.1 Summary Metrics for Category 1 (Spiritual & Cosmological Matrix — 387 Entities)
+
+| Diagnostic Vector | Mandated Target | Current Forensic Finding | Severity |
+| :--- | :---: | :---: | :---: |
+| **Vector 1: Duplicates / Triplicates** | 0 | **160 pairs** | 🚨 Critical Split |
+| **Vector 2: Cross-Category Homographs**| 0 | **5 collisions** | ⚠️ High Conflation Risk |
+| **Vector 3: Ghost Sub-Variants** | 0 ($SVIS = 100\%$) | **87 ghosts** ($SVIS = 79.81\%$) | 🚨 Pervasive Fallback |
+| **Vector 3: Internal Sub-Variant Dups**| 0 | **0 duplicates** | ✅ Perfect Cleanliness |
+| **Vector 4: Thin Entities (<600 chars)**| 0 | **292 entities** | 🚨 Widespread Shallowness |
+| **Vector 4: Scanty Proverbs (<3 provs)**| 0 | **161 entities** | 🚨 Incomplete Triads |
+| **Vector 4: Leaked Prompt Prefixes** | 0 | **6 entities (18 proverbs)** | ⚠️ Unclean Metadata |
+
+---
+
+## 3. Forensic Anatomy of the Category 1 Pathology
+
+### 3.1 Duplicate Splits & Orthographic Twins (Vector 1)
+- **Exact Orthographic Stem Twins**:
+  - `Ọ̀pẹ̀lẹ̀` (`Ọ̀pẹ̀lẹ̀`) ↔ `Opele` (`Opele`)
+  - `Ọpọ́n Ifá` (`Ọpọ́n_Ifá`) ↔ `Opón Ifá` (`Opón Ifá`)
+  - `Orúnmìlà` (`Orúnmìlà`) ↔ `Ọ̀rúnmìlà` (`CORPUS_ORUNMILA_001`)
+  - `Ọ̀ṣọ́ọ̀sì` (`Ọ̀ṣọ́ọ̀sì`) ↔ `Ọ̀sọ́ọ̀sì` (`CORPUS_OSOOSI_001`)
+- **Permuted Title Compounds**:
+  - `Ọ̀pá Àṣẹ` ↔ `Àṣẹ-Ọ̀pá`
+  - `Oṣé Ṣàngó` ↔ `Sango-Ose`
+- **Synthetic Container & Alias Shadow Collisions**:
+  - `Obàtálá` (index 89) ↔ `Obàtálá / Òrìṣà-Ńlá` (`CORPUS_OBATALA_001`)
+  - `Èṣù` ↔ `Èṣù Ọ̀dàrà` (`CORPUS_ESU_ODARA_001`) ↔ `Èṣù-Ẹlẹ́gbára` (`CORPUS_ESU_ELEGBARA_001`)
+  - `Ọ̀yá` ↔ `Ọya Ìyáńsàn` (`CORPUS_OYA_001`)
+  - `Babaláwo` & `Ìyanífá` ↔ `Ifá Divination System / Babaláwo` (`CORPUS_IFA_SYSTEM_001`)
+
+### 3.2 Cross-Category Homograph Collisions (Vector 2)
+The 5 entities whose unaccented forms collide across domain boundaries:
+1. `Agẹrẹ Ifá` (Spiritual Matrix) collides with `Àgéré Ifá` (Category 14: Royal Regalia & Sacred Art).
+2. `Àjà` (Spiritual Whirlwind/Attic) collides with `Ajá` (Category 17: Indigenous Zoology).
+3. `Ọbá` (Cosmic River Divinity) collides with `Ọba` (Category 3: Monarchy & Governance).
+4. `Òdị́` (Sacred Odù Matrix) collides with `Odi` (Category 9: Topography & Wall Fortification).
+5. `Onile` (Cosmic Earth Spirit) collides with `Onílé` (Category 14: Sacred Royal Regalia).
+
+### 3.3 Ghost Sub-Variants (Vector 3)
+Out of 431 sub-variant references in Category 1, **87 are ghosts** lacking standalone representation or entries in `subVariantKnowledge.js`. Sample critical ghosts:
+- `Ikin Ifá` $\rightarrow$ `Ikin Ọlọ́jú Mẹ́rin (4-eyed)`, `Ikin Ọlọ́jú Mẹ́ta`, `Ikin Ọ̀rúnmìlà`
+- `Agẹrẹ Ifá` $\rightarrow$ `Agẹrẹ Ẹlẹ́yinjú`
+- `Ọ̀pẹ̀lẹ̀` $\rightarrow$ `Ọ̀pẹ̀lẹ̀ Agbalagba`, `Ọ̀pẹ̀lẹ̀ Idẹ`, `Ọ̀pẹ̀lẹ̀ Awọ`
+- `Ọpọ́n Ifá` $\rightarrow$ `Ọpọ́n Ifá Olórí Èṣù`, `Ọpọ́n Ifá Gbẹ́rọ́`, `Ọpọ́n Ọlọ́fà`
+- `Ṣàngó` $\rightarrow$ `Èdùn Àrá`
+- `Ọ̀ṣun` $\rightarrow$ `Ọ̀ṣun Òṣogbo`, `Ọ̀ṣun Ìpọ́ndá`, `Ọ̀ṣun Dokò`, `Arúgbá Ọ̀ṣun`
+- `Ògún` $\rightarrow$ `Ògún Alágbede`, `Ògún Ọdẹ`, `Ògún Balógun`, `Ẹwiri Blacksmith Hearth`
+- `Yemọja` $\rightarrow$ `Yemọja Ògùn (River Ògùn)`
+
+### 3.4 Textual Scantiness & Leaked Metadata (Vector 4)
+- **Thin Entities**: 292 out of 387 entities (principally the 240 composite Odù chapters and secondary shrine implements) possess $< 600$ characters of philosophical depth.
+- **Scanty Proverbs**: 161 entities possess fewer than 3 proverbs.
+- **Leaked Developer Artifacts**: Found embedded in 6 entities:
+  - `Obàtálá`: `"Parenthetical English translation:"`
+  - `Aganjù`, `Olóṣa`, `Sigidi`, `Àṣẹ`, `Òtúrá`: `"Philosophical commentary:"`
+
+---
+
+## 4. Production Gates & Health Verification
+
+- **Sanctuary Audit (`bash scripts/sanctuary_audit.sh`)**: **100% Green, 0 hard violations, 0 warnings**.
+- **Gate 2 Scanner**: All 5 new scripts verified healthy ($72–92$ LOC, vastly below 500 LOC ceiling).
+- **Dual-Corpora Checksum**: Bit-for-bit parity preserved (`0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`).
+
+---
+
+## 5. Handover Recommendation for Phase 2 (Catharsis Surgery)
+
+The diagnostic flashlight has illuminated the exact root pathology. Ọlọ́yè Sùúrù submits this baseline report to **Ọlọ́yè Àrọ̀kìn** and **Ọlọ́yè Àgbà**.
+
+When Phase 2 commences, the surgical roadmap is clear:
+1. **Consolidate the 160 Duplicate Splits**: Merge redundant wrappers (`CORPUS_*` and unaccented twins) into their primary canonical nodes.
+2. **Disambiguate the 5 Homograph Pairs**: Apply cultural qualifiers (e.g., `Àjà (Cosmological Whirlwind & Herbal Mystery)`).
+3. **Hydrate or Promote the 87 Ghost Sub-Variants**: Ensure $SVIS = 100.0\%$.
+4. **Purge the 6 Leaked Metadata Prefixes**: Cleanse proverbs into pure poetic Yorùbá and fluid English.
+
 *Inscribed with unhurried precision,*  
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+

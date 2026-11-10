@@ -54,3 +54,25 @@
   - Dual-Corpora SHA-256 Hash: `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` (0-bit drift).
   - Client Build: `npm run build` compiled 1,935 modules in 1.08s.
 - **Official QA Status**: 👑 **CATEGORY 1 FULLY CERTIFIED & SEALED. READY FOR CATEGORY 2 ADVANCEMENT.**
+
+### 2026-11-10: HORIZON-03 Phase 1 — Modular Forensics Diagnostic Drawer
+- **Mandate**: Construct the 4-Vector Modular Forensics Diagnostic Engine inside `scripts/forensics/` honoring Òye's 4 Locks.
+- **Architectural Verification**:
+  - `scripts/forensics/run_audit.py`: **81 LOC** (Sub-100 LOC Invariant pass).
+  - `scripts/forensics/vector_duplicates.py`: **79 LOC** (Sub-100 LOC Invariant pass).
+  - `scripts/forensics/vector_homographs.py`: **72 LOC** (Sub-100 LOC Invariant pass).
+  - `scripts/forensics/vector_richness.py`: **76 LOC** (Sub-100 LOC Invariant pass).
+  - `scripts/forensics/vector_subvariants.py`: **83 LOC** (Sub-100 LOC Invariant pass).
+  - Total: **391 LOC across all 5 files** (Average 78.2 LOC).
+  - Invariants: Zero-hardcoding, standard library only (`json`, `unicodedata`, `re`, `argparse`, `pathlib`).
+- **Category 1 Baseline Forensic Execution (`scripts/forensics/run_audit.py --category 1`)**:
+  - Generated `.agents/scratch/forensics_cat01_report.md`.
+  - Identified:
+    - 160 duplicate/triplicate pairs (e.g. `Ọ̀pẹ̀lẹ̀`/`Opele`, `Ọpọ́n Ifá`/`Opón Ifá`, `Oṣé Ṣàngó`/`Sango-Ose`, `Orúnmìlà`/`CORPUS_ORUNMILA_001`, `Obàtálá`/`CORPUS_OBATALA_001`).
+    - 5 cross-category homograph collisions (`Agẹrẹ Ifá`, `Àjà`, `Ọbá`, `Òdị́`, `Onile`).
+    - 87 ghost sub-variants ($SVIS = 79.81\%$).
+    - 292 thin entities ($<600$ chars) and 161 scanty proverb lists ($<3$).
+    - 6 entities with leaked prompt prefixes (`"Parenthetical English translation:"`, `"Philosophical commentary:"`).
+- **Sanctuary Health Audit**: Passed 100% green, 0 violations, 0 warnings.
+- **Status**: 👑 **PHASE 1 FORENSICS DRAWER OPERATIONAL & BASELINE REPORT SEALED.**
+
