@@ -27,8 +27,9 @@ export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
   const pTitle = parentEntity.title || 'Heritage';
   const pCat = parentEntity.category || 'Cultural Heritage';
 
-  // Fetch specialized 14-Tier constellation metadata
-  const deepMeta = getSubVariantDeepMetadata(variantTitle, parentEntity);
+  // Fetch specialized 14-Tier constellation metadata (Declarative JSON priority, then JS fallback)
+  const corpusFacet = parentEntity.sub_variant_facets?.[variantTitle] || parentEntity.sub_variant_facets?.[variantClean];
+  const deepMeta = corpusFacet || getSubVariantDeepMetadata(variantTitle, parentEntity);
 
   const pTimeline = deepMeta.historical_timeline || parentEntity.historical_timeline || `Preserved through the generational lineage of ${pTitle}.`;
   const pCraft = deepMeta.material_and_craftsmanship || parentEntity.material_and_craftsmanship || 'Traditional luxury handcraft and guild metallurgy.';

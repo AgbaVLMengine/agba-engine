@@ -30,6 +30,8 @@ def audit_subvariants(
         for a in (e.get("aliases") or []):
             if a:
                 canonical_aliases.add(str(a).strip())
+        for fk in (e.get("sub_variant_facets") or {}).keys():
+            canonical_aliases.add(str(fk).strip())
 
     knowledge_keys = load_knowledge_map_keys(knowledge_path)
     valid_lookup = canonical_titles | canonical_ids | canonical_aliases | knowledge_keys

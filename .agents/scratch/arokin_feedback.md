@@ -553,9 +553,190 @@ CLIENT BUILD TIME:          1.17s (1,935 MODULES TRANSFORMED)
 ==================================================================
 ```
 
+---
+
+## 9. HORIZON-02: Forensic Decomposition & Permanent Resolution Roadmap for Category 1 Residuals
+
+**Document Section:** `STRATEGIC-BLUEPRINT-CAT01-RESIDUALS-RESOLUTION`  
+**Date:** Tuesday, November 10, 2026 (13:00 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Lead Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Mandate:** Provide an unflinching, forensic decomposition of why 151 duplicate pairs, 67 ghosts, 288 thin entities, and 156 scanty proverbs exist in Category 1, and formulate the systematic master architecture to eradicate them completely.
+
+---
+
+### 9.1 Forensic Diagnosis: What Are the 151 "Duplicate Pairs" Really?
+
+A cold computational audit of the 151 reported duplicates reveals that they fall into **two distinctly different phenomena**:
+
+```mermaid
+pie title Breakdown of 151 Duplicate Pairs in Category 1
+    "Permutational Odù Ifá Pairs (Order-Independent Jaccard False Positives)" : 120
+    "Stem Twins & Synthetic Wrappers (True Duplicates)" : 4
+    "Unpruned Mononym Odù Roots competing with Principal Odù" : 11
+    "Over-Broad Generic Aliases ('deity', 'òrìṣà') Colliding" : 12
+    "True Redundant Implement Pairs (Ọ̀pá Àṣẹ vs Àṣẹ-Ọ̀pá)" : 4
+```
+
+1. **The 120 Odù Inversion False Positives (High Jaccard Overlap = 1.00):**
+   - In Yorùbá divination, **`Ogbè Ọ̀yẹ̀kú`** (ODU 017) and **`Ọ̀yẹ̀kú Ogbè`** (ODU 032) are **two totally distinct spiritual revelations**.
+   - Because bag-of-words Jaccard token matching `{"ogbe", "oyeku"} == {"oyeku", "ogbe"}` is order-blind, the scanner treats every paired permutation of the 240 `Àmọ̀lù Odù` as a "duplicate" (exactly 120 pairs!).
+   - *Architectural Solution:* Odù Ifá entities have exact canonical ranks (`canonical_rank: 17` vs `32`) and distinct binary signatures. The duplication detector must recognize composite Odù by their `type: "amolu_odu"` and evaluate positional token sequences (`"Ogbè Ọ̀yẹ̀kú"` $\neq$ `"Ọ̀yẹ̀kú Ogbè"`) rather than set Jaccard.
+2. **The 4 True Stem Twins & Remaining Synthetic Wrappers:**
+   - `Orúnmìlà` (`id: "Orúnmìlà"`) ↔ `Ọ̀rúnmìlà` (`id: "CORPUS_ORUNMILA_001"`): A classic twin node.
+   - `Ọ̀ṣọ́ọ̀sì` (`id: "Ọ̀ṣọ́ọ̀sì"`) ↔ `Ọ̀sọ́ọ̀sì` (`id: "CORPUS_OSOOSI_001"`): Exact stem twin.
+   - `Ọ̀yá` (`id: "Ọ̀yá"`) ↔ `Ọya Ìyáńsàn` (`id: "CORPUS_OYA_001"`): Dual wrapper.
+   - `Yewá` (`id: "Yewá"`) ↔ `Yewa / Ìyá Nnà` (`id: "CORPUS_YEWA_001"`): Dual wrapper.
+   - *Architectural Solution:* Batch-consolidate these 4 remaining legacy wrappers into the primary nodes using Phase 3's proven declarative pipeline.
+3. **The 11 Mononym Odù Root Collisions:**
+   - Early corpus batching created standalone entities for bare mononyms like `Ìwori`, `Òdị́`, `Ìrosùn`, `Ọ̀bàrà`, `Ọ̀kànràn`, `Ògúndá`, `Ọ̀sá`, `Ìká`, `Ìrẹtẹ̀`, `Ọ̀ṣẹ́`, `Òfún`.
+   - These collide with the canonical Principal Odù (`ODU_003_Ìwòrì`, `ODU_004_Òdí`, etc.).
+   - *Architectural Solution:* Merge the thin mononym stubs into their canonical `ODU_*_Méjì` parents and designate the mononyms as aliases.
+4. **The 12 Over-Broad Alias Collisions:**
+   - Entities like `Ìrukẹ̀rẹ̀ Òrìṣà`, `Ìke-Òrìṣà`, and `Ọ̀ta-Òrìṣà` all have the generic English alias `"deity"`, causing the scanner to flag them as colliding with `Òrìṣà`.
+   - *Architectural Solution:* Purge ultra-generic single-word dictionary aliases (`"deity"`) from specific ritual implements.
+5. **The 4 Ritual Implement Twins:**
+   - `Ọ̀pá Àṣẹ` ↔ `Àṣẹ-Ọ̀pá`: Syntactic twin. Consolidate into canonical `Ọ̀pá Àṣẹ`.
+   - `Oṣé Ṣàngó` ↔ `Àáké Ṣàngó`: Disambiguate by removing `"aake sango"` from `Oṣé Ṣàngó` aliases so both retain distinct iconographic identities.
+
+---
+
+### 9.2 Forensic Diagnosis: The 67 Ghost Sub-Variants
+
+Of the remaining 67 ghosts in Category 1:
+1. **Divine Avatars & Shrines (38 nodes):**
+   - E.g. `Ọ̀ṣun Òṣogbo`, `Ọ̀ṣun Ìpọ́ndá`, `Ọ̀ṣun Dokò`, `Arúgbá Ọ̀ṣun`, `Ògún Alágbede`, `Ògún Ọdẹ`, `Ògún Balógun`, `Yemọja Ògùn`, `Aganjù Ọlọ́kọ̀`, `Ọbalúayé Temple of Ọ̀yọ́`, `Olókun Seniade`, `Olókun Su`.
+   - *Archival Reality:* These are **living epiphanies and shrine iterations**, not disconnected deities.
+   - *Permanent Fortification:* Transform them from bare strings into **Structured Facets** in `web/src/utils/subVariantKnowledge.js` and declarative JSON batches, giving each its authentic historical description, shrine geography, liturgical colors, and praise oríkì.
+2. **Sacred Implements & Vessels (15 nodes):**
+   - E.g. `Ọ̀pá Ọ̀sanyìn`, `Ọ̀pá Ṣàṣàrà`, `Ọpá Erinlẹ̀`, `Ìbírí`, `Ìrókẹ́ Eyin Erin`, `Ìrókẹ́ Idẹ`, `Ọ̀pẹ̀lẹ̀ Awọ`, `Ọpọ́n Ọlọ́fà`.
+   - *Permanent Fortification:* Ingest structured knowledge definitions or map them to their parent implement nodes.
+3. **Priesthood Titles & Guilds (14 nodes):**
+   - E.g. `Ẹgbẹ́ Babaláwo`, `Ìyánífá Council`, `Ọlọ́wọ Ifá`, `Arábà Agbáyé`, `Oníṣègùn Guild`, `Ìtọ́jú Guilds`.
+   - *Permanent Fortification:* Ingest as dedicated 14-Tier institutional nodes under Group D (Sacerdotal Hierarchies).
+
+---
+
+### 9.3 Forensic Diagnosis: The 288 Thin Entities & 156 Scanty Proverbs
+
+The audit reveals a striking structural division:
+- **Total Entities in Category 1:** 380
+- **Total Odù Ifá Entities:** 255 (16 Ojú Odù + 239 Àmọ̀lù Odù)
+- **Total Non-Odù Entities:** 125
+
+1. **The Odù Matrix (254 thin descriptions, 127 scanty proverbs):**
+   - The 256 Odù Ifá were generated with concise cosmological summaries (averaging 250–350 chars) and 1–2 liturgical proverbs each.
+   - *Archival Solution:* Create a systematic Odù Corpus Enrichment fixture (`scripts/data/batches/odu_corpus_enrichment.json`) that expands each Odù's metaphysical philosophy (`etymology_and_philosophy`) to $>600$ characters and completes the third liturgical verse/proverb from Wándé Abímbọ́lá's and William Bascom's canonical texts.
+2. **The Non-Odù Entities (Only 34 thin entities, 29 scanty proverbs):**
+   - Only 34 entities in Category 1 outside of Odù Ifá fall below 600 characters (e.g. `Ibejì`, `Ìrukẹ̀rẹ̀ Òrìṣà`, `Ọbá`, `Òṣùmàrè`, `Awo Ifá`, `Babaláwo`, `Ìyanífá`).
+   - Only 29 non-Odù entities have fewer than 3 proverbs.
+   - *Archival Solution:* This is a highly manageable, compact batch. We can curate authentic 14-Tier enrichments for all 34 entities in a single structured batch (`category01_non_odu_enrichment.json`), instantly bringing 100% of non-Odù Category 1 entities to pristine Àmọ̀tẹ́kùn grade.
+
+---
+
+### 9.4 The 3-Stage Master Execution Architecture to Reach 100% Purity
+
+```mermaid
+flowchart TD
+    subgraph STAGE_1 ["Stage 1: Structural Consolidation & Algorithmic Realism"]
+        S1A["1. Consolidate remaining 4 synthetic wrappers<br/>(Ọ̀rúnmìlà, Ọ̀sọ́ọ̀sì, Ọya, Yewa)"]
+        S1B["2. Merge 11 bare Odù mononym stubs into canonical ODU Méjì"]
+        S1C["3. Purge over-broad generic aliases ('deity')"]
+        S1D["4. Upgrade vector_duplicates to sequence-aware matching for Odù"]
+    end
+
+    subgraph STAGE_2 ["Stage 2: Ghost Sub-Variant Ingestion & Facet Hydration"]
+        S2A["1. Hydrate 38 divine avatars in subVariantKnowledge.js"]
+        S2B["2. Hydrate 15 sacred implements in parent constellations"]
+        S2C["3. Elevate 14 priesthood councils to structured nodes"]
+    end
+
+    subgraph STAGE_3 ["Stage 3: Deep Textual Elevation & Proverb Triad Completion"]
+        S3A["1. Curate 34 Non-Odù thin entities to >800 chars & 3/3 proverbs"]
+        S3B["2. Systematically deepen the 256 Odù matrix with authentic Esẹ̀ Ifá"]
+    end
+
+    STAGE_1 --> STAGE_2 --> STAGE_3
+```
+
+#### Projected Metrics Post-Execution:
+- **Duplicate Pairs:** Drops from **151 to 0**.
+- **Ghost Sub-Variants:** Drops from **67 to 0** (SVIS reaches **100.0%**).
+- **Thin Entities:** Drops from **288 to 0** (100% >600 chars).
+- **Scanty Proverbs:** Drops from **156 to 0** (100% full 3-proverb triads).
+- **Dual-Corpora Checksum:** Sealed with **0-bit drift**.
+
+---
+
+## 10. HORIZON-02: Afternoon Fortification Sprint Architecture (Category 1 Absolute Fortification)
+
+**Document Section:** `BLUEPRINT-AFTERNOON-FORTIFICATION-SPRINT-CAT01`  
+**Date:** Tuesday, November 10, 2026 (16:38 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Lead Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Sanctuary Protocol:** Single-Drawer Law Strictly Maintained in Category 1. Òye's Lock 2 Compliant (100% Declarative JSON, Zero Data-in-Code).
+
+---
+
+### 10.1 Discovery & Verification: Duplicates Pre-Drop from 151 to 31
+With Sùúrù's sequence-aware `is_amolu_inverted()` logic in `scripts/forensics/vector_duplicates.py`, the 120 order-blind Jaccard false positives of composite Odù Ifá permutations were instantly resolved, leaving **exactly 31 true duplicate collisions** to be eliminated in this Afternoon Sprint:
+- **Duplicates remaining:** 31 $\to$ will drop to **0**.
+- **Ghost sub-variants remaining:** 67 $\to$ will drop to **0** ($SVIS \to 100.0\%$).
+- **Non-Odù thin entities & scanty proverbs:** 37 nodes identified for full 14-Tier elevation ($\ge 800$ chars, complete 3-proverb triads).
+
+---
+
+### 10.2 Architectural Execution Blueprint for the Afternoon Sprint
+
+```mermaid
+flowchart TD
+    subgraph SPRINT_EXECUTION ["Category 1 Absolute Afternoon Fortification"]
+        P1["1. Residual Duplicates Elimination (31 -> 0)<br/>- 4 Synthetic Wrappers (Ọ̀rúnmìlà, Ọ̀sọ́ọ̀sì, Ọya, Yewa)<br/>- 11 Odù Mononyms (Ìwori, Òdị́, Ìrosùn...)<br/>- Broad alias cleaning ('deity', 'sango', 'osun' from Òrìṣà)<br/>- Implement consolidation (Ọ̀pá Àṣẹ, Oṣé Ṣàngó)"]
+        
+        P2["2. Ghost Sub-Variant Hydration (67 -> 0, SVIS -> 100%)<br/>- 38 Divine Avatars & Epiphanies<br/>- 15 Sacred Implements & Vessels<br/>- 14 Sacerdotal Councils & Guilds<br/>Hydrated via subVariantKnowledge.js & master corpus aliases"]
+        
+        P3["3. Non-Odù Textual Elevation (37 Nodes -> 0 Thin, 0 Scanty)<br/>- Deep etymologies (>=800 chars)<br/>- Authentic 3-proverb canonical triads<br/>- Museum & scholarly provenance citations"]
+    end
+
+    P1 --> S1["apply_category01_catharsis.py"]
+    P2 --> S1
+    P3 --> S1
+    S1 --> V["Sanctuary Audit & Cryptographic Lockstep (0-bit drift)"]
+```
+
+#### Step 1: Declarative Consolidations (31 Duplicates $\to$ 0)
+1. **Retire 4 Synthetic Wrappers:**
+   - `CORPUS_ORUNMILA_001` $\to$ merge into `Orúnmìlà`.
+   - `CORPUS_OSOOSI_001` $\to$ merge into `Ọ̀ṣọ́ọ̀sì`.
+   - `CORPUS_OYA_001` $\to$ merge into `Ọ̀yá`.
+   - `CORPUS_YEWA_001` $\to$ merge into `Yewá`.
+2. **Retire 11 Odù Mononym Stubs:**
+   - `Ìwori` $\to$ `ODU_003_Ìwòrì`, `Òdị́` $\to$ `ODU_004_Òdí`, `Ìrosùn` $\to$ `ODU_005_Ìrosùn`, `Ọ̀bàrà` $\to$ `ODU_007_Ọ̀bàrà`, `Ọ̀kànràn` $\to$ `ODU_008_Ọ̀kànràn`, `Ògúndá` $\to$ `ODU_009_Ògúndá`, `Ọ̀sá` $\to$ `ODU_010_Ọ̀sá`, `Ìká` $\to$ `ODU_011_Ìká`, `Ìrẹtẹ̀` $\to$ `ODU_014_Ìrẹtẹ̀`, `Ọ̀ṣẹ́` $\to$ `ODU_015_Ọ̀ṣẹ́`, `Òfún` $\to$ `ODU_016_Òfún`.
+3. **Consolidate Implement Syntactic Twin:**
+   - `Àṣẹ-Ọ̀pá` $\to$ merge into `Ọ̀pá Àṣẹ`.
+4. **Clean Broad Aliases to Eradicate False Cross-Collisions:**
+   - `Òrìṣà`: remove specific individual deity names (`sango`, `osun`, `obatala`, `eshu`, `401 irunmole`, `orisa pantheon`).
+   - `Odù_Ifá`: remove chapter titles (`eji ogbe`, `oyeku meji`) and standalone `ifa`.
+   - `Ifá`: remove `orunmila` and `odu ifa`.
+   - `Ìrukẹ̀rẹ̀ Òrìṣà`, `Ìke-Òrìṣà`, `Ọ̀ta-Òrìṣà`: remove generic `"deity"`, `"divinity"`.
+   - `Oṣé Ṣàngó`: remove `"aake sango"`.
+
+#### Step 2: Ghost Sub-Variant Hydration (67 $\to$ 0, SVIS $\to$ 100.0%)
+- Update `web/src/utils/subVariantKnowledge.js` and add declarative facets across all 38 avatars, 15 sacred implements, and 14 sacerdotal councils, ensuring every sub-variant string resolves to a rich, authentic knowledge definition.
+
+#### Step 3: Non-Odù Deep Textual Elevation (37 Nodes $\to$ 0 Thin, 0 Scanty)
+- Elevate all 37 identified non-Odù nodes (`Ibejì`, `Ọbá`, `Yewá`, `Òṣùmàrè`, `Oṣé Ṣàngó`, `Ìrukẹ̀rẹ̀ Òrìṣà`, `Babaláwo`, `Ìyanífá`, `Awo Ifá`, `Aja Ògún`, `Ìpèsè-Ẹ̀gbẹ́`, `Ìrókẹ́ Ifá`, `Àkúnlẹ̀gbà`, `Orírun`, etc.) to $>800$ characters and full 3-proverb canonical triads.
+
+---
+
+### 10.3 Readiness Assessment
+Ọlọ́yè Àrọ̀kìn has assembled all architectural formulas, historical proverbs, and etymological decompositions. Ready to author the unified declarative payload and execute with zero hesitation.
+
 *Inscribed with archival reverence,*  
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
+
+
 
 
 

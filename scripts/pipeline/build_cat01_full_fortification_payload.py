@@ -1,0 +1,559 @@
+#!/usr/bin/env python3
+"""
+Builder for Category 1 Full Fortification Payload.
+Generates declarative JSON for duplicate retirements, 67 ghost facets, and 33 non-Odù enrichments.
+"""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+PAYLOAD_PATH = ROOT / "scripts/data/batches/category01_catharsis_payloads.json"
+
+payload = {
+    "description": "Category 1 Full Fortification & Absolute Catharsis Payload (Phase 3 Complete)",
+    "version": "2.0.0",
+    "author": "Ọlọ́yè Àgbà & Ọlọ́yè Àrọ̀kìn",
+    "date": "2026-11-10",
+    "duplicate_merges": [
+        {"source_id": "Sango-Ose", "target_id": "Oṣé Ṣàngó", "new_aliases": ["sango ose", "sango-ose", "Ṣàngó-Oṣé", "double-bladed axe"]},
+        {"source_id": "Opele", "target_id": "Ọ̀pẹ̀lẹ̀", "new_aliases": ["opele", "sacred divination chain", "opele ifa"]},
+        {"source_id": "Opón Ifá", "target_id": "Ọpọ́n_Ifá", "new_aliases": ["opon ifa", "opon-ifa", "opón ifá", "carved wooden divination tray"]},
+        {"source_id": "CORPUS_OBATALA_001", "target_id": "Obàtálá", "new_aliases": ["orisa nla", "òrìṣà-ńlá", "king of white cloth", "sculptor of humanity", "orishanla", "alamo rere"]},
+        {"source_id": "CORPUS_IFA_SYSTEM_001", "target_id": "Ifá", "new_aliases": ["ifa divination system", "consultation of ifa", "dida ifa"]},
+        {"source_id": "CORPUS_ESU_ODARA_001", "target_id": "Èṣù", "new_aliases": ["esu odara", "èṣù ọ̀dàrà", "master of crossroads", "exu odara"]},
+        {"source_id": "CORPUS_ESU_ELEGBARA_001", "target_id": "Èṣù", "new_aliases": ["esu elegbara", "èṣù-ẹlẹ́gbára", "elegbara", "ogo elegba", "threshold altar"]},
+        {"source_id": "CORPUS_ORUNMILA_001", "target_id": "Orúnmìlà", "new_aliases": ["orunmila", "ọ̀rúnmìlà", "eleri ipin", "witness of destiny", "ibikeji olodumare"]},
+        {"source_id": "CORPUS_OSOOSI_001", "target_id": "Ọ̀ṣọ́ọ̀sì", "new_aliases": ["osoosi", "ọ̀sọ́ọ̀sì", "divine hunter", "orisha of tracking", "archery deity"]},
+        {"source_id": "CORPUS_OYA_001", "target_id": "Ọ̀yá", "new_aliases": ["oya iyansan", "ọya ìyáńsàn", "mother of nine", "queen of storms", "whirlwind deity"]},
+        {"source_id": "CORPUS_YEWA_001", "target_id": "Yewá", "new_aliases": ["yewa", "ìyá nnà", "goddess of yewa river", "orisha yewa"]},
+        {"source_id": "Ìwori", "target_id": "ODU_003_Ìwòrì", "new_aliases": ["iwori", "ìwori"]},
+        {"source_id": "Òdị́", "target_id": "ODU_004_Òdí", "new_aliases": ["odi", "òdị́"]},
+        {"source_id": "Ìrosùn", "target_id": "ODU_005_Ìrosùn", "new_aliases": ["irosun", "ìrosùn"]},
+        {"source_id": "Ọ̀bàrà", "target_id": "ODU_007_Ọ̀bàrà", "new_aliases": ["obara", "ọ̀bàrà"]},
+        {"source_id": "Ọ̀kànràn", "target_id": "ODU_008_Ọ̀kànràn", "new_aliases": ["okanran", "ọ̀kànràn"]},
+        {"source_id": "Ògúndá", "target_id": "ODU_009_Ògúndá", "new_aliases": ["ogunda", "ògúndá"]},
+        {"source_id": "Ọ̀sá", "target_id": "ODU_010_Ọ̀sá", "new_aliases": ["osa", "ọ̀sá"]},
+        {"source_id": "Ìká", "target_id": "ODU_011_Ìká", "new_aliases": ["ika", "ìká"]},
+        {"source_id": "Ìrẹtẹ̀", "target_id": "ODU_014_Ìrẹtẹ̀", "new_aliases": ["irete", "ìrẹtẹ̀"]},
+        {"source_id": "Ọ̀ṣẹ́", "target_id": "ODU_015_Ọ̀ṣẹ́", "new_aliases": ["ose", "ọ̀ṣẹ́"]},
+        {"source_id": "Òfún", "target_id": "ODU_016_Òfún", "new_aliases": ["ofun", "òfún"]},
+        {"source_id": "Àṣẹ-Ọ̀pá", "target_id": "Ọ̀pá Àṣẹ", "new_aliases": ["ase opa", "àṣẹ-ọ̀pá", "scepter of command"]}
+    ],
+    "retire_ids": [
+        "Sango-Ose", "Opele", "Opón Ifá", "CORPUS_OBATALA_001", "CORPUS_IFA_SYSTEM_001",
+        "CORPUS_ESU_ODARA_001", "CORPUS_ESU_ELEGBARA_001", "CORPUS_ORUNMILA_001",
+        "CORPUS_OSOOSI_001", "CORPUS_OYA_001", "CORPUS_YEWA_001",
+        "Ìwori", "Òdị́", "Ìrosùn", "Ọ̀bàrà", "Ọ̀kànràn", "Ògúndá", "Ọ̀sá", "Ìká", "Ìrẹtẹ̀", "Ọ̀ṣẹ́", "Òfún",
+        "Àṣẹ-Ọ̀pá"
+    ],
+    "alias_pruning": {
+        "Òrìṣà": ["sango", "osun", "obatala", "eshu", "401 irunmole", "orisa pantheon", "deity"],
+        "Odù_Ifá": ["eji ogbe", "oyeku meji", "ifa"],
+        "Ifá": ["orunmila", "odu ifa"],
+        "Ìrukẹ̀rẹ̀ Òrìṣà": ["deity", "divinity"],
+        "Ìke-Òrìṣà": ["deity", "divinity"],
+        "Ọ̀ta-Òrìṣà": ["deity", "divinity"],
+        "Oṣé Ṣàngó": ["aake sango"]
+    },
+    "entity_updates": {},
+    "prompt_scrubbing": [
+        {"pattern": " (Parenthetical English translation: '", "replacement": " ("},
+        {"pattern": "' Philosophical commentary: ", "replacement": ": "},
+        {"pattern": " Philosophical commentary: ", "replacement": " "},
+        {"pattern": "; philosophical commentary: ", "replacement": ": "}
+    ]
+}
+
+# 1. Structured Facets for the 67 Ghosts in Parent Entities
+facets_data = {
+    "CORPUS_OSUN_001": {
+        "sub_variant_facets": {
+            "Ọ̀ṣun Òṣogbo": {
+                "facet_name": "Ọ̀ṣun Òṣogbo",
+                "typology": "Primordial Civic Epiphany & Peace Treaty Manifestation",
+                "description": "The central maternal manifestation of Ọ̀ṣun venerated along the sacred banks of the Òṣogbo River, embodying the historic peace compact with Oba Larooye.",
+                "historical_timeline": "Classical Antiquity (c. 16th century CE): Founded through the divine covenant between Oba Larooye and Ọ̀ṣun during the migration from Ipole, leading to the establishment of the sacred Òṣogbo settlement and annual river propitiation.",
+                "material_and_craftsmanship": "Cast sacred brass basins (Awo Idẹ), beaded crowns with veil fringes, white lead-glazed pottery, and consecrated camwood stones.",
+                "social_and_ritual_context": "Venerated during the annual UNESCO-inscribed Ọ̀ṣun Òṣogbo festival where the votive virgin carries the sacred brass urn to the river sanctuary.",
+                "proverbs_and_oral_traditions": ["Ọ̀ṣun Òṣogbo l'ó ni ilé, Larooye l'ó l'ọjà. (Ọ̀ṣun of Òṣogbo owns the royal house; Larooye owns the market: Recounting the foundational covenant between deity and kingship.)"],
+                "provenance_and_citations": "UNESCO World Heritage Inscription (2005); Beier, Ulli (1957). Sacred Wood Carvings from one Small Yoruba Town."
+            },
+            "Ọ̀ṣun Ìpọ́ndá": {
+                "facet_name": "Ọ̀ṣun Ìpọ́ndá",
+                "typology": "Martial Brass Archer & Defending Water Manifestation",
+                "description": "The formidable warrior manifestation of Ọ̀ṣun venerated in Ìpọ́ndá, wielding brass bows and forged cutting blades to defend sovereign frontiers.",
+                "historical_timeline": "Imperial Era: Developed in northern and eastern frontiers where Ọ̀ṣun devotees engaged in military defense during regional incursions, venerating her as a fearless vanguard archer.",
+                "material_and_craftsmanship": "Solid brass bows (Ọfà Idẹ), brass scabbards, hand-beaten bronze armlets, and indigo-dyed war waistcloths.",
+                "social_and_ritual_context": "Invoked in specialized warrior guild invocations for physical protection, victory over legal or spiritual adversity, and maternal shield.",
+                "proverbs_and_oral_traditions": ["Ọ̀ṣun Ìpọ́ndá tí ń f'ọfà idẹ lé ogun l'ọ́wọ́. (Ọ̀ṣun of Ìpọ́ndá who holds the brass arrow to disarm imperial invaders: Celebrating martial valor.)"],
+                "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Murphy & Sanford (2001). Osun Across the Waters."
+            },
+            "Ọ̀ṣun Dokò": {
+                "facet_name": "Ọ̀ṣun Dokò",
+                "typology": "Matrimonial Concord & Domestic Harmony Epiphany",
+                "description": "The revered matrimonial and fertility manifestation of Ọ̀ṣun venerated across Ijesaland, presiding over matrimonial fidelity and marital peace.",
+                "historical_timeline": "Medieval Era: Established in the eastern Yorùbá river corridors to safeguard marital covenants, postpartum maternal health, and domestic harmony.",
+                "material_and_craftsmanship": "Polished river pebbles (Ọ̀ta Ọ̀ṣun), carved wooden maternity caryatids, and cowrie-studded brass combs.",
+                "social_and_ritual_context": "Sought by newlyweds and nursing mothers during fertility blessings, naming rites, and sacred river bath ablutions.",
+                "proverbs_and_oral_traditions": ["Ọ̀ṣun Dokò a-f'omi-tútù-tọ́-ọmọ. (Ọ̀ṣun of Dokò who nurtures the infant with living cooling waters: Praising maternal devotion.)"],
+                "provenance_and_citations": "Badejo, Diedre (1996). Ọ̀ṣun Sèègèsí: The Elegant Deity of Wealth, Power, and Femininity."
+            },
+            "Arúgbá Ọ̀ṣun": {
+                "facet_name": "Arúgbá Ọ̀ṣun",
+                "typology": "Sacred Votive Virgin & Divine Calamity Bearer",
+                "description": "The consecrated royal maiden who personifies the living presence of Ọ̀ṣun, chosen through divination to carry the sacred brass calabash without touching the earth.",
+                "historical_timeline": "Classical Antiquity to Present: Continuous unbroken institution within the Òṣogbo royal court since the reign of Oba Larooye; strictly selected from the sovereign lineage of the reigning Ataoja.",
+                "material_and_craftsmanship": "Consecrated brass urn wrapped in sacred scarlet and white cloths, adorned with heavy red coral beads, walking barefoot along consecrated path.",
+                "social_and_ritual_context": "The spiritual centerpiece of the annual Òṣogbo festival; her uninterrupted procession to the river cleanses the kingdom of affliction and moral defilement.",
+                "proverbs_and_oral_traditions": ["Ẹrù Ọ̀ṣun kì í dánu; orí Arúgbá l'aṣẹ wà. (The vessel of Ọ̀ṣun never drops; upon the maiden's head rests the royal mandate of the cosmos.)"],
+                "provenance_and_citations": "Wenger, Susanne (1983). The Sacred Groves of Oshogbo; National Commission for Museums and Monuments (NCMM)."
+            }
+        }
+    },
+    "CORPUS_OGUN_COSMIC_001": {
+        "sub_variant_facets": {
+            "Ògún Alágbede (Blacksmith)": {
+                "facet_name": "Ògún Alágbede",
+                "typology": "Primordial Smelter & Master of the Pyrotechnic Forge",
+                "description": "The divine metallurgical manifestation of Ògún presiding over charcoal blast furnaces, iron smelting, and sacred stone anvils.",
+                "historical_timeline": "Classical Ilé-Ifẹ̀ (c. 10th century CE): Patronized during the golden age of metallurgical bronze and iron casting; master of the sacred guild of iron smiths.",
+                "material_and_craftsmanship": "Granite anvil stones (Òkúta Ògún), goatskin bellows, cast iron tongs, and consecrated palm oil.",
+                "social_and_ritual_context": "Venerated before the forging of any weapon or agrarian implement; oaths sworn upon his anvil cannot be broken without cosmic retribution.",
+                "proverbs_and_oral_traditions": ["Ògún l'ó ni agbẹdẹ; ẹni tí ó bá tẹ agbẹdẹ kò ní rí irin rọ. (Ògún owns the smithy; he who dishonors the forge will find no metal to shape.)"],
+                "provenance_and_citations": "Williams, Denis (1974). Icon and Image: A Study of Sacred Art in Five African Cultures."
+            },
+            "Ògún Ọdẹ (Hunter)": {
+                "facet_name": "Ògún Ọdẹ",
+                "typology": "Primordial Forest Scout, Trapper & Pioneer",
+                "description": "The wild, deep-wilderness manifestation of Ògún who leads hunters across unmapped terrain and safeguards human settlements from dangerous predators.",
+                "historical_timeline": "Archaic Antiquity: Revering the first human pioneers who cut roads through primeval forests using iron matchets.",
+                "material_and_craftsmanship": "Tanned antelope leather hunting satchels, forged flintlocks, brass hunting whistles, and protective herbal talismans.",
+                "social_and_ritual_context": "Propitiated during the opening of hunting seasons and the traditional hunter's guild funerary rites (Ìrèmòjè).",
+                "proverbs_and_oral_traditions": ["Ọdẹ kì í rìn láìní Ògún; igbó dídì a di ọ̀nà tí ó mọ́. (The hunter never walks without Ògún; the dense wilderness turns into a cleared highway.)"],
+                "provenance_and_citations": "Babálọlá, Adéboyè (1966). The Content and Form of Yoruba Ijala; Oxford University Press."
+            },
+            "Ògún Balógun (Warrior)": {
+                "facet_name": "Ògún Balógun",
+                "typology": "Supreme Martial Commander & Sovereign Defender",
+                "description": "The fierce, invincible military manifestation of Ògún leading the vanguard of the imperial armies of Yorùbáland.",
+                "historical_timeline": "Imperial Ọ̀yọ́ Era: The foundational deity of the Ẹ̀ṣọ́ military brotherhood and the field marshals (Ààrẹ Ọ̀nà Kakanfò).",
+                "material_and_craftsmanship": "Forged iron battle-axes, double-edged curved broadswords, iron chain mail cuirasses, and scarlet war tunics.",
+                "social_and_ritual_context": "Invocations before national defense campaigns to impart supernatural courage and immunity from projectile weaponry.",
+                "proverbs_and_oral_traditions": ["Balógun tí kò bọ Ògún, kò ní padà wá láti ojú ogun. (The war commander who fails to revere Ògún will never return from the battlefront.)"],
+                "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas."
+            },
+            "Ẹwiri Blacksmith Hearth": {
+                "facet_name": "Ẹwiri Blacksmith Hearth",
+                "typology": "Sacred Pyrotechnic Engine & Bellows Altar",
+                "description": "The sacred twin goatskin bellows and charcoal draft hearth where raw iron blooms are transformed into consecrated tools.",
+                "historical_timeline": "Ancient Era: The technological epicenter of Yorùbá civilization that enabled agricultural surplus and defensive armor.",
+                "material_and_craftsmanship": "Carved wood nozzles, supple vegetable-tanned goatskins, clay draft tuyeres, and hardwood hand-levers.",
+                "social_and_ritual_context": "Treated as a living altar of Ògún where animal libations are poured to cool the cosmic heat before metallurgical operations.",
+                "proverbs_and_oral_traditions": ["Ẹwiri ń mí fún Ògún; iná kì í kú lẹ́nu agbẹdẹ. (The bellows breathes for Ògún; the fire never dies in the throat of the forge.)"],
+                "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language."
+            }
+        }
+    },
+    "CORPUS_YEMOJA_001": {
+        "sub_variant_facets": {
+            "Yemọja Ògùn (River Ògùn)": {
+                "facet_name": "Yemọja Ògùn",
+                "typology": "Freshwater Riverine Mother & Sovereign River Epiphany",
+                "description": "The primary inland river manifestation of Yemọja venerated along the flowing currents of the Ògùn River from Ibarapa through Abeokuta.",
+                "historical_timeline": "Classical Era: The historical heartland of Yemọja veneration among the Ẹ̀gbá and Ìbàràpá peoples prior to her transatlantic oceanic transformation.",
+                "material_and_craftsmanship": "Carved wooden maternity figures with suckling infants, white and blue porcelain vessels, river-washed quartz stones.",
+                "social_and_ritual_context": "Central to traditional pediatric healthcare, postpartum maternal recuperation, and annual riverside cleansing rites.",
+                "proverbs_and_oral_traditions": ["Odò Ògùn ń kún l'ójú Yemọja; kò sí ọmọ tí yóò gbàgbé ìyá rẹ̀. (The Ògùn River swells in the presence of Yemọja; no child ever forgets their mother.)"],
+                "provenance_and_citations": "Bascom, William (1969). The Yoruba of Southwestern Nigeria; Drewal, H.J. (1989)."
+            },
+            "Yemọja Àṣàbá": {
+                "facet_name": "Yemọja Àṣàbá",
+                "typology": "Venerable High Priestess & Stoic Maternal Elder",
+                "description": "The stern, ancient manifestation of Yemọja presiding over sovereign wisdom, ancestral secrets, and judicial truth.",
+                "historical_timeline": "Classical Era: Veneration preserved by elder women guilds who served as keepers of royal genealogies and diplomatic treaties.",
+                "material_and_craftsmanship": "Heavy silver bracelets, dark indigo-dyed Kìjìpá wrappers, polished sea cowries, and hand-beaten lead pendants.",
+                "social_and_ritual_context": "Consulted by matriarchs during intractable community disputes and solemn oath-swearing ceremonies.",
+                "proverbs_and_oral_traditions": ["Yemọja Àṣàbá a-wo-ọmọ-láì-lẹ́jọ́. (Yemọja Àṣàbá who examines the conduct of her children with uncompromising justice.)"],
+                "provenance_and_citations": "Lawal, Babatunde (1996). The Gelede Spectacle."
+            },
+            "Yemọja Okùn (Ocean)": {
+                "facet_name": "Yemọja Okùn",
+                "typology": "Transatlantic Saltwater Mother of the Cosmos",
+                "description": "The expansive oceanic manifestation of Yemọja that embraced the diaspora during the Middle Passage, becoming Queen of the Sea.",
+                "historical_timeline": "Transatlantic Era (16th–19th century): Re-conceptualized in Cuba (Yemayá), Brazil (Yemanjá), and Trinidad as the supreme mistress of the ocean depths.",
+                "material_and_craftsmanship": "Silver crescent crowns with dangling stars, blue glass crystal beads, mother-of-pearl fans, and marine conch shells.",
+                "social_and_ritual_context": "Venerated worldwide on beaches on New Year's Eve and annual maritime offerings for survival, wealth, and spiritual rebirth.",
+                "proverbs_and_oral_traditions": ["Okùn kò ní pèkún; bẹ́ẹ̀ ni àṣẹ Yemọja kò ní gbẹ. (The ocean has no boundary; even so the life-giving power of Yemọja never dries up.)"],
+                "provenance_and_citations": "Verger, Pierre (1957). Notes sur le culte des orisha et vodoun."
+            }
+        }
+    },
+    "Ọ̀yá": {
+        "sub_variant_facets": {
+            "Odò Ọya (River Niger)": {
+                "facet_name": "Odò Ọya",
+                "typology": "Imperial River Boundary & Cosmological Aquatic Highway",
+                "description": "The sacred geopolitical watercourse (the River Niger) personified as the cosmic body of Ọ̀yá dividing northern and southern empires.",
+                "historical_timeline": "Imperial Ọ̀yọ́ Antiquity: Revering the vast river as the living queen who protected Ọ̀yọ́ frontiers from northern cavalry incursions.",
+                "material_and_craftsmanship": "Heavy terracotta river offering bowls, bronze buffalo horns, polished water stones, and red camwood dyes.",
+                "social_and_ritual_context": "Propitiated by river canoe pilots and imperial messengers before crossing the dangerous rapids of the Middle Niger.",
+                "proverbs_and_oral_traditions": ["Odò Ọya ya kankan; ẹni tí kò mọ̀ ọ́n kò gbọdọ̀ f'ojú tẹ́bẹ́lú u. (The River Ọya tears through the land fiercely; he who does not know her depth must never mock her currents.)"],
+                "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas."
+            },
+            "Ọya Afẹ́fẹ́ (Wind)": {
+                "facet_name": "Ọya Afẹ́fẹ́",
+                "typology": "Primordial Whirlwind, Hurricane & Tornado Herald",
+                "description": "The kinetic atmospheric manifestation of Ọ̀yá who commands sudden gales, tearing roofs and uprooting trees before thunder strikes.",
+                "historical_timeline": "Cosmological Antiquity: Inseparable partner of Ṣàngó whose sudden winds herald the fiery discharge of thunderbolts.",
+                "material_and_craftsmanship": "Polished nine-stranded copper armlets, swirling maroon and purple silks, and consecrated iron blades.",
+                "social_and_ritual_context": "Invoked in spiritual deliverance to blow away stagnation, stubborn misfortune, and malevolent spiritual traps.",
+                "proverbs_and_oral_traditions": ["Afẹ́fẹ́ Ọya tí ń gb'éwé igbó fò; kò sí ẹni tó mọ ibi tí ó gbé ń bọ̀. (The wind of Ọya that sweeps the forest leaves into the sky; none can track the invisible origins of her storm.)"],
+                "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language."
+            },
+            "Ìrukẹ̀rẹ̀ Ọya": {
+                "facet_name": "Ìrukẹ̀rẹ̀ Ọya",
+                "typology": "Ancestral Buffalo-Horn Flywhisk & Wind Scepter",
+                "description": "The sacred ceremonial flywhisk crafted from the tail of the water buffalo (Ẹfọ̀n) mounted on a leather and bead-embroidered handle.",
+                "historical_timeline": "Classical Era: The singular sacerdotal regalia carried by initiated priestesses of Ọ̀yá to command wind and disperse ancestral dead during Egúngún festivals.",
+                "material_and_craftsmanship": "Supple black buffalo hair, glass seed beads in terracotta and wine hues, hand-stitched morocco leather.",
+                "social_and_ritual_context": "Waved across gatherings to bestow blessings, disperse negative atmospheric tension, and communicate with the Egúngún masquerade lineage.",
+                "proverbs_and_oral_traditions": ["Ìrukẹ̀rẹ̀ Ọya kì í parọ́; ibi tí ó bá kọjú sí ni afẹ́fẹ́ ń lọ. (The whisk of Ọya never speaks falsely; wherever it points, the cosmic wind obeys.)"],
+                "provenance_and_citations": "Drewal, M.T. (1992). Yoruba Ritual: Performers, Play, Agency."
+            },
+            "Ìyál'ọ́jà Guild": {
+                "facet_name": "Ìyál'ọ́jà Guild",
+                "typology": "Sovereign Market Matriarchy & Commercial Guild Protectors",
+                "description": "The supreme guild of market women leaders operating under the patron spiritual mantle of Ọ̀yá, regulating prices, fairness, and market peace.",
+                "historical_timeline": "Medieval to Modern Era: Traditional economic authority across southwestern Nigeria, exercising veto power in royal market governance.",
+                "material_and_craftsmanship": "Carved market threshold posts, copper bangles, ceremonial white umbrellas, and cowrie tribute baskets.",
+                "social_and_ritual_context": "Performs monthly propitiations at the central market crossroads (Oorun Ọjà) to ensure commercial abundance and prevent fire outbreaks.",
+                "proverbs_and_oral_traditions": ["Ọjà tòrò l'ọ́wọ́ Ìyál'ọ́jà; Ọya ní ń f'àṣẹ tì í lẹ́yìn. (The marketplace remains peaceful in the hands of the market queen; Ọya bolsters her authority with sovereign mandate.)"],
+                "provenance_and_citations": "Sudarkasa, Niara (1973). Where Women Work: A Study of Yoruba Women in the Marketplace and in the Home."
+            }
+        }
+    },
+    "CORPUS_OLOKUN_001": {
+        "sub_variant_facets": {
+            "Olókun Seniade": {
+                "facet_name": "Olókun Seniade",
+                "typology": "Courtly Crowned Ocean Monarch & Patron of Coral Wealth",
+                "description": "The regal, beaded manifestation of Olókun residing in subterranean aquatic palaces, owner of all beads and primordial maritime riches.",
+                "historical_timeline": "Classical Ilé-Ifẹ̀: Closely aligned with the ancient bead-making glass ateliers of Olokun Grove (c. 11th–14th century CE).",
+                "material_and_craftsmanship": "True cylindrical red jasper/coral beads (Ìyùn), cast brass ceremonial caryatids, and lead-glazed pottery.",
+                "social_and_ritual_context": "Invoked during paramount royal coronations; the sovereign monarch must pay homage to Olókun to secure economic prosperity.",
+                "proverbs_and_oral_traditions": ["Olókun Seniade, a-sọ-ìkòkò-d'owó; ọba tí ó l'ẹ́yìn odò. (Olókun Seniade who turns clay vessels into infinite treasury; the sovereign emperor beyond the deep ocean waters.)"],
+                "provenance_and_citations": "Willett, Frank (1967). Ife in the History of West African Sculpture."
+            },
+            "Olókun Su": {
+                "facet_name": "Olókun Su",
+                "typology": "Abyssal Primordial Ocean Beyond Sunlight & Depths",
+                "description": "The unfathomable, dark oceanic manifestation of Olókun representing the cold, pressurized abyss before creation.",
+                "historical_timeline": "Cosmological Antiquity: Represents the boundless ocean waters that covered the earth before Odùduwà descended with the sacred chameleon.",
+                "material_and_craftsmanship": "Dark riverbed basalt stones, unpolished fossilized corals, and consecrated deep sea sand.",
+                "social_and_ritual_context": "Venerated in absolute nocturnal silence by the highest sacerdotal initiates of Olókun; no singing or loud drums are permitted.",
+                "proverbs_and_oral_traditions": ["Olókun Su jì kùtùkùtù; kò sí ẹni tó le mọ ìsàlẹ̀ rẹ̀. (Olókun Su stretches into infinite depths; no mortal mind can measure the bottom of her realm.)"],
+                "provenance_and_citations": "Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+            },
+            "Ìlèkè Ìyùn Guilds": {
+                "facet_name": "Ìlèkè Ìyùn Guilds",
+                "typology": "Ancient Royal Coral Bead-Making & Drilling Guild",
+                "description": "The sacred guild of bead makers and drillers consecrated to Olókun who manufactured the royal regalia of Yorùbá monarchs.",
+                "historical_timeline": "Classical Era (Ilé-Ifẹ̀): Master craft guilds centered around glass-furnace crucibles at the Olokun Grove producing dichroic blue beads and coral regalia.",
+                "material_and_craftsmanship": "Agate, carnelian, glass frit crucibles, bronze bow-drills, and vegetable-oil polishing pads.",
+                "social_and_ritual_context": "Consecrated beads prior to royal coronation; bead stringers took sacred vows of secrecy under penalty of ancestral curse.",
+                "proverbs_and_oral_traditions": ["Ìyùn kì í ṣe ohun àbùkù; Olókun l'ó ni oríṣìí ìlẹ̀kẹ̀ gbogbo. (Coral is never an ordinary ornament; Olókun owns the sovereign lineage of all precious beads.)"],
+                "provenance_and_citations": "Eluyemi, Omotoso (1987). The Technology of Ife Glass Beads."
+            }
+        }
+    },
+    "Erinlẹ̀": {
+        "sub_variant_facets": {
+            "Erinlẹ̀ Ìlobùú": {
+                "facet_name": "Erinlẹ̀ Ìlobùú",
+                "typology": "Sovereign River Guardian, Hunter & Royal Patron of Ìlobùú",
+                "description": "The supreme manifestations of Erinlẹ̀ as royal founder and sacred river guardian of the city of Ìlobùú.",
+                "historical_timeline": "Medieval Era: Established as the national patron of Ìlobùú where his sacred river sanctuary continues to draw thousands during annual pageantry.",
+                "material_and_craftsmanship": "Lead and brass bird-topped staves, carved hardwood river caryatids, and consecrated clay medicine vessels.",
+                "social_and_ritual_context": "Honored during the annual Erinlẹ̀ festival in Ìlobùú with river pageantry, wrestling contests, and healing blessings.",
+                "proverbs_and_oral_traditions": ["Erinlẹ̀ Ìlobùú, a-gbé-odò-ṣọ́-ìlú. (Erinlẹ̀ of Ìlobùú who resides in the river to safeguard the citadel from destruction.)"],
+                "provenance_and_citations": "Pemberton, John (1989). In 'Yoruba: Nine Centuries of African Art and Thought'."
+            },
+            "Abátàn (His Consort)": {
+                "facet_name": "Abátàn",
+                "typology": "Sacred Marsh & Pediatric Clay Pot Healer Consort",
+                "description": "The divine feminine consort of Erinlẹ̀ presiding over mudbanks, herbal clay pottery (Awo Ẹ̀rọ̀), and child wellness.",
+                "historical_timeline": "Classical Era: Venerated across southwest Yorùbáland as the gentle healer who cures pediatric ailments with mineralized river mud.",
+                "material_and_craftsmanship": "Clay medicine pots with lid perforations, smooth river clays, camwood dye, and dried waterlily stems.",
+                "social_and_ritual_context": "Venerated by traditional midwives and pediatric nurses during child convalescence and infant dedication rites.",
+                "proverbs_and_oral_traditions": ["Abátàn a-f'amọ̀-wẹ-ọmọ; omi rẹ̀ kì í gbé ọmọdé d'òkú. (Abátàn who cleanses infants with sacred mud; her water never allows a child to perish.)"],
+                "provenance_and_citations": "Drewal, H.J. & Pemberton, J. (1989)."
+            },
+            "Ọpá Erinlẹ̀": {
+                "facet_name": "Ọpá Erinlẹ̀",
+                "typology": "Sacred Bird-Crested Wrought Iron & Brass Staff",
+                "description": "The tall sacerdotal staff forged from iron and brass, crowned with birds and fish emblems carried by initiated Erinlẹ̀ priests.",
+                "historical_timeline": "Classical Antiquity: The central visual icon of Erinlẹ̀'s amphibious mastery across land (hunting) and water (river).",
+                "material_and_craftsmanship": "Wrought iron shaft, cast brass birds, hanging bells, and engraved geometric fish motifs.",
+                "social_and_ritual_context": "Stuck into the earthen riverbank during consultation; vibrates when ancestral spirits commune with the petitioner.",
+                "proverbs_and_oral_traditions": ["Ọpá Erinlẹ̀ kì í dá sílẹ̀; ẹyẹ orí rẹ̀ l'ó ń ké fún àlàáfíà. (The staff of Erinlẹ̀ never falls; the bird upon its crest sings perpetually for communal peace.)"],
+                "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language."
+            }
+        }
+    },
+    "Ọ̀sanyìn": {
+        "sub_variant_facets": {
+            "Ọ̀pá Ọ̀sanyìn (Herbal Staff)": {
+                "facet_name": "Ọ̀pá Ọ̀sanyìn",
+                "typology": "Sixteen-Bird Wrought Iron Staff of Botanical Mastery",
+                "description": "The supreme wrought-iron staff featuring sixteen small birds encircling one large central bird, personifying mastery over all herbal cures.",
+                "historical_timeline": "Classical Antiquity: Forged by master smiths of Ògún for the Oníṣègùn guild; symbol of victory over occult nocturnal forces (Àwọn Ìyá Mi).",
+                "material_and_craftsmanship": "Hand-forged iron, small suspended bells, bird effigies, consecrated with palm oil and botanical extracts.",
+                "social_and_ritual_context": "Planted into the earth inside the herbal consultation room; signifies the balance between medicine and metaphysical defense.",
+                "proverbs_and_oral_traditions": ["Ọ̀pá Ọ̀sanyìn dúró gbọn-in; ẹyẹ mẹ́rìndínlógún kì í fò láìní àṣẹ. (The staff of Ọ̀sanyìn stands unshakeable; sixteen birds never fly without divine command.)"],
+                "provenance_and_citations": "Lawal, Babatunde (1996); Thompson, R.F. (1971). Black Gods and Kings."
+            },
+            "Ewé Ọ̀sanyìn": {
+                "facet_name": "Ewé Ọ̀sanyìn",
+                "typology": "Cosmic Living Leaves & Botanical Pharmacopeia",
+                "description": "The total collective body of medicinal, liturgical, and supernatural flora recognized in Yorùbá pharmacopeia.",
+                "historical_timeline": "Archaic to Present: The intellectual property of the Oníṣègùn guilds, encompassing thousands of classified plant taxa.",
+                "material_and_craftsmanship": "Field-foraged fresh and dried leaves, roots, barks, consecrated calabashes, and stone mortar grinders.",
+                "social_and_ritual_context": "Gathered with specific morning prayers and coin tributes paid to the forest spirit before plucking.",
+                "proverbs_and_oral_traditions": ["Kò sí ewé tí kì í jẹ́ oògùn; orí Ọ̀sanyìn l'aṣẹ wà. (There is no leaf that does not possess healing medicine; upon the head of Ọ̀sanyìn rests the authority.)"],
+                "provenance_and_citations": "Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society."
+            },
+            "Oníṣègùn Guild": {
+                "facet_name": "Oníṣègùn Guild",
+                "typology": "Professional Guild of Traditional Physicians & Botanists",
+                "description": "The formalized ancestral guild of medical practitioners who diagnose disease, compound pharmaceuticals, and perform therapeutic treatments.",
+                "historical_timeline": "Classical Imperial Era: Operating with strict licensing, apprenticeships lasting up to ten years, and formal ethical codes.",
+                "material_and_craftsmanship": "Carved medicine horns (Ìwo Agbọ̀nrin), mortar pestles, leather pouches, and diagnostic pulse registers.",
+                "social_and_ritual_context": "Regulates traditional medical ethics, public health quarantine, and judicial poison-testing across Yorùbá citadels.",
+                "proverbs_and_oral_traditions": ["Oníṣègùn tí kò mọ ewé kì í ṣe awo; àṣeyọrí oògùn wà l'ọ́wọ́ Ọ̀sanyìn. (The physician who knows not the leaf is no adept; the triumph of medicine lies with Ọ̀sanyìn.)"],
+                "provenance_and_citations": "Buckley, Anthony (1985). Yoruba Medicine; Clarendon Press."
+            }
+        }
+    },
+    "CORPUS_ARABA_IFE_001": {
+        "sub_variant_facets": {
+            "Àràbà Agbáyé": {
+                "facet_name": "Àràbà Agbáyé",
+                "typology": "Supreme Pontiff & Primate of Worldwide Ifá Religion",
+                "description": "The supreme spiritual leader of the Ifá traditional religion globally, seated permanently at Oketase Hill in Ilé-Ifẹ̀.",
+                "historical_timeline": "Continuous succession from Ọ̀rúnmìlà's ancient sacerdotal council; recognized across Nigeria and the global African diaspora.",
+                "material_and_craftsmanship": "Sacerdotal white Sányán robes, beaded Aràbà staff, carved ivory Ìrókẹ́, and sixteen consecrated palm nut vessels.",
+                "social_and_ritual_context": "Performs the annual global Ifá divination (Odù Ọdún) during the World Ifá Festival, prescribing collective ethical guidance.",
+                "proverbs_and_oral_traditions": ["Àràbà tó gbóko, kò ní gba ọ̀rọ̀ lásán; awo nlá l'ó ń d'odù Ifá gbogbo. (The mighty Araba tree that commands the forest accepts no trivial chatter; only the great initiate balances the cosmos.)"],
+                "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus."
+            },
+            "Ogunsua": {
+                "facet_name": "Ogunsua",
+                "typology": "Ancient Sacerdotal Chieftaincy Title of Modakeke/Ifẹ̀",
+                "description": "A historic high chieftaincy title representing ancestral bravery, constitutional arbitration, and territorial defense.",
+                "historical_timeline": "19th Century: Founded during the Oyo refugee resettlement in the Ife kingdom, formalizing civic defense agreements.",
+                "material_and_craftsmanship": "Brass war staves, unadorned royal caps, beaded wristlets, and forged iron short-swords.",
+                "social_and_ritual_context": "Presides over civic assemblies and reconciles inter-community disputes with ancient oath ceremonies.",
+                "proverbs_and_oral_traditions": ["Ogunsua kì í sá fún ogun; orí àgbà l'ọ̀rọ̀ ń gbé. (Ogunsua never flees from conflict; upon the elder's head rests the mantle of mediation.)"],
+                "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas."
+            },
+            "Balọ́gún Awo": {
+                "facet_name": "Balọ́gún Awo",
+                "typology": "Supreme Martial & Ceremonial Protector of the Priesthood",
+                "description": "The high priest-warrior responsible for physical security of sacred shrines, regalia vaults, and pilgrimage routes.",
+                "historical_timeline": "Classical Era: Created by the Babaláwo conclave to safeguard esoteric archives during regional warfare.",
+                "material_and_craftsmanship": "Forged iron amulets, consecrated leather girdles, iron-tipped staves, and protective camwood marks.",
+                "social_and_ritual_context": "Leads ceremonial escorts during major religious processions and defends sacred groves against intrusion.",
+                "proverbs_and_oral_traditions": ["Balọ́gún awo kì í sùn l'ójú ogun; àṣẹ Ifá l'ó fi ń ṣọ́ tẹ́ńpìlì. (The marshal of the mysteries never sleeps on duty; with the mandate of Ifá he guards the sanctuary.)"],
+                "provenance_and_citations": "Bascom, William (1969). Ifa Divination."
+            },
+            "Council of 16 High Priests of Ifẹ̀": {
+                "facet_name": "Council of 16 High Priests of Ifẹ̀",
+                "typology": "The Primordial Awoni Supreme Divinatory Conclave",
+                "description": "The supreme sixteen high priests of Ilé-Ifẹ̀ corresponding to the sixteen principal Odù Méjì.",
+                "historical_timeline": "Ancient Ilé-Ifẹ̀: Established at the dawn of Yorùbá urban governance to balance royal executive power with divinatory wisdom.",
+                "material_and_craftsmanship": "Sacred white cloth wraps, cowrie divination trays, carved wooden seats, and ancient cast-bronze emblems.",
+                "social_and_ritual_context": "Meets at Oketase to deliberate on kingdom-wide crises, royal successions, and cosmic cycles.",
+                "proverbs_and_oral_traditions": ["Àwọn mẹ́rìndínlógún tẹ́ Ifá; kò sí ohun tí awo fi pamọ́ tí kò ní hàn. (The sixteen seated initiates cast the oracle; there is no hidden secret that remains unrevealed.)"],
+                "provenance_and_citations": "Abímbọ́lá, Wándé (1975). Sixteen Great Poems of Ifá."
+            }
+        }
+    }
+}
+
+for eid, f_dict in facets_data.items():
+    payload["entity_updates"][eid] = f_dict
+
+# Add other facets for remaining entities
+simple_facets = {
+    "Àṣẹ": {"sub_variant_facets": {
+        "Ọ̀rọ̀ Àṣẹ": {"facet_name": "Ọ̀rọ̀ Àṣẹ", "description": "The spoken divine command carrying kinetic creative force.", "typology": "Verbal Sacerdotal Command", "proverbs_and_oral_traditions": ["Ọ̀rọ̀ tí a sọ pẹ̀lú àṣẹ kì í pada sẹ́yìn. (The word spoken with divine authority never returns unfulfilled.)"]},
+        "Àṣẹ Ọba": {"facet_name": "Àṣẹ Ọba", "description": "The sovereign executive mandate invested in the reigning monarch.", "typology": "Royal Executive Mandate", "proverbs_and_oral_traditions": ["Àṣẹ wà lẹ́nu Ọba; ohun tí Ọba wí dandan ni. (Sovereign command resides in the mouth of the King; what he decrees is unalterable.)"]},
+        "Àṣẹ Babaláwo": {"facet_name": "Àṣẹ Babaláwo", "description": "Sacerdotal authority conferred through Ifá initiation and sacrificial pacts.", "typology": "Divinatory Priesthood Authority", "proverbs_and_oral_traditions": ["Àṣẹ awo kì í kùnà; ohun Ifá bá fọwọ́ sí kò níí yẹ̀. (The authority of the initiate never fails; what Ifá endorses stands forever.)"]}
+    }},
+    "Ìrókẹ́_Ifá": {"sub_variant_facets": {
+        "Ìrókẹ́ Eyin Erin (Ivory)": {"facet_name": "Ìrókẹ́ Eyin Erin", "description": "Carved elephant ivory tapper reserved for elder Babalawos.", "typology": "Ivory Sacerdotal Tapper", "proverbs_and_oral_traditions": ["Ìrókẹ́ eyin erin l'awo fi ń pe Ifá; ọmọ ọba kì í fi igi dídán ṣere. (With elephant ivory does the master invoke Ifá; royalty plays not with ordinary wood.)"]},
+        "Ìrókẹ́ Idẹ (Brass)": {"facet_name": "Ìrókẹ́ Idẹ", "description": "Cast brass tapper associated with wealth, Osun, and longevity.", "typology": "Brass Divinatory Tapper", "proverbs_and_oral_traditions": ["Ìrókẹ́ idẹ kì í dún lásán; aṣẹ àìkú l'ó ń gbé. (The brass tapper sounds not in vain; it carries the blessing of indestructible longevity.)"]},
+        "Ìrókẹ́ Igi (Hardwood)": {"facet_name": "Ìrókẹ́ Igi", "description": "Carved hardwood tapper sculpted with kneeling caryatid devotee figures.", "typology": "Wood Carved Tapper", "proverbs_and_oral_traditions": ["Igi awo l'ó ń fọhùn fún Ifá; ìtẹríba l'ó ń bọ́ àwọn àlejò. (The sacred wood speaks for Ifá; humble bowing welcomes the divine guests.)"]}
+    }},
+    "Ọ̀ṣọ́ọ̀sì": {"sub_variant_facets": {
+        "Ọdẹ Guilds": {"facet_name": "Ọdẹ Guilds", "description": "The ancient guild of archers and forest scouts consecrated to Ọ̀ṣọ́ọ̀sì.", "typology": "Martial Scout Guild", "proverbs_and_oral_traditions": ["Ọdẹ kì í ṣìnà nínú igbó; Ọ̀ṣọ́ọ̀sì l'ó ń darí ọfà. (The hunter never misses the path in the woods; Ọ̀ṣọ́ọ̀sì directs the arrow.)"]},
+        "Ọfà Ọ̀sọ́ọ̀sì (Sacred Bow & Arrow)": {"facet_name": "Ọfà Ọ̀sọ́ọ̀sì", "description": "The divine arrow that strikes its target unseen through thickest foliage.", "typology": "Sacred Archery Implement", "proverbs_and_oral_traditions": ["Ọfà Ọ̀ṣọ́ọ̀sì kan ṣoṣo ló ń pa erin; awo kì í fi ọ̀rọ̀ ṣe àpẹẹrẹ lásán. (One single arrow of Ọ̀ṣọ́ọ̀sì fells the elephant; wisdom shoots not without decisive aim.)"]},
+        "Igbó Ọ̀sọ́ọ̀sì": {"facet_name": "Igbó Ọ̀sọ́ọ̀sì", "description": "The consecrated game forest dedicated to the divine tracker.", "typology": "Sacred Game Reserve", "proverbs_and_oral_traditions": ["Igbó Ọ̀sọ́ọ̀sì kún fún àṣírí; ẹni tí kò bọ̀wọ̀ fún un kò ní padà. (The grove of Ọ̀ṣọ́ọ̀sì is full of mystery; he who lacks reverence returns not.)"]}
+    }},
+    "Yewá": {"sub_variant_facets": {
+        "Odò Yewá": {"facet_name": "Odò Yewá", "description": "The serene river waters flowing through western Yorubaland consecrated to Yewa.", "typology": "Sacred Riverine Body", "proverbs_and_oral_traditions": ["Odò Yewá mọ́ tónítóní; kò gba ìdọ̀tí sí àárín rẹ̀. (The Yewa river is immaculate; it tolerates no filth in its sacred course.)"]},
+        "Yewá Priesthood": {"facet_name": "Yewá Priesthood", "description": "Veiled sacerdotal sisterhood dedicated to strict purity, silence, and white fabrics.", "typology": "Sacerdotal Sisterhood", "proverbs_and_oral_traditions": ["Àwọn abọ̀ Yewá a-wọ-funfun-ṣọ́-ìwà. (The priestesses of Yewa who wear white to guard impeccable character.)"]},
+        "Ìlú Ìlarò": {"facet_name": "Ìlú Ìlarò", "description": "Sacred capital city of Yewa heritage and annual river pageantry.", "typology": "Historical Sacerdotal Capital", "proverbs_and_oral_traditions": ["Ìlarò ilé Yewá; ibi tí àlàáfíà ń gbé. (Ilaro, home of Yewa; where living peace resides.)"]}
+    }},
+    "CORPUS_ORISA_OKO_001": {"sub_variant_facets": {
+        "Ọkọ́ Òrìṣà Oko (Iron Staff)": {"facet_name": "Ọkọ́ Òrìṣà Oko", "description": "Forged iron digging staff symbolizing agricultural peace and cosmic truth.", "typology": "Agrarian Iron Scepter", "proverbs_and_oral_traditions": ["Ọkọ́ Òrìṣà Oko kì í purọ́; ilẹ̀ tí ó wọ̀ l'ó ń so oore. (The staff of Orisa Oko speaks no lie; the earth it penetrates yields abundance.)"]},
+        "New Yam Ceremonies": {"facet_name": "New Yam Ceremonies", "description": "Annual civic festival of harvest sanctification before any yam is eaten.", "typology": "First-Fruits Agricultural Rite", "proverbs_and_oral_traditions": ["Iṣu tuntun dé, Òrìṣà Oko l'a kọ́ ń fún. (The new yam arrives; to Orisa Oko the first tribute belongs.)"]},
+        "Ìráwọ̀ Shrine": {"facet_name": "Ìráwọ̀ Shrine", "description": "Primordial central shrine city of Orisa Oko in the northern savannah.", "typology": "Central Pan-Yoruba Shrine", "proverbs_and_oral_traditions": ["Ìráwọ̀ ilé àgbẹ̀; ibi tí Òrìṣà Oko ti ń bukun oko. (Irawo, home of agrarian wealth; where Orisa Oko blesses the harvest.)"]}
+    }},
+    "CORPUS_NANA_BURUKU_001": {"sub_variant_facets": {
+        "Ìbírí (Sacred Curved Wand)": {"facet_name": "Ìbírí", "description": "Vegetable-fiber wrapped curved broom staff excluding forged iron.", "typology": "Ancient Pre-Iron Sacerdotal Wand", "proverbs_and_oral_traditions": ["Ìbírí Nàná kò gba irin; àṣẹ ìgbà àtijọ́ l'ó ń gbé. (The Ibiri of Nana accepts no metal; it carries the primordial mandate of antiquity.)"]},
+        "Nàná Swamps": {"facet_name": "Nàná Swamps", "description": "Primordial mud and freshwater swamps older than metal culture.", "typology": "Primeval Wetland Habitat", "proverbs_and_oral_traditions": ["Àbàtà Nàná jinlẹ̀; ẹni tí kò gbọ́n kì í bọ́ síbẹ̀. (The swamp of Nana is bottomless; the foolish dare not tread there.)"]},
+        "Dahomey-Yoruba Confluence": {"facet_name": "Dahomey-Yoruba Confluence", "description": "Ancient trans-border cultural synthesis connecting Fon, Ewe, and Yoruba cosmology.", "typology": "Trans-National Religious Axis", "proverbs_and_oral_traditions": ["Àṣà méjì kò níí yapa l'ọ́wọ́ Nàná. (Two ancient cultures never tear apart in the embrace of Nana.)"]}
+    }},
+    "Aganjù": {"sub_variant_facets": {
+        "Aganjù Ọlọ́kọ̀ (The Ferryman)": {"facet_name": "Aganjù Ọlọ́kọ̀", "description": "Primordial boatman carrying souls across the river of existence.", "typology": "Psychopomp Waterway Ferryman", "proverbs_and_oral_traditions": ["Aganjù Ọlọ́kọ̀ kò ní jẹ́ kí ọkọ̀ wa rì. (Aganju the ferryman will never allow our canoe of life to capsize.)"]},
+        "Aganjù Ọba": {"facet_name": "Aganjù Ọba", "description": "Imperial royal ancestor of Oyo personifying subterranean volcanic majesty.", "typology": "Imperial Dynastic Divinity", "proverbs_and_oral_traditions": ["Aganjù l'ó ni ààfin; ìwà rẹ̀ l'ó ń kọ́ ọba l'ọ́gbọ́n. (Aganju owns the palace; his fiery majesty teaches kings restraint.)"]}
+    }},
+    "CORPUS_OBALUAYE_001": {"sub_variant_facets": {
+        "Ọbalúayé Temple of Ọ̀yọ́": {"facet_name": "Ọbalúayé Temple of Ọ̀yọ́", "description": "Central royal shrine in Oyo dedicated to epidemic control and public health.", "typology": "Imperial Health Sanctuary", "proverbs_and_oral_traditions": ["Tẹ́ńpìlì Ọbalúayé tòrò; a kì í fi ibi tí àlàáfíà ti ń jáde ṣeré. (The temple of Obaluaye is holy; none mocks the chamber of convalescence.)"]},
+        "Ìtọ́jú Guilds": {"facet_name": "Ìtọ́jú Guilds", "description": "Devotional caregivers specialized in quarantine, herbal treatment, and smallpox palliative care.", "typology": "Sacerdotal Nursing Guild", "proverbs_and_oral_traditions": ["Ìtọ́jú ni a fi ń gb'ọ́mọ l'ọ́wọ́ ikú; àṣẹ Ọbalúayé a máa wo àìsàn san. (With dedicated care do we snatch the child from death; Obaluaye's mandate heals the affliction.)"]}
+    }},
+    "Orí": {"sub_variant_facets": {
+        "Orí Inú": {"facet_name": "Orí Inú", "description": "The metaphysical inner head governing destiny, conscience, and divine character.", "typology": "Metaphysical Inner Self", "proverbs_and_oral_traditions": ["Orí inú ni ó ń ṣe orí òde; bí orí inú kò bá gbè wá, orí òde kò le ṣe nǹkan. (The inner head governs the outer head; if the inner soul supports us not, outer effort avails nothing.)"]},
+        "Ilé-Orí": {"facet_name": "Ilé-Orí", "description": "The cowrie-embroidered conical shrine container that houses the physical emblem of one's Ori.", "typology": "Cowrie-Embroidered Reliquary", "proverbs_and_oral_traditions": ["Ilé-Orí dídán l'a fi ń bọ́ orí eni; ẹni tó tọ́jú rẹ̀ kò ní d'aláìní. (With a lustrous shrine container does one nurture one's destiny; he who preserves it never tastes destitution.)"]}
+    }},
+    "CORPUS_BABALU_AYE_001": {"sub_variant_facets": {
+        "Ṣọ̀npọ̀nná Shrine": {"facet_name": "Ṣọ̀npọ̀nná Shrine", "description": "Secluded forest and ant-hill shrines where cosmic heat is propitiated.", "typology": "Hot-Earth Ecological Shrine", "proverbs_and_oral_traditions": ["Ilẹ̀ gbigbóná tọrọ ẹ̀rọ̀; Ṣọ̀npọ̀nná a máa tú omi àlàáfíà sí ayé. (The scorched earth seeks cooling herbs; Sonponna releases the waters of tranquility.)"]},
+        "Ọ̀pá Ṣàṣàrà": {"facet_name": "Ọ̀pá Ṣàṣàrà", "description": "Consecrated broom whisk tied with cowries used to sweep spiritual impurity.", "typology": "Purificatory Ritual Whisk", "proverbs_and_oral_traditions": ["Ọ̀pá Ṣàṣàrà l'a fi ń gbálẹ̀ ibi; ohun buburu kì í dúró níwájú rẹ̀. (With the Sasara staff do we sweep out malignancy; no evil endures in its path.)"]}
+    }},
+    "Ikin_Ifá": {"sub_variant_facets": {
+        "Ikin Ọ̀rúnmìlà": {"facet_name": "Ikin Ọ̀rúnmìlà", "description": "The sixteen consecrated sixteen palm nuts kept in the sacred agere vessel.", "typology": "Primordial Sixteen Nuts", "proverbs_and_oral_traditions": ["Ikin Ifá kì í purọ́; ohun tí awo bá béèrè l'ó ń fọhùn sí. (The sacred palm nuts lie not; whatever the initiate seeks, they speak faithfully unto.)"]}
+    }},
+    "Agẹrẹ_Ifá": {"sub_variant_facets": {
+        "Agẹrẹ Ẹlẹ́yinjú": {"facet_name": "Agẹrẹ Ẹlẹ́yinjú", "description": "Masterwork carved vessel with bulging almond eyes signifying esoteric vision.", "typology": "All-Seeing Caryatid Vessel", "proverbs_and_oral_traditions": ["Agẹrẹ Ẹlẹ́yinjú rí ohun tí ń bọ̀; ojú awo kì í fọ́ lójú àdánwò. (The almond-eyed vessel foresees the approaching dawn; the spiritual eye never dims in times of trial.)"]}
+    }},
+    "Ọ̀pẹ̀lẹ̀": {"sub_variant_facets": {
+        "Ọ̀pẹ̀lẹ̀ Awọ": {"facet_name": "Ọ̀pẹ̀lẹ̀ Awọ", "description": "Divining chain strung on tanned leather thongs for daily diagnostic inquiries.", "typology": "Leather-Strung Divination Chain", "proverbs_and_oral_traditions": ["Ọ̀pẹ̀lẹ̀ awọ kì í ya; awo tó tẹ̀ ẹ́ a gbó kù. (The leather-strung chain never tears; the initiate who steps upon its path attains venerable old age.)"]}
+    }},
+    "Ọpọ́n_Ifá": {"sub_variant_facets": {
+        "Ọpọ́n Ọlọ́fà": {"facet_name": "Ọpọ́n Ọlọ́fà", "description": "Rectangular or semi-circular divination board carved with bow-and-arrow motifs.", "typology": "Archer-Bordered Divining Tray", "proverbs_and_oral_traditions": ["Ọpọ́n Ọlọ́fà l'a fi ń tẹ àmì; ọfà àyànmọ́ kì í tàsé. (Upon the archer's tray do we mark the divine signatures; destiny's arrow never strays.)"]}
+    }},
+    "CORPUS_SANGO_COSMIC_001": {"sub_variant_facets": {
+        "Èdùn Àrá": {"facet_name": "Èdùn Àrá", "description": "Primordial neolithic polished celts believed to fall from the sky during lightning strikes.", "typology": "Sacred Thunderbolt Celt", "proverbs_and_oral_traditions": ["Èdùn àrá kì í sọ sílẹ̀ lásán; ibi tí Ṣàngó bá bínú sí l'ó ń bọ́ sí. (The thunderstone drops not in vain; upon the locus of divine judgment it descends.)"]}
+    }}
+}
+
+for eid, f_dict in simple_facets.items():
+    if eid not in payload["entity_updates"]:
+        payload["entity_updates"][eid] = f_dict
+    else:
+        payload["entity_updates"][eid].setdefault("sub_variant_facets", {}).update(f_dict["sub_variant_facets"])
+
+# 2. Deep 14-Tier Textual Elevation for the 33 Non-Odù Nodes
+enrichments = {
+    "Ibejì": {
+        "etymology_and_philosophy": "Derived from the Yorùbá compound 'Ibi' (birth) and 'èjì' (two)—literally 'two births in one' or 'the double blessing'. In Yorùbá spiritual epistemology, twins are not merely a biological occurrence but an extraordinary cosmic epiphany representing duality, abundance, shared spiritual origin, and supernatural protection. Honored through the primordial deity Ẹ̀dúnjobí, twins are revered as semi-divine spirits whose ancestral provenance is inextricably bound to sacred colobus monkeys (Ẹdún). They possess a shared metaphysical soul (*Àjọbí*), capable of bringing immense commercial affluence and joyful vitality to households that revere them, or sudden economic drought to families that neglect their rites.",
+        "proverbs_and_oral_traditions": [
+            "Bí a bá bí ibejì, a kì í kọ́ ilé lásán; ilé tí ibejì bá gbé l'owó ń wá sí. (When twins are born to a lineage, one does not build an ordinary house; into the home that houses twins does boundless wealth flow: Celebrating the commercial abundance bestowed by twins.)",
+            "Ibejì kì í kú, a ní wọ́n lọ ra aṣọ l'ọ́jà. (Twins never die; we say they have merely journeyed to the market to purchase fine cloths: Emphasizing the immortal ancestral continuum of twin spirits.)",
+            "Ẹ̀dúnjobí a-f'ẹsẹ̀-méjèèjì-fò-sí-owó; ẹni tí kò bọ̀wọ̀ fún ibejì kò ní jẹ àbùkù tán. (Ẹ̀dúnjobí who leaps with both feet into fortune; he who fails to honor twins will never exhaust disgrace: Articulating the sacred retribution for neglecting twin veneration.)"
+        ]
+    },
+    "Ọbá": {
+        "etymology_and_philosophy": "Linguistically rooted in the tonal predicate 'Ọbá' (high tone on second syllable), signifying the primordial river divinity and royal consort of Ṣàngó who personifies matrimonial fidelity, fierce devotion, and protective watercourses. In classical Yorùbá mythology, Ọbá was Ṣàngó's first and most senior legitimate royal wife (Oba Obìnrin), celebrated for domestic integrity and culinary craftsmanship before the historic deception surrounding the severing of her ear in a tragic bid to secure Ṣàngó's perpetual affection. Transformed into the furious rapids of the River Ọbá (Odò Ọbá) in the Ọ̀yọ́ heartland, she presides over matrimonial truth, judicial vows, and fierce defense of feminine dignity.",
+        "proverbs_and_oral_traditions": [
+            "Odò Ọbá kò ní gba èké; ẹni tí ó bá bura eke níwájú rẹ̀ kì í wọ ilé. (The River Ọbá accommodates no deceit; whoever swears a false oath before her waters shall never reach their homestead: Affirming judicial purity.)",
+            "Ọbá kì í f'èjìkẹ́ ṣe àbùkù; ìwà pẹ̀lẹ́ l'ó fi ń bọ́ Ṣàngó. (Ọbá never brings shame to the royal household; with consummate poise does she minister to the thunder monarch: Praising wifely devotion.)",
+            "Bí Ọbá bá bínú, omi a máa gba igbó; obìnrin awo a d'ẹkùn l'ojú ogun. (When Ọbá is aroused in righteous fury, her waters submerge the forest; the consecrated woman turns into a leopard on the battlefront.)"
+        ]
+    },
+    "Yewá": {
+        "etymology_and_philosophy": "Linguistically derived from 'Ìyá' (mother) and 'Ẹwà' (beauty or grace)—'The Mother of Pure Beauty'. In Yorùbá cosmology, Yewá is the pristine river divinity of the Yewa River in Ogun State, embodying virginity, moral rectitude, spiritual seclusion, and ascetic mystery. Unlike oceanic and tempestuous deities, Yewá represents crystalline stillness and uncontaminated silence. Her priestesses (*Àwọn Ìyá Yewá*) take solemn vows of marital continence, appearing only in virgin white fabrics (*Aṣọ Àlà*) with veiled countenances. In metaphysical thought, Yewá represents the liminal threshold between youth and transcendence, guarding uncorrupted moral conscience and deep subterranean springs.",
+        "proverbs_and_oral_traditions": [
+            "Yewá a-f'omi-mọ́-kò-f'ẹjẹ̀; ẹni tó bá mọ́ l'ó ń dé ibi tútù rẹ̀. (Yewá who cleanses with crystal waters and desires no blood sacrifice; only the morally pure enter her cool sanctuary: Affirming ascetic holiness.)",
+            "A kì í f'ohùn rara ké ní tẹ́ńpìlì Yewá; ìdákẹ́rọ́rọ́ ni awo fi ń fọhùn. (One does not shout loudly in the sanctuary of Yewá; in profound silence does the initiate commune with the spirit: Enforcing meditative reverence.)",
+            "Odò Yewá ń san jẹ́jẹ́, ṣùgbọ́n ó gbé odidi erin lọ láìkìtì. (The Yewa river flows gently, yet it sweeps away the colossal elephant without a ripple: Illustrating the omnipotent power of quietude.)"
+        ]
+    },
+    "Òṣùmàrè": {
+        "etymology_and_philosophy": "Linguistically contracted from 'Òṣù' (the celestial disc/crescent), 'mọ' (to span or illuminate), and 'arè' (the cosmic rainbow or encircling python). In Yorùbá cosmological metaphysics, Òṣùmàrè is the dual-gendered primordial rainbow serpent who unites heaven (*Ọ̀run*) and earth (*Ayé*), governing cosmic circulation, cyclical rejuvenation, atmospheric rainfall, and economic wealth. Represented by the royal python (*Ọkà*) that grasps its own tail (the Ouroboros), Òṣùmàrè siphons water from the subterranean terrestrial depths back into the clouds, sustaining the planetary hydraulic cycle. Closely aligned with cowrie trade (*Owó Ẹyọ*) and divine transformation, Òṣùmàrè represents social mobility, turning humble paupers into affluent nobility through cyclical destiny.",
+        "proverbs_and_oral_traditions": [
+            "Òṣùmàrè a-f'ẹnu-k'orun-f'ẹsẹ̀-tẹ'lẹ̀; kò sí ohun tí kò le yí padà sí rere. (Òṣùmàrè who touches heaven with his mouth while resting his feet on earth; there is no misfortune that he cannot turn into divine blessing: Celebrating cosmic renewal.)",
+            "Ẹni tó rí Òṣùmàrè tí kò d'ọlọ́lá, kò níí rí ayọ̀ láéláé. (He who beholds the rainbow serpent and attains no prosperity has missed the divine moment of grace: Aphorism on seizing transformative opportunity.)",
+            "Òṣùmàrè kì í fi ara rẹ̀ hàn ní gbogbo ọjọ́; ọjọ́ tí ó bá yọ ni ayé ń dídùn. (The rainbow reveals not its glory on everyday occasions; the day it appears is when the cosmos tastes absolute sweetness.)"
+        ]
+    },
+    "Oṣé Ṣàngó": {
+        "etymology_and_philosophy": "The double-bladed ceremonial dance wand sculpted from seasoned hardwood (especially Apa or Iroko), representing the iconic visual emblem of the thunder divinity Ṣàngó. Linguistically, 'Oṣé' signifies both the wooden sceptre and the weekly day of sacred prayer ('Ọjọ́ Oṣé'). Sculpted in the form of a kneeling devotee or warrior supporting two stylized celts (axes) emerging from the crown of the head, the Oṣé represents the sudden lightning bolt striking the human consciousness with divine truth and moral authority. Carried exclusively by initiated Ṣàngó priests (*Oníṣàngó*) during possessed trance-dances, the wand channels the turbulent kinetic electricity of the storm, swinging in sync with the high-pitch crack of the bàtá drum.",
+        "proverbs_and_oral_traditions": [
+            "Oṣé Ṣàngó kì í ya l'ọ́wọ́ awo; orí tí ó gbé e dandan ni k'ó gba àṣẹ. (The thunder wand never slips from the grasp of the initiate; the head that bears its weight inevitably receives divine mandate: Celebrating spiritual steadfastness.)",
+            "A kì í fi Oṣé Ṣàngó gé igi l'ọ́gbà; ohun orò kì í di ohun àbùkù. (One does not use the sacred thunder wand to chop firewood in the orchard; an implement of mystery must never be degraded to secular labor.)",
+            "Bí Ṣàngó bá bọ́ sí gbàgede, Oṣé rẹ̀ a máa kọ mọ̀nà-mọ́ná. (When Ṣàngó steps into the open arena, his double-bladed wand flashes living lightning: Describing the visual splendor of possessed dance.)"
+        ]
+    },
+    "Ìrukẹ̀rẹ̀ Òrìṣà": {
+        "etymology_and_philosophy": "The consecrated ancestral flywhisk fashioned from the tail of an ox, horse, or buffalo (*Ẹfọ̀n*), bound onto a heavily beaded, carved ivory, or embossed leather handle. Linguistically derived from 'Ìru' (tail) and 'kẹ̀rẹ̀' (abundant flowing strands). In classical Yorùbá semiotics, the Ìrukẹ̀rẹ̀ is not a functional utensil for dispelling insects but a supreme visual scepter of aristocratic leisure, diplomatic immunity, and divine authority (*Àṣẹ*). Carried by paramount monarchs (*Ọba*), high chiefs, and senior priests (*Babaláwo* and *Ìyálórìṣà*), waving the Ìrukẹ̀rẹ̀ dispels unseen spiritual turbulence, confirms oral blessings, and commands absolute silence during state councils.",
+        "proverbs_and_oral_traditions": [
+            "Ìrukẹ̀rẹ̀ kì í bẹ́ ẹja nínú omi; ọwọ́ ọba ni ó ń gbé. (The royal flywhisk chases no fish in the water; in the hand of the sovereign monarch does it find its eternal rest: Defining royal majesty and dignified poise.)",
+            "Ọ̀rọ̀ tí Ìrukẹ̀rẹ̀ bá tẹ́wọ́gbà, dandan ni k'ó ṣẹ. (The prayer that the ancestral flywhisk acknowledges inevitably comes to pass: Affirming the kinetic validity of sacerdotal blessings.)",
+            "A kì í rí Ìrukẹ̀rẹ̀ l'ọ́rùn ẹrú; ohun ọmọlúwàbí ni awo fi ń tẹríba. (One never beholds the ancestral flywhisk on the neck of a bondsman; with the emblem of noble pedigree does the initiate bow before the gods.)"
+        ]
+    },
+    "Babaláwo": {
+        "etymology_and_philosophy": "Linguistically contracted from 'Baba' (father), 'ní' (possessor of), and 'awo' (esoteric mystery or divination secrets)—literally 'The Father of the Mysteries'. The Babaláwo is the supreme intellectual, philosopher, physician, and diviner of Yorùbá civilization, serving as the consecrated human custodian of the 256 Odù Ifá matrix. Undergoing decades of rigorous cognitive training to memorize thousands of poetic verses, medical pharmacopeias, historical annals, and psychological counseling methodologies, the Babaláwo operates without dogmatic bias, diagnosing existential crises and harmonizing the seeker's terrestrial life with their prenatal divine destiny (*Orí*).",
+        "proverbs_and_oral_traditions": [
+            "Babaláwo kì í purọ́; ohun Ifá bá sọ ni awo ń fọhùn sí. (The master diviner speaks no falsehood; what Ifá reveals is what the initiate translates into mortal speech: Affirming absolute intellectual and spiritual integrity.)",
+            "Bí a bá jí l'áàárọ̀, a bọ́ Babaláwo; awo l'ó mọ ibi tí ọjọ́ ń lọ. (When we awake at dawn, we consult the master diviner; the man of mystery knows the trajectory of the unfolding day: Acknowledging epistemological foresight.)",
+            "Babaláwo kì í bínú f'ẹni tó béèrè; sùúrù l'ó fi ń tún ayé ṣe. (The master diviner harbors no anger toward the petitioner; with unhurried patience does he mend the fractured cosmos: Praising emotional poise and compassion.)"
+        ]
+    },
+    "Ìyanífá": {
+        "etymology_and_philosophy": "Linguistically contracted from 'Ìyá' (mother), 'ní' (possessor of), and 'Ifá'—'The Mother of Ifá' or 'The Matriarch of Divine Wisdom'. The Ìyanífá represents the highest formal female sacerdotal title in the Ifá priesthood, carrying complete initiatory legitimacy to cast the sacred palm nuts (*Ikin Ifá*), interpret the 256 Odù Ifá matrix, prepare medicine, and conduct initiations. In Yorùbá cosmological epistemology, women are recognized as the primal vessels of spiritual containment (*Àpò Ìwà*), and the Ìyanífá embodies the sacred balance between masculine vocalization and feminine intuitive grounding, ensuring the moral continuity of the priesthood across generations.",
+        "proverbs_and_oral_traditions": [
+            "Ìyanífá kì í tẹ Ifá láìní ìwà; obìnrin awo a d'odù gbogbo mú. (The matriarch of wisdom casts not the oracle without noble character; the woman of mysteries comprehends all cosmic revelations.)",
+            "Obìnrin l'ó bí awo; kò sí Babaláwo tí kò ti ọwọ́ Ìyá wá. (It was woman that gave birth to the initiate; there is no master diviner who came not through the maternal matrix: Affirming the primordial primacy of women.)",
+            "Bí Ìyanífá bá tẹ Ọpọ́n Ifá, àlàáfíà a máa ba ilé gbogbo. (When the female initiate touches the divination tray, living peace descends upon the entire homestead: Celebrating maternal pacification.)"
+        ]
+    },
+    "Awo Ifá": {
+        "etymology_and_philosophy": "The collective esoteric covenant, epistemology, and community of initiated practitioners who preserve the liturgical, medicinal, and philosophical secrets of Ọ̀rúnmìlà. Linguistically, 'Awo' signifies mystery, occult concealment, profound comprehension, and mutual fraternal loyalty that cannot be penetrated by the uninitiated (*Ọ̀gbẹ̀rì*). Awo Ifá is rooted in absolute discretion, intellectual rigour, and ethical solidarity, serving as the philosophical bedrock that enabled Yorùbá civilization to survive centuries of warfare, imperial collapse, and transatlantic displacement intact.",
+        "proverbs_and_oral_traditions": [
+            "Awo kì í f'awo ṣe eléyà; bí awo bá rí awo a máa fọwọ́ tì í. (An initiate mocks not a fellow initiate; when an adept beholds an adept, he extends fraternal solidarity: Articulating the sacred oath of mutual support.)",
+            "Ẹni tí kò mọ awo kì í bọ́ sígbò; ohun tí awo fi pamọ́ kì í ṣe eré ọmọdé. (He who knows not the mystery enters not the sacred forest; the secrets guarded by the initiates are no children's play.)",
+            "Awo l'ó ń tún ìlú ṣe; níbi tí awo kò sí, ilé a di ahoro. (It is the company of initiates that restores the citadel; where spiritual wisdom is absent, the palace decays into ruin.)"
+        ]
+    },
+    "Àkúnlẹ̀gbà": {
+        "etymology_and_philosophy": "Derived from 'À-kún-lẹ̀-gbà'—'That which was received while kneeling in heaven'. In Yorùbá prenatal destiny theology, Àkúnlẹ̀gbà represents that portion of a person's life mandate apportioned and handed down to the soul by Olódùmarè and the celestial court while the kneeling soul awaits birth. Unlike Àkúnlẹ̀yàn (that which the individual soul voluntarily knelt and chose from the repository of Orí), Àkúnlẹ̀gbà constitutes divine allowances, celestial gifts, and environmental circumstances bestowed directly by Providence to facilitate the fulfillment of one's destiny.",
+        "proverbs_and_oral_traditions": [
+            "Àkúnlẹ̀gbà kì í parun l'ọ́wọ́ ọmọ aráyé; ohun tí Ọlọ́run fún ni, kò sí ẹni tó le gbà á. (What was divinely received while kneeling never perishes in mortal hands; what God has bestowed, no earthly conspiracy can revoke: Affirming supernatural inheritance.)",
+            "Bí a bá kúnlẹ̀ gba orí rere, ayé kì í le tàsé rẹ̀. (If we knelt and received a noble destiny from heaven, earthly trials can never deflect its fulfillment: Praising providential grace.)",
+            "Àkúnlẹ̀gbà ni aṣọ tí Ẹlẹ́dàá wọ̀ wá; a kì í yí i padà pẹ̀lú ọ̀tẹ̀. (The divine apportionment is the sacred garment with which the Creator clothed us; it cannot be altered through mortal intrigue.)"
+        ]
+    },
+    "Orírun": {
+        "etymology_and_philosophy": "Linguistically contracted from 'Orí' (head, origin, source) and 'Ìrun' (ancestral foundation or springing well)—literally 'The Primordial Fountainhead' or 'The Ancestral Genesis'. In Yorùbá historical epistemology and cosmology, Orírun refers specifically to Ilé-Ifẹ̀ as the spiritual and geographical cradle of humanity and all Yorùbá dynastic lineages. Metaphysically, it represents the ontological root to which all sovereign authority, artistic guild knowledge, linguistic dialects, and ancestral souls must periodically return to receive rejuvenation, legitimization, and divine alignment.",
+        "proverbs_and_oral_traditions": [
+            "Ilé-Ifẹ̀ l'orírun gbogbo Yorùbá; kò sí ọba tí kò ti ibẹ̀ gba adé. (Ilé-Ifẹ̀ is the fountainhead of all Yorùbá; there is no sovereign monarch who received not his beaded crown from its cradle: Articulating dynastic legitimacy.)",
+            "Ẹni tó gbàgbé orírun rẹ̀ a máa d'aláìní; igi tí kò ní gbòǹgbò kì í dúró níwájú ìjì. (He who forgets his ancestral fountainhead inevitably becomes destitute; the tree that lacks deep roots cannot stand before the hurricane.)",
+            "Orírun awo kì í parẹ́; ibi tí omi ti ń ṣàn wá kò níí gbẹ láéláé. (The genesis of sacred wisdom never vanishes; the primordial spring whence the river flows shall never dry up.)"
+        ]
+    }
+}
+
+for eid, e_data in enrichments.items():
+    if eid not in payload["entity_updates"]:
+        payload["entity_updates"][eid] = e_data
+    else:
+        payload["entity_updates"][eid].update(e_data)
+
+PAYLOAD_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(f"✅ Generated payload: {PAYLOAD_PATH}")
+print(f"   Duplicate Merges: {len(payload['duplicate_merges'])}")
+print(f"   Retire IDs:       {len(payload['retire_ids'])}")
+print(f"   Entity Updates:   {len(payload['entity_updates'])}")

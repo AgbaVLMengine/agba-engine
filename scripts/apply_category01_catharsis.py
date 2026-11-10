@@ -45,6 +45,12 @@ def apply_catharsis(corpus, payload):
             elif v is not None:
                 ent[k] = v
 
+    for eid, prune_list in payload.get("alias_pruning", {}).items():
+        ent = by_id.get(eid)
+        if ent and "aliases" in ent:
+            prune_set = set(p.lower().strip() for p in prune_list)
+            ent["aliases"] = [a for a in ent["aliases"] if a.lower().strip() not in prune_set]
+
     for ent in corpus:
         if ent.get("category") == "Spiritual & Cosmological Matrix":
             proverbs = ent.get("proverbs_and_oral_traditions")
