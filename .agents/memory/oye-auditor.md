@@ -396,6 +396,29 @@
        - `benchmark_oruko_mi.py`: 29/29 (100.0%) Passed; 3-Tier fuzzer executed in **50.79 ms** (< 150 ms ceiling).
        - `npm run build`: Compiled cleanly in **1.40s** (1,935 modules, 0 errors).
     5. *Findings Inscribed*: Documented in `.agents/scratch/oye_feedback.md`.
+- **[2026-11-10 EOD | HORIZON-03 Adversarial Code, Bloat & Invariant Audit (`CHECKPOINT-OYE-025` / `HANDOFF-OYE-006`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù & `Ọlọ́yè Àgbà`.
+  - **Target Commit**: `cd3a237` (feat: eradicate category 1 duplicates, hydrate sub-variant facets, enrich non-odu nodes).
+  - **Verdict**: 🏆 **100% UNCONDITIONAL AUDIT PASS — ZERO BLOAT, ZERO DRIFT, ZERO DEBT**.
+  - **Audit Protocol Executed**:
+    1. *The Sub-100 LOC Invariant (scripts/forensics/)*:
+       - All 5 modules strictly < 100 LOC: `run_audit.py` (81), `vector_duplicates.py` (82), `vector_homographs.py` (72), `vector_richness.py` (76), `vector_subvariants.py` (85).
+       - Total drawer: 396 LOC. Stdlib only (`re`, `unicodedata`, `argparse`, `json`, `pathlib`). Zero runtime dependencies.
+    2. *The Zero-Data-in-JS Invariant*:
+       - `web/src/utils/subVariantHydrator.js` (120 LOC): strictly algorithmic; dynamically ingests declarative facet payloads from `parentEntity.sub_variant_facets` supplied by the corpus JSON. Zero hardcoded cultural dictionaries.
+       - `web/src/utils/relativesResolver.js` (275 LOC): strictly structural, well beneath 500-LOC ceiling.
+    3. *Frontend Bundle & Latency Impact*:
+       - `npm run build` compiled in **974 ms** (< 1.5s invariant).
+       - Zero bundle regression: client bundle reduced from 14.40 MB to **14.26 MB** (2.79 MB gzipped).
+       - Algorithmic graph traversal operates in sub-2ms time with $O(1)$ set-affinity lookups.
+    4. *Dual-Corpora Checksum Lock & Dangling Pointer Check*:
+       - Cryptographic bit-for-bit lockstep confirmed across all **1,397 entities**: SHA-256 `025ba59d946531675c58339f76c1556a3d98421c766381fb88eac4e251b3d2c2` (0-bit drift).
+       - Scanned all retired synthetic wrappers (`CORPUS_ORUNMILA_001`, `CORPUS_OSOOSI_001`, `CORPUS_OYA_001`, `CORPUS_YEWA_001`, `Àṣẹ-Ọ̀pá`) and 11 mononym Odù stubs: exactly **0 dangling parents** and **0 dangling relative pointers**.
+    5. *Sanctuary Health & Regression Verification*:
+       - `scripts/sanctuary_audit.sh`: 100% Green across all 9 gates.
+       - `scripts/benchmark_oruko_mi.py`: 29/29 (100.0%) Passed; 3-Tier fuzzer executed in **37.96 ms** (< 150 ms invariant).
+    6. *Memory Vault & Scratch Synchronization*:
+       - Inscribed forensic audit artifact in `.agents/scratch/oye_feedback.md` and updated `.agents/memory/oye-auditor.md`.
 
 ---
 
