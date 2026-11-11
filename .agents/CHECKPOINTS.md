@@ -2870,3 +2870,18 @@
   5. Inscribed the Five Daily Islamic Prayers (Fajr, Zuhr, Asr, Maghrib, Isha) into the Council's living constitution and sanctuary cadence.
   6. Staged **HORIZON-02** (The 17-Category Systematic Sovereign Parent & Cluster Purity Audit) for Saturday, Nov 07.
 - **Verification**: `npm run build` compiled in 1.30s (0 errors); `scripts/sanctuary_audit.sh` 100% GREEN (0 hard violations, 0 warnings); dual corpora in bit-for-bit lockstep (`5783f989...`).
+
+---
+
+### Checkpoint 144 — 2026-11-11 (`CHECKPOINT-AGBALE-STORAGE-SWEEP-144`)
+- **Domain**: Storage Headroom Audit, Safe Cache Purge & Sanctuary Hygiene
+- **Agent Persona**: `Ọlọ́yè Agbálẹ̀` (`disk-saver`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)
+- **Key Deliverables**:
+  1. **Storage Headroom Audit**: Verified storage headroom across root `/` (15G available), `/home/aruna_olanrewaju` (15G available), `/tmp` (15G available), and host partition `/dev/vdb` (50 GB total, 21 GB used, 29 GB available, 42% used).
+  2. **Safe Cache & Debris Purge**: Executed [`scripts/reclaim_disk.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/reclaim_disk.sh): cleared developer package caches (`~/.cache/pip`, `~/.npm/_cacache`), vacuumed system journal logs, pruned temporary unlinked `/tmp` files older than 48h, compacted git objects (`git gc`), and wiped transient bytecode caches (`web/.vite`, `__pycache__`).
+  3. **Zero-Harm Invariant Verified**: Strictly safeguarded all user source code, corpora (`yoruba_corpus_1007_NORMALIZED.json`), Qdrant vectors, and Chrome user profile credentials/bookmarks.
+  4. **Headroom Gate Check**: Available storage on `/home/aruna_olanrewaju` is 15 GB, securely above the 2.0 GB emergency alert threshold. Status: 🟢 Nominal.
+  5. **Memory Synchronization**: Inscribed Section 15 in [`memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md) and synchronized with the Shared Brain via [`scripts/sync-brain.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/sync-brain.sh).
+- **Verification**: ✅ **NOMINAL — 15 GB HEADROOM SECURED / 0 HARD VIOLATIONS / SHARED BRAIN SYNCHRONIZED**.
