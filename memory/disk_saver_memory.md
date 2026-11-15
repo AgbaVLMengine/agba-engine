@@ -194,6 +194,16 @@
 - **Dual-Corpora Bit-for-Bit Lockstep**: Certified 100% parity at SHA-256 `6348e8f217555e5e3e04e3b893f02e00d79260100cdda02585894a934c65cce3` across all **1,397 canonical entities** (**0-bit drift**).
 - **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Sunday SOD Clearance Granted.
 
+---
+
+## 17. Sunday End-of-Day Storage Sentinel Sweep & Archive Seal (`EOD-AGBALE-008` / `HANDOFF-AGBALE-EOD`) (2026-11-15)
+- **Sanctuary Storage Headroom**: `32 GB available` (`37%` used on `50 GB` `/dev/vdb` partition) — safely buoyant far above all safety thresholds (16× above 2.0 GB alert floor).
+- **Workspace Footprint**: Entire repository `agba-engine` occupies a lean **310 MB**.
+- **Ephemeral & Cache Eviction**: Purged all `__pycache__` directories, zero `.pyc` or `.tmp` files remaining; purged `web/node_modules/.vite` and `web/.vite`; zero orphaned scratch dumps.
+- **Git & Archive Seal**: Executed `git fsck --full`, `git prune`, and `git gc --prune=now`; verified **0 dangling objects** across the entire 3,008-object database. Git working tree is 100% clean and synchronized with `origin/dev`.
+- **Sphere 4 Vault**: Confirmed strictly 3 rolling snapshots maintained (`20261107_172737`, `20261109_161539`, `20261110_171733`) alongside foundational sovereign vault (`20261028_132739Z`), totaling 64 MB.
+- **Sanctuary Status**: 🟢 **100% NOMINAL, PRISTINE & SEALED FOR THE NIGHT**.
+
 | **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 14:42 UTC** | EOD-AGBALE-004: Pre-Retirement Storage Sweep (Friday Nov 06) | 0 MB | 44G available | 🟢 Nominal |
@@ -205,3 +215,4 @@
 | **2026-11-10 16:17 UTC** | EOD-AGBALE-007: Tuesday End-of-Day Sanitation Sweep (Nov 10) | 5 MB | 32G available | 🟢 Nominal |
 | **2026-11-11 19:36 UTC** | Scheduled Storage Sentinel Sweep | 0 MB | 15G available | 🟢 Nominal |
 | **2026-11-15 09:36 UTC** | SOD-AGBALE-007: Sunday Start-of-Day Abuja Sanctuary Sweep (Nov 15) | 0 MB | 29G available | 🟢 Nominal |
+| **2026-11-15 12:39 UTC** | EOD-AGBALE-008: Sunday End-of-Day Storage Sentinel Sweep (Nov 15) | 0 MB | 32G available | 🟢 Nominal |

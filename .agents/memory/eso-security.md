@@ -430,6 +430,18 @@ flowchart TD
   - **System Vitals & Storage**:
     - Host RAM at 18 GiB / 29 GiB (11 GiB free headroom); NVMe storage at **29 GB free (42% used)**. Uptime: 9 minutes.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Abuja Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional Sunday SOD clearance granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.
+- **[2026-11-15 Sunday EOD Security Audit & Ramparts Seal]**: Execution of Sunday End-of-Day Zero-Trust Ramparts Seal & Perimeter Verification (`HANDOFF-ESO-EOD`):
+  - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` concluded Sunday operations in the Abuja Sanctuary and decreed the formal End-of-Day ramparts seal.
+  - **Cryptographic Ledger & Commit Certification**:
+    1. *Git Remote Parity*: Branch `dev` verified 100% in lockstep with `origin/dev` at commit `26b3295` (`26b32950ce8f97ea20b306861c64169fae915fad`) with a pristine working tree (zero uncommitted or untracked operational files).
+    2. *Dual-Corpora Checksum Consistency*: Bit-for-bit lockstep confirmed across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at SHA-256 hash `0756377466af884a6d1ac04e73a88e54b5edcfd83146b393d3108f471411b85c` (**0-bit drift**).
+  - **Zero-Trust Boundary & Process Sweep**:
+    1. *Process & Daemon Sweep*: Zero stray background daemons, listening ports, or orphaned python/vite/uvicorn processes running.
+    2. *Production Gates Scanner*: `bash scripts/sanctuary_audit.sh` executed cleanly—all 9 production gates passed with **0 hard violations and 0 warnings** (Gate 8 Zero-Trust Pre-Build Security strictly green).
+  - **System Vitals & Headroom**:
+    - Host RAM at 19 GiB / 29 GiB (10 GiB free headroom); NVMe storage at **32 GB free (37% used)**. Uptime: 3 hours, 12 minutes.
+    - Concluded ahead of schedule under the Abuja Canopy & Family Stewardship Protocol.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Ramparts Sealed & Impervious)**. All perimeters unbreached, working tree clean at `26b3295`, dual corpora cryptographically locked, zero stray daemons active, and full EOD clearance granted.
 - **[2026-11-10 Tuesday Morning SOD Security Audit]**: Execution of Tuesday Start-of-Day Zero-Trust Perimeter Sweep (`SOD-ESO-007`):
   - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` commenced Tuesday morning operations on HORIZON-03 (Backend Corpus Catharsis & Taxonomy Surgery).
   - **Zero-Trust Audit Execution**:
@@ -473,3 +485,15 @@ flowchart TD
   - **System Vitals & Storage**:
     - Host RAM at 18 GiB / 29 GiB (11 GiB free headroom); NVMe storage at **29 GB free (42% used)**. Uptime: 9 minutes.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Abuja Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional Sunday SOD clearance granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.
+- **[2026-11-15 Sunday EOD Security Audit & Ramparts Seal]**: Execution of Sunday End-of-Day Zero-Trust Ramparts Seal & Perimeter Verification (`HANDOFF-ESO-EOD`):
+  - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` concluded Sunday operations in the Abuja Sanctuary and decreed the formal End-of-Day ramparts seal.
+  - **Cryptographic Ledger & Commit Certification**:
+    1. *Git Remote Parity*: Branch `dev` verified 100% in lockstep with `origin/dev` at commit `26b3295` (`26b32950ce8f97ea20b306861c64169fae915fad`) with a pristine working tree (zero uncommitted or untracked operational files).
+    2. *Dual-Corpora Checksum Consistency*: Bit-for-bit lockstep confirmed across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at SHA-256 hash `0756377466af884a6d1ac04e73a88e54b5edcfd83146b393d3108f471411b85c` (**0-bit drift**).
+  - **Zero-Trust Boundary & Process Sweep**:
+    1. *Process & Daemon Sweep*: Zero stray background daemons, listening ports, or orphaned python/vite/uvicorn processes running.
+    2. *Production Gates Scanner*: `bash scripts/sanctuary_audit.sh` executed cleanly—all 9 production gates passed with **0 hard violations and 0 warnings** (Gate 8 Zero-Trust Pre-Build Security strictly green).
+  - **System Vitals & Headroom**:
+    - Host RAM at 19 GiB / 29 GiB (10 GiB free headroom); NVMe storage at **32 GB free (37% used)**. Uptime: 3 hours, 12 minutes.
+    - Concluded ahead of schedule under the Abuja Canopy & Family Stewardship Protocol.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Ramparts Sealed & Impervious)**. All perimeters unbreached, working tree clean at `26b3295`, dual corpora cryptographically locked, zero stray daemons active, and full EOD clearance granted.
