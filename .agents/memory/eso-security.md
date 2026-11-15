@@ -415,6 +415,21 @@ flowchart TD
     - Host RAM at 14 GiB / 29 GiB (15 GiB headroom); NVMe storage at **44 GB free (12% used)**. Uptime: 5 hours, 31 minutes.
     - Pacing triumph: concluded at **16:21 WAT**—a full **1 hour and 39 minutes ahead of the 18:00 WAT Quiet Harbor Embargo**.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional workstation shutdown green light granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.
+- **[2026-11-15 Sunday Morning SOD Security Audit (Abuja Sanctuary)]**: Execution of Sunday Start-of-Day Zero-Trust Perimeter Sweep (`HANDOFF-ESO-SOD-20261115`):
+  - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` opened our first operational session in the Abuja Sanctuary following transit, operating under the Abuja Canopy & Family Stewardship Protocol.
+  - **Abuja Network & Perimeter Hygiene**:
+    1. *Network Defenses*: Zero-trust perimeter verified on newly established Abuja Wi-Fi connection; zero exposed daemon ports or unauthenticated listeners.
+    2. *Local Credentials & Classic PAT*: GitHub Classic PAT remains strictly isolated inside local `.git/config` with zero network broadcast or repo leakage.
+    3. *Git Remote Parity*: Branch `dev` verified 100% in lockstep with `origin/dev` at commit `a698f03` (0 ahead, 0 behind).
+    4. *Secrets & Supply Chain*: Scanned scratch, scripts, docs, and git logs: zero exposed API keys or private tokens (`AIza...`, `sk-...`, `ghp_...`). Direct official `google-genai>=0.1.0` locked; zero LiteLLM trojans.
+  - **Sanctuary Integrity & Cryptographic Parity**:
+    - Gate 8 (Pre-Build Zero-Trust Security Gate) passed with **100% DEFCON 5 GREEN Clearance**.
+    - Dual-corpora SHA-256 bit-for-bit lockstep confirmed at `6348e8f217555e5e3e04e3b893f02e00d79260100cdda02585894a934c65cce3` across all **1,397 canonical entities** (**0-bit drift**).
+    - `python3 scripts/benchmark_generative_qa.py` passed 100% in **36.61ms** (1,397/1,397 preemption, 0/1,800 generic fallbacks, 27/27 golden fixtures).
+    - Production client bundle compiled via `npm run build` in **1.67s** (1,935 modules, 0 errors).
+  - **System Vitals & Storage**:
+    - Host RAM at 18 GiB / 29 GiB (11 GiB free headroom); NVMe storage at **29 GB free (42% used)**. Uptime: 9 minutes.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Abuja Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional Sunday SOD clearance granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.
 - **[2026-11-10 Tuesday Morning SOD Security Audit]**: Execution of Tuesday Start-of-Day Zero-Trust Perimeter Sweep (`SOD-ESO-007`):
   - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` commenced Tuesday morning operations on HORIZON-03 (Backend Corpus Catharsis & Taxonomy Surgery).
   - **Zero-Trust Audit Execution**:
@@ -443,3 +458,18 @@ flowchart TD
     - Host RAM at 20 GiB / 29 GiB (9 GiB headroom); NVMe storage at **32 GB free (37% used)**. Uptime: 6 hours, 14 minutes.
     - Pacing triumph: concluded at **17:18 WAT**—a full **42 minutes ahead of the 18:00 WAT Quiet Harbor Embargo**.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional workstation shutdown green light granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.
+- **[2026-11-15 Sunday Morning SOD Security Audit (Abuja Sanctuary)]**: Execution of Sunday Start-of-Day Zero-Trust Perimeter Sweep (`HANDOFF-ESO-SOD-20261115`):
+  - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` opened our first operational session in the Abuja Sanctuary following transit, operating under the Abuja Canopy & Family Stewardship Protocol.
+  - **Abuja Network & Perimeter Hygiene**:
+    1. *Network Defenses*: Zero-trust perimeter verified on newly established Abuja Wi-Fi connection; zero exposed daemon ports or unauthenticated listeners.
+    2. *Local Credentials & Classic PAT*: GitHub Classic PAT remains strictly isolated inside local `.git/config` with zero network broadcast or repo leakage.
+    3. *Git Remote Parity*: Branch `dev` verified 100% in lockstep with `origin/dev` at commit `a698f03` (0 ahead, 0 behind).
+    4. *Secrets & Supply Chain*: Scanned scratch, scripts, docs, and git logs: zero exposed API keys or private tokens (`AIza...`, `sk-...`, `ghp_...`). Direct official `google-genai>=0.1.0` locked; zero LiteLLM trojans.
+  - **Sanctuary Integrity & Cryptographic Parity**:
+    - Gate 8 (Pre-Build Zero-Trust Security Gate) passed with **100% DEFCON 5 GREEN Clearance**.
+    - Dual-corpora SHA-256 bit-for-bit lockstep confirmed at `6348e8f217555e5e3e04e3b893f02e00d79260100cdda02585894a934c65cce3` across all **1,397 canonical entities** (**0-bit drift**).
+    - `python3 scripts/benchmark_generative_qa.py` passed 100% in **36.61ms** (1,397/1,397 preemption, 0/1,800 generic fallbacks, 27/27 golden fixtures).
+    - Production client bundle compiled via `npm run build` in **1.67s** (1,935 modules, 0 errors).
+  - **System Vitals & Storage**:
+    - Host RAM at 18 GiB / 29 GiB (11 GiB free headroom); NVMe storage at **29 GB free (42% used)**. Uptime: 9 minutes.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Abuja Sanctuary Impervious)**. All perimeters sealed, zero security debt, total sanctuary tranquility. Unconditional Sunday SOD clearance granted to Kábíyèsí! Inscribed report in `.agents/scratch/eso_feedback.md`.

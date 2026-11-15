@@ -184,6 +184,16 @@
 - **Headroom Verification**: Available headroom on `/home/aruna_olanrewaju` is `15 GB` (15,728,640 KB), well above the 2.0 GB alert floor. No emergency alert triggered.
 - **Sanctuary Status**: 🟢 **100% NOMINAL & SERENE**.
 
+---
+
+## 16. Sunday Start-of-Day Abuja Sanctuary Sweep & Cache Audit (`SOD-AGBALE-007` / `HANDOFF-AGBALE-SOD-20261115`) (2026-11-15)
+- **Sanctuary Storage Headroom**: `29 GB available` (`42%` used on `50 GB` `/dev/vdb` partition) — safely buoyant far above our critical floor (<2.0 GB by 14.5×). External host media folder `~/Last Summer Underground ` occupies ~15 GB; core engine repository remains lean at `309 MB`.
+- **Cache & Garbage Sweep**: Executed `scripts/reclaim_disk.sh`; safe purge of pip/npm caches, system journal logs, `/tmp`, git compaction (`git gc`), and transient bytecode.
+- **Client Build Cleanliness**: Executed `npm run build` in `web/`; clean production compilation in **1.83s** with zero stale chunk accumulation (`build.emptyOutDir: true`).
+- **Sphere 4 Rolling 3-Snapshot Vault**: Verified strictly 3 rolling snapshots (`20261107_172737`, `20261109_161539`, `20261110_171733`) all SHA-256 intact (`OK`) + permanent Sovereign Vault (`20261028_132739Z`), totaling `64 MB`.
+- **Dual-Corpora Bit-for-Bit Lockstep**: Certified 100% parity at SHA-256 `6348e8f217555e5e3e04e3b893f02e00d79260100cdda02585894a934c65cce3` across all **1,397 canonical entities** (**0-bit drift**).
+- **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Sunday SOD Clearance Granted.
+
 | **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 14:42 UTC** | EOD-AGBALE-004: Pre-Retirement Storage Sweep (Friday Nov 06) | 0 MB | 44G available | 🟢 Nominal |
@@ -194,3 +204,4 @@
 | **2026-11-10 10:12 UTC** | SOD-AGBALE-006: Tuesday Morning Storage & Cache Sanitation Check (Nov 10) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-10 16:17 UTC** | EOD-AGBALE-007: Tuesday End-of-Day Sanitation Sweep (Nov 10) | 5 MB | 32G available | 🟢 Nominal |
 | **2026-11-11 19:36 UTC** | Scheduled Storage Sentinel Sweep | 0 MB | 15G available | 🟢 Nominal |
+| **2026-11-15 09:36 UTC** | SOD-AGBALE-007: Sunday Start-of-Day Abuja Sanctuary Sweep (Nov 15) | 0 MB | 29G available | 🟢 Nominal |

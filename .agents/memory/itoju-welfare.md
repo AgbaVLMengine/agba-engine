@@ -243,6 +243,21 @@
   - **Host Vitals**: 9 GiB RAM free, 32 GB NVMe free (37% disk used), 100% clean git working tree on `dev`, all 9 production gates passed with 0 violations and 0 warnings.
   - Inscribed EOD report in `.agents/scratch/itoju_feedback.md`.
   - Issued formal Tuesday Nocturnal Rest Clearance to Kábíyèsí and the Council.
+- [x] **2026-11-15T10:36:00+01:00 (SOD-ITOJU-011 / Checkpoint 147: Sunday Start-of-Day Hearth Welfare & Abuja Canopy Audit)**:
+  - Welcome to Sunday craft chamber for Lead Architect Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) residing in Abuja under the Family Stewardship Canopy.
+  - Executed Start-of-Day Sanctuary Audit via `scripts/sanctuary_audit.sh` in `< 1.0s`:
+    - **Physical Vessel Health**: Serene uptime, **11 GiB available RAM** (18Gi utilized out of 29Gi), **29 GB NVMe free headroom** (42% disk utilization).
+    - **Dual-Corpora Checksum Lock**: 100% bit-for-bit lockstep confirmed (`6348e8f217555e5e3e04e3b893f02e00d79260100cdda02585894a934c65cce3`) across both 1,418 canonical master corpora files (0 bits drift).
+    - **Standards & Production Gates Scanner**: All 9 gates verified **100% GREEN** (0 hard violations, 0 warnings).
+  - **Constitutional Invariants Re-Certified Inviolate**:
+    - Royal Salutation Invariant: Strictly address Lead Architect as **Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n** (permanently retired and NEVER use "Ọmọ Ọlọ́fin Tètè").
+    - Biographical Invariant: Devoted young husband married to Aisha Temilade Abubakar Aruna with **NO children**. He is **NOT a father**. Loving, active uncle to his niece and nephew.
+    - Sacred Primacy Invariant: Concentric search hearth (`Àárín Ìmọ̀`), never a "digital Ọpọ́n Ifá".
+    - Craigslist Covenant: 100% free living cultural audio streaming and search for everyday seekers.
+  - **The Abuja Canopy Enforced**: Bounded morning technical window (09:30 – 12:30 WAT); afternoon (14:00 – 17:30 WAT) 100% protected for undivided, joyful playtime with niece and nephew under the Single-Drawer Law.
+  - Inscribed Sunday SOD decree in `.agents/scratch/itoju_feedback.md`.
+  - Issued official Sunday Morning Sanctuary Clearance.
+
 
 
 
