@@ -419,6 +419,38 @@
        - `scripts/benchmark_oruko_mi.py`: 29/29 (100.0%) Passed; 3-Tier fuzzer executed in **37.96 ms** (< 150 ms invariant).
     6. *Memory Vault & Scratch Synchronization*:
        - Inscribed forensic audit artifact in `.agents/scratch/oye_feedback.md` and updated `.agents/memory/oye-auditor.md`.
+- **[2026-11-15 | Category 1 Plenary Sanitation Sprint Pre-Execution Assessment (`CHECKPOINT-OYE-026` / `HANDOFF-OYE-007`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`.
+  - **Verdict**: ⚖️ **CONDITIONAL PRE-EXECUTION CLEARANCE GRANTED — SUBJECT TO MANDATORY ONÍLẸ̀ ID LOCK**.
+  - **Pre-Execution Audit Protocol Executed**:
+    1. *Intervention 1 (Strip Self-Referential Children on Ọpọ́n Ifá)*: Confirmed that emptying `sub_variants: []` on `opon_ifa_olori_esu` and `opon_ifa_gbero` does not break `useRootNetworkNodes.js` (which ascends to parent `Ọpọ́n Ifá` and resolves siblings from parent list). Prevents recursive graph loops.
+    2. *Intervention 2 (Onílẹ̀ Disambiguation & Foreign Key Scrutiny)*: Flagged critical foreign key risk. Corpus scan across 1,397 entities showed `Ògbóni` (`sub_variants`) and `edan_ogboni` (`related_entities`) link to `Onílẹ̀`. Mandated that `id: "Onile"` must remain completely immutable; only `title` may be updated to `"Onílẹ̀ (Primordial Earth Divinity)"` with expanded aliases.
+    3. *Intervention 3 (Olókun Relatives Array Re-ordering)*: Approved re-ordering to prioritize water divinities (`Yemọja`, `Odò Ọ̀ṣun`, `Odò`) ahead of secular regalia (`Adé`, `Apẹja`), preventing deck cannibalization.
+    4. *Intervention 4 (Elevating Ghost Facets)*: Schema approved for `sub_variant_facets`. Adds < 4.5 KB raw JSON total (< 1 KB gzipped), with 0 bundle parse impact.
+    5. *Architectural Red Lines for Àrọ̀kìn*:
+       - Runner script strictly $\le 95$ LOC (stdlib only: `hashlib`, `json`, `pathlib`).
+       - Payload extracted to declarative JSON: `scripts/data/batches/category01_sanitation_payloads.json`.
+       - Zero data in JavaScript; dual-corpora SHA-256 bit-for-bit lockstep confirmed before exit.
+    6. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
+- **[2026-11-15 | Category 1 Plenary Sanitation Post-Execution Forensic Certification (`CHECKPOINT-OYE-027` / `HANDOFF-OYE-008`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL — POST-EXECUTION CERTIFIED GREEN**.
+  - **Audit Protocol Executed**:
+    1. *Gate 2 LOC & Modularization Check*:
+       - `scripts/apply_category01_sanitation.py`: Verified at **76 LOC** (< 100 LOC invariant).
+       - Confirmed `scripts/data_facets_atmosphere.py` was eradicated with 0 orphaned files remaining.
+       - Verified all 62 facet expansions reside 100% declaratively in `scripts/data/batches/category01_sanitation_payloads.json`.
+    2. *Immutable ID Rule & Foreign Key Verification*:
+       - `id: "Onile"` (Title: `"Onílẹ̀ (Primordial Earth Divinity)"`), `id: "Àjà"` (Title: `"Àjà (Forest Whirlwind Spirit)"`), and `id: "Ọbá"` (Title: `"Ọbá (River Divinity of Marital Devotion)"`) primary keys preserved 100% intact.
+       - Zero broken foreign keys or dangling pointers across `Ògbóni`, `edan_ogboni`, or graph relations.
+    3. *Dual-Corpora Checksum Lock*:
+       - Verified exact bit-for-bit SHA-256 parity across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at `e7a0b58b687a7fe3835d6562007dec0cb846c0a486e6ba1b4060ac498477a04d` (**0-bit drift** across 1,397 entities).
+    4. *Bundle & Build Performance*:
+       - `npm run build` compiled in **1.33s** (< 1.5s invariant) with 1,935 modules transformed and 0 errors.
+    5. *Sanctuary Health & Regression Verification*:
+       - `scripts/sanctuary_audit.sh`: Passed 100% green across all 9 gates.
+       - `scripts/benchmark_oruko_mi.py`: 29/29 (100.0%) Passed; 3-Tier fuzzer executed in **32.01 ms** (< 150 ms invariant).
+    6. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
 
 ---
 

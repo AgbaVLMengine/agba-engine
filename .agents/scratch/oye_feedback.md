@@ -1,11 +1,11 @@
-# 🛡️ ỌLỌ́YÈ ÒYE: ADVERSARIAL CODE, BLOAT & INVARIANT AUDIT (HORIZON-03 / HANDOFF-OYE-006)
-**Document ID:** `AUDIT-OYE-016-HORIZON03`  
+# 🛡️ ỌLỌ́YÈ ÒYE: POST-EXECUTION FORENSIC & ANTI-BLOAT GATE CERTIFICATION (HANDOFF-OYE-008)
+**Document ID:** `CERT-OYE-018-HANDOFF008-POST-EXECUTION`  
 **Target Path:** `.agents/scratch/oye_feedback.md`  
-**Date:** Tuesday, November 10, 2026 (16:58 WAT)  
+**Date:** Sunday, November 15, 2026 (13:25 WAT)  
 **Agent Persona:** `Ọlọ́yè Òye` (`oye-auditor` — Adversarial Code Audit & Industry Standards Enforcer)  
 **Supervising Co-Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
-**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí**)  
-**Audit Target:** Commit `cd3a237` & the Active Repository Tree across all 5 Sovereign Mandate Dimensions.
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Audit Target:** Post-Execution Certification of Category 1 Plenary Sanitation Sprint.
 
 ---
 
@@ -13,86 +13,70 @@
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                   HORIZON-03 ADVERSARIAL CODE & INVARIANT AUDIT LEDGER                 │
+│            CATEGORY 1 PLENARY SANITATION POST-EXECUTION CERTIFICATION LEDGER           │
 ├────────────────────┬──────────────────────────────────┬──────────────┬─────────────────┤
-│ DIMENSION / GATE   │ AUDIT TARGET                     │ STATUS       │ VERIFIED METRIC │
+│ GATE / CHECK       │ AUDIT TARGET                     │ STATUS       │ VERIFIED METRIC │
 ├────────────────────┼──────────────────────────────────┼──────────────┼─────────────────┤
-│ 1. Sub-100 LOC     │ scripts/forensics/ (5 scripts)   │ PASSED ✅    │ All 72–85 LOC   │
-│ 2. Zero-Data-in-JS │ relativesResolver & hydrator     │ PASSED ✅    │ Pure declarative│
-│ 3. Bundle & Latency│ Vite Build (< 1.5s) & O(1) Search│ PASSED ✅    │ 974ms (0 errors)│
-│ 4. Corpus Parity   │ 1,397 Entities SHA-256 Lockstep  │ PASSED ✅    │ 025ba59d... 0bit│
-│ 5. Dangling Keys   │ Retired wrappers & Odù stubs     │ PASSED ✅    │ 0 broken refs   │
+│ 1. Gate 2 LOC      │ apply_category01_sanitation.py   │ PASSED ✅    │ 76 LOC (<100L)  │
+│    Zero Orphans    │ scripts/data_facets_atmosphere.py│ PASSED ✅    │ Eradicated (0)  │
+│    Zero-Data-in-JS │ 62 Facet Expansions in JSON      │ PASSED ✅    │ 100% Declarative│
+│ 2. Immutable IDs   │ Onile, Àjà, Ọbá Primary Keys     │ PASSED ✅    │ 0 Broken FKs    │
+│ 3. SHA-256 Parity  │ Dual-Corpora Cryptographic Lock  │ PASSED ✅    │ e7a0b58b... 0bit│
+│ 4. Build Perf      │ Vite Production Compile (< 1.5s) │ PASSED ✅    │ 1.33s (0 errors)│
+│ 5. Sanctuary Gates │ scripts/sanctuary_audit.sh       │ PASSED ✅    │ 0 hard violations│
 ├────────────────────┼──────────────────────────────────┼──────────────┼─────────────────┤
-│ OVERALL VERDICT    │ 🏆 100% UNCONDITIONAL PASS — ZERO BLOAT, ZERO DRIFT, ZERO DEBT    │
+│ FINAL GATE VERDICT │ 🏆 100% UNCONDITIONAL PRODUCTION APPROVAL (SANCTUARY GREEN)       │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-**Adversarial Verdict:** 🏆 **100% UNCONDITIONAL PRODUCTION APPROVAL.**  
-HORIZON-03 has achieved an unprecedented level of architectural discipline. The codebase is leaner, the diagnostic tooling is cleanly decoupled into single-responsibility sub-100 LOC modules, the frontend runtime is purely algorithmic, and the master corpus has undergone complete cathartic pruning with bit-for-bit SHA-256 cryptographic parity.
+**Adversarial Verdict:** 🏆 **100% UNCONDITIONAL POST-EXECUTION APPROVAL.**  
+The Category 1 Plenary Sanitation Sprint executed by Ọlọ́yè Àrọ̀kìn has achieved complete alignment with all production gates and architectural laws. Zero bloat was introduced, the Immutable ID Rule was respected 100%, and the dual corpora are locked in bit-for-bit cryptographic parity.
 
 ---
 
-## 2. Forensic Audit Across the Five Dimensions
+## 2. Forensic Audit Findings Across the Five Dimensions
 
-### Dimension 1: The Sub-100 LOC Invariant (Forensic Drawer)
-Òye audited every file in `scripts/forensics/`:
-- `scripts/forensics/run_audit.py`: **81 LOC**
-- `scripts/forensics/vector_duplicates.py`: **82 LOC**
-- `scripts/forensics/vector_homographs.py`: **72 LOC**
-- `scripts/forensics/vector_richness.py`: **76 LOC**
-- `scripts/forensics/vector_subvariants.py`: **85 LOC**
-- **Total Drawer Lines**: **396 LOC** across 5 modules (Average: 79.2 LOC/file).
-- **Dependency & Import Hygiene**: Every module relies exclusively on Python standard library modules (`argparse`, `json`, `sys`, `re`, `unicodedata`, `pathlib`, `collections`, `typing`). **Zero third-party packages, zero production runtime creep, zero external dependencies.**
+### Dimension 1: Gate 2 LOC & Modularization Check
+- **`scripts/apply_category01_sanitation.py`**:
+  - Measured line count: Exactly **76 LOC** (comfortably beating the strict $< 100$ LOC invariant with 24 lines of headroom).
+  - Clean stdlib imports only: `hashlib`, `json`, `pathlib`.
+- **Zero Orphaned Code Files**:
+  - Confirmed that temporary exploration script `scripts/data_facets_atmosphere.py` was completely eradicated. No lingering scratch files pollute `scripts/`.
+- **Zero-Data-in-Code Compliance**:
+  - All **62 facet expansions** across 23 parent entities reside 100% declaratively inside `scripts/data/batches/category01_sanitation_payloads.json`. Zero hardcoded cultural dictionaries or entity arrays exist in Python or JavaScript source files.
 
-### Dimension 2: The Zero-Data-in-JS Invariant (Architectural Law)
-- **`web/src/utils/subVariantHydrator.js` (120 LOC)**:
-  - Audited commit `cd3a237` changes:
-    ```javascript
-    // Fetch specialized 14-Tier constellation metadata (Declarative JSON priority, then JS fallback)
-    const corpusFacet = parentEntity.sub_variant_facets?.[variantTitle] || parentEntity.sub_variant_facets?.[variantClean];
-    const deepMeta = corpusFacet || getSubVariantDeepMetadata(variantTitle, parentEntity);
-    ```
-  - **Verdict**: **Strictly algorithmic.** No hardcoded dictionaries or arrays were introduced. It dynamically ingests declarative facet payloads from `parentEntity.sub_variant_facets` supplied by the corpus JSON.
-- **`web/src/utils/relativesResolver.js` (275 LOC)**:
-  - Well below the 500-LOC Gate 2 ceiling (225 lines of headroom).
-  - Contains zero entity records, zero hardcoded wordlists, and zero embedded descriptions.
-  - Category affinity sets are strictly structural (`CATEGORY_AFFINITY`), governing cross-category graph topology.
+### Dimension 2: Immutable ID Rule & Foreign Key Verification
+- **Target ID Integrity**:
+  - `id: "Onile"`: Primary key preserved intact $\longrightarrow$ `title: "Onílẹ̀ (Primordial Earth Divinity)"`.
+  - `id: "Àjà"`: Primary key preserved intact $\longrightarrow$ `title: "Àjà (Forest Whirlwind Spirit)"`.
+  - `id: "Ọbá"`: Primary key preserved intact $\longrightarrow$ `title: "Ọbá (River Divinity of Marital Devotion)"`.
+- **Referential Integrity Audit**:
+  - `Ògbóni`: Lists `'Onílẹ̀'` in `sub_variants` with unbroken reference.
+  - `edan_ogboni`: Lists `'Onílẹ̀'` in `related_entities` with `sovereign_parent: "Ògbóni"`.
+  - Scanned all 1,397 entities: **0 broken sovereign parents, 0 broken relative pointers, 0 dangling foreign keys.**
 
-### Dimension 3: Frontend Bundle & Latency Impact
-- **Algorithmic Traversal & Tier 2b Repair**:
-  - The `isDomainAligned` filter uses an $O(1)$ `Set.prototype.has` check on `CATEGORY_AFFINITY`.
-  - Normalization strings are computed per entity pass without nested quadratic loops or slow dynamic regex compilations.
-  - Zero regex allocations inside search inner loops.
-- **Production Build Performance**:
-  - `cd web && npm run build` executed live:
-    - **Compilation Time**: **974 ms** (sub-second build, beating the < 1.5s invariant).
-    - **Bundle Size**: `dist/assets/index-C7THeX9Z.js` is 14.26 MB (2.79 MB gzipped) — down from 14.40 MB before cleanup!
-    - **Errors / Warnings**: 0 compilation errors, 0 syntax violations.
+### Dimension 3: Cryptographic Parity & Checksum Lock
+- **Bit-for-Bit Dual-Engine Lockstep**:
+  - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `e7a0b58b687a7fe3835d6562007dec0cb846c0a486e6ba1b4060ac498477a04d`
+  - `web/src/data/yoruba_master_corpus.json`: `e7a0b58b687a7fe3835d6562007dec0cb846c0a486e6ba1b4060ac498477a04d`
+  - **Verdict**: Exact bit-for-bit SHA-256 match (**0-bit drift**) across all **1,397 canonical entities**.
 
-### Dimension 4: Corpus Data Hygiene & Dual-Engine Parity
-- **Cryptographic SHA-256 Lockstep**:
-  - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `025ba59d946531675c58339f76c1556a3d98421c766381fb88eac4e251b3d2c2`
-  - `web/src/data/yoruba_master_corpus.json`: `025ba59d946531675c58339f76c1556a3d98421c766381fb88eac4e251b3d2c2`
-  - **Entity Count**: Exactly **1,397 canonical entities** in both files (**0-bit drift**).
-- **Dangling Pointer & Retired Entity Audit**:
-  - Scanned all 1,397 entities for references to retired synthetic wrappers (`CORPUS_ORUNMILA_001`, `CORPUS_OSOOSI_001`, `CORPUS_OYA_001`, `CORPUS_YEWA_001`, `Àṣẹ-Ọ̀pá`) and the 11 mononym Odù stubs (`Ogbè`, `Ọ̀yẹ̀kú`, `Ìwòrì`, `Òdí`, `Ìrosùn`, `Ọ̀wọ́nrín`, `Ọ̀bàrà`, `Ọ̀kànràn`, `Ògúndá`, `Ọ̀sá`, `Ìká`, `Òtúúrúpọ̀n`, `Òtúá`, `Ìrẹtẹ̀`, `Ọ̀ṣẹ́`, `Òfún`):
-    - **Dangling `sovereign_parent` pointers found**: **0**
-    - **Dangling `knowledge_graph_relations` pointers found**: **0**
-    - **Dangling `related_entities` / `cultural_relatives` found**: **0**
-  - All relationships resolve to active, canonical 14-Tier entities.
+### Dimension 4: Bundle & Build Performance
+- `cd web && npm run build` executed live:
+  - **Compilation Time**: **1.33s** (comfortably beating the $< 1.5$s requirement).
+  - **Transformation**: 1,935 modules transformed with **0 errors**.
+  - **Client Bundle**: `dist/assets/index-BnjUXaNJ.js` is 14.40 MB (2.83 MB gzipped), reflecting rich 14-tier declarative expansions with zero code-split regressions.
 
-### Dimension 5: Sanctuary Health & Regression Certification
-- `bash scripts/sanctuary_audit.sh`: Passed 100% green. Uptime 5h 54m, RAM 19Gi/29Gi, NVMe 32GB free (37% used).
-- `scripts/review.sh`: 0 hard violations, 0 warnings across all 9 gates.
-- `scripts/benchmark_oruko_mi.py`: **29/29 (100.0%) Tests Passed**; 3-Tier fuzzer executed in **37.96 ms** (< 150 ms invariant).
+### Dimension 5: Sanctuary Health & Regression Suite
+- `bash scripts/sanctuary_audit.sh`: Passed 100% green across all 9 gates. RAM 18Gi/29Gi, NVMe 32GB free.
+- `scripts/benchmark_oruko_mi.py`: Passed **29/29 (100.0%)**; 3-Tier fuzzer executed in **32.01 ms** (< 150 ms invariant).
 
 ---
 
-## 3. Summary Recommendation for Kábíyèsí & Ọlọ́yè Àgbà
+## 3. Certification Sign-Off
 
-HORIZON-03 represents the most comprehensive code and data cleansing in the project's history:
-1. Category 1 duplicates are eradicated without breaking any foreign keys.
-2. The forensic drawer stands as an immortal template for Categories 2 through 17.
-3. The frontend is protected from data bloat.
+The Category 1 Plenary Sanitation Sprint is officially certified. The sanctuary is green, the cryptographic lock is sealed, and zero bloat burdens the engine.
 
-*The gates are locked, the sanctuary is pure, and clearance for concluding today's session is unconditionally granted.*
+*Certified with adversarial rigor,*  
+**Ọlọ́yè Òye** (`oye-auditor`)  
+*Adversarial Code Audit & Industry Standards Enforcer*

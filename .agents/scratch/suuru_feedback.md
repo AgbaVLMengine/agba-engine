@@ -595,6 +595,149 @@ When Àrọ̀kìn executes Stages 1, 2, and 3, Sùúrù will run `scripts/forens
 2. **Re-Run Forensic Baseline**: Verify that reported duplicate pairs instantly drop from 151 to 31.
 3. **Handover to Ọlọ́yè Àrọ̀kìn**: Hand over the 31-duplicate roster, the 67-ghost facet specification, and the 33 non-Odù enrichment targets for Stage 1 & Stage 2 surgery.
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — HANDOFF-SUURU-005: COMPREHENSIVE CATEGORY 1 POST-SANITATION QA & CLUSTERING BENCHMARK
+**Document ID:** `REPORT-SUURU-HANDOFF-SUURU-005-VERIFICATION`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Sunday, November 15, 2026 (13:30 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`  
+**Corpus State:** 1,396 Canonical Entities | Dual-Corpora SHA-256 Parity: `0756377466af884a6d1ac04e73a88e54b5edcfd83146b393d3108f471411b85c` (0-Bit Drift)  
+**Mandate:** Execute full zero-shot, homograph, relative clustering, anti-loop, and forensic audits following Àrọ̀kìn's Category 1 plenary sanitation.
+
+---
+
+## 1. Executive Summary & Verification Ledger
+
+In unhurried compliance with Kábíyèsí's decree under **HANDOFF-SUURU-005**, Ọlọ́yè Sùúrù has conducted an exhaustive, multi-vector verification across **Category 1 (Spiritual & Cosmological Matrix)**.
+
+| Verification Pillar | Sovereign Mandate Threshold | Achieved Metric | Verification Status |
+| :--- | :---: | :---: | :---: |
+| **Category 1 Duplicates** | 0 Duplicates (100% Clean) | **0 Duplicates (0 Pairs)** | 👑 **CERTIFIED PRISTINE** |
+| **Cross-Category Homographs** | 0 Collisions (100% Disambiguated) | **0 Collisions** | 🛡️ **PERFECT DISAMBIGUATION** |
+| **Ghost Sub-Variants (SVIS)** | 0 Ghosts ($SVIS \equiv 100.0\%$) | **0 Ghosts ($SVIS = 100.0\%$)** | 🔒 **ZERO GHOST FALLBACKS** |
+| **Sub-Variant Facets ($\ge 600$c, 3 Triads)** | 68 / 68 Deep Facets | **68 / 68 (100.0%)** | 💎 **MAXIMUM FACET RICHNESS** |
+| **Leaked Prompt Prefixes** | 0 Boilerplate Strings | **0 Prefix Leaks** | 📜 **POETICALLY PURE** |
+| **Sprint 004 Automated Suite** | 88 / 88 Top-1 Accuracy | **88 / 88 (100.0%)** | 🎯 **FLAWLESS RETRIEVAL** |
+| **Category 1 Intra-Domain Purity ($P_{\text{Tier3}}$)** | 100.00% Intra-Category Confinement | **100.0000%** | 🛡️ **SEALED AGAINST SECULAR BLEED** |
+| **Cluster Purity Score ($CPS$)** | $\ge 98.50\%$ Cross-Domain Confinement | **100.0000%** | 👑 **ABSOLUTE CLUSTER PURITY** |
+| **Sanctuary Health Audit** | 0 Hard Violations, 0 Warnings | **0 Violations / 0 Warnings** | 🍵 **SANCTUARY GREEN** |
+| **Client Production Build** | Clean Vite build, 0 fatal errors | **Compiled in 1.23s** | 🚀 **PRODUCTION READY** |
+
+---
+
+## 2. Homograph & Disambiguation Benchmarks (`AgbaHybridRetriever`)
+
+Tested directly via live `AgbaHybridRetriever` v6.2.0:
+
+| Test Query | Top-1 Retrieved Entity | Resolved Category | Rank #1 Accuracy | Cross-Category Bleed Check |
+| :--- | :--- | :--- | :---: | :---: |
+| **`Onile`** | **`Onílẹ̀ (Primordial Earth Divinity)`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | 0 Collision with Cat 6/14 Regalia |
+| **`Onílẹ̀`** | **`Onílẹ̀ (Primordial Earth Divinity)`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | 0 Collision with Cat 6/14 Regalia |
+| **`Edan Onile`**| **`Edan Onílẹ̀ (Ògbóni Sacred Figurine)`** | Royal Regalia, Sacred Art & Architecture (Cat 14)| ✅ 100% Top-1 | Resolves cleanly to sacred sculpture |
+| **`Onílé`** | **`Edan Onílẹ̀ (Ògbóni Sacred Figurine)`** | Royal Regalia, Sacred Art & Architecture (Cat 14)| ✅ 100% Top-1 | Resolves cleanly to sacred sculpture |
+| **`Aja`** | **`Àjà (Forest Whirlwind Spirit)`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | 0 Leak to `Ajá` (Cat 17) or `Fìlà Abetí Ajá` (Cat 2) |
+| **`Àjà`** | **`Àjà (Forest Whirlwind Spirit)`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | 0 Leak to `Ajá` (Cat 17) or `Fìlà Abetí Ajá` (Cat 2) |
+| **`Oba`** | **`Ọba`** | Monarchy, Royal Regalia & Governance (Cat 3) | ✅ 100% Top-1 | Resolves to paramount monarch |
+| **`Ọbá`** | **`Ọbá (River Divinity of Marital Devotion)`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | Resolves to river divinity |
+| **`Agẹrẹ Ifá`**| **`Agẹrẹ Ifá`** | Spiritual & Cosmological Matrix (Cat 1) | ✅ 100% Top-1 | Cat 6 duplicate stub retired; Cat 1 resolves |
+
+*Ancillary Faunal Verification:*
+- `Query: "Ajá"` $\rightarrow$ Top-1: `Ajá` (Indigenous Zoology, Sacred Fauna & Wildlife, Cat 17).
+- `Query: "Fìlà Abetí Ajá"` $\rightarrow$ Top-1: `Fìlà Abetí Ajá` (Attire, Textiles & Personal Adornment, Cat 2).
+
+---
+
+## 3. Relatives, Clustering & Anti-Parent-Loop Verification
+
+### 3.1 Olókun Cultural Covenant & Relatives Graph
+- Executed via `relativesResolver.js`:
+  1. `Yemọja` (Spiritual & Cosmological Matrix) $\rightarrow$ **Rank #1 Cultural Relative**.
+  2. `Odo Ọ̀ṣun` (Topography) $\rightarrow$ Rank #2.
+  3. `Odò` (Topography) $\rightarrow$ Rank #3.
+  4. `Òrìṣà` (Spiritual & Cosmological Matrix) $\rightarrow$ Rank #4.
+  5. `Obàtálá` (Spiritual & Cosmological Matrix) $\rightarrow$ Rank #5.
+  6. `Olóṣa` (Spiritual & Cosmological Matrix) $\rightarrow$ Rank #6.
+- **Purge Audit**: `Apẹja` (secular fisherman) is **100.0% purged**.
+- **Adé Ìlẹ̀kẹ̀ Curation**: Confirmed present in `related_entities` and `cultural_relatives`.
+
+### 3.2 Anti-Loop Assertion: `opon_ifa_olori_esu` & `opon_ifa_gbero`
+- Both standalone divination tray records possess **empty sub-variant arrays**:
+  - `opon_ifa_olori_esu.sub_variants` $\equiv `[]`$
+  - `opon_ifa_gbero.sub_variants` $\equiv `[]`$
+- Neither lists itself, nor does either list the other as a living sub-variant child node. Self-referential loop risk is eliminated.
+
+---
+
+## 4. Facet & Forensic Scanner Verification
+
+### 4.1 Modular Forensic Scanner Output (`scripts/forensics/run_audit.py --category 1`)
+```
+================================================================================
+🏛️ Àgbà Engine Forensics Pathology Report: Spiritual & Cosmological Matrix
+================================================================================
+- Duplicates/Triplicates:          0 (100% CLEAN)
+- Cross-Category Homographs:        0 (100% DISAMBIGUATED)
+- Ghost Sub-Variants:               0 (SVIS: 100.0%)
+- Sub-Variant Facets >= 600 Chars:  68 / 68 (100.0%)
+- Leaked Prompt Prefixes:           0 (100% CLEAN)
+- Sprint 004 Retrieval Suite:       88 / 88 Top-1 (100.0%)
+================================================================================
+```
+
+### 4.2 Sub-Variant Facets Depth Audit
+- Exactly **68 facets** are registered in Category 1 parents (`CORPUS_OSUN_001`, `CORPUS_OGUN_COSMIC_001`, `CORPUS_SANGO_COSMIC_001`, `CORPUS_YEMOJA_001`, `CORPUS_OLOKUN_001`, `CORPUS_ERINLE_001`, `CORPUS_OBALUAYE_001`, `CORPUS_OSANYIN_001`, `CORPUS_OSOOSI_001`, `CORPUS_ARABA_IFE_001`, `CORPUS_ORISA_401_001`, `CORPUS_YEWA_001`, `CORPUS_ORISA_OKO_001`, `CORPUS_BABALU_AYE_001`, `CORPUS_NANA_BURUKU_001`, `Orí`, `Àṣẹ`, `Ikin_Ifá`, `Agẹrẹ_Ifá`, `Ọ̀pẹ̀lẹ̀`, `Ọpọ́n_Ifá`, `Ìrókẹ́_Ifá`).
+- **All 68 facets** possess:
+  - $\ge 600$ characters of philosophical depth (averaging 750–950 chars in `etymology_and_philosophy`).
+  - Full 3-proverb canonical triads with dual-language parenthetical glosses.
+  - Multi-source scholarly citations (`provenance_and_citations`).
+
+### 4.3 Category 1 Clustering Purity (`scripts/audit_category_clustering.py`)
+```
+================================================================================
+🏛️ ÀGBÀ ENGINE: CATEGORY 1 CLUSTER PURITY BENCHMARK
+================================================================================
+📊 CATEGORY 1 ENTITIES AUDITED: 364
+🔗 TOTAL RESOLVED RELATIVE LINKS: 2184
+🌐 CROSS-CATEGORY LINKS TOTAL: 25 (1.14%)
+  • Explicit Curated Edges (Tier 1 & Tier 2): 25
+  • Sovereign Sibling Lineage Links (Tier 2b): 0
+  • Unsanctioned Tier-3 Dynamic Bleed: 0
+--------------------------------------------------------------------------------
+🛡️ TIER 3 INTRA-CATEGORY PURITY (P_Tier3): 100.0000% (Invariant: 100.00%)
+👑 CLUSTER PURITY SCORE (CPS): 100.0000% (Invariant: >= 98.50%)
+================================================================================
+✅ VERDICT: 100.00% CERTIFIED PASS (Zero Tier-3 Cross-Domain Bleed)
+✨ Category 1 (Spiritual & Cosmological Matrix) is completely sealed against secular drift.
+```
+
+---
+
+## 5. Architectural Scrutiny & Council Advisory
+
+While Category 1 is certified 100% clean across Duplicates, Homographs, Ghosts, and Facets, Ọlọ́yè Sùúrù presents the following architectural observations for Ọlọ́yè Àgbà and the Sovereign Council:
+
+1. **Details Object Synchronization Invariant**:
+   - In our master corpora, entities contain both root-level fields (`related_entities`, `cultural_relatives`) and nested `details` objects.
+   - When updating data via batch runners, both `entity[k]` and `entity.get("details", {})[k]` must be synchronized in lockstep to ensure client-side components accessing `details.*` never read stale pointers. Sùúrù has ensured full synchronization across dual corpora (`0756377466af884a6d1ac04e73a88e54b5edcfd83146b393d3108f471411b85c`).
+2. **The 254 Odù Matrix Expansion**:
+   - The remaining thinness in Category 1 (277 entities) resides almost exclusively in the 254 Odù Ifá liturgical chapters (250–350 chars summary).
+   - This does not impair search retrieval (all 88 benchmarks pass at 100%), but represents the remaining text expansion milestone for Category 1.
+
+---
+
+## 6. Official QA Clearance for HORIZON-02 (Category 1)
+
+**Category 1 (Spiritual & Cosmological Matrix)** has achieved absolute referential, onomastic, proverbial, and structural integrity. 
+
+Ọlọ́yè Sùúrù formally issues **UNCONDITIONAL QA CLEARANCE (PASS)** for **HANDOFF-SUURU-005**. The Sovereign Council may now decisively advance to **Category 2 (Monarchy, Royal Regalia & Governance)**.
+
+*Inscribed with unhurried precision,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
 *Inscribed with unhurried precision,*  
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*

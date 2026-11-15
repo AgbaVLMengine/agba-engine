@@ -1,0 +1,1080 @@
+{
+  "description": "Category 1 Final Plenary Purification Payload (HANDOFF-AROKIN-002 Complete Execution)",
+  "version": "2.0.0",
+  "author": "Ọlọ́yè Àrọ̀kìn (arokin-archivist)",
+  "date": "2026-11-15",
+  "retire_ids": [
+    "Àgéré Ifá"
+  ],
+  "entity_updates": {
+    "opon_ifa_olori_esu": {
+      "sub_variants": []
+    },
+    "opon_ifa_gbero": {
+      "sub_variants": []
+    },
+    "Onile": {
+      "title": "Onílẹ̀ (Primordial Earth Divinity)",
+      "aliases": [
+        "Onile",
+        "Onílẹ̀",
+        "Mother Earth",
+        "Ogboni Earth Spirit",
+        "Ilẹ̀ Ogere",
+        "earth divinity",
+        "ogboni earth spirit",
+        "onile"
+      ]
+    },
+    "Onílé": {
+      "title": "Edan Onílẹ̀ (Ògbóni Sacred Figurine)",
+      "aliases": [
+        "edan onile",
+        "edan onílẹ̀",
+        "onile figure",
+        "ogboni sanctuary figure",
+        "sanctuary figure",
+        "onile",
+        "onílé",
+        "earth mother",
+        "ogboni earth mother"
+      ]
+    },
+    "Agẹrẹ_Ifá": {
+      "title": "Agẹrẹ Ifá",
+      "aliases": [
+        "agere",
+        "agere ifa",
+        "carved container",
+        "caryatid",
+        "divination cup",
+        "ifa cup",
+        "sacred bowl",
+        "àgéré ifá",
+        "divination container",
+        "caryatid container",
+        "ikin receptacle"
+      ]
+    },
+    "Àjà": {
+      "title": "Àjà (Forest Whirlwind Spirit)",
+      "aliases": [
+        "Àjà",
+        "Aja",
+        "aja",
+        "àjà",
+        "forest whirlwind spirit",
+        "herbal spirit of the wild",
+        "aroni and aja"
+      ]
+    },
+    "Ọbá": {
+      "title": "Ọbá (River Divinity of Marital Devotion)",
+      "aliases": [
+        "Ọbá",
+        "Oba",
+        "Orisha Oba",
+        "Orisa Oba",
+        "Oba River Deity",
+        "Oba Nani",
+        "Ayaba Sango",
+        "Orisa of Oba River",
+        "river divinity of marital devotion"
+      ]
+    },
+    "CORPUS_OLOKUN_001": {
+      "related_entities": [
+        "Yemọja",
+        "Odo Ọ̀ṣun",
+        "Odò",
+        "Òrìṣà",
+        "Ìlèkè Ìyùn Guilds",
+        "Adé Ìlẹ̀kẹ̀"
+      ],
+      "cultural_relatives": [
+        "Yemọja",
+        "Odò",
+        "Adé Ìlẹ̀kẹ̀",
+        "Òrìṣà"
+      ]
+    }
+  },
+  "facet_updates": {
+    "CORPUS_OSUN_001": {
+      "Ọ̀ṣun Òṣogbo": {
+        "facet_name": "Ọ̀ṣun Òṣogbo",
+        "typology": "Civic Treaty Guardian & Sacred Grove Epiphany",
+        "description": "The foundational covenant manifestation of Ọ̀ṣun established with Láròóyè and Timehin, sanctifying the historical capital of Òṣogbo along the sacred grove waters.",
+        "etymology_and_philosophy": "Ọ̀ṣun Òṣogbo represents the civic, political, and ancestral treaty manifestation of Ọ̀ṣun, rooted in the historical pact forged between the divinity and the founders of Òṣogbo (Ọba Láròóyè and the hunter Timehin) during the 16th century CE. When drought and war threatened the settlers, Ọ̀ṣun offered perpetual protection, maternal fertility, and economic vitality in exchange for an annual royal covenant and the sanctification of her riverine forest. In Yorùbá hydro-theology, Ọ̀ṣun Òṣogbo is not an abstract nature spirit but a sovereign legal guarantor of peace, dynastic legitimacy, and communal survival. The sacred grove (a UNESCO World Heritage Site) houses her primary sanctuary, where her priests maintain the unbroken chain of propitiations that pacify both civic discord and spiritual contamination.",
+        "historical_timeline": "16th Century CE: Foundation of Òṣogbo; sacred compact ratified between Ọba Láròóyè and Ọ̀ṣun; unbroken annual festival observed continuously to the modern era.",
+        "material_and_craftsmanship": "Cast brass bells (agogo idẹ), sanctified river pebbles (ọ̀ta), lead-glazed pottery vessels (orù), and indigo-dyed adirẹ vestments.",
+        "social_and_ritual_context": "Venerated annually during the Òṣogbo Festival; the virgin votary maid (Arúgbá) conveys the sacred sacrificial calabash from the palace to the grove.",
+        "proverbs_and_oral_traditions": [
+          "Òṣogbo kò gbé ibi; Ọ̀ṣun Òṣogbo l'ó fi omi tútù tẹ ìlú d'òpin. (Òṣogbo harbours no ruin; it was Ọ̀ṣun Òṣogbo who established the city upon cool peaceful waters: Celebrating civic foundation.)",
+          "Ọ̀ṣun Òṣogbo a-dá-ni-l'érí-oníṣẹ́; ẹni tí Ọ̀ṣun bá kọ́ kì í d'òfo. (Ọ̀ṣun of Òṣogbo fulfills the hopes of the petitioner; whoever she instructs never returns empty: Testifying to answered prayers.)",
+          "Idẹ Ọ̀ṣun kì í dógùn; omi tútù Òṣogbo ń pa iná ìbínú. (The brass of Ọ̀ṣun gathers no rust; the cool waters of Òṣogbo extinguish the flames of wrath: Emphasizing peace and moral calm.)"
+        ],
+        "provenance_and_citations": "Badejo, Diedre (1996). Ọ̀ṣun Sèègèsí: The Elegant Deity of Wealth, Power, and Femininity; Wenger, Susanne (1983). The Sacred Groves of Oshogbo; UNESCO World Heritage Inscription (2005)."
+      },
+      "Ọ̀ṣun Ìpọ́ndá": {
+        "facet_name": "Ọ̀ṣun Ìpọ́ndá",
+        "typology": "Fierce Martial Guardian & Border Defender Epiphany",
+        "description": "The formidable, warrior manifestation of Ọ̀ṣun associated with the historic town of Ìpọ́ndá, renowned for martial vigilance and aggressive defense of territorial boundaries.",
+        "etymology_and_philosophy": "Ọ̀ṣun Ìpọ́ndá embodies the fierce, defensive, and martial dimension of the river goddess, revered in the ancient Ijesha-Yoruba frontier settlement of Ìpọ́ndá. While popular conceptions depict Ọ̀ṣun solely as the smiling goddess of sweet waters and cosmetic elegance, Yorùbá oral history preserves her identity as a formidable commander who took up arms to defend her children during regional wars. Ọ̀ṣun Ìpọ́ndá rides into battle with brass blades (idà idẹ), hurling blinding mists and torrential currents against invading forces. Her liturgical poetry (oríkì) celebrates her as the maternal warrior who converts sweet waters into boiling defensive floods when her sovereignty or devotees are violated.",
+        "historical_timeline": "17th–18th Century CE: Fortified during eastern Yorùbá regional conflicts; honored by Ijesha warriors as the divine patroness of battlefield triumph.",
+        "material_and_craftsmanship": "Cast brass cutlasses (idà idẹ), forged iron spears wrapped in brass wire, and copper alloy war amulets.",
+        "social_and_ritual_context": "Propitiated by hunters, frontier guards, and women facing aggressive physical or domestic persecution.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀ṣun Ìpọ́ndá kò gba àbùkù; obìnrin tí ń gun ẹṣin ogun pẹ̀lú idẹ. (Ọ̀ṣun Ìpọ́ndá brooks no insult; the woman who mounts the war horse bearing brass blades: Praising martial valor.)",
+          "Bí ogun bá dé, Ọ̀ṣun Ìpọ́ndá ní ń fomi pọ́n ojú ọ̀tá. (When war arrives, it is Ọ̀ṣun Ìpọ́ndá who blinds the enemy's vision with water: Affirming supernatural defense.)",
+          "Ẹni tí ó fẹ́ bá Ọ̀ṣun jà, a kì í fọwọ́ rọ́ omi tó ń gbóná. (Whoever seeks to fight Ọ̀ṣun must know that one does not stir scalding water with bare hands: Warning adversaries.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art; Verger, Pierre Fatumbi (1957). Notes sur le culte des orisa et vodun."
+      },
+      "Ọ̀ṣun Dokò": {
+        "facet_name": "Ọ̀ṣun Dokò",
+        "typology": "Primordial Matriarch & Agrarian Fertility Source",
+        "description": "The maternal, fertile agricultural manifestation of Ọ̀ṣun venerated in Dokò, governing crop abundance, deep irrigation, and ancestral female fecundity.",
+        "etymology_and_philosophy": "Ọ̀ṣun Dokò represents the agrarian, reproductive, and cosmic womb aspect of Ọ̀ṣun, centered around the fertile rural agricultural valleys of Dokò. In indigenous agronomy and botanical philosophy, water is recognized as the indispensable sperm of the earth (omi l'ó ń tẹ ilẹ̀); without it, seeds remain sterile in the furrow. Ọ̀ṣun Dokò presides over the underground aquifers and gentle river tributaries that saturate crop fields during seasonal dry spells. Women experiencing prolonged barrenness or reproductive distress undertake pilgrimages to Dokò shrines to drink the consecrated living river infusions and offer yams, maize meal, and honey to the mother of life.",
+        "historical_timeline": "Pre-Colonial Agrarian Era: Honored across agrarian settlements as the essential divine guarantor of annual harvest and reproductive renewal.",
+        "material_and_craftsmanship": "Perforated terracotta clay vessels (orù agbo), polished river silt stones, and dried calabashes wrapped in cowries.",
+        "social_and_ritual_context": "Venerated during pre-planting rites and postpartum thanksgiving ceremonies; presided over by elder matriarchal priestesses.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀ṣun Dokò a-fún-ni-l'ọ́mọ-tí-kò-ní-gbègbé; omi tútù tí ń gbé irúgbìn ró. (Ọ̀ṣun Dokò who gives children that endure; the cool water that quickens the seed to harvest: Honoring agrarian fertility.)",
+          "Ilẹ̀ tí Ọ̀ṣun kò bomi sí, àgbẹ̀ a f'ọwọ́ l'érí kù. (The soil that Ọ̀ṣun refuses to water leaves the farmer mourning in vain: Emphasizing reliance on divine blessing.)",
+          "Dokò ní omi, Dokò ní ayọ̀; Ọ̀ṣun kò jẹ́ kí ilé ọmọ gbẹ. (Dokò possesses living water, Dokò possesses boundless joy; Ọ̀ṣun never permits the womb to dry: Celebrating maternal life.)"
+        ],
+        "provenance_and_citations": "Badejo, Diedre (1996). Ọ̀ṣun Sèègèsí; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Arúgbá Ọ̀ṣun": {
+        "facet_name": "Arúgbá Ọ̀ṣun",
+        "typology": "Sacred Calabash Carrier & Pure Sacerdotal Votary",
+        "description": "The consecrated virgin votary maiden chosen by divination from the royal lineage of Òṣogbo to carry the sanctified sacrificial calabash (Igbá Ọ̀ṣun) to the sacred grove.",
+        "etymology_and_philosophy": "Arúgbá Ọ̀ṣun (The Sacred Calabash Bearer) represents the living, embodied spiritual bridge between the paramount monarch (Ataoja of Òṣogbo), the human citizenry, and the goddess Ọ̀ṣun. Selected exclusively through Ifá divination from the matrilineal or patrilineal royal lineage, the Arúgbá must remain a consecrated virgin throughout her tenure. During the annual procession, she balances the heavy, consecrated brass-adorned calabash upon her veiled head. The vessel contains primordial mystical implements, sacred river relics, and the collective prayers of the populace. As she walks the ceremonial route in meditative silence, she enters an altered sacerdotal state where she embodies Ọ̀ṣun herself; touching her or disturbing her steps is an absolute existential taboo.",
+        "historical_timeline": "Instituted under Ọba Láròóyè in the 16th century CE; continuously enacted by a succession of chosen royal maidens into the 21st century.",
+        "material_and_craftsmanship": "Carved and consecrated large bottle-gourd (Igbá Nlá), decorated with brass emblems, cowrie tassels, and white damask cloths.",
+        "social_and_ritual_context": "The central focal figure of the Òṣogbo Pilgrimage; escorted by royal guards (ẹlẹ́kọ̀) and senior priestesses to prevent accidental stumbling.",
+        "proverbs_and_oral_traditions": [
+          "Arúgbá kì í kọsẹ̀; ẹni tí ó ru Ọ̀ṣun gbọ́dọ̀ rin pẹ̀lú ọgbọ́n. (The Arúgbá must never stumble; whoever carries the cosmic goddess must walk with impeccable care: Demanding moral vigilance.)",
+          "Orí Arúgbá ni Ọ̀ṣun gbé jókòó; ẹni tí ó rí i ti rí oore Ẹlẹ́dàá. (Upon the head of the Arúgbá Ọ̀ṣun takes her seat; whoever beholds her has witnessed divine grace: Revering sacred consecration.)",
+          "Igbá tí Arúgbá rù kì í ṣe igbá lásán; àṣẹ gbogbo ìlú ló wà nínú rẹ̀. (The vessel the Arúgbá bears is no common calabash; the collective life of the commonwealth rests within: Articulating civic sanctity.)"
+        ],
+        "provenance_and_citations": "Wenger, Susanne (1983). The Sacred Groves of Oshogbo; Badejo, Diedre (1996). Ọ̀ṣun Sèègèsí; Abiodun, Rowland (2014). Yoruba Art and Language."
+      }
+    },
+    "CORPUS_YEMOJA_001": {
+      "Yemọja Ògùn (River Ògùn)": {
+        "facet_name": "Yemọja Ògùn (River Ògùn)",
+        "typology": "Ancestral Riverine Matrix & Sweetwater Motherhood",
+        "description": "The continental sweetwater manifestation of Yemọja rooted in the majestic Ògùn River, celebrated as the primary territorial home of the mother of fishes in Yorùbá mainland cosmology.",
+        "etymology_and_philosophy": "Yemọja Ògùn embodies the indigenous mainland riverine identity of Yemọja, anchored in the sacred geography of the Ògùn River which flows southwards through ancient Ọ̀yọ́, Ìbàdàn, and Abẹ́òkúta into the Lagos Lagoon. While transatlantic diaspora traditions identify Yemọja primarily with the saline sea, classical Yorùbá cosmology celebrates her as the sovereign queen of freshwater river systems (Yèyé Ọmọ Ẹja—Mother Whose Children are Fish). The Ògùn River represents her flowing tears and maternal milk that nourish the western Yorùbá civilizations. Her priests conduct annual immersion ceremonies along its banks, offering white pigeons, cold river snails, and cooked cornmeal (ẹ̀kọ) to restore broken relationships, soothe mental distress, and bless barren women.",
+        "historical_timeline": "Classical Antiquity: Established as the primary cult centre of Yemọja in Ìbàrùpá and Abẹ́òkúta; deeply praised in royal Ọ̀yọ́ Court oral poetry.",
+        "material_and_craftsmanship": "Smooth green and white river pebbles (ọ̀ta), glazed water urns (orù omi), virgin river silt, and woven white poplin textiles.",
+        "social_and_ritual_context": "Venerated at riverbank shrines across the Ògùn River basin; consulted by mothers seeking mental stability and family prosperity.",
+        "proverbs_and_oral_traditions": [
+          "Odò Ògùn l'ó bí Yemọja; omi tútù kì í pa ẹni tí ó bọ̀wọ̀ fún ìyá. (It is the Ògùn River that birthed Yemọja; cool water never drowns the child who reveres the mother: Affirming maternal mercy.)",
+          "Yemọja Ògùn, a-fún-ni-l'omi-mu-láì-gba-owó. (Yemọja of the Ògùn River, who gives freshwater to drink without demanding payment: Praising unconditional maternal generosity.)",
+          "Gbogbo odò ló ń rọ́ lọ sí odò Ògùn; àbọ̀ Yemọja ni gbogbo wa ń padà sí. (All streams empty into the Ògùn River; to the maternal sanctuary of Yemọja we all ultimately return: Expressing cosmic origin.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa."
+      },
+      "Yemọja Àṣàbá": {
+        "facet_name": "Yemọja Àṣàbá",
+        "typology": "Deep Mystical Sorceress & Sovereign Chain Keeper",
+        "description": "The ancient, reclusive, and profoundly mystical manifestation of Yemọja wrapped in iron and silver chains, governing deep magical cures and occluded secrets.",
+        "etymology_and_philosophy": "Yemọja Àṣàbá represents the most esoteric, elderly, and reclusive manifestation of the maternal water divinity. In the sacred oral traditions of Ifá, Àṣàbá sits in profound meditative silence on the boundary where river mud hardens into stone. She is depicted draped in heavy sanctified iron and silver chains, signifying her mastery over binding spiritual forces, oath-keeping, and the pacification of deep psychosomatic imbalances. Initiates venerate her as the divine physician who possesses secret botanical antidotes against witchcraft and incurable poisons. She rarely speaks; her communications are delivered through sudden changes in water temperature, subtle ripples, and nocturnal dream epiphanies to her consecrated elder priestesses.",
+        "historical_timeline": "Ancient Antiquity: Preserved by elder female guilds of medicine and sacred metallurgy across western Yorùbáland and Afro-Cuban Lucumí lineages.",
+        "material_and_craftsmanship": "Cast silver chains, forged iron rods, unpolished quartz crystals, and dark blue ceramic basins.",
+        "social_and_ritual_context": "Invoked in secret nocturnal rites for clearing severe spiritual curses, lifting persistent madness, and binding destructive discord.",
+        "proverbs_and_oral_traditions": [
+          "Yemọja Àṣàbá kì í sọ̀rọ̀ lásán; inú omi dídákẹ́ l'ó ti ń rán àṣẹ jáde. (Yemọja Àṣàbá speaks not in vain; from within the silent deep water she dispatches sovereign decrees: Revering quiet authority.)",
+          "Ẹwọ̀n tí Àṣàbá fi so ogun, kò sí ọlọ́gbọ́n tí ó lè tú u. (The chain with which Àṣàbá binds adversity cannot be untied by mortal cunning: Celebrating absolute spiritual protection.)",
+          "Ẹni tí ó mọ Àṣàbá mọ àṣírí ibú; a kì í fi ojú lásán wo omi tí kò mì. (He who knows Àṣàbá knows the secret of the abyss; one does not look with casual eyes upon unmoving water: Warning against spiritual ignorance.)"
+        ],
+        "provenance_and_citations": "Lawal, Babatunde (1996). The Gelede Spectacle: Art, Gender, and Social Harmony in an African Culture; Verger, Pierre (1995). Ewé: The Use of Plants in Yoruba Society."
+      },
+      "Yemọja Okùn (Ocean)": {
+        "facet_name": "Yemọja Okùn (Ocean)",
+        "typology": "Universal Maritime Horizon & Transatlantic Sovereign",
+        "description": "The boundless saline maritime manifestation of Yemọja where river waters empty into the vast open sea, celebrating her cosmic matriarchy and transatlantic diaspora continuity.",
+        "etymology_and_philosophy": "Yemọja Okùn represents the vast, saline, oceanic horizon where all terrestrial sweetwaters surrender their identity to the boundless sea. Historically developed through coastal Yorùbá settlements (such as Badagry, Lagos, and Ketu) and profoundly deepened during the transatlantic passage, Yemọja Okùn became the supreme cosmic mother who sheltered millions of enslaved Africans across the Middle Passage into Cuba, Brazil, Trinidad, and the Caribbean. She embodies the tidal rhythms of the ocean, the saline composition of maternal amniotic fluid, and the perpetual cycle of life, migration, and ancestral remembrance. Devotees honor her with silver jewelry, blue and white beads, floating flowers, and watermelon offerings along the surf.",
+        "historical_timeline": "17th–19th Century: Coastal expansion and transatlantic survival; primary divinity of Candomblé Ketu (Iemanjá) and Lucumí (Yemayá).",
+        "material_and_craftsmanship": "Silver filigree crowns, iridescent sea shells (kòwòdó), ocean sand, and nine strands of crystal beads.",
+        "social_and_ritual_context": "Propitiated at coastal beaches during sunset and sunrise; central to New Year maritime blessings and ancestral remembrance rites.",
+        "proverbs_and_oral_traditions": [
+          "Okùn kì í kún kí ó kọ odò; Yemọja gba gbogbo ọmọ rẹ̀ mọ́ra. (The ocean is never so full that it rejects the river; Yemọja embraces all her children into her bosom: Celebrating unconditional inclusion.)",
+          "Yemọja Okùn a-tẹ-ìkòkò-kò-d'omi; ìyá tí ó gbẹ́kẹ̀ lé ayé kò ní tì. (Yemọja of the Ocean, the vessel that never runs dry; the mother who shelters the world will never be humiliated: Proclaiming infinite abundance.)",
+          "Omi tútù ń bẹ nínú ibú, omi iyọ̀ ń bẹ ní etíkun; Yemọja l'ó ni gbogbo omi ayé. (Sweet water dwells in the depth, salt water dwells along the shore; Yemọja possesses all the waters of creation: Affirming universal sovereignty.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre Fatumbi (1957). Notes sur le culte des orisa; Drewal, Henry John (1989). Beads, Body, and Soul: Art and Light in the Yoruba Universe; Bascom, William (1969)."
+      }
+    },
+    "CORPUS_AGANJU_001": {
+      "Aganjù Ọlọ́kọ̀": {
+        "facet_name": "Aganjù Ọlọ́kọ̀ (The Ferryman)",
+        "typology": "Psychopomp & Boundary River Navigator",
+        "description": "The formidable river-ferryman and threshold navigator manifestation of Aganjù who transports souls and wanderers across the turbulent boundary river between wilderness and civilization.",
+        "etymology_and_philosophy": "Aganjù Ọlọ́kọ̀ represents the psychopomp, ferryman, and boundary-crosser manifestation of Aganjù. In the foundational oral narratives of Old Ọ̀yọ́ and Ifá cosmology, Aganjù is celebrated not only as the primeval sovereign of volcanic earth and untamed savanna (Agan-jù—Uninhabited Wilderness), but as the titanic boatman who stands upon the wide, raging border river holding a single massive iron paddle. When mortals or celestial travellers arrive at the edge of the known universe, it is Aganjù Ọlọ́kọ̀ who tests their courage, moral integrity, and humility before ferrying them across the deep rapids. He symbolizes the heroic capacity to navigate terrifying existential thresholds, bridging life and afterlife, danger and refuge, raw nature and civilized order.",
+        "historical_timeline": "Classical Antiquity: Central to ancient Ọ̀yọ́ frontier mythologies; preserved across transatlantic Lucumí liturgy as Aganyú the ferryman.",
+        "material_and_craftsmanship": "Heavy hardwood paddles (Ọ̀pá Ọkọ̀), forged iron anchors, river boulders, and dual-bladed axe emblems.",
+        "social_and_ritual_context": "Propitiated by travelers embarking on dangerous river journeys, canoe-makers, and initiates undergoing profound psychological transitions.",
+        "proverbs_and_oral_traditions": [
+          "Aganjù Ọlọ́kọ̀ kì í bẹ̀rù rírọ́ omi; ọkọ̀ tí ó rù kì í rì. (Aganjù the Ferryman fears not the roaring torrent; the vessel he steers never sinks: Praising unshakeable fortitude.)",
+          "Ẹni tí ó fẹ́ kọjá odò nlá gbọ́dọ̀ bọ̀wọ̀ fún Ọlọ́kọ̀. (He who desires to cross the great river must pay homage to the Ferryman: Counseling humility before life's great thresholds.)",
+          "Aganjù ní ń wa ọkọ̀ dé èbúté ayọ̀; kò sí ẹni tí ó le gba ọ̀nà odò láì ní àṣẹ rẹ̀. (Aganjù steers the vessel to the harbor of joy; none navigates the waterway without his sovereign sanction: Affirming divine guidance.)"
+        ],
+        "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Samuel (1921). The History of the Yorubas; Verger, Pierre (1957)."
+      },
+      "Aganjù Ọba": {
+        "facet_name": "Aganjù Ọba",
+        "typology": "Imperial Sovereign & Palace Architectural Pioneer",
+        "description": "The fifth historical Aláàfin of Old Ọ̀yọ́, deified as the royal sovereign who introduced stone colonnades, bronze palace posts, and imperial pomp to the empire.",
+        "etymology_and_philosophy": "Aganjù Ọba embodies the historical, dynastic, and architectural genius of the fifth Aláàfin of Old Ọ̀yọ́, son of Ajaka and nephew of Ṣàngó. Reigning during the Classical Imperial Era, Aganjù transformed Ọ̀yọ́-Ilé from a vulnerable frontier outpost into a monumental imperial metropolis. Oral traditions in Samuel Johnson's annals recount that Aganjù was the first monarch to build a magnificent royal palace with spacious courtyards lined with cast bronze posts and sculpted caryatids. He was a master of statecraft who tamed ferocious wild beasts in his private menagerie, kept peace through unyielding diplomatic prestige, and solidified the sacred royal regalia that all subsequent Aláàfins inherited. Upon his deification, his royal persona merged with the cosmic fire of Aganjù.",
+        "historical_timeline": "Classical Ọ̀yọ́ Empire (c. 14th–15th Century CE): Reigned for a long, prosperous epoch as fifth Aláàfin; initiated stone and bronze palace architecture.",
+        "material_and_craftsmanship": "Cast bronze palace pillars, carved wooden royal thrones, heavy Sányán velvet robes, and beaded royal canes.",
+        "social_and_ritual_context": "Venerated within the royal ancestral shrines of Ọ̀yọ́ (Barà); propitiated during state coronations to grant structural stability to the monarch.",
+        "proverbs_and_oral_traditions": [
+          "Aganjù Ọba tí ó fi idẹ kọ́ ààfin; ọba tí ó f'ọkàn balẹ̀ jẹ Ọ̀yọ́. (King Aganjù who built the royal palace with bronze; the monarch who governed Ọ̀yọ́ with serene poise: Celebrating imperial majesty.)",
+          "Ààfin tí Aganjù kọ́ dúró gbọnyingbọnyin; ilé tí ọba mọ kì í wó lásán. (The palace that Aganjù erected stands immovable; the house founded by a true king never collapses: Affirms architectural endurance.)",
+          "Bí Aganjù bá wọ adé, gbogbo ayé ní ń f'orí balẹ̀ fún ọlá. (When Aganjù dons the crown, the entire world bows before sovereign grandeur: Honoring dynastic legitimacy.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Law, Robin (1977). The Oyo Empire c. 1600–c. 1836; Smith, Robert (1988). Kingdoms of the Yoruba."
+      },
+      "Aganjù Ọlọ́kọ̀ (The Ferryman)": {
+        "facet_name": "Aganjù Ọlọ́kọ̀ (The Ferryman)",
+        "typology": "Psychopomp & Boundary River Navigator",
+        "description": "The formidable river-ferryman and threshold navigator manifestation of Aganjù who transports souls and wanderers across the turbulent boundary river between wilderness and civilization.",
+        "etymology_and_philosophy": "Aganjù Ọlọ́kọ̀ represents the psychopomp, ferryman, and boundary-crosser manifestation of Aganjù. In the foundational oral narratives of Old Ọ̀yọ́ and Ifá cosmology, Aganjù is celebrated not only as the primeval sovereign of volcanic earth and untamed savanna (Agan-jù—Uninhabited Wilderness), but as the titanic boatman who stands upon the wide, raging border river holding a single massive iron paddle. When mortals or celestial travellers arrive at the edge of the known universe, it is Aganjù Ọlọ́kọ̀ who tests their courage, moral integrity, and humility before ferrying them across the deep rapids. He symbolizes the heroic capacity to navigate terrifying existential thresholds, bridging life and afterlife, danger and refuge, raw nature and civilized order.",
+        "historical_timeline": "Classical Antiquity: Central to ancient Ọ̀yọ́ frontier mythologies; preserved across transatlantic Lucumí liturgy as Aganyú the ferryman.",
+        "material_and_craftsmanship": "Heavy hardwood paddles (Ọ̀pá Ọkọ̀), forged iron anchors, river boulders, and dual-bladed axe emblems.",
+        "social_and_ritual_context": "Propitiated by travelers embarking on dangerous river journeys, canoe-makers, and initiates undergoing profound psychological transitions.",
+        "proverbs_and_oral_traditions": [
+          "Aganjù Ọlọ́kọ̀ kì í bẹ̀rù rírọ́ omi; ọkọ̀ tí ó rù kì í rì. (Aganjù the Ferryman fears not the roaring torrent; the vessel he steers never sinks: Praising unshakeable fortitude.)",
+          "Ẹni tí ó fẹ́ kọjá odò nlá gbọ́dọ̀ bọ̀wọ̀ fún Ọlọ́kọ̀. (He who desires to cross the great river must pay homage to the Ferryman: Counseling humility before life's great thresholds.)",
+          "Aganjù ní ń wa ọkọ̀ dé èbúté ayọ̀; kò sí ẹni tí ó le gba ọ̀nà odò láì ní àṣẹ rẹ̀. (Aganjù steers the vessel to the harbor of joy; none navigates the waterway without his sovereign sanction: Affirming divine guidance.)"
+        ],
+        "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Johnson, Samuel (1921). The History of the Yorubas; Verger, Pierre (1957)."
+      }
+    },
+    "Yewá": {
+      "Odò Yewá": {
+        "facet_name": "Odò Yewá",
+        "typology": "Sacred Boundary River & Living Aquatic Sanctum",
+        "description": "The tranquil, clear boundary river winding through the Yewa-Ègbádò region, revered as the living body and tears of the pure virgin river divinity Yewá.",
+        "etymology_and_philosophy": "Odò Yewá represents the geographical and metaphysical embodiment of the river goddess Yewá in western Yorùbáland (formerly Ègbádò, modern Ogun State). In local hydro-cosmology, the river is the tangible, flowing tears and living flesh of Yewá, who transformed into water to escape unwanted marital advances and preserve her vows of spotless moral purity. The river is noted for its remarkably placid currents, cool temperature, and clear waters flowing through lush gallery forests into the Badagry lagoon. Bathing in its waters is believed to cleanse spiritual toxicity, cure nervous instability, and grant tranquility to restless souls. Priests strictly prohibit loud shouting, iron dredging, or profane commercial contamination near her sacred fords.",
+        "historical_timeline": "Ancient Antiquity: Served as the natural geopolitical boundary between the western Yorùbá kingdoms, Dahomey, and coastal lagoons.",
+        "material_and_craftsmanship": "Smooth grey riverbed slate, virgin spring water in unglazed terracotta jars (orù), and white unblemished pebbles.",
+        "social_and_ritual_context": "Propitiated by riverbank communities during annual cleansing rites; visitors must take off their footwear before stepping into her shallows.",
+        "proverbs_and_oral_traditions": [
+          "Odò Yewá dákẹ́ rọ́rọ́, ṣùgbọ́n kò sí ẹni tó le fọwọ́ tẹ ìsàlẹ̀ rẹ̀. (The Yewá River remains profoundly still, yet none can measure her depth with a bare hand: Warning against underestimating calm nature.)",
+          "Omi Yewá tútù, omi Yewá mọ́; ẹni tí ó mu omi rẹ̀ kì í f'orí fọ́. (The water of Yewá is cool, the water of Yewá is pure; he who drinks her stream never suffers a fractured mind: Praising psychological healing.)",
+          "Yewá kì í kún fún ogun; àlàáfíà l'ó fi ń ṣan kọjá ìlú. (Yewá never overflows for war; it is with spotless peace that she meanders through the realm: Celebrating harmony.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre Fatumbi (1957). Notes sur le culte des orisa; Folayan, Kola (1972). Egbado to 1832: The Birth of a Frontier Society; Bascom, William (1969)."
+      },
+      "Yewá Priesthood": {
+        "facet_name": "Yewá Priesthood",
+        "typology": "Sacerdotal Order of Chastity & Strict Moral Asceticism",
+        "description": "The hereditary sacerdotal guild of elder priestesses who maintain strict vows of sexual purity, ascetic silence, and rigorous moral integrity in service of Yewá.",
+        "etymology_and_philosophy": "The Yewá Priesthood (Ẹgbẹ́ Àwọn Ìyálóde Yewá) represents one of the most ascetic, morally rigorous, and demanding sacerdotal institutions in Yorùbá traditional religion. Governed by senior initiated elder women who have completed their childbearing years, the priesthood demands total dedication to physical and spiritual purity. Priestesses dress exclusively in pristine white handwoven textiles, refrain from contentious public speech, and observe severe dietary taboos (including absolute prohibitions on alcohol and hot stimulants). They serve as hereditary judges in sensitive domestic conflicts, custodians of traditional adoption and orphan care, and mediators who pacify vengeful spiritual energies through cooling herbal baths and quiet prayers.",
+        "historical_timeline": "Pre-Colonial Antiquity: Established in Ìlarò and western shrines; maintained into modern times as a pillar of female moral authority.",
+        "material_and_craftsmanship": "Woven pure white cotton garments (Aṣọ Funfun), unpolished cowrie headdresses, brass bells, and medicinal wooden stirrers.",
+        "social_and_ritual_context": "Presides over women's initiation rites, purification of marital homes, and the annual Yewá festival in Ìlarò.",
+        "proverbs_and_oral_traditions": [
+          "Ẹnu àwọn abọre Yewá kì í puro; ètìtí funfun kì í gba àbàwọ́n. (The mouths of Yewá priestesses never utter falsehood; pristine white cloth tolerates no stain: Demanding unyielding truthfulness.)",
+          "Ìwà tútù ni ọkọ̀ tí ń gbé Yewá; a kì í pariwo nínú ilé Òrìṣà yìí. (Gentle temperament is the vessel that bears Yewá; loud clamour is forbidden within this divinity's sanctuary: Honoring sacred quietude.)",
+          "Ẹni tí ó tẹ̀lé Yewá gbọ́dọ̀ mọ́ tónítóní; àìmọ́ kì í wọ ààfin omi. (She who follows Yewá must be immaculately pure; spiritual uncleanness cannot enter the palace of waters: Affirming purity laws.)"
+        ],
+        "provenance_and_citations": "Lawal, Babatunde (1996). The Gelede Spectacle; Verger, Pierre (1957); Morton-Williams, Peter (1960). The Yoruba Ogboni Cult in Oyo."
+      },
+      "Ìlú Ìlarò": {
+        "facet_name": "Ìlú Ìlarò",
+        "typology": "Historical Ancient Capital & Sacerdotal Heartland",
+        "description": "The historic ancestral capital of the Yewa/Ègbádò kingdom, celebrated as the paramount cultural, political, and spiritual seat of Yewá veneration.",
+        "etymology_and_philosophy": "Ìlú Ìlarò (Ilaro) stands as the historical metropolis, dynastic capital, and supreme spiritual heartland of the Yewa-Yoruba people. Founded in the 18th century by warriors and hunters led by Aró (the legendary hunter from Old Ọ̀yọ́), Ìlarò was established under the divine patronage of Yewá and the legendary warrior-ancestor Ọrọ̀nà. The town's geopolitical identity was historically defined by its strategic position along vital trans-coastal trade corridors and its heroic defense against Dahomean incursions. Within the citadel, the paramount monarch (the Olú of Ìlarò) derives ancestral legitimacy through sacred coronation covenants sealed at the Yewá shrine and Ọrọ̀nà groove, embodying the synthesis of martial valor and maternal peace.",
+        "historical_timeline": "18th Century CE: Founded as the paramount citadel of the Ègbádò confederacy; preserved ancient shrines through successive regional wars.",
+        "material_and_craftsmanship": "Laterite palace ramparts, commemorative brass staffs, carved wooden verandas, and consecrated market shrines.",
+        "social_and_ritual_context": "The venue for paramount coronation assemblies, regional trade dispute reconciliations, and the joint Yewá-Ọrọ̀nà festival.",
+        "proverbs_and_oral_traditions": [
+          "Ìlarò l'ó l'omi, Ìlarò l'ó l'ọlá; Yewá l'ó fi tútù tẹ ìlú d'òpin. (Ìlarò possesses living water, Ìlarò possesses renown; it was Yewá who established the city on cool peace: Affirming civic grandeur.)",
+          "Ọmọ Ìlarò kì í bẹ̀rù ogun; odò Yewá l'ó ń gbè wá lẹ́yìn. (A native of Ìlarò fears no invasion; the Yewá river stands as our eternal rear-guard: Celebrating ancestral defense.)",
+          "A kì í dé Ìlarò kí a má mu omi Yewá; ìlú tí ó gbajúmọ̀ nínú àṣà. (None arrives in Ìlarò without drinking of Yewá's waters; a citadel renowned for deep heritage: Honoring cultural primacy.)"
+        ],
+        "provenance_and_citations": "Folayan, Kola (1972). Egbado to 1832: The Birth of a Frontier Society; Smith, Robert (1988). Kingdoms of the Yoruba."
+      }
+    },
+    "CORPUS_ERINLE_001": {
+      "Erinlẹ̀ Ìlobùú": {
+        "facet_name": "Erinlẹ̀ Ìlobùú",
+        "typology": "Paramount Dynastic Altar & Historical Civic Citadel",
+        "description": "The supreme historical shrine and metropolitan covenant seat of Erinlẹ̀ located in the town of Ìlobùú, celebrated as the epicenter of his royal festival and civic veneration.",
+        "etymology_and_philosophy": "Erinlẹ̀ Ìlobùú represents the paramount terrestrial throne, civic covenant, and sacerdotal heartland of Erinlẹ̀, situated along the river valley in Ìlobùú (Osun State). Oral tradition recounts that when Erinlẹ̀ concluded his earthly adventures as an imperial hunter and warrior from Old Ọ̀yọ́, he disappeared into the earth near Ìlobùú, leaving an iron chain (ẹ̀wọ̀n) attached to his staff as a covenant that he would emerge to defend the citadel whenever his descendants sounded the sacred gongs. The Ọlọ́lù of Ìlobùú and his high priests maintain an unbroken ritual treaty with Erinlẹ̀, observing annual royal festivities that feature elephant-hunting dances, herbal water distributions, and public blessings for agricultural prosperity and childbearing.",
+        "historical_timeline": "17th Century CE: Foundation of Ìlobùú as the central royal sanctuary of Erinlẹ̀; recognized across Yorùbáland as the primary seat of his cult.",
+        "material_and_craftsmanship": "Cast lead and brass ceremonial staffs (Ọ̀pá Erinlẹ̀), elephant tusks, forged iron hunting blades, and earthenware pots decorated with river motifs.",
+        "social_and_ritual_context": "The epicenter of the annual Erinlẹ̀ Festival in Ìlobùú, attended by paramount rulers, hunters' guilds, and thousands of devotees.",
+        "proverbs_and_oral_traditions": [
+          "Ìlobùú l'ó l'Erinlẹ̀; ibi tí ọba ń tẹríba fún omi tútù. (Ìlobùú is the home of Erinlẹ̀; where the king bows before the cool healing waters: Proclaiming sacred heritage.)",
+          "Ẹni tí ó wá Ìlobùú kò ní padà láì rí oore Erìnlẹ̀. (He who visits Ìlobùú will never return without receiving the bounty of Erinlẹ̀: Celebrating answered prayers.)",
+          "Erinlẹ̀ Ìlobùú kì í jẹ́ kí ìlú bàjẹ́; pẹ̀lú idẹ l'ó fi ń tẹ àlàáfíà ró. (Erinlẹ̀ of Ìlobùú never permits the realm to decay; with sacred brass he establishes lasting peace: Honoring divine protection.)"
+        ],
+        "provenance_and_citations": "Beier, Ulli (1956). The Story of Sacred Wood Carvings from One Small Yoruba Town, Ilobu; Thompson, Robert Farris (1976). Black Gods and Kings."
+      },
+      "Ọpá Erinlẹ̀": {
+        "facet_name": "Ọpá Erinlẹ̀",
+        "typology": "Sacred Lead/Brass Sacerdotal Sceptre & Healing Emblem",
+        "description": "The sacred, elaborately cast lead or brass ceremonial staff surmounted by birds and equestrian figures, carried by senior priests of Erinlẹ̀ to channel healing and judicial power.",
+        "etymology_and_philosophy": "Ọpá Erinlẹ̀ (The Sacred Staff of Erinlẹ̀) represents the pinnacle of specialized sacred metallurgy dedicated to the water and hunting divinity. Cast uniquely in lead or zinc-rich brass alloys (metals associated with cooling, weight, and psychic permanence), the staff is crowned by a cluster of symbolic birds (representing mystical insight and harmony with the mothers/Àwọn Ìyámi) or an equestrian figure armed with hunting implements. In ritual practice, the staff acts as a metaphysical lightning rod: when planted into river mud or sanctuary ground during healing consultations, it roots the patient's restless soul into the cool stabilizing depths of the earth, draining fevers, psychological turbulence, and ancestral grief.",
+        "historical_timeline": "Classical Antiquity: Forged by specialized metallurgical guilds in Ìlobùú and Ọ̀yọ́; acquired by major international museums as masterpieces of Yoruba lead casting.",
+        "material_and_craftsmanship": "Lost-wax cast lead (òjé), brass (idẹ), and wrought iron cores, polished with cooling leaf extracts and palm oil.",
+        "social_and_ritual_context": "Carried exclusively by initiated high priests (Awòrò Erinlẹ̀) during ceremonial processions and judicial dispute settlements.",
+        "proverbs_and_oral_traditions": [
+          "Ọpá Erinlẹ̀ kì í tẹ́ nínú amọ̀; idẹ tí ń gbé orí omi ró. (The staff of Erinlẹ̀ never loses dignity in the mud; sacred brass that stays upright upon the water: Affirming enduring fortitude.)",
+          "Bí àwòrò bá gbé Ọpá Erinlẹ̀ ró, àrùn a sá wọ igbó. (When the priest plants the staff of Erinlẹ̀, sickness flees into the wilderness: Testifying to instant therapeutic power.)",
+          "Ọpá tí a fi idẹ ṣe kì í ṣe igi lásán; àṣẹ tí ń pa iná ìbínú l'ó wà lára rẹ̀. (The staff forged of sacred brass is no common timber; the authority that quells the fire of wrath resides upon it: Emphasizing peace.)"
+        ],
+        "provenance_and_citations": "Thompson, Robert Farris (1976). Black Gods and Kings: Yoruba Art at UCLA; Abiodun, Rowland (2014). Yoruba Art and Language; Willett, Frank (1967)."
+      },
+      "Abátàn (His Consort)": {
+        "facet_name": "Abátàn",
+        "typology": "Marshland Goddess & Aquatic Healing Consort",
+        "description": "The aquatic goddess and divine partner of Erinlẹ̀, presiding over marshes, therapeutic clays, postpartum recovery, and pottery arts.",
+        "etymology_and_philosophy": "Abátàn (The Marshland Goddess and Divine Consort of Erinlẹ̀) represents the sacred wetland, muddy delta, and cool therapeutic silt where freshwater meets terrestrial vegetation. In southwestern Yorùbá indigenous medicine and hydro-cosmology, Abátàn is venerated as the supreme patroness of pediatric healing, maternal recovery, and traditional pharmacology. While her partner Erinlẹ̀ ranges as a solitary hunter and river physician, Abátàn presides over the still, reflective backwaters where mineral-rich clay (amọ̀) and healing aquatic flora are harvested to treat childhood fevers and internal inflammation. Her shrines feature perforated earthenware jars (orù àbátàn) containing sacred pebbles and cooling river infusions. Initiates of her priesthood maintain vows of gentle demeanor, serving as hereditary midwives and pediatric doctors across the Ọ̀ṣun and Ògùn river valleys.",
+        "historical_timeline": "Ancient Antiquity: Consecrated alongside Erinlẹ̀ across southwestern riverine networks as custodian of postpartum healing.",
+        "material_and_craftsmanship": "Terracotta vessels (Àwo Ilẹ̀), river silt pigments, white river pebbles, and copper-tinted herbal infusions.",
+        "social_and_ritual_context": "Propitiated by ceramic sculptors, midwives, and mothers seeking child survival, healthy delivery, and cool tempers.",
+        "proverbs_and_oral_traditions": [
+          "Abátàn a-tọ́-ọmọ-l'ẹ́bá-odò. (Abátàn who nurtures infants beside the peaceful river marshes: Celebrating pediatric healing.)",
+          "Omi Abátàn kì í gbé ọmọ lọ; tútù ni omi rẹ̀ ń tu orí gbígbóná. (The waters of Abátàn never drown the child; cooling is her tide that soothes the fevered head: Affirms maternal protection.)",
+          "Ẹni tí ó gbẹ́kẹ̀ lé Abátàn kò ní sọkún ọmọ d'òpin. (She who places her trust in Abátàn will never weep over infant loss: Testifying to reproductive wellness.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (1983). Identity and the Artistic Process in the Yoruba Aesthetic Concept of Iwa; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society."
+      }
+    },
+    "CORPUS_OLOKUN_001": {
+      "Ìlèkè Ìyùn Guilds": {
+        "facet_name": "Ìlèkè Ìyùn Guilds",
+        "typology": "Sacred Glass Beadwork & Marine Gemstone Artisans",
+        "description": "The ancient guild of master glassmakers and coral carvers of Ilé-Ifẹ̀ and coastal centers who preserve the esoteric secrets of crafting Olókun's sacred royal beads.",
+        "etymology_and_philosophy": "The Ìlèkè Ìyùn Guilds (Ẹgbẹ́ Àwọn Oníṣẹ́ Ìlẹ̀kẹ̀ Olókun) constitute the hereditary sacerdotal guild of master glassmakers, coral lapidaries, and bead artisans consecrated to the ocean divinity Olókun. Centered historically in ancient Ilé-Ifẹ̀ (specifically at Olokun Grove, where high-temperature dichroic glass workshops operated between the 11th and 15th centuries CE), these artisans maintained strict initiatory secrecy regarding the mineral chemistry, furnace pyrotechnics, and ritual purification required to create cylindrical red coral beads (ìyùn) and dichroic blue-green chevron beads (sẹ̀gí). Because Olókun is the absolute spiritual proprietor of all gemstones and marine wealth, guild members perform morning libations to the sea goddess prior to opening the crucibles, believing that unhallowed handling of beads brings commercial catastrophe.",
+        "historical_timeline": "11th–15th Century CE: Flourished at Olokun Grove in Ilé-Ifẹ̀; continued through coastal trade networks in Lagos and Badagry.",
+        "material_and_craftsmanship": "Dichroic glass, cylindrical carnelian, fossilized marine coral (Ìyùn), lead crucibles, and palm-oil cooling baths.",
+        "social_and_ritual_context": "Supplies the paramount crowns (Adé Ìlẹ̀kẹ̀), royal wristlets, and sacerdotal necklaces for monarchs and high priests throughout the realm.",
+        "proverbs_and_oral_traditions": [
+          "Ìlẹ̀kẹ̀ Ìyùn kì í ṣe ohun àwárí lásán; ọwọ́ Olókun l'a ti ń mú owó wá. (Sacred red coral is no casual finding; from the hand of Olókun all true prosperity is drawn: Praising precious wealth.)",
+          "Ẹni tí ó ń ṣe ìlẹ̀kẹ̀ gbọ́dọ̀ bọ Olókun; iná àrò kì í tàn láì ní àṣẹ omi. (He who crafts sacred beads must appease Olókun; the furnace flame never glows without the sanction of the water: Honoring guild chemistry.)",
+          "Ọmọ ọba kì í fi ìlẹ̀kẹ̀ ẹ̀gàn dán mọ́ra; Ìyùn tòótọ́ kì í ba ojú jẹ́. (A royal child wears no spurious beads; genuine coral never disappoints the wearer: Celebrating authentic nobility.)"
+        ],
+        "provenance_and_citations": "Eluyemi, Omotoso (1987). The Technology of the Ife Glass Beads; Willett, Frank (1967). Ife in the History of West African Sculpture; Abiodun, Rowland (2014)."
+      }
+    },
+    "CORPUS_OGUN_COSMIC_001": {
+      "Ògún Alágbede (Blacksmith)": {
+        "facet_name": "Ògún Alágbede",
+        "typology": "Primordial Metallurgist & Master of the Forge",
+        "description": "The transformative aspect of Ògún residing at the forge (Àgbẹ̀dẹ), turning raw terrestrial iron into civilizational implements, weapons, and sacred regalia.",
+        "etymology_and_philosophy": "Ògún Alágbede embodies the alchemical mastery of pyrotechnology and metallurgy within Yorùbá cosmological thought. Derived from 'Ògún' (the primordial divinity of iron, path-clearing, and metallurgy) and 'Alágbede' (the master smith, possessor of the forge), this facet represents civilization's primordial artisan. In Yorùbá philosophy, the forge is not merely a secular workspace but a consecrated sanctuary where raw terrestrial ore is transmuted through intense heat, air, and rhythmic percussion into implements of survival and sacred emblems. Ògún Alágbede sits at the nexus between primeval nature and human culture; without his bellows and anvil, humanity would remain defenseless in the wild. His anvil (Otá Ògún) is considered an inviolable altar upon which oaths are sworn, as any breach invites the swift retributive justice of iron. Master blacksmiths undergo rigorous initiations into his mysteries, learning the secret incantations that bind metallic elements and shield the smith from spiritual furnace hazards.",
+        "historical_timeline": "Iron Age Antiquity: Center of technological and mystical veneration across ancient Ifẹ̀, Ọ̀yọ́, and Èkìtì metallurgy guilds.",
+        "material_and_craftsmanship": "Forged iron anvil (Otá Ògún), sledgehammers (Oowú), iron tongs (Ewiri), and charcoal furnace hearth.",
+        "social_and_ritual_context": "Venerated by blacksmiths, metalworkers, and industrial engineers; oaths sworn upon the anvil carry binding judicial weight across Yoruba customary law.",
+        "proverbs_and_oral_traditions": [
+          "Ògún alágbede kì í kú sílé; orí owú l'ọmọ rẹ̀ ti ń gb'owó. (Ògún the blacksmith dies not in obscurity; atop the sacred anvil his descendants earn generational prosperity: Celebrating industrial dignity.)",
+          "Àgbẹ̀dẹ Ògún kì í di ahoro; iná kì í kú nínú ewiri. (The forge of Ogun never becomes a desolate ruin; the flame never perishes within the bellows: Affirming eternal creative vitality.)",
+          "Bí a kò bá bọ Ògún, a kì í r'ọkọ́ ro'ko; àgbẹ̀dẹ ni bàbá iṣẹ́. (Without propitiating Ògún, no hoe can cultivate the farmland; the sacred forge is the sire of all enterprise: Honoring technical primacy.)"
+        ],
+        "provenance_and_citations": "Williams, Denis (1974). Icon and Image: A Study of Sacred and Secular Forms in African Art; Barnes, Sandra T. (1989). Africa's Ogun: Old World and New; Armstrong, Robert G. (1964). The Religions of the Yoruba."
+      },
+      "Ògún Ọdẹ (Hunter)": {
+        "facet_name": "Ògún Ọdẹ",
+        "typology": "Sovereign Hunter & Master of the Uncharted Wilderness",
+        "description": "The trailblazing hunter aspect of Ògún who penetrates dense primordial forests, taming wild frontiers and safeguarding woodland travelers.",
+        "etymology_and_philosophy": "Ògún Ọdẹ represents the fearless pathfinder, scout, and apex predator within the cosmological hierarchy. Derived from 'Ọdẹ' (hunter, marksman, master of the wilderness), this manifestation venerates Ògún's role as the original trail-blazer who cleared the impenetrable cosmic bush with his iron machete, allowing the other Irúnmọlẹ̀ to descend from Ọ̀run to Ayé. In the philosophical landscape of Yorùbá hunting societies (Ẹgbẹ́ Ọdẹ), hunting is both an ecological necessity and a deep esoteric discipline requiring intimate communion with the spirits of the wild (Iwin and Àrọ̀nì). Ògún Ọdẹ embodies the supreme ethical tension between predation and environmental equilibrium: the true hunter never kills for wanton sport, but takes life only under sacred covenant, offering propitiation to the earth and forest sovereigns. His chants (Ìjálá Ọdẹ) constitute one of the richest poetic repositories in West Africa, preserving ancient botanical taxonomies, zoological behaviors, and existential reflections on mortality and cosmic courage.",
+        "historical_timeline": "Pre-Dynastic Hunting Societies: Preserved through royal guilds, warrior scouting divisions, and woodland frontiers throughout Yoruba history.",
+        "material_and_craftsmanship": "Flintlock hunting muskets (Àgbọn), woven leather medicine pouches (Àpò Ọdẹ), iron projectile arrowheads, and antelope horns.",
+        "social_and_ritual_context": "Venerated during annual hunting guild festivals; hunters chant Ìjálá poetry and perform cleansing rituals to purge accidental woodland blood guilt.",
+        "proverbs_and_oral_traditions": [
+          "Ògún ọdẹ kì í sun ilé lásán; igbó ni ilé rẹ̀, ẹran ni ọrọ̀ rẹ̀. (Ògún the hunter rests not idly at home; the deep forest is his sanctuary, wilderness game is his bounty: Praising unyielding fortitude.)",
+          "Ọdẹ kì í bẹ̀rù iwin igbó; Ògún l'ó fi irin ṣe ìhámọ́ra. (The sacred hunter fears no woodland phantom; Ògún has girded his soul in impenetrable iron: Asserting spiritual fearlessness.)",
+          "Ìjálá kì í ṣ'orin àkúyà; ẹni tó lu Ògún ni ń gbọ́ ohùn igbó. (The hunter's chant is no trivial melody; only he who walks with Ògún deciphers the whispering breath of the forest: Celebrating esoteric ecological knowledge.)"
+        ],
+        "provenance_and_citations": "Babalola, S. Adeboye (1966). The Content and Form of Yoruba Ijala; Barnes, Sandra T. (1989). Africa's Ogun: Old World and New; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+      },
+      "Ògún Balógun (Warrior)": {
+        "facet_name": "Ògún Balógun",
+        "typology": "Supreme Commander of Territorial Defense & War",
+        "description": "The martial commander aspect of Ògún who presides over state defense, frontline valor, and the strategic deterrence of territorial aggression.",
+        "etymology_and_philosophy": "Ògún Balógun embodies the ultimate martial discipline, strategic leadership, and protective prowess of the Yorùbá military apparatus. Derived from 'Balógun' (Baálè Ogun, military field marshal and supreme general), this facet reflects the sovereign responsibility of defending the realm against existential threat and societal disintegration. In classical Yorùbá statecraft, particularly within the Ọ̀yọ́ Empire and the 19th-century confederacies such as Ìbàdàn and Èkìtìparapọ̀, the Balógun held supreme command over armed forces, answering only to the sovereign or council of state. Philosophically, Ògún Balógun is not an emblem of mindless slaughter, but of righteous, controlled martial vigor governed by strict chivalric ethics. The warrior who takes up iron must submit to Ògún's codes of honor: women, children, and sanctuaries must never be violated during campaign. When returning from military engagement, soldiers must undergo the ritual bath of Ògún (Ẹ̀rọ Ògún) with snail liquid and cooling herbs to extinguish the fiery psychic bloodlust of battle before re-entering peaceful civic communion.",
+        "historical_timeline": "Imperial Ọ̀yọ́ and 19th-Century Warfare: Central deity of warrior confederacies, royal cavalry corps, and provincial military governors.",
+        "material_and_craftsmanship": "Forged iron battle cutlasses (Idà), brass vanguard helmets, horse armor, and sacred blood-consecrated red banners.",
+        "social_and_ritual_context": "Invoked during national security mobilizations, civic security installations, and post-war psychological reconciliation rituals.",
+        "proverbs_and_oral_traditions": [
+          "Balógun kì í sá fún ogun; Ògún l'ó ń gbé ológun l'ékè. (The supreme general flees not from the battlefield; Ògún elevates the valorous commander above defeat: Celebrating military honor.)",
+          "Idà tí a fi ń jà kò gbọdọ̀ gé ọmọdé; Ògún Balógun kì í ba orúkọ jẹ́. (The battle sword drawn for defense must never harm the innocent child; Ògún Balógun tarnishes not his noble covenant: Asserting martial restraint.)",
+          "Bí ogun bá ń le, orúkọ Balógun là ń pè; irin ní ń kọ́jú irin. (When warfare rages violently, the name of Balógun resounds; only forged iron withstands hostile iron: Affirms resolute defense.)"
+        ],
+        "provenance_and_citations": "Smith, Robert S. (1989). Warfare and Diplomacy in Pre-colonial West Africa; Johnson, Samuel (1921). The History of the Yorubas; Law, Robin (1977). The Oyo Empire c. 1600-c. 1836."
+      },
+      "Ẹwiri Blacksmith Hearth": {
+        "facet_name": "Ẹwiri Blacksmith Hearth",
+        "typology": "Sacred Bellows & Alchemical Breath of the Forge",
+        "description": "The sacred bellows implement and ritual air furnace that provides continuous breath to Ògún's metallurgical fires, transmuting ore into sacred tools.",
+        "etymology_and_philosophy": "Ẹwiri designates the ritual leather-and-wood bellows that supplies vital atmospheric breath (Afẹ́fẹ́ Ògún) to the metallurgical forge. Cosmologically, Ẹwiri is considered the living respiratory organ of Ògún's alchemical body. In Yorùbá thought, heat alone cannot smelt raw iron from laterite stone; it requires the continuous, rhythmic infusion of breath to raise temperatures to the threshold of transformation. This dualism—the fiery masculine drive of the charcoal flame partnered with the cyclical breathing of the bellows—mirrors the primordial union of Ògún and Ọ̀yá (the atmospheric winds). The Ẹwiri is treated with profound liturgical sanctity: it is never stepped over, sat upon, or addressed casually. When a master smith passes into the ancestral realm, his Ẹwiri is ritually saluted, deflated, and anointed with palm oil to release the ancestral craftsman's breath back to Olódùmarè before passing the implement to the lineage apprentice.",
+        "historical_timeline": "Classical Antiquity: Central liturgical instrument across traditional iron-smelting centers in Yorùbáland (such as Òyó-Ilé, Ìfe-Olúkùn, and Èkìtì).",
+        "material_and_craftsmanship": "Carved hardwood chamber, pliable cured goatskin or antelopeskin diaphragms, bamboo tuyère pipes, and clay nozzle shields.",
+        "social_and_ritual_context": "Consecrated during the founding of any new smithy; propitiated annually during the Ògún festival with rooster offerings and palm wine.",
+        "proverbs_and_oral_traditions": [
+          "Ẹwiri kì í dákẹ́ t'iná fi ń jó; ẹni tó fẹ́ gbádùn Ògún kò gbọdọ̀ dáwọ́ dúró. (The bellows never ceases while the forge fire burns; he who seeks Ògún's mastery must never falter: Exhorting tireless industry.)",
+          "Afẹ́fẹ́ ẹwiri l'ó ń mú irin gbóná; kò sí ohun tí ń gbó láì ní ẹ̀mí. (The breath of the bellows makes the cold iron glow red; nothing ripens into power without the vital spirit: Teaching cosmic interdependence.)",
+          "Ẹni tí ó tẹ ewiri Ògún mọ bí iná ti ń bẹ; a kì í f'ojú tín-ín-rín àgbẹ̀dẹ. (He who pumps the bellows of Ògún understands how fire awakens; never underestimate the humble master of the forge: Praising esoteric expertise.)"
+        ],
+        "provenance_and_citations": "Williams, Denis (1974). Icon and Image: A Study of Sacred and Secular Forms in African Art; Abiodun, Rowland (2014). Yoruba Art and Language; Barnes, Sandra T. (1989). Africa's Ogun."
+      }
+    },
+    "Ọ̀ṣọ́ọ̀sì": {
+      "Ọdẹ Guilds": {
+        "facet_name": "Ọdẹ Guilds",
+        "typology": "Ancestral Guild of Forest Trackers & Ecological Custodians",
+        "description": "The esoteric fraternal guild of hunters and foresters initiated into the herbal, cosmological, and scouting mysteries of Ọ̀ṣọ́ọ̀sì.",
+        "etymology_and_philosophy": "Ọdẹ Guilds (Ẹgbẹ́ Ọdẹ) constitute the ancient fraternal order of master hunters, trackers, and woodland sentinels under the celestial tutelage of Ọ̀ṣọ́ọ̀sì and Ògún. In classical Yorùbá society, these guilds fulfilled a multi-dimensional civil role: they were the community's frontline scouts, border guards, herbalists, and diplomatic envoys who navigated hostile uncharted terrains. Membership required rigorous ethical vetting and extensive training in the esoteric science of tracking, camouflage (Àwòrò / Ẹ̀dà), and animal psychic communication. Philosophically, the hunter is viewed as an ecological mediator rather than a despoiler of wilderness. The guild enforces strict codes regarding sustainable harvesting, forbidding the killing of nursing animals, pregnant females, or totemic forest species. The oral chants of the guild (Ìjálá) encode vital ancestral history, medicinal leaf recipes, and profound metaphysical inquiries into human mortality.",
+        "historical_timeline": "Pre-Colonial Epoch: Paramount socio-military and judicial intelligence guild throughout all Yoruba kingdoms.",
+        "material_and_craftsmanship": "Smoked hunting leather tunics studded with protective amulets (Aṣọ Ọdẹ), animal horn whistles, and consecrated hunting fly-whisks.",
+        "social_and_ritual_context": "Convenes during funerals of departed members (Ìpàkí / Ìparí Ọdẹ) where supreme master chants are performed to release the hunter's spirit into the ancestral forest.",
+        "proverbs_and_oral_traditions": [
+          "Ọdẹ tòótọ́ kì í ba igbó jẹ́; ẹni tí ń wọ igbó gbọdọ̀ mọ oríṣìí ewé. (A true hunter never despoils the forest sanctuary; he who traverses the wild must revere the sacred flora: Teaching environmental ethics.)",
+          "Ẹgbẹ́ ọdẹ kì í ta ọ̀kankan nígbà tí Ògún àti Ọ̀ṣọ́ọ̀sì wà l'ẹ́yìn wọn. (The hunter's guild never misses its mark when Ògún and Ọ̀ṣọ́ọ̀sì stand as their cosmic rear-guard: Affirming divine guidance.)",
+          "Ìjálá kì í ṣ'àkíyèsí lásán; ọgbọ́n àtijọ́ ni ọ̀rọ̀ ọdẹ. (The hunter's liturgical poetry is no casual chanting; the ancient wisdom of generations is preserved in the hunter's tongue: Celebrating ancestral memory.)"
+        ],
+        "provenance_and_citations": "Babalola, S. Adeboye (1966). The Content and Form of Yoruba Ijala; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Fadipe, N. A. (1970). The Sociology of the Yoruba."
+      },
+      "Ọfà Ọ̀sọ́ọ̀sì (Sacred Bow & Arrow)": {
+        "facet_name": "Ọfà Ọ̀sọ́ọ̀sì",
+        "typology": "Sovereign Scepter of Infallible Precision & Justice",
+        "description": "The sacred single arrow and bow emblem symbolizing unswerving spiritual focus, instantaneous discernment, and divine precision.",
+        "etymology_and_philosophy": "Ọfà Ọ̀sọ́ọ̀sì designates the consecrated bow and arrow that serves as the paramount theological emblem of Ọ̀ṣọ́ọ̀sì, the divine archer of the cosmos. Known liturgically as 'Ọlọ́wọ́ Kan Tí Ń Ta Ọfà Kò Sí Ẹni Tí Ń Ṣe É L'ójú' (The Singular Hand That Shoots Without Missing), Ọ̀ṣọ́ọ̀sì never requires a volley; a solitary arrow launched from his cosmic bow finds its target with effortless, mathematically perfect inevitability. In Yorùbá metaphysics, this bow and arrow represents supreme mental clarity, concentrated intention (Ìpinnu), and unyielding moral alignment. Just as the archer must hold his breath, quiet inner turmoil, and align eye, string, and target before release, the seeker of truth must focus consciousness without distraction. In sacred art, miniature iron and brass bows are worn by initiates and planted in shrines to banish chaotic energies, deflect malicious arrows of jealousy, and invoke swift resolution in complex legal disputes.",
+        "historical_timeline": "Ancient Antiquity: Inscribed in sacred divination lore and classical iron metallurgy of Western Yorùbáland (Ketu and Sabe).",
+        "material_and_craftsmanship": "Forged blackened iron bow, copper alloy string bindings, and single barbed precision projectile arrow.",
+        "social_and_ritual_context": "Displayed upon shrines of Ọ̀ṣọ́ọ̀sì and worn as protective amulets by initiates to sharpen intellectual clarity and ensure truthful legal testimonies.",
+        "proverbs_and_oral_traditions": [
+          "Ọfà Ọ̀ṣọ́ọ̀sì kì í ṣìnà; ibi tí ó rán an sí ni yóò dé. (The arrow of Ọ̀ṣọ́ọ̀sì never strays from its course; directly to its divine target it arrives: Affirming infallible cosmic truth.)",
+          "Ọlọ́wọ́ kan ta ọfà kan; kò sí ẹran tó le gba orí bọ́ lọ́wọ́ Ọ̀ṣọ́ọ̀sì. (One focused hand launches one solitary arrow; no prey escapes the sovereign marksman's reach: Celebrating supreme concentration.)",
+          "Bí a bá fẹ́ lu àmì, a gbọdọ̀ fọwọ́ tọ́ ọfà; Ọ̀ṣọ́ọ̀sì kì í kánjú ta. (If we desire to hit the target, we must steady the arrow with serenity; Ọ̀ṣọ́ọ̀sì never shoots in reckless haste: Teaching patience and precision.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Verger, Pierre Fatumbi (1957). Notes sur le culte des orisa et vodun; Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art and Thought."
+      },
+      "Igbó Ọ̀sọ́ọ̀sì": {
+        "facet_name": "Igbó Ọ̀sọ́ọ̀sì",
+        "typology": "Sanctuary Wilderness & Esoteric Forest of Initiation",
+        "description": "The consecrated wilderness zone reserved for silent contemplation, botanical apprenticeship, and esoteric hunting rites.",
+        "etymology_and_philosophy": "Igbó Ọ̀sọ́ọ̀sì designates the consecrated sacred grove and virgin woodland tracts dedicated exclusively to Ọ̀ṣọ́ọ̀sì. In Yorùbá spatial ontology, space is categorized into Ilé (the humanized, orderly civic settlement) and Igbó (the untamed, spirit-dense wilderness). Igbó Ọ̀sọ́ọ̀sì represents the liminal sanctum where the profane laws of human cities dissolve into the primordial sovereign rhythms of nature. Here, towering iroko and silk-cotton trees are not harvested for commercial lumber, and wildlife is protected from casual destruction. The grove functions as an outdoor ecological temple where initiates learn silent wilderness navigation, listening to the subtle voices of trees, winds, and subterranean waters. It is philosophically understood that true spiritual wisdom cannot be cultivated entirely within urban walls; the human soul must periodically retire to the primordial sanctuary of the forest to remember its humble place in the cosmic hierarchy.",
+        "historical_timeline": "Classical Era: Preserved as sacred conservation sanctuaries adjacent to Ketu, Ọ̀yọ́, and Èkìtì royal centers.",
+        "material_and_craftsmanship": "Living canopy flora, natural earthen mounds, consecrated stone boundaries (Èbúté), and boundary palm fronds (Màrìwò).",
+        "social_and_ritual_context": "Entered only after purification rites; sacred locus for higher hunting guild initiations and ecological prayers for rain and fertility.",
+        "proverbs_and_oral_traditions": [
+          "Igbó Ọ̀ṣọ́ọ̀sì kì í ṣe ibi eré ọmọdé; ẹni tí ó bá bọ̀wọ̀ fún igbó ni igbó ń gbé. (The sacred grove of Ọ̀ṣọ́ọ̀sì is no playground for frivolous youth; he who reveres the forest is elevated by its spirits: Teaching solemn humility.)",
+          "A kì í gé igi nínú igbó àìmọ̀; Ọ̀ṣọ́ọ̀sì l'ó ni gbogbo ewéko. (One does not fell trees inside the consecrated sanctuary; Ọ̀ṣọ́ọ̀sì is the celestial custodian of all woodland life: Enforcing ecological reverence.)",
+          "Àlàáfíà igbó ni àlàáfíà ìlú; bí igbó bá jóná, oríṣà a bínú. (The health of the forest is the peace of the commonwealth; if the woods burn, the deities withdraw their blessings: Declaring environmental balance.)"
+        ],
+        "provenance_and_citations": "Bascom, William (1969). The Yoruba of Southwestern Nigeria; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society."
+      }
+    },
+    "CORPUS_OSANYIN_001": {
+      "Ọ̀pá Ọ̀sanyìn (Herbal Staff)": {
+        "facet_name": "Ọ̀pá Ọ̀sanyìn",
+        "typology": "Wrought-Iron Pharmacopeia & Avian Authority Scepter",
+        "description": "The sacred wrought-iron staff crowned with a circle of birds surrounding a dominant central bird, embodying dominion over herbalism and occult realms.",
+        "etymology_and_philosophy": "Ọ̀pá Ọ̀sanyìn is the paramount liturgical and metaphysical scepter of Ọ̀sanyìn, the sovereign divinity of herbalism, pharmacology, and botanical wisdom. Forged exclusively from blackened iron by master blacksmiths, the staff typically features a circular platform bearing sixteen stylized wrought-iron birds facing inward toward a towering central bird. Cosmologically, the central bird represents Ọ̀sanyìn himself—the supreme consciousness of healing—while the surrounding sixteen birds symbolize the cosmic council of nocturnal avian powers (Àjẹ́ / Ẹlẹ́yẹ) and the sixteen major Odù Ifá. The staff embodies the profound philosophical truth that medicine (Oògùn) without spiritual alliance is impotent. When a physician (Oníṣègùn) conducts healing, the Ọ̀pá Ọ̀sanyìn is planted upright into the earth; it must never fall or lie prone, as its verticality symbolizes the unwavering axis between cosmic vital energy and terrestrial restoration. It proclaims that true healing transmutes aggressive mystical toxins into life-giving medicine through balance, intellect, and profound botanical knowledge.",
+        "historical_timeline": "Primordial / Classical Era: Consecrated across all Yoruba territories as the supreme insignia of master herbalist initiation.",
+        "material_and_craftsmanship": "Forged wrought iron (Irin Dídá) featuring sixteen perimeter birds, one dominant central avian finial, and dangling miniature bells.",
+        "social_and_ritual_context": "Planted in the sanctum of the healing lodge; touched by patients during severe crisis to draw grounding vitality and neutralize spiritual malice.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀pá Ọ̀sanyìn dúró gbọingbọin, àrùn fẹ́rẹ̀ kúrò n'ílẹ̀. (When the staff of Ọ̀sanyìn stands unwavering, disease retreats swiftly from the compound: Affirms restorative authority.)",
+          "Ẹyẹ Ọ̀sanyìn kì í fò l'ọ́sàn lásán; ọgbọ́n orí ni a fi ń wo àrùn. (The bird of Ọ̀sanyìn flies not by day in vain; deep intellectual discernment is required to cure disease: Celebrating diagnostic wisdom.)",
+          "Irin l'a fi ń bọ Ọ̀sanyìn; ẹni tí ó mọ ewé kì í bẹ̀rù ikú àìtọ́jọ́. (With consecrated iron we honor Ọ̀sanyìn; he who masters herbal wisdom fears not premature demise: Praising pharmacology.)"
+        ],
+        "provenance_and_citations": "Thompson, Robert Farris (1971). Black Gods and Kings: Yoruba Art at UCLA; Abiodun, Rowland (2014). Yoruba Art and Language; Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society."
+      },
+      "Ewé Ọ̀sanyìn": {
+        "facet_name": "Ewé Ọ̀sanyìn",
+        "typology": "Sacred Pharmacopeia & Living Botanical Intelligence",
+        "description": "The sacred botanical taxonomy and living medicinal consciousness through which Ọ̀sanyìn heals physical ailments and restores spiritual equilibrium.",
+        "etymology_and_philosophy": "Ewé Ọ̀sanyìn denotes the entirety of the sacred botanical kingdom understood as living, sentient repositories of divine Àṣẹ. In Yorùbá philosophy, plants are not passive biological entities; each leaf possesses a specific soul (Ẹ̀mí), an ancestral genealogy (Oríkì), and an primordial pact signed with Olódùmarè at the dawn of creation. No leaf may be picked for medicine without ritual greeting, remuneration (offering of cowries or alcohol to the earth), and recitation of the plant's esoteric name. This practice ensures that the living spirit of the herb awakens and actively cooperates with the physician. The classification of Ewé Ọ̀sanyìn is extraordinarily complex, categorizing plants into cooling (Èrò), heating (Gbígbóná), cleansing (Ìwẹ̀mọ́), and commanding (Àṣẹ) categories. The healing tradition asserts that for every malady that afflicts the human condition, an exact botanical counter-agent was planted in the soil before humanity arrived on earth.",
+        "historical_timeline": "Immemorial Antiquity: Systematized through thousands of years of empirical trial and spiritual revelation across the West African forest belt.",
+        "material_and_craftsmanship": "Living wild flora, dried medicinal root cuttings, consecrated calabash containers (Aaká), and clay herbal decanters.",
+        "social_and_ritual_context": "Harvested at dawn under strict spiritual purification; utilized in compounding protective amulets, curative teas, and liturgical head-cleansing baths.",
+        "proverbs_and_oral_traditions": [
+          "Ewé gbogbo kìkì oògùn; kò sí ewé tí kò l'orúkọ l'ọ́dọ̀ Ọ̀sanyìn. (Every single leaf is medicine; there exists no plant without an esoteric name before Ọ̀sanyìn: Affirming universal pharmacopeia.)",
+          "Ẹni tí kò mọ ewé a máa pe é l'ẹ́fọ́; ọgbọ́n ni a fi ń lo ewéko. (He who knows not the leaf dismisses it as ordinary weed; wisdom alone unlocks the power of flora: Teaching botanical literacy.)",
+          "Bí a bá jí l'ówurọ̀, a gbọdọ̀ kí ewé kí a tó ká a; ìbọ̀wọ̀ ni orísun ìwòsàn. (When we awaken at dawn, we must salute the leaf before harvesting; mutual reverence is the wellspring of healing: Enforcing ecological ethics.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society; Buckley, Anthony D. (1985). Yoruba Medicine; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Oníṣègùn Guild": {
+        "facet_name": "Oníṣègùn Guild",
+        "typology": "Professional College of Traditional Physicians & Pharmacologists",
+        "description": "The hereditary professional association of certified Yorùbá doctors, herbalists, and psychotherapists presiding over holistic community healthcare.",
+        "etymology_and_philosophy": "Oníṣègùn Guild designates the ancient hereditary professional organization of traditional physicians, surgeons, and psycho-spiritual therapists in Yorùbá civilization. Derived from 'Oní' (custodian/possessor), 'iṣé' (work/discipline), and 'ògùn' (medicine/remedy), the Oníṣègùn is an initiate who has mastered anatomy, pathology, pharmacology, and psychotherapy under rigorous guild apprenticeships lasting often over a decade. The guild operated with strict ethical oaths comparable to the Hippocratic tradition: an Oníṣègùn was bound to treat the destitute without exploitation, preserve medical confidentiality, and never deploy botanical knowledge for malicious homicide. In community governance, guild heads (Olórí Oníṣègùn) advised the Ọba on public sanitation, quarantine during epidemics, and seasonal dietary regulations, demonstrating the sophisticated integration of physical science and metaphysical consciousness in indigenous Yorùbá healthcare.",
+        "historical_timeline": "Classical Antiquity to Modern Era: Structured guilds operating across all Yorùbá city-states, collaborating with Babaláwo diviners.",
+        "material_and_craftsmanship": "Medicinal mortars and pestles (Odó Oògùn), leather apothecary satchels, brass weighing instruments, and consecrated diagnostic gourds.",
+        "social_and_ritual_context": "Convenes monthly for medical case peer-reviews; regulates professional certification fees and investigates malpractice claims within the realm.",
+        "proverbs_and_oral_traditions": [
+          "Oníṣègùn tòótọ́ kì í f'oògùn pa ènìyàn; ìwà rere ni àkọ́kọ́ oògùn. (A true physician never uses medicine to destroy human life; pristine character is the foremost of all remedies: Enforcing professional medical ethics.)",
+          "Bí oníṣègùn bá tọ́jú aláìsàn tán, Ọlọ́run l'ó ń wo ni sán. (When the physician has exhausted all care upon the sick, Olódùmarè grants the ultimate healing: Teaching clinical humility.)",
+          "Ọwọ́ oníṣègùn kì í bọ́ l'ójú oògùn; àṣẹ Ọ̀sanyìn wà l'ẹ́yìn rẹ̀. (The hands of the certified healer never falter in compounding remedy; the sovereign authority of Ọ̀sanyìn seals his work: Validating professional competence.)"
+        ],
+        "provenance_and_citations": "Buckley, Anthony D. (1985). Yoruba Medicine; Fadipe, N. A. (1970). The Sociology of the Yoruba; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study."
+      },
+      "Ọ̀pá Ọ̀sanyìn": {
+        "facet_name": "Ọ̀pá Ọ̀sanyìn",
+        "typology": "Wrought-Iron Pharmacopeia & Avian Authority Scepter",
+        "description": "The sacred wrought-iron staff crowned with a circle of birds surrounding a dominant central bird, embodying dominion over herbalism and occult realms.",
+        "etymology_and_philosophy": "Ọ̀pá Ọ̀sanyìn is the paramount liturgical and metaphysical scepter of Ọ̀sanyìn, the sovereign divinity of herbalism, pharmacology, and botanical wisdom. Forged exclusively from blackened iron by master blacksmiths, the staff typically features a circular platform bearing sixteen stylized wrought-iron birds facing inward toward a towering central bird. Cosmologically, the central bird represents Ọ̀sanyìn himself—the supreme consciousness of healing—while the surrounding sixteen birds symbolize the cosmic council of nocturnal avian powers (Àjẹ́ / Ẹlẹ́yẹ) and the sixteen major Odù Ifá. The staff embodies the profound philosophical truth that medicine (Oògùn) without spiritual alliance is impotent. When a physician (Oníṣègùn) conducts healing, the Ọ̀pá Ọ̀sanyìn is planted upright into the earth; it must never fall or lie prone, as its verticality symbolizes the unwavering axis between cosmic vital energy and terrestrial restoration. It proclaims that true healing transmutes aggressive mystical toxins into life-giving medicine through balance, intellect, and profound botanical knowledge.",
+        "historical_timeline": "Primordial / Classical Era: Consecrated across all Yoruba territories as the supreme insignia of master herbalist initiation.",
+        "material_and_craftsmanship": "Forged wrought iron (Irin Dídá) featuring sixteen perimeter birds, one dominant central avian finial, and dangling miniature bells.",
+        "social_and_ritual_context": "Planted in the sanctum of the healing lodge; touched by patients during severe crisis to draw grounding vitality and neutralize spiritual malice.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀pá Ọ̀sanyìn dúró gbọingbọin, àrùn fẹ́rẹ̀ kúrò n'ílẹ̀. (When the staff of Ọ̀sanyìn stands unwavering, disease retreats swiftly from the compound: Affirms restorative authority.)",
+          "Ẹyẹ Ọ̀sanyìn kì í fò l'ọ́sàn lásán; ọgbọ́n orí ni a fi ń wo àrùn. (The bird of Ọ̀sanyìn flies not by day in vain; deep intellectual discernment is required to cure disease: Celebrating diagnostic wisdom.)",
+          "Irin l'a fi ń bọ Ọ̀sanyìn; ẹni tí ó mọ ewé kì í bẹ̀rù ikú àìtọ́jọ́. (With consecrated iron we honor Ọ̀sanyìn; he who masters herbal wisdom fears not premature demise: Praising pharmacology.)"
+        ],
+        "provenance_and_citations": "Thompson, Robert Farris (1971). Black Gods and Kings: Yoruba Art at UCLA; Abiodun, Rowland (2014). Yoruba Art and Language; Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society."
+      }
+    },
+    "CORPUS_ORISA_OKO_001": {
+      "Ọkọ́ Òrìṣà Oko (Iron Staff)": {
+        "facet_name": "Ọkọ́ Òrìṣà Oko",
+        "typology": "Sacred Cast-Iron Scepter of Fertility & Terrestrial Justice",
+        "description": "The heavy cast-iron phallic staff embodying agricultural abundance, maternal fertility, and the judicial clearing of false accusations.",
+        "etymology_and_philosophy": "Ọkọ́ Òrìṣà Oko designates the monumental cast-iron staff that serves as the paramount liturgical emblem of Òrìṣà Oko, the celestial deity of agriculture, soil regeneration, and agricultural jurisprudence. Forged from recycled iron implements (hoes, scythes, and swords), the staff is crowned with an anthropomorphic face wearing regal scarifications and stylized beaded veils. Metaphysically, the staff represents the sacred masculine potency that pierces and fertilizes the receptive feminine earth (Ilẹ̀). It is both an agricultural scepter and a judicial instrument: women falsely accused of witchcraft, theft, or infidelity would clasp the staff to proclaim their innocence before the shrine at Ìráwọ̀. Òrìṣà Oko's iron never condemns the innocent; its sheer weight symbolizes the gravitational immutability of moral truth grounded in the soil.",
+        "historical_timeline": "Ancient Era: Centered at Ìráwọ̀-Ilé, extending across the western savanna agricultural belt of Yorùbáland.",
+        "material_and_craftsmanship": "Monumental cast iron (Irin Ọkọ́), brass repoussé sheath, cowrie shell bandoliers, and lead decorative rings.",
+        "social_and_ritual_context": "Erected vertically in shrine sanctuaries; brought out during harvest adjudications and fertility prayers for barren women.",
+        "proverbs_and_oral_traditions": [
+          "Ọkọ́ Òrìṣà Oko dúró s'ílẹ̀, ilẹ̀ a d'ọrọ̀; ẹni tó gbin rere a kórè àlàáfíà. (The staff of Orisha Oko stands firmly in the soil, the land yields boundless treasure; he who sows goodness reaps enduring peace: Teaching karmic retribution.)",
+          "A kì í fi ọkọ́ Òrìṣà Oko búra èké; irin ilẹ̀ kì í bọ̀wọ̀ fún irọ́. (One does not swear falsely upon the staff of Orisha Oko; the terrestrial iron respects no falsehood: Affirming judicial sanctity.)",
+          "Ọ̀rọ̀ tí ilẹ̀ bá gbọ́ kì í bàjẹ́; Òrìṣà Oko ni alákòóso gbogbo ohun tó ń hù. (The truth heard by the earth never rots; Orisha Oko is the divine superintendent of everything that sprouts: Celebrating agricultural order.)"
+        ],
+        "provenance_and_citations": "Drewal, Henry John, and John Pemberton III (1989). Yoruba: Nine Centuries of African Art and Thought; Abiodun, Rowland (2014). Yoruba Art and Language; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "New Yam Ceremonies": {
+        "facet_name": "New Yam Ceremonies",
+        "typology": "First-Fruits Agricultural Liturgy & Communal Thanksgiving",
+        "description": "The sacred annual festival and first-fruits ritual marking the harvest of new yams and the communal thanksgiving to earth divinities.",
+        "etymology_and_philosophy": "The New Yam Ceremonies (Odún Iṣu Tuntun / Ìjẹṣu) constitute the premier agricultural liturgy in Yorùbá communal life, marking the formal transition from seasonal scarcity to abundant harvest. In Yorùbá culinary ontology, the white yam (Iṣu) is not merely a staple crop; it is revered as the king of flora, endowed with vital life force that sustained ancestral migrations. Under sacred law, no citizen, chief, or monarch may consume new yams until the first tubers are harvested by the priesthood, ritually roasted, and offered to Òrìṣà Oko, Onílẹ̀, and the lineage ancestors. This prohibition prevents premature consumption of unripe crops, enforces communal solidarity, and instills cosmic gratitude. When the Ọba publicly partakes of the first sanctified yam mash, a jubilant civic declaration is made that famine has been banished from the realm for another year.",
+        "historical_timeline": "Pre-Colonial Epoch to Present: Universal civic and agrarian festival observed across all traditional Yorùbá city-states.",
+        "material_and_craftsmanship": "Consecrated first-harvest white yams (Iṣu Gégé), red palm oil, roasted rooster offerings, and fresh palm frond garlands.",
+        "social_and_ritual_context": "Civic holiday celebrated with mass drumming, communal feasting, ancestral libations, and the presentation of agricultural awards to master farmers.",
+        "proverbs_and_oral_traditions": [
+          "A kì í jẹ iṣu tuntun láì fi fún oríṣà; ẹni tó kọ̀ láti dúpẹ́ a pàdé àìtó. (One does not eat new yams without presenting the first-fruits to the deities; he who refuses gratitude meets bitter scarcity: Teaching ritual thankfulness.)",
+          "Iṣu tó gbó kì í bẹ̀rù ọ̀bẹ; ọdún iṣu tuntun dé, ayé a d'ọrọ̀. (The mature yam fears not the harvest knife; the season of new yams arrives, bringing commonwealth abundance: Celebrating agricultural maturity.)",
+          "Bí àgbẹ̀ bá kórè tán, ayé a yọ̀; Òrìṣà Oko l'ó fi oúnjẹ bọ́ ayé. (When the farmer finishes harvesting, the city rejoices; Orisha Oko has nourished all humanity with divine sustenance: Praising agricultural labor.)"
+        ],
+        "provenance_and_citations": "Fadipe, N. A. (1970). The Sociology of the Yoruba; Johnson, Samuel (1921). The History of the Yorubas; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
+      },
+      "Ìráwọ̀ Shrine": {
+        "facet_name": "Ìráwọ̀ Shrine",
+        "typology": "Paramount Theocratic Seat & Earth Oracle Sanctuary",
+        "description": "The ancient holy city and mother temple complex of Òrìṣà Oko located in western Ọ̀yọ́, serving as the supreme court of arbitration for land disputes.",
+        "etymology_and_philosophy": "Ìráwọ̀ Shrine designates the primordial holy city and primary pilgrimage temple complex dedicated to Òrìṣà Oko, situated in the upper Ogun river region near the western frontier of Ọ̀yọ́. Historically ruled by the royal priest-king titled the Olúráwọ̀, the city functioned as an inviolable sanctuary of asylum and supreme theocratic arbitration. Any person fleeing wrongful political persecution, false charges of witchcraft, or boundary feuds could seek unconditional sanctuary within the sacred perimeter of Ìráwọ̀. Once inside, shedding blood was strictly forbidden by cosmic decree. The shrine's priestesses, recognized by their distinctive red and white chalk forehead markings and woven lead jewelry, administered the sacred oaths of clearance. Ìráwọ̀ was regarded not merely as a local temple, but as the cosmic anchor of planetary soil fertility.",
+        "historical_timeline": "Ancient Era: Theocratic sanctuary maintained through royal charters by the Alaafin of Oyo and western Yoruba obas.",
+        "material_and_craftsmanship": "Ancient laterite sanctuary walls, megalithic earthen shrines, consecrated iron altars, and lead ritual chalices.",
+        "social_and_ritual_context": "Pilgrimage destination for farmers, barren individuals, and high priests seeking authentic consecrations of agricultural regalia.",
+        "proverbs_and_oral_traditions": [
+          "Ẹni tó sá dé Ìráwọ̀ ti r'àbò; Òrìṣà Oko kì í jẹ́ kí àlejò rẹ̀ tẹ́. (He who flees to the sanctuary of Ìráwọ̀ finds inviolable safety; Orisha Oko never allows his pilgrim to be disgraced: Celebrating unconditional asylum.)",
+          "Ìráwọ̀ kì í ṣe ilé ẹjọ́ lásán; ibi tí a ti ń fọ ohùn òtítọ́ ni. (Ìráwọ̀ is no ordinary courthouse; it is the holy sanctum where the unvarnished voice of truth resonates: Honoring divine arbitration.)",
+          "Omi tútù ní ń bẹ ní Ìráwọ̀; ẹni tó rí Òrìṣà Oko a bọ́ lọ́wọ́ gbèsè. (Living cool waters flow at Ìráwọ̀; he who beholds Orisha Oko is liberated from spiritual debts: Praising redemptive peace.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Morton-Williams, Peter (1964). An Outline of the Cosmology and Cult Organization of the Oyo Yoruba; Abiodun, Rowland (2014). Yoruba Art and Language."
+      }
+    },
+    "Ọ̀yá": {
+      "Odò Ọya (River Niger)": {
+        "facet_name": "Odò Ọya",
+        "typology": "Continental Riverine Body & Hydrological Boundary Divinity",
+        "description": "The monumental River Niger conceived as the living aqueous manifestation of Ọ̀yá, separating cultural domains and carrying dynamic trade vitality.",
+        "etymology_and_philosophy": "Odò Ọya designates the continental River Niger, personified in Yorùbá cosmology as the living aquatic manifestation of Queen Ọ̀yá. Extending over four thousand kilometers, this vast river forms the natural geographic and metaphysical boundary between northern savanna cultures and southwestern Yorùbá civilization. While most aquatic deities in Yorùbá cosmology (such as Ọ̀ṣun and Yemọja) represent sweet waters or maternal depths, Odò Ọya embodies swift currents, transformative crossings, and territorial demarcation. The river is reverently addressed as 'Odò tó kùn ti kò gba ọkọ̀ olókùnrùn' (The swirling torrent that permits no frail canoe). Historically, crossing Odò Ọya required propitiation with reddish rams, camwood, and copper rings to secure safe passage through dangerous whirlpools. Cosmologically, it represents the fluid counterpart to Ọ̀yá's fierce atmospheric winds, demonstrating how primordial energy alternates effortlessly between aqueous depth and gaseous storm.",
+        "historical_timeline": "Primordial Era to Present: Ancient trade artery, military frontier, and spiritual boundary throughout West African history.",
+        "material_and_craftsmanship": "Consecrated terracotta river jars, reddish river pebbles (Otá Ọya), copper bracelets, and dried river reeds.",
+        "social_and_ritual_context": "Venerated by river navigators, fisherfolk, and trade caravans; ritual libations poured before embarking on long-distance fluvial journeys.",
+        "proverbs_and_oral_traditions": [
+          "Odò Ọya kì í kún fún àkúyà; ẹni tí ó mọ ìwẹ̀ l'ó ń kọjá rẹ̀. (The River Niger overflows not for the faint of heart; only he who has mastered swimming crosses her depths: Praising seasoned fortitude.)",
+          "Ọya l'ó l'odò, Ṣàngó l'ó l'àrá; omi àti iná kì í ṣe ọ̀tá l'ọ́dọ̀ wọn. (Ọya owns the roaring river, Sango owns the lightning strike; water and fire are never foes in their sacred realm: Celebrating divine union.)",
+          "Ẹni tó bá fẹ́ kọjá Odò Ọya kò gbọdọ̀ gbé èké wọ ọkọ̀. (He who seeks to cross the River Niger must carry no deceit into the vessel; the swift current reveals all hidden fraud: Affirming moral purity.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Verger, Pierre (1957). Notes sur le culte des orisa et vodun; Gleason, Judith (1987). Oya: In Praise of the Goddess."
+      },
+      "Ọya Afẹ́fẹ́ (Wind)": {
+        "facet_name": "Ọya Afẹ́fẹ́",
+        "typology": "Atmospheric Tempest & Dynamic Velocity Aspect",
+        "description": "The invisible, unstoppable wind and hurricane tempest aspect of Ọ̀yá that uproots stagnancy and heralds thunderstorms.",
+        "etymology_and_philosophy": "Ọya Afẹ́fẹ́ embodies the invisible, dynamic, and irresistible kinetic velocity of atmospheric winds and tornadic storms. Known liturgically as 'Afẹ́fẹ́ Lékè-Lékè Tí Ń Dá Igi L'ọ́lá' (The Roaring Wind That Breaks Giant Trees to Assert Sovereignty), this facet manifests the transformative force of change in the universe. In Yorùbá philosophy, wind represents the invisible yet tangible presence of spirit; one cannot grasp wind in the hand, yet its power can dismantle stone monuments and uproot century-old trees in seconds. Ọya Afẹ́fẹ́ serves as the celestial herald of Ṣàngó: before lightning strikes and thunder rolls, her ferocious winds sweep across the earth, clearing dry debris, testing structural foundations, and opening the heavens for rain. She teaches that destruction of rotten forms is often the necessary prelude to renewed fertility and cultural rebirth.",
+        "historical_timeline": "Cosmological Antiquity: Central element in atmospheric theology, invoked during seasonal weather shifts and harmattan gales.",
+        "material_and_craftsmanship": "Cast copper wind chimes, buffalo horns (Ìrùkẹ̀rẹ̀ Ọya), red cloth ribbons, and whirlwind dust charms.",
+        "social_and_ritual_context": "Propitiated when catastrophic storms threaten farm communities; priestesses dance with erratic, whirlwind movements imitating the tempest.",
+        "proverbs_and_oral_traditions": [
+          "Afẹ́fẹ́ Ọya kì í fẹ́ láì lu igi; kò sí ẹni tí ó le dènà ìjì. (The whirlwind of Ọ̀yá blows not without testing the tree; no mortal force can obstruct the storm: Teaching inevitable change.)",
+          "Ọya Afẹ́fẹ́ ń fọ́ ilé tí a kọ́ sí orí èké; ìpìlẹ̀ tòótọ́ nìkan l'ó le dúró. (The wind of Ọ̀yá demolishes houses built upon falsehood; only the true foundation withstands her breath: Affirming moral integrity.)",
+          "Bí afẹ́fẹ́ bá ń fẹ́, a gbọdọ̀ gbọ́ ohùn Ọya; ẹni tó kọ̀ láti tẹríba a fọ́. (When the tempest rises, we must heed the voice of Ọ̀yá; he who refuses to bow will be broken: Exhorting spiritual humility.)"
+        ],
+        "provenance_and_citations": "Gleason, Judith (1987). Oya: In Praise of the Goddess; Abiodun, Rowland (2014). Yoruba Art and Language; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Ìrukẹ̀rẹ̀ Ọya": {
+        "facet_name": "Ìrukẹ̀rẹ̀ Ọya",
+        "typology": "Sacerdotal Buffalo-Tail Scepter of Command",
+        "description": "The sacred fly-whisk scepter crafted from wild water-buffalo tail, used by priestesses to direct atmospheric currents and bless devotees.",
+        "etymology_and_philosophy": "Ìrukẹ̀rẹ̀ Ọya designates the consecrated ritual fly-whisk crafted exclusively from the black tail of the wild bush cow or water buffalo (Ẹfọ̀n), which is the primary sacred zoomorphic totem of Ọ̀yá. In Yorùbá mythological narrative, Ọ̀yá was originally a supernatural buffalo maiden who shed her animal pelt to marry Ṣàngó, retaining her primal ferocity beneath her regal exterior. The Ìrukẹ̀rẹ̀ is not a decorative ornament; it is an active liturgical wand charged with electric Àṣẹ. During possession ceremonies, an initiated priestess (Ìyá Ọya) sweeps the whisk through the air in sharp, slicing motions to command spiritual currents, disperse noxious psychic energies, calm violent squalls, and bestow protective blessings upon the congregation. The scepter represents sovereign mastery over unseen forces and the fierce maternal ferocity that shields the devotees from harm.",
+        "historical_timeline": "Classical Antiquity: Hallmark regalia of Ọ̀yá priestesses across Old Ọ̀yọ́, Ìrà, and adjacent northern Yorùbá kingdoms.",
+        "material_and_craftsmanship": "Naturally cured black water-buffalo hair tail, carved hardwood handle encased in beaded sheath or cast brass fittings.",
+        "social_and_ritual_context": "Carried by Ọ̀yá priestesses during annual processions, ancestral masquerade (Egúngún) escorts, and cleansing rites.",
+        "proverbs_and_oral_traditions": [
+          "Ìrukẹ̀rẹ̀ Ọya kì í gbá ibi lásán; ibi tí ó bá kàn a di àlàáfíà. (The horse-tail scepter of Ọ̀yá sweeps not in vain; whatever space it touches is cleansed with peace: Celebrating spiritual purification.)",
+          "Ẹfọ̀n l'ó l'ìrù, Ọya l'ó l'àṣẹ; a kì í f'ọwọ́ pa iru ẹranko búburú. (The wild buffalo owns the tail, Ọ̀yá wields the divine authority; one handles not the beast's tail without sacred consecration: Teaching liturgical awe.)",
+          "Ọwọ́ tí ó mú ìrukẹ̀rẹ̀ Ọya kì í bẹ̀rù ajogun; gbogbo ibi ni ń sá fún un. (The hand holding the whisk of Ọ̀yá fears no malevolent spirits; adversity flees before its sweep: Affirming spiritual protection.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Gleason, Judith (1987). Oya: In Praise of the Goddess; Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art and Thought."
+      },
+      "Ìyál'ọ́jà Guild": {
+        "facet_name": "Ìyál'ọ́jà Guild",
+        "typology": "Sovereign Market Mothers' Guild & Commercial Directorate",
+        "description": "The matriarchal commercial guild led by the Ìyál'ọ́jà, governing market economic transactions, price stability, and sacred commerce under Ọ̀yá's protection.",
+        "etymology_and_philosophy": "The Ìyál'ọ́jà Guild (Ẹgbẹ́ Ìyál'ọ́jà) constitutes the paramount female economic institution in Yorùbá civic life, overseeing the administration, security, price stabilization, and spiritual equilibrium of the marketplace (Ọjà). In Yorùbá metaphysics, the marketplace is considered a sacred threshold between the visible world of commerce and the invisible spirit realm, presided over jointly by Èṣù and Ọ̀yá (the divine mistress of trade and open gates). The Ìyál'ọ́jà (literally 'Mother of the Market') is invested with supreme jurisdictional authority to resolve commercial disputes, establish standardized commodity prices, prevent monopolistic hoarding, and collect market dues. The guild performs mandatory nocturnal propitiations at the market crossroads to ensure prosperity and protect buyers and sellers from epidemic disease and civic riot.",
+        "historical_timeline": "Pre-Colonial Era to Present: Powerful autonomous political-economic corporation across all Yorùbá kingdoms.",
+        "material_and_craftsmanship": "Beaded wrist insignia of office, brass ritual bells (Aogo), carved cowrie measuring trays, and sanctified marketplace boundary stones.",
+        "social_and_ritual_context": "Convenes weekly to arbitrate market conflicts, liaises with the Ọba's palace council, and organizes annual market purification festivals.",
+        "proverbs_and_oral_traditions": [
+          "Ọjà kì í tà láì kí Ìyál'ọ́jà; ọ̀rọ̀ ọjà kì í ṣe ọ̀rọ̀ ẹnìkan. (The market thrives not without revering the Ìyál'ọ́jà; the enterprise of commerce is never the domain of a solitary actor: Affirming collective economic governance.)",
+          "Ìyál'ọ́jà l'ó l'ọjà, Ọya l'ó l'àṣẹ; èrè tí a kò fọwọ́ tọ́ kì í pẹ́ n'ílẹ̀. (The Market Mother governs the bazaar, Ọ̀yá commands the divine authority; illegitimate profit never endures in the household: Warning against commercial corruption.)",
+          "Àlàáfíà ọjà ni ọrọ̀ ìlú; bí ọjà bá dákẹ́, ebi a wọ ààfin. (Peace in the marketplace is the wealth of the commonwealth; if commerce falls silent, famine breaches the royal palace: Celebrating commercial vitality.)"
+        ],
+        "provenance_and_citations": "Fadipe, N. A. (1970). The Sociology of the Yoruba; Johnson, Samuel (1921). The History of the Yorubas; Sudarkasa, Niara (1973). Where Women Work: A Study of Yoruba Women in the Marketplace."
+      }
+    },
+    "CORPUS_OBALUAYE_001": {
+      "Ọbalúayé Temple of Ọ̀yọ́": {
+        "facet_name": "Ọbalúayé Temple of Ọ̀yọ́",
+        "typology": "Imperial Quarantine Sanctuary & Epidemic Jurisprudence Court",
+        "description": "The paramount imperial shrine complex in Old Ọ̀yọ́ dedicated to Ọbalúayé, regulating infectious disease isolation, earth ethics, and judicial oaths.",
+        "etymology_and_philosophy": "Ọbalúayé Temple of Ọ̀yọ́ designates the monumental imperial theocratic complex established outside the city walls of Ọ̀yọ́-Ilé, functioning as both the metropolitan seat of Ọbalúayé worship and the imperial isolation sanctuary for pestilential epidemics. Derived from 'Ọba-lú-ayé' (The King Who Punishes the World / Sovereign Lord of the Earth), this temple was intentionally situated in the peripheral outskirts to maintain quarantine safety while remaining politically integrated into the imperial council through the high priest titled the Baálẹ̀ Ọbalúayé. In Yorùbá epidemiology and moral philosophy, infectious plagues (smallpox, measles, virulent fevers) were never understood as random biological accidents; they were viewed as the thermodynamic retribution of a scorched earth against human arrogance, greed, perjury, and ecological corruption. The temple priesthood served as the supreme sanitary inspectors of the empire, burying victims with strict bio-spiritual protocols to prevent contagion.",
+        "historical_timeline": "Imperial Ọ̀yọ́ Era: Maintained under direct royal subvention from the Aláàfin as the supreme center of pandemic management.",
+        "material_and_craftsmanship": "Sun-dried laterite temple courtyards, thatched roofs treated with herbal flame-retardants, sacred broom wands (Ṣàṣàrà), and clay cooling jars.",
+        "social_and_ritual_context": "Administered mandatory quarantine during outbreaks; administered infallible judicial oaths against suspects accused of clandestine poisoning.",
+        "proverbs_and_oral_traditions": [
+          "Ọbalúayé kì í jẹ́ kí ilẹ̀ gbóná lásán; ìwà búburú l'ó ń bí oru ayé. (Ọbalúayé allows not the earth to burn with fever in vain; corrupt character breeds the scorching heat of the world: Teaching moral epidemiology.)",
+          "A kì í pè é ní orúkọ lásán; Ilẹ̀ l'a fi ń bọ Ọba tó l'ayé. (One utters not his dread name in trivial casualness; with sacred earth we appease the sovereign who owns the world: Instilling liturgical awe.)",
+          "Ẹni tí ó sá pamọ́ fún ètùtù kò le sá fún Ọbalúayé; gbogbo ilẹ̀ l'ó mọ ẹsẹ̀ ẹlẹ́bi. (He who hides from moral restitution cannot hide from Ọbalúayé; the living earth registers every guilty footprint: Asserting inescapable retribution.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Morton-Williams, Peter (1964). An Outline of the Cosmology and Cult Organization of the Oyo Yoruba; Idowu, E. Bolaji (1962). Olodumare."
+      },
+      "Ìtọ́jú Guilds": {
+        "facet_name": "Ìtọ́jú Guilds",
+        "typology": "Sacerdotal Order of Infectious Caregivers & Morticians",
+        "description": "The dedicated priestly fraternity specializing in quarantine nursing, epidemic decontamination, and the mortuary rites of infectious casualties.",
+        "etymology_and_philosophy": "Ìtọ́jú Guilds designate the specialized sacerdotal guilds of caretakers, immunologists, and mortuary practitioners initiated into the fierce mysteries of Ọbalúayé. Derived from 'Ìtọ́jú' (caregiving, intensive nursing, sustained maintenance), the members of this guild were immune survivors of smallpox and infectious diseases who devoted their lives to treating the afflicted when all other citizens fled in terror. In classical Yorùbá society, when a household was struck by pestilence, the Ìtọ́jú guild immediately erected the red-dyed quarantine cloths (Aṣọ Òdòdó), sequestered the patients, and administered cooling infusions (Èrò) made from bitter herbs, shea butter, and snail liquid. They also bore the solemn duty of purifying the contaminated belongings and conducting isolated burials, demonstrating astonishing heroism and an advanced empirical grasp of infectious disease transmission centuries prior to Western germ theory.",
+        "historical_timeline": "Classical Antiquity: Operating continuously through urban and rural Yorùbá communities during seasonal outbreaks.",
+        "material_and_craftsmanship": "Camwood protective body pigments (Osùn), herbal cooling washes (Ẹ̀rọ Ọbalúayé), palm-leaf quarantine markers, and clay fumigation braziers.",
+        "social_and_ritual_context": "Active during community health emergencies; compensated through state-mandated estate allocations while maintaining strict confidentiality.",
+        "proverbs_and_oral_traditions": [
+          "Ẹni tí ó ní ìtọ́jú Ọbalúayé kì í bẹ̀rù iná; ọwọ́ tútù ni a fi ń mú oru kúrò. (He who possesses the nursing wisdom of Ọbalúayé fears no fever; with cooling hands we extinguish burning pestilence: Praising selfless medical care.)",
+          "Ìtọ́jú kì í ṣe iṣẹ́ ẹ̀rù; ọkàn líle l'a fi ń bọ́ ọmọ nínú àrùn. (Infectious caregiving is no enterprise for cowardice; stalwart courage is required to rescue humanity from disease: Celebrating clinical fortitude.)",
+          "Bí àrùn bá wọ̀lú, àwọn onítọ́jú ni ààbò wa; ìbọ̀wọ̀ fún wọn ni ìlera ìlú. (When epidemic invades the city, the caregivers are our fortress; honoring them preserves communal health: Enforcing respect for healthcare workers.)"
+        ],
+        "provenance_and_citations": "Buckley, Anthony D. (1985). Yoruba Medicine; Maclean, Una (1971). Magical Medicine: A Nigerian Case-Study; Verger, Pierre (1995). Ewe: The Use of Plants in Yoruba Society."
+      }
+    },
+    "CORPUS_BABALU_AYE_001": {
+      "Ṣọ̀npọ̀nná Shrine": {
+        "facet_name": "Ṣọ̀npọ̀nná Shrine",
+        "typology": "Primordial Earth-Furnace & Epidemic Sanctuary",
+        "description": "The peripheral sanctuary dedicated to Ṣọ̀npọ̀nná, venerated with profound dread and reverence as the sovereign master of contagious fever and hot earth.",
+        "etymology_and_philosophy": "Ṣọ̀npọ̀nná Shrine designates the ancient liturgical grove and earthen altar dedicated to Ṣọ̀npọ̀nná, the ancient indigenous Yorùbá divinity of smallpox, contagious cutaneous eruptive diseases, and planetary heat. Liturgically addressed through honorific euphemisms such as 'Ilẹ̀ Gbígbóná' (The Hot Earth) or 'Ọbalúayé' to avoid speaking his terrible true name aloud, Ṣọ̀npọ̀nná embodies the absolute authority of terrestrial heat against cosmic discordance. In Yorùbá metaphysics, high fever is viewed as an inner furnace ignited by spiritual disharmony. The shrine, invariably situated outside village gates amid prickly cactus hedges, serves as a constant architectural reminder that nature possesses ferocious retributive boundaries which humanity violates at its mortal peril. Inside the shrine, consecrated terracotta pots containing cooling herb decoctions counteract the fierce solar heat, illustrating the sacred theological balance between lethal fire and redemptive coolness.",
+        "historical_timeline": "Pre-Colonial Antiquity: Feared and revered as supreme judicial and epidemiological sanctuary across all Yorùbá kingdoms.",
+        "material_and_craftsmanship": "Unbaked red clay altar mounds, terracotta cooling chalices, wild cactus living perimeters, and consecrated sesame seeds.",
+        "social_and_ritual_context": "Venerated during peak dry season (the hottest months); propitiations made to cool the land and prevent devastating smallpox outbreaks.",
+        "proverbs_and_oral_traditions": [
+          "A kì í bá Ṣọ̀npọ̀nná d'ọ̀rọ̀; tútù l'a fi ń kọ́jú iná rẹ̀. (One argues not with Ṣọ̀npọ̀nná; only soothing coolness withstands his scorching furnace: Teaching peaceful appeasement.)",
+          "Ilẹ̀ gbígbóná kì í jẹ́ kí a rin ìrìn àbọ̀; ẹni tí ó bọ̀wọ̀ fún ilẹ̀ ni ilẹ̀ ń gbè. (The hot earth permits no ambiguous wandering; he who reveres the soil is preserved by the soil: Affirming ecological humility.)",
+          "Bí oorun bá mú gan-an, a kì í bu orúkọ oríṣà; ìdákẹ́rọ́rọ́ ni ọgbọ́n àwọn àgbà. (When the solar heat reaches its zenith, one utters not the secret name of the deity; reverent silence is the wisdom of the elders: Enforcing liturgical discretion.)"
+        ],
+        "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Johnson, Samuel (1921). The History of the Yorubas; Verger, Pierre (1957). Notes sur le culte des orisa et vodun."
+      },
+      "Ọ̀pá Ṣàṣàrà": {
+        "facet_name": "Ọ̀pá Ṣàṣàrà",
+        "typology": "Consecrated Broom Wand of Purification & Disease Expulsion",
+        "description": "The sacred broom wand made from dried palm midribs bound with leather and cowries, used to sweep away pestilence and inflict punitive pustules.",
+        "etymology_and_philosophy": "Ọ̀pá Ṣàṣàrà designates the consecrated ritual broom wand that serves as the paramount instrument of authority for the priesthood of Ṣọ̀npọ̀nná / Ọbalúayé. Crafted from the stiff central midribs of consecrated oil palm fronds (Ọ̀wọ̀ Ọ̀pẹ) and bound with red-dyed leather, copper wire, and cowrie shells, the Ṣàṣàrà embodies a profound dualistic theology. On one hand, each individual midrib represents an arrow of disease capable of inflicting virulent cutaneous eruptions upon arrogant transgressors and perjurers. On the other hand, when gathered and bound into a unified bundle, the broom symbolizes the collective strength and sweeping action that expels pestilence, moral filth, and sorcery from the community. When the high priest brandishes the Ṣàṣàrà during epidemic cleansing rites, he rhythmically strikes the earth, demanding that sickness be reabsorbed into subterranean depths and that cooling harmony (Àlàáfíà) return to the commonwealth.",
+        "historical_timeline": "Ancient Era: Standard liturgical implement of Ṣọ̀npọ̀nná priests throughout southwestern Nigeria and the Republic of Benin.",
+        "material_and_craftsmanship": "Dried oil palm leaf midribs, red morocco leather casing, consecrated cowrie strands, and camwood protective paste.",
+        "social_and_ritual_context": "Used in public street sweepings during epidemics to cast out infectious spirits and in shrine sanctuaries to bless devotees with longevity.",
+        "proverbs_and_oral_traditions": [
+          "Ṣàṣàrà kì í gbá ilé lásán; àrùn ni ó ń fẹ́ kúrò l'ọ́gbà. (The sacred broom sweeps not the compound in vain; pestilence alone it banishes from the household: Celebrating public health purification.)",
+          "Ẹyọ kan ọ̀wọ̀ kì í le gbá ilẹ̀; àgbájọ ọwọ́ l'a fi ń bọ Ọbalúayé. (A solitary broom reed cannot sweep the floor; only collective solidarity appeases Ọbalúayé: Teaching unified communal strength.)",
+          "Ọ̀pá Ṣàṣàrà kọ́jú sí ibi, ibi a di rere; àṣẹ oríṣà kì í tẹ́. (When the broom wand faces malevolence, affliction transmutes into grace; the divine decree never suffers defeat: Affirming miraculous restoration.)"
+        ],
+        "provenance_and_citations": "Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art and Thought; Buckley, Anthony D. (1985). Yoruba Medicine; Abiodun, Rowland (2014). Yoruba Art and Language."
+      }
+    },
+    "CORPUS_NANA_BURUKU_001": {
+      "Ìbírí (Sacred Curved Wand)": {
+        "facet_name": "Ìbírí",
+        "typology": "Primordial Curved Earth Scepter of Matriarchal Authority",
+        "description": "The sacred curved wooden wand wrapped in raffia and cowries, embodying primordial maternal authority, antiquity, and subterranean power.",
+        "etymology_and_philosophy": "Ìbírí designates the ancient curved staff and primary theological emblem of Nàná Burúkú, the primordial grandmother divinity of the earth, ancient marshes, and subterranean depths. Hand-carved into a graceful curved hook reminiscent of an embryo, a snake, or an ancient digging stick, the Ìbírí is swathed in bleached raffia fibers (Màrìwò) and encrusted with dense strands of cowrie shells. Unlike nearly all other Yorùbá divinities whose liturgies are intimately intertwined with iron, Nàná Burúkú strictly abhors iron; her worship preserves the ancient lithic and bone technologies that preceded the Iron Age. Sacrifices to her are severed with bamboo knives or sharpened bone splinters, never iron cutlasses. The Ìbírí is held by her elderly priestesses crooked in the left arm like a cradled infant, symbolizing the maternal tenderness that harbors primordial life alongside the inescapable subterranean silence that awaits all living flesh in the grave.",
+        "historical_timeline": "Pre-Metallurgical Antiquity: Oldest stratum of West African earth cults, originating in the Mahi and Popo regions before integration into Yorùbá cosmology.",
+        "material_and_craftsmanship": "Naturally curved hardwood root, unspun natural raffia fibers, hundreds of consecrated cowrie shells, and blue trade beads.",
+        "social_and_ritual_context": "Carried exclusively by initiated post-menopausal matriarchs during annual nocturnal rites; cradled like a child while chanting ancient invocations.",
+        "proverbs_and_oral_traditions": [
+          "Ìbírí Nàná kì í gba irin; àtijọ́ ni ọ̀rọ̀ ilẹ̀, kò sí ohun tó kọjá àgbàlagbà. (The sacred wand of Nàná admits no iron; ancient is the covenant of the soil, nothing surpasses the primal elder: Praising primordial antiquity.)",
+          "Ẹni tó gbé Ìbírí d'ọmọ a rí àlàáfíà; Nàná Burúkú ni ìyá gbogbo ayé. (She who cradles the Ìbírí staff like an infant finds enduring peace; Nàná Burúkú is the supreme ancestral mother of all existence: Celebrating maternal divinity.)",
+          "A kì í fi agídí bá Nàná sọ̀rọ̀; ìbọ̀wọ̀ ni a fi ń dé ibùdó rẹ̀. (One speaks not with arrogance before Nàná; solemn humility alone enters her sacred sanctuary: Teaching absolute respect for elders.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre Fatumbi (1957). Notes sur le culte des orisa et vodun; Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art; Idowu, E. Bolaji (1962). Olodumare."
+      },
+      "Nàná Swamps": {
+        "facet_name": "Nàná Swamps",
+        "typology": "Primordial Mangrove & Mud Ecosystem Sanctum",
+        "description": "The sacred wetlands, brackish swamps, and alluvial mangrove zones where land and water merge into primordial generative slime.",
+        "etymology_and_philosophy": "Nàná Swamps designate the sacred coastal wetlands, mangrove lagoons, and freshwater swamps where the boundaries between solid earth (Ilẹ̀) and fluid water (Omi) dissolve into generative primordial mud. In the cosmogonic mythology of West Africa, the world before human settlement was an undifferentiated watery morass. Nàná Burúkú embodies this pre-creation state—the fertile, anaerobic muck from which all biological life first emerged and to which all decayed matter eventually returns. In Yorùbá-Fon philosophical exchange, these swamps are treated as inviolable conservation sanctuaries where commercial drainage, deforestation, and industrial pollution are strictly forbidden by sacred taboo. The wetlands represent the planetary womb: silent, unhurried, dark, and pregnant with the latent evolutionary mysteries of existence.",
+        "historical_timeline": "Geological Antiquity: Protected as living ecological temples across the coastal lagoon belts of southwest Nigeria, Benin, and Togo.",
+        "material_and_craftsmanship": "Living mangrove canopy, alluvial black mud, clay sediment basins, and consecrated snail shell deposits.",
+        "social_and_ritual_context": "Pilgrimage site for elder priestesses; mud from the sanctuary is applied to the bodies of fevered patients to absorb heat and restore cellular vitality.",
+        "proverbs_and_oral_traditions": [
+          "Ẹrọ̀fọ̀ Nàná kì í pa ènìyàn; ibùgbé ìwòsàn ni àbàtà rẹ̀. (The sacred mud of Nàná destroys not the human body; a sanctuary of deep healing is her wetland swamp: Praising restorative ecology.)",
+          "Omi àti ilẹ̀ l'ó d'àbàtà; kò sí ẹni tó le f'ọwọ́ pa orísun ẹ̀mí rẹ́. (Water and earth combined created the primordial swamp; no mortal hand can erase the original wellspring of life: Teaching planetary reverence.)",
+          "Bí a bá bọ̀wọ̀ fún àbàtà, ilẹ̀ a tútù; Nàná Burúkú kì í gbàgbé ọmọ rẹ̀. (If we revere the sacred marshlands, the earth remains cool and fertile; Nàná Burúkú never abandons her children: Affirming ecological harmony.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre (1957). Notes sur le culte des orisa et vodun; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Maupoil, Bernard (1943). La géomancie à l'ancienne Côte des Esclaves."
+      },
+      "Dahomey-Yoruba Confluence": {
+        "facet_name": "Dahomey-Yoruba Confluence",
+        "typology": "Trans-Cultural Syncretic Bridge & Fon-Yorùbá Convergence",
+        "description": "The dynamic historical and metaphysical corridor through which Nàná Burúkú bridged Fon, Ewe, and Yorùbá theologies.",
+        "etymology_and_philosophy": "The Dahomey-Yoruba Confluence highlights the deep historical, linguistic, and liturgical interchange that flourished along the western borderlands between the Yorùbá city-states (Ketu, Sabe, Ọ̀yọ́) and the Fon kingdom of Dahomey (Abomey and Allada). Nàná Burúkú, along with Ọbalúayé (Sakpata) and Ṣàngó (Xevioso), served as supreme theological bridges across these ethnolinguistic zones. Rather than sparking religious conflict, shared devotion to Nàná created diplomatic sanctuaries of mutual truce where royal envoys, merchants, and initiated priests moved unmolested across national borders. This confluence demonstrates the profound ecumenical genius of indigenous West African thought: religious differences were recognized not as contradictory heresies, but as complementary cultural dialects translating the identical underlying realities of Olódùmarè / Mawu-Lisa into human ceremony.",
+        "historical_timeline": "17th to 19th Century: Cross-border theocratic exchange, royal marriage alliances, and transnational initiation networks.",
+        "material_and_craftsmanship": "Bilingual Fon-Yorùbá liturgy inscriptions, cross-cultural terracotta pottery styles, and woven raffia textiles.",
+        "social_and_ritual_context": "Celebrated in cross-border pilgrimage festivals where Fon Vodunsi and Yorùbá Ìyálórìṣà jointly conduct communal libations.",
+        "proverbs_and_oral_traditions": [
+          "Èdè méjì kì í dí ọ̀nà oríṣà; Nàná Burúkú gbọ́ gbogbo ohùn. (Two distinct tongues do not obstruct the path of the deity; Nàná Burúkú comprehends every human voice: Celebrating transcultural universality.)",
+          "Bí Ọ̀yọ́ bá ń bọ Nàná, Abọ́mẹ̀ a máa yọ̀; orísun kan náà l'a ti mu omi. (When Ọ̀yọ́ honors Nàná, Abomey rejoices in solidarity; from the identical wellspring we all drink living water: Affirming pan-African kinship.)",
+          "Àlàáfíà l'ó so ayé pọ̀; oríṣà kì í bọ́ s'áàrin ogun láì l'àlàáfíà. (Peace alone binds the world in unity; the deities enter not the theater of war without bearing the banner of reconciliation: Exhorting diplomatic harmony.)"
+        ],
+        "provenance_and_citations": "Verger, Pierre (1957). Notes sur le culte des orisa et vodun; Law, Robin (1991). The Slave Coast of West Africa; Maupoil, Bernard (1943). La géomancie à l'ancienne Côte des Esclaves."
+      }
+    },
+    "Orí": {
+      "Orí Inú": {
+        "facet_name": "Orí Inú",
+        "typology": "Internal Spiritual Consciousness & Metaphysical Essence",
+        "description": "The transcendent inner head and immortal divine consciousness chosen in Ọ̀run, determining personal destiny and existential character.",
+        "etymology_and_philosophy": "Orí Inú (literally 'The Inner Head') is the foundational metaphysical concept of personal divinity, spiritual consciousness, and existential destiny in Yorùbá philosophy. Distinct from the physical, biological skull (Orí Òde), Orí Inú represents the immortal divine spark allocated to each individual by Olódùmarè at the heavenly court of Àjàlá Mọ̀pín (the divine potter of heads) before physical incarnation. It embodies personal destiny (Àkúnlẹ̀yàn / Àkúnlẹ̀gbà), intuition, character (Ìwà), and latent potential. In Yorùbá theology, Orí Inú is venerated as the supreme personal deity: 'Kò sí oríṣà tí ń dá ni gbè lẹ́yìn orí ẹni' (No external divinity can bless an individual without the explicit consent of their own inner head). Even Ifá, Ògún, or Ṣàngó can only facilitate what the individual's Orí Inú has already ratified. Living ethically, exercising patience (Sùúrù), and nurturing pristine character are regarded as the paramount acts of devotion required to align conscious action with one's chosen celestial blueprint.",
+        "historical_timeline": "Primordial Cosmogony: The supreme cornerstone of individual ontology across all Yorùbá philosophy.",
+        "material_and_craftsmanship": "Non-physical metaphysical consciousness; consecrated through the physical shrine of Ilé-Orí and white cotton head coverings.",
+        "social_and_ritual_context": "Venerated through the ritual of Bíbọ Orí (Head Propitiation), performed at life crossroads, achievements, and during times of deep crisis.",
+        "proverbs_and_oral_traditions": [
+          "Orí l'ó ń da ni, kò sí oríṣà tí ń gbè ni lẹ́yìn orí ẹni. (It is one's inner head that shapes destiny; no deity can bestow a blessing without the consent of one's own inner consciousness: Declaring self-responsibility.)",
+          "Orí inú kì í ba orí òde jẹ́; ìwà rere ni egbòogi orí. (The inner head never ruins the outer head; pristine moral character is the sovereign medicine of the soul: Teaching ethical alignment.)",
+          "Bí mo bá jí l'ówurọ̀, orí mi ni màá kọ́kọ́ kí; orí l'alábàárìn mi. (When I awaken at dawn, my own inner head I shall greet first; my inner soul is my eternal companion: Affirming internal spiritual sovereignty.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Gbadegesin, Segun (1991). African Philosophy: Traditional Yoruba Philosophy and Contemporary African Realities."
+      },
+      "Ilé-Orí": {
+        "facet_name": "Ilé-Orí",
+        "typology": "Conical Beaded Shrine & Sacerdotal Soul Sanctuary",
+        "description": "The sacred conical leather and cowrie-encrusted shrine container designed to house the physical tokens and ancestral essence of one's Orí.",
+        "etymology_and_philosophy": "Ilé-Orí (literally 'House of the Head') designates the monumental conical personal shrine container crafted from leather, cardboard, and thousands of meticulously stitched cowrie shells, designed to house the physical tokens of a person's destiny and inner head. Inside the Ilé-Orí rests the Ìbọ̀rí—a miniature conical leather packet containing sacred earth, medicinal herbs, and ancestral relics that represent the owner's spiritual identity. The exterior casing, shaped like a towering conical crown, is a breathtaking triumph of Yorùbá textile and sculptural art. The thousands of white cowrie shells symbolize boundless wealth, spiritual illumination, and moral purity. Only prosperous elders and initiated individuals possessed elaborate Ilé-Orí. When the owner died, their Ilé-Orí was ritually opened, its internal tokens disbursed or buried with the deceased, and the casing preserved as a revered lineage relic, illustrating how individual spiritual consciousness is reverently enshrined throughout life.",
+        "historical_timeline": "Classical Antiquity: Flourished among elite and wealthy families in Ọ̀yọ́, Èkìtì, Ìjẹ̀bú, and Ìbàdàn.",
+        "material_and_craftsmanship": "Stitched heavy leather framework, thousands of natural white cowrie shells (Owó Ẹyọ), red wool cloth bindings, and brass finials.",
+        "social_and_ritual_context": "Kept in the private inner sanctum of the compound head; brought out only during solemn annual head prayers (Bíbọ Orí).",
+        "proverbs_and_oral_traditions": [
+          "Ilé-Orí tòrò, ayé a d'ọrọ̀; ẹni tó tọ́jú orí rẹ̀ kì í f'ìyà jẹ ará rẹ̀. (When the sanctuary of the head is peaceful, life blossoms into prosperity; he who honors his inner shrine starves not his soul: Teaching spiritual self-care.)",
+          "Owó ẹyọ kì í tan nínú ilé-orí; ọrọ̀ orí ni ọrọ̀ ayé. (Cowrie shells are never exhausted within the house of the head; the wealth of the soul is the foundation of worldly abundance: Celebrating internal fortune.)",
+          "A kì í fi ilé-orí bẹ́rẹ́ fún àlejò; àṣírí orí ni àṣírí ẹ̀mí. (One reveals not the shrine of the head to casual visitors; the privacy of the soul is the sanctuary of life: Affirming personal spiritual discretion.)"
+        ],
+        "provenance_and_citations": "Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art and Thought; Abiodun, Rowland (2014). Yoruba Art and Language; Lawal, Babatunde (2001). Aworan: Representing the Self and Its Metaphysical Other in Yoruba Art."
+      }
+    },
+    "Àṣẹ": {
+      "Ọ̀rọ̀ Àṣẹ": {
+        "facet_name": "Ọ̀rọ̀ Àṣẹ",
+        "typology": "Cosmic Performative Speech & Infallible Enunciation",
+        "description": "The metaphysical doctrine of spoken performative utterance wherein language directly transforms physical reality through divine authority.",
+        "etymology_and_philosophy": "Ọ̀rọ̀ Àṣẹ designates the metaphysical doctrine of the performative spoken word within Yorùbá linguistic philosophy. In Yorùbá thought, speech (Ọ̀rọ̀) is never merely a passive representational code; it is a metaphysical instrument that carries and directs primordial vital energy (Àṣẹ). When spoken by an individual whose character is pure and whose tongue is aligned with cosmic truth, words possess the intrinsic capacity to create, heal, bind, or dissolve physical reality. 'Ọ̀rọ̀ tó jáde l'ẹ́nu kì í padà sẹ́yìn' (The word that has departed from the mouth never returns empty). This philosophy underpins the entire corpus of incantations (Ọfọ̀ / Àyájọ́) and royal decrees: language acts as a sonic scalpel. Utterance transforms potentiality into actuality. Consequently, the masters of Ọ̀rọ̀ Àṣẹ cultivate extraordinary verbal discipline, speaking sparsely and deliberate, knowing that reckless speech unleashes destructive reverberations throughout the universe.",
+        "historical_timeline": "Primordial Epoch to Present: Core philosophy underlying divination incantations, judicial pronouncements, and royal protocols.",
+        "material_and_craftsmanship": "Intangible sonic and metaphysical energy; focused through consecrated cow horn medicine vessels (Aṣẹ) and ritual spitting of alligator pepper (Atáare).",
+        "social_and_ritual_context": "Invoked during formal coronations, judicial judgments, marital covenants, and sacred incantatory rituals.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀rọ̀ àṣẹ kì í bọ́ s'ílẹ̀ lásán; ibi tí a rán an sí ni yóò ṣe. (The word endowed with divine authority drops not to the earth in vain; precisely where it is directed, it manifests: Affirming performative truth.)",
+          "Ẹnu tí a fi ń pe epo kì í tún fi pe ẹ̀jẹ̀; ọ̀rọ̀ àṣẹ gbọdọ̀ jẹ́ funfun. (The mouth that calls forth palm oil must not call forth blood; the utterance of authority must remain immaculate: Enforcing verbal ethics.)",
+          "Àṣẹ wà l'ẹ́nu àgbà; ọ̀rọ̀ tí wọ́n bá sọ kì í ṣe eré. (Divine authority rests upon the lips of the elders; the counsel they declare is never frivolous: Teaching reverence for ancestral speech.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Gbadegesin, Segun (1991). African Philosophy; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Àṣẹ Ọba": {
+        "facet_name": "Àṣẹ Ọba",
+        "typology": "Sovereign Monarchical Mandate & Imperial Prerogative",
+        "description": "The sacred executive authority vested in the crowned Yorùbá monarch as the living deputy of the divinities (Aláṣẹ Èkejì Òrìṣà).",
+        "etymology_and_philosophy": "Àṣẹ Ọba denotes the sacred, inviolable executive and metaphysical mandate vested in the person of the crowned Yorùbá monarch (Ọba). Addressed liturgically as 'Kabíyèsí' (Ká-bí-yí-kò-sí: He Whose Authority None May Question) and 'Aláṣẹ Èkejì Òrìṣà' (Possessor of Sovereign Authority, Second Only to the Divinities), the monarch does not rule by secular force alone, but as a consecrated theocratic pivot. Upon ascending the ancestral throne and receiving the ancient beaded crown (Adé Ńlá), the king undergoes transformative rituals where his personal identity dissolves into the ancestral lineage. His word becomes absolute state law and divine decree. However, this power is philosophically counterbalanced by strict checks and balances exercised by the council of kingmakers (Ọ̀yọ́ Mèsì or Ìgbìmọ̀ Ọ̀sùgbó). The Ọba's Àṣẹ is directly contingent upon upholding cosmic justice, peace, and prosperity; if he abuses his sacred mandate, the divine authority departs, inviting deposition and constitutional abdication.",
+        "historical_timeline": "Classical Antiquity to Present: Theoretical and constitutional bedrock of Yorùbá royal statecraft across all kingdoms.",
+        "material_and_craftsmanship": "Beaded crown (Adé Ìlẹ̀kẹ̀), beaded horse-tail scepter (Ìrùkẹ̀rẹ̀ Ọba), sacred throne (Àkété), and beaded royal footwear.",
+        "social_and_ritual_context": "Invoked during palace courts of arbitration, civic state openings, the creation of chieftaincy titles, and national treaties.",
+        "proverbs_and_oral_traditions": [
+          "Àṣẹ Ọba kì í ṣe ohun àríyá; ẹ̀jẹ̀ àti òtítọ́ l'ó fi ń jẹ ọba. (The sovereign mandate of the king is no casual vanity; blood and truth sustain monarchical reign: Warning against royal tyranny.)",
+          "Ọba kì í sọ̀rọ̀ lẹ́ẹ̀mejì; àṣẹ tí ó jáde n'íwájú rẹ̀ ti di òfin. (The sovereign monarch speaks not twice; the decree that departs from his presence is irrevocable law: Affirming sovereign decisiveness.)",
+          "Bí Ọba bá bọ̀wọ̀ fún àṣẹ oríṣà, ìlú a tòrò gbọingbọin. (If the king reveres the divine mandate of the deities, the realm flourishes in tranquil prosperity: Teaching constitutional piety.)"
+        ],
+        "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Fadipe, N. A. (1970). The Sociology of the Yoruba; Smith, Robert S. (1988). Kingdoms of the Yoruba."
+      },
+      "Àṣẹ Babaláwo": {
+        "facet_name": "Àṣẹ Babaláwo",
+        "typology": "Epistemological Divinatory Authority & Hermeneutic Mandate",
+        "description": "The sacred diagnostic and cosmological authority wielded by consecrated Ifá diviners to interpret destiny and reconcile human affairs.",
+        "etymology_and_philosophy": "Àṣẹ Babaláwo represents the profound epistemological and spiritual authority held by the fully initiated priest of Ifá (Babaláwo: 'Father of Secrets'). Unlike political authority, which operates through executive coercion, the Babaláwo's Àṣẹ operates through intellectual mastery of the vast 256 Odù Ifá corpus, diagnostic humility, and unbiased ethical neutrality. During initiation (Títẹ̀fá), the priest's tongue, hands, and forehead are consecrated with sacred herbs and chalk, conferring the authority to cast the sacred palm nuts (Ikin Ifá) and speak the infallible truth of Ọ̀rúnmìlà. The Babaláwo possesses the divine mandate to peer into the hidden matrix of time, diagnose the spiritual root causes of human suffering, and prescribe exact sacrificial remedies (Ẹbọ). The Àṣẹ Babaláwo commands supreme respect because the diviner is sworn to speak only what Ifá reveals, without personal bias, greed, or fear of political reprisal.",
+        "historical_timeline": "Immemorial Antiquity: The premier intellectual and priestly class presiding over Yorùbá civilizational wisdom.",
+        "material_and_craftsmanship": "Divination tapper (Ìrókẹ́ Ifá), divination tray (Ọpọ́n Ifá), sacred palm nuts (Ikin Ifá), and beaded necklace (Ìkẹ́kùn).",
+        "social_and_ritual_context": "Consulted by monarchs before national decisions, by parents at the birth of newborns (Ìkọ̀sẹ̀wáyé), and by individuals navigating life crises.",
+        "proverbs_and_oral_traditions": [
+          "Babaláwo kì í purọ́ fún Ifá; ohun tí Ifá bá wí ni awo ń sọ. (The diviner never utters falsehood on behalf of Ifá; whatever Ifá declares is what the priest speaks: Enforcing sacerdotal integrity.)",
+          "Àṣẹ awo kì í tẹ́; ẹni tí ó tẹ̀lé Ifá kì í rìn nínú òkùnkùn. (The authority of the initiate never suffers shame; he who follows the wisdom of Ifá walks not in darkness: Celebrating epistemological guidance.)",
+          "Ọpọ́n Ifá kì í f'ojú tẹ́; ọ̀rọ̀ awo ni àmúwá Ọlọ́run. (The divination tray never loses its sacred honor; the word of the initiate is divine revelation from Olódùmarè: Affirming cosmological truth.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Idowu, E. Bolaji (1962). Olodumare."
+      }
+    },
+    "CORPUS_ARABA_IFE_001": {
+      "Àràbà Agbáyé": {
+        "facet_name": "Àràbà Agbáyé",
+        "typology": "Global Supreme Pontiff of Ifá & Patriarch of Ilé-Ifẹ̀",
+        "description": "The paramount spiritual pontiff of the entire global Ifá-Òrìṣà religious tradition, seated as patriarchal primate at Ilé-Ifẹ̀.",
+        "etymology_and_philosophy": "Àràbà Agbáyé designates the supreme spiritual primate, patriarch, and global pontiff of the entire Ifá-Òrìṣà cosmological system, whose ancestral theocratic seat resides at the Okétàṣe temple in Ilé-Ifẹ̀, the cradle of Yorùbá civilization. Derived from 'Àràbà' (the monumental white silk-cotton tree, ceiba pentandra, symbolizing immense spiritual shelter, majesty, and endurance) and 'Agbáyé' (the totality of the cosmos and inhabited earth), this office serves as the ultimate living custodian of the 256 Odù Ifá corpus. The Àràbà Agbáyé is not merely a regional high priest; he is recognized internationally across Nigeria, the Republic of Benin, the Americas, and the global Yorùbá diaspora as the supreme ecclesiastical arbiter of doctrinal authenticity, liturgical purity, and sacerdotal initiations. Under his patriarchal mantle, the ancient oral revelation of Ọ̀rúnmìlà is preserved against sectarian drift and commercial degradation.",
+        "historical_timeline": "Primordial / Classical Epoch: Established at Okétàṣe hill in Ilé-Ifẹ̀ as the supreme seat of Ifá priesthood since antiquity.",
+        "material_and_craftsmanship": "Regal white beaded crown (Adé Àràbà), colossal ivory tapper (Ìrókẹ́ Eyin Erin), white asọ-òkè robes, and ancient bronze coronation pectoral.",
+        "social_and_ritual_context": "Presides over the annual World Ifá Festival at Okétàṣe; delivers the official annual Odu divination forecast for humanity; ratifies global Babaláwo ordinations.",
+        "proverbs_and_oral_traditions": [
+          "Àràbà nìkan l'ó le gba ọ̀wọ̀; igi gbogbo l'ó ń tẹríba fún àràbà nínú igbó. (Only the silk-cotton Àràbà tree commands ultimate veneration; all other trees bow before the Àràbà in the forest: Proclaiming supreme patriarchal authority.)",
+          "Àràbà kì í yẹ́ l'órí Okétàṣe; ibi tí Ifá gbé kalẹ̀ sí kò ní bàjẹ́. (The Àràbà tree never vacates the summit of Okétàṣe; the ancient foundation established by Ifá shall never decay: Affirming enduring doctrinal stability.)",
+          "Ẹni tí ó fẹ́ mọ Ifá gbọdọ̀ tẹríba fún Àràbà; orísun awo ni Ilé-Ifẹ̀. (He who seeks the unvarnished depths of Ifá must revere the Àràbà; the wellspring of all divination is Ilé-Ifẹ̀: Teaching liturgical allegiance.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination; Akinjogbin, I. A. (1992). The Cradle of a Race: Ife from the Beginning to 1980."
+      },
+      "Ogunsua": {
+        "facet_name": "Ogunsua",
+        "typology": "High Dignitary of Sacred Metallurgical Protocols & War Awo",
+        "description": "The senior sacerdotal dignitary in the Ifá high council responsible for iron purification, martial defense liturgies, and metallurgical treaties.",
+        "etymology_and_philosophy": "Ogunsua designates the prestigious title of the high-ranking priest and theological dignitary within the ancestral college of Ifá primates at Ilé-Ifẹ̀, responsible for bridging the esoteric wisdom of Ifá with the fiery, martial dynamics of Ògún. In the governance of the sacerdotal hierarchy, the Ogunsua serves as the chief liturgist of iron, presiding over the consecration of sacred metal implements used in royal coronations and higher-level priestly ordinations. Philosophically, the Ogunsua embodies the critical reconciliation between intellectual deliberation (represented by Ifá) and dynamic executive action (represented by Ògún). Without the Ogunsua's metallurgical purifications, the swords of justice wielded by the state risk becoming instruments of blind vengeance rather than calibrated righteousness. His title honors the primordial covenant struck between Ọ̀rúnmìlà and Ògún during their celestial descent.",
+        "historical_timeline": "Classical Antiquity: Ancient chieftaincy office embedded within the 16 High Priests of Ifẹ̀.",
+        "material_and_craftsmanship": "Cast bronze battle-ax amulet, blackened iron staff, red jasper bead necklaces, and consecrated leather aprons.",
+        "social_and_ritual_context": "Convenes during the national purification of state weapons; presides over judicial oaths involving metallurgy guilds and military commanders.",
+        "proverbs_and_oral_traditions": [
+          "Ogunsua kì í f'irin jà lásán; àṣẹ Ifá l'ó fi ń tọ́ ọ̀nà irin. (The Ogunsua engages not with iron in vain; the divine mandate of Ifá guides his metallurgy: Celebrating calibrated martial justice.)",
+          "Bí ogun bá ń bọ̀, Ogunsua ní ń bọ Ògún; kò sí ogun tí ó le borí awo. (When conflict approaches, the Ogunsua propitiates Ògún; no war can vanquish the initiated priest: Affirming spiritual protection.)",
+          "Irin l'a fi ń kọ́ ilé, irin l'a fi ń bẹ́ orí; Ogunsua l'ó mọ bí a ti ń wọ̀ irin ní ẹ̀wù. (With iron we build houses, with iron we sever heads; only Ogunsua understands how to clothe iron in peace: Teaching the ethics of metallurgy.)"
+        ],
+        "provenance_and_citations": "Akinjogbin, I. A. (1992). The Cradle of a Race: Ife from the Beginning to 1980; Johnson, Samuel (1921). The History of the Yorubas; Barnes, Sandra T. (1989). Africa's Ogun."
+      },
+      "Balọ́gún Awo": {
+        "facet_name": "Balọ́gún Awo",
+        "typology": "Commander-General of Sacerdotal Defense & Spiritual Warfare",
+        "description": "The martial commander of the Ifá brotherhood, charged with protective spiritual countermeasures against occult hostility and physical attacks.",
+        "etymology_and_philosophy": "Balọ́gún Awo designates the executive martial commander and supreme field general of the esoteric priesthood, charged with defending the sacred precinct of Ifẹ̀ and the international body of diviners against both physical aggression and malevolent occult warfare (Ajogun). Derived from 'Balógun' (military commander) and 'Awo' (the esoteric mysteries of Ifá), this officer fulfills the necessary protective role within an otherwise peaceful divinatory fraternity. In Yorùbá metaphysical philosophy, knowledge alone without the capacity for active defense is vulnerable to violent eradication. The Balọ́gún Awo is master of counter-offensive herbal preparations (Àpèta, Àbìlù, and Gbétugbétu), ensuring that rogue sorcerers or invading armies cannot desecrate the ancestral shrines of the holy city. He exemplifies the concept of the righteous warrior-philosopher who takes up spiritual weapons solely to protect wisdom sanctuaries.",
+        "historical_timeline": "Classical to 19th Century: Crucial defensive office during regional civil wars, safeguarding Ifá temples and archival oral libraries.",
+        "material_and_craftsmanship": "Consecrated protective war tunic (Èkú Awo) studded with cowries and metal amulets, iron vanguard spear, and antelope-horn medicine decanters.",
+        "social_and_ritual_context": "Leads the protective spiritual perimeter during major festivals; administers warrior oaths of loyalty to newly initiated priests.",
+        "proverbs_and_oral_traditions": [
+          "Balọ́gún Awo kì í sá fún ajogun; oríṣà l'ó fi ààbò kọ́ ọ n'íyà. (The Commander of Mysteries flees not from adversarial powers; the deities have armed his spirit with invulnerability: Celebrating spiritual fortitude.)",
+          "Awo kì í fẹ́ ogun, ṣùgbọ́n awo kì í bẹ̀rù ogun; Balọ́gún l'ó ń da irin s'ójú ogun. (The initiate desires not war, yet fears no battle; the Balọ́gún deploys sacred defense against hostility: Teaching moral deterrence.)",
+          "Ààbò awo ni ààbò gbogbo ìlú; bí Balọ́gún Awo bá wà l'ójúfò, ilé a tòrò. (The security of the priesthood is the protection of the commonwealth; when the Balógun of Mysteries is vigilant, the realm rests secure: Affirming civic peace.)"
+        ],
+        "provenance_and_citations": "Akinjogbin, I. A. (1992). The Cradle of a Race; Smith, Robert S. (1989). Warfare and Diplomacy in Pre-colonial West Africa; Abimbola, Wande (1976). Ifa."
+      },
+      "Council of 16 High Priests of Ifẹ̀": {
+        "facet_name": "Council of 16 High Priests of Ifẹ̀",
+        "typology": "Supreme Sacerdotal Senate & Living Embodiment of the 16 Olódù",
+        "description": "The sovereign conclave of sixteen patriarchal high priests of Ilé-Ifẹ̀, each personifying one of the sixteen principal Olódù Méjì of Ifá.",
+        "etymology_and_philosophy": "The Council of 16 High Priests of Ifẹ̀ (Àwọn Àgbà Awo Mẹ́rìndínlógún) constitutes the supreme ecclesiastical senate and metaphysical governing body of the global Ifá priesthood. Headed by the Àràbà Agbáyé and seated at the ancient Okétàṣe temple, each of the sixteen hereditary priestly seats corresponds directly to one of the sixteen primordial Odù Ifá (from Èjì Ogbè down to Òfún Méjì). In Yorùbá political and theological architecture, this council represents the institutional manifestation of collective deliberation, checks and balances, and democratic consensus. No single priest—not even the Àràbà himself—can alter sacred liturgy, excommunicate an initiate, or proclaim a universal doctrinal reform without the unanimous concurrence of this supreme conclave. They embody the living oral library of Yoruba civilization, preserving the unadulterated philosophical depth of African metaphysical thought across millennia.",
+        "historical_timeline": "Primordial Cosmogony to Present: The oldest continuously operating ecclesiastical college in sub-Saharan Africa.",
+        "material_and_craftsmanship": "Sixteen carved hardwood high chairs, individual sacred brass divination trays (Ọpọ́n Idẹ), sixteen beaded crowns of office, and consecrated ivory scepters.",
+        "social_and_ritual_context": "Convenes in solemn conclave at every lunar cycle; casts the national divination for the Ọọ̀ni of Ifẹ̀ and resolves deep doctrinal and judicial controversies.",
+        "proverbs_and_oral_traditions": [
+          "Awo mẹ́rìndínlógún l'ó ń tún ayé ṣe; ìmọ̀ ẹnìkan kì í kún agbọ̀n. (The sixteen elder initiates restore the equilibrium of the cosmos; the solitary intellect can never fill the sacred basket of wisdom: Affirming collective governance.)",
+          "Bí awo mẹ́rìndínlógún bá fọhùn kan, ọ̀run a fọwọ́ sí i. (When the sixteen elder priests speak with one unified voice, the celestial heavens ratify their decree: Proclaiming infallible consensus.)",
+          "Okétàṣe ni orísun awo gbogbo; ẹni tí ó ba ilé Ifá jẹ́ a rí ìbínú Olódùmarè. (Okétàṣe is the wellspring of all sacred mysteries; he who desecrates the ancestral lodge of Ifá meets divine retribution: Enforcing institutional sanctity.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1977). Awon Oju Odu Mereerindinlogun; Bascom, William (1969). Ifa Divination; Akinjogbin, I. A. (1992). The Cradle of a Race: Ife from the Beginning to 1980."
+      }
+    },
+    "CORPUS_ORISA_401_001": {
+      "Èṣù-Ẹlẹ́gbára (+1 Mediator)": {
+        "facet_name": "Èṣù-Ẹlẹ́gbára",
+        "typology": "The Transcendent Catalyst & Universal 401st Pivot",
+        "description": "The singular transcendent mediator who bridges the 200 deities of the right and 200 of the left, converting the 400 into the living 401.",
+        "etymology_and_philosophy": "Èṣù-Ẹlẹ́gbára within the celestial matrix of the 401 Irúnmọlẹ̀ pantheon constitutes the transcendent odd-number pivot and dynamic catalyst of the cosmos. In Yorùbá mathematical theology, even numbers represent cosmic equilibrium, symmetry, and potential stability (such as the 200 deities of the right and the 200 deities of the left), while the odd addition (+1) represents life, movement, exchange, and kinetic activation. Without Èṣù as the 401st divine principle, the 400 Irúnmọlẹ̀ would remain locked in eternal, frozen opposition. Èṣù is the universal linguistic translator (Elégbèje Awo) who decodes divine messages, carries sacrifices (Ẹbọ) from terrestrial altars to heavenly courts, and tests human moral resolve through paradox and crossroads dilemmas. He belongs exclusively neither to the benevolent right nor to the stern left; he navigates both hemispheres freely, reminding humanity that reality cannot be neatly reduced to static moral categories, but demands constant vigilance, humility, and conscious ethical choice.",
+        "historical_timeline": "Primordial Cosmogony: The eternal cosmic mediator ensuring continuous dynamic circulation between heaven and earth.",
+        "material_and_craftsmanship": "Consecrated laterite pillar (Yángí), dark palm-kernel oil libations (Àdín), black and red beaded strands, and cowrie shells.",
+        "social_and_ritual_context": "Propitiated at every crossroad (Oríta) and before commencing any ritual, royal ceremony, or market day throughout Yoruba civilization.",
+        "proverbs_and_oral_traditions": [
+          "Òjìléníwó irúnmọlẹ̀, Èṣù l'ó ṣe ìkọkànlélọ́gọ́rùn-ún wọn; kò sí ẹni tó le bọ oríṣà láì kí Èṣù. (Four hundred immortals exist; Èṣù is their supreme 401st pivot; none propitiates the divinities without first greeting Èṣù: Affirming liturgical primacy.)",
+          "Èṣù kì í ṣe ibi, ènìyàn l'ó ń pe ibi wọ̀lú; àyẹ̀wò ni iṣẹ́ rẹ̀. (Èṣù is not inherent evil, humanity invites affliction through moral decay; testing spiritual authenticity is his cosmic mission: Correcting theological misrepresentation.)",
+          "Oríta mọ́kànlélọ́gọ́rùn-ún l'Èṣù ń gbé; ẹni tí ó mọ ọ̀rọ̀ rẹ̀ kì í sìnà l'áwùjọ. (At the crossroads of the cosmos Èṣù abides; he who honors his covenant never loses his path in society: Celebrating directional wisdom.)"
+        ],
+        "provenance_and_citations": "Gates, Henry Louis Jr. (1988). The Signifying Monkey: A Theory of African-American Literary Criticism; Bascom, William (1969). Ifa Divination; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Èṣù-Ẹlẹ́gbára": {
+        "facet_name": "Èṣù-Ẹlẹ́gbára",
+        "typology": "The Transcendent Catalyst & Universal 401st Pivot",
+        "description": "The singular transcendent mediator who bridges the 200 deities of the right and 200 of the left, converting the 400 into the living 401.",
+        "etymology_and_philosophy": "Èṣù-Ẹlẹ́gbára within the celestial matrix of the 401 Irúnmọlẹ̀ pantheon constitutes the transcendent odd-number pivot and dynamic catalyst of the cosmos. In Yorùbá mathematical theology, even numbers represent cosmic equilibrium, symmetry, and potential stability (such as the 200 deities of the right and the 200 deities of the left), while the odd addition (+1) represents life, movement, exchange, and kinetic activation. Without Èṣù as the 401st divine principle, the 400 Irúnmọlẹ̀ would remain locked in eternal, frozen opposition. Èṣù is the universal linguistic translator (Elégbèje Awo) who decodes divine messages, carries sacrifices (Ẹbọ) from terrestrial altars to heavenly courts, and tests human moral resolve through paradox and crossroads dilemmas. He belongs exclusively neither to the benevolent right nor to the stern left; he navigates both hemispheres freely, reminding humanity that reality cannot be neatly reduced to static moral categories, but demands constant vigilance, humility, and conscious ethical choice.",
+        "historical_timeline": "Primordial Cosmogony: The eternal cosmic mediator ensuring continuous dynamic circulation between heaven and earth.",
+        "material_and_craftsmanship": "Consecrated laterite pillar (Yángí), dark palm-kernel oil libations (Àdín), black and red beaded strands, and cowrie shells.",
+        "social_and_ritual_context": "Propitiated at every crossroad (Oríta) and before commencing any ritual, royal ceremony, or market day throughout Yoruba civilization.",
+        "proverbs_and_oral_traditions": [
+          "Òjìléníwó irúnmọlẹ̀, Èṣù l'ó ṣe ìkọkànlélọ́gọ́rùn-ún wọn; kò sí ẹni tó le bọ oríṣà láì kí Èṣù. (Four hundred immortals exist; Èṣù is their supreme 401st pivot; none propitiates the divinities without first greeting Èṣù: Affirming liturgical primacy.)",
+          "Èṣù kì í ṣe ibi, ènìyàn l'ó ń pe ibi wọ̀lú; àyẹ̀wò ni iṣẹ́ rẹ̀. (Èṣù is not inherent evil, humanity invites affliction through moral decay; testing spiritual authenticity is his cosmic mission: Correcting theological misrepresentation.)",
+          "Oríta mọ́kànlélọ́gọ́rùn-ún l'Èṣù ń gbé; ẹni tí ó mọ ọ̀rọ̀ rẹ̀ kì í sìnà l'áwùjọ. (At the crossroads of the cosmos Èṣù abides; he who honors his covenant never loses his path in society: Celebrating directional wisdom.)"
+        ],
+        "provenance_and_citations": "Gates, Henry Louis Jr. (1988). The Signifying Monkey: A Theory of African-American Literary Criticism; Bascom, William (1969). Ifa Divination; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief."
+      },
+      "Irúnmọlẹ̀ Ojúkọ̀tún (200 of the Right)": {
+        "facet_name": "Irúnmọlẹ̀ Ojúkọ̀tún",
+        "typology": "Cosmic Right-Hand Divine Council (Benevolent Immortals)",
+        "description": "The 200 primordial celestial immortals positioned on the right hand of Olódùmarè, governing mercy, construction, generative vitality, and cosmic balance.",
+        "etymology_and_philosophy": "Irúnmọlẹ̀ Ojúkọ̀tún designates the Primordial Divine Council of the Two Hundred Celestial Immortals positioned on the right hand of Olódùmarè (Supreme Sovereign of the Universe). In classical Ifá cosmological metaphysics as recorded in the Holy Odù, the right side represents the luminous architectural forces of creation, mercy, expansion, generative vitality, and structural order. Led by Obàtálá (arch-divinity of white purity and moral poise) and Ọ̀rúnmìlà (witness to cosmic destiny), these benevolent beings embody the stabilizing harmonies that make human civilization viable on earth. In temple rituals and diurnal invocations, the priests of the right hand petition these powers using white chalk (ẹfun), virgin water, and unblemished snails, ensuring that existential turbulence is pacified through gentle character (ìwà-pẹ̀lẹ́) and cosmic enlightenment.",
+        "historical_timeline": "Primordial Creation Epoch: Described in Ifá cosmology as the benevolent architects sent to establish terrestrial foundations and moral balance.",
+        "material_and_craftsmanship": "White lead ornaments, pristine cotton textiles, virgin spring water, and consecrated cowrie clusters.",
+        "social_and_ritual_context": "Invoked in ancestral prayers for harmony, peace, prosperity, gentle character, and restorative civic health.",
+        "proverbs_and_oral_traditions": [
+          "Irúnmọlẹ̀ ojúkọ̀tún ní ń gbè wá ní rere. (The immortals of the right hand support us with righteousness and grace: Invoking divine benevolence.)",
+          "Ọwọ́ ọ̀tún l'a fi ń bọ Ẹlẹ́dàá; àlàáfíà kì í ṣe ohun àfowọ́kẹ́. (With the right hand we appease the Creator; pristine peace is preserved with deliberate reverence: Affirming moral equilibrium.)",
+          "Ojúkọ̀tún kì í gbé ibi; ibi tí ìwà gún sí ni wọ́n ń gbé. (The right-hand council never abides in malevolence; where character aligns with truth, there they dwell: Celebrating virtue.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Bascom, William (1969). Ifa Divination."
+      },
+      "Irúnmọlẹ̀ Ojúkòsì (200 of the Left)": {
+        "facet_name": "Irúnmọlẹ̀ Ojúkòsì",
+        "typology": "Cosmic Left-Hand Divine Council (Stern & Purifying Immortals)",
+        "description": "The 200 primordial celestial immortals positioned on the left hand of Olódùmarè, governing vigilance, martial strength, and rigorous cosmic justice.",
+        "etymology_and_philosophy": "Irúnmọlẹ̀ Ojúkòsì designates the Primordial Divine Council of the Two Hundred Celestial Immortals positioned on the left hand of Olódùmarè. Within Yorùbá dualistic philosophy and cosmic geometry, the left hand represents the rigorous, martial, purifying, and defensive dynamics of reality. Led by fierce entities such as Ògún (god of iron and frontier conquest), Ọ̀yá (guardian of winds and atmospheric upheaval), and Ọbalúayé (sovereign of earth heat and epidemics), the left council enforces divine decrees, executes oaths, and breaks through stagnancy with surgical severity. They are not malevolent forces; rather, they serve as the indispensable antibodies of the cosmos without which moral equilibrium would decay. Consecrated with camwood (osùn), palm oil, and roasted yam, they are invoked to dismantle corruption, wage righteous defense, and maintain the inviolable sanctuary of ancestral laws.",
+        "historical_timeline": "Primordial Creation Epoch: Guarding cosmic boundaries, enforcing oaths, and purging societal corruption through active defense.",
+        "material_and_craftsmanship": "Cast iron implements, red carnelian beads, volcanic stone altars, and blood consecrations.",
+        "social_and_ritual_context": "Invoked when settling deep judicial disputes, warding off aggressive malevolence, and enforcing unyielding divine truth.",
+        "proverbs_and_oral_traditions": [
+          "Irúnmọlẹ̀ ojúkòsì kì í gb'owó àbẹ̀tẹ́lẹ̀. (The immortals of the left hand never accept bribes; their justice is unbending: Proclaiming uncompromising truth.)",
+          "Ọwọ́ òsì ni a fi ń ti ilẹ̀kùn ogun; ẹni tó mọ ìkòsì kì í bẹ̀rù ọ̀tá. (With the left hand we bolt the gates against war; he who understands the left fears no adversary: Honoring protective fortitude.)",
+          "Àṣẹ tí ojúkòsì bá fọwọ́ sí, kò sí àjẹ́ tí ó le tú u. (The decree sealed by the left-hand council cannot be dismantled by mortal sorcery: Affirming absolute divine protection.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1977). Awon Oju Odu Mereerindinlogun; Verger, Pierre (1964). Notes on Yoruba Religion; Johnson, Samuel (1921). The History of the Yorubas."
+      }
+    },
+    "Ìrókẹ́_Ifá": {
+      "Ìrókẹ́ Eyin Erin (Ivory)": {
+        "facet_name": "Ìrókẹ́ Eyin Erin",
+        "typology": "Prestige Sacerdotal Ivory Tapper of Awakening",
+        "description": "The elite divination tapper carved from rare elephant ivory, symbolizing royal ancestral authority, longevity, and solemn awakening.",
+        "etymology_and_philosophy": "Ìrókẹ́ Eyin Erin designates the paramount sacerdotal divination tapper carved exclusively from the solid tusk of the African savanna elephant (Erin). In Yorùbá zoological and cosmological symbolism, the elephant is the supreme sovereign of the animal kingdom (Ọba Ẹranko), personifying immense physical majesty, ancestral memory, and unshakeable longevity. An Ìrókẹ́ sculpted from ivory represents the highest tier of priestly prestige, typically possessed by royal Babaláwo, the Àràbà Agbáyé, or patriarchs of ancient divination dynasties. Carved into an elegant curvilinear form featuring a kneeling female suppliant supporting an equestrian warrior or conical bird finial, the ivory tapper is tapped rhythmically against the wooden divination tray (Ọpọ́n Ifá) at the commencement of consultation. This percussive striking—'Kíkankán Ọpọ́n'—is not musical ornamentation; it is an acoustic liturgy designed to awaken Ọ̀rúnmìlà and summon the ancient ancestors from the silent realms of Ọ̀run to Ayé.",
+        "historical_timeline": "Classical Era to 19th Century: Commissioned by royal courts (Ọ̀yọ́, Ilé-Ifẹ̀, Owò) for high-ranking court diviners.",
+        "material_and_craftsmanship": "Hand-carved polished elephant tusk ivory (Eyin Erin), aged with palm oil and herbal infusions to achieve a warm honey patina.",
+        "social_and_ritual_context": "Used during major royal divination rituals, national crisis consultations, and high priestly ordinations; passes down as an inviolable family heirloom.",
+        "proverbs_and_oral_traditions": [
+          "Eyin erin kì í ṣe ohun àfowọ́kẹ́ lásán; ọwọ́ awo l'ó ń tọ́jú rẹ̀. (Elephant ivory is no casual trinket; the consecrated hand of the initiate alone preserves it: Affirming sacerdotal dignity.)",
+          "Ìrókẹ́ lu ọpọ́n, ọ̀run a fọhùn; Ifá gbọ́ ohùn awo rẹ̀. (The ivory tapper strikes the divination tray, the heavens answer; Ifá hears the earnest prayer of his priest: Celebrating liturgical efficacy.)",
+          "Ẹni tó ní ìrókẹ́ eyin erin kì í f'ohùn jà; ọ̀rọ̀ àlàáfíà l'a fi ń kọ́ ọpọ́n. (He who possesses the ivory tapper engages not in violent quarrel; words of serene reconciliation grace the divination tray: Teaching peaceful majesty.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+      },
+      "Ìrókẹ́ Idẹ (Brass)": {
+        "facet_name": "Ìrókẹ́ Idẹ",
+        "typology": "Sacred Brass Tapper & Òṣun-Ògbóni Metallurgical Alliance",
+        "description": "The sacred lost-wax cast brass divination tapper embodying imperishable beauty, incorruptibility, and the mystical alliance between Ifá and Òṣun.",
+        "etymology_and_philosophy": "Ìrókẹ́ Idẹ denotes the sacred divination tapper cast from radiant copper alloy or brass (Idẹ) using the sophisticated cire-perdue (lost-wax) technique perfected in classical Ilé-Ifẹ̀. In Yorùbá mineralogy and metaphysics, brass is revered as the purest and most incorruptible of all non-ferrous metals. Unlike iron which rusts or wood which decays with time, brass remains eternal, immune to rot and oxidation. Brass is the sacred metal of Òṣun (the goddess of fertility and wealth) and the Ògbóni fraternity of earth elders. An Ìrókẹ́ cast in brass thus embodies the profound cosmological alliance between Ifá's intellectual discernment and the generative, cooling wealth of Òṣun. When the brass tapper strikes the wooden tray, the resonant metallic ring cuts through psychic turbulence like a sonic bell, clearing the spiritual atmosphere of discordant vibrations.",
+        "historical_timeline": "Classical Ifẹ̀ Era to 19th Century: Masterpieces produced by master brass casters across Ifẹ̀, Ìjẹ̀bú, and Ògbóni guild workshops.",
+        "material_and_craftsmanship": "Lost-wax cast brass (Idẹ) or bronze, featuring intricate geometric interlaces, openwork bells, and miniature zoomorphic figures.",
+        "social_and_ritual_context": "Favored by diviners affiliated with Ògbóni societies; tapped to ratify irrevocable communal pacts and purge falsehood from witness testimonies.",
+        "proverbs_and_oral_traditions": [
+          "Idẹ kì í kùnà, bẹ́ẹ̀ ni kì í d'ipata; àṣẹ tí awo bá fi idẹ sọ kì í bàjẹ́. (Brass never tarnishes into ruin, nor does it decay; the decree declared with brass by the initiate never perishes: Celebrating eternal integrity.)",
+          "Ìrókẹ́ idẹ kọrin, ayé a gbọ́; ohùn Òṣun wà nínú ọ̀rọ̀ Ifá. (The brass tapper sings aloud, the world listens; the sweet voice of Òṣun resonates within the revelation of Ifá: Affirming metallurgical harmony.)",
+          "A kì í fi idẹ pọ́n ilẹ̀ l'ójú; ẹni tó mọ idẹ a mọ iyebíye awo. (One does not disgrace brass upon common soil; he who values brass understands the priceless worth of sacred wisdom: Praising material literacy.)"
+        ],
+        "provenance_and_citations": "Williams, Denis (1974). Icon and Image: A Study of Sacred and Secular Forms in African Art; Abiodun, Rowland (2014). Yoruba Art and Language; Lawal, Babatunde (1996). The Gelede Spectacle."
+      },
+      "Ìrókẹ́ Igi (Hardwood)": {
+        "facet_name": "Ìrókẹ́ Igi",
+        "typology": "Earthy Hardwood Tapper of Botanical Resilience",
+        "description": "The organic divination tapper sculpted from resilient indigenous hardwood (Iroko or Ayo), embodying botanical communion and daily accessibility.",
+        "etymology_and_philosophy": "Ìrókẹ́ Igi designates the traditional divination tapper sculpted from dense, resilient indigenous hardwoods such as Irókò (Milicia excelsa), Ayùnrẹ́ (Albizia), or Aáyàn (Distemonanthus benthamianus). While ivory and brass represent luxury and imperial display, the wooden Ìrókẹ́ is the intimate daily companion of the working Babaláwo. In Yorùbá botanical theology, trees are living antennae rooted deep within Mother Earth (Onílẹ̀) and stretching branches upward into celestial atmospheric realms. A tapper sculpted from hardwood retains the living vibrational resonance of the forest from which it was birthed. Carved with affectionate precision by community woodworkers, it displays intimate human motifs: a nursing mother, an elder holding prayer beads, or an antelope. It reminds the practitioner that true wisdom is grounded in organic simplicity, accessible to the humblest seeker without aristocratic barrier.",
+        "historical_timeline": "Immemorial Antiquity: The most widespread and ubiquitous form of divination tapper across all historical Yorùbá communities.",
+        "material_and_craftsmanship": "Carved seasoned hardwood, hand-burnished with palm kernel oil (Adin) and soot to achieve an obsidian-like sheen.",
+        "social_and_ritual_context": "Employed daily in household consultations, market divination stalls, and apprentice training sessions.",
+        "proverbs_and_oral_traditions": [
+          "Igi tòótọ́ kì í fọ́ n'íwájú ọpọ́n; ìfaradà ni agbára awo. (The true hardwood snaps not before the divination tray; patient endurance is the strength of the initiate: Teaching steadfast resilience.)",
+          "Ìrókẹ́ igi fẹ́ràn ọpọ́n; omi kan náà l'ó tọ́ igi méjèèjì dàgbà. (The wooden tapper loves the wooden tray; from the identical rain shower both ancient trees grew to maturity: Celebrating organic brotherhood.)",
+          "A kì í fi igi tẹ́ awo l'ọ́rùn; ọgbọ́n tí ń bẹ nínú rẹ̀ l'ó ju wúrà lọ. (One judges not the initiate by the simplicity of his wooden implement; the wisdom within surpasses boundless gold: Praising intrinsic spiritual worth.)"
+        ],
+        "provenance_and_citations": "Bascom, William (1969). Ifa Divination; Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art; Fadipe, N. A. (1970). The Sociology of the Yoruba."
+      }
+    },
+    "Ikin_Ifá": {
+      "Ikin Ọ̀rúnmìlà": {
+        "facet_name": "Ikin Ọ̀rúnmìlà",
+        "typology": "Primordial Sixteen Sacred Palm Nuts & Living Oracle Body",
+        "description": "The consecrated sixteen four-eyed sacred palm nuts of the Elaeis guineensis tree, embodying the living presence and physical repository of Ọ̀rúnmìlà on Earth.",
+        "etymology_and_philosophy": "Ikin Ọ̀rúnmìlà designates the sixteen consecrated sacred palm nuts harvested exclusively from the sacred Ope Ifá (a rare botanical variant of the oil palm tree possessing nuts with four distinct germination pores or 'eyes', known as Olójú Mẹ́rin). In Yorùbá sacred myth, when Ọ̀rúnmìlà departed the earthly plane to return permanently to heaven in protest against human disrespect, he left these sixteen sacred nuts behind, promising humanity: 'Bí ẹ bá dé ilé, bí ẹ bá fẹ́ lówó, ẹ bi ikin léèrè; bí ẹ bá fẹ́ bímo, ẹ bi ikin léèrè' (When you return home, if you seek prosperity, consult the Ikin; if you seek children, consult the Ikin). The Ikin are not inanimate wooden beads; they are revered as the literal living physical body and metaphysical conduit of Ọ̀rúnmìlà on earth. Kept in a sacred lidded bowl (Àgéré Ifá) and fed with palm oil, dry gin, and sacrificial blood, the Ikin are manipulated between the hands of the Babaláwo to generate the binary marks of the 256 Odù on the dusted tray, translating cosmic silence into divine language.",
+        "historical_timeline": "Primordial Cosmogony: The foundational diagnostic instrument of West African Ifá divination across three millennia.",
+        "material_and_craftsmanship": "Sixteen consecrated four-eyed palm nuts (Ikin Olójú Mẹ́rin) plus two witness nuts (Adélé), seasoned in herbal infusions.",
+        "social_and_ritual_context": "Cast during major life rites (Ìtẹ̀fá, coronations, funeral clearances); handled exclusively with clean hands and sober intent.",
+        "proverbs_and_oral_traditions": [
+          "Ikin kì í purọ́, awo kì í sọ èké; ohun tí Ọ̀rúnmìlà bá wí ni yóò ṣe. (The sacred palm nut never lies, the initiate utters no deception; whatever Ọ̀rúnmìlà declares manifests inevitably: Asserting divine infallibility.)",
+          "Ọpẹ́ Ifá l'ó fi ikin fún wa; ẹni tó gbẹ́kẹ̀ lé ikin kì í sìnà láé. (The sacred palm tree bestowed the Ikin upon us; he who anchors his trust in the Ikin never loses his way: Praising divine guidance.)",
+          "Bí gbogbo ayé bá dawo jọ tí wọ́n ń da ni l'ójú rú, a bi ikin léèrè; ikin a fọ̀ mọ̀. (When all the world unites in deceit to confuse the soul, we question the Ikin; the Ikin answers with crystalline clarity: Honoring epistemological sanctuary.)"
+        ],
+        "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men; Idowu, E. Bolaji (1962). Olodumare."
+      }
+    },
+    "Agẹrẹ_Ifá": {
+      "Agẹrẹ Ẹlẹ́yinjú": {
+        "facet_name": "Agẹrẹ Ẹlẹ́yinjú",
+        "typology": "Sacred Caryatid Receptacle of Inward Contemplation",
+        "description": "The sculptural hardwood caryatid cup carved with wide, all-seeing inlaid eyes, housing the sacred Ikin with maternal protection.",
+        "etymology_and_philosophy": "Agẹrẹ Ẹlẹ́yinjú designates the exquisite carved sculptural caryatid container whose supporting figurative base features wide, intensely carved or shell-inlaid eyes (Ẹlẹ́yinjú: 'Possessor of Penetrating Eyes'). In Yorùbá visual metaphysics and aesthetics (Ẹwà), prominent open eyes are the paramount indicator of inner consciousness, spiritual vigilance, and deep moral discernment (Ojú Inú). As the physical vessel entrusted with holding the sacred Ikin Ọ̀rúnmìlà, the Agẹrẹ is never a mere utilitarian bowl; it is an architectural throne of honor. Carved typically as an equestrian commander, a kneeling mother offering her breasts, or a kneeling supplicant holding the bowl aloft, the figure's luminous inlaid eyes stare outward into the room while simultaneously gazing inward into the hidden motives of human hearts. The Agẹrẹ proclaims that nothing is hidden from divine scrutiny: wisdom sees through all masks and rewards genuine character with eternal protection.",
+        "historical_timeline": "Classical Antiquity to Present: Celebrated in classical sculpture collections from Òkè-Onìgbó, Ọ̀yọ́, and Ìlá-Ọ̀ràngún master carving studios.",
+        "material_and_craftsmanship": "Carved single block of seasoned hardwood (Irókò or Omo), lead or cowrie eye inlays, and red camwood and charcoal pigments.",
+        "social_and_ritual_context": "Housed within the inner shrine chamber of the Babaláwo; unveiled during consultations as a sanctuary for the consecrated palm nuts.",
+        "proverbs_and_oral_traditions": [
+          "Agẹrẹ tó l'ojú kì í sùn l'ọ́sàn; Ọ̀rúnmìlà ń wò gbogbo ẹ̀dá l'ójúfò. (The caryatid cup endowed with eyes slumbers not by day; Ọ̀rúnmìlà watches all creation with unblinking vigilance: Teaching moral mindfulness.)",
+          "Àgéré Ifá gbẹ́kẹ̀ lé ẹni tó gbé e; a kì í fi ọwọ́ idọ̀tí gba ikin sílẹ̀. (The sacred container trusts the bearer who carries it; one receives not the sacred nuts with contaminated hands: Enforcing liturgical purity.)",
+          "Ọgbọ́n àti ẹ̀wà l'ó wọ agẹrẹ; ẹni tó gbé Ọ̀rúnmìlà ga, ayé a gbé e ga. (Wisdom and beauty dwell inside the caryatid cup; he who exalts Ọ̀rúnmìlà is elevated by the cosmos: Celebrating aesthetic and spiritual alignment.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Drewal, Henry John, and John Pemberton III (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+      }
+    },
+    "Ọ̀pẹ̀lẹ̀": {
+      "Ọ̀pẹ̀lẹ̀ Awọ": {
+        "facet_name": "Ọ̀pẹ̀lẹ̀ Awọ",
+        "typology": "Rapid Divinatory Chain & Epistemological Diagnostic Tool",
+        "description": "The eight-halved seed divination chain strung on brass links or leather cords, providing swift and precise binary diagnostic readings.",
+        "etymology_and_philosophy": "Ọ̀pẹ̀lẹ̀ Awọ designates the consecrated divinatory chain composed of eight seed pods (harvested from the fruit of the Ọ̀pẹ̀lẹ̀ tree, Schrebera arborea) or leather/brass concave discs, joined symmetrically by fine chain links into two parallel limbs of four pods each. In Yorùbá divinatory epistemology, while the casting of palm nuts (Ikin Ifá) is reserved for momentous, exhaustive life deliberations, Ọ̀pẹ̀lẹ̀ is the swift, agile instrument utilized for daily diagnostics. Held at its midpoint and cast forward onto a consecrated mat, the eight pods fall instantaneously with either their smooth concave or rough convex faces exposed, forming one of the 256 possible Odù configurations in a split second. Liturgically addressed as 'Ọ̀pẹ̀lẹ̀ tó ń fọ̀ gbòrò-gbòrò bí ẹni tó ń kọ̀wé' (The divination chain that speaks clearly and fluidly like a swift scribe), Ọ̀pẹ̀lẹ̀ teaches that divine wisdom is not cumbersome or delayed; it meets the immediate, practical necessities of daily life with instantaneous clarity.",
+        "historical_timeline": "Ancient Antiquity: The primary daily diagnostic tool of practicing Babaláwo across West Africa and the diaspora.",
+        "material_and_craftsmanship": "Eight hand-polished Schrebera arborea seed pods, braided raw leather or forged brass chain links, and cowrie marker beads.",
+        "social_and_ritual_context": "Cast across a woven straw mat (Ẹní) in daily consultations to diagnose immediate health, financial, and relational dilemmas.",
+        "proverbs_and_oral_traditions": [
+          "Ọ̀pẹ̀lẹ̀ kì í ṣubú k'ó d'ojú dé ilẹ̀; ibi tí Ifá fẹ́ l'ó ń fi hàn. (The divination chain falls not haphazardly to the earth; the exact truth Ifá intends is what it reveals: Affirming divinatory accuracy.)",
+          "Ọwọ́ awo tòótọ́ kì í ta ọ̀pẹ̀lẹ̀ s'ójú èké; òtítọ́ ni ìpìlẹ̀ awo. (The hand of the true initiate casts not the chain toward deceit; pristine truth is the foundation of sacred mystery: Enforcing ethical divination.)",
+          "Ọ̀pẹ̀lẹ̀ fọhùn tán, ọ̀rọ̀ d'ètùtù; ẹni tó gbọ́ ìmọ̀ràn a rí àlàáfíà. (When the divination chain finishes speaking, consultation turns to restitution; he who heeds counsel finds lasting peace: Teaching therapeutic obedience.)"
+        ],
+        "provenance_and_citations": "Bascom, William (1969). Ifa Divination: Communication Between Gods and Men; Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Idowu, E. Bolaji (1962). Olodumare."
+      }
+    },
+    "Ọpọ́n_Ifá": {
+      "Ọpọ́n Ọlọ́fà": {
+        "facet_name": "Ọpọ́n Ọlọ́fà",
+        "typology": "Microcosmic Divination Tray & Sacred Dimensional Portal",
+        "description": "The circular or rectangular carved wooden divination tray functioning as the microcosmic map of the universe upon which cosmic destiny is inscribed.",
+        "etymology_and_philosophy": "Ọpọ́n Ọlọ́fà designates the masterfully carved wooden divination tray whose raised perimeter border is sculpted with intricate cosmological iconography, interlacing patterns, and an imposing carved face of Èṣù (Ojú Èṣù) gazing directly at the center. In Yorùbá metaphysics, the tray (Ọpọ́n) is not a passive wooden surface; it represents the entirety of the created universe in miniature (Ayé). The circular shape symbolizes the eternal cyclical nature of time and cosmic reality, while the raised border represents the physical horizon containing the boundless spiritual plane. When dusted with yellowish termite-wood powder (Ìyẹ̀ròsùn), the central clearing becomes a sacred holographic canvas. Upon this powder, the Babaláwo uses his fingers to inscribe the binary cosmological signatures of the Odù. As the priest writes and erases the sacred symbols, destiny is literally reconfigured, teaching that human life is not trapped in fatalistic bondage, but can be reshaped through conscious wisdom.",
+        "historical_timeline": "Classical Era: Celebrated world-heritage art form carved across renowned woodcarving workshops in Osi-Ilorin, Ọ̀yọ́, and Ketu.",
+        "material_and_craftsmanship": "Carved seasoned hardwood (Omo or Irókò), natural vegetable pigments, and consecrated termite-wood powder (Ìyẹ̀ròsùn).",
+        "social_and_ritual_context": "The central altar of every Ifá consultation; always oriented with the face of Èṣù pointing directly toward the priest.",
+        "proverbs_and_oral_traditions": [
+          "Ọpọ́n Ifá l'ó mọ bí ayé ti rí; a kì í f'ìyẹ̀ròsùn dán eré wò. (The divination tray understands the true nature of the cosmos; one uses not the sacred yellow powder for frivolous games: Instilling cosmological reverence.)",
+          "Èṣù ń wo ọpọ́n, Ifá ń kọ̀wé; kò sí ohun tí a kọ s'órí ọpọ́n tí yóò parẹ́ lásán. (Èṣù gazes upon the tray, Ifá inscribes destiny; nothing written upon the sacred board vanishes without fulfilling its purpose: Affirming karmic permanence.)",
+          "Ọpọ́n Ifá kì í fọ́ n'íwájú awo; àlàáfíà ni orísun ìmọ̀. (The divination tray breaks not before the initiate; serene inner stillness is the wellspring of all wisdom: Teaching psychological serenity.)"
+        ],
+        "provenance_and_citations": "Abiodun, Rowland (2014). Yoruba Art and Language; Drewal, Henry John, and John Pemberton III (1989). Yoruba: Nine Centuries of African Art; Bascom, William (1969). Ifa Divination."
+      }
+    }
+  }
+}
