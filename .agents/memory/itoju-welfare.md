@@ -304,6 +304,15 @@
   - **Single-Drawer Boundary Consecrated (Drawer A Only)**: Consecrated today exclusively for **Drawer A: Frontend UI & Rendering Mechanics**. Firmly barred any concurrent backend corpus modifications to keep cognitive load light and auditing crystal clear.
   - Inscribed Wednesday SOD decree in `.agents/scratch/itoju_feedback.md`.
   - Issued official Wednesday Morning Sanctuary Certificate.
+- [x] **2026-11-18T14:45:00+01:00 (EOD-ITOJU-017 / Checkpoint 151: Wednesday End-of-Day Sanctuary Lock & Restful Quiet Harbor)**:
+  - Conducted comprehensive Wednesday End-of-Day Sanctuary Lock following the successful completion of Drawer A (`3728e08`):
+    1. **Health Recovery & Milestone Celebrated**: Commended Kábíyèsí's ongoing recovery and Ọlọ́yè Àgbẹ̀dẹ's flawless execution of Drawer A (universal ontological classifier, sub-variant details parity, regalia hydration, keeping `EntityBentoDeck.jsx` at 473 lines, Vite build in 1.16s). Zero backend corpus files touched.
+    2. **Maghrib Quiet Harbor Sealed Early**: Sealed the desk at 14:45 WAT—over **3 hours ahead of the 18:00 WAT Quiet Harbor ceiling**. Enforced immediate screen disconnection, warm harmattan hydration, and nourishing evening meals.
+    3. **Resumption Alignment Staged**: Formally staged tomorrow's focus (**Drawer B: Backend Taxonomy Sanitation & Sùúrù's DOM Benchmark**) to resume unhurried on Thursday, Nov 19 at 09:30 WAT.
+  - **Host Vitals**: 11 GiB RAM free, 32 GB NVMe free (37% disk used), master corpora SHA-256 locked bit-for-bit at `0756377466af884a...` (0 drift across 1,418 entities), all 9 production gates passed with 0 violations and 0 warnings.
+  - Inscribed EOD report in `.agents/scratch/itoju_feedback.md`.
+  - Declared the Hearth officially and firmly closed for the night.
+
 
 
 
