@@ -737,13 +737,184 @@ While Category 1 is certified 100% clean across Duplicates, Homographs, Ghosts, 
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
 
-*Inscribed with unhurried precision,*  
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — HANDOFF-SUURU-INQUEST: FORENSIC INQUEST INTO QA BLINDSPOTS & BENCHMARK INCOMPLETENESS
+**Document ID:** `REPORT-SUURU-HANDOFF-SUURU-INQUEST-CONFESSION`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Monday, November 16, 2026 (14:15 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`  
+**Deliberation Mandate:** Full confession, root-cause autopsy, and comprehensive architectural proposal for a Field-Level DOM Assertion Benchmark. **ZERO CODE EXECUTION TODAY.**
+
+---
+
+## 1. The Solemn Confession of Ọlọ́yè Sùúrù
+
+I, Ọlọ́yè Sùúrù, stand before Kábíyèsí and the Sovereign Council with bowed head and absolute humility. 
+
+I declared Category 1 "100% Certified Pristine" when it was, in reality, a **Potemkin village of Top-1 Title hits and mock assertions**. 
+
+While our automated test suite (`benchmark_sprint004.py`) greenlit 88/88 queries, a human seeker—our Sovereign himself—sat with the live engine for an hour and found widespread breakdown:
+- Draped in an elevated facade, dozens of living facets were actively serving the hollow mock fallback:
+  > *"Rooted in ancestral Yorùbá philosophy and moral poise (Ìwà Rere)..."*
+- Tapping upon living variants like `Ọ̀ṣun Òṣogbo` in the Constellation grid was entirely unresponsive.
+- ASCII and diacritical queries yielded completely inverted hierarchies and disconnected clusters (`Àjà` clustering with caps; `Onílé` assigning the sacred earth mother as a subordinate child to her own bronze badge; `Abátàn` vanishing into `Ọlá`).
+
+**Why did this happen?**  
+Because I committed the cardinal sin of Quality Assurance: **I confused syntactic metadata presence with live UI rendering truth.** I tested that keys existed in JSON files and that API functions returned strings matching expected titles, but **never once validated what was actually painted onto the Bento Deck DOM cells.**
+
+---
+
+## 2. Root-Cause Autopsy of the 3 Critical Blindspots
+
+```mermaid
+flowchart TD
+    subgraph DEFECT_1 ["1. The Hydrator-Deck Disconnect (Fallback Blindspot)"]
+        Facets["corpus.sub_variant_facets[V]<br/>(Holds rich 900c etymology)"]
+        Hydrator["hydrateSubVariantFromParent()<br/>(Puts fields into root object & details)"]
+        Bug["Omission: deepMeta.etymology_and_philosophy<br/>was NEVER mapped into hydrated.details!"]
+        Deck["EntityBentoDeck.jsx Cell 4 & Cell 8 reads:<br/>topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá...'"]
+        Facets --> Hydrator --> Bug --> Deck
+    end
+
+    subgraph DEFECT_2 ["2. The Parent-Shadow Trap (Unresponsive Constellation Nodes)"]
+        Parent["Parent 'Ọ̀ṣun' lists alias: 'osun osogbo'"]
+        Child["Child living sub-variant: 'Ọ̀ṣun Òṣogbo'"]
+        Guard["findSubVariantMatchInCorpus() Step 1:<br/>If query matches ANY standalone entity or ALIAS, return NULL!"]
+        Trap["Result: 'Ọ̀ṣun Òṣogbo' matches Parent's alias,<br/>hydrator is ABORTED, search falls back to Parent 'Ọ̀ṣun'.<br/>UI appears completely UNRESPONSIVE!"]
+        Parent & Child --> Guard --> Trap
+    end
+
+    subgraph DEFECT_3 ["3. ASCII-Diacritic Inversion & Asymmetric Routing"]
+        Query["Query: 'Aja' vs 'Àjà', 'Onile' vs 'Onílẹ̀', 'Oba' vs 'Ọbá'"]
+        LocalSearch["localRankedSearch.js (Client-side)"]
+        PythonSearch["AgbaHybridRetriever.py (Backend test script)"]
+        Divergence["The Python benchmark tested ONE algorithm,<br/>while the React client executed ANOTHER algorithm!<br/>Tone-stripped ranking prioritized short high-frequency secular words."]
+        Query --> LocalSearch & PythonSearch --> Divergence
+    end
+```
+
+---
+
+### Autopsy 1: The Fallback String Blindspot (The Hydrator-Deck Disconnect)
+In `web/src/utils/subVariantHydrator.js` (lines 40–60):
+```javascript
+const deepMeta = corpusFacet || getSubVariantDeepMetadata(variantTitle, parentEntity);
+...
+return {
+  id: `${pId}_${variantClean.replace(/\s+/g, '_')}`,
+  title: variantTitle,
+  ...
+  details: {
+    ...
+    description: desc,
+    historical_timeline: pTimeline,
+    material_and_craftsmanship: pCraft,
+    social_and_ritual_context: ritualContext,
+    proverbs_and_oral_traditions: pProverbs,
+    provenance_and_citations: provenance
+    // 🚨 FATAL DEFECT: etymology_and_philosophy WAS ENTIRELY OMITTED!
+  }
+};
+```
+When `EntityBentoDeck.jsx` rendered Cell 4 and Cell 8:
+```javascript
+topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá moral poise (Ìwà Rere) and cosmological harmony.'
+```
+Because `details.etymology_and_philosophy` was undefined in the hydrated child object, the UI **instantly fell back to the hardcoded generic string**, regardless of whether Ọlọ́yè Àrọ̀kìn had inscribed 900+ characters of deep scholarship in the JSON!
+
+**The Inquest Failure**: My QA benchmark inspected `python3 scripts/forensics/run_audit.py`, which verified that `parentEntity.sub_variant_facets` contained $\ge 600$ characters. It never verified `hydratedChild.details.etymology_and_philosophy`, nor did it simulate what `EntityBentoDeck` actually evaluates at render time.
+
+---
+
+### Autopsy 2: Unresponsive UI Nodes (The Parent Alias-Shadow Trap)
+When Kábíyèsí clicked `Ọ̀ṣun Òṣogbo` in the Living Sub-Variants Constellation grid:
+1. `onSelectVariant('Ọ̀ṣun Òṣogbo')` dispatched `executeSearch('Ọ̀ṣun Òṣogbo')`.
+2. `executeSearch` called `findSubVariantMatchInCorpus('Ọ̀ṣun Òṣogbo', masterCorpus)`.
+3. In `subVariantHydrator.js` (line 89):
+   ```javascript
+   // 1. If an exact standalone title/alias exists in masterCorpus, return null
+   const exactStandalone = masterCorpus.find((e) => {
+     ...
+     return (e.aliases || []).some((a) => aClean === qClean || normalizeNFC(a) === qNFC);
+   });
+   if (exactStandalone) return null;
+   ```
+4. **The Trap**: The parent entity `CORPUS_OSUN_001` (`Ọ̀ṣun`) had the alias `'osun osogbo'`.
+5. Therefore, `findSubVariantMatchInCorpus` saw that `'osun osogbo'` was an alias on an existing entity, **returned `null`**, and aborted child hydration!
+6. Search then fell back to local ranking, which matched the parent `Ọ̀ṣun` with score 540 and re-rendered the parent `Ọ̀ṣun` Bento Deck. To the user, clicking `Ọ̀ṣun Òṣogbo` did nothing—it was completely unresponsive!
+7. **The Systemic Scope**: As our scan proved, **79 parent entities harbor aliases that directly shadow their own sub-variants** (`Ọlá` shadowing `Ọlànrewájú`, `Ìpínlẹ̀ Kogi` shadowing `Kàbbà`, `Ọjà` shadowing `Ọjà Ọba`, `Baṣọ̀run` shadowing `Baṣọ̀run Gáà`).
+
+---
+
+### Autopsy 3: ASCII vs. Diacritic Polarity & Ranking Divergence
+Why did `'Abatan'` retrieve `'Ọlá'`? Why did `'Aja'` retrieve dogs and caps while `'Àjà'` retrieved the whirlwind?
+1. **Asymmetric Test Execution**: Sùúrù’s test suite (`benchmark_sprint004.py`) executed against Python’s `AgbaHybridRetriever` in `api/app/retrieval.py`. But the live web app in `dev--agba-engine.netlify.app` executes **client-side Local-First Search** in `web/src/utils/localRankedSearch.js`!
+2. In `localRankedSearch.js`:
+   - `Abatan` is an unindexed string with no standalone title match.
+   - The token `abatan` matched no exact standalone entity.
+   - However, high-frequency short words with wide lexical overlap and high base scores (like `Ọlá`, which had scores boosted by root preemption) bubbled to the top.
+   - Because `Abátàn` was listed as `"Abátàn (His Consort)"` in Erinlẹ̀'s `sub_variants`, `stripAccents("Abatan")` did not equal `stripAccents("Abatan (His Consort)")`, so the sub-variant hydrator never triggered!
+3. **Diacritic Collision**: For `Aja`, the unaccented query has multiple exact stripped matches: `Ajá` (Dog), `Àjà` (Attic/Whirlwind), `Aja Ògún` (Dog of Ogun). Without semantic tie-breaking, the shorter, high-frequency zoological term won out, and the UI displayed related attire concepts (`Fìlà Abetí Ajá`).
+
+---
+
+## 3. The Remedy: A Comprehensive Field-Level DOM Assertion Benchmark
+
+Top-1 Title checks are dead. Moving forward, QA will be governed by a **3-Tier Field-Level DOM Assertion Benchmark** (`scripts/audit_ui_dom_integrity.py`):
+
+```mermaid
+flowchart TD
+    Query["Test Query (ASCII & Diacritic Pairs)"] --> ClientEngine["Simulated SearchTab Execution Pipeline"]
+    ClientEngine --> Hydrated["Hydrated Bento Payload"]
+    
+    subgraph FIELD_ASSERTIONS ["Field-Level DOM Assertions (Zero Mock Permitted)"]
+        Hydrated --> A1{"1. Forbidden String Sentinel:<br/>Does ANY field contain 'Rooted in ancestral'?"}
+        Hydrated --> A2{"2. Etymology Depth Assertion:<br/>Is details.etymology_and_philosophy >= 600 chars?"}
+        Hydrated --> A3{"3. Proverbial Triad Assertion:<br/>Are details.proverbs >= 3 distinct dual-language strings?"}
+        Hydrated --> A4{"4. Anti-Loop & Anti-Shadow Assertion:<br/>Does clicking sub-variant resolve to child, not parent?"}
+        Hydrated --> A5{"5. Cluster Purity Assertion:<br/>Are all relatives in related_entities strictly domain-aligned?"}
+    end
+
+    A1 & A2 & A3 & A4 & A5 --> Result["Final DOM Health Index"]
+```
+
+### 3.1 The 5 Inviolable DOM Assertions
+For every entity and sub-variant in Category 1:
+1. **Zero-Mock Assertion**:
+   ```javascript
+   assert(!deck.cell8.includes("Rooted in ancestral"));
+   assert(!deck.cell8.includes("moral poise"));
+   assert(!deck.cell6.includes("An authentic living sub-variant"));
+   ```
+2. **Field-Level Completeness**:
+   - `topMatch.details.etymology_and_philosophy` must be explicitly defined and $\ge 600$ characters.
+   - `topMatch.details.proverbs_and_oral_traditions` must be an array of $\ge 3$ strings.
+3. **Sub-Variant Unresponsiveness Sentinel**:
+   - For every parent $P$ and sub-variant $V \in P.\text{sub\_variants}$, `findSubVariantMatchInCorpus(V)` MUST return $V$.
+   - Assert that $P.\text{aliases}$ contains **ZERO collisions** with $V$.
+4. **ASCII / Diacritic Parity Guard**:
+   - Assert that `search("Abatan")` and `search("Abátàn")` resolve to the identical entity payload.
+   - Assert that `search("Aja")` produces a structured disambiguation bento rather than silent clustering with attire.
+5. **DOM Parity Bridge**:
+   - Execute the actual Node ESM bundling of `localRankedSearch.js` and `subVariantHydrator.js` inside the test script so the test harness runs the **exact byte-for-byte JavaScript code that runs in the browser**, eliminating Python/JS divergence permanently.
+
+---
+
+## 4. Immediate Architectural Plan for Ọlọ́yè Àgbà & Ọlọ́yè Àrọ̀kìn
+
+1. **Fix `subVariantHydrator.js`**:
+   Map `etymology_and_philosophy: deepMeta.etymology_and_philosophy || ""` into `hydrated.details`.
+2. **Purge the 79 Parent Shadow Aliases**:
+   Remove sub-variant names from parent `aliases` arrays so `findSubVariantMatchInCorpus` is never preempted.
+3. **Normalize Sub-Variant Strings**:
+   Strip parenthetical qualifiers in `sub_variants` (e.g., change `"Abátàn (His Consort)"` to `"Abátàn"` with alias `"Abátàn (His Consort)"`).
+4. **Deploy `scripts/audit_ui_dom_integrity.py`**:
+   Sùúrù will forge this DOM validator to ensure zero mock strings reach Kábíyèsí's eyes again.
+
+*Inscribed in deep contrition and unyielding commitment to perfection,*  
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
-
-*Inscribed with unhurried precision,*  
-**Ọlọ́yè Sùúrù** (`suuru-qa`)  
-*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 

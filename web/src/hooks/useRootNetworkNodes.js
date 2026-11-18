@@ -2,6 +2,7 @@ import { useMemo, useCallback } from 'react';
 import { normalizeNFC, stripAccents, escapeRegExp } from '../utils/tonalContour';
 import { hydrateSubVariantFromParent } from '../utils/subVariantHydrator';
 import { findVisualRegaliaHit } from '../utils/bentoHydrator';
+import { getOntologicalClassification, ONTOLOGICAL_TIER } from '../utils/ontologyClassifier';
 
 export function resolveSubVariantEntities(subVariantNames = [], parentNode = null, masterCorpus = []) {
   const resolved = [];
@@ -45,45 +46,38 @@ export function useRootNetworkNodes(query, masterCorpus = []) {
 
     if (matches.length === 0) return null;
 
+    // Exact title match takes strict precedence over any heuristic
     const exactMatch = matches.find((m) => normalizeNFC(m.title) === qNFC) ||
-      matches.find((m) => stripAccents(m.title) === qClean && (m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept')) ||
       matches.find((m) => stripAccents(m.title) === qClean);
 
-    const matchedNode = exactMatch || matches.find((m) => m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept') || matches[0];
+    // Never greedily elevate unrelated parents: use exact match or primary rank
+    const matchedNode = exactMatch || matches[0];
+    const classification = getOntologicalClassification(matchedNode, masterCorpus);
     let parentNode = matchedNode;
     let childVariants = [];
 
-    // Decouple Sovereign Parent / Living Sub-Variant hierarchy
-    const isDirectChildMatch = stripAccents(matchedNode.title) === qClean ||
-      normalizeNFC(matchedNode.title) === qNFC ||
-      (matchedNode.aliases || []).some((a) => stripAccents(a) === qClean || normalizeNFC(a) === qNFC);
-
-    if (matchedNode.sovereign_parent && matchedNode.is_parent !== true) {
-      const spClean = stripAccents(matchedNode.sovereign_parent);
+    if (classification.tier === ONTOLOGICAL_TIER.LIVING_VARIANT && classification.parentTitle) {
+      const spClean = stripAccents(classification.parentTitle);
       const trueParent = masterCorpus.find((m) =>
-        normalizeNFC(m.title) === normalizeNFC(matchedNode.sovereign_parent) ||
-        (stripAccents(m.title) === spClean && (m.is_parent === true || m.sovereign_parent_status === 'Sovereign Parent Concept')) ||
+        normalizeNFC(m.title) === normalizeNFC(classification.parentTitle) ||
         stripAccents(m.title) === spClean
       );
-      if (isDirectChildMatch) {
-        parentNode = matchedNode;
-        if (trueParent) {
-          const siblings = Array.isArray(trueParent.sub_variants) ? resolveEntities(trueParent.sub_variants, trueParent) : [];
-          childVariants = [trueParent, ...siblings.filter((s) => s.title !== matchedNode.title)].slice(0, 4);
-        }
-      } else if (trueParent) {
+      if (trueParent) {
         parentNode = trueParent;
         const siblings = Array.isArray(trueParent.sub_variants) ? resolveEntities(trueParent.sub_variants, trueParent) : [];
-        childVariants = [matchedNode, ...siblings.filter((s) => s.title !== matchedNode.title)].slice(0, 4);
+        childVariants = [matchedNode, ...siblings.filter((s) => stripAccents(s.title) !== stripAccents(matchedNode.title))].slice(0, 4);
       }
-    }
-
-    if (childVariants.length === 0) {
-      if (Array.isArray(parentNode.sub_variants) && parentNode.sub_variants.length > 0) {
-        childVariants = resolveEntities(parentNode.sub_variants, parentNode).slice(0, 4);
-      } else {
-        childVariants = matches.filter((m) => m.title !== parentNode.title).slice(0, 4);
+    } else if (classification.tier === ONTOLOGICAL_TIER.SOVEREIGN_PARENT) {
+      parentNode = matchedNode;
+      if (Array.isArray(classification.subVariants) && classification.subVariants.length > 0) {
+        childVariants = resolveEntities(classification.subVariants, parentNode)
+          .filter((s) => stripAccents(s.title) !== stripAccents(matchedNode.title))
+          .slice(0, 4);
       }
+    } else {
+      // Autonomous Canon: self-contained node, siblings from related category/matches
+      parentNode = matchedNode;
+      childVariants = matches.filter((m) => stripAccents(m.title) !== stripAccents(parentNode.title)).slice(0, 4);
     }
 
     const relatedRegalia = findVisualRegaliaHit(parentNode.title) || findVisualRegaliaHit(qTrim);

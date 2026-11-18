@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import {
   Sparkles, BookOpen, MapPin, Feather, Flag, ChevronDown, ChevronUp,
-  Shield, Volume2, GitBranch, Scroll
+  Shield, Volume2, GitBranch, Scroll, ArrowRight
 } from 'lucide-react';
 import AkosileProvenanceDrawer from './AkosileProvenanceDrawer';
 import LivingVariantConstellationGrid from './LivingVariantConstellationGrid';
 import OrukoMiLineageRibbon from './OrukoMiLineageRibbon';
 import MultiVoiceAcousticPlayer from './MultiVoiceAcousticPlayer';
+import { getOntologicalClassification, ONTOLOGICAL_TIER } from '../utils/ontologyClassifier';
+import { stripAccents } from '../utils/tonalContour';
 
 export default function EntityBentoDeck({
   topMatch,
@@ -18,29 +20,37 @@ export default function EntityBentoDeck({
 }) {
   const [tier14Open, setTier14Open] = useState(false);
   const [provenanceOpen, setProvenanceOpen] = useState(false);
+  const [imgFailed, setImgFailed] = useState(false);
 
   if (!topMatch) return null;
 
-  const isParent =
-    topMatch.details?.is_parent === true ||
-    topMatch.details?.sovereign_parent_status === 'Sovereign Parent Concept';
+  const classification = getOntologicalClassification(topMatch);
+  const isParent = classification?.tier === ONTOLOGICAL_TIER.SOVEREIGN_PARENT;
+  const isVariant = classification?.tier === ONTOLOGICAL_TIER.LIVING_VARIANT;
+  const etymologyText = topMatch.details?.etymology_and_philosophy || topMatch.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and cultural identity.';
 
   const tier14Items = [
     ['1. Canonical Entity ID', topMatch.details?.id || topMatch.id, true],
     ['2. Canonical Title (25-Letter Orthography)', topMatch.details?.title || topMatch.title, false],
-    ['3. Sovereign Parent Classification', isParent ? 'Sovereign Parent Concept' : topMatch.details?.sovereign_parent_status || 'Sovereign Heritage Matrix', false],
+    ['3. Sovereign Parent Classification', isParent ? 'Sovereign Parent Concept' : isVariant ? `Living Sub-Variant of ${classification.parentTitle}` : 'Autonomous Cultural Canon', false],
     ['4. Cultural Domain Category', topMatch.details?.category || topMatch.category, false],
     ['5. Aliases & Cross-Dialect Variants', (topMatch.details?.aliases || []).join(', ') || 'Canonical primary nomenclature', false],
     ['6. Primary Cultural Description', topMatch.details?.description, false],
     ['7. Historical Antiquity Timeline', topMatch.details?.historical_timeline || 'Deep antiquity tracing to classical Ilé-Ifẹ̀.', false],
-    ['8. Etymology, Linguistics & Philosophy', topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy.', false],
+    ['8. Etymology, Linguistics & Philosophy', etymologyText, false],
     ['9. Materiality & Craftsmanship', topMatch.details?.material_and_craftsmanship || 'Indigenous craftsmanship and materials.', false],
     ['10. Social Protocol & Ritual Context', topMatch.details?.social_and_ritual_context || 'Integral to royal court and ancestral rites.', false],
     ['11. Proverbs & Praise Poetry (Oríkì)', Array.isArray(topMatch.details?.proverbs_and_oral_traditions) ? topMatch.details?.proverbs_and_oral_traditions.join('; ') : topMatch.details?.proverbs_and_oral_traditions || 'Preserved across oral verse.', false],
     ['12. Transatlantic Diaspora Connections', topMatch.details?.diaspora_connections || 'Survives in Brazil Candomblé and Cuban Santería.', false],
     ['13. Geographical Origin', topMatch.details?.geographical_origin || 'Yorùbáland (Southwestern Nigeria & Diaspora)', false],
-    ['14. Curatorial & Ethical Guidelines', topMatch.details?.media_production_notes || 'Ensure authentic period representation and correct tonal pronunciation.', false]
+    ['14. Curatorial & Ethical Guidelines', topMatch.details?.curatorial_and_ethical_guidelines || topMatch.details?.media_production_notes || 'Ensure authentic period representation and correct tonal pronunciation.', false]
   ];
+
+  const hasVisualAsset = !imgFailed && topMatch.multimodal_assets?.has_visual_asset && topMatch.multimodal_assets?.source_url;
+  const currentTitleClean = stripAccents(topMatch.title || '');
+  const sanitizedSubVariants = isParent
+    ? (classification.subVariants || []).filter((sv) => stripAccents(typeof sv === 'string' ? sv : sv.title || '') !== currentTitleClean)
+    : [];
 
   return (
     <div className="animate-fade-in" style={{ marginBottom: '48px' }}>
@@ -128,7 +138,7 @@ export default function EntityBentoDeck({
 
         {/* CELL 3: VERIFIED REGALIA & VISUAL ARCHIVE CELL */}
         <div className="bento-cell bento-cell-regalia">
-          {topMatch.multimodal_assets?.has_visual_asset && topMatch.multimodal_assets?.source_url ? (
+          {hasVisualAsset ? (
             <div>
               <span className="badge-gold" style={{ marginBottom: '12px', display: 'inline-block' }}>
                 VERIFIED MUSEUM MASTERWORK
@@ -138,7 +148,7 @@ export default function EntityBentoDeck({
                   src={topMatch.multimodal_assets.source_url}
                   alt={topMatch.title}
                   style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                  onError={(e) => { e.target.style.display = 'none'; }}
+                  onError={() => setImgFailed(true)}
                 />
               </div>
               <h4 className="font-royal text-gold" style={{ fontSize: '1.15rem', marginBottom: '6px' }}>
@@ -184,7 +194,7 @@ export default function EntityBentoDeck({
           </div>
           <p style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
             <strong>Etymology & Philosophical Core:</strong>{' '}
-            {topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá moral poise (Ìwà Rere) and cosmological harmony.'}
+            {etymologyText}
           </p>
         </div>
 
@@ -228,11 +238,57 @@ export default function EntityBentoDeck({
         </div>
       </div>
 
-      {/* LIVING SUB-VARIANT CONSTELLATION GRID */}
-      <LivingVariantConstellationGrid
-        subVariants={topMatch.details?.sub_variants || topMatch.sub_variants || []}
-        onSelectVariant={(variantTitle) => onBranchToRelative({ title: variantTitle, is_subvariant: true }, 'Living Sub-Variant')}
-      />
+      {/* ANCESTRY RIBBON FOR LIVING VARIANTS */}
+      {isVariant && classification?.parentTitle && (
+        <div style={{
+          marginTop: '16px',
+          padding: '12px 18px',
+          background: 'linear-gradient(135deg, rgba(217, 119, 6, 0.12) 0%, rgba(15, 23, 42, 0.8) 100%)',
+          border: '1px solid rgba(217, 119, 6, 0.35)',
+          borderRadius: '12px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          flexWrap: 'wrap',
+          gap: '10px'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <span style={{ fontSize: '0.86rem', color: '#fbbf24', fontWeight: 700 }}>
+              👑 Sovereign Parent Lineage:
+            </span>
+            <span style={{ fontSize: '0.92rem', color: '#f8fafc', fontWeight: 600 }}>
+              {classification.parentTitle}
+            </span>
+          </div>
+          <button
+            type="button"
+            onClick={() => onBranchToRelative({ title: classification.parentTitle, is_parent: true }, 'Sovereign Ancestry')}
+            style={{
+              background: 'rgba(217, 119, 6, 0.2)',
+              border: '1px solid #d97706',
+              borderRadius: '8px',
+              padding: '6px 12px',
+              color: '#fbbf24',
+              fontSize: '0.8rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            Ascend to Sovereign Origin <ArrowRight size={13} />
+          </button>
+        </div>
+      )}
+
+      {/* LIVING SUB-VARIANT CONSTELLATION GRID (SOVEREIGN PARENTS ONLY) */}
+      {isParent && sanitizedSubVariants.length > 0 && (
+        <LivingVariantConstellationGrid
+          subVariants={sanitizedSubVariants}
+          onSelectVariant={(variantTitle) => onBranchToRelative({ title: variantTitle, is_subvariant: true }, 'Living Sub-Variant')}
+        />
+      )}
 
       {/* 14-TIER KNOWLEDGE GRAPH ACCORDION */}
       {tier14Open && (

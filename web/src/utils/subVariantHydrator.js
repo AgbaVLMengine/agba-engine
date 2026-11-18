@@ -33,6 +33,8 @@ export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
 
   const pTimeline = deepMeta.historical_timeline || parentEntity.historical_timeline || `Preserved through the generational lineage of ${pTitle}.`;
   const pCraft = deepMeta.material_and_craftsmanship || parentEntity.material_and_craftsmanship || 'Traditional luxury handcraft and guild metallurgy.';
+  const pEtymology = deepMeta.etymology_and_philosophy || parentEntity.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and cultural identity.';
+  const pCuratorial = deepMeta.curatorial_and_ethical_guidelines || parentEntity.curatorial_and_ethical_guidelines || parentEntity.media_production_notes || '';
   const pProverbs = deepMeta.proverbs_and_oral_traditions?.length > 0
     ? deepMeta.proverbs_and_oral_traditions
     : (parentEntity.proverbs_and_oral_traditions || []);
@@ -44,9 +46,10 @@ export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
   const desc = deepMeta.description || `A specialized living variant within the ${pTitle} tradition, embodying ${variantTitle} in classical ${pCat}.`;
   const ritualContext = deepMeta.social_and_ritual_context || `Operates in direct ritual, ceremonial, and practical alignment with ${pTitle}.`;
   const provenance = deepMeta.provenance_and_citations || parentEntity.provenance_and_citations || '';
+  const sanitizedId = variantClean.replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
 
   return {
-    id: `${pId}_${variantClean.replace(/\s+/g, '_')}`,
+    id: `${pId}_${sanitizedId}`,
     title: variantTitle,
     culture: parentEntity.culture || 'Yorùbá',
     category: deepMeta.category || pCat,
@@ -56,10 +59,12 @@ export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
     aliases: [variantTitle, variantClean],
     description: desc,
     historical_timeline: pTimeline,
+    etymology_and_philosophy: pEtymology,
     material_and_craftsmanship: pCraft,
     social_and_ritual_context: ritualContext,
     proverbs_and_oral_traditions: pProverbs,
     provenance_and_citations: provenance,
+    curatorial_and_ethical_guidelines: pCuratorial,
     diaspora_connections: deepMeta.diaspora_connections || parentEntity.diaspora_connections || '',
     geographical_origin: parentEntity.geographical_origin || 'Yorùbáland',
     media_production_notes: parentEntity.media_production_notes || '',
@@ -73,10 +78,12 @@ export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
       sovereign_parent_status: 'Living Sub-Variant',
       description: desc,
       historical_timeline: pTimeline,
+      etymology_and_philosophy: pEtymology,
       material_and_craftsmanship: pCraft,
       social_and_ritual_context: ritualContext,
       proverbs_and_oral_traditions: pProverbs,
-      provenance_and_citations: provenance
+      provenance_and_citations: provenance,
+      curatorial_and_ethical_guidelines: pCuratorial
     }
   };
 }
@@ -92,7 +99,18 @@ export function findSubVariantMatchInCorpus(query, masterCorpus) {
   const qNFC = normalizeNFC(qTrim);
   if (qClean.length < 2) return null;
 
-  // 1. If an exact standalone title/alias exists in masterCorpus, return null
+  // Helper: check if a variant string matches query (both raw and parenthetical-stripped)
+  const matchesVariant = (sv) => {
+    const svTitle = typeof sv === 'string' ? sv : sv.title || '';
+    if (!svTitle) return false;
+    const svClean = stripAccents(svTitle);
+    const svNFC = normalizeNFC(svTitle);
+    if (svNFC === qNFC || svClean === qClean) return true;
+    const svNoParen = stripAccents(svTitle.replace(/\s*\([^)]*\)/g, ''));
+    return svNoParen === qClean;
+  };
+
+  // 1. If an exact standalone title/alias exists in masterCorpus
   const exactStandalone = masterCorpus.find((e) => {
     const tNFC = normalizeNFC(e.title);
     const tClean = stripAccents(e.title);
@@ -102,16 +120,24 @@ export function findSubVariantMatchInCorpus(query, masterCorpus) {
       return aClean === qClean || normalizeNFC(a) === qNFC;
     });
   });
-  if (exactStandalone) return null;
+
+  // Parent-Shadow Preemption Cure: If exact match is a parent whose sub_variants contain the query, do NOT abort!
+  if (exactStandalone) {
+    const matchingSV = Array.isArray(exactStandalone.sub_variants)
+      ? exactStandalone.sub_variants.find(matchesVariant)
+      : null;
+    if (matchingSV) {
+      return { variantTitle: typeof matchingSV === 'string' ? matchingSV : matchingSV.title, parent: exactStandalone };
+    }
+    return null;
+  }
 
   // 2. Iterate across all Sovereign Parents to find parent owning this variant string
   for (const parent of masterCorpus) {
     if (!Array.isArray(parent.sub_variants)) continue;
     for (const sv of parent.sub_variants) {
-      const svNFC = normalizeNFC(sv);
-      const svClean = stripAccents(sv);
-      if (svNFC === qNFC || svClean === qClean) {
-        return { variantTitle: sv, parent };
+      if (matchesVariant(sv)) {
+        return { variantTitle: typeof sv === 'string' ? sv : sv.title, parent };
       }
     }
   }

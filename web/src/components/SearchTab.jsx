@@ -91,7 +91,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
               if (res.ok) {
                 const data = await res.json();
                 if (data?.ranked_entities?.length > 0) {
-                  rankedEntities = data.ranked_entities;
+                  rankedEntities = data.ranked_entities.map((e, idx) => hydrateEntityForBento(e, e.fusion_score || (idx === 0 ? 0.995 : 0.88 - idx * 0.05)));
                 }
               }
             } catch (_) {

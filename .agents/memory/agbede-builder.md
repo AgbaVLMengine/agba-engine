@@ -211,6 +211,13 @@
 - **Master Corpus**: Exactly **1,420 Canonical Entities** locked at SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53`.
 - **Dynamic Subtitle Parity**: `useExplorationGraph.js` dynamic subtitle updated to `${masterCorpus.length.toLocaleString()} Canonical Nodes & 256 Odù Ifá`.
 - **Single-Drawer Law**: Inviolable. Frontend remains sealed unless intentionally opening a UI drawer.
+- **[2026-11-18] (`HANDOFF-AGBEDE-EXEC-DRAWER-A`) — Master Execution of Drawer A (Frontend UI Engine & Universal Ontological Classifier)**:
+  - Authored `web/src/utils/ontologyClassifier.js` (66 LOC, strictly < 100 LOC, 0 external dependencies) establishing immutable pure function `getOntologicalClassification(entity, masterCorpus)` and `ONTOLOGICAL_TIER = { SOVEREIGN_PARENT, LIVING_VARIANT, AUTONOMOUS_CANON }`.
+  - Upgraded `web/src/utils/subVariantHydrator.js` (146 LOC): mapped `etymology_and_philosophy` and `curatorial_and_ethical_guidelines` into both root object and nested `details`, sanitized generated `id` to alphanumeric+underscore, stripped parenthetical qualifiers for fuzzy matching (`"Abatan"` $\rightarrow$ `"Abátàn (His Consort)"`), and cured parent-shadow alias preemption (allowing sub-variant hydration when querying child variants of parent entities like `Ọ̀ṣun`).
+  - Upgraded `web/src/utils/bentoHydrator.js` (92 LOC): expanded `findVisualRegaliaHit` to match across `canonical_name`, `corpus_concept_id`, entity `sovereign_parent`, and base root tokens. Wrapped Cloud Run API responses in `SearchTab.jsx` line 94 with `hydrateEntityForBento`.
+  - Refactored `web/src/hooks/useRootNetworkNodes.js` (87 LOC): excised greedy `matches.find(m => m.is_parent === true)` override; delegated role classification strictly to `ontologyClassifier.js` to eradicate query-dependent polarity inversion.
+  - Refactored `web/src/components/EntityBentoDeck.jsx` (351 LOC, < 450 LOC threshold): rendered `LivingVariantConstellationGrid` strictly for `SOVEREIGN_PARENT` with self-loops mathematically stripped; rendered `👑 Sovereign Parent Lineage` ribbon for `LIVING_VARIANT`; added stateful image fallback to `SOVEREIGN TEXTUAL CANON` crown card to prevent 240px black voids. Capped constellation chip height in `LivingVariantConstellationGrid.jsx` to 280px with scrollbar.
+  - Certified: Vite build compiled in 1.20s (< 1.5s ceiling, 0 errors, 0 circular warnings), and `scripts/sanctuary_audit.sh` passed with 0 hard violations. Zero backend corpus files touched.
 
 
 

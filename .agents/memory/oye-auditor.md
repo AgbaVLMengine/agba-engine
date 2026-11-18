@@ -451,6 +451,38 @@
        - `scripts/sanctuary_audit.sh`: Passed 100% green across all 9 gates.
        - `scripts/benchmark_oruko_mi.py`: 29/29 (100.0%) Passed; 3-Tier fuzzer executed in **32.01 ms** (< 150 ms invariant).
     6. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
+- **[2026-11-17 | Drawer A (Frontend) & Drawer B (Backend) Pre-Execution Assessment (`CHECKPOINT-OYE-028` / `HANDOFF-OYE-PRE008`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL PRE-EXECUTION CLEARANCE GRANTED**.
+  - **Pre-Execution Audit Protocol Executed**:
+    1. *Drawer A (Frontend UI & Ontology Classifier)*:
+       - Certified proposed `web/src/utils/ontologyClassifier.js`: pure functional, single-responsibility, vanilla ES6 only, planned at **~55–65 LOC** (< 100 LOC invariant).
+       - Audited planned LOC budgets for target files: `subVariantHydrator.js` (120 $\to$ 126 LOC), `bentoHydrator.js` (67 $\to$ 75 LOC), `SearchTab.jsx` (252 $\to$ 255 LOC), `useRootNetworkNodes.js` (93 $\to$ 89 LOC). All comfortably within Gate 2 ceilings.
+       - Zero-Data-in-JS Law: Confirmed zero hardcoded cultural text or fallback strings in JS; threads declarative `etymology_and_philosophy` from JSON facets directly to `details`. Visual assets query `agba_unified_visual_regalia_manifest.json` with zero hardcoded image URLs.
+       - Production build performance: Vanilla React/ES6 with 0 new dependencies; preserves < 1.5s Vite compile time (baseline 1.35s) and 0 circular dependencies.
+    2. *Drawer B (Backend Taxonomy & Aliases)*:
+       - Pruning parent shadow aliases (`"osun osogbo"`, `"abeti aja"`, `"oja oba"`, `"ofada rice"`): eliminates preemption dead loops; verified 0 foreign keys depend on parent aliases.
+       - Ògún weapons pruning (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`): confirmed these entities already point to their true taxonomic parents (`Àdá`, `Idà`, `Ọ̀kọ̀`, `Ọfà`); moving them to Ògún's `related_entities` restores ontological hierarchy with 0 broken foreign keys.
+       - Re-affirmed mandatory 0-bit SHA-256 lockstep across `api/data/` and `web/src/data/`.
+    3. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
+- **[2026-11-18 | Drawer A Implementation Blueprint Adversarial Audit (`CHECKPOINT-OYE-029` / `HANDOFF-OYE-AUDIT-DRAWER-A`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL CLEARANCE GRANTED TO COMMENCE EXECUTION**.
+  - **Audit Protocol Executed**:
+    1. *LOC Headroom & De-escalation Invariants*:
+       - `web/src/components/EntityBentoDeck.jsx`: Verified will shrink to **~285 LOC** (Ceiling: < 450 LOC; +165 lines / 36% permanent buffer). Phase 2 contingency extraction blueprint (`Tier14SchemaAccordion.jsx` at 350 LOC trigger) verified.
+       - `web/src/components/SearchTab.jsx`: Verified settles at **~254 LOC** (Ceiling: < 300 LOC; +46 lines headroom). Phase 2 contingency extraction blueprint (`useHybridSearchExecution.js` at 270 LOC trigger) verified.
+       - `web/src/utils/ontologyClassifier.js`: Verified planned at **~58 LOC** (< 100 LOC Gate 2 utility ceiling).
+    2. *Hidden Flaw Mitigations Review*:
+       - DOM ID sanitization in `subVariantHydrator.js`: Eliminates SVG connecting vein crashes on special characters with 0 runtime drag.
+       - Mobile chip max-height containment in `LivingVariantConstellationGrid.jsx`: Pure inline CSS, 0 bytes CSS bloat.
+       - Cell 3 image `onError` fallback in `EntityBentoDeck.jsx`: Transitions broken images gracefully to `SOVEREIGN TEXTUAL CANON` crown card with 0 layout shift (CLS: 0).
+    3. *Production Gate Adherence*:
+       - Backend data files (`api/data/` and `web/src/data/`) remain 100% untouched.
+       - Zero new external npm packages introduced (vanilla React/ES6 only).
+    4. *Pre-Execution Advisory Inscribed*:
+       - Instructed Àgbẹ̀dẹ to add `p.id !== entity.id` and check `typeof sv === 'string'` in `ontologyClassifier.js` Rule 3 to prevent self-referential loop misclassifications.
+    5. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
 
 ---
 

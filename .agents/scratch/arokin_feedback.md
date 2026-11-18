@@ -1046,6 +1046,186 @@ When Kábíyèsí and Ọlọ́yè Àgbà give the decree, this unified sanitati
 4. **Vite Client Production Build:**
    - `cd web && npm run build`: **Compiled successfully in 1.49s**.
 
+---
+
+## 15. Forensic Inquest into Facet Elevation, Thin Content & Cluster Drift (HANDOFF-AROKIN-INQUEST)
+**Document Ref:** `INQUEST-AROKIN-CAT01-PATHOLOGY`  
+**Execution Timestamp:** Monday, November 16, 2026 (14:08 WAT)  
+**Investigating Chronicler:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist`)  
+**Supervising Co-Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Inquest Protocol:** Strict Inquest Mandate — Complete Accounting, Root-Cause Pathology & Taxonomy Roadmap. **Zero Code Changes Executed.**
+
+---
+
+### 15.1 Root-Cause Forensic Dissection: Why Did Elevated Facets Render Fallback Strings?
+
+#### The Fatal Pipeline Disconnect: `sub_variant_facets` vs `subVariantHydrator.js` vs `EntityBentoDeck.jsx`
+1. **The Data Injection State:**
+   - In yesterday's plenary sprint, all 68 facets across Category 1 were correctly written into the master corpora (`api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`) under the dictionary `parent.sub_variant_facets[facet_name]`.
+   - Each facet payload contains: `etymology_and_philosophy` (700–930 chars), `proverbs_and_oral_traditions` (3 canonical proverbs with translations & commentary), and `provenance_and_citations`.
+2. **The Hydrator Blindspot ([`web/src/utils/subVariantHydrator.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/subVariantHydrator.js#L30-L75)):**
+   - When a user searches for or taps a sub-variant (e.g., `Èdùn Àrá`, `Olókun Su`, `Aganjù Ọba`), `hydrateSubVariantFromParent()` synthesizes a standalone UI entity.
+   - **Crucial Bug Uncovered:** In [`web/src/utils/subVariantHydrator.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/subVariantHydrator.js#L45-L75), the hydrator maps `description`, `historical_timeline`, `material_and_craftsmanship`, `social_and_ritual_context`, `proverbs_and_oral_traditions`, and `provenance_and_citations` — **BUT COMPLETELY OMITS `etymology_and_philosophy` FROM BOTH THE ROOT OBJECT AND THE `details` SUB-OBJECT!**
+   - Lines 45–75 literally do not extract `deepMeta.etymology_and_philosophy`.
+3. **The UI Component Fallback ([`web/src/components/EntityBentoDeck.jsx`](file:///home/aruna_olanrewaju/agba-engine/web/src/components/EntityBentoDeck.jsx#L36)):**
+   - Line 36 reads:
+     ```javascript
+     ['8. Etymology, Linguistics & Philosophy', topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy.', false]
+     ```
+   - Line 187 reads:
+     ```javascript
+     {topMatch.details?.etymology_and_philosophy || 'Rooted in ancestral Yorùbá moral poise (Ìwà Rere) and cosmological harmony.'}
+     ```
+   - Because `subVariantHydrator.js` never assigned `details.etymology_and_philosophy`, `topMatch.details?.etymology_and_philosophy` was *always undefined*!
+   - Consequently, the UI silently fell back to the hardcoded default: *"Rooted in ancestral Yorùbá moral poise (Ìwà Rere) and cosmological harmony."*
+   - **Verdict:** The data was authored and stored in the JSON corpora, but the frontend hydration bridge dropped the field completely, blinding both the UI and human testing!
+
+---
+
+### 15.2 Forensic Accounting of Audit Findings
+
+#### 1. Why is Tapping on 'Ọ̀ṣun Òṣogbo' Completely Unresponsive in the UI?
+- **Root Cause (Preempted by Standalone Corpus Alias Match):**
+  - In [`web/src/utils/subVariantHydrator.js`](file:///home/aruna_olanrewaju/agba-engine/web/src/utils/subVariantHydrator.js#L86-L98):
+    ```javascript
+    // 1. If an exact standalone title/alias exists in masterCorpus, return null
+    ```
+  - In `CORPUS_OSUN_001`, `aliases` includes `"osun osogbo"`.
+  - When the user taps the constellation pill `Ọ̀ṣun Òṣogbo`, `handleBranchToRelative()` sets the query string to `"Ọ̀ṣun Òṣogbo"` and calls `executeSearch("Ọ̀ṣun Òṣogbo")`.
+  - Step 1 checks `findSubVariantMatchInCorpus()`. Step 1 of the matcher detects that `"osun osogbo"` matches an alias of `CORPUS_OSUN_001` (the parent itself!). It returns `null` (aborting sub-variant synthesis).
+  - Search then falls through to standard search, which retrieves `CORPUS_OSUN_001` (the exact screen the user is already on!).
+  - Because the active entity did not change, the UI appeared completely frozen/unresponsive.
+  - Exactly the same bug occurs for `Àràbà Agbáyé` (which is an alias on `CORPUS_ARABA_IFE_001`), causing search for `Àràbà Agbáyé` to resolve to the parent `Àràbà Ilé-Ifẹ̀` as a standalone node rather than its specialized facet.
+
+#### 2. Why Do `Ikin Ọlọ́jú Mẹ́rin` and `Ikin Ọlọ́jú Mẹ́ta` Only Have 1 Proverb?
+- **Root Cause (Autonomous Standalone Nodes vs Facets):**
+  - `ikin_oloju_merin` and `ikin_oloju_meta` are **independent standalone canonical records** (ingested in early batches), NOT ghost facets inside `Ikin_Ifá`'s `sub_variant_facets`.
+  - Their records in `api/data/yoruba_corpus_1007_NORMALIZED.json` were authored with only a single proverb each (`len(proverbs_and_oral_traditions) == 1`).
+  - Sùúrù's benchmark only asserted presence of proverbs (`len > 0`), never enforcing the 3-proverb triad on non-facet standalone nodes.
+
+#### 3. Why is 'New Yam Ceremonies' Stored in ASCII?
+- **Root Cause:**
+  - In `CORPUS_ORISA_OKO_001`, the facet key was authored as `"New Yam Ceremonies"` instead of its canonical indigenous Yorùbá title: **`Odún Iṣu Tuntun (New Yam Liturgy)`** or **`Ìjẹṣu`**.
+  - In `sub_variants`, it was listed as `"New Yam Ceremonies"`.
+  - The facet payload preserved this English moniker verbatim, violating the 25-Letter Orthographic Invariant.
+
+#### 4. The Cluster Misalignment Pathology:
+- **`Ìlèkè Ìyùn Guilds` in Category 1:**
+  - It was ingested under `CORPUS_OLOKUN_001` as a sub-variant, inheriting Category 1 (`Spiritual & Cosmological Matrix`).
+  - While Olókun is the spiritual mistress of corals and beads, the *Guilds of Bead Artisans* belong strictly to **Category 7 (`Visual Arts, Sculpture & Guild Metallurgy`)** or **Category 4 (`Traditional Trades, Agriculture & Agrarian Guilds`)**.
+- **`Ọfà Ọdẹ` under `Ògún`:**
+  - In `CORPUS_OGUN_COSMIC_001`, `sub_variants` lists: `['Ògún Lákàyé', 'Ògún Alágbede (Blacksmith)', 'Ògún Ọdẹ (Hunter)', 'Ògún Balógun (Warrior)', 'Àdá Ìbílẹ̀', 'Idà Agẹmọ', 'Ọ̀kọ̀ Ẹlẹ́ṣin', 'Ọfà Ọdẹ', 'Ẹwiri Blacksmith Hearth']`.
+  - `Àdá Ìbílẹ̀` is parented to `Àdá` (Cat 4: Trades & Agriculture).
+  - `Idà Agẹmọ` is parented to `Idà` (Cat 5: Military Traditions).
+  - `Ọ̀kọ̀ Ẹlẹ́ṣin` is parented to `Ọ̀kọ̀` (Cat 5: Military Traditions).
+  - `Ọfà Ọdẹ` is parented to `Ọfà` (Cat 5: Military Traditions), but conceptually belongs to `Ọ̀ṣọ́ọ̀sì` (the archer).
+  - **Why was this done historically?** Early ingestion scripts wired all forged iron implements into Ògún's `sub_variants` array because Ògún is the patron of iron! This conflated spiritual patronship with ontological parenthood, causing Ògún's constellation to explode into a bizarre hybrid of weapons and trades.
+
+#### 5. Why Did `Abátàn` Retrieve `Ọlá`?
+- **Root Cause:**
+  - `Abátàn` does not exist as an independent canonical entity in the corpus; it exists only as a facet under `CORPUS_ERINLE_001`.
+  - Furthermore, in `CORPUS_ERINLE_001["sub_variants"]`, it is written as `"Abátàn (His Consort)"`.
+  - When the user searches ASCII `"Abatan"`, `findSubVariantMatchInCorpus("Abatan")` checks `stripAccents("Abátàn (His Consort)")` which is `"abatan (his consort)"`. Because `"abatan" !== "abatan (his consort)"`, the sub-variant matcher fails!
+  - It falls through to vector / token search. In the corpus, the syllable "ola" or related tokens score higher than Erinlẹ̀, resulting in false retrieval.
+
+#### 6. Why Does `Onílẹ̀` Show `Edan Onílẹ̀` as Sovereign Parent?
+- **Root Cause:**
+  - In `api/data/yoruba_corpus_1007_NORMALIZED.json`, entity `Onile` has:
+    ```json
+    "sovereign_parent": "Ògbóni"
+    ```
+  - And entity `Onílé` (Edan Onílẹ̀) had cross-references.
+  - Moreover, `Onile` had NO `related_entities` array populated, leaving it isolated from Ògbóni elders in the knowledge graph.
+
+#### 7. Why Does `Ọbá` Display `Ọjà` as Sovereign Parent in Diacritics?
+- **Root Cause:**
+  - When searching `Ọbá`, the search hearth matches `Ọbá` as top hit, but `Ọbá` has `sovereign_parent: null` and `sub_variants: []`.
+  - The exploration graph (`useExplorationGraph.js`) or local relatives resolver falls back to fuzzy tokens matching `oba` in `Ọjà Ọba` (Category 4 / 11), pulling market variants to the top!
+
+---
+
+### 15.3 Complete Accounting: Truly Elevated vs Remaining Thin Stubs
+
+| Entity / Facet | Status in Corpus | Actual Characters | Proverb Count | UI Display Status | Pathology Diagnosis |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Èdùn Àrá** | Facet under Ṣàngó | 933 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Irúnmọlẹ̀ Ojúkọ̀tún** | Facet under Òrìṣà 401 | 864 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Irúnmọlẹ̀ Ojúkòsì** | Facet under Òrìṣà 401 | 903 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Èṣù-Ẹlẹ́gbára (+1)** | Facet under Òrìṣà 401 | 877 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Olókun Su** | Facet under Olókun | 847 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Olókun Seniade** | Facet under Olókun | 823 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ọ̀ṣun Òṣogbo** | Facet under Ọ̀ṣun | 811 chars | 3 proverbs | ❌ Unresponsive Tap | Preempted by `osun osogbo` alias on parent |
+| **Ọ̀ṣun Ìpọ́ndá** | Facet under Ọ̀ṣun | 702 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ọ̀ṣun Dokò** | Facet under Ọ̀ṣun | 669 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Arúgbá Ọ̀ṣun** | Facet under Ọ̀ṣun | 775 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Odò Yewá** | Facet under Yewá | 753 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Yewá Priesthood** | Facet under Yewá | 754 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ìlú Ìlarò** | Facet under Yewá | 743 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Abátàn** | Facet under Erinlẹ̀ | 882 chars | 3 proverbs | ❌ Retrieves Ọlá | Sub-variant string mismatch: `"Abátàn (His Consort)"` vs `"Abatan"` |
+| **Erinlẹ̀ Ìlobùú** | Facet under Erinlẹ̀ | 756 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ọpá Erinlẹ̀** | Facet under Erinlẹ̀ | 730 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Aganjù Ọlọ́kọ̀** | Facet under Aganjù | 765 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Aganjù Ọba** | Facet under Aganjù | 783 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Odò Ọya** | Facet under Ọ̀yá | 781 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ọya Afẹ́fẹ́** | Facet under Ọ̀yá | 745 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ìrukẹ̀rẹ̀ Ọya** | Facet under Ọ̀yá | 792 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ìyál'ọ́jà Guild** | Facet under Ọ̀yá | 788 chars | 3 proverbs | ❌ Retrieves Ọjà | Preempted by `Ọjà` standalone alias |
+| **Ọbalúayé Temple** | Facet under Ọbalúayé | 812 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ìtọ́jú Guilds** | Facet under Ọbalúayé | 774 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ṣọ̀npọ̀nná Shrine** | Facet under Babalú-Ayé | 796 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ọ̀pá Ṣàṣàrà** | Facet under Babalú-Ayé | 824 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Ìbírí** | Facet under Nàná Burúkú | 832 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Nàná Swamps** | Facet under Nàná Burúkú | 761 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **Dahomey Confluence**| Facet under Nàná Burúkú | 789 chars | 3 proverbs | ❌ Renders Fallback | `subVariantHydrator` omitted `etymology_and_philosophy` |
+| **New Yam Ceremonies**| Facet under Òrìṣà Oko | 790 chars | 3 proverbs | ❌ ASCII Title & Fallback | English title; hydrator dropped etymology |
+| **Ikin Ọlọ́jú Mẹ́rin** | Standalone Node | 540 chars | ⚠️ 1 proverb | ⚠️ Scanty Proverb | Authoring omitted 2 proverbs of triad |
+| **Ikin Ọlọ́jú Mẹ́ta** | Standalone Node | 512 chars | ⚠️ 1 proverb | ⚠️ Scanty Proverb | Authoring omitted 2 proverbs of triad |
+| **Ọ̀pẹ̀lẹ̀ Agbalagba**| Standalone Child Node | 580 chars | 3 proverbs | ⚠️ Self-referential loop | `sub_variants` lists itself |
+| **Ọ̀pẹ̀lẹ̀ Idẹ** | Standalone Child Node | 560 chars | 3 proverbs | ⚠️ Self-referential loop | `sub_variants` lists itself |
+| **254 Odù Ifá Nodes**| Standalone Nodes | 320–550 chars | 1–2 proverbs | ⚠️ 254 Thin Nodes | Scheduled for Day 2 Corpus Sprint |
+
+---
+
+### 15.4 The Comprehensive Taxonomy Cleanup Roadmap
+
+#### Phase 1: Frontend Hydration & UI Disambiguation Engine Fix
+1. **Patch `web/src/utils/subVariantHydrator.js`**:
+   - Explicitly map `etymology_and_philosophy: deepMeta.etymology_and_philosophy || parentEntity.etymology_and_philosophy || ''` to both top-level and `details` objects.
+   - Patch `findSubVariantMatchInCorpus()`:
+     * When checking if query matches a standalone title/alias, ensure that if the match is the *parent itself* (e.g. `osun osogbo` alias on `Ọ̀ṣun`), it does NOT abort if the query explicitly matches an entry in the parent's `sub_variants`!
+     * Normalize parenthetical suffixes so that searching `"Abatan"` matches `"Abátàn (His Consort)"`.
+2. **Patch `web/src/components/EntityBentoDeck.jsx`**:
+   - Ensure Cell 4 and Tier 14 Accordion check `topMatch.details?.etymology_and_philosophy || topMatch.etymology_and_philosophy`.
+
+#### Phase 2: Corpus Clustering & Sovereign Parent Relocation
+1. **Disentangle Ògún's Overburdened Constellation**:
+   - Prune `Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, and `Ọfà Ọdẹ` from `CORPUS_OGUN_COSMIC_001["sub_variants"]`.
+   - Wire them into `Ògún["related_entities"]` under `metallurgical_patronage`, but preserve their actual sovereign parents (`Àdá`, `Idà`, `Ọ̀kọ̀`, `Ọfà`).
+   - Transfer `Ọfà Ọdẹ` spiritual affiliation to `Ọ̀ṣọ́ọ̀sì`.
+2. **Re-Categorize `Ìlèkè Ìyùn Guilds`**:
+   - Move from Category 1 to **Category 7 (`Visual Arts, Sculpture & Guild Metallurgy`)** or Category 4 (`Traditional Trades & Guilds`).
+   - Wire Olókun as its sacred patron, not its taxonomic container.
+3. **Orthographic Elevation for Agricultural Facets**:
+   - Rename facet `"New Yam Ceremonies"` $\longrightarrow$ **`Odún Iṣu Tuntun (New Yam Liturgy)`** with aliases `["New Yam Ceremonies", "Ìjẹṣu", "Odun Isu"]`.
+
+#### Phase 3: Standalone Node Triad Hydration & Child Loop Stripping
+1. **Hydrate 3-Proverb Triads on Sacerdotal Implements**:
+   - Expand `ikin_oloju_merin` from 1 to 3 proverbs.
+   - Expand `ikin_oloju_meta` from 1 to 3 proverbs.
+2. **Strip Self-Referential Children on Ọ̀pẹ̀lẹ̀ Variants**:
+   - Set `sub_variants: []` on `opele_agbalagba` and `opele_ide`.
+3. **Elevate Onílẹ̀ and Ọbá Kinship Vectors**:
+   - Populate `related_entities` on `Onile` with Ògbóni elders (`Edan Onílẹ̀`, `Ológbóni`, `Iyaláṣẹ`).
+   - Populate `related_entities` on `Ọbá` with riverine peers (`Ṣàngó`, `Ọya`, `Ọ̀ṣun`, `Odò Ọbá`).
+
+---
+
+*Inquest recorded with uncompromising fidelity to truth,*  
+**Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
+*Royal Chronicler of the Sovereign Council*
+
+
 
 
 

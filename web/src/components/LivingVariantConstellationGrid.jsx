@@ -43,7 +43,16 @@ export default function LivingVariantConstellationGrid({ subVariants, onSelectVa
         Tap any living variant below to branch directly into its dedicated 14-Tier cultural profile via the dynamic hydrator.
       </p>
 
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '10px',
+          maxHeight: '280px',
+          overflowY: 'auto',
+          scrollbarWidth: 'thin'
+        }}
+      >
         {subVariants.map((variant, idx) => {
           const variantTitle = typeof variant === 'string' ? variant : variant.title || variant.name;
           if (!variantTitle) return null;
