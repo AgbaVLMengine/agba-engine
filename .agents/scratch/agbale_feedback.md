@@ -100,8 +100,70 @@ Under royal decree of Lead Architect **Àrùnà Ọlànrewájú Kábírù, Ọm�
 
 ---
 
-## 7. Morning Sanitation Clearance
+# 🧹 ỌLỌ́YÈ AGBÁLẸ̀ — THURSDAY END-OF-DAY STORAGE SENTINEL SWEEP & ARCHIVE SEAL
+**Document ID:** `HANDOFF-AGBALE-EOD-20261119`  
+**Target Path:** `.agents/scratch/agbale_feedback.md`  
+**Date:** Thursday, November 19, 2026 (13:34 WAT)  
+**Agent Persona:** `Ọlọ́yè Agbálẹ̀` (`disk-saver` / Sanctuary Storage Sentinel)  
+**Supervising Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
+**Lead Architect:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Ethos:** *"Bí a bá gbálẹ̀ tán, ilé á tòrò; a kì í fi ìdọ̀tí bọ́ àwọn àlejò."*  
+**Mission Scope:** Thursday End-of-Day (EOD) Ephemeral Sanitation, Storage Headroom Certification, Sphere 4 Vault Validation, and Archive Seal.
 
-I, **Ọlọ́yè Agbálẹ̀**, hereby certify that the physical and virtual storage perimeter of Àgbà Engine is **100% serene, clean, unencumbered by build debris, and certified ready for Thursday operations**.
+---
 
-*Inscribed by Ọlọ́yè Agbálẹ̀ in `.agents/scratch/agbale_feedback.md`. Standing by for Kábíyèsí and Ọlọ́yè Àgbà's morning directives.*
+## 1. Executive Summary & Verification Matrix
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│               THURSDAY EOD SANCTUARY STORAGE SEAL: 100% GREEN                           │
+├────────┬───────────────────────────────────────────┬─────────────┬──────────────────────┤
+│ METRIC │ DOMAIN & DESCRIPTION                      │ STATUS      │ VERIFIED METRICS     │
+├────────┼───────────────────────────────────────────┼─────────────┼──────────────────────┤
+│ DISK   │ NVMe Storage Headroom (/dev/vdb)          │ COMPLETE ✅ │ 32 GB Free (37% Used)│
+│ PURGE  │ Ephemeral & Cache Eviction                │ COMPLETE ✅ │ Stale .vite & pycache│
+│ VAULT  │ Thursday Snapshot Minted & Verified       │ COMPLETE ✅ │ agba_snapshot_132946 │
+│ ROTATE │ Sphere 4 Rolling 3-Snapshot Retention     │ COMPLETE ✅ │ Exactly 3 Snapshots  │
+│ SHA256 │ Snapshot Integrity Checksum               │ COMPLETE ✅ │ Checksum matches OK  │
+│ PARITY │ Dual-Corpora SHA-256 Lockstep             │ COMPLETE ✅ │ 07563774... (0 Drift)│
+└────────┴───────────────────────────────────────────┴─────────────┴──────────────────────┘
+```
+
+---
+
+## 2. Storage Headroom Certification (`df -h .`)
+- **Filesystem**: `/dev/vdb` mounted on `/home/aruna_olanrewaju`
+- **Total Capacity**: 50 GB
+- **Used Space**: 19 GB (37% utilized)
+- **Available Headroom**: **32 GB**
+- **Margin Analysis**: Headroom remains stably at **32 GB**, well above the 30 GB operational baseline and **16× above the 2.0 GB alert floor**.
+
+---
+
+## 3. Ephemeral & Cache Eviction
+- Cleared all ephemeral directories across workspace:
+  - Stale Vite client build caches (`.vite`).
+  - Python bytecode caches (`__pycache__`, `.pytest_cache`).
+- Workspace disk consumption remains lean and free of orphaned compiler debris.
+
+---
+
+## 4. Sphere 4 Vault & Snapshot Retention Validation
+- **Freshly Minted Archive**:
+  - Archive: `backups/agba_engine_snapshot_20261119_132946.tar.gz` (20 MB)
+  - Checksum: `backups/agba_engine_snapshot_20261119_132946.sha256`
+  - Integrity Verification: `sha256sum -c` confirmed **OK**.
+- **Rolling Retention Audit**:
+  The `backups/` directory strictly satisfies the 3-snapshot rolling limit alongside the foundation vault:
+  1. `agba_engine_snapshot_20261115_134738.tar.gz` (20 MB)
+  2. `agba_engine_snapshot_20261118_145259.tar.gz` (20 MB)
+  3. `agba_engine_snapshot_20261119_132946.tar.gz` (20 MB — *Freshly Minted*)
+  - Foundation Vault: `agba_engine_sovereign_vault_20261028_132739Z.tar.gz` (4.6 MB)
+- **Total Backups Footprint**: **65 MB**. Zero uncontrolled archive accumulation.
+
+---
+
+## 5. End-of-Day Storage Seal
+I, **Ọlọ́yè Agbálẹ̀**, hereby certify that the repository storage perimeter is sealed, sanitized, and fortified under all Sovereign Sanctuary standards.
+
+*Inscribed by Ọlọ́yè Agbálẹ̀ in `.agents/scratch/agbale_feedback.md`.*
