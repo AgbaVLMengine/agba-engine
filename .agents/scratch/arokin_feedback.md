@@ -1312,6 +1312,195 @@ Following Kábíyèsí's live manual audit on mobile, `Àrọ̀kìn` has cross-r
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
 
+---
+
+## 17. Declarative Invariant Architecture & Zero-Data-in-Code Pipeline (Drawer B Execution Blueprint)
+**Document Ref:** `BLUEPRINT-AROKIN-DECLARATIVE-INVARIANTS`  
+**Date:** Thursday, November 19, 2026 (12:35 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Co-Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
+**Adversarial Audit & QA Guardian:** `Ọlọ́yè Sùúrù` (`suuru-qa`)  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Mission Mandate:** Formulate the pure data-blind runner and declarative invariant architecture for tomorrow's Drawer B execution, ensuring 0% hardcoding in code and 100% replicability across all 17 categories.
+
+---
+
+### 17.1 The Invariant Decoupling Principle: Kábíyèsí's Core Audit Finding
+
+During pre-execution review, **Kábíyèsí** identified a subtle but critical code-smell in the proposed runner script:
+
+```python
+# ❌ THE FLAW IDENTIFIED BY KÁBÍYÈSÍ (HARDCODED INVARIANTS IN CODE):
+assert by_id["Onile"]["title"] == "Onílẹ̀ (Primordial Earth Divinity)"
+assert by_id["opele_agbalagba"]["sub_variants"] == []
+assert by_id["opele_ide"]["sub_variants"] == []
+assert "Àdá Ìbílẹ̀" not in by_id["CORPUS_OGUN_COSMIC_001"]["sub_variants"]
+assert "Yemọja" == by_id["CORPUS_OLOKUN_001"]["related_entities"][0]
+```
+
+#### Why This Violates Sovereign System Architecture:
+1. **Linguistic Leakage:** Embedding cultural entity IDs and titles directly into a Python script breaks the **Zero Data-in-Code** law.
+2. **Category Lock-in:** It ties the runner strictly to Category 1. When running Category 2 (Monarchy), Category 3 (Lineage), etc., the Python runner would require code edits, violating Òye's Gate 2 immutability rules.
+3. **Hidden Code Bloat:** As each category adds bespoke assertions, the runner balloons in LOC.
+
+---
+
+### 17.2 The Pure Declarative Schema (`expected_invariants`)
+
+To solve this permanently, all assertions are extracted into the declarative JSON payload file ([`scripts/data/batches/category01_sanitation_payloads.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/category01_sanitation_payloads.json)) under a generic schema:
+
+```json
+{
+  "description": "Category 1 Final Plenary Purification Payload (Drawer B Execution)",
+  "version": "2.1.0",
+  "author": "Ọlọ́yè Àrọ̀kìn (arokin-archivist)",
+  "date": "2026-11-20",
+  "retire_ids": [],
+  "entity_updates": {},
+  "facet_updates": {},
+  "expected_invariants": [
+    {
+      "entity_id": "Onile",
+      "field": "title",
+      "operator": "equals",
+      "expected": "Onílẹ̀ (Primordial Earth Divinity)",
+      "description": "Assert immutable ID Onile preserves canonical low-tone earth divinity title"
+    },
+    {
+      "entity_id": "opele_agbalagba",
+      "field": "sub_variants",
+      "operator": "equals",
+      "expected": [],
+      "description": "Anti-loop invariant: child divination implement cannot carry sub-variants"
+    },
+    {
+      "entity_id": "opele_ide",
+      "field": "sub_variants",
+      "operator": "equals",
+      "expected": [],
+      "description": "Anti-loop invariant: child divination implement cannot carry sub-variants"
+    },
+    {
+      "entity_id": "CORPUS_OGUN_COSMIC_001",
+      "field": "sub_variants",
+      "operator": "not_contains",
+      "expected": "Àdá Ìbílẹ̀",
+      "description": "Taxonomic segregation: forged weapons must not pollute divine avatar constellation"
+    },
+    {
+      "entity_id": "CORPUS_OLOKUN_001",
+      "field": "related_entities.0",
+      "operator": "equals",
+      "expected": "Yemọja",
+      "description": "Sacred Hydro-Cosmological Covenant: Yemọja must occupy Position #1"
+    }
+  ]
+}
+```
+
+---
+
+### 17.3 The Data-Blind Generic Execution Runner (`scripts/apply_category01_sanitation.py`)
+
+The execution script becomes **100% data-blind**. It contains **zero** Yoruba words, zero entity keys, and zero category logic. It executes in **68 LOC** (Gate 2 compliant):
+
+```python
+#!/usr/bin/env python3
+"""
+Universal Batch Sanitation Runner.
+Zero-data-in-code: Operates purely on declarative JSON mutations & invariants.
+Replicable across all 17 categories under Gate 2 (<100 LOC).
+"""
+import hashlib, json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+PAYLOAD_PATH = ROOT / "scripts/data/batches/category01_sanitation_payloads.json"
+API_PATH = ROOT / "api/data/yoruba_corpus_1007_NORMALIZED.json"
+WEB_PATH = ROOT / "web/src/data/yoruba_master_corpus.json"
+
+def verify_invariants(by_id, invariants):
+    """Dynamically validates data integrity locks declared in JSON."""
+    for inv in invariants:
+        eid = inv["entity_id"]
+        field_path = inv["field"].split(".")
+        op = inv["operator"]
+        expected = inv["expected"]
+
+        val = by_id.get(eid)
+        for part in field_path:
+            val = val[int(part)] if part.isdigit() else (val.get(part) if isinstance(val, dict) else None)
+
+        if op == "equals":
+            assert val == expected, f"Invariant failed on {eid}: {val} != {expected}"
+        elif op == "not_contains":
+            assert expected not in (val or []), f"Invariant failed: {expected} found in {eid}"
+
+def apply_sanitation(corpus, payload):
+    retire_set = set(payload.get("retire_ids", []))
+    corpus = [e for e in corpus if e.get("id") not in retire_set]
+    by_id = {e.get("id"): e for e in corpus}
+    
+    # 1. Apply Entity Updates (titles, aliases, sub_variants, related_entities)
+    for eid, updates in payload.get("entity_updates", {}).items():
+        ent = by_id.get(eid)
+        if not ent:
+            raise KeyError(f"Target entity {eid} missing from corpus!")
+        for k, v in updates.items():
+            ent[k] = v
+
+    # 2. Apply Facet Updates (deep descriptions, >600c etymology, triads, citations)
+    for pid, facets in payload.get("facet_updates", {}).items():
+        parent = by_id.get(pid)
+        if not parent:
+            raise KeyError(f"Facet parent {pid} missing from corpus!")
+        parent_facets = parent.setdefault("sub_variant_facets", {})
+        for fname, fdata in facets.items():
+            parent_facets[fname] = fdata
+
+    # 3. Dynamic Invariant Verification (Zero hardcoded names in code!)
+    verify_invariants(by_id, payload.get("expected_invariants", []))
+    return corpus
+
+def main():
+    payload = json.loads(PAYLOAD_PATH.read_text(encoding="utf-8"))
+    api_corpus = json.loads(API_PATH.read_text(encoding="utf-8"))
+    web_corpus = json.loads(WEB_PATH.read_text(encoding="utf-8"))
+
+    new_api = apply_sanitation(api_corpus, payload)
+    new_web = apply_sanitation(web_corpus, payload)
+
+    API_PATH.write_text(json.dumps(new_api, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    WEB_PATH.write_text(json.dumps(new_web, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    api_sha = hashlib.sha256(API_PATH.read_bytes()).hexdigest()
+    web_sha = hashlib.sha256(WEB_PATH.read_bytes()).hexdigest()
+
+    if api_sha != web_sha:
+        raise ValueError(f"❌ Checksum drift detected: {api_sha} != {web_sha}")
+
+    print(f"✅ Canonical entity count: {len(new_api)} (Web: {len(new_web)})")
+    print(f"🔒 Dual-corpora SHA-256 bit-for-bit lockstep parity confirmed (0 bits drift):")
+    print(f"   {api_sha}")
+
+if __name__ == "__main__":
+    main()
+```
+
+---
+
+### 17.4 Universal Protocol for Categories 2 through 17
+
+This design establishes the **Universal Category Fortification Standard**:
+1. **Identical Engine Runner**: The exact same runner script can process any category simply by parameterizing `PAYLOAD_PATH = sys.argv[1]`.
+2. **Zero Maintenance Drag**: Future audits never touch Python code to add assertions; auditors simply append invariant rules into the respective category's declarative JSON payload.
+3. **CI Integration for Sùúrù**: Sùúrù's test harness can automatically read each batch's `expected_invariants` array and execute independent field-level post-deployment validations.
+
+*Inscribed with filial reverence and archival clarity for Ọlọ́yè Àgbà and Ọlọ́yè Sùúrù's immediate inspection,*  
+**Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
+*Royal Chronicler of the Sovereign Council*
+
+
 
 
 
