@@ -723,3 +723,36 @@ body {
   }
 }
 
+/* ==============================================================================
+   🏛️ MUSEUM REGALIA MODAL: RESPONSIVE MOBILE STACKING (<768px)
+   ============================================================================== */
+.regalia-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .regalia-modal-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .regalia-modal-image-container {
+    max-height: 280px !important;
+    width: 100% !important;
+  }
+
+  .regalia-modal-table-container {
+    padding: 14px !important;
+  }
+
+  .regalia-modal-table td {
+    padding: 6px 0 !important;
+    font-size: 0.84rem !important;
+    word-break: break-word !important;
+  }
+}
+
+

@@ -22,41 +22,55 @@ function normalizeNFC(s) {
  * Guarantees is_parent: false, declares sovereign_parent, and prevents parent loop.
  */
 export function hydrateSubVariantFromParent(variantTitle, parentEntity) {
-  const variantClean = stripAccents(variantTitle);
+  const normVariantTitle = (variantTitle || '').normalize('NFC').trim();
+  const variantClean = stripAccents(normVariantTitle);
   const pId = parentEntity.id || 'variant';
-  const pTitle = parentEntity.title || 'Heritage';
+  const pTitle = (parentEntity.title || 'Heritage').normalize('NFC').trim();
   const pCat = parentEntity.category || 'Cultural Heritage';
 
   // Fetch specialized 14-Tier constellation metadata (Declarative JSON priority, then JS fallback)
-  const corpusFacet = parentEntity.sub_variant_facets?.[variantTitle] || parentEntity.sub_variant_facets?.[variantClean];
-  const deepMeta = corpusFacet || getSubVariantDeepMetadata(variantTitle, parentEntity);
+  const corpusFacet = parentEntity.sub_variant_facets?.[normVariantTitle] ||
+    parentEntity.sub_variant_facets?.[variantClean] ||
+    parentEntity.sub_variant_facets?.[variantTitle];
+  const deepMeta = corpusFacet || getSubVariantDeepMetadata(normVariantTitle, parentEntity);
 
-  const pTimeline = deepMeta.historical_timeline || parentEntity.historical_timeline || `Preserved through the generational lineage of ${pTitle}.`;
-  const pCraft = deepMeta.material_and_craftsmanship || parentEntity.material_and_craftsmanship || 'Traditional luxury handcraft and guild metallurgy.';
-  const pEtymology = deepMeta.etymology_and_philosophy || parentEntity.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and cultural identity.';
-  const pCuratorial = deepMeta.curatorial_and_ethical_guidelines || parentEntity.curatorial_and_ethical_guidelines || parentEntity.media_production_notes || '';
-  const pProverbs = deepMeta.proverbs_and_oral_traditions?.length > 0
+  const pTimeline = (deepMeta.historical_timeline || parentEntity.historical_timeline || `Preserved through the generational lineage of ${pTitle}.`).normalize('NFC');
+  const pCraft = (deepMeta.material_and_craftsmanship || parentEntity.material_and_craftsmanship || 'Traditional luxury handcraft and guild metallurgy.').normalize('NFC');
+  const pEtymology = (deepMeta.etymology_and_philosophy || parentEntity.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and cultural identity.').normalize('NFC');
+  const pCuratorial = (deepMeta.curatorial_and_ethical_guidelines || parentEntity.curatorial_and_ethical_guidelines || parentEntity.media_production_notes || '').normalize('NFC');
+  const pProverbs = (deepMeta.proverbs_and_oral_traditions?.length > 0
     ? deepMeta.proverbs_and_oral_traditions
-    : (parentEntity.proverbs_and_oral_traditions || []);
+    : (parentEntity.proverbs_and_oral_traditions || [])).map((p) => (typeof p === 'string' ? p.normalize('NFC') : p));
 
   const otherVariants = Array.isArray(parentEntity.sub_variants)
-    ? parentEntity.sub_variants.filter((sv) => sv !== variantTitle)
+    ? parentEntity.sub_variants
+        .map((sv) => (typeof sv === 'string' ? sv.normalize('NFC') : sv))
+        .filter((sv) => sv !== normVariantTitle)
     : [];
 
-  const desc = deepMeta.description || `A specialized living variant within the ${pTitle} tradition, embodying ${variantTitle} in classical ${pCat}.`;
-  const ritualContext = deepMeta.social_and_ritual_context || `Operates in direct ritual, ceremonial, and practical alignment with ${pTitle}.`;
-  const provenance = deepMeta.provenance_and_citations || parentEntity.provenance_and_citations || '';
+  // Authentic descriptive synthesis: inherits parent narrative depth instead of tautological repetition
+  let desc = deepMeta.description;
+  if (!desc) {
+    const parentLead = parentEntity.description ? parentEntity.description.split('.')[0] + '.' : '';
+    desc = parentLead
+      ? `A sacred, consecrated manifestation within the ${pTitle} lineage. ${parentLead}`
+      : `An authentic living sub-variant within the ${pTitle} tradition, preserved in classical ${pCat}.`;
+  }
+  desc = desc.normalize('NFC');
+
+  const ritualContext = (deepMeta.social_and_ritual_context || `Operates in direct ritual, ceremonial, and practical alignment with ${pTitle}.`).normalize('NFC');
+  const provenance = (deepMeta.provenance_and_citations || parentEntity.provenance_and_citations || '').normalize('NFC');
   const sanitizedId = variantClean.replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
 
   return {
     id: `${pId}_${sanitizedId}`,
-    title: variantTitle,
+    title: normVariantTitle,
     culture: parentEntity.culture || 'Yorùbá',
     category: deepMeta.category || pCat,
     is_parent: false,
     sovereign_parent: pTitle,
     sovereign_parent_status: 'Living Sub-Variant',
-    aliases: [variantTitle, variantClean],
+    aliases: [normVariantTitle, variantClean],
     description: desc,
     historical_timeline: pTimeline,
     etymology_and_philosophy: pEtymology,

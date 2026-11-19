@@ -1225,6 +1225,94 @@ When Kábíyèsí and Ọlọ́yè Àgbà give the decree, this unified sanitati
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
 
+---
+
+## 16. Cross-Council Review: Drawer A Post-Audit & Drawer B Handoff Strategy
+**Document Ref:** `REVIEW-AROKIN-DRAWER-A-AUDIT-INSIGHTS`  
+**Date:** Thursday, November 19, 2026 (11:38 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Co-Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Objective:** Inscribe cross-domain forensic analysis of Drawer A mobile glitches for `Àgbà`'s inspection prior to executive action.
+
+---
+
+### 16.1 Cross-Domain Forensic Assessment of the 5 Post-Audit Glitches
+
+Following Kábíyèsí's live manual audit on mobile, `Àrọ̀kìn` has cross-referenced `Àgbẹ̀dẹ`'s findings in [.agents/scratch/agbede_feedback.md](file:///home/aruna_olanrewaju/agba-engine/.agents/scratch/agbede_feedback.md#L89-L134) against our corpus data, ranking heuristics, and orthographic standards:
+
+#### 1. The Root Pod Usurpation Pathology (`Àjà` $\to$ `Fìlà`, `Ọbá` $\to$ `Ọjà`)
+- **Corpus Context:** When we disambiguated Category 1 homographs, we renamed:
+  - `Àjà` $\longrightarrow$ `Àjà (Forest Whirlwind Spirit)` (with alias `"Àjà"`)
+  - `Ọbá` $\longrightarrow$ `Ọbá (River Divinity of Marital Devotion)` (with alias `"Ọbá"`)
+- **The Defect in `useRootNetworkNodes.js`:**
+  - `exactMatch` checked: `normalizeNFC(m.title) === qNFC || stripAccents(m.title) === qClean`.
+  - Because `m.title` now contains parenthetical suffixes, searching `"Àjà"` returns `exactMatch = null`.
+  - The fallback `matchedNode = matches[0]` was triggered. `matches` contains `Fìlà Abetí Ajá` and `Ọjà` because their aliases (`"abeti aja"`, `"oja oba"`) matched via word-boundary regex earlier in the list.
+- **Architectural Recommendation for `Àgbẹ̀dẹ`:**
+  - Enhance `exactMatch` in `useRootNetworkNodes.js` to prioritize:
+    1. Exact normalized title match.
+    2. Exact normalized alias match (`m.aliases.some(a => normalizeNFC(a) === qNFC)`).
+    3. Base title match stripping parenthetical qualifiers (`stripAccents(m.title.split('(')[0].trim()) === qClean`).
+  - This guarantees that searching `"Àjà"` or `"Ọbá"` resolves to their authentic sovereign nodes with 0-drift.
+
+#### 2. The Recursive Ancestry Loop on `Ọ̀pẹ̀lẹ̀ Agbalagba`
+- **Corpus Context:** `opele_agbalagba` has `is_parent: false`, `sovereign_parent: "Ọ̀pẹ̀lẹ̀"`, but historically carries its sibling and itself in `sub_variants: ['Ọ̀pẹ̀lẹ̀ Agbalagba (...)', 'Ọ̀pẹ̀lẹ̀ Idẹ (...)']`.
+- **The Defect in `ontologyClassifier.js`:**
+  - Rule #1 checked `hasSubVariants` before checking declared `sovereign_parent`. This classified `Ọ̀pẹ̀lẹ̀ Agbalagba` as a `SOVEREIGN_PARENT` of itself!
+- **Architectural Recommendation:**
+  - **Drawer A (Frontend Guard):** Reorder `ontologyClassifier.js` to evaluate declared `sovereign_parent` first, with an explicit anti-circularity invariant (`if (parentTitle === entity.title) parentTitle = null;`).
+  - **Drawer B (Corpus Sanitization):** Strip self-referential children from child nodes in `api/data/yoruba_corpus_1007_NORMALIZED.json` (`sub_variants: []` on `opele_agbalagba` and `opele_ide`).
+
+#### 3. Decomposed Unicode Diacritic Kerning (`Ọ ̀ Pẹ ̀ Lẹ ̀`)
+- **Corpus Context:** Yorùbá vowels with underdots and tone marks (`Ọ̀`, `Ẹ́`, `Ṣ`) can be stored in Decomposed (NFD) form (`\u1ECC\u0300`) or Precomposed (NFC) form (`\u1ED3`).
+- **The Defect:** When client utilities split or manipulate strings without calling `.normalize('NFC')`, the combining grave/acute accents detach and display as floating backtick glyphs in fonts lacking OpenType ligature tables.
+- **Architectural Recommendation for `Àgbẹ̀dẹ`:**
+  - Enforce `.normalize('NFC')` across all synthesized titles and headings in `subVariantHydrator.js` and `tonalContour.js`.
+  - Add CSS `font-feature-settings: "kern" 1, "liga" 1;` to royal typography headings.
+
+#### 4. Synthetic Description Boilerplate in Cell 1
+- **The Defect:** `subVariantHydrator.js` produced repetitive mad-lib templates when a sub-variant had no explicit description:
+  > *"An authentic living sub-variant within the Ọ̀pẹ̀lẹ̀ Idẹ tradition, embodying Ọ̀pẹ̀lẹ̀ Idẹ in classical Spiritual & Cosmological Matrix."*
+- **Architectural Recommendation:**
+  - **Drawer A:** Upgrade the dynamic fallback template in `subVariantHydrator.js` to borrow the parent's actual cultural domain and description.
+  - **Drawer B:** Inscribe bespoke, high-richness descriptions directly inside `sub_variant_facets` for all Category 1 implements.
+
+#### 5. Ògún’s Constellation Taxonomy Pollution (Drawer B Handoff)
+- **Corpus Context:** In `CORPUS_OGUN_COSMIC_001`, ritual weapons (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`) and the hearth (`Ẹwiri`) were erroneously placed in `sub_variants` simply because Ògún is the patron divinity of iron.
+- **The Cleanse in Drawer B (Àrọ̀kìn):**
+  - Segregate **Divine Avatars** (`Ògún Lákàyé`, `Ògún Alágbede`, `Ògún Ọdẹ`, `Ògún Balógun`, `Ògún Oníre`) from **Sacred Implements** (`Àdá`, `Idà`, `Ọ̀kọ̀`, `Ọfà`).
+  - Move weapons to `related_entities` / `sacred_implements`, returning Ògún's constellation strictly to his spiritual avatars.
+
+---
+
+### 16.2 Strategic Roadmap for Ọlọ́yè Àgbà’s Ratification
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                        TWO-DRAWER SEQUENTIAL RATIFICATION PLAN                         │
+├─────────────────────────┬──────────────────────────────┬───────────────────────────────┤
+│ DRAWER & AGENT          │ CORE ACTIONS                 │ SUCCESS CRITERIA              │
+├─────────────────────────┼──────────────────────────────┼───────────────────────────────┤
+│ DRAWER A POLISH         │ 1. GalleryTab mobile flex    │ Zero modal image clipping     │
+│ (Ọlọ́yè Àgbẹ̀dẹ)           │ 2. useRootNetwork exact alias│ Àjà & Ọbá pods lock to origin │
+│                         │ 3. ontologyClassifier circular│ Ọ̀pẹ̀lẹ̀ parent = Ọ̀pẹ̀lẹ̀ (no loop)│
+│                         │ 4. Universal NFC normalization│ Zero broken combining accents │
+│                         │                              │ Build compiles < 1.5s         │
+├─────────────────────────┼──────────────────────────────┼───────────────────────────────┤
+│ DRAWER B CORPUS         │ 1. Ògún constellation de-clut│ Weapons moved to relatives    │
+│ (Ọlọ́yè Àrọ̀kìn)          │ 2. Ọ̀pẹ̀lẹ̀ children sanitized │ sub_variants: [] on children  │
+│                         │ 3. Ìlèkè Ìyùn moved to Cat 7 │ Correct craft guild category  │
+│                         │ 4. Ikin triad expansion      │ 3/3 canonical proverbs        │
+│                         │                              │ 0-bit SHA-256 parity          │
+└─────────────────────────┴──────────────────────────────┴───────────────────────────────┘
+```
+
+*Inscribed into the permanent council scratchpad for Ọlọ́yè Àgbà's inspection and decree,*  
+**Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
+*Royal Chronicler of the Sovereign Council*
+
+
 
 
 

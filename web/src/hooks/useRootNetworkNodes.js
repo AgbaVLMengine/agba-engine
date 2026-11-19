@@ -40,15 +40,37 @@ export function useRootNetworkNodes(query, masterCorpus = []) {
       const tNFC = normalizeNFC(item.title);
       const tClean = stripAccents(item.title);
       const aliasesClean = (item.aliases || []).map(stripAccents);
+      const aliasesNFC = (item.aliases || []).map(normalizeNFC);
+      const baseTitleClean = stripAccents(item.title.replace(/\s*\([^)]*\)/g, '').trim());
+      const baseTitleNFC = normalizeNFC(item.title.replace(/\s*\([^)]*\)/g, '').trim());
+
       if (hasDiacritics && tClean === qClean && tNFC !== qNFC) return false;
-      return tNFC === qNFC || (!hasDiacritics && tClean === qClean) || wordBoundaryRegex.test(tClean) || aliasesClean.some((a) => a === qClean || wordBoundaryRegex.test(a));
+      return (
+        tNFC === qNFC ||
+        (!hasDiacritics && tClean === qClean) ||
+        baseTitleNFC === qNFC ||
+        (!hasDiacritics && baseTitleClean === qClean) ||
+        aliasesNFC.some((a) => a === qNFC) ||
+        aliasesClean.some((a) => a === qClean) ||
+        wordBoundaryRegex.test(tClean) ||
+        aliasesClean.some((a) => wordBoundaryRegex.test(a))
+      );
     });
 
     if (matches.length === 0) return null;
 
-    // Exact title match takes strict precedence over any heuristic
-    const exactMatch = matches.find((m) => normalizeNFC(m.title) === qNFC) ||
-      matches.find((m) => stripAccents(m.title) === qClean);
+    // Strict 3-Tier Match Precedence:
+    // 1. Exact full title match (with or without accents)
+    // 2. Base title match stripping parenthetical qualifiers (e.g. "Àjà (Forest Whirlwind Spirit)" matches "Àjà")
+    // 3. Exact full alias match
+    // 4. Fallback to ranked list
+    const exactMatch =
+      matches.find((m) => normalizeNFC(m.title) === qNFC) ||
+      matches.find((m) => stripAccents(m.title) === qClean) ||
+      matches.find((m) => normalizeNFC(m.title.replace(/\s*\([^)]*\)/g, '').trim()) === qNFC) ||
+      matches.find((m) => stripAccents(m.title.replace(/\s*\([^)]*\)/g, '').trim()) === qClean) ||
+      matches.find((m) => (m.aliases || []).some((a) => normalizeNFC(a) === qNFC)) ||
+      matches.find((m) => (m.aliases || []).some((a) => stripAccents(a) === qClean));
 
     // Never greedily elevate unrelated parents: use exact match or primary rank
     const matchedNode = exactMatch || matches[0];

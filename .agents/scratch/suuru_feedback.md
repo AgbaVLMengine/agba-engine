@@ -917,4 +917,113 @@ For every entity and sub-variant in Category 1:
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — FORENSIC ASSESSMENT OF DRAWER A GLITCHES & POST-AUDIT ADVISORY
+**Document ID:** `REPORT-SUURU-DRAWER-A-GLITCH-AUTOPSY`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Thursday, November 19, 2026 (11:38 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Cross-Council Audience:** `Ọlọ́yè Àgbà` (`agba-pa-architect`), `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`), `Ọlọ́yè Àrọ̀kìn` (`arokin-historian`)  
+
+---
+
+## 1. Executive Briefing for Ọlọ́yè Àgbà
+
+Following Kábíyèsí's live mobile audit of Drawer A and Àgbẹ̀dẹ's preliminary notes in `.agents/scratch/agbede_feedback.md`, Ọlọ́yè Sùúrù has conducted an exhaustive codebase and corpus investigation to determine the exact systemic root causes.
+
+Here is the definitive QA analysis and architectural blueprint for Àgbà's review before council decisions are made.
+
+---
+
+## 2. Forensic Autopsy of the 5 Glitches
+
+### Glitch 1: Recursive Ancestry & Self-Loop Inversion (`Ọ̀pẹ̀lẹ̀ Agbalagba`)
+* **Observed UI Failure:** Clicking `Ọ̀pẹ̀lẹ̀ Agbalagba` rendered:  
+  `👑 Sovereign Parent Lineage: Ọ̀pẹ̀lẹ̀ Agbalagba` with an ascension button that looped back to itself.
+* **Algorithmic Root Cause:** In `web/src/utils/ontologyClassifier.js` (lines 18–27):
+  ```javascript
+  if (isExplicitParent || hasSubVariants) {
+    return { tier: ONTOLOGICAL_TIER.SOVEREIGN_PARENT, parentTitle: null, subVariants: rawSubVariants || [] };
+  }
+  ```
+  Rule #1 evaluated `hasSubVariants` before checking declared `sovereign_parent`.
+* **Corpus Forensic Finding:** This is not an isolated one-off bug. Sùúrù's deep scan of `api/data/yoruba_corpus_1007_NORMALIZED.json` revealed:
+  - **6 entities harbor self-loops in their own `sub_variants` arrays**:
+    1. `Ère Ìbejì (Sacred Twin Memorial Effigy)`
+    2. `Ère Ẹlẹ́gbára (Consecrated Sculptural Icon of Èṣù)`
+    3. `Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)`
+    4. `Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)`
+    5. `Ìyàwó Titun (The Newly Wedded Bride)`
+    6. `Ọkọ Ìyàwó (The Matrimonial Bridegroom)`
+  - **17 entities simultaneously declare `sovereign_parent` AND a non-empty `sub_variants` array**.
+* **Required Architectural Fix:**
+  1. In `ontologyClassifier.js`: Check declared `sovereign_parent` first. If `sovereign_parent` is present and entity is not marked `is_parent: true`, it is strictly a `LIVING_VARIANT`.
+  2. Invariant Guard: If `stripAccents(parentTitle) === stripAccents(entity.title)`, `parentTitle` must be set to `null` or redirected to the genuine root ancestor (e.g. `Ọ̀pẹ̀lẹ̀`).
+  3. Drawer B Task for Àrọ̀kìn: Clean the self-referencing entries out of the 6 entities in the master corpus.
+
+---
+
+### Glitch 2: Opon Hearth Root Pods Hijacked by Parent Multi-Word Aliases (`Àjà` & `Ọbá`)
+* **Observed UI Failure:** Searching `Àjà` centers the Bento Deck on the whirlwind spirit `Àjà (Forest Whirlwind Spirit)`, but the 4 root pods in the hearth display `Fìlà` and traditional caps. Searching `Ọbá` focuses the deck on the river deity `Ọbá (River Divinity)` but displays `Ọjà` and `Ọjà Ọba` in the pods.
+* **Algorithmic Root Cause:** In `web/src/hooks/useRootNetworkNodes.js` (lines 44–54):
+  - `matches` matched `Fìlà` because of its alias `'abeti aja'` (word-boundary regex on `aja`).
+  - `matches` matched `Ọjà` because of its alias `'oja oba'` (word-boundary regex on `oba`).
+  - Line 50's `exactMatch` checked:
+    ```javascript
+    const exactMatch = matches.find((m) => normalizeNFC(m.title) === qNFC) ||
+      matches.find((m) => stripAccents(m.title) === qClean);
+    ```
+  - Because the canonical titles are `Àjà (Forest Whirlwind Spirit)` and `Ọbá (River Divinity of Marital Devotion)`, their titles did not match the single word `"aja"` or `"oba"`.
+  - `exactMatch` returned `undefined`, so line 54 blindly selected `matches[0]`, which was `Fìlà` or `Ọjà` due to corpus array order!
+* **Required Architectural Fix:**
+  - Introduce Title-Prefix / Leading Root Tie-Breaking in `useRootNetworkNodes.js`:
+    Any entity whose canonical title starts with the query or whose title without parenthetical annotations matches the query (`title.replace(/\s*\(.*\)/, '').trim() === qTrim`) must take absolute precedence over entities that merely match via secondary multi-word aliases.
+
+---
+
+### Glitch 3: Mobile Regalia Modal Squeeze & Archival Truncation (`GalleryTab.jsx`)
+* **Observed UI Failure:** In mobile viewports (< 640px), the museum regalia card in `GalleryTab.jsx` compresses the photograph into a tiny vertical sliver, and descriptions cut off mid-word.
+* **Root Cause:** `GalleryTab.jsx` uses a desktop-centric horizontal flex row layout (`flex flex-row`) without responsive mobile stacking (`flex-col md:flex-row`), causing the image and text containers to fight for width on narrow screens.
+* **Required Architectural Fix:**
+  - Update `GalleryTab.jsx` modal container to `flex flex-col md:flex-row`.
+  - On mobile (< 640px), hero photo spans 100% width with fixed bounds (`h-64 object-contain`), with archival metadata flowing underneath with 100% card width and zero overflow clipping.
+
+---
+
+### Glitch 4: Decomposed Unicode Kerning & Synthetic Fallback Text
+* **Diacritic Separation (`Ọ ̀ Pẹ ̀ Lẹ ̀`):**
+  - Synthesized strings from `subVariantHydrator.js` sometimes contain NFD decomposed characters where diacritics are standalone trailing marks (`\u0300`).
+  - Fix: Every returned string from `subVariantHydrator.js` must be passed through `.normalize('NFC')`.
+* **Synthetic Description Boilerplate:**
+  - `subVariantHydrator.js` line 46 currently generates:
+    `"A specialized living variant within the ${pTitle} tradition, embodying ${variantTitle} in classical ${pCat}."`
+  - When `variantTitle` matches `pTitle` or lacks metadata, it reads repetitively.
+  - Fix: When `corpusFacet` is absent, borrow the parent's actual cultural etymology sentence and contextualize the variant gracefully.
+
+---
+
+### Glitch 5: Liturgical Tools Mixed into Avatar Constellation (`Ògún`)
+* **Observed UI Failure:** In `Ògún`'s living variants grid, physical weapons (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ẹwiri`) appear alongside divine avatars (`Ògún Lákàyé`, `Ògún Alágbede`).
+* **Root Cause & Domain Assignment:** This is a corpus taxonomy issue in `api/data/yoruba_corpus_1007_NORMALIZED.json`. Sub-variants should represent theological manifestations and lineages, while weapons belong to `sacred_implements` or `associated_regalia`.
+* **Drawer Assignment:** Handed off to **Ọlọ́yè Àrọ̀kìn** for Drawer B corpus sanitation.
+
+---
+
+## 3. Recommended Execution Plan for Council Approval
+
+| Step | Drawer / Specialist | Scope | Risk |
+| :--- | :--- | :--- | :---: |
+| **Step 1: Classifier & Pod Precedence** | Drawer A.1 (`Ọlọ́yè Àgbẹ̀dẹ`) | Invert precedence in `ontologyClassifier.js`; add title-prefix tie-breaker in `useRootNetworkNodes.js`. | Low |
+| **Step 2: Responsive Regalia Modal** | Drawer A.1 (`Ọlọ́yè Àgbẹ̀dẹ`) | Stack `GalleryTab.jsx` flex layout on mobile screens (`flex-col md:flex-row`). | Low |
+| **Step 3: NFC & Hydration Polish** | Drawer A.1 (`Ọlọ́yè Àgbẹ̀dẹ`) | Normalize NFC on all titles; upgrade synthetic descriptions to use parent context. | Very Low |
+| **Step 4: Corpus Self-Loop & Regalia Split** | Drawer B (`Ọlọ́yè Àrọ̀kìn`) | Clean 6 self-loop sub-variants and separate implements from `Ògún` avatars in master corpus. | Med |
+| **Step 5: Client-Side DOM QA Benchmark** | Phase QA (`Ọlọ́yè Sùúrù`) | Deploy `scripts/audit_ui_dom_integrity.py` to assert 0 regressions across all 5 vectors. | Zero |
+
+*Inscribed and ready for inspection by Ọlọ́yè Àgbà,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
 

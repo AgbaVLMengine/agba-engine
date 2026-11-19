@@ -12,27 +12,38 @@ export function getOntologicalClassification(entity, masterCorpus = []) {
   const entityTitleClean = stripAccents(entity.title || entity.details?.title || '');
   const entityId = entity.id || entity.details?.id;
 
-  // 1. Immutable Sovereign Parent Rule
-  const rawSubVariants = entity.sub_variants || entity.details?.sub_variants;
-  const hasSubVariants = Array.isArray(rawSubVariants) && rawSubVariants.length > 0;
+  // 1. Explicit Living Variant Rule (Precedence over sub_variants when declared parent exists)
+  const declaredParent = entity.sovereign_parent || entity.details?.sovereign_parent;
   const isExplicitParent = entity.is_parent === true || entity.details?.is_parent === true ||
     entity.sovereign_parent_status === 'Sovereign Parent Concept' || entity.details?.sovereign_parent_status === 'Sovereign Parent Concept';
 
+  if (declaredParent && !isExplicitParent) {
+    const parentClean = stripAccents(declaredParent);
+    // Anti-Circularity Guard: an entity cannot claim itself as its Sovereign Parent
+    if (parentClean !== entityTitleClean) {
+      return {
+        tier: ONTOLOGICAL_TIER.LIVING_VARIANT,
+        parentTitle: declaredParent,
+        subVariants: []
+      };
+    }
+  }
+
+  // 2. Immutable Sovereign Parent Rule
+  const rawSubVariants = entity.sub_variants || entity.details?.sub_variants;
+  const hasSubVariants = Array.isArray(rawSubVariants) && rawSubVariants.length > 0;
+
   if (isExplicitParent || hasSubVariants) {
+    // Strip self-referential loops from sub_variants list
+    const filteredSubVariants = (rawSubVariants || []).filter((sv) => {
+      const svTitle = typeof sv === 'string' ? sv : sv?.title;
+      return stripAccents(svTitle) !== entityTitleClean;
+    });
+
     return {
       tier: ONTOLOGICAL_TIER.SOVEREIGN_PARENT,
       parentTitle: null,
-      subVariants: rawSubVariants || []
-    };
-  }
-
-  // 2. Explicit Living Variant Rule
-  const declaredParent = entity.sovereign_parent || entity.details?.sovereign_parent;
-  if (declaredParent && entity.is_parent !== true && entity.details?.is_parent !== true) {
-    return {
-      tier: ONTOLOGICAL_TIER.LIVING_VARIANT,
-      parentTitle: declaredParent,
-      subVariants: []
+      subVariants: filteredSubVariants
     };
   }
 

@@ -213,9 +213,9 @@ export default function GalleryTab() {
               Archival Catalog Title: <strong>{activeModalItem.museum_archival_title}</strong> | Accession: <code>{activeModalItem.accession_number}</code>
             </p>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '24px', marginBottom: '24px' }}>
+            <div className="regalia-modal-grid">
               {/* Image Preview */}
-              <div style={{
+              <div className="regalia-modal-image-container" style={{
                 borderRadius: '10px',
                 overflow: 'hidden',
                 background: '#07090e',
@@ -237,8 +237,8 @@ export default function GalleryTab() {
               </div>
 
               {/* Provenance Attributes Table */}
-              <div style={{ background: 'rgba(0,0,0,0.3)', padding: '18px', borderRadius: '10px', fontSize: '0.88rem' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <div className="regalia-modal-table-container" style={{ background: 'rgba(0,0,0,0.3)', padding: '18px', borderRadius: '10px', fontSize: '0.88rem' }}>
+                <table className="regalia-modal-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <tbody>
                     <tr style={{ borderBottom: '1px solid var(--border-subtle)' }}>
                       <td style={{ padding: '8px 0', color: 'var(--text-muted)', width: '40%' }}>Indigenous Origin:</td>
