@@ -451,6 +451,20 @@ Before any newly scouted cultural corpus or batch is ingested into the engine, `
   - Forensic re-audit verified: **Duplicates: 0**, **Homographs: 0**, **Ghost Sub-Variants: 0 (100.0% SVIS)**, **Thin/Scanty Facets: 0 (68/68 $\ge 600$ chars)**, **Leaked Prefixes: 0**.
   - Verified regression suites: `benchmark_sprint004.py` passed **88/88 (100.0%) Top-1 Accuracy**, `sanctuary_audit.sh` passed with 0 violations and 0 warnings, and Vite client compiled cleanly in **1.49s**.
 
+- **2026-11-20 [HANDOFF-AROKIN-DRAWER-B-EXEC: Backend Taxonomy Sanitation & Declarative Invariant Enforcement Completed]**:
+  - **Sovereign Sanitation Executed under Single-Drawer Law**:
+    - Purged all self-referential children from `opele_agbalagba` and `opele_ide` (`sub_variants: []`), elevating both with $>150$c descriptions, deep etymologies, and 3/3 canonical proverbs.
+    - Disentangled Ògún's constellation: pruned forged weapons (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`) from `sub_variants`, wiring them cleanly through `related_entities`.
+    - Purged all 14 cross-category shadow aliases attacking Category 1 (e.g. `"abeti aja"` from `Fìlà`, `"oja oba"` from `Ọjà`, `"osun osogbo"` from `Ọ̀ṣun`, `"araba agbaye"` from `Àràbà Ilé-Ifẹ̀`, `"onile"` from `Onílé`, `"oba"` from `Ọba`).
+    - Completed 3-proverb canonical triads for `ikin_oloju_merin` and `ikin_oloju_meta`.
+    - Orthographically elevated `New Yam Ceremonies` to `Ọdún Iṣu Tuntun (New Yam Liturgy)`.
+    - Populated bilateral kinship vectors on `Onile` and `Ọbá`.
+  - Inscribed declarative payload fixture [`scripts/data/batches/category01_sanitation_payloads.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/category01_sanitation_payloads.json) and executed via generic data-blind runner [`scripts/apply_category01_sanitation.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/apply_category01_sanitation.py) (**80 LOC**, Gate 2 compliant).
+  - Synchronized dual master corpora at **1,396 canonical entities** with **0-bit checksum drift**:
+    `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186`.
+  - Production gates verified: `benchmark_sprint004.py` passed **88/88 (100.0%) Top-1 Accuracy**, `sanctuary_audit.sh` passed with 0 hard violations and 0 warnings.
+
+
 
 
 

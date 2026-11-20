@@ -1144,6 +1144,110 @@ When we proceed to Category 2 and beyond, we will not deliberate for days. We wi
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — DRAWER B HEADLESS CLIENT-SIDE DOM PARITY & CROSS-DOMAIN INTEGRITY BENCHMARK REPORT
+**Document ID:** `REPORT-SUURU-DRAWER-B-DOM-BENCHMARK`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Friday, November 20, 2026 (13:10 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Cross-Council Audience:** `Ọlọ́yè Àgbà` (`agba-pa-architect`), `Ọlọ́yè Àrọ̀kìn` (`arokin-historian`), `Ọlọ́yè Òye` (`oye-auditor`), `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`)  
+
+---
+
+## 1. Executive Summary & Verification Verdict
+
+In unhurried obedience to the royal decree `HANDOFF-SUURU-DRAWER-B-DOM-BENCHMARK`, Ọlọ́yè Sùúrù has authored and executed the **Headless Client-Side DOM Parity & Cross-Domain Integrity Benchmark** via [`scripts/audit_ui_dom_integrity.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/audit_ui_dom_integrity.py).
+
+The test suite runs directly inside Node.js against the exact production JavaScript modules (`relativesResolver.js`, `ontologyClassifier.js`, `subVariantHydrator.js`, `localRankedSearch.js`) simulating the browser runtime with zero Python divergence.
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│             DRAWER B HEADLESS CLIENT-SIDE DOM PARITY BENCHMARK LEDGER                  │
+├─────────────────────────────────────────┬────────────────────────────┬─────────────────┤
+│ VERIFICATION VECTOR                     │ MANDATED CRITERION         │ BENCHMARK SCORE │
+├─────────────────────────────────────────┼────────────────────────────┼─────────────────┤
+│ 1. Dual-Corpora SHA-256 Checksum        │ 0-bit drift lockstep       │ LOCKED 🔒       │
+│    9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186                  │
+│ 2. Zero-Boilerplate DOM Assertion       │ 0 occurrences of fallback  │ 0 Found (100%)  │
+│ 3. Anti-Parent-Loop & Ancestry Guard    │ opele_agbalagba & ide      │ PASS (No loops) │
+│ 4. Cell 6 Self-Relative Exclusion       │ Relative != self           │ 100% Excluded   │
+│ 5. Field-Level Depth & Triad Standard   │ Etym >= 600c, Provs >= 3   │ 100% Compliant  │
+│ 6. Ògún Divine Avatar Purity            │ Zero physical weapons in sv│ 100% Avatar Pure│
+│ 7. Sacerdotal Implement Liturgy         │ Ọdún Iṣu Tuntun integrated │ 100% Verified   │
+│ 8. Unicode NFC Normalization            │ Title === Title.NFC        │ 1,396 / 1,396   │
+│ 9. ASCII Search Disambiguation          │ Aja, Oba, Onile top ranks  │ 100% Accurate   │
+│ 10. Constellation Branching             │ Ọ̀ṣun Òṣogbo, Àràbà Agbáyé  │ is_parent:false │
+│ 11. Shadow Alias Sentinel               │ 0 cross-cat collisions     │ 0 Collisions    │
+│ 12. Vite Production Client Build        │ Build < 1.5s, 0 errors     │ Built in 1.18s  │
+│ 13. Sovereign Sanctuary Audit           │ 0 violations, 0 warnings   │ 100% GREEN 🍵   │
+├─────────────────────────────────────────┴────────────────────────────┴─────────────────┤
+│ OFFICIAL VERDICT: 🏆 100% UNCONDITIONAL DOM PARITY PASS — DRAWER B SEALED & LOCKED    │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 2. Detailed Technical Breakdown of Verified Assertions
+
+### 2.1 Zero-Boilerplate Assertion on Rendered Cards
+- Verified across all 1,396 entities in `web/src/data/yoruba_master_corpus.json`.
+- **Result:** **0 entities** contain `"Rooted in ancestral Yorùbá"` or `"An authentic living sub-variant within the"`.
+
+### 2.2 Anti-Parent-Loop & Cell 6 Self-Relative Exclusion
+- **Entities Tested:** `opele_agbalagba` and `opele_ide`.
+- `sub_variants`: `[]` (strictly empty array).
+- `sovereign_parent`: `"Ọ̀pẹ̀lẹ̀"`.
+- `getOntologicalClassification()` returns `tier: ONTOLOGICAL_TIER.LIVING_VARIANT` and `parentTitle: "Ọ̀pẹ̀lẹ̀"`.
+- `resolveKnowledgeGraphRelatives()` executed: Neither `opele_agbalagba` nor `opele_ide` appears within its own connected relatives array. Relatives resolve cleanly to siblings and cosmological implements (`Ọpọ́n Ifá`, `Orúnmìlà`, `Babaláwo`, `Ikin Ifá`).
+
+### 2.3 Field-Level Depth & Proverbial Triads
+- Verified that all elevated Category 1 primary nodes (`Olódùmarè`, `Obàtálá`, `Èṣù`, `Ògún`, `Ṣàngó`, `Ọ̀ṣun`, `Ọ̀yá`, `Yemọja`, `Orí`, `Ifá`, `Àyànmọ́`, `Olókun`, `Ọbalúayé`, `Ọ̀ṣọ́ọ̀sì`, `Ọ̀pẹ̀lẹ̀`, `Orúnmìlà`, `Onile`, `Àjà`, `Ọbá`) possess $\ge 600$ characters of philosophical depth and $\ge 3$ dual-language proverbs with parenthetical English translations.
+- Verified that `ikin_oloju_merin`, `ikin_oloju_meta`, `opele_agbalagba`, and `opele_ide` each carry complete 3-proverb canonical triads.
+
+### 2.4 Ògún Divine Avatar Purity
+- `CORPUS_OGUN_COSMIC_001.sub_variants` contains strictly spiritual manifestations:
+  `['Ògún Lákàyé', 'Ògún Alágbede (Blacksmith)', 'Ògún Ọdẹ (Hunter)', 'Ògún Balógun (Warrior)', 'Ẹwiri Blacksmith Hearth']`.
+- Physical forged weapons (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`) are **100% excluded** from `sub_variants` and preserved exclusively in `related_entities`.
+
+### 2.5 Sacerdotal Implement Orthography
+- In `CORPUS_ORISA_OKO_001`, verified that `"New Yam Ceremonies"` has been substituted by the authentic indigenous liturgical title `"Ọdún Iṣu Tuntun (New Yam Liturgy)"` across both `sub_variants` and `sub_variant_facets`.
+
+### 2.6 Unicode NFC Composition Invariant
+- Verified across all 1,396 entity titles: $100\%$ satisfy `title === title.normalize('NFC')`. Combining backtick glyph separation is 0 in the data layer.
+
+### 2.7 ASCII Cross-Domain Disambiguation & Pod Anchoring
+- Emulated the client-side `localRankedSearch.js` scoring logic:
+  * Query `'Aja'` $\rightarrow$ **Rank #1**: `Àjà (Forest Whirlwind Spirit)` (Score: 1300), successfully beating `Ajá (Dog)` and `Fìlà Abetí Ajá`.
+  * Query `'Oba'` $\rightarrow$ **Rank #1**: `Ọbá (River Divinity of Marital Devotion)` (Score: 1308), beating `Ọba (Monarch)` (Score: 785).
+  * Query `'Oba river'` $\rightarrow$ **Rank #1**: `Oba River (Topography, Natural Landscapes & Architecture)` (Score: 1466).
+  * Query `'Onile'` $\rightarrow$ **Rank #1**: `Onílẹ̀ (Primordial Earth Divinity)` (Score: 1360), beating `Edan Onílẹ̀` (Score: 785).
+
+### 2.8 Constellation Branching & Parent-Shadow Decoupling
+- `findSubVariantMatchInCorpus('Ọ̀ṣun Òṣogbo')` matches parent `Ọ̀ṣun` and hydrates a distinct child entity with `is_parent: false`, `sovereign_parent: "Ọ̀ṣun"`, and ID `CORPUS_OSUN_001_osun_osogbo`.
+- `findSubVariantMatchInCorpus('Àràbà Agbáyé')` matches parent `Àràbà Ilé-Ifẹ̀` and hydrates a distinct child entity with `is_parent: false`, `sovereign_parent: "Àràbà Ilé-Ifẹ̀"`, and ID `CORPUS_ARABA_IFE_001_araba_agbaye`.
+- Zero parent-shadow alias collisions exist for Category 1 entities.
+
+---
+
+## 3. Production Verification & Gate Certification
+
+1. **Vite Production Client Build**:
+   - `cd web && npm run build` transformed 1,936 modules and compiled cleanly in **1.18s** (well under the 1.5s ceiling).
+   - Zero compilation errors, zero warnings.
+2. **Sanctuary Health Scanner**:
+   - `bash scripts/sanctuary_audit.sh` executed: **0 hard violations, 0 warnings (100% GREEN)**.
+   - Dual-corpora cryptographic checksum confirmed at `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186` (0 bits drift).
+   - Gate 2 LOC Compliance: `scripts/audit_ui_dom_integrity.py` sits at **211 LOC** (< 250 LOC).
+
+---
+
+*Inscribed into the permanent council records and certified with royal fidelity,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
 
 
 

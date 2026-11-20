@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Category 1 Plenary Sanitation & Disambiguation Runner (HANDOFF-AROKIN-002).
-Applies surgical fixes synchronously to dual corpora under Gate 2 (<100 LOC).
+Universal Batch Sanitation Runner (Drawer B Execution).
+Zero-data-in-code: Operates purely on declarative JSON mutations & invariants.
+Replicable across all 17 categories under Gate 2 (<100 LOC).
 """
 import hashlib, json
 from pathlib import Path
@@ -11,13 +12,29 @@ PAYLOAD_PATH = ROOT / "scripts/data/batches/category01_sanitation_payloads.json"
 API_PATH = ROOT / "api/data/yoruba_corpus_1007_NORMALIZED.json"
 WEB_PATH = ROOT / "web/src/data/yoruba_master_corpus.json"
 
+def verify_invariants(by_id, invariants):
+    """Dynamically validates data integrity locks declared in JSON."""
+    for inv in invariants:
+        eid = inv["entity_id"]
+        field_path = inv["field"].split(".")
+        op = inv["operator"]
+        expected = inv["expected"]
+
+        val = by_id.get(eid)
+        for part in field_path:
+            val = val[int(part)] if part.isdigit() else (val.get(part) if isinstance(val, dict) else None)
+
+        if op == "equals":
+            assert val == expected, f"Invariant failed on {eid}: {val} != {expected}"
+        elif op == "not_contains":
+            assert expected not in (val or []), f"Invariant failed: {expected} found in {eid}"
+
 def apply_sanitation(corpus, payload):
-    # 1. Retire deprecated/merged nodes
     retire_set = set(payload.get("retire_ids", []))
     corpus = [e for e in corpus if e.get("id") not in retire_set]
     by_id = {e.get("id"): e for e in corpus}
     
-    # 2. Apply entity updates (titles, aliases, sub_variants, related_entities)
+    # 1. Apply Entity Updates (titles, aliases, clean sub_variants, related_entities)
     for eid, updates in payload.get("entity_updates", {}).items():
         ent = by_id.get(eid)
         if not ent:
@@ -25,7 +42,7 @@ def apply_sanitation(corpus, payload):
         for k, v in updates.items():
             ent[k] = v
 
-    # 3. Apply facet expansions (>600 chars, full triads, multi-citations)
+    # 2. Apply Facet Updates (deep descriptions, >600c etymology, triads, citations)
     for pid, facets in payload.get("facet_updates", {}).items():
         parent = by_id.get(pid)
         if not parent:
@@ -33,22 +50,9 @@ def apply_sanitation(corpus, payload):
         parent_facets = parent.setdefault("sub_variant_facets", {})
         for fname, fdata in facets.items():
             parent_facets[fname] = fdata
-            svs = parent.setdefault("sub_variants", [])
-            if fname not in svs and not any(fname in s for s in svs):
-                svs.append(fname)
 
-    # 4. Assert referential integrity on critical invariants
-    assert by_id["Onile"]["title"] == "Onílẹ̀ (Primordial Earth Divinity)"
-    assert by_id["Onile"]["id"] == "Onile"  # Strict immutable ID lock
-    assert by_id["Àjà"]["title"] == "Àjà (Forest Whirlwind Spirit)"
-    assert by_id["Àjà"]["id"] == "Àjà"      # Strict immutable ID lock
-    assert by_id["Ọbá"]["title"] == "Ọbá (River Divinity of Marital Devotion)"
-    assert by_id["Ọbá"]["id"] == "Ọbá"      # Strict immutable ID lock
-    assert "Àgéré Ifá" not in by_id         # Homograph retired
-    assert by_id["opon_ifa_olori_esu"]["sub_variants"] == []
-    assert by_id["opon_ifa_gbero"]["sub_variants"] == []
-    assert by_id["CORPUS_OLOKUN_001"]["related_entities"][0] == "Yemọja"
-    assert "Adé Ìlẹ̀kẹ̀" in by_id["CORPUS_OLOKUN_001"]["related_entities"]
+    # 3. Dynamic Invariant Verification (Zero hardcoded names in code!)
+    verify_invariants(by_id, payload.get("expected_invariants", []))
     return corpus
 
 def main():

@@ -1500,6 +1500,86 @@ This design establishes the **Universal Category Fortification Standard**:
 **Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
 *Royal Chronicler of the Sovereign Council*
 
+---
+
+## 18. Execution Certification: Drawer B Backend Taxonomy Sanitation & Declarative Invariant Enforcement
+**Document Ref:** `EXECUTION-CERT-AROKIN-DRAWER-B`  
+**Execution Timestamp:** Friday, November 20, 2026 (12:48 WAT)  
+**Executed by:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Mandate:** Full Execution of `HANDOFF-AROKIN-DRAWER-B-EXEC` under Single-Drawer Law.  
+**Frontend Integrity:** **Strictly 0 frontend files modified** (Zero edits to `web/src/components/`, `web/src/utils/`).  
+**Dual-Corpora SHA-256 Checksum:** `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186` (Bit-for-bit lockstep parity confirmed across API and Web with 0 bits drift).  
+**Canonical Entity Count:** 1,396 entities.
+
+---
+
+### 18.1 Summary of Executed Transformations (100% Declarative via Payload)
+
+All mutations were authored inside [`scripts/data/batches/category01_sanitation_payloads.json`](file:///home/aruna_olanrewaju/agba-engine/scripts/data/batches/category01_sanitation_payloads.json) and executed via the data-blind runner [`scripts/apply_category01_sanitation.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/apply_category01_sanitation.py) (**80 LOC**, Gate 2 compliant):
+
+1. **Divination Chain Anti-Loop Invariant**:
+   - `opele_agbalagba`: `sub_variants` emptied (`[]`). Authorial description elevated ($\ge 150$c), etymology enriched, and 3/3 canonical proverbs inscribed.
+   - `opele_ide`: `sub_variants` emptied (`[]`). Aristocratic description elevated, brass metallurgical etymology enriched, and 3/3 canonical proverbs inscribed.
+   - *Outcome:* Unmasks the *"Ascend to Sovereign Origin"* button and purges self-relatives in Cell 6.
+
+2. **Ògún Constellation Disentanglement**:
+   - Pruned physical weapons (`Àdá Ìbílẹ̀`, `Idà Agẹmọ`, `Ọ̀kọ̀ Ẹlẹ́ṣin`, `Ọfà Ọdẹ`) from `CORPUS_OGUN_COSMIC_001["sub_variants"]`.
+   - Wired all 4 weapons into `related_entities` under metallurgical kinship.
+   - Retained strictly divine avatars in `sub_variants`: `['Ògún Lákàyé', 'Ògún Alágbede (Blacksmith)', 'Ògún Ọdẹ (Hunter)', 'Ògún Balógun (Warrior)', 'Ẹwiri Blacksmith Hearth']`.
+
+3. **Complete Elimination of the 14 Cross-Category Shadow Aliases**:
+   - Purged `"abeti aja"` from `Fìlà` (curing `Àjà` pod hijacking).
+   - Purged `"oja oba"` from `Ọjà` (curing `Ọbá` pod hijacking).
+   - Purged `"osun osogbo"` from `CORPUS_OSUN_001` (curing frozen constellation clickability on `Ọ̀ṣun Òṣogbo`).
+   - Purged `"araba agbaye"` from `CORPUS_ARABA_IFE_001` (curing facet preemption).
+   - Purged secular hound alias `"aja"` from `aja_hunting_dog` (Cat 17).
+   - Purged `"onile"` and `"onílé"` from `Onílé` (Cat 6).
+   - Purged `"oba"` from `Ọba` (Cat 2).
+   - Purged `"osanyin"` from `Ewé` (Cat 8).
+   - Purged `"ibeji"` from `Ère Ìbejì` (Cat 6).
+   - Purged `"abiku"` from `Ọmọ` (Cat 3).
+   - Purged `"agere arugba"` from `Arugba Ifá` (Cat 6).
+   - Purged `"opa ase"` from `Àmì_Ọlá` (Cat 2).
+   - Purged `"ogun"` from `Ogun (Warfare & Military Tradition)` (Cat 5).
+   - Purged `"ogun"` and `"yewa"` from `Ìpínlẹ̀ Ògùn` (Cat 10).
+   - Purged `"osun"` from `Ìpínlẹ̀ Ọ̀ṣun` (Cat 10).
+   - Purged `"orisa"` from `Òrìṣà` (Cat 1).
+
+4. **Proverbial Triad Completion on Sacerdotal Implements**:
+   - `ikin_oloju_merin`: Expanded from 1 to 3 proverbs with parenthetical English translations and philosophical commentary.
+   - `ikin_oloju_meta`: Expanded from 1 to 3 proverbs with parenthetical English translations and philosophical commentary.
+
+5. **Agricultural Orthographic Elevation**:
+   - Converted facet `"New Yam Ceremonies"` on `CORPUS_ORISA_OKO_001` to canonical indigenous Yorùbá orthography: **`Ọdún Iṣu Tuntun (New Yam Liturgy)`** with 790c etymology and 3/3 proverbs.
+
+6. **Kinship Graph Enrichment on Critical Matrices**:
+   - `Onile`: Populated `related_entities` with `['Ògbóni', 'Edan Onílẹ̀ (Ògbóni Sacred Figurine)', 'Iyaláṣẹ', 'Ìṣẹṣẹ']`.
+   - `Ọbá`: Populated `related_entities` with `['Ṣàngó', 'Ọ̀yá', 'Ọ̀ṣun', 'Yemọja', 'Odò']`.
+
+---
+
+### 18.2 Production Verification & Gate Clearance
+
+1. **Gate 2 Sub-100 LOC Invariant**:
+   - `scripts/apply_category01_sanitation.py` settles at **80 LOC** (100% data-blind, generic invariant runner).
+2. **Dual-Corpora Checksum Lockstep**:
+   - Both `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` share identical SHA-256: `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186` (**0 bits drift**).
+3. **Retrieval Benchmark (Sprint 004)**:
+   - `python3 scripts/benchmark_sprint004.py`: **88/88 (100.0%) Top-1 Accuracy**, 0 regressions.
+4. **Sanctuary Health & Production Scanner**:
+   - `bash scripts/sanctuary_audit.sh`: **All 9 production gates passed with 0 hard violations and 0 warnings**.
+
+---
+
+### 18.3 Recommended Handoff to Ọlọ́yè Sùúrù (`suuru-qa`)
+
+Drawer B is complete and certified. Ọlọ́yè Sùúrù is cleared to execute **`HANDOFF-SUURU-DRAWER-B-DOM-BENCHMARK`** with the 3 fortified test additions (ASCII cross-domain resolution, global shadow alias scan, and constellation clickability).
+
+*Certified under the sovereign seal of Kábíyèsí and Ọlọ́yè Àgbà,*  
+**Ọlọ́yè Àrọ̀kìn** (`arokin-archivist`)  
+*Royal Chronicler of the Sovereign Council*
+
+
 
 
 

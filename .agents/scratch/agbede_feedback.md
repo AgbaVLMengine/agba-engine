@@ -190,6 +190,214 @@ In accordance with royal decree `HANDOFF-AGBEDE-EXEC-DRAWER-A` and full council 
 - **Single-Drawer Law:** 0 backend data files modified.
 
 ---
+
+## 6. Post-Audit Technical Deliberation & Architectural Blueprint (`HANDOFF-AGBEDE-POST-AUDIT-DELIBERATION`)
+**Date:** Friday, November 20, 2026 (13:05 WAT)  
+**Agent Persona:** `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder` — Master UI Architect & Craftsman)  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Directives:** Strict adherence to Single-Drawer Law. Zero application code modifications, zero data mutations, and zero builds today. Dedicated purely to technical inquest, root-cause autopsy, and surgical blueprinting.
+
+---
+
+### Pillar 1: Mobile WebKit Diacritic Detachment (`Cinzel` Backtick Glitch)
+- **Forensic Diagnosis**:
+  - On Desktop Chrome/Firefox, `Ọ̀PẸ̀LẸ̀ IDẸ` renders harmoniously.
+  - On Mobile WebKit (iOS Safari / Android Chrome Mobile), `Cinzel` lacks OpenType GPOS (`mark-to-base`) anchoring glyph tables for combining characters when combined with uppercase transformation and tracking.
+  - Specifically, CSS properties `.font-royal { letter-spacing: 0.03em; text-transform: uppercase; }` break combining diacritics apart on mobile engines: WebKit applies letter-spacing between the base vowel (`Ọ`) and the combining grave (`\u0300`), forcing the grave into a standalone, isolated spacing glyph that renders as an ugly backtick (`Ọ ` ` ` Pẹ ` ` ` Lẹ ` ` `).
+- **Architectural Solution Blueprint**:
+  1. **Pan-African Diacritic Font-Stack Scoping**:
+     - Modernize `--font-royal` to prioritize fonts with certified combining mark OpenType support:
+       ```css
+       --font-royal: 'Cinzel', 'Noto Serif', 'Plus Jakarta Sans', Georgia, serif;
+       ```
+     - For mobile headings containing Yorùbá diacritics, scope `Plus Jakarta Sans` or `Noto Serif` as font fallbacks.
+  2. **Zero Letter-Spacing on Accented Headings**:
+     - In `index.css`, create a mobile rule:
+       ```css
+       @media (max-width: 640px) {
+         .font-royal {
+           letter-spacing: normal !important;
+         }
+       }
+       ```
+     - Disabling `letter-spacing` on mobile screens prevents the WebKit layout engine from injecting character kerning spaces between combining diacritical marks and their vowel bases.
+  3. **OpenType Feature Activation**:
+     - Ensure `.font-royal` explicitly enables `font-feature-settings: "kern" 1, "mark" 1, "mkmk" 1;` so font renderers combine mark-to-base glyphs atomically before rasterization.
+
+---
+
+### Pillar 2: The "Ascend to Sovereign Origin" Invariant & Precedence Trap
+- **Forensic Diagnosis**:
+  - In Kábíyèsí's live audit, `Ọ̀pẹ̀lẹ̀ Awọ` rendered the *"Ascend to Sovereign Origin"* lineage ribbon, but `Ọ̀pẹ̀lẹ̀ Agbalagba` and `Ọ̀pẹ̀lẹ̀ Idẹ` did not.
+  - Inquest revealed two critical disconnects:
+    1. **Corpus Field Over-Specification**: In the raw dataset, `Ọ̀pẹ̀lẹ̀ Agbalagba` and `Ọ̀pẹ̀lẹ̀ Idẹ` exist as standalone canonical entities that have:
+       - `sovereign_parent: "Ọ̀pẹ̀lẹ̀"`
+       - `sovereign_parent_status: "Living Sub-Variant"`
+       - `is_parent: false`
+       In contrast, `Ọ̀pẹ̀lẹ̀ Awọ` is not in the corpus file at all; it was dynamically synthesized on-the-fly by `hydrateSubVariantFromParent`.
+    2. **Missing Master Corpus Injection in Bento Deck**:
+       - In `EntityBentoDeck.jsx` line 27:
+         ```javascript
+         const classification = getOntologicalClassification(topMatch);
+         ```
+         `getOntologicalClassification` was called with **only 1 argument** (`topMatch`), omitting `masterCorpus`!
+         When `masterCorpus` is not passed, Rule 3 (reverse-indexing) cannot run. Furthermore, if `topMatch` contained ambiguous status flags from API payloads, `isVariant` evaluated to `false`.
+    3. **Precedence Trap in `ontologyClassifier.js`**:
+       - Line 16 defined:
+         ```javascript
+         const isExplicitParent = entity.is_parent === true || entity.details?.is_parent === true ||
+           entity.sovereign_parent_status === 'Sovereign Parent Concept' || entity.details?.sovereign_parent_status === 'Sovereign Parent Concept';
+         ```
+         If an entity's `sovereign_parent_status` is not cleanly sanitized or if `entity.is_parent === null`, the condition could bypass the variant rule or misclassify.
+- **Architectural Solution Blueprint**:
+  1. **Strict Invariant in `EntityBentoDeck.jsx`**:
+     - Update line 27 to pass `masterCorpus`:
+       ```javascript
+       const classification = getOntologicalClassification(topMatch, masterCorpus);
+       ```
+     - Guarantee that if `topMatch.sovereign_parent` exists and is not equal to `topMatch.title`, the Ascension Ribbon MUST render unconditionally:
+       ```javascript
+       const effectiveParent = classification?.parentTitle || topMatch.sovereign_parent || topMatch.details?.sovereign_parent;
+       const isVariant = (classification?.tier === ONTOLOGICAL_TIER.LIVING_VARIANT) || Boolean(effectiveParent && stripAccents(effectiveParent) !== stripAccents(topMatch.title));
+       ```
+  2. **Unconditional Ascension Ribbon**:
+     - Whenever `effectiveParent` is present, the UI will always render the royal lineage ribbon:
+       `👑 Sovereign Parent Lineage: [ effectiveParent ]` with a 1-click ascension button leading to the parent entity.
+
+---
+
+### Pillar 3: Tone-Aware Reverse-Index Matching in `ontologyClassifier.js`
+- **Forensic Diagnosis**:
+  - In Rule 3 of `ontologyClassifier.js`:
+    ```javascript
+    return pSVs.some((sv) => {
+      const svTitle = typeof sv === 'string' ? sv : sv.title;
+      return stripAccents(svTitle) === entityTitleClean;
+    });
+    ```
+    Using `stripAccents` caused severe tonal homograph collisions:
+    - **`Àjà`** (Forest Whirlwind Spirit / Herbal Divinity, tone `\` `\`) stripped to `"aja"`.
+    - **`Ajá`** (Hunting Dog, tone `/`) under `Ẹranko` (Fauna) also stripped to `"aja"`.
+    - As a result, searching for the sacred divinity `Àjà` caused the reverse-index to match `Ẹranko` as its parent, classifying a celestial divinity as a subtype of animal!
+- **Architectural Solution Blueprint**:
+  - Tone marks (`Àmì Ohùn`) carry foundational ontological meaning in Yorùbá. Tonal homographs are completely distinct cosmological entities.
+  - **Tone-Aware Invariant**: Rule 3 matching must enforce **strict NFC tone-preservation**:
+    ```javascript
+    const entityTitleNFC = normalizeNFC(entity.title || entity.details?.title || '');
+    // In Rule 3:
+    return pSVs.some((sv) => {
+      const svTitle = typeof sv === 'string' ? sv : sv.title;
+      return normalizeNFC(svTitle) === entityTitleNFC;
+    });
+    ```
+  - `stripAccents` is strictly reserved as an optional fallback only if no tone marks exist in the query, preventing celestial divinities from ever colliding with faunal homographs.
+
+---
+
+### Pillar 4: Autonomous Canon Protection in `useRootNetworkNodes.js`
+- **Forensic Diagnosis**:
+  - In `useRootNetworkNodes.js`, lines 78–81 handled `AUTONOMOUS_CANON`:
+    ```javascript
+    } else {
+      // Autonomous Canon: self-contained node, siblings from related category/matches
+      parentNode = matchedNode;
+      childVariants = matches.filter((m) => stripAccents(m.title) !== stripAccents(parentNode.title)).slice(0, 4);
+    }
+    ```
+  - When a user searched for `Ọbá` (River Divinity of Marital Devotion, an Autonomous divinity with no variants):
+    - `matchedNode` was correctly `Ọbá`.
+    - But `matches` contained other query hits like `Ọjà` (Market) and `Ọjà Ọba` (King's Market).
+    - The fallback assigned `matches.filter(...)` to `childVariants`!
+    - In `AarinimoSearchCore.jsx`, the UI took `rootNetworkNodes.variants` and rendered them with the badge `<GitBranch /> Living Variant`!
+    - Consequently, `Ọjà Ọba` appeared as a "Living Variant" of the sacred river goddess `Ọbá`!
+- **Architectural Solution Blueprint**:
+  - An Autonomous Canon node is **ontologically self-contained**. It has zero children.
+  - **Strict Autonomous Invariant**:
+    ```javascript
+    } else {
+      // Autonomous Canon: strictly self-contained. Bar loose matches from becoming fake variants.
+      parentNode = matchedNode;
+      childVariants = [];
+    }
+    ```
+  - When `classification.tier === ONTOLOGICAL_TIER.AUTONOMOUS_CANON`:
+    - `childVariants` is strictly set to `[]`.
+    - In `AarinimoSearchCore.jsx`, if `rootNetworkNodes.variants` is empty, no fake "Living Variant" pods will render. The hearth pods will render only the Autonomous Sovereign node and any verified museum regalia.
+
+---
+
+### Pillar 5: The "Àyànfẹ́ Ohùn" (Tonal Disambiguation Fork) — Complete ASCII UX Invariant
+- **Context & Real-World User Problem**:
+  - Over 95% of real-world users browse via smartphones, tablets, or standard keyboards lacking Yorùbá combining diacritic inputs (`Àmì Ohùn`).
+  - Yorùbá is a deeply tonal language where a single ASCII spelling maps to radically different cosmological and cultural concepts:
+    - **`"oko"`** in ASCII maps to **4 distinct canonical entities** in the Master Corpus:
+      1. **`Ọkọ`** (Husband / Consort / Patriarch) — *Social Structure, Kinship & Lineage*
+      2. **`Ọkọ́`** (Hoe / Sacred Agrarian Tool) — *Traditional Trades, Agriculture & Agrarian Guilds*
+      3. **`Oko`** (Farm / Agrarian Land Estate) — *Traditional Trades, Agriculture & Agrarian Guilds*
+      4. **`Ọ̀kọ̀`** (Spear / Sacred Javelin of Defense) — *Military Traditions, Weaponry & Defense*
+    - **`"aja"`** maps to:
+      1. **`Àjà`** (Forest Whirlwind Spirit & Herbal Divinity)
+      2. **`Ajá`** (Hunting Dog / Sacred Wildlife)
+    - **`"oba"`** maps to:
+      1. **`Ọba`** (Paramount Monarch / Sovereign King)
+      2. **`Ọbá`** (River Divinity of Marital Devotion)
+    - **`"ogun"`** maps to:
+      1. **`Ògún`** (Divinity of Iron, Metallurgy & Transformation)
+      2. **`Ogun`** (Warfare & Military Tradition)
+  - If the search engine guesses blindly, it frustrates ASCII users and corrupts the ontological hearth.
+- **Architectural Solution Blueprint**:
+
+  1. **Algorithmic Disambiguation Detector (`web/src/utils/tonalDisambiguator.js` — < 45 LOC)**:
+     - Detects when an ASCII query without diacritics (`hasDiacritics === false`) matches 2 or more distinct canonical entities whose base title (stripping parenthetical qualifiers and accents) equals the query.
+     ```javascript
+     import { normalizeNFC, stripAccents } from './tonalContour';
+
+     export function detectTonalHomographs(query, masterCorpus = []) {
+       if (!query || !Array.isArray(masterCorpus)) return [];
+       const qTrim = query.trim();
+       const qClean = stripAccents(qTrim).toLowerCase();
+       const qNFC = normalizeNFC(qTrim).toLowerCase();
+       
+       // If user already typed authentic diacritics, honor their exact intent (bypass fork)
+       if (qNFC !== qClean || qClean.length < 2) return [];
+
+       const candidates = masterCorpus.filter((item) => {
+         const baseTitleClean = stripAccents(item.title.replace(/\s*\([^)]*\)/g, '').trim()).toLowerCase();
+         return baseTitleClean === qClean;
+       });
+
+       return candidates.length > 1 ? candidates : [];
+     }
+     ```
+
+  2. **UI Component: `<TonalDisambiguationFork />` (`web/src/components/TonalDisambiguationFork.jsx` — < 65 LOC)**:
+     - Rendered in `SearchTab.jsx` directly above `EntityBentoDeck.jsx` whenever `homographs.length > 1`:
+     - Displays an interactive golden disambiguation card:
+       - Header: `⚖️ Àyànfẹ́ Ohùn (Tonal Disambiguation): ${homographs.length} distinct canonical paths found for "${query}". Which path do you seek?`
+       - Grid of Interactive Candidate Cards:
+         * **Canonical Tone-Marked Title**: e.g., `Ọkọ` vs `Ọkọ́` vs `Oko` vs `Ọ̀kọ̀`
+         * **Cultural Domain Badge**: e.g., `Kinship & Lineage` vs `Agrarian Guilds` vs `Military Traditions`
+         * **Concise 1-Line Gloss / Meaning**: Clarifying the exact cultural identity of each node.
+     - **1-Click Selection & Pedagogical Enlightenment**:
+       - Clicking any candidate immediately mounts that entity in the Bento Deck with Fusion Score 1.0.
+       - Re-populates the search bar with the authentic tone-marked spelling, actively teaching users the sacred Yorùbá orthography effortlessly.
+
+  3. **Scholar's Explicit Bypass**:
+     - When a user inputs tone marks directly (e.g. typing `"Ọbá"` or using the 15 Diacritic Beads in the hearth), `qNFC !== qClean` evaluates to `true`. The disambiguation fork is completely bypassed, opening the exact Bento Cell instantly.
+
+---
+
+### 📋 Blueprint Summary for Upcoming Execution Pass
+
+| Component / File | Problem Identified | Architectural Blueprint |
+| :--- | :--- | :--- |
+| **`web/src/index.css`** | Mobile WebKit separates combining grave accents into backtick glyphs due to font tracking. | Scope `Plus Jakarta Sans`/`Noto Serif` fallbacks; disable `letter-spacing` on `.font-royal` for `@media (max-width: 640px)`; enforce OpenType mark kerning. |
+| **`EntityBentoDeck.jsx`** | Line 27 called `getOntologicalClassification(topMatch)` without `masterCorpus`, causing Ascension ribbon to drop on corpus variants. | Pass `masterCorpus` into classifier call; enforce defensive fallback: if `topMatch.sovereign_parent` exists, Ascension ribbon is guaranteed. |
+| **`ontologyClassifier.js`** | `stripAccents` in Rule 3 caused tonal collision between `Àjà` (Orisha) and `Ajá` (Dog). | Implement strict tone-aware matching via `normalizeNFC(svTitle) === normalizeNFC(entityTitle)` in Rule 3. |
+| **`useRootNetworkNodes.js`** | Autonomous Canon nodes assigned loose search matches (`Ọjà Ọba`) to `childVariants`. | Strictly enforce `childVariants = []` for `AUTONOMOUS_CANON`, barring unvetted entities from hearth pods. |
+| **`tonalDisambiguator.js` & `TonalDisambiguationFork.jsx`** *(NEW)* | ASCII users querying homographs (`oko`, `aja`, `oba`, `ogun`) experience polarity confusion without tone awareness. | Build lean homograph detector (< 45 LOC) and interactive `<TonalDisambiguationFork />` (< 65 LOC) to allow users to select their intended tonal path with 1 click. |
+
+---
 *Signed and sealed at the blacksmith forge,*  
 **Ọlọ́yè Àgbẹ̀dẹ** (`agbede-builder`)  
 *Master Craftsman & Sovereign UI Architect*

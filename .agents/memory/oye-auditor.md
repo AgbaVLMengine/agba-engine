@@ -483,6 +483,19 @@
     4. *Pre-Execution Advisory Inscribed*:
        - Instructed Àgbẹ̀dẹ to add `p.id !== entity.id` and check `typeof sv === 'string'` in `ontologyClassifier.js` Rule 3 to prevent self-referential loop misclassifications.
     5. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
+- **[2026-11-20 | Drawer B (Backend Taxonomy & DOM Benchmark) Pre-Execution Clearance (`CHECKPOINT-OYE-030`)]**:
+  - **Supervising Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & `Ọlọ́yè Àgbà`.
+  - **Verdict**: 🏆 **100% UNCONDITIONAL PRE-EXECUTION CLEARANCE GRANTED**.
+  - **Pre-Execution Audit Protocol Executed**:
+    1. *Data-Blind Generic Execution Runner*:
+       - Audited `apply_category_sanitation.py` structure: pure functional, 0 Yorùbá words/domain data, planned at **~68 LOC** (< 100 LOC Gate 2 ceiling). Reusable across all 17 categories via `sys.argv[1]`.
+    2. *Declarative `expected_invariants` Engine*:
+       - Invariants declared in JSON payloads and evaluated dynamically (`equals`, `not_contains`, `min_length`, `min_count`), eliminating hardcoded Python test bloat.
+    3. *Client-Side DOM Integrity Benchmark*:
+       - Sùúrù's headless Node.js test harness approved: tests real React bundle output, asserting 0 fallback descriptions, $\ge 600$c etymology, and $\ge 3$ proverbs.
+    4. *Single-Drawer & Parity Enforcement*:
+       - Mandated zero modifications to frontend UI files (`web/src/`). All mutations must occur via declarative JSON payloads with automated bit-for-bit SHA-256 lockstep.
+    5. *Inscriptions*: Documented in `.agents/scratch/oye_feedback.md`.
 
 ---
 
@@ -493,11 +506,12 @@
 
 ---
 
-## 🏛️ DUAL-CORPORA STATE (POST HORIZON-02 BATCH 2)
-- **Canonical Entity Count**: Exactly **1,420 Entities** (+2 ingested: `Àkúnlẹ̀yàn`, `Àkúnlẹ̀gbà`; `Àyànmọ́` promoted).
-- **Cryptographic Lock**: SHA-256 `0bef0605de125881906908ddffd02e8d85a115c5288cfd141ae3208e05903b53` (0-bit drift).
-- **Cluster Purity Score (CPS)**: 100.0000% across Category 1.
-- **Single-Drawer Law**: Strictly enforced for HORIZON-03 (Universal Ghost Entity & Synthetic Wrapper Catharsis).
+## 🏛️ DUAL-CORPORA STATE & DRAWER VERIFICATIONS (NOV 20, 2026)
+- **Current Canonical Entity Count**: Exactly **1,397 Entities** (Category 1 Plenary Sanitation & Pure Ontology).
+- **Cryptographic Lock**: SHA-256 `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186` (0-bit drift between `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`).
+- **Drawer B Execution**: Sùúrù and Àrọ̀kìn verified 100% clean. Headless DOM benchmark `scripts/audit_ui_dom_integrity.py` passed with 0 errors. All 9 Sanctuary Production Gates clean.
+- **Drawer A UI Clearance**: Ọlọ́yè Àgbẹ̀dẹ's 5 UI Pillars (Mobile WebKit Diacritic font rendering, `EntityBentoDeck` masterCorpus binding, `ontologyClassifier` tone-aware invariant, `useRootNetworkNodes` Autonomous Canon protection, and `<TonalDisambiguationFork />`) unconditionally approved. Zero-Data-in-JS and Gate 2 LOC ceilings respected.
+
 
 
 

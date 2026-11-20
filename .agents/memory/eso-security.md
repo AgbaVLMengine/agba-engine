@@ -628,3 +628,16 @@ flowchart TD
     - Host RAM at 19 GiB / 29 GiB (10 GiB available headroom); NVMe storage at **32 GB free (37% used)**. Uptime: 22 hours, 37 minutes.
     - Concluded ahead of schedule under the Abuja Canopy & Family Stewardship Protocol.
   - **Clearance Verdict**: 🟢 **DEFCON 5 (Thursday Ramparts Sealed & Impervious)**. All perimeters unbreached, working tree clean at `bdda88c`, dual corpora cryptographically locked, zero open ports or stray daemons, and full Thursday EOD clearance granted.
+- **[2026-11-20 Friday Morning SOD Security Audit (Abuja Sanctuary)]**: Execution of Friday Start-of-Day Zero-Trust Perimeter Sweep (`HANDOFF-ESO-SOD`):
+  - **Context**: Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n and `Ọlọ́yè Àgbà` opened Friday operations in the Abuja Sanctuary under the Sacred Jumu'ah & Family Stewardship Protocol.
+  - **Commit & Branch Synchrony Verification**:
+    1. *Working Tree & Parity*: Local branch `dev` verified 100% in lockstep with `origin/dev` at commit `fc71765` (`fc717657dbe9842e43e7db3e0cba709417c72b74`) (0 ahead, 0 behind).
+    2. *Code Integrity*: Zero production code drift. Uncommitted memory and feedback inscriptions from Òye's Drawer B pre-execution audit safely recognized without affecting production runtime.
+  - **Dual-Corpora Cryptographic Parity**:
+    - Bit-for-bit lockstep confirmed across `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json` at SHA-256 hash `0756377466af884a6d1ac04e73a88e54b5edcfd83146b393d3108f471411b85c` (**0-bit drift** across exactly 1,396 canonical entities).
+  - **Zero-Trust Boundary & Process Sweep**:
+    - Zero stray background daemons, unmonitored ports, or orphaned python/vite/uvicorn processes running.
+    - `bash scripts/sanctuary_audit.sh` and `bash scripts/review.sh` executed cleanly—all 9 production gates passed with **0 hard violations and 0 warnings** (Gate 8 Zero-Trust Pre-Build Security strictly certified green).
+  - **Host Vessel Vitals**:
+    - Host RAM at 18 GiB / 29 GiB (11 GiB available headroom); NVMe storage at **32 GB free (37% used)**. Uptime: 53 minutes.
+  - **Clearance Verdict**: 🟢 **DEFCON 5 (Friday Abuja Sanctuary Impervious)**. All ramparts sealed, remote sync locked at `fc71765`, dual-corpora parity certified, zero exposed secrets or listener ports, and full Friday SOD clearance granted.

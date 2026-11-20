@@ -600,8 +600,6 @@
       "ile-ife",
       "ilesa",
       "ipinle osun",
-      "osogbo",
-      "osun",
       "osun state",
       "state of the living spring"
     ],
@@ -762,10 +760,8 @@
       "gateway state",
       "ijebu",
       "ipinle ogun",
-      "ogun",
       "ogun state",
-      "remo",
-      "yewa"
+      "remo"
     ],
     "description": "The historic southwestern Yorùbá state named after the sacred Ògùn River, comprising the historical sub-ethnic kingdoms of Ẹ̀gbá, Ìjẹ̀bú, Rẹ́mọ, and Yéwa/Ẹgbádò.",
     "sub_variants": [
@@ -1818,7 +1814,6 @@
     "category": "Social Structure, Kinship & Lineage",
     "is_parent": true,
     "aliases": [
-      "abiku",
       "child",
       "children",
       "daughter",
@@ -2840,7 +2835,6 @@
       "marketplace",
       "markets",
       "oja",
-      "oja oba",
       "trading center"
     ],
     "description": "The central municipal marketplace established directly facing the royal palace (Ọjà Ọba), serving as the economic, social, and communicative heart of Yorùbá towns.",
@@ -4122,7 +4116,6 @@
       "interstate war",
       "military",
       "military campaign",
-      "ogun",
       "war",
       "war expedition",
       "warfare"
@@ -4223,7 +4216,6 @@
       "flywhisk",
       "irukere",
       "kakaki",
-      "opa ase",
       "regalia",
       "royal insignia",
       "royal regalia",
@@ -4313,7 +4305,6 @@
       "king",
       "kings",
       "monarch",
-      "oba",
       "oba alade",
       "olubadan",
       "paramount monarch",
@@ -6625,7 +6616,6 @@
       "oxum",
       "ochun",
       "orisha osun",
-      "osun osogbo",
       "deity of fertility",
       "river osun"
     ],
@@ -6796,10 +6786,6 @@
       "Ògún Alágbede (Blacksmith)",
       "Ògún Ọdẹ (Hunter)",
       "Ògún Balógun (Warrior)",
-      "Àdá Ìbílẹ̀",
-      "Idà Agẹmọ",
-      "Ọ̀kọ̀ Ẹlẹ́ṣin",
-      "Ọfà Ọdẹ",
       "Ẹwiri Blacksmith Hearth"
     ],
     "historical_timeline": "Primordial origin at creation; formalized into royal military and artisan institutions during the rise of the early Ifẹ̀ and Ọ̀yọ́ iron-smelting complexes (c. 10th–14th Century CE). Spread globally through the transatlantic corridor, becoming the patron of enslaved rebellions and labor movements in Haiti, Cuba, and Brazil.",
@@ -6878,7 +6864,11 @@
       "Òrìṣà",
       "Ọfà",
       "Ọ̀kọ̀",
-      "Ọ̀ṣọ́ọ̀sì"
+      "Ọ̀ṣọ́ọ̀sì",
+      "Àdá Ìbílẹ̀",
+      "Idà Agẹmọ",
+      "Ọ̀kọ̀ Ẹlẹ́ṣin",
+      "Ọfà Ọdẹ"
     ],
     "cultural_relatives": [
       "Ògún Lákàyé",
@@ -10600,8 +10590,7 @@
     "description": "The sovereign Yorùbá divinity of the vast ocean depths, unfathomable cosmic mysteries, precious coral beads (Ìlèkè Ìyùn), and boundless wealth.",
     "sub_variants": [
       "Olókun Seniade",
-      "Olókun Su",
-      "Ìlèkè Ìyùn Guilds"
+      "Olókun Su"
     ],
     "historical_timeline": "Classical Ilé-Ifẹ̀ antiquity; ancient bead workshops at Ilé-Ifẹ̀ (Olókun Grove) produced sacred glass and coral beads traded across continents.",
     "etymology_and_philosophy": "Olókun is the primordial cosmological deity of the unfathomable oceanic depths, prehistoric marine abysses, and the ultimate source of aquatic wealth, coral beads, and inscrutable wisdom. Linguistically derived from 'Oló' (Owner/Lord) and 'Okun' (The Oceanic Depths), the name literally proclaims 'The Supreme Sovereign of the Oceanic Depths'. In ancient Yorùbá cosmology, before dry land was formed by Ọbàtálá at Ilé-Ifẹ̀, the entire cosmos was a dark, infinite watery expanse ruled by Olókun. Historically, Olókun is revered in Ilé-Ifẹ̀ as the master lapidary patron of ancient glass-bead casting, red jasper, and tubular coral bead metallurgy, providing the royal beads (Ìyùn and Sègi) that crown paramount monarchs across West Africa. Philosophically, Olókun embodies the profound secrets of the subconscious mind, ancestral antiquity, and immense unmeasured wealth that mortal arrogance can never fully plumb; she is a deity of quiet, immovable majesty whose depths conceal both miraculous abundance and the primordial fury of the tidal wave.",
@@ -10667,8 +10656,8 @@
       "Odo Ọ̀ṣun",
       "Odò",
       "Òrìṣà",
-      "Ìlèkè Ìyùn Guilds",
-      "Adé Ìlẹ̀kẹ̀"
+      "Adé Ìlẹ̀kẹ̀",
+      "Ìlèkè Ìyùn Guilds"
     ],
     "cultural_relatives": [
       "Yemọja",
@@ -13624,7 +13613,14 @@
       "diaspora_connections": "In Cuba’s Lucumí tradition, Ọbá is syncretized with Saint Catherine, preserving the warrior‑woman aspect while the river element merges with the Saint’s patronage of childbirth. In Brazil’s Nagô‑Candomblé, she appears as Iemanjá Obá, a daughter of the sea mother who safeguards marital bonds among Afro‑Brazilian families. Trinidad’s Orisha circles invoke Ọbá during *bélé* dances that celebrate domestic unity, and Haitian Vodou’s Nago spirits include a loa called *Oba* who oversees household rites. In the Sierra Leone Krio community, the river deity is remembered as *Oba‑Maa* in oral histories of returnees from Lagos. Ghanaian diaspora groups in the UK and US maintain the *Ọbá* chant in annual *ìdáná* (home‑blessing) ceremonies, while contemporary artists in the Asia‑Pacific diaspora reinterpret her iconography through digital installations that blend Yoruba river motifs with local water deities, illustrating her universal resonance as a symbol of loyalty and protective strength.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For film, shoot on location at the actual Oba River (or a visually similar West African river) during early morning mist to capture the sacred ambience; use natural lighting and incorporate authentic drumming patterns (bàtá, dùndún) at 120‑bpm to echo the river’s pulse. Costume designers should reference 18th‑century Oyo royal attire: indigo‑dyed *aso‑oke* wrappers, bronze arm‑cuffs, and a stylized head‑piece shaped like a flowing wave. Visual artists must render the bronze figurines with the characteristic Yoruba lost‑wax patina—darkened with a thin layer of verdigris to suggest age. Music producers should layer field recordings of river water, *akete* bells, and a female chant of the proverbs, then mix with low‑frequency drones to evoke the river’s depth. Ensure all props (raffia mats, white chalk, sea‑salt) are sourced ethically and that any performer portraying Ọbá undergoes a brief cultural immersion with a Yoruba priest to respect the deity’s protocol."
-    }
+    },
+    "related_entities": [
+      "Ṣàngó",
+      "Ọ̀yá",
+      "Ọ̀ṣun",
+      "Yemọja",
+      "Odò"
+    ]
   },
   {
     "id": "Yewá",
@@ -20059,7 +20055,13 @@
       "diaspora_connections": "The Trans-Atlantic Slave Trade carried the spiritual essence of Onílẹ̀ to the Americas, where her veneration adapted to new environments. In Brazilian Candomblé, she is revered as Onilé, the guardian of the sacred ground of the Terreiro and deeply intertwined with the Ancestors (Egúngún). Before any major ceremony, offerings are made to the Earth to seek her permission and blessing. In Cuban Lucumí (Santería) and Trinidadian Orisha traditions, the concept of the Earth as a sacred, witnessing entity remains foundational, often harmonized with the veneration of Orisha Oko (the deity of agriculture) and Odùduwà. Today, Global Diaspora practitioners invoke Onílẹ̀ to ground their spiritual practices, fostering a pan-African ecological consciousness and a profound reconnection to Ancestral lands.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For media representations, visual palettes should emphasize rich Earth tones: deep ochre, terracotta, umber, and the gleaming gold of polished brass (Idẹ). Imagery should feature ancient sacred groves (Igbó Ògbóni), the intricate Ẹ̀dán staffs, and bare feet touching the soil to convey grounding. Audio design should incorporate deep, resonant, slow-tempo drumming (such as the Àgẹ̀rẹ̀ or Ògbóni drums), accompanied by solemn, low-register chants and ambient sounds of nature (wind through leaves, shifting soil). The overall tone must be profoundly reverent, ancient, and mysterious, reflecting the silent but absolute power of the Earth Mother."
-    }
+    },
+    "related_entities": [
+      "Ògbóni",
+      "Edan Onílẹ̀ (Ògbóni Sacred Figurine)",
+      "Iyaláṣẹ",
+      "Ìṣẹṣẹ"
+    ]
   },
   {
     "id": "Àbíkú",
@@ -55373,7 +55375,6 @@
     "culture": "Yorùbá",
     "category": "Attire, Textiles & Personal Adornment",
     "aliases": [
-      "abeti aja",
       "cap",
       "caps",
       "fila",
@@ -55566,9 +55567,7 @@
       "divinity",
       "god",
       "gods",
-      "orisa",
       "pantheon",
-      "ògún deity",
       "irunmole pantheon",
       "401 Irúnmọlẹ̀ Pantheon"
     ],
@@ -55760,7 +55759,6 @@
       "herbs",
       "leaves",
       "medicinal leaves",
-      "osanyin",
       "plants",
       "sacred herbs"
     ],
@@ -70278,8 +70276,7 @@
       "arugba",
       "kneeling bowl bearer",
       "caryatid container",
-      "ifa bowl bearer",
-      "agere arugba"
+      "ifa bowl bearer"
     ],
     "description": "Caryatid sculpture of a kneeling female devotee carrying the sacred divination bowl on her head, honoring the cosmological reverence and maternal foundation of Ifá.",
     "historical_timeline": "Classical Antiquity (c. 900–1400 CE): Classical 18th–19th Century CE Yorùbá sculpture; created by prominent regional carving centers in Ìbàdàn, Ọ̀yọ́, and Èkìtì, originating within the sacred courtly, ritual, and guild institutions of classical Ilé-Ifẹ̀ and early Yorùbá city-states. Imperial & Guild Consolidation (c. 1400–1830 CE): Standardized across regional kingdoms including Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Òndó, and Ketu as an authoritative pillar of Royal Regalia, Sacred Art & Architecture. 19th-Century & Transatlantic Continuity (1830–1960 CE): Preserved with fierce custodial fidelity through pre-colonial transformations and carried across the Atlantic into Afro-diasporic memory. Contemporary Sovereign Era (1960–Present): Actively maintained in living communal practice, archival scholarship, and the Àgbà Engine canonical heritage matrix.",
@@ -70709,7 +70706,6 @@
     "aliases": [
       "ere ibeji",
       "ère ìbejì",
-      "ibeji",
       "ere ibeji statuette",
       "twin carving",
       "memorial twin figure",
@@ -70824,9 +70820,7 @@
       "onile figure",
       "ogboni sanctuary figure",
       "sanctuary figure",
-      "onile",
-      "onílé",
-      "earth mother",
+      "earth mother figure",
       "ogboni earth mother"
     ],
     "description": "Monumental cast brass or terracotta sanctuary figure representing the Earth Mother (Ilẹ̀) within the Ògbóni society.",
@@ -71254,7 +71248,6 @@
     "aliases": [
       "araba ife",
       "àràbà ilé-ifẹ̀",
-      "araba agbaye",
       "supreme ifa priest",
       "pontiff of ifa",
       "araba of ife",
@@ -71564,7 +71557,7 @@
     "description": "The revered Yorùbá deity of agriculture, yam harvests, agrarian fertility, food abundance, and traditional court arbitration.",
     "sub_variants": [
       "Ọkọ́ Òrìṣà Oko (Iron Staff)",
-      "New Yam Ceremonies",
+      "Ọdún Iṣu Tuntun (New Yam Liturgy)",
       "Ìráwọ̀ Shrine"
     ],
     "historical_timeline": "Classical Antiquity (c. 900–1400 CE): Formalized in classical Ìráwọ̀ (Ọ̀yọ́ State), where a former king retired to become the pioneer teacher of agricultural science, originating within the sacred courtly, ritual, and guild institutions of classical Ilé-Ifẹ̀ and early Yorùbá city-states. Imperial & Guild Consolidation (c. 1400–1830 CE): Standardized across regional kingdoms including Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Òndó, and Ketu as an authoritative pillar of Spiritual & Cosmological Matrix. 19th-Century & Transatlantic Continuity (1830–1960 CE): Preserved with fierce custodial fidelity through pre-colonial transformations and carried across the Atlantic into Afro-diasporic memory. Contemporary Sovereign Era (1960–Present): Actively maintained in living communal practice, archival scholarship, and the Àgbà Engine canonical heritage matrix.",
@@ -71679,6 +71672,21 @@
           "Omi tútù ní ń bẹ ní Ìráwọ̀; ẹni tó rí Òrìṣà Oko a bọ́ lọ́wọ́ gbèsè. (Living cool waters flow at Ìráwọ̀; he who beholds Orisha Oko is liberated from spiritual debts: Praising redemptive peace.)"
         ],
         "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas; Morton-Williams, Peter (1964). An Outline of the Cosmology and Cult Organization of the Oyo Yoruba; Abiodun, Rowland (2014). Yoruba Art and Language."
+      },
+      "Ọdún Iṣu Tuntun (New Yam Liturgy)": {
+        "facet_name": "Ọdún Iṣu Tuntun",
+        "typology": "First-Fruits Agricultural Liturgy & Communal Thanksgiving",
+        "description": "The sacred annual festival and first-fruits ritual marking the harvest of new yams and communal thanksgiving to earth divinities.",
+        "etymology_and_philosophy": "The New Yam Liturgy (Ọdún Iṣu Tuntun / Ìjẹṣu) constitutes the premier agricultural liturgy in Yorùbá communal life, marking the formal transition from seasonal scarcity to abundant harvest. In Yorùbá culinary ontology, the white yam (Iṣu) is not merely a staple crop; it is revered as the king of flora, endowed with vital life force that sustained ancestral migrations. Under sacred law, no citizen, chief, or monarch may consume new yams until the first tubers are harvested by the priesthood, ritually roasted, and offered to Òrìṣà Oko, Onílẹ̀, and the lineage ancestors. This prohibition prevents premature consumption of unripe crops, enforces communal solidarity, and instills cosmic gratitude.",
+        "historical_timeline": "Pre-Colonial Epoch to Present: Universal civic and agrarian festival observed across all traditional Yorùbá city-states.",
+        "material_and_craftsmanship": "Consecrated first-harvest white yams (Iṣu Gégé), red palm oil, roasted rooster offerings, and fresh palm frond garlands.",
+        "social_and_ritual_context": "Civic holiday celebrated with mass drumming, communal feasting, ancestral libations, and the presentation of agricultural awards to master farmers.",
+        "proverbs_and_oral_traditions": [
+          "A kì í jẹ iṣu tuntun láì fi fún oríṣà; ẹni tó kọ̀ láti dúpẹ́ a pàdé àìtó. (One does not eat new yams without presenting the first-fruits to the deities; he who refuses gratitude meets bitter scarcity: Teaching ritual thankfulness.)",
+          "Iṣu tó gbó kì í bẹ̀rù ọ̀bẹ; ọdún iṣu tuntun dé, ayé a d'ọrọ̀. (The mature yam fears not the harvest knife; the season of new yams arrives, bringing commonwealth abundance: Celebrating agricultural maturity.)",
+          "Bí àgbẹ̀ bá kórè tán, ayé a yọ̀; Òrìṣà Oko l'ó fi oúnjẹ bọ́ ayé. (When the farmer finishes harvesting, the city rejoices; Orisha Oko has nourished all humanity with divine sustenance: Praising agricultural labor.)"
+        ],
+        "provenance_and_citations": "Fadipe, N. A. (1970). The Sociology of the Yoruba; Johnson, Samuel (1921). The History of the Yorubas; Bascom, William (1969). The Yoruba of Southwestern Nigeria."
       }
     }
   },
@@ -73979,7 +73987,6 @@
     "sovereign_parent": "Ẹranko",
     "sovereign_parent_status": "Living Sub-Variant",
     "aliases": [
-      "aja",
       "hunting dog",
       "canis familiaris",
       "pariah dog",
@@ -76732,7 +76739,9 @@
     "material_and_craftsmanship": "Dense, oil-patinated palm nut with four distinct germination pores, polished by decades of herbal infusions.",
     "social_and_ritual_context": "Cast in pairs of 16 during Itadogun and Itẹfa initiation rituals on the Ọpọ́n Ifá.",
     "proverbs_and_oral_traditions": [
-      "Ikin ọlọ́jú mẹ́rin kì í purọ́; orí mẹ́rin ni ó fi ń wo ayé. (The four-eyed sacred nut utters no falsehood; with four eyes it surveys the four corners of existence.)"
+      "Ikin ọlọ́jú mẹ́rin kì í purọ́; orí mẹ́rin ni ó fi ń wo ayé. (The four-eyed sacred nut utters no falsehood; with four eyes it surveys the four corners of existence: Affirming omniscient cosmological clarity.)",
+      "Ojú mẹ́rin l'a fi ń mọ àṣírí ọ̀run; ẹni tó rí ikin ti rí Ọ̀rúnmìlà. (With four mystical eyes the secrets of heaven are unveiled; he who beholds the sacred nut beholds Ọ̀rúnmìlà: Celebrating divine manifestation.)",
+      "Ikin kì í ṣe èso lásán; orísun ìmọ̀ ni ọpẹ́ Ifá. (The sacred palm nut is no ordinary fruit; the wellspring of primordial wisdom is the sacred Ifá palm: Teaching theological reverence.)"
     ],
     "diaspora_connections": "Preserved as 'Ikin' in Cuban and Brazilian Ifá lineages.",
     "geographical_origin": "Ilé-Ifẹ̀ and Pan-Yorùbáland",
@@ -76793,7 +76802,9 @@
     "material_and_craftsmanship": "Natural cured botanical palm nut showing three distinct indented apertures.",
     "social_and_ritual_context": "Venerated in consultations seeking energetic balance and ancestral appeasement.",
     "proverbs_and_oral_traditions": [
-      "Ọlọ́jú mẹ́ta ló mọ àdàbà orí igi; Ifá mọ ohun tó pamọ́. (He with three eyes discerns the hidden dove in the treetop; Ifá sees that which is invisible to mortal eyes.)"
+      "Ọlọ́jú mẹ́ta ló mọ àdàbà orí igi; Ifá mọ ohun tó pamọ́. (He with three eyes discerns the hidden dove in the treetop; Ifá sees that which is invisible to mortal eyes: Praising acute metaphysical perception.)",
+      "Ikin ọlọ́jú mẹ́ta kì í tẹ́; ọ̀rọ̀ tí ó fọ̀ l'a fi ń tọ́ ilé ayé. (The three-eyed sacred nut suffers no disgrace; the counsel it proclaims guides human civilization: Asserting prophetic accuracy.)",
+      "Ojú mẹ́ta ni awo fi ń wo inú ibú; ohun tí ń bẹ n'ísàlẹ̀ ni Ifá ń fi hàn. (With three eyes the initiate peers into the deep abyss; whatever lies concealed below is revealed by Ifá: Honoring esoteric insight.)"
     ],
     "diaspora_connections": "Maintained in diaspora divination sets.",
     "geographical_origin": "Pan-Yorùbáland",
@@ -76968,13 +76979,15 @@
       "elder opele",
       "senior opele chain"
     ],
-    "description": "The heavy, consecrated divination chain wielded exclusively by veteran elder Babaláwos, strung with eight rare aged seed-pods, brass tokens, and ancestral relics.",
+    "description": "The senior master divination chain crafted from sacred Schrebera arborea seed pods and seasoned brass links, wielded exclusively by elder Babaláwo to discern complex cosmic omens.",
     "historical_timeline": "Classical Antiquity (c. 900–1400 CE): Passed down across multiple generations from master to initiated successor, originating within the sacred courtly, ritual, and guild institutions of classical Ilé-Ifẹ̀ and early Yorùbá city-states. Imperial & Guild Consolidation (c. 1400–1830 CE): Standardized across regional kingdoms including Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Òndó, and Ketu as an authoritative pillar of Spiritual & Cosmological Matrix. 19th-Century & Transatlantic Continuity (1830–1960 CE): Preserved with fierce custodial fidelity through pre-colonial transformations and carried across the Atlantic into Afro-diasporic memory. Contemporary Sovereign Era (1960–Present): Actively maintained in living communal practice, archival scholarship, and the Àgbà Engine canonical heritage matrix.",
-    "etymology_and_philosophy": "From 'Agbalagba' (elder of venerable wisdom). Embodies lifetime mastery of the 256 Odù Ifá.",
+    "etymology_and_philosophy": "Ọ̀pẹ̀lẹ̀ Agbalagba designates the senior master divination chain held by elder adepts of Ifá. In Yorùbá divinatory epistemology, 'Agbalagba' signifies seasoned maturity, spiritual discretion, and ethical sobriety. Unlike apprentice chains, the elder chain is consecrated with cooling botanical washes (Èrò) and snail water to ensure infallible accuracy in high-stakes consultations.",
     "material_and_craftsmanship": "Heavy hand-braided leather cord or copper chain connecting seasoned seed pods backed by ancestral beads.",
     "social_and_ritual_context": "Reserved for complex communal consultations, epidemic arbitrations, and king-making rites.",
     "proverbs_and_oral_traditions": [
-      "Ọ̀pẹ̀lẹ̀ agbalagba kì í sọ̀rọ̀ lásán; bí ó bá dákẹ́, awo a bẹ̀rù. (The elder divination chain never speaks in vain; when it falls silent, priests re-examine the cosmos.)"
+      "Ọ̀pẹ̀lẹ̀ agbalagba kì í sọ̀rọ̀ lásán; bí ó bá dákẹ́, awo a bẹ̀rù. (The elder divination chain never speaks in vain; when it falls silent, priests re-examine the cosmos: Emphasizing solemn accuracy.)",
+      "Ọwọ́ àgbà l'ó ń da ọ̀pẹ̀lẹ̀; ọ̀rọ̀ Ifá kì í ṣe ohun àkúyà. (The hand of the elder casts the divination chain; sacred revelation is never a frivolous pastime: Teaching reverence for sacerdotal mastery.)",
+      "Bí ọ̀pẹ̀lẹ̀ bá fọhùn tán, àgbà kì í tún ọ̀rọ̀ sọ lẹ́ẹ̀mejì. (When the divination chain finishes speaking, the elder repeats not the decree twice: Affirming decisive divinatory authority.)"
     ],
     "diaspora_connections": "Preserved in elder Lucumí and Candomblé house lineages.",
     "geographical_origin": "Ilé-Ifẹ̀, Ọ̀yọ́, and Ìjẹ̀bú",
@@ -76985,10 +76998,7 @@
       "Babaláwo",
       "Ọpọ́n Ifá"
     ],
-    "sub_variants": [
-      "Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)",
-      "Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)"
-    ],
+    "sub_variants": [],
     "details": {
       "id": "opele_agbalagba",
       "title": "Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)",
@@ -77039,11 +77049,13 @@
     ],
     "description": "An aristocratic divination chain whose eight half-pods are cast from sacred lost-wax brass (Idẹ), producing resonant acoustic chimes when dropped to summon ancestral attention.",
     "historical_timeline": "Classical Antiquity (c. 900–1400 CE): Popularized in Ìjẹ̀bú and Òwọ̀ brass-working guilds during the 16th–18th centuries, originating within the sacred courtly, ritual, and guild institutions of classical Ilé-Ifẹ̀ and early Yorùbá city-states. Imperial & Guild Consolidation (c. 1400–1830 CE): Standardized across regional kingdoms including Ọ̀yọ́, Ìjẹ̀bú, Èkìtì, Òndó, and Ketu as an authoritative pillar of Spiritual & Cosmological Matrix. 19th-Century & Transatlantic Continuity (1830–1960 CE): Preserved with fierce custodial fidelity through pre-colonial transformations and carried across the Atlantic into Afro-diasporic memory. Contemporary Sovereign Era (1960–Present): Actively maintained in living communal practice, archival scholarship, and the Àgbà Engine canonical heritage matrix.",
-    "etymology_and_philosophy": "Brass (Idẹ) never rusts nor decays: symbolizes immortal truth and the incorruptibility of divine revelation.",
+    "etymology_and_philosophy": "Ọ̀pẹ̀lẹ̀ Idẹ represents the liturgical alliance between Ifá's intellectual discernment and the incorruptible wealth of Òṣun and the Ògbóni society. Brass (Idẹ) never oxidizes or decays into rust, embodying the imperishable eternity of divine truth (Òtítọ́ Inú) that survives all temporal decay.",
     "material_and_craftsmanship": "Lost-wax cast brass half-pods decorated with geometric chevron and interlace motifs linked by brass chain.",
     "social_and_ritual_context": "Utilized in royal courts and Òṣùgbó/Ògbóni ancestral sanctuaries.",
     "proverbs_and_oral_traditions": [
-      "Idẹ kì í kànkàn; ọ̀pẹ̀lẹ̀ idẹ kì í d'ègún. (Brass never corrupts into rust; the brass divination chain never degenerates into falsehood.)"
+      "Idẹ kì í kànkàn; ọ̀pẹ̀lẹ̀ idẹ kì í d'ègún. (Brass never corrupts into rust; the brass divination chain never degenerates into falsehood: Celebrating incorruptible divine truth.)",
+      "Ọ̀pẹ̀lẹ̀ idẹ kọrin sí orí ẹní; awo a gbọ́ ohùn ìmọ̀lẹ̀. (The brass chain chimes atop the sacred mat; the initiate deciphers the resonant voice of illumination: Praising acoustic liturgy.)",
+      "A kì í fi idẹ dí ojú èké; òtítọ́ ni ẹ̀wù awo. (One uses not pure brass to cover deceit; unblemished truth is the sole vestment of the initiate: Enforcing sacerdotal integrity.)"
     ],
     "diaspora_connections": "Survives in Cuban Lucumí and Brazilian Ketu high-priesthood regalia.",
     "geographical_origin": "Ìjẹ̀bú-Òde and Òwọ̀",
@@ -77054,10 +77066,7 @@
       "Ògbóni",
       "Ọpọ́n Ifá"
     ],
-    "sub_variants": [
-      "Ọ̀pẹ̀lẹ̀ Agbalagba (Elder Master Divination Chain)",
-      "Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)"
-    ],
+    "sub_variants": [],
     "details": {
       "id": "opele_ide",
       "title": "Ọ̀pẹ̀lẹ̀ Idẹ (Sacred Brass Divining Chain)",
