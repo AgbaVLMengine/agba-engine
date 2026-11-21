@@ -5598,8 +5598,8 @@
     "diaspora_connections": "In Cuba’s Lucumí tradition the Ìrukẹ̀rẹ̀ appears as the *cachimbo* or horse‑tail whisk carried by *babalawos* during *bembé* rites, echoing its Oyo origins. In Brazil’s Nagô‑Candomblé, the *cachimbo de cavalo* is wielded by *pai de santo* to invoke Shango’s thunderous authority. Trinidad’s Orisha ceremonies retain the whisk, called *whisk of the king*, used in *Bembe* processions. Haitian Vodou’s Nago houses preserve a similar horse‑tail whisk, known locally as *bwa kòn*, to bless *Baron Samedi* initiates. Among the Gullah Geechee of the U.S. Southeast, the whisk is incorporated into *Ring Shout* leadership gestures, symbolizing the continuity of West African regal symbolism. In the UK and US diaspora, cultural groups such as the Yoruba Cultural Association and the African Heritage Society teach the making of Ìrukẹ̀rẹ̀ in workshops, linking younger generations to ancestral craftsmanship. Across Europe and Asia‑Pacific, contemporary artists reinterpret the whisk in performance art, highlighting its role as a conduit of authority, purification, and trans‑Atlantic cultural resilience.",
     "geographical_origin": "Yorùbáland",
     "media_production_notes": "For film: stage the whisk on a carved iroko handle with visible beadwork; use natural lighting to capture the sheen of dyed horse‑tail hairs. When depicting a monarch, have the actor lift the whisk with both hands, moving it in a slow, sweeping arc to convey *ìwàpẹ̀*. Sound design should include the soft rustle of the hairs, layered with low‑drum *dundun* beats to signal authority. For visual art: emphasize the contrast between the dark, glossy hairs and the warm wood, and consider close‑up macro shots of the incised symbols. Music producers can sample the whisk’s rustle as a percussive texture, pairing it with traditional bata rhythms and a call‑and‑response chant that references the proverb above, ensuring cultural consultants approve any adaptation.",
-    "sovereign_parent": "Àmì Ọlá",
-    "sovereign_parent_status": "Living Sub-Variant",
+    "sovereign_parent": null,
+    "sovereign_parent_status": "Sovereign Parent Concept",
     "details": {
       "id": "Ìrukẹ̀rẹ̀",
       "title": "Ìrukẹ̀rẹ̀",
@@ -5624,7 +5624,19 @@
       "diaspora_connections": "In Cuba’s Lucumí tradition the Ìrukẹ̀rẹ̀ appears as the *cachimbo* or horse‑tail whisk carried by *babalawos* during *bembé* rites, echoing its Oyo origins. In Brazil’s Nagô‑Candomblé, the *cachimbo de cavalo* is wielded by *pai de santo* to invoke Shango’s thunderous authority. Trinidad’s Orisha ceremonies retain the whisk, called *whisk of the king*, used in *Bembe* processions. Haitian Vodou’s Nago houses preserve a similar horse‑tail whisk, known locally as *bwa kòn*, to bless *Baron Samedi* initiates. Among the Gullah Geechee of the U.S. Southeast, the whisk is incorporated into *Ring Shout* leadership gestures, symbolizing the continuity of West African regal symbolism. In the UK and US diaspora, cultural groups such as the Yoruba Cultural Association and the African Heritage Society teach the making of Ìrukẹ̀rẹ̀ in workshops, linking younger generations to ancestral craftsmanship. Across Europe and Asia‑Pacific, contemporary artists reinterpret the whisk in performance art, highlighting its role as a conduit of authority, purification, and trans‑Atlantic cultural resilience.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For film: stage the whisk on a carved iroko handle with visible beadwork; use natural lighting to capture the sheen of dyed horse‑tail hairs. When depicting a monarch, have the actor lift the whisk with both hands, moving it in a slow, sweeping arc to convey *ìwàpẹ̀*. Sound design should include the soft rustle of the hairs, layered with low‑drum *dundun* beats to signal authority. For visual art: emphasize the contrast between the dark, glossy hairs and the warm wood, and consider close‑up macro shots of the incised symbols. Music producers can sample the whisk’s rustle as a percussive texture, pairing it with traditional bata rhythms and a call‑and‑response chant that references the proverb above, ensuring cultural consultants approve any adaptation."
-    }
+    },
+    "is_parent": true,
+    "sub_variants": [
+      "Ìrukẹ̀rẹ̀ Òrìṣà"
+    ],
+    "related_entities": [
+      "Òrìṣà",
+      "Ọba",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Babaláwo",
+      "Àṣẹ",
+      "Ẹgbẹ́ Olórìṣà"
+    ]
   },
   {
     "id": "Ọ̀pá Ọ̀rànmíyàn",
@@ -6691,7 +6703,9 @@
       "Odo Ọ̀ṣun",
       "Yemọja",
       "Erinlẹ̀",
-      "Òrìṣà"
+      "Òrìṣà",
+      "Osun-Oso",
+      "Àwọn Ìyá Àgbà Ìjọ́yè"
     ],
     "cultural_relatives": [
       "Odo Ọ̀ṣun",
@@ -6785,8 +6799,7 @@
       "Ògún Lákàyé",
       "Ògún Alágbede (Blacksmith)",
       "Ògún Ọdẹ (Hunter)",
-      "Ògún Balógun (Warrior)",
-      "Ẹwiri Blacksmith Hearth"
+      "Ògún Balógun (Warrior)"
     ],
     "historical_timeline": "Primordial origin at creation; formalized into royal military and artisan institutions during the rise of the early Ifẹ̀ and Ọ̀yọ́ iron-smelting complexes (c. 10th–14th Century CE). Spread globally through the transatlantic corridor, becoming the patron of enslaved rebellions and labor movements in Haiti, Cuba, and Brazil.",
     "etymology_and_philosophy": "Ògún is the primordial divinity of iron, metallurgy, technological innovation, martial prowess, and civilizational pioneerism within Yorùbá metaphysics. Linguistically, his name derives from the archaic verbal noun 'gún' (to pierce, clear, forge straight, bring to structural completion, or concentrate immense physical force), signifying 'The Irresistible Force that Clears the Primordial Path'. In classical cosmogony, when the 401 Irúnmọlẹ̀ descended from heaven to fashion human society, they were halted at the threshold of the dense, impenetrable forest of thorns and chaotic matter (Igbó Ìdùrò); where all other deities retreated, Ògún deployed his forged iron cutlass (Àdá Ìbílẹ̀) to slash open the road, earning the eternal cosmic title 'Ògún Lákàyé, Ọ̀sìn Imọlẹ̀' (The First Pioneer of the Deities). Historically linked to the ancient royal dynasties of Ilé-Ifẹ̀, Ọ̀yọ́, and especially Ìrè-Èkìtì where he reigned as Ọba Onírè, Ògún is the patron custodian of all artisans who employ metal tools: blacksmiths (Àgbẹ̀dẹ), hunters (Ọdẹ), warriors (Balógun), sculptors (Gbẹ́nàgbẹ́nà), barbers, and modern technological engineers. Philosophically, Ògún embodies the dual nature of technological power: the same iron that clears farmlands and cultivates food can, without moral restraint (Ìwà), inflict bloody carnage and war.",
@@ -6860,15 +6873,13 @@
     "related_entities": [
       "Idà",
       "Àdá",
-      "Ògún Lákàyé",
       "Òrìṣà",
       "Ọfà",
       "Ọ̀kọ̀",
       "Ọ̀ṣọ́ọ̀sì",
-      "Àdá Ìbílẹ̀",
-      "Idà Agẹmọ",
-      "Ọ̀kọ̀ Ẹlẹ́ṣin",
-      "Ọfà Ọdẹ"
+      "Ẹwiri",
+      "Opa-Ogun",
+      "Aja Ògún"
     ],
     "cultural_relatives": [
       "Ògún Lákàyé",
@@ -7029,7 +7040,10 @@
       "elegba",
       "ogo elegba",
       "threshold altar",
-      "market guardian esu"
+      "market guardian esu",
+      "esu-elegbara",
+      "esu elegba",
+      "esu 401"
     ],
     "description": "The Orisha of Choice, Linguistics, Crossroads, and Divine Communication, facilitating interactions between humans and spiritual realms.",
     "historical_timeline": "Antiquity (Classical Ilé-Ifẹ̀ Era): Enshrined during the primordial foundations of Yorùbá civilization at Ilé-Ifẹ̀ as Èṣù Ọbàsin and Èṣù Ẹlẹ́gbára, operating as the divine prime minister in the primordial governance of the 401 Òrìṣà and recorded throughout the ancient oral verses of the Odù Ifá corpus. Medieval Era (14th–18th Centuries): Functioned as the sovereign protector of imperial borders, markets, and tributary networks within the Ọ̀yọ́ Empire, Ketu, and Ìjẹ̀bú polities; court priests (Àwọn Ẹlẹ́gbà) established the Èṣù Àróbídì shrines at the palace gateways (kọ̀bì) to govern diplomacy and commerce. Colonial Era (19th–20th Centuries): Systematically mischaracterized as 'Satan' following Samuel Ajayi Crowther's 1852 Yorùbá translation of the Christian Bible, sparking colonial criminalization, yet steadfastly preserved across rural priesthoods, hereditary guild woodcarvers, and Babaláwo lineages. Living Contemporary Era: Dynamically restored across global academic, ritual, and philosophical domains through decolonial scholarly reclamation and living Ifá-Òrìṣà practice across West Africa and its worldwide diaspora.",
@@ -7091,7 +7105,18 @@
       "media_production_notes": "Visual Design: High-contrast chiaroscuro lighting set against late-dusk or pre-dawn landscapes at the convergence of unpaved crossroads. Art direction must focus on rich earthy textures: raw oxidized laterite stone (Yángí) glistening under freshly poured red palm oil, aged weathered iroko wood, and bleached ocean cowries. Audio Landscape: Polyrhythmic batá drumming, prominently highlighting the syncopated, agile phrasing of the kònkòlò bell cadence, accompanied by the airy, haunting frequencies of the wooden flute (fèrè) to communicate liminal transition. Camera Movement: Dynamic low-angle rotational pans tracking from crossroads thresholds toward skyward focal points, capturing both playful trickery and majestic dread.",
       "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ìfá Literary Corpus. Ibadan: Oxford University Press Nigeria; Ìdòwú, E. Bọ́lájì (1962). Olódùmarè: God in Yoruba Belief. London: Longmans; Gates, Henry Louis Jr. (1988). The Signifying Monkey: A Theory of African-American Literary Criticism. Oxford: Oxford University Press; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Bloomington: Indiana University Press."
     },
-    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ìfá Literary Corpus. Ibadan: Oxford University Press Nigeria; Ìdòwú, E. Bọ́lájì (1962). Olódùmarè: God in Yoruba Belief. London: Longmans; Gates, Henry Louis Jr. (1988). The Signifying Monkey: A Theory of African-American Literary Criticism. Oxford: Oxford University Press; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Bloomington: Indiana University Press."
+    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ìfá Literary Corpus. Ibadan: Oxford University Press Nigeria; Ìdòwú, E. Bọ́lájì (1962). Olódùmarè: God in Yoruba Belief. London: Longmans; Gates, Henry Louis Jr. (1988). The Signifying Monkey: A Theory of African-American Literary Criticism. Oxford: Oxford University Press; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Bloomington: Indiana University Press.",
+    "sub_variants": [
+      "Èṣù Èdá"
+    ],
+    "related_entities": [
+      "Òrìṣà",
+      "Àṣẹ",
+      "Ẹbọ",
+      "Orúnmìlà",
+      "Ààbò àti Ìbílẹ̀",
+      "Ọpọ́n Ifá"
+    ]
   },
   {
     "id": "Amàlà",
@@ -8633,7 +8658,16 @@
       "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Indiana University Press; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht."
     },
     "antiquity_timeline": "Ancient Ifẹ̀ priesthood oral codification; formalized during the rise of the Ọ̀yọ́ royal divination college; modern preservation in UNESCO Intangible Cultural Heritage registry (2005).",
-    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Indiana University Press; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht."
+    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa. Indiana University Press; Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht.",
+    "sovereign_parent": "Ifá",
+    "related_entities": [
+      "Ifá",
+      "Babaláwo",
+      "Ojú Odù Méjìdínlógún",
+      "Orúnmìlà",
+      "Ìtẹ́fá",
+      "Dùndún"
+    ]
   },
   {
     "id": "Ewì",
@@ -8921,7 +8955,18 @@
       "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht; Abímbọ́lá, Wándé (1977). Àwọn Ojú Odù Mẹ́rìndínlógún. Oxford University Press; Buckley, Anthony D. (1985). Yoruba Medicine. Oxford: Clarendon Press."
     },
     "antiquity_timeline": "Pre-dynastic metaphysical science of àṣẹ; practiced by medicinal guilds (Ọlọ́ṣanyìn) and Ifá initiates; preserved in ancient esoteric formularies.",
-    "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht; Abímbọ́lá, Wándé (1977). Àwọn Ojú Odù Mẹ́rìndínlógún. Oxford University Press; Buckley, Anthony D. (1985). Yoruba Medicine. Oxford: Clarendon Press."
+    "provenance_and_citations": "Verger, Pierre Fatumbi (1995). Ewé: The Use of Plants in Yoruba Society. São Paulo: Odebrecht; Abímbọ́lá, Wándé (1977). Àwọn Ojú Odù Mẹ́rìndínlógún. Oxford University Press; Buckley, Anthony D. (1985). Yoruba Medicine. Oxford: Clarendon Press.",
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Àṣẹ",
+      "Àṣẹ-Ọ̀rọ̀",
+      "Ọ̀sanyìn",
+      "Èṣù",
+      "Orúnmìlà",
+      "Ààbò àti Ìbílẹ̀"
+    ]
   },
   {
     "id": "Àró",
@@ -9643,7 +9688,16 @@
       "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination. Indiana University Press."
     },
     "antiquity_timeline": "Traditional pedagogical apprenticeship system of the Ifá priesthood (Ẹ̀kọ́ Ifá) dating to primordial Ifẹ̀; lasting 10 to 16 years under a master Babaláwo.",
-    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination. Indiana University Press."
+    "provenance_and_citations": "Abímbọ́lá, Wándé (1976). Ifá: An Exposition of Ifá Literary Corpus. Ibadan: Oxford University Press Nigeria; Bascom, William (1969). Ifa Divination. Indiana University Press.",
+    "sovereign_parent": "Ẹgbẹ́ Awo",
+    "related_entities": [
+      "Babaláwo",
+      "Ifá",
+      "Ọ̀pẹ̀lẹ̀",
+      "Ẹgbẹ́ Awo",
+      "Ìtẹ́fá",
+      "Orúnmìlà"
+    ]
   },
   {
     "id": "Orin Ọmọ",
@@ -10033,7 +10087,18 @@
       "diaspora_connections": "Across the African diaspora, Ọ̀rúnmìlà survived the Middle Passage with profound scriptural and ontological fidelity. In Cuban Regla de Ocha / Ifá (Santería / Lucumí), Babalawos maintained distinct priestly autonomy, preserving the extensive Spanish-Lucumí Patakí corpus (narratives corresponding to the Odù) and retaining the Ìkín, Ọ̀pẹ̀lẹ̀, and consecrated green-and-yellow ide beads, frequently syncretized with Saint Francis of Assisi. In Brazilian Candomblé Ketu and modern Brazilian Ilês, Ọ̀rúnmìlà is venerated both in connection with the Orixás and within specialized Ifá temples. In Trinidad Orisha traditions, Ọ̀rúnmìlà persists as the supreme oracle of peace and arbitration, serving globally as a transnational theological bridge for Afro-descendant identity.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Cinematic portrayal requires a dignified, scholarly, and contemplative visual grammar. Avoid sensationalized, occult Hollywood tropes. Visual tone should feature amber, ivory, and emerald tones, accented by golden rays of natural directional sunlight striking the fine, suspended particles of Ìyẹ̀ròsùn dust. The auditory landscape must be dominated by the percussive, rhythmic tapping of the ivory Ìrọ́kẹ́ on the edge of the wooden Ọpọ́n Ifá, juxtaposed against deep, meditative recitations of Odù poetry in pristine tonal Yorùbá. Close-up macro shots should document the tactile textures of ancient Ìkín nuts, carved geometric border reliefs on aged Ìrókò wood, and the measured, solemn hands of an elder priest marking binary lines in sacred dust."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Ifá",
+      "Ojú Odù Méjìdínlógún",
+      "Ìtẹ́fá",
+      "Babaláwo",
+      "Olódùmarè",
+      "Ọ̀pẹ̀lẹ̀"
+    ]
   },
   {
     "id": "CORPUS_AGANJU_001",
@@ -10286,6 +10351,14 @@
       "Ọdẹ Guilds",
       "Ọfà Ọ̀sọ́ọ̀sì (Sacred Bow & Arrow)",
       "Igbó Ọ̀sọ́ọ̀sì"
+    ],
+    "related_entities": [
+      "Oṣóṣì Bow",
+      "Opá Ọ̀ṣọ́ọ̀sì",
+      "Igbó",
+      "Ògún",
+      "Ọ̀sanyìn",
+      "Òrìṣà"
     ]
   },
   {
@@ -10433,9 +10506,7 @@
     ],
     "description": "The one-eyed, one-legged Yorùbá divinity of the botanical kingdom, herbal medicine (Ewé àti Egbò), pharmacology, and magical remedies.",
     "sub_variants": [
-      "Ọ̀pá Ọ̀sanyìn (Herbal Staff)",
-      "Ewé Ọ̀sanyìn",
-      "Oníṣègùn Guild"
+      "Àjà"
     ],
     "historical_timeline": "In the archaic antiquity of pre-dynastic Ilé-Ifẹ̀, Ọ̀sanyìn was venerated as the primordial custodian of the uncharted forest (Igbó), reigning over wild ecology long before extensive agrarian clearing and urban settlement. By the classical and medieval eras of the Ọ̀yọ́ Empire and eastern Yorùbá kingdoms, his priesthood had crystallized into the professional guilds of the Oníṣègùn (herbal medical practitioners) and court apothecaries, who operated in indispensable ritual synergy with the Babaláwo (Ifá diviners) in imperial courts. During the transatlantic era of the 16th to 19th centuries, enslaved Yorùbá botanical masters carried the secret liturgies and pharmaceutical epistemologies of Ọ̀sanyìn into the Americas, successfully mapping Yorùbá botanical typologies onto New World flora. In the modern era, Ọ̀sanyìn continues as a living pillar of traditional African medicine (TAM), ethno-pharmacology, and sacred ecological conservation throughout West Africa and global heritage sanctuaries.",
     "etymology_and_philosophy": "The name Ọ̀sanyìn derives etymologically from ancient Yorùbá archaic linguistic roots: 'Ọ̀-san-yìn', broadly synthesizing 'the entity that restores and heals to acclaim' (san: to heal, to make whole, or to pay debt; yìn: to praise or revere). Philosophically, Ọ̀sanyìn embodies the esoteric vitalism of the botanical matrix (Ewé àti Egbò), representing the metaphysics of Àṣẹ stored within the cellular and metaphysical structure of plants. As an asymmetrical deity portrayed with one eye, one arm, one ear, and one leg, Ọ̀sanyìn symbolizes sensory and spiritual liminality; physical impairment serves as a deliberate sacred marker of hyper-developed metaphysical perception, where one ear listens to humanity while the other hears the delicate whispers of the forest spirits (Iwin and Ajé). In Yorùbá cosmology, Ọ̀sanyìn teaches that equilibrium requires reciprocal relationship between humanity and the primordial flora.",
@@ -10498,10 +10569,12 @@
       ]
     },
     "related_entities": [
-      "Ewe Efinrin",
-      "Òrìṣà",
-      "Ọ̀rúnmìlà",
-      "Àgbo"
+      "Ewe Èran",
+      "Ewe Ewúro",
+      "Ewe Lapalapa",
+      "Igbó",
+      "Ògún",
+      "Ọ̀ṣọ́ọ̀sì"
     ],
     "cultural_relatives": [
       "Ewe Efinrin",
@@ -10858,7 +10931,16 @@
       "diaspora_connections": "Across the Transatlantic African Diaspora, the esoteric knowledge of Àjàlá Mọ̀pí survived within the theological frameworks of the Americas. In Cuban Regla de Ocha (Lucumí), Àjàlá is venerated as the mystical molder of the Eledá (spiritual head) referenced throughout the Odù Ifá corpus, intimately linked to the foundational initiation ceremony of Rogación de Cabeza (Koborí Eledá) using coconut meat, efun, cocoa butter, and cool water. In Brazilian Candomblé Ketu, the conceptual framework of the celestial potter is embedded in the central rite of Borí, where initiates seat the sacred stone (Otá) and reinforce their Orí prior to spirit possession. In Trinidadian and Guyanese Orisha traditions, ceremonial head-washings using sacred forest herbs invoke the primordial repair of the spiritual skull crafted before arrival on Earth.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For cinematic and digital world-building, Àjàlá Mọ̀pí's celestial forge should be rendered with deep chiaroscuro lighting, contrasting subterranean amber kiln-glows against midnight-blue metaphysical space. Production designers should utilize authentic Yorùbá ceramic textures: rough earthen clay turning smooth under wet, weathered artisan hands, floating ash particles, and stacks of terracotta skull-forms cooling in dry clay trenches. Audio design must prioritize rhythmic, low-frequency resonance: the crackle of subterranean fires, the wet slapping of raw clay against hardwood stones, and soft, hypnotic Ifá chanting in deep modal tones. Cinematography should emphasize extreme close-ups of tactile modeling tools, finger ridges running across drying clay heads, and sudden glints of crystalline light within dark earthen hollows."
-    }
+    },
+    "sovereign_parent": "Orí",
+    "related_entities": [
+      "Orí",
+      "Àkúnlẹ̀yàn",
+      "Orúnmìlà",
+      "Ẹ̀mí",
+      "Ìwà-Pẹ̀lẹ́",
+      "Olódùmarè"
+    ]
   },
   {
     "id": "Orí",
@@ -10889,9 +10971,11 @@
     "is_parent": true,
     "sub_variants": [
       "Orí Inú",
+      "Orí-Òde",
       "Àkúnlẹ̀yàn",
       "Àkúnlẹ̀gbà",
       "Àyànmọ́",
+      "Àjàlá Mọ̀pí",
       "Ilé-Orí",
       "Orírun"
     ],
@@ -10988,7 +11072,15 @@
         ],
         "provenance_and_citations": "Drewal, Henry John (1989). Yoruba: Nine Centuries of African Art and Thought; Abiodun, Rowland (2014). Yoruba Art and Language; Lawal, Babatunde (2001). Aworan: Representing the Self and Its Metaphysical Other in Yoruba Art."
       }
-    }
+    },
+    "related_entities": [
+      "Ààbò-Orí",
+      "Ìbonilórí",
+      "Ẹbọ",
+      "Orúnmìlà",
+      "Ẹ̀mí",
+      "Ìwà-Pẹ̀lẹ́"
+    ]
   },
   {
     "id": "Èṣù Èdá",
@@ -11038,7 +11130,16 @@
       "diaspora_connections": "Across the Atlantic corridor, Èṣù Èdá’s cosmological paradigm survived through sophisticated syncretic concealment. In Afro-Cuban Santería (Regla de Ocha/Ifá), he is venerated as Eleguá and various paths of Eshu (such as Eshu Laroye and Eshu Bi), functioning as the gatekeeper of all sacred roads, embodied in consecrated otán (stones) and cowrie cement heads. In Brazilian Candomblé Ketu, he is exalted as Exú, the vital dynamic principle and master of the padê (the initial ritual offering made before any public ceremony to ensure cosmic communication). In Haitian Vodou, his threshold aspect aligns with Papa Legba of the Rada and Petro rites, guardian of the spiritual crossroads (kafou), without whose authorization the barrier between the mundane and the invisible cannot be breached.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Visual Design: Dynamic chiaroscuro lighting highlighting the deep obsidian sheen of oiled Igi Ìrókò wood, accented by the sharp crimson contrast of red laterite (Yàngí) and raw palm oil. Spatial composition must center on the geometric intersection of crossroads (oríta mẹ́ta) enveloped in drifting herbal smoke. Soundscapes: Complex polyrhythmic bàtá drum patterns executing the kọ̀nkọ̀lọ́ meter, overlaid with resonant, low-frequency atmospheric sub-bass tones signifying primordial metaphysical tension. Vocal performance should utilize ancient Yorùbá Oríkì delivered in crisp, authoritative cadences using binaural audio panning to evoke an omnipresent, liminal consciousness. Camera Choreography: Low-angle, kinetic rotational camera movements pivoting around spatial thresholds and entryways, creating an impression of sudden manifestation and sovereign omnipresence."
-    }
+    },
+    "sovereign_parent": "Èṣù",
+    "related_entities": [
+      "Òrìṣà",
+      "Àṣẹ",
+      "Ẹbọ",
+      "Èṣù",
+      "Orúnmìlà",
+      "Ààbò àti Ìbílẹ̀"
+    ]
   },
   {
     "id": "Ọ̀sọ́",
@@ -11160,9 +11261,14 @@
       "Igbó Elédùmarè"
     ],
     "related_entities": [
+      "Igbó",
       "Ọ̀sanyìn",
-      "Igbó Elédùmarè"
-    ]
+      "Ewe Lapalapa",
+      "Ewe Ewúro",
+      "Ewe Èran",
+      "Ofo"
+    ],
+    "sovereign_parent": "Ọ̀sanyìn"
   },
   {
     "id": "Egúngún",
@@ -11476,7 +11582,16 @@
       "diaspora_connections": "In Cuba's Lucumí tradition, the equivalent is the \"palo de caballo\" used by Santeros during the \"toque de tambor\" to invoke Orishas such as Ogun and Shango, preserving the sweeping motif. Brazil's Nagô Candomblé retains the \"carrapicho de cavalo\" in the \"Ritual de Purificação\" of the terreiro, often made from horsehair imported from Portugal. In Trinidad, Orisha worshipers employ a \"horse‑tail broom\" during the \"Kromanti\" ceremonies, echoing the Yoruba cleansing rite. Haitian Vodou's Nago houses feature a similar whisk called \"bwa cheval\" used in the rites of Ogoun. The Gullah Geechee of the US Southeast, descendants of Yoruba‑speaking enslaved peoples, incorporate horse‑tail wands in their ring shouts, symbolising the same spiritual sweep. In the UK and US diaspora, Yoruba cultural centres and diaspora festivals (e.g., Afropunk, Yoruba Heritage Week) showcase authentic Ìrukẹ̀rẹ̀ crafted by master artisans, while contemporary artists in Europe fuse the whisk with modern performance art to comment on diaspora identity. Across West Africa, Benin’s Nago communities and Togo’s Ewe retain the practice in secret societies, and Ghanaian Asafo companies use similar horse‑tail wands during war‑drumming processions, demonstrating the pan‑Yoruba diffusion of the object.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For film: stage the whisk on a low wooden altar, lit by oil lamps; ensure the horse‑tail hairs catch the light with a soft back‑light to emphasize movement. Use authentic iroko or coral‑stone handles; avoid plastic replicas. Sound design should include the subtle rustle of the whisk (\"sìsì\") synchronized with drum patterns (bàtá or dùndún) during chants. Costume designers must dress priests in white agbada with a red sash (àpò) and a beaded crown (ìrókò) to signal their authority. For visual art: capture the sweeping arc in slow‑motion, highlighting the contrast between the dark hair and the luminous floor. Music producers should layer a low‑frequency drone (representing àṣẹ) with a high‑pitched whistle mimicking the whisk’s motion, and incorporate a spoken word excerpt of the proverb in Yoruba followed by its English translation to bridge audiences."
-    }
+    },
+    "sovereign_parent": "Ìrukẹ̀rẹ̀",
+    "related_entities": [
+      "Òrìṣà",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Babaláwo",
+      "Ẹgbẹ́ Olórìṣà",
+      "Àṣẹ",
+      "Ọba"
+    ]
   },
   {
     "id": "Ìyẹ̀rosùn",
@@ -13616,11 +13731,13 @@
     },
     "related_entities": [
       "Ṣàngó",
-      "Ọ̀yá",
       "Ọ̀ṣun",
-      "Yemọja",
-      "Odò"
-    ]
+      "Ọ̀yá",
+      "Odo Ọ̀ṣun",
+      "Òrìṣà",
+      "Yemọja"
+    ],
+    "sovereign_parent": "Òrìṣà"
   },
   {
     "id": "Yewá",
@@ -13774,7 +13891,16 @@
       "diaspora_connections": "In Cuba’s Lucumí Santería, Òṣùmàrè is syncretized with Saint James the Greater, whose mantle is depicted in rainbow colors and who presides over travelers and wealth. In Brazil’s Candomblé (Nagô branch), he is known as Oxumaré, celebrated in the Festa do Arco‑Íris with drumming patterns (iá) that mimic the serpent’s undulating motion. Trinidad’s Orisha tradition retains the name Oxumaré, invoking him during the Water Festival (Water‑Mas) to bless fishing yields. Haitian Vodou’s Nago spirit \"Mèt Kòkò\" mirrors the rainbow serpent’s regenerative power, especially in rites for agricultural fertility. Among the Gullah Geechee of the U.S. Southeast, oral songs reference \"the bow of rain\" as a protective emblem for sea‑faring families. In the Sierra Leone Krio community, the rainbow is linked to the deity Kpɔ̀kɔ̀, a water‑serpent guardian of trade routes. Ghanaian Akan migrants recall the rainbow as a sign of Anansi’s cleverness, integrating it into modern diaspora festivals in the UK, US, and Australia where visual artists project multicolored arches during cultural nights, reinforcing a pan‑African identity that transcends borders.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For film: shoot sunrise scenes over the Niger River with a natural rainbow; use slow‑motion water shots to echo the serpent’s glide. Costume designers should source authentic iroko wood for the staff, mother‑of‑pearl inlays, and hand‑dyed cotton in the seven traditional hues (red, orange, yellow, green, blue, indigo, violet). Music producers must incorporate the bata drum’s ìyá rhythm (2‑beat pattern) layered with the agogo’s metallic clang to evoke the arc’s sparkle. When depicting diaspora rituals, consult local Lucumí priests (babalorishá) or Candomblé mães‑de‑santo to ensure accurate chant transcriptions (e.g., \"Olodumare, Oṣùmàrè, Olókun\"). Visual artists should employ chiaroscuro lighting that mirrors the rainbow’s spectrum, and consider using reflective water surfaces as a metaphor for the deity’s reflective wealth‑regeneration quality."
-    }
+    },
+    "sovereign_parent": "Òrìṣà",
+    "related_entities": [
+      "Ọ̀ṣun",
+      "Ṣàngó",
+      "Àṣẹ",
+      "Òrìṣà",
+      "Yemọja",
+      "Olókun"
+    ]
   },
   {
     "id": "Olóṣa",
@@ -13820,7 +13946,16 @@
       "diaspora_connections": "Across the Atlantic world, Olóṣa survived primarily through syncretic and liturgical preservation within Lucumí (Cuba) and Candomblé (Brazil). In Cuban Lucumí, she is recognized as Olosa, a revered water Orisha intimately allied with Inle (Erinlẹ̀) and Yemayá, guarding the tranquil lakes and saltwater lagoons, invoked using cowries and aquatic herbs. In Brazilian Candomblé Ketu, her attributes fused into the overarching complex of Yemanjá and Oxum, specifically presiding over the brackish mangrove swamps (manguezais) of Bahia, where Afro-descendant littoral communities maintain offerings of coastal flora and seafood to ensure safe fishing expeditions.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Visually framed with a low-angle, atmospheric aesthetic dominated by teal, jade-green, and reflective slate-grey palettes over still, mist-laden waters at dawn. Sound design should blend the rhythmic splash of wooden oars and water lapping against dugout hulls with subtle metallic overtones of sacred lead bells (Agogo) and low-frequency wooden log percussion. Cinematography should employ shallow depth-of-field over drifting water lilies, mangrove root reflections, and the shimmering surface of the lagoon, conveying Olóṣa's serene yet fathomless liminal authority."
-    }
+    },
+    "sovereign_parent": "Òrìṣà",
+    "related_entities": [
+      "Olókun",
+      "Yemọja",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Òrìṣà",
+      "Ọ̀ṣun",
+      "Odo Ọ̀ṣun"
+    ]
   },
   {
     "id": "Aje Saluga",
@@ -13868,7 +14003,16 @@
       "diaspora_connections": "Across the transatlantic passage, veneration of Ajé Ṣàlúgà survived through coded integrations within Lucumí traditions in Cuba, where the deity is commemorated as Aye Shaluga or closely aligned with the deep-water secrets of Olókun and the mercantile prosperity of Ochún and Inle. In Brazilian Candomblé Ketu, the energetic current of Ajé survives in the financial and commercial litanies chanted during the festivals of Oxum and the sacred cowrie vestments worn by devotees of Oxóssi-Ajé. In Trinidad Orisha shrines and Haitian Nago lineages, the spirit persists through marketplace rites that consecrate merchant cashboxes, maritime offerings, and the ancestral cowrie shells preserved as relics of liberation and economic self-determination.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For cinematic and digital worldbuilding: Visual palette must contrast deep aquatic ultramarine and seafoam jade against luminous ivory, sun-dappled bone-white, and radiant burnished brass. Lighting design should prioritize golden hour and crisp dawn light glinting across millions of authentic cowrie shells, emphasizing their smooth, porcelain textures. Soundscapes must incorporate the rhythmic, cascading click-clack of cascading cowrie beads poured from woven baskets, accompanied by deep resonant brass bells (Agogô), the low hum of ancient sea breezes, and meditative contralto chanting of authentic Oríkì Ajé. Avoid stereotypical treasure-hoard tropes; frame the space instead as a sanctified, immaculately swept courtyard or subterranean oceanic bank where wealth represents cosmic harmony and pristine moral balance."
-    }
+    },
+    "sovereign_parent": "Òrìṣà",
+    "related_entities": [
+      "Owó-Ẹ̀yọ̀",
+      "Olókun",
+      "Ọjà",
+      "Òrìṣà",
+      "Ọ̀ṣun",
+      "Ẹgbẹ́ Olórìṣà"
+    ]
   },
   {
     "id": "CORPUS_ERINLE_001",
@@ -14123,7 +14267,16 @@
       "diaspora_connections": "Across the Middle Passage, the core mechanics of Ṣìgìdì survived and adapted across Afro-Atlantic traditions. In Cuban Lucumí (Santería), its metallurgical and earthen engineering directly informed the construction of consecrated cement heads of Èṣù-Elegbá and the protective clay/iron vessels created by Osainistas and Babalawos. In Haitian Vodou, parallel dynamics appear in the fabrication of the 'Zobop' and the earthen guards of the Bizango societies. In Brazilian Candomblé Ketu, the tradition persists in the modeling of 'Èṣù de barro' (clay Èṣù) embedded with shells and consecrated to defend the terreiro's perimeter against malign influences, mirroring the spatial guardianship of the Yorùbá homeland.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Cinematic visual design should emphasize tactile grit, utilizing extreme close-ups of cracked, desiccated earth, glistening palm oil pooling in hand-pressed grooves, and cowrie shells catching low amber torchlight. Set pieces require atmospheric chiaroscuro lighting, contrasting deep midnight blues with raw fire tones. Sound design must avoid generic horror stingers; instead, deploy subtle infrasonic drones, the sharp creak of dry clay under pressure, breathing noises filtered through earthen acoustics, and multi-layered whisper tracks of Ọfọ̀ incantations panning rapidly across spatial audio to signify the entity awakening from mineral dormancy."
-    }
+    },
+    "sovereign_parent": "Ààbò àti Ìbílẹ̀",
+    "related_entities": [
+      "Èṣù",
+      "Àjẹ́",
+      "Ofo",
+      "Ààbò àti Ìbílẹ̀",
+      "Ẹbọ",
+      "Ògún"
+    ]
   },
   {
     "id": "Aṣọ Òkè",
@@ -17985,7 +18138,16 @@
       "diaspora_connections": "The Oṣóṣì Bow is a powerful unifying symbol across the Global African Diaspora. In Cuban Lucumí (Santería), the bow and arrow are often placed alongside the iron tools of Ògún inside a sacred cauldron, representing the inseparable Warriors (Los Guerreros). In Brazilian Candomblé, the Ofá is celebrated in vibrant public festivals where initiates dance with ornate brass or iron bows, honoring Oxóssi as the King of the Kétu Nation. In Trinidadian Orisha Faith and Haitian Vodou, similar iconographic echoes of the divine hunter persist, bridging the Ancestral homeland of Yorùbáland with the vibrant spiritual landscapes of the Americas.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For visual and auditory media representations, the Oṣóṣì Bow should be depicted against lush, deep forest greens and rich indigo hues to evoke the sacred wilderness. Lighting should highlight the textured, hammered surface of the wrought iron, emphasizing its artisanal creation. Soundscapes accompanying the imagery must include the rhythmic, metallic striking of a blacksmith's anvil, layered with traditional Yorùbá hunting chants (Ìjálá) and the swift, cutting sound of an arrow slicing through the wind, creating an atmosphere of reverence, focus, and Ancestral power."
-    }
+    },
+    "sovereign_parent": "Ọ̀ṣọ́ọ̀sì",
+    "related_entities": [
+      "Ọ̀ṣọ́ọ̀sì",
+      "Opá Ọ̀ṣọ́ọ̀sì",
+      "Igbó",
+      "Ògún",
+      "Ọdẹ",
+      "Ọfà Ọdẹ"
+    ]
   },
   {
     "id": "Awo Ifá",
@@ -18035,7 +18197,16 @@
       "diaspora_connections": "The Awo Ifá remains a vital spiritual anchor for the Global African Diaspora. During the Trans-Atlantic Slave Trade, initiated priests carried the sacred corpus of Ifá across the Middle Passage. Today, the Awo Ifá is mirrored and venerated as the Babalawo in Cuban Lucumí (Santería), the Babalorixá in Brazilian Candomblé, and within the Trinidadian Orisha tradition. This unbroken chain of initiation provides descendants in the Americas and Europe a direct, living bridge to their Ancestral Yorùbá heritage.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Documentary and media portrayals should emphasize the solemnity and dignity of the Awo Ifá, utilizing warm, natural lighting to highlight the intricate carvings of the Ọpọ́n Ifá and the rich textures of the Ọ̀pẹ̀lẹ̀. Wardrobe must feature pristine white garments (Aṣọ Funfun) to symbolize spiritual purity. Audio design should prioritize the rhythmic, hypnotic cadence of Iyèrè Ifá (Ifá Chanting) and the distinct, percussive sound of the Ikin Ifá being tapped against the Ọpọ́n Ifá."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Awo",
+    "related_entities": [
+      "Ifá",
+      "Ojú Odù Méjìdínlógún",
+      "Babaláwo",
+      "Ìyanífá",
+      "Ẹgbẹ́ Awo",
+      "Ìtẹ́fá"
+    ]
   },
   {
     "id": "Babaláwo",
@@ -18089,7 +18260,16 @@
       "diaspora_connections": "During the tragic era of the Trans-Atlantic Slave Trade, enslaved Yorùbá priests carried the profound knowledge of Ifá to the Americas. This led to the survival and evolution of the Babaláwo within various Afro-Diasporic traditions. In Cuban Santería (Lucumí), the Babalao remains the highest priest of the Regla de Ocha-Ifá. Similar spiritual custodians thrive in Brazilian Candomblé, Haitian Vodou, and Trinidadian Orisha. Today, a Global Ifá Community exists, with practitioners from diverse international backgrounds traveling to Yorùbáland for initiation, thereby reuniting the Global Diaspora with their Ancestral Roots.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Visual representations should emphasize the earthy, organic textures of the Ọpọ́n Ifá and the sacred Ikin, contrasted with the pristine white garments traditionally worn by the Babaláwo to signify spiritual purity. Cinematography should focus on the rhythmic, mathematical casting of the Ọ̀pẹ̀lẹ̀ and the precise tracing of Odù signatures in the Ìyèròsùn. Audio design must capture the resonant, percussive tapping of the Iroke Ifá against the wooden tray, layered with the hypnotic, tonal chanting of the Odù Ifá in the original Yorùbá language, evoking a deep sense of Ancestral reverence and timeless wisdom."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Awo",
+    "related_entities": [
+      "Ifá",
+      "Orúnmìlà",
+      "Ìtẹ́fá",
+      "Ọ̀pẹ̀lẹ̀",
+      "Ẹgbẹ́ Awo",
+      "Ojú Odù Méjìdínlógún"
+    ]
   },
   {
     "id": "Ìyanífá",
@@ -18135,7 +18315,16 @@
       "diaspora_connections": "The Trans-Atlantic Slave Trade fractured many indigenous practices, leading to variations in the Global Diaspora. In the Lucumí Tradition of Cuba, the role of the Babaláwo (Father Of The Secrets) became exclusively male, while women were restricted from full Ifá initiation. However, the late Twentieth and early Twenty-First Centuries witnessed a monumental paradigm shift. African-American and Afro-Latinx women began traveling to Yorùbáland to receive full Ìyanífá initiations, bridging the gap between West Africa and the Americas, and sparking a profound reclamation of female spiritual empowerment across the Global Yorùbá Diaspora.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When representing the Ìyanífá in film, documentaries, or digital archives, creators must prioritize dignity, wisdom, and Ancestral reverence. Visuals should highlight the intricate craftsmanship of the Ọpọ́n Ifá and the rhythmic casting of the Ọ̀pẹ̀lẹ̀. Audio landscapes should feature the melodic, tonal chanting of the Odù Ifá in pristine Yorùbá. Avoid reductive tropes of dark magic; instead, frame the Ìyanífá as a Pillar Of The Community, a Healer, and a Custodian Of Destiny, bathed in natural light and adorned in Aṣọ Funfun to reflect her elevated spiritual status."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Awo",
+    "related_entities": [
+      "Ifá",
+      "Orúnmìlà",
+      "Ìtẹ́fá",
+      "Odù_Ifá",
+      "Ẹgbẹ́ Awo",
+      "Ojú Odù Méjìdínlógún"
+    ]
   },
   {
     "id": "Olórìṣà",
@@ -18181,7 +18370,16 @@
       "diaspora_connections": "The Olórìṣà tradition is the foundational bedrock for numerous Afro-Diasporic Spiritualities. During the Middle Passage, enslaved Yorùbá Priests and Priestesses preserved their rites, birthing parallel Priesthoods across the Americas. In Cuba, the Olórìṣà is known as a Santero or Olorisha within the Lucumí (Santería) tradition. In Brazil, they are the Yalorixá (Mothers Of The Secret) and Babalorixá (Fathers Of The Secret) of Candomblé. Similar Ancestral ties are found in the Shango Baptist faith of Trinidad and Tobago, and the Vodou traditions of Haiti. The title of Olórìṣà serves as a unifying Cultural Bridge, allowing Afro-Descendant populations globally to reclaim their Ancestral Heritage and maintain an unbroken lineage to Ilé-Ifẹ̀.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When representing an Olórìṣà in media, creators must prioritize dignity, reverence, and historical accuracy. Visual palettes should align with the specific Òrìṣà being venerated, avoiding monolithic depictions of African Spirituality. Wardrobe design must include accurate Ilẹ̀kẹ̀ (Sacred Beads) and Aṣọ-Òkè (Hand-Woven Textiles). Audio landscapes should incorporate authentic Ìlù Batá (Batá Drums) or Ìlù Dùndún (Talking Drums) rhythms, alongside traditional Oríkì (Praise Poetry). Avoid Hollywood tropes of dark magic; instead, frame the Olórìṣà as a Community Leader, Healer, and Custodian Of Ecological Wisdom. Ensure all Yorùbá terminology is pronounced with the correct tonal inflections."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Olórìṣà",
+    "related_entities": [
+      "Òrìṣà",
+      "Ìṣẹṣẹ",
+      "Ọ̀ta-Òrìṣà",
+      "Ìke-Òrìṣà",
+      "Ẹgbẹ́ Olórìṣà",
+      "Ẹbọ"
+    ]
   },
   {
     "id": "Oníṣẹ̀gùn",
@@ -19066,7 +19264,8 @@
       "Ọ̀rọ̀ Àṣẹ",
       "Àṣẹ Ọba",
       "Àṣẹ Babaláwo",
-      "Ọ̀pá Àṣẹ"
+      "Ọ̀pá Àṣẹ",
+      "Àṣẹ-Ọ̀rọ̀"
     ],
     "details": {
       "description": "The divine cosmic life-force, authority, and catalytic vital power bestowed by Olódùmarè that causes speech, prayer, and natural processes to manifest.",
@@ -19151,7 +19350,15 @@
         ],
         "provenance_and_citations": "Abimbola, Wande (1976). Ifa: An Exposition of Ifa Literary Corpus; Bascom, William (1969). Ifa Divination: Communication Between Gods and Men in West Africa; Idowu, E. Bolaji (1962). Olodumare."
       }
-    }
+    },
+    "related_entities": [
+      "Ofo",
+      "Babaláwo",
+      "Òrìṣà",
+      "Olódùmarè",
+      "Ìwà-Pẹ̀lẹ́",
+      "Orúnmìlà"
+    ]
   },
   {
     "id": "Ẹbọ",
@@ -19197,7 +19404,22 @@
       "diaspora_connections": "The sacred technology of Ẹbọ miraculously survived the Middle Passage and remains a foundational pillar in Afro-Diasporic spiritual traditions. In Lucumí (Santería) in Cuba, Candomblé in Brazil, and Vodou in Haiti, the practice is preserved as Ebo or Ebó. Within these traditions, it remains the primary methodology for spiritual cleansing (such as Ebo Misi) and restoring harmony with the Orishas and Orixás. For the Global African Diaspora, Ẹbọ serves as a profound, unbroken ancestral link, allowing practitioners to actively engage with the spiritual heritage of their forebears.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Visual representations of Ẹbọ should strictly avoid primitive or sensationalized tropes. Instead, media should frame Ẹbọ as a highly structured, mathematical, and philosophical system of cosmic realignment. Cinematography should focus on the intricate craftsmanship of the Opọ́n Ifá, the vibrant textures of Obi Àbàtà and Owó Ẹyọ, and the dignified, focused posture of the Babaláwo or Ìyánífá. Audio design must feature the rhythmic, resonant chanting of Odù Ifá and the subtle, percussive sounds of divination tools. Color palettes should utilize warm, earthy tones to reflect the organic, natural materials inherent in the Ohun Ẹbọ."
-    }
+    },
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "sub_variants": [
+      "Ẹbọ-Ìṣẹ́gún",
+      "Ìrúbọ"
+    ],
+    "related_entities": [
+      "Èṣù",
+      "Orúnmìlà",
+      "Orí",
+      "Ìṣẹṣẹ",
+      "Babaláwo",
+      "Ìpèsè-Ẹ̀gbẹ́"
+    ]
   },
   {
     "id": "Ìtẹ́fá",
@@ -19243,7 +19465,18 @@
       "diaspora_connections": "The spiritual DNA of Ìtẹ́fá survived the harrowing Middle Passage, embedding itself deeply into the religious frameworks of the Global African Diaspora. Its echoes are unmistakably present in the Regla de Ocha and Lucumí traditions of Cuba, the Candomblé and Batuque faiths of Brazil, and the Orisha Baptist movements of Trinidad and Tobago. Today, a profound Sankofa movement is occurring, where descendants from the Americas and the Caribbean travel back to ancestral strongholds like Ilé-Ifẹ̀, Ọ̀yọ́, and Òṣogbo to undergo Ìtẹ́fá. This sacred pilgrimage bridges centuries of geographical separation, allowing the Diaspora to reclaim their Ancestral Birthright and solidifying a unified, transnational Yorùbá identity.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When documenting Ìtẹ́fá, media producers must balance cinematic grandeur with strict esoteric reverence. Audio capture should prioritize the hypnotic, rhythmic chanting of the Odù Ifá and the resonant sounds of the Agogo (Gongs) and Bàtá Drums. Visually, emphasize the striking contrast between the initiate's white Aṣọ Òfì and the rich, earthy tones of the Ọpọ́n Ifá and Iyèròsùn. Cameras must never enter the Igbó Odù (Sacred Grove of Ifá) during forbidden nocturnal rites; instead, focus on the public celebrations, the intricate craftsmanship of the sacred implements, and the emotional culmination of the initiate's emergence. Lighting should be natural and warm, reflecting the dawn of a new spiritual life."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Ifá",
+      "Babaláwo",
+      "Ìyanífá",
+      "Ikin Ifá",
+      "Igbo Òrìṣà",
+      "Ọ̀pẹ̀lẹ̀"
+    ]
   },
   {
     "id": "Ìsọmọlórúkọ",
@@ -19383,148 +19616,6 @@
       "diaspora_connections": "The spiritual essence of Ìsínkú survived the Trans-Atlantic Slave Trade and is deeply embedded in Global Diaspora traditions. In Brazilian Candomblé, the funerary rite known as Axéxe mirrors Ìsínkú, ensuring the spirit of the deceased initiate detaches from the earthly Ayé and returns to Ọ̀run. Similarly, in Cuban Santería (Lucumí), the Itutu ceremony is performed to appease the Ancestors (Egún) and determine the fate of the deceased's sacred implements. Across the Americas, the foundational Yorùbá belief in Ancestral veneration continues to anchor Black diasporic identity and spiritual resilience.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Audio-visual productions should emphasize the vibrant, contrasting colors of the Aṣọ Ẹbí against the solemnity of the burial. Soundscapes must include the complex polyrhythms of the Bàtá and Dùndún (Talking Drums), layered with traditional Yorùbá Dirges (Rárà or Ẹkún Ìyàwó). Cinematography should capture the kinetic energy of the Egúngún Masquerade, focusing on the intricate beadwork and flowing fabrics, while using warm, golden-hour lighting to symbolize the transition from the earthly Ayé to the Ancestral Ọ̀run."
-    }
-  },
-  {
-    "id": "Ọ̀wọ́nran",
-    "title": "Ọ̀wọ́nran",
-    "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
-    "aliases": [
-      "owonran",
-      "ọ̀wọ́nran"
-    ],
-    "description": "The sixth major Odù Ifá chapter symbolizing unexpected shifts, chaos turning to order, and truth.",
-    "historical_timeline": "In the classical primordial epoch of Ilé-Ifẹ̀, Ọ̀wọ́nran is recorded within the Odù corpus as one of the paramount sixteen celestial architects (Olódù Méjì) dispatched by Olódùmarè to regulate meteorological anomalies, social disputes, and the metaphysical properties of atmospheric wind. During the medieval growth of the Ọ̀yọ́ Empire between the fourteenth and eighteenth centuries, the royal babalawos (Awo Ọba) invoked the verses of Ọ̀wọ́nran during severe droughts, palace intrigues, and when the imperial council (Ọ̀yọ́ Mèsì) required radical structural realignment, consulting the oracle before dry-season military campaigns. In the devastating nineteenth-century Yorùbá civil wars—including the Kiriji/Èkìtìparapọ̀ conflicts—this Odù guided war chiefs through tactical ambushes and unexpected geopolitical ruptures, demanding ethical transparency in leadership. Through colonial-era suppression and down into the twenty-first century, Ọ̀wọ́nran remains vibrant across traditional Ifá academies in Òṣogbo, Abẹ́òkúta, and Òdè Rẹ́mọ, operating as an indispensable epistemological tool for resolving sociopolitical collapse and personal disorientation in modern globalized life.",
-    "etymology_and_philosophy": "Linguistically derived from the Yorùbá root verb 'wọ́n' (to be scarce, exceptionally precious, or dearly valued) compounded with 'ọ̀wọ́n' (scarcity, sacred rarity) and 'ran' (to propagate, transmit light, or spin forth), Ọ̀wọ́nran (commonly known in the sacred corpus as Ọ̀wọ́nrín Méjì) embodies the cosmic paradox of disruption yielding intrinsic worth. Represented mathematically in the binary matrix of the Ifá geomantic system as a double column characterized by inverted balances (traditionally marked as II II I I on the sacred divination dust), it governs the dialectic between volatility and revelation. Philosophically, Ọ̀wọ́nran denotes the sudden windstorm (Ẹlẹ́fùùfù Lẹ́lẹ̀) that strips away illusions, superficial social strata, and stagnant realities. It articulates an ontological reality wherein crisis is not merely punitive, but an epistemic crucible: acute scarcity exposes the essential nature of human character, while chaos functions as an aggressive, purifying agent that reestablishes cosmic equilibrium (Ìwọ̀ntúnwọ̀nsí).",
-    "material_and_craftsmanship": "The materialization of Ọ̀wọ́nran's metaphysical energy is mediated through consecrated objects created by specialized artisan guilds. The Ọpọ́n Ifá (divination tray) is carved from the sacred, durable wood of the Ìrókò (Milicia excelsa) or Ọmọ (Cordia millenii) tree by the Agbẹ́gilé (woodcarvers guild), decorated with deeply etched low-relief motifs of Èṣù Ọdàrà at the cardinal borders. Across this tray is smoothed Ìyẹ̀ròsùn, the pale golden powder produced by wood-boring insects consuming the Irosun tree (Baphia nitida), serving as the tactile register for inscribing the binary incisions of the Odù. Priests utilize an Ìrọ́kẹ́ Ifá (tapper), meticulously carved from elephant ivory (Eyín Erin) or cast in resonant bronze and brass by the Asudẹ (metalsmiths guild), to strike the perimeter of the tray in an acoustic summons. The Ọ̀pẹ̀lẹ̀ divination chain, fabricated with forged brass links interspersed with eight convex seed pods of the Ọ̀pẹ̀lẹ̀ tree (Schrebera arborescens) or carved marine shells, serves as the kinetic conduit through which the specific configuration of Ọ̀wọ́nran is instantly revealed upon the mat.",
-    "social_and_ritual_context": "Within the priestly and courtly hierarchies of Yorùbá society, the manifestation of Ọ̀wọ́nran during an Ifá consultation triggers an immediate protocol of rigorous truth-telling, energetic detoxification, and communal vigilance. An Awo Ifá (Babalawo or Ìyánífá) encountering this Odù must counsel the querent to avoid duplicity and reckless litigation, as Ọ̀wọ́nran mercilessly reveals concealed crimes and hidden motives. Ritual propitiation (Ẹbọ) invariably centers on Èṣù Ọdàrà, the divine arbiter who commands crossroads and unexpected turns of fate; offerings typically include a he-goat (òbúkọ), palm oil (epo pupa) poured lavishly to calm the turbulent path, roasted corn, dry fish, and the scarlet feather of the grey parrot (Ikóodẹ), symbolizing sovereign truth and spiritual immunity. During ancestral civic festivals, such as the Ọlọ́jọ́ in Ilé-Ifẹ̀, verses of this chapter are chanted by the assembled royal priesthood to dispel communal pestilence, clear the socio-spiritual atmosphere of unseen malevolence, and fortify the monarch against sudden rebellions.",
-    "proverbs_and_oral_traditions": [
-      "Ọ̀wọ́n lówó ń wọ́n, la fi ń kọ́lé olókikí; ọ̀wọ́n lomi ń wọ́n lákòókò ẹ̀rùn, la fi ń mọ iyì odò (Money is scarce and dearly sought, hence it is used to erect the mansions of renown; water becomes scarce during the dry season, thereby revealing the irreplaceable honor of the living river: a sacred ontological truth from Ọ̀wọ́nrín teaching that extreme scarcity is the cosmic catalyst that elevates ordinary life to divine value).",
-      "Bí a bá sọ òkò sọ́jà, ará ilé ẹni níí bá (If one flings a stone recklessly into the open marketplace, it inevitably strikes a member of one's own household: an ethical injunction within Ọ̀wọ́nran warning that unbridled chaos, malice, and anarchic speech inevitably return to consume their instigator alongside the innocent).",
-      "Ọ̀wọ́nrín Méjì l’ó fẹ́fùùfù tẹ́lẹ̀ kí òjò tò rọ̀ (Ọ̀wọ́nrín Méjì is the violent tempest that precedes the torrential rain: an existential confirmation that systemic upheaval is not total ruin, but the necessary sweeping away of spiritual stagnation to allow divine blessings to fertilize the earth)."
-    ],
-    "diaspora_connections": "Across the Middle Passage, the systemic wisdom of Ọ̀wọ́nran survived and adapted within the African Diaspora's syncretic religious architectures. In Cuban Regla de Ocha (Santería / Lucumí), the sign is preserved as 'Ojuani Meji' (or 'Owani') within the Ifá-Orisha complex and manifested as the eleventh odu in the Merindiloggún cowrie shell divination system, where it explicitly signifies internal treachery, ungratefulness, impending accidents, and the imperative to propitiate Echu to avert sudden ruin. In Brazilian Candomblé Ketu, this odu informs the spiritual liturgy surrounding Exu and the tempestuous wind-goddess Oyá-Iansã, signaling lightning-fast reversals and dynamic transformation. In the Trinidad Orisha tradition, its metaphysical presence is invoked during intense cleansings designed to dispel spiritual stagnation and reverse destructive sorcery, serving as an indestructible oceanic bridge linking New World practitioners to ancestral cosmological jurisprudence.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visually, the staging must reflect heavy chiaroscuro and atmospheric tension. The color palette should center on deep charcoal, oxidized bronze, dry earth ochre, and blinding flashes of amber sunlight piercing through storm clouds. The camera should utilize sweeping macro shots focusing on hands scattering Ìyẹ̀ròsùn upon the dark, intricately carved grain of the Ọpọ́n Ifá, followed by tactile close-ups of the ivory Ìrọ́kẹ́ rhythmically striking the wood. Sound design requires an interplay between silence and explosive sonic force: a low, resonant wind drone underlying the polyrhythmic, syncopated cadences of the Batá drums (most notably the commanding, guttural dialogue of the Ìyáàlù drum simulating sudden thunderclaps). Lighting should mimic the shifting illumination of oil lamps in a shrine room during an impending squall, with suspended dust particles illuminated in dramatic slanting beams, visualizing the invisible movement of the wind-spirit that governs Ọ̀wọ́nran.",
-    "details": {
-      "id": "Ọ̀wọ́nran",
-      "title": "Ọ̀wọ́nran",
-      "culture": "Yorùbá",
-      "category": "Spiritual & Cosmological Matrix",
-      "aliases": [
-        "owonran",
-        "ọ̀wọ́nran"
-      ],
-      "description": "The sixth major Odù Ifá chapter symbolizing unexpected shifts, chaos turning to order, and truth.",
-      "historical_timeline": "In the classical primordial epoch of Ilé-Ifẹ̀, Ọ̀wọ́nran is recorded within the Odù corpus as one of the paramount sixteen celestial architects (Olódù Méjì) dispatched by Olódùmarè to regulate meteorological anomalies, social disputes, and the metaphysical properties of atmospheric wind. During the medieval growth of the Ọ̀yọ́ Empire between the fourteenth and eighteenth centuries, the royal babalawos (Awo Ọba) invoked the verses of Ọ̀wọ́nran during severe droughts, palace intrigues, and when the imperial council (Ọ̀yọ́ Mèsì) required radical structural realignment, consulting the oracle before dry-season military campaigns. In the devastating nineteenth-century Yorùbá civil wars—including the Kiriji/Èkìtìparapọ̀ conflicts—this Odù guided war chiefs through tactical ambushes and unexpected geopolitical ruptures, demanding ethical transparency in leadership. Through colonial-era suppression and down into the twenty-first century, Ọ̀wọ́nran remains vibrant across traditional Ifá academies in Òṣogbo, Abẹ́òkúta, and Òdè Rẹ́mọ, operating as an indispensable epistemological tool for resolving sociopolitical collapse and personal disorientation in modern globalized life.",
-      "etymology_and_philosophy": "Linguistically derived from the Yorùbá root verb 'wọ́n' (to be scarce, exceptionally precious, or dearly valued) compounded with 'ọ̀wọ́n' (scarcity, sacred rarity) and 'ran' (to propagate, transmit light, or spin forth), Ọ̀wọ́nran (commonly known in the sacred corpus as Ọ̀wọ́nrín Méjì) embodies the cosmic paradox of disruption yielding intrinsic worth. Represented mathematically in the binary matrix of the Ifá geomantic system as a double column characterized by inverted balances (traditionally marked as II II I I on the sacred divination dust), it governs the dialectic between volatility and revelation. Philosophically, Ọ̀wọ́nran denotes the sudden windstorm (Ẹlẹ́fùùfù Lẹ́lẹ̀) that strips away illusions, superficial social strata, and stagnant realities. It articulates an ontological reality wherein crisis is not merely punitive, but an epistemic crucible: acute scarcity exposes the essential nature of human character, while chaos functions as an aggressive, purifying agent that reestablishes cosmic equilibrium (Ìwọ̀ntúnwọ̀nsí).",
-      "material_and_craftsmanship": "The materialization of Ọ̀wọ́nran's metaphysical energy is mediated through consecrated objects created by specialized artisan guilds. The Ọpọ́n Ifá (divination tray) is carved from the sacred, durable wood of the Ìrókò (Milicia excelsa) or Ọmọ (Cordia millenii) tree by the Agbẹ́gilé (woodcarvers guild), decorated with deeply etched low-relief motifs of Èṣù Ọdàrà at the cardinal borders. Across this tray is smoothed Ìyẹ̀ròsùn, the pale golden powder produced by wood-boring insects consuming the Irosun tree (Baphia nitida), serving as the tactile register for inscribing the binary incisions of the Odù. Priests utilize an Ìrọ́kẹ́ Ifá (tapper), meticulously carved from elephant ivory (Eyín Erin) or cast in resonant bronze and brass by the Asudẹ (metalsmiths guild), to strike the perimeter of the tray in an acoustic summons. The Ọ̀pẹ̀lẹ̀ divination chain, fabricated with forged brass links interspersed with eight convex seed pods of the Ọ̀pẹ̀lẹ̀ tree (Schrebera arborescens) or carved marine shells, serves as the kinetic conduit through which the specific configuration of Ọ̀wọ́nran is instantly revealed upon the mat.",
-      "social_and_ritual_context": "Within the priestly and courtly hierarchies of Yorùbá society, the manifestation of Ọ̀wọ́nran during an Ifá consultation triggers an immediate protocol of rigorous truth-telling, energetic detoxification, and communal vigilance. An Awo Ifá (Babalawo or Ìyánífá) encountering this Odù must counsel the querent to avoid duplicity and reckless litigation, as Ọ̀wọ́nran mercilessly reveals concealed crimes and hidden motives. Ritual propitiation (Ẹbọ) invariably centers on Èṣù Ọdàrà, the divine arbiter who commands crossroads and unexpected turns of fate; offerings typically include a he-goat (òbúkọ), palm oil (epo pupa) poured lavishly to calm the turbulent path, roasted corn, dry fish, and the scarlet feather of the grey parrot (Ikóodẹ), symbolizing sovereign truth and spiritual immunity. During ancestral civic festivals, such as the Ọlọ́jọ́ in Ilé-Ifẹ̀, verses of this chapter are chanted by the assembled royal priesthood to dispel communal pestilence, clear the socio-spiritual atmosphere of unseen malevolence, and fortify the monarch against sudden rebellions.",
-      "proverbs_and_oral_traditions": [
-        "Ọ̀wọ́n lówó ń wọ́n, la fi ń kọ́lé olókikí; ọ̀wọ́n lomi ń wọ́n lákòókò ẹ̀rùn, la fi ń mọ iyì odò (Money is scarce and dearly sought, hence it is used to erect the mansions of renown; water becomes scarce during the dry season, thereby revealing the irreplaceable honor of the living river: a sacred ontological truth from Ọ̀wọ́nrín teaching that extreme scarcity is the cosmic catalyst that elevates ordinary life to divine value).",
-        "Bí a bá sọ òkò sọ́jà, ará ilé ẹni níí bá (If one flings a stone recklessly into the open marketplace, it inevitably strikes a member of one's own household: an ethical injunction within Ọ̀wọ́nran warning that unbridled chaos, malice, and anarchic speech inevitably return to consume their instigator alongside the innocent).",
-        "Ọ̀wọ́nrín Méjì l’ó fẹ́fùùfù tẹ́lẹ̀ kí òjò tò rọ̀ (Ọ̀wọ́nrín Méjì is the violent tempest that precedes the torrential rain: an existential confirmation that systemic upheaval is not total ruin, but the necessary sweeping away of spiritual stagnation to allow divine blessings to fertilize the earth)."
-      ],
-      "diaspora_connections": "Across the Middle Passage, the systemic wisdom of Ọ̀wọ́nran survived and adapted within the African Diaspora's syncretic religious architectures. In Cuban Regla de Ocha (Santería / Lucumí), the sign is preserved as 'Ojuani Meji' (or 'Owani') within the Ifá-Orisha complex and manifested as the eleventh odu in the Merindiloggún cowrie shell divination system, where it explicitly signifies internal treachery, ungratefulness, impending accidents, and the imperative to propitiate Echu to avert sudden ruin. In Brazilian Candomblé Ketu, this odu informs the spiritual liturgy surrounding Exu and the tempestuous wind-goddess Oyá-Iansã, signaling lightning-fast reversals and dynamic transformation. In the Trinidad Orisha tradition, its metaphysical presence is invoked during intense cleansings designed to dispel spiritual stagnation and reverse destructive sorcery, serving as an indestructible oceanic bridge linking New World practitioners to ancestral cosmological jurisprudence.",
-      "geographical_origin": "Yorùbáland",
-      "media_production_notes": "Visually, the staging must reflect heavy chiaroscuro and atmospheric tension. The color palette should center on deep charcoal, oxidized bronze, dry earth ochre, and blinding flashes of amber sunlight piercing through storm clouds. The camera should utilize sweeping macro shots focusing on hands scattering Ìyẹ̀ròsùn upon the dark, intricately carved grain of the Ọpọ́n Ifá, followed by tactile close-ups of the ivory Ìrọ́kẹ́ rhythmically striking the wood. Sound design requires an interplay between silence and explosive sonic force: a low, resonant wind drone underlying the polyrhythmic, syncopated cadences of the Batá drums (most notably the commanding, guttural dialogue of the Ìyáàlù drum simulating sudden thunderclaps). Lighting should mimic the shifting illumination of oil lamps in a shrine room during an impending squall, with suspended dust particles illuminated in dramatic slanting beams, visualizing the invisible movement of the wind-spirit that governs Ọ̀wọ́nran."
-    }
-  },
-  {
-    "id": "Òtúrúpọ̀n",
-    "title": "Òtúrúpọ̀n",
-    "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
-    "aliases": [
-      "oturupon",
-      "òtúrúpọ̀n",
-      "Oturuupon",
-      "oturuupon"
-    ],
-    "description": "The twelfth major Odù Ifá chapter associated with physical health, endurance, and child-rearing.",
-    "historical_timeline": "Dating to the primordial antiquity of classical Ilé-Ifẹ̀, Òtúrúpọ̀n was codified as one of the primary matrices revealed by Ọ̀rúnmìlà Bara Àgbọnnìrègún to govern prenatal rites, maternal mortality remedies, and the therapeutic handling of infectious contagions. During the height of the Ọ̀yọ́ Empire (14th to 18th centuries), the court Babaláwo integrated the verses of Òtúrúpọ̀n into imperial defense rituals, deploying its therapeutic formulas and appeasements to Ṣọ̀npọ̀nná during severe seasonal epidemics of smallpox and childbed fevers across metropolitan Ọ̀yọ́-Ilé. Despite the hostile suppression of Earth and smallpox cults by British colonial authorities in the early 20th century, custodial lineages of Babaláwo and Ìyánífá preserved Òtúrúpọ̀n's oral corpus within esoteric medical guilds (*Ẹgbẹ́ Oníṣègùn*). Today, it flourishes across both the ancestral homeland and the Transatlantic Diaspora as an indispensable liturgical authority on holistic wellness, pediatrics, and spiritual endurance.",
-    "etymology_and_philosophy": "Etymologically derived from the composite Yorùbá verbal clause 'Ò-tú-rú-pọ̀n'—contracted from 'tú' (to ease, untie, dispel, or soothe), 'rú' (to stir forth or manifest), and 'pọ̀n' (to strap an infant to one's back or nurture a fragile life)—Òtúrúpọ̀n represents the cosmic archetype of maternal endurance, physical somatic protection, and regenerative biological continuity. Philosophically situated as the twelfth sign of the Olódù Mẹ́rìndínlọ́gún (Sixteen Major Chambers of Cosmic Law), Òtúrúpọ̀n governs the corporeal vessel (*ara*), the mysteries of gestation, and metaphysical immunity against pathogenic spiritual forces. It posits that human destiny (*orí*) cannot fully manifest without physical vitality and somatic endurance, serving as the celestial counterbalance to affliction and the cosmic sanctuary for vulnerable spirits descending into terrestrial reality.",
-    "material_and_craftsmanship": "Òtúrúpọ̀n is inscribed upon the consecrated Ọpọ́n Ifá (sacred divination board) using the dual binary mark: right column [II, I, II, II] and left column [II, I, II, II], etched into the golden dusting of Ìyẹ̀rọ̀sùn (wood dust from the Baphia nitida tree processed by specialized termites). Its physical apparatus incorporates the Ọ̀pẹ̀lẹ̀ divination chain wrought from beaten copper or polished seed pods of the Opele tree (*Schrebera argyrocharis*), and ceremonial cowrie arrays (*Ẹẹ́rìndínlọ́gún*). Associated ritual vessels are expertly crafted by master woodcarvers and metalsmiths, frequently showcasing figurative sculptures of kneeling mothers (*Àkúnkúnrẹ́*) supporting caryatid bowls, alongside earthen medicine pots (*Apáadì*) sealed with anti-febrile pharmacopeia, cold infusions (*ẹrọ*), and the cooling secretions of giant African land snails (*Ìgbín*).",
-    "social_and_ritual_context": "Within societal protocols and liturgical assemblies, Òtúrúpọ̀n serves as the primary Odù invoked during prenatal consultations, naming rites (*Ìkọ́mọjáde*), and public prophylactic cleansing ceremonies during societal afflictions. Priestly decorum requires the officiating Babaláwo or Ìyánífá to present specific propitiations to the primordial mothers (*Àwọn Ìyámi Òṣòròngà*) and the terrestrial deity of contagion (*Ṣọ̀npọ̀nná* / *Obalúayé*), utilizing palm oil, roasted corn (*gúgúrú*), and cooling libations to soften rigid spiritual barriers. In palace structures, royal wives (*Ayaba*) sought the guidance of Òtúrúpọ̀n initiates to seal lineage preservation, while community elders utilized its directives to mediate disputes threatening communal welfare.",
-    "proverbs_and_oral_traditions": [
-      "A kì í fi ọmọ ṣeré nínú Òtúrúpọ̀n, ẹni tẹ́lẹ́gẹ́ kì í gbọ́kọ̀ àrùn wọlé. (One does not treat child-rearing as a triviality in the realm of Òtúrúpọ̀n; the fragile must never harbor the vehicle of pestilence within their dwelling. This proverb serves as a strict warning that somatic neglect and reckless exposure invite ancestral collapse, demanding uncompromising maternal and corporeal vigilance.)",
-      "Bí igi bá fẹ́ lu igi lẹ́gàn, Òtúrúpọ̀n ní ń pọ̀n wọ́n gbọọrọ. (When trees clash within the sacred forest, it is Òtúrúpọ̀n that bears the weight and reconciles their burden. This aphorism evokes the cosmological virtue of endurance, instructing initiates that conflict and existential heaviness must be carried with deliberate, silent stoicism to avert catastrophic rupture.)",
-      "Ìlera lẹwà orí; a kì í fọwọ́ pọ́nrúkú sọ ọ̀rọ̀ dọ̀fọ̀. (Physical vigor is the crowning adornment of destiny; one does not handle bodily weakness casually until wealth and vitality are utterly wasted. This verse reinforces the ontological doctrine that inner destiny requires an intact physical temple to achieve manifestation on Earth.)"
-    ],
-    "diaspora_connections": "Surviving the perilous Middle Passage, Òtúrúpọ̀n became central to Lucumí (Santería) traditions in Cuba—where it is pronounced 'Otrupon Méyi' or 'Otura Pompeyo'—as well as in Brazilian Candomblé Ketu and Trinidadian Orisha lineages. In the Caribbean, this Odù is intimately tethered to Babalú-Ayé and Nanã Burukú, retaining its specific association with epidemics, skin disorders, gynecological interventions, and pediatric protection. Consecrated herb baths (*omiero*) formulated under Otrupon Méyi in the diaspora preserve classical Yorùbá phytotherapy, utilizing bitter and cooling herbs to purge spiritual and microbiological contagions.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Visually framed using rich earth tones, ochre dust, deep indigo drapery, and humid chiaroscuro lighting that captures the glint of sweat and ritual oils upon dark skin. The camera emphasizes extreme close-ups of tactile ritual elements: fingers incising binary lines across pale Ìyẹ̀rọ̀sùn on an ancient, blackened Iroko board, accompanied by the gentle sloshing of medicinal infusions in earthenware pots. Acoustically, the score pairs low, rhythmic drones of the sacred Ìgbìn and Àgộgộ bells with intimate, close-mic whisper-chants of archaic Odù poetry and the soothing, syncopated humming of a traditional maternal lullaby.",
-    "details": {
-      "id": "Òtúrúpọ̀n",
-      "title": "Òtúrúpọ̀n",
-      "culture": "Yorùbá",
-      "category": "Spiritual & Cosmological Matrix",
-      "aliases": [
-        "oturupon",
-        "òtúrúpọ̀n",
-        "Oturuupon",
-        "oturuupon"
-      ],
-      "description": "The twelfth major Odù Ifá chapter associated with physical health, endurance, and child-rearing.",
-      "historical_timeline": "Dating to the primordial antiquity of classical Ilé-Ifẹ̀, Òtúrúpọ̀n was codified as one of the primary matrices revealed by Ọ̀rúnmìlà Bara Àgbọnnìrègún to govern prenatal rites, maternal mortality remedies, and the therapeutic handling of infectious contagions. During the height of the Ọ̀yọ́ Empire (14th to 18th centuries), the court Babaláwo integrated the verses of Òtúrúpọ̀n into imperial defense rituals, deploying its therapeutic formulas and appeasements to Ṣọ̀npọ̀nná during severe seasonal epidemics of smallpox and childbed fevers across metropolitan Ọ̀yọ́-Ilé. Despite the hostile suppression of Earth and smallpox cults by British colonial authorities in the early 20th century, custodial lineages of Babaláwo and Ìyánífá preserved Òtúrúpọ̀n's oral corpus within esoteric medical guilds (*Ẹgbẹ́ Oníṣègùn*). Today, it flourishes across both the ancestral homeland and the Transatlantic Diaspora as an indispensable liturgical authority on holistic wellness, pediatrics, and spiritual endurance.",
-      "etymology_and_philosophy": "Etymologically derived from the composite Yorùbá verbal clause 'Ò-tú-rú-pọ̀n'—contracted from 'tú' (to ease, untie, dispel, or soothe), 'rú' (to stir forth or manifest), and 'pọ̀n' (to strap an infant to one's back or nurture a fragile life)—Òtúrúpọ̀n represents the cosmic archetype of maternal endurance, physical somatic protection, and regenerative biological continuity. Philosophically situated as the twelfth sign of the Olódù Mẹ́rìndínlọ́gún (Sixteen Major Chambers of Cosmic Law), Òtúrúpọ̀n governs the corporeal vessel (*ara*), the mysteries of gestation, and metaphysical immunity against pathogenic spiritual forces. It posits that human destiny (*orí*) cannot fully manifest without physical vitality and somatic endurance, serving as the celestial counterbalance to affliction and the cosmic sanctuary for vulnerable spirits descending into terrestrial reality.",
-      "material_and_craftsmanship": "Òtúrúpọ̀n is inscribed upon the consecrated Ọpọ́n Ifá (sacred divination board) using the dual binary mark: right column [II, I, II, II] and left column [II, I, II, II], etched into the golden dusting of Ìyẹ̀rọ̀sùn (wood dust from the Baphia nitida tree processed by specialized termites). Its physical apparatus incorporates the Ọ̀pẹ̀lẹ̀ divination chain wrought from beaten copper or polished seed pods of the Opele tree (*Schrebera argyrocharis*), and ceremonial cowrie arrays (*Ẹẹ́rìndínlọ́gún*). Associated ritual vessels are expertly crafted by master woodcarvers and metalsmiths, frequently showcasing figurative sculptures of kneeling mothers (*Àkúnkúnrẹ́*) supporting caryatid bowls, alongside earthen medicine pots (*Apáadì*) sealed with anti-febrile pharmacopeia, cold infusions (*ẹrọ*), and the cooling secretions of giant African land snails (*Ìgbín*).",
-      "social_and_ritual_context": "Within societal protocols and liturgical assemblies, Òtúrúpọ̀n serves as the primary Odù invoked during prenatal consultations, naming rites (*Ìkọ́mọjáde*), and public prophylactic cleansing ceremonies during societal afflictions. Priestly decorum requires the officiating Babaláwo or Ìyánífá to present specific propitiations to the primordial mothers (*Àwọn Ìyámi Òṣòròngà*) and the terrestrial deity of contagion (*Ṣọ̀npọ̀nná* / *Obalúayé*), utilizing palm oil, roasted corn (*gúgúrú*), and cooling libations to soften rigid spiritual barriers. In palace structures, royal wives (*Ayaba*) sought the guidance of Òtúrúpọ̀n initiates to seal lineage preservation, while community elders utilized its directives to mediate disputes threatening communal welfare.",
-      "proverbs_and_oral_traditions": [
-        "A kì í fi ọmọ ṣeré nínú Òtúrúpọ̀n, ẹni tẹ́lẹ́gẹ́ kì í gbọ́kọ̀ àrùn wọlé. (One does not treat child-rearing as a triviality in the realm of Òtúrúpọ̀n; the fragile must never harbor the vehicle of pestilence within their dwelling. This proverb serves as a strict warning that somatic neglect and reckless exposure invite ancestral collapse, demanding uncompromising maternal and corporeal vigilance.)",
-        "Bí igi bá fẹ́ lu igi lẹ́gàn, Òtúrúpọ̀n ní ń pọ̀n wọ́n gbọọrọ. (When trees clash within the sacred forest, it is Òtúrúpọ̀n that bears the weight and reconciles their burden. This aphorism evokes the cosmological virtue of endurance, instructing initiates that conflict and existential heaviness must be carried with deliberate, silent stoicism to avert catastrophic rupture.)",
-        "Ìlera lẹwà orí; a kì í fọwọ́ pọ́nrúkú sọ ọ̀rọ̀ dọ̀fọ̀. (Physical vigor is the crowning adornment of destiny; one does not handle bodily weakness casually until wealth and vitality are utterly wasted. This verse reinforces the ontological doctrine that inner destiny requires an intact physical temple to achieve manifestation on Earth.)"
-      ],
-      "diaspora_connections": "Surviving the perilous Middle Passage, Òtúrúpọ̀n became central to Lucumí (Santería) traditions in Cuba—where it is pronounced 'Otrupon Méyi' or 'Otura Pompeyo'—as well as in Brazilian Candomblé Ketu and Trinidadian Orisha lineages. In the Caribbean, this Odù is intimately tethered to Babalú-Ayé and Nanã Burukú, retaining its specific association with epidemics, skin disorders, gynecological interventions, and pediatric protection. Consecrated herb baths (*omiero*) formulated under Otrupon Méyi in the diaspora preserve classical Yorùbá phytotherapy, utilizing bitter and cooling herbs to purge spiritual and microbiological contagions.",
-      "geographical_origin": "Yorùbáland",
-      "media_production_notes": "Visually framed using rich earth tones, ochre dust, deep indigo drapery, and humid chiaroscuro lighting that captures the glint of sweat and ritual oils upon dark skin. The camera emphasizes extreme close-ups of tactile ritual elements: fingers incising binary lines across pale Ìyẹ̀rọ̀sùn on an ancient, blackened Iroko board, accompanied by the gentle sloshing of medicinal infusions in earthenware pots. Acoustically, the score pairs low, rhythmic drones of the sacred Ìgbìn and Àgộgộ bells with intimate, close-mic whisper-chants of archaic Odù poetry and the soothing, syncopated humming of a traditional maternal lullaby."
-    }
-  },
-  {
-    "id": "Òtúrá",
-    "title": "Òtúrá",
-    "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
-    "aliases": [
-      "otura",
-      "òtúrá"
-    ],
-    "description": "The thirteenth major Odù Ifá chapter representing Peace, Diplomacy, and Spiritual Illumination.",
-    "historical_timeline": "In the classical epoch of Ilé-Ifẹ̀ antiquity, Òtúrá was codified within the sacred priesthood of Ọ̀rúnmìlà as the structural matrix governing inter-clan treaties, non-aggression alliances, and the purification of war-polluted land. During the medieval growth of the Ọ̀yọ́ Empire and the flourishing of the Trans-Saharan trade routes between the 14th and 18th centuries, the corpus of Òtúrá integrated profound historic socio-cultural layers; it served as the diplomatic archive documenting peaceful encounters, intellectual exchanges, and theological conciliation between indigenous Ifá-Ọ̀rìṣà custodians and incoming Islamic Wangara/Hausa scholars ('Àlùfáà' or 'Ìmọ̀le'). In the colonial era, Òtúrá functioned as an anti-fracture mechanism, shielding indigenous epistemologies from total annihilation by adapting sacred scribal instruments and ecumenical arbitration under British indirect rule. In the contemporary global era, Òtúrá persists as a living intellectual framework for international conflict resolution, interfaith synthesis, and the preservation of sacred ethics across continental Yorùbáland and the worldwide diaspora.",
-    "etymology_and_philosophy": "Etymologically derived from the Yorùbá verb root 'tú' (to untie, loosen, dispel, or pacify) fused with 'rá' (to dissolve, vanish gently, or pervade smoothly), 'Òtúrá' translates ontologically as 'The Divine Principle of Dispersal of Conflict and the Unbinding of Affliction.' Philosophically positioned as the thirteenth principal chapter of the sixteen Olódù within the Ifá cosmological corpus, Òtúrá represents the thermodynamic cooling of cosmic and civic volatility. Bearing the binary signature of I-II-I-I (an alternation of singular and paired incisions), Òtúrá symbolizes spiritual illumination, intellectual expansion, high diplomacy, and the sovereign doctrine of 'Ìwà pẹ̀lẹ́' (gentle, balanced moral character). It acts as the cosmic counterweight to thermal rage, ideological fanaticism, and catastrophic collisions, teaching that true dominion over material reality is achieved through discursive synthesis, moral restraint, and peaceful consensus.",
-    "material_and_craftsmanship": "Materialized primarily upon the 'Ọ̀pọ́n Ifá' (consecrated divining tray), sculpted by the master woodcarvers ('Gbẹ́nàgbẹ́nà') of classical guilds from dense hardwood such as 'Ayan' (African satinwood) or 'Ìrókò'. The perimeter of the tray frequently features low-relief motifs of calm, inward-looking heads of Èṣù, surrounded by stylized water fowl and interlaced geometric knotwork signifying harmonious social cohesion. The divination marking is physically impressed upon 'Ìrosùn' (fine scarlet-gold dust extracted from the camwood tree 'Baphia nitida') or pulverized white chalk ('Ẹfun'). The sensory implements consecrated under Òtúrá include the 'Ìrọ́kẹ́ Ifá' (carved ivory or lost-wax cast brass divination tappers bearing maternal and avian figures of peace), pristine white cloths ('Aṣọ Funfun'), and hand-polished wooden writing slates ('Wàláà') and leather-bound amulets ('Tírà') fashioned by traditional guilds of leatherworkers ('Oníṣọ̀nà') to embody the fusion of divinatory and scribal power.",
-    "social_and_ritual_context": "At the court level, Òtúrá is the primary Odù invoked by the royal council of kingmakers (such as the Ọ̀yọ́ Mèsì) and the secret Ogboni/Igbédi fraternity before ratifying covenants, establishing peaceful border treaties, or mitigating civil insurrection. Within the priestly domain of the Babaláwo, an initiation or divination revealing Òtúrá Méjì commands the immediate performance of 'Ẹbọ Àlàáfíà' (sacrifices of total appeasement and social equilibrium). These rituals deploy symbolic cooling elements: 'Ìgbín' (giant African land snails, whose pristine lymph fluid cools heated spiritual nodes), 'Ẹyẹlé Funfun' (spotless white pigeons signifying elevation and tranquil fortune), cold spring water, and 'Orí' (shea butter). The Babaláwo under this sign serves as an impartial social arbiter, reconciling fractured families and opposing religious factions through the moral imperatives of 'Àjọṣepọ̀' (cooperative coexistence) and 'Ìwà-rere' (good character).",
-    "proverbs_and_oral_traditions": [
-      "Ìwà pẹ̀lẹ́ ni ó mọ́ ayé gún, ìwà pẹ̀lẹ́ ni ó ń jẹ́ ká gbó kù ká tó dọ̀rún. (Gentle character is what keeps the world perfectly balanced, and calm forbearance guarantees a life of longevity before returning to the ancestors. This central ethical maxim of Òtúrá asserts that societal and cosmic equilibrium cannot be secured through raw force or aggressive confrontation, but through the deliberate, dignified mastery of speech and temperament.)",
-      "Àlùfáà kò bínú sí Babaláwo, Babaláwo kò kórira Mùsùlùmí; inú fífún kan náà ló ń fún gbogbo wa ní omi mu. (The Islamic scholar bears no wrath against the Babaláwo, and the Babaláwo harbours no hatred toward the Muslim; the very same pristine spring provides drink for us all. Emerging from the historic convergence of trans-Saharan Islamic scholarship and indigenous Yorùbá divination, this verse affirms the ultimate unity of divine illumination and repudiates sectarian dogmatism.)",
-      "Òtúrá tura, a tura bí ẹni fomi tútù fọwọ́ tútù mú orí gbígbóná. (Òtúrá releases and soothes, cooling as one who applies fresh cold water with a gentle hand onto a fevered head. A classic liturgical chant demonstrating the energetic mechanics of Òtúrá, which reverses spiritual, psychological, and social turbulence through thermodynamic ritual cooling and pacifying discourse.)"
-    ],
-    "diaspora_connections": "Surviving the Middle Passage, Òtúrá retained its cardinal status as an Odù of intellect, peace, and spiritual illumination in the African Diaspora. In Cuban 'Regla de Ocha-Ifá' (Santería), known as 'Otura Meji' or 'Otura', the Odù is intensely linked to Obatalá, Oduduwa, and Osun, revered as the patron sign of foreign diplomacy, legal vindication, clear mental faculty, and the cooling of 'orí' (destiny/head) through white pigeon offerings and cocoa butter. In Brazilian 'Candomblé Ketu', preserved within the 'Mérìndílógún' (sixteen-cowrie divination system), it governs peaceful assemblies and spiritual clarity, historically equipping enslaved and post-emancipation Afro-descendants with strategic non-violent diplomacy to preserve ancestral houses ('terreiros') amidst state repression. In Trinidad Orisha, Òtúrá traditions manifest through the liturgical pacification of hot spiritual entities with sacred white libations, ensuring the survival of the community's collective memory.",
-    "geographical_origin": "Yorùbáland",
-    "media_production_notes": "Cinematographically, depictions of Òtúrá should be anchored in an aesthetic of tranquil majesty and luminous, high-key lighting. Visual palettes must prioritize alabaster whites, warm ivory, soft earthen terracotta, and shimmering golden-hour diffusion. The camera language should feature stately, sweeping dolly shots and long, unhurried takes that reflect deliberation and peaceful dialogue. Sound design requires an ethereal acoustic tapestry: the resonant, hollow cadence of the brass 'Ìrọ́kẹ́' tapping the rim of the 'Ọ̀pọ́n Ifá', the trickle of live cool spring water, and the rustle of hand-loomed 'Aṣọ-Òkè' garments. Aurally, the score should layer low-register bamboo flutes with meditative, overlapping choral polyphonies of Ifá poetic verses ('ẹsẹ̀') and ancient acoustic chants, evoking a profound atmosphere of sacred contemplation and historic inter-cultural conciliation.",
-    "details": {
-      "id": "Òtúrá",
-      "title": "Òtúrá",
-      "culture": "Yorùbá",
-      "category": "Spiritual & Cosmological Matrix",
-      "aliases": [
-        "otura",
-        "òtúrá"
-      ],
-      "description": "The thirteenth major Odù Ifá chapter representing Peace, Diplomacy, and Spiritual Illumination.",
-      "historical_timeline": "In the classical epoch of Ilé-Ifẹ̀ antiquity, Òtúrá was codified within the sacred priesthood of Ọ̀rúnmìlà as the structural matrix governing inter-clan treaties, non-aggression alliances, and the purification of war-polluted land. During the medieval growth of the Ọ̀yọ́ Empire and the flourishing of the Trans-Saharan trade routes between the 14th and 18th centuries, the corpus of Òtúrá integrated profound historic socio-cultural layers; it served as the diplomatic archive documenting peaceful encounters, intellectual exchanges, and theological conciliation between indigenous Ifá-Ọ̀rìṣà custodians and incoming Islamic Wangara/Hausa scholars ('Àlùfáà' or 'Ìmọ̀le'). In the colonial era, Òtúrá functioned as an anti-fracture mechanism, shielding indigenous epistemologies from total annihilation by adapting sacred scribal instruments and ecumenical arbitration under British indirect rule. In the contemporary global era, Òtúrá persists as a living intellectual framework for international conflict resolution, interfaith synthesis, and the preservation of sacred ethics across continental Yorùbáland and the worldwide diaspora.",
-      "etymology_and_philosophy": "Etymologically derived from the Yorùbá verb root 'tú' (to untie, loosen, dispel, or pacify) fused with 'rá' (to dissolve, vanish gently, or pervade smoothly), 'Òtúrá' translates ontologically as 'The Divine Principle of Dispersal of Conflict and the Unbinding of Affliction.' Philosophically positioned as the thirteenth principal chapter of the sixteen Olódù within the Ifá cosmological corpus, Òtúrá represents the thermodynamic cooling of cosmic and civic volatility. Bearing the binary signature of I-II-I-I (an alternation of singular and paired incisions), Òtúrá symbolizes spiritual illumination, intellectual expansion, high diplomacy, and the sovereign doctrine of 'Ìwà pẹ̀lẹ́' (gentle, balanced moral character). It acts as the cosmic counterweight to thermal rage, ideological fanaticism, and catastrophic collisions, teaching that true dominion over material reality is achieved through discursive synthesis, moral restraint, and peaceful consensus.",
-      "material_and_craftsmanship": "Materialized primarily upon the 'Ọ̀pọ́n Ifá' (consecrated divining tray), sculpted by the master woodcarvers ('Gbẹ́nàgbẹ́nà') of classical guilds from dense hardwood such as 'Ayan' (African satinwood) or 'Ìrókò'. The perimeter of the tray frequently features low-relief motifs of calm, inward-looking heads of Èṣù, surrounded by stylized water fowl and interlaced geometric knotwork signifying harmonious social cohesion. The divination marking is physically impressed upon 'Ìrosùn' (fine scarlet-gold dust extracted from the camwood tree 'Baphia nitida') or pulverized white chalk ('Ẹfun'). The sensory implements consecrated under Òtúrá include the 'Ìrọ́kẹ́ Ifá' (carved ivory or lost-wax cast brass divination tappers bearing maternal and avian figures of peace), pristine white cloths ('Aṣọ Funfun'), and hand-polished wooden writing slates ('Wàláà') and leather-bound amulets ('Tírà') fashioned by traditional guilds of leatherworkers ('Oníṣọ̀nà') to embody the fusion of divinatory and scribal power.",
-      "social_and_ritual_context": "At the court level, Òtúrá is the primary Odù invoked by the royal council of kingmakers (such as the Ọ̀yọ́ Mèsì) and the secret Ogboni/Igbédi fraternity before ratifying covenants, establishing peaceful border treaties, or mitigating civil insurrection. Within the priestly domain of the Babaláwo, an initiation or divination revealing Òtúrá Méjì commands the immediate performance of 'Ẹbọ Àlàáfíà' (sacrifices of total appeasement and social equilibrium). These rituals deploy symbolic cooling elements: 'Ìgbín' (giant African land snails, whose pristine lymph fluid cools heated spiritual nodes), 'Ẹyẹlé Funfun' (spotless white pigeons signifying elevation and tranquil fortune), cold spring water, and 'Orí' (shea butter). The Babaláwo under this sign serves as an impartial social arbiter, reconciling fractured families and opposing religious factions through the moral imperatives of 'Àjọṣepọ̀' (cooperative coexistence) and 'Ìwà-rere' (good character).",
-      "proverbs_and_oral_traditions": [
-        "Ìwà pẹ̀lẹ́ ni ó mọ́ ayé gún, ìwà pẹ̀lẹ́ ni ó ń jẹ́ ká gbó kù ká tó dọ̀rún. (Gentle character is what keeps the world perfectly balanced, and calm forbearance guarantees a life of longevity before returning to the ancestors. Philosophical commentary: This central ethical maxim of Òtúrá asserts that societal and cosmic equilibrium cannot be secured through raw force or aggressive confrontation, but through the deliberate, dignified mastery of speech and temperament.)",
-        "Àlùfáà kò bínú sí Babaláwo, Babaláwo kò kórira Mùsùlùmí; inú fífún kan náà ló ń fún gbogbo wa ní omi mu. (The Islamic scholar bears no wrath against the Babaláwo, and the Babaláwo harbours no hatred toward the Muslim; the very same pristine spring provides drink for us all. Philosophical commentary: Emerging from the historic convergence of trans-Saharan Islamic scholarship and indigenous Yorùbá divination, this verse affirms the ultimate unity of divine illumination and repudiates sectarian dogmatism.)",
-        "Òtúrá tura, a tura bí ẹni fomi tútù fọwọ́ tútù mú orí gbígbóná. (Òtúrá releases and soothes, cooling as one who applies fresh cold water with a gentle hand onto a fevered head. Philosophical commentary: A classic liturgical chant demonstrating the energetic mechanics of Òtúrá, which reverses spiritual, psychological, and social turbulence through thermodynamic ritual cooling and pacifying discourse.)"
-      ],
-      "diaspora_connections": "Surviving the Middle Passage, Òtúrá retained its cardinal status as an Odù of intellect, peace, and spiritual illumination in the African Diaspora. In Cuban 'Regla de Ocha-Ifá' (Santería), known as 'Otura Meji' or 'Otura', the Odù is intensely linked to Obatalá, Oduduwa, and Osun, revered as the patron sign of foreign diplomacy, legal vindication, clear mental faculty, and the cooling of 'orí' (destiny/head) through white pigeon offerings and cocoa butter. In Brazilian 'Candomblé Ketu', preserved within the 'Mérìndílógún' (sixteen-cowrie divination system), it governs peaceful assemblies and spiritual clarity, historically equipping enslaved and post-emancipation Afro-descendants with strategic non-violent diplomacy to preserve ancestral houses ('terreiros') amidst state repression. In Trinidad Orisha, Òtúrá traditions manifest through the liturgical pacification of hot spiritual entities with sacred white libations, ensuring the survival of the community's collective memory.",
-      "geographical_origin": "Yorùbáland",
-      "media_production_notes": "Cinematographically, depictions of Òtúrá should be anchored in an aesthetic of tranquil majesty and luminous, high-key lighting. Visual palettes must prioritize alabaster whites, warm ivory, soft earthen terracotta, and shimmering golden-hour diffusion. The camera language should feature stately, sweeping dolly shots and long, unhurried takes that reflect deliberation and peaceful dialogue. Sound design requires an ethereal acoustic tapestry: the resonant, hollow cadence of the brass 'Ìrọ́kẹ́' tapping the rim of the 'Ọ̀pọ́n Ifá', the trickle of live cool spring water, and the rustle of hand-loomed 'Aṣọ-Òkè' garments. Aurally, the score should layer low-register bamboo flutes with meditative, overlapping choral polyphonies of Ifá poetic verses ('ẹsẹ̀') and ancient acoustic chants, evoking a profound atmosphere of sacred contemplation and historic inter-cultural conciliation."
     }
   },
   {
@@ -20161,7 +20252,21 @@
       "diaspora_connections": "The veneration of Ẹgbẹ́ Ọ̀run survived the Middle Passage and took root in the Global African Diaspora. In Lucumí (Santería) in Cuba, the concept is closely associated with the worship of the Ìbejì (Divine Twins) and the broader understanding of spiritual courts. In Brazilian Candomblé, aspects of the Heavenly Companions are integrated into the Erê (child spirits) who bring joy, healing, and balance. Across the United States, Trinidad, and other parts of the Americas, modern practitioners of Ìṣẹ̀ṣe are reclaiming the specific initiation and propitiation of Ẹgbẹ́ Ọ̀run, bridging the gap between Continental Africa and the Diaspora by recognizing that no soul walks the Earth without its Heavenly Companions.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When depicting Ẹgbẹ́ Ọ̀run in visual or audio media, creators should emphasize a vibrant, ethereal aesthetic. Color palettes should include bright, multi-colored pastels, shimmering whites, and translucent hues to represent the Spiritual Realm (Ọ̀run). Audio soundscapes should incorporate the joyful sounds of children playing, rhythmic clapping, and the gentle shaking of cowrie shells or beaded gourds (Ṣẹ̀kẹ̀rẹ̀). Avoid overly dark or ominous tones; instead, focus on themes of profound companionship, nostalgia, and spiritual joy. Costuming for earthly counterparts during rituals should feature pristine white garments (Aṣọ Funfun) adorned with colorful sashes."
-    }
+    },
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "sub_variants": [
+      "Ìpèsè-Ẹ̀gbẹ́"
+    ],
+    "related_entities": [
+      "Àbíkú",
+      "Orí",
+      "Ẹbọ",
+      "Èṣù",
+      "Ìṣẹṣẹ",
+      "Olódùmarè"
+    ]
   },
   {
     "id": "Àkúko Ọ̀rànmíyàn",
@@ -20259,7 +20364,16 @@
       "diaspora_connections": "The spiritual and sonic legacy of the Aja Ògún resonates profoundly throughout the Global Diaspora. In Brazilian Candomblé, the sacred iron bells of Ogum echo the same invocational purpose. In Cuban Santería (Lucumí), Oggún is summoned using iron implements, including the Guataca (hoe blade) and forged bells, to seal oaths and initiate ceremonies. In Haitian Vodou, the Lwa Ogou is similarly honored with the striking of iron. Across these traditions, the clanging of iron remains a universal Ancestral Yorùbá beacon, uniting descendants in the shared veneration of truth, resilience, and survival.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Audio productions must capture the sharp, sustained, and metallic resonance of the Aja Ògún being struck, emphasizing the acoustic purity of forged iron. Visual media should focus on the textured, rustic patina of the metal, utilizing high-contrast lighting to simulate the glowing embers of the Alágbẹ̀dẹ forge. Cinematography should highlight the hands of the Priest or Priestess wielding the instrument, framing the Aja Ògún as a focal point of divine authority and Ancestral connection."
-    }
+    },
+    "sovereign_parent": "Ògún",
+    "related_entities": [
+      "Ògún",
+      "Opa-Ogun",
+      "Ẹwiri",
+      "Idà",
+      "Àdá",
+      "Ẹbọ"
+    ]
   },
   {
     "id": "Òpópónà",
@@ -20959,7 +21073,16 @@
       "diaspora_connections": "The spiritual lineage of the Iyá Nṣo resonates deeply across the Global African Diaspora, particularly in Lucumí (Cuba), Candomblé (Brazil), and Trinidadian Orisha faiths. In these traditions, senior priestesses of Changó/Xangô hold similar matriarchal authority, often titled Iyalorixá or Madrina. The concept of a female elder managing the fiery energy of the Thunder God remains a central pillar in diasporic Òrìṣà worship, linking descendants back to the royal courts of the Ọ̀yọ́ Empire and preserving the dignity of Yorùbá female spiritual leadership.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When depicting the Iyá Nṣo in film, theater, or digital media, creators should emphasize her dignified, matriarchal presence rather than subservience. Lighting should contrast the warm, fiery reds of Ṣàngó's shrine with the cool, grounding earth tones of her domain. Audio design should incorporate the rhythmic shaking of the Ṣẹ̀kẹ̀rẹ̀ and the distant, rolling rumble of thunder to signify her constant communion with the Òrìṣà. Wardrobe must feature authentic Ìlẹ̀kẹ̀ Ṣàngó (red and white beads) and traditional Yorùbá textiles, avoiding generic pan-African tropes to honor the specific visual vocabulary of the Ọ̀yọ́ Royal Court."
-    }
+    },
+    "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+    "related_entities": [
+      "Ṣàngó",
+      "Ìpínlẹ̀ Ọ̀yọ́",
+      "alaafin_of_oyo",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Àfin Aláàfin",
+      "Àṣẹ"
+    ]
   },
   {
     "id": "Kàkàfò",
@@ -21613,7 +21736,18 @@
       "diaspora_connections": "The practice and profound concept of Àsọtẹ́lẹ̀ survived the harrowing Middle Passage of the Trans-Atlantic Slave Trade, taking root and evolving within the Global African Diaspora. In traditions such as Lucumí in Cuba, Candomblé in Brazil, and Trinidadian Orisha, the Babaláwo, Iyalorisha, and Babalorisha continue to deliver spiritual insights through the Diloggún (Cowrie Shell Divination) and Ifá. These prophetic declarations serve as a direct Ancestral umbilical cord to Ilé-Ifẹ̀, providing spiritual fortitude, healing, and identity preservation for descendants of the Yorùbá across the Americas and the Caribbean.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Audio productions should capture the rhythmic, hypnotic chanting of the Odù Ifá (Ìyẹ̀rẹ̀) with pristine acoustic clarity, emphasizing the tonal nuances of the Yorùbá language. Visual representations must treat the consultation space (Ilé Ifá) with profound reverence, utilizing warm, earthy lighting to highlight the intricate carvings of the Ọpọ́n Ifá and the kinetic motion of casting the Ọ̀pẹ̀lẹ̀. Subtitles and accompanying texts must ensure that all Yorùbá diacritics are perfectly rendered to preserve the exact phonetic and spiritual meaning of the Àsọtẹ́lẹ̀."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Ifá",
+      "Orúnmìlà",
+      "Ojú Odù Méjìdínlógún",
+      "Babaláwo",
+      "Ọ̀pẹ̀lẹ̀",
+      "Àṣẹ"
+    ]
   },
   {
     "id": "Àìṣòótọ́",
@@ -21659,7 +21793,18 @@
       "diaspora_connections": "The abhorrence of Àìṣòótọ́ survived the Middle Passage, taking deep root in Global Diaspora traditions such as Lucumí in Cuba, Candomblé in Brazil, and the Trinidad Orisha faith. Within these sacred Ilé (Spiritual Houses), the integrity of one's word is paramount. Falsehood before the Òrìṣà, especially during divination or initiation rites, is believed to sever the practitioner's connection to their Ancestral lineage. The moral imperative to reject Àìṣòótọ́ continues to bind the Global Yorùbá Diaspora, ensuring that spiritual power is always anchored in truth and communal trust.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For media adaptations, visually contrast the radiant, steady light representing Òtítọ́ (Truth) with erratic, encroaching shadows symbolizing Àìṣòótọ́ (Deceit). Audio soundscapes should utilize discordant, irregular rhythms on the Gàngán (Talking Drum) to evoke the communal disharmony caused by falsehood, eventually resolving into a unified, resonant beat when truth is restored. Incorporate close-up, dramatic lighting on the Edan Ògbóni and the iron tools of Ògún to emphasize the heavy material and spiritual weight of oath-breaking."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Aiye Kooto",
+      "Ìwà-Pẹ̀lẹ́",
+      "Suurù",
+      "Ọ̀wọ́nrín Méjì",
+      "Èṣù",
+      "Ifá"
+    ]
   },
   {
     "id": "Ìbonilórí",
@@ -21707,7 +21852,16 @@
       "diaspora_connections": "The sacred science of Ìbonilórí survived the harrowing Middle Passage during the Trans-Atlantic Enslavement Era, taking root across the Global African Diaspora. In the Lucumí Tradition of Cuba, it evolved into the essential ritual known as Rogación De Cabeza (Feeding of the Head). In the Candomblé Tradition of Brazil, it is preserved as the Bori ceremony. Across Trinidadian Orisha Faiths and modern Global Yorùbá Revivalist movements, the veneration of the Orí remains the universal equalizer, connecting descendants directly to their Ancestral Lineage and reaffirming the sovereignty of the Inner Spirit.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For documentary or archival media, visual representations of Ìbonilórí should focus on the majestic Ilé Orí, utilizing warm, golden lighting to emphasize the crown of the head (Orí-Inú). Audio landscapes should incorporate the slow, resonant, and meditative rhythms of the Bàtá or Dùndún drums, layered with solemn Ìyẹ̀rẹ̀ (Ifá Chants) praising Àjàlá-Mọ̀pin. Cinematography should capture the tactile pouring of Omi Tutu and the breaking of Obi Àbàtà, ensuring a tone of profound reverence, introspection, and Ancestral continuity."
-    }
+    },
+    "sovereign_parent": "Orí",
+    "related_entities": [
+      "Orí",
+      "Ààbò-Orí",
+      "Àjàlá Mọ̀pí",
+      "Ẹbọ",
+      "Ìwà-Pẹ̀lẹ́",
+      "Orúnmìlà"
+    ]
   },
   {
     "id": "Ìfọ̀kanbalẹ̀",
@@ -21753,7 +21907,18 @@
       "diaspora_connections": "The concept of Ìfọ̀kanbalẹ̀ survived the Middle Passage and deeply influenced the spiritual and psychological frameworks of the Global African Diaspora. In Lucumí (Santería) in Cuba, Candomblé in Brazil, and Trinidadian Orisha traditions, the quest for a cool head (Orí Tútù) and inner peace remains paramount. Rituals of cleansing (Despojos) and the veneration of Obatala (The Orisha of Peace and Purity) are direct diasporic continuations of seeking Ìfọ̀kanbalẹ̀. Today, Afro-Descendant communities globally reclaim this concept as a decolonial approach to mental health, utilizing Ancestral Yorùbá philosophies to combat the systemic anxieties of the modern world and restore Spiritual Equilibrium.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For visual and audio media representations of Ìfọ̀kanbalẹ̀, producers should focus on aesthetics of calmness, utilizing cool color palettes such as whites, soft blues, and earthy tones associated with Obatala and Orí. Soundscapes should incorporate the gentle, steady rhythms of the Dùndún Drum, flowing water, and the natural ambiance of the Sacred Grove (Oṣógbò). Avoid chaotic or overly dramatic visual transitions; instead, use slow, deliberate pacing to mirror the settling of the mind. Voiceovers should be delivered in a measured, soothing cadence, ensuring that the pronunciation of Yorùbá terms like Olódùmarè and Ìfọ̀kanbalẹ̀ are phonetically accurate and deeply resonant."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Ìwà-Pẹ̀lẹ́",
+      "Alafia",
+      "Ogbó-àti-Tọ́",
+      "Orí",
+      "Ẹ̀mí",
+      "Suurù"
+    ]
   },
   {
     "id": "Ẹ̀yà",
@@ -26503,7 +26668,18 @@
       "diaspora_connections": "Across the African Diaspora, Ìbà has been preserved with extraordinary fidelity, functioning as the quintessential liturgical foundation known as Moyugba or Mojuba in Cuban Lucumí and Santería, as well as Imojubá in Brazilian Candomblé Ketu and Batuque. In these traditions, the recitation begins every ceremonial drumming of the Batá, every Ocha initiation, and every cowrie-shell reading. Practitioners recite long genealogies of departed spiritual elders (Ara Ọ̀run), reconnecting African-descended communities in Havana, Salvador da Bahia, Matanzas, and New York City directly to their sacred lineages in Yorùbáland.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When producing audio, cinematic, or dramatic presentations of Ìbà, creative teams must approach the subject with strict cultural reverence. Authentic representation requires consulting initiated elders, such as a Babaláwo, Ìyánífá, or Olorisha, prior to recording sacred invocations. Visual depictions must focus on respectful physical poise—calm kneeling, direct palm contact with the earth, and the measured pouring of libations. Sound designers should prioritize clear, resonant acoustic delivery of the vocal litany without synthetic distortion, underscoring the solemnity and antiquity of the spoken Àṣẹ."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Olódùmarè",
+      "Òrìṣà",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Egúngún",
+      "Orúnmìlà",
+      "Ìṣẹṣẹ"
+    ]
   },
   {
     "id": "Orí-Inú",
@@ -26611,7 +26787,16 @@
       "diaspora_connections": "Across the African Diaspora, the philosophy of Orí-Òde remains central to syncretic and reconstituted Lucumí (Santería), Candomblé Ketu, and Trinidad Orisha traditions. In Lucumí and Candomblé, the physical head is recognized as the ultimate seat of the devotee's governing deity (Eledá or Orixá de Cabeça). This manifests through the foundational ritual of 'Rogación de Cabeza' (Lucumí) and 'Bori' (Candomblé), in which Orí-Òde is purified, nourished, and consecrated with cool substances such as shredded coconut (Obì Àbàtà substitutes), water (Omi tútù), cocoa butter (Orí), and sacred herbs (Ewé). Diaspora descendants continue to recognize the crown of the head as the primary site of trance possession, spiritual elevation, and ancestral remembrance, actively maintaining the sanctity of head care, braiding, and headwraps (Torço/Ojá) as tangible acts of resistance and sacred protection.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visually or theatrically presenting Orí-Òde, media producers, curators, and archivists must avoid treating the concept merely as secular human anatomy. Cinematographers should utilize intentional close-ups focusing on the crown, brow, and temples, capturing subtle light transitions that convey sacred energy. When depicting ritual acts involving Orí-Òde, such as ceremonial washings, consultations, or head adorning, filmmakers should consult traditional practitioners to maintain cultural protocols regarding sacred spaces and avoid profaning esoteric rites. Musical scores should employ acoustic Yorùbá instruments such as the Bàtá and Dùndún, accentuating spoken Oríkì (praise poetry) addressed to the head. Subtitles and educational graphics must consistently preserve all Yorùbá tonal marks and diacritics to honor phonetic and metaphysical integrity."
-    }
+    },
+    "sovereign_parent": "Orí",
+    "related_entities": [
+      "Orí-Inú",
+      "Àkúnlẹ̀yàn",
+      "Àjàlá Mọ̀pí",
+      "Ààbò-Orí",
+      "Ìbonilórí",
+      "Ẹ̀mí"
+    ]
   },
   {
     "id": "Àjẹ́",
@@ -26659,7 +26844,16 @@
       "diaspora_connections": "Across the Middle Passage, the sacred authority of Àjẹ́ and Ìyámi Òṣòròngà was steadfastly preserved in the Afro-Atlantic world, forming an esoteric foundation of Black Atlantic resistance and spiritual sovereignty. In Brazilian Candomblé Ketu and Nagô houses, 'Iyá Mi Oshorongá' is revered with immense trembling and devotion through secluded nocturnal offerings (Apaoká), strictly separate from public festivals to avoid spiritual disruption. In Cuban Regla de Ocha (Santería) and Ifá, the Great Mothers are honored during the opening invocations (Moyugba) and venerated through the female Òrìṣà matrix—most notably Ọ̀ṣun (who holds the title 'Àpèkẹ́' and holds the bird of the Mothers) and Yemọja. In Trinidad Orisha and Haitian Vodou (as the Erzulie and Gran Bwa mysteries), the concept persists through fierce mother-protectors who safeguard African descendants against generational subjugation.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Media productions, museum exhibitions, and archival displays must rigorously avoid conflating Àjẹ́ with the sensationalized European construct of 'witchcraft'. Archival exhibits should frame Àjẹ́ within the socio-political context of primordial female balance, divine justice, and ecological stewardship. Lighting for Gẹ̀lẹ̀dẹ́ exhibitions should be dynamic yet dignified, honoring the festival's traditional transition from daylight to twilight. Audio installations should feature the sacred rhythms of the Bàtá and Àpàlà drums accompanied by gentle female coral chants rather than ominous horror-genre scoring. Textual placards must use precise Yorùbá orthography and consult elder traditionalists (Àgbàlagbà) to ensure accurate philosophical contextualization."
-    }
+    },
+    "sovereign_parent": "Ìyámi (Our Mothers / Primordial Female Energy)",
+    "related_entities": [
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Ọ̀sanyìn",
+      "Èṣù",
+      "Gẹ̀lẹ̀dẹ́",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Ofo"
+    ]
   },
   {
     "id": "Osugbo",
@@ -27107,7 +27301,19 @@
       "diaspora_connections": "The institutional lineage of the Iyaláṣẹ directly survived the Transatlantic Slave Trade, serving as the foundational architectural model for Black matriarchal priesthoods across the Americas. In Brazilian Candomblé Ketu and Ijexá, this lineage transformed into the prestigious institution of the Iyalorixá (popularly called the Mãe de Santo), which historicized powerhouse terreiros such as Ilê Axé Iyá Nassô Oká (Casa Branca) and Terreiro do Gantois in Salvador da Bahia. In Cuban Lucumí (Santería), she is mirrored in the Iyalosha, retaining ultimate authority over the initiation of new priests (Kariocha), herbology (Ewé), and the preservation of sacred Lucumí liturgical vocabulary throughout the Caribbean, Latin America, and North America.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing the Iyaláṣẹ in film, historical reenactments, or digital environments, portray her with immense gravity, serene composure, and architectural authority rather than supernatural caricature. Regalia must feature authentic handwoven indigo-dyed fabrics or unbleached off-white handspun cloths, avoiding synthetic stage satins. Sacred body ornamentation should accurately reflect shrine markings in Ẹfun (white sacred chalk) or Osùn (red camwood). The sonic landscape must be underpinned by sacred percussion—such as the rhythmic cadence of the Bàtá or Dùndún drums—interwoven with the melodic vocal delivery of matrilineal Oríkì praise poetry and the intermittent, reverent resonance of a consecrated brass or iron bell (Agogô)."
-    }
+    },
+    "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+    "sub_variants": [
+      "Ọ̀tún-Iyaláṣẹ"
+    ],
+    "related_entities": [
+      "Àṣẹ",
+      "Òrìṣà",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Ṣàngó",
+      "Ọba"
+    ]
   },
   {
     "id": "Ìyá Abiye",
@@ -27207,7 +27413,16 @@
       "diaspora_connections": "During the Transatlantic Enslavement, the administrative and liturgical template of the Ọ̀tún-Iyaláṣẹ was directly re-established in the African Diaspora. In Afro-Cuban Lucumí (Santería), this office manifests as the Oyugbona (the secondary godmother who directly oversees the physical, day-to-day rites and safety of the initiate under the guidance of the Godparent). In Brazilian Candomblé Ketu, the parallel rank of Iyákekeré (the Little Mother) echoes the Ọ̀tún-Iyaláṣẹ by maintaining daily shrine hygiene, offering protocols, and logistical preparation of public festivals (Xirê). These transatlantic counterparts preserve the core mandate of the Yorùbá original: hands-on ritual execution, protection of initiate life, and stabilization of divine command.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When portraying the Ọ̀tún-Iyaláṣẹ in visual or narrative media, emphasize quiet, confident authority rather than theatrical flourish. Cinematography should capture tactile, intentional actions: the dawn sweeping of the shrine floor, the careful sorting of medicinal leaves (Ewé), and the rhythmic beating of the brass or iron ritual bell (Agogo). Costuming must reflect pristine textile tradition without excessive Westernized embellishment, utilizing authentic handwoven cloth and proper ancestral bead designs. Audio design should balance ambient natural elements (running water, forest wind, morning birds) with the resonant cadence of female praise chants (Oríkì) recited in classical Yorùbá tones."
-    }
+    },
+    "sovereign_parent": "Iyaláṣẹ",
+    "related_entities": [
+      "Iyaláṣẹ",
+      "Àṣẹ",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Òrìṣà",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Ọba"
+    ]
   },
   {
     "id": "Abọ̀rìṣà",
@@ -27255,7 +27470,16 @@
       "diaspora_connections": "The Abọ̀rìṣà legacy functions as an unbroken umbilical cord connecting Continental Yorùbá life to global African Diaspora communities. In Cuba and the broader Spanish-speaking Caribbean, practitioners known as 'Santeros' or initiates of 'Regla de Ocha-Ifá' preserve classical Odù Ifá liturgical poetry and song structures in the Lucumí language. In Salvador da Bahia and across Brazil, the 'Povo de Santo' within Candomblé Ketu maintain identical drumming cadences, liturgical salutations ('Kábíyèsí', 'Ọpẹ́'), and culinary offerings for the Orixás within self-governing sacred spaces known as Terreiros. In Trinidad and Tobago, the Ṣàngó Baptist faith preserves ancestral possession rites and drum liturgies alongside Spiritual Baptist traditions. Across North American metropolitan hubs such as New York, Miami, and Atlanta, new generations of Continental and Diaspora-born Abọ̀rìṣà reclaim pre-colonial initiation protocols, uniting ancestral memory across oceans through trans-Atlantic pilgrimages to holy sites like the Osun-Osogbo Sacred Grove and the ancestral palaces of Ilé-Ifẹ̀.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visually depicting or staging an Abọ̀rìṣà, production designers, filmmakers, and curators must avoid sensationalized Western cinematic tropes of 'sorcery' or exoticized fear. Visual palettes should prioritize naturalistic, dignity-centered aesthetics: clean morning sunlight, deep indigo and pristine white fabrics, raw earth floor textures, and the gleam of burnished brass and oiled wood. Soundscapes must be rigorously authentic, utilizing polyrhythmic acoustic recordings of the Bàtá, Dùndún (talking drum), and Ṣẹ̀kẹ̀rẹ̀ rather than synthesized digital percussion. Spoken Yorùbá dialogue must retain accurate tonal cadences, and consultations with authentic initiates should govern the presentation of sacred shrines: inner altars containing living consecrated 'Ọta' (sacred stones) and confidential medicinal mixtures should remain respectfully off-camera or artfully obscured in deference to ancestral spiritual taboos ('Èèwọ̀')."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Olórìṣà",
+    "related_entities": [
+      "Ìṣẹṣẹ",
+      "Ẹbọ",
+      "Ojúbọ",
+      "Ẹgbẹ́ Olórìṣà",
+      "Òrìṣà",
+      "Ọ̀ta-Òrìṣà"
+    ]
   },
   {
     "id": "Ààrẹ-Àgò",
@@ -27511,7 +27735,18 @@
       "diaspora_connections": "Within the African Diaspora, the philosophy of 'Ogbó-àti-Tọ́' persevered across Middle Passage crossings into the Americas. In Cuban Lucumí (Regla de Ocha), it echoes within liturgical litanies praying for 'Arikú Bambaya' (unbroken survival and health) and the sacred greeting 'Agó / Àṣẹ' bestowed by Babalawos and Iyalochas. In Brazilian Candomblé Ketu, the tenet is directly embodied in the reverent search for 'Axé e Vida Longa' transmitted through the matriarchal line of the 'Terreiros' by the 'Mãe de Santo'. In the spiritual circles of Trinidad Orisha and Oyotunji African Village in North America, invoking long and fulfilled life remains the primary mechanism for anchoring dispersed African descendants to the living lineage of ancestral integrity.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "For archival and documentary presentation, this entity should be captured through high-fidelity acoustic design emphasizing the resonant vocal cadence of Yorùbá elders. Visual representations should spotlight the ceremonial pouring of libation from an 'Igbá' (calabash) or the unhurried movement of an elder holding an intricately carved 'Ọ̀pá' (walking staff). Background soundscapes should avoid synthetic Western instrumentation, relying instead on the muted, rhythmic pulse of the 'Dùndún' (talking drum) and the subtle rattle of the 'Ṣẹ̀kẹ̀rẹ̀' to invoke reverent communal solemnity."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Alafia",
+      "Ìwà-Pẹ̀lẹ́",
+      "Àṣẹ",
+      "Ìfọ̀kanbalẹ̀",
+      "Ẹbọ",
+      "Olódùmarè"
+    ]
   },
   {
     "id": "Àìkú",
@@ -27603,7 +27838,18 @@
       "diaspora_connections": "Across the African Diaspora, Àlàáfíà remains one of the most vital surviving linguistic and liturgical cornerstones. In Cuban Regla de Ocha (Lucumí), 'Alafia' denotes the most auspicious and benevolent omen in Obi (coconut) divination, achieved when all four segments fall with their white inner flesh facing upward, signifying total blessing, affirmative response, and divine grace. In Brazilian Candomblé Ketu, 'Alafia' is hailed in salutations and cleansing rites (Ebó de Limpeza) to invite ancestral calm and dispel turmoil. Across North American Orisha communities and Trinidad Orisha traditions, the word serves as a sacred affirmation and standard greeting, reinforcing an unbroken chain of communal wholeness.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When producing media representations, sound engineers must articulate the pristine tonal contours: low-low-high-high tone (À-là-á-fí-à) with measured resonance. Visual design must avoid chaotic or aggressive palettes; color grading should highlight soft whites, natural ivory, muted earth tones, and morning light, accented by cool flowing water, clean beaded regalia, and dewy Èwé Èrò foliage. Narrative pacing should reflect poise, dignity, and unhurried sacred composure, evoking the serene authority of an elder imparting a blessing."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Ìfọ̀kanbalẹ̀",
+      "Ogbó-àti-Tọ́",
+      "Ẹbọ",
+      "Ìwà-Pẹ̀lẹ́",
+      "Ẹ̀mí",
+      "Orí"
+    ]
   },
   {
     "id": "Ọ̀rọ̀-Àgbà",
@@ -27755,7 +28001,18 @@
       "diaspora_connections": "During the Middle Passage, enslaved Yorùbá practitioners preserved the foundational philosophy, liturgy, and pantheon of Ìṣẹṣẹ across the Americas. In Cuba and Puerto Rico, this ancestral bedrock crystallized as Regla de Ocha (Lucumí) and Ifá; in Brazil, predominantly in Salvador da Bahia, it emerged as Candomblé Ketu and Tambor de Mina; in Trinidad and Tobago, it flourished as the Òrìṣà (Shango) Tradition. Through sacred rhythmic drumming (Bàtá), liturgical preservation of Lucumí/Nagô dialects, botanical substitutes for traditional African flora, and syncretic survival strategies, diaspora communities kept the Àṣẹ alive. Today, the global Ifá-Òrìṣà diaspora engages in profound pilgrimage and cultural reconciliation back to Ilé-Ifẹ̀, Ọ̀yọ́, and Òṣogbo, re-establishing continuous liturgical and ancestral ties.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visually or acoustically documenting Ìṣẹṣẹ, production teams must prioritize authentic sacred ethics and avoid sensationalizing ritual activities. Filmmakers should obtain explicit guidance from recognized spiritual authorities, such as the Àràbà Agbaye or council of elders, regarding sacred boundaries, ensuring that strictly esoteric inner-shrine components (Ìgbodù) are never exposed on camera. Musical scores should employ genuine ceremonial percussion—specifically the Bàtá and Dùndún ensembles—tuned and played according to correct cosmological cadence rather than generic Afrobeat tracks. Subtitles and audio transcriptions must consistently feature proper Yorùbá diacritical marks (Àmì Ohùn) and subdots, modeling orthographic reverence for international audiences."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Òrìṣà",
+      "Ifá",
+      "Egúngún",
+      "Ìwà-Pẹ̀lẹ́",
+      "Ẹgbẹ́ Olórìṣà",
+      "Olódùmarè"
+    ]
   },
   {
     "id": "Oríki Orile",
@@ -32998,7 +33255,16 @@
       "diaspora_connections": "Across the Afro-Atlantic Diaspora, the sacred staff of Ọ̀ṣọ́ọ̀sì remains an essential icon of divine justice, tactical perception, and liberation. In Brazilian Candomblé Ketu, known as the 'Ofá de Oxóssi,' it is brandished during liturgical dances celebrating the King of Ketu, often dressed in turquoise beads and feathers to honor indigenous resistance and maroon communities (Quilombos). In Cuban Lucumí (Santería), Ochosi is enshrined as one of the fierce Warrior Deities (Los Guerreros); his arrow is canonically nested inside the iron vessel of Ògún, symbolizing the eternal, unbreakable covenant between the blacksmith who shapes the weapon and the visionary tracker who releases it.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When mounting museum exhibitions, educational video displays, or digital 3D models of the Opá Ọ̀ṣọ́ọ̀sì, lighting must highlight the hand-hammered texture and dark, rich patina of the wrought iron. Educational displays should avoid framing the staff as a crude hunting trophy; interpretive signage must emphasize its status as a sacred scepter of cosmic equilibrium, civil judicial power, and environmental stewardship. Acoustic backgrounds in audio-visual media should blend low resonant metallophones, the rustling of forest canopies, and sacred Batá or Agogô rhythms dedicated to the Hunter Deities."
-    }
+    },
+    "sovereign_parent": "Ọ̀ṣọ́ọ̀sì",
+    "related_entities": [
+      "Ọ̀ṣọ́ọ̀sì",
+      "Oṣóṣì Bow",
+      "Igbó",
+      "Ògún",
+      "Ọdẹ",
+      "Òrìṣà"
+    ]
   },
   {
     "id": "Ààbò-Orí",
@@ -33050,7 +33316,16 @@
       "diaspora_connections": "The philosophy and rites of Ààbò-Orí migrated across the Atlantic and remain central to African-descended spiritual systems throughout the Americas. In the Cuban and Puerto Rican Lucumí (Santería) tradition, it is preserved in the rite of Rogación de Cabeza (Kofiborí), where white natural substances such as grated coconut (Obi), cocoa butter (Ori), and cascarilla (Ẹfun) are bound to the devotee's head to cleanse and shield the Ori from negative vibrations. In Brazilian Candomblé Ketu, the complex ritual of Bori functions as an indispensable consecration and fortification of the Ori to sustain life and harbor Orisha energy. Similar iterations endure in Trinidad Orisha and Haitian Vodou, underscoring an unbroken transoceanic imperative to maintain the sanctuary of the inner self.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When documenting or dramatizing Ààbò-Orí, visual aesthetics must reflect serene reverence, clarity, and precision rather than sensationalized mystery. Cinematography should emphasize naturalistic, high-key lighting, capturing the pure reflective properties of spring water, pristine white cotton garments (Aṣọ Funfun), and intact Cowrie Shell arrangements. Sound design should prioritize intimate, acoustic elements: the gentle recitation of Oríkì Orí, rhythmic scraping of sacred chalk, and the delicate resonant strike of the Ìrọ́kẹ́ Ifá on the Ọpọ́n Ifá. Depictions must convey deep interior contemplation, illustrating the individual's reconciliation with their own divine purpose."
-    }
+    },
+    "sovereign_parent": "Orí",
+    "related_entities": [
+      "Orí",
+      "Ìbonilórí",
+      "Àjàlá Mọ̀pí",
+      "Ẹ̀mí",
+      "Ìwà-Pẹ̀lẹ́",
+      "Ẹbọ"
+    ]
   },
   {
     "id": "Ìtẹ́-Ọba",
@@ -34681,7 +34956,16 @@
       "diaspora_connections": "Within the Afro-Cuban Regla de Ocha (Lucumí) and Brazilian Candomblé Ketu, the foundational philosophy of Ìpèsè-Ẹ̀gbẹ́ survives through propitiatory feasts offered to the Ibéjì (Sacred Twins) and the Erê (celestial child spirits). Sweets, fruits, and elaborate dishes such as Caruru in Bahia and Caritas in Havana are placed at riversides and crossroad thresholds to pacify unruly spirits and bring restorative blessings to the household. In Trinidadian Orisha tradition, communal sweet tables set for divine infants and ancestor peers directly reflect this unbroken trans-Atlantic legacy of spiritual fellowship.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing Ìpèsè-Ẹ̀gbẹ́ in documentary or narrative contexts, filmmakers should prioritize the interplay of amber twilight and early dawn lighting over riverbanks and forest junctions. Cinematographers should focus on sensory textures: the velvety red of palm oil dripping over ivory bean paste, the natural grain of carved calabashes, and the tactile movement of water reeds. The soundscape should balance hushed polyrhythmic drumming on the Bẹ̀mbẹ́ or Ṣẹ̀kẹ̀rẹ̀ with whispered oríkì praises and natural running water, maintaining a tone of gentle reverence rather than sensationalized mystery."
-    }
+    },
+    "sovereign_parent": "Ẹgbẹ́ Ọ̀run",
+    "related_entities": [
+      "Ẹgbẹ́ Ọ̀run",
+      "Ẹbọ",
+      "Èṣù",
+      "Àbíkú",
+      "Orí",
+      "Ìṣẹṣẹ"
+    ]
   },
   {
     "id": "Ẹbọ-Ìṣẹ́gún",
@@ -34733,7 +35017,16 @@
       "diaspora_connections": "Within the Transatlantic African Diaspora, Ẹbọ-Ìṣẹ́gún evolved dynamically while preserving its foundational Yorùbá core. In Cuban Regla de Ocha (Lucumí), the concept survives as 'Ebó de Victoria' or 'Ebó de Agradecimiento', commonly performed after critical life tribulations, complex court battles, or the successful completion of challenging initiatory thresholds (Kariocha). In Brazilian Candomblé Ketu, parallel rites known as 'Ebó de Vitória' are dedicated to deities such as Ògún, Ọya, and Èṣù to mark the triumph of Ilê (temple) communities over societal prejudice and spiritual affliction. In Trinidad and Tobago's Orisha Tradition, songs of victory and communal feasts (Bembé or Ebo feasts) are held to thank the Shango and Ogun energies for shielding the community during times of socioeconomic crisis. In every manifestation across the Black Atlantic, the offering serves as a bridge of resilience connecting descendants to the indestructible spiritual technology of their West African ancestors.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When documenting or visually recreating Ẹbọ-Ìṣẹ́gún for film, museum exhibits, or educational media, directors and curators must adopt a respectful and contemplative register. Visual palettes should transition intentionally from shadowed, tense tones (representing the crisis) to bright, luminous natural light, dominated by white textiles, polished brass, and fresh botanicals to signify spiritual purity and relief. Avoid sensationalizing animal offerings; focus cinematographically on the tactile artistry of the carved Opọ́n Ifá, the precise dusting of Iyẹ̀ròsùn, the rhythmic pouring of libations, and the expressions of communal joy. Audio should feature traditional praise poetry (Oríkì) chanted by qualified practitioners, accompanied by the gentle, triumphant cadences of Bàtá or Dùndún drums playing sacred victory rhythms rather than aggressive battle cadences. Prior consultation with legitimate lineage elders (Àgbàlagbà) is required to ensure that esoteric spaces and closed ritual altars are depicted with complete liturgical sensitivity and cultural sovereignty."
-    }
+    },
+    "sovereign_parent": "Ẹbọ",
+    "related_entities": [
+      "Ògún",
+      "Ẹbọ",
+      "Èṣù",
+      "Ìrúbọ",
+      "Babaláwo",
+      "Àṣẹ"
+    ]
   },
   {
     "id": "Ìrúbọ",
@@ -34779,7 +35072,16 @@
       "diaspora_connections": "Following the Middle Passage, Ìrúbọ was preserved as a core sacrament across Afro-Atlantic traditions. In Cuban Lucumí and North American Santería, it persists as 'Ebbó', retaining exact Odù-based diagnostic protocols under Babalawos and Oloshas. In Brazilian Candomblé Ketu, it is known as 'Ebó', vital for cleaning the subtle body, unblocking spiritual path crossings (Encruzilhadas), and nourishing the Orixás. Across Trinidad and Tobago's Orisha Tradition and Haitian Vodou (in its Rada and Nago rites), the ritual mechanics of Ìrúbọ remain intact, providing diasporic descendants a tangible, transactional technology of ancestral restoration and resistance against historical erasure.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing Ìrúbọ for documentary, cinematic, or virtual production, creators must actively discard Western horror tropes and exoticized sensationalism. Depictions must highlight the solemnity, clinical precision, and communal nature of the rite. Cinematography should emphasize pristine white fabrics (Aṣọ Funfun), the reverent percussion of the Ìrọ́kẹ́ against the Opọ́n Ifá covered in Iyẹ̀ròsùn dust, the gentle libation of cool water, and the vocal delivery of poetic Oríkì and Ọfọ̀. Focus on the transformation and relief experienced by the supplicant, as well as the redistribution of consecrated food to the community, underscoring Ìrúbọ as an act of cosmic hygiene, healing, and ethical restoration."
-    }
+    },
+    "sovereign_parent": "Ẹbọ",
+    "related_entities": [
+      "Babaláwo",
+      "Èṣù",
+      "Ẹbọ",
+      "Ìṣẹṣẹ",
+      "Orí",
+      "Orúnmìlà"
+    ]
   },
   {
     "id": "Awo-Ẹ̀sìn",
@@ -37517,7 +37819,18 @@
       "diaspora_connections": "Across the transatlantic passage, the philosophy of Ẹ̀mí survived and cross-pollinated within African Diaspora traditions throughout the Caribbean and the Americas. In Cuban Lucumí (Santería), the breath represents the sacred transmission of Ashé, materialized through the act of blowing breath (Soplo) during consecration rites for sacred stones (Otanes) and spiritual crowns. In Brazilian Candomblé Ketu, the retention of Ẹ̀mí manifests in the rituals dedicated to Oxalá (Ọbàtálá), where respiratory awareness, sacred silence, and deep inhalation channel the supreme vitality of Olorum into initiates. Within Trinidad Orisha and the Nago lineages of Haitian Vodou, rapid rhythmic hyperventilation and breath-led invocations remain the foundational catalyst for spirit possession, verifying to the community that the ancestral vital force continues to animate displaced African descendants across generations.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When translating Ẹ̀mí into media, visual artists and filmmakers must rigorously steer clear of ghostly, spectral cliches or horror-style smoke effects. Visual portrayals should focus on organic luminescence, using golden, atmospheric lighting that captures the rhythmic rising and falling of the human chest, the visible dispersion of breath in morning mist, or fine airborne micro-particles suspended in sunlight to symbolize divine activation. Soundscapes must prioritize deep, close-mic acoustic respiration, incorporating the organic rustle of wind, the rhythmic sighs of the Èbìrì blacksmith bellows, and soft, sustained tones of woodwind flutes or coral horns. Scriptwriters should treat Ẹ̀mí with profound philosophical reverence, presenting it as an inviolable spark of human dignity and metaphysical sovereignty."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Olódùmarè",
+      "Orí",
+      "Àjàlá Mọ̀pí",
+      "Ìwà-Pẹ̀lẹ́",
+      "Alafia",
+      "Orí-Inú"
+    ]
   },
   {
     "id": "Agbára",
@@ -37617,7 +37930,18 @@
       "diaspora_connections": "Across the African Diaspora, Ìwà-Pẹ̀lẹ́ survived the Middle Passage and remains a cornerstone of African-derived religious systems. In Cuban Lucumí (Santería) and Puerto Rican traditions, 'Iwa Pelé' or 'Buen Carácter' is considered the ultimate prerequisite for initiation into the priesthood (Kariocha) and the highest mark of spiritual maturity, without which Orisha consecration is deemed null. In Brazilian Candomblé Ketu, the tenet exists through communal protocols of 'Respeito' (respect), elder deference, and the ethical conduct required to sustain 'Axé' within the Ilê. In Trinidad Orisha and North American Ọ̀yọ́-túnjí movements, Ìwà-Pẹ̀lẹ́ acts as an ethical anchor of pan-African reclamation, guiding spiritual practitioners toward personal accountability, ancestral re-alignment, and communal dignity.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visually depicting Ìwà-Pẹ̀lẹ́ in documentaries, cinema, or virtual exhibitions, media creators must steer clear of hyper-sensationalized, volatile tropes often associated with African spiritual traditions. Visual narratives should prioritize stillness, symmetrical composition, balanced natural lighting, and the visual metaphor of pure water (Omi Tútù). Performances showcasing historical or ritual narratives of Ìwà-Pẹ̀lẹ́ must reflect deliberate, dignified pacing, restrained body language, and articulate, respectful voice cadences. Curatorial audio design should integrate contemplative Yorùbá instrumentation—such as meditative Dùndún rhythms or gentle Agogo chimes—punctuated by Odù Ifá chants that articulate the cosmological union between Ọ̀rúnmìlà and Ìwà."
-    }
+    },
+    "is_parent": false,
+    "sovereign_parent": null,
+    "sub_variants": [],
+    "related_entities": [
+      "Orí",
+      "Ifá",
+      "Òrìṣà",
+      "Ọmọlúwàbí",
+      "Alafia",
+      "Ìfọ̀kanbalẹ̀"
+    ]
   },
   {
     "id": "Kijipá",
@@ -49433,7 +49757,16 @@
       "diaspora_connections": "Through the crucible of the Middle Passage, the Ìke-Òrìṣà demonstrated extraordinary cultural resilience, evolving into iconic sacred instruments across the African Diaspora. In Afro-Cuban Lucumí (Santería) tradition, the vessel transitioned into the 'Sopera'—an ornate ceramic or porcelain soup tureen elaborately adorned with the color codes, ribbons, and beads of specific Orichas, housing the Otanes (consecrated stones) submerged in Omiero (sacred herbal water). In Brazilian Candomblé Ketu, the tradition flourished as the 'Assentamento' or 'Igbá-Òrìṣà', commonly assembled using glazed earthenware bowls, white porcelain tureens, or carved gourds bound with handwoven fabrics and surrounded by ritual metals (Ferramentas). In Trinidad Orisha, Haitian Vodou's Makaya and Nago rites, and across global spiritual sanctuaries from Miami to Bahia, these vessels remain the irreplaceable, living focal point where the Ancestral pact between displaced human lineages and classical Yorùbá divinities is perpetually renewed.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visually presenting or handling an Ìke-Òrìṣà in educational, documentary, cinematic, or 3D museum environments, absolute cultural ethics must be maintained. Filming and rendering should focus entirely on the exterior aesthetics, surface burnishing, incised relief iconography, and historical metal patinas; uninitiated production crews must never attempt to open, film inside, or dislodge the contents of a consecrated vessel, as exposing the consecrated stones (Ọ̀ta) and fluid compounds to uninitiated sight violates sacred taboos. Cinematographers should employ warm, ambient directional lighting that emphasizes the tactile earthiness of terracotta or the subtle glow of brass, avoiding harsh, sterile white spotlights. For digital 3D captures (photogrammetry), archivists should consult initiated Babaláwo or Ìyálórìṣà elders to ensure the vessel being digitized is an uncharged museum replica or an artisanal specimen intended for pedagogical exhibition, thereby safeguarding esoteric sanctities."
-    }
+    },
+    "sovereign_parent": "Òrìṣà",
+    "related_entities": [
+      "Òrìṣà",
+      "Ọ̀ta-Òrìṣà",
+      "Ẹgbẹ́ Olórìṣà",
+      "Ìrukẹ̀rẹ̀ Òrìṣà",
+      "Ìṣẹṣẹ",
+      "Ọba"
+    ]
   },
   {
     "id": "Abe-Òrìṣà",
@@ -49539,7 +49872,16 @@
       "diaspora_connections": "In the Transatlantic Diaspora, the Ọ̀ta survived as the central, indispensable element of initiation under the Hispanicized and Lusophone names 'Otán' (plural 'Otanes') in Lucumí/Santería traditions across Cuba and North America, and 'Otá' in Candomblé Ketu and Tambor de Mina in Brazil. While wooden statuary and elaborate beaded garments were frequently confiscated or destroyed by colonial authorities and slaveholders, the small, nondescript sacred stones were easily hidden in the earth or within ordinary domestic soup bowls ('Soperas' in Cuba; 'Quartinhas' and 'Assentamentos' in Brazil). To this day, across Havana, Salvador da Bahia, Port of Spain, and New York City, the presence of these stones constitutes the authentic birthright of any initiate—without an Ọ̀ta, an Òrìṣà altar is considered void of living presence.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When presenting the Ọ̀ta-Òrìṣà in visual or cinematic formats, emphasize respect for sacred restrictions: consecrated stones should not be exposed nakedly without traditional context or guidance of initiated elders. Optimal visual framing utilizes low-key chiaroscuro lighting, capturing the rich, glistening sheen of red palm oil (Epo Pupa) and herbal patinas against smooth basalt or river rock textures. Macro lenses should highlight the natural mineral veins and tactile surfaces of the stones resting within hand-thrown terracotta or ornate porcelain tureens. Audio design should layer the subtle, atmospheric murmur of flowing freshwater, the resonant clinking of lithic impact, and low-frequency Bàtá drum rhythms accompanied by liturgical Oriki incantations."
-    }
+    },
+    "sovereign_parent": "Òrìṣà",
+    "related_entities": [
+      "Òrìṣà",
+      "Ìke-Òrìṣà",
+      "Ẹgbẹ́ Olórìṣà",
+      "Odo Ọ̀ṣun",
+      "Ìṣẹṣẹ",
+      "Ojúbọ"
+    ]
   },
   {
     "id": "Ìborí",
@@ -50128,7 +50470,16 @@
       "diaspora_connections": "Across the African Diaspora, the comb and mirror of Ọ̀ṣun remain premier symbols of cultural survival and spiritual sovereignty. In Cuban Lucumí and Santería traditions, Ochún is venerated with a circular hand mirror ('espejo') and ornate brass comb ('peine de latón') housed inside her gilded soup tureen ('sopera'), representing maternal love, sweetness, and emotional perception. In Brazilian Candomblé Ketu and Ijexá houses, Oxum holds the 'Abebé'—a sacred brass mirror-fan often paired with golden comb ornaments—used during possession trances to gaze serenely into spiritual worlds and banish negative forces. In Trinidad Orisha and Venezuelan Espiritismo, these tools remain central to altar consecrations, connecting oceanic and riverine memories of displaced African communities back to their ancestral roots.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing the Ọ̀ṣun-Ọ̀ṣọ́ in educational exhibits, digital recreations, or cinematic media, lighting should highlight the reflective, warm amber gleam of the polished brass surfaces. The audio atmosphere should be layered with the ambient murmurs of flowing river waters, delicate chimes of small brass bells, and rhythmic recitation of Ọ̀ṣun Oríkì. Curatorial handling must emphasize sacred respect; museum-grade reproductions should be distinguished from consecrated altar artifacts, preserving the distinction between educational showcase and living devotional reality."
-    }
+    },
+    "sovereign_parent": "Ọ̀ṣun",
+    "related_entities": [
+      "CORPUS_OSUN_001",
+      "Odo Ọ̀ṣun",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "Yemọja",
+      "Òrìṣà",
+      "Ẹgbẹ́ Olórìṣà"
+    ]
   },
   {
     "id": "Epa-Mask",
@@ -50970,7 +51321,16 @@
       "diaspora_connections": "Across the transatlantic African Diaspora, the institutional ethos of the Ìyámòdó directly informed the emergence of senior female matriarchs presiding over ancestral lineage compounds and religious bastions. In Afro-Cuban Lucumí and Regla de Ocha, her heritage resonates in the sacred status accorded to elder Ìyálóòṣà and the institutional authority of senior female custodians who govern the ancestral spaces (Ilé Ẹlẹ́ègún) and manage the mortuary rites (Itutu). In Brazilian Candomblé Ketu, the foundational authority wielded by historical founding mothers—such as the lineage of the Terreiro da Casa Branca do Engenho Velho and Ilé Àṣẹ Òpó Àfọ̀njá—mirrors the Ìyámòdó’s supreme oversight, where grand matriarchs act as ultimate custodians of dynastic spiritual lineage and bridge the living community to the deified realm of the Egúngún.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing the Ìyámòdó in high-definition docudrama, cinematic, or digital archival formats, creators must avoid generic 'witch-doctor' or exoticized tropes. Lighting should employ chiaroscuro, utilizing deep earthen umbers, low-angled natural sunlight, and candle/oil-lamp glows that accentuate the somber sanctity of the Bàrà. Costume design must prioritize authentic hand-spun Indigo-dyed textiles with natural imperfections rather than glossy modern fabrics. Key visual compositions should emphasize spatial authority: the dramatic tableau of an Aláàfin—adorned in beaded crown (Adé) and expansive robes—kneeling respectfully before an elderly, composed woman whose power is understated yet absolute. Audio design should feature distant, resonant Dùndún sequences playing praise poetry (Oríkì) alongside deep silence, wind through ancient Iroko trees, and muted brass clappers."
-    }
+    },
+    "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+    "related_entities": [
+      "Ọba",
+      "Egúngún",
+      "CORPUS_ARABA_IFE_001",
+      "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "alaafin_of_oyo",
+      "Ìpínlẹ̀ Ọ̀yọ́"
+    ]
   },
   {
     "id": "Abobaku",
@@ -51530,7 +51890,7 @@
     "id": "Egbe-Onidundun",
     "title": "Egbe-Onidundun",
     "culture": "Yorùbá",
-    "category": "Spiritual & Cosmological Matrix",
+    "category": "Auditory Arts, Music, Drums & Chants",
     "aliases": [
       "egbe onidundun",
       "egbe-onidundun",
@@ -51574,7 +51934,15 @@
       "diaspora_connections": "The sonic paradigms preserved by the Ẹgbẹ́ Onídùndún represent a vital sonic umbilical cord linking the African continent to the transatlantic Yorùbá Diaspora. In the Regla de Ocha (Santería) tradition of Cuba and the Candomblé Ketu of Brazil, the consecrated worship of Añá (Àyàn) mirrors the identical Guild devotion, technical discipline, and genealogical retention found in Yorùbáland. While the Batá drum became primary in Cuban Lucumí rituals, the Dùndún tonal systems, rhythmic signatures, and Oríkì recitations laid direct aesthetic foundations for Afro-Cuban ceremonial chants, Brazilian Samba de Roda patterns, Trinidadian Orisha ceremonies, and the evolution of Global Afrobeats and Latin Jazz.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Field recordings of the Ẹgbẹ́ Onídùndún require specialized acoustic engineering to faithfully reproduce the fast transient response and broad frequency sweeps of the Ìyáàlù. Dual dynamic-condenser microphone setups are recommended: a dynamic capsule situated off-axis to capture mid-range shell impact without distortion, paired with a matched condenser overhead to document the high-frequency shimmer of the Ṣaworo bells. Cinematographers must document the biomechanics of the player's underarm compression, framing the interplay between the left arm's variable pressure and the right hand's Ọ̀pá Kọ́kọ́ articulation. Culturally, production crews should respect lineage protocols, securing consent from the Elder Baálẹ̀ Àyàn and observing traditional libation ceremonies dedicated to Àyàn Àgalú before recording sessions begin."
-    }
+    },
+    "related_entities": [
+      "Dùndún",
+      "Bàtá",
+      "Ìyá Ìlù",
+      "Òrìṣà",
+      "Ọba",
+      "Ìṣẹṣẹ"
+    ]
   },
   {
     "id": "Egbe-Gbengben",
@@ -53171,7 +53539,16 @@
       "diaspora_connections": "Across the African Diaspora, the sacred synthesis of iron and avian imagery traversed the Middle Passage, taking deep root in Afro-Atlantic spiritual traditions. In Cuban Lucumí and Santería, the iconography of the Ọ̀pá Ògún merges with the attributes of Oggún and Osun, materializing as wrought iron staves topped with metallic roosters or wild birds placed beside the warrior shrines ('Guerreros') to alert initiates against physical and spiritual ambushes. In Brazilian Candomblé Ketu, metal staves known as 'Ferramentas de Ogum' and 'Haste de Ossaim' (Opa-Ossanhe) retain identical kinetic functions: plant-based healing and protective iron defense, serving as physical anchors of ancestral survival for Afro-descendant lineages.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "Visually, the Ọ̀pá Ògún should be rendered with heavy, textured, hand-beaten charcoal-black iron, deliberately showing forge marks, chiseled striations, and slight oxidation rather than a smooth factory finish. In cinematic or game rendering, when struck against the ground, the staff should generate a low metallic hum coupled with a subtle ring of its peripheral miniature bells. Lighting should accentuate the silhouetted birds against dawn or dusk light, casting sharp, sentinel-like shadows that convey constant surveillance and inviolable territorial sovereignty."
-    }
+    },
+    "sovereign_parent": "Ògún",
+    "related_entities": [
+      "Ògún",
+      "Aja Ògún",
+      "Ẹwiri",
+      "Idà",
+      "Àdá",
+      "Ọ̀ṣọ́ọ̀sì"
+    ]
   },
   {
     "id": "Agbara-Ogun",
@@ -54324,7 +54701,16 @@
       "diaspora_connections": "During the transatlantic dispersion through the Middle Passage, the spiritual technology of Àṣẹ-Ọ̀rọ̀ was preserved within Afro-Atlantic syncretic traditions. In Cuban Lucumí and Brazilian Candomblé Ketu, its spiritual lineage survives in the ritual scepters and consecrated horns used by high-ranking priests (such as the Babaláwo and Babalorixá) and the royal messengers of Ọbàtálá, Ṣàngó, and Ọ̀sanyìn. The practice of commanding collective ritual silence and summoning divine manifestation before litanies reflects the continuous survival of the Yorùbá metaphysical voice in New World sacred ceremonies.",
       "geographical_origin": "Yorùbáland",
       "media_production_notes": "When visualizing or exhibiting the Àṣẹ-Ọ̀rọ̀, lighting should emphasize the rich, aged patina of the horn, the verdigris on the brass wiring, and the deep, dark ochre tones of the wood. Auditory depictions must capture the sudden, resonant vacuum of ambient sound when the staff is struck or raised, underscoring its historical role in compelling absolute palace court silence. Curatorial exhibitions should position the staff upright on a velvet pedestal alongside historical royal insignias (Ìbẹ̀bẹ̀ and Ìrùkẹ̀rẹ̀) to contextualize its status as an instrument of divine statecraft."
-    }
+    },
+    "sovereign_parent": "Àṣẹ",
+    "related_entities": [
+      "Ofo",
+      "Babaláwo",
+      "Àṣẹ",
+      "Orúnmìlà",
+      "Babaláwo",
+      "Èṣù"
+    ]
   },
   {
     "id": "Ewe-Ìyọ́",
@@ -55130,8 +55516,12 @@
     "geographical_origin": "Ancient Ìfẹ̀ / General Yorùbáland",
     "media_production_notes": "When producing visual or narrative content concerning Ìyámi, creators must completely avoid pejorative Western tropes such as 'witchcraft' or European-style sorcery. Depictions must highlight dignity, judicial severity, cosmic majesty, and maternal awe. Visual compositions should utilize rich contrasting palettes: deep nocturnal indigos, shimmering bronze tones, natural white chalk, and crimson parrot feathers. Sonic elements should prioritize low-register bàtá rhythms, muted iron gongs (Agogo), and reverent choral incantations (Oríkì) that evoke nocturnal grandeur and solemn ancestral authority.",
     "related_entities": [
-      "Adé",
-      "Ẹyẹ"
+      "Èṣù",
+      "Orúnmìlà",
+      "Gẹ̀lẹ̀dẹ́",
+      "Odù_Ifá",
+      "Ọ̀sanyìn",
+      "Àwọn Ìyá Àgbà Ìjọ́yè"
     ],
     "details": {
       "id": "Ìyámi",
@@ -55164,7 +55554,13 @@
         "Adé",
         "Ẹyẹ"
       ]
-    }
+    },
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "sub_variants": [
+      "Àjẹ́"
+    ]
   },
   {
     "id": "Pọ́nmọ́",
@@ -55596,7 +55992,11 @@
       "Ọ̀ṣọ́ọ̀sì",
       "Ọ̀sanyìn",
       "Erinlẹ̀",
-      "Ọbalúayé"
+      "Ọbalúayé",
+      "Òṣùmàrè",
+      "Ọbá",
+      "Olóṣa",
+      "Aje Saluga"
     ],
     "details": {
       "description": "The divine primordial divinities, deified ancestors, and cosmic emissaries of Olódùmarè governing the elements, morality, human destiny, and nature.",
@@ -55646,7 +56046,15 @@
       ]
     },
     "provenance_and_citations": "Idowu, E. Bolaji (1962). Olodumare: God in Yoruba Belief; Abiodun, Rowland (2014). Yoruba Art and Language; Bascom, William (1969). The Yoruba of Southwestern Nigeria; Verger, Pierre (1957). Notes sur le culte des orisa et vodun.",
-    "sovereign_parent_status": "Sovereign Parent Concept"
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "related_entities": [
+      "Ọ̀ta-Òrìṣà",
+      "Ìke-Òrìṣà",
+      "Ìrukẹ̀rẹ̀ Òrìṣà",
+      "Ẹbọ",
+      "Ẹgbẹ́ Olórìṣà",
+      "Ìṣẹṣẹ"
+    ]
   },
   {
     "id": "Aṣọ",
@@ -56887,7 +57295,10 @@
       "ọ̀wọ́nrín méjì",
       "ọ̀wọ́nrín",
       "ọ̀wọ́nrín meji",
-      "odu ọ̀wọ́nrín"
+      "odu ọ̀wọ́nrín",
+      "owonran",
+      "ọ̀wọ́nran",
+      "odu owonran"
     ],
     "description": "Ọ̀wọ́nrín Méjì is the #6 major chapter (Ojú Odù) of the sacred 256 Odù Ifá corpus, governing dynamic turnaround, chaotic whirlwind, sudden reversal.",
     "etymology_and_philosophy": "Derived from 'Ọ̀wọ́n-rín' ('Scarcity has taken its leave / turning rarity into circulating abundance'). Metaphysically, it signifies the vortex, the sudden tempest, and the dynamic restructuring of stagnant circumstances. Governs cosmic forces of wind, elemental turbulence, and rapid transformation. In moral philosophy, it commands Ìwà-rere through radical generosity during abundance, economic prudence in lean times, mental flexibility, and maintaining calm detachment amidst worldly volatility.",
@@ -57239,7 +57650,11 @@
       "òtúúrúpọ̀n méjì",
       "òtúúrúpọ̀n",
       "òtúúrúpọ̀n meji",
-      "odu òtúúrúpọ̀n"
+      "odu òtúúrúpọ̀n",
+      "oturupon",
+      "òtúrúpọ̀n",
+      "oturuupon",
+      "odu oturupon"
     ],
     "description": "Òtúúrúpọ̀n Méjì is the #12 major chapter (Ojú Odù) of the sacred 256 Odù Ifá corpus, governing childbearing, maternal warmth, patience under burden.",
     "etymology_and_philosophy": "Derived from 'Ò-tó-rú-pọ̀n' ('He who is worthy to cradle and bear the heavy child to fruition'). Metaphysically, it signifies the heavy maternal womb, somatic stamina, gravitational endurance, and the successful bearing of arduous life burdens. Governs cosmic forces of physical density, biological healing, and maternal perseverance. In moral philosophy, it anchors Ìwà-rere in steadfast patience through physical suffering, nurturing vulnerable lives, unshakeable loyalty to kin, and calm endurance under pressure.",
@@ -57296,7 +57711,10 @@
       "òtúá méjì",
       "òtúá",
       "òtúá meji",
-      "odu òtúá"
+      "odu òtúá",
+      "otura",
+      "òtúrá",
+      "odu otura"
     ],
     "description": "Òtúá Méjì is the #13 major chapter (Ojú Odù) of the sacred 256 Odù Ifá corpus, governing peace, spiritual wisdom, ascetic devotion, calm waters.",
     "etymology_and_philosophy": "Derived from 'Ò-tú-wá' ('The one who pacifies, reconciles, and draws humanity into harmony'). Metaphysically, it signifies the breath of prayer, spiritual diplomacy, and the serene breeze that unites disparate peoples under celestial wisdom. Governs cosmic forces of harmonious communication, intellectual clarity, and divine reconciliation. In moral philosophy, it commands Ìwà-rere through peaceful dialogue, resolving disputes without shedding blood, devout humility before Olódùmarè, and welcoming strangers with hospitality.",
@@ -79176,5 +79594,171 @@
     },
     "sacred_exclusion_awo": "Exoteric wisdom openly documented.",
     "provenance_and_citations": "Wándé Abímbọ́lá (1976), Ifá Literary Corpus; E.B. Ìdòwú (1962), Olódùmarè: God in Yoruba Belief; Rowland Abiodun (2014), Yoruba Art and Language."
+  },
+  {
+    "id": "egbe_awo",
+    "title": "Ẹgbẹ́ Awo",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "aliases": [
+      "egbe awo",
+      "ẹgbẹ́ awo",
+      "awo confraternity",
+      "order of babalawo",
+      "ifá priesthood guild",
+      "society of diviners"
+    ],
+    "sub_variants": [
+      "Àkàpò",
+      "Babaláwo",
+      "Ìyanífá",
+      "Awo Ifá"
+    ],
+    "related_entities": [
+      "Ifá",
+      "Orúnmìlà",
+      "Ìtẹ́fá",
+      "CORPUS_ARABA_IFE_001",
+      "Ojú Odù Méjìdínlógún",
+      "Ọ̀pẹ̀lẹ̀"
+    ],
+    "description": "The ancient, sacred guild and consecrated fraternal institution governing all initiated practitioners of the Ifá epistemological and divinatory canon across Yorùbáland and the diaspora.",
+    "etymology_and_philosophy": "Linguistically compounded from 'ẹgbẹ́' (confraternity, guild, or societal assembly) and 'awo' (esoteric mystery, metaphysical secret, or sacred wisdom), Ẹgbẹ́ Awo denotes the sacred collective custody of cosmological knowledge. Historically governed under the supreme primacy of the Àràbà Àgbàyé of Ilé-Ifẹ̀ alongside imperial and regional Arabas across every historic Yorùbá kingdom, Ẹgbẹ́ Awo functions as the judicial, educational, and ethical bedrock of ancestral guidance. The philosophy of the guild dictates that wisdom belongs to Olódùmarè and is channeled through Orúnmìlà, mandating that every initiated priest maintain rigorous truthfulness (Òtítọ́), noble character (Ìwà-Pẹ̀lẹ́), and selfless communal service without exploiting the vulnerable.",
+    "historical_timeline": "Dating back to the classical antiquity of Ilé-Ifẹ̀, Ẹgbẹ́ Awo emerged as the primary epistemological council advising monarchs, war generals, and communal elders. Throughout the classical epochs of Old Ọ̀yọ́, Òwu, Ìjẹ̀bú, and Kétu, royal Babalawos formed permanent advisory bodies that ratified coronation rites and military campaigns. Through centuries of transatlantic upheaval and down into the contemporary era, Ẹgbẹ́ Awo maintains standardized curricula, peer review, and ancestral ordination lineages spanning West Africa, Cuba, Brazil, and worldwide Ifá academies.",
+    "material_and_craftsmanship": "Regalia and apparatus associated with Ẹgbẹ́ Awo include the sacred Apo Ifá (divination bag of handwoven asọ-òkè or beaded leather), the Ọ̀pá Ọ̀rẹ̀rẹ̀ (iron herbalist-diviner staff surmounted by birds), the consecrated Ọ̀pẹ̀lẹ̀ chain, Ikin sacred palm nuts, and the carved Opon Ifá tray dusted with Ìyẹ̀ròsùn powder.",
+    "social_and_ritual_context": "The guild convenes regularly during lunar Itadogun (16-day) assemblies, annual Ifá festivals, and state crises. It oversees the rigorous ethical examinations, herbal apprenticeships, and ordination rituals (Ìtẹ́fá) of novitiates, ensuring that neither charlatans nor unverified doctrines pollute the sacred lineage.",
+    "proverbs_and_oral_traditions": [
+      "Awo níí gbé awo ní’kọ̀kọ̀; b’awo kò bá gbé awo ní’kọ̀kọ̀, awo á tẹ́ (An initiate elevates and shields a fellow initiate in secret; when initiates fail to uphold each other, the mystery loses its sacred honor).",
+      "Bí a bá tẹ́ awo tán, awo a tún ara rẹ̀ tẹ́ (After an initiate undergoes ordination, they must continually re-discipline and purify their own character).",
+      "A kì í fi awo dán wò; awo kì í ṣe ohun àṣedánwò (One does not toy with sacred mysteries; sacred wisdom is not a subject of reckless experimentation)."
+    ],
+    "diaspora_connections": "Preserved seamlessly within Cuban Lucumí and Regla de Ocha as the Consejo de Mayores and Babalawo fraternities, and in Brazilian Candomblé Ketu and modern international Ifá federations.",
+    "geographical_origin": "Ilé-Ifẹ̀ and Greater Yorùbáland"
+  },
+  {
+    "id": "egbe_olorisa",
+    "title": "Ẹgbẹ́ Olórìṣà",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "aliases": [
+      "egbe olorisa",
+      "ẹgbẹ́ olórìṣà",
+      "olorisha guild",
+      "society of orisha devotees",
+      "priesthood of the divinities",
+      "orisa congregation"
+    ],
+    "sub_variants": [
+      "Olórìṣà",
+      "Abọ̀rìṣà"
+    ],
+    "related_entities": [
+      "Òrìṣà",
+      "Ìṣẹṣẹ",
+      "Ọ̀ta-Òrìṣà",
+      "Ìke-Òrìṣà",
+      "Ẹbọ",
+      "Ojúbọ"
+    ],
+    "description": "The organized body, priesthood orders, and consecrated devotees dedicated to the communal veneration, shrine preservation, and liturgical propitiation of the Òrìṣà pantheon.",
+    "etymology_and_philosophy": "Formed from 'ẹgbẹ́' (guild/collective) and 'olórìṣà' (possessor or custodian of an Orisha, from 'ní' + 'òrìṣà'), Ẹgbẹ́ Olórìṣà embodies the human covenant with celestial divinities. Philosophically, the guild bridges human reality with transcendent spiritual archetypes, asserting that divinities thrive on human devotion, ethical harmony, and sacred offerings (ẹbọ), while humans derive protection, fertility, and balance from divine Àṣẹ.",
+    "historical_timeline": "Originating in the primordial ancestral shrines of Yorùbáland, Ẹgbẹ́ Olórìṣà organized dedicated lineages around specific divinities—such as the Ẹlẹ́gbẹ́ Ṣàngó in Ọ̀yọ́, the Ẹlẹ́gùn Ọ̀ṣun in Òṣogbo, and the Agbede-Ogun guild across all metallurgical towns. These orders survived colonial religious displacement and flourished across the African Diaspora in Cuba, Brazil, Trinidad, and North America.",
+    "material_and_craftsmanship": "Members carry specialized sacred emblems: Ìlèkè (consecrated glass beads tailored to each deity's color symbolism), Ọ̀ta (sacred river stones housing the divinity's spirit), Ìke (carved ivory armlets), and cast bronze, brass, or iron implements forged by sacred metalsmiths.",
+    "social_and_ritual_context": "Acts as the cultural lifeblood of town festivals, sacred dances, trance possession liturgies, healing ceremonies, and regular shrine offerings. The elders of Ẹgbẹ́ Olórìṣà ensure proper ritual protocols are observed during annual civic festivities.",
+    "proverbs_and_oral_traditions": [
+      "Orìṣà b’ó o lè gbè mí, fi mí sílẹ̀ bó o ti bá mi (Divinity, if you cannot uplift me, leave me in the state you originally met me).",
+      "Ẹni tó bọ Òrìṣà t’ó tẹ̀lé ìlànà kò ní d’arúgbó lásán (Whoever venerates the divinities and observes moral principles shall never grow old in despair).",
+      "Òrìṣà ti a bọ̀ tí kò gbè wá, a kì í sọ pé kò sí mọ́; àwọn kan ń jẹ àǹfààní rẹ̀ (A divinity that hasn't answered our plea is not dead; others are actively receiving its blessings)."
+    ],
+    "diaspora_connections": "Directly institutionalized as the Ilé Orisha, Casas de Santo, and Terreiros of Candomblé Ketu and Santería / Regla de Ocha across the Americas.",
+    "geographical_origin": "Yorùbáland"
+  },
+  {
+    "id": "awon_iya_agba_ijoye",
+    "title": "Àwọn Ìyá Àgbà Ìjọ́yè",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "aliases": [
+      "awon iya agba ijoye",
+      "àwọn ìyá àgbà ìjọ́yè",
+      "matriarchal priesthood",
+      "female sacred dignitaries",
+      "high female titles",
+      "iya agba ijoye"
+    ],
+    "sub_variants": [
+      "Iyamode",
+      "Iyaláṣẹ",
+      "Iyá Nṣo"
+    ],
+    "related_entities": [
+      "alaafin_of_oyo",
+      "Ìpínlẹ̀ Ọ̀yọ́",
+      "Ṣàngó",
+      "Àṣẹ",
+      "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "Egúngún"
+    ],
+    "description": "The august college of supreme matriarchal priestesses, royal female dignitaries, and shrine custodians who exercise supreme ancestral authority, spiritual oversight, and dynastic balance in traditional Yorùbá governance.",
+    "etymology_and_philosophy": "Composed of 'àwọn' (plural marker), 'ìyá' (mother), 'àgbà' (elder/venerable), and 'ìjọ́yè' (titled dignitary), this concept reflects the foundational Yorùbá metaphysical principle of maternal sovereignty: 'Ìyá ni wúrà' (Mother is pure gold) and the primordial authority of the feminine matrix. In royal palaces, particularly in the imperial court of Old Ọ̀yọ́ and Ilé-Ifẹ̀, these high priestesses stood above even the monarch in esoteric rank, presiding over coronation oaths, royal ancestral vaults (Bàrá), and imperial shrine sanctums.",
+    "historical_timeline": "Established during the earliest classical foundation of the Ọ̀yọ́ and Ifẹ̀ monarchies, titles such as Iyamode, Iyaláṣẹ, and Iyá Nṣo held profound constitutional power. In the Ọ̀yọ́ court, the Aláàfin kneeled only before the Iyamode as the living representative of the deified royal ancestors. They maintained perpetual custody of the dynastic regalia, mediated between the crown and the cosmological energies of Ìyámi, and preserved the spiritual immunity of the kingdom.",
+    "material_and_craftsmanship": "Their regalia comprises consecrated handwoven Kìjìpá and Aṣọ-Òkè robes in deep ancestral indigo, heavy heirloom coral and jasper beads (Ìyùn), intricately beaded leather staffs, and the sacred calabashes of divine authority (Igbá Àṣẹ).",
+    "social_and_ritual_context": "They perform the secret accession rites of kings, maintain the sacred fires of ancestral shrines, mediate high dynastic disputes, and ensure balance between masculine executive power and primordial maternal mystical energy.",
+    "proverbs_and_oral_traditions": [
+      "Ọba ń bọ̀ lẹ́yìn Ìyá; Ìyá l’ó bí Ọba (The King walks behind the Mother; for it is the Mother who births the King).",
+      "Àgbàrá kì í ya k’ó sọ p’óun kò mọ odò; ẹnìkan kì í l’ọ́lá k’ó gbàgbé Ìyá (The raging torrent cannot claim it forgets the riverbed; no one achieves supreme renown while ignoring the venerable Mother).",
+      "Àṣẹ obìnrin kì í gbẹ́; b’óbìnrin bá fi ọwọ́ rẹ̀ fún un, ó di dandan (The sacred sanction of the matriarch never fails; when a consecrated woman confirms a blessing, it becomes unbreakable law)."
+    ],
+    "diaspora_connections": "Revered as the founding mothers, Iyalorishas, and Mãe de Santos who established and led the paramount historical Candomblé and Santería temples across Salvador da Bahia, Havana, and Matanzas.",
+    "geographical_origin": "Ọ̀yọ́-Ilé, Ilé-Ifẹ̀, and Greater Yorùbáland"
+  },
+  {
+    "id": "aabo_ati_ibile",
+    "title": "Ààbò àti Ìbílẹ̀",
+    "culture": "Yorùbá",
+    "category": "Spiritual & Cosmological Matrix",
+    "is_parent": true,
+    "sovereign_parent_status": "Sovereign Parent Concept",
+    "sovereign_parent": null,
+    "aliases": [
+      "aabo ati ibile",
+      "ààbò àti ìbílẹ̀",
+      "spiritual defense",
+      "apotropaic guardians",
+      "indigenous protective sciences",
+      "ancestral defense systems"
+    ],
+    "sub_variants": [
+      "Sigidi"
+    ],
+    "related_entities": [
+      "Èṣù",
+      "Àjẹ́",
+      "Ofo",
+      "Ààbò-Orí",
+      "Ògún",
+      "Ẹbọ"
+    ],
+    "description": "The metaphysical, apotropaic, and traditional protective sciences, guardian sentinels, and consecrated barrier rituals dedicated to defending individuals, households, and sovereign communities from unseen malevolent forces.",
+    "etymology_and_philosophy": "Derived from 'ààbò' (protection, defense, sanctuary) and 'ìbílẹ̀' (indigenous, rooted in ancestral soil), this cosmological category encompasses the profound Yorùbá science of spiritual security. Philosophically, traditional defense rests on preserving spiritual equilibrium: fortifying the individual Orí against psychic predation, stationing consecrated sentinels at physical thresholds, and deploying spoken incantations (Ofo) to deflect harm back to its origin.",
+    "historical_timeline": "Developed across millennia of ancestral history and heavily mobilized during pre-colonial inter-kingdom conflicts and the nineteenth-century Kiriji wars, where hunter guilds (Ọdẹ) and warriors (Balógun) relied on consecrated mud guardians, protective amulets, and boundary covenants to safeguard besieged settlements.",
+    "material_and_craftsmanship": "Physical manifestations include consecrated earth and clay sculptures (Sigidi) sculpted with sacred river mud and medicinal herbs, forged iron spikes and padlocks consecrated to Ògún, leather-bound talismans (Ondè), and protective boundary stones buried at threshold crossroads.",
+    "social_and_ritual_context": "Enacted by specialized priests, native doctors (Oníṣègùn), and hunters to protect newborns, safeguard farms from theft, protect compounds against nocturnal witchcraft, and cleanse travelers embarking on hazardous journeys.",
+    "proverbs_and_oral_traditions": [
+      "Ààbò kì í ṣe fún ẹni t’ó gbójú lé ogun; ààbò wà fún ẹni t’ó mọ orí rẹ̀ ní’kọ̀kọ̀ (Protection is not merely for the warrior boasting of battle; protection belongs to the one who reveres their inner destiny in secret).",
+      "Ẹni tí Olódùmarè kọ́lé fún, afẹ́fẹ́ kì í gbá a lọ (The house constructed under divine protection cannot be swept away by any tempest).",
+      "Ààbò t’ó dára ju ogun lọ; àìbẹ̀rù kọ́ l’ó ń ṣẹ́gun (Prudent spiritual defense is superior to aggressive war; victory comes not from recklessness, but from divine fortification)."
+    ],
+    "diaspora_connections": "Preserved in Lucumí resguardos and Brazilian patuás and assentamentos de proteção designed to guard spiritual houses from negative intrusion.",
+    "geographical_origin": "Yorùbáland"
   }
 ]

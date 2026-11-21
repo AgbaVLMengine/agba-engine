@@ -1,0 +1,1104 @@
+{
+  "batch_id": "BATCH-002-CAT01-FORTIFICATION",
+  "description": "Category 1 Plenary Fortification: 4 New Sovereign Parents, 55 Node Alignment, Distinct Relational Spheres Saturation (>=5-6 Relatives), 3 Retired Odù Consolidation.",
+  "new_entities": [
+    {
+      "id": "egbe_awo",
+      "title": "Ẹgbẹ́ Awo",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "aliases": [
+        "egbe awo",
+        "ẹgbẹ́ awo",
+        "awo confraternity",
+        "order of babalawo",
+        "ifá priesthood guild",
+        "society of diviners"
+      ],
+      "sub_variants": [
+        "Àkàpò",
+        "Babaláwo",
+        "Ìyanífá",
+        "Awo Ifá"
+      ],
+      "related_entities": [
+        "Ifá",
+        "Orúnmìlà",
+        "Ìtẹ́fá",
+        "CORPUS_ARABA_IFE_001",
+        "Ojú Odù Méjìdínlógún",
+        "Ọ̀pẹ̀lẹ̀"
+      ],
+      "description": "The ancient, sacred guild and consecrated fraternal institution governing all initiated practitioners of the Ifá epistemological and divinatory canon across Yorùbáland and the diaspora.",
+      "etymology_and_philosophy": "Linguistically compounded from 'ẹgbẹ́' (confraternity, guild, or societal assembly) and 'awo' (esoteric mystery, metaphysical secret, or sacred wisdom), Ẹgbẹ́ Awo denotes the sacred collective custody of cosmological knowledge. Historically governed under the supreme primacy of the Àràbà Àgbàyé of Ilé-Ifẹ̀ alongside imperial and regional Arabas across every historic Yorùbá kingdom, Ẹgbẹ́ Awo functions as the judicial, educational, and ethical bedrock of ancestral guidance. The philosophy of the guild dictates that wisdom belongs to Olódùmarè and is channeled through Orúnmìlà, mandating that every initiated priest maintain rigorous truthfulness (Òtítọ́), noble character (Ìwà-Pẹ̀lẹ́), and selfless communal service without exploiting the vulnerable.",
+      "historical_timeline": "Dating back to the classical antiquity of Ilé-Ifẹ̀, Ẹgbẹ́ Awo emerged as the primary epistemological council advising monarchs, war generals, and communal elders. Throughout the classical epochs of Old Ọ̀yọ́, Òwu, Ìjẹ̀bú, and Kétu, royal Babalawos formed permanent advisory bodies that ratified coronation rites and military campaigns. Through centuries of transatlantic upheaval and down into the contemporary era, Ẹgbẹ́ Awo maintains standardized curricula, peer review, and ancestral ordination lineages spanning West Africa, Cuba, Brazil, and worldwide Ifá academies.",
+      "material_and_craftsmanship": "Regalia and apparatus associated with Ẹgbẹ́ Awo include the sacred Apo Ifá (divination bag of handwoven asọ-òkè or beaded leather), the Ọ̀pá Ọ̀rẹ̀rẹ̀ (iron herbalist-diviner staff surmounted by birds), the consecrated Ọ̀pẹ̀lẹ̀ chain, Ikin sacred palm nuts, and the carved Opon Ifá tray dusted with Ìyẹ̀ròsùn powder.",
+      "social_and_ritual_context": "The guild convenes regularly during lunar Itadogun (16-day) assemblies, annual Ifá festivals, and state crises. It oversees the rigorous ethical examinations, herbal apprenticeships, and ordination rituals (Ìtẹ́fá) of novitiates, ensuring that neither charlatans nor unverified doctrines pollute the sacred lineage.",
+      "proverbs_and_oral_traditions": [
+        "Awo níí gbé awo ní’kọ̀kọ̀; b’awo kò bá gbé awo ní’kọ̀kọ̀, awo á tẹ́ (An initiate elevates and shields a fellow initiate in secret; when initiates fail to uphold each other, the mystery loses its sacred honor).",
+        "Bí a bá tẹ́ awo tán, awo a tún ara rẹ̀ tẹ́ (After an initiate undergoes ordination, they must continually re-discipline and purify their own character).",
+        "A kì í fi awo dán wò; awo kì í ṣe ohun àṣedánwò (One does not toy with sacred mysteries; sacred wisdom is not a subject of reckless experimentation)."
+      ],
+      "diaspora_connections": "Preserved seamlessly within Cuban Lucumí and Regla de Ocha as the Consejo de Mayores and Babalawo fraternities, and in Brazilian Candomblé Ketu and modern international Ifá federations.",
+      "geographical_origin": "Ilé-Ifẹ̀ and Greater Yorùbáland"
+    },
+    {
+      "id": "egbe_olorisa",
+      "title": "Ẹgbẹ́ Olórìṣà",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "aliases": [
+        "egbe olorisa",
+        "ẹgbẹ́ olórìṣà",
+        "olorisha guild",
+        "society of orisha devotees",
+        "priesthood of the divinities",
+        "orisa congregation"
+      ],
+      "sub_variants": [
+        "Olórìṣà",
+        "Abọ̀rìṣà"
+      ],
+      "related_entities": [
+        "Òrìṣà",
+        "Ìṣẹṣẹ",
+        "Ọ̀ta-Òrìṣà",
+        "Ìke-Òrìṣà",
+        "Ẹbọ",
+        "Ojúbọ"
+      ],
+      "description": "The organized body, priesthood orders, and consecrated devotees dedicated to the communal veneration, shrine preservation, and liturgical propitiation of the Òrìṣà pantheon.",
+      "etymology_and_philosophy": "Formed from 'ẹgbẹ́' (guild/collective) and 'olórìṣà' (possessor or custodian of an Orisha, from 'ní' + 'òrìṣà'), Ẹgbẹ́ Olórìṣà embodies the human covenant with celestial divinities. Philosophically, the guild bridges human reality with transcendent spiritual archetypes, asserting that divinities thrive on human devotion, ethical harmony, and sacred offerings (ẹbọ), while humans derive protection, fertility, and balance from divine Àṣẹ.",
+      "historical_timeline": "Originating in the primordial ancestral shrines of Yorùbáland, Ẹgbẹ́ Olórìṣà organized dedicated lineages around specific divinities—such as the Ẹlẹ́gbẹ́ Ṣàngó in Ọ̀yọ́, the Ẹlẹ́gùn Ọ̀ṣun in Òṣogbo, and the Agbede-Ogun guild across all metallurgical towns. These orders survived colonial religious displacement and flourished across the African Diaspora in Cuba, Brazil, Trinidad, and North America.",
+      "material_and_craftsmanship": "Members carry specialized sacred emblems: Ìlèkè (consecrated glass beads tailored to each deity's color symbolism), Ọ̀ta (sacred river stones housing the divinity's spirit), Ìke (carved ivory armlets), and cast bronze, brass, or iron implements forged by sacred metalsmiths.",
+      "social_and_ritual_context": "Acts as the cultural lifeblood of town festivals, sacred dances, trance possession liturgies, healing ceremonies, and regular shrine offerings. The elders of Ẹgbẹ́ Olórìṣà ensure proper ritual protocols are observed during annual civic festivities.",
+      "proverbs_and_oral_traditions": [
+        "Orìṣà b’ó o lè gbè mí, fi mí sílẹ̀ bó o ti bá mi (Divinity, if you cannot uplift me, leave me in the state you originally met me).",
+        "Ẹni tó bọ Òrìṣà t’ó tẹ̀lé ìlànà kò ní d’arúgbó lásán (Whoever venerates the divinities and observes moral principles shall never grow old in despair).",
+        "Òrìṣà ti a bọ̀ tí kò gbè wá, a kì í sọ pé kò sí mọ́; àwọn kan ń jẹ àǹfààní rẹ̀ (A divinity that hasn't answered our plea is not dead; others are actively receiving its blessings)."
+      ],
+      "diaspora_connections": "Directly institutionalized as the Ilé Orisha, Casas de Santo, and Terreiros of Candomblé Ketu and Santería / Regla de Ocha across the Americas.",
+      "geographical_origin": "Yorùbáland"
+    },
+    {
+      "id": "awon_iya_agba_ijoye",
+      "title": "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "aliases": [
+        "awon iya agba ijoye",
+        "àwọn ìyá àgbà ìjọ́yè",
+        "matriarchal priesthood",
+        "female sacred dignitaries",
+        "high female titles",
+        "iya agba ijoye"
+      ],
+      "sub_variants": [
+        "Iyamode",
+        "Iyaláṣẹ",
+        "Iyá Nṣo"
+      ],
+      "related_entities": [
+        "alaafin_of_oyo",
+        "Ìpínlẹ̀ Ọ̀yọ́",
+        "Ṣàngó",
+        "Àṣẹ",
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Egúngún"
+      ],
+      "description": "The august college of supreme matriarchal priestesses, royal female dignitaries, and shrine custodians who exercise supreme ancestral authority, spiritual oversight, and dynastic balance in traditional Yorùbá governance.",
+      "etymology_and_philosophy": "Composed of 'àwọn' (plural marker), 'ìyá' (mother), 'àgbà' (elder/venerable), and 'ìjọ́yè' (titled dignitary), this concept reflects the foundational Yorùbá metaphysical principle of maternal sovereignty: 'Ìyá ni wúrà' (Mother is pure gold) and the primordial authority of the feminine matrix. In royal palaces, particularly in the imperial court of Old Ọ̀yọ́ and Ilé-Ifẹ̀, these high priestesses stood above even the monarch in esoteric rank, presiding over coronation oaths, royal ancestral vaults (Bàrá), and imperial shrine sanctums.",
+      "historical_timeline": "Established during the earliest classical foundation of the Ọ̀yọ́ and Ifẹ̀ monarchies, titles such as Iyamode, Iyaláṣẹ, and Iyá Nṣo held profound constitutional power. In the Ọ̀yọ́ court, the Aláàfin kneeled only before the Iyamode as the living representative of the deified royal ancestors. They maintained perpetual custody of the dynastic regalia, mediated between the crown and the cosmological energies of Ìyámi, and preserved the spiritual immunity of the kingdom.",
+      "material_and_craftsmanship": "Their regalia comprises consecrated handwoven Kìjìpá and Aṣọ-Òkè robes in deep ancestral indigo, heavy heirloom coral and jasper beads (Ìyùn), intricately beaded leather staffs, and the sacred calabashes of divine authority (Igbá Àṣẹ).",
+      "social_and_ritual_context": "They perform the secret accession rites of kings, maintain the sacred fires of ancestral shrines, mediate high dynastic disputes, and ensure balance between masculine executive power and primordial maternal mystical energy.",
+      "proverbs_and_oral_traditions": [
+        "Ọba ń bọ̀ lẹ́yìn Ìyá; Ìyá l’ó bí Ọba (The King walks behind the Mother; for it is the Mother who births the King).",
+        "Àgbàrá kì í ya k’ó sọ p’óun kò mọ odò; ẹnìkan kì í l’ọ́lá k’ó gbàgbé Ìyá (The raging torrent cannot claim it forgets the riverbed; no one achieves supreme renown while ignoring the venerable Mother).",
+        "Àṣẹ obìnrin kì í gbẹ́; b’óbìnrin bá fi ọwọ́ rẹ̀ fún un, ó di dandan (The sacred sanction of the matriarch never fails; when a consecrated woman confirms a blessing, it becomes unbreakable law)."
+      ],
+      "diaspora_connections": "Revered as the founding mothers, Iyalorishas, and Mãe de Santos who established and led the paramount historical Candomblé and Santería temples across Salvador da Bahia, Havana, and Matanzas.",
+      "geographical_origin": "Ọ̀yọ́-Ilé, Ilé-Ifẹ̀, and Greater Yorùbáland"
+    },
+    {
+      "id": "aabo_ati_ibile",
+      "title": "Ààbò àti Ìbílẹ̀",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "aliases": [
+        "aabo ati ibile",
+        "ààbò àti ìbílẹ̀",
+        "spiritual defense",
+        "apotropaic guardians",
+        "indigenous protective sciences",
+        "ancestral defense systems"
+      ],
+      "sub_variants": [
+        "Sigidi"
+      ],
+      "related_entities": [
+        "Èṣù",
+        "Àjẹ́",
+        "Ofo",
+        "Ààbò-Orí",
+        "Ògún",
+        "Ẹbọ"
+      ],
+      "description": "The metaphysical, apotropaic, and traditional protective sciences, guardian sentinels, and consecrated barrier rituals dedicated to defending individuals, households, and sovereign communities from unseen malevolent forces.",
+      "etymology_and_philosophy": "Derived from 'ààbò' (protection, defense, sanctuary) and 'ìbílẹ̀' (indigenous, rooted in ancestral soil), this cosmological category encompasses the profound Yorùbá science of spiritual security. Philosophically, traditional defense rests on preserving spiritual equilibrium: fortifying the individual Orí against psychic predation, stationing consecrated sentinels at physical thresholds, and deploying spoken incantations (Ofo) to deflect harm back to its origin.",
+      "historical_timeline": "Developed across millennia of ancestral history and heavily mobilized during pre-colonial inter-kingdom conflicts and the nineteenth-century Kiriji wars, where hunter guilds (Ọdẹ) and warriors (Balógun) relied on consecrated mud guardians, protective amulets, and boundary covenants to safeguard besieged settlements.",
+      "material_and_craftsmanship": "Physical manifestations include consecrated earth and clay sculptures (Sigidi) sculpted with sacred river mud and medicinal herbs, forged iron spikes and padlocks consecrated to Ògún, leather-bound talismans (Ondè), and protective boundary stones buried at threshold crossroads.",
+      "social_and_ritual_context": "Enacted by specialized priests, native doctors (Oníṣègùn), and hunters to protect newborns, safeguard farms from theft, protect compounds against nocturnal witchcraft, and cleanse travelers embarking on hazardous journeys.",
+      "proverbs_and_oral_traditions": [
+        "Ààbò kì í ṣe fún ẹni t’ó gbójú lé ogun; ààbò wà fún ẹni t’ó mọ orí rẹ̀ ní’kọ̀kọ̀ (Protection is not merely for the warrior boasting of battle; protection belongs to the one who reveres their inner destiny in secret).",
+        "Ẹni tí Olódùmarè kọ́lé fún, afẹ́fẹ́ kì í gbá a lọ (The house constructed under divine protection cannot be swept away by any tempest).",
+        "Ààbò t’ó dára ju ogun lọ; àìbẹ̀rù kọ́ l’ó ń ṣẹ́gun (Prudent spiritual defense is superior to aggressive war; victory comes not from recklessness, but from divine fortification)."
+      ],
+      "diaspora_connections": "Preserved in Lucumí resguardos and Brazilian patuás and assentamentos de proteção designed to guard spiritual houses from negative intrusion.",
+      "geographical_origin": "Yorùbáland"
+    }
+  ],
+  "entity_mutations": [
+    {
+      "id": "Òrìṣà",
+      "sub_variants": [
+        "Obàtálá",
+        "Ṣàngó",
+        "Ọ̀ṣun",
+        "Èṣù",
+        "Ògún",
+        "Ọ̀yá",
+        "Yemọja",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Ọ̀sanyìn",
+        "Erinlẹ̀",
+        "Ọbalúayé",
+        "Òṣùmàrè",
+        "Ọbá",
+        "Olóṣa",
+        "Aje Saluga"
+      ],
+      "related_entities": [
+        "Ọ̀ta-Òrìṣà",
+        "Ìke-Òrìṣà",
+        "Ìrukẹ̀rẹ̀ Òrìṣà",
+        "Ẹbọ",
+        "Ẹgbẹ́ Olórìṣà",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "CORPUS_OGUN_COSMIC_001",
+      "sub_variants": [
+        "Ògún Lákàyé",
+        "Ògún Alágbede (Blacksmith)",
+        "Ògún Ọdẹ (Hunter)",
+        "Ògún Balógun (Warrior)"
+      ],
+      "related_entities": [
+        "Idà",
+        "Àdá",
+        "Òrìṣà",
+        "Ọfà",
+        "Ọ̀kọ̀",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Ẹwiri",
+        "Opa-Ogun",
+        "Aja Ògún"
+      ]
+    },
+    {
+      "id": "Ọ̀ṣọ́ọ̀sì",
+      "sub_variants": [
+        "Ọdẹ Guilds",
+        "Ọfà Ọ̀sọ́ọ̀sì (Sacred Bow & Arrow)",
+        "Igbó Ọ̀sọ́ọ̀sì"
+      ],
+      "related_entities": [
+        "Oṣóṣì Bow",
+        "Opá Ọ̀ṣọ́ọ̀sì",
+        "Igbó",
+        "Ògún",
+        "Ọ̀sanyìn",
+        "Òrìṣà"
+      ]
+    },
+    {
+      "id": "CORPUS_OSUN_001",
+      "related_entities": [
+        "Odo Ọ̀ṣun",
+        "Yemọja",
+        "Erinlẹ̀",
+        "Òrìṣà",
+        "Osun-Oso",
+        "Àwọn Ìyá Àgbà Ìjọ́yè"
+      ]
+    },
+    {
+      "id": "Èṣù",
+      "aliases_append": [
+        "esu elegbara",
+        "esu-elegbara",
+        "elegbara",
+        "esu elegba",
+        "elegba",
+        "esu 401"
+      ],
+      "sub_variants": [
+        "Èṣù Èdá"
+      ],
+      "related_entities": [
+        "Òrìṣà",
+        "Àṣẹ",
+        "Ẹbọ",
+        "Orúnmìlà",
+        "Ààbò àti Ìbílẹ̀",
+        "Ọpọ́n Ifá"
+      ]
+    },
+    {
+      "id": "Orí",
+      "sub_variants": [
+        "Orí Inú",
+        "Orí-Òde",
+        "Àkúnlẹ̀yàn",
+        "Àkúnlẹ̀gbà",
+        "Àyànmọ́",
+        "Àjàlá Mọ̀pí",
+        "Ilé-Orí",
+        "Orírun"
+      ],
+      "related_entities": [
+        "Ààbò-Orí",
+        "Ìbonilórí",
+        "Ẹbọ",
+        "Orúnmìlà",
+        "Ẹ̀mí",
+        "Ìwà-Pẹ̀lẹ́"
+      ]
+    },
+    {
+      "id": "Ẹbọ",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "sub_variants": [
+        "Ẹbọ-Ìṣẹ́gún",
+        "Ìrúbọ"
+      ],
+      "related_entities": [
+        "Èṣù",
+        "Orúnmìlà",
+        "Orí",
+        "Ìṣẹṣẹ",
+        "Babaláwo",
+        "Ìpèsè-Ẹ̀gbẹ́"
+      ]
+    },
+    {
+      "id": "Àṣẹ",
+      "sub_variants": [
+        "Ọ̀rọ̀ Àṣẹ",
+        "Àṣẹ Ọba",
+        "Àṣẹ Babaláwo",
+        "Ọ̀pá Àṣẹ",
+        "Àṣẹ-Ọ̀rọ̀"
+      ],
+      "related_entities": [
+        "Ofo",
+        "Babaláwo",
+        "Òrìṣà",
+        "Olódùmarè",
+        "Ìwà-Pẹ̀lẹ́",
+        "Orúnmìlà"
+      ]
+    },
+    {
+      "id": "CORPUS_OSANYIN_001",
+      "sub_variants": [
+        "Àjà"
+      ],
+      "related_entities": [
+        "Ewe Èran",
+        "Ewe Ewúro",
+        "Ewe Lapalapa",
+        "Igbó",
+        "Ògún",
+        "Ọ̀ṣọ́ọ̀sì"
+      ]
+    },
+    {
+      "id": "Ìyámi",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "sub_variants": [
+        "Àjẹ́"
+      ],
+      "related_entities": [
+        "Èṣù",
+        "Orúnmìlà",
+        "Gẹ̀lẹ̀dẹ́",
+        "Odù_Ifá",
+        "Ọ̀sanyìn",
+        "Àwọn Ìyá Àgbà Ìjọ́yè"
+      ]
+    },
+    {
+      "id": "Ẹgbẹ́ Ọ̀run",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "sub_variants": [
+        "Ìpèsè-Ẹ̀gbẹ́"
+      ],
+      "related_entities": [
+        "Àbíkú",
+        "Orí",
+        "Ẹbọ",
+        "Èṣù",
+        "Ìṣẹṣẹ",
+        "Olódùmarè"
+      ]
+    },
+    {
+      "id": "Ìrukẹ̀rẹ̀",
+      "is_parent": true,
+      "sovereign_parent_status": "Sovereign Parent Concept",
+      "sovereign_parent": null,
+      "sub_variants": [
+        "Ìrukẹ̀rẹ̀ Òrìṣà"
+      ],
+      "related_entities": [
+        "Òrìṣà",
+        "Ọba",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Babaláwo",
+        "Àṣẹ",
+        "Ẹgbẹ́ Olórìṣà"
+      ]
+    },
+    {
+      "id": "Iyaláṣẹ",
+      "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "sub_variants": [
+        "Ọ̀tún-Iyaláṣẹ"
+      ],
+      "related_entities": [
+        "Àṣẹ",
+        "Òrìṣà",
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Ṣàngó",
+        "Ọba"
+      ]
+    },
+    {
+      "id": "Orúnmìlà",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Ifá",
+        "Ojú Odù Méjìdínlógún",
+        "Ìtẹ́fá",
+        "Babaláwo",
+        "Olódùmarè",
+        "Ọ̀pẹ̀lẹ̀"
+      ]
+    },
+    {
+      "id": "Òṣùmàrè",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Ọ̀ṣun",
+        "Ṣàngó",
+        "Àṣẹ",
+        "Òrìṣà",
+        "Yemọja",
+        "Olókun"
+      ]
+    },
+    {
+      "id": "Ọbá",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Ṣàngó",
+        "Ọ̀ṣun",
+        "Ọ̀yá",
+        "Odo Ọ̀ṣun",
+        "Òrìṣà",
+        "Yemọja"
+      ]
+    },
+    {
+      "id": "Olóṣa",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Olókun",
+        "Yemọja",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Òrìṣà",
+        "Ọ̀ṣun",
+        "Odo Ọ̀ṣun"
+      ]
+    },
+    {
+      "id": "Aje Saluga",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Owó-Ẹ̀yọ̀",
+        "Olókun",
+        "Ọjà",
+        "Òrìṣà",
+        "Ọ̀ṣun",
+        "Ẹgbẹ́ Olórìṣà"
+      ]
+    },
+    {
+      "id": "Àjà",
+      "sovereign_parent": "Ọ̀sanyìn",
+      "related_entities": [
+        "Igbó",
+        "Ọ̀sanyìn",
+        "Ewe Lapalapa",
+        "Ewe Ewúro",
+        "Ewe Èran",
+        "Ofo"
+      ]
+    },
+    {
+      "id": "Àjàlá Mọ̀pí",
+      "sovereign_parent": "Orí",
+      "related_entities": [
+        "Orí",
+        "Àkúnlẹ̀yàn",
+        "Orúnmìlà",
+        "Ẹ̀mí",
+        "Ìwà-Pẹ̀lẹ́",
+        "Olódùmarè"
+      ]
+    },
+    {
+      "id": "Èṣù Èdá",
+      "sovereign_parent": "Èṣù",
+      "related_entities": [
+        "Òrìṣà",
+        "Àṣẹ",
+        "Ẹbọ",
+        "Èṣù",
+        "Orúnmìlà",
+        "Ààbò àti Ìbílẹ̀"
+      ]
+    },
+    {
+      "id": "Àjẹ́",
+      "sovereign_parent": "Ìyámi (Our Mothers / Primordial Female Energy)",
+      "related_entities": [
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Ọ̀sanyìn",
+        "Èṣù",
+        "Gẹ̀lẹ̀dẹ́",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Ofo"
+      ]
+    },
+    {
+      "id": "Oṣóṣì Bow",
+      "sovereign_parent": "Ọ̀ṣọ́ọ̀sì",
+      "related_entities": [
+        "Ọ̀ṣọ́ọ̀sì",
+        "Opá Ọ̀ṣọ́ọ̀sì",
+        "Igbó",
+        "Ògún",
+        "Ọdẹ",
+        "Ọfà Ọdẹ"
+      ]
+    },
+    {
+      "id": "Opá Ọ̀ṣọ́ọ̀sì",
+      "sovereign_parent": "Ọ̀ṣọ́ọ̀sì",
+      "related_entities": [
+        "Ọ̀ṣọ́ọ̀sì",
+        "Oṣóṣì Bow",
+        "Igbó",
+        "Ògún",
+        "Ọdẹ",
+        "Òrìṣà"
+      ]
+    },
+    {
+      "id": "Opa-Ogun",
+      "sovereign_parent": "Ògún",
+      "related_entities": [
+        "Ògún",
+        "Aja Ògún",
+        "Ẹwiri",
+        "Idà",
+        "Àdá",
+        "Ọ̀ṣọ́ọ̀sì"
+      ]
+    },
+    {
+      "id": "Aja Ògún",
+      "sovereign_parent": "Ògún",
+      "related_entities": [
+        "Ògún",
+        "Opa-Ogun",
+        "Ẹwiri",
+        "Idà",
+        "Àdá",
+        "Ẹbọ"
+      ]
+    },
+    {
+      "id": "Ìrukẹ̀rẹ̀ Òrìṣà",
+      "sovereign_parent": "Ìrukẹ̀rẹ̀",
+      "related_entities": [
+        "Òrìṣà",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Babaláwo",
+        "Ẹgbẹ́ Olórìṣà",
+        "Àṣẹ",
+        "Ọba"
+      ]
+    },
+    {
+      "id": "Sigidi",
+      "sovereign_parent": "Ààbò àti Ìbílẹ̀",
+      "related_entities": [
+        "Èṣù",
+        "Àjẹ́",
+        "Ofo",
+        "Ààbò àti Ìbílẹ̀",
+        "Ẹbọ",
+        "Ògún"
+      ]
+    },
+    {
+      "id": "Osun-Oso",
+      "sovereign_parent": "Ọ̀ṣun",
+      "related_entities": [
+        "CORPUS_OSUN_001",
+        "Odo Ọ̀ṣun",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Yemọja",
+        "Òrìṣà",
+        "Ẹgbẹ́ Olórìṣà"
+      ]
+    },
+    {
+      "id": "Ìke-Òrìṣà",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Òrìṣà",
+        "Ọ̀ta-Òrìṣà",
+        "Ẹgbẹ́ Olórìṣà",
+        "Ìrukẹ̀rẹ̀ Òrìṣà",
+        "Ìṣẹṣẹ",
+        "Ọba"
+      ]
+    },
+    {
+      "id": "Ọ̀ta-Òrìṣà",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Òrìṣà",
+        "Ìke-Òrìṣà",
+        "Ẹgbẹ́ Olórìṣà",
+        "Odo Ọ̀ṣun",
+        "Ìṣẹṣẹ",
+        "Ojúbọ"
+      ]
+    },
+    {
+      "id": "Babaláwo",
+      "sovereign_parent": "Ẹgbẹ́ Awo",
+      "related_entities": [
+        "Ifá",
+        "Orúnmìlà",
+        "Ìtẹ́fá",
+        "Ọ̀pẹ̀lẹ̀",
+        "Ẹgbẹ́ Awo",
+        "Ojú Odù Méjìdínlógún"
+      ]
+    },
+    {
+      "id": "Ìyanífá",
+      "sovereign_parent": "Ẹgbẹ́ Awo",
+      "related_entities": [
+        "Ifá",
+        "Orúnmìlà",
+        "Ìtẹ́fá",
+        "Odù_Ifá",
+        "Ẹgbẹ́ Awo",
+        "Ojú Odù Méjìdínlógún"
+      ]
+    },
+    {
+      "id": "Awo Ifá",
+      "sovereign_parent": "Ẹgbẹ́ Awo",
+      "related_entities": [
+        "Ifá",
+        "Ojú Odù Méjìdínlógún",
+        "Babaláwo",
+        "Ìyanífá",
+        "Ẹgbẹ́ Awo",
+        "Ìtẹ́fá"
+      ]
+    },
+    {
+      "id": "Àkàpò",
+      "sovereign_parent": "Ẹgbẹ́ Awo",
+      "related_entities": [
+        "Babaláwo",
+        "Ifá",
+        "Ọ̀pẹ̀lẹ̀",
+        "Ẹgbẹ́ Awo",
+        "Ìtẹ́fá",
+        "Orúnmìlà"
+      ]
+    },
+    {
+      "id": "Olórìṣà",
+      "sovereign_parent": "Ẹgbẹ́ Olórìṣà",
+      "related_entities": [
+        "Òrìṣà",
+        "Ìṣẹṣẹ",
+        "Ọ̀ta-Òrìṣà",
+        "Ìke-Òrìṣà",
+        "Ẹgbẹ́ Olórìṣà",
+        "Ẹbọ"
+      ]
+    },
+    {
+      "id": "Abọ̀rìṣà",
+      "sovereign_parent": "Ẹgbẹ́ Olórìṣà",
+      "related_entities": [
+        "Ìṣẹṣẹ",
+        "Ẹbọ",
+        "Ojúbọ",
+        "Ẹgbẹ́ Olórìṣà",
+        "Òrìṣà",
+        "Ọ̀ta-Òrìṣà"
+      ]
+    },
+    {
+      "id": "Iyamode",
+      "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "related_entities": [
+        "Ọba",
+        "Egúngún",
+        "CORPUS_ARABA_IFE_001",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "alaafin_of_oyo",
+        "Ìpínlẹ̀ Ọ̀yọ́"
+      ]
+    },
+    {
+      "id": "Ọ̀tún-Iyaláṣẹ",
+      "sovereign_parent": "Iyaláṣẹ",
+      "related_entities": [
+        "Iyaláṣẹ",
+        "Àṣẹ",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Òrìṣà",
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Ọba"
+      ]
+    },
+    {
+      "id": "Iyá Nṣo",
+      "sovereign_parent": "Àwọn Ìyá Àgbà Ìjọ́yè",
+      "related_entities": [
+        "Ṣàngó",
+        "Ìpínlẹ̀ Ọ̀yọ́",
+        "alaafin_of_oyo",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Àfin Aláàfin",
+        "Àṣẹ"
+      ]
+    },
+    {
+      "id": "Ìtẹ́fá",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Ifá",
+        "Babaláwo",
+        "Ìyanífá",
+        "Ikin Ifá",
+        "Igbo Òrìṣà",
+        "Ọ̀pẹ̀lẹ̀"
+      ]
+    },
+    {
+      "id": "Egbe-Onidundun",
+      "category": "Auditory Arts, Music, Drums & Chants",
+      "related_entities": [
+        "Dùndún",
+        "Bàtá",
+        "Ìyá Ìlù",
+        "Òrìṣà",
+        "Ọba",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "Ìyẹ̀rẹ̀ Ifá",
+      "sovereign_parent": "Ifá",
+      "related_entities": [
+        "Ifá",
+        "Babaláwo",
+        "Ojú Odù Méjìdínlógún",
+        "Orúnmìlà",
+        "Ìtẹ́fá",
+        "Dùndún"
+      ]
+    },
+    {
+      "id": "Ofo",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Àṣẹ",
+        "Àṣẹ-Ọ̀rọ̀",
+        "Ọ̀sanyìn",
+        "Èṣù",
+        "Orúnmìlà",
+        "Ààbò àti Ìbílẹ̀"
+      ]
+    },
+    {
+      "id": "Ẹbọ-Ìṣẹ́gún",
+      "sovereign_parent": "Ẹbọ",
+      "related_entities": [
+        "Ògún",
+        "Ẹbọ",
+        "Èṣù",
+        "Ìrúbọ",
+        "Babaláwo",
+        "Àṣẹ"
+      ]
+    },
+    {
+      "id": "Ìrúbọ",
+      "sovereign_parent": "Ẹbọ",
+      "related_entities": [
+        "Babaláwo",
+        "Èṣù",
+        "Ẹbọ",
+        "Ìṣẹṣẹ",
+        "Orí",
+        "Orúnmìlà"
+      ]
+    },
+    {
+      "id": "Ìpèsè-Ẹ̀gbẹ́",
+      "sovereign_parent": "Ẹgbẹ́ Ọ̀run",
+      "related_entities": [
+        "Ẹgbẹ́ Ọ̀run",
+        "Ẹbọ",
+        "Èṣù",
+        "Àbíkú",
+        "Orí",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "Ààbò-Orí",
+      "sovereign_parent": "Orí",
+      "related_entities": [
+        "Orí",
+        "Ìbonilórí",
+        "Àjàlá Mọ̀pí",
+        "Ẹ̀mí",
+        "Ìwà-Pẹ̀lẹ́",
+        "Ẹbọ"
+      ]
+    },
+    {
+      "id": "Ìbonilórí",
+      "sovereign_parent": "Orí",
+      "related_entities": [
+        "Orí",
+        "Ààbò-Orí",
+        "Àjàlá Mọ̀pí",
+        "Ẹbọ",
+        "Ìwà-Pẹ̀lẹ́",
+        "Orúnmìlà"
+      ]
+    },
+    {
+      "id": "Ìba",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Olódùmarè",
+        "Òrìṣà",
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Egúngún",
+        "Orúnmìlà",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "Àsọtẹ́lẹ̀",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Ifá",
+        "Orúnmìlà",
+        "Ojú Odù Méjìdínlógún",
+        "Babaláwo",
+        "Ọ̀pẹ̀lẹ̀",
+        "Àṣẹ"
+      ]
+    },
+    {
+      "id": "Ìṣẹṣẹ",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Òrìṣà",
+        "Ifá",
+        "Egúngún",
+        "Ìwà-Pẹ̀lẹ́",
+        "Ẹgbẹ́ Olórìṣà",
+        "Olódùmarè"
+      ]
+    },
+    {
+      "id": "Ẹ̀mí",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Olódùmarè",
+        "Orí",
+        "Àjàlá Mọ̀pí",
+        "Ìwà-Pẹ̀lẹ́",
+        "Alafia",
+        "Orí-Inú"
+      ]
+    },
+    {
+      "id": "Ìwà-Pẹ̀lẹ́",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Orí",
+        "Ifá",
+        "Òrìṣà",
+        "Ọmọlúwàbí",
+        "Alafia",
+        "Ìfọ̀kanbalẹ̀"
+      ]
+    },
+    {
+      "id": "Orí-Òde",
+      "sovereign_parent": "Orí",
+      "related_entities": [
+        "Orí-Inú",
+        "Àkúnlẹ̀yàn",
+        "Àjàlá Mọ̀pí",
+        "Ààbò-Orí",
+        "Ìbonilórí",
+        "Ẹ̀mí"
+      ]
+    },
+    {
+      "id": "Àṣẹ-Ọ̀rọ̀",
+      "sovereign_parent": "Àṣẹ",
+      "related_entities": [
+        "Ofo",
+        "Babaláwo",
+        "Àṣẹ",
+        "Orúnmìlà",
+        "Babaláwo",
+        "Èṣù"
+      ]
+    },
+    {
+      "id": "Alafia",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Ìfọ̀kanbalẹ̀",
+        "Ogbó-àti-Tọ́",
+        "Ẹbọ",
+        "Ìwà-Pẹ̀lẹ́",
+        "Ẹ̀mí",
+        "Orí"
+      ]
+    },
+    {
+      "id": "Ogbó-àti-Tọ́",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Alafia",
+        "Ìwà-Pẹ̀lẹ́",
+        "Àṣẹ",
+        "Ìfọ̀kanbalẹ̀",
+        "Ẹbọ",
+        "Olódùmarè"
+      ]
+    },
+    {
+      "id": "Ìfọ̀kanbalẹ̀",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Ìwà-Pẹ̀lẹ́",
+        "Alafia",
+        "Ogbó-àti-Tọ́",
+        "Orí",
+        "Ẹ̀mí",
+        "Suurù"
+      ]
+    },
+    {
+      "id": "Àìṣòótọ́",
+      "is_parent": false,
+      "sovereign_parent": null,
+      "sub_variants": [],
+      "related_entities": [
+        "Aiye Kooto",
+        "Ìwà-Pẹ̀lẹ́",
+        "Suurù",
+        "Ọ̀wọ́nrín Méjì",
+        "Èṣù",
+        "Ifá"
+      ]
+    }
+  ],
+  "retired_entities": [
+    {
+      "id": "Ọ̀wọ́nran",
+      "merge_into_id": "ODU_006_Ọ̀wọ́nrín",
+      "add_aliases": [
+        "owonran",
+        "ọ̀wọ́nran",
+        "odu owonran"
+      ]
+    },
+    {
+      "id": "Òtúrúpọ̀n",
+      "merge_into_id": "ODU_012_Òtúúrúpọ̀n",
+      "add_aliases": [
+        "oturupon",
+        "òtúrúpọ̀n",
+        "oturuupon",
+        "odu oturupon"
+      ]
+    },
+    {
+      "id": "Òtúrá",
+      "merge_into_id": "ODU_013_Òtúá",
+      "add_aliases": [
+        "otura",
+        "òtúrá",
+        "odu otura"
+      ]
+    }
+  ],
+  "expected_invariants": [
+    {
+      "type": "entity_count_delta",
+      "delta": 1
+    },
+    {
+      "type": "not_in_sub_variants",
+      "parent_id": "CORPUS_OGUN_COSMIC_001",
+      "child_title": "Ẹwiri Blacksmith Hearth"
+    },
+    {
+      "type": "in_related_entities",
+      "entity_id": "CORPUS_OGUN_COSMIC_001",
+      "target": "Ẹwiri"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Egbe-Onidundun",
+      "field": "category",
+      "expected": "Auditory Arts, Music, Drums & Chants"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Òṣùmàrè",
+      "field": "sovereign_parent",
+      "expected": "Òrìṣà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Ọbá",
+      "field": "sovereign_parent",
+      "expected": "Òrìṣà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Àjà",
+      "field": "sovereign_parent",
+      "expected": "Ọ̀sanyìn"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Babaláwo",
+      "field": "sovereign_parent",
+      "expected": "Ẹgbẹ́ Awo"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Iyamode",
+      "field": "sovereign_parent",
+      "expected": "Àwọn Ìyá Àgbà Ìjọ́yè"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Sigidi",
+      "field": "sovereign_parent",
+      "expected": "Ààbò àti Ìbílẹ̀"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Orúnmìlà",
+      "field": "sovereign_parent",
+      "expected": null
+    },
+    {
+      "type": "disjoint_variants_relatives",
+      "target_ids": [
+        "Òrìṣà",
+        "CORPUS_OGUN_COSMIC_001",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Orí",
+        "Ẹbọ",
+        "egbe_awo",
+        "egbe_olorisa",
+        "awon_iya_agba_ijoye",
+        "aabo_ati_ibile"
+      ]
+    }
+  ]
+}
