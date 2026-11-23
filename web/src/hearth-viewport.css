@@ -1,0 +1,266 @@
+/* ==============================================================================
+   ỌPỌ́N IFÁ CELESTIAL FLOW & GLOW ANIMATIONS (VASCULAR VEINS & HEARTH)
+   ============================================================================== */
+@keyframes veinCascading {
+  0% {
+    stroke-dashoffset: 120;
+    stroke-opacity: 0.4;
+  }
+  50% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 0.4;
+  }
+}
+
+@keyframes ringGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.7));
+  }
+}
+
+@keyframes goldenDustPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.45;
+    filter: blur(40px);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+    filter: blur(55px);
+  }
+}
+
+.cascading-vein {
+  stroke-dasharray: 8 5;
+  animation: veinCascading 2.8s linear infinite;
+}
+
+.glowing-ring {
+  animation: ringGlow 4s ease-in-out infinite;
+}
+
+.dust-heart {
+  animation: goldenDustPulse 4.5s ease-in-out infinite;
+}
+
+/* ==============================================================================
+   🧭 ỌPỌ́N IFÁ SEARCH CORE & HEARTH CAPSULE BASE RULES
+   ============================================================================== */
+.opon-search-core-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.opon-search-core-container svg {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.opon-search-wrapper {
+  position: absolute;
+  top: 102px;
+  width: 90%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 20;
+  transition: top 0.25s ease, width 0.25s ease;
+}
+
+.opon-root-pods-container {
+  position: relative;
+  z-index: 25;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.opon-root-pods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==============================================================================
+   📱 MOBILE-FIRST RESPONSIVE NAV & ỌPỌ́N IFÁ VIEWPORT RULES (<900px)
+   ============================================================================== */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-nav-toggle {
+    display: inline-flex !important;
+  }
+  .cloud-run-badge .cloud-run-text {
+    display: none;
+  }
+  .mobile-heading-compact {
+    font-size: 1.8rem !important;
+    margin-bottom: 2px !important;
+  }
+  .mobile-subtitle-compact {
+    font-size: 0.78rem !important;
+    padding: 0 12px;
+  }
+  .opon-search-wrapper {
+    top: 22% !important;
+    width: 92% !important;
+  }
+}
+
+/* ==============================================================================
+   📱 MOBILE-FIRST ỌPỌ́N IFÁ & SCROLL SERENITY (<640px)
+   Edge-to-edge serenity: zero jitter, proportional hearth scaling, non-clipping diacritics
+   ============================================================================== */
+@media (max-width: 640px) {
+  .font-royal {
+    letter-spacing: normal !important;
+  }
+
+  .opon-search-core-container {
+    max-width: 100vw !important;
+    overflow-x: clip !important;
+    overflow: hidden !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    box-sizing: border-box !important;
+  }
+
+  .opon-search-wrapper {
+    top: clamp(44px, 16vw, 76px) !important;
+    width: 88% !important;
+    max-width: 320px !important;
+  }
+
+  .opon-input-capsule {
+    padding: 5px 8px !important;
+    border-radius: 12px !important;
+    gap: 6px !important;
+  }
+
+  .opon-input-capsule input {
+    font-size: 0.84rem !important;
+  }
+
+  .opon-search-btn {
+    padding: 5px 10px !important;
+    font-size: 0.76rem !important;
+    border-radius: 8px !important;
+  }
+
+  .opon-diacritics-toggle {
+    margin-top: 5px !important;
+    padding: 2px 10px !important;
+    font-size: 0.64rem !important;
+  }
+
+  .opon-diacritics-grid {
+    margin-top: 6px !important;
+    padding: 6px !important;
+    gap: 4px !important;
+    max-width: 280px !important;
+  }
+
+  .opon-diacritic-btn {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 0.70rem !important;
+  }
+
+  .opon-root-pods-container {
+    margin-top: 4px !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+  }
+
+  .opon-root-pods-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .root-pod {
+    border-radius: 12px !important;
+    padding: 9px 11px !important;
+    min-width: 0 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .root-pod-badge {
+    font-size: 0.60rem !important;
+    gap: 3px !important;
+    line-height: 1.3 !important;
+  }
+
+  .root-pod-title {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+    padding: 2px 0 3px 0 !important;
+    word-break: break-word !important;
+  }
+
+  .root-pod-desc {
+    font-size: 0.68rem !important;
+    line-height: 1.35 !important;
+  }
+}
+
+/* ==============================================================================
+   📱 NARROW MOBILE SCREENS (<380px)
+   ============================================================================== */
+@media (max-width: 380px) {
+  .opon-search-wrapper {
+    top: clamp(38px, 14vw, 56px) !important;
+    width: 92% !important;
+    max-width: 290px !important;
+  }
+
+  .opon-root-pods-grid {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+}
+
+/* ==============================================================================
+   🏛️ MUSEUM REGALIA MODAL: RESPONSIVE MOBILE STACKING (<768px)
+   ============================================================================== */
+.regalia-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .regalia-modal-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .regalia-modal-image-container {
+    max-height: 280px !important;
+    width: 100% !important;
+  }
+
+  .regalia-modal-table-container {
+    padding: 14px !important;
+  }
+
+  .regalia-modal-table td {
+    padding: 6px 0 !important;
+    font-size: 0.84rem !important;
+    word-break: break-word !important;
+  }
+}
+
+

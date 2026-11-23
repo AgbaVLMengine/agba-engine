@@ -97,9 +97,9 @@ export function useRootNetworkNodes(query, masterCorpus = []) {
           .slice(0, 4);
       }
     } else {
-      // Autonomous Canon: self-contained node, siblings from related category/matches
+      // Autonomous Canon: strictly self-contained. Bar loose search matches from becoming fake variants.
       parentNode = matchedNode;
-      childVariants = matches.filter((m) => stripAccents(m.title) !== stripAccents(parentNode.title)).slice(0, 4);
+      childVariants = [];
     }
 
     const relatedRegalia = findVisualRegaliaHit(parentNode.title) || findVisualRegaliaHit(qTrim);

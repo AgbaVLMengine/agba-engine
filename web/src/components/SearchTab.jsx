@@ -5,6 +5,8 @@ import { useRootNetworkNodes } from '../hooks/useRootNetworkNodes';
 import AarinimoSearchCore from './AarinimoSearchCore';
 import VeinRabbitHoleCanvas from './VeinRabbitHoleCanvas';
 import EntityBentoDeck from './EntityBentoDeck';
+import TonalDisambiguationFork from './TonalDisambiguationFork';
+import { detectTonalHomographs } from '../utils/tonalDisambiguator';
 import { resolveKnowledgeGraphRelatives } from '../utils/relativesResolver';
 import { hydrateSubVariantFromParent, findSubVariantMatchInCorpus } from '../utils/subVariantHydrator';
 import { extractTonalContour } from '../utils/tonalContour';
@@ -178,6 +180,10 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
 
   const tonalContour = topMatch ? extractTonalContour(topMatch.title) : [];
 
+  const homographCandidates = useMemo(() => {
+    return detectTonalHomographs(query, masterCorpus);
+  }, [query]);
+
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 16px' }}>
       {/* 1. CENTRAL ÀÁRÍN ÌMỌ̀ CONCENTRIC SEARCH HEARTH & MULTI-CULTURE SWITCHER */}
@@ -238,6 +244,16 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         </div>
       )}
 
+      {/* Tonal Disambiguation Fork for ASCII users */}
+      <TonalDisambiguationFork
+        candidates={homographCandidates}
+        query={query}
+        onSelectCandidate={(candidate) => {
+          setQuery(candidate.title);
+          executeSearch(candidate.title, { isBranchHop: false });
+        }}
+      />
+
       {/* 3. 12-COLUMN CELLULAR BENTO DECK & 14-TIER GRAPH */}
       <EntityBentoDeck
         topMatch={topMatch}
@@ -246,6 +262,7 @@ export default function SearchTab({ apiBaseUrl, onOpenFeedback }) {
         relatedMatches={relatedMatches}
         onBranchToRelative={handleBranchToRelative}
         onOpenFeedback={onOpenFeedback}
+        masterCorpus={masterCorpus}
       />
     </div>
   );

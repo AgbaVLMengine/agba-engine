@@ -1803,3 +1803,61 @@ The upcoming execution will strictly adhere to the Gate 2 compliant, Single-Draw
    - 100% of all IDs and titles referenced in `sovereign_parent`, `sub_variants`, and `related_entities` resolve to live canonical nodes.
 5. **Sanctuary Health Audit:**
    - All 9 production gates passed with **0 hard violations and 0 warnings**.
+
+## 22. Royal Audit Inquest & Frontend Handoff Specification for Ọlọ́yè Àgbẹ̀dẹ (UI Drawer)
+**Date:** Monday, November 23, 2026 (13:50 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Direct Handoff Target:** `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder` — Master UI Architect)
+
+---
+
+### 1. Mandatory Frontend Architectural Invariants for Today's UI Pass
+
+Kábíyèsí's live manual audit on Monday morning revealed two critical frontend resolver behaviors that must be solved in `web/src/` today under the Single-Drawer Law:
+
+#### Directive 1: Elimination of `sub_variants` Prepending in `web/src/utils/relativesResolver.js`
+- **Location:** `relativesResolver.js` lines 116–120.
+- **The Defect:** The Tier 1 relative resolver previously concatenated `details.sub_variants` ahead of `details.related_entities`:
+  ```javascript
+  // ❌ PREVIOUS FLAW:
+  const explicitNames = [
+    ...(Array.isArray(details.sub_variants) ? details.sub_variants : []),
+    ...(Array.isArray(details.related_entities) ? details.related_entities : []),
+    ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
+  ];
+  ```
+  This caused Cell 6 to populate with Cell 4 variants (e.g. `Iyamode` appearing in Cell 6 of `Àwọn Ìyá Àgbà Ìjọ́yè`, `Àkàpò` in `Ẹgbẹ́ Awo`, and `Obàtálá` in `Òrìṣà`).
+- **Required Fix:** Strip `sub_variants` completely from `explicitNames` in `relativesResolver.js`:
+  ```javascript
+  // ✅ MANDATORY ARCHITECTURAL INVARIANT:
+  const explicitNames = [
+    ...(Array.isArray(details.related_entities) ? details.related_entities : []),
+    ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
+  ];
+  ```
+  *Result:* Guarantees $\text{Cell 4} \cap \text{Cell 6} = \emptyset$ at the UI rendering level.
+
+#### Directive 2: Pure Autonomous Canon Isolation in `web/src/hooks/useRootNetworkNodes.js`
+- **Location:** `useRootNetworkNodes.js` line 102.
+- **The Defect:** For `AUTONOMOUS_CANON` entities, the previous code had an unconstrained fallback:
+  ```javascript
+  // ❌ PREVIOUS FLAW:
+  childVariants = matches.filter((m) => stripAccents(m.title) !== stripAccents(parentNode.title)).slice(0, 4);
+  ```
+  This caused `Fìlà` (which has alias `"fila orunmila"`) to appear as a variant of `Orúnmìlà`, and `Adire-Iba` + `Basọ̀run Olúyọ̀lé` to appear as variants of `Ìba`.
+- **Required Fix:** Strictly enforce that Autonomous Canon nodes are self-contained with zero variants:
+  ```javascript
+  // ✅ MANDATORY ARCHITECTURAL INVARIANT:
+  } else {
+    // Autonomous Canon: strictly self-contained. Bar loose query matches from becoming fake variants.
+    parentNode = matchedNode;
+    childVariants = [];
+  }
+  ```
+  *Result:* Guarantees that Autonomous pillars render cleanly without parasitic variants.
+
+---
+
+### 2. Alignment with Backend Replacements
+The backend replacements approved by Kábíyèsí (Section 21) are staged and ready for inscription into the next declarative sanitation fixture once Àgbẹ̀dẹ completes the UI execution pass.

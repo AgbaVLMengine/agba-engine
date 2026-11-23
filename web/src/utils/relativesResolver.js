@@ -113,9 +113,9 @@ export function resolveKnowledgeGraphRelatives(topMatch, masterCorpus, limit = 6
 
   const selfCategory = topMatch.category || details.category;
 
-  // Tier 1: Explicit sub_variants, related_entities, and cultural_relatives (NFC-first)
+  // Tier 1: Explicit related_entities and cultural_relatives (NFC-first)
+  // Strictly enforce Law of Distinct Relational Spheres: Cell 6 must NEVER pull from sub_variants!
   const explicitNames = [
-    ...(Array.isArray(details.sub_variants) ? details.sub_variants : []),
     ...(Array.isArray(details.related_entities) ? details.related_entities : []),
     ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
   ];

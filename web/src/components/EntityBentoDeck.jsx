@@ -16,7 +16,8 @@ export default function EntityBentoDeck({
   tonalContour,
   relatedMatches,
   onBranchToRelative,
-  onOpenFeedback
+  onOpenFeedback,
+  masterCorpus = []
 }) {
   const [tier14Open, setTier14Open] = useState(false);
   const [provenanceOpen, setProvenanceOpen] = useState(false);
@@ -24,15 +25,18 @@ export default function EntityBentoDeck({
 
   if (!topMatch) return null;
 
-  const classification = getOntologicalClassification(topMatch);
+  const classification = getOntologicalClassification(topMatch, masterCorpus);
+  const effectiveParent = classification?.parentTitle || topMatch.sovereign_parent || topMatch.details?.sovereign_parent;
   const isParent = classification?.tier === ONTOLOGICAL_TIER.SOVEREIGN_PARENT;
-  const isVariant = classification?.tier === ONTOLOGICAL_TIER.LIVING_VARIANT;
+  const isVariant = (classification?.tier === ONTOLOGICAL_TIER.LIVING_VARIANT) ||
+    Boolean(effectiveParent && stripAccents(effectiveParent) !== stripAccents(topMatch.title));
+  const parentTitleToDisplay = classification?.parentTitle || effectiveParent;
   const etymologyText = topMatch.details?.etymology_and_philosophy || topMatch.etymology_and_philosophy || 'Rooted in ancestral Yorùbá philosophy and cultural identity.';
 
   const tier14Items = [
     ['1. Canonical Entity ID', topMatch.details?.id || topMatch.id, true],
     ['2. Canonical Title (25-Letter Orthography)', topMatch.details?.title || topMatch.title, false],
-    ['3. Sovereign Parent Classification', isParent ? 'Sovereign Parent Concept' : isVariant ? `Living Sub-Variant of ${classification.parentTitle}` : 'Autonomous Cultural Canon', false],
+    ['3. Sovereign Parent Classification', isParent ? 'Sovereign Parent Concept' : isVariant ? `Living Sub-Variant of ${parentTitleToDisplay}` : 'Autonomous Cultural Canon', false],
     ['4. Cultural Domain Category', topMatch.details?.category || topMatch.category, false],
     ['5. Aliases & Cross-Dialect Variants', (topMatch.details?.aliases || []).join(', ') || 'Canonical primary nomenclature', false],
     ['6. Primary Cultural Description', topMatch.details?.description, false],
@@ -239,7 +243,7 @@ export default function EntityBentoDeck({
       </div>
 
       {/* ANCESTRY RIBBON FOR LIVING VARIANTS */}
-      {isVariant && classification?.parentTitle && (
+      {isVariant && parentTitleToDisplay && (
         <div style={{
           marginTop: '16px',
           padding: '12px 18px',
@@ -257,12 +261,12 @@ export default function EntityBentoDeck({
               👑 Sovereign Parent Lineage:
             </span>
             <span style={{ fontSize: '0.92rem', color: '#f8fafc', fontWeight: 600 }}>
-              {classification.parentTitle}
+              {parentTitleToDisplay}
             </span>
           </div>
           <button
             type="button"
-            onClick={() => onBranchToRelative({ title: classification.parentTitle, is_parent: true }, 'Sovereign Ancestry')}
+            onClick={() => onBranchToRelative({ title: parentTitleToDisplay, is_parent: true }, 'Sovereign Ancestry')}
             style={{
               background: 'rgba(217, 119, 6, 0.2)',
               border: '1px solid #d97706',

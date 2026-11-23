@@ -1348,6 +1348,111 @@ The automated verification suite ([`scripts/audit_ui_dom_integrity.py`](file:///
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — FORENSIC AUTOPSY OF POST-BATCH-02 AUDIT GLITCHES & CROSS-DRAWER ACTION PLAN
+**Document ID:** `REPORT-SUURU-POST-BATCH-02-AUTOPSY`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Monday, November 23, 2026 (13:54 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Cross-Council Audience:** `Ọlọ́yè Àgbà` (`agba-pa-architect`), `Ọlọ́yè Àrọ̀kìn` (`arokin-historian`), `Ọlọ́yè Àgbẹ̀dẹ` (`agbede-builder`), `Ọlọ́yè Òye` (`oye-auditor`)  
+
+---
+
+## 1. Executive Confession & Root-Cause Autopsy
+
+Following Kábíyèsí's comprehensive Monday morning manual audit, Ọlọ́yè Sùúrù has conducted an exhaustive forensic inquest into why automated test suites passed 100% while critical UX regressions were visible to royal eyes.
+
+### The Two Underlying Architectural Defects:
+
+1. **The Resolver Concatenation Bug (`web/src/utils/relativesResolver.js` lines 117–121):**
+   ```javascript
+   // ❌ CRITICAL ARCHITECTURAL FLAW:
+   const explicitNames = [
+     ...(Array.isArray(details.sub_variants) ? details.sub_variants : []),
+     ...(Array.isArray(details.related_entities) ? details.related_entities : []),
+     ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
+   ];
+   ```
+   **Why It Failed:** Even though `entity.related_entities` on disk was strictly disjoint from `entity.sub_variants`, `relativesResolver.js` prepended `details.sub_variants` into `explicitNames`. The UI thus **forced an entity's own children into Cell 6 before reading its actual related entities**! This caused every Sovereign Parent (`Àwọn Ìyá Àgbà Ìjọ́yè`, `Ẹgbẹ́ Awo`, `Ẹgbẹ́ Olórìṣà`, `Ààbò àti Ìbílẹ̀`, `Ọ̀pẹ̀lẹ̀`, `Orí`, `Òrìṣà`, `Ẹbọ`, `Àṣẹ`) to display its living variants in Cell 6.
+
+2. **The Loose Alias Usurpation in Autonomous Nodes (`useRootNetworkNodes.js` line 80):**
+   When an entity was `AUTONOMOUS_CANON` (e.g., `Orúnmìlà` or `Ìba`), line 80 ran:
+   ```javascript
+   childVariants = matches.filter((m) => stripAccents(m.title) !== stripAccents(parentNode.title)).slice(0, 4);
+   ```
+   Because `Fìlà` carries the alias `'fila orunmila'`, searching `"Orunmila"` caused `Fìlà` to be loosely matched and rendered in the hearth pods as a "Living Variant" of `Orúnmìlà`. The same mechanism caused `Adire-Iba` and `Basọ̀run Olúyọ̀lé` to attach to `Ìba`.
+
+---
+
+## 2. Immediate Surgical Task for Ọlọ́yè Àgbẹ̀dẹ (Drawer A — Frontend UI Today)
+
+Under the Single-Drawer Law, **zero backend data files are modified today**. Ọlọ́yè Àgbẹ̀dẹ will execute these two surgical UI fixes in `web/src/`:
+
+1. **Purge `sub_variants` from `relativesResolver.js`:**
+   In `web/src/utils/relativesResolver.js` (line 117), delete `details.sub_variants` from `explicitNames`:
+   ```javascript
+   // Strictly enforce the Law of Distinct Relational Spheres: Cell 6 must NEVER pull from sub_variants!
+   const explicitNames = [
+     ...(Array.isArray(details.related_entities) ? details.related_entities : []),
+     ...(Array.isArray(details.cultural_relatives) ? details.cultural_relatives : [])
+   ];
+   ```
+   *Immediate Result:* Cell 6 for all Sovereign Parents stops duplicating Cell 4 variants.
+
+2. **Enforce `childVariants = []` for Autonomous Canon in `useRootNetworkNodes.js`:**
+   In `web/src/hooks/useRootNetworkNodes.js` (lines 78–81):
+   ```javascript
+   } else {
+     // Autonomous Canon: strictly self-contained. Bar loose search matches from becoming fake variants.
+     parentNode = matchedNode;
+     childVariants = [];
+   }
+   ```
+   *Immediate Result:* `Orúnmìlà` and `Ìba` stand pristine as sovereign autonomous pillars; `Fìlà` and `Adire-Iba` are barred from the hearth pods.
+
+---
+
+## 3. Curated Master Manifest for Ọlọ́yè Àrọ̀kìn (Drawer B — Corpus Ingestion)
+
+When Drawer B is scheduled for backend ingestion, Ọlọ́yè Àrọ̀kìn will ingest the following certified 16-node replacement matrix into `category01_sanitation_batch03.json`:
+
+| Entity Target | Issue Found | Curated Replacements / Action | Final Curated `related_entities` (Cell 6) |
+| :--- | :--- | :--- | :--- |
+| **`Àwọn Ìyá Àgbà Ìjọ́yè`** | Children `Iyamode`, `Iyaláṣẹ`, `Iyá Nṣo` in Cell 6 | Replace with palace, confraternity, & metallurgy | `['alaafin_of_oyo', 'Ìpínlẹ̀ Ọ̀yọ́', 'Ṣàngó', 'Àfin Aláàfin', 'Ògbóni', 'Idẹ']` |
+| **`Ẹgbẹ́ Awo`** | Children `Àkàpò`, `Babaláwo`, `Ìyanífá`, `Awo Ifá` in Cell 6 | Replace with sacerdotal Ifá implements & powder | `['Ifá', 'Orúnmìlà', 'Ìtẹ́fá', 'Ikin Ifá', 'Ọpọ́n Ifá', 'Ìyẹ̀ròsùn']` |
+| **`Ààbò àti Ìbílẹ̀`** | Child `Sigidi` in Cell 6 | Replace with traditional medicine | `['Èṣù', 'Àjẹ́', 'Ofo', 'Ààbò-Orí', 'Ògún', 'Ẹbọ']` |
+| **`Ẹgbẹ́ Olórìṣà`** | Children `Olórìṣà`, `Abọ̀rìṣà` in Cell 6 | Replace with sacred liturgy & altar arts | `['Òrìṣà', 'Ìṣẹṣẹ', 'Ọ̀ta-Òrìṣà', 'Ìke-Òrìṣà', 'Ẹbọ', 'Orin Òrìṣà']` |
+| **`Ọ̀pẹ̀lẹ̀`** | Children `Ọ̀pẹ̀lẹ̀ Agbalagba`, `Idẹ` in Cell 6 | Replace with sacred powder & mat | `['Ifá', 'Babaláwo', 'Ọpọ́n Ifá', 'Ikin Ifá', 'Ìyẹ̀ròsùn', 'Ẹní Ifá']` |
+| **`Orí`** | Children `Orí-Òde`, `Àkúnlẹ̀yàn`, etc. in Cell 6 | Replace with cowrie shrine, naming rite, etc. | `['Ààbò-Orí', 'Ìbonilórí', 'Ilé-Orí', 'Orúnmìlà', 'Ẹ̀mí', 'Ìwà-Pẹ̀lẹ́']` |
+| **`Ẹgbẹ́ Ọ̀run`** | Child `Ìpèsè-Ẹ̀gbẹ́` in Cell 6 | Replace with astral covenant concepts | `['Àbíkú', 'Orí', 'Ẹbọ', 'Èṣù', 'Ìṣẹṣẹ', 'Olódùmarè']` |
+| **`Ìyámi`** | Remove `Àjẹ́`, `Orúnmìlà`, `Èṣù`; add `Àṣẹ`, `Ògbóni`, `Ọba` | Purge 3, add 3 royal/matrix nodes | `['Àṣẹ', 'Ògbóni', 'Ọba', 'Gẹ̀lẹ̀dẹ́', 'Odù Ifá', 'Àwọn Ìyá Àgbà Ìjọ́yè']` |
+| **`Ògún`** | Living variant `Ògún Lákàyé` in Cell 6 | Replace with `Aja Ògún` (sacred hound) | `['Idà', 'Àdá', 'Òrìṣà', 'Ọfà', 'Ọ̀kọ̀', 'Aja Ògún', 'Ẹwiri', 'Opa-Ogun', 'Ọ̀ṣọ́ọ̀sì']` |
+| **`Òrìṣà`** | Children `Obàtálá`, `Ṣàngó`, etc. in Cell 6 | Replace with altar sanctuary & hymns | `['Ọ̀ta-Òrìṣà', 'Ìke-Òrìṣà', 'Ìrukẹ̀rẹ̀ Òrìṣà', 'Ẹgbẹ́ Olórìṣà', 'Ìṣẹṣẹ', 'Ilé-Ìjọ́sìn']` |
+| **`Ọ̀ṣọ́ọ̀sì`** | Secular `Igbó` in Cell 6 | Replace `Igbó` with `Igbó Ọ̀sọ́ọ̀sì` | `['Oṣóṣì Bow', 'Opá Ọ̀ṣọ́ọ̀sì', 'Igbó Ọ̀sọ́ọ̀sì', 'Ògún', 'Ọ̀sanyìn', 'Òrìṣà']` |
+| **`Ẹbọ`** | Children `Ẹbọ-Ìṣẹ́gún`, `Ìrúbọ` in Cell 6 | Replace with offering plate & cooling herbs | `['Èṣù', 'Orúnmìlà', 'Orí', 'Ìṣẹṣẹ', 'Babaláwo', 'Opon-Ẹbọ']` |
+| **`Àṣẹ`** | Children `Ọ̀pá Àṣẹ`, `Àṣẹ-Ọ̀rọ̀` in Cell 6 | Replace with offering & moral poise | `['Ofo', 'Babaláwo', 'Òrìṣà', 'Olódùmarè', 'Ẹbọ', 'Ìwà-Pẹ̀lẹ́']` |
+| **`Ìba`** | Lacks mononym aliases; loose search drift | Ingest aliases: `['iba', 'ìba', 'homage', 'reverence', 'opening prayer', 'iba se']` | `['Olódùmarè', 'Òrìṣà', 'Ìyámi (Our Mothers / Primordial Female Energy)', 'Egúngún', 'Orúnmìlà', 'Ìṣẹṣẹ']` |
+| **`Àṣẹ-Ọ̀rọ̀`** | Remove `Ofo`, `Babaláwo`, `Orúnmìlà`, `Èṣù`; add royalty | Add `Owó-Ẹ̀yọ̀`, `Aláàfin`, `Ọba`, `Akígun` (new) | `['Owó-Ẹ̀yọ̀', 'Aláàfin', 'Ọba', 'Akígun', 'Àṣẹ', 'Àṣẹ Babaláwo']` |
+| **`Àìṣòótọ́`** | Remove `Ọ̀wọ́nrín Méjì`, `Èṣù`; add judicial gods | Replace with `Ògbóni` (truth) and `Ògún` (oaths) | `['Aiye Kooto', 'Ìwà-Pẹ̀lẹ́', 'Suurù', 'Ògbóni', 'Ògún', 'Ifá']` |
+
+---
+
+## 4. Upgraded QA Testing Contract for Sùúrù
+
+Moving forward, Sùúrù's benchmark runner ([`scripts/audit_ui_dom_integrity.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/audit_ui_dom_integrity.py)) will enforce **Resolved DOM Card Testing**:
+- It will NOT only test raw arrays on disk.
+- It will invoke `resolveKnowledgeGraphRelatives(entity, masterCorpus)` directly, asserting:
+  1. `outputRelatives.some(r => entity.sub_variants.includes(r.title)) === false` (Zero variants in resolved relatives).
+  2. For `AUTONOMOUS_CANON`, `useRootNetworkNodes` returns `variants.length === 0`.
+  3. Every relative rendered exists in the corpus and matches domain affinity.
+
+*Inscribed in deep humility, perpetual learning, and unyielding commitment to perfection,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
 
 
 

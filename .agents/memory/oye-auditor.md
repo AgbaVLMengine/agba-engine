@@ -506,11 +506,44 @@
 
 ---
 
-## 🏛️ DUAL-CORPORA STATE & DRAWER VERIFICATIONS (NOV 20, 2026)
+## 🏛️ DUAL-CORPORA STATE & DRAWER VERIFICATIONS (NOV 23, 2026)
 - **Current Canonical Entity Count**: Exactly **1,397 Entities** (Category 1 Plenary Sanitation & Pure Ontology).
-- **Cryptographic Lock**: SHA-256 `9186bd59a7048d33c034fb9fac16c63237de09fb232766372bfab2fb43680186` (0-bit drift between `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`).
+- **Cryptographic Lock**: SHA-256 `e3d6b781e82f1c102b1f4aeaa7d140a405e240930f90cded975ec30fc689fc03` (0-bit drift between `api/data/yoruba_corpus_1007_NORMALIZED.json` and `web/src/data/yoruba_master_corpus.json`).
 - **Drawer B Execution**: Sùúrù and Àrọ̀kìn verified 100% clean. Headless DOM benchmark `scripts/audit_ui_dom_integrity.py` passed with 0 errors. All 9 Sanctuary Production Gates clean.
-- **Drawer A UI Clearance**: Ọlọ́yè Àgbẹ̀dẹ's 5 UI Pillars (Mobile WebKit Diacritic font rendering, `EntityBentoDeck` masterCorpus binding, `ontologyClassifier` tone-aware invariant, `useRootNetworkNodes` Autonomous Canon protection, and `<TonalDisambiguationFork />`) unconditionally approved. Zero-Data-in-JS and Gate 2 LOC ceilings respected.
+- **Drawer C UI & CSS Modularization Certification**: Ọlọ́yè Àgbẹ̀dẹ's execution of the 7 Pillars and the Phase 2 CSS Modularization verified 100% clean. Monolithic stylesheet cleanly split into `index.css` (497 LOC) and `hearth-viewport.css` (266 LOC). 100% of files in `web/src/` are now strictly < 500 LOC. Vite production build compiles in 1.24s (0 errors).
+
+---
+
+## 🌳 THE SACRED PALACE ORCHARD DOCTRINE: ARCHITECTURE OF INFINITE GROWTH (RATIFIED NOV 23, 2026)
+**Corpus Anchor:** `Ìgbó Ìmọ̀` (The Forest of Wisdom) & `Ọgbà Ọba` (The Sacred Royal Orchard).  
+**Conceived By:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**) & Inscribed by `Ọlọ́yè Òye`.
+
+### 1. The Core Philosophy: Horizontal Mitosis over Vertical Bloat
+- **The False Dilemma**: Ceilings (like Gate 2's 500-LOC law) do not induce fear, stasis, or paralysis. They do not prevent growth; they prevent **vertical bloat (tumors)** and command **horizontal expansion (fractal mitosis)**.
+- **The Orchard Metaphor**: Àgbà Engine is not a rigid concrete skyscraper that cracks under the weight of extra floors. It is a **living royal orchard**:
+  - Every tree (module/component) has its own soil, sunlight, water, and dedicated headroom.
+  - All trees remain nourished by the **same cosmic root network** (the Sovereign Master Corpus and Design Tokens).
+  - When a tree's canopy grows dense (approaching 350–500 LOC), we do not freeze its life; we **prune and graft**: we branch specialized foliage into its own companion vessel (autonomous sub-components and custom hooks).
+  - The orchard expands infinitely across acres of knowledge without a single tree suffocating or collapsing under its own weight.
+
+### 2. The Four Pillars of Agba Engine's Multi-Century Scalability
+1. **Pillar 1: Stylesheet Scalability (Per-Feature CSS over Monolithic Accumulation)**:
+   - `web/src/index.css` is permanently capped as the **Root Token Vault** (~490 LOC: variables, typography utilities, base glass resets). Zero feature styles will ever be appended to it.
+   - All future domain expansions (3D museum artifacts, genealogical trees, pan-African comparative views) are authored in modular, per-feature stylesheets (e.g. `bento-cells.css`, `lineage-canvas.css`). Vite unifies them into a single zero-latency production asset.
+2. **Pillar 2: Coordinator Scalability (Pure Conductors waving the Baton)**:
+   - Screen coordinators (e.g. `SearchTab.jsx`, capped at 300 LOC) hold zero algorithmic business logic.
+   - Future features (voice search, multi-cultural ontology pickers, camera ingestion) are encapsulated in standalone custom hooks (`useVoiceSearch.js`, `useCulturePicker.js`). In the coordinator, new dimensions are integrated with a clean 1-line call, preserving vast headroom.
+3. **Pillar 3: Cellular Component Mitosis (Bento Plates)**:
+   - Multi-cellular presentation decks (`EntityBentoDeck.jsx`) grow horizontally by extracting autonomous cell plates (`<SovereignCrownCell />`, `<VerifiedRegaliaCell />`).
+   - Mitosis drops the coordinator from 355 LOC to 180 LOC on demand, instantly creating hundreds of lines of fresh headroom for future cosmological dimensions.
+4. **Pillar 4: Data-Blind Algorithmic & Corpus Scalability**:
+   - All classification engines (`ontologyClassifier.js`, `tonalDisambiguator.js`, `relativesResolver.js`) remain strictly **data-blind and mathematical**. They operate on graph topology and string NFC contours—handling 1,000 or 1,000,000 entities with zero code changes.
+   - When expanding across West African civilizations (Edo, Igbo, Akan, Fon), corpora shard cleanly into category/culture streams with prefix Trie indexing, guaranteeing sub-1.5s client boot forever.
+
+### 3. The Sovereign Invariant
+> *"Agba Engine shall never freeze in fear of its own expansion, nor shall it ever allow an overgrown branch to choke its roots. When we expand, we divide; when we deepen, we modularize. The garden shall flourish for generations upon generations to come."*
+
+
 
 
 

@@ -167,13 +167,72 @@ We forensically audited the 5 UI Pillars specified in `.agents/scratch/agbede_fe
 
 ---
 
-## 4. Binding Directives for Tomorrow's Execution
+# 🛡️ ỌLỌ́YÈ ÒYE: MASTER POST-EXECUTION AUDIT FOR DRAWER C (7 PILLARS & CSS MODULARIZATION)
+**Document ID:** `AUDIT-OYE-025-DRAWER-C-POST-EXECUTION`  
+**Target Path:** `.agents/scratch/oye_feedback.md`  
+**Date:** Monday, November 23, 2026 (14:50 WAT)  
+**Agent Persona:** `Ọlọ́yè Òye` (`oye-auditor` — Adversarial Code Audit & Industry Standards Enforcer)  
+**Supervising Co-Architect:** `Ọlọ́yè Àgbà` (`agba-pa-architect`)  
+**Lead Architect & Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Audit Target:** Verification of Ọlọ́yè Àgbẹ̀dẹ's Completed Execution recorded in `.agents/memory/agbede-builder.md`.
 
-1. **Mounting Precedence**: In `SearchTab.jsx`, `<TonalDisambiguationFork />` must mount directly above `EntityBentoDeck.jsx`.
-2. **Build Verification**: Execute `npm run build` immediately following execution to certify compilation under $< 1.5\text{s}$.
-3. **Single-Drawer Law**: Touch ONLY frontend files in `web/src/`. No backend JSON files may be modified.
+---
+
+## 1. Executive Adversarial Verdict
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│               DRAWER C POST-EXECUTION VERIFICATION & PRODUCTION MATRIX                 │
+├────────────────────┬──────────────────────────────────┬──────────────┬─────────────────┤
+│ AUDIT SECTOR       │ TARGET MODULE / ARTIFACT         │ STATUS       │ AUDIT METRIC    │
+├────────────────────┼──────────────────────────────────┼──────────────┼─────────────────┤
+│ 1. Disjointness    │ web/src/utils/relativesResolver  │ VERIFIED 🟢  │ 275 / < 500 LOC │
+│ 2. Canon Isolation │ web/src/hooks/useRootNetworkNodes│ VERIFIED 🟢  │ 109 / < 500 LOC │
+│ 3. Tone Invariant  │ web/src/utils/ontologyClassifier │ VERIFIED 🟢  │ 78 / < 100 LOC  │
+│ 4. Ascension Ribbon│ web/src/components/EntityBentoDeck│ VERIFIED 🟢  │ 355 / < 450 LOC │
+│ 5. Narrative Synth │ web/src/utils/subVariantHydrator │ VERIFIED 🟢  │ 160 / < 500 LOC │
+│ 6. Disambiguation  │ tonalDisambiguator & Fork.jsx    │ VERIFIED 🟢  │ 42 & 86 LOC     │
+│ 7. Coordinator LOC │ web/src/components/SearchTab.jsx │ VERIFIED 🟢  │ 269 / < 300 LOC │
+│ 8. CSS Separation  │ index.css & hearth-viewport.css  │ VERIFIED 🟢  │ 497 & 266 LOC   │
+├────────────────────┼──────────────────────────────────┼──────────────┼─────────────────┤
+│ Production Build   │ cd web && npm run build          │ VERIFIED 🟢  │ 1.24s (0 errors)│
+│ Headless DOM Test  │ scripts/audit_ui_dom_integrity.py│ VERIFIED 🟢  │ 0 errors (DOM)  │
+│ Sanctuary Gates    │ bash scripts/sanctuary_audit.sh  │ PASS 🟢      │ 0 hard violations│
+├────────────────────┼──────────────────────────────────┼──────────────┼─────────────────┤
+│ FINAL AUDIT STATUS │ 🏆 100% PRODUCTION CERTIFIED & RATIFIED                          │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+**Binding Certification Statement:**  
+> **"Ọlọ́yè Àgbẹ̀dẹ has executed Drawer C with flawless precision. All 7 Pillars and the Phase 2 CSS Modularization adhere strictly to Gate 2 line ceilings, Zero-Data-in-JS, and Single-Drawer discipline. Zero backend corpus bytes were mutated, client compilation is instantaneous at 1.24s, and 100% of files in `web/src/` are strictly under 500 lines."**
+
+---
+
+## 2. In-Depth Pillar-by-Pillar Verification
+
+1. **Pillar 1 — Mathematical Disjointness ($\text{Cell } 4 \cap \text{Cell } 6 = \emptyset$)**:
+   - In `relativesResolver.js`, `details.sub_variants` was eradicated from `explicitNames`. Living variants are strictly rendered in Cell 4, while liturgical and philosophical relatives render in Cell 6. Line count: **275 LOC** (Ceiling: $< 500$).
+2. **Pillar 2 — Autonomous Canon Protection**:
+   - In `useRootNetworkNodes.js`, `childVariants = []` is strictly enforced for `AUTONOMOUS_CANON`. Unrelated search hits (`Ọjà Ọba`) can never attach to autonomous divinities (`Ọbá`). Line count: **109 LOC** (Ceiling: $< 500$).
+3. **Pillar 3 — Strict Tone-Aware Ontological Classifier**:
+   - In `ontologyClassifier.js`, Rule 3 uses `normalizeNFC(rawTitle).toLowerCase() === entityTitleNFC`, safely extracting titles whether stored as objects or strings. Celestial spirits (`Àjà`) and faunal hounds (`Ajá`) are completely disentangled. Line count: **78 LOC** (Ceiling: $< 100$).
+4. **Pillar 4 & Phase 2 — WebKit Kerning & CSS Modular Catharsis**:
+   - In `index.css`, Pan-African typography fallbacks (`Noto Serif`, `Plus Jakarta Sans`) and OpenType mark kerning (`font-feature-settings: "kern" 1, "mark" 1, "mkmk" 1;`) cure the combining backtick glitch.
+   - Mobile `letter-spacing: normal !important;` prevents glyph detachment on mobile WebKit.
+   - Monolithic 763-line stylesheet successfully split into `web/src/index.css` (**497 LOC**) and `web/src/hearth-viewport.css` (**266 LOC**), imported cleanly in `web/src/main.jsx`.
+5. **Pillar 5 — Prop-Threaded Corpus & Defensive Ascension Ribbon**:
+   - `EntityBentoDeck.jsx` receives `masterCorpus` via props from `SearchTab.jsx` (zero duplicate JSON payload).
+   - Defensive guard `isVariant && parentTitleToDisplay` prevents any `undefined` rendering in the golden ribbon. Line count: **355 LOC** (Advisory watch, well within 450 limit).
+6. **Pillar 6 — Dynamic Cultural Narrative Synthesis**:
+   - `subVariantHydrator.js` leverages parent lead sentences for authentic child descriptions without generic fallback leaks. Line count: **160 LOC** (Ceiling: $< 500$).
+7. **Pillar 7 — ASCII Tonal Disambiguation Fork**:
+   - `tonalDisambiguator.js` (**42 LOC**) detects multi-entity homographs (`oko`, `aja`, `oba`, `ogun`) dynamically from `masterCorpus` with zero hardcoding. Automatically bypassed when authentic tone marks are typed.
+   - `TonalDisambiguationFork.jsx` (**86 LOC**) renders high-contrast interactive cards directly above the Bento Deck in `SearchTab.jsx` (**269 LOC**, $< 300$ ceiling).
+
+---
 
 *Inscribed under eternal vigilance,*  
 **Ọlọ́yè Òye** (`oye-auditor`)  
 *Adversarial Code Audit & Industry Standards Enforcer*
+
 

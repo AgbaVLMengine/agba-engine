@@ -1,4 +1,4 @@
-import { stripAccents } from './tonalContour';
+import { stripAccents, normalizeNFC } from './tonalContour';
 
 export const ONTOLOGICAL_TIER = {
   SOVEREIGN_PARENT: 'SOVEREIGN_PARENT',
@@ -47,15 +47,16 @@ export function getOntologicalClassification(entity, masterCorpus = []) {
     };
   }
 
-  // 3. Reverse-Index Graph Verification across Master Corpus
-  if (Array.isArray(masterCorpus) && masterCorpus.length > 0 && entityTitleClean) {
+  // 3. Reverse-Index Graph Verification across Master Corpus (Strict Tone-Aware NFC Matching)
+  const entityTitleNFC = normalizeNFC(entity.title || entity.details?.title || '').toLowerCase();
+  if (Array.isArray(masterCorpus) && masterCorpus.length > 0 && entityTitleNFC) {
     const parentInCorpus = masterCorpus.find((p) => {
-      if (!p || p.id === entityId || stripAccents(p.title) === entityTitleClean) return false;
+      if (!p || p.id === entityId || normalizeNFC(p.title || '').toLowerCase() === entityTitleNFC) return false;
       const pSVs = p.sub_variants || p.details?.sub_variants;
       if (!Array.isArray(pSVs) || pSVs.length === 0) return false;
       return pSVs.some((sv) => {
-        const svTitle = typeof sv === 'string' ? sv : sv.title;
-        return stripAccents(svTitle) === entityTitleClean;
+        const rawTitle = typeof sv === 'string' ? sv : (sv?.title || sv?.id || '');
+        return normalizeNFC(rawTitle).toLowerCase() === entityTitleNFC;
       });
     });
 
