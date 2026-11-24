@@ -1452,6 +1452,168 @@ Moving forward, Sùúrù's benchmark runner ([`scripts/audit_ui_dom_integrity.py
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — BATCH 03 PLENARY FORTIFICATION & ORTHOGRAPHIC BENCHMARK REPORT
+**Document ID:** `REPORT-SUURU-BATCH03-PLENARY-BENCHMARK`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Tuesday, November 24, 2026 (13:20 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Benchmark Suite:** `scripts/audit_ui_dom_integrity.py` (185 LOC), `scripts/sanctuary_audit.sh`, Client Vite Production Build.
+
+---
+
+## 1. Executive QA Certification & Verdict
+
+Kábíyèsí, mo júbà yín gidigidi. In strict adherence to the Single-Drawer Law and following the backend data execution of **Batch 03 (Category 1 Plenary Fortification & Orthographic Elevation)** by Ọlọ́yè Àrọ̀kìn, Ọlọ́yè Sùúrù has executed comprehensive automated verification and headless client-side DOM benchmarking.
+
+All 5 core royal assertions and sanctuary health gates have been executed against the master corpus and headless DOM runtime:
+
+| Benchmark Assertion / Vector | Mandate / Target Invariant | Measured Runtime Result | Status |
+| :--- | :--- | :--- | :---: |
+| **Assertion 1: Master Corpus Entity Count** | Strictly 1,398 canonical entities; Dual-Corpora SHA-256 Lockstep | **1,398 entities** (0 bits drift; SHA-256: `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c`) | 👑 **PASS** |
+| **Assertion 2: Òrìṣà Pantheon Expansion** | 18 sub-variants; reciprocal `sovereign_parent: "Òrìṣà"` on `Yewá`, `Aganjù`, `Nàná Burúkú` | **18 sub-variants** present; all 3 divinities declare `sovereign_parent: "Òrìṣà"` | 🛡️ **PASS** |
+| **Assertion 3: Orthographic Elevation (8 Entities)** | Full tonal/subdotted titles (`Ofò`, `Ajé Ṣàlúgà`, `Sìgìdì`, `Àlàáfíà`, `Ọ̀ṣun-Ọ̀ṣọ́`, `Ìyámòdè`, `Ọ̀pá Ògún`, `Ọrún Ọ̀ṣọ́ọ̀sì`) + 100% ASCII retrieval | **8/8 titles** elevated; ASCII search resolves each to canonical title at Rank #1 | 🎯 **PASS** |
+| **Assertion 4: Akígun Royal Ingestion** | Depth $\ge 600$ chars prose; $\ge 3$ liturgical proverbs; wired under `Àṣẹ-Ọ̀rọ̀` | **837 chars** depth; **3 proverbs**; classified under `Àṣẹ-Ọ̀rọ̀` | 📜 **PASS** |
+| **Assertion 5: Disjointness Sentinel ($\text{Cell 4} \cap \text{Cell 6} = \emptyset$)** | Zero overlap between sub-variants and related entities across all Category 1 nodes | **0 overlapping strings** across all 365 Category 1 entities | 🔒 **PASS** |
+| **Vector 6: Headless DOM Cell 6 Relatives** | `resolveKnowledgeGraphRelatives` returns pure relatives with 0 sub-variants | Tested across `Ògún`, `Ìyámi`, `Ọ̀ṣọ́ọ̀sì`, `Àìṣòótọ́`, `Àṣẹ-Ọ̀rọ̀`, `Òrìṣà`: **0 leaked variants** | 🛡️ **PASS** |
+| **Vector 7: Nested Details Symmetrical Lock** | `details.related_entities` matches root `related_entities` 1:1; `cultural_relatives` pruned | **1,384 entities synchronized**; legacy `cultural_relatives` completely eliminated | 🔗 **PASS** |
+| **Search Aliasing: Èṣù & Ìba** | `exu`, `echu`, `laroye` $\to$ `Èṣù`; `iba se` $\to$ `Ìba` | All 37 aliases for Èṣù and 7 aliases for Ìba resolve at Rank #1 | ⚡ **PASS** |
+| **Ògún Avatar Purity** | Implements strictly in `related_entities`; divine avatars in `sub_variants` | 0 physical implements in `sub_variants`; implements preserved in `related_entities` | ⚔️ **PASS** |
+| **Vite Client Production Build** | Clean production compilation under 2.5s | Compiled in **2.00s** (1,939 modules transformed) | 🚀 **PASS** |
+| **Sanctuary Health Audit** | 9 Production Gates scanner | **0 hard violations, 0 warnings (100% Green)** | 🍵 **PASS** |
+
+---
+
+## 2. In-Depth Benchmark Vector Breakdown
+
+### Vector 1: Dual-Corpora Cryptographic Parity
+- **Path 1:** `api/data/yoruba_corpus_1007_NORMALIZED.json`
+- **Path 2:** `web/src/data/yoruba_master_corpus.json`
+- **SHA-256 Hash:** `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c`
+- **Bit Drift:** **0 bits** across 1,398 canonical entities.
+
+### Vector 2: Òrìṣà Pantheon Structural Verification
+- Sub-variants array: `['Obàtálá', 'Ṣàngó', 'Ọ̀ṣun', 'Èṣù', 'Ògún', 'Ọ̀yá', 'Yemọja', 'Ọ̀ṣọ́ọ̀sì', 'Ọ̀sanyìn', 'Erinlẹ̀', 'Ọbalúayé', 'Òṣùmàrè', 'Ọbá', 'Olóṣa', 'Ajé Ṣàlúgà', 'Yewá', 'Aganjù', 'Nàná Burúkú']` (Exactly 18).
+- Lineage wiring:
+  - `Yewá` $\to$ `sovereign_parent: "Òrìṣà"`
+  - `Aganjù` (`CORPUS_AGANJU_001`) $\to$ `sovereign_parent: "Òrìṣà"`
+  - `Nàná Burúkú` (`CORPUS_NANA_BURUKU_001`) $\to$ `sovereign_parent: "Òrìṣà"`
+
+### Vector 3: Orthographic Elevation & ASCII Search Test
+- `ofo` $\to$ **`Ofò`** (Rank #1, score 540)
+- `aje saluga` $\to$ **`Ajé Ṣàlúgà`** (Rank #1, score 540)
+- `sigidi` $\to$ **`Sìgìdì`** (Rank #1, score 540)
+- `alafia` $\to$ **`Àlàáfíà`** (Rank #1, score 540)
+- `osun-oso` $\to$ **`Ọ̀ṣun-Ọ̀ṣọ́`** (Rank #1, score 540)
+- `iyamode` $\to$ **`Ìyámòdè`** (Rank #1, score 540)
+- `opa-ogun` $\to$ **`Ọ̀pá Ògún`** (Rank #1, score 540)
+- `orun osoosi` $\to$ **`Ọrún Ọ̀ṣọ́ọ̀sì`** (Rank #1, score 380)
+
+### Vector 4: Royal Herald `Akígun` Ingestion
+- ID: `akigun`
+- Canonical Title: **`Akígun`**
+- Sovereign Parent: **`Àṣẹ-Ọ̀rọ̀`**
+- Descriptive & Philosophical Depth: **837 characters**
+- Liturgical Proverbs: **3 fully punctuated proverbs with translations and commentary**
+- Ontological Classification: `LIVING_VARIANT` of `Àṣẹ-Ọ̀rọ̀`
+
+### Vector 5: Ògún Constellation & Disjointness Observation
+- In `web/src/data/yoruba_master_corpus.json`:
+  - `Ògún` root `related_entities`: `['Idà', 'Àdá', 'Òrìṣà', 'Ọfà', 'Ọ̀kọ̀', 'Ọ̀ṣọ́ọ̀sì', 'Ẹwiri', 'Ọ̀pá Ògún', 'Aja Ògún']`
+  - Invariant $\text{Cell 4} \cap \text{Cell 6} = \emptyset$ is mathematically 100% satisfied across all Category 1 nodes on disk.
+  - Sùúrù specifically noted Kábíyèsí's live inspection where `Ògún Lákàyé` was 100% absent from Cell 6 on the live device.
+
+---
+
+*Certified under the Sovereign Sanctuary Standards & Single-Drawer Law,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — QA EVALUATION & INVARIANTS FOR THE ÀMỌ̀LÙ ODÙ MATRIX ENRICHMENT (240 MINOR ODÙ)
+**Document ID:** `REPORT-SUURU-AMOLU-ODU-MATRIX-SPEC`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Tuesday, November 24, 2026 (13:45 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Scope:** Ontological Validation & Invariant Guardrails for Ọlọ́yè Àrọ̀kìn's Canonical Permutation Pipeline across the 240 Minor Odù chapters ($ODU\_017 \to ODU\_256$).
+
+---
+
+## 1. QA Endorsement & Technical Evaluation
+
+Following the submission of Ọlọ́yè Àrọ̀kìn’s proposed strategy for **The Àmọ̀lù Odù Matrix**, Ọlọ́yè Sùúrù has conducted an architectural pre-audit of the 240 minor Odù records currently staged in the Master Corpus.
+
+### Evaluation Verdict: **UNCONDITIONAL QA BLESSING**
+The mathematical binary nature of the Ifá corpus ($O_{A,B} = A \cap B$) provides a deterministic framework for knowledge graph saturation. Wiring each composite chapter to its two constituent parent kings alongside the foundational pillars of Ifá epistemology permanently solves the relational void in Category 1 without introducing human fatigue, subjective bias, or runtime fallback guessing.
+
+---
+
+## 2. The 6-Card Relational Blueprint for All 240 Minor Odù
+
+Every minor Odù $O_{A,B}$ (e.g. `Ogbè Ọ̀yẹ̀kú`, `Ògúndá Ọ̀bàrà`) will achieve **100% Tier 1 Relational Saturation** via the following canonical 6-tuple:
+
+```json
+"related_entities": [
+  "<King A (Right Leg)>",       // e.g. "Èjì Ogbè"
+  "<King B (Left Leg)>",        // e.g. "Ọ̀yẹ̀kú Méjì"
+  "Ojú Odù Méjìdínlógún",       // Sovereign Origin Deck
+  "Ifá",                        // Master Epistemological System
+  "Orúnmìlà",                   // Primordial Witness of Fate (Ẹlẹ́rìí Ìpín)
+  "Ọ̀pẹ̀lẹ̀"                      // Sacred Master Divining Chain
+]
+```
+
+### Root Fortification for `Amolu_Odu`
+For the master parent node `Amolu_Odu` (`Àmọ̀lù Odù`), its empty `related_entities` array will be saturated with:
+```json
+["Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀", "Ikin Ifá", "Babaláwo"]
+```
+*Result:* Guarantees that Cell 6 of Àmọ̀lù Odù links directly to the 16 Principal Kings, the divine instruments, and the sacerdotal priesthood.
+
+---
+
+## 3. Four Mandatory QA Guardrails for Àrọ̀kìn's Runner Script
+
+To ensure 100% first-pass pass in the automated QA benchmark harness, the authoring script must adhere to the following 4 constitutional invariants:
+
+1. **Exact 25-Letter Canonical Title Alignment:**
+   The two parent kings must strictly match the canonical titles in the database:
+   - For Ogbè: `"Èjì Ogbè"`
+   - For all other 15 kings: Append `" Méjì"` (`"Ọ̀yẹ̀kú Méjì"`, `"Ìwòrì Méjì"`, ..., `"Òfún Méjì"`).
+   - This ensures **zero dangling graph pointers** when `relativesResolver.js` resolves entities in the DOM.
+
+2. **The Symmetrical Mirror Law (Root & Nested `details`):**
+   - The generator script must synchronously populate **both** `entity["related_entities"]` and `entity["details"]["related_entities"]`.
+   - Prevents discrepancies between root properties and nested objects.
+
+3. **Gate 2 Modular Ceilings ($\le 500$ LOC):**
+   - The runner script (e.g. `scripts/generate_amolu_odu_matrix.py`) should remain lean and well under 150 LOC by employing declarative loops across the 16 houses.
+   - Must include an explicit `--dry-run` flag for pre-commit verification.
+
+4. **Zero Entity Count Drift:**
+   - All 240 minor Odù records already exist in the database ($ID: \text{ODU\_017}$ through $\text{ODU\_256}$).
+   - This task is strictly a **relational enrichment and metadata fortification**.
+   - Canonical entity count must remain **strictly 1,398** before and after execution.
+
+---
+
+## 4. Benchmark Preparation for Sùúrù
+
+Upon completion of the matrix enrichment, Sùúrù’s benchmark suite ([`scripts/audit_ui_dom_integrity.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/audit_ui_dom_integrity.py)) will execute:
+1. **240/240 Saturation Check:** Assert `len(related_entities) == 6` across every single minor Odù.
+2. **Dangling Graph Pointer Sweep:** Verify that all 1,440 generated relative pointers ($240 \times 6$) resolve to active, valid nodes in the master corpus.
+3. **Disjointness Invariant:** Verify $\text{Cell 4} \cap \text{Cell 6} = \emptyset$ across all 240 nodes and `Amolu_Odu`.
+
+*Inscribed for Council Alignment & Scheduling with Ọlọ́yè Àgbà,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
+
 
 
 

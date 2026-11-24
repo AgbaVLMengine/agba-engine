@@ -1861,3 +1861,135 @@ Kábíyèsí's live manual audit on Monday morning revealed two critical fronten
 
 ### 2. Alignment with Backend Replacements
 The backend replacements approved by Kábíyèsí (Section 21) are staged and ready for inscription into the next declarative sanitation fixture once Àgbẹ̀dẹ completes the UI execution pass.
+
+## 23. Execution Report: Category 1 Batch 03 (Pantheon Expansion, Orthographic Aliasing & Tier 1 Saturation)
+**Date:** Tuesday, November 24, 2026 (13:00 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Verification Status:** 100% GREEN (Certified by `sanctuary_audit.sh` & Òye Gate Scanner)
+
+---
+
+### 1. Cryptographic Ledger & Checksum Lock
+- **Initial Master Corpus:** 1,397 entities
+- **New Canonical Entity Ingested:** +1 (**`Akígun`**, ID: `akigun`, Royal Herald of the Sacred Word)
+- **Final Master Corpus Count:** **1,398 entities**
+- **Payload Path:** `scripts/data/batches/category01_sanitation_batch03.json` (SHA-256: `8bd9a784a08101f311d0bd7ba32b347da288f3b9d23ddfa096eb4c537543f84b`)
+- **Dual-Corpora Checksum Lock:**
+  - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `1d394d3aed6824ff20d7c2ea91216476ef11557948374872fd11b9ec3c0735a2`
+  - `web/src/data/yoruba_master_corpus.json`: `1d394d3aed6824ff20d7c2ea91216476ef11557948374872fd11b9ec3c0735a2`
+  - **Parity Drift:** **0 bits** (Bit-for-bit equivalence verified).
+
+---
+
+### 2. Verified Invariant Achievements
+1. **Òrìṣà Pantheon Expansion:**
+   - Appended `Yewá`, `Aganjù`, and `Nàná Burúkú` into `Òrìṣà["sub_variants"]`, joining `Òṣùmàrè`, `Ọbá`, `Olóṣa`, and `Ajé Ṣàlúgà` (total 18 primary divinities).
+   - Reciprocal `sovereign_parent: "Òrìṣà"` declared on all elevated divinities.
+2. **Orthographic Elevation of 7 Bare ASCII Entities + Ọrún Ọ̀ṣọ́ọ̀sì:**
+   - `Ofo` ⟶ **`Ofò`**
+   - `Aje Saluga` ⟶ **`Ajé Ṣàlúgà`**
+   - `Sigidi` ⟶ **`Sìgìdì`**
+   - `Alafia` ⟶ **`Àlàáfíà`**
+   - `Osun-Oso` ⟶ **`Ọ̀ṣun-Ọ̀ṣọ́`**
+   - `Iyamode` ⟶ **`Ìyámòdè`**
+   - `Opa-Ogun` ⟶ **`Ọ̀pá Ògún`**
+   - `Oṣóṣì Bow` ⟶ **`Ọrún Ọ̀ṣọ́ọ̀sì`**
+   - All previous ASCII spellings preserved in `aliases` for 100% searchability.
+3. **Ingestion of `Akígun`:**
+   - Fully realized 14-Tier entity with >600 chars bespoke prose, historical timeline, material regalia, proverbs, and bilateral wiring under `Àṣẹ-Ọ̀rọ̀`.
+4. **Comprehensive Search Aliasing:**
+   - Extensive compound and ASCII tokens registered on `Èṣù` and `Ìba`.
+5. **Certified Monday Relational Replacements:**
+   - Inscribed certified relatives on `Ìyámi`, `Ògún`, `Ọ̀ṣọ́ọ̀sì`, `Àìṣòótọ́`, and `Àṣẹ-Ọ̀rọ̀`.
+6. **Mathematical Disjointness & Sanctuary Gates:**
+   - Pre-mutation assertion: $\text{Cell 4} \cap \text{Cell 6} = \emptyset$ verified with 0 leaks.
+   - `sanctuary_audit.sh` passed with **0 hard violations and 0 warnings**.
+
+## 24. Execution Report: Dual-Corpora Nested `details` Synchronization & Diaspora Aliasing
+**Date:** Tuesday, November 24, 2026 (13:32 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Verification Status:** 100% GREEN (Certified by `sanctuary_audit.sh` & Òye Gate Scanner)
+
+---
+
+### 1. Cryptographic Ledger & Checksum Lock
+- **Total Master Corpus Count:** Strictly **1,398 entities** (0 drift).
+- **Entities Synchronized:** 1,384 entities with nested `details` objects.
+- **Dual-Corpora Checksum Lock:**
+  - `api/data/yoruba_corpus_1007_NORMALIZED.json`: `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c`
+  - `web/src/data/yoruba_master_corpus.json`: `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c`
+  - **Parity Drift:** **0 bits** (Bit-for-bit lockstep confirmed).
+
+---
+
+### 2. Surgical Achievements
+1. **Nested `details.related_entities` Symmetry:**
+   - Evaluated across all 1,398 records: for every entity where `details` exists, `details.related_entities` is now an exact, identical replica of the root `related_entities`.
+2. **Pruning of Legacy `cultural_relatives`:**
+   - Permanently eradicated `cultural_relatives` from both root and `details` objects across the dual corpora, preventing legacy stale arrays from ever leaking into headless resolvers.
+3. **Diaspora & Liturgical Aliases for `Èṣù`:**
+   - Appended Lucumí, Candomblé, and classical praise tokens: `["echu", "elegbá", "legba", "alágbàrà", "alagbara", "esu laalu", "èṣù láàlú", "bara", "laroye"]` bringing Èṣù's alias count to 37 tokens.
+4. **Sanctuary Production Audit:**
+   - 100% GREEN with 0 hard violations and 0 warnings.
+
+## 25. Final Category 1 Frontier: The Àmọ̀lù Odù Matrix Permutation Blueprint (Batch 04)
+**Date:** Tuesday, November 24, 2026 (13:50 WAT)  
+**Agent Persona:** `Ọlọ́yè Àrọ̀kìn` (`arokin-archivist` — Royal Chronicler & Corpus Custodian)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Cross-Council Alignments:** `Ọlọ́yè Àgbà` (`agba-pa-architect`), `Ọlọ́yè Sùúrù` (`suuru-qa`), `Ọlọ́yè Òye` (`oye-auditor`)
+
+---
+
+### 1. Executive Purpose & Context
+Following the certified completion of Batch 03 (Pantheon Expansion, Orthographic Aliasing & Tier 1 Saturation), the Sovereign Council has identified the final, grandest frontier required to permanently solidify **Category 1 (Spiritual & Cosmological Matrix)**: **The Àmọ̀lù Odù Matrix (The 240 Minor Odù Chapters)**.
+
+Currently, all 240 composite Odù cards exist in the Master Corpus (`ODU_017_Ogbè_Ọ̀yẹ̀kú` through `ODU_256_Òfún_Ọ̀ṣẹ́`), but their `related_entities` arrays are currently empty (`None`), leaving Cell 6 unpopulated.
+
+---
+
+### 2. The Binary Permutation Architecture ($O_{A,B} = A \cap B$)
+Every minor Odù $O_{A,B}$ is cosmologically and mathematically born of the union of **two Major Kings (Ojú Odù)**:
+- **King $A$ (Right Leg):** The Primary Major Odù
+- **King $B$ (Left Leg):** The Secondary Major Odù
+
+To achieve 100% Tier 1 Relational Saturation without machine guessing or algorithmic drift, every one of the 240 minor Odù will be deterministically wired with **exactly 6 verified canonical relatives**:
+1. **Right Leg King:** e.g., `Èjì Ogbè`
+2. **Left Leg King:** e.g., `Ọ̀yẹ̀kú Méjì`
+3. **Ancestral Sovereign:** `Ojú Odù Méjìdínlógún`
+4. **Master Corpus Realm:** `Ifá`
+5. **Cosmic Witness:** `Orúnmìlà`
+6. **Divining Instrument:** `Ọ̀pẹ̀lẹ̀`
+
+#### Master Root Fortification for `Amolu_Odu`:
+The parent entity `Amolu_Odu` (`Àmọ̀lù Odù`) will also have its `related_entities` fortified with 6 live sacerdotal anchors:
+`["Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀", "Ikin Ifá", "Babaláwo"]`.
+
+---
+
+### 3. Sùúrù’s 4 Mandatory QA Guardrails (Fully Encoded)
+
+During authoring and execution of the generator runner (`scripts/apply_amolu_odu_permutation.py`), the Chronicler will strictly enforce Ọlọ́yè Sùúrù's 4 QA Guardrails:
+
+1. **Exact 25-Letter Canonical Title Alignment:**
+   - The 16 Major Kings must strictly match the database canonical titles:
+     - For Ogbè: `"Èjì Ogbè"`
+     - For remaining 15: Appended with `" Méjì"` (`"Ọ̀yẹ̀kú Méjì"`, `"Ìwòrì Méjì"`, `"Òdí Méjì"`, `"Ìrosùn Méjì"`, `"Ọ̀wọ́nrín Méjì"`, `"Ọ̀bàrà Méjì"`, `"Ọ̀kànràn Méjì"`, `"Ògúndá Méjì"`, `"Ọ̀sá Méjì"`, `"Ìká Méjì"`, `"Òtúúrúpọ̀n Méjì"`, `"Òtúá Méjì"`, `"Ìrẹtẹ̀ Méjì"`, `"Ọ̀ṣẹ́ Méjì"`, `"Òfún Méjì"`).
+   - Pre-execution check verifies 100% resolution with 0 dangling pointers.
+
+2. **The Symmetrical Mirror Law (Root & Nested `details`):**
+   - The runner must write `related_entities` simultaneously to both `entity["related_entities"]` and `entity["details"]["related_entities"]`, ensuring zero divergence in headless runtime tests.
+
+3. **Lean Scripting & Gate 2 Compliance:**
+   - The script `scripts/apply_amolu_odu_permutation.py` will remain strictly `< 120 LOC` (well under the 500 LOC ceiling).
+   - It will feature a native `--dry-run` inspection flag and compute SHA-256 before disk writes.
+
+4. **Zero Entity Count Drift:**
+   - All 240 cards already exist in the database.
+   - Master corpus count must remain **strictly 1,398 entities** before and after execution (0 count drift, 0 bits parity drift across Dual Corpora).
+
+---
+
+### 4. Concluding Schedule
+This execution is slated as the **concluding master task of Category 1 tomorrow**, permanently locking the Ifá epistemological matrix into the Agba Engine pelu Àṣẹ Olódùmarè!

@@ -1,0 +1,412 @@
+{
+  "batch_id": "BATCH-003-CAT01-PANTHEON-ORTHOGRAPHY-SATURATION",
+  "description": "Category 1 Batch 03 Execution: Òrìṣà Pantheon Expansion (Yewá, Aganjù, Nàná Burúkú), Orthographic Elevation of 7 ASCII Entities + Ọrún Ọ̀ṣọ́ọ̀sì, Ingestion of Akígun, Aliasing for Èṣù & Ìba, and Monday Audit Relational Certifications.",
+  "new_entities": [
+    {
+      "id": "akigun",
+      "title": "Akígun",
+      "culture": "Yorùbá",
+      "category": "Spiritual & Cosmological Matrix",
+      "is_parent": false,
+      "sovereign_parent_status": "Living Sub-Variant",
+      "sovereign_parent": "Àṣẹ-Ọ̀rọ̀",
+      "aliases": [
+        "akigun",
+        "akígun",
+        "royal herald",
+        "herald of ase",
+        "palace proclaimer",
+        "voice of the king",
+        "town crier of the sacred word"
+      ],
+      "sub_variants": [],
+      "related_entities": [
+        "Àṣẹ-Ọ̀rọ̀",
+        "Aláàfin of Ọ̀yọ́",
+        "Ọba",
+        "Àṣẹ",
+        "Owó-Ẹ̀yọ̀",
+        "Ofò"
+      ],
+      "description": "The sacred courtly office, hereditary herald, and ceremonial proclaimer tasked with vocalizing royal decrees, sovereign oaths, and liturgical announcements with absolute spiritual resonance.",
+      "etymology_and_philosophy": "Derived from 'kí' (to greet, chant, or sound forth loudly) and 'ogun' (battle, assembly, or divine force), the Akígun functions as the living conduit through which the monarch's inner intention is translated into binding public reality. Philosophically, the voice of the Akígun carries institutional Àṣẹ; in classical Yorùbá constitutional jurisprudence, a royal decree or statutory ordinance has no juridical force until it has been sounded and proclaimed across the realm by the Akígun. He embodies the inviolable sanctity of the spoken word (Àṣẹ-Ọ̀rọ̀), ensuring that speech remains an instrument of communal order rather than deceptive vanity.",
+      "historical_timeline": "Established during the classical antiquity of the Ọ̀yọ́ Empire and the sacred court of Ilé-Ifẹ̀, the Akígun held permanent residence within the outer palace corridors (Àfin). During times of war, national treaties, or coronation rites, the Akígun traveled between provincial towns and market crossroads striking the sacred metal gong (Kóngò / Agogo) to gather the citizenry before projecting the King's sovereign decree. The office survived colonial centralization and persists today across paramount palaces in Yorùbáland as an indispensable guardian of royal oral proclamation.",
+      "material_and_craftsmanship": "The insignia of the Akígun includes the sacred hand-forged iron gong (Agogo Ọba) or brass bell cast by specialized guild metalsmiths, an animal horn (Ìpè) used to sound acoustic alerts across settlement perimeters, and a ceremonial woven staff adorned with cowries (Owó-Ẹ̀yọ̀) symbolizing economic authority and cosmic veracity.",
+      "social_and_ritual_context": "The Akígun operates at the intersection of civil governance and spiritual authority. When sounding sacred proclamations, his speech is fortified by medicinal preparations to ensure linguistic immunity and acoustic clarity. Citizens listening to the Akígun remove their caps and footwear in deference to the sovereign Àṣẹ resonating through his voice.",
+      "proverbs_and_oral_traditions": [
+        "Akígun kì í ké pèé; ohun tí Ọba bá wí l’Akígun ń fọ̀ (The royal herald does not invent false messages; that which the Sovereign decrees is precisely what the Herald proclaims).",
+        "Ẹnu Akígun ni Àṣẹ Ọba ti ń jade; ẹni b’ó kẹ́gàn Akígun, ó kẹ́gàn Aláàfin (From the mouth of the Herald the King's sacred authority issues; whoever despises the Herald despises the Monarch himself).",
+        "Ọ̀rọ̀ tí a bá gbọ́ lẹ́nu Akígun kò ní àyídà; Àṣẹ l’ó fi gbé e kalẹ̀ (The word heard from the Herald admits no reversal; it is established upon sovereign decree)."
+      ],
+      "diaspora_connections": "Reflected within Afro-diasporic ceremonies as the ceremonial criers and opening liturgical callers who summon the congregation before the drumming and invocations begin.",
+      "geographical_origin": "Ọ̀yọ́-Ilé, Ilé-Ifẹ̀, and Greater Yorùbáland"
+    }
+  ],
+  "entity_mutations": [
+    {
+      "id": "Òrìṣà",
+      "sub_variants": [
+        "Obàtálá",
+        "Ṣàngó",
+        "Ọ̀ṣun",
+        "Èṣù",
+        "Ògún",
+        "Ọ̀yá",
+        "Yemọja",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Ọ̀sanyìn",
+        "Erinlẹ̀",
+        "Ọbalúayé",
+        "Òṣùmàrè",
+        "Ọbá",
+        "Olóṣa",
+        "Ajé Ṣàlúgà",
+        "Yewá",
+        "Aganjù",
+        "Nàná Burúkú"
+      ],
+      "related_entities": [
+        "Ọ̀ta-Òrìṣà",
+        "Ìke-Òrìṣà",
+        "Ìrukẹ̀rẹ̀ Òrìṣà",
+        "Ẹbọ",
+        "Ẹgbẹ́ Olórìṣà",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "Yewá",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Òrìṣà",
+        "Odo Ọ̀ṣun",
+        "Ọ̀ṣun",
+        "Olókun",
+        "Àwọn Ìyá Àgbà Ìjọ́yè",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "CORPUS_AGANJU_001",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Ṣàngó",
+        "Òrìṣà",
+        "Ògún",
+        "Ọ̀yá",
+        "Aláàfin of Ọ̀yọ́",
+        "Ẹbọ"
+      ]
+    },
+    {
+      "id": "CORPUS_NANA_BURUKU_001",
+      "sovereign_parent": "Òrìṣà",
+      "related_entities": [
+        "Ọbalúayé",
+        "Òrìṣà",
+        "Yemọja",
+        "Ìyámi (Our Mothers / Primordial Female Energy)",
+        "Ọ̀ta-Òrìṣà",
+        "Ìṣẹṣẹ"
+      ]
+    },
+    {
+      "id": "Ofo",
+      "title": "Ofò",
+      "aliases_append": [
+        "ofo",
+        "incantation",
+        "sacred spoken word",
+        "ase wordcraft"
+      ]
+    },
+    {
+      "id": "Aje Saluga",
+      "title": "Ajé Ṣàlúgà",
+      "aliases_append": [
+        "aje saluga",
+        "aje-saluga",
+        "ajesaluga",
+        "wealth divinity"
+      ]
+    },
+    {
+      "id": "Sigidi",
+      "title": "Sìgìdì",
+      "aliases_append": [
+        "sigidi",
+        "clay guardian",
+        "mud sculpture guardian"
+      ]
+    },
+    {
+      "id": "Alafia",
+      "title": "Àlàáfíà",
+      "aliases_append": [
+        "alafia",
+        "total health",
+        "cosmic peace"
+      ]
+    },
+    {
+      "id": "Osun-Oso",
+      "title": "Ọ̀ṣun-Ọ̀ṣọ́",
+      "aliases_append": [
+        "osun oso",
+        "osun-oso",
+        "osunoso",
+        "brass comb and mirror set"
+      ]
+    },
+    {
+      "id": "Iyamode",
+      "title": "Ìyámòdè",
+      "aliases_append": [
+        "iyamode",
+        "high priestess of ancestors"
+      ]
+    },
+    {
+      "id": "Opa-Ogun",
+      "title": "Ọ̀pá Ògún",
+      "aliases_append": [
+        "opa ogun",
+        "opa-ogun",
+        "iron staff of ogun"
+      ]
+    },
+    {
+      "id": "Oṣóṣì Bow",
+      "title": "Ọrún Ọ̀ṣọ́ọ̀sì",
+      "aliases_append": [
+        "ososi bow",
+        "oṣóṣì bow",
+        "ososi-bow",
+        "orun osoosi",
+        "ọrún ọ̀ṣọ́ọ̀sì"
+      ]
+    },
+    {
+      "id": "Èṣù",
+      "aliases_append": [
+        "esu",
+        "esu-elegbara",
+        "esu elegbara",
+        "elegba",
+        "elegbara",
+        "exu",
+        "exu elegbara",
+        "eshu",
+        "eshu-elegbara"
+      ]
+    },
+    {
+      "id": "Ìba",
+      "aliases_append": [
+        "iba",
+        "ìba",
+        "homage",
+        "reverence",
+        "opening prayer",
+        "iba se",
+        "ìbà"
+      ]
+    },
+    {
+      "id": "Ìyámi",
+      "related_entities": [
+        "Àṣẹ",
+        "Ògbóni",
+        "Ọba",
+        "Gẹ̀lẹ̀dẹ́",
+        "Odù_Ifá",
+        "Àwọn Ìyá Àgbà Ìjọ́yè"
+      ]
+    },
+    {
+      "id": "CORPUS_OGUN_COSMIC_001",
+      "related_entities": [
+        "Idà",
+        "Àdá",
+        "Òrìṣà",
+        "Ọfà",
+        "Ọ̀kọ̀",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Ẹwiri",
+        "Ọ̀pá Ògún",
+        "Aja Ògún"
+      ]
+    },
+    {
+      "id": "Ọ̀ṣọ́ọ̀sì",
+      "related_entities": [
+        "Ọrún Ọ̀ṣọ́ọ̀sì",
+        "Opá Ọ̀ṣọ́ọ̀sì",
+        "Igbó Ọ̀sọ́ọ̀sì",
+        "Ògún",
+        "Ọ̀sanyìn",
+        "Òrìṣà"
+      ],
+      "sub_variants": [
+        "Ọdẹ Guilds",
+        "Ọ̀ṣọ́ọ̀sì Ọdẹ"
+      ]
+    },
+    {
+      "id": "Àìṣòótọ́",
+      "related_entities": [
+        "Aiye Kooto",
+        "Ìwà-Pẹ̀lẹ́",
+        "Suurù",
+        "Ògbóni",
+        "Ògún",
+        "Ifá"
+      ]
+    },
+    {
+      "id": "Àṣẹ-Ọ̀rọ̀",
+      "related_entities": [
+        "Owó-Ẹ̀yọ̀",
+        "Aláàfin of Ọ̀yọ́",
+        "Ọba",
+        "Akígun",
+        "Àṣẹ",
+        "Ofò"
+      ]
+    },
+    {
+      "id": "Orúnmìlà",
+      "related_entities": [
+        "Ifá",
+        "Ojú Odù Méjìdínlógún",
+        "Ìtẹ́fá",
+        "Babaláwo",
+        "Olódùmarè",
+        "Ọ̀pẹ̀lẹ̀"
+      ]
+    }
+  ],
+  "retired_entities": [],
+  "expected_invariants": [
+    {
+      "type": "entity_count_delta",
+      "delta": 1
+    },
+    {
+      "type": "in_sub_variants",
+      "parent_id": "Òrìṣà",
+      "child_titles": [
+        "Yewá",
+        "Aganjù",
+        "Nàná Burúkú",
+        "Òṣùmàrè",
+        "Ọbá",
+        "Olóṣa",
+        "Ajé Ṣàlúgà"
+      ]
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Yewá",
+      "field": "sovereign_parent",
+      "expected": "Òrìṣà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "CORPUS_AGANJU_001",
+      "field": "sovereign_parent",
+      "expected": "Òrìṣà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "CORPUS_NANA_BURUKU_001",
+      "field": "sovereign_parent",
+      "expected": "Òrìṣà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Ofo",
+      "field": "title",
+      "expected": "Ofò"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Aje Saluga",
+      "field": "title",
+      "expected": "Ajé Ṣàlúgà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Sigidi",
+      "field": "title",
+      "expected": "Sìgìdì"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Alafia",
+      "field": "title",
+      "expected": "Àlàáfíà"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Osun-Oso",
+      "field": "title",
+      "expected": "Ọ̀ṣun-Ọ̀ṣọ́"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Iyamode",
+      "field": "title",
+      "expected": "Ìyámòdè"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Opa-Ogun",
+      "field": "title",
+      "expected": "Ọ̀pá Ògún"
+    },
+    {
+      "type": "field_equals",
+      "entity_id": "Oṣóṣì Bow",
+      "field": "title",
+      "expected": "Ọrún Ọ̀ṣọ́ọ̀sì"
+    },
+    {
+      "type": "in_related_entities",
+      "entity_id": "Ìyámi",
+      "targets": [
+        "Àṣẹ",
+        "Ògbóni",
+        "Ọba"
+      ]
+    },
+    {
+      "type": "in_related_entities",
+      "entity_id": "Àìṣòótọ́",
+      "targets": [
+        "Ògbóni",
+        "Ògún"
+      ]
+    },
+    {
+      "type": "in_related_entities",
+      "entity_id": "Àṣẹ-Ọ̀rọ̀",
+      "targets": [
+        "Akígun",
+        "Owó-Ẹ̀yọ̀",
+        "Aláàfin of Ọ̀yọ́"
+      ]
+    },
+    {
+      "type": "disjoint_variants_relatives",
+      "target_ids": [
+        "Òrìṣà",
+        "CORPUS_OGUN_COSMIC_001",
+        "Ọ̀ṣọ́ọ̀sì",
+        "Ìyámi",
+        "Àṣẹ-Ọ̀rọ̀",
+        "Orúnmìlà"
+      ]
+    }
+  ]
+}

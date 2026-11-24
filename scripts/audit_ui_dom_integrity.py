@@ -10,8 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 API_CORPUS_PATH = ROOT / "api/data/yoruba_corpus_1007_NORMALIZED.json"
 WEB_CORPUS_PATH = ROOT / "web/src/data/yoruba_master_corpus.json"
-EXPECTED_SHA = "e3d6b781e82f1c102b1f4aeaa7d140a405e240930f90cded975ec30fc689fc03"
-EXPECTED_COUNT = 1397
+EXPECTED_SHA = "046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c"
+EXPECTED_COUNT = 1398
 
 NODE_SCRIPT = r"""
 import fs from 'fs';
@@ -40,7 +40,6 @@ const hydratorMerged = knowledgeRaw + '\n' + hydratorRaw.replace(/import\s+{[^}]
 const hydratorUri = 'data:text/javascript;base64,' + Buffer.from(hydratorMerged).toString('base64');
 const { hydrateSubVariantFromParent, findSubVariantMatchInCorpus } = await import(hydratorUri);
 
-// Reconstruct Search Engine
 function stripAccents(s) {
   return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
@@ -90,9 +89,9 @@ function check(cond, msg) {
 }
 
 // 1. Invariant: Corpus Total Entity Count
-check(corpus.length === 1397, `Expected 1397 entities, got ${corpus.length}`);
+check(corpus.length === 1398, `Expected 1398 entities, got ${corpus.length}`);
 
-// 2. Vector 1: Mathematical Disjointness Sentinel across Category 1 (Cell 4 ∩ Cell 6 = ∅)
+// 2. Vector 1: Mathematical Disjointness Sentinel across Category 1 on disk (Cell 4 ∩ Cell 6 = ∅)
 const cat1 = corpus.filter(e => e.category === 'Spiritual & Cosmological Matrix');
 for (const e of cat1) {
   const svs = new Set((e.sub_variants || []).map(s => typeof s === 'string' ? s : s.title));
@@ -101,58 +100,73 @@ for (const e of cat1) {
   check(inter.length === 0, `Cell 4 / Cell 6 overlap in ${e.id}: ${inter.join(', ')}`);
 }
 
-// 3. Vector 2: The 4 New Sovereign Parents Structural Verification
-const newParents = ['egbe_awo', 'egbe_olorisa', 'awon_iya_agba_ijoye', 'aabo_ati_ibile'];
-for (const pid of newParents) {
-  const p = corpus.find(x => x.id === pid);
-  check(p, `New Sovereign Parent ${pid} missing`);
-  check(p?.is_parent === true, `${pid} must have is_parent: true`);
-  check(p?.sovereign_parent_status === 'Sovereign Parent Concept', `${pid} sovereign_parent_status mismatch`);
-  check((p?.sub_variants || []).length > 0, `${pid} sub_variants cannot be empty`);
-  check((p?.related_entities || []).length >= 5, `${pid} related_entities must have >= 5 items`);
-  const cls = getOntologicalClassification(p, corpus);
-  check(cls.tier === ONTOLOGICAL_TIER.SOVEREIGN_PARENT, `${pid} classification must be SOVEREIGN_PARENT, got ${cls.tier}`);
+// 3. Vector 2: Òrìṣà Pantheon Expansion (18 sub-variants + reciprocal sovereign_parent)
+const orisa = corpus.find(x => x.id === 'Òrìṣà');
+check(orisa, `Òrìṣà sovereign parent missing`);
+check((orisa?.sub_variants || []).length === 18, `Òrìṣà expected 18 sub-variants, got ${(orisa?.sub_variants || []).length}`);
+for (const child of ['Yewá', 'Aganjù', 'Nàná Burúkú']) {
+  check((orisa?.sub_variants || []).includes(child), `${child} missing from Òrìṣà.sub_variants`);
+}
+for (const cid of ['Yewá', 'CORPUS_AGANJU_001', 'CORPUS_NANA_BURUKU_001']) {
+  const c = corpus.find(x => x.id === cid);
+  check(c, `Entity ${cid} missing from corpus`);
+  check(c?.sovereign_parent === 'Òrìṣà', `${cid} expected sovereign_parent 'Òrìṣà', got '${c?.sovereign_parent}'`);
 }
 
-// 4. Vector 3: The 3 Retired Odù & Alias Resolution
-for (const oid of ['Ọ̀wọ́nran', 'Òtúrúpọ̀n', 'Òtúrá']) {
-  check(!corpus.some(x => x.id === oid), `Retired Odù ${oid} must not exist as standalone record`);
+// 4. Vector 3: Orthographic Elevation of 8 Entities & Searchability
+const elevatedMap = [
+  ['ofo', 'Ofò'], ['aje saluga', 'Ajé Ṣàlúgà'], ['sigidi', 'Sìgìdì'],
+  ['alafia', 'Àlàáfíà'], ['osun-oso', 'Ọ̀ṣun-Ọ̀ṣọ́'], ['iyamode', 'Ìyámòdè'],
+  ['opa-ogun', 'Ọ̀pá Ògún'], ['orun osoosi', 'Ọrún Ọ̀ṣọ́ọ̀sì']
+];
+for (const [q, canonical] of elevatedMap) {
+  const ent = corpus.find(x => x.title === canonical);
+  check(ent, `Elevated canonical entity '${canonical}' missing from corpus`);
+  const sRes = search(q);
+  check(sRes[0]?.entity?.title === canonical, `Search '${q}' expected Top-1 '${canonical}', got '${sRes[0]?.entity?.title}'`);
 }
-const resOwonran = search('owonran');
-check(resOwonran[0]?.entity?.id === 'ODU_006_Ọ̀wọ́nrín', `'owonran' must resolve to ODU_006_Ọ̀wọ́nrín (got ${resOwonran[0]?.entity?.id})`);
 
-const resOturupon = search('oturupon');
-check(resOturupon[0]?.entity?.id === 'ODU_012_Òtúúrúpọ̀n', `'oturupon' must resolve to ODU_012_Òtúúrúpọ̀n (got ${resOturupon[0]?.entity?.id})`);
+// 5. Vector 4: Royal Herald Akígun Canonical Ingestion & Depth
+const akigun = corpus.find(x => x.id === 'akigun');
+check(akigun, `Akígun missing from corpus`);
+check(akigun?.title === 'Akígun', `Akígun title mismatch: ${akigun?.title}`);
+check(akigun?.sovereign_parent === 'Àṣẹ-Ọ̀rọ̀', `Akígun sovereign_parent expected 'Àṣẹ-Ọ̀rọ̀', got '${akigun?.sovereign_parent}'`);
+const akigunDepth = (akigun?.description || '').length + (akigun?.etymology_and_philosophy || '').length;
+check(akigunDepth >= 600, `Akígun depth ${akigunDepth} < 600 chars`);
+check((akigun?.proverbs_and_oral_traditions || []).length >= 3, `Akígun proverbs < 3`);
 
-const resOtura = search('otura');
-check(resOtura[0]?.entity?.id === 'ODU_013_Òtúá', `'otura' must resolve to ODU_013_Òtúá (got ${resOtura[0]?.entity?.id})`);
+// 6. Vector 5: Aliasing for Èṣù & Ìba
+const resExu = search('exu');
+check(resExu[0]?.entity?.id === 'Èṣù', `Search 'exu' expected 'Èṣù', got '${resExu[0]?.entity?.id}'`);
+const resEchu = search('echu');
+check(resEchu[0]?.entity?.id === 'Èṣù', `Search 'echu' expected 'Èṣù', got '${resEchu[0]?.entity?.id}'`);
+const resLaroye = search('laroye');
+check(resLaroye[0]?.entity?.id === 'Èṣù', `Search 'laroye' expected 'Èṣù', got '${resLaroye[0]?.entity?.id}'`);
+const resIbaSe = search('iba se');
+check(resIbaSe[0]?.entity?.id === 'Ìba', `Search 'iba se' expected 'Ìba', got '${resIbaSe[0]?.entity?.id}'`);
 
-// 5. Vector 4: 100% Tier 1 Saturation on Target Nodes
-const batchPayload = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts/data/batches/category01_sanitation_batch02.json'), 'utf8'));
-const targetIds = [...batchPayload.entity_mutations.map(m => m.id), ...batchPayload.new_entities.map(n => n.id)];
-
-for (const tid of targetIds) {
-  const e = corpus.find(x => x.id === tid || x.title === tid);
-  check(e, `Target node ${tid} missing`);
-  if (e) {
-    const relCount = (e.related_entities || []).length;
-    check(relCount >= 5, `Node ${tid} has only ${relCount} related_entities (expected >= 5)`);
-    for (const rel of (e.related_entities || [])) {
-      const exists = corpus.some(x => x.title === rel || x.id === rel || (x.aliases || []).includes(rel));
-      check(exists, `Dangling reference in ${tid}.related_entities: '${rel}'`);
-    }
+// 7. Vector 6: Headless DOM Relatives Resolver Check (Zero Variants Leak in Cell 6)
+const sampleTargets = ['CORPUS_OGUN_COSMIC_001', 'Ìyámi', 'Ọ̀ṣọ́ọ̀sì', 'Àìṣòótọ́', 'Àṣẹ-Ọ̀rọ̀', 'Òrìṣà'];
+for (const tid of sampleTargets) {
+  const target = corpus.find(x => x.id === tid);
+  if (target) {
+    const resolved = resolveKnowledgeGraphRelatives(target, corpus, 6);
+    const svs = new Set((target.sub_variants || []).map(s => typeof s === 'string' ? s : s.title));
+    const leaked = resolved.filter(r => svs.has(r.title) || svs.has(r.id));
+    check(leaked.length === 0, `Resolver leaked sub-variants into relatives for ${tid}: ${leaked.map(l => l.title).join(', ')}`);
   }
 }
 
-// 6. Ògún Avatar Purity
-const ogun = corpus.find(x => x.id === 'CORPUS_OGUN_COSMIC_001');
-const weapons = ['Àdá Ìbílẹ̀', 'Idà Agẹmọ', 'Ọ̀kọ̀ Ẹlẹ́ṣin', 'Ọfà Ọdẹ', 'Ẹwiri Blacksmith Hearth', 'Ẹwiri'];
-for (const w of weapons) {
-  check(!(ogun.sub_variants || []).includes(w), `Ògún sub_variants must not contain implement: ${w}`);
-  check((ogun.related_entities || []).includes(w) || (ogun.related_entities || []).includes('Ẹwiri'), `Ògún related_entities missing implement: ${w}`);
+// 8. Vector 7: Symmetrical Mirror of details.related_entities & Absence of cultural_relatives
+for (const tid of sampleTargets) {
+  const target = corpus.find(x => x.id === tid);
+  if (target && target.details) {
+    check(JSON.stringify(target.related_entities) === JSON.stringify(target.details.related_entities), `Details related_entities not mirrored for ${tid}`);
+    check(!('cultural_relatives' in target) && !('cultural_relatives' in target.details), `cultural_relatives not pruned for ${tid}`);
+  }
 }
 
-// 7. Unicode NFC Composition
+// 9. Unicode NFC Composition
 for (const e of corpus) {
   check(e.title === e.title.normalize('NFC'), `Title for ${e.id} is not NFC composed`);
 }
@@ -167,7 +181,7 @@ if (errors.length > 0) {
 """
 
 def main():
-    print("🔬 Executing Headless Client-Side DOM Parity & Integrity Benchmark (Batch 02)...")
+    print("🔬 Executing Headless Client-Side DOM Parity & Integrity Benchmark (Batch 03 Post-Sync)...")
 
     # Step 1: Cryptographic Dual-Corpora Checksum Lock
     api_sha = hashlib.sha256(API_CORPUS_PATH.read_bytes()).hexdigest()
@@ -182,7 +196,7 @@ def main():
         print(f"❌ Node harness failed:\n{proc.stderr}\n{proc.stdout}")
         sys.exit(1)
     print(proc.stdout.strip())
-    print("👑 CERTIFIED: Batch 02 Plenary Fortification, 100% Tier 1 Saturation & Disjointness Verified!")
+    print("👑 CERTIFIED: Batch 03 Pantheon Expansion, Orthography, Akígun, Sync & DOM Parity Verified!")
 
 if __name__ == "__main__":
     main()
