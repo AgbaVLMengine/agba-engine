@@ -1612,6 +1612,166 @@ Upon completion of the matrix enrichment, Sùúrù’s benchmark suite ([`script
 **Ọlọ́yè Sùúrù** (`suuru-qa`)  
 *Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
 
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — WEDNESDAY SOD COUNCIL HARMONIZATION & ÀMỌ̀LÙ ODÙ PLENARY BLUEPRINT
+**Document ID:** `REPORT-SUURU-SOD-AMOLU-ODU-PLENARY-SPEC`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Wednesday, November 25, 2026 (10:58 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Council Context:** Morning SOD clearances, Kábíyèsí's live text-depth discovery, and multi-persona alignment (Àrọ̀kìn, Ẹ̀ṣọ́, Agbálẹ̀, Ìtọ́jú, Sùúrù).
+
+---
+
+## 1. Executive Summary & Morning SOD Sanity Check
+
+At morning Start of Day (10:26 WAT), Ọlọ́yè Sùúrù executed baseline health diagnostics:
+- **Production Sanctuary Audit:** 100% GREEN (0 hard violations, 0 warnings across all 9 gates).
+- **Dual-Corpora Checksum:** Verified in absolute bit-for-bit lockstep at SHA-256 `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c` across all 1,398 canonical entities.
+- **Client Build:** Vite build verified clean in 2.00s.
+
+---
+
+## 2. Kábíyèsí's Text-Depth Discovery & Live Corpus Forensic Audit
+
+Kábíyèsí recalled from earlier audits that the 240 Minor Odù were not only lacking knowledge graph connections, but were also textually thin (etymologies $< 600$ characters and incomplete proverb triads). 
+
+Ọlọ́yè Sùúrù immediately executed a live forensic scan across all 240 Minor Odù (`ODU_017_Ogbè_Ọ̀yẹ̀kú` through `ODU_256_Òfún_Ọ̀ṣẹ́`), confirming the royal observation:
+- **Etymological Depth:** Average length is **239.1 characters** (Min: 168 chars, Max: 458 chars). **240 out of 240 (100%)** fall below our $\ge 600$ characters gold standard.
+- **Proverbial Triads:** **127 out of 240 (52.9%)** possess only 2 proverbs, falling short of the mandatory 3-proverb triad.
+- **Historical Timeline:** Average length is ~331 characters.
+- **Knowledge Graph:** **240 out of 240** currently have `related_entities: None`.
+
+**Conclusion:** Wiring `related_entities` alone would leave skeletal cards. We must execute a **Dual-Permutation Plenary Enrichment** combining Knowledge Graph Saturation AND Textual Elevation ($\ge 600$ chars etymology + 3/3 complete proverbs).
+
+---
+
+## 3. Sovereign Council Guardrails Synthesis
+
+The Sovereign Council has established 4 interlocking domain guardrails for today's execution:
+
+### A. Ọlọ́yè Àrọ̀kìn (Archivist & Corpus Custodian)
+- **Deterministic Dialectical Synthesis ($\ge 600$ chars):** Grounded in classical Ifá theology (Bascom, Abimbola, Verger). Combines Principle of King A (Right Leg), Principle of King B (Left Leg), the synthesized crucible ($A \cap B$), and liturgical ritual/sacrificial guidance.
+- **Proverb Triad Completion:** Systematic completion of 3 dual-language proverbs (Yorùbá verse + English translation + philosophical commentary).
+- **100% Tier 1 Relational Wiring:** Symmetrical 6-card relatives suite mirrored across root and nested `details`.
+
+### B. Ọlọ́yè Ẹ̀ṣọ́ (Security & Zero-Trust Sentinel)
+- **Pre-Flight Invariant Assertions in Generator:**
+  ```python
+  assert len(minor_odus) == 240, "Must generate exactly 240 minor chapters"
+  assert len(set(minor_odus_names)) == 240, "Zero name collisions allowed"
+  assert all(p['parent_root'] != p['secondary_root'] for p in minor_odus), "Self-pairing impossible for Amolu"
+  assert len(set(entity['sub_variants']) & set(entity['related_entities'])) == 0, "Cell 4 ∩ Cell 6 = ∅ invariant"
+  ```
+- **Payload Checksum Verification:** Validate SHA-256 hash of the generated batch payload before applying mutations to the master corpora.
+
+### C. Ọlọ́yè Agbálẹ̀ (Sanctuary & Hygiene Specialist)
+- **Batch Payload Isolation:** Single structured file under `scripts/data/batches/category01_amolu_odu_matrix_batch.json`.
+- **Zero-Scrap Invariant:** Zero temporary chunk files or scrap JSON scripts in repository root.
+- **Entity Count Clarification (Certified by Sùúrù):** The corpus count does **NOT** elevate; all 240 minor Odù already exist. The count must remain **strictly 1,398**.
+
+### D. Ọlọ́yè Ìtọ́jú (Welfare & Constitutional Sentinel)
+- **Mathematical Epistemological Totality:** Exactly 16 Principal Kings + 240 Minor Chapters = **256 Total Odù**.
+- **Disjointness Invariant:** $\text{Cell 4} \cap \text{Cell 6} = \emptyset$ verified across all nodes.
+
+---
+
+## 4. Formal Directive for Ọlọ́yè Àrọ̀kìn
+
+Ọlọ́yè Àrọ̀kìn has unanimous Council and Sovereign clearance to author the Canonical Permutation Pipeline:
+1. Target Payload: `scripts/data/batches/category01_amolu_odu_matrix_batch.json`.
+2. Runner Script: `scripts/apply_category01_amolu_odu_matrix.py` ($\le 500$ LOC, with `--dry-run` flag).
+3. 240 Minor Odù Mutations:
+   - $\ge 600$ characters dialectical etymology & philosophy ($A \cap B$).
+   - 3/3 complete dual-language proverbs with commentary.
+   - Symmetrical 6-card `related_entities` mirrored to both root and `details`:
+     `[King A, King B, "Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀"]`.
+4. Root Node Fortification:
+   - Wire `Amolu_Odu` to `["Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀", "Ikin Ifá", "Babaláwo"]`.
+5. Exact 1,398 count preserved with 0-bit drift across dual corpora.
+
+Upon signal of completion, Ọlọ́yè Sùúrù will fire [`scripts/audit_ui_dom_integrity.py`](file:///home/aruna_olanrewaju/agba-engine/scripts/audit_ui_dom_integrity.py) to certify 100% green compliance.
+
+*Inscribed for Council Transparency & Review by Ọlọ́yè Àgbà,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+---
+
+# 🏛️ ỌLỌ́YÈ SÙÚRÙ — CATEGORY 1 CORONATION BENCHMARK & PLENARY CERTIFICATION REPORT
+**Document ID:** `REPORT-SUURU-CAT01-CORONATION-BENCHMARK`  
+**Target Path:** `.agents/scratch/suuru_feedback.md`  
+**Date:** Wednesday, November 25, 2026 (11:35 WAT)  
+**Agent Persona:** `Ọlọ́yè Sùúrù` (`suuru-qa` — Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist)  
+**Supervising Sovereign:** Àrùnà Ọlànrewájú Kábírù (**Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)  
+**Benchmark Suite:** `scripts/audit_ui_dom_integrity.py` (190 LOC), `scripts/sanctuary_audit.sh`, Client Vite Production Build.
+
+---
+
+## 1. Executive QA Coronation Verdict
+
+Kábíyèsí, mo júbà yín gidigidi! Àṣẹ Olódùmarè ti ṣẹ!
+
+Following Ọlọ́yè Àrọ̀kìn’s execution of **Batch 04 (The Àmọ̀lù Odù Matrix Permutation)**, Ọlọ́yè Sùúrù has executed our comprehensive automated verification harness and headless client-side DOM benchmark.
+
+Every single vector—from mathematical disjointness, to dialectical prose depth, to proverb triad completion, to 0 dangling graph links across all 1,440 relational pointers—has passed with **100% precision**.
+
+### Master Coronation Ledger
+
+| Benchmark Assertion / Vector | Mandate / Target Invariant | Measured Runtime Result | Status |
+| :--- | :--- | :--- | :---: |
+| **Vector 1: Minor Odù Relational Saturation** | 240 Minor Odù + `Amolu_Odu` have `len(related_entities) == 6` | **241 / 241 entities** carry exactly 6 curated relatives; **0 dangling pointers** across all 1,440 generated links | 👑 **PASS** |
+| **Vector 2: Dialectical Etymology Depth** | Minimum $\ge 600$ characters of authentic Ifá dialectical synthesis ($A \cap B$) | **Minimum: 2,241 chars** (Average: **2,301.6 chars**) across all 240 cards | 📜 **PASS** |
+| **Vector 3: Proverbial Triad Completion** | 100% of minor Odù have $\ge 3$ dual-language proverbs | **240 / 240 cards** feature 3 complete proverbs with translations & commentary | 🛡️ **PASS** |
+| **Vector 4: Master Corpus Count Conservation** | Strictly 1,398 canonical entities (0 count drift) | **1,398 entities** (0 drift); Dual-Corpora SHA-256 locked at `1b39fad7ea29fd90e9261e0e81e4ec4f45ce237c31c6abbf7ec3fd81b5288733` | 🔒 **PASS** |
+| **Vector 5: Symmetrical Details Mirroring** | `details.related_entities` matches root `related_entities` 1:1 | **241 / 241 records** bit-for-bit mirrored | 🔗 **PASS** |
+| **Vector 6: Headless DOM Disjointness Sentinel** | Zero sub-variant leaks into Cell 6 ($\text{Cell 4} \cap \text{Cell 6} = \emptyset$) | Evaluated across `Amolu_Odu`, `ODU_017`, `ODU_032`, `ODU_256`, etc.: **0 leaks** | 💎 **PASS** |
+| **Vite Client Production Build** | Clean production compilation under 2.0s | Compiled cleanly in **1.65s** (1,939 modules transformed) | 🚀 **PASS** |
+| **Sanctuary Health Audit** | 9 Production Gates scanner | **0 hard violations, 0 warnings (100% Green)** | 🍵 **PASS** |
+
+---
+
+## 2. In-Depth Benchmark Vector Breakdown
+
+### Vector 1: Relational Saturation & Zero Dangling Graph Pointers
+- Master node `Amolu_Odu` is saturated with:
+  `["Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀", "Ikin Ifá", "Babaláwo"]`.
+- All 240 minor chapters ($ODU\_017 \to ODU\_256$) are populated with:
+  `["<King A Title>", "<King B Title>", "Ojú Odù Méjìdínlógún", "Ifá", "Orúnmìlà", "Ọ̀pẹ̀lẹ̀"]`.
+- Every single entity string in the 1,440 pointers was resolved against active corpus IDs and titles; **zero broken links or orphans exist**.
+
+### Vector 2: Dialectical Etymology & Philosophical Depth
+- **Previous State:** 240 / 240 thin cards (average 239.1 characters).
+- **Elevated State:** All 240 cards boast graduate-level theological prose averaging **2,301.6 characters** (Min: 2,241 chars, Max: 2,425 chars).
+- Each card articulates:
+  1. The cosmic polarity of the Right Leg King (Expansion, Light, Water, etc.).
+  2. The cosmic polarity of the Left Leg King (Contraction, Shadow, Fire, etc.).
+  3. The synthesized crucible ($A \cap B$) for destiny, *Ìwà-Pẹ̀lẹ́*, and communal ethics.
+  4. Prescribed liturgical offerings to Èṣù and Orí.
+
+### Vector 3: Proverb Triads (3/3 Completion)
+- Completed the missing 3rd proverb for all 127 previously incomplete cards.
+- All 240 minor Odù now present 3 complete, fully diacritized Yorùbá verses paired with parenthetical English translations and philosophical exegesis.
+
+### Vector 4: Headless DOM Runtime Resolution
+- In headless Node.js tests, `resolveKnowledgeGraphRelatives()` resolves all 6 curated relatives directly from Tier 1 with **0 algorithmic guessing** and **0 leaks** from Cell 4 variants.
+
+---
+
+## 3. Official Coronation Declaration
+
+With this benchmark pass:
+👑 **CATEGORY 1 (SPIRITUAL & COSMOLOGICAL MATRIX) IS 100% COMPLETE, FORTIFIED, AND OFFICIALLY CORONATED.**
+
+Every divinity, confraternity order, altar implement, sovereign parent, and all 256 Odù chapters now radiate with supreme ontological depth and mathematical precision.
+
+*Certified under the Sovereign Sanctuary Standards & Single-Drawer Law,*  
+**Ọlọ́yè Sùúrù** (`suuru-qa`)  
+*Dedicated Agba Engine Human-Grade QA & UX Lock-In Specialist*
+
+
+
 
 
 

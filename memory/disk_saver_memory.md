@@ -343,6 +343,17 @@
 - **Git Repository State**: Branch `dev` synchronized with `origin/dev` at commit `b658a66`.
 - **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Tuesday EOD Housekeeping Clearance Granted.
 
+---
+
+## 32. Wednesday Start-of-Day Workspace Hygiene, Storage Headroom & Archive Integrity Sweep (`SOD-AGBALE-015` / `SOD-HOUSEKEEPING-SWEEP-NOV25-2026`) (2026-11-25)
+- **Sanctuary Storage Headroom**: `31 GB available` (`38%` used on `50 GB` `/dev/vdb` partition) — safely preserved above the $\ge 30\text{ GB}$ baseline (>15.5× above 2.0 GB alert floor). Core repository occupies lean `318 MB`.
+- **Ephemeral & Bytecode Eviction**: Verified 0 `__pycache__` directories, 0 `.pyc` files, and 0 orphaned `.tmp` build clutter across repository. Transient Vite caches (`web/node_modules/.vite` and `web/dist`) swept clean.
+- **Client Build Latency Certified**: Executed `npm run build` in `web/`; clean compilation in **832ms** (sub-second performance) with 1,939 modules transformed and zero errors. Disk unencumbered and primed for Àmọ̀lù Odù Matrix Permutation.
+- **Sphere 4 Vault Integrity**: Verified all archives with `sha256sum -c *.sha256` (`OK`). Strict rolling 3-snapshot cap satisfied (`20261121_195513`, `20261123_152433`, `20261124_140543`) alongside foundational vault (`20261028_132739Z`), totaling 65 MB. Tuesday snapshot verified match at SHA-256 `5e107be46e9f815537450de1928fdc279abd41d507fe9994dd1b71e14bf70171`.
+- **Working Tree Cleanliness**: Branch `dev` synchronized with `origin/dev` at commit `b658a66`; zero untracked files; operational working tree primed for Àmọ̀lù Odù Matrix execution.
+- **Dual-Corpora Checksum Lockstep**: 100% bit-for-bit lockstep at SHA-256 `046967bb616b5ede65a242290568a4216dc6bb1a3d45ae8365840443edc9d80c` across 1,398 canonical entities.
+- **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Wednesday SOD Housekeeping Clearance Granted.
+
 | **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 14:42 UTC** | EOD-AGBALE-004: Pre-Retirement Storage Sweep (Friday Nov 06) | 0 MB | 44G available | 🟢 Nominal |
@@ -369,3 +380,4 @@
 | **2026-11-23 14:27 UTC** | EOD-AGBALE-014: Monday End-of-Day Workspace Hygiene, Storage Headroom & Archive Certification (Nov 23) | 0 MB | 32G available | 🟢 Nominal |
 | **2026-11-24 10:20 UTC** | SOD-AGBALE-014: Tuesday Start-of-Day Workspace Hygiene, Storage Headroom & Archive Integrity Sweep (Nov 24) | 0 MB | 31G available | 🟢 Nominal |
 | **2026-11-24 13:10 UTC** | EOD-AGBALE-015: Tuesday End-of-Day Workspace Hygiene, Storage Headroom & Archive Certification (Nov 24) | 0 MB | 31G available | 🟢 Nominal |
+| **2026-11-25 09:25 UTC** | SOD-AGBALE-015: Wednesday Start-of-Day Workspace Hygiene, Storage Headroom & Archive Integrity Sweep (Nov 25) | 0 MB | 31G available | 🟢 Nominal |
