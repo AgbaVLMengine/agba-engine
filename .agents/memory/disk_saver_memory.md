@@ -378,6 +378,19 @@
 - **Dual-Corpora Checksum Lockstep**: Certified 100% bit-for-bit lockstep at SHA-256 `1b39fad7ea29fd90e9261e0e81e4ec4f45ce237c31c6abbf7ec3fd81b5288733` across strictly **1,398 canonical entities** (**0-bit drift**).
 - **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Friday SOD Housekeeping Clearance Granted.
 
+---
+
+## 35. Friday End-of-Day Workspace Hygiene, Storage Headroom & Sphere 4 Snapshot Audit (`EOD-AGBALE-017` / `EOD-HOUSEKEEPING-SWEEP-NOV27-2026`) (2026-11-27)
+- **Sanctuary Storage Headroom**: `31 GB available` (`38%` used on `50 GB` `/dev/vdb` partition) — safely preserved above the $\ge 30\text{ GB}$ baseline (>15.5× above 2.0 GB alert floor). Core repository occupies lean `333 MB`.
+- **Morning SOD Recommendations Audit**:
+  1. *Payload Isolation*: All Category 2 payloads (`cat2_batch2a_foundation_payload.json`, `cat2_batch2b_maritime_expansion.json`, `cat2_batch2c_dynastic_succession.json`) strictly confined to `scripts/data/batches/`.
+  2. *Bytecode Suppression*: Verified 0 `__pycache__` directories and 0 `.pyc` files generated during batch runs.
+  3. *Clean Working Tree*: Synchronized with `origin/dev` at commit `2e8e09c`.
+- **Sphere 4 Vault Retention Audit**: Today's snapshot `agba_engine_snapshot_20261127_154855.tar.gz` (`21 MB`) cryptographically verified match at SHA-256 `edc7a10ecac893e47edc397dd7b45d9e3b0f47ce56854c1351c9d6c95964d32e` (`OK`). Strict rolling 3-snapshot cap satisfied (`20261124_140543`, `20261125_120824`, `20261127_154855`) plus foundational vault (`20261028_132739Z`), totaling 65 MB. Older snapshot (`20261123_152433`) cleanly pruned.
+- **Dual-Corpora Checksum Lockstep**: Certified 100% bit-for-bit lockstep at SHA-256 `b31af4f1f64633b9f6d88c2d984454f0b83ee20025ca0310820be44598205c6d` across all **1,422 canonical entities** (**0-bit drift**).
+- **Git Repository State**: Branch `dev` synchronized with `origin/dev` at commit `2e8e09c`.
+- **All 9 Production Gates**: 0 hard violations, 0 warnings certified via `scripts/sanctuary_audit.sh`. Friday EOD Housekeeping Clearance Granted.
+
 | **2026-11-05 13:29 UTC** | EOD-AGBALE-003: Pre-Retirement Storage Sweep & Cache Purge | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 09:31 UTC** | SOD-AGBALE-003: Start-of-Day Storage & Asset Hygiene Sweep (Nov 06) | 0 MB | 44G available | 🟢 Nominal |
 | **2026-11-06 14:42 UTC** | EOD-AGBALE-004: Pre-Retirement Storage Sweep (Friday Nov 06) | 0 MB | 44G available | 🟢 Nominal |
@@ -407,3 +420,4 @@
 | **2026-11-25 09:25 UTC** | SOD-AGBALE-015: Wednesday Start-of-Day Workspace Hygiene, Storage Headroom & Archive Integrity Sweep (Nov 25) | 0 MB | 31G available | 🟢 Nominal |
 | **2026-11-25 11:27 UTC** | EOD-AGBALE-016: Wednesday End-of-Day Workspace Hygiene, Storage Headroom & Archive Certification (Nov 25) | 0 MB | 31G available | 🟢 Nominal |
 | **2026-11-27 09:31 UTC** | SOD-AGBALE-016: Friday Start-of-Day Workspace Hygiene, Storage Headroom & Vault Audit (Nov 27) | 0 MB | 31G available | 🟢 Nominal |
+| **2026-11-27 15:07 UTC** | EOD-AGBALE-017: Friday End-of-Day Workspace Hygiene, Storage Headroom & Sphere 4 Snapshot Audit (Nov 27) | 0 MB | 31G available | 🟢 Nominal |
