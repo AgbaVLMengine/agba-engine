@@ -1,0 +1,658 @@
+{
+  "batch_id": "CAT02_BATCH2C_DYNASTIC_SUCCESSION",
+  "expected_invariants": {
+    "expected_corpus_delta": 13,
+    "min_related_entities": 6,
+    "min_proverbs": 3,
+    "min_etymology_chars_patriarch": 1200,
+    "min_etymology_chars_monarch": 1000,
+    "require_symmetrical_details": true,
+    "enforce_disjointness_cell4_cell6": true
+  },
+  "new_entities": [
+    {
+      "id": "olofin_ogunfunminire",
+      "title": "Ọlọ́fin Ògúnfúnminíre (Primordial Patriarch of the Awori & Coastal Lineage)",
+      "culture": "Yorùbá (Awori)",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": true,
+      "sovereign_parent": "Odùduwà",
+      "sovereign_parent_status": "Primordial Patriarch Stool",
+      "domain": "Ìdò, Ìtìrẹ́, Ado-Odo, Ìbàsà & The Coastal Awori Realm",
+      "aliases": [
+        "olofin",
+        "olofin ogunfunminire",
+        "ogunfunminire",
+        "patriarch of the awori",
+        "olofin of ido",
+        "olofin aye",
+        "father of idejo",
+        "olofin of lagos",
+        "omo olofin"
+      ],
+      "description": "The legendary primordial royal prince of Ilé-Ifẹ̀, supreme hunter-statesman, and founding civilizational patriarch of the Awori nation, who led the historic southward migration following the sacred floating mud dish from ancient Ifẹ̀, established the mother-settlements at Ìtìrẹ́-Ilé in the Ado-Odo corridor and Ìdò island, and apportioned the lands of coastal Lagos and its waterways among his noble children, establishing the ancestral stools of Ọba Onítìrẹ́ of Ìtìrẹ́ and the sixteen Ìdèjò White Cap landowners.",
+      "historical_timeline": "Flourishing in classical antiquity (c. 14th–15th century CE), Prince Ogunfunminire departed the sacred ancestral cradle of Ilé-Ifẹ̀ with royal benedictions from Odùduwà and a divine charge from Ifá to follow a consecrated ritual mud dish (Àwo Olókùn) set upon the waters, taking root wherever it submerged. The migration journey progressed through the interior forests into the Ado-Odo corridor of Ogun State—where the ancient mother-settlement of Ìtìrẹ́-Ilé was founded as the primary inland agricultural and spiritual base—before advancing along the coastal creeks to Ìbàsà and reaching Ìdò island where the sacred dish finally sank beneath the waters. At Ìdò and across the mainland, Ọlọ́fin established the paramount Awori citadel, defending his people through peerless archery and iron weaponry. He apportioned the fertile mainland hunting grounds, mangrove islands, and lagoon corridors among his royal sons and trusted warriors—instituting the sacred royal stool of Ọba Onítìrẹ́ of Ìtìrẹ́ and the sixteen hereditary Ìdèjò White Cap chieftaincy estates—thereby establishing an unbroken system of customary land tenure that pre-dated all subsequent European and regional military incursions.",
+      "etymology_and_philosophy": "The personal name Ògúnfúnminíre translates morphologically to 'The Divinity of Iron Has Conferred Good Fortune Upon Me' (Ògún + fún + mi + ní + ire), honoring the martial, metallurgical, and pioneering mastery that enabled his retinue to conquer dense tropical rainforests and coastal mangroves. The imperial prefix 'Ọlọ́fin' is an archaic sacerdotal title derived from ancient Ilé-Ifẹ̀, contracted from 'Ọlọ́wọ̀-Ọ̀fin' or 'Oní-Àfin' ('The Consecrated Sovereign of the Sacred Palace and Royal Covenant of Cosmic Law'). Philosophically, Ọlọ́fin embodies the Invariant of Primordial Custodianship (Onílẹ̀): in Yorùbá-Awori constitutional jurisprudence, it is a foundational legal reality that while administrative and military monarchs (Àwọn Ọba) may wield the executive crown and sword of statecraft (Àṣẹ Ìjọba), ultimate ancestral ownership of the land remains eternally inalienable, rooted in the descendants of Ọlọ́fin ('Ọmọ Ọlọ́fin l’ó ni ilẹ̀'). The sacred migration axis uniting Ìtìrẹ́-Ilé in Ado-Odo, the maritime creek sanctuary of Ìbàsà, and the paramount mainland throne of Ìtìrẹ́ stands as living proof of the enduring triptych of Awori civilizational continuity, demonstrating that royal sovereignty is preserved through ancestral covenants, divinatory obedience, and ecological harmony with the earth and water.",
+      "material_and_craftsmanship": "Signified by primordial hunter iron scepters (Ọ̀pá Ògún), ancestral mud-dish shrines (Ojúbọ Àwo Olókùn), hand-woven pure white textiles (Aṣọ Funfun), and heirloom coral bead necklaces. The ancient shrines at Ìdò, the sacred palace at Ìtìrẹ́-Ilé in Ado-Odo, and the royal domain of Ìtìrẹ́ preserve ritual altars and sacred stones marking his divine presence.",
+      "social_and_ritual_context": "Venerated across all Awori communities during annual Oro, Egungun, and coastal water festivals. Every crowned Awori monarch—including the Ọba Onítìrẹ́ of Ìtìrẹ́—and each Ìdèjò White Cap chief of Lagos invokes the name of Ọlọ́fin during coronation libations and installation oaths to affirm their sacred title to the soil and people.",
+      "proverbs_and_oral_traditions": [
+        "Ọmọ Ọlọ́fin l’ó ni ilẹ̀, àlejò kì í f’agbára gba orísun. (The children of Ọlọ́fin hold primordial ownership of the land; no stranger can confiscate ancestral origins through force: Affirming inalienable customary land tenure.)",
+        "Àwo tó rì sí Ìdò l’ó f’ẹsẹ̀ Awori mú’lẹ̀; Ọlọ́fin kì í jẹ́ kí ilẹ̀ ba àwọn ọmọ rẹ̀ jẹ́. (The sacred dish that submerged at Ìdò is what firmly anchored the Awori nation in the soil; Ọlọ́fin never permits the ancestral land to fail his offspring: Commemorating divinatory guidance.)",
+        "Gbogbo ọmọ Awori l’ọmọ Ọlọ́fin, ibi tí a ti bẹ̀rẹ̀ kò lè di ìgbàgbé. (Every child of the Awori nation is a child of Ọlọ́fin; the primordial roots of our heritage can never be forgotten: Affirming universal kinship and royal descent.)"
+      ],
+      "diaspora_connections": "The sacred memory of Ọlọ́fin traveled across the Atlantic during the transatlantic crossing, surviving in Cuban Lucumí and Brazilian Candomblé Ketu liturgies where 'Olofi' is revered as the personal earthly sovereign and divine manifestation of Olódùmarè.",
+      "geographical_origin": "Ilé-Ifẹ̀, Ado-Odo (Ogun State), Ìbàsà & Ìdò Island (Lagos State)",
+      "curatorial_guidelines": "Curators and dramatists must portray Ọlọ́fin with absolute spiritual gravitas and ancient patriarch majesty. His iconography requires the sacred iron hunting staff, white textiles, and the sacred mud dish. Never confuse him with late-dynastic 19th-century military figures.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_onitire_of_itire",
+        "idejo_white_cap_chiefs",
+        "oba_of_lagos_eleko",
+        "Odùduwà",
+        "Ọba",
+        "asipa_of_lagos"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "asipa_of_lagos",
+      "title": "Asipa of Lagos (Founder of the Lagos Dynastic Monarchy)",
+      "culture": "Yorùbá / Edo-Benin",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Dynastic Progenitor Stool",
+      "domain": "Lagos Island (Èkó) & The Coastal Lagoon Seaboard",
+      "aliases": [
+        "asipa",
+        "asipa of lagos",
+        "esikpa",
+        "asipa of eko",
+        "founder of lagos monarchy",
+        "first king of lagos"
+      ],
+      "description": "The foundational dynastic ruler, noble prince, and military statesman who established the crowned monarchical dynasty of the Lagos Kingdom (Èkó) in the early 17th century, invested with royal authority by his royal father, Ọba Orhogbua of Benin, and married into the indigenous Awori nobility.",
+      "historical_timeline": "Flourishing in the late 16th and early 17th centuries (c. 1600 CE), Asipa was an illustrious prince of royal Benin descent (acknowledged by chroniclers Losi, Egharevba, and Johnson as the son of the great naval monarch Ọba Orhogbua of Benin). When Ọba Orhogbua established the military and trading citadel of Èkó on the island, he appointed Asipa as the consecrated supreme administrator and traditional leader over the settlement. Before returning to Benin, the Ọba bestowed upon Asipa the sacred royal sword of authority (*Idà Àṣẹ*), the ceremonial state drums (*Gbedu*), and the sovereign royal staff. Asipa successfully integrated the foreign administrative apparatus with the indigenous Awori landowners under Ọlọ́fin, cementing a lasting constitutional alliance by marrying into local royal houses and fathering Ọba Adó, who succeeded him as the first fully consecrated Ọba of Lagos.",
+      "etymology_and_philosophy": "The title Asipa (conventionally pronounced Aṣípa or Esikpa in coastal archives) denotes 'The Supreme Pioneer, Sovereign Vanguard, and Consecrated Herald of Authority'. In classical coastal constitutional jurisprudence, Asipa represents the profound, historic synthesis of two paramount West African civilizations: the ancient autochthonous, land-owning cosmological order of the Yorùbá-Awori under Ọlọ́fin, and the formidable, centralized maritime and administrative governance of the Imperial Benin monarchy under Ọba Orhogbua. Philosophically, Asipa's investiture established the immortal constitutional doctrine that defines Lagos statecraft across four centuries: that legitimate urban sovereignty requires an enlightened covenant of accommodation between the host landowners (Onílẹ̀) and the administrative crown (Aláṣẹ). Rather than imposing tyrannical despotism, Asipa integrated the foreign military command with the indigenous Awori institutions, taking an Awori noblewoman as royal consort and establishing the permanent precedent that subsequent Ọbas of Lagos must govern through consultation with the indigenous White Cap chiefs. His legacy stands as an enduring monument to diplomatic consensus, cross-cultural statecraft, and the peaceful consolidation of royal authority upon the lagoon.",
+      "material_and_craftsmanship": "Distinguished by the historic ceremonial bronze and iron sword of state (*Idà Àṣẹ*), royal Gbedu drums carved from solid mahogany trunks with high-relief ancestral carvings, coral headbands, and brass ceremonial armlets. Custodian of early palace relics that formed the foundation of Ìgá Ìdúngànrán.",
+      "social_and_ritual_context": "Asipa established the foundational court rites of the Lagos monarchy. His memory is invoked in all official state genealogies, and subsequent Ọbas of Lagos pay solemn homage to his ancestral shrine during their coronation circuit across Ìsàlẹ̀ Èkó.",
+      "proverbs_and_oral_traditions": [
+        "Asípá l’ó f’ọ̀nà adé hàn ní Èkó; láti ọwọ́ rẹ̀ ni ìtàn ọba ti bẹ̀rẹ̀. (Asipa revealed the pathway of crowned kingship in Lagos; from his noble hand the dynastic chronicle of monarchy began.)",
+        "Ẹni tó kọ́kọ́ gbin igi ọlá l’ó yẹ ká bu ọlá fún; Asípá ni baba àwọn ọba Èkó. (He who first planted the tree of royal majesty deserves eternal reverence; Asipa is the ancestral father of all kings of Lagos.)",
+        "Bí Èkó bá ń dún mọ́ni, a gbọ́dọ̀ rántí Asípá tó fi àlàáfíà tẹ ìlú dó. (When Lagos flourishes in joy and abundance, we must remember Asipa who founded the kingdom upon peace and concord.)"
+      ],
+      "diaspora_connections": "The historical memory of the Benin-Lagos dynastic founding under Asipa was documented by 18th- and 19th-century transatlantic visitors and remains a cornerstone of African diaspora historical scholarship examining urban pre-colonial state formation.",
+      "geographical_origin": "Benin Kingdom & Lagos Island (Èkó)",
+      "curatorial_guidelines": "Portray Asipa as a stately, diplomatic warrior-monarch dressed in early 17th-century coastal West African regalia combining coral beads and hand-woven wraps, holding the ancestral sword of office (*Idà Àṣẹ*).",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_orhogbua_of_benin",
+        "oba_ado_of_lagos",
+        "olofin_ogunfunminire",
+        "oba_of_lagos_eleko",
+        "idejo_white_cap_chiefs",
+        "iga_idunganran"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_orhogbua_of_benin",
+      "title": "Ọba Orhogbua of Benin (16th-Century Naval Warrior Monarch & Imperial Progenitor)",
+      "culture": "Edo / Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Imperial Sovereign Stool",
+      "domain": "Benin Empire, Coastal Lagoons & West African Atlantic Littoral",
+      "aliases": [
+        "orhogbua",
+        "oba orhogbua",
+        "oba orhogbua of benin",
+        "naval king of benin",
+        "father of asipa",
+        "emperor orhogbua"
+      ],
+      "description": "The celebrated 16th-century sovereign monarch of the Benin Empire (reigned c. 1550–1578 CE), renowned as a formidable naval commander, scholar educated by Portuguese emissaries, and imperial strategist who established the fortified naval outpost of Èkó on Lagos Island and fathered Asipa, founder of the Lagos dynastic monarchy.",
+      "historical_timeline": "Ascending the ancient throne of Benin around 1550 CE following the death of his royal father Ọba Esigie, Ọba Orhogbua was uniquely educated in Portuguese literacy and statecraft, wearing a Catholic rosary while fiercely expanding the imperial sovereignty of Benin. Recognizing the immense strategic importance of the coastal lagoons for transatlantic commerce and geopolitical hegemony, Orhogbua personally commanded a massive armada of royal war canoes across the coastal waterways, establishing an impenetrable military camp on Lagos Island which he christened 'Èkó' (the camp). He campaigned as far west as modern Republic of Benin and Badagry, securing the coastal corridor. Before returning to his imperial capital at Benin City, he installed his royal prince Asipa as the consecrated sovereign administrator over the territory, laying the indelible foundation for the Kingdom of Lagos.",
+      "etymology_and_philosophy": "The Edo imperial name Orhogbua signifies 'The Victorious Sovereign whose Sacred Presence Commands Universal Order and Triumph'. In pre-colonial West African political history, Ọba Orhogbua represents the supreme zenith of indigenous naval warfare, amphibious military strategy, and cosmopolitan statecraft: demonstrating that African monarchies engineered and maintained vast armadas of royal war vessels capable of exercising sovereign jurisdiction across hundreds of kilometers of coastal lagoons, swamps, and oceanic littoral. Educated in Portuguese literacy and international statecraft during the 16th-century Renaissance exchanges, Ọba Orhogbua brilliantly combined European technological insights with ancient Benin metallurgical and military science, establishing the fortified naval citadel of Èkó on Lagos Island to secure regional trade routes and defend the coastline against external pirates. Philosophically, his legacy illustrates the deep, unbreakable genealogical and institutional kinship uniting the imperial dynasties of Benin and Yorùbáland, confirming that Lagos was founded not as an isolated settlement, but as an imperial maritime capital designed for international commerce, naval defense, and inter-civilizational greatness.",
+      "material_and_craftsmanship": "Distinguished by imperial Benin coral bead armor, high-collared beaded tunics (Èwù Ìlẹ̀kẹ̀), bronze royal pectorals depicting maritime mudfish motifs, and carved ivory armlets. His court utilized naval signaling horns, European-imported brass cannons, and royal state swords (*Ada* and *Eben*).",
+      "social_and_ritual_context": "Revered in both Benin and Lagos royal liturgies as the architect of the coastal empire. His historic campaigns are celebrated in the ancestral praise poetry (Oriki / Ugho) of the royal houses of Benin and Ìsàlẹ̀ Èkó.",
+      "proverbs_and_oral_traditions": [
+        "Ọba Orhogbua l’ó f’ọkọ̀ ogun gba omi Èkó; àṣẹ rẹ̀ kò l’opin l’órí agbami. (It was Ọba Orhogbua who navigated royal war armadas across the waters of Lagos; his sovereign decree knew no boundary upon the oceanic deep.)",
+        "Ẹni tó l’omi l’ó l’Èkó; Orhogbua l’ó kọ́kọ́ f’àṣẹ kọ́ ibùdó ọlá. (He who commands the waters commands Lagos; Orhogbua was the first imperial sovereign who anchored the citadel of majesty upon the lagoon.)",
+        "Oríṣun ogun kì í gb’ẹ́kùn ọba; àṣẹ Benin àti ti Yorùbá f’ọwọ́ sowọ́ pọ̀ ní Èkó. (The fountainhead of valor never fails a true sovereign; the royal heritage of Benin and Yorùbá united their hands in the heart of Lagos.)"
+      ],
+      "diaspora_connections": "Documented in 16th-century Portuguese royal correspondence and Renaissance European exploration chronicles, Ọba Orhogbua’s cosmopolitan naval leadership challenged colonial narratives, celebrated across the transatlantic African diaspora as an icon of African sovereignty.",
+      "geographical_origin": "Benin City (Edo State) & Lagos Island (Èkó)",
+      "curatorial_guidelines": "Highlight his unique historic identity as a 16th-century literate, naval-commanding monarch. Present him adorned in classical imperial Benin coral regalia with the ancestral bronze pectorals, distinct from hinterland Yorùbá dress.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "asipa_of_lagos",
+        "oba_ado_of_lagos",
+        "oba_of_lagos_eleko",
+        "Ọba",
+        "iga_idunganran",
+        "olofin_ogunfunminire"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_ado_of_lagos",
+      "title": "Ọba Adó of Lagos (Second Ọba of Lagos & Consolidator of Island Throne)",
+      "culture": "Yorùbá / Edo-Benin",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Dynastic Consolidator Stool",
+      "domain": "Lagos Island (Ìsàlẹ̀ Èkó)",
+      "aliases": [
+        "oba ado",
+        "ado of lagos",
+        "king ado",
+        "oba ado of lagos",
+        "second oba of lagos",
+        "oba ado of eko"
+      ],
+      "description": "The second sovereign monarch of the Lagos Kingdom (reigned c. 1630–1669 CE), son and successor of Asipa, celebrated as the great political consolidator of kingship on Lagos Island who unified the Benin and Awori administrative frameworks and fathered three monumental monarchs: Ọba Gabaro, Ọba Akinsemoyin, and Queen Mother Erelú Kútì.",
+      "historical_timeline": "Ascending the throne around 1630 CE following the death of his father Asipa, Ọba Adó was the first ruler to establish a permanent, fully developed court structure in Ìsàlẹ̀ Èkó. He secured the formal allegiance of the indigenous Awori settlements across the mainland, collecting regular royal tributes (tribute in fish, game, and agricultural produce). Ọba Adó governed with profound wisdom and judicial diplomacy, presiding from Enu Owa. His reign witnessed a substantial population surge as merchants, artisans, and warrior-families settled permanently on the island. By siring Ọba Gabaro (who founded Ìgá Ìdúngànrán), Ọba Akinsemoyin (who opened overseas commerce), and their immortal sister Erelú Kútì (the dynastic fountainhead of all subsequent monarchs), Ọba Adó cemented the biological and political foundations of modern Lagos.",
+      "etymology_and_philosophy": "The royal name Adó is derived from the classical Edo and Awori nomenclature signifying 'The Resolute Prince who Anchors the Citadel with Wisdom'. Philosophically, Ọba Adó represents the indispensable principle of second-generation dynastic institutionalization: demonstrating that while pioneers conquer territory, it is the visionary constitutional consolidator who transforms a military outpost into an enduring, peaceful commonwealth governed by codified customary law. Under Ọba Adó's four-decade reign at Enu Owa, the dual-sovereignty model of Lagos was formally perfected: royal tributes were standardized across the mainland Awori settlements, indigenous judicial tribunals were integrated into the royal court, and the sacred coronation rites were consecrated. Furthermore, by fathering Ọba Gabaro, Ọba Akinsemoyin, and Princess Erelú Kútì, Ọba Adó became the biological fountainhead of all subsequent monarchs who have reigned in Lagos. His court established the solemn constitutional doctrine that the crown belongs to those who govern with patience, judicial impartiality, and profound reverence for the ancestral soil.",
+      "material_and_craftsmanship": "Distinguished by cylindrical coral bead crowns, imported European brass bells, woven silk wrappers, and early royal judicial swords. The court at Enu Owa preserved the sacred ancestral shrines where Ọba Adó convened weekly audiences with the chiefs.",
+      "social_and_ritual_context": "Ọba Adó instituted the formal ceremonial court audiences in Lagos. His burial ground at Enu Owa became an inviolable royal shrine where successive Ọbas of Lagos perform essential coronation prayers before moving into the palace.",
+      "proverbs_and_oral_traditions": [
+        "Ọba Adó l’ó f’ẹsẹ̀ ìtẹ́ mú’lẹ̀; ọba tó bí ọba, tó tún bí Erelú ọlá. (It was Ọba Adó who firmly rooted the throne in the soil; the king who fathered monarchs and gave birth to the noble Erelú of majesty: Celebrating dynastic fecundity.)",
+        "Àdó kì í f’ọ̀rọ̀ ilú s’eré; ọgbọ́n rẹ̀ l’ó fi kọ́ Èkó d’ìlú ńlá. (Ọba Adó never treated civic governance as a trivial game; with profound wisdom he built Lagos into a great kingdom.)",
+        "Ọmọ Ọba Adó kì í sùn l’órí àìní; oríṣun ọlá ń bẹ nílé baba wọn. (The children of Ọba Adó never slumber in destitution; the fountainhead of royal majesty abides forever in their ancestral home.)"
+      ],
+      "diaspora_connections": "Recorded in the earliest oral traditions transcribed by 19th-century returnee scholars, Ọba Adó’s reign represents the foundational era cited by African historians documenting the rise of indigenous maritime monarchies along the Guinea Coast.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Present Ọba Adó as a dignified, patriarchal monarch seated in ancestral council, wearing royal coral beads and traditional woven textiles, surrounded by his princes and councilors.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "asipa_of_lagos",
+        "oba_gabaro_of_lagos",
+        "oba_akinsemoyin_of_lagos",
+        "erelu_kuti_of_lagos",
+        "oba_of_lagos_eleko",
+        "idejo_white_cap_chiefs"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_gabaro_of_lagos",
+      "title": "Ọba Gabaro of Lagos (Third Ọba of Lagos & Founder of Ìgá Ìdúngànrán)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Architectural Sovereign Stool",
+      "domain": "Ìsàlẹ̀ Èkó, Lagos Island",
+      "aliases": [
+        "oba gabaro",
+        "gabaro of lagos",
+        "king gabaro",
+        "oba gabaro of lagos",
+        "third oba of lagos",
+        "founder of iga idunganran"
+      ],
+      "description": "The third sovereign monarch of the Lagos Kingdom (reigned c. 1669–1704 CE), elder son of Ọba Adó, famed as the visionary architectural monarch who relocated the royal court from Enu Owa to Ìgá Ìdúngànrán and formally institutionalized the chieftaincy cabinets of Lagos.",
+      "historical_timeline": "Ascending the throne around 1669 CE, Ọba Gabaro enacted the most consequential urban and constitutional transformation in early Lagos history. Recognizing that the primitive palace at Enu Owa was inadequate for the growing needs of royal statecraft, Gabaro secured a historic agreement with Chief Aromire—the senior Ìdèjò landowner—to transfer his ancestral pepper farm (Idún-Gánrán) to the crown. On this site, Ọba Gabaro constructed the first formal palace compound of Ìgá Ìdúngànrán, establishing the permanent architectural and spiritual home of the monarchy. Gabaro also formally classified and structured the hereditary chieftaincy classes—empowering the Ìdèjò as landed proprietors while formalizing the Àkárìgbèrè under the Eletu Odibo—ensuring a sophisticated, lasting division of governmental powers.",
+      "etymology_and_philosophy": "The royal name Gabaro translates morphologically to 'The Resolute Architect who Expands and Fortifies the Commonwealth'. In Yorùbá constitutional theory, Ọba Gabaro embodies spatial statecraft, urban transformation, and lawful administrative reform: demonstrating that royal authority is rendered permanent, visible, and legitimate through majestic sacred architecture and institutional clarity. By negotiating peacefully and diplomatically with Chief Aromire—the senior Awori Ìdèjò landowner—to acquire the ancestral pepper grove (Idún-Gánrán) rather than confiscating it through royal decree, Ọba Gabaro established the foundational precedent of constitutional contract in Lagos property law, affirming that even crowned sovereigns must respect customary land tenure. The founding of Ìgá Ìdúngànrán transformed a decentralized island into a centralized imperial capital. Furthermore, by formalizing the four traditional chieftaincy classes (Ìdèjò, Àkárìgbèrè, Ọ̀gáládé, and Mọ̀dílẹ̀), Gabaro instituted an unshakeable system of checks and balances that prevented royal absolutism and preserved collective governance across centuries.",
+      "material_and_craftsmanship": "Distinguished by traditional Yorùbá mud-and-iroko impluvium architectural design, massive carved veranda posts, thatched roofs woven from water reeds, and ceremonial iron staffs. Ọba Gabaro’s court utilized the sacred Gbedu drums to summon councilors into the newly established palace courtyards.",
+      "social_and_ritual_context": "Ọba Gabaro established Ìgá Ìdúngànrán as the perpetual ceremonial and ritual heart of Lagos. He consecrated the royal ancestral burial vaults (*Ojúbọ*) within the palace walls, establishing the inviolable custom whereby every deceased Ọba of Lagos is entombed within the palace grounds.",
+      "proverbs_and_oral_traditions": [
+        "Gábárò l’ó kọ́ Ìgá, tó f’Èkó d’orí ìtẹ́ ọlá. (It was Gabaro who built the royal palace of Ìdúngànrán, elevating Lagos into the seat of eternal majesty.)",
+        "Ilẹ̀ ata l’a ti kọ́ àfin ọba; ọgbọ́n Gábárò l’ó fi d’ilé ọlá. (Upon the humble pepper farm was constructed the royal palace; it was Gabaro's wisdom that transformed it into a sanctuary of honor.)",
+        "Ẹni bá kọ́ àfin l’ó tẹ ìlú dó; orúkọ Gábárò kì í parẹ́ ní Ìdúngànrán. (He who builds the palace firmly establishes the kingdom; the name of Gabaro can never fade from the courts of Ìdúngànrán.)"
+      ],
+      "diaspora_connections": "The traditional impluvium architecture and courtyard governance established by Ọba Gabaro at Ìgá Ìdúngànrán became the structural model for Afro-Brazilian temple houses (terreiros) established by Lucumí and Ketu repatriates along the coastal Atlantic.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Portray Ọba Gabaro as a master royal builder and legislator, holding architectural measuring rods and ceremonial staffs, inspecting the construction of the sacred courtyards of Ìgá Ìdúngànrán.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "iga_idunganran",
+        "oba_ado_of_lagos",
+        "oba_akinsemoyin_of_lagos",
+        "erelu_kuti_of_lagos",
+        "idejo_white_cap_chiefs",
+        "oba_of_lagos_eleko"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_akinsemoyin_of_lagos",
+      "title": "Ọba Akinsemoyin of Lagos (Fourth Ọba of Lagos & Master of Commerce and Architecture)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Mercantile Sovereign Stool",
+      "domain": "Ìsàlẹ̀ Èkó & The Transatlantic Coastal Corridor",
+      "aliases": [
+        "oba akinsemoyin",
+        "akinsemoyin of lagos",
+        "king akinsemoyin",
+        "fourth oba of lagos",
+        "oba akinsemoyin of eko"
+      ],
+      "description": "The fourth sovereign monarch of the Lagos Kingdom (reigned c. 1704–1749 CE), younger son of Ọba Adó and brother to Ọba Gabaro and Erelú Kútì, renowned for opening Lagos to direct transatlantic maritime commerce, establishing diplomatic ties with Portuguese merchants, and rebuilding Ìgá Ìdúngànrán with imported bricks and roof tiles.",
+      "historical_timeline": "Ascending the throne around 1704 CE following a period of political exile in Badagry where he mastered coastal merchant diplomacy, Ọba Akinsemoyin inaugurated the Golden Age of Lagos commercial expansion. He invited Portuguese and Dutch maritime traders to make Lagos Island their principal coastal trading harbor, transforming the settlement into the premier mercantile emporium of the Bight of Benin. Utilizing wealth acquired through customs duties and trade monopolies, Ọba Akinsemoyin completely renovated Ìgá Ìdúngànrán, importing Portuguese clay tiles and bricks—the first burnt-brick masonry structures in the history of coastal Nigeria. His peaceful and prosperous reign lasted over four decades, laying the economic wealth that made the Lagos monarchy preeminent along the West African coast.",
+      "etymology_and_philosophy": "The royal name Akinsemoyin translates to 'A Valiant Hero Has Wrought Enduring Joy upon the Commonwealth'. Philosophically, Ọba Akinsemoyin represents international mercantile vision, technological modernization, and sovereign economic diplomacy: proving that pre-colonial Yorùbá monarchs actively directed global commerce on sovereign terms, utilizing transatlantic trade monopolies to modernize domestic infrastructure while fiercely protecting their ancestral culture and institutional independence. By inviting Portuguese and Dutch merchant navigators to establish Lagos as their premier coastal port of call, Akinsemoyin elevated Lagos Island into the preeminent commercial crossroads of West Africa. He utilized the vast wealth accumulated from customs tariffs and harbor duties to completely reconstruct Ìgá Ìdúngànrán with European-imported burnt red bricks and clay roof tiles—initiating the era of modern masonry architecture in Nigeria. His peaceful, four-decade reign demonstrated that true royal power is sustained through economic prosperity, technological adaptation, and enlightened international diplomacy.",
+      "material_and_craftsmanship": "Distinguished by Portuguese imported fired red roof tiles (*Àbùbà*), red bricks, Dutch velvet robes, and heavy coral beads. Ọba Akinsemoyin introduced European brass cannons as royal architectural adornments and established the royal customs storehouses along the lagoon.",
+      "social_and_ritual_context": "Ọba Akinsemoyin established the formal royal customs tariffs (*Owo Bode*) for ships entering the Lagos harbor. He enriched the palace priesthoods and patronized master guilds of blacksmiths, carvers, and textile weavers across Ìsàlẹ̀ Èkó.",
+      "proverbs_and_oral_traditions": [
+        "Akínṣemọ́yìn l’ó f’ọkọ̀ àlejò kẹ́ Èkó; ọba tó fi bíríkì àti tìlé kọ́ Ìgá ọlá. (It was Akinsemoyin who welcomed the merchant vessels into Lagos harbor; the monarch who built the royal palace with bricks and tiles.)",
+        "Ọrọ̀ tí Akínṣemọ́yìn mú wá, kò sí ọba tó rí irú rẹ̀ tẹ́lẹ̀. (The boundless commercial wealth that Akinsemoyin brought to the realm was such that no monarch before him had witnessed.)",
+        "Ẹni bá mọ tìlé Akínṣemọ́yìn mọ̀ pé Ìgá Ìdúngànrán kì í ṣe ilé lásán. (Whoever beholds the historic tiles of Akinsemoyin knows that Ìgá Ìdúngànrán is no ordinary dwelling, but an imperial citadel of commerce and honor.)"
+      ],
+      "diaspora_connections": "Because Ọba Akinsemoyin opened direct maritime trade corridors with Brazil and Europe, 18th-century transatlantic commercial ledgers frequently record royal diplomatic letters and gifts exchanged between the court of Lagos and merchant houses in Bahia and Lisbon.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Highlight the unique blend of coastal West African regalia and early 18th-century mercantile elements. In digital and museum exhibits, display the historic Portuguese roof tiles and red bricks that symbolize his architectural modernization of the palace.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "iga_idunganran",
+        "oba_gabaro_of_lagos",
+        "erelu_kuti_of_lagos",
+        "oba_ado_of_lagos",
+        "oba_of_lagos_eleko",
+        "idejo_white_cap_chiefs"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "alagba_of_ijesaland",
+      "title": "Alágba of Ìjẹ̀ṣàland (Heroic Warrior-Statesman & Royal Consort to Erelú Kútì)",
+      "culture": "Yorùbá (Ìjẹ̀ṣà / Èkó)",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Royal Consort & Warrior Noble",
+      "domain": "Ìjẹ̀ṣàland & Lagos Kingdom",
+      "aliases": [
+        "alagba",
+        "alagba of ijesa",
+        "alagba of ijesaland",
+        "consort alagba",
+        "husband of erelu kuti",
+        "chief alagba"
+      ],
+      "description": "The heroic Ìjẹ̀ṣà warrior-statesman, high-ranking diplomat, and noble consort whose historic royal marriage to Princess Erelú Kútì of Lagos in the early 18th century united the inland warrior traditions of Ìjẹ̀ṣàland with the coastal maritime throne of Èkó, siring Ọba Ológun Kútì and Prince Ṣokùn, from whom all modern ruling houses of Lagos descend.",
+      "historical_timeline": "Flourishing in the early 18th century during the reign of Ọba Akinsemoyin, Chief Alágba was a renowned noble warrior and wealthy merchant from Ìjẹ̀ṣàland who settled in Lagos, gaining widespread acclaim for his tactical military genius, diplomatic counsel, and vast wealth. When Ọba Akinsemoyin sought to secure the political stability of the realm, he sanctioned the royal marriage of his sister, Princess Erelú Kútì, to Alágba. From this union were born two foundational sons: Ológun Kútì (who ascended the throne as Ọba of Lagos) and Ṣokùn (appointed head of royal princes and founder of the Onilegbale chieftaincy). Through this historic alliance, Alágba contributed the ferocious martial vigor and strategic discipline of eastern Yorùbá warfare to the coastal island monarchy.",
+      "etymology_and_philosophy": "The title Alágba translates to 'The Elder Noble of Supreme Gravitas, Martial Valor, and Inviolate Wisdom' (from the Yorùbá root 'Àgbà', denoting elder statesman, champion, and custodian of custom). Philosophically, Alágba's integration into the sovereign royal dynasty of Lagos exemplifies the boundless, cosmopolitan pan-Yorùbá character of the island kingdom: demonstrating that the royal throne of Èkó was never an exclusive or parochial redoubt, but an enlightened civilizational melting pot that attracted, honored, and assimilated master military tacticians, wealthy merchant diplomats, and noble intellects from inland kingdoms like Ìjẹ̀ṣàland into the innermost sanctum of statecraft. His diplomatic marriage to Princess Erelú Kútì forged an immortal political alliance between the ancient iron-smelting martial traditions of the eastern Yorùbá hills and the coastal maritime power of the lagoon. By fathering Ọba Ológun Kútì and Prince Ṣokùn, Alágba contributed the ferocious warrior vigor, strategic discipline, and organizational fortitude that preserved the Lagos monarchy through two centuries of European and regional naval conflict.",
+      "material_and_craftsmanship": "Distinguished by traditional Ìjẹ̀ṣà hand-woven war garments (Aṣọ Òkè Ẹtù), iron war staffs, bronze armlets, and heavy jasper and coral neckpieces. Custodian of ancestral warrior shrines linking Ìlọ́lú and Ìlesà to the coastal court of Ìsàlẹ̀ Èkó.",
+      "social_and_ritual_context": "Alágba served as senior military advisor to the crown during his lifetime. In Lagos dynastic history, his paternal bloodline is celebrated in the royal oríkì of Ọba Ológun Kútì and Prince Ṣokùn as the fountainhead of royal courage and martial prowess.",
+      "proverbs_and_oral_traditions": [
+        "Alágba Ìjẹ̀ṣà l’ó mú agbára wá s’áfin Èkó; ọkọ Erelú tó bí àwọn ọba ọlá. (Alágba of Ìjẹ̀ṣàland brought martial valor into the palace of Lagos; the husband of Erelú who sired sovereign monarchs of majesty.)",
+        "Ẹni bá ní akọni l’ọ́kọ, a bí ọba; Alágba l’orísun akọni fún Ológun Kútì. (She who is wedded to a valiant warrior gives birth to sovereign kings; Alágba was the fountainhead of valor for Ológun Kútì.)",
+        "Àjèjì kì í ṣe Alágba ní Èkó; ẹ̀jẹ̀ rẹ̀ l’ó ń ṣàn nínú adé Ìdúngànrán. (Alágba is no stranger in Lagos; his noble blood flows forever within the beaded crown of Ìdúngànrán.)"
+      ],
+      "diaspora_connections": "The marriage between Alágba and Erelú Kútì is analyzed by African diaspora historians as a quintessential example of inter-regional political alliance through matrimonial diplomacy in pre-colonial West Africa.",
+      "geographical_origin": "Ìjeshaland (Osun State) & Lagos Island (Èkó)",
+      "curatorial_guidelines": "Portray Alágba as a powerful, noble warrior-statesman standing beside Princess Erelú Kútì, dressed in authentic Ìjẹ̀ṣà woven textiles and bearing traditional swords of honor.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "erelu_kuti_of_lagos",
+        "oba_ologun_kuti_of_lagos",
+        "sokun_of_lagos_onilegbale",
+        "oba_akinsemoyin_of_lagos",
+        "oba_of_lagos_eleko",
+        "iga_idunganran"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_ologun_kuti_of_lagos",
+      "title": "Ọba Ológun Kútì of Lagos (Fifth Ọba of Lagos & Dynastic Progenitor of Modern Royal Houses)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Paramount Dynastic Stool",
+      "domain": "Lagos Kingdom & Coastal Realm",
+      "aliases": [
+        "ologun kuti",
+        "oba ologun kuti",
+        "king ologun kuti",
+        "fifth oba of lagos",
+        "ologunkuti",
+        "oba ologun kuti of lagos"
+      ],
+      "description": "The fifth sovereign monarch of the Lagos Kingdom (reigned c. 1749–1775 CE), son of Princess Erelú Kútì and Chief Alágba of Ìjẹ̀ṣàland, celebrated as the supreme dynastic patriarch from whose loins all modern ruling houses of Lagos (Ologun Kutere, Adele, Eshinlokun, Kosoko, Dosunmu, Oyekan, and Akiolu) directly descend.",
+      "historical_timeline": "Ascending the throne around 1749 CE following the death of his maternal uncle Ọba Akinsemoyin, Ọba Ológun Kútì established an unprecedented era of military fortification and dynastic institutionalization. A warrior-king by nature, he modernized the naval fleet of royal war canoes, fortified the lagoon approaches against maritime pirates, and expanded sovereign control over mainland trade routes. Crucially, his royal seed became the single dynastic trunk of all subsequent Lagos monarchy: fathering Ọba Ológun Kúteré (who reigned c. 1775–1805 CE), through whom the historic competing royal branches of Kosọkọ, Dosunmu, Adele, and Ẹṣilọkú arose. His reign solidified the permanent succession law that only direct male descendants of his lineage are eligible to ascend the throne of Lagos.",
+      "etymology_and_philosophy": "The royal title Ológun Kútì translates morphologically to 'The Sovereign Commander who Triumphs over Death and Mortality' (Ológun = supreme warlord/military general; Kútì = immortal / one whom death cannot overthrow). In classical Yorùbá constitutional theory, Ọba Ológun Kútì embodies the harmonious unification of maternal sacerdotal legitimacy (through his royal mother, Erelú Kútì) and paternal martial discipline (through his father, Chief Alágba of Ìjẹ̀ṣàland): establishing the vital doctrine that dynastic longevity requires both moral-ancestral foundation and formidable military defense. Ascending the throne during an era of turbulent coastal maritime piracy and aggressive Dahomean coastal expansion, Ológun Kútì transformed the Lagos military apparatus, deploying heavily armed war canoes across the lagoons and fortifying the island's approaches. Crucially, his royal seed became the single, exclusive dynastic trunk from which all modern ruling houses of Lagos spring. His reign established the inviolable succession covenant that every subsequent Ọba of Lagos must trace direct paternal lineage to his bloodline, anchoring the crown in unbroken royal descent.",
+      "material_and_craftsmanship": "Distinguished by heavy coral bead breastplates, imperial cylindrical beaded crowns, velvet royal robes embroidered with gold thread, and the historic royal double-edged sword of war (*Idà Ológun*). Custodian of ancestral naval war cannons stationed at the water gateways of Lagos.",
+      "social_and_ritual_context": "Ọba Ológun Kútì formalized the royal succession protocols administered by the Eletu Odibo. His ancestral shrine at Ìgá Ìdúngànrán is one of the most sacred altars where reigning Ọbas perform annual sacrifices to invoke military and political protection for Lagos.",
+      "proverbs_and_oral_traditions": [
+        "Ológun Kútì l’orísun gbogbo ọba tó ń jẹ ní Èkó; ẹ̀jẹ̀ rẹ̀ l’ó ń f’adé dán. (Ológun Kútì is the primordial fountainhead of all monarchs who reign in Lagos; his royal blood makes the beaded crown shine forever.)",
+        "Ọmọ Ológun Kútì kì í bẹ̀rù ogun; ọba akọni tó f’ẹsẹ̀ adé mú ilẹ̀. (The offspring of Ológun Kútì know no fear of war; the valiant monarch who firmly anchored the crown upon the land.)",
+        "Bí Èkó bá ń dún, ilé Ológun Kútì ni gbogbo ọlá ti wá. (When Lagos celebrates in prosperity and joy, from the royal house of Ológun Kútì flows the fountainhead of all majesty.)"
+      ],
+      "diaspora_connections": "The royal lineage of Ológun Kútì is extensively documented in British naval archives and 19th-century transatlantic memoirs as the ruling dynasty of Lagos that interacted with European, Brazilian, and Sierra Leonean diplomatic envoys.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Portray Ọba Ológun Kútì as an imperial warrior-monarch of supreme physical and political stature, adorned in coral bead armor and rich textiles, holding the ceremonial war sword.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "erelu_kuti_of_lagos",
+        "alagba_of_ijesaland",
+        "sokun_of_lagos_onilegbale",
+        "oba_kosoko_of_lagos",
+        "oba_dosunmu_of_lagos",
+        "oba_of_lagos_eleko"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "sokun_of_lagos_onilegbale",
+      "title": "Ṣokùn of Lagos (Head of Royal Princes & Founder of Onilegbale Chieftaincy)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Royal Princely Chieftaincy Stool",
+      "domain": "Ìsàlẹ̀ Èkó & The Princes' Council of Lagos",
+      "aliases": [
+        "sokun",
+        "sokun of lagos",
+        "onilegbale",
+        "chief onilegbale",
+        "head of lagos princes",
+        "prince sokun"
+      ],
+      "description": "The revered 18th-century royal prince of Lagos, younger son of Princess Erelú Kútì and Chief Alágba of Ìjẹ̀ṣàland, and brother to Ọba Ológun Kútì, appointed as the supreme traditional head of all royal princes (Àwọn Ọmọ Ọba) and founder of the premier Onilegbale chieftaincy stool.",
+      "historical_timeline": "Flourishing in the mid-18th century during the reign of his brother Ọba Ológun Kútì, Prince Ṣokùn occupied a pivotal constitutional position in the administration of the royal court. To prevent dynastic fratricide and organize the growing royal lineages of Lagos into an orderly, disciplined council, Ọba Ológun Kútì conferred upon Ṣokùn the supreme traditional title of *Onilegbale* (head of royal princes and premier palace judge). Ṣokùn was invested with the authority to adjudicate intra-dynastic disputes, maintain custody of royal family properties, and preside over the secret conclave of princes who assist the kingmakers during royal successions. His stool remains one of the most prestigious non-crowned royal offices in Ìsàlẹ̀ Èkó.",
+      "etymology_and_philosophy": "The title Onilegbale translates to 'The Sacred Custodian of the Ancestral House who Preserves Harmony and Reconciles the Lineage' (Oní-ilé-tó-gbé-àlàáfíà-ró). Philosophically, Prince Ṣokùn represents fraternal solidarity, intra-dynastic justice, and the indispensable constitutional balance maintained by princes who dedicate their lives to structural arbitration rather than violent civil rebellion. In pre-colonial royal houses across the globe, dynastic succession frequently devolved into fratricidal war; to inoculate the Lagos monarchy against such ruin, Ọba Ológun Kútì created the supreme office of Onilegbale for his beloved brother Ṣokùn, investing him with absolute judicial authority to regulate the conduct of all royal princes (Àwọn Ọmọ Ọba), manage royal family estates, and preside over the inner council of princes during royal interregnums. Ṣokùn demonstrated that princely duty is highest when exercised in self-disciplined service to the crown, ensuring that the sprawling branches of the royal family function as an impenetrable shield protecting the reigning monarch and the integrity of Ìgá Ìdúngànrán.",
+      "material_and_craftsmanship": "Distinguished by fine white damask wrappers, royal coral bead necklaces, the princely beaded staff of office, and the ceremonial fan. Custodian of the historic Ìgá Onilegbale in Ìsàlẹ̀ Èkó.",
+      "social_and_ritual_context": "The Onilegbale presides over the Council of Royal Princes of Lagos (Àwọn Ọmọ Ọba Èkó). He leads the royal family delegations during state visits, represents the wider dynasty during coronation ceremonies, and reconciles succession matters within the ruling branches.",
+      "proverbs_and_oral_traditions": [
+        "Ṣokùn l’orí àwọn ọmọ ọba; ẹni tó f’ìmọ̀ tọ́ àfin l’ó ń f’adé l’ágbára. (Ṣokùn is the head of all royal princes; he who guides the palace with wisdom gives unshakeable strength to the crown.)",
+        "Ọmọ Ọba kì í ba ilé baba rẹ̀ jẹ́ nígbà tí Onílegbále wà l’orí ìtẹ́. (A royal prince does not dishonor his ancestral house so long as the Onilegbale presides in wisdom over the family council.)",
+        "Àlàáfíà àwọn ọmọ ọba l’àlàáfíà Ìgá; Ṣokùn ni ọ̀pá àṣẹ tí ń so ilé pọ̀. (The peace of the royal princes is the peace of Ìgá Ìdúngànrán; Ṣokùn is the sacred scepter that unites the entire dynasty.)"
+      ],
+      "diaspora_connections": "The institutional structure of the royal princes' council founded by Ṣokùn was documented by colonial legal commissions and remains a case study in pre-colonial dispute resolution within African royal dynasties.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Portray Prince Ṣokùn as an aristocratic statesman and elder brother of the realm, wearing princely coral regalia, seated in council with royal princes in the historic courtyard of Ìgá Onilegbale.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "erelu_kuti_of_lagos",
+        "alagba_of_ijesaland",
+        "oba_ologun_kuti_of_lagos",
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "idejo_white_cap_chiefs"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_kosoko_of_lagos",
+      "title": "Ọba Kosọkọ of Lagos (Defiant Sovereign, Naval Strategist & Anti-Colonial Commander)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Martial Sovereign Stool",
+      "domain": "Lagos Island, Epe & Coastal Lagoons",
+      "aliases": [
+        "kosoko",
+        "oba kosoko",
+        "king kosoko",
+        "oba kosoko of lagos",
+        "kosoko of lagos",
+        "warlord kosoko"
+      ],
+      "description": "The fiercely independent, martial sovereign monarch of the Lagos Kingdom (reigned 1845–1851 CE), supreme naval strategist, and iconic symbol of 19th-century West African anti-colonial resistance who commanded the defense of Lagos during the historic 1851 British naval bombardment, later establishing a sovereign coastal court at Ẹpẹ.",
+      "historical_timeline": "Son of Ọba Ẹṣilọkú and grandson of Ọba Ológun Kúteré, Prince Kosọkọ was the most formidable warrior-prince in 19th-century coastal West Africa. After years of intense dynastic struggle against British-backed factions, Kosọkọ seized the throne of Lagos in 1845 CE, ruling with supreme military authority and economic independence. Refusing to sign British commercial treaties that compromised the sovereignty of Lagos or submit to imperial dictates, Kosọkọ fortified Lagos Island with heavy coastal artillery batteries and trained naval marine riflemen. In December 1851 CE, the British Royal Navy launched a massive assault known as the Bombardment of Lagos (Reduction of Lagos). Kosọkọ’s forces inflicted heavy casualties on British naval vessels before tactical exhaustion forced him to withdraw to Ẹpẹ, where he established an independent kingdom commanding the lagoon trade. He returned peacefully to Lagos in 1862 under the Treaty of Ẹpẹ, retaining his royal status as the permanent lord of Ereko.",
+      "etymology_and_philosophy": "The name Kosọkọ translates to 'There is No Hoe Capable of Digging a Grave for this Soul' (Kò-sí-ọkọ́, a traditional Yorùbá triumph name declaring unshakeable victory over death and spiritual defeat). Philosophically, Ọba Kosọkọ embodies the supreme zenith of 19th-century West African anti-colonial resistance, military valor, and indigenous sovereign defiance: demonstrating that African coastal monarchs possessed sophisticated tactical intellect, advanced artillery engineering, and an unbending refusal to surrender their cultural, economic, and political independence to European imperial gunboats. When the British Royal Navy demanded that he sign treaties surrendering sovereign jurisdiction over Lagos, Kosọkọ fiercely fortified the island with sunken stockades, shore artillery batteries, and elite marine riflemen, fighting heroically in the December 1851 Bombardment of Lagos before executing a brilliant tactical withdrawal to Ẹpẹ. His establishment of an independent sovereign kingdom at Ẹpẹ commanding the lagoon trade forced the British empire to negotiate with him as an undefeated equal. He remains an immortal pan-African icon of sovereign integrity, military brilliance, and patriotic resistance.",
+      "material_and_craftsmanship": "Distinguished by royal coral bead crowns, gold-embroidered velvet battle tunics, naval cutlasses (*Idà Ọba*), and coastal artillery. His palace compound at Ereko houses historic bronze cannons, trade ledgers, and ancestral war drums.",
+      "social_and_ritual_context": "Kosọkọ founded the Oloja of Ereko chieftaincy institution. His annual remembrance in Ìsàlẹ̀ Èkó and Ẹpẹ brings together traditional military guilds, coastal canoeists, and royal descendants celebrating his peerless bravery.",
+      "proverbs_and_oral_traditions": [
+        "Kòsọ́kọ́ kì í bẹ̀rù ọkọ̀ ogun àlejò; akọni tó f’ẹnu ìbọn dá àṣẹ l’órí omi. (Kosọkọ never feared foreign war vessels; the valiant monarch who decreed his sovereignty across the waters through the roar of cannons.)",
+        "Ẹni tó ní Kòsọ́kọ́ ti parí l’ó kùrọ̀ l’Èkó; Ẹpẹ l’ó ti kọ́ ìtẹ́ ọlá mìíràn ró. (Whoever thought Kosọkọ was finished merely saw him leave Lagos; at Ẹpẹ he erected another imperial throne of eternal majesty.)",
+        "Ọmọ Ẹṣilọkú kò gba ìtẹ́ríba fún àjèjì; àṣẹ Kòsọ́kọ́ dúró gbọnyingbọnyin. (The offspring of Ẹṣilọkú never bowed in submission to strangers; the authority of Kosọkọ stands immovable like a mountain.)"
+      ],
+      "diaspora_connections": "Kosọkọ’s brave resistance against British naval imperialism in 1851 was reported in abolitionist and anti-colonial newspapers in London, the United States, and the Caribbean, inspiring early pan-Africanist movements.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Ereko & Ẹpẹ (Lagos State)",
+      "curatorial_guidelines": "Depict Ọba Kosọkọ with fierce, aristocratic military commanding presence, surrounded by coastal cannons and war canoes, wearing coral beads over rich velvet garments, holding his naval sword.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_dosunmu_of_lagos",
+        "oba_ologun_kuti_of_lagos",
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "idejo_white_cap_chiefs",
+        "akarigbere_chiefs"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_dosunmu_of_lagos",
+      "title": "Ọba Dosunmu of Lagos (Sovereign of the 1861 Treaty of Cession & Customary Land Shield)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Customary Protective Stool",
+      "domain": "Ìsàlẹ̀ Èkó, Lagos Island",
+      "aliases": [
+        "dosunmu",
+        "oba dosunmu",
+        "king dosunmu",
+        "docemo",
+        "oba dosunmu of lagos",
+        "king docemo of lagos"
+      ],
+      "description": "The sovereign monarch of the Lagos Kingdom (reigned 1853–1885 CE), son of Ọba Akitoye, who reigned through the pivotal 1861 Treaty of Cession under immense British gunboat intimidation, brilliantly safeguarding the customary land tenure of the Ìdèjò chiefs and preserving the spiritual sovereignty of the throne of Lagos.",
+      "historical_timeline": "Ascending the throne of Lagos in 1853 CE amidst intense colonial pressure, Ọba Dosunmu (often corrupted in British documents as King Docemo) faced an imperial ultimatum in August 1861 when British Consul William McCoskry and naval officers threatened to bombard Lagos Island a second time unless he signed the Treaty of Cession. Demonstrating heroic restraint and legal foresight, Ọba Dosunmu initially rejected the treaty, convened the White Cap chiefs in vehement protest, and signed only when confronted with impending civilian destruction. Crucially, Dosunmu inserted vital customary legal protections ensuring that the cession applied solely to administrative jurisdiction, while absolute ownership of the communal land remained inviolably vested in the indigenous Ìdèjò families—a legal defense that later enabled the landmark 1921 Privy Council victory protecting African land tenure.",
+      "etymology_and_philosophy": "The sacred name Dosunmu is derived from the liturgical compound 'Òrìṣà-d’ọ̀sùn-mú' ('The Divine Ancestral Spirit Has Conferred the Sacred Staff of Endurance and Leadership upon Me'). Philosophically, Ọba Dosunmu represents sacrificial political endurance, legal foresight, and the heroic defense of indigenous land rights under extreme imperial duress: proving that sovereign victory does not always consist in hopeless physical immolation, but in out-maneuvering aggressive colonial powers through legal precision, preserving the ancient palace, and safeguarding the communal land for future generations. Confronted in August 1861 by British naval warships with guns trained on the civilian population of Lagos Island, Dosunmu vehemently resisted the Treaty of Cession, signing only to prevent catastrophic civilian massacre. Crucially, Dosunmu inserted vital legal reservations into the agreement, insisting that the cession pertained strictly to administrative governance, while absolute title to the land remained inviolably vested in the indigenous Ìdèjò White Cap families—a strategic legal safeguard that enabled the landmark 1921 Privy Council victory protecting African communal land tenure worldwide.",
+      "material_and_craftsmanship": "Distinguished by traditional beaded coronets, silk velvet wrappers, European silver treaty canes of state, and coral beads. His court preserved the historic treaty tables, Portuguese-tile verandas, and sacred ancestral tombs within Ìgá Ìdúngànrán.",
+      "social_and_ritual_context": "Ọba Dosunmu defended the autonomy of the indigenous judicial courts at Ìgá Ìdúngànrán. He supported the traditional chieftaincy guilds against colonial interference and ensured that coronation rites proceeded without imperial interruption.",
+      "proverbs_and_oral_traditions": [
+        "Dòsùnmú l’ó f’ọgbọ́n gba ilẹ̀ Èkó lọ́wọ́ àwọn gẹ̀ẹ́sì; ọba tó f’ara rẹ̀ s’ẹbọ kí ilú má bàjẹ́. (It was Dosunmu who saved the ancestral lands of Lagos from British confiscation through wisdom; the monarch who sacrificed his pride so the city would not be destroyed.)",
+        "Bí ogun bá pọ̀ tọ́, ọgbọ́n l’a fi ń dábò bo ilẹ̀ baba ẹni. (When hostile forces are overwhelmingly armed, strategic intellect and legal wisdom are the weapons used to protect the land of one's ancestors.)",
+        "Àṣẹ Dòsùnmú kò kú; ilẹ̀ Èkó ṣì wà l’ọ́wọ́ àwọn ọmọ Ọlọ́fin. (The sovereign decree of Dosunmu never died; the land of Lagos remains forever in the sacred hands of the children of Ọlọ́fin.)"
+      ],
+      "diaspora_connections": "The 1861 Treaty of Cession signed by Ọba Dosunmu became the subject of extensive international legal, historical, and constitutional analysis across universities in Britain, the United States, and Nigeria.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Portray Ọba Dosunmu with intellectual gravitas and noble sorrow, dressed in rich traditional regalia, seated with the White Cap chiefs in the courtyard of Ìgá Ìdúngànrán, holding the historic staff of state.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_kosoko_of_lagos",
+        "oba_ologun_kuti_of_lagos",
+        "idejo_white_cap_chiefs",
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "akarigbere_chiefs"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_oyekan_of_lagos",
+      "title": "Ọba Ọ̀yẹkàn II of Lagos (Paramount Traditional Sovereign & Bridge of Modern Nigeria)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Modern Paramount Sovereign Stool",
+      "domain": "Ìsàlẹ̀ Èkó, Lagos Island & The Federal Republic of Nigeria",
+      "aliases": [
+        "oba oyekan",
+        "oyekan of lagos",
+        "king oyekan",
+        "oba oyekan ii",
+        "adeyinka oyekan",
+        "oba adeyinka oyekan ii"
+      ],
+      "description": "The revered 20th-century sovereign monarch of the Lagos Kingdom (reigned 1965–2003 CE), grandson of Ọba Oyekan I and great-grandson of Ọba Dosunmu, pharmacist, World War II veteran, and permanent Chairman of the Lagos State Council of Obas and Chiefs, who reigned for 38 monumental years transforming Lagos into a modern global megacity.",
+      "historical_timeline": "Born in 1911 and educated at King's College, Lagos, and the Yaba Higher College School of Pharmacy, Ọba Adéyìnká Ọ̀yẹkàn II served as an army pharmacist during World War II before entering civic statecraft. Crowned in 1965 CE following the passing of Ọba Adele II, Ọba Oyekan navigated the traditional monarchy of Lagos through the turbulent Nigerian Civil War, decades of military regimes, and the dizzying demographic and economic expansion that turned Lagos into Africa's preeminent commercial megacity. Revering ancient tradition while embracing cosmopolitan progress, Ọba Oyekan was celebrated for unparalleled personal charm, philanthropic generosity, and profound inter-faith peace-building, ensuring that the ancient authority of Ìgá Ìdúngànrán remained the supreme moral conscience of the nation until his peaceful transition in 2003 at the age of 91.",
+      "etymology_and_philosophy": "The royal name Ọ̀yẹkàn translates to 'The Next Consecrated Sovereign Destined by Ancestral Right to Wear the Crown' (Ọ̀yẹ̀-kan). Philosophically, Ọba Adéyìnká Ọ̀yẹkàn II embodied benevolent paternal majesty, serene diplomacy, and the remarkable adaptability of ancient African institutions within a rapidly industrializing global megacity: proving that pre-colonial sacred monarchies do not wither in the modern age, but can serve as the indispensable moral compass, peace-building anchor, and cultural soul of a multi-ethnic, multi-faith modern nation. Ruling for thirty-eight transformative years through the Nigerian Civil War, military dictatorships, and dizzying urban expansion, Ọba Oyekan welcomed world leaders, civil rights icons, and transatlantic diaspora pilgrims to Ìgá Ìdúngànrán with open arms and imperial warmth. His reign demonstrated that royal majesty is preserved not through aloof arrogance, but through boundless philanthropy, intellectual enlightenment, and an unwavering commitment to communal peace and inter-faith harmony across the continent.",
+      "material_and_craftsmanship": "Distinguished by magnificent tall beaded crowns (Adé Ìlẹ̀kẹ̀) incorporating vibrant modern glass beadwork, pure white damask and velvet agbada garments, ceremonial fly-whisks (*Ìrukẹ̀rẹ̀*), and heirloom royal coral beads. He extensively modernized the reception chambers of Ìgá Ìdúngànrán.",
+      "social_and_ritual_context": "Permanent Chairman of the Lagos State Council of Obas and Chiefs. Ọba Oyekan was the grand patron of the Adamú Òrìṣà (Èyọ̀) festival, oversaw the installation of dozens of distinguished honorary and traditional chiefs, and reconciled major national political disputes.",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀yẹkàn l’ọba àlàáfíà; ọba tó fi sùúrù àti ìmọ̀ tọ́ Èkó di ìlú ńlá. (Oyekan was the monarch of profound peace; the king who nurtured Lagos into a global megacity through patience and enlightened wisdom.)",
+        "Adé kì í wọ́ l’órí Ọ̀yẹkàn; ẹ̀kọ́ àti ìwà rere l’ó fi gbé ìtẹ́ baba rẹ̀ ró. (The royal crown never tilted upon Oyekan's head; with deep learning and virtuous character he upheld the ancient throne of his ancestors.)",
+        "Ẹni bá rántí Ọ̀yẹkàn a rántí àlàáfíà; ọba tó jẹ l’áyé tó tòrò bí omi àfẹ̀mú. (Whoever remembers Oyekan remembers serene peace; the monarch who reigned when the world was as tranquil as cool drinking water.)"
+      ],
+      "diaspora_connections": "Ọba Oyekan II welcomed hundreds of international heads of state, African diaspora delegations, and global cultural icons (including Muhammad Ali and civil rights leaders) to Ìgá Ìdúngànrán, solidifying Lagos as the cultural Mecca of the Black World during FESTAC 77.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Portray Ọba Oyekan II with radiant, warm smile and dignified royal presence, wearing tall white or beaded crowns and pure white agbada robes, seated in state within the modern reception hall of Ìgá Ìdúngànrán.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_akiolu_of_lagos",
+        "oba_dosunmu_of_lagos",
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "idejo_white_cap_chiefs",
+        "akinsiku_eko_alagbaa"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    },
+    {
+      "id": "oba_akiolu_of_lagos",
+      "title": "Ọba Rilwan Akiolu of Lagos (Reigning 21st Ẹlẹ́kò of Èkó)",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": "monarchy_and_governance",
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Incumbent Sovereign Stool",
+      "domain": "Ìsàlẹ̀ Èkó, Lagos Island & Traditional Council of Lagos State",
+      "aliases": [
+        "oba akiolu",
+        "akiolu of lagos",
+        "king akiolu",
+        "rilwan akiolu",
+        "oba rilwan babatunde akiolu",
+        "eleko akiolu"
+      ],
+      "description": "The incumbent 21st sovereign Ọba of Lagos (Ẹlẹ́kò of Èkó), reigning from Ìgá Ìdúngànrán since his coronation in May 2003 CE, legal practitioner, retired Assistant Inspector-General of Police, and paramount traditional ruler presiding as Chairman of the Lagos State Council of Obas and Chiefs.",
+      "historical_timeline": "Born on October 29, 1943, Ọba Rilwán Bábátúndé Ọsúolálé Arẹ́mú Akíolú I traces direct royal descent from Ọba Ológun Kúteré. He earned a Bachelor of Laws (LL.B.) degree from the University of Lagos and served with distinguished valor in the Nigeria Police Force for 32 years, retiring as an Assistant Inspector-General of Police (AIG). On May 23, 2003, he was selected by the kingmakers and formally crowned as the 21st Ọba of Lagos. His reign has been characterized by fierce advocacy for the economic and constitutional recognition of Lagos as a special investment territory, extensive modernization and digital archiving of Ìgá Ìdúngànrán, and the continuous defense of indigenous Awori and chieftaincy land rights across the commercial capital of Nigeria.",
+      "etymology_and_philosophy": "The name Akíolú translates to 'The Valiant Hero of Eminence who Leads and Protects the Nobility' (Akin + Olú). In 21st-century Yorùbá constitutional theory, Ọba Rilwán Bábátúndé Ọsúolálé Arẹ́mú Akíolú I embodies the powerful synthesis of ancient sacred monarchical authority and modern statutory jurisprudence: utilizing his distinguished background as a legal scholar (LL.B.) and high-ranking policing strategist (retired Assistant Inspector-General of Police) to defend traditional institutions, chieftaincy land titles, and indigenous Awori rights against modern bureaucratic encroachment. Reigning as the 21st Ẹlẹ́kò of Èkó from Ìgá Ìdúngànrán since May 2003, Ọba Akiolu has championed the complete modernization, restoration, and digital archiving of the royal palace, while fiercely advocating for the constitutional recognition of Lagos as a special commercial and cultural territory. His leadership proves that the ancestral stool of Èkó remains the ultimate political, economic, and moral arbiter navigating the complex challenges of Africa's largest metropolis in the contemporary era.",
+      "material_and_craftsmanship": "Distinguished by exquisite beaded crowns embroidered with ancestral birds, hand-woven pure white wrappers (Aṣọ Funfun), precious coral bead necklaces (Ìyùn), and the ceremonial horse-tail whisk (*Ìrukẹ̀rẹ̀*). Overseer of the comprehensive modern architectural restoration of Ìgá Ìdúngànrán.",
+      "social_and_ritual_context": "Chairman of the Lagos State Council of Obas and Chiefs. He convenes weekly traditional cabinet meetings with the Ìdèjò, Àkárìgbèrè, Ọ̀gáládé, and Mọ̀dílẹ̀ chiefs at Ìgá Ìdúngànrán, resolves major chieftaincy succession disputes, and serves as the traditional patron of major civic institutions across Lagos.",
+      "proverbs_and_oral_traditions": [
+        "Akíolú l’ọba tó l’àṣẹ Èkó l’ọ́wọ́; àṣẹ rẹ̀ kì í yẹ̀ ní Ìgá Ìdúngànrán. (Akiolu is the sovereign monarch who holds the sacred decree of Lagos in his hand; his word never falters within the ancient courts of Ìdúngànrán.)",
+        "Ẹni bá wọ Ìdúngànrán pẹ̀lú ọ̀wọ̀ yóò rí ọlá Ọba gbà. (Whoever approaches the palace of Ìdúngànrán with genuine reverence shall partake of royal honor and protection.)",
+        "Adé kì í kú, ọba kì í tán ní Èkó; Akíolú ń bẹ l’orí ìtẹ́ àwọn baba rẹ̀. (The crown never dies, and monarchs never cease in Lagos; Akiolu sits majestically upon the eternal throne of his ancestors.)"
+      ],
+      "diaspora_connections": "Ọba Akiolu frequently hosts African Union envoys, transatlantic diaspora delegations, and global diplomatic corps at Ìgá Ìdúngànrán, championing educational endowments, cultural tourism, and the preservation of coastal Yorùbá heritage worldwide.",
+      "geographical_origin": "Ìsàlẹ̀ Èkó, Lagos State",
+      "curatorial_guidelines": "Represent Ọba Akiolu with authoritative, dignified imperial posture, adorned in traditional white regalia and coral beads, seated on the modern state throne within Ìgá Ìdúngànrán.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Losi, John B. (1914). History of Lagos. Lagos: Tika Tore Press; Egharevba, Jacob (1934). A Short History of Benin. Ibadan: Ibadan University Press; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "oba_oyekan_of_lagos",
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "idejo_white_cap_chiefs",
+        "erelu_kuti_of_lagos",
+        "akinsiku_eko_alagbaa"
+      ],
+      "sub_variants": [],
+      "audio_links": [],
+      "audio_refs": []
+    }
+  ],
+  "entity_mutations": [
+    {
+      "id": "oba_onitire_of_itire",
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Ìrukẹ̀rẹ̀",
+        "Kábíyèsí",
+        "oba_of_lagos_eleko",
+        "idejo_white_cap_chiefs",
+        "olofin_ogunfunminire"
+      ]
+    },
+    {
+      "id": "idejo_white_cap_chiefs",
+      "related_entities": [
+        "oba_of_lagos_eleko",
+        "akarigbere_chiefs",
+        "ogalade_chiefs",
+        "modile_chiefs",
+        "iga_idunganran",
+        "oba_onitire_of_itire",
+        "Ìjòyè",
+        "olofin_ogunfunminire"
+      ]
+    },
+    {
+      "id": "oba_of_lagos_eleko",
+      "related_entities": [
+        "idejo_white_cap_chiefs",
+        "akarigbere_chiefs",
+        "iga_idunganran",
+        "erelu_kuti_of_lagos",
+        "akinsiku_eko_alagbaa",
+        "oba_onitire_of_itire",
+        "ogalade_chiefs",
+        "modile_chiefs",
+        "Ọba",
+        "olofin_ogunfunminire",
+        "asipa_of_lagos"
+      ]
+    },
+    {
+      "id": "erelu_kuti_of_lagos",
+      "related_entities": [
+        "oba_of_lagos_eleko",
+        "iga_idunganran",
+        "idejo_white_cap_chiefs",
+        "akinsiku_eko_alagbaa",
+        "akarigbere_chiefs",
+        "Ọba",
+        "alagba_of_ijesaland",
+        "oba_ologun_kuti_of_lagos"
+      ]
+    },
+    {
+      "id": "iga_idunganran",
+      "related_entities": [
+        "oba_of_lagos_eleko",
+        "idejo_white_cap_chiefs",
+        "akarigbere_chiefs",
+        "ogalade_chiefs",
+        "modile_chiefs",
+        "erelu_kuti_of_lagos",
+        "akinsiku_eko_alagbaa",
+        "oba_gabaro_of_lagos",
+        "oba_akinsemoyin_of_lagos"
+      ]
+    }
+  ]
+}

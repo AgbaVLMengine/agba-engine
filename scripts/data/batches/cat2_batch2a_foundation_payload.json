@@ -1,0 +1,1970 @@
+{
+  "metadata": {
+    "batch_id": "CAT02_BATCH2A_FOUNDATION",
+    "category_id": 2,
+    "category_name": "Monarchy, Royal Regalia & Governance",
+    "description": "Batch 2A foundation payload executing orthographic elevation of 25 ASCII titles, retirement of duplicate Ìrùke into Ìrukẹ̀rẹ̀, replacement of retired slot with sovereign stool oba_onitire_of_itire (preserving delta N = 0 at exactly 1,398), primordial vs dynastic disambiguation (Oduduwa/Oranmiyan), resolution of short records to >= 600 characters etymology and 3/3 proverbs, Cell 4 vs Cell 6 disjointness enforcement, and symmetrical 81-track audio binding.",
+    "author": "Ọlọ́yè Àrọ̀kìn (arokin-archivist)",
+    "presiding": "Lead Architect Àrùnà Ọlànrewájú Kábírù (Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n) & Ọlọ́yè Àgbà",
+    "target_entity_count": 1398,
+    "audio_tracks_bound": 81
+  },
+  "retire_and_replace": {
+    "retire_id": "Ìrùke",
+    "merge_into_id": "Ìrukẹ̀rẹ̀",
+    "replacement_entity": {
+      "id": "oba_onitire_of_itire",
+      "title": "Ọba Onítìrẹ́ of Ìtìrẹ́",
+      "culture": "Yorùbá",
+      "category": "Monarchy, Royal Regalia & Governance",
+      "category_id": 2,
+      "is_parent": false,
+      "sovereign_parent": "Ọba",
+      "sovereign_parent_status": "Living Sub-Variant",
+      "domain": "Ìtìrẹ́ Kingdom, Lagos (Èkó Realm)",
+      "aliases": [
+        "oba onitire of itire",
+        "onitire of itire",
+        "ọba onítìrẹ́",
+        "onitire",
+        "onitire of itire land",
+        "king of itire",
+        "onitire of lagos",
+        "omo onitire oforun"
+      ],
+      "description": "The ancient Awori/Èkó paramount monarch and sacred royal crown of Ìtìrẹ́ Kingdom, rooted in the foundational descent of Ọlọ́fin, custodians of ancestral coastal sovereignty, and the royal stool honoring Kábíyèsí, Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n.",
+      "historical_timeline": "Pre-Colonial Foundation (c. 15th–16th Century CE): Established through the southward migration of Ọlọ́fin's royal progeny from Ilé-Ifẹ̀ to the central Lagos/Awori plains, institutionalizing the sacred stool of Ìtìrẹ́. 17th–19th Century: Anchored vital agrarian, market, and strategic territorial corridors connecting the coastal lagoon to the hinterland; maintained diplomatic alliances with Ìgá Ìdúngànrán and the Ìdèjò landowner council. Colonial & Modern Era: Recognized as a first-class paramount traditional stool within the Lagos State Council of Obas and Chiefs, preserving continuous lineage rites, royal Oríkì, and communal custodianship.",
+      "etymology_and_philosophy": "The royal title Onítìrẹ́ signifies 'The Sovereign Possessor and Custodian of Ìtìrẹ́' ('Oni-Itire', master of the blessed settlement). In sacred Awori and coastal cosmology, the stool represents sovereign lineage, ancestral endurance, and cosmological harmony over terrestrial holdings. The monarch's royal panegyric echoes as 'Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n'—invoking fearless ancestral resolve, moral majesty (*Ìwà-tútù*), and inviolable custodial dignity. Philosophically, the Onítìrẹ́ rules in tripartite harmony with the royal lineage elders (*Àwọn Ọmọ-Ọba*), the territorial chieftaincy conclave, and the custodians of ancestral shrines, embodying indigenous parliamentary equilibrium and royal hospitality. In accordance with the customary jurisprudence established by Lloyd (1962) and Smith (1988), royal power in the maritime kingdom is mediated through constitutional dialogue with the council of chiefs, demonstrating that indigenous governance is structurally accountable to the welfare of the commonwealth.",
+      "material_and_craftsmanship": "The royal regalia of the Ọba Onítìrẹ́ centers on the consecrated Adé Ìlẹ̀kẹ̀ (beaded crown with conical spire and veil of royal beads), heavy royal coral necklaces (Ìyùn Aláró), elaborately beaded ceremonial horsetail scepters (Ìrukẹ̀rẹ̀), and ceremonial vestments of handspun Aṣọ Òfì. Material custody is accompanied by the heraldic resonance of the sacred Gbedu and Dùndún talking drums playing the ancestral Oríkì Ọba Ìtìrẹ́.",
+      "social_and_ritual_context": "The Ọba Onítìrẹ́ sits as the living judicial and spiritual father of the Ìtìrẹ́ realm. Flanked by hereditary palace chiefs and market leaders, the monarch presides over traditional dispute resolutions, community land tenure, seasonal cleansing festivals, and the ancestral veneration of royal forebears. Sovereign authority is exercised through consultation with kingmakers, ensuring royal prerogative remains anchored in collective prosperity and communal peace.",
+      "proverbs_and_oral_traditions": [
+        "Ọba Onítìrẹ́ kò b’ẹ́rù ọ̀ràn, ọmọ onítìrẹ́ ọ̀fọ̀rọ̀n tí ń f’ọlá rìn. (The Onítìrẹ́ fears no adversity; proud scion of Onítìrẹ́ Ọ̀fọ̀rọ̀n who strides in born majesty: Acknowledging ancestral resilience and royal dignity.)",
+        "Adé kì í wọ́n lórí Onítìrẹ́, àṣẹ ń bẹ l’ẹ́nu Ọba. (The beaded crown never deserts the head of the Onítìrẹ́, for living authority abides upon his lips: Celebrating the uninterrupted legitimacy of the throne.)",
+        "Ìtìrẹ́ orísun àlàáfíà, ibi tí ọba ti ń f’ọwọ́ tútù gb’ilẹ̀. (Ìtìrẹ́ is a spring of serene peace, where the monarch governs the realm with cool, healing hands of justice.)"
+      ],
+      "diaspora_connections": "Reflects the foundational Awori and coastal Lagos royal lineage networks that heavily populated the transatlantic diaspora through maritime routes. Traditional court protocols, beaded scepters, and Oríkì praise cadences find direct echoes in the royal drumming and ancestral salutations preserved in Afro-Cuban Lucumí and Brazilian Candomblé Ketu royal houses.",
+      "geographical_origin": "Ìtìrẹ́, Lagos State, Nigeria (Èkó Realm).",
+      "curatorial_guidelines": "Present alongside the Royal Oríkì audio recordings voiced by the Royal Father, photography of the consecrated beaded crown and ceremonial fly-whisk, and historical documentation of Awori coastal sovereignty.",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press.",
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Ìrukẹ̀rẹ̀",
+        "Kábíyèsí",
+        "Ìpínlẹ̀ Èkó",
+        "Ìjòyè"
+      ],
+      "sub_variants": [],
+      "audio_links": [
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_01",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_01.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.156
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_02",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_02.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_03",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_03.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_04",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_04.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_05",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_05.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_06",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_06.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_07",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_07.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_08",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_08.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.064
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_09",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_09.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_10",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_10.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.041
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_11",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_11.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_12",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_12.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_13",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_13.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.017
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_14",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_14.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_15",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_15.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.063
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_16",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_16.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_17",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_17.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_18",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_18.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.994
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_19",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_19.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.041
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_20",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_20.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_21",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_21.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_22",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_22.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.086
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_23",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_23.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_24",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_24.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.226
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_25",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_25.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_26",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_26.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_27",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_27.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_28",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_28.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_29",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_29.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_30",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_30.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_31",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_31.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_32",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_32.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_33",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_33.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.854
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_34",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_34.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_35",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_35.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_36",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_36.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_37",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_37.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.202
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_38",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_38.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_39",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_39.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.156
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_40",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_40.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.249
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_41",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_41.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_42",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_42.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_43",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_43.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.179
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_44",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_44.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_45",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_45.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_46",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_46.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_47",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_47.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_48",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_48.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_49",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_49.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_50",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_50.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_51",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_51.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.994
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_52",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_52.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Vocal_Trimmed",
+          "file_name": "Oríkì_Ọba_Itire_Vocal_Trimmed.wav",
+          "category": "Oríkì_Ọba_Itire_Vocal_Anchor",
+          "duration_s": 77.5
+        },
+        {
+          "id": "Àyàlù_and_Gudugudu_Master_Suite",
+          "file_name": "Àyàlù and Gudugudu.opus",
+          "category": "Master_Opus_Suites",
+          "duration_s": null
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_01",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_01.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.156
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_02",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_02.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_03",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_03.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_04",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_04.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_05",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_05.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_06",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_06.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_07",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_07.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_08",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_08.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.064
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_09",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_09.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_10",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_10.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.041
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_11",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_11.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_12",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_12.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_13",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_13.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.017
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_14",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_14.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_15",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_15.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.063
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_16",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_16.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_17",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_17.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_18",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_18.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.994
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_19",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_19.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.041
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_20",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_20.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.04
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_21",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_21.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_22",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_22.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.086
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_23",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_23.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_24",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_24.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.226
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_25",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_25.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_26",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_26.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_27",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_27.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_28",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_28.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_29",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_29.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_30",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_30.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_31",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_31.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_32",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_32.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_33",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_33.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.854
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_34",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_34.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.11
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_35",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_35.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.087
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_36",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_36.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_37",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_37.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.202
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_38",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_38.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.157
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_39",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_39.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.156
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_40",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_40.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.249
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_41",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_41.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_42",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_42.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_43",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_43.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.179
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_44",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_44.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_45",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_45.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_46",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_46.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_47",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_47.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_48",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_48.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.133
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_49",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_49.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.18
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_50",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_50.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.993
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_51",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_51.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 3.994
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Ensemble_Loop_52",
+          "file_name": "Oríkì_Ọba_Itire_Ensemble_Loop_52.wav",
+          "category": "Oriki_Oba_Itire_Ensemble",
+          "duration_s": 4.203
+        },
+        {
+          "id": "Oríkì_Ọba_Itire_Vocal_Trimmed",
+          "file_name": "Oríkì_Ọba_Itire_Vocal_Trimmed.wav",
+          "category": "Oríkì_Ọba_Itire_Vocal_Anchor",
+          "duration_s": 77.5
+        },
+        {
+          "id": "Àyàlù_and_Gudugudu_Master_Suite",
+          "file_name": "Àyàlù and Gudugudu.opus",
+          "category": "Master_Opus_Suites",
+          "duration_s": null
+        }
+      ]
+    },
+    "merge_aliases": [
+      "iruke",
+      "ìrùke"
+    ]
+  },
+  "entities_to_update": {
+    "Oloyye": {
+      "title": "Olóyè",
+      "aliases": [
+        "oloyye",
+        "oloye",
+        "chieftain",
+        "traditional chief",
+        "titled elder",
+        "oloye ibile"
+      ],
+      "description": "A traditional titled chieftain and recognized noble elder in the Yorùbá sociopolitical system, invested with ancestral authority, civic responsibility, and legislative oversight within a town or kingdom.",
+      "etymology_and_philosophy": "The term Olóyè is a morphological compound of the ownership prefix 'Oní-' (possessor/custodian of) and 'Oyè' (honor, title, consecrated civic rank). In classical Yorùbá constitutional theory, chieftaincy is never merely an individual vanity or honorific distinction; it represents a solemn social contract between the titled lineage and the sovereign crown. The Olóyè serves as the direct intermediary between their family ward and the council chamber of the monarch. The investiture of an Olóyè involves sacred rites of Akòko leaf consecration (*Ẹ̀wé Akòko*) upon the candidate's head, binding the chief's moral character (*Ìwà*) to ancestral truth and community protection. Philosophically, the institution ensures that administrative governance is distributed across hereditary lineages, checking royal absolutism and guaranteeing that every major lineage possesses a voice within the governing cabinet. As noted by Lloyd (1962) and Fadipe (1970), the council of chiefs acts as an indispensable parliamentary counterweight to the monarch.",
+      "proverbs_and_oral_traditions": [
+        "Oyè kì í kọ̀ olóyè, olóyè l’ó ń kọ̀ oyè. (A traditional title never rejects its worthy holder; it is the holder whose moral lapse may abandon the title: Emphasizing integrity and character in public office.)",
+        "Bí a bá f’ẹnu j’olúgbọ́n, a gbọ́dọ̀ f’ọwọ́ tẹ́ orí olóyè. (If one enjoys the privileges of royal service, one must honor the titled elders who sustain the commonwealth: Underscoring respect for constitutional hierarchy.)",
+        "Ẹ̀wé akòko kì í gb’orí ẹlòmíràn láì jẹ́ oyè. (The sacred Akòko leaf never rests upon a head without conferring the mantle of leadership: Highlighting the divine sanction of chieftaincy.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Ìjòyè",
+        "Ìgbìmọ̀ Ìjòyè",
+        "Kábíyèsí",
+        "Àkóso-Ìlú",
+        "Iwarefa"
+      ],
+      "geographical_origin": "Pan-Yorùbá Chieftaincy System",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Iwarefa": {
+      "title": "Ìwàrẹ̀fà",
+      "aliases": [
+        "iwarefa",
+        "ìwàrẹ̀fà",
+        "iwarefa mefa",
+        "six inner kingmakers",
+        "sacred conclave of six"
+      ],
+      "description": "The sacred executive conclave of six senior kingmakers and ritual statesmen who hold supreme judicial, constitutional, and spiritual authority in ancient Yorùbá kingdoms such as Ilé-Ifẹ̀ and across the Ògbóni society.",
+      "etymology_and_philosophy": "Derived from the ancient sacerdotal contraction 'Ìwà-rẹ̀fà' ('The Six Custodians of Cosmic Character and Sacred Law', from *Ìwà* character/existence, *ẹrẹ́* covenant/soil, and *ẹfà* six). In the customary jurisprudence of Ilé-Ifẹ̀, Ekiti, and the Ògbóni fraternity, the Ìwàrẹ̀fà represent the inner parliamentary core of the commonwealth. As senior kingmakers (*Afọba*), they possess the esoteric mandate to scrutinize royal candidates, administer coronation oaths, and ensure that the reigning monarch governs strictly in accordance with cosmic justice and ancestral covenants (*Òfin Ilẹ̀*). Philosophically, the six members represent cosmic equilibrium, anchoring royal executive decree against the primordial moral authority of the Mother Earth (*Onílẹ̀*). Grounded in the ethnography of Peter Lloyd (1962), the Ìwàrẹ̀fà constitutionally restrain royal excesses through institutional judicial veto.",
+      "proverbs_and_oral_traditions": [
+        "Ìwàrẹ̀fà kì í purọ́ mọ́ ilẹ̀, ilẹ̀ kì í purọ́ mọ́ Ìwàrẹ̀fà. (The Ìwàrẹ̀fà never utter falsehood before the sacred earth, nor does the earth betray the Ìwàrẹ̀fà: Affirming inviolable judicial integrity.)",
+        "Ọ̀rọ̀ tí Ìwàrẹ̀fà bá parí rẹ̀, kò sí ọba tí ó lè bì í dánù. (A constitutional matter decreed by the Ìwàrẹ̀fà cannot be overthrown by any sovereign monarch: Demonstrating parliamentary primacy.)",
+        "Mẹ́fà ni ìwàrẹ̀fà, mẹ́fà ni òtítọ́ ilẹ̀. (Six are the inner councilors, sixfold is the indestructible truth of the earth.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Ọọ̀ni Odùduwà",
+        "Ìjòyè",
+        "Àfin Ọọ̀ni",
+        "Ìgbìmọ̀ Ìjòyè",
+        "Oloyye"
+      ],
+      "geographical_origin": "Ilé-Ifẹ̀, Ògbóni Conclave & Eastern Kingdoms",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Aremo": {
+      "title": "Àrẹ̀mọ",
+      "aliases": [
+        "aremo",
+        "àrẹ̀mọ",
+        "aremo oba",
+        "crown prince",
+        "firstborn prince",
+        "heir apparent"
+      ],
+      "description": "The firstborn prince and officially designated crown prince in imperial Yorùbá kingdoms, particularly within the Ọ̀yọ́ Empire, trained in the arts of statecraft, diplomacy, and martial command.",
+      "etymology_and_philosophy": "From the royal compound 'À-rẹ̀-ọmọ' ('The Primary Child Raised for Sovereign Lineage', or *Àrẹ̀* paramount leader + *ọmọ* offspring). In ancient Ọ̀yọ́ constitutional law, the Àrẹ̀mọ held extraordinary power as the viceroy and principal assistant to the Aláàfin, frequently commanding royal estates, presiding over subordinate vassal tribunals, and learning palace administration. In the pre-1858 constitutional era of Old Ọ̀yọ́, should an Aláàfin pass away or be mandated to abdicate, the reigning Àrẹ̀mọ was historically obligated to accompany his royal father to the spirit realm (*Abọbakú*), a legal safeguard instituted to prevent ambitious crown princes from assassinating their fathers to seize the throne. This law was formally repealed by Aláàfin Àtìbà in New Ọ̀yọ́ to ensure dynastic survival, as documented by Rev. Samuel Johnson (1921).",
+      "proverbs_and_oral_traditions": [
+        "Bí àrẹ̀mọ bá gbọ́n, a mọ̀ pé ọmọ ọba l’ó jẹ́. (When the crown prince acts with profound wisdom, it is evident he was bred in the shadow of the throne: Celebrating noble upbringing.)",
+        "Àrẹ̀mọ kì í gb’orí ìtẹ́ nígbà tí bàbá rẹ̀ wà l’áyé. (The crown prince never ascends the ancestral throne while his royal father lives: Underscoring patience and constitutional protocol.)",
+        "Ọmọ tí yóò jẹ́ ọba gbọ́dọ̀ kọ́kọ́ mọ bí a ṣe ń bọ̀wọ̀ fún àwọn àgbà. (The prince destined to reign must first learn to bow before the counsel of the elders.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "alaafin_of_oyo",
+        "Ọmọ-Ọba",
+        "Àfin Aláàfin",
+        "Abobaku",
+        "Aláàfin Àtìbà"
+      ],
+      "geographical_origin": "Ọ̀yọ́ Empire & Royal Dynasties",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ologbo": {
+      "title": "Ológbò",
+      "aliases": [
+        "ologbo",
+        "ológbò",
+        "ologbo oba",
+        "royal chronicler",
+        "court staff",
+        "herald of oyo"
+      ],
+      "description": "The hereditary royal herald, master oral chronicler, and keeper of imperial annals in the royal court of the Aláàfin of Ọ̀yọ́, responsible for genealogical recitation, historical precedent, and courtly ceremonies.",
+      "etymology_and_philosophy": "From the compound 'Oló-' (custodian/master) and 'Ogbó' (ancient wisdom/veteran memory), literally signifying 'The Custodian of Ancient Annals and Court Memory'. In the sophisticated ceremonial administration of Ọ̀yọ́-Ilé, the Ológbò held the indispensable constitutional duty of serving as the living archive of dynastic precedents. During diplomatic negotiations, royal trials, and inter-kingdom arbitrations, the Ológbò was called upon to recite the precise genealogies (*Oríkì*), historical treaties, and ancient precedents of earlier reigns. The office required photographic oral memory and supreme rhetorical eloquence, ensuring that royal decisions remained faithful to ancestral jurisprudence and imperial tradition. Johnson (1921) highlights the Ológbò's indispensable custodial presence during sovereign court assemblies.",
+      "proverbs_and_oral_traditions": [
+        "Ológbò mọ ìtàn ọba, a kì í jiyàn oríkì mọ́ ọn. (The Ológbò knows the history of the kings; one never disputes dynastic genealogies with him: Acknowledging authoritative memory.)",
+        "Ẹnu Ológbò ni àṣẹ ìtàn ti ń fọ̀. (From the mouth of the Ológbò speaks the ancient authority of ancestral history.)",
+        "Ọba kì í gbé ìgbìmọ̀ l’áìsí ológbò tí yóò rántí àwọn baba. (A sovereign never convenes the high council without the royal chronicler who remembers the forebears.)"
+      ],
+      "related_entities": [
+        "alaafin_of_oyo",
+        "Àfin Aláàfin",
+        "Ọba",
+        "Baṣọ̀run",
+        "Akọ̀we-Ọba",
+        "Oloyye"
+      ],
+      "geographical_origin": "Ọ̀yọ́ Royal Court & Chieftaincy Heraldry",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olubadan": {
+      "title": "Olúbàdàn of Ìbàdàn",
+      "aliases": [
+        "olubadan",
+        "olubadan of ibadan",
+        "king of ibadan",
+        "paramount ruler of ibadanland",
+        "olubadan stool"
+      ],
+      "description": "The paramount traditional monarch and imperial sovereign of Ìbàdànland, presiding over one of the most distinctive and meritocratic promotional chieftaincy ladders in West Africa.",
+      "etymology_and_philosophy": "The title Olúbàdàn derives from 'Olú' (supreme lord/ruler) and 'Ìbàdàn' (contracted from *Èbá-Ọ̀dàn*, 'By the edge of the savannah grassland'). Crystallizing during the 19th-century Yorùbá civil wars as a militarized republican city-state founded by pan-Yorùbá allied war-captains (Lagelu, Oluyole, Balogun Ibikunle), Ìbàdàn rejected hereditary primogeniture. Instead, the Olúbàdàn stool is attained through decades of rigorously earned promotions through two parallel lines: the civil line (*Otún Olúbàdàn*) and the military line (*Balógun*). The Olúbàdàn embodies military fortitude, consensus governance, and pan-Yorùbá solidarity, presiding in council with the Olúbàdàn-in-Council. As detailed by Akintoye (2010), this constitutional model prevents autocracy through shared executive responsibility.",
+      "proverbs_and_oral_traditions": [
+        "Ìbàdàn kò gba oníwà-kíwà, olúbàdàn kì í jẹ́ l’áì kọ́ ogun. (Ìbàdàn does not tolerate treacherous conduct; no king ascends the Olúbàdàn stool without mastering the disciplines of leadership and valor.)",
+        "A kì í fi ojú tẹ́ńbẹ́lú Olúbàdàn, ọba tí ń gb’orí ìtẹ́ àwọn jagunjagun. (One does not disdain the Olúbàdàn, sovereign monarch seated upon the throne of valiant warriors.)",
+        "Ìbàdàn kì í tẹ́ríba fún ogun, Olúbàdàn l’olórí àwọn alagbara. (Ìbàdàn never bows to battle, and the Olúbàdàn is the commander of the valiant.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "basorun_oluyole",
+        "Ìjòyè",
+        "Adé",
+        "Kábíyèsí",
+        "Àkóso-Ìlú"
+      ],
+      "geographical_origin": "Ìbàdànland (Oyo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Aseyin": {
+      "title": "Aseyìn of Ìsẹ́yìn",
+      "aliases": [
+        "aseyin",
+        "aseyìn",
+        "aseyin of iseyin",
+        "monarch of iseyin",
+        "king of iseyin"
+      ],
+      "description": "The paramount traditional monarch and sacred sovereign ruler of Ìsẹ́yìn Kingdom in the upper Ọ̀yọ́ savanna, famed for textile weaving (Aṣọ Òkè) and ancient iron smelting traditions.",
+      "etymology_and_philosophy": "Contracted from 'A-ṣe-ìyìn' ('He who performs actions worthy of perpetual praise and renown'). Historically founded as a pivotal northern garrison, spiritual stronghold, and agrarian hub of the Ọ̀yọ́ Empire, the Aseyìn reigns as paramount sovereign of the Oke-Ogun territory. The monarch oversees traditional iron guilds, master textile weavers (*Oníwunṣọ*), and sacred seasonal festivals. The Aseyìn's coronation requires sacred initiations at ancient rock outcroppings, symbolizing enduring physical stability and covenant with the regional deities. In the historical geography of Robert Smith (1988), Ìsẹ́yìn served as an indispensable strategic buffer protecting the imperial realm.",
+      "proverbs_and_oral_traditions": [
+        "Aseyìn kì í f’ìlú rẹ̀ s’àbò, ọba tí ń f’ọgbọ́n tọ́ orí-ìlú. (The Aseyìn never treats his realm with negligence; he is the sovereign who guides his people with seasoned wisdom.)",
+        "Ìsẹ́yìn orísun aṣọ òfì, ibi tí Aseyìn ti ń dá’bò bọ àwọn oníṣẹ́-ọnà. (Ìsẹ́yìn is the ancestral fountain of woven cloth, where the Aseyìn protects the guild of master craftsmen.)",
+        "Àṣẹ Aseyìn kì í tẹ̀ l’ọ̀dàn, ọ̀rọ̀ ọba gbọ́dọ̀ gún. (The royal decree of the Aseyìn never withers upon the savannah; the king's word stands firm.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "alaafin_of_oyo",
+        "Kábíyèsí",
+        "Ìjòyè",
+        "Agbájọ-Ìlú"
+      ],
+      "geographical_origin": "Ìsẹ́yìn (Oyo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olowo": {
+      "title": "Ọlọ́wọ̀ of Ọ̀wọ̀",
+      "aliases": [
+        "olowo",
+        "ọlọ́wọ̀",
+        "olowo of owo",
+        "king of owo",
+        "paramount ruler of owo",
+        "olowo stool"
+      ],
+      "description": "The paramount sovereign monarch of the ancient Ọ̀wọ̀ Kingdom in eastern Yorùbáland, renowned for terracotta arts, coral courtly splendour, and monumental palace architecture.",
+      "etymology_and_philosophy": "From the royal title 'Ọlọ́wọ̀' ('The Lord of Ọ̀wọ̀', signifying 'The Revered and Honored One', from *Ọ̀wọ̀* respect, sanctity, honor). Founded by Prince Ọjùgbelú, a son of Odùduwà from Ilé-Ifẹ̀, Ọ̀wọ̀ developed one of the most culturally sophisticated court cultures in African history, serving as the artistic and geopolitical bridge between classical Yorùbá and Benin civilisations. The Ọlọ́wọ̀ reigns from the historic Ààfin Ọ̀wọ̀—the largest palace compound in sub-Saharan Africa, containing over a hundred courtyards (*Ugha*). The monarch's regalia features heavy coral breastplates (*Ẹ̀gbà Ọwọ́*), carved ivory batons, and feather plumes, symbolizing cosmic balance and royal majesty. Rowland Abiodun (2014) illuminates how Ọ̀wọ̀ court art materializes the royal aesthetic of *Ìwà* and sacred prestige.",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀wọ̀ kì í ṣe ibi tí a gbé ń f’ọba ṣeré, Ọlọ́wọ̀ l’olórí ọlá. (Ọ̀wọ̀ is no place to trivialise royal majesty; the Ọlọ́wọ̀ is the apex of courtly honor.)",
+        "Ọlọ́wọ̀ gb’orí ìtẹ́, ayé Ọ̀wọ̀ a gún régé. (When the Ọlọ́wọ̀ occupies the sacred throne, the entire realm of Ọ̀wọ̀ flourishes in symmetry and balance.)",
+        "Àwa kì í rí Ọlọ́wọ̀ ká wá ọlá miràn. (One does not behold the Ọlọ́wọ̀ and yet seek any higher manifestation of regal dignity.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Ìrukẹ̀rẹ̀",
+        "Ìjòyè",
+        "Adé Ààrẹ"
+      ],
+      "geographical_origin": "Ọ̀wọ̀ Kingdom (Ondo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Deji": {
+      "title": "Déjì of Àkúrẹ́",
+      "aliases": [
+        "deji",
+        "déjì",
+        "deji of akure",
+        "king of akure",
+        "paramount monarch of akure",
+        "deji stool"
+      ],
+      "description": "The paramount traditional sovereign of the Àkúrẹ́ Kingdom in eastern Yorùbáland, descending directly from Ilé-Ifẹ̀ and saluted as the sacred incarnation of the Leopard (*Ọmọ Ẹkùn*).",
+      "etymology_and_philosophy": "From the royal praise epithet 'Ọmọ Ẹkùn, Amúkùn fọlá' ('Offspring of the Leopard, Who Steps with Majestic Coiled Grace'), denoting sovereign majesty and paramount rulership of the ancient Àkúrẹ́ Kingdom. Founded in the 12th century CE by Prince Asọdẹboyè (revered as Ẹkùn), prince of Ilé-Ifẹ̀ who migrated eastward bearing a consecrated beaded crown. The Déjì presides over the historic Ààfin Déjì courtyard palace complex, flanked by the senior council of Ìwàrẹ̀fà chiefs who govern sacred customary law. Philosophically signifies coiled spiritual potency, judicial equilibrium, and sacred covenant with the earth. Peter Lloyd (1962) analyzes how Àkúrẹ́ land law binds the sovereign to customary consultation with ward heads.",
+      "proverbs_and_oral_traditions": [
+        "Àkúrẹ́ Ọmọ Ẹkùn, ọmọ amúkùn fọlá. (Àkúrẹ́, progeny of the Leopard, who gracefully embraces royalty as an inherent destiny: Highlighting the serene majesty and coiled power of the Déjì.)",
+        "Déjì kì í fọ̀rọ̀ ayé ṣeré, ẹnu Ọba ni Àṣẹ ti ń jáde. (The Déjì utters nothing in vain, for divine cosmic decree proceeds unhindered from the mouth of the King: Illustrating sacred finality.)",
+        "A kì í rí Ẹkùn kí a tún wá àwọ̀ Ẹkùn. (One does not stand before the living Leopard and still seek the skin of the Leopard: Demonstrating that the physical presence of the Déjì is absolute and self-evident.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Iwarefa",
+        "Ìjòyè",
+        "Ìpínlẹ̀ Òndó"
+      ],
+      "geographical_origin": "Àkúrẹ́ Kingdom (Ondo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ataoja": {
+      "title": "Ataọ́ja of Òṣogbo",
+      "aliases": [
+        "ataoja",
+        "ataọ́ja",
+        "ataoja of osogbo",
+        "king of osogbo",
+        "custodian of osun grove",
+        "ataoja stool"
+      ],
+      "description": "The paramount traditional monarch of Òṣogbo Kingdom and divine earthly custodian of the sacred Òṣun River Grove, ruling under an eternal covenant of peace and fertility with the goddess Òṣun.",
+      "etymology_and_philosophy": "The title Ataọ́ja is a contraction of the sacred phrase 'A tẹ́wọ́ gb’ẹja' ('He who spreads his hands to receive the sacred fish from the river goddess Òṣun'). Founded in the early 18th century by Prince Láròóyè and Timehin, who migrated from Ipole during regional droughts, the kingdom of Òṣogbo was established through a divine pact with the river deity Òṣun. During the covenant rite, a sacred fish emerged from the waters into Láròóyè's outstretched hands, sanctifying the royal stool. The Ataọ́ja serves as the supreme patron of the annual Òṣun-Òṣogbo festival, mediating fertility, civic prosperity, and spiritual rejuvenation for millions of worldwide devotees. Babatunde Lawal (1996) underscores how this sacred pact unites political authority with environmental stewardship.",
+      "proverbs_and_oral_traditions": [
+        "A tẹ́wọ́ gb’ẹja l’ó j’ọba Òṣogbo, Òṣun l’ó f’ọlá fún Ataọ́ja. (He who spread out his hands and received the sacred fish became king of Òṣogbo; Òṣun herself bestowed majesty upon the Ataọ́ja.)",
+        "Òṣogbo kì í gbàbòdé, omi Òṣun a gbè wá. (Òṣogbo rejects treachery; the healing waters of Òṣun sustain the realm.)",
+        "Ataọ́ja kì í dájọ́ èké, ojú Òṣun ń wo Ọba. (The Ataọ́ja never delivers a corrupt verdict, for the vigilant eyes of Òṣun oversee the sovereign.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Òrìṣà",
+        "Ìrukẹ̀rẹ̀",
+        "Ìjòyè"
+      ],
+      "geographical_origin": "Òṣogbo (Osun State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Soun": {
+      "title": "Ṣọún of Ògbómọ̀ṣọ́",
+      "aliases": [
+        "soun",
+        "ṣọún",
+        "soun of ogbomoso",
+        "king of ogbomoso",
+        "paramount ruler of ogbomoso",
+        "soun stool"
+      ],
+      "description": "The paramount traditional sovereign and martial king of Ògbómọ̀ṣọ́ Kingdom, descending from the valiant warrior-founder Ògúndèlé Ṣọún who secured the northern frontiers of Yorùbáland.",
+      "etymology_and_philosophy": "From the royal lineage founder Ògúndèlé Ṣọún, a legendary 17th-century archer, tracker, and war-captain. In Ọ̀yọ́ imperial history, Ògbómọ̀ṣọ́ served as the invincible bastion and northern defense citadel. When the marauding warrior Elemoso terrorized the region, Ṣọún defeated him in single combat, bringing his head to the Aláàfin of Ọ̀yọ́, from which the town acquired the name *Ògbó-mọ-ẹlẹ́mọ̀ṣọ́* ('The spear strikes the Elemoso'). The Ṣọún reigns as paramount monarch over five local government jurisdictions, embodying military tenacity, boundary protection, and unyielding civic vigilance. Grounded in Samuel Johnson's (1921) account of Ọ̀yọ́ frontier defense.",
+      "proverbs_and_oral_traditions": [
+        "Ṣọún kì í sá fún ogun, Ògbómọ̀ṣọ́ kò gba àlejò tí ń b’ẹ́rù. (The Ṣọún never flees from battle, and Ògbómọ̀ṣọ́ harbors no coward.)",
+        "Ọmọ ajílégbè oòrùn, Ògbómọ̀ṣọ́ af’orí balẹ̀ fún Ọba Ṣọún. (Noble children who dwell in the radiant dawn; Ògbómọ̀ṣọ́ bows in reverence to the throne of Ṣọún.)",
+        "Ẹnu Ṣọún ni àṣẹ ìṣẹ́gun ti ń wá. (From the mouth of the Ṣọún proceeds the decree of triumph in adversity.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "alaafin_of_oyo",
+        "Ìjòyè",
+        "Àkóso-Ìlú"
+      ],
+      "geographical_origin": "Ògbómọ̀ṣọ́ Kingdom (Oyo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Timi": {
+      "title": "Tìmi of Ẹdẹ",
+      "aliases": [
+        "timi",
+        "tìmi",
+        "timi of ede",
+        "timi agbale olofa ina",
+        "king of ede",
+        "timi stool"
+      ],
+      "description": "The paramount traditional monarch of Ẹdẹ Kingdom, descended from the iconic archer-general Tìmi Agbàlé Ọlọ́fà Iná, celebrated in oral literature and sacred theater for supernatural archery and military brilliance.",
+      "etymology_and_philosophy": "From the heroic title 'Tìmi Agbàlé, Ọlọ́fà Iná' ('Tìmi the Shelter of the Realm, Whose Arrows Strike with Celestial Flame'). Commissioned by Aláàfin Kòrí of Old Ọ̀yọ́ to establish a frontier military outpost against Ijesha and Fulani incursions, Tìmi Agbàlé settled at Ẹdẹ-Ilé, utilizing arrows dipped in combustible herbs. Immortalized in classical Yorùbá literature (notably Duro Ladipo's *Ọba Kò So*), the Tìmi stool represents strategic military deterrence, defensive valor, and the cosmological power of fire and archery. The monarch oversees royal guilds, sacred Osun festivals, and constitutional governance alongside the Ẹdẹ kingmakers, adhering to the historical warfare analysis of Robert Smith (1988).",
+      "proverbs_and_oral_traditions": [
+        "Tìmi Agbàlé Ọlọ́fà Iná, ọba tí ń f’ọfà lé ogun l’ójú. (Tìmi Agbàlé of the Fiery Arrows, the monarch who dispels enemy hosts with flaming shafts of truth.)",
+        "Ẹdẹ kì í jẹ́ ibi tí ogun ń gbé, àṣẹ Tìmi ń dán bi iná. (Ẹdẹ is no resting place for hostile incursions; the decree of the Tìmi radiates like pure fire.)",
+        "Bí Tìmi bá gbé kùnkùn rẹ̀ dání, ìlú a dákẹ́ rọ́rọ́. (When the Tìmi grasps his royal bow of statecraft, the commonwealth falls into respectful calm.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "alaafin_of_oyo",
+        "Ìjòyè",
+        "CORPUS_ALAAFIN_SANGO_001"
+      ],
+      "geographical_origin": "Ẹdẹ Kingdom (Osun State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Akarigbo": {
+      "title": "Àkàrígbò of Rẹ́mọ",
+      "aliases": [
+        "akarigbo",
+        "àkàrígbò",
+        "akarigbo of remo",
+        "paramount ruler of remoland",
+        "sagamu",
+        "akarigbo stool"
+      ],
+      "description": "The paramount sovereign monarch of Rẹ́mọland, seated at Sagamu, wielding supreme traditional authority across the historic 33 towns of the Rẹ́mọ Kingdom in southwestern Yorùbáland.",
+      "etymology_and_philosophy": "From the founding monarch Prince Àkàrígbò, royal scion of the Ọọ̀ni of Ilé-Ifẹ̀ who migrated into the dense forest belts of southwestern Yorùbáland with a consecrated beaded crown. In 19th-century geopolitics, the Àkàrígbò played a decisive diplomatic role during the Ìbàdàn-Ègbá trade conflicts, opening southern trade routes connecting Lagos lagoon to the agricultural hinterland. The Àkàrígbò presides as paramount ruler over Sagamu and the entire Rẹ́mọ traditional council, sitting in constitutional balance with the powerful Òṣùgbó (Ògbóni) society and hereditary Afọba kingmakers. Lloyd (1962) details the profound constitutional autonomy exercised by the Òṣùgbó conclaves under the Àkàrígbò.",
+      "proverbs_and_oral_traditions": [
+        "Àkàrígbò l’ọba Rẹ́mọ, gbogbo ilẹ̀ Rẹ́mọ l’ó ń f’ọba jẹ. (The Àkàrígbò is the sovereign king of Rẹ́mọ; the entirety of Rẹ́mọland acknowledges his royal lineage.)",
+        "Àkàrígbò kì í f’ìlú rẹ̀ s’eré, ọba tí ń tọ́ ọ̀pọ̀lọpọ̀ ìlú ní àlàáfíà. (The Àkàrígbò never trifles with the welfare of his land; he is the monarch who coordinates thirty-three towns in enduring peace.)",
+        "Àṣẹ Àkàrígbò l’orí Rẹ́mọ kò sí ẹni tí ó lè yẹ̀ ẹ́. (The sovereign decree of the Àkàrígbò over Rẹ́mọland cannot be subverted.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "awujale_of_ijebu",
+        "Ìjòyè",
+        "Ìpínlẹ̀ Èkó"
+      ],
+      "geographical_origin": "Rẹ́mọ Kingdom (Ogun State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olofa": {
+      "title": "Ọlọ́fà of Ọ̀fà",
+      "aliases": [
+        "olofa",
+        "ọlọ́fà",
+        "olofa of offa",
+        "king of offa",
+        "paramount ruler of offaland",
+        "olofa stool"
+      ],
+      "description": "The paramount traditional monarch and sacred sovereign of Ọ̀fà Kingdom in northern Yorùbáland, famous for the ancestral wrestling festival (Ọdún Ìjàkàdì) and unyielding civic bravery.",
+      "etymology_and_philosophy": "From the title 'Ọlọ́fà' ('The Master of the Bow and Arrows', or *Oní-Ọfà*). Founded in the 14th century by Prince Olúbùnmí Ọlọ́fàngán, scion of the Ọọ̀ni of Ilé-Ifẹ̀ who proved his martial mastery in royal archery. In 19th-century history, Ọ̀fà served as the frontline citadel of Yorùbá resistance against the Fulani caliphate incursions, under the heroic defense of Ọlọ́fà Okunoye. The kingdom celebrates the annual Ìjàkàdì festival, dramatizing egalitarian martial pride with the saying *Ọ̀fà ń jà, a kì í gb’èkuru mọ́wọ́* ('When Ọ̀fà contends, we do not waste time eating beans'). The Ọlọ́fà embodies unbowed northern Yorùbá courage, agrarian prosperity, and communal vigilance, documented by Akintoye (2010).",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀fà mọ̀kàn, ọmọ olóro kì í bẹ̀rù ogun. (Ọ̀fà stands resolute; offspring of the bold never tremble before battle.)",
+        "Ìjàkàdì l’orí Ọ̀fà, Ọlọ́fà kì í jẹ́ kí ilẹ̀ rẹ̀ tẹ́. (Traditional wrestling tests our strength; the Ọlọ́fà never permits his homeland to be humiliated.)",
+        "Àṣẹ Ọlọ́fà tàn ká ilẹ̀, ọba tí ń f’ọgbọ́n dábò bọ àwọn ènìyàn rẹ̀. (The command of the Ọlọ́fà radiates across the land; the king who shields his people with wisdom.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "ooni_of_ife",
+        "Ìjòyè",
+        "Àkóso-Ìlú"
+      ],
+      "geographical_origin": "Ọ̀fà Kingdom (Kwara State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olugbo": {
+      "title": "Olúgbo of Ùgbó",
+      "aliases": [
+        "olugbo",
+        "olúgbo",
+        "olugbo of ugbo",
+        "paramount ruler of ugboland",
+        "ilaje monarch",
+        "olugbo stool"
+      ],
+      "description": "The paramount traditional monarch of Ùgbó-Ilaje in the coastal mangrove wetlands of Ondo State, claiming primordial autochthonous descent from the pre-Odùduwà inhabitants of ancient Ilé-Ifẹ̀.",
+      "etymology_and_philosophy": "From 'Olú-Ùgbó' ('Sovereign Lord of the Mangrove Forests and Waters'). In historical oral chronicles (notably the Mọ́remí saga), the Olúgbo traces his royal lineage to Ọbàtálá and Prince Orunmakin, representing the ancient autochthonous inhabitants of Ilé-Ifẹ̀ who contested Odùduwà's ascendancy. Following relocation to the Atlantic coastal lagoon belt of Ilaje, the Olúgbo established a powerful maritime monarchy governing offshore trade, sacred salt collection, and fishing guilds. The Olúgbo reigns with deep ritual antiquity, preserving sacred coastal shrines, esoteric masquerade rites, and maritime customary law. The dialectics of Ifẹ̀-Ùgbó relations are comprehensively illuminated by Robert Smith (1988).",
+      "proverbs_and_oral_traditions": [
+        "Olúgbo l’onílé omi, ọba tí ń jọba l’órí àwọn igbó àti odò. (The Olúgbo is the master of the waterways, monarch reigning over mangrove forests and rivers.)",
+        "Ùgbó kì í gbàbòdé, àṣẹ Olúgbo n’bẹ l’órí omi. (Ùgbó brooks no treacherous betrayal; the decree of the Olúgbo governs the maritime expanse.)",
+        "A kì í bá Olúgbo jiyàn orísun, ọba tí ó ti wà ṣáájú ogun. (One does not dispute ancient origins with the Olúgbo, sovereign whose roots precede dynastic wars.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Ọbálúfọ̀n",
+        "Ìjòyè",
+        "Ìpínlẹ̀ Òndó"
+      ],
+      "geographical_origin": "Ùgbó Kingdom, Ilaje (Ondo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Elemure": {
+      "title": "Ẹlẹ́mùrẹ́ of Ẹmùrẹ́",
+      "aliases": [
+        "elemure",
+        "ẹlẹ́mùrẹ́",
+        "elemure of emure",
+        "king of emure ekiti",
+        "elemure stool"
+      ],
+      "description": "The paramount traditional monarch and sacred sovereign of Ẹmùrẹ́-Èkìtì, reigning over one of the prominent crowned kingdoms of the Èkìtì highland confederacy.",
+      "etymology_and_philosophy": "From 'Ẹlẹ́-Ẹmùrẹ́' ('The Sovereign Owner and Custodian of Ẹmùrẹ́'). Founded during the eastward migrations from Ilé-Ifẹ̀, Ẹmùrẹ́ emerged as a formidable forest kingdom in southern Èkìtì, possessing rich agricultural soils, cocoa plantations, and sacred ancestral shrines. The Ẹlẹ́mùrẹ́ rules in concert with senior hereditary chiefs and kingmakers, ensuring that agrarian abundance and communal justice are maintained through strict adherence to customary law and seasonal ancestral rites. Akintoye (2010) explores the geopolitical cohesion of the southern Ekiti kingdoms under their respective crowned heads.",
+      "proverbs_and_oral_traditions": [
+        "Ẹlẹ́mùrẹ́ l’ọba Ẹmùrẹ́, ọmọ a f’idà bọ̀bọ̀ l’ójú ogun. (The Ẹlẹ́mùrẹ́ is sovereign of Ẹmùrẹ́, scion of those who wielded blades without trembling in battle.)",
+        "Ẹmùrẹ́ orísun ọrọ̀, ibi tí Ẹlẹ́mùrẹ́ ti ń f’ọwọ́ tútù darí ìlú. (Ẹmùrẹ́ is a cradle of agricultural wealth, where the Ẹlẹ́mùrẹ́ guides the community with tranquil hands.)",
+        "Àṣẹ Ọba Ẹlẹ́mùrẹ́ kì í tẹ̀ sílẹ̀ lásán. (The royal decree of the Ẹlẹ́mùrẹ́ never falls powerless upon the ground.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Alara",
+        "Ajero",
+        "Ìjòyè"
+      ],
+      "geographical_origin": "Ẹmùrẹ́-Èkìtì (Ekiti State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ajero": {
+      "title": "Ajérò of Ìjérò",
+      "aliases": [
+        "ajero",
+        "ajérò",
+        "ajero of ijero",
+        "king of ijero ekiti",
+        "paramount monarch of ijero",
+        "ajero stool"
+      ],
+      "description": "The paramount traditional monarch of Ìjérò-Èkìtì, recognized as one of the principal sixteen crowned kings (Aládé Mẹ́rìndínlógún) of Yorùbáland, descending directly from Odùduwà.",
+      "etymology_and_philosophy": "The title Ajérò derives from the sacred phrase 'A jé rò' ('He who deliberates and consults before decreeing sovereign judgment'). Ranked among the ancient Pelupelu kings of Èkìtì, the Ajérò brought a consecrated beaded crown directly from Ilé-Ifẹ̀ during the primordial dispersal. The Ajérò reigns over an ancient kingdom rich in mineral reserves, agrarian produce, and spiritual shrines, serving historically as a major judicial arbiter during the 19th-century Kiriji / Ekitiparapo confederacy wars against Ibadan hegemony. As Lloyd (1962) observes, the Ajérò's cabinet maintains an intricate system of collegiate deliberation.",
+      "proverbs_and_oral_traditions": [
+        "Ajérò l’olórí ìgbìmọ̀, ọba tí ń f’ọgbọ́n dájọ́ l’árin àwọn ènìyàn. (The Ajérò is the master of deliberation, monarch who dispenses justice with profound wisdom among the people.)",
+        "Ìjérò orísun adé, ibi tí Ajérò ti ń jọba l’órí àwọn ọlọ́lá. (Ìjérò is an ancestral fountain of crowns, where the Ajérò reigns over the honorable.)",
+        "Àṣẹ Ajérò l’órí Ìjérò kì í yẹ̀, ọba aládé mẹ́rìndínlógún. (The decree of the Ajérò over Ìjérò never falters, paramount monarch of the sixteen sacred crowns.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Alara",
+        "Elemure",
+        "ooni_of_ife"
+      ],
+      "geographical_origin": "Ìjérò-Èkìtì (Ekiti State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Alara": {
+      "title": "Alárá of Arámọkọ",
+      "aliases": [
+        "alara",
+        "alárá",
+        "alara of aramoko",
+        "king of aramoko ekiti",
+        "alara stool"
+      ],
+      "description": "The paramount sovereign monarch of Arámọkọ-Èkìtì, historically regarded as the firstborn or senior crowned prince among the Pelupelu kings of Èkìtì, tracing direct descent to Odùduwà.",
+      "etymology_and_philosophy": "From 'Alá-Ará' ('The Lord of Arámọkọ / Master of the Kinsfolk', from *Oní-Ará*). In canonical Yorùbá royal tradition and Ifá corpus (notably Odù Ìwòrì Méjì and Òtúrá Méjì), the Alárá is celebrated as one of the paramount royal patrons who received sacred beaded crowns and divinatory blessing from Ifá and Odùduwà. The Alárá holds premier seating within the traditional council of Èkìtì Obas, symbolizing ancestral seniority, spiritual precedence, and political harmony across the eastern hill kingdoms. Grounded in the historical and canonical surveys of Babatunde Lawal (1996) and Samuel Johnson (1921).",
+      "proverbs_and_oral_traditions": [
+        "Alárá l’olórí ọba ní ilẹ̀ Èkìtì, adé rẹ̀ kì í ṣe adé àtọwọ́dọ́wọ́ lásán. (The Alárá is the foremost monarch in Èkìtìland; his crown is no ordinary heirloom but an ancient divine mantle.)",
+        "Bí Alárá bá dádé, gbogbo Arámọkọ a dúpẹ́ lọ́wọ́ Ọlọ́run. (When the Alárá dons his sacred beaded crown, all Arámọkọ gives thanks to Olódùmarè.)",
+        "A kì í rí Alárá ká tún wá ọba miràn ní Arámọkọ. (One does not stand before the Alárá and seek any other sovereign in Arámọkọ.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Ajero",
+        "Elemure",
+        "ooni_of_ife"
+      ],
+      "geographical_origin": "Arámọkọ-Èkìtì (Ekiti State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olojudo": {
+      "title": "Ọlọ́jùdó of Ìdó-Èkìtì",
+      "aliases": [
+        "olojudo",
+        "ọlọ́jùdó",
+        "olojudo of ido ekiti",
+        "king of ido ekiti",
+        "olojudo stool"
+      ],
+      "description": "The paramount traditional sovereign and sacred crowned king of Ìdó-Èkìtì, recognized as a founding member of the Pelupelu high council of Èkìtì monarchs.",
+      "etymology_and_philosophy": "From 'Oní-Ojú-Ìdó' ('The Supreme Guardian of the Military Headquarters / Strategic Citadel'). In the 18th and 19th-century wars, Ìdó-Èkìtì served as an impregnable fortress town and command outpost. The Ọlọ́jùdó rules with hereditary authority derived directly from Ilé-Ifẹ̀, overseeing agrarian estates, community security, and seasonal festivals that celebrate the covenant between the monarch, the ancestors, and the land. In the confederate history analyzed by Akintoye (2010), the Ọlọ́jùdó provided pivotal military leadership during the regional struggles for self-determination.",
+      "proverbs_and_oral_traditions": [
+        "Ọlọ́jùdó l’ọba Ìdó, ọba tí ń f’ojú tútù wo ìlú rẹ̀. (The Ọlọ́jùdó is king of Ìdó, monarch who watches over his people with benevolent eyes.)",
+        "Ìdó-Èkìtì orísun akọni, ibi tí Ọlọ́jùdó ti ń darí àwọn ọmogùn. (Ìdó-Èkìtì is a cradle of champions, where the Ọlọ́jùdó directs the strength of his realm.)",
+        "Àṣẹ Ọlọ́jùdó dúró bí òkè, kò sí ìjì tí ó lè bì í. (The authority of the Ọlọ́jùdó stands firm like the ancient hills; no storm can overturn it.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Alara",
+        "Ajero",
+        "Ìjòyè"
+      ],
+      "geographical_origin": "Ìdó-Èkìtì (Ekiti State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Owa Ale": {
+      "title": "Ọwá Alé of Ìkàrẹ́",
+      "aliases": [
+        "owa ale",
+        "ọwá alé",
+        "owa ale of ikare",
+        "king of ikare akoko",
+        "owa ale stool"
+      ],
+      "description": "The ancient paramount traditional monarch of Ìkàrẹ́-Àkókó in northeastern Ondo State, tracing primordial dynastic origin to Ilé-Ifẹ̀ and reigning over the rocky gateways of Àkókóland.",
+      "etymology_and_philosophy": "From 'Ọwá' (monarch/paramount ruler) and 'Alé' (the primeval hill citadel/ancestral redoubt). As one of the oldest sovereign stools in the rocky highlands of Àkókó, the Ọwá Alé sits at the critical historical crossroads connecting Yorùbáland, Nupe country, and Edo territories. The monarch embodies ancient protective rites, commanding deep veneration during ancestral mask ceremonies and seasonal Yam festivals (*Ọdún Ìjẹṣu*). Smith (1988) highlights how the rugged geography of the Akoko kingdoms provided natural fortifications that preserved dynastic autonomy.",
+      "proverbs_and_oral_traditions": [
+        "Ọwá Alé l’onílé Ìkàrẹ́, ọba tí ń jọba l’órí àwọn òkè gíga. (The Ọwá Alé is the master of Ìkàrẹ́, monarch who reigns upon the high mountains.)",
+        "Àkókó kì í gbàbòdé, àṣẹ Ọwá Alé l’ó ń dábò bọ ìlú. (Àkókó permits no betrayal; the decree of the Ọwá Alé shields the community.)",
+        "Ọwá Alé kì í bẹ̀rù ọ̀ràn, ọba tí ń f’ọlá darí àwọn akọni. (The Ọwá Alé fears no adversity, sovereign who guides heroes in majesty.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "Olowo",
+        "Deji",
+        "Ìjòyè"
+      ],
+      "geographical_origin": "Ìkàrẹ́-Àkókó (Ondo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olugbon": {
+      "title": "Olúgbọ́n of Ilégbọ́n",
+      "aliases": [
+        "olugbon",
+        "olúgbọ́n",
+        "olugbon of ilegbon",
+        "second in rank to alaafin",
+        "olugbon stool"
+      ],
+      "description": "One of the most elevated paramount crowned rulers in the imperial Ọ̀yọ́ kingdom, traditionally holding constitutional precedence second only to the Aláàfin of Ọ̀yọ́.",
+      "etymology_and_philosophy": "The title Olúgbọ́n signifies 'The Master of Wisdom and Primordial Counsel' (*Olú-Ọgbọ́n*). In ancient Ọ̀yọ́ constitutional order, along with the Arẹ́sa and the Oníkòyí, the Olúgbọ́n formed the exalted triad of imperial provincial sovereigns who guarded the heartland of the realm. Classical Ifá literature repeatedly pairs the Olúgbọ́n with the Arẹ́sa (*Agbọ́n l’ó tọ́ Olúgbọ́n, ìmọ̀ l’ó tọ́ Arẹ́sa*), celebrating his royal court as a center of philosophy, statecraft, and ancestral ritual custody. Samuel Johnson (1921) records how the Olúgbọ́n was saluted with imperial honors during sovereign national convocations.",
+      "proverbs_and_oral_traditions": [
+        "Ọgbọ́n l’ó tọ́ Olúgbọ́n, ìmọ̀ l’ó tọ́ Arẹ́sa. (Wisdom is the rightful domain of the Olúgbọ́n, while deep understanding is the heritage of the Arẹ́sa: Affirming intellectual statecraft.)",
+        "Olúgbọ́n kì í kú kí ilẹ̀ rẹ̀ ó tẹ́. (An Olúgbọ́n never passes away to leave his kingdom humiliated: Highlighting enduring succession and pride.)",
+        "Bí Olúgbọ́n bá dádé, àwọn àgbà a dúpẹ́ lọ́wọ́ Ọlọ́run. (When the Olúgbọ́n dons his crown, the elders give praise for sound leadership.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Aresa",
+        "alaafin_of_oyo",
+        "Adé",
+        "Kábíyèsí",
+        "Baṣọ̀run"
+      ],
+      "geographical_origin": "Ilégbọ́n / Ọ̀yọ́ Imperial Commonwealth",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Aresa": {
+      "title": "Arẹ́sa of Igbẹ́tì",
+      "aliases": [
+        "aresa",
+        "arẹ́sa",
+        "aresa of igbeti",
+        "aresa of iresi",
+        "aresa stool"
+      ],
+      "description": "One of the primordial imperial monarchs of the Ọ̀yọ́ realm, celebrated alongside the Olúgbọ́n for dynastic seniority, sacred hill sanctuaries, and boundary protection.",
+      "etymology_and_philosophy": "From 'Arẹ̀-Èsà' ('The Paramount Prince of Esà/Igbẹ́tì'). In the imperial history of Old Ọ̀yọ́, when the capital was temporarily relocated to Ọ̀yọ́-Igbẹ́tì during 16th-century Nupe invasions, the Arẹ́sa provided critical territorial refuge and defensive leadership. The Arẹ́sa reigns as a sacred beaded monarch whose ancient palace at the base of the massive Igbẹ́tì marble rock formations symbolizes unwavering permanence and cosmic sanctuary. Documented by Robert Smith (1988) in his analysis of the Ọ̀yọ́ kingdom's resilient territorial relocations.",
+      "proverbs_and_oral_traditions": [
+        "Ìmọ̀ l’ó tọ́ Arẹ́sa, ọba tí ń f’ọgbọ́n dábò bọ àwọn ènìyàn. (Deep understanding belongs to the Arẹ́sa, the king who protects his people through strategic wisdom.)",
+        "Arẹ́sa kò b’ẹ́rù ogun, Igbẹ́tì orísun akọni. (The Arẹ́sa knows no fear of war; Igbẹ́tì is a fortress of valor.)",
+        "Àṣẹ Arẹ́sa kì í yẹ̀ ní ilẹ̀ rẹ̀. (The command of the Arẹ́sa stands unshakable in his sovereign domain.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Olugbon",
+        "alaafin_of_oyo",
+        "Adé",
+        "Kábíyèsí",
+        "Àkóso-Ìlú"
+      ],
+      "geographical_origin": "Igbẹ́tì / Ọ̀yọ́ Realm (Oyo State)",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Olori-Oluwa": {
+      "title": "Olórí-Oluwa",
+      "aliases": [
+        "olori-oluwa",
+        "olórí-oluwa",
+        "head of palace dignitaries",
+        "court noble",
+        "master of royal ceremonies"
+      ],
+      "description": "The high-ranking traditional palace court dignitary and chief of protocol who oversees royal chamberlains, court messengers, and palace decorum in sovereign Yorùbá palaces.",
+      "etymology_and_philosophy": "Contracted from 'Olórí' (head/leader) and 'Olúwa' (lord/monarch), literally signifying 'The Head of the Lord's Household' or 'Chief Officer of the Sovereign'. In the administrative architecture of major Yorùbá palaces (Àfin), this official coordinates access to the private quarters of the monarch, directs protocol for visiting foreign emissaries, and ensures that the strict taboos (*Èèwọ̀*) of the palace are meticulously observed. Fadipe (1970) details how court officials like the Olórí-Oluwa enforce traditional etiquette and royal dignity.",
+      "proverbs_and_oral_traditions": [
+        "Ẹni tí ó sún mọ́ ọba l’ọba ń gbè; Olórí-Oluwa mọ àṣírí àfin. (He who walks nearest the king enjoys royal favor; the Olórí-Oluwa knows the innermost sanctuary of the palace.)",
+        "Olórí-Oluwa kì í f’ọ̀rọ̀ àfin s’eré ní gbangba. (The chief chamberlain never trivializes palace matters in public squares.)",
+        "Bí a bá fẹ́ rí ọba, a gbọ́dọ̀ kọ́kọ́ kí Olórí-Oluwa. (If one wishes to behold the sovereign, one must first pay respects to the chief of protocol.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Àfin Aláàfin",
+        "Àfin Ọọ̀ni",
+        "Ìjòyè",
+        "Kábíyèsí",
+        "Oloyye"
+      ],
+      "geographical_origin": "Pan-Yorùbá Palace Court Hierarchies",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Abobaku": {
+      "title": "Abọbakú",
+      "aliases": [
+        "abobaku",
+        "abọbakú",
+        "royal death companion",
+        "elesin oba",
+        "horseman of the king",
+        "master of horse"
+      ],
+      "description": "The high court noble in the pre-colonial Ọ̀yọ́ Empire, traditionally identified with the Ẹlẹ́ṣin Ọba (Master of the King's Horse), whose life of supreme royal luxury carried the sacred duty of dying with the sovereign.",
+      "etymology_and_philosophy": "A compound of 'A-bá-ọba-kú' ('He who dies alongside the king'). In pre-colonial Ọ̀yọ́ customary law, the Abọbakú enjoyed unsurpassed royal luxury, royal horses, and courtly veneration during the monarch's reign. However, upon the Aláàfin's physical demise, spiritual law mandated that the Abọbakú must voluntarily depart this world to accompany the sovereign's soul into Ọ̀run (the spirit world), serving as his herald in the afterlife. Dramatized by Wole Soyinka in *Death and the King's Horseman*, the institution illustrates the solemn metaphysical reciprocity between power and sacrifice in Yorùbá thought. As analyzed by Samuel Johnson (1921), this office bound court favorites to the physical preservation of the king.",
+      "proverbs_and_oral_traditions": [
+        "Ẹni tí ó jẹ l’óyè abọbakú gbọ́dọ̀ múra sí ikú ọlá. (He who enjoys the royal privileges of the Abọbakú must be prepared for an honorable transition into eternity.)",
+        "Abọbakú kì í sá ní ọjọ́ ikú Ọba. (The companion of the king does not flee on the day the monarch enters the ancestral realm.)",
+        "Ọlá tí ń bẹ l’ọ́wọ́ ẹlẹ́ṣin ọba, kò sí ẹni tí kò mọ̀ pé ó l’opin. (The majestic luxury enjoyed by the master of the horse has a solemn covenant that bounds it.)"
+      ],
+      "related_entities": [
+        "alaafin_of_oyo",
+        "Ọba",
+        "Àfin Aláàfin",
+        "Aremo",
+        "Baṣọ̀run",
+        "Ẹlẹ́ṣị̀n"
+      ],
+      "geographical_origin": "Imperial Ọ̀yọ́ Court Tradition",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Osi-Ike": {
+      "title": "Òsì-Ìkẹ",
+      "aliases": [
+        "osi-ike",
+        "òsì-ìkẹ",
+        "left wing palace attendant",
+        "court official of the left",
+        "osi title"
+      ],
+      "description": "A senior chieftaincy office positioned on the left (*Òsì*) wing of royal court councils, responsible for deliberative checks, palace sanctuary management, and balancing executive decrees.",
+      "etymology_and_philosophy": "From 'Òsì' (the left flank/hand) and 'Ìkẹ' (loving care, sanctuary, sacred restraint). In Yorùbá constitutional spatial layout, while the right (*Ọ̀tún*) flank represents kinetic executive command and external enforcement, the left (*Òsì*) flank embodies introspection, maternal restraint (*Ìkẹ*), and judicial caution. The Òsì-Ìkẹ provides vital procedural balance during council debates, ensuring that harsh royal decisions are tempered with compassion and community preservation. Lloyd (1962) details the dual-wing constitutional structure that characterizes Yorùbá municipal councils.",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀tún ń gb’èjẹ̀, òsì ń tọ́ àlàáfíà. (The right flank commands action, while the left flank nurtures peace and equilibrium.)",
+        "Òsì-Ìkẹ kì í jẹ́ kí ọ̀rọ̀ ilú tẹ̀ sí apá kan. (The Òsì-Ìkẹ ensures that matters of state never tilt dangerously to one extreme.)",
+        "Ọwọ́ ọ̀tún fọ̀rọ̀ kalẹ̀, ọwọ́ òsì f’ìfẹ́ gbè é ró. (The right hand establishes the decree, and the left hand supports it with wisdom.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Ọ̀tún",
+        "Oṣì",
+        "Ìjòyè",
+        "Ìgbìmọ̀ Ìjòyè",
+        "Oloyye"
+      ],
+      "geographical_origin": "Yorùbá Traditional Chieftaincy Systems",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Iku-Ogun": {
+      "title": "Ikú-Ògun",
+      "aliases": [
+        "iku-ogun",
+        "ikú-ògun",
+        "warrior title",
+        "vanguard of the realm",
+        "brave defender"
+      ],
+      "description": "A valiant martial chieftaincy title conferred upon vanguard warriors who pledged their lives to the physical defense of the kingdom, invoking the martial patronage of Ògún.",
+      "etymology_and_philosophy": "From 'Ikú' (death/unflinching resolve) and 'Ògun' (warfare/martial defense, under the deity Ògún). Historically awarded to veteran war-captains in frontier cities such as Ìbàdàn, Ọ̀yọ́, and Ìjèbú, the title holder served as commander of elite scouts and boundary patrols. The Ikú-Ògun was expected to show zero retreat before hostile invaders, serving as the physical shield protecting the town walls (*Odi Ìlú*) and royal palace. Robert Smith (1988) examines the specialized military orders and titles that fortified Yorùbá city-states against external aggression.",
+      "proverbs_and_oral_traditions": [
+        "Ikú-Ògun kì í bẹ̀rù ọfà, akọni tí ń gb’ogun l’ójú. (The Ikú-Ògun fears no arrows; he is the champion who confronts war face-to-face.)",
+        "Bí ogun bá dé, Ikú-Ògun l’olórí àwọn jagunjagun. (When war arrives at the gates, the Ikú-Ògun stands at the head of the vanguard.)",
+        "Ọmọ akọni kì í sá ní ojú ogun; àṣẹ Ògún wà pẹ̀lú rẹ̀. (The warrior of honor never retreats from the battlefield; the divine power of Ògún abides with him.)"
+      ],
+      "related_entities": [
+        "Ọba",
+        "CORPUS_OGUN_COSMIC_001",
+        "Ìjòyè",
+        "Baṣọ̀run",
+        "Àkóso-Ìlú",
+        "basorun_oluyole"
+      ],
+      "geographical_origin": "Traditional Defense & Warrior Guilds",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Odùduwà": {
+      "title": "Odùduwà (Primordial Ancestor & Divine Progenitor)",
+      "aliases": [
+        "oduduwa",
+        "odùduwà",
+        "progenitor of yoruba",
+        "primordial father",
+        "olofin aye"
+      ],
+      "description": "The primordial divine progenitor of the Yorùbá civilization, legendary cosmic architect of Ilé-Ifẹ̀, and archetypal patriarch from whom all consecrated beaded crowns (Adé Ìlẹ̀kẹ̀) and royal lineages emanate.",
+      "etymology_and_philosophy": "From the phrase 'Oódú tó dá ìwà' ('The Great Reservoir / Cosmic Entity who created existence and moral character'). In sacred cosmology, Odùduwà is the heavenly emissary sent by Olódùmarè equipped with the primordial sand, five-toed cockerel, and chameleon to establish dry land upon the waters at Ilé-Ifẹ̀. As civilizational patriarch, Odùduwà embodies sovereign lineage, political constitution, and the ontological seed of Yorùbá nationhood. Philosophically represents ancestral origin, transcendent paternal authority, and cosmological equilibrium between earth (Ilẹ̀) and cosmos (Ọ̀run).",
+      "proverbs_and_oral_traditions": [
+        "Odùduwà kì í ṣe ọmọ lásán, bàbá gbogbo Yorùbá ni. (Odùduwà is no ordinary mortal; he is the universal ancestral father of all Yorùbá: Affirming the foundational lineage unity and sacred origins of the people.)",
+        "Ilé-Ifẹ̀ orísun ayé, ibi tí ojúmọ́ ti mọ́ wá. (Ilé-Ifẹ̀ is the primordial cradle of existence, where the light of dawn first broke upon the universe: Celebrating the cosmological center founded by Odùduwà.)",
+        "Ẹni tí ó bí ọba kì í ṣe ẹrú. (He who sires sovereign monarchs can never be deemed a bondsman: Underscoring Odùduwà's peerless ancestral sovereignty as the progenitor of crowned kings.)"
+      ],
+      "related_entities": [
+        "Ọọ̀ni Odùduwà",
+        "Ọba",
+        "Adé",
+        "Adé Ààrẹ",
+        "Ilé-Ifẹ̀",
+        "Orangun"
+      ],
+      "geographical_origin": "Ilé-Ifẹ̀ & Pan-Yorùbá Civilization",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ọọ̀ni Odùduwà": {
+      "title": "Ọọ̀ni Odùduwà (Paramount Imperial Throne of Ilé-Ifẹ̀)",
+      "aliases": [
+        "ooni oduduwa",
+        "ọọ̀ni odùduwà",
+        "ooni of ife stool",
+        "paramount throne of ife",
+        "arole oduduwa"
+      ],
+      "description": "The sacred dynastic stool and paramount spiritual throne of Ilé-Ifẹ̀, whose occupier reigns as Arọ́lẹ̀ Odùduwà (the living earthly heir of the progenitor) and supreme custodian of the ancestral cradle.",
+      "etymology_and_philosophy": "From 'Ọọ̀ni' (contracted from 'Ọlọ́wọ̀ Ọ̀ni' / 'The Consecrated One of the Sacred Soil') and 'Odùduwà'. Philosophically, the stool of Ọọ̀ni Odùduwà represents the sacerdotal and spiritual center of the Yorùbá cosmos. Unlike purely military or administrative offices, the Ọọ̀ni reigns as the paramount ritual sovereign, sitting in perpetual covenant with the 401 divinities (Òrìṣà) of Ilé-Ifẹ̀. The monarch's authority is bounded by the Ìwàrẹ̀fà Ẹ̀fẹ̀ (senior kingmakers and custodians of the sacred groove shrines), ensuring governance remains an act of continuous cosmic maintenance.",
+      "proverbs_and_oral_traditions": [
+        "Ọọ̀ni ni arọ́lẹ̀ Odùduwà, olórí gbogbo adé l’áyé. (The Ọọ̀ni is the living heir of Odùduwà, the paramount custodian of all beaded crowns in existence: Signifying spiritual seniority across Yorùbáland.)",
+        "Ilé-Ifẹ̀ kì í gba àbòṣé, àṣẹ Ọọ̀ni kì í yẹ̀. (Ilé-Ifẹ̀ accepts no compromised ritual, and the sacred decree of the Ọọ̀ni never falters: Emphasizing spiritual purity and divine finality.)",
+        "Ọọ̀ni gb’orí ìtẹ́ Odùduwà, gbogbo ayé a tẹ́ríba. (When the Ọọ̀ni occupies the ancient throne of Odùduwà, the entire commonwealth bows in reverence to ancestral majesty.)"
+      ],
+      "related_entities": [
+        "Odùduwà",
+        "Ọba",
+        "Adé Ààrẹ",
+        "Àfin Ọọ̀ni",
+        "Iwarefa",
+        "ooni_of_ife"
+      ],
+      "geographical_origin": "Ilé-Ifẹ̀, Cradle of Sovereignty",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ọ̀rànmíyàn": {
+      "title": "Ọ̀rànmíyàn (Imperial Prince & Pan-Yorùbá Conqueror)",
+      "aliases": [
+        "oranmiyan",
+        "ọ̀rànmíyàn",
+        "prince oranmiyan",
+        "founder of oyo",
+        "oranyan"
+      ],
+      "description": "Legendary prince of Ilé-Ifẹ̀, warrior-conqueror, founder of the Imperial Ọ̀yọ́ Empire, ruler of the Benin Kingdom, and icon of trans-regional political expansion and military valor.",
+      "etymology_and_philosophy": "Contracted from 'Ọ̀ràn mi yàn' ('My sovereign cause is justified and chosen'). Historically and mythically renowned as the youngest son or grandson of Odùduwà who led great cavalry campaigns across the Niger savanna. Ọ̀rànmíyàn represents the kinetic, expansionist principle of Yorùbá civilization: founding Ọ̀yọ́-Ilé, establishing dynastic institutions in Benin (as Eweka I's father), and returning to Ilé-Ifẹ̀ where his monumental granite monolith (Ọ̀pá Ọ̀rànmíyàn) stands as an eternal symbol of martial prowess and ancestral protection.",
+      "proverbs_and_oral_traditions": [
+        "Ọ̀rànmíyàn akọ́gun, akọni tí ń gb’ẹnu ọfà wọ’lú. (Ọ̀rànmíyàn the supreme vanguard, the hero who breaches fortresses amidst showers of arrows: Celebrating unparalleled martial resolve.)",
+        "Bí Ọ̀rànmíyàn bá f’orí tẹ’lẹ̀, ogun a parí. (When Ọ̀rànmíyàn strikes his battle stance, wars dissolve into victory: Highlighting decisive leadership and strategic authority.)",
+        "Ọ̀pá Ọ̀rànmíyàn dúró gbọnyingbọnyin, kò sí ìjì tí ó lè bì í subú. (The Staff of Ọ̀rànmíyàn stands immovable, for no tempest can overthrow ancestral strength.)"
+      ],
+      "related_entities": [
+        "Aláàfin Ọ̀rànmíyàn",
+        "Ọ̀pá Ọ̀rànmíyàn",
+        "Àkúko Ọ̀rànmíyàn",
+        "Ọba",
+        "alaafin_of_oyo",
+        "Ilé-Ifẹ̀"
+      ],
+      "geographical_origin": "Ọ̀yọ́, Ilé-Ifẹ̀ & Benin Empire",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Aláàfin Ọ̀rànmíyàn": {
+      "title": "Aláàfin Ọ̀rànmíyàn (Founding Sovereign of the Ọ̀yọ́ Empire)",
+      "aliases": [
+        "alaafin oranmiyan",
+        "aláàfin ọ̀rànmíyàn",
+        "first alaafin",
+        "founder of oyo empire"
+      ],
+      "description": "The foundational Aláàfin of the imperial Ọ̀yọ́ Empire, who established the capital at Ọ̀yọ́-Ilé, created the royal cavalry doctrine, and inaugurated the constitutional power-sharing model between monarch and the Ọ̀yọ́ Mèsì council.",
+      "etymology_and_philosophy": "From 'Aláàfin' ('Owner of the Palace / Master of the Citadel') and 'Ọ̀rànmíyàn'. Phenomenologically, Aláàfin Ọ̀rànmíyàn represents the institutionalization of imperial statecraft. Under his reign, royal authority was deliberately balanced by the constitutional council of the Ọ̀yọ́ Mèsì (led by the Baṣọ̀run) and the secret judicial oversight of the Ògbóni fraternity. This tripartite structure ensured that military expansion was anchored in institutional justice (*Ìwà-rere*), preventing tyranny through constitutional abdication protocols.",
+      "proverbs_and_oral_traditions": [
+        "Aláàfin l’onílé ayé, Ọ̀yọ́ Mèsì l’onílé ìjọ̀jọ̀. (The Aláàfin owns the expansive citadel, while the Ọ̀yọ́ Mèsì hold the constitutional heartbeat: Demonstrating the parliamentary balance of imperial Ọ̀yọ́.)",
+        "Ẹni b’Aláàfin rìn l’ẹyẹ ń kọ́, ọba tí ó f’ìlú rẹ̀ sọ’dà. (Whoever walks with the Aláàfin shares in royal honor, the king who forged an empire through valor and statecraft.)",
+        "Bí Aláàfin bá sọ̀rọ̀, Ọ̀yọ́ Mèsì a gbọ́, àwùjọ a dákẹ́. (When the Aláàfin speaks, the Ọ̀yọ́ Mèsì deliberate, and the commonwealth listens in reverence to constitutional harmony.)"
+      ],
+      "related_entities": [
+        "Ọ̀rànmíyàn",
+        "alaafin_of_oyo",
+        "Baṣọ̀run",
+        "Àfin Aláàfin",
+        "Adé",
+        "Ọba"
+      ],
+      "geographical_origin": "Ọ̀yọ́-Ilé & The Ọ̀yọ́ Imperial Commonwealth",
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Smith, Robert S. (1988). Kingdoms of the Yoruba. 3rd ed. Madison: University of Wisconsin Press; Lloyd, Peter C. (1962). Yoruba Land Law. London: Oxford University Press; Fadipe, N.A. (1970). The Sociology of the Yoruba. Ibadan: Ibadan University Press; Akintoye, S.A. (2010). A History of the Yoruba People. Dakar: Amalion; Lawal, Babatunde (1996). The Gẹlẹ̀dẹ́ Spectacle. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Ọba": {
+      "related_entities": [
+        "Adé",
+        "Kábíyèsí",
+        "Ìrukẹ̀rẹ̀",
+        "Baṣọ̀run",
+        "Ìjòyè",
+        "Èwù Ìlèkè"
+      ],
+      "sub_variants": [
+        "ooni_of_ife",
+        "alaafin_of_oyo",
+        "awujale_of_ijebu",
+        "oba_onitire_of_itire",
+        "Olubadan",
+        "Akarigbo",
+        "Olowo",
+        "Ataoja",
+        "Soun",
+        "Timi",
+        "Deji",
+        "Olofa"
+      ]
+    },
+    "Adé": {
+      "related_entities": [
+        "Ọba",
+        "Ìrukẹ̀rẹ̀",
+        "Kábíyèsí",
+        "Èwù Ìlèkè",
+        "oba_onitire_of_itire"
+      ],
+      "sub_variants": [
+        "Adé Ààrẹ",
+        "ade_okin",
+        "Adé Òrìṣà"
+      ],
+      "audio_links": [
+        {
+          "id": "Adé_01_Dùndún Gángan",
+          "file_name": "Adé_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.95
+        },
+        {
+          "id": "Adé_01_Spoken",
+          "file_name": "Adé_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Adé_02_Dùndún Gángan",
+          "file_name": "Adé_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.95
+        },
+        {
+          "id": "Adé_02_Spoken",
+          "file_name": "Adé_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.75
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Adé_01_Dùndún Gángan",
+          "file_name": "Adé_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.95
+        },
+        {
+          "id": "Adé_01_Spoken",
+          "file_name": "Adé_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Adé_02_Dùndún Gángan",
+          "file_name": "Adé_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.95
+        },
+        {
+          "id": "Adé_02_Spoken",
+          "file_name": "Adé_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.75
+        }
+      ]
+    },
+    "Adé Ààrẹ": {
+      "related_entities": [
+        "Ọọ̀ni Odùduwà",
+        "Adé",
+        "Ọba",
+        "Àfin Ọọ̀ni",
+        "Odùduwà",
+        "Iwarefa"
+      ],
+      "audio_links": [
+        {
+          "id": "Adé Ààrẹ_01_Dùndún Gángan",
+          "file_name": "Adé Ààrẹ_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.45
+        },
+        {
+          "id": "Adé Ààrẹ_01_Spoken",
+          "file_name": "Adé Ààrẹ_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        },
+        {
+          "id": "Adé Ààrẹ_02_Dùndún Gángan",
+          "file_name": "Adé Ààrẹ_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.3
+        },
+        {
+          "id": "Adé Ààrẹ_02_Spoken",
+          "file_name": "Adé Ààrẹ_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Adé Ààrẹ_01_Dùndún Gángan",
+          "file_name": "Adé Ààrẹ_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.45
+        },
+        {
+          "id": "Adé Ààrẹ_01_Spoken",
+          "file_name": "Adé Ààrẹ_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        },
+        {
+          "id": "Adé Ààrẹ_02_Dùndún Gángan",
+          "file_name": "Adé Ààrẹ_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.3
+        },
+        {
+          "id": "Adé Ààrẹ_02_Spoken",
+          "file_name": "Adé Ààrẹ_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        }
+      ]
+    },
+    "Kábíyèsí": {
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Ìrukẹ̀rẹ̀",
+        "oba_onitire_of_itire",
+        "Ìjòyè",
+        "Adé Ààrẹ"
+      ],
+      "audio_links": [
+        {
+          "id": "Kabiyesi_01_Dùndún Gángan",
+          "file_name": "Kabiyesi_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.65
+        },
+        {
+          "id": "Kabiyesi_01_Spoken",
+          "file_name": "Kabiyesi_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.5
+        },
+        {
+          "id": "Kabiyesi_02_Dùndún Gángan",
+          "file_name": "Kabiyesi_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.6
+        },
+        {
+          "id": "Kabiyesi_02_Spoken",
+          "file_name": "Kabiyesi_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Kabiyesi_03_Dùndún Gángan",
+          "file_name": "Kabiyesi_03_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.7
+        },
+        {
+          "id": "Kabiyesi_03_Spoken",
+          "file_name": "Kabiyesi_03_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.35
+        },
+        {
+          "id": "Kábíyèsí mimicry  01_Dùndún Gángan",
+          "file_name": "Kábíyèsí mimicry  01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Kábíyèsí mimicry  01_Spoken",
+          "file_name": "Kábíyèsí mimicry  01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.85
+        },
+        {
+          "id": "Kábíyèsí mimicry  02_Dùndún Gángan",
+          "file_name": "Kábíyèsí mimicry  02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        },
+        {
+          "id": "Kábíyèsí mimicry  02_Spoken",
+          "file_name": "Kábíyèsí mimicry  02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.8
+        },
+        {
+          "id": "Gangan_Kabiyesi_Salutations_Master_Suite",
+          "file_name": "gangan_kabiyesi_salutations.opus",
+          "category": "Master_Opus_Suites",
+          "duration_s": null
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Kabiyesi_01_Dùndún Gángan",
+          "file_name": "Kabiyesi_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.65
+        },
+        {
+          "id": "Kabiyesi_01_Spoken",
+          "file_name": "Kabiyesi_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.5
+        },
+        {
+          "id": "Kabiyesi_02_Dùndún Gángan",
+          "file_name": "Kabiyesi_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.6
+        },
+        {
+          "id": "Kabiyesi_02_Spoken",
+          "file_name": "Kabiyesi_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Kabiyesi_03_Dùndún Gángan",
+          "file_name": "Kabiyesi_03_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.7
+        },
+        {
+          "id": "Kabiyesi_03_Spoken",
+          "file_name": "Kabiyesi_03_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.35
+        },
+        {
+          "id": "Kábíyèsí mimicry  01_Dùndún Gángan",
+          "file_name": "Kábíyèsí mimicry  01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Kábíyèsí mimicry  01_Spoken",
+          "file_name": "Kábíyèsí mimicry  01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.85
+        },
+        {
+          "id": "Kábíyèsí mimicry  02_Dùndún Gángan",
+          "file_name": "Kábíyèsí mimicry  02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        },
+        {
+          "id": "Kábíyèsí mimicry  02_Spoken",
+          "file_name": "Kábíyèsí mimicry  02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.8
+        },
+        {
+          "id": "Gangan_Kabiyesi_Salutations_Master_Suite",
+          "file_name": "gangan_kabiyesi_salutations.opus",
+          "category": "Master_Opus_Suites",
+          "duration_s": null
+        }
+      ]
+    },
+    "Ìrukẹ̀rẹ̀": {
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Kábíyèsí",
+        "oba_onitire_of_itire",
+        "Ìjòyè",
+        "Èwù Ìlèkè"
+      ],
+      "audio_links": [
+        {
+          "id": "Ìrukẹ̀rẹ̀_01_Spoken",
+          "file_name": "Ìrukẹ̀rẹ̀ 01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_01_Dùndún Gángan",
+          "file_name": "Ìrukẹ̀rẹ̀_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_02_Dùndún Gángan",
+          "file_name": "Ìrukẹ̀rẹ̀_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.15
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_02_Spoken",
+          "file_name": "Ìrukẹ̀rẹ̀_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.75
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Ìrukẹ̀rẹ̀_01_Spoken",
+          "file_name": "Ìrukẹ̀rẹ̀ 01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.9
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_01_Dùndún Gángan",
+          "file_name": "Ìrukẹ̀rẹ̀_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_02_Dùndún Gángan",
+          "file_name": "Ìrukẹ̀rẹ̀_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.15
+        },
+        {
+          "id": "Ìrukẹ̀rẹ̀_02_Spoken",
+          "file_name": "Ìrukẹ̀rẹ̀_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 0.75
+        }
+      ],
+      "etymology_and_philosophy": "The word Ìrukẹ̀rẹ̀ derives from the Yorùbá morphological root 'ìrù' (tail) and 'kẹ̀' (to pamper, honor, or indulge with noble restraint), conveying the sacred elevation of an animal tail into an instrument of royal distinction, spiritual sovereignty, and liturgical calm. In classical Yorùbá cosmology, the tail of the horse (Ẹṣin) is associated with the swift, dignified messenger of the divine, while the whisk symbolizes the metaphysical breath of Ọ̀run (the spirit realm) that gently dissipates unseen impurities, discord, and malevolent spiritual currents. Holding the Ìrukẹ̀rẹ̀ embodies the foundational philosophical principle of Ìwà-tútù (gentle, tranquil character) and Ìtẹ́lọ́rùn (inner equilibrium). When waved by an Ọba, Ìjòyè, or Babaláwo, the whisk confers silent blessings (Ìbùkún), affirms royal pronouncements with unassailable Àṣẹ, and sanctifies the communal atmosphere without the necessity of raised voices or coercive violence. It stands as an enduring emblem of peaceful dominion, ancestral continuity, and sacred statecraft across the Yorùbá universe.",
+      "proverbs_and_oral_traditions": [
+        "Ọwọ́ tó ti tẹ ìrùkẹ̀ Ọba, kò tún ní fọwọ́ ba ẹrù ẹlẹ́rù mọ́. (The hand that has held the royal whisk will never descend to carrying base burdens: Highlighting the immutable elevation of royal office.)",
+        "Ìrùkẹ̀ kì í fọwọ́ ba ilẹ̀ lásán; àṣẹ ni ó ń gbà wá. (The Ìrùkẹ̀ never sweeps the bare earth in vain; it moves only to deliver divine decree and ancestral sanction.)",
+        "Ọ̀pá tí a fi ń fọ́ ọba, kì í ṣé àìmọ̀; àṣẹ Ọba l’ó fi ń bẹ́rẹ̀. (The royal whisk that clears the path of the monarch is never idle; it proceeds directly from the sovereign's sacred authority.)"
+      ],
+      "provenance_and_citations": "Johnson, Samuel (1921). The History of the Yorubas from the Earliest Times to the Beginning of the British Protectorate. London: Routledge; Lawal, Babatunde (1996). The Gẹ̀lẹ̀dẹ́ Spectacle: Art, Gender, and Social Harmony in an African Culture. Seattle: University of Washington Press; Abiodun, Rowland (2014). Yoruba Art and Language: Seeking the African in African Art. Cambridge: Cambridge University Press."
+    },
+    "Èwù Ìlèkè": {
+      "related_entities": [
+        "Ọba",
+        "Adé",
+        "Bàtà Ìlèkè",
+        "Ìrukẹ̀rẹ̀",
+        "oba_onitire_of_itire",
+        "Kábíyèsí"
+      ],
+      "audio_links": [
+        {
+          "id": "Èwù Ìlèkè_01_Dùndún Gángan",
+          "file_name": "Èwù Ìlèkè_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.15
+        },
+        {
+          "id": "Èwù Ìlèkè_01_Spoken",
+          "file_name": "Èwù Ìlèkè_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.05
+        },
+        {
+          "id": "Èwù Ìlèkè_02_Dùndún Gángan",
+          "file_name": "Èwù Ìlèkè_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Èwù Ìlèkè_02_Spoken",
+          "file_name": "Èwù Ìlèkè_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        }
+      ],
+      "audio_refs": [
+        {
+          "id": "Èwù Ìlèkè_01_Dùndún Gángan",
+          "file_name": "Èwù Ìlèkè_01_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.15
+        },
+        {
+          "id": "Èwù Ìlèkè_01_Spoken",
+          "file_name": "Èwù Ìlèkè_01_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.05
+        },
+        {
+          "id": "Èwù Ìlèkè_02_Dùndún Gángan",
+          "file_name": "Èwù Ìlèkè_02_Dùndún Gángan.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.2
+        },
+        {
+          "id": "Èwù Ìlèkè_02_Spoken",
+          "file_name": "Èwù Ìlèkè_02_Spoken.wav",
+          "category": "Gangan_Call_Response",
+          "duration_s": 1.0
+        }
+      ]
+    },
+    "Baṣọ̀run": {
+      "related_entities": [
+        "alaafin_of_oyo",
+        "Ọba",
+        "Àfin Aláàfin",
+        "Ìjòyè",
+        "Àkóso-Ìlú"
+      ],
+      "sub_variants": [
+        "Basọ̀run Gáà",
+        "basorun_oluyole"
+      ]
+    },
+    "Ìjòyè": {
+      "sub_variants": [
+        "Oloyye",
+        "Iwarefa",
+        "Ààrẹ-Àgò",
+        "Àkóso-Ìlú"
+      ],
+      "related_entities": [
+        "Ọba",
+        "Ìgbìmọ̀ Ìjòyè",
+        "oba_onitire_of_itire",
+        "Kábíyèsí",
+        "Baṣọ̀run"
+      ]
+    }
+  }
+}
