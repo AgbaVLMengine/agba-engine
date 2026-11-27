@@ -2885,3 +2885,17 @@
   4. **Headroom Gate Check**: Available storage on `/home/aruna_olanrewaju` is 15 GB, securely above the 2.0 GB emergency alert threshold. Status: 🟢 Nominal.
   5. **Memory Synchronization**: Inscribed Section 15 in [`memory/disk_saver_memory.md`](file:///home/aruna_olanrewaju/agba-engine/memory/disk_saver_memory.md) and synchronized with the Shared Brain via [`scripts/sync-brain.sh`](file:///home/aruna_olanrewaju/agba-engine/scripts/sync-brain.sh).
 - **Verification**: ✅ **NOMINAL — 15 GB HEADROOM SECURED / 0 HARD VIOLATIONS / SHARED BRAIN SYNCHRONIZED**.
+
+---
+
+### Checkpoint 145 — 2026-11-27 (`CHECKPOINT-ESO-DAILY-NOV27`)
+- **Domain**: Zero-Trust Security Sentinel & Cloud Perimeter Audit
+- **Agent Persona**: `Ọlọ́yè Ẹ̀ṣọ́` (`eso-security`)
+- **Supervising Architect**: `Ọlọ́yè Àgbà` (`agba-pa-architect`)
+- **Lead Architect**: Kábíyèsí Àrùnà Ọlànrewájú Kábírù (**Ọmọ Onítìrẹ́ Ọ̀fọ̀rọ̀n**)
+- **Key Deliverables**:
+  1. **Production Gates (`scripts/review.sh`)**: Passed with **0 hard violations, 0 warnings** across all gates (Gate 2 modularity & Orphan Sentinel, Gate 5 Lean Commits, Gate 3 float-math check, Cloud Run `--min-instances 0`, Gate 8 Zero-Trust Supply Chain & Secrets, Dual-Memory 12 vaults, Gate 9 Sacred Primacy & Biographical Invariant, Dual-Corpora SHA-256 lockstep `1b39fad7ea29fd90e9261e0e81e4ec4f45ce237c31c6abbf7ec3fd81b5288733`).
+  2. **AI Supply Chain (`api/requirements.txt`)**: Verified zero LiteLLM or third-party AI proxy wrappers; official `google-genai>=0.1.0` direct SDK enforced.
+  3. **High-Entropy Secrets Scan**: Audited last 15 commits (`c8b1fd6` HEAD), working tree modifications, untracked scratch files, and `api/`, `web/src/`, `scripts/`, `.github/`. Exactly **0 leaked secrets or private keys**; `web/.env.local` strictly gitignored.
+  4. **RAG XML Boundaries, Gateway Auth & Cloud Run Scale-to-Zero**: Verified `<canonical_knowledge_base>` + `<user_query>` XML delimitation & `sanitize_xml_user_input` (1,500-char cap) + Rule 5 boundary defense in [`api/app/intelligence.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/intelligence.py) and [`api/app/prompt_governor.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/prompt_governor.py); header-first auth (`X-AGBA-API-KEY` / `Bearer`) with OWASP API3 telemetry warning on legacy query-param fallback in [`api/app/main.py`](file:///home/aruna_olanrewaju/agba-engine/api/app/main.py); and `--min-instances 0` ($0.00/mo idle scale) in [`api/deploy_cloud_run.sh`](file:///home/aruna_olanrewaju/agba-engine/api/deploy_cloud_run.sh).
+- **Verification**: 🟢 **DEFCON 5 (GREEN / OPERATIONAL) — 0 VIOLATIONS, 0 WARNINGS, SHARED BRAIN SYNCHRONIZED**.
